@@ -1,0 +1,61 @@
+{
+  "comment": "F07 inhibition-identifier drill presets. One source for build_numbers.py, tools/build_inhibition.py and the Node test. type is one of competitive / noncompetitive / uncompetitive / mixed; ratio is [I]/Ki. Numbers are illustrative teaching parameters, not measurements.",
+  "presets": [
+    {
+      "seed": 1,
+      "type": "competitive",
+      "vmax": 0.46,
+      "km": 1.2,
+      "ratio": 2.0
+    },
+    {
+      "seed": 2,
+      "type": "noncompetitive",
+      "vmax": 0.6,
+      "km": 0.8,
+      "ratio": 1.5
+    },
+    {
+      "seed": 3,
+      "type": "uncompetitive",
+      "vmax": 0.54,
+      "km": 1.5,
+      "ratio": 2.5
+    },
+    {
+      "seed": 4,
+      "type": "mixed",
+      "vmax": 0.42,
+      "km": 1.05,
+      "ratio": 3.0
+    },
+    {
+      "seed": 5,
+      "type": "competitive",
+      "vmax": 0.72,
+      "km": 2.2,
+      "ratio": 1.0
+    },
+    {
+      "seed": 6,
+      "type": "noncompetitive",
+      "vmax": 0.35,
+      "km": 3.0,
+      "ratio": 4.0
+    },
+    {
+      "seed": 7,
+      "type": "uncompetitive",
+      "vmax": 0.66,
+      "km": 0.94,
+      "ratio": 1.0
+    },
+    {
+      "seed": 8,
+      "type": "mixed",
+      "vmax": 0.55,
+      "km": 1.8,
+      "ratio": 2.0
+    }
+  ]
+}

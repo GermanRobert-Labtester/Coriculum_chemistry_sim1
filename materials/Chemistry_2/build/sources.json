@@ -1,0 +1,171 @@
+{
+ "schema": "mch2-sources",
+ "schema_version": 1,
+ "retrieved": "2026-11-07",
+ "scope": "Kursa PDF avotu ledžers F10 pārbaudītājam. Ieraksti apraksta tikai to, kas nolasīts build/source-text izvilkumos; nav izgudrotu lappušu, izdevumu, ISBN vai DOI.",
+ "sources": [
+  {
+   "id": "S-TOPIC",
+   "kind": "course-document",
+   "file": "2_Temata apraksts 2020.docx.pdf",
+   "title": "2. Temata apraksts 2020",
+   "edition": "not stated",
+   "year": 2020,
+   "publisher": "not stated",
+   "pages": 2,
+   "locator": "Workspace root; 2 pages",
+   "retrieved": "2026-11-07",
+   "read_level": "snippet",
+   "verification": "V2",
+   "supports": [
+    "ch-1",
+    "ch-2"
+   ],
+   "quote_ok": false,
+   "sha256": "c7d423021bc7f661a4b1f35c4e731a9c06101d60791b54ee24c7c3aa7110ede5",
+   "notes": "Passage read in build/source-text/2_Temata apraksts 2020.docx.txt; publisher and edition are not stated in the PDF metadata; original PDF not re-rendered in this pass."
+  },
+  {
+   "id": "S-ANALIT",
+   "kind": "course-document",
+   "file": "Analitiskas-metodes_2024.pdf",
+   "title": "Analītiskās metodes",
+   "edition": "not stated",
+   "year": 2024,
+   "publisher": "not stated",
+   "pages": 7,
+   "locator": "Workspace root; 7 pages",
+   "retrieved": "2026-11-07",
+   "read_level": "snippet",
+   "verification": "V2",
+   "supports": [
+    "ch-2",
+    "ch-3",
+    "ch-4",
+    "ch-6",
+    "ch-7",
+    "ch-8"
+   ],
+   "quote_ok": false,
+   "sha256": "9d1aeafebc4f85a177119169560b31b48b2413a6e183c3fe4da4fe03ec7d896a",
+   "notes": "Passages read in build/source-text/Analitiskas-metodes_2024.txt; publisher and edition are not stated in the PDF metadata; original PDF not re-rendered in this pass."
+  },
+  {
+   "id": "S-2A",
+   "kind": "course-document",
+   "file": "2A_SEM_MCh_LV_Merijumi,grafiki_2025.pdf",
+   "title": "2A. Mērījumu precizitāte un grafiskās metodes ķīmijā",
+   "edition": "not stated",
+   "year": 2025,
+   "publisher": "Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra",
+   "pages": 4,
+   "locator": "Workspace root; 4 pages",
+   "retrieved": "2026-11-07",
+   "read_level": "snippet",
+   "verification": "V2",
+   "supports": [
+    "ch-7",
+    "ch-8",
+    "ch-9",
+    "ch-10",
+    "ch-11"
+   ],
+   "quote_ok": false,
+   "sha256": "319dfef6e821b934005d8fa42301580fb5747ab456ae291fe5d95a57a628a00a",
+   "notes": "Passages read in build/source-text/2A_SEM_MCh_LV_Merijumi,grafiki_2025.txt; publisher from the document header; original PDF not re-rendered in this pass."
+  },
+  {
+   "id": "S-2B",
+   "kind": "course-document",
+   "file": "2B_SEM_MCh_LV_Trauki,skidumi_2025.pdf",
+   "title": "2B. Laboratorijas trauku precizitāte un šķīdumu pagatavošana",
+   "edition": "not stated",
+   "year": 2025,
+   "publisher": "Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra",
+   "pages": 4,
+   "locator": "Workspace root; 4 pages",
+   "retrieved": "2026-11-07",
+   "read_level": "snippet",
+   "verification": "V2",
+   "supports": [
+    "ch-4",
+    "ch-5",
+    "ch-6",
+    "ch-12"
+   ],
+   "quote_ok": false,
+   "sha256": "894b5fa3db4e044a6b994b788d0ca13b8e2e3b21b163c60ac1928ebfc00f854c",
+   "notes": "Passages read in build/source-text/2B_SEM_MCh_LV_Trauki,skidumi_2025.txt; publisher from the document header; original PDF not re-rendered in this pass."
+  },
+  {
+   "id": "S-2026",
+   "kind": "course-document",
+   "file": "2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.pdf",
+   "title": "2. Laboratorijas aprīkojums. Mērīšana un grafiskās metodes ķīmijā",
+   "edition": "not stated",
+   "year": 2026,
+   "publisher": "Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra",
+   "pages": 7,
+   "locator": "Workspace root; 7 pages",
+   "retrieved": "2026-11-07",
+   "read_level": "snippet",
+   "verification": "V2",
+   "supports": [
+    "ch-1",
+    "ch-4",
+    "ch-7",
+    "ch-8",
+    "ch-9",
+    "ch-10",
+    "ch-11",
+    "ch-12",
+    "ch-16"
+   ],
+   "quote_ok": false,
+   "sha256": "bfe8fdd3da40d52084aa7f4d5c72253b0427fe74a2b27f00f2cd417a69980f5b",
+   "notes": "Passages read in build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt; publisher from the document header; original PDF not re-rendered in this pass."
+  },
+  {
+   "id": "S-LNHB",
+   "kind": "database",
+   "file": "build/source-text/LNHB_Hg-203_tables.pdf",
+   "title": "LNHB/DDEP Table de Radionucleides: Hg-203 (recommended decay data)",
+   "edition": "DDEP Table de Radionucleides (PDF created 2004-04-23 per metadata)",
+   "year": 2004,
+   "publisher": "LNHB (Laboratoire National Henri Becquerel), CEA",
+   "pages": 6,
+   "locator": "https://www.lnhb.fr/nuclides/Hg-203_tables.pdf; T1/2 line, PDF p. 2",
+   "retrieved": "2026-11-07",
+   "read_level": "full",
+   "verification": "V2",
+   "supports": [
+    "ch-11",
+    "D52"
+   ],
+   "quote_ok": true,
+   "sha256": "522880c45c171ca50d1c61859a65298424110998d21b0de835be6abf0f84df1c",
+   "notes": "Primary-read 2026-11-07 via pdftotext: T1/2(203Hg) = 46,594 (12) d; beta-minus 100%; Q 491,8 keV; 279 keV gamma; half-life references list through 2004. Publication year not printed in the PDF text; 2004 recorded from PDF metadata."
+  },
+  {
+   "id": "S-NUDAT",
+   "kind": "database",
+   "file": "build/source-text/NuDat_203HG_2021.txt",
+   "title": "NuDat 3 / ENSDF adopted value for Hg-203 (Kondev, Nucl. Data Sheets 177, 509 (2021))",
+   "edition": "ENSDF evaluation, cutoff 4-Jul-2021",
+   "year": 2021,
+   "publisher": "National Nuclear Data Center, Brookhaven National Laboratory",
+   "pages": 1,
+   "locator": "https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=203HG&unc=nds (captured 2026-11-07)",
+   "retrieved": "2026-11-07",
+   "read_level": "full",
+   "verification": "V2",
+   "supports": [
+    "ch-11",
+    "D52"
+   ],
+   "quote_ok": true,
+   "sha256": "350e49df5e9fa37c4ce93d74a26f330b05a3ba89f2d630c30c530f2a6c5961c0",
+   "notes": "Primary-read 2026-11-07 from the live NuDat dataset endpoint, raw HTML captured and hash-pinned: half-life 46.610 d 10 (weighted average of five measurements), beta-minus 100%; author F.G. Kondev, Nucl. Data Sheets 177, 509 (2021)."
+  }
+ ]
+}

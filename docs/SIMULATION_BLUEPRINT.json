@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "status": "draft-study-design-not-official-exam-blueprint",
+  "source_programme": "RSU_MedChem_Colloq1_Prog_LV_2025.pdf",
+  "official_facts": {
+    "year": 2025,
+    "mode": "in-person-written-on-paper",
+    "maximum_minutes": 180,
+    "topics": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "unprovided_official_details": [
+    "number of questions",
+    "point weights",
+    "pass mark",
+    "permitted formula sheets/calculator/tables",
+    "official question types",
+    "current-year confirmation"
+  ],
+  "proposed_forms": [
+    "A",
+    "B",
+    "C"
+  ],
+  "points": 100,
+  "working_minutes": 170,
+  "review_minutes": 10,
+  "slots": [
+    {
+      "slot_id": "S1-1",
+      "topic": 1,
+      "points": 3,
+      "allowed_family_ids": [
+        "FAM-1A",
+        "FAM-1B"
+      ],
+      "required_subparts": "Classification or particles/bonding",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S1-2",
+      "topic": 1,
+      "points": 3,
+      "allowed_family_ids": [
+        "FAM-1C"
+      ],
+      "required_subparts": "Balance + stoichiometry",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S1-3",
+      "topic": 1,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-1D"
+      ],
+      "required_subparts": "Periodic/solubility table use",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S2-1",
+      "topic": 2,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-2A",
+        "FAM-2B"
+      ],
+      "required_subparts": "Equipment + units/sig figs through subparts",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S2-2",
+      "topic": 2,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-2C"
+      ],
+      "required_subparts": "Scale reading + delivered volume",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S2-3",
+      "topic": 2,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-2D"
+      ],
+      "required_subparts": "Axes, units, plotting and graph read",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S3-1",
+      "topic": 3,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-3A",
+        "FAM-3B"
+      ],
+      "required_subparts": "Definitions + m/n/c/w/γ/ρ conversions",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S3-2",
+      "topic": 3,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-3C"
+      ],
+      "required_subparts": "Dilution calculation + preparation sequence",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S3-3",
+      "topic": 3,
+      "points": 8,
+      "allowed_family_ids": [
+        "FAM-3D"
+      ],
+      "required_subparts": "Explicit label basis + missing-data reasoning",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S4-1",
+      "topic": 4,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-4A",
+        "FAM-4D"
+      ],
+      "required_subparts": "Systems + laws + calorimetry through subparts",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S4-2",
+      "topic": 4,
+      "points": 5,
+      "allowed_family_ids": [
+        "FAM-4B"
+      ],
+      "required_subparts": "Hess + reaction ΔS",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S4-3",
+      "topic": 4,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-4C"
+      ],
+      "required_subparts": "ΔG + temperature + sign interpretation",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S5-1",
+      "topic": 5,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-5A",
+        "FAM-5D"
+      ],
+      "required_subparts": "Factors + catalyst/enzymes/mechanism through subparts",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S5-2",
+      "topic": 5,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-5B"
+      ],
+      "required_subparts": "Order + k + k unit",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S5-3",
+      "topic": 5,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-5C"
+      ],
+      "required_subparts": "Half-life graph + calculation + model assumptions",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S6-1",
+      "topic": 6,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-6A",
+        "FAM-6D"
+      ],
+      "required_subparts": "Roles + supplied E° table + Nernst subpart",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S6-2",
+      "topic": 6,
+      "points": 5,
+      "allowed_family_ids": [
+        "FAM-6B"
+      ],
+      "required_subparts": "Half reactions + atom/charge balance in stated medium",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S6-3",
+      "topic": 6,
+      "points": 6,
+      "allowed_family_ids": [
+        "FAM-6C"
+      ],
+      "required_subparts": "Titration equipment/endpoint + stoichiometric concentration",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S7-1",
+      "topic": 7,
+      "points": 3,
+      "allowed_family_ids": [
+        "FAM-7A"
+      ],
+      "required_subparts": "Law + variables + method use",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S7-2",
+      "topic": 7,
+      "points": 4,
+      "allowed_family_ids": [
+        "FAM-7B"
+      ],
+      "required_subparts": "Calibration axes + slope/intercept/range",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    },
+    {
+      "slot_id": "S7-3",
+      "topic": 7,
+      "points": 5,
+      "allowed_family_ids": [
+        "FAM-7C",
+        "FAM-7D"
+      ],
+      "required_subparts": "Unknown c/m/n + dilution + validity subpart",
+      "status": "TARGET-composite-subparts-must-be-authored"
+    }
+  ],
+  "topic_weights": [
+    {
+      "topic": 1,
+      "points": 10,
+      "working_minutes": 16
+    },
+    {
+      "topic": 2,
+      "points": 12,
+      "working_minutes": 20
+    },
+    {
+      "topic": 3,
+      "points": 20,
+      "working_minutes": 32
+    },
+    {
+      "topic": 4,
+      "points": 15,
+      "working_minutes": 25
+    },
+    {
+      "topic": 5,
+      "points": 16,
+      "working_minutes": 27
+    },
+    {
+      "topic": 6,
+      "points": 15,
+      "working_minutes": 28
+    },
+    {
+      "topic": 7,
+      "points": 12,
+      "working_minutes": 22
+    }
+  ],
+  "constraints": {
+    "top_level_tasks": 21,
+    "topics_per_form": 7,
+    "minimum_question_types_per_form": 8,
+    "maximum_selection_points": 10,
+    "minimum_constructed_response_points": 70,
+    "required_types_per_form": [
+      "Q02",
+      "Q04",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q15"
+    ],
+    "no_duplicate_instance": true,
+    "no_duplicate_base_family_in_form": true,
+    "forms_must_differ_in_parameters_or_reasoning": true,
+    "bank_target_families": 28,
+    "variants_per_family_target": 4,
+    "instantiated_item_target": 112,
+    "all_outcomes_covered_across_bank": true,
+    "each_form_covers_every_topic_and_slot_required_subparts": true
+  },
+  "form_assembly": "Fixed slots are requirements, not authored items. A composite may pull non-duplicated subparts from another family; record each origin and ensure that no origin family repeats in another slot. Validate all required subparts, then select seeded variants. Fail if unsatisfied.",
+  "scoring": "Separate machine-checkable points, self-assessed points, pending points and maximum; no official pass/fail.",
+  "difficulty": "Proposed 25/50/25 points foundational/application/transfer; time and equivalence need student trials.",
+  "implementation_status": "No simulator, bank generator, mock papers or timer have been implemented in this preparation pass."
+}

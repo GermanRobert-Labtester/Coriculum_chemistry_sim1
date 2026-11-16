@@ -1,0 +1,3728 @@
+{
+  "Q1": {
+    "dH": 210.0,
+    "dS": 216.0,
+    "dG298": 145.5996,
+    "Tcross": 972.2222222222222,
+    "dG1000": -6.0,
+    "dG800": 37.19999999999999,
+    "wrong_J": -64158.0
+  },
+  "Q2": {
+    "dH": 28.05000000000001,
+    "dS": 108.72,
+    "dG": -4.364867999999987,
+    "Tcross": 258.00220750551887,
+    "dG273": -1.6468679999999871,
+    "dG310": -5.669507999999986,
+    "K": 5.81690256557168
+  },
+  "Q3": {
+    "dH": 21,
+    "dS": 22,
+    "dG": 14.4407,
+    "dG298exact": 14.443999999999999,
+    "Tcross": 954.5454545454545,
+    "K": 0.0029518807968450748
+  },
+  "Q4": {
+    "dG": -170,
+    "dG_h2o_g_alt": -169.0
+  },
+  "Q5": {
+    "dH": 2805.27,
+    "dS": 787.6250000000001,
+    "dG": 2570.43960625,
+    "dG298": 2570.43960625,
+    "dH_O2gas0": 2875.5600000000004,
+    "pO2": 222.28100000000018,
+    "dG_O2gas0": 2809.2869198500002,
+    "Q_released": -2805.27
+  },
+  "Q6": [
+    {
+      "dH": -44.64999999999998,
+      "dS": 90.02999999999997,
+      "dG": -71.49244449999998,
+      "id": "1",
+      "eq": "BaCl2(s) + Na2SO4(aq) → BaSO4(s) + 2NaCl(aq)",
+      "dG298": -71.49244449999998,
+      "Tcross": -495.9457958458291,
+      "dn_gas": 0
+    },
+    {
+      "dH": 110.96000000000004,
+      "dS": 337.95,
+      "dG": 10.200207500000047,
+      "id": "2",
+      "eq": "Al2O3(s) + 3H2SO4(aq) → Al2(SO4)3(s) + 3H2O(l)",
+      "dG298": 10.200207500000047,
+      "Tcross": 328.3325935789319,
+      "dn_gas": 0
+    },
+    {
+      "dH": -906.22,
+      "dS": 179.64999999999998,
+      "dG": -959.7826475,
+      "id": "3",
+      "eq": "4NH3(g) + 5O2(g) → 6H2O(g) + 4NO(g)",
+      "dG298": -959.7826475,
+      "Tcross": -5044.364041191206,
+      "dn_gas": 1
+    },
+    {
+      "dH": -1409.21,
+      "dS": -260.58,
+      "dG": -1331.518073,
+      "id": "4",
+      "eq": "C2H5OH(g) + 3O2(g) → 2CO2(g) + 3H2O(l)",
+      "dG298": -1331.518073,
+      "Tcross": 5407.974518382071,
+      "dn_gas": -2,
+      "dU_from_dH": -1404.2520859407953
+    },
+    {
+      "dH": -366.64,
+      "dS": -15.420000000000016,
+      "dG": -362.042527,
+      "id": "5",
+      "eq": "2Na(s) + 2H2O(l) → 2NaOH(aq) + H2(g)",
+      "dG298": -362.042527,
+      "Tcross": 23776.913099870275,
+      "dn_gas": 1.0
+    },
+    {
+      "dH": 37.629999999999654,
+      "dS": 1021.3100000000002,
+      "dG": -266.87357650000035,
+      "id": "6",
+      "eq": "Al2(SO4)3(s) + 6NaHCO3(s) → 3Na2SO4(aq) + 2Al(OH)3(s) + 6CO2(g)",
+      "dG298": -266.87357650000035,
+      "Tcross": 36.84483653347137,
+      "dn_gas": 6.0
+    }
+  ],
+  "problems_matrix": [
+    {
+      "id": "U1",
+      "dH": 210.0,
+      "dS": 216.0,
+      "dG": 145.5996,
+      "T": 972.2222222222222
+    },
+    {
+      "id": "U2",
+      "dH": 28.05000000000001,
+      "dS": 108.72,
+      "dG": -4.364867999999987,
+      "T": 258.00220750551887
+    },
+    {
+      "id": "U3",
+      "dH": 21,
+      "dS": 22,
+      "dG": 14.4407,
+      "T": 954.5454545454545
+    },
+    {
+      "id": "U4",
+      "dH": null,
+      "dS": null,
+      "dG": -170,
+      "T": null
+    },
+    {
+      "id": "U5",
+      "dH": 2805.27,
+      "dS": 787.6250000000001,
+      "dG": 2570.43960625,
+      "T": 3561.6822726551336
+    },
+    {
+      "id": "U6.1",
+      "dH": -44.64999999999998,
+      "dS": 90.02999999999997,
+      "dG": -71.49244449999998,
+      "T": -495.9457958458291
+    },
+    {
+      "id": "U6.2",
+      "dH": 110.96000000000004,
+      "dS": 337.95,
+      "dG": 10.200207500000047,
+      "T": 328.3325935789319
+    },
+    {
+      "id": "U6.3",
+      "dH": -906.22,
+      "dS": 179.64999999999998,
+      "dG": -959.7826475,
+      "T": -5044.364041191206
+    },
+    {
+      "id": "U6.4",
+      "dH": -1409.21,
+      "dS": -260.58,
+      "dG": -1331.518073,
+      "T": 5407.974518382071
+    },
+    {
+      "id": "U6.5",
+      "dH": -366.64,
+      "dS": -15.420000000000016,
+      "dG": -362.042527,
+      "T": 23776.913099870275
+    },
+    {
+      "id": "U6.6",
+      "dH": 37.629999999999654,
+      "dS": 1021.3100000000002,
+      "dG": -266.87357650000035,
+      "T": 36.84483653347137
+    }
+  ],
+  "Hess_FeCl3": {
+    "sum": -399.5,
+    "direct": -399.5,
+    "check": 0.0
+  },
+  "Hess_propene": {
+    "sum": -2058,
+    "expected": -2058
+  },
+  "glucose_formation_check": {
+    "dHc_from_table": -2804.0,
+    "dHc_note": -2804.0
+  },
+  "glucose_course": {
+    "dS": 182.4,
+    "dG310": -2864.57136,
+    "g_for_3m": 0.12955851098085405
+  },
+  "glucose_standard": {
+    "dS": 259.5,
+    "dG310": -2888.483925,
+    "g_for_3m": 0.12848594959724416
+  },
+  "climb": 2.0601000000000003,
+  "o2_per_l": 20.879807263317566,
+  "glucose_ATP_equiv": 94.7016393442623,
+  "RT298": 2.4789570296023884,
+  "coupling": {
+    "step1": 13.8,
+    "step2": -30.5,
+    "net": -16.7
+  },
+  "atp_amp_ppi": {
+    "textbook": -45.6,
+    "ppi_hydrolysis": -19.2,
+    "sum": -64.8,
+    "course": -61.0
+  },
+  "isomorphic_drills": {
+    "u1_propane": {
+      "dH": 498.0,
+      "dS": 520.0,
+      "dG298": 342.962,
+      "Tcross": 957.6923076923077,
+      "dG1050": -48.0
+    },
+    "u2_kno3": {
+      "dH": 34.89,
+      "dS": 113.8,
+      "dG298": 0.9605300000000057,
+      "Tcross": 306.59050966608083,
+      "dG273": 3.8055300000000045
+    },
+    "u3_alagli": {
+      "dH": 29.2,
+      "dS": 18.5,
+      "dG310": 23.462225,
+      "coupled_dG": -7.037775
+    },
+    "u4_dichromate": {
+      "dG": -554
+    },
+    "u5_lactate": {
+      "dH": -120.0,
+      "dS": 115.0,
+      "dG310": -155.66725
+    },
+    "u6_r6_500K": {
+      "dG500": -473.025
+    }
+  },
+  "micro": {
+    "4": {
+      "total": 16,
+      "all_left": 1,
+      "all_left_prob": 0.0625,
+      "equal": 6,
+      "peak": 6,
+      "counts4": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ]
+    },
+    "10": {
+      "total": 1024,
+      "all_left": 1,
+      "all_left_prob": 0.0009765625,
+      "equal": 252,
+      "peak": 252,
+      "counts4": null
+    },
+    "20": {
+      "total": 1048576,
+      "all_left": 1,
+      "all_left_prob": 9.5367431640625e-07,
+      "equal": 184756,
+      "peak": 184756,
+      "counts4": null
+    },
+    "100": {
+      "total": 1267650600228229401496703205376,
+      "all_left": 1,
+      "all_left_prob": 7.888609052210118e-31,
+      "equal": 100891344545564193334812497256,
+      "peak": 100891344545564193334812497256,
+      "counts4": null
+    }
+  },
+  "S_double_volume": 5.763146321643979,
+  "water_phase_transitions": {
+    "fus_dS": 22.00256269449021,
+    "vap_dS": 108.9642235026129
+  },
+  "dipeptide_U3": {
+    "dH": 21,
+    "dS": 22,
+    "dG": 14.4407,
+    "is_synthesis": true,
+    "dS_positive": true
+  },
+  "lab": {
+    "q": 1673.6000000000001,
+    "nOH": 0.032,
+    "nH": 0.04,
+    "limiting": "OH-",
+    "dH_exp": -52.3,
+    "dH_theory": -56.190000000000055,
+    "dS_theory": 154.305,
+    "dG_sigma": -104.10000000000002,
+    "dG_dH": -102.19603575000005,
+    "dG_reverse": 104.10000000000002,
+    "error_pct": 6.922940024915561,
+    "dT_theory": 2.148757170172086,
+    "u_dT": 0.14142135623730953,
+    "rel_u_dT": 7.071067811865476,
+    "Ckal_q": 1713.6000000000001,
+    "Ckal_dH": -53.55,
+    "accepted_dS": 80.43900000000001,
+    "accepted_dG": -80.17288785000005,
+    "RTlnKw": 79.91213303549362
+  },
+  "constants": {
+    "R": 8.31446261815324,
+    "R_kJ": 0.00831446261815324,
+    "RT298": 2.4789570296023884,
+    "NA": 6.02214076e+23,
+    "k": 1.380649e-23,
+    "faraday": 96485.33212
+  },
+  "calorie": {
+    "kcal_kJ": 4.184,
+    "fat_kJ_g": 37.656,
+    "carb_kJ_g": 16.736,
+    "daily_kJ": 11213.12,
+    "O2_kJ_L": 21.2
+  },
+  "bomb_gas_vector": {
+    "dU": -100.0,
+    "dn_gas": 1,
+    "RT": 2.4789570296023884,
+    "dH": -97.52104297039762
+  },
+  "Tcross_C": {
+    "Q1": 699.0722222222222,
+    "Q2": -15.14779249448111,
+    "Q3": 681.3954545454545,
+    "Q6_2": 55.182593578931915,
+    "Q6_4": 5134.824518382072,
+    "Q6_5": 23503.763099870273,
+    "Q6_6": -236.3051634665286
+  },
+  "table_checks": {
+    "CO2_dSf": 2.829999999999984,
+    "CO2_dG_from_Sf": -394.3437645,
+    "H2O_g_dSf": -44.71499999999999,
+    "H2O_g_dG_from_Sf": -228.50822275000002,
+    "H2O_g_dG_expected": -228.57,
+    "CO2_dG_expected": -394.34,
+    "N2O5_state": "solid",
+    "N2O4_name": "dislāpekļa tetraoksīds"
+  },
+  "task09": {
+    "neutralization_course_dG_route1": -104.10000000000002,
+    "neutralization_course_dG_route2": -102.19603575000005,
+    "neutralization_course_internal_discrepancy": 1.903964249999973,
+    "neutralization_nist_dG": -79.91213303549362,
+    "neutralization_gap_vs_kw": 22.283902714506425,
+    "reverse_autoprotolysis_course_dG": 102.19603575000005,
+    "reverse_autoprotolysis_kw_dG": 79.91213303549362,
+    "u5_o2_aq_dH": 2805.27,
+    "u5_o2_gas_dH": 2875.5600000000004,
+    "u5_dH_shift": 70.29000000000042,
+    "u5_o2_aq_dS": 787.6250000000001,
+    "u5_o2_gas_dS": 1352.7890000000002,
+    "u5_o2_aq_dG": 2570.43960625,
+    "u5_o2_gas_dG": 2472.2259596500003,
+    "co2_dG_corrected": -394.38,
+    "h2o_g_dG_corrected": -228.57,
+    "discrepancy_count": 11,
+    "k19_species_count": 36,
+    "reconciled_species_count": 57,
+    "positive_reaction_sums_verified": true,
+    "negative_mixed_oxygen_fails": true,
+    "boundary_both_answers_retained": true
+  },
+  "first_law": {
+    "vector1": {
+      "process": "isobaric_expansion",
+      "p_kPa": 101.325,
+      "V1_L": 22.4,
+      "V2_L": 44.8,
+      "A_kJ": 2.27,
+      "Q_kJ": 5.68,
+      "dU_kJ": 3.41,
+      "w_iupac_kJ": -2.27,
+      "q_iupac_kJ": 5.68
+    },
+    "vector2": {
+      "process": "isothermal_expansion",
+      "T_K": 298.15,
+      "dU_kJ": 0.0,
+      "relation": "Q = A",
+      "dU_ideal_gas_isothermal": 0.0
+    },
+    "convention_schema": [
+      {
+        "system": "termodinamiskā gāzes sistēma",
+        "boundary": "kontroles tilpums ar kustīgu virzuli",
+        "heat_direction": "into_system (+Q, +q)",
+        "work_direction": "by_system (+A, −w)",
+        "symbol": "Q = ΔU + A ⇔ ΔU = q + w",
+        "symbol_course": "Q = ΔU + A",
+        "symbol_iupac": "ΔU = q + w",
+        "work_relation": "w = −A",
+        "equivalent_dU": true,
+        "source": "K 2. lpp. (2),(3); Atkins 2. nod.; IUPAC Gold Book"
+      },
+      {
+        "system": "termodinamiskā gāzes sistēma",
+        "boundary": "kontroles tilpums ar kustīgu virzuli",
+        "heat_direction": "out_of_system (−Q, −q, jeb +Q_izd)",
+        "work_direction": "on_system (−A, +w)",
+        "symbol": "Q = ΔU + A (Q < 0, A < 0) ⇔ ΔU = q + w (q < 0, w > 0)",
+        "symbol_course": "Q = ΔU + A  (Q < 0, A < 0)",
+        "symbol_iupac": "ΔU = q + w  (q < 0, w > 0)",
+        "work_relation": "w = −A",
+        "equivalent_dU": true,
+        "source": "K 2. lpp.; IUPAC Gold Book"
+      },
+      {
+        "system": "kalorimetra šķīdums (laboratorija)",
+        "boundary": "termiski izolēta vārglāze pie p=const (ΔV≈0)",
+        "heat_direction": "into_solution (+q_šķīdums no eksotermiskas reakcijas)",
+        "work_direction": "none (A = 0, w = 0)",
+        "symbol": "q_šķīdums = c·m·ΔT; Q_izd = q_šķīdums; ΔH_r = −q_šķīdums / n",
+        "symbol_course": "q_šķīdums = c·m·ΔT; Q_izd = q_šķīdums; ΔH_r = −q_šķīdums / n",
+        "symbol_iupac": "q_p = ΔH_r < 0; w = 0; ΔU ≈ ΔH_r",
+        "work_relation": "w = 0",
+        "equivalent_dU": true,
+        "source": "L 2. lpp.; LA 2. lpp.; S1, S36"
+      }
+    ],
+    "negative_fixture": {
+      "name": "wrong_sign_work_conflation",
+      "wrong_formula": "ΔU = Q + A",
+      "Q_kJ": 5.68,
+      "A_kJ": 2.27,
+      "dU_wrong_kJ": 7.95,
+      "dU_true_kJ": 3.41,
+      "discrepancy_kJ": 4.54,
+      "error_percent": 133.1,
+      "fails_energy_conservation": true
+    },
+    "boundary_non_ideal": {
+      "model": "van_der_waals_gas",
+      "substance": "CO2(g)",
+      "process": "isothermal_expansion",
+      "T_const": true,
+      "ideal_gas_dU_J": 0.0,
+      "ideal_gas_Q_equals_A": true,
+      "real_gas_dU_J": 8.125,
+      "real_gas_dU_is_zero": false,
+      "real_gas_Q_equals_A": false,
+      "physical_reason": "Starpmolekulārās pievilkšanās spēki rada potenciālo enerģiju; izplešoties tā pieaug pat pie T=const."
+    },
+    "positive_assertion": {
+      "both_conventions_equivalent": true,
+      "identity": "Q - A == q + w (when w = -A)",
+      "delta_u_course_kJ": 3.41,
+      "delta_u_iupac_kJ": 3.41
+    }
+  },
+  "hess_solver": {
+    "case1_co2": {
+      "dh1_direct": -393.5,
+      "dh2_co": -110.5,
+      "dh3_co_to_co2": -283.0,
+      "sum_steps": -393.5,
+      "cycle_diff": 0.0,
+      "closure_verified": true
+    },
+    "case2_fecl3": {
+      "dh1_direct": -399.5,
+      "dh2_fecl2": -341.8,
+      "dh3_fecl2_to_fecl3": -57.7,
+      "sum_steps": -399.5,
+      "cycle_diff": 0.0,
+      "closure_verified": true
+    },
+    "case3_propene": {
+      "dh1_direct": -124.0,
+      "dh2_combustion": -2343.83,
+      "dh3_reverse_combustion": 2219.83,
+      "sum_steps": -124.0,
+      "cycle_diff": 0.0,
+      "closure_verified": true
+    }
+  },
+  "c02_c03": {
+    "positive_vector_hess": {
+      "fecl3_direct_kJ": -399.5,
+      "fecl3_sum_steps_kJ": -399.5,
+      "fecl3_diff_kJ": 0.0,
+      "co2_direct_kJ": -393.5,
+      "co2_sum_steps_kJ": -393.5,
+      "co2_diff_kJ": 0.0,
+      "propene_combustion_kJ": -2058.0,
+      "propene_steps_kJ": -2058.0,
+      "propene_diff_kJ": 0.0,
+      "paths_equal_direct_target": true
+    },
+    "reversed_scaled_rules": {
+      "h2o_formation_fwd_kJ": -286.0,
+      "h2o_decomposition_rev_kJ": 286.0,
+      "sign_inversion_verified": true,
+      "scaled_factor_2_kJ": -572.0,
+      "scaling_verified": true
+    },
+    "negative_fixture_mismatched_phase": {
+      "reaction": "C3H6(g) + 9/2 O2(g) -> 3 CO2(g) + 3 H2O",
+      "h2o_liquid_dH_kJ": -286.0,
+      "h2o_gas_dH_kJ": -241.84,
+      "phase_mismatch_per_mol_kJ": 44.16,
+      "error_3_mols_kJ": 132.48,
+      "neutralization_mismatch_error_kJ": 88.32,
+      "mismatched_phase_rejected": true
+    },
+    "boundary_standard_state": {
+      "p_standard_bar": 1.0,
+      "p_standard_kPa": 100.0,
+      "p_old_atm_kPa": 101.325,
+      "pressure_ratio_pct": 1.33,
+      "T_reference_K": 298.15,
+      "T_reference_C": 25.0,
+      "temperature_specified_separately": true,
+      "standard_pressure_does_not_fix_temperature": true
+    }
+  },
+  "c05_c10": {
+    "positive_vector_entropy": {
+      "n_mol": 1.0,
+      "V1_L": 22.4,
+      "V2_L": 44.8,
+      "T_K": 298.15,
+      "dS_system_exact_J_per_mol_K": 5.763,
+      "q_rev_J": 1718.3,
+      "q_rev_over_T_J_per_mol_K": 5.763,
+      "q_irrev_free_expansion_J": 0.0,
+      "q_irrev_over_T_J_per_mol_K": 0.0,
+      "dS_surroundings_rev_J_per_mol_K": -5.763,
+      "dS_universe_rev_J_per_mol_K": 0.0,
+      "dS_surroundings_irrev_J_per_mol_K": 0.0,
+      "dS_universe_irrev_J_per_mol_K": 5.763,
+      "clausius_inequality_holds": true,
+      "distinguishes_system_dS_from_q_over_T": true
+    },
+    "negative_fixture_entropy_disorder": {
+      "fallacy_claim": "entropy equals disorder; synthesis always has negative dS",
+      "u3_dipeptide_synthesis": {
+        "reaction": "Leu(s) + Gly(s) -> Leu-Gly(s) + H2O(l)",
+        "S_leu_J": 207.0,
+        "S_gly_J": 122.0,
+        "S_leugly_J": 281.0,
+        "S_h2o_l_J": 70.0,
+        "d_rS_J_per_mol_K": 22.0,
+        "is_synthesis": true,
+        "dS_positive": true
+      },
+      "u2_dissolution": {
+        "reaction": "NH4NO3(s) -> NH4+(aq) + NO3-(aq)",
+        "d_rS_J_per_mol_K": 108.72,
+        "is_spontaneous_endothermic": true
+      },
+      "generic_disorder_shorthand_fails": true
+    },
+    "boundary_fixture_third_law": {
+      "statement": "lim(T->0) S = 0 strictly limited to perfect crystal at 0 K",
+      "perfect_crystal_W": 1,
+      "perfect_crystal_S0_J_per_mol_K": 0.0,
+      "ice_Ih_pauling_residual_entropy_J_per_mol_K": 3.37,
+      "co_solid_residual_entropy_J_per_mol_K": 5.76,
+      "n2o_solid_residual_entropy_J_per_mol_K": 5.76,
+      "amorphous_glass_residual_entropy_greater_than_zero": true,
+      "third_law_limited_to_perfect_crystal": true
+    }
+  },
+  "c05_c06": {
+    "positive_vector_equilibrium": {
+      "statement": "At chemical equilibrium Q = K, reaction driving force ceases: ΔrG = 0",
+      "T_K": 298.15,
+      "R_J_per_mol_K": 8.31446,
+      "RT_kJ_per_mol": 2.47896,
+      "ex1_d_rG0_kJ_per_mol": -16.7,
+      "ex1_ln_K": 6.7367,
+      "ex1_K": 842.78,
+      "ex1_Q_at_equilibrium": 842.78,
+      "ex1_d_rG_at_equilibrium_kJ_per_mol": -0.0,
+      "k_greater_than_1": {
+        "K": 10.0,
+        "ln_K": 2.3026,
+        "d_rG0_kJ_per_mol": -5.708,
+        "favors_products": true,
+        "d_rG0_negative": true
+      },
+      "k_less_than_1": {
+        "K": 0.1,
+        "ln_K": -2.3026,
+        "d_rG0_kJ_per_mol": 5.708,
+        "favors_reactants": true,
+        "d_rG0_positive": true
+      },
+      "k_equal_to_1": {
+        "K": 1.0,
+        "ln_K": 0.0,
+        "d_rG0_kJ_per_mol": 0.0,
+        "equilibrium_at_standard_state": true
+      },
+      "derived_equilibrium_returns_zero_at_Q_equals_K": true
+    },
+    "negative_fixture_dG0_sign": {
+      "fallacy_claim": "ΔrG° > 0 means reaction is forbidden and cannot proceed forward",
+      "endergonic_reaction_d_rG0_kJ_per_mol": 13.8,
+      "K_eq": 0.003822,
+      "Q_low": 1e-05,
+      "actual_d_rG_kJ_per_mol": -14.74,
+      "proceeds_forward_despite_positive_dG0": true,
+      "coupled_d_rG0_kJ_per_mol": -16.7,
+      "proceeds_via_coupling": true,
+      "dG0_sign_alone_as_actual_direction_fails": true
+    },
+    "boundary_fixture_crossover": {
+      "statement": "Linear crossover T_kr = dH/dS assumes constant dH, dS and cannot cross phase boundaries or decomposition limits",
+      "u1_syngas": {
+        "dH_kJ": 210.0,
+        "dS_J_per_K": 216.0,
+        "T_kr_K": 972.2,
+        "valid_gas_phase": true,
+        "is_physical": true
+      },
+      "u2_nh4no3_dissolution": {
+        "dH_kJ": 28.05,
+        "dS_J_per_K": 108.72,
+        "T_kr_K": 258.0,
+        "below_water_freezing_273K": true,
+        "is_mathematical_only": true
+      },
+      "u3_leugly_synthesis": {
+        "dH_kJ": 21.0,
+        "dS_J_per_K": 22.0,
+        "T_kr_K": 954.5,
+        "above_amino_acid_decomposition_limit": true,
+        "is_biological_fiction": true
+      },
+      "u6_1_barium_sulfate": {
+        "dH_kJ": -44.65,
+        "dS_J_per_K": 90.03,
+        "T_kr_K": -495.9,
+        "negative_kelvin_rejected": true,
+        "is_unphysical": true
+      },
+      "crossover_not_extrapolated_outside_range": true
+    }
+  },
+  "c06_c07": {
+    "positive_vector_open_system": {
+      "organism_system_type": "open",
+      "cell_system_type": "open",
+      "matter_crosses_boundary": true,
+      "energy_crosses_boundary": true,
+      "steady_state": {
+        "dc_dt": 0.0,
+        "flux_J_greater_than_zero": true,
+        "v_net_greater_than_zero": true,
+        "dG_not_zero": true,
+        "d_iS_J_per_K": 18.0,
+        "d_eS_J_per_K": -18.0,
+        "dS_org_J_per_K": 0.0,
+        "dS_vis_J_per_K": 18.0
+      },
+      "equilibrium": {
+        "dc_dt": 0.0,
+        "flux_J": 0.0,
+        "v_net": 0.0,
+        "dG_kJ_per_mol": 0.0,
+        "d_iS_J_per_K": 0.0,
+        "d_eS_J_per_K": 0.0,
+        "dS_org_J_per_K": 0.0,
+        "W_max_J": 0.0
+      },
+      "student_classifies_open_system_and_steady_state_correctly": true
+    },
+    "negative_fixture_isolated_equilibrium": {
+      "isolated_organism_d_eS_is_zero": true,
+      "isolated_organism_dS_equals_diS_positive": true,
+      "isolated_organism_relaxes_to_death": true,
+      "equilibrium_cell_dG_equals_zero": true,
+      "equilibrium_cell_cannot_maintain_ion_gradients": true,
+      "equilibrium_cell_corresponds_to_necrosis": true,
+      "organism_called_isolated_or_equilibrium_without_assumptions_fails": true
+    },
+    "boundary_prigogine_generalization": {
+      "requires_fixed_boundary_constraints": true,
+      "requires_linear_flux_force_relations": true,
+      "requires_symmetric_onsager_coefficients": true,
+      "requires_near_equilibrium_regime": true,
+      "living_systems_operate_far_from_equilibrium": true,
+      "living_systems_are_nonlinear": true,
+      "generalization_to_all_living_systems_rejected": true,
+      "remove_prigogine_generalization_without_primary_source": true
+    }
+  },
+  "c08": {
+    "positive_vector_coupling": {
+      "statement": "Coupled net reaction sign is calculated from stoichiometric sums; cellular driving force ΔG_šūnā incorporates actual reaction quotient Q",
+      "hexokinase_coupling": {
+        "endergonic_glucose_phosphorylation_d_rG0_prime_kJ": 13.8,
+        "exergonic_atp_hydrolysis_d_rG0_prime_kJ": -30.5,
+        "coupled_net_reaction_d_rG0_prime_kJ": -16.7,
+        "net_reaction_is_spontaneous": true
+      },
+      "cellular_gibbs_energy": {
+        "T_K": 310.15,
+        "RT_kJ_per_mol": 2.5787,
+        "atp_M": 0.005,
+        "adp_M": 0.0005,
+        "pi_M": 0.005,
+        "mass_action_quotient_Q": 0.0005,
+        "RT_ln_Q_kJ_per_mol": -19.6,
+        "actual_cell_d_rG_kJ_per_mol": -50.1,
+        "dG_cell_substantially_more_negative_than_dG0_prime": true
+      },
+      "pyrophosphate_pathway": {
+        "step1_atp_to_amp_plus_ppi_kJ": -45.6,
+        "step2_ppi_hydrolysis_kJ": -19.2,
+        "net_atp_to_amp_plus_2pi_kJ": -64.8,
+        "course_k_p16_erroneous_value_kJ": -61.0,
+        "course_k_p16_stoichiometry_and_doubling_disproved": true
+      },
+      "coupled_net_reaction_sign_is_calculated_from_stoichiometric_sums": true
+    },
+    "negative_fixture_mixing_dG0_prime_and_actual_dG": {
+      "fallacy": "Treating transformed standard ΔG°′ (−30.5 kJ/mol) as in-cell driving force, ignoring intracellular quotient Q and high [ATP]/[ADF] ratio",
+      "standard_value_kJ_per_mol": -30.5,
+      "actual_cell_value_kJ_per_mol": -50.1,
+      "underestimation_error_kJ_per_mol": 19.6,
+      "physical_standard_dG0_at_pH0_kJ_per_mol": -35.7,
+      "physical_standard_dG0_unusable_in_biology": true,
+      "mixing_dG0prime_and_actual_dG_is_caught": true
+    },
+    "boundary_fixture_atp_conditions": {
+      "statement": "Each ATP value must name exact reaction products and thermodynamic conditions (pH, [Mg2+], T, concentrations)",
+      "orthophosphate_cleavage": {
+        "reaction": "ATP + H2O ⇌ ADP + Pi",
+        "products": [
+          "ADP",
+          "Pi"
+        ],
+        "d_rG0_prime_kJ_per_mol": -30.5,
+        "conditions": "pH 7.0, T = 298.15 K, p = 1 bar, [Mg2+] = 1 mM, [H2O] = 55.5 M, I = 0.25 M"
+      },
+      "pyrophosphate_cleavage_isolated": {
+        "reaction": "ATP + H2O ⇌ AMP + PPi",
+        "products": [
+          "AMP",
+          "PPi"
+        ],
+        "water_stoichiometry": 1,
+        "d_rG0_prime_kJ_per_mol": -45.6,
+        "conditions": "pH 7.0, T = 298.15 K, [Mg2+] = 1 mM"
+      },
+      "pyrophosphate_cleavage_coupled_with_pyrophosphatase": {
+        "reaction": "ATP + 2H2O ⇌ AMP + 2Pi",
+        "products": [
+          "AMP",
+          "2 Pi"
+        ],
+        "water_stoichiometry": 2,
+        "d_rG0_prime_kJ_per_mol": -64.8,
+        "conditions": "pH 7.0, T = 298.15 K, [Mg2+] = 1 mM, inorganic pyrophosphatase present"
+      },
+      "each_atp_value_names_products_and_conditions": true
+    }
+  },
+  "c09": {
+    "positive_vector_food_energy": {
+      "statement": "Learner identifies which method gives gross vs usable estimate: bomb calorimeter measures gross constant-volume heat (q_V = ΔU) with liquid water and N2; Atwater factors (4-9-4 kcal/g) calculate net metabolizable energy (ME) at constant pressure (p = const) taking into account digestive and urinary losses",
+      "units_and_conversions": {
+        "cal_th_J": 4.184,
+        "cal_15_J": 4.1855,
+        "kcal_kJ": 4.184,
+        "dietary_Calorie_equals_kcal": true,
+        "ratio_Cal_to_cal": 1000
+      },
+      "bomb_calorimeter_gross": {
+        "regime": "isochoric (V = const, ΔV = 0, A = 0, q_V = ΔU)",
+        "oxygen_pressure_bar": "25-30",
+        "water_product_phase": "H2O(l) (condensed, gross heating value)",
+        "nitrogen_product": "N2(g)",
+        "carbohydrates_kcal_per_g": 4.1,
+        "fat_kcal_per_g": 9.45,
+        "protein_kcal_per_g": 5.65,
+        "alcohol_kcal_per_g": 7.1,
+        "protein_kJ_per_g": 23.64,
+        "fat_kJ_per_g": 39.54,
+        "carbohydrates_kJ_per_g": 17.15
+      },
+      "atwater_physiological_system": {
+        "regime": "isobaric metabolic turnover (p = const, q_p = ΔH)",
+        "energy_concept": "Metabolizable Energy (ME = Gross Energy - Fecal Energy - Urinary Energy)",
+        "digestibility_coefficients": {
+          "carbohydrates": 0.98,
+          "fat": 0.95,
+          "protein": 0.92
+        },
+        "protein_urinary_loss_kcal_per_g": 1.25,
+        "protein_loss_mechanism": "Nitrogen excreted as urea ((NH2)2CO) with unoxidized enthalpy Δ_c H° = -632 kJ/mol",
+        "atwater_factors_kcal_per_g": {
+          "carbohydrates": 4,
+          "fat": 9,
+          "protein": 4
+        },
+        "atwater_factors_kJ_per_g": {
+          "carbohydrates": 16.7,
+          "fat": 37.7,
+          "protein": 16.7
+        }
+      },
+      "protein_atwater_calc": 4.0,
+      "learner_identifies_gross_vs_usable_method": true
+    },
+    "negative_fixture_bomb_conflation": {
+      "fallacy": "Treating Atwater factors (9/4/4 kcal/g) as bomb-calorimeter measurements (K pp.17-18, S24) or confusing cal and kcal in nutritional/clinical dosing",
+      "conflation_error_protein_gross_vs_atwater_kcal": 1.65,
+      "conflation_percentage_error_protein": 29.2,
+      "cal_vs_kcal_factor_error": 1000,
+      "clinical_refeeding_hypoglycemia_risk": true,
+      "kcal_per_g_factors_labelled_bomb_measurements_fails": true
+    },
+    "boundary_fixture_energy_accounting": {
+      "statement": "Water phase and energy accounting named; bomb measures q_V with liquid water H2O(l) and N2; human body excretes urea at p = const; 2680 kcal requirement labeled pending primary source",
+      "bomb_water_phase": "H2O(l)",
+      "bomb_latent_heat_retained": "Liquid water condensation adds ~44 kJ/mol to gross heat",
+      "thermodynamic_boundary_bomb": "V = const, q_V = ΔU",
+      "thermodynamic_boundary_body": "open steady-state system, p = const, q_p = ΔH",
+      "energy_accounting_chain": "Gross Energy (GE) -> Digestible Energy (DE = GE - FE) -> Metabolizable Energy (ME = DE - UE)",
+      "k_p17_2680_kcal_status": "Illustrative historical value in K p.17; primary demographic and physiological basis unsourced; kept as illustrative baseline pending primary source",
+      "unsupported_2680_kcal_labeled_pending_source": true,
+      "water_phase_and_energy_accounting_named": true
+    }
+  },
+  "c12": {
+    "positive_vector_neutralisation_lab": {
+      "statement": "Source sequence is monotonic from protocol to 4 evidence-cited conclusions; limiting reagent identified, sign path q_solution > 0 => q_rxn < 0 => ΔH_r < 0 verified, and conclusion cites measured data",
+      "reactants": {
+        "NaOH_volume_mL": 160.0,
+        "NaOH_conc_M": 0.2,
+        "HCl_volume_mL": 40.0,
+        "HCl_conc_M": 1.0,
+        "total_mass_g": 200.0,
+        "n_OH_mol": 0.032,
+        "n_H_mol": 0.04,
+        "limiting_reagent": "NaOH (OH⁻)",
+        "limiting_amount_mol": 0.032,
+        "excess_acid_mol": 0.008
+      },
+      "energy_and_sign_path": {
+        "dT_observed_K": 2.0,
+        "q_solution_J": 1673.6,
+        "q_rxn_J": -1673.6,
+        "dH_rxn_kJ_per_mol": -52.3,
+        "sign_chain": "q_solution > 0 => q_rxn < 0 => ΔH_r = q_p < 0"
+      },
+      "theoretical_benchmark_and_uncertainty": {
+        "dH_theory_kJ_per_mol": -56.19,
+        "dT_theory_K": 2.15,
+        "dT_difference_K": 0.15,
+        "relative_discrepancy_pct": 6.9,
+        "thermometer_resolution_K": 0.1,
+        "combined_dT_uncertainty_K": 0.14,
+        "relative_dT_uncertainty_pct": 7.1,
+        "discrepancy_within_measurement_uncertainty": true
+      },
+      "four_conclusions_mapped": {
+        "1_spontaneity": "ΔrG° < 0 (spontaneous at standard conditions)",
+        "2_heat_effect": "ΔrH < 0, q_solution > 0 (exothermic reaction)",
+        "3_error_direction": "|ΔH_exp| (52.3 kJ/mol) < |ΔrH°| (56.19 kJ/mol); systematic loss to surroundings and calorimeter lowers ΔT",
+        "4_theory_prediction_and_budget": "ΔT_theor = 2.15 K, ΔT_diff = 0.15 K, within thermometer resolution uncertainty (±7%)"
+      },
+      "sequence_is_monotonic_and_conclusion_cites_data": true
+    },
+    "negative_fixture_sign_conflation": {
+      "fallacy": "Positive ΔH for exothermic neutralisation (dropping negative sign in −ΔH = 52.3 kJ/mol from LA p.2 or setting ΔH = +q_solution / n)",
+      "wrong_dH_sign_kJ_per_mol": 52.3,
+      "violates_first_law_sign_convention": true,
+      "positive_dH_for_exothermic_neutralisation_fails": true
+    },
+    "boundary_fixture_calorimeter_capacity": {
+      "statement": "Unknown calorimeter correction remains unknown; in student open-cup calorimetry, C_kal is omitted (assumed 0 J/K in baseline calculation); without an empirical calibration run, C_kal cannot be fabricated from thin air and remains an acknowledged uncorrected systematic error bound",
+      "student_baseline_assumed_C_kal_J_per_K": 0.0,
+      "true_C_kal_status": "uncalibrated / unknown without separate standard electrical or dissolution run",
+      "illustrative_calibration_C_kal_J_per_K": 20.0,
+      "illustrative_corrected_dH_kJ_per_mol": -53.55,
+      "illustrative_corrected_error_pct": 4.7,
+      "unknown_calorimeter_correction_remains_unknown": true
+    }
+  },
+  "condition_cases": {
+    "schema": "F12-condition-cases-1",
+    "reference_T_K": 298.15,
+    "reference_p_bar": 1.0,
+    "pressure_note": "1 atm = 1,01325 bar. Viena gāzes mola standartķīmiskais potenciāls starp 1 bar un 1 atm mainās par RT ln(1,01325) = 0,0326 kJ/mol; reakcijai to reizina ar Δn(gāze).",
+    "unknown_warning": "Ja rindā nav (aq), (g), (l) vai (s), tā ir nezināma fāze: vērtību nepievieno un nepieņem ne aq, ne g. Vispirms atrod avota fāzes indeksu; tikai pēc tam izvēlas rindu.",
+    "cases": [
+      {
+        "case_id": "o2-u5",
+        "case_type": "phase",
+        "title": "O₂: šķīdums vai gāze U5 fotosintēzē",
+        "question": "U5 fotosintēzes datos skābeklis ir O₂(aq) vai O₂(g)?",
+        "species": "O2",
+        "expected_state": "aq",
+        "expected_label": "O₂(aq) — ūdenī izšķīdis skābeklis",
+        "T_K": 298.15,
+        "p_bar": 1.0,
+        "warrant": "U5 lapā dotā ΔfH°(O₂) = −11,715 kJ/mol un S° = 110,876 J/(mol·K) ir šķīduma O₂(aq) kopa. Gāzei O₂(g) ΔfH° = 0 un S° = 205,07; tā ir cita fāze, nevis tā pati viela.",
+        "excluded_reason": "O₂(g) ir derīga gāzveida standartstāvoklim, bet U5 reakcija notiek ūdens šķīdumā. Gāzes nulle nav savienojama ar pārējiem šķīduma datiem; tā maina ΔrH° par +70,29 kJ.",
+        "impact": {
+          "label": "ΔrH° U5",
+          "expected": "+2805,27 kJ/mol",
+          "other": "+2875,56 kJ/mol",
+          "delta": "+70,29 kJ/mol"
+        },
+        "anchors": [
+          "#task-u5",
+          "#defect-S28",
+          "#notation-key"
+        ],
+        "rows": [
+          {
+            "row_id": "o2-aq-h",
+            "species": "O2",
+            "state": "aq",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": -11.715,
+            "unit": "kJ/mol",
+            "source": "U5 2. lpp.; S28",
+            "uncertainty": "±0,001",
+            "status": "admissible",
+            "reason": "Šķīduma fāzes veidošanās entalpija; tā nav gāzes nulle."
+          },
+          {
+            "row_id": "o2-aq-s",
+            "species": "O2",
+            "state": "aq",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "S°",
+            "value": 110.876,
+            "unit": "J/(mol·K)",
+            "source": "U5 2. lpp.; S28",
+            "uncertainty": "±0,001",
+            "status": "admissible",
+            "reason": "Solvatētam O₂ ir mazāk translācijas brīvību nekā gāzei."
+          },
+          {
+            "row_id": "o2-aq-g",
+            "species": "O2",
+            "state": "aq",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfG°",
+            "value": 16.4,
+            "unit": "kJ/mol",
+            "source": "U5 2. lpp.; S28",
+            "uncertainty": "±0,1",
+            "status": "admissible",
+            "reason": "Šķīduma standartbrīvā enerģija; nav 0."
+          },
+          {
+            "row_id": "o2-g-h",
+            "species": "O2",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": 0.0,
+            "unit": "kJ/mol",
+            "source": "U5 2. lpp.; NIST",
+            "uncertainty": "definīcija",
+            "status": "excluded",
+            "reason": "Gāzveida elementa atskaites nulle; U5 šķīdumam nav derīga."
+          },
+          {
+            "row_id": "o2-g-s",
+            "species": "O2",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "S°",
+            "value": 205.07,
+            "unit": "J/(mol·K)",
+            "source": "U5 2. lpp.; NIST",
+            "uncertainty": "±0,05",
+            "status": "excluded",
+            "reason": "Gāzes entropija; U5 tabulā lietota 110,876 (aq)."
+          },
+          {
+            "row_id": "o2-g-g",
+            "species": "O2",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfG°",
+            "value": 0.0,
+            "unit": "kJ/mol",
+            "source": "U5 2. lpp.; NIST",
+            "uncertainty": "definīcija",
+            "status": "excluded",
+            "reason": "Gāzveida elementa atskaites nulle; nevis šķīduma vērtība."
+          }
+        ]
+      },
+      {
+        "case_id": "h2o-phase",
+        "case_type": "phase",
+        "title": "H₂O: šķidrums vai tvaiks 298,15 K",
+        "question": "Kura ūdens fāze ir stabila pie 298,15 K un 1 bar?",
+        "species": "H2O",
+        "expected_state": "l",
+        "expected_label": "H₂O(l) — šķidrs ūdens",
+        "T_K": 298.15,
+        "p_bar": 1.0,
+        "warrant": "Pie 298,15 K un 1 bar ūdens stabilā fāze ir šķidra. H₂O(g) tabulas vērtība ir hipotētisks ideālas gāzes standartstāvoklis; to lieto tvaikam augstākā temperatūrā vai zemā daļspiedienā.",
+        "excluded_reason": "H₂O(g) nedrīkst automātiski aizstāt H₂O(l) sadegšanas vai veidošanās reakcijā: fāze maina ΔfG° par 8,62 kJ/mol un sadegšanas bruto/neto siltumu.",
+        "impact": {
+          "label": "ΔfG°(H₂O)",
+          "expected": "−237,19 kJ/mol",
+          "other": "−228,57 kJ/mol",
+          "delta": "8,62 kJ/mol"
+        },
+        "anchors": [
+          "#app-table-k19",
+          "#defect-S25"
+        ],
+        "rows": [
+          {
+            "row_id": "h2o-l-h",
+            "species": "H2O",
+            "state": "l",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": -286.0,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.",
+            "uncertainty": "±0,01",
+            "status": "admissible",
+            "reason": "Šķidra ūdens veidošanās entalpija."
+          },
+          {
+            "row_id": "h2o-l-g",
+            "species": "H2O",
+            "state": "l",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfG°",
+            "value": -237.19,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.",
+            "uncertainty": "±0,01",
+            "status": "admissible",
+            "reason": "Šķidra ūdens standartbrīvā enerģija."
+          },
+          {
+            "row_id": "h2o-l-s",
+            "species": "H2O",
+            "state": "l",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "S°",
+            "value": 69.956,
+            "unit": "J/(mol·K)",
+            "source": "K 19. lpp.",
+            "uncertainty": "±0,005",
+            "status": "admissible",
+            "reason": "Šķidra ūdens absolūtā entropija."
+          },
+          {
+            "row_id": "h2o-g-h",
+            "species": "H2O",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": -241.84,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.; S25; NIST",
+            "uncertainty": "±0,01",
+            "status": "excluded",
+            "reason": "Tvaika veidošanās entalpija; nav tas pats stāvoklis kā H₂O(l)."
+          },
+          {
+            "row_id": "h2o-g-g",
+            "species": "H2O",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfG°",
+            "value": -228.57,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.; S25; NIST",
+            "uncertainty": "±0,01",
+            "status": "excluded",
+            "reason": "Tvaika standartbrīvā enerģija; atšķiras par 8,62 kJ/mol."
+          },
+          {
+            "row_id": "h2o-g-s",
+            "species": "H2O",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "S°",
+            "value": 188.4,
+            "unit": "J/(mol·K)",
+            "source": "K 19. lpp.; S25; NIST",
+            "uncertainty": "±0,1",
+            "status": "excluded",
+            "reason": "Tvaika entropija; lielāka par šķidruma entropiju."
+          }
+        ]
+      },
+      {
+        "case_id": "n2o5-phase",
+        "case_type": "phase",
+        "title": "N₂O₅: cieta viela vai gāze",
+        "question": "K 19. lpp. N₂O₅ skaitļi atbilst cietai vielai vai gāzei?",
+        "species": "N2O5",
+        "expected_state": "s",
+        "expected_label": "N₂O₅(s) — cieta viela",
+        "T_K": 298.15,
+        "p_bar": 1.0,
+        "warrant": "K 19. lpp. dotie −43,1 kJ/mol, 113,9 kJ/mol un 178,2 J/(mol·K) atbilst kristāliskai cietai vielai. Gāzei ΔfH° ir +11,3 kJ/mol, tāpēc oriģinālais fāzes indekss «gāze» ir kļūda (S25).",
+        "excluded_reason": "N₂O₅(g) ar ΔfH° = +11,3 kJ/mol nav tā pati viela kā N₂O₅(s) ar −43,1 kJ/mol; starpība ir 54,4 kJ/mol. Fāzes indeksu nedrīkst noklusēt vai pārnest no tabulas.",
+        "impact": {
+          "label": "ΔfH°(N₂O₅)",
+          "expected": "−43,1 kJ/mol",
+          "other": "+11,3 kJ/mol",
+          "delta": "54,4 kJ/mol"
+        },
+        "anchors": [
+          "#app-table-k19",
+          "#defect-S25"
+        ],
+        "rows": [
+          {
+            "row_id": "n2o5-s-h",
+            "species": "N2O5",
+            "state": "s",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": -43.1,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.; S25",
+            "uncertainty": "±0,1",
+            "status": "admissible",
+            "reason": "Kristāliskas cietas vielas veidošanās entalpija."
+          },
+          {
+            "row_id": "n2o5-s-g",
+            "species": "N2O5",
+            "state": "s",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfG°",
+            "value": 113.9,
+            "unit": "kJ/mol",
+            "source": "K 19. lpp.; S25",
+            "uncertainty": "±0,1",
+            "status": "admissible",
+            "reason": "Cietas vielas standartbrīvā enerģija."
+          },
+          {
+            "row_id": "n2o5-s-s",
+            "species": "N2O5",
+            "state": "s",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "S°",
+            "value": 178.2,
+            "unit": "J/(mol·K)",
+            "source": "K 19. lpp.; S25",
+            "uncertainty": "±0,1",
+            "status": "admissible",
+            "reason": "Cietas vielas absolūtā entropija."
+          },
+          {
+            "row_id": "n2o5-g-h",
+            "species": "N2O5",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "ΔfH°",
+            "value": 11.3,
+            "unit": "kJ/mol",
+            "source": "S25 labojums; NIST",
+            "uncertainty": "±0,1",
+            "status": "excluded",
+            "reason": "Gāzveida N₂O₅ veidošanās entalpija; nav kursa cietās vielas vērtība."
+          }
+        ]
+      },
+      {
+        "case_id": "pressure-standard",
+        "case_type": "pressure",
+        "title": "1 bar vai 1 atm: gāzes standartspiediens",
+        "question": "Kāpēc vecākās tabulās 1 atm un jaunajās 1 bar dod nedaudz citādu skaitli?",
+        "species": "gāze (standartstāvoklis)",
+        "expected_state": "g",
+        "expected_label": "p° = 1 bar",
+        "T_K": 298.15,
+        "p_bar": 1.0,
+        "warrant": "1 bar ir pašreizējais standartspiediens; 1 atm = 1,01325 bar ir vecākā konvencija. Uz vienu gāzes molu starpība ir 0,0326 kJ/mol; reakcijā to reizina ar Δn(gāze), tāpēc dažreiz tā saīsinās.",
+        "excluded_reason": "1 atm nav «nepareiza» vērtība, ja tabula to skaidri marķē. To pārrēķina uz 1 bar, nevis sajauc ar to pašu tabulu; bez etiķetes abas vērtības nav salīdzināmas.",
+        "impact": {
+          "label": "μ° starpība",
+          "expected": "0,0000 kJ/mol (1 bar)",
+          "other": "+0,0326 kJ/mol (1 atm)",
+          "delta": "0,0326 kJ/mol"
+        },
+        "anchors": [
+          "#app-table-k19",
+          "#sign-ledger"
+        ],
+        "rows": [
+          {
+            "row_id": "p-bar",
+            "species": "gāze (standartstāvoklis)",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.0,
+            "quantity": "μ° − μ°(1 bar)",
+            "value": 0.0,
+            "unit": "kJ/mol",
+            "source": "IUPAC; p° = 1 bar",
+            "uncertainty": "0",
+            "status": "admissible",
+            "reason": "Pašreizējais standartspiediens; atskaites nulle."
+          },
+          {
+            "row_id": "p-atm",
+            "species": "gāze (standartstāvoklis)",
+            "state": "g",
+            "T_K": 298.15,
+            "p_bar": 1.01325,
+            "quantity": "μ° − μ°(1 bar)",
+            "value": 0.0326,
+            "unit": "kJ/mol",
+            "source": "Aprēķins: RT ln(1,01325)",
+            "uncertainty": "±0,0001",
+            "status": "legacy",
+            "reason": "Vecākā 1 atm konvencija; pārrēķināma, nevis sajaucama."
+          }
+        ]
+      }
+    ]
+  },
+  "task20_f12": {
+    "workstream": "Conceptual comparison / boundary learning",
+    "claim": "C03,C05,C12",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true,
+    "case_count": 4,
+    "row_count": 18,
+    "no_default_phase": true,
+    "no_javascript": true
+  },
+  "t09_reconciliation": {
+    "positive_vector_reaction_sums": {
+      "statement": "Independent reaction sum reproduces chosen dataset across C03, C05, C08, C12",
+      "c03_co2_formation": {
+        "reaction": "C(graphite, s) + O2(g) -> CO2(g)",
+        "dH_kJ": -393.5,
+        "dS_J_K": 2.83,
+        "dG_eval_kJ": -394.34,
+        "expected_dG_kJ": -394.34,
+        "reproduces_dataset": true
+      },
+      "c03_h2o_g_formation": {
+        "reaction": "H2(g) + 0.5 O2(g) -> H2O(g)",
+        "dH_kJ": -241.84,
+        "dS_J_K": -44.715,
+        "dG_eval_kJ": -228.51,
+        "expected_dG_kJ": -228.51,
+        "reproduces_dataset": true
+      },
+      "c03_fecl3_hess_cycle": {
+        "step1_fecl2_kJ": -341.8,
+        "step2_fecl3_kJ": -57.7,
+        "sum_steps_kJ": -399.5,
+        "direct_fecl3_kJ": -399.5,
+        "diff_kJ": 0.0,
+        "reproduces_dataset": true
+      },
+      "c03_propene_cycle": {
+        "direct_hydrogenation_kJ": -124.0,
+        "combustion_sum_kJ": -124.0,
+        "reproduces_dataset": true
+      },
+      "c05_entropy_gibbs_matrix": {
+        "u1_reproduces": true,
+        "u2_reproduces": true,
+        "u3_reproduces": true,
+        "u5_course_reproduces": true,
+        "glucose_310_course_reproduces": true,
+        "glucose_310_standard_reproduces": true
+      },
+      "c08_biochemical_coupling": {
+        "glucose_phosphorylation_dG0_prime_kJ": 13.8,
+        "atp_hydrolysis_dG0_prime_kJ": -30.5,
+        "net_coupled_dG0_prime_kJ": -16.7,
+        "sum_matches_net": true,
+        "reproduces_dataset": true
+      },
+      "c12_calorimetry_lab": {
+        "theoretical_dH_kJ_per_mol": -56.19,
+        "course_route1_dG_kJ": -104.1,
+        "course_route2_dG_kJ": -102.2,
+        "kw_benchmark_dG_kJ": -79.91,
+        "reproduces_dataset": true
+      },
+      "independent_reaction_sum_reproduces_chosen_dataset": true
+    },
+    "negative_fixture_mixed_oxygen": {
+      "statement": "Mixed aqueous/gas oxygen row fails thermodynamic cycle closure",
+      "gas_oxygen_state": "O2(g)",
+      "aqueous_oxygen_state": "O2(aq)",
+      "dH_f_gas_kJ": 0.0,
+      "dH_f_aq_kJ": -11.715,
+      "S_298_gas_J_K": 205.07,
+      "S_298_aq_J_K": 110.876,
+      "unadjusted_6O2_dH_shift_kJ": 70.29,
+      "unadjusted_6O2_dS_shift_J_K": 565.164,
+      "unadjusted_6O2_dG_shift_kJ": -98.21,
+      "validator_rejects_mixed_phase": true,
+      "mixed_aqueous_gas_oxygen_row_fails": true
+    },
+    "boundary_fixture_reconciliation": {
+      "statement": "Source/course and corrected answer both retained across all reconciled claims",
+      "c03_k19_table": {
+        "co2_course_dG": -393.5,
+        "co2_corrected_dG": -394.38,
+        "h2o_g_course_dG": -288.6,
+        "h2o_g_corrected_dG": -228.57,
+        "n2o5_course_phase": "gāze (g)",
+        "n2o5_corrected_phase": "cieta viela (s)",
+        "n2o4_course_name": "dislāpekļa dioksīds",
+        "n2o4_corrected_name": "dislāpekļa tetraoksīds",
+        "both_retained": true
+      },
+      "c03_u5_oxygen": {
+        "course_answer_dH": 2805.27,
+        "course_answer_dG": 2570.44,
+        "course_o2_phase": "aq (kursa drukātajos datos)",
+        "corrected_answer_dH": 2875.56,
+        "corrected_answer_dG": 2809.29,
+        "corrected_o2_phase": "g (standartstāvoklis)",
+        "both_retained": true
+      },
+      "c05_glucose_310": {
+        "course_k11_dS": 182.4,
+        "course_k11_dG310": -2864.57,
+        "corrected_dS": 259.5,
+        "corrected_dG310": -2888.48,
+        "both_retained": true
+      },
+      "c08_atp_coupling": {
+        "course_k16_standard_dG0_prime": -30.5,
+        "corrected_cellular_dG": -53.5,
+        "atp_amp_ppi_dG0_prime": -45.6,
+        "both_retained": true
+      },
+      "c12_calorimetry_neutralisation": {
+        "course_la_dG_route1": -104.1,
+        "course_la_dG_route2": -102.2,
+        "course_la_dH_exp": -52.3,
+        "course_reverse_dG": 102.2,
+        "corrected_kw_dG": -79.91,
+        "corrected_theory_dH": -56.19,
+        "corrected_reverse_kw_dG": 79.91,
+        "both_retained": true
+      },
+      "source_course_and_corrected_answer_both_retained": true
+    },
+    "discrepancy_table": [
+      {
+        "id": "DISC-01",
+        "species_or_reaction": "CO2(g) ΔfG°",
+        "source_value": "-393,5 kJ/mol (K 19. lpp.)",
+        "evaluated_value": "-394,34 kJ/mol (no S°), -394,38 kJ/mol (NIST)",
+        "assumptions": "Veidošanās no C(grafīts, s) + O2(g) pie 298,15 K, p° = 1 bar",
+        "discrepancy": "0,88 kJ/mol (avotā dublēts ΔfH°)",
+        "defect_id": "S25",
+        "claim_id": "C03",
+        "status": "C / S"
+      },
+      {
+        "id": "DISC-02",
+        "species_or_reaction": "H2O(g) ΔfG°",
+        "source_value": "-288,6 kJ/mol (K 19. lpp.)",
+        "evaluated_value": "-228,51 kJ/mol (no S°), -228,57 kJ/mol (NIST), -229,0 kJ/mol (U4)",
+        "assumptions": "Veidošanās no H2(g) + 0,5 O2(g) pie 298,15 K; tvaika fāze",
+        "discrepancy": "60,03 kJ/mol (iespiedkļūda avotā; zemāks par šķidru ūdeni)",
+        "defect_id": "S25",
+        "claim_id": "C03",
+        "status": "C / S"
+      },
+      {
+        "id": "DISC-03",
+        "species_or_reaction": "N2O5 fāzes stāvoklis",
+        "source_value": "gāze (g) (K 19. lpp.)",
+        "evaluated_value": "cieta viela (s) pie 298,15 K",
+        "assumptions": "Dotie skaitļi (-43,1 kJ/mol, 113,9 kJ/mol, 178,2 J/(mol·K)) atbilst kristāliskam nitronija nitrātam NO2+NO3- (s)",
+        "discrepancy": "Fāzes marķējuma kļūda (gāzei ΔfH° = +11,3 kJ/mol)",
+        "defect_id": "S25",
+        "claim_id": "C03",
+        "status": "H / S"
+      },
+      {
+        "id": "DISC-04",
+        "species_or_reaction": "N2O4 nosaukums",
+        "source_value": "dislāpekļa dioksīds (K 19. lpp.)",
+        "evaluated_value": "dislāpekļa tetraoksīds",
+        "assumptions": "IUPAC stehiometriskā nomenklatūra",
+        "discrepancy": "Terminoloģiska kļūda (dioksīds vietā tetraoksīds)",
+        "defect_id": "S25",
+        "claim_id": "C03",
+        "status": "C / S"
+      },
+      {
+        "id": "DISC-05",
+        "species_or_reaction": "U5 Fotosintēze / glikozes sintēze ΔrH°",
+        "source_value": "+2805,27 kJ/mol (U5 lapa ar O2(aq)); 1273 kJ/mol (K 4. lpp.)",
+        "evaluated_value": "+2875,56 kJ/mol (ar standarta O2(g) fāzi)",
+        "assumptions": "U5 lapā O2 dotas ūdens šķīduma O2(aq) vērtības (-11,715 kJ/mol); gāzveida O2(g) standartā ΔfH° = 0",
+        "discrepancy": "70,29 kJ/mol nobīde (6 × 11,715 kJ/mol izšķīšanas siltums); K p.4 kļūda par ~1532 kJ/mol",
+        "defect_id": "S5, S28",
+        "claim_id": "C03",
+        "status": "C / S/X"
+      },
+      {
+        "id": "DISC-06",
+        "species_or_reaction": "U5 Fotosintēze ΔrS° un ΔrG°",
+        "source_value": "ΔrS° = +787,63 J/(mol·K), ΔrG° = +2570,44 kJ/mol (U5 dati)",
+        "evaluated_value": "ΔrS° = +1352,79 J/(mol·K), ΔrG° = +2472,23 kJ/mol (ar O2(g))",
+        "assumptions": "O2(aq) S° = 110,876 J/(mol·K) vs O2(g) S° = 205,07 J/(mol·K)",
+        "discrepancy": "ΔS nobīde par 565,16 J/(mol·K); ΔG nobīde par 98,21 kJ/mol",
+        "defect_id": "S28",
+        "claim_id": "C03, C05",
+        "status": "C / S/X"
+      },
+      {
+        "id": "DISC-07",
+        "species_or_reaction": "Glikozes oksidēšanās pie 310,15 K (37 °C)",
+        "source_value": "ΔrS° = 182,4 J/(mol·K), ΔrG(310) = -2864,57 kJ/mol (K 11. lpp.)",
+        "evaluated_value": "ΔrS° = 259,5 J/(mol·K), ΔrG(310) = -2888,48 kJ/mol (standarta entropijas)",
+        "assumptions": "K 11. lpp. pretrunīgi apgalvo 'standartapstākļos 37 °C'; pieņemts ΔCp ≈ 0",
+        "discrepancy": "ΔS starpība 77,1 J/(mol·K); ΔG starpība 23,91 kJ/mol",
+        "defect_id": "S16",
+        "claim_id": "C05",
+        "status": "H / S/X"
+      },
+      {
+        "id": "DISC-08",
+        "species_or_reaction": "ATF hidrolīzes brīvā enerģija",
+        "source_value": "ΔG°' = -30,5 kJ/mol (vispārināts K 16. lpp.); -45,6 kJ/mol (ATF -> AMP + PPi)",
+        "evaluated_value": "ΔG_šūnā ≈ -50 līdz -57 kJ/mol (in-vivo šūnas apstākļos)",
+        "assumptions": "Bioloģiskais standartstāvoklis pH 7, 1 mM Mg2+; šūnas faktiskais koeficients Q = [ADP][Pi]/[ATP] ≈ 10^-3",
+        "discrepancy": "Fizioloģiskais dzinuļspēks ir par 20-27 kJ/mol negatīvāks nekā standartvērtība",
+        "defect_id": "S22",
+        "claim_id": "C08",
+        "status": "H / X"
+      },
+      {
+        "id": "DISC-09",
+        "species_or_reaction": "Neitralizācijas laboratorijas entalpija ΔrH",
+        "source_value": "'−ΔH = 52,3 kJ/mol' (LA 2. lpp., kļūdu provocējoša zīme)",
+        "evaluated_value": "ΔrH = -52,3 kJ/mol (eksperiments); ΔrH° = -56,19 kJ/mol (teorija)",
+        "assumptions": "Kafijas tases kalorimetrs ar C_kal = 0 J/K pieņēmumu; siltuma zudumi rada 6,9 % novirzi; teorētiskais ΔT = 2,15 K",
+        "discrepancy": "Zīmes konvencijas neskaidrība un 3,89 kJ/mol sistemātiskais zudums",
+        "defect_id": "S36, S37",
+        "claim_id": "C12",
+        "status": "C / S/X"
+      },
+      {
+        "id": "DISC-10",
+        "species_or_reaction": "Neitralizācijas ΔrG° un Kw etalons",
+        "source_value": "-104,10 kJ/mol (LA 2. lpp. 1. ceļš); -102,20 kJ/mol (2. ceļš)",
+        "evaluated_value": "-79,91 kJ/mol (no Kw = 1,0×10^-14 etalona: -RT ln(1/Kw))",
+        "assumptions": "Kursa tabulas H3O+(aq) vērtības (-285,81 kJ/mol, -3,854 J/(mol·K)) nav saskaņotas ar H+(aq) = 0 konvenciju",
+        "discrepancy": "1,90 kJ/mol iekšējā kursa pretruna un 22,28 kJ/mol novirze pret Kw",
+        "defect_id": "S33, S34",
+        "claim_id": "C12",
+        "status": "C / S/X"
+      },
+      {
+        "id": "DISC-11",
+        "species_or_reaction": "Ūdens autoprotolīze (apgrieztā neitralizācija)",
+        "source_value": "+102,20 kJ/mol (LA 2. lpp. pie '250 C' drukas kļūdas)",
+        "evaluated_value": "+79,91 kJ/mol (no Kw), vai +102,20 kJ/mol (ar kursa tabulas datiem)",
+        "assumptions": "T = 298,15 K (25 °C, nevis 250 °C); endotermisks un endergonisks patvaļības trūkums",
+        "discrepancy": "Pozitīva zīme apstiprina nepatvaļību; 22,28 kJ/mol starpība pret Kw",
+        "defect_id": "S35",
+        "claim_id": "C12",
+        "status": "C / S"
+      }
+    ],
+    "thermochemical_table_k19": [
+      {
+        "formula": "Ag",
+        "name_lv": "sudrabs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Ag(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 42.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      {
+        "formula": "AgNO3",
+        "name_lv": "sudraba nitrāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "AgNO3(s)",
+        "dH_f_298": -124.5,
+        "dG_f_298_source": -33.6,
+        "dG_f_298_eval": -33.6,
+        "dG_f_298_adopted": -33.6,
+        "S_298": 140.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "AgCl",
+        "name_lv": "sudraba hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "AgCl(s)",
+        "dH_f_298": -127.0,
+        "dG_f_298_source": -109.8,
+        "dG_f_298_eval": -109.8,
+        "dG_f_298_adopted": -109.8,
+        "S_298": 96.3,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "Al",
+        "name_lv": "alumīnijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Al(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 28.35,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      {
+        "formula": "Al3+",
+        "name_lv": "alumīnija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Al3+(aq)",
+        "dH_f_298": -530.0,
+        "dG_f_298_source": -490.54,
+        "dG_f_298_eval": -490.54,
+        "dG_f_298_adopted": -490.54,
+        "S_298": -301.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Negatīva entropija stipras hidratācijas dēļ"
+      },
+      {
+        "formula": "Al(OH)3",
+        "name_lv": "alumīnija hidroksīds",
+        "state": "s",
+        "state_full": "amorfa cieta viela (s)",
+        "state_symbol": "Al(OH)3(s)",
+        "dH_f_298": -1277.0,
+        "dG_f_298_source": -1143.0,
+        "dG_f_298_eval": -1143.0,
+        "dG_f_298_adopted": -1143.0,
+        "S_298": 82.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "C (grafīts)",
+        "name_lv": "ogleklis",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "C(graphite, s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 5.74,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Oglekļa termodinamiskais atskaites standartstāvoklis"
+      },
+      {
+        "formula": "C (dimants)",
+        "name_lv": "ogleklis",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "C(diamond, s)",
+        "dH_f_298": 1.9,
+        "dG_f_298_source": 2.8,
+        "dG_f_298_eval": 2.8,
+        "dG_f_298_adopted": 2.8,
+        "S_298": 2.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Metastabils alotrops standartapstākļos"
+      },
+      {
+        "formula": "CO",
+        "name_lv": "oglekļa monoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "CO(g)",
+        "dH_f_298": -110.5,
+        "dG_f_298_source": -137.1,
+        "dG_f_298_eval": -137.1,
+        "dG_f_298_adopted": -137.1,
+        "S_298": 197.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Toksiska gāze; singāzes komponents"
+      },
+      {
+        "formula": "CO2",
+        "name_lv": "oglekļa dioksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "CO2(g)",
+        "dH_f_298": -393.5,
+        "dG_f_298_source": -393.5,
+        "dG_f_298_eval": -394.34,
+        "dG_f_298_adopted": -394.38,
+        "S_298": 213.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19; NIST",
+        "defect_id": "S25",
+        "notes": "Oriģinālā dublēts −393,5; no S° ir −394,34, NIST −394,38"
+      },
+      {
+        "formula": "C2H5OH",
+        "name_lv": "etanols",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "C2H5OH(l)",
+        "dH_f_298": -278.0,
+        "dG_f_298_source": -175.0,
+        "dG_f_298_eval": -175.0,
+        "dG_f_298_adopted": -175.0,
+        "S_298": 161.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "Ca",
+        "name_lv": "kalcijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Ca(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 41.63,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      {
+        "formula": "Ca2+",
+        "name_lv": "kalcija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Ca2+(aq)",
+        "dH_f_298": -543.2,
+        "dG_f_298_source": -556.43,
+        "dG_f_298_eval": -556.43,
+        "dG_f_298_adopted": -556.43,
+        "S_298": -53.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "CaCl2",
+        "name_lv": "kalcija hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "CaCl2(s)",
+        "dH_f_298": -795.4,
+        "dG_f_298_source": -750.2,
+        "dG_f_298_eval": -750.2,
+        "dG_f_298_adopted": -750.2,
+        "S_298": 113.8,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Bezūdens sāls"
+      },
+      {
+        "formula": "CaCl2",
+        "name_lv": "kalcija hlorīds",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "CaCl2(aq)",
+        "dH_f_298": -877.3,
+        "dG_f_298_source": -816.59,
+        "dG_f_298_eval": -816.59,
+        "dG_f_298_adopted": -816.59,
+        "S_298": 59.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Šķīšanas entalpija Δ_šķH = −81,9 kJ/mol"
+      },
+      {
+        "formula": "Cl-",
+        "name_lv": "hlorīda jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Cl-(aq)",
+        "dH_f_298": -167.22,
+        "dG_f_298_source": -131.35,
+        "dG_f_298_eval": -131.35,
+        "dG_f_298_adopted": -131.35,
+        "S_298": 56.56,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "Cl2",
+        "name_lv": "hlors",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "Cl2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 223.13,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      {
+        "formula": "H2",
+        "name_lv": "ūdeņradis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "H2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 130.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      {
+        "formula": "H2O",
+        "name_lv": "ūdens",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "H2O(l)",
+        "dH_f_298": -286.0,
+        "dG_f_298_source": -237.19,
+        "dG_f_298_eval": -237.19,
+        "dG_f_298_adopted": -237.19,
+        "S_298": 69.956,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis istabas temperatūrā"
+      },
+      {
+        "formula": "H2O (tvaiks)",
+        "name_lv": "ūdens (tvaiks)",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "H2O(g)",
+        "dH_f_298": -241.84,
+        "dG_f_298_source": -288.6,
+        "dG_f_298_eval": -228.51,
+        "dG_f_298_adopted": -228.57,
+        "S_298": 188.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19; NIST",
+        "defect_id": "S25",
+        "notes": "Oriģinālā aplams −288,6; no S° ir −228,51, NIST −228,57"
+      },
+      {
+        "formula": "H3O+",
+        "name_lv": "hidroksonija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "H3O+(aq)",
+        "dH_f_298": -285.81,
+        "dG_f_298_source": -213.27,
+        "dG_f_298_eval": -213.27,
+        "dG_f_298_adopted": -213.27,
+        "S_298": -3.854,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S34",
+        "notes": "Kursa vērtība rada 22,3 kJ/mol pretrunu ar Kw"
+      },
+      {
+        "formula": "OH-",
+        "name_lv": "hidroksīda jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "OH-(aq)",
+        "dH_f_298": -230.0,
+        "dG_f_298_source": -157.0,
+        "dG_f_298_eval": -157.0,
+        "dG_f_298_adopted": -157.0,
+        "S_298": -10.539,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "K",
+        "name_lv": "kālijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "K(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 71.45,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      {
+        "formula": "K+",
+        "name_lv": "kālija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "K+(aq)",
+        "dH_f_298": -252.42,
+        "dG_f_298_source": -282.71,
+        "dG_f_298_eval": -282.71,
+        "dG_f_298_adopted": -282.71,
+        "S_298": 100.99,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "KCl",
+        "name_lv": "kālija hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "KCl(s)",
+        "dH_f_298": -436.85,
+        "dG_f_298_source": -409.05,
+        "dG_f_298_eval": -409.05,
+        "dG_f_298_adopted": -409.05,
+        "S_298": 82.61,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "N2",
+        "name_lv": "slāpeklis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 191.5,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      {
+        "formula": "NO2",
+        "name_lv": "slāpekļa dioksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NO2(g)",
+        "dH_f_298": 33.0,
+        "dG_f_298_source": 51.5,
+        "dG_f_298_eval": 51.5,
+        "dG_f_298_adopted": 51.5,
+        "S_298": 240.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Brūna paramagnētiska gāze; dimerizējas par N2O4"
+      },
+      {
+        "formula": "NO",
+        "name_lv": "slāpekļa monoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NO(g)",
+        "dH_f_298": 90.3,
+        "dG_f_298_source": 86.6,
+        "dG_f_298_eval": 86.6,
+        "dG_f_298_adopted": 86.6,
+        "S_298": 210.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Endotermisks radikālis; bioloģisks mediators"
+      },
+      {
+        "formula": "N2O",
+        "name_lv": "dislāpekļa oksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2O(g)",
+        "dH_f_298": 82.0,
+        "dG_f_298_source": 104.1,
+        "dG_f_298_eval": 104.1,
+        "dG_f_298_adopted": 104.1,
+        "S_298": 219.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Jautrības gāze, anestēzijas līdzeklis"
+      },
+      {
+        "formula": "N2O3",
+        "name_lv": "dislāpekļa trioksīds",
+        "state": "l",
+        "state_full": "šķidrums (l)",
+        "state_symbol": "N2O3(l)",
+        "dH_f_298": 83.3,
+        "dG_f_298_source": 140.6,
+        "dG_f_298_eval": 140.6,
+        "dG_f_298_adopted": 140.6,
+        "S_298": 307.3,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Zils šķidrums pie zemas temperatūras"
+      },
+      {
+        "formula": "N2O4",
+        "name_lv": "dislāpekļa tetraoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2O4(g)",
+        "dH_f_298": 9.6,
+        "dG_f_298_source": 98.01,
+        "dG_f_298_eval": 98.01,
+        "dG_f_298_adopted": 98.01,
+        "S_298": 304.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S25",
+        "notes": "Oriģinālā kļūdaini nosaukts dioksīds; pareizi tetraoksīds"
+      },
+      {
+        "formula": "N2O5",
+        "name_lv": "dislāpekļa pentoksīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "N2O5(s)",
+        "dH_f_298": -43.1,
+        "dG_f_298_source": 113.9,
+        "dG_f_298_eval": 113.9,
+        "dG_f_298_adopted": 113.9,
+        "S_298": 178.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S25",
+        "notes": "Oriģinālā kļūdaini gāze; skaitļi atbilst cietvielai"
+      },
+      {
+        "formula": "HNO3",
+        "name_lv": "slāpekļskābe",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "HNO3(l)",
+        "dH_f_298": -174.1,
+        "dG_f_298_source": -80.8,
+        "dG_f_298_eval": -80.8,
+        "dG_f_298_adopted": -80.8,
+        "S_298": 155.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "NH3",
+        "name_lv": "amonjaks",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NH3(g)",
+        "dH_f_298": -46.2,
+        "dG_f_298_source": -16.6,
+        "dG_f_298_eval": -16.6,
+        "dG_f_298_adopted": -16.6,
+        "S_298": 192.5,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      {
+        "formula": "O2",
+        "name_lv": "skābeklis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "O2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 205.03,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      {
+        "formula": "O3",
+        "name_lv": "ozons",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "O3(g)",
+        "dH_f_298": 142.3,
+        "dG_f_298_source": 163.7,
+        "dG_f_298_eval": 163.7,
+        "dG_f_298_adopted": 163.7,
+        "S_298": 238.8,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Nestabilais skābekļa alotrops; spēcīgs oksidētājs"
+      }
+    ],
+    "reconciled_species_db": {
+      "Ag(s)": {
+        "formula": "Ag",
+        "name_lv": "sudrabs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Ag(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 42.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      "AgNO3(s)": {
+        "formula": "AgNO3",
+        "name_lv": "sudraba nitrāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "AgNO3(s)",
+        "dH_f_298": -124.5,
+        "dG_f_298_source": -33.6,
+        "dG_f_298_eval": -33.6,
+        "dG_f_298_adopted": -33.6,
+        "S_298": 140.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "AgCl(s)": {
+        "formula": "AgCl",
+        "name_lv": "sudraba hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "AgCl(s)",
+        "dH_f_298": -127.0,
+        "dG_f_298_source": -109.8,
+        "dG_f_298_eval": -109.8,
+        "dG_f_298_adopted": -109.8,
+        "S_298": 96.3,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "Al(s)": {
+        "formula": "Al",
+        "name_lv": "alumīnijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Al(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 28.35,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      "Al3+(aq)": {
+        "formula": "Al3+",
+        "name_lv": "alumīnija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Al3+(aq)",
+        "dH_f_298": -530.0,
+        "dG_f_298_source": -490.54,
+        "dG_f_298_eval": -490.54,
+        "dG_f_298_adopted": -490.54,
+        "S_298": -301.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Negatīva entropija stipras hidratācijas dēļ"
+      },
+      "Al(OH)3(s)": {
+        "formula": "Al(OH)3",
+        "name_lv": "alumīnija hidroksīds",
+        "state": "s",
+        "state_full": "amorfa cieta viela (s)",
+        "state_symbol": "Al(OH)3(s)",
+        "dH_f_298": -1277.0,
+        "dG_f_298_source": -1143.0,
+        "dG_f_298_eval": -1143.0,
+        "dG_f_298_adopted": -1143.0,
+        "S_298": 82.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "C(graphite, s)": {
+        "formula": "C (grafīts)",
+        "name_lv": "ogleklis",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "C(graphite, s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 5.74,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Oglekļa termodinamiskais atskaites standartstāvoklis"
+      },
+      "C(diamond, s)": {
+        "formula": "C (dimants)",
+        "name_lv": "ogleklis",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "C(diamond, s)",
+        "dH_f_298": 1.9,
+        "dG_f_298_source": 2.8,
+        "dG_f_298_eval": 2.8,
+        "dG_f_298_adopted": 2.8,
+        "S_298": 2.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Metastabils alotrops standartapstākļos"
+      },
+      "CO(g)": {
+        "formula": "CO",
+        "name_lv": "oglekļa monoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "CO(g)",
+        "dH_f_298": -110.5,
+        "dG_f_298_source": -137.1,
+        "dG_f_298_eval": -137.1,
+        "dG_f_298_adopted": -137.1,
+        "S_298": 197.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Toksiska gāze; singāzes komponents"
+      },
+      "CO2(g)": {
+        "formula": "CO2",
+        "name_lv": "oglekļa dioksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "CO2(g)",
+        "dH_f_298": -393.5,
+        "dG_f_298_source": -393.5,
+        "dG_f_298_eval": -394.34,
+        "dG_f_298_adopted": -394.38,
+        "S_298": 213.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19; NIST",
+        "defect_id": "S25",
+        "notes": "Oriģinālā dublēts −393,5; no S° ir −394,34, NIST −394,38"
+      },
+      "C2H5OH(l)": {
+        "formula": "C2H5OH",
+        "name_lv": "etanols",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "C2H5OH(l)",
+        "dH_f_298": -278.0,
+        "dG_f_298_source": -175.0,
+        "dG_f_298_eval": -175.0,
+        "dG_f_298_adopted": -175.0,
+        "S_298": 161.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "Ca(s)": {
+        "formula": "Ca",
+        "name_lv": "kalcijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Ca(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 41.63,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Elementārs metāls standartstāvoklī"
+      },
+      "Ca2+(aq)": {
+        "formula": "Ca2+",
+        "name_lv": "kalcija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Ca2+(aq)",
+        "dH_f_298": -543.2,
+        "dG_f_298_source": -556.43,
+        "dG_f_298_eval": -556.43,
+        "dG_f_298_adopted": -556.43,
+        "S_298": -53.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "CaCl2(s)": {
+        "formula": "CaCl2",
+        "name_lv": "kalcija hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "CaCl2(s)",
+        "dH_f_298": -795.4,
+        "dG_f_298_source": -750.2,
+        "dG_f_298_eval": -750.2,
+        "dG_f_298_adopted": -750.2,
+        "S_298": 113.8,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Bezūdens sāls"
+      },
+      "CaCl2(aq)": {
+        "formula": "CaCl2",
+        "name_lv": "kalcija hlorīds",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "CaCl2(aq)",
+        "dH_f_298": -877.3,
+        "dG_f_298_source": -816.59,
+        "dG_f_298_eval": -816.59,
+        "dG_f_298_adopted": -816.59,
+        "S_298": 59.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Šķīšanas entalpija Δ_šķH = −81,9 kJ/mol"
+      },
+      "Cl-(aq)": {
+        "formula": "Cl-",
+        "name_lv": "hlorīda jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Cl-(aq)",
+        "dH_f_298": -167.22,
+        "dG_f_298_source": -131.35,
+        "dG_f_298_eval": -131.35,
+        "dG_f_298_adopted": -131.35,
+        "S_298": 56.56,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "Cl2(g)": {
+        "formula": "Cl2",
+        "name_lv": "hlors",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "Cl2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 223.13,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      "H2(g)": {
+        "formula": "H2",
+        "name_lv": "ūdeņradis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "H2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 130.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      "H2O(l)": {
+        "formula": "H2O",
+        "name_lv": "ūdens",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "H2O(l)",
+        "dH_f_298": -286.0,
+        "dG_f_298_source": -237.19,
+        "dG_f_298_eval": -237.19,
+        "dG_f_298_adopted": -237.19,
+        "S_298": 69.956,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis istabas temperatūrā"
+      },
+      "H2O(g)": {
+        "formula": "H2O (tvaiks)",
+        "name_lv": "ūdens (tvaiks)",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "H2O(g)",
+        "dH_f_298": -241.84,
+        "dG_f_298_source": -288.6,
+        "dG_f_298_eval": -228.51,
+        "dG_f_298_adopted": -228.57,
+        "S_298": 188.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19; NIST",
+        "defect_id": "S25",
+        "notes": "Oriģinālā aplams −288,6; no S° ir −228,51, NIST −228,57"
+      },
+      "H3O+(aq)": {
+        "formula": "H3O+",
+        "name_lv": "hidroksonija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "H3O+(aq)",
+        "dH_f_298": -285.81,
+        "dG_f_298_source": -213.27,
+        "dG_f_298_eval": -213.27,
+        "dG_f_298_adopted": -213.27,
+        "S_298": -3.854,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S34",
+        "notes": "Kursa vērtība rada 22,3 kJ/mol pretrunu ar Kw"
+      },
+      "OH-(aq)": {
+        "formula": "OH-",
+        "name_lv": "hidroksīda jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "OH-(aq)",
+        "dH_f_298": -230.0,
+        "dG_f_298_source": -157.0,
+        "dG_f_298_eval": -157.0,
+        "dG_f_298_adopted": -157.0,
+        "S_298": -10.539,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "K(s)": {
+        "formula": "K",
+        "name_lv": "kālijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "K(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 71.45,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      "K+(aq)": {
+        "formula": "K+",
+        "name_lv": "kālija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "K+(aq)",
+        "dH_f_298": -252.42,
+        "dG_f_298_source": -282.71,
+        "dG_f_298_eval": -282.71,
+        "dG_f_298_adopted": -282.71,
+        "S_298": 100.99,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "KCl(s)": {
+        "formula": "KCl",
+        "name_lv": "kālija hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "KCl(s)",
+        "dH_f_298": -436.85,
+        "dG_f_298_source": -409.05,
+        "dG_f_298_eval": -409.05,
+        "dG_f_298_adopted": -409.05,
+        "S_298": 82.61,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "N2(g)": {
+        "formula": "N2",
+        "name_lv": "slāpeklis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 191.5,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      "NO2(g)": {
+        "formula": "NO2",
+        "name_lv": "slāpekļa dioksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NO2(g)",
+        "dH_f_298": 33.0,
+        "dG_f_298_source": 51.5,
+        "dG_f_298_eval": 51.5,
+        "dG_f_298_adopted": 51.5,
+        "S_298": 240.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Brūna paramagnētiska gāze; dimerizējas par N2O4"
+      },
+      "NO(g)": {
+        "formula": "NO",
+        "name_lv": "slāpekļa monoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NO(g)",
+        "dH_f_298": 90.3,
+        "dG_f_298_source": 86.6,
+        "dG_f_298_eval": 86.6,
+        "dG_f_298_adopted": 86.6,
+        "S_298": 210.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Endotermisks radikālis; bioloģisks mediators"
+      },
+      "N2O(g)": {
+        "formula": "N2O",
+        "name_lv": "dislāpekļa oksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2O(g)",
+        "dH_f_298": 82.0,
+        "dG_f_298_source": 104.1,
+        "dG_f_298_eval": 104.1,
+        "dG_f_298_adopted": 104.1,
+        "S_298": 219.9,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Jautrības gāze, anestēzijas līdzeklis"
+      },
+      "N2O3(l)": {
+        "formula": "N2O3",
+        "name_lv": "dislāpekļa trioksīds",
+        "state": "l",
+        "state_full": "šķidrums (l)",
+        "state_symbol": "N2O3(l)",
+        "dH_f_298": 83.3,
+        "dG_f_298_source": 140.6,
+        "dG_f_298_eval": 140.6,
+        "dG_f_298_adopted": 140.6,
+        "S_298": 307.3,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Zils šķidrums pie zemas temperatūras"
+      },
+      "N2O4(g)": {
+        "formula": "N2O4",
+        "name_lv": "dislāpekļa tetraoksīds",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "N2O4(g)",
+        "dH_f_298": 9.6,
+        "dG_f_298_source": 98.01,
+        "dG_f_298_eval": 98.01,
+        "dG_f_298_adopted": 98.01,
+        "S_298": 304.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S25",
+        "notes": "Oriģinālā kļūdaini nosaukts dioksīds; pareizi tetraoksīds"
+      },
+      "N2O5(s)": {
+        "formula": "N2O5",
+        "name_lv": "dislāpekļa pentoksīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "N2O5(s)",
+        "dH_f_298": -43.1,
+        "dG_f_298_source": 113.9,
+        "dG_f_298_eval": 113.9,
+        "dG_f_298_adopted": 113.9,
+        "S_298": 178.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": "S25",
+        "notes": "Oriģinālā kļūdaini gāze; skaitļi atbilst cietvielai"
+      },
+      "HNO3(l)": {
+        "formula": "HNO3",
+        "name_lv": "slāpekļskābe",
+        "state": "l",
+        "state_full": "šķidra viela (l)",
+        "state_symbol": "HNO3(l)",
+        "dH_f_298": -174.1,
+        "dG_f_298_source": -80.8,
+        "dG_f_298_eval": -80.8,
+        "dG_f_298_adopted": -80.8,
+        "S_298": 155.6,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "NH3(g)": {
+        "formula": "NH3",
+        "name_lv": "amonjaks",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "NH3(g)",
+        "dH_f_298": -46.2,
+        "dG_f_298_source": -16.6,
+        "dG_f_298_eval": -16.6,
+        "dG_f_298_adopted": -16.6,
+        "S_298": 192.5,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": null
+      },
+      "O2(g)": {
+        "formula": "O2",
+        "name_lv": "skābeklis",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "O2(g)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 205.03,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Standartstāvoklis elementam"
+      },
+      "O3(g)": {
+        "formula": "O3",
+        "name_lv": "ozons",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "O3(g)",
+        "dH_f_298": 142.3,
+        "dG_f_298_source": 163.7,
+        "dG_f_298_eval": 163.7,
+        "dG_f_298_adopted": 163.7,
+        "S_298": 238.8,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "K p.19",
+        "defect_id": null,
+        "notes": "Nestabilais skābekļa alotrops; spēcīgs oksidētājs"
+      },
+      "CH4(g)": {
+        "formula": "CH4",
+        "name_lv": "metāns",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "CH4(g)",
+        "dH_f_298": -74.8,
+        "dG_f_298_source": -50.7,
+        "dG_f_298_eval": -50.7,
+        "dG_f_298_adopted": -50.7,
+        "S_298": 186.3,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U1; NIST",
+        "defect_id": null,
+        "notes": "Singāzes izejviela"
+      },
+      "NH4NO3(s)": {
+        "formula": "NH4NO3",
+        "name_lv": "amonija nitrāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "NH4NO3(s)",
+        "dH_f_298": -365.56,
+        "dG_f_298_source": -183.87,
+        "dG_f_298_eval": -183.87,
+        "dG_f_298_adopted": -183.87,
+        "S_298": 151.08,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U2",
+        "defect_id": null,
+        "notes": "Šķīst endotermiski"
+      },
+      "NH4+(aq)": {
+        "formula": "NH4+",
+        "name_lv": "amonija jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "NH4+(aq)",
+        "dH_f_298": -132.51,
+        "dG_f_298_source": -79.31,
+        "dG_f_298_eval": -79.31,
+        "dG_f_298_adopted": -79.31,
+        "S_298": 113.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U2",
+        "defect_id": null,
+        "notes": "Hidratēts katjons"
+      },
+      "NO3-(aq)": {
+        "formula": "NO3-",
+        "name_lv": "nitrāta jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "NO3-(aq)",
+        "dH_f_298": -205.0,
+        "dG_f_298_source": -108.74,
+        "dG_f_298_eval": -108.74,
+        "dG_f_298_adopted": -108.74,
+        "S_298": 146.4,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U2",
+        "defect_id": null,
+        "notes": "Hidratēts anjons"
+      },
+      "Gly(s)": {
+        "formula": "Gly",
+        "name_lv": "glicīns",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Gly(s)",
+        "dH_f_298": -529.0,
+        "dG_f_298_source": -368.6,
+        "dG_f_298_eval": -368.6,
+        "dG_f_298_adopted": -368.6,
+        "S_298": 122.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U3",
+        "defect_id": null,
+        "notes": "Aminoskābe"
+      },
+      "Leu(s)": {
+        "formula": "Leu",
+        "name_lv": "leicīns",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Leu(s)",
+        "dH_f_298": -644.0,
+        "dG_f_298_source": -350.2,
+        "dG_f_298_eval": -350.2,
+        "dG_f_298_adopted": -350.2,
+        "S_298": 207.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U3",
+        "defect_id": "S30",
+        "notes": "Koriģēts no Lei"
+      },
+      "Leu-Gly(s)": {
+        "formula": "Leu-Gly",
+        "name_lv": "leicilglicīns",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Leu-Gly(s)",
+        "dH_f_298": -866.0,
+        "dG_f_298_source": -486.2,
+        "dG_f_298_eval": -486.2,
+        "dG_f_298_adopted": -486.2,
+        "S_298": 281.0,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U3",
+        "defect_id": null,
+        "notes": "Dipeptīds"
+      },
+      "C6H12O6(s)": {
+        "formula": "C6H12O6",
+        "name_lv": "glikoze",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "C6H12O6(s)",
+        "dH_f_298": -1263.78,
+        "dG_f_298_source": -910.1,
+        "dG_f_298_eval": -910.1,
+        "dG_f_298_adopted": -910.1,
+        "S_298": 269.45,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U5",
+        "defect_id": null,
+        "notes": "Monosaharīds"
+      },
+      "O2(aq)": {
+        "formula": "O2(aq)",
+        "name_lv": "skābeklis (šķīdumā)",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "O2(aq)",
+        "dH_f_298": -11.715,
+        "dG_f_298_source": 16.4,
+        "dG_f_298_eval": 16.4,
+        "dG_f_298_adopted": 16.4,
+        "S_298": 110.876,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U5",
+        "defect_id": "S28",
+        "notes": "Ūdenī izšķīdis O2; dH_f ir izšķīšanas siltums"
+      },
+      "HCO3-(aq)": {
+        "formula": "HCO3-",
+        "name_lv": "hidrogēnkarbonāta jons",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "HCO3-(aq)",
+        "dH_f_298": -689.93,
+        "dG_f_298_source": -586.77,
+        "dG_f_298_eval": -586.77,
+        "dG_f_298_adopted": -586.77,
+        "S_298": 98.324,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U5",
+        "defect_id": null,
+        "notes": "Bikarbonāta jons"
+      },
+      "BaCl2(s)": {
+        "formula": "BaCl2",
+        "name_lv": "bārija hlorīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "BaCl2(s)",
+        "dH_f_298": -858.6,
+        "dG_f_298_source": -810.4,
+        "dG_f_298_eval": -810.4,
+        "dG_f_298_adopted": -810.4,
+        "S_298": 123.68,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.1",
+        "defect_id": null,
+        "notes": null
+      },
+      "BaSO4(s)": {
+        "formula": "BaSO4",
+        "name_lv": "bārija sulfāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "BaSO4(s)",
+        "dH_f_298": -1473.2,
+        "dG_f_298_source": -1362.2,
+        "dG_f_298_eval": -1362.2,
+        "dG_f_298_adopted": -1362.2,
+        "S_298": 132.2,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.1",
+        "defect_id": null,
+        "notes": "Nekūstošas nogulsnes"
+      },
+      "Na2SO4(aq)": {
+        "formula": "Na2SO4",
+        "name_lv": "nātrija sulfāts",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "Na2SO4(aq)",
+        "dH_f_298": -1384.49,
+        "dG_f_298_source": -1268.4,
+        "dG_f_298_eval": -1268.4,
+        "dG_f_298_adopted": -1268.4,
+        "S_298": 149.49,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.1",
+        "defect_id": null,
+        "notes": null
+      },
+      "NaCl(aq)": {
+        "formula": "NaCl",
+        "name_lv": "nātrija hlorīds",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "NaCl(aq)",
+        "dH_f_298": -407.27,
+        "dG_f_298_source": -393.1,
+        "dG_f_298_eval": -393.1,
+        "dG_f_298_adopted": -393.1,
+        "S_298": 115.5,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.1",
+        "defect_id": null,
+        "notes": null
+      },
+      "Al2O3(s)": {
+        "formula": "Al2O3",
+        "name_lv": "alumīnija oksīds",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Al2O3(s)",
+        "dH_f_298": -1675.7,
+        "dG_f_298_source": -1582.3,
+        "dG_f_298_eval": -1582.3,
+        "dG_f_298_adopted": -1582.3,
+        "S_298": 50.92,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.2",
+        "defect_id": null,
+        "notes": null
+      },
+      "H2SO4(aq)": {
+        "formula": "H2SO4",
+        "name_lv": "sērskābe",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "H2SO4(aq)",
+        "dH_f_298": -909.27,
+        "dG_f_298_source": -744.5,
+        "dG_f_298_eval": -744.5,
+        "dG_f_298_adopted": -744.5,
+        "S_298": 20.1,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.2",
+        "defect_id": null,
+        "notes": null
+      },
+      "Al2(SO4)3(s)": {
+        "formula": "Al2(SO4)3",
+        "name_lv": "alumīnija sulfāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Al2(SO4)3(s)",
+        "dH_f_298": -3435.06,
+        "dG_f_298_source": -3100.8,
+        "dG_f_298_eval": -3100.8,
+        "dG_f_298_adopted": -3100.8,
+        "S_298": 239.32,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.2",
+        "defect_id": null,
+        "notes": null
+      },
+      "C2H5OH(g)": {
+        "formula": "C2H5OH(g)",
+        "name_lv": "etanols (tvaiks)",
+        "state": "g",
+        "state_full": "gāze (g)",
+        "state_symbol": "C2H5OH(g)",
+        "dH_f_298": -235.3,
+        "dG_f_298_source": -168.4,
+        "dG_f_298_eval": -168.4,
+        "dG_f_298_adopted": -168.4,
+        "S_298": 282.7,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.4",
+        "defect_id": null,
+        "notes": "Gāzveida etanols"
+      },
+      "Na(s)": {
+        "formula": "Na",
+        "name_lv": "nātrijs",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "Na(s)",
+        "dH_f_298": 0.0,
+        "dG_f_298_source": 0.0,
+        "dG_f_298_eval": 0.0,
+        "dG_f_298_adopted": 0.0,
+        "S_298": 51.21,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.5",
+        "defect_id": null,
+        "notes": "Sārmu metāls"
+      },
+      "NaHCO3(s)": {
+        "formula": "NaHCO3",
+        "name_lv": "nātrija hidrogēnkarbonāts",
+        "state": "s",
+        "state_full": "cieta viela (s)",
+        "state_symbol": "NaHCO3(s)",
+        "dH_f_298": -947.68,
+        "dG_f_298_source": -851.0,
+        "dG_f_298_eval": -851.0,
+        "dG_f_298_adopted": -851.0,
+        "S_298": 102.09,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.6",
+        "defect_id": null,
+        "notes": "Dzeramā soda"
+      },
+      "NaOH(aq)": {
+        "formula": "NaOH",
+        "name_lv": "nātrija hidroksīds",
+        "state": "aq",
+        "state_full": "šķīdums (aq)",
+        "state_symbol": "NaOH(aq)",
+        "dH_f_298": -469.15,
+        "dG_f_298_source": -419.2,
+        "dG_f_298_eval": -419.2,
+        "dG_f_298_adopted": -419.2,
+        "S_298": 48.1,
+        "T_ref_K": 298.15,
+        "p_ref_bar": 1.0,
+        "provenance": "U6.5; Lab",
+        "defect_id": null,
+        "notes": "Stipra bāze"
+      }
+    }
+  },
+  "c03_c06_u1_u6": {
+    "positive_vector_u1_u6": {
+      "statement": "U5 result follows labelled gas/aqueous state input across C03–C06",
+      "u5_aqueous": {
+        "o2_state": "aq",
+        "o2_state_symbol": "O2(aq)",
+        "o2_dH_kJ_per_mol": -11.715,
+        "o2_S_J_per_mol_K": 110.876,
+        "reaction_dH_kJ": 2805.27,
+        "reaction_dS_J_per_K": 787.625,
+        "reaction_dG_298_kJ": 2570.44,
+        "Q_uznemts_kJ": 2805.27,
+        "Q_izdalits_kJ": -2805.27,
+        "is_endothermic": true,
+        "is_endergonic": true,
+        "dataset_origin": "Course worksheet 4_SEM_Termodinamika_uzdevumi.pdf U5"
+      },
+      "u5_gas": {
+        "o2_state": "g",
+        "o2_state_symbol": "O2(g)",
+        "o2_dH_kJ_per_mol": 0.0,
+        "o2_S_J_per_mol_K": 205.07,
+        "reaction_dH_kJ": 2875.56,
+        "reaction_dS_J_per_K": 1352.789,
+        "reaction_dG_298_kJ": 2472.23,
+        "delta_dH_shift_kJ": 70.29,
+        "is_endothermic": true,
+        "is_endergonic": true,
+        "dataset_origin": "NIST / standard gas state reference"
+      },
+      "u5_result_follows_labelled_state_input": true,
+      "problems": {
+        "U1": {
+          "id": "U1",
+          "concept": "PROB.Q1",
+          "reaction": "CH4(g) + H2O(g) -> 3H2(g) + CO(g)",
+          "knowns": {
+            "dH_kJ_mol": 210.0,
+            "dS_J_mol_K": 216.0,
+            "T_K": 298.15
+          },
+          "unknowns": [
+            "dG_298",
+            "spontaneity",
+            "Tcross"
+          ],
+          "model": "Isobaric, ideal gas, linear dCp ≈ 0",
+          "valid_range": "373 K (steam) to ~1100 K (pyrolysis/coking boundary); Tcross = 972.2 K is physically achievable in industrial reforming",
+          "equation": "dG = dH - T * (dS / 1000); Tcross = dH / (dS / 1000)",
+          "dG_298_kJ_mol": 145.6,
+          "Tcross_K": 972.22,
+          "Tcross_C": 699.07,
+          "verdict": "Non-spontaneous at 298 K; spontaneous above 972.2 K"
+        },
+        "U2": {
+          "id": "U2",
+          "concept": "PROB.Q2",
+          "reaction": "NH4NO3(s) -> NH4+(aq) + NO3-(aq)",
+          "knowns": {
+            "NH4NO3_s": {
+              "dH": -365.56,
+              "S": 151.08
+            },
+            "NH4_plus_aq": {
+              "dH": -132.51,
+              "S": 113.4
+            },
+            "NO3_minus_aq": {
+              "dH": -205.0,
+              "S": 146.4
+            }
+          },
+          "unknowns": [
+            "dH",
+            "dS",
+            "dG_298",
+            "Tcross",
+            "K_eq"
+          ],
+          "model": "Dilute solution, standard state 1 mol/L, linear dCp ≈ 0",
+          "valid_range": "Freezing point (~256 K for concentrated solution eutectic) to 373 K; Tcross = 258.0 K is near solvent freezing boundary",
+          "dH_kJ_mol": 28.05,
+          "dS_J_mol_K": 108.72,
+          "dG_298_kJ_mol": -4.36,
+          "Tcross_K": 258.0,
+          "Tcross_C": -15.15,
+          "K_298": 5.79,
+          "verdict": "Endothermic but spontaneous at 298 K (entropy-driven dissolution); non-spontaneous below 258.0 K"
+        },
+        "U3": {
+          "id": "U3",
+          "concept": "PROB.Q3",
+          "reaction": "Leu(s) + Gly(s) -> Leu-Gly(s) + H2O(l)",
+          "knowns": {
+            "Leu_s": {
+              "dH": -644.0,
+              "S": 207.0
+            },
+            "Gly_s": {
+              "dH": -529.0,
+              "S": 122.0
+            },
+            "Leu_Gly_s": {
+              "dH": -866.0,
+              "S": 281.0
+            },
+            "H2O_l": {
+              "dH": -286.0,
+              "S": 70.0
+            }
+          },
+          "unknowns": [
+            "dH",
+            "dS",
+            "dG_298",
+            "Tcross"
+          ],
+          "model": "Solid-state peptide condensation releasing liquid water",
+          "valid_range": "Biologically fictitious crossover (954.5 K = 681.4 °C); amino acids decompose and pyrolyze > 500 K; requires ATP coupling in vivo",
+          "dH_kJ_mol": 21.0,
+          "dS_J_mol_K": 22.0,
+          "dG_298_kJ_mol": 14.44,
+          "Tcross_K": 954.55,
+          "Tcross_C": 681.4,
+          "verdict": "Endothermic, endergonic at 298 K; counterexample showing synthesis with dS > 0 due to liquid water release"
+        },
+        "U4": {
+          "id": "U4",
+          "concept": "PROB.Q4",
+          "reaction": "NH4NO3(s) -> 2H2O(g) + N2O(g)",
+          "knowns": {
+            "dG_NH4NO3_s": -184.0,
+            "dG_N2O_g": 104.0,
+            "dG_H2O_g": -229.0
+          },
+          "unknowns": [
+            "dG_298",
+            "thermodynamic_vs_kinetic_spontaneity"
+          ],
+          "model": "Gas evolution decomposition under isobaric standard conditions",
+          "valid_range": "Metastable at 298 K due to high activation energy barrier Ea; thermal initiation requires t > 200 °C; explosive hazard",
+          "dG_298_kJ_mol": -170.0,
+          "verdict": "Highly exergonic at 298 K (thermodynamically possible), but kinetically inert at room temperature without heating"
+        },
+        "U5": {
+          "id": "U5",
+          "concept": "PROB.Q5",
+          "reaction": "6HCO3-(aq) + 6H3O+(aq) -> C6H12O6(aq) + 6O2(aq) + 6H2O(l)",
+          "knowns": "5 chemical species from course worksheet U5",
+          "unknowns": [
+            "dH",
+            "dS",
+            "dG_298",
+            "Q_released",
+            "Q_absorbed"
+          ],
+          "model": "Photosynthetic light reaction coupling photon energy hν to drive endergonic carbon fixation in aqueous solution",
+          "valid_range": "Physiological aqueous range 273–320 K; cannot occur spontaneously in the dark",
+          "dH_kJ": 2805.27,
+          "dS_J_K": 787.625,
+          "dG_298_kJ": 2570.44,
+          "Q_uznemts_kJ": 2805.27,
+          "Q_izdalits_kJ": -2805.27,
+          "verdict": "Endothermic and endergonic at 298 K; driven non-spontaneously by solar photons"
+        },
+        "U6": {
+          "id": "U6",
+          "concept": "PROB.Q6",
+          "reaction_count": 6,
+          "reactions": [
+            {
+              "id": "R1",
+              "dH": -44.65,
+              "dS": 90.03,
+              "dG": -71.49,
+              "case": 1,
+              "Tcross": null,
+              "validity": "Spontaneous at all T; precipitation"
+            },
+            {
+              "id": "R2",
+              "dH": 110.96,
+              "dS": 337.95,
+              "dG": 10.2,
+              "case": 3,
+              "Tcross": 328.33,
+              "validity": "Physically achievable (55.2 °C in aqueous solution)"
+            },
+            {
+              "id": "R3",
+              "dH": -906.22,
+              "dS": 179.65,
+              "dG": -959.78,
+              "case": 1,
+              "Tcross": null,
+              "validity": "Spontaneous at all T; industrial Ostwald process"
+            },
+            {
+              "id": "R4",
+              "dH": -1409.21,
+              "dS": -260.58,
+              "dG": -1331.52,
+              "case": 2,
+              "Tcross": 5408.0,
+              "validity": "Unphysical crossover (>5000 K plasma dissociation)"
+            },
+            {
+              "id": "R5",
+              "dH": -368.64,
+              "dS": -15.5,
+              "dG": -364.02,
+              "case": 2,
+              "Tcross": 23777.0,
+              "validity": "Unphysical crossover (plasma)"
+            },
+            {
+              "id": "R6",
+              "dH": 37.63,
+              "dS": 1021.31,
+              "dG": -266.87,
+              "case": 3,
+              "Tcross": 36.84,
+              "validity": "Below aqueous freezing (cryogenic); spontaneous at all real T"
+            }
+          ]
+        }
+      }
+    },
+    "negative_fixture_phase_sign_units": {
+      "statement": "Invalid phase or impossible sign rejected",
+      "mixed_oxygen_phase_error": {
+        "description": "Combining dH_f(O2, g) = 0 with S(O2, aq) = 110.876 J/K yields unphysical hybrid dG = 2640.73 kJ",
+        "hybrid_dH_kJ": 2875.56,
+        "hybrid_dS_J_K": 787.625,
+        "hybrid_dG_298_kJ": 2640.73,
+        "is_physically_invalid": true
+      },
+      "unit_mismatch_error": {
+        "description": "Subtracting raw J without /1000 produces absurd negative dG for U1",
+        "u1_wrong_dG_kJ": -64190.399999999994,
+        "absurd_magnitude_detected": true
+      },
+      "impossible_crossover_temperature": {
+        "description": "Flagging non-physical crossover temperatures exceeding molecular existence or solvent freezing",
+        "r4_exceeds_molecular_stability": true,
+        "r5_exceeds_molecular_stability": true,
+        "r6_below_aqueous_range": true
+      },
+      "invalid_phase_or_impossible_sign_rejected": true
+    },
+    "boundary_fixture_precision_limits": {
+      "statement": "No precision beyond source data",
+      "u1_precision": {
+        "input_sigfigs": 3,
+        "max_decimals": 2,
+        "dH": 210.0,
+        "dS": 216.0,
+        "dG": 145.6
+      },
+      "u2_precision": {
+        "input_sigfigs": 4,
+        "max_decimals": 2,
+        "dH": 28.05,
+        "dS": 108.72,
+        "dG": -4.36
+      },
+      "u3_precision": {
+        "input_sigfigs": 3,
+        "max_decimals": 2,
+        "dH": 21.0,
+        "dS": 22.0,
+        "dG": 14.44
+      },
+      "u4_precision": {
+        "input_integers": true,
+        "max_decimals": 1,
+        "dG": -170.0
+      },
+      "u5_precision": {
+        "input_decimals": 2,
+        "max_decimals": 2,
+        "dH": 2805.27,
+        "dG": 2570.45
+      },
+      "no_precision_beyond_source_data": true
+    }
+  },
+  "task10": {
+    "u5_positive_clause_verified": true,
+    "negative_phase_sign_rejected": true,
+    "boundary_precision_guarded": true,
+    "problems_covered": [
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5",
+      "U6"
+    ],
+    "concepts_mapped": [
+      "PROB.Q1",
+      "PROB.Q2",
+      "PROB.Q3",
+      "PROB.Q4",
+      "PROB.Q5",
+      "PROB.Q6"
+    ]
+  },
+  "task11": {
+    "claim": "C13",
+    "workstream": "Accessibility & Polish",
+    "tables_checked": 85,
+    "captions_valid": 85,
+    "th_scope_valid": 85,
+    "row_headers_valid": 85,
+    "scroll_wrappers_valid": 85,
+    "positive_vector_header_associations": true,
+    "negative_boundary_320px_unbroken": true,
+    "keyboard_scroll_focusable": true,
+    "print_repeated_headers": true
+  },
+  "K": {
+    "eq6": "-ΔH = -ΔU - pΔV",
+    "T298": 298.15,
+    "T310": 310.15
+  },
+  "r18": {
+    "edge_vectors": 17,
+    "engines": [
+      "A",
+      "B",
+      "C",
+      "C13_SCRUBBER",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "T18_UNIT_VECTORS"
+    ],
+    "standard_calorimetry_vector": "C standard pass",
+    "temperature_ceiling_vector": "B T=10001 reject"
+  },
+  "c13": {
+    "claim": "C13",
+    "status": "VERIFIED",
+    "description": "Scrubber runtime reduced to accessible static-first model with synchronized telemetry, native range controls, and print fallback",
+    "positive_vector_slider_sync": {
+      "calorimeter_phases": 5,
+      "gas_processes": 4,
+      "trace_curve_samples": 3,
+      "slider_updates_all_associated_labels_consistently": true,
+      "first_law_conserved_across_all_processes": true
+    },
+    "negative_fixture_reduced_motion": {
+      "no_autoplay_when_reduced_motion": true,
+      "autoplay_timer_cancellable_on_manual_interaction": true,
+      "background_tab_pauses_playback": true
+    },
+    "boundary_fixture_static_fallback_and_print": {
+      "noscript_guidance_present": true,
+      "static_tables_present_for_js_disabled": true,
+      "print_displays_baseline_state_and_steps": true,
+      "dynamic_dock_hidden_in_print": true
+    }
+  },
+  "task12": {
+    "workstream": "Architecture & Functionality",
+    "claim": "C13",
+    "open_issue": "OI-19",
+    "positive_clause_asserted": true,
+    "boundary_reduced_motion_asserted": true,
+    "static_first_fallback_asserted": true,
+    "print_readout_asserted": true
+  },
+  "c13_topology": {
+    "claim": "C13",
+    "status": "VERIFIED",
+    "description": "Apparatus and boundary SVG topology with distinguished direct sensor reading, inferred reaction heat, and non-overlapping pin coordinates",
+    "positive_vector_energy_flow_and_delta_t": {
+      "student_traces_energy_flow_and_identifies_measured_dT": true,
+      "direct_sensor_reading_distinguished_from_inferred_dH": true,
+      "reaction_zone_and_solution_boundaries_explicit": true
+    },
+    "negative_fixture_environment_heat_trap": {
+      "boundary_includes_environment_but_labels_heat_as_reaction_heat_fails": true,
+      "heat_loss_to_environment_marked_not_reaction_heat": true
+    },
+    "boundary_fixture_grayscale_and_accessibility": {
+      "grayscale_line_and_marker_distinction": true,
+      "screen_reader_equivalent_table_aligned": true,
+      "no_colliding_occlusion_pins": true
+    }
+  },
+  "task13": {
+    "workstream": "SVG & Visual Pedagogy",
+    "claim": "C13",
+    "claim_c12": "C12",
+    "positive_clause_asserted": true,
+    "negative_trap_asserted": true,
+    "boundary_grayscale_screen_reader_asserted": true
+  },
+  "c11": {
+    "claim": "C11",
+    "status": "VERIFIED",
+    "description": "Standardized Latvian terminology, amino acid abbreviations, and glossary warrants",
+    "positive_vector": {
+      "canonical_and_glossary_align": true,
+      "mappings_count": 8,
+      "glossary_anchors_verified": true
+    },
+    "negative_fixture": {
+      "endergisks_as_canonical_answer_rejected": true,
+      "banned_terms_guarded_in_exam_bank": true
+    },
+    "boundary_condition": {
+      "ledger_entries_verified": 20,
+      "traceable_source_defects": true,
+      "provenance_tagged_a_p_v": true
+    }
+  },
+  "task14": {
+    "workstream": "Terminology & Sourcing",
+    "claim": "C11",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true,
+    "ledger_count": 20
+  },
+  "c13_print": {
+    "claim": "C13",
+    "workstream": "Accessibility & Polish",
+    "status": "VERIFIED",
+    "description": "Deterministic static print state, converging two-pass page map, and source-honest companion ordering",
+    "positive_vector": {
+      "page_map_anchors_match_generated_pdf": true,
+      "formula_card_one_page": true,
+      "companions_distinct_pages": true
+    },
+    "negative_fixture": {
+      "stale_map_hash_mismatch_rejected": true
+    },
+    "boundary_condition": {
+      "blank_worksheet_pages_allowed_only_if_intentional": true,
+      "unintentional_sparse_pages_zero": true
+    }
+  },
+  "task16": {
+    "workstream": "Accessibility & Polish",
+    "claim": "C13",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true
+  },
+  "c13_semantic_css": {
+    "claim": "C13",
+    "workstream": "Anti-AI-Slop UI & Retexturing",
+    "status": "VERIFIED",
+    "description": "Restrained 7-layer semantic CSS system with zero raw hex, zero box-shadow, zero gradient, zero inline style, and WCAG AA contrast preservation",
+    "positive_vector": {
+      "light_dark_semantic_roles_maintain_contrast": true,
+      "token_tier_hierarchy_enforced": true,
+      "cascade_layers_ordered": true
+    },
+    "negative_fixture": {
+      "box_shadow_gradient_regressions_fail": true,
+      "inline_style_regressions_fail": true,
+      "raw_hex_outside_tokens_fails": true
+    },
+    "boundary_condition": {
+      "focus_indicator_visible_both_themes": true,
+      "viewport_320px_unbroken": true,
+      "print_flattening_converged": true
+    }
+  },
+  "task17": {
+    "workstream": "Anti-AI-Slop UI & Retexturing",
+    "claim": "C13",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true
+  },
+  "c01_c03_c12_calculator": {
+    "claim": "C01,C03,C12",
+    "workstream": "Architecture & Functionality",
+    "status": "VERIFIED",
+    "description": "Unit-safe validated calculator interfaces, strict input bounds, dimension-checked unit conversions, decimal comma and zero-normalization",
+    "positive_vector": {
+      "c01_first_law_units": true,
+      "c03_thermo_units_convert_once": true,
+      "c12_calorimetry_units": true,
+      "recognized_explicit_units_convert_once": true
+    },
+    "negative_fixture": {
+      "invalid_temperature_rejected": true,
+      "wrong_dimension_rejected": true,
+      "nan_and_infinite_rejected": true
+    },
+    "boundary_condition": {
+      "decimal_comma_parsed": true,
+      "minus_zero_normalized": true,
+      "zero_boundary_entropy_handled": true
+    }
+  },
+  "task18": {
+    "workstream": "Architecture & Functionality",
+    "claim": "C01,C03,C12",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true,
+    "calculator_owner_map": {
+      "aCalc": {
+        "owner": "instrument-a",
+        "claim": "C05,C06",
+        "formula": "ΔG = ΔH - T*ΔS/1000",
+        "residual_arbitrary": true
+      },
+      "bCalc": {
+        "owner": "instrument-b",
+        "claim": "C03,C05",
+        "formula": "ΔH_r, ΔS_r, ΔG_r at T from U6 reactions",
+        "residual_arbitrary": false
+      },
+      "cCalc": {
+        "owner": "instrument-c",
+        "claim": "C12",
+        "formula": "q = (m*c + C_kal)*ΔT, ΔH_r = -q/n",
+        "residual_arbitrary": false
+      },
+      "dCalc": {
+        "owner": "instrument-d",
+        "claim": "C01",
+        "formula": "ΔU = Q - A (course) = q + w (IUPAC)",
+        "residual_arbitrary": false
+      },
+      "eCalc": {
+        "owner": "instrument-e",
+        "claim": "C02,C03",
+        "formula": "∮dH = 0, Ea independent of ΔH",
+        "residual_arbitrary": false
+      },
+      "fCalc": {
+        "owner": "instrument-f",
+        "claim": "C05",
+        "formula": "W = N!/(k!(N-k)!), S = k_B*ln(W)",
+        "residual_arbitrary": false
+      },
+      "gCalc": {
+        "owner": "instrument-g",
+        "claim": "C06,C07",
+        "formula": "ΔrG = ΔrG°' + RT*ln(Q)",
+        "residual_arbitrary": false
+      },
+      "hCalc": {
+        "owner": "instrument-h",
+        "claim": "C08",
+        "formula": "Energy = 4*C + 9*F + 4*P + 7*A, RQ = VCO2/VO2",
+        "residual_arbitrary": false
+      },
+      "calcDeltaG": {
+        "owner": "thermoCalc",
+        "claim": "C05",
+        "formula": "ΔG = ΔH - T*ΔS/1000",
+        "residual_arbitrary": true
+      },
+      "pgSolutionHtml": {
+        "owner": "exam-bank-generator",
+        "claim": "C10",
+        "type": "model-in-python",
+        "residual_arbitrary": false
+      }
+    }
+  },
+  "c13_svg_geometry": {
+    "claim": "C13",
+    "workstream": "SVG & Visual Pedagogy",
+    "status": "VERIFIED",
+    "description": "Shared arrowhead sprite with <use> reuse, stable viewBox/title/desc/aria-labelledby, unique ids and aligned captions for all 43 static SVGs",
+    "positive_vector": {
+      "reused_svg_ids_remain_unique": true,
+      "all_captions_align": true,
+      "shared_symbol_reused_with_use": true,
+      "new_plates_built_from_section_6": [
+        "sign_convention",
+        "open_coupling_boundary"
+      ]
+    },
+    "negative_fixture": {
+      "clipped_labels_fail": true,
+      "unlabelled_semantic_colour_fails": true,
+      "duplicate_ids_fail": true,
+      "missing_title_desc_fails": true
+    },
+    "boundary_condition": {
+      "teaching_svg_count": 43,
+      "shared_sprite_containers": 1,
+      "total_svg_elements": 44,
+      "generated_plates": 30,
+      "documented_owner_use_entries": 43,
+      "count_allowed_only_with_registry": true,
+      "runtime_svg_assets": [
+        "svg-graph-template"
+      ]
+    }
+  },
+  "task19": {
+    "workstream": "SVG & Visual Pedagogy",
+    "claim": "C13",
+    "open_issue": "OI-23",
+    "positive_clause_asserted": true,
+    "negative_fixture_asserted": true,
+    "boundary_condition_asserted": true,
+    "registry": "build/svg_registry.json",
+    "gate": "tools/check_svg.py",
+    "master_visual_gate": "UNVERIFIED"
+  }
+}

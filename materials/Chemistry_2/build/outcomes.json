@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "purpose": "Viens kanoniskais sasniedzamo rezultātu ieraksts. No tā  tiek ģenerēta priekšpārdaļa rezultātu karte (00_front.html) un atceres darba telmas nodaļa → rezultāts atbilstība (build_recall.py).",
+    "source": "2_Temata apraksts 2020.docx.pdf",
+    "locator": "1. lpp., «Temata sasniedzamie rezultāti» (pieci aizzīmējumi)",
+    "read_level": "TEXT-VERIFIED",
+    "chapter_table": "build/sections/01_ch1.html — tabula «2. tēmas sasniedzamie rezultāti un to vieta dokumentā»",
+    "fields": {
+      "course_statement": "Rezultāta formulējums pārkopēts no avota vērdiem.",
+      "learner_action": "Studējošā darbības formulējums no 1. nodaļas tabulas (pārkopēts vērdiem).",
+      "ch1_where": "1. nodaļas tabulas šūna «Kur dokumentā» (pārkopēta vērdiem).",
+      "nav_label": "Priekšpārdaļa kartes īsais nosaukums.",
+      "nav_note": "Priekšpārdaļa karte norāde uz attiecīgo vietu nodaļā.",
+      "nav_chapters": "Nodaļas, uz kurām priekšpārdaļas karte norāda.",
+      "developed_chapters": "Nodaļas, kur rezultāts tiek attīstīts un pārbaudīts (1. nodaļas tabula).",
+      "review_chapters": "Nodaļas, kas rezultātu tikai kopsavilkumā vai atkārto."
+    }
+  },
+  "outcomes": [
+    {
+      "id": "O1",
+      "course_statement": "Atkārtot/iepazīt galvenos laboratorijas traukus un piederumus un to lietošanas iespējas.",
+      "learner_action": "Atpazīt galvenos laboratorijas traukus un piederumus, zināt to lietošanas iespējas un izvēlēties piemērotāko situācijai.",
+      "ch1_where": "4. nodaļa; Q5 un Q6",
+      "nav_label": "Atpazīt laboratorijas traukus un piederumus",
+      "nav_note": "trauku matrica un Q5",
+      "nav_chapters": [
+        4
+      ],
+      "developed_chapters": [
+        4
+      ],
+      "review_chapters": [
+        1
+      ]
+    },
+    {
+      "id": "O2",
+      "course_statement": "Pilnveidot mērīšanas (nolasīšanas) prasmes, izmantojot laboratorijas traukus un piederumus.",
+      "learner_action": "Nolasīt tilpumu no trauka vai masas rādījumu no svariem, ievērojot mazāko iedaļu, menisku un nolasījuma kļūdu.",
+      "ch1_where": "5. nodaļa; 2B Q2",
+      "nav_label": "Nolasīt skalas un bireti",
+      "nav_note": "menisks un protokols",
+      "nav_chapters": [
+        5
+      ],
+      "developed_chapters": [
+        5
+      ],
+      "review_chapters": []
+    },
+    {
+      "id": "O3",
+      "course_statement": "Novērtēt zīmīgo ciparu nozīmi aprēķinos un mērījumos.",
+      "learner_action": "Novērtēt zīmīgo ciparu nozīmi mērījumos un aprēķinos, pareizi noapaļot un pierakstīt rezultātu ar kļūdu.",
+      "ch1_where": "7. un 8. nodaļa; Q1–Q4",
+      "nav_label": "Lietot zīmīgos ciparus",
+      "nav_note": "Q1–Q4 un rīks",
+      "nav_chapters": [
+        8
+      ],
+      "developed_chapters": [
+        7,
+        8
+      ],
+      "review_chapters": [
+        6,
+        13,
+        16
+      ]
+    },
+    {
+      "id": "O4",
+      "course_statement": "Pilnveidot grafiku zīmēšanas prasmes",
+      "learner_action": "Uzzīmēt grafiku ar pareizām asīm, mērvienībām un skalu, novilkt aproksimācijas taisni un nolasīt no grafika vajadzīgo lielumu.",
+      "ch1_where": "9.–11. nodaļa; Q7–Q8",
+      "nav_label": "Zīmēt un lasīt grafikus",
+      "nav_note": "taisne un pussabrukšana",
+      "nav_chapters": [
+        9,
+        10,
+        11
+      ],
+      "developed_chapters": [
+        9,
+        10,
+        11
+      ],
+      "review_chapters": [
+        3
+      ]
+    },
+    {
+      "id": "O5",
+      "course_statement": "Pilnveidot prasmi atpazīt un pārveidot mērvienības.",
+      "learner_action": "Atpazīt un pārveidot mērvienības: masu, tilpumu, vielas daudzumu, koncentrāciju, blīvumu, temperatūru un laiku.",
+      "ch1_where": "2. nodaļa; Q4",
+      "nav_label": "Pārveidot mērvienības",
+      "nav_note": "priedēkļi un mērvienību ķēde",
+      "nav_chapters": [
+        2
+      ],
+      "developed_chapters": [
+        2
+      ],
+      "review_chapters": [
+        12,
+        14
+      ]
+    }
+  ]
+}

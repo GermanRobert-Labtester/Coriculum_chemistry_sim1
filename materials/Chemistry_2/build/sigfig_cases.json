@@ -1,0 +1,366 @@
+[
+  {
+    "id": "Q4b_chain",
+    "inputs": [
+      "0.50",
+      "1000 (exact)"
+    ],
+    "op": "mul-chain",
+    "reported": "5.0e2",
+    "rule": "mul: min s.f. 2; 1000 exact (definition)",
+    "unit": "g/L",
+    "unrounded": "500.00",
+    "guard_digits": "Neapaļots reizinājums 500,00",
+    "rounding_step": "Noapaļo līdz 2 zīmīgajiem cipariem: 5,0·10² g/L"
+  },
+  {
+    "id": "dilution",
+    "inputs": [
+      "0.200",
+      "5.00",
+      "100.0"
+    ],
+    "op": "mul-div-chain",
+    "reported": "0.0100",
+    "rule": "chain: min s.f. 3",
+    "unit": "mol/L",
+    "unrounded": "0.0100",
+    "guard_digits": "Starpreizinājums 1,000; dalījums 0,0100",
+    "rounding_step": "Noapaļo līdz 3 zīmīgajiem cipariem: 0,0100 mol/L"
+  },
+  {
+    "id": "practice_avg",
+    "inputs": [
+      "20.10",
+      "20.24"
+    ],
+    "op": "avg",
+    "reported": "20.17",
+    "rule": "sum 2 decimals; /2 exact",
+    "sum": "40.34",
+    "unrounded_avg": "20.17",
+    "guard_digits": "Summa 40,34; starpvērtība 20,17",
+    "rounding_step": "Gala atbilde: 20,17"
+  },
+  {
+    "id": "practice_mul",
+    "inputs": [
+      "2.50",
+      "0.100"
+    ],
+    "op": "mul",
+    "reported": "0.250",
+    "rule": "mul: min s.f. 3",
+    "unrounded": "0.25000",
+    "guard_digits": "Neapaļots reizinājums 0,25000",
+    "rounding_step": "Noapaļo pēc min s.f.: 0,250"
+  },
+  {
+    "id": "err3",
+    "inputs": [
+      "2.456",
+      "0.023"
+    ],
+    "op": "error-round",
+    "reported": "(2.456 +/- 0.023)",
+    "result_rounded": "2.456",
+    "error_rounded": "0.023",
+    "guard_digits": "Rezultāts 2,456 (neapaļots); kļūda 0,023",
+    "rounding_step": "Kļūda → 0,023; rezultāts → 2,456"
+  },
+  {
+    "id": "Q1_add",
+    "inputs": [
+      "10.05",
+      "150.95"
+    ],
+    "op": "add",
+    "reported": "161.00",
+    "rule": "add: min decimals 2",
+    "unit": "g",
+    "unrounded": "161.00",
+    "guard_digits": "Neapaļota summa 161,00",
+    "rounding_step": "Noapaļo līdz 2 zīmēm aiz komata: 161,00 g"
+  },
+  {
+    "id": "Q1_wrong_rule",
+    "inputs": [
+      "10.05",
+      "150.95"
+    ],
+    "note": "wrong rule would give 4 s.f. -> 161,0",
+    "op": "hypothetical-mul-rule",
+    "reported_correct": "161.00",
+    "unrounded_hypothetical": "161,0",
+    "guard_digits": "Summa 161,00; hipotētiski pēc mul-rule 161,0",
+    "rounding_step": "Pareizi: 161,00 (add rule); nepareizi: 161,0 (mul rule)"
+  },
+  {
+    "id": "avg2",
+    "inputs": [
+      "12.50",
+      "12.55"
+    ],
+    "op": "avg",
+    "reported": "12.53",
+    "rule": "sum 2 decimals; /2 exact, half-up",
+    "sum": "25.05",
+    "unrounded_avg": "12.525",
+    "rounding_convention": "half-up (pedagogical; avotā nav norādīts)",
+    "guard_digits": "Summa 25,05; starpvērtība 12,525",
+    "rounding_step": "Gala atbilde: 12,53"
+  },
+  {
+    "id": "Q3_avg3",
+    "inputs": [
+      "12.50",
+      "13.05",
+      "12.55"
+    ],
+    "op": "avg",
+    "reported": "12.70",
+    "rule": "sum 2 decimals; /3 exact",
+    "sum": "38.10",
+    "unrounded_avg": "12.70",
+    "guard_digits": "Summa 38,10; starpvērtība 12,70",
+    "rounding_step": "Gala atbilde: 12,70"
+  },
+  {
+    "id": "Q4c",
+    "inputs": [
+      "1.50",
+      "98.00"
+    ],
+    "op": "mul",
+    "reported": "147",
+    "rule": "mul: min s.f. 3",
+    "unrounded": "147.0000",
+    "guard_digits": "Neapaļots reizinājums 147,0000",
+    "rounding_step": "Noapaļo pēc min s.f.: 147"
+  },
+  {
+    "id": "ambiguous_450",
+    "inputs": [
+      "450"
+    ],
+    "op": "inspect",
+    "recommendation": "4.5e2 (2 s.f.) or 4.50e2 (3 s.f.)",
+    "verdict": "ambiguous",
+    "guard_digits": "Nav aritmētikas; beigu nulle neviennozīmīga",
+    "rounding_step": "4.5e2 (2 s.f.) or 4.50e2 (3 s.f.)"
+  },
+  {
+    "id": "div_025_10",
+    "inputs": [
+      "0.25",
+      "1.0"
+    ],
+    "op": "div",
+    "reported": "0.25",
+    "rule": "div: min s.f. 2",
+    "unrounded": "0.25",
+    "guard_digits": "Neapaļots dalījums 0,25",
+    "rounding_step": "Noapaļo pēc min s.f.: 0,25"
+  },
+  {
+    "id": "err1",
+    "inputs": [
+      "1.1145",
+      "0.0127"
+    ],
+    "op": "error-round",
+    "reported": "(1.115 +/- 0.013)",
+    "result_rounded": "1.115",
+    "error_rounded": "0.013",
+    "guard_digits": "Rezultāts 1,1145 (neapaļots); kļūda 0,0127",
+    "rounding_step": "Kļūda → 0,013; rezultāts → 1,115"
+  },
+  {
+    "id": "err2",
+    "inputs": [
+      "1.1145",
+      "0.019"
+    ],
+    "op": "error-round",
+    "reported": "(1.11 +/- 0.02)",
+    "result_rounded": "1.11",
+    "error_rounded": "0.02",
+    "guard_digits": "Rezultāts 1,1145 (neapaļots); kļūda 0,019",
+    "rounding_step": "Kļūda → 0,02; rezultāts → 1,11",
+    "note": "S23: single-round result is 1.11; course print 1.12 is double rounding"
+  },
+  {
+    "id": "mul_345_08",
+    "inputs": [
+      "3.45",
+      "0.8"
+    ],
+    "op": "mul",
+    "reported": "3",
+    "rule": "mul: min s.f. 1",
+    "unrounded": "2.76",
+    "guard_digits": "Neapaļots reizinājums 2,76",
+    "rounding_step": "Noapaļo pēc min s.f.: 3"
+  },
+  {
+    "id": "sft_avg2",
+    "op": "mixed-avg2",
+    "expression": "(20,10 + 20,24) / 2",
+    "inputs": [
+      "20.10",
+      "20.24",
+      "2 (exact)"
+    ],
+    "unit": "mL",
+    "reported": "20.17",
+    "unrounded": "20.17",
+    "exact_numbers": "Dalītājs 2 ir precīzs skaits un neierobežo zīmīgo ciparu skaitu",
+    "limiting_operand": "Summa: mazākais decimālo zīmju skaits (2 zīmes aiz komata no 20,10 un 20,24)",
+    "guard_digits": "Summa 40,34 mL; dalījums 20,17 mL",
+    "rounding_step": "Noapaļo gala rezultātu: 20,17 mL (saglabā divas zīmes aiz komata)",
+    "tree_steps": "1: 2 precīzs; 2–3: summa pēc 2 zīmēm aiz komata, tad ÷2; 4: gala 20,17 mL",
+    "reported_lv": "20,17",
+    "unrounded_lv": "20,17"
+  },
+  {
+    "id": "sft_avg3",
+    "op": "mixed-avg3",
+    "expression": "(12,50 + 13,05 + 12,55) / 3",
+    "inputs": [
+      "12.50",
+      "13.05",
+      "12.55",
+      "3 (exact)"
+    ],
+    "unit": "mL",
+    "reported": "12.70",
+    "unrounded": "12.70",
+    "exact_numbers": "Dalītājs 3 ir precīzs mērījumu skaits un neierobežo",
+    "limiting_operand": "Summa: 2 zīmes aiz komata visiem trim titriem (12,50; 13,05; 12,55)",
+    "guard_digits": "Summa 38,10 mL; dalījums 12,70 mL",
+    "rounding_step": "12,70 mL (saglabā 2 zīmes aiz komata, 4 zīmīgie cipari ar beigu nulli)",
+    "tree_steps": "1: 3 precīzs; 2–3: summa pēc 2 zīmēm aiz komata, tad ÷3; 4: gala 12,70 mL",
+    "reported_lv": "12,70",
+    "unrounded_lv": "12,70"
+  },
+  {
+    "id": "sft_avg_halfup",
+    "op": "mixed-avg-halfup",
+    "expression": "(12,50 + 12,55) / 2",
+    "inputs": [
+      "12.50",
+      "12.55",
+      "2 (exact)"
+    ],
+    "unit": "mL",
+    "reported": "12.53",
+    "unrounded": "12.525",
+    "exact_numbers": "Dalītājs 2 ir precīzs skaits un neierobežo",
+    "limiting_operand": "Summa: mazākais decimālo zīmju skaits (2 zīmes aiz komata)",
+    "guard_digits": "Summa 25,05 mL; neapaļotā starpvērtība 12,525 mL (sargcipars 5)",
+    "rounding_step": "Noapaļo uz augšu līdz 2 zīmēm aiz komata: 12,53 mL (pedagoģiska half-up konvencija; avotā nav norādīts)",
+    "rounding_convention": "half-up (pedagogical; avotā nav norādīts)",
+    "tree_steps": "1: 2 precīzs; 2–3: summa 25,05, starpvērtība 12,525; 4: half-up → 12,53 mL",
+    "reported_lv": "12,53",
+    "unrounded_lv": "12,525"
+  },
+  {
+    "id": "sft_dilution",
+    "op": "mixed-dilution",
+    "expression": "0,200 · 5,00 / 100,0",
+    "inputs": [
+      "0.200",
+      "5.00",
+      "100.0"
+    ],
+    "unit": "mol/L",
+    "reported": "0.0100",
+    "unrounded": "0.0100",
+    "exact_numbers": "Nav precīzu skaitļu; visi trīs ir mērījumi ar nenoteiktību",
+    "limiting_operand": "0,200 un 5,00 ar 3 zīmīgajiem cipariem (100,0 ir 4 z.c.)",
+    "guard_digits": "Starpreizinājums 1,000; dalījums 0,0100",
+    "rounding_step": "Noapaļo līdz 3 zīmīgajiem cipariem: 0,0100 mol/L (ar divām beigu nullēm)",
+    "tree_steps": "1: nav precīzu; 2–3: × un ÷ pēc min 3 zīmīgajiem cipariem; 4: 0,0100 mol/L",
+    "reported_lv": "0,0100",
+    "unrounded_lv": "0,0100"
+  },
+  {
+    "id": "sft_mul_chain",
+    "op": "mixed-mul-chain",
+    "expression": "1,50 · 98,00",
+    "inputs": [
+      "1.50",
+      "98.00"
+    ],
+    "unit": "g/L",
+    "reported": "147",
+    "unrounded": "147.0000",
+    "exact_numbers": "Nav precīzu skaitļu; abi ir dotie lielumi",
+    "limiting_operand": "1,50 ar 3 zīmīgajiem cipariem (98,00 ir 4 zīmīgie cipari)",
+    "guard_digits": "Neapaļotais reizinājums 147,0000 g/L (četras decimālzīmes ir sargcipari)",
+    "rounding_step": "Noapaļo līdz 3 zīmīgajiem cipariem: 147 g/L",
+    "tree_steps": "1: nav precīzu; 2: × pēc min 3 zīmīgajiem cipariem; 4: 147 g/L (sargcipari 147,0000)",
+    "reported_lv": "147",
+    "unrounded_lv": "147,0000"
+  },
+  {
+    "id": "sft_sub_div",
+    "op": "mixed-sub-div",
+    "expression": "(151,71 − 48,37) / 100,0",
+    "inputs": [
+      "151.71",
+      "48.37",
+      "100.0"
+    ],
+    "unit": "g/mL",
+    "reported": "1.033",
+    "unrounded": "1.0334",
+    "exact_numbers": "Nav precīzu skaitļu",
+    "limiting_operand": "Starpībai 103,34 ir 2 zīmes aiz komata; dalīšanā ierobežo 100,0 ar 4 zīmīgajiem cipariem",
+    "guard_digits": "Starpība 103,34 g; dalījums 1,0334 g/mL (sargcipars 4)",
+    "rounding_step": "Noapaļo līdz 4 zīmīgajiem cipariem: 1,033 g/mL",
+    "tree_steps": "1: nav precīzu; 2–3: − pēc 2 zīmēm aiz komata, tad ÷ pēc zīmīgajiem cipariem; 4: 1,033 g/mL",
+    "reported_lv": "1,033",
+    "unrounded_lv": "1,0334"
+  },
+  {
+    "id": "sft_unit_exact",
+    "op": "mixed-unit-exact",
+    "expression": "0,50 · 1000",
+    "inputs": [
+      "0.50",
+      "1000 (exact)"
+    ],
+    "unit": "g/L",
+    "reported": "5.0e2",
+    "unrounded": "500.00",
+    "exact_numbers": "1000 mL/L ir mērvienību definīcija (precīzs koeficients) un neierobežo",
+    "limiting_operand": "0,50 ar 2 zīmīgajiem cipariem",
+    "guard_digits": "Reizinājums 500,00 g/L",
+    "rounding_step": "Noapaļo līdz 2 zīmīgajiem cipariem: 5,0·10² g/L",
+    "tree_steps": "1: 1000 precīza definīcija; 2: × pēc min 2 zīmīgajiem cipariem; 4: 5,0·10² g/L",
+    "reported_lv": "5,0·10²",
+    "unrounded_lv": "500,00"
+  },
+  {
+    "id": "sft_interp",
+    "op": "mixed-interp",
+    "expression": "(1,0334 − 0,9979) / 0,0073",
+    "inputs": [
+      "1.0334",
+      "0.9979",
+      "0.0073"
+    ],
+    "unit": "%",
+    "reported": "4.9",
+    "unrounded": "4.863013698630",
+    "exact_numbers": "Nav precīzu skaitļu",
+    "limiting_operand": "Dalītājs 0,0073 ar 2 zīmīgajiem cipariem (starpībai 0,0355 ir 3 zīmīgie cipari)",
+    "guard_digits": "Starpība 0,0355; neapaļots dalījums 4,8630… %",
+    "rounding_step": "Noapaļo līdz 2 zīmīgajiem cipariem: 4,9 %",
+    "unrounded_full_prefix": "4.863013698630",
+    "tree_steps": "1: nav precīzu; 2–3: − pēc zīmēm aiz komata, tad ÷ pēc min 2 zīmīgajiem cipariem; 4: 4,9 %",
+    "reported_lv": "4,9",
+    "unrounded_lv": "4,8630…"
+  }
+]

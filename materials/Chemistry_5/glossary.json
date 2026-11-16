@@ -1,0 +1,1179 @@
+{
+  "meta": {
+    "document": "Master_5_tema_kinetika_un_katalize.html",
+    "source": "termbase.json (en, symbol, unit); definitions and see_also are written here; term strings are kept word-for-word equal to termbase `use` (N01.1)",
+    "schema": [
+      "id",
+      "term",
+      "definition",
+      "see",
+      "see_also",
+      "symbol_html",
+      "first.from",
+      "first.pattern"
+    ],
+    "note": "Generated HTML: tools/build_glossary.py. Verify: tools/verify_glossary.py."
+  },
+  "entries": [
+    {
+      "id": "reakcijas-atrums",
+      "term": "reakcijas ātrums",
+      "definition": "Vielas koncentrācijas izmaiņa laika vienībā, dalīta ar tās stehiometrisko koeficientu un ņemta ar zīmi, kas dod pozitīvu lielumu.",
+      "see": 1,
+      "see_also": [
+        "momentanais-atrums",
+        "stehiometriskais-koeficients",
+        "sakotnejais-atrums"
+      ],
+      "symbol_html": "<i>v</i>",
+      "first": {
+        "from": 1,
+        "pattern": "reakcijas ātrum\\w*|ātruma izteiksm\\w*"
+      }
+    },
+    {
+      "id": "momentanais-atrums",
+      "term": "momentānais ātrums",
+      "definition": "Koncentrācijas izmaiņas robeža bezgala īsā laika intervālā; grafikā tā ir pieskares slīpums.",
+      "see": 1,
+      "see_also": [
+        "reakcijas-atrums"
+      ],
+      "symbol_html": "d<i>C</i>/d<i>t</i>",
+      "first": {
+        "from": 1,
+        "pattern": "[Mm]omentān\\w+ ātrum\\w*"
+      }
+    },
+    {
+      "id": "sakotnejais-atrums",
+      "term": "sākotnējais ātrums",
+      "definition": "Lielums, ko mēra reakcijas pašā sākumā, kamēr koncentrācijas vēl gandrīz nav mainījušās.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-mentenas"
+      ],
+      "symbol_html": "<i>v</i><sub>0</sub>",
+      "first": {
+        "from": 6,
+        "pattern": "sākotnēj\\w+ ātrum\\w*|sākotnējo ātrum\\w*"
+      }
+    },
+    {
+      "id": "koncentracija",
+      "term": "koncentrācija",
+      "definition": "Vielas daudzums šķīduma tilpuma vienībā.",
+      "see": 1,
+      "see_also": [
+        "reakcijas-atrums"
+      ],
+      "symbol_html": "<i>C</i>",
+      "first": {
+        "from": 1,
+        "pattern": "koncentrācij\\w+"
+      }
+    },
+    {
+      "id": "stehiometriskais-koeficients",
+      "term": "stehiometriskais koeficients",
+      "definition": "Skaitlis pirms vielas formulas reakcijas vienādojumā, kas rāda, kādās attiecībās vielas reaģē.",
+      "see": 1,
+      "see_also": [
+        "pakape",
+        "reakcijas-atrums"
+      ],
+      "symbol_html": "ν",
+      "first": {
+        "from": 1,
+        "pattern": "stehiometrisk\\w+ koeficient\\w+"
+      }
+    },
+    {
+      "id": "atruma-konstante",
+      "term": "ātruma konstante",
+      "definition": "Proporcionalitātes koeficients kinētiskajā vienādojumā, kas nemainās ar koncentrāciju, bet mainās ar temperatūru un katalizatoru.",
+      "see": 3,
+      "see_also": [
+        "kinetiskais-vienadojums",
+        "liidzsvara-konstante",
+        "arreniusa"
+      ],
+      "symbol_html": "<i>k</i>",
+      "first": {
+        "from": 2,
+        "pattern": "[Āā]truma konstant\\w+|<i>k</i> gan"
+      }
+    },
+    {
+      "id": "kinetiskais-vienadojums",
+      "term": "kinētiskais vienādojums (ātruma likums)",
+      "definition": "Vienādojums, kas saista reakcijas ātrumu ar izejvielu koncentrācijām un ātruma konstanti.",
+      "see": 3,
+      "see_also": [
+        "pakape",
+        "atruma-konstante",
+        "aktivo-masu-likums"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 3,
+        "pattern": "kinētisk\\w+ vienādojum\\w+|ātruma likum\\w+"
+      }
+    },
+    {
+      "id": "aktivo-masu-likums",
+      "term": "aktīvo masu likums",
+      "definition": "Pie nemainīgas temperatūras elementārstadijas ātrums ir proporcionāls reaģējošo daļiņu koncentrāciju reizinājumam.",
+      "see": 3,
+      "see_also": [
+        "elementarstadija",
+        "kinetiskais-vienadojums"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 3,
+        "pattern": "[Aa]ktīvo masu likum\\w+"
+      }
+    },
+    {
+      "id": "elementarstadija",
+      "term": "elementārstadija",
+      "definition": "Viena nedalāma pārvērtība mehānismā, kas notiek vienā daļiņu sadursmē.",
+      "see": 3,
+      "see_also": [
+        "mehanisms",
+        "molekularitate",
+        "limitejosa-stadija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 3,
+        "pattern": "elementārstadij\\w+"
+      }
+    },
+    {
+      "id": "pakape",
+      "term": "reakcijas pakāpe (kārta)",
+      "definition": "Eksponents pie izejvielas koncentrācijas ātruma likumā, ko nosaka no eksperimenta, nevis no vienādojuma koeficientiem.",
+      "see": 6,
+      "see_also": [
+        "molekularitate",
+        "stehiometriskais-koeficients",
+        "nulles-pakapes-reakcija",
+        "pirmas-pakapes-reakcija",
+        "otras-pakapes-reakcija"
+      ],
+      "symbol_html": "<i>n</i>",
+      "first": {
+        "from": 3,
+        "pattern": "(?<!oksidēšanas )\\bpakāp(?:e|es|ei|i|ju|ēm)\\b|\\bkārt(?:a|as|ai|u)\\b"
+      }
+    },
+    {
+      "id": "nulles-pakapes-reakcija",
+      "term": "nulles pakāpes reakcija",
+      "definition": "Reakcija, kuras ātrums nav atkarīgs no izejvielas koncentrācijas.",
+      "see": 6,
+      "see_also": [
+        "pakape",
+        "pusperiods"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 6,
+        "pattern": "nulles pakāpes\\w*"
+      }
+    },
+    {
+      "id": "pirmas-pakapes-reakcija",
+      "term": "pirmās pakāpes reakcija",
+      "definition": "Reakcija, kuras ātrums ir tieši proporcionāls vienas izejvielas koncentrācijai un kuras pusperiods nav atkarīgs no koncentrācijas.",
+      "see": 6,
+      "see_also": [
+        "pakape",
+        "pusperiods"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 6,
+        "pattern": "[Pp]irmās pakāpes\\w*|[Pp]irmajai pakāpei"
+      }
+    },
+    {
+      "id": "otras-pakapes-reakcija",
+      "term": "otrās pakāpes reakcija",
+      "definition": "Reakcija, kuras ātrums ir proporcionāls vienas izejvielas koncentrācijas kvadrātam vai divu izejvielu koncentrāciju reizinājumam.",
+      "see": 6,
+      "see_also": [
+        "pakape",
+        "pusperiods"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 6,
+        "pattern": "[Oo]trajai|[Oo]trā pakāpe|[Oo]trās pakāpes\\w*"
+      }
+    },
+    {
+      "id": "molekularitate",
+      "term": "molekularitāte",
+      "definition": "Daļiņu skaits, kas piedalās vienas elementārstadijas sadursmē.",
+      "see": 6,
+      "see_also": [
+        "pakape",
+        "elementarstadija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 6,
+        "pattern": "molekularitāt\\w+"
+      }
+    },
+    {
+      "id": "pusperiods",
+      "term": "pusperiods (pussabrukšanas periods)",
+      "definition": "Laiks, kurā izejvielas koncentrācija samazinās līdz pusei no sākotnējās.",
+      "see": 6,
+      "see_also": [
+        "pirmas-pakapes-reakcija",
+        "otras-pakapes-reakcija"
+      ],
+      "symbol_html": "<i>t</i><sub>½</sub>, <i>τ</i><sub>½</sub>",
+      "first": {
+        "from": 6,
+        "pattern": "pusperiod\\w+|pussabrukšanas (?:laik|period)\\w+"
+      }
+    },
+    {
+      "id": "sadursmju-teorija",
+      "term": "aktīvo sadursmju teorija",
+      "definition": "Teorija, pēc kuras reakcija notiek tikai tad, ja daļiņām satiekoties ir pietiekama enerģija un piemērots izkārtojums.",
+      "see": 4,
+      "see_also": [
+        "aktivacijas-energija",
+        "maksvela-bolcmana",
+        "aktivais-komplekss"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 1,
+        "pattern": "sadursmju biežum\\w+"
+      }
+    },
+    {
+      "id": "aktivacijas-energija",
+      "term": "aktivācijas enerģija",
+      "definition": "Mazākā enerģija, kāda daļiņu pārim jāpiemīt, lai sadursme beigtos ar reakciju.",
+      "see": 4,
+      "see_also": [
+        "aktivais-komplekss",
+        "arreniusa",
+        "katalizators"
+      ],
+      "symbol_html": "<i>E</i><sub>a</sub>",
+      "first": {
+        "from": 1,
+        "pattern": "aktivācijas enerģij\\w+"
+      }
+    },
+    {
+      "id": "maksvela-bolcmana",
+      "term": "Maksvela–Bolcmaņa sadalījums",
+      "definition": "Sadalījums, kas parāda, kāda daļiņu daļa noteiktā temperatūrā piemīt katra enerģija.",
+      "see": 4,
+      "see_also": [
+        "aktivacijas-energija",
+        "sadursmju-teorija"
+      ],
+      "symbol_html": "<i>f</i>(<i>E</i>)",
+      "first": {
+        "from": 4,
+        "pattern": "Sadalījums(?= sākas)"
+      }
+    },
+    {
+      "id": "aktivais-komplekss",
+      "term": "aktīvais komplekss (pārejas stāvoklis)",
+      "definition": "Nestabila daļiņu grupa enerģijas barjeras virsotnē, kurā vecās saites ir vājinātas, bet jaunās vēl nav pilnībā izveidojušās.",
+      "see": 4,
+      "see_also": [
+        "aktivacijas-energija",
+        "starpprodukts"
+      ],
+      "symbol_html": "‡",
+      "first": {
+        "from": 4,
+        "pattern": "aktīv\\w+ komplekss\\w*|pārejas stāvokl\\w+"
+      }
+    },
+    {
+      "id": "van-t-hofa",
+      "term": "van 't Hofa likums",
+      "definition": "Empīrisks likums, pēc kura temperatūras paaugstināšana par 10 K palielina daudzu reakciju ātrumu apmēram 2–4 reizes.",
+      "see": 5,
+      "see_also": [
+        "arreniusa"
+      ],
+      "symbol_html": "γ",
+      "first": {
+        "from": 5,
+        "pattern": "[Vv]an 't Hof\\w+"
+      },
+      "prov": "avots · Kinetika p.2; deck 7"
+    },
+    {
+      "id": "arreniusa",
+      "term": "Arrēniusa vienādojums",
+      "definition": "Vienādojums, kas ātruma konstanti izsaka kā eksponenciālu funkciju no aktivācijas enerģijas un temperatūras.",
+      "see": 5,
+      "see_also": [
+        "aktivacijas-energija",
+        "pirmseksponenta-faktors",
+        "van-t-hofa"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 5,
+        "pattern": "Arrēniusa vienādojum\\w+"
+      }
+    },
+    {
+      "id": "pirmseksponenta-faktors",
+      "term": "pirmseksponenciālais faktors",
+      "definition": "Arrēniusa vienādojuma reizinātājs, kas ietver sadursmju biežumu un daļiņu savstarpējā izkārtojuma ietekmi.",
+      "see": 5,
+      "see_also": [
+        "arreniusa",
+        "atruma-konstante"
+      ],
+      "symbol_html": "<i>A</i>",
+      "first": {
+        "from": 5,
+        "pattern": "pirmseksponenciāl\\w+ faktor\\w+"
+      }
+    },
+    {
+      "id": "mehanisms",
+      "term": "reakcijas mehānisms",
+      "definition": "Elementārstadiju virkne, pa kuru izejvielas pārvēršas produktos.",
+      "see": 7,
+      "see_also": [
+        "elementarstadija",
+        "limitejosa-stadija",
+        "starpprodukts"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "reakcijas mehānism\\w+|mehānism\\w+"
+      }
+    },
+    {
+      "id": "starpprodukts",
+      "term": "starpprodukts",
+      "definition": "Viela, kas rodas vienā mehānisma stadijā un tiek patērēta nākamajā, tāpēc beigu vienādojumā neparādās.",
+      "see": 7,
+      "see_also": [
+        "mehanisms",
+        "aktivais-komplekss",
+        "kvazistacionars"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 4,
+        "pattern": "starpprodukt\\w+"
+      }
+    },
+    {
+      "id": "limitejosa-stadija",
+      "term": "limitējošā (ātrumu noteicošā) stadija",
+      "definition": "Lēnākā stadija mehānismā, kas nosaka kopējo reakcijas ātrumu.",
+      "see": 7,
+      "see_also": [
+        "mehanisms",
+        "elementarstadija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "limitējoš\\w+ stadij\\w+|ātrumu noteicoš\\w+ stadij\\w+"
+      }
+    },
+    {
+      "id": "kvazistacionars",
+      "term": "stacionārais (Brigsa–Haldana) tuvinājums",
+      "definition": "Pieņēmums, ka starpprodukta koncentrācija gandrīz nemainās, jo tā rašanās un patēriņa ātrumi ir vienādi.",
+      "see": 10,
+      "see_also": [
+        "starpprodukts",
+        "mihaelisa-mentenas",
+        "es-komplekss"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "kvazistacionār\\w+|stacionār\\w+ tuvinājum\\w+"
+      }
+    },
+    {
+      "id": "kedes-reakcija",
+      "term": "ķēdes reakcija",
+      "definition": "Reakcija, kurā aktīvā daļiņa katrā ciklā rada jaunu aktīvu daļiņu, tāpēc process turpinās pats.",
+      "see": 7,
+      "see_also": [
+        "mehanisms"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "[Ķķ]ēdes reakcij\\w+"
+      }
+    },
+    {
+      "id": "sajugta-reakcija",
+      "term": "sajūgtā (inducētā) reakcija",
+      "definition": "Reakcija, kas notiek tikai tad, ja vienlaikus norit otra reakcija, kuras starpprodukts to iedarbina.",
+      "see": 7,
+      "see_also": [
+        "mehanisms"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "[Ss]ajūgt\\w+ reakcij\\w+|[Ii]nducēt\\w+ reakcij\\w+"
+      }
+    },
+    {
+      "id": "katalizators",
+      "term": "katalizators",
+      "definition": "Viela, kas paātrina reakciju, piedāvājot ceļu ar zemāku barjeru, un reakcijas beigās ir atgūstama nemainīta.",
+      "see": 8,
+      "see_also": [
+        "katalize",
+        "ferments",
+        "aktivacijas-energija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 1,
+        "pattern": "katalizator\\w+"
+      }
+    },
+    {
+      "id": "katalize",
+      "term": "katalīze",
+      "definition": "Ķīmiskas reakcijas paātrināšanās, ko izraisa viela, kura pati reakcijā netiek patērēta.",
+      "see": 8,
+      "see_also": [
+        "katalizators",
+        "homogena-katalize",
+        "heterogena-katalize",
+        "mikroheterogena-katalize"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 2,
+        "pattern": "katalīz\\w+"
+      }
+    },
+    {
+      "id": "homogena-katalize",
+      "term": "homogēnā katalīze",
+      "definition": "Katalīze, kurā katalizators un izejvielas atrodas vienā fāzē.",
+      "see": 8,
+      "see_also": [
+        "heterogena-katalize",
+        "mikroheterogena-katalize"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 8,
+        "pattern": "[Hh]omogēn\\w+ katalīz\\w+"
+      }
+    },
+    {
+      "id": "heterogena-katalize",
+      "term": "heterogēnā katalīze",
+      "definition": "Katalīze, kurā katalizators veido atsevišķu fāzi un reakcija norit uz tā virsmas.",
+      "see": 8,
+      "see_also": [
+        "homogena-katalize",
+        "mikroheterogena-katalize"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 8,
+        "pattern": "[Hh]eterogēn\\w+ katalīz\\w+"
+      }
+    },
+    {
+      "id": "mikroheterogena-katalize",
+      "term": "mikroheterogēnā katalīze",
+      "definition": "Katalīze ar lielām molekulām vai koloidālām daļiņām, piemēram, fermentiem, kam piemīt gan homogēnas, gan heterogēnas pazīmes.",
+      "see": 8,
+      "see_also": [
+        "ferments",
+        "homogena-katalize",
+        "heterogena-katalize"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 8,
+        "pattern": "[Mm]ikroheterogēn\\w+"
+      }
+    },
+    {
+      "id": "autokatalize",
+      "term": "autokatalīze",
+      "definition": "Reakcija, kuru paātrina tās pašas produkts, tāpēc sākumā ir indukcijas periods, pēc tam paātrinājums.",
+      "see": 8,
+      "see_also": [
+        "katalize"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 8,
+        "pattern": "[Aa]utokatalīz\\w+"
+      }
+    },
+    {
+      "id": "ferments",
+      "term": "ferments (enzīms)",
+      "definition": "Bioloģisks katalizators, parasti olbaltumviela, kas paātrina noteiktu reakciju organismā.",
+      "see": 9,
+      "see_also": [
+        "katalizators",
+        "aktivais-centrs",
+        "substrats",
+        "specifiskums"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 2,
+        "pattern": "\\bferment\\w+|\\benzīm\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "substrats",
+      "term": "substrāts",
+      "definition": "Viela, ko ferments pārvērš produktā.",
+      "see": 9,
+      "see_also": [
+        "ferments",
+        "aktivais-centrs",
+        "es-komplekss"
+      ],
+      "symbol_html": "<i>S</i>",
+      "first": {
+        "from": 7,
+        "pattern": "substrāt\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "aktivais-centrs",
+      "term": "aktīvais centrs",
+      "definition": "Fermenta molekulas daļa, kurā saistās substrāts un notiek ķīmiskā pārvērtība.",
+      "see": 9,
+      "see_also": [
+        "substrats",
+        "es-komplekss",
+        "konkurenta"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "aktīv\\w+ centr\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "specifiskums",
+      "term": "specifiskums",
+      "definition": "Fermenta spēja pārveidot tikai noteiktu substrātu vai noteikta tipa reakciju.",
+      "see": 9,
+      "see_also": [
+        "ferments",
+        "aktivais-centrs"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "[Ss]pecifisk\\w+"
+      }
+    },
+    {
+      "id": "kofaktors",
+      "term": "kofaktors",
+      "definition": "Neolbaltumvielu komponents, metāla jons vai organiska molekula (koferments), kas fermentam nepieciešams, lai tas darbotos.",
+      "see": 9,
+      "see_also": [
+        "ferments"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "kofaktor\\w+|koferment\\w+"
+      }
+    },
+    {
+      "id": "denaturacija",
+      "term": "denaturācija",
+      "definition": "Olbaltumvielas telpiskās uzbūves zudums, kura dēļ ferments zaudē aktivitāti.",
+      "see": 9,
+      "see_also": [
+        "ferments"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "denaturāc\\w+"
+      }
+    },
+    {
+      "id": "es-komplekss",
+      "term": "ES komplekss",
+      "definition": "Pagaidu savienojums, ko veido ferments un substrāts, saistoties aktīvajā centrā.",
+      "see": 9,
+      "see_also": [
+        "aktivais-centrs",
+        "mihaelisa-mentenas",
+        "kvazistacionars"
+      ],
+      "symbol_html": "ES",
+      "first": {
+        "from": 9,
+        "pattern": "\\bES\\b(?: komplekss\\w*)?"
+      },
+      "repeat": true
+    },
+    {
+      "id": "mihaelisa-mentenas",
+      "term": "Mihaelisa–Mentenas vienādojums",
+      "definition": "Vienādojums, kas sākotnējo ātrumu izsaka kā hiperbolisku funkciju no substrāta koncentrācijas.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-konstante",
+        "maksimalais-atrums",
+        "kvazistacionars",
+        "lineweaver-burk"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "Mihaelisa\\W+Mentenas?\\s+\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "mihaelisa-konstante",
+      "term": "Mihaelisa konstante",
+      "definition": "Substrāta koncentrācija, pie kuras sākotnējais ātrums sasniedz pusi no maksimālā; stacionārajā tuvinājumā K<sub>M</sub> = (k<sub>−1</sub> + k<sub>2</sub>)/k<sub>1</sub>, tāpēc tā nav afinitātes mērs bez nosacījuma k<sub>2</sub> ≪ k<sub>−1</sub>.",
+      "see": 10,
+      "see_also": [
+        "maksimalais-atrums",
+        "afinitate",
+        "disociacijas-konstante"
+      ],
+      "symbol_html": "<i>K</i><sub>M</sub>",
+      "first": {
+        "from": 10,
+        "pattern": "K<sub>M</sub>|Mihaelisa konstant\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "maksimalais-atrums",
+      "term": "maksimālais ātrums",
+      "definition": "Fermentatīvā procesa augšējā robeža, kuru sasniedz, kad visi aktīvie centri ir aizņemti.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-konstante",
+        "kcat"
+      ],
+      "symbol_html": "<i>v</i><sub>max</sub>",
+      "first": {
+        "from": 10,
+        "pattern": "v<sub>max</sub>"
+      },
+      "repeat": true
+    },
+    {
+      "id": "kcat",
+      "term": "katalītiskā konstante",
+      "definition": "Substrāta molekulu skaits, ko viens aktīvais centrs pārvērš produktā laika vienībā pie pilnīga piesātinājuma.",
+      "see": 10,
+      "see_also": [
+        "maksimalais-atrums",
+        "aktivais-centrs"
+      ],
+      "symbol_html": "<i>k</i><sub>cat</sub>",
+      "first": {
+        "from": 10,
+        "pattern": "k<sub>cat</sub>|katalītisk\\w+ konstant\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "disociacijas-konstante",
+      "term": "disociācijas konstante",
+      "definition": "Līdzsvara konstante kompleksa sadalīšanās procesam, K<sub>d</sub> = k<sub>−1</sub>/k<sub>1</sub>; ar K<sub>M</sub> tā sakrīt tikai tad, ja k<sub>2</sub> ≪ k<sub>−1</sub>.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-konstante",
+        "afinitate"
+      ],
+      "symbol_html": "<i>K</i><sub>d</sub>",
+      "first": {
+        "from": 10,
+        "pattern": "disociācijas konstant\\w+"
+      }
+    },
+    {
+      "id": "afinitate",
+      "term": "afinitāte",
+      "definition": "Fermenta spēja saistīt substrātu vai citu molekulu; to mēra ar disociācijas konstanti.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-konstante",
+        "disociacijas-konstante"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 10,
+        "pattern": "afinitāt\\w+"
+      }
+    },
+    {
+      "id": "lineweaver-burk",
+      "term": "Lineweaver–Burk attēlojums",
+      "definition": "Grafiks, kurā apgriezto sākotnējo ātrumu attēlo pret apgriezto substrāta koncentrāciju, lai Mihaelisa–Mentenas atkarību pārvērstu taisnē.",
+      "see": 10,
+      "see_also": [
+        "mihaelisa-mentenas"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 10,
+        "pattern": "Lineweaver\\W+Burk\\w*"
+      }
+    },
+    {
+      "id": "inhibitors",
+      "term": "inhibitors",
+      "definition": "Viela, kas palēnina reakciju, saistoties pie fermenta vai reaģenta.",
+      "see": 11,
+      "see_also": [
+        "inhibicija",
+        "konkurenta",
+        "nekonkurenta"
+      ],
+      "symbol_html": "<i>I</i>",
+      "first": {
+        "from": 7,
+        "pattern": "inhibitor\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "inhibicija",
+      "term": "inhibīcija",
+      "definition": "Fermentatīvās reakcijas ātruma samazināšanās, kad fermentam piesaistās noteikta viela.",
+      "see": 11,
+      "see_also": [
+        "inhibitors",
+        "atgriezeniska-inhibicija",
+        "neapgriezeniska-inhibicija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 8,
+        "pattern": "inhibīcij\\w+|inhibēšan\\w+"
+      }
+    },
+    {
+      "id": "atgriezeniska-inhibicija",
+      "term": "atgriezeniskā inhibīcija",
+      "definition": "Fermenta bremzēšana, ko var atcelt, noņemot bremzējošo vielu.",
+      "see": 11,
+      "see_also": [
+        "neapgriezeniska-inhibicija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "atgriezenisk\\w+(?: inhibīcij\\w+)?"
+      }
+    },
+    {
+      "id": "neapgriezeniska-inhibicija",
+      "term": "neapgriezeniskā inhibīcija",
+      "definition": "Fermenta bremzēšana, kurā fermenta struktūra tiek neatgriezeniski izmainīta.",
+      "see": 11,
+      "see_also": [
+        "atgriezeniska-inhibicija",
+        "nekonkurenta"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 11,
+        "pattern": "neapgriezenisk\\w+"
+      }
+    },
+    {
+      "id": "konkurenta",
+      "term": "konkurentā inhibīcija",
+      "definition": "Fermenta bremzēšana ar vielu, kas aizņem aktīvo centru substrāta vietā; vmax nemainās, bet KM,app pieaug.",
+      "see": 11,
+      "see_also": [
+        "nekonkurenta",
+        "nekonkurejosa",
+        "jaukta",
+        "aktivais-centrs"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 7,
+        "pattern": "[Kk]onkurent\\w+(?: inhibīcij\\w+)?"
+      },
+      "repeat": true
+    },
+    {
+      "id": "nekonkurenta",
+      "term": "nekonkurentā (tīrā) inhibīcija",
+      "definition": "Fermenta bremzēšana ar vielu, kas saistās ārpus aktīvā centra un samazina vmax, bet KM nemainās.",
+      "see": 11,
+      "see_also": [
+        "konkurenta",
+        "nekonkurejosa",
+        "jaukta",
+        "allosteriska-vieta"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 10,
+        "pattern": "[Nn]ekonkurent\\w+(?: inhibīcij\\w+)?"
+      },
+      "repeat": true
+    },
+    {
+      "id": "nekonkurejosa",
+      "term": "nekonkurējošā (uncompetitive) inhibīcija",
+      "definition": "Fermenta bremzēšana ar vielu, kas saistās tikai ar jau izveidoto ES kompleksu; samazinās gan vmax, gan KM.",
+      "see": 11,
+      "see_also": [
+        "konkurenta",
+        "nekonkurenta",
+        "jaukta"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 9,
+        "pattern": "[Nn]ekonkurējoš\\w+|[Uu]ncompetitive\\w*"
+      },
+      "repeat": true
+    },
+    {
+      "id": "jaukta",
+      "term": "jauktā inhibīcija",
+      "definition": "Fermenta bremzēšana ar vielu, kas saistās gan ar brīvo fermentu, gan ar ES kompleksu un maina gan vmax, gan KM.",
+      "see": 11,
+      "see_also": [
+        "konkurenta",
+        "nekonkurenta",
+        "nekonkurejosa"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 10,
+        "pattern": "[Jj]auktā\\w*(?: inhibīcij\\w+)?|[Jj]auktajā\\w*"
+      },
+      "repeat": true
+    },
+    {
+      "id": "allosteriska-vieta",
+      "term": "allosteriskā vieta",
+      "definition": "Fermenta vieta ārpus aktīvā centra, kurā saistīta molekula maina fermenta aktivitāti.",
+      "see": 11,
+      "see_also": [
+        "aktivais-centrs",
+        "nekonkurenta"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 11,
+        "pattern": "allosteri\\w+"
+      },
+      "repeat": true
+    },
+    {
+      "id": "produkta-inhibicija",
+      "term": "produkta inhibīcija",
+      "definition": "Reakcijas ātruma samazināšanās, kad gala viela uzkrājas un bremzē pašu fermentu; tā ir negatīvā atgriezeniskā saite.",
+      "see": 11,
+      "see_also": [
+        "inhibicija",
+        "atgriezeniska-inhibicija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 11,
+        "pattern": "[Pp]rodukta inhibīcij\\w+"
+      }
+    },
+    {
+      "id": "inhibicijas-konstante",
+      "term": "inhibīcijas konstante",
+      "definition": "Konstante, kas rāda, cik stipri bremzējošā viela saistās pie fermenta: jo mazāka, jo spēcīgāka saistīšanās.",
+      "see": 11,
+      "see_also": [
+        "konkurenta",
+        "disociacijas-konstante"
+      ],
+      "symbol_html": "<i>K</i><sub>i</sub>",
+      "first": {
+        "from": 11,
+        "pattern": "K<sub>i</sub>|inhibīcijas konstant\\w+"
+      }
+    },
+    {
+      "id": "liidzsvara-konstante",
+      "term": "līdzsvara konstante",
+      "definition": "Produktu un izejvielu koncentrāciju attiecība stāvoklī, kad tiešās un pretējās reakcijas ātrumi ir vienādi; tā nosaka šā stāvokļa sastāvu, bet nenosaka, cik ātri tas tiek sasniegts.",
+      "see": 8,
+      "see_also": [
+        "atruma-konstante",
+        "katalizators"
+      ],
+      "symbol_html": "<i>K</i>",
+      "first": {
+        "from": 8,
+        "pattern": "līdzsvara konstant\\w+"
+      }
+    },
+    {
+      "id": "regresija",
+      "term": "lineārā regresija",
+      "definition": "Taisnes parametru aprēķins, kas vislabāk atbilst mērījumu punktiem.",
+      "see": 12,
+      "see_also": [],
+      "symbol_html": "",
+      "first": {
+        "from": 12,
+        "pattern": "[Ll]ineārā regresij\\w+|regresij\\w+"
+      }
+    },
+    {
+      "id": "atsaidijuma-koeficients",
+      "term": "atšķaidījuma koeficients",
+      "definition": "Skaitlis, kas rāda, cik reižu šķīduma koncentrācija ir samazināta, pievienojot šķīdinātāju.",
+      "see": 12,
+      "see_also": [
+        "koncentracija"
+      ],
+      "symbol_html": "",
+      "first": {
+        "from": 12,
+        "pattern": "atšķaidījuma koeficient\\w+"
+      }
+    },
+    {
+      "id": "paraugatbilde",
+      "term": "paraugatbilde",
+      "definition": "Šajā materiālā uzrakstīta atbilde uz uzdevumu, kas nav kursa oficiālā atslēga.",
+      "see": 0,
+      "see_also": [],
+      "symbol_html": "",
+      "first": {
+        "from": 0,
+        "pattern": "paraugatbild\\w+"
+      }
+    },
+    {
+      "id": "karta",
+      "term": "kārta",
+      "redirect": "pakape",
+      "gloss": "sinonīms"
+    },
+    {
+      "id": "enzims",
+      "term": "enzīms",
+      "redirect": "ferments",
+      "gloss": "sinonīms"
+    },
+    {
+      "id": "tau-half",
+      "term": "τ½ (lekcijā)",
+      "redirect": "pusperiods",
+      "gloss": "tas pats lielums, kas t½"
+    },
+    {
+      "id": "t-half",
+      "term": "t½ (laboratorijas lapā)",
+      "redirect": "pusperiods",
+      "gloss": "tas pats lielums, kas τ½"
+    },
+    {
+      "id": "k-mazais",
+      "term": "k (mazais burts)",
+      "redirect": "atruma-konstante",
+      "gloss": "ātruma konstante; nejaukt ar līdzsvara konstanti K"
+    },
+    {
+      "id": "K-lielais",
+      "term": "K (lielais burts)",
+      "redirect": "liidzsvara-konstante",
+      "gloss": "līdzsvara konstante; nejaukt ar ātruma konstanti k"
+    },
+    {
+      "id": "KM-simbols",
+      "term": "KM",
+      "redirect": "mihaelisa-konstante",
+      "gloss": ""
+    },
+    {
+      "id": "vmax-simbols",
+      "term": "vmax",
+      "redirect": "maksimalais-atrums",
+      "gloss": ""
+    },
+    {
+      "id": "Ea-simbols",
+      "term": "Ea",
+      "redirect": "aktivacijas-energija",
+      "gloss": ""
+    },
+    {
+      "id": "Ki-simbols",
+      "term": "Ki",
+      "redirect": "inhibicijas-konstante",
+      "gloss": ""
+    },
+    {
+      "id": "Kd-simbols",
+      "term": "Kd",
+      "redirect": "disociacijas-konstante",
+      "gloss": ""
+    },
+    {
+      "id": "kcat-simbols",
+      "term": "kcat",
+      "redirect": "kcat",
+      "gloss": ""
+    },
+    {
+      "id": "uncompetitive",
+      "term": "uncompetitive",
+      "redirect": "nekonkurejosa",
+      "gloss": "angļu valodas termins",
+      "lang": "en"
+    },
+    {
+      "id": "parejas-stavoklis",
+      "term": "pārejas stāvoklis",
+      "redirect": "aktivais-komplekss",
+      "gloss": "sinonīms"
+    },
+    {
+      "id": "atruma-likums",
+      "term": "ātruma likums",
+      "redirect": "kinetiskais-vienadojums",
+      "gloss": "sinonīms"
+    },
+    {
+      "id": "pussabrukshanas",
+      "term": "pussabrukšanas periods",
+      "redirect": "pusperiods",
+      "gloss": "sinonīms"
+    },
+    {
+      "id": "farmakokinetika",
+      "term": "farmakokinētika",
+      "definition": "Zāļu koncentrācijas laika gaitas izpēte organismā viena kompartmenta pirmās pakāpes modeļa ietvaros.",
+      "see": 6,
+      "see_also": [
+        "pusperiods",
+        "pirmas-pakapes-reakcija",
+        "eliminacijas-konstante"
+      ],
+      "first": {
+        "from": 6,
+        "pattern": "farmakokinētik\\w+"
+      },
+      "no_first_use": true,
+      "prov": "papildinājums · redakcionāls lēmums: papildtermins Pielikumā A (#appA-elim, C11–C12); Rang & Dale 9. izd. / Goodman & Gilman 13. izd. tēmu norādes, lappuses nav atvērtas"
+    },
+    {
+      "id": "farmakodinamika",
+      "term": "farmakodinamika",
+      "definition": "Zāļu iedarbības mehānismu apraksts, kas šajā dokumentā aprobežojas ar fermentu kinētiku un inhibīciju.",
+      "see": 11,
+      "see_also": [
+        "inhibicija",
+        "ferments",
+        "inhibitors"
+      ],
+      "first": {
+        "from": 6,
+        "pattern": "farmakodinamik\\w+"
+      },
+      "no_first_use": true,
+      "prov": "papildinājums · redakcionāls lēmums: papildtermins Pielikumā A (#appA-clinical, C11–C12); Rang & Dale 9. izd. / Goodman & Gilman 13. izd. tēmu norādes, lappuses nav atvērtas"
+    },
+    {
+      "id": "eliminacijas-konstante",
+      "term": "eliminācijas konstante",
+      "definition": "Pirmās pakāpes zāļu izvades ātruma konstante k<sub>e</sub>, kas nosaka koncentrācijas eksponenciālo dilšanu ar laiku.",
+      "see": 6,
+      "see_also": [
+        "atruma-konstante",
+        "pusperiods",
+        "pirmas-pakapes-reakcija",
+        "liidzsvara-konstante",
+        "stacionarais-stavoklis"
+      ],
+      "symbol_html": "k<sub>e</sub>",
+      "first": {
+        "from": 6,
+        "pattern": "[Ee]liminācijas (?:ātruma )?konstant\\w+"
+      },
+      "no_first_use": true,
+      "prov": "papildinājums · redakcionāls lēmums: papildtermins Pielikumā A (#appA-elim, C11–C12); Rang & Dale 9. izd. / Goodman & Gilman 13. izd. tēmu norādes, lappuses nav atvērtas"
+    },
+    {
+      "id": "stacionarais-stavoklis",
+      "term": "stacionārais stāvoklis",
+      "definition": "Atkārtotu devu režīmā sasniegts līmenis, kurā zāļu ieplūde un izvade laika vienībā izlīdzinās.",
+      "see": 6,
+      "see_also": [
+        "kvazistacionars",
+        "pusperiods",
+        "uzkrasanas-koeficients",
+        "eliminacijas-konstante"
+      ],
+      "first": {
+        "from": 6,
+        "pattern": "stacionār\\w+ stāvokl\\w+"
+      },
+      "no_first_use": true,
+      "prov": "papildinājums · redakcionāls lēmums: papildtermins Pielikumā A (#appA-elim, C11–C12); Rang & Dale 9. izd. / Goodman & Gilman 13. izd. tēmu norādes, lappuses nav atvērtas"
+    },
+    {
+      "id": "uzkrasanas-koeficients",
+      "term": "uzkrāšanās koeficients",
+      "definition": "Bezdimensiju attiecība starp stacionāro līmeni atkārtotu devu režīmā un vienreizējas devas līmeni tajā pašā intervālā.",
+      "see": 6,
+      "see_also": [
+        "stacionarais-stavoklis",
+        "pusperiods",
+        "eliminacijas-konstante"
+      ],
+      "first": {
+        "from": 6,
+        "pattern": "uzkrāšanās koeficient\\w+"
+      },
+      "prov": "papildinājums · redakcionāls lēmums: papildtermins Pielikumā A (#appA-elim, C11–C12); Rang & Dale 9. izd. / Goodman & Gilman 13. izd. tēmu norādes, lappuses nav atvērtas"
+    }
+  ]
+}

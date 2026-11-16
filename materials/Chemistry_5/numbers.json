@@ -1,0 +1,7020 @@
+{
+ "meta": {
+  "purpose": "single source of numeric truth for Master_5_tema_kinetika_un_katalize.html (T09)",
+  "decimal": "JSON uses a decimal point in `value`; `display` uses the Latvian decimal comma, U+00A0 as the thousands separator from 5 integer digits, U+2212 as minus",
+  "policy": {
+   "approximate": "a display that drops digits (display != value) must be preceded by ≈, 'aptuveni' or 'ap' in the HTML; an exact display must not carry ≈",
+   "read-off": "kind 'read-off' and anything that `inherits` from one: the same block must contain 'nolasījum…'; read-off entries carry a tolerance",
+   "html": "each <span data-num='id'> in the HTML must contain exactly `display`"
+  },
+  "script": "tools/build_numbers.py",
+  "verify": "tools/verify_numbers.py"
+ },
+ "constants": {
+  "R": 8.31446261815324
+ },
+ "numbers": [
+  {
+   "id": "log.labojum-tags",
+   "kind": "source",
+   "value": 37,
+   "display": "37",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "structural count (B02): prov tags whose text starts with 'labojums' and names a register id K…/L…, whole document",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "log.skatit-refs",
+   "kind": "source",
+   "value": 6,
+   "display": "6",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "structural count (B02): 'Skatīt K…' references in chapters 1–16",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "qa.source",
+   "kind": "source",
+   "value": 39,
+   "display": "39",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "verify_selfcheck: 22 lecture + 11 MU + 6 lab = 39 source questions (+1 extra); wrapped wherever the count is stated (ch. 14 worksheet header, ch. 15)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.plates",
+   "kind": "source",
+   "value": 26,
+   "display": "26",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "verify_figures: plates: 26 (N20 added fig-16…fig-26); wrapped at ch. 0 'Katram no 26 attēliem' and ch. 17 'Katrs no 26 attēliem'",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "print.cheat",
+   "kind": "source",
+   "value": 10,
+   "display": "10",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N12-S2: cheat-sheet PDF (?mode=cheat) page count measured with headless-Chromium print-to-PDF (A4); re-measured 2026-11-05 after N20 added 11 figure-index rows (9 → 10); wrapped in ch. 15 modes list and ch. 17 print-pages-cheat claim",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "qa.themes",
+   "kind": "parameter",
+   "value": 7,
+   "display": "7",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "practice-set thematic groups, ch. 15; autora izvēle (blakus prov piezīme 'nav avotā')",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "qa.drill-set",
+   "kind": "parameter",
+   "value": 10,
+   "display": "10",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "practice-set composition, ch. 15; autora izvēle",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "qa.session",
+   "kind": "parameter",
+   "value": 10,
+   "display": "10",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "advised 20-minute session length, ch. 15 heading; autora ieteikums",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "qa.warmup",
+   "kind": "parameter",
+   "value": 20,
+   "display": "20",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "exam warm-up set size, ch. 15 heading; autora ieteikums",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mx.selmin",
+   "kind": "parameter",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N10-S1 matrix: minimum rows for Isolate & Diff (skill rule 2–4); wrapped in the ch. 11 note",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mx.selmax",
+   "kind": "parameter",
+   "value": 4,
+   "display": "4",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N10-S1 matrix: maximum rows for Isolate & Diff (skill rule 2–4); wrapped in the ch. 11 note",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.branch",
+   "kind": "parameter",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: radicals made per radical per cycle in the branched chain (illustrative model choice)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rinit",
+   "kind": "parameter",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: radicals from initiation Br₂ → 2 Br· (source text)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.stages",
+   "kind": "parameter",
+   "value": 6,
+   "display": "6",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: slider positions 0–5",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru0",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: initiation pair",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru1",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: an unbranched cycle replaces the radical, the count stays",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru2",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru3",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru4",
+   "kind": "computed",
+   "value": 0,
+   "display": "0",
+   "unit": "",
+   "formula": "0*rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: termination removes the radicals",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.ru5",
+   "kind": "computed",
+   "value": 0,
+   "display": "0",
+   "unit": "",
+   "formula": "0*rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb0",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: initiation pair, branched mode",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb1",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "rinit*branch**0",
+   "inputs": {
+    "rinit": 2,
+    "branch": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: first branched cycle",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb2",
+   "kind": "computed",
+   "value": 4,
+   "display": "4",
+   "unit": "",
+   "formula": "rinit*branch",
+   "inputs": {
+    "rinit": 2,
+    "branch": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: second branched cycle",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb3",
+   "kind": "computed",
+   "value": 8,
+   "display": "8",
+   "unit": "",
+   "formula": "rinit*branch**2",
+   "inputs": {
+    "rinit": 2,
+    "branch": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: third branched cycle (2·2² = 8: exponential growth)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb4",
+   "kind": "computed",
+   "value": 0,
+   "display": "0",
+   "unit": "",
+   "formula": "0*rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: termination removes the radicals",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "chain.rb5",
+   "kind": "computed",
+   "value": 0,
+   "display": "0",
+   "unit": "",
+   "formula": "0*rinit",
+   "inputs": {
+    "rinit": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S1: same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.uncat",
+   "kind": "parameter",
+   "value": 80,
+   "display": "80",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: uncatalysed barrier (illustrative; sets the scale)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.cat1",
+   "kind": "parameter",
+   "value": 50,
+   "display": "50",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: first catalysed barrier (illustrative)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.int",
+   "kind": "parameter",
+   "value": 10,
+   "display": "10",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: intermediate minimum level (illustrative)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.cat2",
+   "kind": "parameter",
+   "value": 45,
+   "display": "45",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: second catalysed barrier (illustrative)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.react",
+   "kind": "parameter",
+   "value": 0,
+   "display": "0",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: reactant level defines the zero of the illustrative path",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.prod",
+   "kind": "parameter",
+   "value": -100,
+   "display": "−100",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: product level; reactants are 0 (illustrative exothermic path)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.rev.uncat",
+   "kind": "computed",
+   "value": 180,
+   "display": "180",
+   "unit": "kJ·mol⁻¹",
+   "formula": "ea_uncat-prod",
+   "inputs": {
+    "ea_uncat": 80,
+    "prod": -100
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: reverse barrier over the same peak (180 = 80 + 100)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.ea.rev.cat",
+   "kind": "computed",
+   "value": 150,
+   "display": "150",
+   "unit": "kJ·mol⁻¹",
+   "formula": "max_ts-prod",
+   "inputs": {
+    "max_ts": 50,
+    "prod": -100
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: rate-limiting reverse barrier over the higher catalysed peak (150 = 50 + 100)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.dh",
+   "kind": "computed",
+   "value": -100,
+   "display": "−100",
+   "unit": "kJ·mol⁻¹",
+   "formula": "prod-reac",
+   "inputs": {
+    "prod": -100,
+    "reac": 0
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: reaction enthalpy, same with and without the catalyst",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "path.stages",
+   "kind": "parameter",
+   "value": 5,
+   "display": "5",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11-S2: slider positions 0–4 (reactants, TS1, intermediate, TS2, products)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s01.c0",
+   "kind": "parameter",
+   "value": 1.0,
+   "display": "1,0",
+   "unit": "mol·L⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N20-S01 (fig-16): initial concentration of the illustration; same scale as instrument 2",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s01.k",
+   "kind": "parameter",
+   "value": 0.1,
+   "display": "0,10",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S01 (fig-16): first-order rate constant of the illustration (instrument 2 default)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s01.t1",
+   "kind": "parameter",
+   "value": 6.0,
+   "display": "6",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N20-S01 (fig-16): time of the tangent point",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s01.t2",
+   "kind": "parameter",
+   "value": 18.0,
+   "display": "18",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N20-S01 (fig-16): second time of the secant",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s01.c1",
+   "kind": "computed",
+   "value": 0.5488116360940264,
+   "display": "0,549",
+   "unit": "mol·L⁻¹",
+   "formula": "c0*exp(-k*t1)",
+   "inputs": {
+    "c0": 1.0,
+    "k": 0.1,
+    "t1": 6.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S01 (fig-16): C at the tangent point",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s01.c2",
+   "kind": "computed",
+   "value": 0.16529888822158653,
+   "display": "0,165",
+   "unit": "mol·L⁻¹",
+   "formula": "c0*exp(-k*t2)",
+   "inputs": {
+    "c0": 1.0,
+    "k": 0.1,
+    "t2": 18.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S01 (fig-16): C at the second secant point",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s01.vtan",
+   "kind": "computed",
+   "value": 0.05488116360940264,
+   "display": "0,055",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "k*c0*exp(-k*t1)",
+   "inputs": {
+    "c0": 1.0,
+    "k": 0.1,
+    "t1": 6.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S01 (fig-16): instantaneous rate = tangent slope at t1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s01.vsec",
+   "kind": "computed",
+   "value": 0.03195939565603665,
+   "display": "0,032",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "(c0*exp(-k*t1)-c0*exp(-k*t2))/(t2-t1)",
+   "inputs": {
+    "c0": 1.0,
+    "k": 0.1,
+    "t1": 6.0,
+    "t2": 18.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S01 (fig-16): average rate = secant slope over t1…t2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s04.A",
+   "kind": "parameter",
+   "value": 10000000000000.0,
+   "display": "1,0·10¹³",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 2,
+    "sep": "·"
+   },
+   "source": "N20-S04 (fig-19): pre-exponential factor of the illustration (typical collision-frequency scale)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s04.ea1",
+   "kind": "parameter",
+   "value": 50.0,
+   "display": "50",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N20-S04 (fig-19): lower barrier shown in panel (b)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s04.ea2",
+   "kind": "parameter",
+   "value": 100.0,
+   "display": "100",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N20-S04 (fig-19): higher barrier shown in panel (b)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s04.gamma",
+   "kind": "computed",
+   "value": 1.9090878542057665,
+   "display": "1,91",
+   "unit": "",
+   "formula": "exp(ea1*1000*(1/300-1/310)/R)",
+   "inputs": {
+    "ea1": 50.0,
+    "R": 8.31446261815324
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S04 (fig-19): k(310 K)/k(300 K) for Ea = 50 kJ·mol⁻¹ — the van 't Hoff γ of the same barrier",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s05.band_lo",
+   "kind": "source",
+   "value": 40,
+   "display": "40",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.3: 'Ea < 40 kJ·mol⁻¹ — fast' lower edge of the rule-of-thumb band; drawn in fig-20",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s05.band_hi",
+   "kind": "source",
+   "value": 120,
+   "display": "120",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.3: 'Ea > 120 kJ·mol⁻¹ — slow' upper edge; drawn in fig-20",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s05.diff2",
+   "kind": "computed",
+   "value": 2.1000000000000014,
+   "display": "2,1",
+   "unit": "kJ·mol⁻¹",
+   "formula": "tp-d",
+   "inputs": {
+    "tp": 54.0,
+    "d": 51.9
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N20-S05 (fig-20): two-point Arrhenius minus differential estimate at γ = 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s05.diff3",
+   "kind": "computed",
+   "value": 2.799999999999997,
+   "display": "2,8",
+   "unit": "kJ·mol⁻¹",
+   "formula": "tp-d",
+   "inputs": {
+    "tp": 85.0,
+    "d": 82.2
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N20-S05 (fig-20): same at γ = 3",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s05.diff4",
+   "kind": "computed",
+   "value": 3.299999999999997,
+   "display": "3,3",
+   "unit": "kJ·mol⁻¹",
+   "formula": "tp-d",
+   "inputs": {
+    "tp": 107.0,
+    "d": 103.7
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N20-S05 (fig-20): same at γ = 4",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s09.pinf",
+   "kind": "parameter",
+   "value": 10.0,
+   "display": "10,0",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N20-S09 (fig-23): product plateau of the illustration (complete conversion of the starting material)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s09.k",
+   "kind": "parameter",
+   "value": 0.05,
+   "display": "0,05",
+   "unit": "min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S09 (fig-23): first-order rate constant of the illustration",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s09.v0",
+   "kind": "computed",
+   "value": 0.5,
+   "display": "0,500",
+   "unit": "mmol·dm⁻³·min⁻¹",
+   "formula": "pinf*k",
+   "inputs": {
+    "pinf": 10.0,
+    "k": 0.05
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S09 (fig-23): initial rate = initial tangent slope",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s09.p30",
+   "kind": "computed",
+   "value": 7.768698398515702,
+   "display": "7,77",
+   "unit": "mmol·dm⁻³",
+   "formula": "pinf*(1-exp(-k*30))",
+   "inputs": {
+    "pinf": 10.0,
+    "k": 0.05
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S09 (fig-23): P after 30 min",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s09.v30",
+   "kind": "computed",
+   "value": 0.11156508007421491,
+   "display": "0,112",
+   "unit": "mmol·dm⁻³·min⁻¹",
+   "formula": "pinf*k*exp(-k*30)",
+   "inputs": {
+    "pinf": 10.0,
+    "k": 0.05
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N20-S09 (fig-23): instantaneous rate after 30 min (the tangent has flattened)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s10.i_ratio",
+   "kind": "parameter",
+   "value": 2.0,
+   "display": "2",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N20-S10 (fig-24): [I]/Ki used for both inhibitor curves, the same ratio as fig-11 and 8. tabula",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "fig.s10.inv_vmax",
+   "kind": "computed",
+   "value": 2.1739130434782608,
+   "display": "2,17",
+   "unit": "µmol⁻¹·min",
+   "formula": "1/v",
+   "inputs": {
+    "v": 0.46
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S10 (fig-24): y intercept 1/vmax of the uninhibited line",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s10.inv_vmax_nc",
+   "kind": "computed",
+   "value": 6.521739130434782,
+   "display": "6,52",
+   "unit": "µmol⁻¹·min",
+   "formula": "(1+i)/v",
+   "inputs": {
+    "v": 0.46,
+    "i": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S10 (fig-24): y intercept 1/vmax,app of the non-competitive line",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s10.neg_km",
+   "kind": "computed",
+   "value": -0.8333333333333334,
+   "display": "−0,83",
+   "unit": "dm³·mmol⁻¹",
+   "formula": "-1/km",
+   "inputs": {
+    "km": 1.2
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S10 (fig-24): x intercept −1/KM (outside the drawn frame; stated in the caption)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s10.neg_km_app",
+   "kind": "computed",
+   "value": -0.2777777777777778,
+   "display": "−0,28",
+   "unit": "dm³·mmol⁻¹",
+   "formula": "-1/(km*(1+i))",
+   "inputs": {
+    "km": 1.2,
+    "i": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S10 (fig-24): x intercept −1/KM,app of the competitive line",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "fig.s13.k",
+   "kind": "parameter",
+   "value": 0.1,
+   "display": "0,10",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N20-S13 (fig-21): rate constant shared by the three orders (units by order; same as instrument 2)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "cyc.nstates",
+   "kind": "parameter",
+   "value": 4,
+   "display": "4",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N11: enzyme-cycle slider positions (study model, no kinetics)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "const.R",
+   "kind": "constant",
+   "value": 8.31446261815324,
+   "display": "8,314",
+   "unit": "J·mol⁻¹·K⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "SI definition R = N_A·k_B (2019), 8,314 462 618…",
+   "script": "tools/build_numbers.py",
+   "approx_by_convention": "R is exact in SI; the document writes 8,314 (4 s.f.); the instruments use the full value; ch16 states the full value once"
+  },
+  {
+   "id": "const.ln2",
+   "kind": "constant",
+   "value": 0.6931471805599453,
+   "display": "0,6931",
+   "unit": "",
+   "formula": "log(2)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "definition",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "const.RT300",
+   "kind": "computed",
+   "value": 2.494338785445972,
+   "display": "2,5",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T/1000",
+   "inputs": {
+    "T": 300
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "ch8 table 6 comment: RT at 300 K",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lit.ea.cat.milek",
+   "kind": "source",
+   "value": 12.9,
+   "display": "12,9",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "Miłek 2018, Braz. J. Chem. Eng. 35(3), doi:10.1590/0104-6632.20180353s20160617: catalase (Aspergillus niger, EC 1.11.1.6), 20-50 °C, pH 6.9, 0.015 M H2O2; Ea = 12.9 ± 0.7 kJ/mol (fetched 2026-11-02, N06)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lit.ea.cat.altomare",
+   "kind": "source",
+   "value": 19.7,
+   "display": "19,7",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "Altomare 1974, as cited in Miłek 2018 (conditions not seen; cited value only, N06)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lit.ea.cat.hooda",
+   "kind": "source",
+   "value": 23.5,
+   "display": "23,5",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "Hooda 2014, as cited in Miłek 2018 (above 35 °C deactivation distorted that estimate; cited value only, N06)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "coll.sqrt",
+   "kind": "computed",
+   "value": 1.013316165604068,
+   "display": "1,013",
+   "unit": "",
+   "formula": "sqrt(T2/T1)",
+   "inputs": {
+    "T1": 373,
+    "T2": 383
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "Kinetika p.2-3 (√T collision frequency); numbers 373 and 383 K from the source example",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "coll.pct",
+   "kind": "computed",
+   "value": 1.3316165604067898,
+   "display": "1,3",
+   "unit": "%",
+   "formula": "(sqrt(T2/T1)-1)*100",
+   "inputs": {
+    "T1": 373,
+    "T2": 383
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "k15.g10",
+   "kind": "computed",
+   "value": 42070.72333002009,
+   "display": "42 070,7",
+   "unit": "",
+   "formula": "g**n",
+   "inputs": {
+    "g": 2.9,
+    "n": 10
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "Kinetika p.2: γ = 2,9 per 10 K, ΔT = 100 K (register K15)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "k15.sci",
+   "kind": "computed",
+   "value": 42070.72333002009,
+   "display": "4,2·10⁴",
+   "unit": "",
+   "formula": "g**n",
+   "inputs": {
+    "g": 2.9,
+    "n": 10
+   },
+   "rounding": {
+    "sci": 2,
+    "sep": "·"
+   },
+   "source": "same",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "k15.int",
+   "kind": "computed",
+   "value": 42070.72333002009,
+   "display": "42 071",
+   "unit": "",
+   "formula": "g**n",
+   "inputs": {
+    "g": 2.9,
+    "n": 10
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "same",
+   "script": "tools/build_numbers.py",
+   "note": "the only legitimate form of 42 071: rounded to whole numbers, never 'exact'"
+  },
+  {
+   "id": "k15.src",
+   "kind": "source",
+   "value": 50000,
+   "display": "50 000",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.2 prints 'aptuveni 50 000'",
+   "script": "tools/build_numbers.py",
+   "source_approx": true
+  },
+  {
+   "id": "k15.diff",
+   "kind": "computed",
+   "value": 18.84749308391823,
+   "display": "19",
+   "unit": "%",
+   "formula": "(s-g**n)/(g**n)*100",
+   "inputs": {
+    "s": 50000,
+    "g": 2.9,
+    "n": 10
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "relative to the correct value 2,9^10; 15,9 % if measured against the source's 50 000",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g2",
+   "kind": "computed",
+   "value": 51.86831689479581,
+   "display": "51,9",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 2
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "E_a = R·T²·ln γ / 10 (derivative form, 15. tabula)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g3",
+   "kind": "computed",
+   "value": 82.20933725377297,
+   "display": "82,2",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 3
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "E_a = R·T²·ln γ / 10 (derivative form, 15. tabula)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g4",
+   "kind": "computed",
+   "value": 103.73663378959162,
+   "display": "103,7",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 4
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "E_a = R·T²·ln γ / 10 (derivative form, 15. tabula)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g2.r",
+   "kind": "computed",
+   "value": 51.86831689479581,
+   "display": "52",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "same, rounded to whole kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g3.r",
+   "kind": "computed",
+   "value": 82.20933725377297,
+   "display": "82",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 3
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "same, rounded to whole kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g4.r",
+   "kind": "computed",
+   "value": 103.73663378959162,
+   "display": "104",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*T**2*log(g)/10/1000",
+   "inputs": {
+    "T": 300,
+    "g": 4
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "same, rounded to whole kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ea.g2.twopoint",
+   "kind": "computed",
+   "value": 53.59726079128889,
+   "display": "54",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*log(g)/(1/T1-1/T2)/1000",
+   "inputs": {
+    "T1": 300,
+    "T2": 310,
+    "g": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "AGENTS.md K16 '54, 85, 107': exact two-point Arrhenius between 300 and 310 K",
+   "script": "tools/build_numbers.py",
+   "note": "a different definition of γ (finite 10 K step), not an error"
+  },
+  {
+   "id": "ea.g3.twopoint",
+   "kind": "computed",
+   "value": 84.94964849556524,
+   "display": "85",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*log(g)/(1/T1-1/T2)/1000",
+   "inputs": {
+    "T1": 300,
+    "T2": 310,
+    "g": 3
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "AGENTS.md K16 '54, 85, 107': exact two-point Arrhenius between 300 and 310 K",
+   "script": "tools/build_numbers.py",
+   "note": "a different definition of γ (finite 10 K step), not an error"
+  },
+  {
+   "id": "ea.g4.twopoint",
+   "kind": "computed",
+   "value": 107.19452158257778,
+   "display": "107",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*log(g)/(1/T1-1/T2)/1000",
+   "inputs": {
+    "T1": 300,
+    "T2": 310,
+    "g": 4
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "AGENTS.md K16 '54, 85, 107': exact two-point Arrhenius between 300 and 310 K",
+   "script": "tools/build_numbers.py",
+   "note": "a different definition of γ (finite 10 K step), not an error"
+  },
+  {
+   "id": "arr.c1",
+   "kind": "parameter",
+   "value": 27,
+   "display": "27",
+   "unit": "°C",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "T05 worked example: lower Celsius temperature, chosen illustration",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.c2",
+   "kind": "parameter",
+   "value": 37,
+   "display": "37",
+   "unit": "°C",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "T05 worked example: upper Celsius temperature, the same 10 K step",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.t1k",
+   "kind": "computed",
+   "value": 300.15,
+   "display": "300,15",
+   "unit": "K",
+   "formula": "c+273.15",
+   "inputs": {
+    "c": 27
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T05: T/K = θ/°C + 273,15 (definition, not a course quotation)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.t2k",
+   "kind": "computed",
+   "value": 310.15,
+   "display": "310,15",
+   "unit": "K",
+   "formula": "c+273.15",
+   "inputs": {
+    "c": 37
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T05: T/K = θ/°C + 273,15 (definition, not a course quotation)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.recip300",
+   "kind": "computed",
+   "value": 0.00010752688172043032,
+   "display": "1,1·10⁻⁴",
+   "unit": "K⁻¹",
+   "formula": "1/T1-1/T2",
+   "inputs": {
+    "T1": 300,
+    "T2": 310
+   },
+   "rounding": {
+    "sci": 2,
+    "sep": "·"
+   },
+   "source": "T05: 1/T₁ − 1/T₂ for ΔT = 10 K at 300 K; a constant ΔT is not a constant reciprocal step",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.recip400",
+   "kind": "computed",
+   "value": 6.0975609756097615e-05,
+   "display": "6,1·10⁻⁵",
+   "unit": "K⁻¹",
+   "formula": "1/T1-1/T2",
+   "inputs": {
+    "T1": 400,
+    "T2": 410
+   },
+   "rounding": {
+    "sci": 2,
+    "sep": "·"
+   },
+   "source": "T05: the same 10 K step at 400 K gives a smaller reciprocal interval",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "arr.ea",
+   "kind": "computed",
+   "value": 82.40924815474987,
+   "display": "82,4",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*log(g)/(1/T1-1/T2)/1000",
+   "inputs": {
+    "g": 2.9,
+    "T1": 300.15,
+    "T2": 310.15
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T05 worked example: two-point Ea after converting 27 and 37 °C to kelvin",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mb.p300",
+   "kind": "computed",
+   "value": 1.0193252600794535e-08,
+   "display": "1,02 × 10⁻⁸",
+   "unit": "",
+   "formula": "tail(Ea*1000/(R*T))",
+   "inputs": {
+    "Ea": 50,
+    "T": 300
+   },
+   "rounding": {
+    "sci": 3,
+    "sep": " × "
+   },
+   "source": "3-D Maxwell–Boltzmann energy distribution: P(E ≥ Ea) = erfc(√x) + 2√(x/π)·e^−x, x = Ea/(RT)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mb.p310",
+   "kind": "computed",
+   "value": 1.9158201364476867e-08,
+   "display": "1,92 × 10⁻⁸",
+   "unit": "",
+   "formula": "tail(Ea*1000/(R*T))",
+   "inputs": {
+    "Ea": 50,
+    "T": 310
+   },
+   "rounding": {
+    "sci": 3,
+    "sep": " × "
+   },
+   "source": "3-D Maxwell–Boltzmann energy distribution: P(E ≥ Ea) = erfc(√x) + 2√(x/π)·e^−x, x = Ea/(RT)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mb.ratio",
+   "kind": "computed",
+   "value": 1.8794983421664189,
+   "display": "1,88",
+   "unit": "",
+   "formula": "tail(Ea*1000/(R*T2))/tail(Ea*1000/(R*T1))",
+   "inputs": {
+    "Ea": 50,
+    "T1": 300,
+    "T2": 310
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "ratio of the two tails; the old 1,91 was e^(−Ea/RT) alone, which does not match the 1,02/1,92 pair",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.t1",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,00",
+   "unit": "s",
+   "formula": "C0*(1-f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.d1",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,00",
+   "unit": "s",
+   "formula": "C0*(1-f)/k-(C0*(1-fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5,
+    "fp": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.t2",
+   "kind": "computed",
+   "value": 7.5,
+   "display": "7,50",
+   "unit": "s",
+   "formula": "C0*(1-f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.d2",
+   "kind": "computed",
+   "value": 2.5,
+   "display": "2,50",
+   "unit": "s",
+   "formula": "C0*(1-f)/k-(C0*(1-fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25,
+    "fp": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.t3",
+   "kind": "computed",
+   "value": 8.75,
+   "display": "8,75",
+   "unit": "s",
+   "formula": "C0*(1-f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.d3",
+   "kind": "computed",
+   "value": 1.25,
+   "display": "1,25",
+   "unit": "s",
+   "formula": "C0*(1-f)/k-(C0*(1-fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125,
+    "fp": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.t1",
+   "kind": "computed",
+   "value": 6.931471805599452,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.d1",
+   "kind": "computed",
+   "value": 6.931471805599452,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k-(-log(fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5,
+    "fp": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.t2",
+   "kind": "computed",
+   "value": 13.862943611198904,
+   "display": "13,86",
+   "unit": "s",
+   "formula": "-log(f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.d2",
+   "kind": "computed",
+   "value": 6.931471805599452,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k-(-log(fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25,
+    "fp": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.t3",
+   "kind": "computed",
+   "value": 20.794415416798355,
+   "display": "20,79",
+   "unit": "s",
+   "formula": "-log(f)/k",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.d3",
+   "kind": "computed",
+   "value": 6.93147180559945,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k-(-log(fp)/k)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125,
+    "fp": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.t1",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.d1",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)-((1/fp-1)/(k*C0))",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.5,
+    "fp": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.t2",
+   "kind": "computed",
+   "value": 30.0,
+   "display": "30,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.d2",
+   "kind": "computed",
+   "value": 20.0,
+   "display": "20,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)-((1/fp-1)/(k*C0))",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.25,
+    "fp": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.t3",
+   "kind": "computed",
+   "value": 70.0,
+   "display": "70,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "closed form of the integrated rate law at C = C0/2^i (tools/test_halflife.js tests the same code)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.d3",
+   "kind": "computed",
+   "value": 40.0,
+   "display": "40,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)-((1/fp-1)/(k*C0))",
+   "inputs": {
+    "C0": 1,
+    "k": 0.1,
+    "f": 0.125,
+    "fp": 0.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "difference of consecutive marks",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.frac1",
+   "kind": "computed",
+   "value": 0.5,
+   "display": "0,500",
+   "unit": "mol·L⁻¹",
+   "formula": "C0*f",
+   "inputs": {
+    "C0": 1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "C0/2^i",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.frac2",
+   "kind": "computed",
+   "value": 0.25,
+   "display": "0,250",
+   "unit": "mol·L⁻¹",
+   "formula": "C0*f",
+   "inputs": {
+    "C0": 1,
+    "f": 0.25
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "C0/2^i",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.frac3",
+   "kind": "computed",
+   "value": 0.125,
+   "display": "0,125",
+   "unit": "mol·L⁻¹",
+   "formula": "C0*f",
+   "inputs": {
+    "C0": 1,
+    "f": 0.125
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "C0/2^i",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.c05",
+   "kind": "computed",
+   "value": 2.5,
+   "display": "2,50",
+   "unit": "s",
+   "formula": "C0*(1-f)/k",
+   "inputs": {
+    "C0": 0.5,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 0.5 mol·L⁻¹ from the same order-0 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o0.c2",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10,00",
+   "unit": "s",
+   "formula": "C0*(1-f)/k",
+   "inputs": {
+    "C0": 2.0,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 2 mol·L⁻¹ from the same order-0 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.c05",
+   "kind": "computed",
+   "value": 6.931471805599452,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k",
+   "inputs": {
+    "C0": 0.5,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 0.5 mol·L⁻¹ from the same order-1 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o1.c2",
+   "kind": "computed",
+   "value": 6.931471805599452,
+   "display": "6,93",
+   "unit": "s",
+   "formula": "-log(f)/k",
+   "inputs": {
+    "C0": 2.0,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 2 mol·L⁻¹ from the same order-1 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.c05",
+   "kind": "computed",
+   "value": 20.0,
+   "display": "20,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)",
+   "inputs": {
+    "C0": 0.5,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 0.5 mol·L⁻¹ from the same order-2 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "hl.o2.c2",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,00",
+   "unit": "s",
+   "formula": "(1/f-1)/(k*C0)",
+   "inputs": {
+    "C0": 2.0,
+    "k": 0.1,
+    "f": 0.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T06 (ch6): half-life at C0 = 2 mol·L⁻¹ from the same order-2 integrated law; k = 0.10 in the order's unit",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "pharm.frac5",
+   "kind": "computed",
+   "value": 3.125,
+   "display": "3,125",
+   "unit": "%",
+   "formula": "0.5**n*100",
+   "inputs": {
+    "n": 5
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "(1/2)^5 = 1/32",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "pharm.hours5",
+   "kind": "computed",
+   "value": 20,
+   "display": "20",
+   "unit": "h",
+   "formula": "n*t",
+   "inputs": {
+    "n": 5,
+    "t": 4
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5 × 4 h",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "q5.thalf",
+   "kind": "read-off",
+   "value": 2,
+   "display": "2",
+   "unit": "d",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "MU Q5 graph: 80 → 40 at about 2 d (grid 1 d); tolerance is an editorial estimate of reading precision",
+   "script": "tools/build_numbers.py",
+   "tolerance": 0.2
+  },
+  {
+   "id": "q5.k",
+   "kind": "computed",
+   "value": 0.34657359027997264,
+   "display": "0,347",
+   "unit": "d⁻¹",
+   "formula": "log(2)/t",
+   "inputs": {
+    "t": 2
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "k = ln2/t½ with the read-off t½",
+   "script": "tools/build_numbers.py",
+   "inherits": "q5.thalf"
+  },
+  {
+   "id": "q6.k_min",
+   "kind": "computed",
+   "value": 0.06931471805599453,
+   "display": "0,0693",
+   "unit": "min⁻¹",
+   "formula": "log(2)/t",
+   "inputs": {
+    "t": 10
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "MU Q6: t½ = 10 min",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "q6.k_s",
+   "kind": "computed",
+   "value": 0.0011552453009332421,
+   "display": "0,00116",
+   "unit": "s⁻¹",
+   "formula": "log(2)/(t*60)",
+   "inputs": {
+    "t": 10
+   },
+   "rounding": {
+    "dec": 5
+   },
+   "source": "same, minutes → seconds ×60",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unit.umol",
+   "kind": "computed",
+   "value": 1.6666666666666667e-08,
+   "display": "1,67·10⁻⁸",
+   "unit": "mol·s⁻¹",
+   "formula": "1e-6/60",
+   "inputs": {},
+   "rounding": {
+    "sci": 3,
+    "sep": "·"
+   },
+   "source": "1 µmol·min⁻¹ in mol·s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "mm.vmax",
+   "kind": "read-off",
+   "value": 0.46,
+   "display": "0,46",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "MU Q10 graph (plateau on the 0,46 gridline; minor gridline = 0,02)",
+   "script": "tools/build_numbers.py",
+   "tolerance": 0.02
+  },
+  {
+   "id": "mm.vmax2",
+   "kind": "computed",
+   "value": 0.23,
+   "display": "0,23",
+   "unit": "µmol·min⁻¹",
+   "formula": "v/2",
+   "inputs": {
+    "v": 0.46
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "v_max/2",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.vmax"
+  },
+  {
+   "id": "mm.km",
+   "kind": "read-off",
+   "value": 1.2,
+   "display": "1,2",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "MU Q10 graph: x where v = v_max/2 = 0,23 (minor gridline on x = 1 mmol·dm⁻³)",
+   "script": "tools/build_numbers.py",
+   "tolerance": 0.2
+  },
+  {
+   "id": "mm.km_app",
+   "kind": "computed",
+   "value": 3.5999999999999996,
+   "display": "3,6",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(1+i)",
+   "inputs": {
+    "km": 1.2,
+    "i": 2
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "competitive inhibitor, [I]/Ki = 2 (instrument 3 default)",
+   "script": "tools/build_numbers.py",
+   "html": false,
+   "inherits": "mm.km"
+  },
+  {
+   "id": "mm.vmax_nc",
+   "kind": "computed",
+   "value": 0.15333333333333335,
+   "display": "0,153",
+   "unit": "µmol·min⁻¹",
+   "formula": "v/(1+i)",
+   "inputs": {
+    "v": 0.46,
+    "i": 2
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "noncompetitive inhibitor, [I]/Ki = 2 (instrument 3 default)",
+   "script": "tools/build_numbers.py",
+   "html": false,
+   "inherits": "mm.vmax"
+  },
+  {
+   "id": "ex.kcat.vmax",
+   "kind": "parameter",
+   "value": 0.2,
+   "display": "0,20",
+   "unit": "µmol·L⁻¹·s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T10 self-check: given v_max",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ex.kcat.E0",
+   "kind": "parameter",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "nmol·L⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T10 self-check: given [E]0, counted in dimer molecules",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ex.kcat.Eakt",
+   "kind": "computed",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "nmol·L⁻¹",
+   "formula": "n*E0",
+   "inputs": {
+    "n": 2,
+    "E0": 2.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "[E]akt = n·[E]0, n = 2 identical active sites per molecule",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ex.kcat.permol",
+   "kind": "computed",
+   "value": 100.0,
+   "display": "100",
+   "unit": "s⁻¹",
+   "formula": "vmax*1000/E0",
+   "inputs": {
+    "vmax": 0.2,
+    "E0": 2.0
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "v_max/[E]0 (µmol → nmol factor 1000); equals n·k_cat, the WRONG answer for k_cat",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "ex.kcat.kcat",
+   "kind": "computed",
+   "value": 50.0,
+   "display": "50",
+   "unit": "s⁻¹",
+   "formula": "vmax*1000/(n*E0)",
+   "inputs": {
+    "vmax": 0.2,
+    "n": 2,
+    "E0": 2.0
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "k_cat = v_max/[E]akt",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.side0",
+   "kind": "parameter",
+   "value": 1,
+   "display": "1",
+   "unit": "cm",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N17 worked example: initial cube edge 1 cm",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.area0",
+   "kind": "computed",
+   "value": 6,
+   "display": "6",
+   "unit": "cm²",
+   "formula": "6*s**2",
+   "inputs": {
+    "s": 1
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "total surface area of 1 cm cube: 6·(1 cm)²",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.ncubes",
+   "kind": "computed",
+   "value": 1000,
+   "display": "1000",
+   "unit": "",
+   "formula": "10**3",
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "number of 1 mm cubes in 1 cm cube: (10 mm / 1 mm)³ = 1000",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.side1",
+   "kind": "parameter",
+   "value": 1,
+   "display": "1",
+   "unit": "mm",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "subdivided cube edge 1 mm",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.area1",
+   "kind": "computed",
+   "value": 60.000000000000014,
+   "display": "60",
+   "unit": "cm²",
+   "formula": "n*6*(s/10)**2",
+   "inputs": {
+    "n": 1000,
+    "s": 1
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "total surface area of 1000 1 mm cubes: 1000·6·(0,1 cm)² = 60 cm²",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "surf.ratio",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10",
+   "unit": "",
+   "formula": "a1/a0",
+   "inputs": {
+    "a0": 6,
+    "a1": 60
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "surface area ratio: 60 cm² / 6 cm² = 10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.dg",
+   "kind": "computed",
+   "value": -11.416019005070517,
+   "display": "−11,4",
+   "unit": "kJ·mol⁻¹",
+   "formula": "-R*T*log(K)/1000",
+   "inputs": {
+    "T": 298.15,
+    "K": 100
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N17 numeric illustration: ΔG° = −R·T·ln K at 298,15 K with K = 100",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.K",
+   "kind": "parameter",
+   "value": 100,
+   "display": "100",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "equilibrium constant K = k_fwd / k_rev = 100",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.k1.uncat",
+   "kind": "parameter",
+   "value": 0.0001,
+   "display": "1·10⁻⁴",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 1,
+    "sep": "·"
+   },
+   "source": "uncatalysed forward rate constant: 1·10⁻⁴ s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.k_1.uncat",
+   "kind": "parameter",
+   "value": 1e-06,
+   "display": "1·10⁻⁶",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 1,
+    "sep": "·"
+   },
+   "source": "uncatalysed reverse rate constant: 1·10⁻⁶ s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.accel",
+   "kind": "parameter",
+   "value": 100000.0,
+   "display": "1·10⁵",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 1,
+    "sep": "·"
+   },
+   "source": "catalytic acceleration factor: 1·10⁵",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.k1.cat",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10",
+   "unit": "s⁻¹",
+   "formula": "k*a",
+   "inputs": {
+    "k": 0.0001,
+    "a": 100000.0
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "catalysed forward rate constant: 10 s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "equil.k_1.cat",
+   "kind": "computed",
+   "value": 0.09999999999999999,
+   "display": "0,1",
+   "unit": "s⁻¹",
+   "formula": "k*a",
+   "inputs": {
+    "k": 1e-06,
+    "a": 100000.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "catalysed reverse rate constant: 0,1 s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "kcat.example",
+   "kind": "parameter",
+   "value": 10000.0,
+   "display": "1·10⁴",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 1,
+    "sep": "·"
+   },
+   "source": "typical enzyme turnover number: 1·10⁴ s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "kcat.catalase",
+   "kind": "parameter",
+   "value": 40000000.0,
+   "display": "4·10⁷",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "sci": 1,
+    "sep": "·"
+   },
+   "source": "catalase turnover number: 4·10⁷ s⁻¹",
+   "script": "tools/build_numbers.py",
+   "source_approx": true
+  },
+  {
+   "id": "src.ea.h2o2.none",
+   "kind": "source",
+   "value": 79000,
+   "display": "79 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.h2o2.catalase",
+   "kind": "source",
+   "value": 23,
+   "display": "23",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.hi.none",
+   "kind": "source",
+   "value": 185000,
+   "display": "185 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.hi.au",
+   "kind": "source",
+   "value": 121000,
+   "display": "121 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.hi.pt",
+   "kind": "source",
+   "value": 59000,
+   "display": "59 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.nh3.none",
+   "kind": "source",
+   "value": 335000,
+   "display": "335 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "src.ea.nh3.w",
+   "kind": "source",
+   "value": 162000,
+   "display": "162 000",
+   "unit": "J·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Kinetika p.6, 5. tabula (printed J·mol⁻¹; register K10)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.V.1",
+   "kind": "source",
+   "value": 10.0,
+   "display": "10,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LW p.1 / 5LD p.2 (volumes of 0,50 M Na₂S₂O₃)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.W.1",
+   "kind": "computed",
+   "value": 0.0,
+   "display": "0,0",
+   "unit": "mL",
+   "formula": "10-v",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "water to 10,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ck.1",
+   "kind": "computed",
+   "value": 0.5,
+   "display": "0,500",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/10",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "course table: 0,50·V/10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ct.1",
+   "kind": "computed",
+   "value": 0.4166666666666667,
+   "display": "0,417",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/12",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "real mixture: 0,50·V/12",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.V.2",
+   "kind": "source",
+   "value": 8.0,
+   "display": "8,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LW p.1 / 5LD p.2 (volumes of 0,50 M Na₂S₂O₃)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.W.2",
+   "kind": "computed",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "mL",
+   "formula": "10-v",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "water to 10,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ck.2",
+   "kind": "computed",
+   "value": 0.4,
+   "display": "0,400",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/10",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "course table: 0,50·V/10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ct.2",
+   "kind": "computed",
+   "value": 0.3333333333333333,
+   "display": "0,333",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/12",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "real mixture: 0,50·V/12",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.V.3",
+   "kind": "source",
+   "value": 6.0,
+   "display": "6,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LW p.1 / 5LD p.2 (volumes of 0,50 M Na₂S₂O₃)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.W.3",
+   "kind": "computed",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "mL",
+   "formula": "10-v",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "water to 10,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ck.3",
+   "kind": "computed",
+   "value": 0.3,
+   "display": "0,300",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/10",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "course table: 0,50·V/10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ct.3",
+   "kind": "computed",
+   "value": 0.25,
+   "display": "0,250",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/12",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "real mixture: 0,50·V/12",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.V.4",
+   "kind": "source",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LW p.1 / 5LD p.2 (volumes of 0,50 M Na₂S₂O₃)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.W.4",
+   "kind": "computed",
+   "value": 6.0,
+   "display": "6,0",
+   "unit": "mL",
+   "formula": "10-v",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "water to 10,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ck.4",
+   "kind": "computed",
+   "value": 0.2,
+   "display": "0,200",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/10",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "course table: 0,50·V/10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ct.4",
+   "kind": "computed",
+   "value": 0.16666666666666666,
+   "display": "0,167",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/12",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "real mixture: 0,50·V/12",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.V.5",
+   "kind": "source",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LW p.1 / 5LD p.2 (volumes of 0,50 M Na₂S₂O₃)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.W.5",
+   "kind": "computed",
+   "value": 8.0,
+   "display": "8,0",
+   "unit": "mL",
+   "formula": "10-v",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "water to 10,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ck.5",
+   "kind": "computed",
+   "value": 0.1,
+   "display": "0,100",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/10",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "course table: 0,50·V/10",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.ct.5",
+   "kind": "computed",
+   "value": 0.08333333333333333,
+   "display": "0,083",
+   "unit": "mol·L⁻¹",
+   "formula": "0.5*v/12",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "real mixture: 0,50·V/12",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.t.1",
+   "kind": "source",
+   "value": 13.6,
+   "display": "13,60",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "5LD p.2 data table, set 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.t.2",
+   "kind": "source",
+   "value": 17.85,
+   "display": "17,85",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "5LD p.2 data table, set 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.t.3",
+   "kind": "source",
+   "value": 22.15,
+   "display": "22,15",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "5LD p.2 data table, set 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.t.4",
+   "kind": "source",
+   "value": 30.65,
+   "display": "30,65",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "5LD p.2 data table, set 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.t.5",
+   "kind": "source",
+   "value": 55.66,
+   "display": "55,66",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "5LD p.2 data table, set 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.t.1",
+   "kind": "source",
+   "value": 15,
+   "display": "15",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5LD p.3 data table, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.t.2",
+   "kind": "source",
+   "value": 22,
+   "display": "22",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5LD p.3 data table, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.t.3",
+   "kind": "source",
+   "value": 28,
+   "display": "28",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5LD p.3 data table, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.t.4",
+   "kind": "source",
+   "value": 41,
+   "display": "41",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5LD p.3 data table, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.t.5",
+   "kind": "source",
+   "value": 50,
+   "display": "50",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "5LD p.3 data table, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lnC.1",
+   "kind": "computed",
+   "value": -0.6931471805599453,
+   "display": "−0,693",
+   "unit": "",
+   "formula": "log(0.5*v/10)",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln C (course)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.invt.1",
+   "kind": "computed",
+   "value": 0.07352941176470588,
+   "display": "0,0735",
+   "unit": "s⁻¹",
+   "formula": "1/t",
+   "inputs": {
+    "t": 13.6
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "1/t",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lninvt.1",
+   "kind": "computed",
+   "value": -2.6100697927420065,
+   "display": "−2,610",
+   "unit": "",
+   "formula": "log(1/t)",
+   "inputs": {
+    "t": 13.6
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln(1/t)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lnC.2",
+   "kind": "computed",
+   "value": -0.916290731874155,
+   "display": "−0,916",
+   "unit": "",
+   "formula": "log(0.5*v/10)",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln C (course)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.invt.2",
+   "kind": "computed",
+   "value": 0.05602240896358543,
+   "display": "0,0560",
+   "unit": "s⁻¹",
+   "formula": "1/t",
+   "inputs": {
+    "t": 17.85
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "1/t",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lninvt.2",
+   "kind": "computed",
+   "value": -2.8820035082256483,
+   "display": "−2,882",
+   "unit": "",
+   "formula": "log(1/t)",
+   "inputs": {
+    "t": 17.85
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln(1/t)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lnC.3",
+   "kind": "computed",
+   "value": -1.2039728043259361,
+   "display": "−1,204",
+   "unit": "",
+   "formula": "log(0.5*v/10)",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln C (course)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.invt.3",
+   "kind": "computed",
+   "value": 0.045146726862302484,
+   "display": "0,0451",
+   "unit": "s⁻¹",
+   "formula": "1/t",
+   "inputs": {
+    "t": 22.15
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "1/t",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lninvt.3",
+   "kind": "computed",
+   "value": -3.097837496491145,
+   "display": "−3,098",
+   "unit": "",
+   "formula": "log(1/t)",
+   "inputs": {
+    "t": 22.15
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln(1/t)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lnC.4",
+   "kind": "computed",
+   "value": -1.6094379124341003,
+   "display": "−1,609",
+   "unit": "",
+   "formula": "log(0.5*v/10)",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln C (course)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.invt.4",
+   "kind": "computed",
+   "value": 0.032626427406199025,
+   "display": "0,0326",
+   "unit": "s⁻¹",
+   "formula": "1/t",
+   "inputs": {
+    "t": 30.65
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "1/t",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lninvt.4",
+   "kind": "computed",
+   "value": -3.4226326623822203,
+   "display": "−3,423",
+   "unit": "",
+   "formula": "log(1/t)",
+   "inputs": {
+    "t": 30.65
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln(1/t)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lnC.5",
+   "kind": "computed",
+   "value": -2.3025850929940455,
+   "display": "−2,303",
+   "unit": "",
+   "formula": "log(0.5*v/10)",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln C (course)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.invt.5",
+   "kind": "computed",
+   "value": 0.017966223499820338,
+   "display": "0,0180",
+   "unit": "s⁻¹",
+   "formula": "1/t",
+   "inputs": {
+    "t": 55.66
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "1/t",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.lninvt.5",
+   "kind": "computed",
+   "value": -4.019261756097745,
+   "display": "−4,019",
+   "unit": "",
+   "formula": "log(1/t)",
+   "inputs": {
+    "t": 55.66
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "ln(1/t)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.k2",
+   "kind": "source",
+   "value": 0.0374,
+   "display": "0,0374",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "5LD key, set 1: |slope| of ln C vs t",
+   "script": "tools/build_numbers.py",
+   "crosscheck": "-slope(T, [log(0.5*v/10) for v in V])"
+  },
+  {
+   "id": "lab.s1.r2c",
+   "kind": "computed",
+   "value": 0.9662413341633371,
+   "display": "0,966",
+   "unit": "",
+   "formula": "r2(T, [log(0.5*v/10) for v in V])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "R² of ln C vs t [AGENTS §5.2, own calculation]",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.n",
+   "kind": "computed",
+   "value": 0.8534047691436277,
+   "display": "0,85",
+   "unit": "",
+   "formula": "slope([log(0.5*v/12) for v in V], [log(1/t) for t in T])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "slope of ln(1/t) vs ln C = apparent order",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.r2v",
+   "kind": "computed",
+   "value": 0.9969755318468518,
+   "display": "0,997",
+   "unit": "",
+   "formula": "r2([log(0.5*v/12) for v in V], [log(1/t) for t in T])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "R² of ln(1/t) vs ln C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.tc.1",
+   "kind": "computed",
+   "value": 6.8,
+   "display": "6,80",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 13.6,
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s1.tc.2",
+   "kind": "computed",
+   "value": 7.140000000000001,
+   "display": "7,14",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 17.85,
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s1.tc.3",
+   "kind": "computed",
+   "value": 6.644999999999999,
+   "display": "6,64",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 22.15,
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s1.tc.4",
+   "kind": "computed",
+   "value": 6.13,
+   "display": "6,13",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 30.65,
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s1.tc.5",
+   "kind": "computed",
+   "value": 5.566,
+   "display": "5,57",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 55.66,
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s1.tcmin",
+   "kind": "computed",
+   "value": 5.566,
+   "display": "5,57",
+   "unit": "s·mol·L⁻¹",
+   "formula": "min([t*0.5*v/10 for t, v in zip(T, V)])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "min t·C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.tcmax",
+   "kind": "computed",
+   "value": 7.140000000000001,
+   "display": "7,14",
+   "unit": "s·mol·L⁻¹",
+   "formula": "max([t*0.5*v/10 for t, v in zip(T, V)])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "max t·C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.dev",
+   "kind": "computed",
+   "value": 13.788296521173448,
+   "display": "13,8",
+   "unit": "%",
+   "formula": "max([abs(t*0.5*v/10-mean([a*0.5*b/10 for a, b in zip(T, V)])) for t, v in zip(T, V)])/mean([a*0.5*b/10 for a, b in zip(T, V)])*100",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "largest deviation of t·C from its mean",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.k2",
+   "kind": "source",
+   "value": 0.0441,
+   "display": "0,0441",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "5LD key, set 2: |slope| of ln C vs t",
+   "script": "tools/build_numbers.py",
+   "crosscheck": "-slope(T, [log(0.5*v/10) for v in V])"
+  },
+  {
+   "id": "lab.s2.r2c",
+   "kind": "computed",
+   "value": 0.9696110872447884,
+   "display": "0,970",
+   "unit": "",
+   "formula": "r2(T, [log(0.5*v/10) for v in V])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "R² of ln C vs t [AGENTS §5.2, own calculation]",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.n",
+   "kind": "computed",
+   "value": 0.7219550467335754,
+   "display": "0,72",
+   "unit": "",
+   "formula": "slope([log(0.5*v/12) for v in V], [log(1/t) for t in T])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "slope of ln(1/t) vs ln C = apparent order",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.r2v",
+   "kind": "computed",
+   "value": 0.9078224518982205,
+   "display": "0,908",
+   "unit": "",
+   "formula": "r2([log(0.5*v/12) for v in V], [log(1/t) for t in T])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "R² of ln(1/t) vs ln C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.tc.1",
+   "kind": "computed",
+   "value": 7.5,
+   "display": "7,50",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 15,
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s2.tc.2",
+   "kind": "computed",
+   "value": 8.8,
+   "display": "8,80",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 22,
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s2.tc.3",
+   "kind": "computed",
+   "value": 8.4,
+   "display": "8,40",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 28,
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s2.tc.4",
+   "kind": "computed",
+   "value": 8.2,
+   "display": "8,20",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 41,
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s2.tc.5",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,00",
+   "unit": "s·mol·L⁻¹",
+   "formula": "t*0.5*v/10",
+   "inputs": {
+    "t": 50,
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "t·C (course C)",
+   "script": "tools/build_numbers.py",
+   "html": false
+  },
+  {
+   "id": "lab.s2.tcmin",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,00",
+   "unit": "s·mol·L⁻¹",
+   "formula": "min([t*0.5*v/10 for t, v in zip(T, V)])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "min t·C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.tcmax",
+   "kind": "computed",
+   "value": 8.8,
+   "display": "8,80",
+   "unit": "s·mol·L⁻¹",
+   "formula": "max([t*0.5*v/10 for t, v in zip(T, V)])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "max t·C",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s2.dev",
+   "kind": "computed",
+   "value": 34.03693931398417,
+   "display": "34,0",
+   "unit": "%",
+   "formula": "max([abs(t*0.5*v/10-mean([a*0.5*b/10 for a, b in zip(T, V)])) for t, v in zip(T, V)])/mean([a*0.5*b/10 for a, b in zip(T, V)])*100",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     15,
+     22,
+     28,
+     41,
+     50
+    ]
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "largest deviation of t·C from its mean",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.k1",
+   "kind": "source",
+   "value": 0.057,
+   "display": "0,057",
+   "unit": "s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "5LD p.2 'k = ln2/t½ = 0,057' (graph 1, set 1)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.thalf1",
+   "kind": "computed",
+   "value": 12.160476851928864,
+   "display": "12,2",
+   "unit": "s",
+   "formula": "log(2)/k",
+   "inputs": {
+    "k": 0.057
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "ln2/0,057 — not printed in the key",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lab.s1.thalf2",
+   "kind": "source",
+   "value": 18.5,
+   "display": "18,5",
+   "unit": "s",
+   "formula": null,
+   "inputs": {
+    "k": 0.0374
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "5LD p.3 'Pussabrukšanas periods t½ = ln2/k = 18,5 s'",
+   "script": "tools/build_numbers.py",
+   "crosscheck": "log(2)/k"
+  },
+  {
+   "id": "lab.s1.factor",
+   "kind": "computed",
+   "value": 1.5240641711229945,
+   "display": "1,52",
+   "unit": "",
+   "formula": "k1/k2",
+   "inputs": {
+    "k1": 0.057,
+    "k2": 0.0374
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "0,057 / 0,0374",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nH",
+   "kind": "computed",
+   "value": 6.0,
+   "display": "6,0",
+   "unit": "mmol",
+   "formula": "v*c*2",
+   "inputs": {
+    "v": 2.0,
+    "c": 1.5
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2,00 mL × 1,5 M H₂SO₄ × 2 H⁺",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nH2SO4",
+   "kind": "computed",
+   "value": 3.0,
+   "display": "3,0",
+   "unit": "mmol",
+   "formula": "v*c",
+   "inputs": {
+    "v": 2.0,
+    "c": 1.5
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2,00 mL × 1,5 M",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nS.1",
+   "kind": "computed",
+   "value": 5.0,
+   "display": "5,0",
+   "unit": "mmol",
+   "formula": "0.5*v",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "0,50 mol·L⁻¹ × V",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.need.1",
+   "kind": "computed",
+   "value": 10.0,
+   "display": "10,0",
+   "unit": "mmol",
+   "formula": "2*0.5*v",
+   "inputs": {
+    "v": 10.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2 H⁺ per S₂O₃²⁻",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nS.2",
+   "kind": "computed",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "mmol",
+   "formula": "0.5*v",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "0,50 mol·L⁻¹ × V",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.need.2",
+   "kind": "computed",
+   "value": 8.0,
+   "display": "8,0",
+   "unit": "mmol",
+   "formula": "2*0.5*v",
+   "inputs": {
+    "v": 8.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2 H⁺ per S₂O₃²⁻",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nS.3",
+   "kind": "computed",
+   "value": 3.0,
+   "display": "3,0",
+   "unit": "mmol",
+   "formula": "0.5*v",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "0,50 mol·L⁻¹ × V",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.need.3",
+   "kind": "computed",
+   "value": 6.0,
+   "display": "6,0",
+   "unit": "mmol",
+   "formula": "2*0.5*v",
+   "inputs": {
+    "v": 6.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2 H⁺ per S₂O₃²⁻",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nS.4",
+   "kind": "computed",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "mmol",
+   "formula": "0.5*v",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "0,50 mol·L⁻¹ × V",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.need.4",
+   "kind": "computed",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "mmol",
+   "formula": "2*0.5*v",
+   "inputs": {
+    "v": 4.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2 H⁺ per S₂O₃²⁻",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.nS.5",
+   "kind": "computed",
+   "value": 1.0,
+   "display": "1,0",
+   "unit": "mmol",
+   "formula": "0.5*v",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "0,50 mol·L⁻¹ × V",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "acid.need.5",
+   "kind": "computed",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "mmol",
+   "formula": "2*0.5*v",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "2 H⁺ per S₂O₃²⁻",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "p2.vB",
+   "kind": "computed",
+   "value": 0.015,
+   "display": "0,015",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "dC/(2*t)",
+   "inputs": {
+    "dC": 0.36,
+    "t": 12.0
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N08.3 extra question P2: 2A -> B, d[A] = 0,86 - 0,50 = 0,36 mol·L⁻¹ over 12 s; d[B] = d[A]/2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "p3.kcat",
+   "kind": "computed",
+   "value": 50.00000000000001,
+   "display": "50",
+   "unit": "s⁻¹",
+   "formula": "vmax/E0",
+   "inputs": {
+    "vmax": 0.0001,
+    "E0": 2e-06
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N08.3 extra question P3: one active site, kcat = vmax/[E]0 (N07-era passport wording)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unc.dV",
+   "kind": "parameter",
+   "value": 0.05,
+   "display": "0,05",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N07.3 assumption: single volume measurement tolerance; not from the sources",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unc.dstop",
+   "kind": "parameter",
+   "value": 1.0,
+   "display": "1,0",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N07.3 assumption: stopwatch reading tolerance",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unc.dend",
+   "kind": "parameter",
+   "value": 2.5,
+   "display": "2,5",
+   "unit": "s",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N07.3 assumption: end-point judgement ±2–3 s, midpoint used",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unc.s1.n",
+   "kind": "source",
+   "value": 0.10619540985584042,
+   "display": "0,106",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "seeded MC spec (N07.3; tools/recheck_lab.py re-implements it and cross-checks): 20 000 draws, seed 42, V±0,05 mL, t±(1 s + 2,5 s) uniform; half-width = (p97,5 − p2,5)/2 of the ln(1/t)-vs-ln C slope",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "unc.s2.n",
+   "kind": "source",
+   "value": 0.09615641087191568,
+   "display": "0,096",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "same spec, set 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.k",
+   "kind": "parameter",
+   "value": 5.0,
+   "display": "5,0",
+   "unit": "L·mol⁻¹·s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N07-S3 model choice for the illustration; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.A0",
+   "kind": "parameter",
+   "value": 0.01,
+   "display": "0,010",
+   "unit": "mol·L⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N07-S3 model choice: concentration scale of the autocatalysed reactant",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.f0.sp",
+   "kind": "parameter",
+   "value": 0.001,
+   "display": "0,001",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "N07-S3 model choice: spontaneous seed fraction (0,1 % of A0) — stands for the slow direct Mn²⁺ formation",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.f0.mn",
+   "kind": "parameter",
+   "value": 0.05,
+   "display": "0,05",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "N07-S3 model choice: MnSO₄ added at the start → seed = 5 % of A0",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.05.sp",
+   "kind": "computed",
+   "value": 79.24631598964226,
+   "display": "79",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.05,
+    "f0": 0.001,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.50.sp",
+   "kind": "computed",
+   "value": 138.13509557297107,
+   "display": "138",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.5,
+    "f0": 0.001,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.95.sp",
+   "kind": "computed",
+   "value": 197.02387515629985,
+   "display": "197",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.95,
+    "f0": 0.001,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.05.mn",
+   "kind": "computed",
+   "value": 0.0,
+   "display": "0",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.05,
+    "f0": 0.05,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.50.mn",
+   "kind": "computed",
+   "value": 58.888779583328805,
+   "display": "59",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.5,
+    "f0": 0.05,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "auto.t.95.mn",
+   "kind": "computed",
+   "value": 117.77755916665758,
+   "display": "118",
+   "unit": "s",
+   "formula": "log(f*(1-f0)/(f0*(1-f)))/(k*A0)",
+   "inputs": {
+    "f": 0.95,
+    "f0": 0.05,
+    "k": 5.0,
+    "A0": 0.01
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "logistic autocatalysis dP/dt = k(A0−P)P: t(f) = ln[f(1−f0)/(f0(1−f))]/(k·A0); model, not data (N07-S3)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.K.L",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "K"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.K.R",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "K"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.Mn.L",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "Mn"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.Mn.R",
+   "kind": "computed",
+   "value": 2,
+   "display": "2",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "Mn"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.C.L",
+   "kind": "computed",
+   "value": 10,
+   "display": "10",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "C"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.C.R",
+   "kind": "computed",
+   "value": 10,
+   "display": "10",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "C"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.S.L",
+   "kind": "computed",
+   "value": 3,
+   "display": "3",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "S"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.S.R",
+   "kind": "computed",
+   "value": 3,
+   "display": "3",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "S"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.H.L",
+   "kind": "computed",
+   "value": 16,
+   "display": "16",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "H"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.H.R",
+   "kind": "computed",
+   "value": 16,
+   "display": "16",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "H"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.O.L",
+   "kind": "computed",
+   "value": 40,
+   "display": "40",
+   "unit": "",
+   "formula": "atoms(L, e)",
+   "inputs": {
+    "L": [
+     [
+      2,
+      "KMnO4"
+     ],
+     [
+      5,
+      "H2C2O4"
+     ],
+     [
+      3,
+      "H2SO4"
+     ]
+    ],
+    "e": "O"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2KMnO₄ + 5H₂C₂O₄ + 3H₂SO₄, left side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.O.R",
+   "kind": "computed",
+   "value": 40,
+   "display": "40",
+   "unit": "",
+   "formula": "atoms(R, e)",
+   "inputs": {
+    "R": [
+     [
+      2,
+      "MnSO4"
+     ],
+     [
+      10,
+      "CO2"
+     ],
+     [
+      8,
+      "H2O"
+     ],
+     [
+      1,
+      "K2SO4"
+     ]
+    ],
+    "e": "O"
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnSO₄ + 10CO₂ + 8H₂O + K₂SO₄, right side",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.q.L",
+   "kind": "computed",
+   "value": 4,
+   "display": "4",
+   "unit": "",
+   "formula": "2*(-1)+6*(1)",
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2MnO₄⁻ + 6H⁺ + 5H₂C₂O₄ (net ionic), left charge",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bal.q.R",
+   "kind": "computed",
+   "value": 4,
+   "display": "4",
+   "unit": "",
+   "formula": "2*(2)",
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "2Mn²⁺, right charge",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.dA",
+   "kind": "parameter",
+   "value": -0.02,
+   "display": "−0,020",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): measured dC_A/dt chosen for the illustration",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.dAabs",
+   "kind": "computed",
+   "value": 0.02,
+   "display": "0,020",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "abs(dA)",
+   "inputs": {
+    "dA": -0.02
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): |dC_A/dt|, the wrong 'rate' without 1/ν",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.v1",
+   "kind": "computed",
+   "value": 0.01,
+   "display": "0,010",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "-dA/n",
+   "inputs": {
+    "dA": -0.02,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): v = -(1/ν_A) dC_A/dt, ν_A = 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.dB1",
+   "kind": "computed",
+   "value": 0.01,
+   "display": "0,010",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "nb*(-dA/n)",
+   "inputs": {
+    "dA": -0.02,
+    "n": 2,
+    "nb": 1
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): dC_B/dt = ν_B·v, ν_B = 1",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.v2",
+   "kind": "computed",
+   "value": 0.006666666666666667,
+   "display": "0,00667",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "-dA/n",
+   "inputs": {
+    "dA": -0.02,
+    "n": 3
+   },
+   "rounding": {
+    "dec": 5
+   },
+   "source": "T12 ladder, rate/units (ch1): rung 2: ν_A = 3, same measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.dB2",
+   "kind": "computed",
+   "value": 0.006666666666666667,
+   "display": "0,00667",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "nb*(-dA/n)",
+   "inputs": {
+    "dA": -0.02,
+    "n": 3,
+    "nb": 1
+   },
+   "rounding": {
+    "dec": 5
+   },
+   "source": "T12 ladder, rate/units (ch1): rung 2: dC_B/dt = v",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.v0",
+   "kind": "computed",
+   "value": 0.05,
+   "display": "0,050",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "k*C0/n",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): rung 3: instantaneous v at t = 0, dC_A/dt = -k_A C_A",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.C20",
+   "kind": "computed",
+   "value": 0.1353352832366127,
+   "display": "0,135",
+   "unit": "mol·L⁻¹",
+   "formula": "C0*exp(-k*t)",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 20
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, rate/units (ch1): C_A(20 s)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.naive",
+   "kind": "computed",
+   "value": -0.04323323583816936,
+   "display": "−0,0432",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "(C0*exp(-k*t)-C0)/t",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 20
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, rate/units (ch1): ΔC_A/Δt over 0-20 s, no sign and no 1/ν",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.vavg",
+   "kind": "computed",
+   "value": 0.02161661791908468,
+   "display": "0,0216",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "-(C0*exp(-k*t)-C0)/t/n",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 20,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, rate/units (ch1): average v over 0-20 s",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.ratio",
+   "kind": "computed",
+   "value": 2.3130352854993315,
+   "display": "2,31",
+   "unit": "",
+   "formula": "(k*C0/n)/(-(C0*exp(-k*t)-C0)/t/n)",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 20,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, rate/units (ch1): v(0) / average v",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.vavg1",
+   "kind": "computed",
+   "value": 0.04758129098202024,
+   "display": "0,0476",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "-(C0*exp(-k*t)-C0)/t/n",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 1,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, rate/units (ch1): average v over 0-1 s",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.rate.err1",
+   "kind": "computed",
+   "value": -4.837418035959518,
+   "display": "−4,8",
+   "unit": "%",
+   "formula": "((-(C0*exp(-k*t)-C0)/t/n)/(k*C0/n)-1)*100",
+   "inputs": {
+    "k": 0.1,
+    "C0": 1.0,
+    "t": 1,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, rate/units (ch1): deviation of the 1 s average from v(0)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.gamma",
+   "kind": "parameter",
+   "value": 2.9,
+   "display": "2,9",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, temperature (ch5): γ = 2,9 per 10 K from the source example (Kinetika p.2)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.g5",
+   "kind": "computed",
+   "value": 205.11148999999997,
+   "display": "205,1",
+   "unit": "",
+   "formula": "g**n",
+   "inputs": {
+    "g": 2.9,
+    "n": 5
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, temperature (ch5): rung 2: ΔT = 50 K",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.half",
+   "kind": "computed",
+   "value": 21035.361665010045,
+   "display": "21 035,4",
+   "unit": "",
+   "formula": "g**n/2",
+   "inputs": {
+    "g": 2.9,
+    "n": 10
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, temperature (ch5): rung 2: the wrong 'half of the 100 K effect'",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.g2",
+   "kind": "computed",
+   "value": 8.41,
+   "display": "8,41",
+   "unit": "",
+   "formula": "g**n",
+   "inputs": {
+    "g": 2.9,
+    "n": 2
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, temperature (ch5): rung 2 self-check: ΔT = 20 K",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.Ea",
+   "kind": "computed",
+   "value": 82.32822788339018,
+   "display": "82,3",
+   "unit": "kJ·mol⁻¹",
+   "formula": "R*log(g)/(1/T1-1/T2)/1000",
+   "inputs": {
+    "g": 2.9,
+    "T1": 300,
+    "T2": 310
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, temperature (ch5): rung 3: E_a from γ measured between 300 and 310 K (two-point Arrhenius form)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.true",
+   "kind": "computed",
+   "value": 3833.4030469981826,
+   "display": "3,83·10³",
+   "unit": "",
+   "formula": "g**((1/T1-1/T3)/(1/T1-1/T2))",
+   "inputs": {
+    "g": 2.9,
+    "T1": 300,
+    "T2": 310,
+    "T3": 400
+   },
+   "rounding": {
+    "sci": 3,
+    "sep": "·"
+   },
+   "source": "T12 ladder, temperature (ch5): rung 3: k(400 K)/k(300 K) with constant E_a",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.over",
+   "kind": "computed",
+   "value": 10.974771714381651,
+   "display": "11,0",
+   "unit": "",
+   "formula": "g**10/(g**((1/T1-1/T3)/(1/T1-1/T2)))",
+   "inputs": {
+    "g": 2.9,
+    "T1": 300,
+    "T2": 310,
+    "T3": 400
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, temperature (ch5): rung 3: γ^10 / Arrhenius",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.ar.g390",
+   "kind": "computed",
+   "value": 1.8865153570725606,
+   "display": "1,89",
+   "unit": "",
+   "formula": "g**((1/T4-1/T3)/(1/T1-1/T2))",
+   "inputs": {
+    "g": 2.9,
+    "T1": 300,
+    "T2": 310,
+    "T3": 400,
+    "T4": 390
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, temperature (ch5): rung 3: γ between 390 and 400 K with the same E_a",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.k4",
+   "kind": "computed",
+   "value": 0.17328679513998632,
+   "display": "0,173",
+   "unit": "d⁻¹",
+   "formula": "log(2)/t",
+   "inputs": {
+    "t": 4
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 1 self-check: t½ = 4 d (hypothetical, not the Q5 read-off)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.kw1",
+   "kind": "computed",
+   "value": 0.06931471805599453,
+   "display": "0,0693",
+   "unit": "s⁻¹",
+   "formula": "log(1+k*t)/t",
+   "inputs": {
+    "k": 0.1,
+    "t": 10
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 3: first-order k* = ln(C0/C)/t on second-order data at t = 10 s (C = C0/(1+kC0 t))",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.kw2",
+   "kind": "computed",
+   "value": 0.046209812037329684,
+   "display": "0,0462",
+   "unit": "s⁻¹",
+   "formula": "log(1+k*t)/t",
+   "inputs": {
+    "k": 0.1,
+    "t": 30
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 3: first-order k* = ln(C0/C)/t on second-order data at t = 30 s (C = C0/(1+kC0 t))",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.kw3",
+   "kind": "computed",
+   "value": 0.029706307738283366,
+   "display": "0,0297",
+   "unit": "s⁻¹",
+   "formula": "log(1+k*t)/t",
+   "inputs": {
+    "k": 0.1,
+    "t": 70
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 3: first-order k* = ln(C0/C)/t on second-order data at t = 70 s (C = C0/(1+kC0 t))",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.kwratio",
+   "kind": "computed",
+   "value": 2.3333333333333335,
+   "display": "2,33",
+   "unit": "",
+   "formula": "log(1+k*t1)/t1/(log(1+k*t3)/t3)",
+   "inputs": {
+    "k": 0.1,
+    "t1": 10,
+    "t3": 70
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 3: k*(10 s)/k*(70 s)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.hl.r2",
+   "kind": "computed",
+   "value": 0.9200000000000003,
+   "display": "0,920",
+   "unit": "",
+   "formula": "r2(T, [-log(1+k*t) for t in T])",
+   "inputs": {
+    "k": 0.1,
+    "T": [
+     0,
+     10,
+     30,
+     70
+    ]
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, order/half-life (ch6): rung 3: R² of ln C vs t on second-order data",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.mm.vmax2x",
+   "kind": "computed",
+   "value": 0.92,
+   "display": "0,92",
+   "unit": "µmol·min⁻¹",
+   "formula": "2*v",
+   "inputs": {
+    "v": 0.46
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 2: [E]0 doubled doubles v_max",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.vmax"
+  },
+  {
+   "id": "lad.mm.v_e2",
+   "kind": "computed",
+   "value": 0.4600000000000001,
+   "display": "0,46",
+   "unit": "µmol·min⁻¹",
+   "formula": "vm*c/(km+c)",
+   "inputs": {
+    "vm": 0.92,
+    "km": 1.2,
+    "c": 1.2
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 2: v at C_S = K_M with doubled v_max",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.v_kmhalf",
+   "kind": "computed",
+   "value": 0.3066666666666667,
+   "display": "0,307",
+   "unit": "µmol·min⁻¹",
+   "formula": "vm*c/(km/2+c)",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c": 1.2
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 2 self-check: K_M halved, v_max unchanged, C_S = 1,2",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.Cmax",
+   "kind": "parameter",
+   "value": 2.4,
+   "display": "2,4",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: highest substrate concentration measured (illustration)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.mm.vtop",
+   "kind": "computed",
+   "value": 0.3066666666666667,
+   "display": "0,307",
+   "unit": "µmol·min⁻¹",
+   "formula": "vm*c/(km+c)",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c": 2.4
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: v at the highest C_S",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.vhalf",
+   "kind": "computed",
+   "value": 0.15333333333333335,
+   "display": "0,153",
+   "unit": "µmol·min⁻¹",
+   "formula": "vm*c/(km+c)/2",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c": 2.4
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: half of the apparent plateau",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.kmread",
+   "kind": "computed",
+   "value": 0.6000000000000001,
+   "display": "0,6",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(vm*c/(km+c)/2)/(vm-vm*c/(km+c)/2)",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c": 2.4
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: K_M read at half of the apparent plateau",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.vmaxerr",
+   "kind": "computed",
+   "value": -33.33333333333333,
+   "display": "−33,3",
+   "unit": "%",
+   "formula": "(c/(km+c)-1)*100",
+   "inputs": {
+    "km": 1.2,
+    "c": 2.4
+   },
+   "rounding": {
+    "dec": 1
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: error of the apparent v_max",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.vmax"
+  },
+  {
+   "id": "lad.mm.kmerr",
+   "kind": "computed",
+   "value": -49.999999999999986,
+   "display": "−50",
+   "unit": "%",
+   "formula": "(km*(vm*c/(km+c)/2)/(vm-vm*c/(km+c)/2)/km-1)*100",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c": 2.4
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: error of the apparent K_M",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.mm.step",
+   "kind": "computed",
+   "value": 0.07666666666666666,
+   "display": "0,08",
+   "unit": "µmol·min⁻¹",
+   "formula": "vm*c2/(km+c2)-vm*c1/(km+c1)",
+   "inputs": {
+    "vm": 0.46,
+    "km": 1.2,
+    "c1": 1.2,
+    "c2": 2.4
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, Michaelis-Menten (ch10): rung 3: v(2,4) - v(1,2), the symptom that the plateau is not reached",
+   "script": "tools/build_numbers.py",
+   "inherits": "mm.km"
+  },
+  {
+   "id": "lad.lab.shift",
+   "kind": "computed",
+   "value": -0.1823215567939546,
+   "display": "−0,182",
+   "unit": "",
+   "formula": "log(10/12)",
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 2: shift of ln C when C(course) -> C(true)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.aratio",
+   "kind": "computed",
+   "value": 1.1683518565490236,
+   "display": "1,17",
+   "unit": "",
+   "formula": "(12/10)**slope([log(0.5*v/12) for v in V], [log(1/t) for t in T])",
+   "inputs": {
+    "V": [
+     10.0,
+     8.0,
+     6.0,
+     4.0,
+     2.0
+    ],
+    "T": [
+     13.6,
+     17.85,
+     22.15,
+     30.65,
+     55.66
+    ]
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 2: factor (12/10)^n by which the coefficient a in 1/t = a·C^n changes when C(course) -> C(true)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.acidV",
+   "kind": "computed",
+   "value": 3.3333333333333335,
+   "display": "3,33",
+   "unit": "mL",
+   "formula": "2*0.5*v/(2*c)",
+   "inputs": {
+    "v": 10.0,
+    "c": 1.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 2 self-check: V(1,5 M H2SO4) for 10,0 mmol H+",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.acidVtot",
+   "kind": "computed",
+   "value": 13.333333333333334,
+   "display": "13,33",
+   "unit": "mL",
+   "formula": "10+2*0.5*v/(2*c)",
+   "inputs": {
+    "v": 10.0,
+    "c": 1.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 2 self-check: total volume with that acid",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.acidf",
+   "kind": "computed",
+   "value": 0.75,
+   "display": "0,750",
+   "unit": "",
+   "formula": "10/(10+2*0.5*v/(2*c))",
+   "inputs": {
+    "v": 10.0,
+    "c": 1.5
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 2 self-check: dilution factor 10/V(total)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.kp12",
+   "kind": "computed",
+   "value": 0.05250436501510815,
+   "display": "0,0525",
+   "unit": "s⁻¹",
+   "formula": "(log(0.5*v1/10)-log(0.5*v2/10))/(t2-t1)",
+   "inputs": {
+    "v1": 10.0,
+    "v2": 8.0,
+    "t1": 13.6,
+    "t2": 17.85
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 3: 'k' from tubes 1 and 2 only",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.kp45",
+   "kind": "computed",
+   "value": 0.02771480130187706,
+   "display": "0,0277",
+   "unit": "s⁻¹",
+   "formula": "(log(0.5*v1/10)-log(0.5*v2/10))/(t2-t1)",
+   "inputs": {
+    "v1": 4.0,
+    "v2": 2.0,
+    "t1": 30.65,
+    "t2": 55.66
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 3: 'k' from tubes 4 and 5 only",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "lad.lab.kpratio",
+   "kind": "computed",
+   "value": 1.894452153678336,
+   "display": "1,89",
+   "unit": "",
+   "formula": "((log(0.5*a/10)-log(0.5*b/10))/(t2-t1))/((log(0.5*c/10)-log(0.5*d/10))/(t4-t3))",
+   "inputs": {
+    "a": 10.0,
+    "b": 8.0,
+    "c": 4.0,
+    "d": 2.0,
+    "t1": 13.6,
+    "t2": 17.85,
+    "t3": 30.65,
+    "t4": 55.66
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "T12 ladder, thiosulfate (ch12): rung 3: ratio of the two 'k' values",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.thalf",
+   "kind": "parameter",
+   "value": 6,
+   "display": "6",
+   "unit": "h",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N18-S1 worked example: representative drug half-life t½ = 6 h (paracetamol/antibiotics elimination profile)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.ke",
+   "kind": "computed",
+   "value": 0.11552453009332421,
+   "display": "0,1155",
+   "unit": "h⁻¹",
+   "formula": "log(2)/t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "first-order elimination rate constant ke = ln 2 / t½",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t1",
+   "kind": "computed",
+   "value": 6,
+   "display": "6",
+   "unit": "h",
+   "formula": "1*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 1 half-life (1 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f1",
+   "kind": "computed",
+   "value": 50.0,
+   "display": "50",
+   "unit": "%",
+   "formula": "100*(0.5**1)",
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "fraction remaining after 1 half-life: 50 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t2",
+   "kind": "computed",
+   "value": 12,
+   "display": "12",
+   "unit": "h",
+   "formula": "2*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 2 half-lives (2 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f2",
+   "kind": "computed",
+   "value": 25.0,
+   "display": "25",
+   "unit": "%",
+   "formula": "100*(0.5**2)",
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "fraction remaining after 2 half-lives: 25 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t3",
+   "kind": "computed",
+   "value": 18,
+   "display": "18",
+   "unit": "h",
+   "formula": "3*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 3 half-lives (3 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f3",
+   "kind": "computed",
+   "value": 12.5,
+   "display": "12,5",
+   "unit": "%",
+   "formula": "100*(0.5**3)",
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "fraction remaining after 3 half-lives: 12,5 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t4",
+   "kind": "computed",
+   "value": 24,
+   "display": "24",
+   "unit": "h",
+   "formula": "4*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 4 half-lives (4 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f4",
+   "kind": "computed",
+   "value": 6.25,
+   "display": "6,25",
+   "unit": "%",
+   "formula": "100*(0.5**4)",
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "fraction remaining after 4 half-lives: 6,25 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t5",
+   "kind": "computed",
+   "value": 30,
+   "display": "30",
+   "unit": "h",
+   "formula": "5*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 5 half-lives (5 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f5",
+   "kind": "computed",
+   "value": 3.125,
+   "display": "3,125",
+   "unit": "%",
+   "formula": "100*(0.5**5)",
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "fraction remaining after 5 half-lives: 3,125 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.t7",
+   "kind": "computed",
+   "value": 42,
+   "display": "42",
+   "unit": "h",
+   "formula": "7*t",
+   "inputs": {
+    "t": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "time after 7 half-lives (7 × 6 h)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.f7",
+   "kind": "computed",
+   "value": 0.78125,
+   "display": "0,781",
+   "unit": "%",
+   "formula": "100*(0.5**7)",
+   "inputs": {},
+   "rounding": {
+    "dec": 3
+   },
+   "source": "fraction remaining after 7 half-lives: 0,781 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.elim4",
+   "kind": "computed",
+   "value": 93.75,
+   "display": "93,75",
+   "unit": "%",
+   "formula": "100 - f4",
+   "inputs": {
+    "f4": 6.25
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "fraction eliminated after 4 half-lives: 100 % − 6,25 % = 93,75 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.elim5",
+   "kind": "computed",
+   "value": 96.875,
+   "display": "96,875",
+   "unit": "%",
+   "formula": "100 - f5",
+   "inputs": {
+    "f5": 3.125
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "fraction eliminated after 5 half-lives: 100 % − 3,125 % = 96,875 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.elim7",
+   "kind": "computed",
+   "value": 99.21875,
+   "display": "99,219",
+   "unit": "%",
+   "formula": "100 - f7",
+   "inputs": {
+    "f7": 0.78125
+   },
+   "rounding": {
+    "dec": 3
+   },
+   "source": "fraction eliminated after 7 half-lives: 100 % − 0,78125 % = 99,219 %",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.tau",
+   "kind": "parameter",
+   "value": 6,
+   "display": "6",
+   "unit": "h",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06 fixed example: dosing interval τ = 6 h (equal to t½); illustrative, not a dosing recommendation",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.dose",
+   "kind": "parameter",
+   "value": 100,
+   "display": "100",
+   "unit": "vienības",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06 fixed example: dose A0 = 100 arbitrary units; not a drug-specific dose",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.ratio",
+   "kind": "computed",
+   "value": 2.0,
+   "display": "2",
+   "unit": "",
+   "formula": "exp(log(2)*tau/t)",
+   "inputs": {
+    "t": 6,
+    "tau": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06: peak/trough ratio at steady state = exp(ke·τ); t½ = τ = 6 h gives 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.accum",
+   "kind": "computed",
+   "value": 2.0,
+   "display": "2",
+   "unit": "",
+   "formula": "1/(1-exp(-log(2)*tau/t))",
+   "inputs": {
+    "t": 6,
+    "tau": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06: accumulation factor 1/(1−exp(−ke·τ)); t½ = τ = 6 h gives 2",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.peak",
+   "kind": "computed",
+   "value": 200,
+   "display": "200",
+   "unit": "vienības",
+   "formula": "dose*accum",
+   "inputs": {
+    "dose": 100,
+    "accum": 2
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06: steady-state peak = dose × accumulation factor = 200",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "med.trough",
+   "kind": "computed",
+   "value": 100.0,
+   "display": "100",
+   "unit": "vienības",
+   "formula": "dose*accum*exp(-log(2)*tau/t)",
+   "inputs": {
+    "dose": 100,
+    "accum": 2,
+    "t": 6,
+    "tau": 6
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F06: steady-state trough = peak × exp(−ke·τ) = 100",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.n",
+   "kind": "source",
+   "value": 8,
+   "display": "8",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F07: number of deterministic inhibition presets in inhib_presets.json, selected by the URL fragment #inhib-1 … #inhib-8",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s1.vmax",
+   "kind": "parameter",
+   "value": 0.46,
+   "display": "0,46",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 1 (competitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s1.km",
+   "kind": "parameter",
+   "value": 1.2,
+   "display": "1,20",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 1 (competitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s1.ratio",
+   "kind": "parameter",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 1 (competitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s1.vmax_app",
+   "kind": "computed",
+   "value": 0.46,
+   "display": "0,46",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax",
+   "inputs": {
+    "vmax": 0.46,
+    "r": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 1 (competitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s1.km_app",
+   "kind": "computed",
+   "value": 3.5999999999999996,
+   "display": "3,60",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(1+r)",
+   "inputs": {
+    "km": 1.2,
+    "r": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 1 (competitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s2.vmax",
+   "kind": "parameter",
+   "value": 0.6,
+   "display": "0,60",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 2 (noncompetitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s2.km",
+   "kind": "parameter",
+   "value": 0.8,
+   "display": "0,80",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 2 (noncompetitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s2.ratio",
+   "kind": "parameter",
+   "value": 1.5,
+   "display": "1,5",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 2 (noncompetitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s2.vmax_app",
+   "kind": "computed",
+   "value": 0.24,
+   "display": "0,24",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r)",
+   "inputs": {
+    "vmax": 0.6,
+    "r": 1.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 2 (noncompetitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s2.km_app",
+   "kind": "computed",
+   "value": 0.8,
+   "display": "0,80",
+   "unit": "mmol·dm⁻³",
+   "formula": "km",
+   "inputs": {
+    "km": 0.8,
+    "r": 1.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 2 (noncompetitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s3.vmax",
+   "kind": "parameter",
+   "value": 0.54,
+   "display": "0,54",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 3 (uncompetitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s3.km",
+   "kind": "parameter",
+   "value": 1.5,
+   "display": "1,50",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 3 (uncompetitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s3.ratio",
+   "kind": "parameter",
+   "value": 2.5,
+   "display": "2,5",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 3 (uncompetitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s3.vmax_app",
+   "kind": "computed",
+   "value": 0.1542857142857143,
+   "display": "0,15",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r)",
+   "inputs": {
+    "vmax": 0.54,
+    "r": 2.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 3 (uncompetitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s3.km_app",
+   "kind": "computed",
+   "value": 0.42857142857142855,
+   "display": "0,43",
+   "unit": "mmol·dm⁻³",
+   "formula": "km/(1+r)",
+   "inputs": {
+    "km": 1.5,
+    "r": 2.5
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 3 (uncompetitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s4.vmax",
+   "kind": "parameter",
+   "value": 0.42,
+   "display": "0,42",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 4 (mixed): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s4.km",
+   "kind": "parameter",
+   "value": 1.05,
+   "display": "1,05",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 4 (mixed): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s4.ratio",
+   "kind": "parameter",
+   "value": 3.0,
+   "display": "3,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 4 (mixed): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s4.vmax_app",
+   "kind": "computed",
+   "value": 0.16799999999999998,
+   "display": "0,17",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r/2)",
+   "inputs": {
+    "vmax": 0.42,
+    "r": 3.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 4 (mixed): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s4.km_app",
+   "kind": "computed",
+   "value": 1.6800000000000002,
+   "display": "1,68",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(1+r)/(1+r/2)",
+   "inputs": {
+    "km": 1.05,
+    "r": 3.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 4 (mixed): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s5.vmax",
+   "kind": "parameter",
+   "value": 0.72,
+   "display": "0,72",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 5 (competitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s5.km",
+   "kind": "parameter",
+   "value": 2.2,
+   "display": "2,20",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 5 (competitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s5.ratio",
+   "kind": "parameter",
+   "value": 1.0,
+   "display": "1,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 5 (competitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s5.vmax_app",
+   "kind": "computed",
+   "value": 0.72,
+   "display": "0,72",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax",
+   "inputs": {
+    "vmax": 0.72,
+    "r": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 5 (competitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s5.km_app",
+   "kind": "computed",
+   "value": 4.4,
+   "display": "4,40",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(1+r)",
+   "inputs": {
+    "km": 2.2,
+    "r": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 5 (competitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s6.vmax",
+   "kind": "parameter",
+   "value": 0.35,
+   "display": "0,35",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 6 (noncompetitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s6.km",
+   "kind": "parameter",
+   "value": 3.0,
+   "display": "3,00",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 6 (noncompetitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s6.ratio",
+   "kind": "parameter",
+   "value": 4.0,
+   "display": "4,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 6 (noncompetitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s6.vmax_app",
+   "kind": "computed",
+   "value": 0.06999999999999999,
+   "display": "0,07",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r)",
+   "inputs": {
+    "vmax": 0.35,
+    "r": 4.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 6 (noncompetitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s6.km_app",
+   "kind": "computed",
+   "value": 3.0,
+   "display": "3,00",
+   "unit": "mmol·dm⁻³",
+   "formula": "km",
+   "inputs": {
+    "km": 3.0,
+    "r": 4.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 6 (noncompetitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s7.vmax",
+   "kind": "parameter",
+   "value": 0.66,
+   "display": "0,66",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 7 (uncompetitive): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s7.km",
+   "kind": "parameter",
+   "value": 0.94,
+   "display": "0,94",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 7 (uncompetitive): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s7.ratio",
+   "kind": "parameter",
+   "value": 1.0,
+   "display": "1,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 7 (uncompetitive): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s7.vmax_app",
+   "kind": "computed",
+   "value": 0.33,
+   "display": "0,33",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r)",
+   "inputs": {
+    "vmax": 0.66,
+    "r": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 7 (uncompetitive): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s7.km_app",
+   "kind": "computed",
+   "value": 0.47,
+   "display": "0,47",
+   "unit": "mmol·dm⁻³",
+   "formula": "km/(1+r)",
+   "inputs": {
+    "km": 0.94,
+    "r": 1.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 7 (uncompetitive): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s8.vmax",
+   "kind": "parameter",
+   "value": 0.55,
+   "display": "0,55",
+   "unit": "µmol·min⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 8 (mixed): illustrative vmax; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s8.km",
+   "kind": "parameter",
+   "value": 1.8,
+   "display": "1,80",
+   "unit": "mmol·dm⁻³",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 8 (mixed): illustrative KM; not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s8.ratio",
+   "kind": "parameter",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "F07 preset 8 (mixed): [I]/Ki, dimensionless",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s8.vmax_app",
+   "kind": "computed",
+   "value": 0.275,
+   "display": "0,28",
+   "unit": "µmol·min⁻¹",
+   "formula": "vmax/(1+r/2)",
+   "inputs": {
+    "vmax": 0.55,
+    "r": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 8 (mixed): apparent vmax closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "inhib.s8.km_app",
+   "kind": "computed",
+   "value": 2.7,
+   "display": "2,70",
+   "unit": "mmol·dm⁻³",
+   "formula": "km*(1+r)/(1+r/2)",
+   "inputs": {
+    "km": 1.8,
+    "r": 2.0
+   },
+   "rounding": {
+    "dec": 2
+   },
+   "source": "F07 preset 8 (mixed): apparent KM closed form",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.react",
+   "kind": "parameter",
+   "value": 0,
+   "display": "0",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: reactant level in the fallback example; illustrative, not a measurement",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.prod",
+   "kind": "parameter",
+   "value": -60,
+   "display": "−60",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: product level in the fallback example; illustrative exothermic profile",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.ea",
+   "kind": "parameter",
+   "value": 80,
+   "display": "80",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: forward activation barrier in the fallback example",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.cat_shift",
+   "kind": "parameter",
+   "value": 30,
+   "display": "30",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: catalyst lowers both barriers by 30 kJ·mol⁻¹ in the example; illustrative",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.dh",
+   "kind": "computed",
+   "value": -60,
+   "display": "−60",
+   "unit": "kJ·mol⁻¹",
+   "formula": "prod-react",
+   "inputs": {
+    "prod": -60,
+    "react": 0
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: ΔH = product level − reactant level = −60 kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.ea.rev",
+   "kind": "computed",
+   "value": 140,
+   "display": "140",
+   "unit": "kJ·mol⁻¹",
+   "formula": "ea-dh",
+   "inputs": {
+    "ea": 80,
+    "dh": -60
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: reverse barrier = forward barrier − ΔH = 140 kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.cat.ea",
+   "kind": "computed",
+   "value": 50,
+   "display": "50",
+   "unit": "kJ·mol⁻¹",
+   "formula": "ea-shift",
+   "inputs": {
+    "ea": 80,
+    "shift": 30
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: catalysed forward barrier = 50 kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.cat.ea.rev",
+   "kind": "computed",
+   "value": 110,
+   "display": "110",
+   "unit": "kJ·mol⁻¹",
+   "formula": "ea_rev-shift",
+   "inputs": {
+    "ea_rev": 140,
+    "shift": 30
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: catalysed reverse barrier = 110 kJ·mol⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.cat.dh",
+   "kind": "computed",
+   "value": -60,
+   "display": "−60",
+   "unit": "kJ·mol⁻¹",
+   "formula": "ea_cat-ea_rev_cat",
+   "inputs": {
+    "ea_cat": 50,
+    "ea_rev_cat": 110
+   },
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: ΔH stays −60 kJ·mol⁻¹ after catalysis (50 − 110)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.dg",
+   "kind": "parameter",
+   "value": -60,
+   "display": "−60",
+   "unit": "kJ·mol⁻¹",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "F09: declared illustrative ΔG° for the example; it is independent of the drawn ΔH and is not computed from it",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "profile.K",
+   "kind": "computed",
+   "value": 32474705373.815758,
+   "display": "3,2·10¹⁰",
+   "unit": "",
+   "formula": "exp(-dg*1000/(R*T))",
+   "inputs": {
+    "dg": -60,
+    "R": 8.31446261815324,
+    "T": 298.15
+   },
+   "rounding": {
+    "sci": 2,
+    "sep": "·"
+   },
+   "source": "F09: K = exp(−ΔG°/(RT)) at 298,15 K from the declared illustrative ΔG°; the same value with and without the catalyst",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.ln1",
+   "kind": "constant",
+   "value": 0,
+   "display": "0",
+   "unit": "",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "Bridge 1: ln 1 = 0 (definitional identity)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.ln2",
+   "kind": "computed",
+   "value": 0.6931471805599453,
+   "display": "0,6931",
+   "unit": "",
+   "formula": "log(2)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: ln 2 = 0,6931...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.ln10",
+   "kind": "computed",
+   "value": 2.302585092994046,
+   "display": "2,3026",
+   "unit": "",
+   "formula": "log(10)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: ln 10 = 2,3026...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.exp_m1",
+   "kind": "computed",
+   "value": 0.36787944117144233,
+   "display": "0,3679",
+   "unit": "",
+   "formula": "exp(-1)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: e⁻¹ = 0,3679... (fraction remaining after 1 time constant τ = 1/k)",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.exp_m2",
+   "kind": "computed",
+   "value": 0.1353352832366127,
+   "display": "0,1353",
+   "unit": "",
+   "formula": "exp(-2)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: e⁻² = 0,1353...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.exp_m3",
+   "kind": "computed",
+   "value": 0.049787068367863944,
+   "display": "0,0498",
+   "unit": "",
+   "formula": "exp(-3)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: e⁻³ = 0,0498...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.exp_m4",
+   "kind": "computed",
+   "value": 0.01831563888873418,
+   "display": "0,0183",
+   "unit": "",
+   "formula": "exp(-4)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: e⁻⁴ = 0,0183...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "math.exp_m5",
+   "kind": "computed",
+   "value": 0.006737946999085467,
+   "display": "0,0067",
+   "unit": "",
+   "formula": "exp(-5)",
+   "inputs": {},
+   "rounding": {
+    "dec": 4
+   },
+   "source": "Bridge 1: e⁻⁵ = 0,0067...",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "drill.vol_ml",
+   "kind": "parameter",
+   "value": 2.0,
+   "display": "2,0",
+   "unit": "mL",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 1
+   },
+   "source": "N18-S3 worked conversion: reaction assay volume V = 2,0 mL",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "drill.vol_l",
+   "kind": "computed",
+   "value": 0.002,
+   "display": "0,0020",
+   "unit": "L",
+   "formula": "v/1000",
+   "inputs": {
+    "v": 2.0
+   },
+   "rounding": {
+    "dec": 4
+   },
+   "source": "assay volume in L: 2,0 mL / 1000 = 0,0020 L",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "drill.v_moll",
+   "kind": "computed",
+   "value": 8.333333333333334e-06,
+   "display": "8,33·10⁻⁶",
+   "unit": "mol·L⁻¹·s⁻¹",
+   "formula": "(1e-6/60)/0.002",
+   "inputs": {},
+   "rounding": {
+    "sci": 3,
+    "sep": "·"
+   },
+   "source": "N18-S3: concentration rate = (1,67·10⁻⁸ mol·s⁻¹) / (0,0020 L) = 8,33·10⁻⁶ mol·L⁻¹·s⁻¹",
+   "script": "tools/build_numbers.py"
+  },
+  {
+   "id": "bridge.time_est",
+   "kind": "parameter",
+   "value": 30,
+   "display": "30",
+   "unit": "min",
+   "formula": null,
+   "inputs": {},
+   "rounding": {
+    "dec": 0
+   },
+   "source": "N18 definition of done: estimated completion time for all 5 bridges (autora aplēse)",
+   "script": "tools/build_numbers.py"
+  }
+ ]
+}

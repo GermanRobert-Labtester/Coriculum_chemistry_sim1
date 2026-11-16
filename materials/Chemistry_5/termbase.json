@@ -1,0 +1,2122 @@
+{
+  "meta": {
+    "document": "Master_5_tema_kinetika_un_katalize.html",
+    "created": "2026-11-01",
+    "schema": [
+      "id",
+      "use",
+      "also_accept",
+      "avoid",
+      "en",
+      "symbol",
+      "unit",
+      "first_use_anchor",
+      "definition_anchor",
+      "decision",
+      "status",
+      "note",
+      "source",
+      "reviewed_by",
+      "review_date",
+      "morph"
+    ],
+    "caveat": "AGENTS.md §6 has 17 concept rows (no ids; mapped in verify/threeway decisions). This file has 72 entries (N01 added kopeja-fermenta-koncentracija): 26 from T01, 45 from T05, 1 from N01. first_use_anchor is the id of the first-use link (fu-...), or null where the term has no running-prose use. definition_anchor is the glossary entry (term-...), or null for usage rules that are not glossary terms. t14 fields hold the verbatim 14. tabula cells; t16 fields the verbatim 16. tabula cells; both are emitted by tools/build_glossary.py (also notation.md and glossary.csv).",
+    "generated_views": [
+      "HTML 14. tabula rows (<!-- t14:begin/end -->)",
+      "HTML 16. tabula rows (<!-- notation:begin/end -->)",
+      "HTML A–Z glossary block + first-use links (<!-- glossary:begin/end -->)",
+      "notation.md (<!-- notation-table:begin/end --> + header line)",
+      "glossary.csv",
+      "HTML morphology rails + fold drill sheet (<!-- morph:begin/end -->, <!-- morph-fold:begin/end -->)",
+      "HTML flashcards block (<!-- flashcards:begin/end -->): LV↔EN cut-out cards, 8 per A4"
+    ],
+    "decisions": [
+      {
+        "term": "reakcijas pakāpe (kārta)",
+        "chosen": "pakāpe as headword, kārta accepted synonym",
+        "authority": "AkadTerm reakcijas pakāpe (2006; LPE 1979; IATE); kursa dominante 30:10 (Kinetika), 7:2 (slaidi), HTML 254:33; kārta AkadTerm 164 šķirkļos, neviens par reakcijas ātrumu",
+        "date": "2026-11-02",
+        "status": "decided (course form; neither declared wrong, AGENTS §6)"
+      },
+      {
+        "term": "inhibīcija vs inhibēšana",
+        "chosen": "house form inhibīcija; course noun inhibēšana glossed in ch. 11 and kept in quotes",
+        "authority": "IATE via AkadTerm: inhibition → inhibīcija (IETEICAMS); kursa tekstā 20× inhibēšana, 0× inhibīcija (Kinetika §5.5.5)",
+        "date": "2026-11-02",
+        "status": "decided; lecturer may prefer inhibēšana — judgement call remains"
+      },
+      {
+        "term": "nekonkurējošā (uncompetitive) inhibīcija",
+        "chosen": "kept as house label for uncompetitive",
+        "authority": "IEBRĪDINĀJUMS: AkadTerm/IATE nekonkurējošā inhibēšana = EN non-competitive inhibition; vārds ārpus dokumenta ir divdomīgs",
+        "date": "2026-11-02",
+        "status": "house label, conflict recorded; lecturer question"
+      },
+      {
+        "term": "Mihaelisa (spelling)",
+        "chosen": "Mihaelisa, nevis Michaelisa",
+        "authority": "AkadTerm: Mihaelisa konstante (LPE 1979)",
+        "date": "2026-11-02",
+        "status": "decided (T01, now authority-backed)"
+      },
+      {
+        "term": "Maksvela–Bolcmaņa",
+        "chosen": "Maksvela–Bolcmaņa sadalījums",
+        "authority": "AkadTerm 1968 (forma, cits domēns); AGENTS §6",
+        "date": "2026-11-02",
+        "status": "decided"
+      },
+      {
+        "term": "f(E) unit",
+        "chosen": "atkarīga no skalas",
+        "authority": "14. tabula (existing string)",
+        "date": "2026-11-02",
+        "status": "decided (W1 cleared)"
+      },
+      {
+        "term": "‡ unit",
+        "chosen": "— (explicit no-unit)",
+        "authority": "14. tabula (existing string)",
+        "date": "2026-11-02",
+        "status": "decided (W1 cleared)"
+      },
+      {
+        "term": "kopējā fermenta koncentrācija [E]₀",
+        "chosen": "new T-only entry",
+        "authority": "16. tabula, 10. nod.",
+        "date": "2026-11-02",
+        "status": "decided (N01)"
+      }
+    ],
+    "coverage_exceptions": [
+      {
+        "id": "katalizators-ferments",
+        "reason": "use form is a rule ('katalizators; ferments = enzīms'); both words and the 14. tabula composite appear separately"
+      },
+      {
+        "id": "inhibicija",
+        "reason": "composite enumeration; the three forms each appear, 14. tabula carries the composite"
+      },
+      {
+        "id": "mihaelisa-konstante",
+        "reason": "use string concatenates name+symbol; name and K<sub>M</sub> appear separately"
+      },
+      {
+        "id": "maksimalais-atrums",
+        "reason": "use string concatenates name+symbol; name and v<sub>max</sub> appear separately"
+      }
+    ]
+  },
+  "terms": [
+    {
+      "id": "reakcijas-atrums",
+      "use": "reakcijas ātrums",
+      "also_accept": [],
+      "avoid": [
+        "ātrums = ΔC/Δt bez zīmes"
+      ],
+      "en": "reaction rate",
+      "symbol": "v",
+      "unit": "mol·L⁻¹·s⁻¹",
+      "first_use_anchor": "fu-reakcijas-atrums",
+      "definition_anchor": "term-reakcijas-atrums",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Unit follows the measurement; see T03 for µmol·min⁻¹ in enzyme examples.",
+      "source": "AGENTS §6; 14. tabula",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Reakcijas ātrums</strong>",
+        "en_html": "reaction rate",
+        "symbol_html": "v",
+        "unit_html": "mol·L⁻¹·s⁻¹",
+        "avoid_html": "“ātrums = ΔC/Δt” bez zīmes",
+        "why_html": "Vidējais un momentānais ātrums atšķiras; jāņem stehiometrija."
+      },
+      "t16": {
+        "symbol_html": "<strong>v</strong>",
+        "meaning": "reakcijas ātrums; enzīmu kinētikā — sākotnējais ātrums",
+        "si": "mol·L⁻¹·s⁻¹",
+        "display": "µmol·min⁻¹ (daudzuma ātrums noteiktā tilpumā)",
+        "nod": "1",
+        "note_html": "1 µmol·min⁻¹ ≈ <span data-num=\"unit.umol\">1,67·10⁻⁸</span> mol·s⁻¹; dalot ar tilpumu V (L), iegūst mol·L⁻¹·s⁻¹."
+      }
+    },
+    {
+      "id": "atruma-konstante",
+      "use": "ātruma konstante",
+      "also_accept": [],
+      "avoid": [
+        "K",
+        "ātruma koeficients"
+      ],
+      "en": "rate constant",
+      "symbol": "k",
+      "unit": "atkarīga no pakāpes",
+      "first_use_anchor": "fu-atruma-konstante",
+      "definition_anchor": "term-atruma-konstante",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6; AkadTerm: ātruma konstante, EN rate constant (Ķīmijas un ķīmijas tehnoloģijas terminu vārdnīca 2006); RTU ĶNF303 kursa apraksts: “reakcijas pakāpes un ātruma konstantes noteikšana”",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Ātruma konstante</strong>",
+        "en_html": "rate constant",
+        "symbol_html": "k",
+        "unit_html": "atkarīga no pakāpes",
+        "avoid_html": "K, “ātruma koeficients”",
+        "why_html": "K ir līdzsvara konstante. k ir mazais burts."
+      },
+      "t16": {
+        "symbol_html": "<strong>k</strong>",
+        "meaning": "ātruma konstante",
+        "si": "pēc pakāpes: 0 — mol·L⁻¹·s⁻¹; 1 — s⁻¹; 2 — L·mol⁻¹·s⁻¹",
+        "display": "min⁻¹ pirmajai pakāpei",
+        "nod": "3",
+        "note_html": "Mazais burts; vienība seko no v = kC<sup>n</sup>."
+      },
+      "morph": {
+        "parts": [
+          {
+            "t": "ātrum",
+            "role": "root",
+            "lv": "ātrums",
+            "en": "speed"
+          },
+          {
+            "t": "a",
+            "role": "ending",
+            "lv": "ģenitīva galotne"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "konstante",
+            "role": "whole",
+            "lv": "aizguvums — nemainīgs lielums",
+            "en": "constant"
+          }
+        ],
+        "literal": "ātruma konstante",
+        "context": "3. nodaļa: mazais k; vienība atkarīga no pakāpes (3. tabula).",
+        "family": "ģenitīva -a: arī reakcijas, aktivācijas (šajā shēmā).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "pakape",
+      "use": "reakcijas pakāpe (kārta)",
+      "also_accept": [
+        "kārta"
+      ],
+      "avoid": [],
+      "en": "reaction order",
+      "symbol": "n",
+      "unit": "bezdimensiju",
+      "first_use_anchor": "fu-pakape",
+      "definition_anchor": "term-pakape",
+      "decision": "gloss both",
+      "status": "decided",
+      "note": "Course uses both; document uses pakāpe, kārta glossed in brackets at first use. Do not treat as different things.",
+      "source": "AGENTS §6; 14. tabula; AkadTerm: reakcijas pakāpe, EN order of reaction (Ķīmijas un ķīmijas tehnoloģijas terminu vārdnīca 2006; LPE 1979; IATE) https://www.akadterm.lv/term.php?term=reakcijas%20pak%C4%81pe&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Reakcijas pakāpe (kārta)</strong>",
+        "en_html": "reaction order",
+        "symbol_html": "n",
+        "unit_html": "bezdimensiju",
+        "avoid_html": "tikai “kārta” bez paskaidrojuma",
+        "why_html": "Kursa formā “pakāpe”; “kārta” ir saprotams sinonīms."
+      },
+      "morph": {
+        "parts": [
+          {
+            "t": "reakcij",
+            "role": "root",
+            "lv": "reakcija",
+            "en": "reaction"
+          },
+          {
+            "t": "as",
+            "role": "ending",
+            "lv": "ģenitīva galotne"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "pakāpe",
+            "role": "whole",
+            "lv": "kursa forma (nedalīta)",
+            "en": "order"
+          },
+          {
+            "t": " (kārta)",
+            "role": "gloss",
+            "lv": "saprotams sinonīms"
+          }
+        ],
+        "literal": "reakcijas pakāpe",
+        "context": "6. nodaļa: eksponents ātruma likumā; nosakāms tikai eksperimentāli.",
+        "family": "pretstats: molekularitāte (bieži jaukts pāris — 6. nodaļa).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "molekularitate",
+      "use": "molekularitāte",
+      "also_accept": [],
+      "avoid": [
+        "saukt par pakāpi"
+      ],
+      "en": "molecularity",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-molekularitate",
+      "definition_anchor": "term-molekularitate",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6; AkadTerm: reakcijas molekularitāte (Ķīmijas un ķīmijas tehnoloģijas terminu vārdnīca 2006) https://www.akadterm.lv/term.php?term=molekularit%C4%81te&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Molekularitāte</strong>",
+        "en_html": "molecularity",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "saukt par pakāpi",
+        "why_html": "Molekulu skaits vienā elementāraktā; parasti 1–3."
+      }
+    },
+    {
+      "id": "pusperiods",
+      "use": "pusperiods / pussabrukšanas periods",
+      "also_accept": [],
+      "avoid": [],
+      "en": "half-life",
+      "symbol": "t½ (laboratorijā), τ½ (lekcijā)",
+      "unit": "s",
+      "first_use_anchor": "fu-pusperiods",
+      "definition_anchor": "term-pusperiods",
+      "decision": "gloss both",
+      "status": "decided",
+      "note": "One symbol per passage; document uses t½. Constant only for 1st order.",
+      "source": "AGENTS §6; F11; AkadTerm: pussabrukšanas periods, EN half-life, T 1/2 (varianti: pussairšanas periods, pusnoārdīšanās periods) https://www.akadterm.lv/term.php?term=pussabruk%C5%A1anas%20periods&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Pussabrukšanas periods / pusperiods</strong>",
+        "en_html": "half-life",
+        "symbol_html": "t½, τ½",
+        "unit_html": "s",
+        "avoid_html": "lietot t½ kā vispārīgu konstanti",
+        "why_html": "Konstants tikai pirmajai pakāpei; laboratorijā t½, lekcijā τ½."
+      },
+      "t16": {
+        "symbol_html": "<strong>t½</strong>",
+        "meaning": "pusperiods",
+        "si": "s",
+        "display": "min, h, d",
+        "nod": "6",
+        "note_html": "Lekcijā τ½."
+      },
+      "morph": {
+        "headword": "pusperiods",
+        "parts": [
+          {
+            "t": "pus",
+            "role": "prefix",
+            "lv": "puse",
+            "en": "half"
+          },
+          {
+            "t": "periods",
+            "role": "root",
+            "lv": "noteikts laika sprīdis",
+            "en": "period"
+          }
+        ],
+        "literal": "puses periods",
+        "context": "6. nodaļa un 3. tabula: konstants tikai pirmajai pakāpei.",
+        "family": "priedēklis pus-: variants pussabrukšanas periods (ar diviem s).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "aktivacijas-energija",
+      "use": "aktivācijas enerģija",
+      "also_accept": [],
+      "avoid": [
+        "enerģija, ko dod visām molekulām"
+      ],
+      "en": "activation energy",
+      "symbol": "Ea",
+      "unit": "kJ·mol⁻¹",
+      "first_use_anchor": "fu-aktivacijas-energija",
+      "definition_anchor": "term-aktivacijas-energija",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6; AkadTerm: aktivācijas enerģija, EN Arrhenius activation energy (Ķīmijas un ķīmijas tehnoloģijas terminu vārdnīca 2006) https://www.akadterm.lv/term.php?term=aktiv%C4%81cijas%20ener%C4%A3ija&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Aktivācijas enerģija</strong>",
+        "en_html": "activation energy",
+        "symbol_html": "E<sub>a</sub>",
+        "unit_html": "J·mol⁻¹ vai kJ·mol⁻¹",
+        "avoid_html": "“enerģija, ko dod visām molekulām”",
+        "why_html": "Barjera, nevis deva."
+      },
+      "t16": {
+        "symbol_html": "<strong>E<sub>a</sub></strong>",
+        "meaning": "aktivācijas enerģija",
+        "si": "J·mol⁻¹",
+        "display": "kJ·mol⁻¹",
+        "nod": "2",
+        "note_html": "Formulā ar R = <span data-num=\"const.R\">8,314</span> J·mol⁻¹·K⁻¹ lieto J·mol⁻¹."
+      },
+      "morph": {
+        "parts": [
+          {
+            "t": "aktiv",
+            "role": "root",
+            "lv": "darbīgs",
+            "en": "active"
+          },
+          {
+            "t": "ācija",
+            "role": "suffix",
+            "lv": "process",
+            "en": "-ation"
+          },
+          {
+            "t": "s",
+            "role": "ending",
+            "lv": "ģenitīva galotne"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "enerģija",
+            "role": "whole",
+            "lv": "aizguvums (nedalīts)",
+            "en": "energy"
+          }
+        ],
+        "literal": "aktivēšanas enerģija",
+        "context": "4. nodaļa: barjera, nevis deva (skatīt K3).",
+        "family": "piedēklis -ācija: procesa nozīme.",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "sadursmju-teorija",
+      "use": "aktīvo sadursmju teorija",
+      "also_accept": [],
+      "avoid": [
+        "visas sadursmes reaģē"
+      ],
+      "en": "collision theory",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-sadursmju-teorija",
+      "definition_anchor": "term-sadursmju-teorija",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Aktīvo sadursmju teorija</strong>",
+        "en_html": "collision theory",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "“visas sadursmes reaģē”",
+        "why_html": "Nepieciešama E ≥ E<sub>a</sub> un pareiza orientācija."
+      }
+    },
+    {
+      "id": "maksvela-bolcmana",
+      "use": "Maksvela–Bolcmaņa sadalījums",
+      "also_accept": [],
+      "avoid": [
+        "Bolcmaņa līkne"
+      ],
+      "en": "Maxwell–Boltzmann distribution",
+      "symbol": "f(E)",
+      "unit": "atkarīga no skalas",
+      "first_use_anchor": "fu-maksvela-bolcmana",
+      "definition_anchor": "term-maksvela-bolcmana",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6; AkadTerm: Maksvela-Bolcmaņa ātrumu sadalījuma likums (Radioelektronikas… terminu vārdnīca, LZA TK, 1968) — forma apstiprināta, domēns cits https://www.akadterm.lv/term.php?term=Maksvela-Bolcma%C5%86a&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Maksvela–Bolcmaņa sadalījums</strong>",
+        "en_html": "Maxwell–Boltzmann distribution",
+        "symbol_html": "f(E)",
+        "unit_html": "atkarīga no skalas",
+        "avoid_html": "“Bolcmaņa līkne” vien",
+        "why_html": "Precīzāk: Maksvela–Bolcmaņa."
+      }
+    },
+    {
+      "id": "arreniusa",
+      "use": "Arrēniusa vienādojums",
+      "also_accept": [],
+      "avoid": [
+        "Arēniusa"
+      ],
+      "en": "Arrhenius equation",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-arreniusa",
+      "definition_anchor": "term-arreniusa",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Arrēniusa vienādojums</strong>",
+        "en_html": "Arrhenius equation",
+        "symbol_html": "k = A e<sup>−E<sub>a</sub>/(RT)</sup>",
+        "unit_html": "—",
+        "avoid_html": "“Arēniusa”",
+        "why_html": "Standarta rakstība: Arrēniusa."
+      }
+    },
+    {
+      "id": "van-t-hofa",
+      "use": "van 't Hofa likums",
+      "also_accept": [],
+      "avoid": [
+        "eksakts likums"
+      ],
+      "en": "van 't Hoff rule",
+      "symbol": "γ",
+      "unit": "bezdimensiju",
+      "first_use_anchor": "fu-van-t-hofa",
+      "definition_anchor": "term-van-t-hofa",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Approximate near room temperature. Numeric discrepancy F28 (51.9 vs 54 kJ/mol) is logged for T09, not resolved here.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>van 't Hofa likums</strong>",
+        "en_html": "van 't Hoff rule",
+        "symbol_html": "γ",
+        "unit_html": "bezdimensiju",
+        "avoid_html": "uzskatīt par eksaktu likumu",
+        "why_html": "Aptuvens pie istabas T."
+      },
+      "t16": {
+        "symbol_html": "<strong>γ</strong>",
+        "meaning": "van 't Hofa temperatūras koeficients",
+        "si": "bezdimensiju",
+        "display": "—",
+        "nod": "5",
+        "note_html": "Ātruma pieaugums uz 10 K."
+      }
+    },
+    {
+      "id": "aktivais-komplekss",
+      "use": "aktīvais komplekss (pārejas stāvoklis)",
+      "also_accept": [],
+      "avoid": [
+        "starpprodukts (jauc ar minimumu)"
+      ],
+      "en": "activated complex / transition state",
+      "symbol": "‡",
+      "unit": "—",
+      "first_use_anchor": "fu-aktivais-komplekss",
+      "definition_anchor": "term-aktivais-komplekss",
+      "decision": "course form",
+      "status": "decided",
+      "note": "",
+      "source": "AGENTS §6; AkadTerm: aktīvais komplekss (Ķīmijas un ķīmijas tehnoloģijas terminu vārdnīca 2006) https://www.akadterm.lv/term.php?term=akt%C4%ABvais%20komplekss&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Aktīvais komplekss</strong>",
+        "en_html": "activated complex / transition state",
+        "symbol_html": "‡",
+        "unit_html": "—",
+        "avoid_html": "saukt par starpproduktu",
+        "why_html": "Maksimums ceļā; starpprodukts ir minimums."
+      }
+    },
+    {
+      "id": "katalizators-ferments",
+      "use": "katalizators; ferments = enzīms",
+      "also_accept": [
+        "enzīms"
+      ],
+      "avoid": [],
+      "en": "catalyst / enzyme",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-katalizators",
+      "decision": "gloss both",
+      "status": "decided",
+      "note": "Glossary: separate entries term-katalizators and term-ferments.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Katalizators / ferments = enzīms</strong>",
+        "en_html": "catalyst / enzyme",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "lietot tikai vienu no diviem",
+        "why_html": "Ferments un enzīms kursā ir sinonīmi."
+      }
+    },
+    {
+      "id": "katalize-tipi",
+      "use": "homogēnā, heterogēnā, mikroheterogēnā katalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "homogeneous / heterogeneous / microheterogeneous catalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-katalize",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Glossary: term-homogena-katalize, term-heterogena-katalize, term-mikroheterogena-katalize.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Homogēnā, heterogēnā, mikroheterogēnā katalīze</strong>",
+        "en_html": "homogeneous, heterogeneous, microheterogeneous catalysis",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "saukt fermentatīvo tikai par homogēnu",
+        "why_html": "Fermentatīvajai ir abu pazīmes."
+      }
+    },
+    {
+      "id": "inhibicija",
+      "use": "konkurentā, nekonkurentā, jauktā inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "competitive, noncompetitive, mixed inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-inhibicija",
+      "definition_anchor": "term-inhibicija",
+      "decision": "house form inhibīcija (IATE: inhibīcija IETEICAMS); kursa genitīva forma inhibēšana paskaidrota 11. nod.",
+      "status": "decided",
+      "note": "Other Latvian variants exist; gloss, do not correct. Reversible vs irreversible is a separate axis. N01.2: kursa tekstā lietots tikai “inhibēšana” (Kinetika §5.5.5, 20×; slaidi 6×; MU 2×; inhibīcija 0×); šis dokuments vienota formā “inhibīcija” (185×), kursa forma quote-atklās un 11. nodaļas piezīmē. AkadTerm/IATE: EN inhibition → LV inhibīcija (IETEICAMS); kavēšana netiek ieteikta.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t14": {
+        "term": "<strong>Inhibīcija: konkurentā, nekonkurentā, jauktā</strong>",
+        "en_html": "competitive, noncompetitive, mixed inhibition",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "lietot citus latviešu variantus bez paskaidrojuma",
+        "why_html": "Kursa formas; citi varianti literatūrā pastāv. Nekonkurentā: inhibitors saistās E un ES. Nekonkurējošā (uncompetitive): tikai ES."
+      }
+    },
+    {
+      "id": "nekonkurenta",
+      "use": "nekonkurentā (tīrā) inhibīcija",
+      "also_accept": [
+        "nekonkurentais (vīr. dz.)"
+      ],
+      "avoid": [],
+      "en": "noncompetitive (pure)",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-nekonkurenta",
+      "definition_anchor": "term-nekonkurenta",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Inhibitor binds E and ES with equal affinity: vmax down, KM unchanged. Do NOT equate with irreversible (K23).",
+      "source": "K23; 8. tabula; kursa forma “Nekonkurentā inhibēšana”: Kinetika p.16 §5.5.5",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "morph": {
+        "parts": [
+          {
+            "t": "ne",
+            "role": "prefix",
+            "lv": "noliegums",
+            "en": "non-"
+          },
+          {
+            "t": "konkurent",
+            "role": "root",
+            "lv": "konkurēt, sacensties",
+            "en": "compete"
+          },
+          {
+            "t": "ā",
+            "role": "ending",
+            "lv": "īpašības vārda galotne"
+          },
+          {
+            "t": " (tīrā)",
+            "role": "gloss",
+            "lv": "precizējums",
+            "en": "the pure case"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "tīrā nekonkurentā inhibīcija",
+        "context": "11. nodaļa: vmax samazinās, KM nemainās; apgriezeniska (K23).",
+        "family": "saime ne-: nekonkurējošā, neapgriezeniskā; sakne konkur-: konkurentā.",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "nekonkurejosa",
+      "use": "nekonkurējošā (uncompetitive) inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "uncompetitive inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-nekonkurejosa",
+      "definition_anchor": "term-nekonkurejosa",
+      "decision": "house label (papildinājums); nav kursa forma",
+      "status": "decided",
+      "note": "Inhibitor binds only ES: vmax and KM_app both down. Document-labelled as an addition (\"papildinājums\"), not in the source. Easy to confuse with nekonkurentā; glossed at first use. IEBRĪDINĀJUMS (N01.2): AkadTerm/IATE “nekonkurējošā inhibēšana” atbilst EN non-competitive inhibition (tīrā nekonkurentā), NEŠĶIRUŠI tam, ko šis dokuments sauc par uncompetitive; ārpus šī dokumenta vārds ir divdomīgs.",
+      "source": "8. tabula; instrument warning",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "morph": {
+        "parts": [
+          {
+            "t": "ne",
+            "role": "prefix",
+            "lv": "noliegums",
+            "en": "un-"
+          },
+          {
+            "t": "konkurē",
+            "role": "root",
+            "lv": "konkurēt",
+            "en": "compete"
+          },
+          {
+            "t": "još",
+            "role": "suffix",
+            "lv": "tagadnes aktīvā divdabja pazīme",
+            "en": "-ing"
+          },
+          {
+            "t": "ā",
+            "role": "ending",
+            "lv": "īpašības vārda galotne"
+          },
+          {
+            "t": " (uncompetitive)",
+            "role": "gloss",
+            "lv": "angļu forma",
+            "en": "uncompetitive",
+            "lang": "en"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "nekonkurējošā inhibīcija",
+        "context": "11. nodaļa: saistās tikai ar ES; paralēlas taisnes Lineweaver–Burk grafikā.",
+        "family": "saime ne-: nekonkurentā, neapgriezeniskā; sakne konkur-: konkurentā.",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "mihaelisa",
+      "use": "Mihaelisa",
+      "also_accept": [],
+      "avoid": [
+        "Michaelisa (Latvian prose)"
+      ],
+      "en": "Michaelis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-mihaelisa-mentenas",
+      "definition_anchor": "term-mihaelisa-konstante",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Latvian prose uses Mihaelisa(–Mentenas); English column of 14. tabula keeps Michaelis. Do not normalise the case ending mechanically (F13).",
+      "source": "AGENTS §6; F01; T01 house spelling; AkadTerm: Mihaelisa konstante (Ķīmija. LPE tematiskā šķirkļu saraksta projekts, R., 1979) https://www.akadterm.lv/term.php?term=Mihaelisa%20konstante&lang=LV",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02"
+    },
+    {
+      "id": "mihaelisa-konstante",
+      "use": "Mihaelisa konstante KM",
+      "also_accept": [],
+      "avoid": [
+        "afinitāte bez nosacījuma",
+        "K_M = K_d vispārīgi"
+      ],
+      "en": "Michaelis constant",
+      "symbol": "KM",
+      "unit": "mol·L⁻¹ (tāpat kā substrāta koncentrācijai)",
+      "first_use_anchor": "fu-mihaelisa-konstante",
+      "definition_anchor": "term-mihaelisa-konstante",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Stacionārajā tuvinājumā K_M = (k−1 + k2)/k1; ar K_d = k−1/k1 tas sakrīt tikai pie k2 ≪ k−1.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Mihaelisa konstante</strong>",
+        "en_html": "Michaelis constant",
+        "symbol_html": "K<sub>M</sub>",
+        "unit_html": "tāda pati kā C<sub>S</sub>: mol·L⁻¹ vai mmol·dm⁻³",
+        "avoid_html": "“afinitāte” bez nosacījuma; “K<sub>M</sub> = K<sub>d</sub>” vispārīgi; “ātrums”",
+        "why_html": "K<sub>M</sub> = [S] pie v<sub>max</sub>/2, tātad koncentrācija; afinitātes mērs tikai ar papildu nosacījumu (k₂ ≪ k₋₁)."
+      },
+      "t16": {
+        "symbol_html": "<strong>K<sub>M</sub></strong>",
+        "meaning": "Mihaelisa konstante",
+        "si": "mol·L⁻¹",
+        "display": "mmol·dm⁻³ (tāda pati kā C<sub>S</sub>)",
+        "nod": "10",
+        "note_html": "K<sub>M</sub> = [S] pie v<sub>max</sub>/2."
+      }
+    },
+    {
+      "id": "maksimalais-atrums",
+      "use": "maksimālais ātrums vmax",
+      "also_accept": [],
+      "avoid": [
+        "jaukt ar kcat"
+      ],
+      "en": "maximum velocity",
+      "symbol": "vmax",
+      "unit": "atkarīga no mērījuma",
+      "first_use_anchor": "fu-maksimalais-atrums",
+      "definition_anchor": "term-maksimalais-atrums",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Resolved in N01: 14. and 16. tabula state vmax unit as mol·L⁻¹·s⁻¹ or µmol·min⁻¹, whichever is measured; the ch.10 worked example measures µmol·min⁻¹. No open unit conflict.",
+      "source": "F20",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Maksimālais ātrums</strong>",
+        "en_html": "maximum velocity",
+        "symbol_html": "v<sub>max</sub>",
+        "unit_html": "tāda pati kā v: mol·L⁻¹·s⁻¹ vai µmol·min⁻¹, kā mērīts",
+        "avoid_html": "jaukt ar k<sub>cat</sub>",
+        "why_html": "v<sub>max</sub> = k<sub>cat</sub>[E]<sub>akt</sub>; viena centra gadījumā = k₂[E]₀. µmol·min⁻¹ ir daudzuma ātrums (16. tabula)."
+      },
+      "t16": {
+        "symbol_html": "<strong>v<sub>max</sub></strong>",
+        "meaning": "maksimālais ātrums",
+        "si": "mol·L⁻¹·s⁻¹",
+        "display": "µmol·min⁻¹ (daudzuma ātrums, tāda pati kā v)",
+        "nod": "10",
+        "note_html": "v<sub>max</sub> = k<sub>cat</sub>[E]<sub>akt</sub>; viens centrs: = k<sub>2</sub>[E]₀."
+      }
+    },
+    {
+      "id": "oksidesanas-pakape",
+      "use": "oksidēšanas pakāpe (+VII)",
+      "also_accept": [],
+      "avoid": [
+        "Mn⁷⁺ kā brīvs jons"
+      ],
+      "en": "oxidation state",
+      "symbol": "+VII",
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": null,
+      "decision": "course form",
+      "status": "decided",
+      "note": "Not a glossary entry (usage rule only; see 14. tabula).",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Oksidēšanas pakāpe</strong>",
+        "en_html": "oxidation state",
+        "symbol_html": "+VII",
+        "unit_html": "—",
+        "avoid_html": "Mn⁷⁺ kā brīvs jons",
+        "why_html": "Raksta Mn(+VII) vai MnO₄⁻."
+      }
+    },
+    {
+      "id": "pakape-stehiometrija",
+      "use": "pakāpe pret stehiometriju",
+      "also_accept": [],
+      "avoid": [
+        "a + b = pakāpe"
+      ],
+      "en": "order vs stoichiometry",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-pakape",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Covered by the term-pakape entry; table row t14-pakape-stehiometrija.",
+      "source": "AGENTS §6",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t14": {
+        "term": "<strong>Pakāpe pret stehiometriju</strong>",
+        "en_html": "order vs stoichiometry",
+        "symbol_html": "—",
+        "unit_html": "—",
+        "avoid_html": "“a + b = pakāpe”",
+        "why_html": "Tikai elementārstadijā."
+      }
+    },
+    {
+      "id": "paraugatbilde",
+      "use": "paraugatbilde",
+      "also_accept": [],
+      "avoid": [
+        "modeļatbilde"
+      ],
+      "en": "model answer",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-paraugatbilde",
+      "definition_anchor": "term-paraugatbilde",
+      "decision": "house term",
+      "status": "decided",
+      "note": "Chosen over \"modeļatbilde\" (calque). 39 labels + 23 provenance tags. Pure style decision, reversible by global replace; \"model\" CSS class name unchanged.",
+      "source": "F09",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "atsaidijuma-koeficients",
+      "use": "atšķaidījuma koeficients",
+      "also_accept": [],
+      "avoid": [
+        "kopsaucējs"
+      ],
+      "en": "dilution factor",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-atsaidijuma-koeficients",
+      "definition_anchor": "term-atsaidijuma-koeficients",
+      "decision": "course form",
+      "status": "decided",
+      "note": "Kopsaucējs = \"common denominator\"; wrong for a dilution factor. In the lab panel the old label actually sat on the volume basis (10 mL vs 12 mL), so it became \"Tilpums, uz kuru attiecina C\"; the factor itself is the lab-factor field.",
+      "source": "F03",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "tiosulfata-skidums",
+      "use": "tiosulfāta šķīdums (ar ūdeni līdz 10,00 mL)",
+      "also_accept": [],
+      "avoid": [
+        "sāls šķīdums (bez paskaidrojuma)"
+      ],
+      "en": "sodium thiosulfate solution",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": null,
+      "decision": "clarified",
+      "status": "decided",
+      "note": "The lab source itself says \"sāls šķīdums\" (5LW p.1: 10,00 mL sāls šķīduma + 2,00 mL skābes) and adds water to 10,0 mL. The wording was made explicit, not corrected as an error; the 5LW citation stays on that sentence. Not a glossary entry (usage rule only; see 14. tabula).",
+      "source": "5LW p.1–2; F08",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "asimptotiski",
+      "use": "asimptotiski / asimptote",
+      "also_accept": [],
+      "avoid": [
+        "asymptotiski"
+      ],
+      "en": "asymptotically",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": null,
+      "decision": "course form",
+      "status": "decided",
+      "note": "Not a glossary entry (usage rule only; see 14. tabula).",
+      "source": "F06",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "eksponencials-augums",
+      "use": "aug eksponenciāli",
+      "also_accept": [],
+      "avoid": [
+        "aug ģeometriski (ķēdes zarošanās)"
+      ],
+      "en": "grows exponentially",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": null,
+      "decision": "course form",
+      "status": "decided",
+      "note": "Branching chain: radical number and rate grow exponentially. Not a glossary entry (usage rule only; see 14. tabula).",
+      "source": "F07",
+      "reviewed_by": "Claude (T01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "momentanais-atrums",
+      "use": "momentānais ātrums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "instantaneous rate",
+      "symbol": "dC/dt",
+      "unit": "mol·L⁻¹·s⁻¹",
+      "first_use_anchor": "fu-momentanais-atrums",
+      "definition_anchor": "term-momentanais-atrums",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.1",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "sakotnejais-atrums",
+      "use": "sākotnējais ātrums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "initial rate",
+      "symbol": "v₀",
+      "unit": "tāda pati kā v",
+      "first_use_anchor": "fu-sakotnejais-atrums",
+      "definition_anchor": "term-sakotnejais-atrums",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "koncentracija",
+      "use": "koncentrācija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "concentration",
+      "symbol": "C",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": "fu-koncentracija",
+      "definition_anchor": "term-koncentracija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.1",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "stehiometriskais-koeficients",
+      "use": "stehiometriskais koeficients",
+      "also_accept": [],
+      "avoid": [],
+      "en": "stoichiometric coefficient",
+      "symbol": "ν",
+      "unit": "bezdimensiju",
+      "first_use_anchor": "fu-stehiometriskais-koeficients",
+      "definition_anchor": "term-stehiometriskais-koeficients",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.1",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kinetiskais-vienadojums",
+      "use": "kinētiskais vienādojums (ātruma likums)",
+      "also_accept": [],
+      "avoid": [],
+      "en": "rate law",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-kinetiskais-vienadojums",
+      "definition_anchor": "term-kinetiskais-vienadojums",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.3",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "aktivo-masu-likums",
+      "use": "aktīvo masu likums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "law of mass action",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-aktivo-masu-likums",
+      "definition_anchor": "term-aktivo-masu-likums",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.3",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "elementarstadija",
+      "use": "elementārstadija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "elementary step",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-elementarstadija",
+      "definition_anchor": "term-elementarstadija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.3",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "nulles-pakapes-reakcija",
+      "use": "nulles pakāpes reakcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "zero-order reaction",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-nulles-pakapes-reakcija",
+      "definition_anchor": "term-nulles-pakapes-reakcija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.6",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "pirmas-pakapes-reakcija",
+      "use": "pirmās pakāpes reakcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "first-order reaction",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-pirmas-pakapes-reakcija",
+      "definition_anchor": "term-pirmas-pakapes-reakcija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.6",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "otras-pakapes-reakcija",
+      "use": "otrās pakāpes reakcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "second-order reaction",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-otras-pakapes-reakcija",
+      "definition_anchor": "term-otras-pakapes-reakcija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.6",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "pirmseksponenta-faktors",
+      "use": "pirmseksponenciālais faktors",
+      "also_accept": [],
+      "avoid": [],
+      "en": "pre-exponential factor",
+      "symbol": "A",
+      "unit": "tāda pati kā k",
+      "first_use_anchor": "fu-pirmseksponenta-faktors",
+      "definition_anchor": "term-pirmseksponenta-faktors",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.5",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>A</strong>",
+        "meaning": "pirmseksponenciālais faktors",
+        "si": "tāda pati kā k",
+        "display": "—",
+        "nod": "5",
+        "note_html": "Atkarīga no pakāpes."
+      }
+    },
+    {
+      "id": "mehanisms",
+      "use": "reakcijas mehānisms",
+      "also_accept": [],
+      "avoid": [],
+      "en": "reaction mechanism",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-mehanisms",
+      "definition_anchor": "term-mehanisms",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.7",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "starpprodukts",
+      "use": "starpprodukts",
+      "also_accept": [],
+      "avoid": [],
+      "en": "intermediate",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-starpprodukts",
+      "definition_anchor": "term-starpprodukts",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.7",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "limitejosa-stadija",
+      "use": "limitējošā (ātrumu noteicošā) stadija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "rate-determining step",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-limitejosa-stadija",
+      "definition_anchor": "term-limitejosa-stadija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.7",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kvazistacionars",
+      "use": "stacionārais (Brigsa–Haldana) tuvinājums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "steady-state approximation",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-kvazistacionars",
+      "definition_anchor": "term-kvazistacionars",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kedes-reakcija",
+      "use": "ķēdes reakcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "chain reaction",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-kedes-reakcija",
+      "definition_anchor": "term-kedes-reakcija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.7",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "sajugta-reakcija",
+      "use": "sajūgtā (inducētā) reakcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "coupled (induced) reaction",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-sajugta-reakcija",
+      "definition_anchor": "term-sajugta-reakcija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.7",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "katalizators",
+      "use": "katalizators",
+      "also_accept": [],
+      "avoid": [],
+      "en": "catalyst",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-katalizators",
+      "definition_anchor": "term-katalizators",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "morph": {
+        "parts": [
+          {
+            "t": "kataliz",
+            "role": "root",
+            "lv": "katalīze",
+            "en": "catalysis"
+          },
+          {
+            "t": "ator",
+            "role": "suffix",
+            "lv": "darītājs",
+            "en": "-ator"
+          },
+          {
+            "t": "s",
+            "role": "ending",
+            "lv": "nominatīva galotne"
+          }
+        ],
+        "literal": "katalizators (tas, kas paātrina)",
+        "context": "8. nodaļa: maina ceļu, nevis galamērķi; ciklā atgūstas.",
+        "family": "saistītie: katalīze (process), ferments (bioloģiskais katalizators).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "katalize",
+      "use": "katalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "catalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-katalize",
+      "definition_anchor": "term-katalize",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "homogena-katalize",
+      "use": "homogēnā katalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "homogeneous catalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-homogena-katalize",
+      "definition_anchor": "term-homogena-katalize",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "heterogena-katalize",
+      "use": "heterogēnā katalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "heterogeneous catalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-heterogena-katalize",
+      "definition_anchor": "term-heterogena-katalize",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "mikroheterogena-katalize",
+      "use": "mikroheterogēnā katalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "microheterogeneous catalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-mikroheterogena-katalize",
+      "definition_anchor": "term-mikroheterogena-katalize",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "autokatalize",
+      "use": "autokatalīze",
+      "also_accept": [],
+      "avoid": [],
+      "en": "autocatalysis",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-autokatalize",
+      "definition_anchor": "term-autokatalize",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "ferments",
+      "use": "ferments (enzīms)",
+      "also_accept": [],
+      "avoid": [],
+      "en": "enzyme",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-ferments",
+      "definition_anchor": "term-ferments",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "substrats",
+      "use": "substrāts",
+      "also_accept": [],
+      "avoid": [],
+      "en": "substrate",
+      "symbol": "S",
+      "unit": "mol·L⁻¹ (koncentrācija C<sub>S</sub>)",
+      "first_use_anchor": "fu-substrats",
+      "definition_anchor": "term-substrats",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": " N02: unit string carries a real <sub> subscript; csv export strips tags.",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>C<sub>S</sub></strong>",
+        "meaning": "substrāta koncentrācija",
+        "si": "mol·L⁻¹",
+        "display": "mmol·dm⁻³",
+        "nod": "10",
+        "note_html": "mol·L⁻¹ un mol·dm⁻³ ir viens un tas pats."
+      },
+      "morph": {
+        "parts": [
+          {
+            "t": "substrāts",
+            "role": "whole",
+            "lv": "aizguvums: apakšklājs (nedalīts, jo *strāts nav latviešu sakne)",
+            "en": "substrate"
+          }
+        ],
+        "literal": "substrāts (viela, uz kuras ferments darbojas)",
+        "context": "10. nodaļa: tas, ko ferments pārveido; apzīmē ar S.",
+        "family": "saistītais: ES komplekss (ferments + substrāts).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "aktivais-centrs",
+      "use": "aktīvais centrs",
+      "also_accept": [],
+      "avoid": [],
+      "en": "active site",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-aktivais-centrs",
+      "definition_anchor": "term-aktivais-centrs",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "specifiskums",
+      "use": "specifiskums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "specificity",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-specifiskums",
+      "definition_anchor": "term-specifiskums",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kofaktors",
+      "use": "kofaktors",
+      "also_accept": [],
+      "avoid": [],
+      "en": "cofactor",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-kofaktors",
+      "definition_anchor": "term-kofaktors",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "denaturacija",
+      "use": "denaturācija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "denaturation",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-denaturacija",
+      "definition_anchor": "term-denaturacija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "es-komplekss",
+      "use": "ES komplekss",
+      "also_accept": [],
+      "avoid": [],
+      "en": "enzyme–substrate complex",
+      "symbol": "ES",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": "fu-es-komplekss",
+      "definition_anchor": "term-es-komplekss",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.9",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "mihaelisa-mentenas",
+      "use": "Mihaelisa–Mentenas vienādojums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "Michaelis–Menten equation",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-mihaelisa-mentenas",
+      "definition_anchor": "term-mihaelisa-mentenas",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kcat",
+      "use": "katalītiskā konstante",
+      "also_accept": [],
+      "avoid": [],
+      "en": "catalytic constant (turnover number)",
+      "symbol": "kcat",
+      "unit": "s⁻¹",
+      "first_use_anchor": "fu-kcat",
+      "definition_anchor": "term-kcat",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>k<sub>cat</sub></strong>",
+        "meaning": "katalītiskā konstante, uz vienu aktīvo centru",
+        "si": "s⁻¹",
+        "display": "min⁻¹",
+        "nod": "10",
+        "note_html": "k<sub>cat</sub> = v<sub>max</sub>/[E]<sub>akt</sub>; [E]<sub>akt</sub> = n[E]₀ (n — centru skaits molekulā)."
+      }
+    },
+    {
+      "id": "disociacijas-konstante",
+      "use": "disociācijas konstante",
+      "also_accept": [],
+      "avoid": [
+        "jaukt ar K_M bez nosacījuma"
+      ],
+      "en": "dissociation constant",
+      "symbol": "Kd",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": "fu-disociacijas-konstante",
+      "definition_anchor": "term-disociacijas-konstante",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "K_d = k−1/k1 raksturo saistīšanās līdzsvaru; nav identiska K_M, izņemot gadījumu k2 ≪ k−1.",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "afinitate",
+      "use": "afinitāte",
+      "also_accept": [],
+      "avoid": [],
+      "en": "affinity",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-afinitate",
+      "definition_anchor": "term-afinitate",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "lineweaver-burk",
+      "use": "Lineweaver–Burk attēlojums",
+      "also_accept": [],
+      "avoid": [],
+      "en": "Lineweaver–Burk plot",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-lineweaver-burk",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.10",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "inhibitors",
+      "use": "inhibitors",
+      "also_accept": [],
+      "avoid": [],
+      "en": "inhibitor",
+      "symbol": "I",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": "fu-inhibitors",
+      "definition_anchor": "term-inhibitors",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>[I]</strong>",
+        "meaning": "inhibitora koncentrācija",
+        "si": "mol·L⁻¹",
+        "display": "mmol·dm⁻³",
+        "nod": "10",
+        "note_html": "Tāda pati vienība kā C<sub>S</sub>."
+      }
+    },
+    {
+      "id": "atgriezeniska-inhibicija",
+      "use": "atgriezeniskā inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "reversible inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-atgriezeniska-inhibicija",
+      "definition_anchor": "term-atgriezeniska-inhibicija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "morph": {
+        "parts": [
+          {
+            "t": "at",
+            "role": "prefix",
+            "lv": "atpakaļ",
+            "en": "back"
+          },
+          {
+            "t": "griezeniskā",
+            "role": "whole",
+            "lv": "vērsta atpakaļ (tālāk nedalīta kursa ietvaros)",
+            "en": "turning back"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "atgriezeniskā inhibīcija",
+        "context": "11. nodaļa: inhibitors var disociēt (atšķirt no “nepārvar ar [S]”).",
+        "family": "pāris: neapgriezeniskā (noliegums ar ne-; skaņu mija at–ap).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "neapgriezeniska-inhibicija",
+      "use": "neapgriezeniskā inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "irreversible inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-neapgriezeniska-inhibicija",
+      "definition_anchor": "term-neapgriezeniska-inhibicija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "morph": {
+        "parts": [
+          {
+            "t": "ne",
+            "role": "prefix",
+            "lv": "noliegums",
+            "en": "ir-"
+          },
+          {
+            "t": "apgriezeniskā",
+            "role": "whole",
+            "lv": "atgriezeniskā skaņu mijā at–ap (tālāk nedalīta)",
+            "en": "turning back"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "neapgriezeniskā inhibīcija",
+        "context": "11. nodaļa: Pb, Hg, alkilējošie aģenti; substrāts neatjauno.",
+        "family": "pāris: atgriezeniskā; saime ne-: nekonkurentā, nekonkurējošā.",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "konkurenta",
+      "use": "konkurentā inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "competitive inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-konkurenta",
+      "definition_anchor": "term-konkurenta",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "morph": {
+        "parts": [
+          {
+            "t": "konkurent",
+            "role": "root",
+            "lv": "konkurēt, sacensties",
+            "en": "compete"
+          },
+          {
+            "t": "ā",
+            "role": "ending",
+            "lv": "īpašības vārda galotne"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "sacenšanās inhibīcija",
+        "context": "11. nodaļa un 8. tabula: inhibitors brīvajā fermentā; [S] pārvar.",
+        "family": "sakne konkur-: nekonkurentā, nekonkurējošā (noliegumi ar ne-).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "jaukta",
+      "use": "jauktā inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "mixed inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-jaukta",
+      "definition_anchor": "term-jaukta",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "morph": {
+        "parts": [
+          {
+            "t": "jauk",
+            "role": "root",
+            "lv": "jaukt",
+            "en": "mix"
+          },
+          {
+            "t": "t",
+            "role": "suffix",
+            "lv": "pagātnes pasīvā divdabja pazīme",
+            "en": "-ed"
+          },
+          {
+            "t": "ā",
+            "role": "ending",
+            "lv": "īpašības vārda galotne"
+          },
+          {
+            "t": " ",
+            "role": "space",
+            "lv": ""
+          },
+          {
+            "t": "inhibīcija",
+            "role": "whole",
+            "lv": "kursa termins (nedalīts aizguvums)",
+            "en": "inhibition"
+          }
+        ],
+        "literal": "jauktā inhibīcija",
+        "context": "11. nodaļa: E un ES ar atšķirīgu afinitāti; mainās abi lielumi.",
+        "family": "jauktais tips: mainās gan vmax, gan KM (8. tabula).",
+        "status": "supported"
+      }
+    },
+    {
+      "id": "allosteriska-vieta",
+      "use": "allosteriskā vieta",
+      "also_accept": [],
+      "avoid": [],
+      "en": "allosteric site",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-allosteriska-vieta",
+      "definition_anchor": "term-allosteriska-vieta",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "produkta-inhibicija",
+      "use": "produkta inhibīcija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "product inhibition",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-produkta-inhibicija",
+      "definition_anchor": "term-produkta-inhibicija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "inhibicijas-konstante",
+      "use": "inhibīcijas konstante",
+      "also_accept": [],
+      "avoid": [],
+      "en": "inhibition constant",
+      "symbol": "Ki",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": null,
+      "definition_anchor": "term-inhibicijas-konstante",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.11",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>K<sub>i</sub></strong>",
+        "meaning": "inhibīcijas konstante",
+        "si": "mol·L⁻¹",
+        "display": "mmol·dm⁻³",
+        "nod": "10",
+        "note_html": "Tāda pati vienība kā [I]."
+      }
+    },
+    {
+      "id": "liidzsvara-konstante",
+      "use": "līdzsvara konstante",
+      "also_accept": [],
+      "avoid": [],
+      "en": "equilibrium constant",
+      "symbol": "K",
+      "unit": "atkarīga no vienādojuma",
+      "first_use_anchor": "fu-liidzsvara-konstante",
+      "definition_anchor": "term-liidzsvara-konstante",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.8",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01",
+      "t16": {
+        "symbol_html": "<strong>K</strong>",
+        "meaning": "līdzsvara konstante",
+        "si": "bezdimensiju",
+        "display": "—",
+        "nod": "8",
+        "note_html": "Lielais burts; nejaukt ar k."
+      }
+    },
+    {
+      "id": "regresija",
+      "use": "lineārā regresija",
+      "also_accept": [],
+      "avoid": [],
+      "en": "linear regression",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-regresija",
+      "definition_anchor": "term-regresija",
+      "decision": "added in T05 glossary",
+      "status": "proposed",
+      "note": "",
+      "source": "T05; document prose ch.12",
+      "reviewed_by": "Claude (T05 pass); not lecturer-reviewed",
+      "review_date": "2026-11-01"
+    },
+    {
+      "id": "kopeja-fermenta-koncentracija",
+      "use": "kopējā fermenta koncentrācija",
+      "also_accept": [],
+      "avoid": [
+        "brīvais ferments [E]"
+      ],
+      "en": "total enzyme concentration",
+      "symbol": "[E]₀",
+      "unit": "mol·L⁻¹",
+      "first_use_anchor": null,
+      "definition_anchor": null,
+      "decision": "added in N01 (notation spine): the only 16. tabula symbol without a termbase entry",
+      "status": "decided",
+      "note": "Visas fermenta formas kopā (E + ES + …); nemainās reakcijas gaitā. T-only usage rule; no glossary entry added in N01.",
+      "source": "16. tabula; 10. nod.; notation.md",
+      "reviewed_by": "Claude (N01 pass); not lecturer-reviewed",
+      "review_date": "2026-11-02",
+      "t16": {
+        "symbol_html": "<strong>[E]₀</strong>",
+        "meaning": "kopējā fermenta koncentrācija",
+        "si": "mol·L⁻¹",
+        "display": "µmol·L⁻¹",
+        "nod": "10",
+        "note_html": "Visas fermenta formas kopā (E + ES + …); nemainās reakcijas gaitā; nav brīvais ferments [E]."
+      }
+    },
+    {
+      "id": "farmakokinetika",
+      "use": "farmakokinētika",
+      "also_accept": [],
+      "avoid": [
+        "farmakokinētika kā farmakodinamikas sinonīms"
+      ],
+      "en": "pharmacokinetics",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-farmakokinetika",
+      "decision": "supplemental clinical term (papildinājums)",
+      "status": "decided",
+      "note": "Lietots tikai Pielikumā A; nav kursa termins. Klīniskais tvērums paliek nosacīts: viena kompartmenta, pirmās pakāpes modelis. Nav pirmā lietojuma saites, jo builders skenē 0.–12. nodaļu, bet termins parādās tikai Pielikumā A.",
+      "source": "Pielikums A #appA-elim (C11–C12); Rang & Dale's Pharmacology, 9. izd. (2019), farmakokinētikas nodaļa; Goodman & Gilman's, 13. izd. (2018) — tēmu norādes, lappuses nav atvērtas",
+      "reviewed_by": "Claude (T02 pass); not lecturer-reviewed",
+      "review_date": "2026-11-09"
+    },
+    {
+      "id": "farmakodinamika",
+      "use": "farmakodinamika",
+      "also_accept": [],
+      "avoid": [
+        "farmakodinamika kā farmakokinētikas sinonīms"
+      ],
+      "en": "pharmacodynamics",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-farmakodinamika",
+      "decision": "supplemental clinical term (papildinājums)",
+      "status": "decided",
+      "note": "Lietots tikai Pielikumā A; šajā dokumentā aprobežojas ar fermentu kinētiku un inhibīciju, nevis vispārīgu receptoru farmakoloģiju. Nav pirmā lietojuma saites (sk. farmakokinetika).",
+      "source": "Pielikums A #appA-clinical (C11–C12); Rang & Dale's Pharmacology, 9. izd. (2019), farmakokinētikas nodaļa; Goodman & Gilman's, 13. izd. (2018) — tēmu norādes, lappuses nav atvērtas",
+      "reviewed_by": "Claude (T02 pass); not lecturer-reviewed",
+      "review_date": "2026-11-09"
+    },
+    {
+      "id": "eliminacijas-konstante",
+      "use": "eliminācijas konstante",
+      "also_accept": [
+        "eliminācijas ātruma konstante"
+      ],
+      "avoid": [
+        "k bez apakšindeksa e",
+        "eliminācijas koeficients"
+      ],
+      "en": "elimination rate constant",
+      "symbol": "k_e",
+      "unit": "h⁻¹",
+      "first_use_anchor": null,
+      "definition_anchor": "term-eliminacijas-konstante",
+      "decision": "supplemental clinical term (papildinājums)",
+      "status": "decided",
+      "note": "Pirmās pakāpes izvades konstante; k_e = ln 2 / t½. Nav tā pati konstante k vispārīgā ātruma likumā un nav līdzsvara konstante K. Nav pirmā lietojuma saites (sk. farmakokinetika).",
+      "source": "Pielikums A #appA-elim (C11–C12); Rang & Dale's Pharmacology, 9. izd. (2019), farmakokinētikas nodaļa; Goodman & Gilman's, 13. izd. (2018) — tēmu norādes, lappuses nav atvērtas",
+      "reviewed_by": "Claude (T02 pass); not lecturer-reviewed",
+      "review_date": "2026-11-09"
+    },
+    {
+      "id": "stacionarais-stavoklis",
+      "use": "stacionārais stāvoklis",
+      "also_accept": [],
+      "avoid": [
+        "līdzsvara stāvoklis",
+        "stacionārais tuvinājums (kā sinonīms)"
+      ],
+      "en": "steady state",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": null,
+      "definition_anchor": "term-stacionarais-stavoklis",
+      "decision": "supplemental clinical term (papildinājums)",
+      "status": "decided",
+      "note": "Atkārtotu devu režīma līmenis, nevis termodinamiskais līdzsvars un nevis Brigsa–Haldana stacionārais tuvinājums (kvazistacionars). Nav pirmā lietojuma saites (sk. farmakokinetika).",
+      "source": "Pielikums A #appA-elim (C11–C12); Rang & Dale's Pharmacology, 9. izd. (2019), farmakokinētikas nodaļa; Goodman & Gilman's, 13. izd. (2018) — tēmu norādes, lappuses nav atvērtas",
+      "reviewed_by": "Claude (T02 pass); not lecturer-reviewed",
+      "review_date": "2026-11-09"
+    },
+    {
+      "id": "uzkrasanas-koeficients",
+      "use": "uzkrāšanās koeficients",
+      "also_accept": [],
+      "avoid": [
+        "akumulācijas koeficients",
+        "uzkrāšanās faktors"
+      ],
+      "en": "accumulation factor",
+      "symbol": null,
+      "unit": null,
+      "first_use_anchor": "fu-uzkrasanas-koeficients",
+      "definition_anchor": "term-uzkrasanas-koeficients",
+      "decision": "supplemental clinical term (papildinājums)",
+      "status": "decided",
+      "note": "Bezdimensiju lielums; ideālā viena kompartmenta pirmās pakāpes modelī atkarīgs no devu intervāla un k_e. Pirmā lietojuma saite ir 6. nodaļas t½ fallback tekstā.",
+      "source": "Pielikums A #appA-elim (C11–C12); Rang & Dale's Pharmacology, 9. izd. (2019), farmakokinētikas nodaļa; Goodman & Gilman's, 13. izd. (2018) — tēmu norādes, lappuses nav atvērtas",
+      "reviewed_by": "Claude (T02 pass); not lecturer-reviewed",
+      "review_date": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+needle|label|source|where|ref|sites
+0,0400|izejas šķīdums γ|dots|10.1, 10.5, 15. tabula|SRC:constants.stock_gamma|20
+10,00|kopējais tilpums mL|dots|10.5, 15. tabula|SRC:constants.total_volume_mL|31
+0,50|standarta V1 mL|14. tabula|10.5, 15. tabula|SRC:std1.v_stock_mL|7
+9,50|ūdens V mL|14. tabula|10.5, 15. tabula|SRC:std1.v_water_mL|6
+3,00|standarta V1 mL|14. tabula|10.5, 15. tabula|SRC:std6.v_stock_mL|4
+7,00|ūdens V mL|14. tabula|10.5, 15. tabula|SRC:std6.v_water_mL|2
+4,00|standarta V1 mL|14. tabula|10.5, 15. tabula|SRC:std8.v_stock_mL|7
+6,00|ūdens V mL|14. tabula|10.5, 15. tabula|SRC:std8.v_water_mL|1
+0,002|standarta γ|14. tabula|10.5, 10.8|RES:std1.gamma_mg_per_mL|83
+0,004|standarta γ|14. tabula|10.5, 10.8|RES:std2.gamma_mg_per_mL|14
+0,006|standarta γ|14. tabula|10.5, 10.8|RES:std3.gamma_mg_per_mL|11
+0,008|standarta γ|14. tabula|10.5, 10.8|RES:std4.gamma_mg_per_mL|27
+0,010|standarta γ|14. tabula|10.5, 10.8|RES:std5.gamma_mg_per_mL|10
+0,012|standarta γ|14. tabula|10.5, 10.8|RES:std6.gamma_mg_per_mL|20
+0,014|standarta γ|14. tabula|10.5, 10.8|RES:std7.gamma_mg_per_mL|3
+0,016|standarta γ|14. tabula|10.5, 10.8, 11.4|RES:std8.gamma_mg_per_mL|17
+0,063|standarta A|14. tabula|10.7, 10.8|SRC:std1.A|13
+0,121|standarta A|14. tabula|10.7|SRC:std2.A|3
+0,184|standarta A|14. tabula|10.7|SRC:std3.A|3
+0,247|standarta A|14. tabula|1.x piemērs, 10.7|SRC:std4.A|6
+0,302|standarta A|14. tabula|10.7|SRC:std5.A|4
+0,368|standarta A|14. tabula|10.7|SRC:std6.A|1
+0,426|standarta A|14. tabula|10.7|SRC:std7.A|2
+0,482|standarta A|14. tabula|10.7, 10.8|SRC:std8.A|27
+0,086|2. parauga A|13. tabula|10.7, 10.8|SRC:sample2.A|19
+0,170|3. parauga A|13. tabula|10.7|SRC:sample3.A|5
+0,258|4. parauga A|13. tabula|10.7|SRC:sample4.A|11
+0,372|5. parauga A|13. tabula|10.7|SRC:sample5.A|12
+0,0028|2. parauga γ|13. tabula + aprēķins|10.7, 10.8, 11.4|SRC:sample2.gamma_protocol_read|37
+0,0055|3. parauga γ dots|13. tabula|10.7|SRC:sample3.gamma_protocol_read|11
+0,0085|4. parauga γ|13. tabula + aprēķins|10.7, 10.8|SRC:sample4.gamma_protocol_read|9
+0,0122|5. parauga γ|13. tabula + aprēķins|10.7, 10.8|SRC:sample5.gamma_protocol_read|12
+0,00283|2. parauga γ pārrēķins|aprēķins 10.8|10.8, 15.f|RES:sample2.gamma_origin9|14
+0,00279|2. parauga γ brīvā 9 punkti|aprēķins 10.8 (13. tabula)|10.4, 10.8, 15.f|RES:sample2.gamma_free9|2
+0,00556|3. parauga γ brīvā 9 punkti|aprēķins 10.8 (13. tabula)|10.4, 10.8, 15.f|RES:sample3.gamma_free9|2
+0,00847|4. parauga γ brīvā 9 punkti|aprēķins 10.8 (13. tabula)|10.4, 10.8, 15.f|RES:sample4.gamma_free9|2
+0,00559|3. parauga γ pārrēķins|aprēķins 10.8|10.8, 15.f|RES:sample3.gamma_origin9|4
+0,00849|4. parauga γ pārrēķins|aprēķins 10.8|10.8, 15.f|RES:sample4.gamma_origin9|3
+0,01224|5. parauga γ pārrēķins|aprēķins 10.8|10.8, 15.f|RES:sample5.gamma_origin9|7
+30,39|slīpums caur nulli|aprēķins 10.8 (16. tabula)|6.x, 10.7, 10.8|RES:origin9pt_blank_included.k|42
+0,093|slīpuma SE|aprēķins 10.8 (16. tabula)|10.8|RES:origin9pt_blank_included.se_k|4
+0,0026|atlikumu s_y|aprēķins 10.8 (16. tabula)|10.8|RES:origin9pt_blank_included.sy|17
+30,24|brīvās regresijas slīpums|aprēķins 10.8 (16. tabula)|10.8|RES:free9pt_blank_included.slope|2
+0,0017|brīvās regresijas krustpunkts|aprēķins 10.8 (16. tabula)|7.x, 10.8|RES:free9pt_blank_included.intercept|11
+0,99978|R² brīvā 9 punkti|aprēķins 10.8 (16. tabula)|10.8|RES:free9pt_blank_included.r2|8
+30,15|brīvās regresijas slīpums 8 punkti|aprēķins 10.8 (16. tabula)|10.8, 15.b|RES:free8pt_blank_excluded.slope|3
+0,0028|krustpunkts 8 punkti|aprēķins 10.8 (16. tabula)|10.8, 15.b|RES:free8pt_blank_excluded.intercept|37
+0,99972|R² brīvā 8 punkti|aprēķins 10.8 (16. tabula)|10.8, 15.b|RES:free8pt_blank_excluded.r2|2
+0,0027|s_y 8 punkti|aprēķins 10.8 (16. tabula)|10.8|RES:free8pt_blank_excluded.sy|4
+0,0028|s_y caur nulli 8 punkti|aprēķins 10.8 (16. tabula)|10.8|RES:origin8pt_blank_excluded.sy|37
+0,8204|T paraugam 0,086|aprēķins 8. tabula|8. tabula|RES:sample2.T|1
+82,0|%T paraugam 0,086|aprēķins 8. tabula|8. tabula, 4. attēls|RES:sample2.T_pct|4
+0,6761|T paraugam 0,170|aprēķins 8. tabula|8. tabula|RES:sample3.T|1
+67,6|%T paraugam 0,170|aprēķins 8. tabula|8. tabula|RES:sample3.T_pct|4
+0,5521|T paraugam 0,258|aprēķins 8. tabula|8. tabula|RES:sample4.T|3
+55,2|%T paraugam 0,258|aprēķins 8. tabula|8. tabula|RES:sample4.T_pct|6
+0,4246|T paraugam 0,372|aprēķins 8. tabula|8. tabula|RES:sample5.T|1
+42,5|%T paraugam 0,372|aprēķins 8. tabula|8. tabula|RES:sample5.T_pct|4
+0,3296|T standartam 0,482|aprēķins 8. tabula|8. tabula|RES:worked.T_at_A0_482|1
+33,0|%T standartam 0,482|aprēķins 8. tabula|8. tabula, 4. attēls|RES:std8.T_pct|5
+0,3162|T pie A 0,5|aprēķins 8. tabula|8. tabula|RES:worked.T_at_A0_5|1
+31,6|%T pie A 0,5|aprēķins 8. tabula|8. tabula, 11.1|RES:table8.T_pct_A0_5|4
+68,4|absorbēti % pie A 0,5|aprēķins 8. tabula|5.x, 8. tabula, 11.1|RES:table8.absorbed_pct_A0_5|5
+0,1000|T pie A 1|aprēķins 8. tabula|8. tabula|RES:table8.T_A1|1
+10,0|%T pie A 1|aprēķins 8. tabula|8. tabula, 11.1|RES:table8.T_pct_A1|33
+90,0|absorbēti % pie A 1|aprēķins 8. tabula|8. tabula, 11.1|RES:table8.absorbed_pct_A1|2
+0,0100|T pie A 2|aprēķins 8. tabula|8. tabula|RES:table8.T_A2|4
+1,0|%T pie A 2|aprēķins 8. tabula|8. tabula|RES:table8.T_pct_A2|11
+99,0|absorbēti % pie A 2|aprēķins 8. tabula|8. tabula|RES:table8.absorbed_pct_A2|2
+1,0000|T pie A 0|aprēķins 8. tabula|8. tabula|RES:table8.T_A0|1
+100,0|%T pie A 0|aprēķins 8. tabula|8. tabula|RES:table8.T_pct_A0|2
+0,434|lg e robeža|aprēķins|7.3, 14. atsauce|RES:worked.lg_e|4
+36,8|%T pie A 0,434|aprēķins|14. atsauce|RES:worked.T_pct_at_A0_434|2
+0,301|−lg 0,5|aprēķins|5.x, 8. tabula, 11.1|RES:worked.neg_lg_0_5|2
+2,303|ln 10|aprēķins|5.3|RES:worked.ln_10|6
+376,36|riboflavīna M|dots|10.5, 10.8|SRC:constants.M|9
+1,14·10|ε kārta (×10⁴)|aprēķins 10.8|6.2, 10.8|RES:epsilon_order_x10_4|7
+0,00026|LOD aplēse|aprēķins 10.8/12.6|10.8, 12.6|RES:LOD_mg_per_mL|6
+0,0009|LOQ aplēse|aprēķins 10.8/12.6|12.6|RES:LOQ_mg_per_mL|1
+0,001|nolasīšanas izšķirtspēja A|protokols|10.8|SRC:constants.resolution_A|21
+0,000033|izšķirtspēja γ vienībās|aprēķins 10.8|10.8|RES:resolution_gamma_mg_per_mL|1
+175|komata kļūdas faktors|aprēķins|10.1, 11.4|RES:worked.comma_error_factor_175|3
+2,8|kļūdainais rezultāts|ilustratīvs piemērs|10.1, 11.4|RES:worked.comma_error_2_8|16
+440|mērījuma vilnis nm|protokols|visur|SRC:constants.wavelength_nm|59
+373|literatūras josla nm|papildinājums|3.x, 2. attēls|IN:lit_band_373nm|6
+445|literatūras josla nm|papildinājums|3.x, 11.1|IN:lit_band_445nm|6
+200|UV apakšējā robeža nm|izdales materiāls|3.x, 5.x|IN:uv_boundary_200nm|35
+400|UV/redzamās robeža nm|izdales materiāls|3.x|IN:uv_vis_boundary_400nm|34
+700|spektrofotometra augšējā robeža nm|papildinājums|2.x|IN:instrument_upper_700nm|9
+5,31|molārās skalas apakša (×10⁻⁶)|aprēķins|12.3|RES:std1.c_x10_6|6
+4,25|molārās skalas augša (×10⁻⁵)|aprēķins|12.3|RES:std8.c_x10_5|3
+0,1|lietošanas apgabala apakša A|papildinājums|7.3|IN:range_lower_A|49
+0,005|ΔT konvencija|ilustratīva konvencija|7.3|IN:dT_convention|17
+3,1|rel. kļūda % pie A 0,086|aprēķins 7.3|7.3|RES:model_7_3.rel_err_pct_A0_086|14
+1,4|rel. kļūda % pie A 0,482|aprēķins 7.3|7.3|RES:model_7_3.rel_err_pct_A0_482|2
+2,2|rel. kļūda % pie A 1|aprēķins 7.3|7.3|RES:model_7_3.rel_err_pct_A1|22
+0,43|minimālās kļūdas A|aprēķins 7.3|7.3|RES:model_7_3.min_A|6
+0,0080|dubultošanas piemērs γ|ilustratīvs piemērs|1.x|RES:std4.gamma_mg_per_mL|5
+0,0160|dubultošanas piemērs γ|ilustratīvs piemērs|1.x|RES:std8.gamma_mg_per_mL|7
+0,48|dubultošanas piemēra A|ilustratīvs piemērs|1.x|SRC:std8.A|27
+0,0304|A pieaugums uz 0,001 γ|aprēķins|10.8 recap|RES:k_step_per_0_001_gamma|1
+1,771|700 nm kvanta eV|aprēķins 3. tabula|2.x|RES:photon_700nm.E_eV|2
+2,818|440 nm kvanta eV|aprēķins 3. tabula|2.x, 10.8?|RES:photon_440nm.E_eV|6
+271,9|440 nm kJ/mol|aprēķins 3. tabula|2.x|RES:photon_440nm.E_kJ_mol|7
+4,515|440 nm J (×10⁻¹⁹)|aprēķins 3. tabula|2.x|RES:photon_440nm.E_J_x10_19|10
+22 727|viļņu skaits cm⁻¹|aprēķins|2.x, 12.3|RES:photon_440nm.wavenumber_cm|6
+14 286|viļņu skaits 700 nm|aprēķins|2.x?|RES:photon_700nm.wavenumber_cm|1
+6,022|Avogadro (×10²³)|konstante|2.x|RES:constants.N_A_x10_23|3
+6,626|Planka (×10⁻³⁴)|konstante|2.x, 3. tabula|RES:constants.h_x10_34|6
+2,998|gaismas ātrums (×10⁸)|konstante|2.x, 3. tabula|RES:constants.c_light_x10_8|4
+1,602|elementārlādiņš (×10⁻¹⁹)|konstante|2.x|RES:constants.e_charge_x10_19|3
+0,0020|standarta γ 4 zīmes|15. tabula|10.5|RES:std1.gamma_mg_per_mL|7
+0,0100|standarta γ 4 zīmes|15. tabula|10.5|RES:std5.gamma_mg_per_mL|4
+0,0120|standarta γ 4 zīmes|15. tabula|10.5|RES:std6.gamma_mg_per_mL|3
+0,0000|tukšā γ aprēķins|15. tabula|10.5|RES:std0.gamma_mg_per_mL|14
+1,50|standarta V1 mL|15. tabula|10.5|SRC:std3.v_stock_mL|3
+2,00|standarta V1 mL|15. tabula|10.5|SRC:std4.v_stock_mL|5
+2,50|standarta V1 mL|15. tabula|10.5|SRC:std5.v_stock_mL|3
+0,00|tukšā V1 mL|15. tabula|10.5|SRC:std0.v_stock_mL|265
+0,000|tukšā A protokols|15. tabula Protokolā|10.5|SRC:std0.A|48
+0,061|A pie γ 0,0020|10. tabula aprēķins|6.x|RES:table10.A_pred_gamma0_002|1
+86,9|%T pie γ 0,0020|10. tabula aprēķins|6.x|RES:table10.T_pct_gamma0_002|1
+13,1|absorbēti % pie γ 0,0020|10. tabula aprēķins|6.x|RES:table10.absorbed_pct_gamma0_002|1
+0,0050|γ 10. tabulā|10. tabula|6.x|IN:table10_gamma_input|1
+0,152|A pie γ 0,0050|10. tabula aprēķins|6.x|RES:table10.A_pred_gamma0_005|3
+70,5|%T pie γ 0,0050|10. tabula aprēķins|6.x|RES:table10.T_pct_gamma0_005|1
+29,5|absorbēti % pie γ 0,0050|10. tabula aprēķins|6.x|RES:table10.absorbed_pct_gamma0_005|1
+0,0100|γ 10. tabulā|10. tabula|6.x|IN:table10_gamma_input|4
+0,304|A pie γ 0,0100|10. tabula aprēķins|6.x|RES:table10.A_pred_gamma0_01|2
+49,7|%T pie γ 0,0100|10. tabula aprēķins|6.x|RES:table10.T_pct_gamma0_01|1
+50,3|absorbēti % pie γ 0,0100|10. tabula aprēķins|6.x|RES:table10.absorbed_pct_gamma0_01|1
+0,0150|γ 10. tabulā|10. tabula|6.x|IN:table10_gamma_input|1
+35,0|%T pie γ 0,0150|10. tabula aprēķins|6.x|RES:table10.T_pct_gamma0_015|1
+65,0|absorbēti % pie γ 0,0150|10. tabula aprēķins|6.x|RES:table10.absorbed_pct_gamma0_015|1
+0,0200|γ 10. tabulā|10. tabula|6.x|IN:table10_gamma_input|1
+24,7|%T pie γ 0,0200|10. tabula aprēķins|6.x|RES:table10.T_pct_gamma0_02|1
+75,3|absorbēti % pie γ 0,0200|10. tabula aprēķins|6.x|RES:table10.absorbed_pct_gamma0_02|1
+0,000|A 8. tabulā|8. tabula|5.4|IN:table8_A0_illustrative|48
+0,500|A 8. tabulā|8. tabula|5.4|SRC:std1.v_stock_mL|1
+1,000|A 8. tabulā|8. tabula|5.4|IN:table8_A1_illustrative|2
+2,000|A 8. tabulā|8. tabula|5.4|SRC:std4.v_stock_mL|2
+0,17|slīpuma SE brīvā|16. tabula aprēķins|10.8|RES:free9pt_blank_included.se_slope|6
+0,21|slīpuma SE brīvā 8p|16. tabula aprēķins|10.8|RES:free8pt_blank_excluded.se_slope|8
+0,0016|krustpunkta SE|16. tabula aprēķins|10.8|RES:free9pt_blank_included.se_intercept|1
+0,00279|2. parauga γ brīvā|aprēķins 10.8|10.8, 15.f|RES:sample2.gamma_free9|2
+0,00556|3. parauga γ brīvā|aprēķins 10.8|10.8, 15.f|RES:sample3.gamma_free9|2
+0,00847|4. parauga γ brīvā|aprēķins 10.8|10.8, 15.f|RES:sample4.gamma_free9|2
+0,0001|tolerances slieksnis|10.8 spriedums|10.8|IN:threshold_tolerance|5
+0,1|A 8. tabulā|8. tabula|5.4|IN:table8_A0_1_illustrative|49
+0,2|A 8. tabulā|8. tabula|5.4|IN:table8_A0_2_illustrative|47
+0,3|A 8. tabulā|8. tabula|5.4|IN:table8_A0_3_illustrative|87
+0,0|absorbēti % pie A 0|8. tabula|5.4|RES:table8.absorbed_pct_A0|398
+20,6|absorbēti % pie A 0,1|8. tabula|5.4|RES:table8.absorbed_pct_A0_1|1
+36,9|absorbēti % pie A 0,2|8. tabula|5.4|RES:table8.absorbed_pct_A0_2|1
+79,4|%T pie A 0,1|8. tabula|5.4, 4. attēls?|RES:table8.T_pct_A0_1|1
+63,1|%T pie A 0,2|8. tabula|5.4|RES:table8.T_pct_A0_2|1
+50,1|%T pie A 0,3|8. tabula|5.4|RES:table8.T_pct_A0_3|1
+63,2|absorbēti % pie A 0,434|8. tabula|5.4|RES:worked.absorbed_pct_A0_434|1
+18,0|absorbēti % pie A 0,086|8. tabula|5.4|RES:sample2.absorbed_pct|2
+32,4|absorbēti % pie A 0,170|8. tabula|5.4|RES:sample3.absorbed_pct|1
+44,8|absorbēti % pie A 0,258|8. tabula|5.4|RES:sample4.absorbed_pct|2
+57,5|absorbēti % pie A 0,372|8. tabula|5.4|RES:sample5.absorbed_pct|1
+67,0|absorbēti % pie A 0,482|8. tabula|5.4|RES:std8.absorbed_pct|1
+0,316|T noapaļots pie A 0,5|aprēķins|5.4, 11.1|RES:worked.T_at_A0_5|3
+0,330|T noapaļots pie A 0,482|aprēķins|5.4|RES:worked.T_at_A0_482|2
+1,06|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std2.c_x10_5|1
+1,59|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std3.c_x10_5|1
+2,13|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std4.c_x10_5|2
+2,66|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std5.c_x10_5|1
+2,657|molārā c mmol/L|12.3 pārveidojums|12.3|RES:unit_conversion_1mgmL_mmol_L|2
+3,19|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std6.c_x10_5|4
+3,72|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std7.c_x10_5|1
+86,5|%T 14. tabulā|14. tabula|10.7|RES:std1.T_pct|1
+75,7|%T 14. tabulā|14. tabula|10.7|RES:std2.T_pct|1
+65,5|%T 14. tabulā|14. tabula|10.7|RES:std3.T_pct|1
+56,6|%T 14. tabulā|14. tabula|10.7|RES:std4.T_pct|1
+49,9|%T 14. tabulā|14. tabula|10.7|RES:std5.T_pct|2
+42,9|%T 14. tabulā|14. tabula|10.7|RES:std6.T_pct|1
+37,5|%T 14. tabulā|14. tabula|10.7|RES:std7.T_pct|1
+1,00|standarta V1 mL|15. tabula|10.5|SRC:std2.v_stock_mL|5
+9,00|ūdens V mL|15. tabula|10.5|SRC:std2.v_water_mL|1
+8,50|ūdens V mL|15. tabula|10.5|SRC:std3.v_water_mL|1
+8,00|ūdens V mL|15. tabula|10.5|SRC:std4.v_water_mL|2
+7,50|ūdens V mL|15. tabula|10.5|SRC:std5.v_water_mL|1
+6,50|ūdens V mL|15. tabula|10.5|SRC:std7.v_water_mL|1
+3,50|standarta V1 mL|15. tabula|10.5|SRC:std7.v_stock_mL|3
+0,010|γ 15. tabulā|15. tabula|10.5|RES:std5.gamma_mg_per_mL|10
+9,932|kvanta J 200 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_200nm.E_J_x10_19|1
+6,199|kvanta eV 200 nm|3. tabula|2.x|RES:photon_200nm.E_eV|1
+598,1|kvanta kJ/mol 200 nm|3. tabula|2.x|RES:photon_200nm.E_kJ_mol|1
+50 000|viļņu skaits 200 nm|3. tabula|2.x|RES:photon_200nm.wavenumber_cm|1
+4,966|kvanta J 400 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_400nm.E_J_x10_19|1
+3,100|kvanta eV 400 nm|3. tabula|2.x|RES:photon_400nm.E_eV|1
+299,1|kvanta kJ/mol 400 nm|3. tabula|2.x|RES:photon_400nm.E_kJ_mol|1
+25 000|viļņu skaits 400 nm|3. tabula|2.x|RES:photon_400nm.wavenumber_cm|1
+2,838|kvanta J 700 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_700nm.E_J_x10_19|1
+170,9|kvanta kJ/mol 700 nm|3. tabula|2.x|RES:photon_700nm.E_kJ_mol|1
+6,81|frekvence 440 nm (×10¹⁴ Hz)|19. tabula|12.4?|RES:photon_440nm.frequency_x10_14_Hz|1
+1,2·10|literatūras ε kārta (×10⁴)|papildinājums|6.2, 10.8|IN:lit_epsilon_order|1
+0,9998|R² ilustratīvs augsts|ilustratīvs piemērs|11.2|IN:illustrative_r2|3
+1,95|absorbances pieauguma faktors|ilustratīvs piemērs|1.x|RES:worked.doubling_factor|1
+2,4|novirze % no dubultošanās|aprēķins|1.x|RES:worked.doubling_deficit_pct|2
+0,0021|kļūdains rezultāts (dalīts ar ūdeni)|11.4 piemērs|11.4|IN:wrong_water_division|3
+0,038|kļūdains rezultāts (19× par lielu)|11.1 diskusija|11.1|IN:wrong_19x|1
+0,0002|kļūdains rezultāts (10× par mazu)|11.1 diskusija|11.1|IN:wrong_10x|7
+0,003|atlikumu izkliede ±|E18 citāts (novērsts; lielākie atlikumi 0,0043/0,0036)|10.8, 11.2|ERR:E18_residual_spread|6
+0,0001|tolerances slieksnis mg/mL|10.8 spriedums|10.8|IN:threshold_tolerance|5
+0,01|atšķiršanas robeža A|7.3 konvencija|7.3|IN:distinguish_limit_A|55
+0,02|A recap jautājumā|recap jautājums|13.x|IN:recap_A_0_02|2
+30,1|A/γ attiecība|aprēķins|1.x|RES:worked.A_over_gamma_std8|4
+30,9|A/γ attiecība|aprēķins|1.x|RES:worked.A_over_gamma_std4|1
+plan/contrast.txt|kontrastu tabula|aprēķins (T13)|15.g|IN:contrast_report_file|1
+6,31|kļūdas kontrasts|15.e pārbaude|0.x|IN:contrast_report_6_31|3
+6,15|labojuma kontrasts|15.e pārbaude|0.x|IN:contrast_report_6_15|1
+4,5|kontrasta slieksnis|WCAG atsauce|0.x, 15.e|IN:wcag_threshold_4_5|10
+−0,00003|novirze dots–nulles 2. par.|13. tabula|10.7|RES:sample2.gamma_read_minus_origin9|2
+−0,00009|novirze dots–nulles 3. par.|13. tabula|10.7|RES:sample3.gamma_read_minus_origin9|1
++0,00001|novirze dots–nulles 4. par.|13. tabula|10.7|RES:sample4.gamma_read_minus_origin9|1
+−0,00004|novirze dots–nulles 5. par.|13. tabula|10.7|RES:sample5.gamma_read_minus_origin9|1
+0,0040|standarta γ 15. tabulā|15. tabula|10.5|RES:std2.gamma_mg_per_mL|2
+0,0060|standarta γ 15. tabulā|15. tabula|10.5|RES:std3.gamma_mg_per_mL|3
+0,0080|standarta γ 15. tabulā|15. tabula|10.5|RES:std4.gamma_mg_per_mL|5
+0,0140|standarta γ 15. tabulā|15. tabula|10.5|RES:std7.gamma_mg_per_mL|1
+0,0160|standarta γ 15. tabulā|15. tabula|10.5|RES:std8.gamma_mg_per_mL|7
+0,456|A 10. tabulā|10. tabula aprēķins|6.x|RES:table10.A_pred_gamma0_015|1
+0,608|A 10. tabulā|10. tabula aprēķins|6.x|RES:table10.A_pred_gamma0_02|1
+0,5|ilustratīva A vērtība|8. tabula/teksts|5.4, 11.1|IN:illustrative_A0_5|32
+9,932|kvanta J 200 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_200nm.E_J_x10_19|1
+6,199|kvanta eV 200 nm|3. tabula|2.x|RES:photon_200nm.E_eV|1
+598,1|kvanta kJ/mol 200 nm|3. tabula|2.x|RES:photon_200nm.E_kJ_mol|1
+4,966|kvanta J 400 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_400nm.E_J_x10_19|1
+3,100|kvanta eV 400 nm|3. tabula|2.x|RES:photon_400nm.E_eV|1
+299,1|kvanta kJ/mol 400 nm|3. tabula|2.x|RES:photon_400nm.E_kJ_mol|1
+2,838|kvanta J 700 nm (×10⁻¹⁹)|3. tabula|2.x|RES:photon_700nm.E_J_x10_19|1
+170,9|kvanta kJ/mol 700 nm|3. tabula|2.x|RES:photon_700nm.E_kJ_mol|1
+6,81|frekvence 440 nm (×10¹⁴ Hz)|19. tabula|12.4|RES:photon_440nm.frequency_x10_14_Hz|1
+1,2·10|literatūras ε kārta (×10⁴)|papildinājums|6.2, 10.8|IN:lit_epsilon_order|1
+0,9998|R² ilustratīvi augsts|ilustratīvs piemērs|11.2|IN:illustrative_r2|3
+1,95|absorbances pieauguma faktors|ilustratīvs piemērs|1.x|RES:worked.doubling_factor|1
+2,4|novirze % no dubultošanās|aprēķins|1.x|RES:worked.doubling_deficit_pct|2
+0,0021|kļūdains rezultāts (dalīts ar ūdeni)|11.4 piemērs|11.4|IN:wrong_water_division|3
+0,038|kļūdains rezultāts (19× par lielu)|11.1 diskusija|11.1|IN:wrong_19x|1
+0,0002|kļūdains rezultāts (10× par mazu)|11.1 diskusija|11.1|IN:wrong_10x|7
+0,003|atlikumu izkliede ±A|E18 citāts (novērsts; lielākie atlikumi 0,0043/0,0036)|10.8, 11.2|ERR:E18_residual_spread|6
+0,0001|tolerances slieksnis mg/mL|10.8 spriedums|10.8|IN:threshold_tolerance|5
+0,01|atšķiršanas robeža A|7.3 konvencija|7.3|IN:distinguish_limit_A|55
+0,02|A recap jautājumā|recap jautājums|13.x|IN:recap_A_0_02|2
+0,1|A 8. tabulā|8. tabula|5.4|IN:table8_A0_1_illustrative|49
+0,2|A 8. tabulā|8. tabula|5.4|IN:table8_A0_2_illustrative|47
+0,3|A 8. tabulā|8. tabula|5.4|IN:table8_A0_3_illustrative|87
+0,0|absorbēti % pie A 0|8. tabula|5.4|RES:table8.absorbed_pct_A0|398
+0,000|A 8. tabulā|8. tabula|5.4|IN:table8_A0_illustrative|48
+0,500|A 8. tabulā|8. tabula|5.4|SRC:std1.v_stock_mL|1
+1,000|A 8. tabulā|8. tabula|5.4|IN:table8_A1_illustrative|2
+2,000|A 8. tabulā|8. tabula|5.4|SRC:std4.v_stock_mL|2
+20,6|absorbēti % pie A 0,1|8. tabula|5.4|RES:table8.absorbed_pct_A0_1|1
+36,9|absorbēti % pie A 0,2|8. tabula|5.4|RES:table8.absorbed_pct_A0_2|1
+79,4|%T pie A 0,1|8. tabula|5.4|RES:table8.T_pct_A0_1|1
+63,1|%T pie A 0,2|8. tabula|5.4|RES:table8.T_pct_A0_2|1
+63,2|absorbēti % pie A 0,434|8. tabula|5.4|RES:worked.absorbed_pct_A0_434|1
+44,8|absorbēti % pie A 0,258|8. tabula|5.4|RES:sample4.absorbed_pct|2
+1,00|standarta V1 mL|15. tabula|10.5|SRC:std2.v_stock_mL|5
+9,00|ūdens V mL|15. tabula|10.5|SRC:std2.v_water_mL|1
+8,50|ūdens V mL|15. tabula|10.5|SRC:std3.v_water_mL|1
+8,00|ūdens V mL|15. tabula|10.5|SRC:std4.v_water_mL|2
+7,50|ūdens V mL|15. tabula|10.5|SRC:std5.v_water_mL|1
+6,50|ūdens V mL|15. tabula|10.5|SRC:std7.v_water_mL|1
+3,50|standarta V1 mL|15. tabula|10.5|SRC:std7.v_stock_mL|3
+0,010|γ 15. tabulā|15. tabula|10.5|RES:std5.gamma_mg_per_mL|10
+37,5|%T 14. tabulā|14. tabula|10.7|RES:std7.T_pct|1
+42,9|%T 14. tabulā|14. tabula|10.7|RES:std6.T_pct|1
+49,9|%T 14. tabulā|14. tabula|10.7|RES:std5.T_pct|2
+56,6|%T 14. tabulā|14. tabula|10.7|RES:std4.T_pct|1
+65,5|%T 14. tabulā|14. tabula|10.7|RES:std3.T_pct|1
+75,7|%T 14. tabulā|14. tabula|10.7|RES:std2.T_pct|1
+86,5|%T 14. tabulā|14. tabula|10.7|RES:std1.T_pct|1
+1,06|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std2.c_x10_5|1
+1,59|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std3.c_x10_5|1
+2,13|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std4.c_x10_5|2
+2,66|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std5.c_x10_5|1
+2,657|molārā c mmol/L|12.3 pārveidojums|12.3|RES:unit_conversion_1mgmL_mmol_L|2
+3,19|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std6.c_x10_5|4
+3,72|molārā c (×10⁻⁵)|14. tabula|10.x|RES:std7.c_x10_5|1
+30,1|A/γ attiecība|aprēķins|1.x|RES:worked.A_over_gamma_std8|4
+30,9|A/γ attiecība|aprēķins|1.x|RES:worked.A_over_gamma_std4|1
+plan/contrast.txt|kontrastu tabula|aprēķins (T13)|15.g|IN:contrast_report_file|1
+6,31|kļūdas kontrasts|15.e pārbaude|0.x|IN:contrast_report_6_31|3
+6,15|labojuma kontrasts|15.e pārbaude|0.x|IN:contrast_report_6_15|1
+4,5|kontrasta slieksnis|WCAG atsauce|0.x|IN:wcag_threshold_4_5|10
+0,316|T noapaļots pie A 0,5|aprēķins|5.4, 11.1|RES:worked.T_at_A0_5|3
+0,330|T noapaļots pie A 0,482|aprēķins|5.4|RES:worked.T_at_A0_482|2
+0,0056|parauga γ noapaļots (caur nulli)|aprēķins 10.8|10.8, 15.f|RES:sample3.gamma_origin9|3
+0,350|A pie 445 nm (2-komp. piemērs)|ilustratīvs piemērs|5.3|IN:twocomp_A445_fictional|1
+0,210|A pie 500 nm (2-komp. piemērs)|ilustratīvs piemērs|5.3|IN:twocomp_A500_fictional|1
+30,0|ε1 pie 445 nm|ilustratīvs piemērs|5.3|IN:twocomp_eps1_445_fictional|1
+4,0|ε2 pie 445 nm|ilustratīvs piemērs|5.3|IN:twocomp_eps2_445_fictional|8
+2,0|ε1 pie 500 nm|ilustratīvs piemērs|5.3|IN:twocomp_eps1_500_fictional|12
+0,0103|c1 atrisinājums|ilustratīvs piemērs|5.3|RES:twocomp.c1|1
+0,0105|c2 atrisinājums|ilustratīvs piemērs|5.3|RES:twocomp.c2|1
+0,00007|U paraugam 2|aprēķins (T11 budžets)|10.8, 25. tabula|RES:sample2.U_expanded_5dp|6
+0,00010|U paraugam 5|aprēķins (T11 budžets)|10.8, 25. tabula|RES:sample5.U_expanded_5dp|3
+0,00058|taisnstūra u(A)|aprēķins (T11 budžets)|10.8|RES:u_A_rect|1
+0,00087|LOQ mg/mL|aprēķins (T11 budžets)|10.8|RES:LOQ_mg_per_mL|5
+0,26|LOD µg/mL|aprēķins (T11 budžets)|10.8|RES:LOD_ug_per_mL|3
+0,27|nolasīšanas devums 5. paraugam|aprēķins (T11 budžets)|10.8, 25. tabula|RES:sample5.u_reading_pct|2
+0,30|taisnes devums u(k)/k|aprēķins (T11 budžets)|10.8, 25. tabula|RES:u_k_over_k_pct|14
+0,4|u(c)/c 5. paraugam|aprēķins (T11 budžets)|10.8, 25. tabula|RES:sample5.u_rel_pct|46
+0,7|taisnstūra u(c)/c 2. paraugam|aprēķins (T11 budžets)|10.8|RES:sample2.u_rel_rect_pct|3
+0,87|LOQ µg/mL|aprēķins (T11 budžets)|10.8|RES:LOQ_ug_per_mL|3
+1,16|nolasīšanas devums 2. paraugam|aprēķins (T11 budžets)|10.8, 25. tabula|RES:sample2.u_reading_pct|2
+3,3|IUPAC LOD faktors|papildinājums|10.8|IN:iupac_lod_factor|8
+0,04|stray 0,01 % kļūda pie A=1|aprēķins (T12)|7.3, 26. tabula|RES:model_T12.err_pct_s0_0001_A1|21
+1,6|A pie −1 % robežas (s=0,1 %)|aprēķins (T12)|7.3|RES:model_T12.limit_A_s0_001_neg1pct|9
+14,8|stray 1 % kļūda pie A=2|aprēķins (T12)|7.3, 26. tabula|RES:model_T12.err_pct_s0_01_A2|2
+3,7|stray 1 % kļūda pie A=1|aprēķins (T12)|7.3, 26. tabula|RES:model_T12.err_pct_s0_01_A1|3
+0,0043|lielākais atlikums, taisne caur nulli A|aprēķins tools/data.py|7.1, 7.2, 10.8, 15.c|RES:origin9pt_blank_included.residual_max_abs|7
+0,0036|lielākais atlikums, brīvā regresija (9 p.) A|aprēķins|15.c|RES:free9pt_blank_included.residual_max_abs|1

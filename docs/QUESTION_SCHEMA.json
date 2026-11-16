@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Colloquium practice question contract (proposed)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "question_id",
+    "bank_version",
+    "family_id",
+    "variant_id",
+    "seed",
+    "topic",
+    "outcome_ids",
+    "type_ids",
+    "prompt_lv",
+    "source_refs",
+    "givens",
+    "response",
+    "key",
+    "rubric",
+    "validation",
+    "review"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "pattern": "^COL1-[1-7]-[A-Z0-9-]+$"
+    },
+    "bank_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "family_id": {
+      "type": "string",
+      "pattern": "^FAM-[1-7][A-D]$"
+    },
+    "variant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topic": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
+    },
+    "outcome_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^P[1-7]-[0-9]{2}$"
+      }
+    },
+    "type_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "Q01",
+          "Q02",
+          "Q03",
+          "Q04",
+          "Q05",
+          "Q06",
+          "Q07",
+          "Q08",
+          "Q09",
+          "Q10",
+          "Q11",
+          "Q12",
+          "Q13",
+          "Q14",
+          "Q15",
+          "Q16",
+          "Q17",
+          "Q18"
+        ]
+      }
+    },
+    "prompt_lv": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256",
+          "locator",
+          "claim_status"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "claim_status": {
+            "enum": [
+              "text-verified",
+              "proposal-explicit-givens",
+              "unverified"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "givens": {
+      "type": "object",
+      "description": "Named inputs with units, precision, supplied constants, reaction medium, percentage basis and assumptions."
+    },
+    "response": {
+      "type": "object",
+      "required": [
+        "fields",
+        "accessible_alternative"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "minItems": 1
+        },
+        "accessible_alternative": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "key": {
+      "type": "object",
+      "description": "Separate full precision value, unit, display form, symbolic/species structure and manual criteria."
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "criterion_id",
+          "points",
+          "grading",
+          "depends_on",
+          "carry_forward"
+        ],
+        "properties": {
+          "criterion_id": {
+            "type": "string"
+          },
+          "points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "grading": {
+            "enum": [
+              "auto",
+              "self",
+              "human",
+              "mixed"
+            ]
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "carry_forward": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "constraints",
+        "tolerances",
+        "time_minutes",
+        "difficulty"
+      ],
+      "properties": {
+        "constraints": {
+          "type": "array"
+        },
+        "tolerances": {
+          "type": "object"
+        },
+        "time_minutes": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "difficulty": {
+          "enum": [
+            "foundational",
+            "application",
+            "transfer"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "content",
+        "source",
+        "calculation",
+        "accessibility"
+      ],
+      "properties": {
+        "content": {
+          "enum": [
+            "pending",
+            "passed",
+            "blocked"
+          ]
+        },
+        "source": {
+          "enum": [
+            "pending",
+            "passed",
+            "blocked"
+          ]
+        },
+        "calculation": {
+          "enum": [
+            "pending",
+            "passed",
+            "blocked"
+          ]
+        },
+        "accessibility": {
+          "enum": [
+            "pending",
+            "passed",
+            "blocked"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

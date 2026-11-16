@@ -1,0 +1,1435 @@
+{
+  "meta": {
+    "version": "1.1.0",
+    "date": "2026-11-06",
+    "scope": "Medicīniskā ķīmija, 2. tēma — canonical LV terms for the master document",
+    "rule": "Forbidden patterns must not appear outside data-quote=\"true\" regions, glossary Avotā cells (wrapped), or change-log Avotā cells (wrapped). Source quotations stay character-for-character from the PDFs.",
+    "confidences": "C = certain (arithmetic/standard); H = high; V = verify with lecturer",
+    "evidence_model": "terms[] ir lint reģistrs; glossary_rows[] ir vienīgais 14. nodaļas vārdnīcas rindu avots. evidence.read_level un evidence.locator ir obligāti. course_quote ir tikai frāze, kas šajā piegājienā izlasīta build/source-text. confidence V prasa v_anchor blakus redzamam V 16. nodaļā un V saistītajā vārdnīcas rindā.",
+    "open_gates": [
+      "«drošības intervāls» aktīvajā mācību tekstā ir aizliegts; avota citāti paliek data-quote. ISO 5725 nav lasīts. Lektors nav apstiprinājis ticamības pārdēvēšanu, atsauces vērtību un accuracy jumta terminu (D40).",
+      "PAC, 1996, 68, 2223 (Gold Book B00626 avots, 2230. lpp.) šajā piegājienā nav atvērts. Kursa aparāts pie 521 nm pret B00626 nosacījumiem nav pārbaudīts.",
+      "V jautājumi lektoram (D34 gaismas stiprums, D40 accuracy, nosūcēja nosaukums) nav apstiprināti.",
+      "Etimoloģija nav pārbaudīta; salikteņu morfoloģijas sliedes nav pievienotas.",
+      "PDF lappuses šajā piegājienā nav no jauna skaitītas; locatori ir source-text ekstrakti un esošie S/D identifikatori.",
+      "Drukas dzinēja lappušu inspekcija un tastatūras/AT pārbaude šajā piegājienā nav palaista."
+    ]
+  },
+  "terms": [
+    {
+      "id": "unit-mL",
+      "canonical_lv": "mL",
+      "canonical_en": "millilitre",
+      "symbol": "mL",
+      "unit": "mL",
+      "definition_lv": "Tilpuma mērvienība; 1 mL = 1 cm³.",
+      "forbidden": [
+        "\\bml\\b"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S20"
+      ],
+      "notes": "Mazais 'ml' ir aizliegts; SI simbols ir mL. Lieto arī L, µL.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «0,125 ml»; 2_Temata apraksts «ml ⇔ L». S20. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "0,125 ml"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "unit-s",
+      "canonical_lv": "s",
+      "canonical_en": "second",
+      "symbol": "s",
+      "unit": "s",
+      "definition_lv": "Laika SI mērvienība.",
+      "forbidden": [
+        "\\bsec\\b"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S18",
+        "S20"
+      ],
+      "notes": "Asu uzraksti 'sec' nav kursa pieraksts; lieto s, min, h, d.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "16_ch16.html S18 jau citē «sec». build/source-text ekstraktos burts «sec» šajā piegājienā nav atrasts (iespējams tikai attēlā). S18/S20. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "unit-ppm",
+      "canonical_lv": "mg/L",
+      "canonical_en": "milligram per litre",
+      "symbol": "mg/L",
+      "unit": "mg/L",
+      "definition_lv": "Masas koncentrācija atšķaidītos ūdens šķīdumos; aptuveni 1 mg/L ≈ 1 ppm tikai šajā robežgadījumā.",
+      "forbidden": [
+        "\\bppm\\b"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S21"
+      ],
+      "notes": "ppm nav kursa mērvienība; skaidro tikai kā daļu skaitu uz miljonu (papildinājums).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt «50 ppm». S21. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "50 ppm"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "sig-figs",
+      "canonical_lv": "zīmīgie cipari",
+      "canonical_en": "significant figures",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Visi cipari skaitlī, sākot no pirmā zīmīgā; 12,70 ir četri zīmīgie cipari.",
+      "forbidden": [
+        "(?<!\\w)zīmīg\\w*\\s+skait\\w*"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S9",
+        "S13"
+      ],
+      "notes": "Negatīvais skats aizliedz 'zīmīgie skaitļi'. Neattiecas uz 'neviennozīmīgs' (lookbehind sargā).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt «cik zīmīgu skaitļu būs atbildē?». S13. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "cik zīmīgu skaitļu būs atbildē?"
+      },
+      "glossary_ids": [
+        "glossary-zimigie-cipari"
+      ],
+      "glossary_head": "zīmīgie cipari"
+    },
+    {
+      "id": "decimal-places",
+      "canonical_lv": "zīmes aiz komata",
+      "canonical_en": "decimal places",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Ciparu skaits aiz decimālā komata; 12,70 ir divas zīmes aiz komata.",
+      "forbidden": [
+        "zīmīg\\w*\\s+cipar\\w*\\s+aiz\\s+komata"
+      ],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S9"
+      ],
+      "notes": "Najaukt ar zīmīgajiem cipariem (S9/S10; T05 skaidro). Aizliegta ir frāze «zīmīgie cipari aiz komata»; atsevišķi «zīmes aiz komata» un «zīmīgie cipari» paliek.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt rinda sadalīta: «divus zīmīgos» / «ciparus aiz komata». S9. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "divus zīmīgos ciparus aiz komata"
+      },
+      "glossary_ids": [
+        "glossary-zimes-aiz-komata"
+      ],
+      "glossary_head": "zīmes aiz komata"
+    },
+    {
+      "id": "element-cs",
+      "canonical_lv": "¹³³Cs",
+      "canonical_en": "caesium-133",
+      "symbol": "Cs",
+      "unit": "",
+      "definition_lv": "Cēzija izotops SI sekundes definīcijā.",
+      "forbidden": [
+        "¹³³Cz",
+        "\\bCz\\b"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S2"
+      ],
+      "notes": "'Cz' nav neviena elementa simbols.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «Cēzija izotopa 133Cz» (bez augšraksta ekstraktā). S2. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "133Cz"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "mol-micro",
+      "canonical_lv": "1 mol = 10³ mmol = 10⁶ µmol",
+      "canonical_en": "mole ladder",
+      "symbol": "mol",
+      "unit": "mol",
+      "definition_lv": "Molu priedēkļu ķēde: katrs solis ir 10³.",
+      "forbidden": [
+        "1·10⁻⁶\\s*µmol",
+        "1·10\\s*[⁻−‐-]\\s*6\\s*µmol"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S1"
+      ],
+      "notes": "Avota '1·10⁻⁶ µmol' ir nepareizs; 1 µmol = 10⁻⁶ mol.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «1 mol = 1000 mmol = 1 ∙ 10-6 µmol» (ekstrakts zaudējis augšrakstu). S1. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "1 mol = 1000 mmol = 1 ∙ 10-6 µmol"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "erlenmeyer",
+      "canonical_lv": "Erlenmeijera kolba",
+      "canonical_en": "Erlenmeyer flask",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Koniskā kolba; ērta titrēšanai.",
+      "forbidden": [
+        "Erlenjera"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D33-note"
+      ],
+      "notes": "Īpašvārds: Erlenmeyer → Erlenmeijera.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "2026. atslēgas un 2B ekstrakts jau raksta «Erlenmeijera». Aizliegtais «Erlenjera» šajos ekstraktos nav; tā ir agrākas redakcijas kļūda, nevis jauns avota citāts. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "Erlenmeijera"
+      },
+      "glossary_ids": [
+        "glossary-erlenmeijera-kolba"
+      ],
+      "glossary_head": "Erlenmeijera kolba"
+    },
+    {
+      "id": "dixon",
+      "canonical_lv": "Diksona Q kritērijs",
+      "canonical_en": "Dixon Q test",
+      "symbol": "Q",
+      "unit": "bezdimensiju",
+      "definition_lv": "Rupjas kļūdas pārbaude: starpība ar tuvāko kaimiņu dalīta ar sērijas apjomu.",
+      "forbidden": [
+        "Djūkisona",
+        "Djukisona"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S12"
+      ],
+      "notes": "Īpašvārds: Dixon → Diksona.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "14_ch14.html labojumu rinda. «Djūkisona» / Dixon šajā piegājienā source-text ekstraktos nav atrasts. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "student-t",
+      "canonical_lv": "Stjūdenta koeficients",
+      "canonical_en": "Student t factor",
+      "symbol": "t(α, n − 1)",
+      "unit": "bezdimensiju",
+      "definition_lv": "Koeficients ticamības intervālam ar n − 1 brīvības pakāpi.",
+      "forbidden": [
+        "Stjudenta"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S8"
+      ],
+      "notes": "Raksta ar garo ū; nav tangenss. Simbols t(α, n−1).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «Stjudenta koeficients». S8. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "Stjudenta koeficients"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "student-tan",
+      "canonical_lv": "t(α, n − 1)",
+      "canonical_en": "Student t",
+      "symbol": "t",
+      "unit": "bezdimensiju",
+      "definition_lv": "Stjūdenta koeficients; nav tangenss.",
+      "forbidden": [
+        "«tan»"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S8"
+      ],
+      "notes": "Avota saīsinājums 'tan' ir jāaizstāj ar t(α, n−1).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «ΔV = tan · S V» (ekstrakta rindā «tan»). S8. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "tan"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "std-dev",
+      "canonical_lv": "standartnovirze",
+      "canonical_en": "standard deviation",
+      "symbol": "s",
+      "unit": "mērījuma vienībā",
+      "definition_lv": "Atsevišķa mērījuma izkliede; paraugam dala ar n − 1.",
+      "forbidden": [
+        "vidējā kvadrātiskā kļūda"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S8"
+      ],
+      "notes": "Nav 'kļūda'; simbols s, nevis σₙ₋₁.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «Atsevišķa mērījuma vidējā kvadrātiskā kļūda (standard deviation, SD; σn−1 )». S8. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "vidējā kvadrātiskā kļūda"
+      },
+      "glossary_ids": [
+        "glossary-standartnovirze"
+      ],
+      "glossary_head": "standartnovirze"
+    },
+    {
+      "id": "ci",
+      "canonical_lv": "ticamības intervāls",
+      "canonical_en": "confidence interval",
+      "symbol": "V̄ ± t·s/√n",
+      "unit": "mērījuma vienībā",
+      "definition_lv": "Kursa Stjūdenta intervāls vidējam. Nav zīmēta kļūda un nav VIM 2.26 mērījuma nenoteiktība.",
+      "forbidden": [
+        "drošības intervāl"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S8",
+        "VIM-2.26"
+      ],
+      "notes": "Avota vārds paliek data-quote. Ticamības pārdēvēšana ir V; confidence paliek H, jo dokuments šo intervālu nesauc par kļūdu un VIM 2.26 to nepadara par mērījuma nenoteiktību.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «sauc par drošības intervālu». JCGM 200:2012 VIM 2.26 (jcgm.bipm.org): nenegatīvs izkliedes parametrs, kas var ietvert sistemātiskas sastāvdaļas. Ticamības variants promptā ir V. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "drošības intervālu"
+      },
+      "glossary_ids": [
+        "glossary-ticamibas-intervals"
+      ],
+      "glossary_head": "ticamības intervāls"
+    },
+    {
+      "id": "accuracy-umbrella",
+      "canonical_lv": "kopējā tuvība (accuracy) — V",
+      "canonical_en": "accuracy",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Šajā dokumentā: maza izkliede un maza nobīde kopā. VIM 2.13 accuracy ir vienas mērītās vērtības tuvums patiesajai vērtībai un nav skaitlis. Jumts ar 2.13 nesakrīt.",
+      "forbidden": [
+        "[Kk]opējā precizitāte"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-synonym-once"
+      ],
+      "confidence": "V",
+      "source_refs": [
+        "S21",
+        "D40"
+      ],
+      "notes": "T03: kanoniskais ir 'kopējā tuvība (accuracy)' ar V atzīmi. VIM 2.13 šo jumtu nedefinē. ISO 5725 nav lasīts. Sinonīms 'kopējā precizitāte' minēts vienu reizi 14. nodaļā ar brīdinājumu. Avotā jumta termina nav.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "Jumta termins «kopējā tuvība» avota ekstraktos nav. 2026. atslēga sauc «Precizitāte un pareizība» kopā. VIM 2.13 (jcgm.bipm.org, JCGM 200:2012) lasīts un ar jumtu nesakrīt. V, enkurs D40. ISO 5725 nav lasīts. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "Precizitāte un pareizība"
+      },
+      "glossary_ids": [
+        "glossary-kopeja-tuviba-accuracy-v"
+      ],
+      "v_anchor": "D40",
+      "glossary_head": "kopējā tuvība (accuracy) V"
+    },
+    {
+      "id": "precision",
+      "canonical_lv": "precizitāte",
+      "canonical_en": "precision",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Atkārtotu mērījumu izkliede norādītos apstākļos; parasti ar standartnovirzi. Nav tuvums atsaucei.",
+      "forbidden": [
+        "izkaisīti ap patieso"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original",
+        "glossary-found"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S6",
+        "S21",
+        "VIM-2.15"
+      ],
+      "notes": "Lieto tikai izkliedei norādītos apstākļos (VIM 2.15). Atkārtojamība ir precizitāte VIM 2.20 nosacījumos, nevis izkliede ap patieso vērtību.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt kritēriju rindā «precizitāte, atkārtojamība, reproducējamība». JCGM 200:2012 VIM 2.15 (jcgm.bipm.org). S6 teikums «izkaisīti ap patieso vērtību» paliek data-quote. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "precizitāte"
+      },
+      "glossary_ids": [
+        "glossary-precizitate"
+      ],
+      "glossary_head": "precizitāte"
+    },
+    {
+      "id": "trueness",
+      "canonical_lv": "pareizība",
+      "canonical_en": "trueness",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Bezgalīgas sērijas vidējā tuvums atsauces vērtībai. Nav skaitlis; galīgs laboratorijas vidējais ir aplēse.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "S6",
+        "VIM-2.14"
+      ],
+      "notes": "Nav tas pats, kas precizitāte (VIM 2.14, T03). Nav skaitlis.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «Šie kritēriji ir pareizība». JCGM 200:2012 VIM 2.14 (jcgm.bipm.org): tuvums starp bezgalīgas sērijas vidējo un atsauces vērtību. S6. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "pareizība"
+      },
+      "glossary_ids": [
+        "glossary-pareiziba"
+      ],
+      "glossary_head": "pareizība"
+    },
+    {
+      "id": "absorbance",
+      "canonical_lv": "absorbance",
+      "canonical_en": "absorbance",
+      "symbol": "A",
+      "unit": "bezdimensiju",
+      "definition_lv": "Mērītais bezdimensiju lielums A = log10(Pλ⁰/Pλ) = ε·l·c kolimētam monohromatiskam staram viendabīgā izotropā vidē ar šauru joslu (IUPAC Gold Book B00626). Kursa aparāts nav pārbaudīts.",
+      "forbidden": [
+        "1/mol[·∙]cm"
+      ],
+      "allowed_contexts": [
+        "prose",
+        "data-quote"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S5",
+        "D28",
+        "B00626"
+      ],
+      "notes": "Vārdu 'absorbcija' atstāj procesam (gaismas absorbcija); lielumu sauc par absorbanci. Avota vienība «1/mol·cm» (ekstraktā rakstzīme ∙) paliek data-quote. T02: ch3 darba sakarība un kalibrēšanas asis ierobežotas ar B00626; 0,0322 nav ε. D28 etiķetes paliek.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «absorbciju A» un «A – gaismas absorbcija». IUPAC Gold Book B00626 (DOI 10.1351/goldbook.B00626): absorbance of a collimated monochromatic beam in a homogeneous isotropic medium; A = log10(Pλ⁰/Pλ) = εcl; narrow bandwidth versus linewidths; common unit dm³ mol⁻¹ cm⁻¹; SI unit m² mol⁻¹. PAC 1996 raksts nav atvērts. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "gaismas absorbcija"
+      },
+      "glossary_ids": [
+        "glossary-absorbance"
+      ],
+      "glossary_head": "absorbance"
+    },
+    {
+      "id": "sensitivity",
+      "canonical_lv": "jutība",
+      "canonical_en": "sensitivity",
+      "symbol": "a (slīpums)",
+      "unit": "signāls / koncentrācija",
+      "definition_lv": "Signāla pieaugums uz koncentrācijas vienību (kalibrēšanas taisnes slīpums).",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D26"
+      ],
+      "notes": "Nav 'cik mazu koncentrāciju var pamanīt' — tas ir LOD/LOQ. T02: jutība definēta kā slīpums dA/dc ch3, atcerē un diagnostikā (D26).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt kritēriju rindā «jutība». PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "jutība"
+      },
+      "glossary_ids": [
+        "glossary-jutiba"
+      ],
+      "glossary_head": "jutība"
+    },
+    {
+      "id": "lod-loq",
+      "canonical_lv": "noteikšanas robeža (LOD) / kvantificēšanas robeža (LOQ)",
+      "canonical_en": "limit of detection / limit of quantification",
+      "symbol": "LOD / LOQ",
+      "unit": "koncentrācijā",
+      "definition_lv": "LOD: mazākais atšķirams signāls no fona; LOQ: mazākais ar pieņemamu nenoteiktību kvantificējamais.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D27"
+      ],
+      "notes": "Avots formulas nedod; dokumentā bez izdomātiem skaitļiem. T02: LOD/LOQ sadalītas divās rindās ch3 ar 'papildinājums' atzīmēm un diviem jauniem atceres jautājumiem (D27).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «kvantitatīvās un kvalitatīvās noteikšanas robeža». Atsevišķs LOQ formulējums ir papildinājums; avots formulu nedod. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "noteikšanas robeža"
+      },
+      "glossary_ids": [
+        "glossary-noteiksanas-robeza",
+        "glossary-kvantificesanas-robeza"
+      ]
+    },
+    {
+      "id": "day",
+      "canonical_lv": "diena",
+      "canonical_en": "day",
+      "symbol": "d",
+      "unit": "24 h",
+      "definition_lv": "Laika vienība; 1 d = 24 h.",
+      "forbidden": [
+        "diennakts",
+        "diennakt\\w*"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "S17"
+      ],
+      "notes": "Vienā tekstā paliek pie 'diena', nevis 'diennakts'.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt «0,0025 diennakts». S17. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "diennakts"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "fume-hood",
+      "canonical_lv": "tvaika nosūcējs",
+      "canonical_en": "fume hood",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Vieta darbam ar koncentrētām skābēm un tvaikiem.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "T04"
+      ],
+      "notes": "T04: kanoniskais ir 'tvaika nosūcējs' (lieto matricā, Q5, vārdnīcā); sinonīms 'velkmes skapis' minēts vienu reizi 4. nodaļā aiz kanoniskā nosaukuma. Prompts §7.5 iesaka 'velkmes skapis' (V); galīgais kurss apstiprināms ar lektoru, jautājums pievienots 16. pielikumā.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt «laboratorijas tvaika nosūcējs». «velkmes skapis» ir prompta V ieteikums, nevis šīs rindas aizliegums. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "laboratorijas tvaika nosūcējs"
+      },
+      "glossary_ids": [
+        "glossary-tvaika-nosucejs"
+      ],
+      "glossary_head": "tvaika nosūcējs"
+    },
+    {
+      "id": "volumetric-ware",
+      "canonical_lv": "mērtrauks",
+      "canonical_en": "volumetric ware",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Trauks ar kalibrētu atzīmi vai skalu un norādītu pieļaujamo kļūdu; avota 'mēraparāti' ir platāks jēdziens.",
+      "forbidden": [
+        "mēraparāt"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "T04"
+      ],
+      "notes": "T04: avota 'mēraparāti' (4. nodaļas Piezīme avotam, 6. nodaļas avotu līnija) marķēti ar data-quote; aktīvajā prozā lieto precīzo 'mērtrauks'.",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt «mērinstrumenta vai mēraparāta skalas». PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "mēraparāta"
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "mass-vs-amount",
+      "canonical_lv": "masa (m) — nav vielas daudzums (n)",
+      "canonical_en": "mass vs amount of substance",
+      "symbol": "m / n",
+      "unit": "g / mol",
+      "definition_lv": "Masa ir matērijas daudzums paraugā; svari rāda masu. Vielas daudzums n ir daļiņu skaits molos.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "H",
+      "source_refs": [
+        "D33"
+      ],
+      "notes": "Teikumu 'Vielas daudzumu, ko rāda svari' labo T04/D33; reģistrs fiksē atšķirību.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "D33 piezīme reģistrā. Precīzs avota teikums «Vielas daudzumu, ko rāda svari» šajā piegājienā ekstraktā nav pārlasīts kā atsevišķa rinda. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "typo-solis",
+      "canonical_lv": "solis",
+      "canonical_en": "step",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Biretes nolasījuma solis.",
+      "forbidden": [
+        "solījum\\w*"
+      ],
+      "allowed_contexts": [
+        "data-quote"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D37"
+      ],
+      "notes": "Mehānisks labojums: 'solījums' → 'solis'.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "D37. «solījums» ir redakcijas kļūda, nevis kursa citāts. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "typo-slash",
+      "canonical_lv": "masas/tilpuma",
+      "canonical_en": "mass/volume",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Masas un tilpuma attiecība.",
+      "forbidden": [
+        "masas/\\s+tilpuma"
+      ],
+      "allowed_contexts": [
+        "data-quote"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D38"
+      ],
+      "notes": "Mehānisks labojums: noņem atstarpi aiz slīpsvītras.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "D38. Atstarpe aiz slīpsvītras ir redakcijas kļūda. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "typo-nbsp",
+      "canonical_lv": "neplīstoša atstarpe",
+      "canonical_en": "non-breaking space",
+      "symbol": "&nbsp;",
+      "unit": "",
+      "definition_lv": "Atstarpe, kas neļauj skaitlim un vienībai nonākt dažādās rindās; nav šaurāka.",
+      "forbidden": [
+        "saīsināt\\w*\\s+atstarp\\w*"
+      ],
+      "allowed_contexts": [
+        "data-quote",
+        "change-log-original"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D29"
+      ],
+      "notes": "NBSP nav 'saīsināta' atstarpe.",
+      "evidence": {
+        "read_level": "INSPECTED",
+        "locator": "D29. «saīsināta atstarpe» ir redakcijas formulējums, nevis kursa citāts. PDF lappuse šajā piegājienā nav no jauna skaitīta."
+      },
+      "glossary_ids": []
+    },
+    {
+      "id": "random-error",
+      "canonical_lv": "gadījuma kļūda — nejauša, abos virzienos vienādi iespējama",
+      "canonical_en": "random error",
+      "symbol": "",
+      "unit": "",
+      "definition_lv": "Nejauša kļūda, kas abos virzienos ir vienādi iespējama.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "C",
+      "source_refs": [
+        "D39"
+      ],
+      "notes": "Pabeigts teikums vārdnīcā (D39).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.txt «gadījuma kļūda». D39. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "gadījuma kļūda"
+      },
+      "glossary_ids": [
+        "glossary-gadijuma-kluda"
+      ],
+      "glossary_head": "gadījuma kļūda"
+    },
+    {
+      "id": "light-intensity",
+      "canonical_lv": "gaismas stiprums (luminous intensity) — V, jāsaskaņo",
+      "canonical_en": "luminous intensity",
+      "symbol": "Iv",
+      "unit": "cd",
+      "definition_lv": "SI pamatlielums; vienība kandela.",
+      "forbidden": [],
+      "allowed_contexts": [
+        "prose"
+      ],
+      "confidence": "V",
+      "source_refs": [
+        "D34"
+      ],
+      "notes": "Avots lieto 'gaismas intensitāte'; standarta LV ir 'gaismas stiprums'. Gaida lektoru (T01/T08).",
+      "evidence": {
+        "read_level": "TEXT-VERIFIED",
+        "locator": "build/source-text/Analitiskas-metodes_2024.txt tabula sadalīta rindās «Gaismas» / «intensitāte»; tajā pašā šūnā «Gaismas avota stiprums ir viena kandela». V, enkurs D34. PDF lappuse šajā piegājienā nav no jauna skaitīta.",
+        "course_quote": "Gaismas intensitāte"
+      },
+      "glossary_ids": [],
+      "v_anchor": "D34"
+    }
+  ],
+  "glossary_rows": [
+    {
+      "id": "glossary-merijums",
+      "lv_html": "mērījums",
+      "en_html": "measurement",
+      "note_html": "Mērīšanas akts vai tā rezultāts; konteksts šķir.",
+      "provenance": "papildinājums",
+      "card_html": "Mērīšanas process vai iegūtā skaitliskā vērtība ar novērtētu nenoteiktību.",
+      "confuse_html": "Nejaukt ar teorētiski aprēķinātu vērtību bez mērījuma kļūdas.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-lielums",
+      "lv_html": "lielums",
+      "en_html": "quantity",
+      "note_html": "Fizikāls lielums ar vienību, piemēram, tilpums.",
+      "provenance": "papildinājums",
+      "card_html": "Mērāma fizikāla vai ķīmiska parādības īpašība ar skaitlisku vērtību un mērvienību.",
+      "confuse_html": "Nejaukt ar mērvienību vai skaitli bez vienības.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-mervieniba",
+      "lv_html": "mērvienība",
+      "en_html": "unit",
+      "note_html": "SI vienība: m, kg, s, mol, K, A, cd.",
+      "provenance": "papildinājums",
+      "card_html": "SI vai atvasināts etalons fizikāla lieluma kvantitatīvai izteikšanai.",
+      "confuse_html": "Nejaukt ar bezdimensiju daļām un nelietot novecojušus apzīmējumus (<span data-quote=\"true\">ml</span>, <span data-quote=\"true\">sec</span>, <span data-quote=\"true\">ppm</span>).",
+      "unit_html": "SI pamatvienības"
+    },
+    {
+      "id": "glossary-priedeklis",
+      "lv_html": "priedēklis",
+      "en_html": "prefix",
+      "note_html": "milli-, mikro-, kilo- u.c.",
+      "provenance": "papildinājums",
+      "card_html": "Mērvienības daudzkārtņa vai daļas apzīmējums (kilo-, milli-, mikro-).",
+      "confuse_html": "Nejaukt virzienu: mikro nozīmē 10⁻⁶ (1 µmol = 10⁻⁶ mol, nevis 10⁶ mol).",
+      "unit_html": "reizinātājs"
+    },
+    {
+      "id": "glossary-merkolba",
+      "lv_html": "mērkolba",
+      "en_html": "volumetric flask",
+      "note_html": "Viena atzīme; kalibrēta 20&nbsp;°C.",
+      "provenance": "papildinājums",
+      "card_html": "Bumbveida trauks ar šauru kaklu un vienu gredzena atzīmi precīza gala tilpuma iemērīšanai 20 °C.",
+      "confuse_html": "Nejaukt ar vārglāzi; mērkolbu nekarsē un pilda līdz atzīmei tikai pēc atdzišanas.",
+      "unit_html": "mL"
+    },
+    {
+      "id": "glossary-varglaze",
+      "lv_html": "vārglāze",
+      "en_html": "beaker",
+      "note_html": "Nav mērtrauks; atzīmes orientējošas.",
+      "provenance": "papildinājums",
+      "card_html": "Cilindrisks laboratorijas trauks šķīdumu maisīšanai, šķīdināšanai un karsēšanai.",
+      "confuse_html": "Nav mērtrauks; tilpuma atzīmes ir tikai aptuvenas un nav paredzētas mērīšanai.",
+      "unit_html": "mL (orientējoši)"
+    },
+    {
+      "id": "glossary-erlenmeijera-kolba",
+      "lv_html": "Erlenmeijera kolba",
+      "en_html": "Erlenmeyer flask",
+      "note_html": "Koniskā kolba; ērta titrēšanai.",
+      "provenance": "term",
+      "card_html": "Koniska stikla kolba šķīdumu samaisīšanai un titrēšanai.",
+      "confuse_html": "Nav mērtrauks; koniskā forma novērš šļakatas, nevis garantē precīzu tilpumu.",
+      "unit_html": "mL (orientējoši)"
+    },
+    {
+      "id": "glossary-megene",
+      "lv_html": "mēģene",
+      "en_html": "test tube",
+      "note_html": "Nav mērtrauks.",
+      "provenance": "papildinājums",
+      "card_html": "Neliels cilindrisks stikla trauks kvalitatīvām reakcijām un sildīšanai.",
+      "confuse_html": "Nav mērtrauks; nav tilpuma marķējuma kvantitatīvam darbam.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-birete",
+      "lv_html": "birete",
+      "en_html": "burette",
+      "note_html": "Skala pieaug uz leju; nolasa apakšējo menisku.",
+      "provenance": "papildinājums",
+      "card_html": "Graduēta stikla caurule ar krānu apakšā precīza mainīga titranta tilpuma ievadīšanai.",
+      "confuse_html": "Nejaukt nolasījuma virzienu — skala pieaug uz leju; tilpums ir starpība V₂ − V₁.",
+      "unit_html": "mL"
+    },
+    {
+      "id": "glossary-mora-pipete-vienas-atzimes",
+      "lv_html": "Mora pipete (vienas atzīmes)",
+      "en_html": "volumetric (bulb) pipette",
+      "note_html": "Angļu «Mohr pipette» parasti apzīmē graduētu pipeti, tāpēc precīzāk ir «volumetric pipette».",
+      "provenance": "papildinājums",
+      "card_html": "Vienas atzīmes tilpuma pipete ar paplašinājumu viena fiksēta alikvota pārnešanai.",
+      "confuse_html": "Nejaukt ar dalīto mērpipeti; Mora pipetei ir viena atzīme un mazāka tolerance.",
+      "unit_html": "mL"
+    },
+    {
+      "id": "glossary-mercilindrs",
+      "lv_html": "mērcilindrs",
+      "en_html": "graduated cylinder",
+      "note_html": "Aptuvens mērtrauks.",
+      "provenance": "papildinājums",
+      "card_html": "Cilindrisks graduēts trauks aptuvena šķidruma tilpuma iemērīšanai.",
+      "confuse_html": "Nejaukt ar analītiskajiem mērtraukiem; cilindram ir vislielākā pieļaujamā kļūda.",
+      "unit_html": "mL"
+    },
+    {
+      "id": "glossary-menisks",
+      "lv_html": "menisks",
+      "en_html": "meniscus",
+      "note_html": "Šķidruma virsmas izliekums stiklā.",
+      "provenance": "papildinājums",
+      "card_html": "Šķidruma virsmas izliekums stikla traukā virsmas spraiguma dēļ.",
+      "confuse_html": "Ūdens šķīdumiem nolasa zemāko punktu acu augstumā; tumšiem šķīdumiem — augšējo malu.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-paralakss",
+      "lv_html": "paralakss",
+      "en_html": "parallax",
+      "note_html": "Šķietama nolasījuma maiņa, mainot skata leņķi.",
+      "provenance": "papildinājums",
+      "card_html": "Nolasījuma šķietama nobīde, ja novērotāja skats nav perpendikulārs skalai.",
+      "confuse_html": "Sistemātiskas kļūdas avots; novērš, turot menisku tieši acu augstumā.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-nolasijums",
+      "lv_html": "nolasījums",
+      "en_html": "reading",
+      "note_html": "Skaitlis, ko nolasa no skalas.",
+      "provenance": "papildinājums",
+      "card_html": "Skaitliskā vērtība, kas nolasīta no mērskalas, iekļaujot novērtēto pēdējo zīmi.",
+      "confuse_html": "Nejaukt vienu nolasījumu ar izvadīto tilpumu (biretei tilpums ir divu nolasījumu starpība).",
+      "unit_html": "skalas vienība"
+    },
+    {
+      "id": "glossary-iedala",
+      "lv_html": "iedaļa",
+      "en_html": "division; graduation",
+      "note_html": "Mazākā atzīmētā skalas vienība.",
+      "provenance": "papildinājums",
+      "card_html": "Mazākais intervāls starp divām blakus esošām svītriņām instrumenta skalā.",
+      "confuse_html": "Nejaukt iedaļas vērtību ar nolasījuma kļūdu (biretei iedaļa 0,1 mL, nolasījums ±0,05 mL).",
+      "unit_html": "skalas vienība"
+    },
+    {
+      "id": "glossary-skidums",
+      "lv_html": "šķīdums",
+      "en_html": "solution",
+      "note_html": "Viendabīgs maisījums.",
+      "provenance": "papildinājums",
+      "card_html": "Viendabīgs (homogēns) divu vai vairāku vielu maisījums molekulu vai jonu līmenī.",
+      "confuse_html": "Nejaukt ar neviendabīgiem maisījumiem (suspensijām, emulsijām).",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-skidinatajs",
+      "lv_html": "šķīdinātājs",
+      "en_html": "solvent",
+      "note_html": "Viela, kurā izšķīdina; parasti ūdens.",
+      "provenance": "papildinājums",
+      "card_html": "Komponents, kurā izšķīdina citas vielas un kas saglabā agregātstāvokli (parasti ūdens).",
+      "confuse_html": "Nejaukt ar šķīduma kopējo tilpumu vai masu; 5 g + 100 mL nav 100 mL šķīduma.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-izskidinata-viela",
+      "lv_html": "izšķīdinātā viela",
+      "en_html": "solute",
+      "note_html": "Viela, kas izšķīst.",
+      "provenance": "papildinājums",
+      "card_html": "Komponents, kas šķīdumā izkliedēts šķīdinātāja vidē.",
+      "confuse_html": "Nejaukt izšķīdinātās vielas masu ar šķīduma kopējo masu.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-atskaidisana",
+      "lv_html": "atšķaidīšana",
+      "en_html": "dilution",
+      "note_html": "Koncentrācijas samazināšana, pievienojot šķīdinātāju.",
+      "provenance": "papildinājums",
+      "card_html": "Koncentrācijas samazināšana, pievienojot šķīdinātāju nemainīgam analīta daudzumam.",
+      "confuse_html": "Nejaukt gala tilpumu mērkolbā ar pievienotā šķīdinātāja tilpumu (c₁V₁ = c₂V₂).",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-masas-dala",
+      "lv_html": "masas daļa",
+      "en_html": "mass fraction",
+      "note_html": "<i>w</i> = <i>m</i>(viela)/<i>m</i>(šķīdums).",
+      "provenance": "papildinājums",
+      "card_html": "Izšķīdinātās vielas masas attiecība pret šķīduma kopējo masu: w = m(viela) / m(šķīdums).",
+      "confuse_html": "Nejaukt ar masas koncentrāciju γ vai blīvumu ρ; saucējā ir visa šķīduma masa.",
+      "unit_html": "bezdimensiju; %"
+    },
+    {
+      "id": "glossary-masas-koncentracija",
+      "lv_html": "masas koncentrācija",
+      "en_html": "mass concentration",
+      "note_html": "γ = <i>m</i>/<i>V</i>; g/L, mg/L.",
+      "provenance": "papildinājums",
+      "card_html": "Izšķīdinātās vielas masas attiecība pret šķīduma tilpumu: γ = m(viela) / V.",
+      "confuse_html": "Nejaukt ar masas daļu w vai molāro koncentrāciju c.",
+      "unit_html": "g/L, mg/L"
+    },
+    {
+      "id": "glossary-molara-koncentracija",
+      "lv_html": "molārā koncentrācija",
+      "en_html": "molar concentration",
+      "note_html": "<i>c</i> = <i>n</i>/<i>V</i>; mol/L.",
+      "provenance": "papildinājums",
+      "card_html": "Izšķīdinātās vielas daudzuma attiecība pret šķīduma tilpumu: c = n / V.",
+      "confuse_html": "Nejaukt ar masas koncentrāciju γ vai molmasu M; simbols c, vienība mol/L.",
+      "unit_html": "mol/L"
+    },
+    {
+      "id": "glossary-blivums",
+      "lv_html": "blīvums",
+      "en_html": "density",
+      "note_html": "ρ = <i>m</i>/<i>V</i>; nav koncentrācija.",
+      "provenance": "papildinājums",
+      "card_html": "Šķīduma kopējās masas attiecība pret tā tilpumu: ρ = m(šķīdums) / V(šķīdums).",
+      "confuse_html": "Blīvums nav koncentrācija! ρ mainās ar temperatūru un raksturo visu šķīdumu.",
+      "unit_html": "g/mL, kg/m³"
+    },
+    {
+      "id": "glossary-kalibresana",
+      "lv_html": "kalibrēšana",
+      "en_html": "calibration",
+      "note_html": "Sakarības noteikšana starp signālu un zināmu lielumu.",
+      "provenance": "papildinājums",
+      "card_html": "Sakarības noteikšana starp mērierīces analītisko signālu un zināmu standarta koncentrāciju.",
+      "confuse_html": "Nejaukt ar parauga mērīšanu; kalibrēšana izveido atskaites taisni no standartiem.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-kalibresanas-taisne",
+      "lv_html": "kalibrēšanas taisne",
+      "en_html": "calibration line",
+      "note_html": "<i>A</i> = <i>a</i>ρ + <i>b</i>.",
+      "provenance": "papildinājums",
+      "card_html": "Lineārs vienādojums A = a·ρ + b signāla aprēķināšanai no koncentrācijas.",
+      "confuse_html": "Derīga tikai kalibrētajā apgabalā (5–30 mg/L); ārpus tā taisnes modelis nav garantēts.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-aproksimacijas-taisne",
+      "lv_html": "aproksimācijas taisne",
+      "en_html": "best-fit line; trendline",
+      "note_html": "Izlīdzina punktu izkliedi.",
+      "provenance": "papildinājums",
+      "card_html": "Ar mazāko kvadrātu metodi novilkta taisne eksperimentālo punktu izkliedes izlīdzināšanai.",
+      "confuse_html": "Aproksimācija neaizstāj fizikālu teoriju un nepierāda linearitāti ekstrapolācijā.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-validacija",
+      "lv_html": "validācija",
+      "en_html": "validation",
+      "note_html": "Pierādījums, ka metode der paredzētajam lietojumam: pareizība, selektivitāte, atkārtojamība.",
+      "provenance": "papildinājums",
+      "card_html": "Eksperimentāls pierādījums tam, ka analītiskā metode ir uzticama un derīga konkrētajam mērķim.",
+      "confuse_html": "Augsts R² vien nav validācija; jāpārbauda selektivitāte, pareizība un atkārtojamība.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-slipums",
+      "lv_html": "slīpums",
+      "en_html": "slope",
+      "note_html": "<i>a</i>; kalibrēšanā L/mg.",
+      "provenance": "papildinājums",
+      "card_html": "Kalibrēšanas taisnes virziena koeficients a, kas raksturo analītiskās metodes jutību.",
+      "confuse_html": "Nejaukt ar molāro absorbcijas koeficientu ε (tam vienība ir L·mol⁻¹·cm⁻¹).",
+      "unit_html": "signāls / koncentrācija (L/mg)"
+    },
+    {
+      "id": "glossary-krustpunkts",
+      "lv_html": "krustpunkts",
+      "en_html": "intercept",
+      "note_html": "<i>b</i>; absorbances vienībās.",
+      "provenance": "papildinājums",
+      "card_html": "Kalibrēšanas taisnes vērtība pie nulles koncentrācijas (fona absorbcija b).",
+      "confuse_html": "Būtisks krustpunkts liecina par fona absorbciju no reaģentiem vai kivetes.",
+      "unit_html": "absorbance (bezdimensiju)"
+    },
+    {
+      "id": "glossary-determinacijas-koeficients",
+      "lv_html": "determinācijas koeficients",
+      "en_html": "coefficient of determination",
+      "note_html": "R²; lineārās sakritības daļa.",
+      "provenance": "papildinājums",
+      "card_html": "R² parāda, kādu daļu no signāla variācijas izskaidro lineārais modelis (šajā darbā 0,9991).",
+      "confuse_html": "R² nepierāda selektivitāti vai pareizību matricā un negarantē ekstrapolāciju.",
+      "unit_html": "bezdimensiju (0 līdz 1)"
+    },
+    {
+      "id": "glossary-jutiba",
+      "lv_html": "jutība",
+      "en_html": "sensitivity",
+      "note_html": "Signāla izmaiņa uz koncentrācijas vienību; saistīta ar slīpumu.",
+      "provenance": "term",
+      "card_html": "Signāla izmaiņas lielums uz vienu koncentrācijas vienību (kalibrēšanas taisnes slīpums).",
+      "confuse_html": "Nejaukt ar noteikšanas robežu (LOD); stāvāka taisne nozīmē lielāku jutību.",
+      "unit_html": "signāls / koncentrācija"
+    },
+    {
+      "id": "glossary-selektivitate",
+      "lv_html": "selektivitāte",
+      "en_html": "selectivity",
+      "note_html": "Spēja atšķirt analītu no citām vielām.",
+      "provenance": "papildinājums",
+      "card_html": "Metodes spēja noteikt konkrēto vielu bez parauga citu komponentu traucējumiem.",
+      "confuse_html": "Tīra šķīduma kalibrācija nepierāda selektivitāti sarežģītā bioloģiskā matricā.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-noteiksanas-robeza",
+      "lv_html": "noteikšanas robeža",
+      "en_html": "limit of detection (LOD)",
+      "note_html": "Mazākais signāls, ko var atšķirt no fona.",
+      "provenance": "term",
+      "card_html": "Mazākā analīta koncentrācija, kuras signālu var droši atšķirt no fona (fons + 3s).",
+      "confuse_html": "LOD ir tikai klātbūtnes robeža; to nedrīkst jaukt ar kvantificēšanas robežu (LOQ).",
+      "unit_html": "mg/L, mol/L"
+    },
+    {
+      "id": "glossary-kvantificesanas-robeza",
+      "lv_html": "kvantificēšanas robeža",
+      "en_html": "limit of quantification (LOQ)",
+      "note_html": "Mazākais signāls, ko var noteikt ar pieņemamu precizitāti.",
+      "provenance": "term",
+      "card_html": "Mazākā koncentrācija, ko var izmērīt ar pieņemamu kvantitatīvu precizitāti (fons + 10s).",
+      "confuse_html": "Rezultātu zem LOQ nedrīkst ziņot kā kvantitatīvi drošu skaitli.",
+      "unit_html": "mg/L, mol/L"
+    },
+    {
+      "id": "glossary-atkartojamiba",
+      "lv_html": "atkārtojamība",
+      "en_html": "repeatability",
+      "note_html": "Precizitāte vienā procedūrā, vietā un īsā laikā (VIM 2.20–2.21). Nav izkliede ap patieso vērtību.",
+      "provenance": "papildinājums",
+      "card_html": "Vienas laboratorijas, tā paša operatora un iekārtas mērījumu izkliede īsā laikā.",
+      "confuse_html": "Nejaukt ar pareizību (trueness); atkārtojami rezultāti var būt sistemātiski nobīdīti.",
+      "unit_html": "standartnovirze s"
+    },
+    {
+      "id": "glossary-reproducejamiba",
+      "lv_html": "reproducējamība",
+      "en_html": "reproducibility",
+      "note_html": "Starp laboratorijām vai metodēm.",
+      "provenance": "papildinājums",
+      "card_html": "Mērījumu izkliede starp dažādām laboratorijām, operatoriem vai iekārtām.",
+      "confuse_html": "Nejaukt ar vienas laboratorijas atkārtojamību; reproducējamības izkliede ir lielāka.",
+      "unit_html": "standartnovirze s"
+    },
+    {
+      "id": "glossary-precizitate",
+      "lv_html": "precizitāte",
+      "en_html": "precision",
+      "note_html": "Izkliede norādītos apstākļos, parasti ar <i>s</i>. Nav tuvums atsaucei (VIM 2.15).",
+      "provenance": "term",
+      "card_html": "Atkārtotu neatkarīgu mērījumu savstarpējā sakritība un izkliede ap vidējo.",
+      "confuse_html": "Nejaukt ar pareizību! Precizitāte raksturo izkliedi s, pareizība — trāpījumu mērķī.",
+      "unit_html": "standartnovirze s"
+    },
+    {
+      "id": "glossary-pareiziba",
+      "lv_html": "pareizība",
+      "en_html": "trueness",
+      "note_html": "Bezgalīgas sērijas vidējā tuvums atsaucei; nav skaitlis (VIM 2.14).",
+      "provenance": "term",
+      "card_html": "Liela mērījumu skaita vidējās vērtības tuvums patiesajai vai atsauces vērtībai.",
+      "confuse_html": "Nejaukt ar precizitāti (izkliedi); pareizību ietekmē sistemātiskās kļūdas.",
+      "unit_html": "sistemātiskā novirze"
+    },
+    {
+      "id": "glossary-kopeja-tuviba-accuracy-v",
+      "lv_html": "kopējā tuvība (accuracy) <i>V</i>",
+      "en_html": "accuracy",
+      "note_html": "Šajā dokumentā: maza izkliede un maza nobīde kopā. VIM 2.13 accuracy ir vienas vērtības tuvums patiesajai vērtībai un nav skaitlis; jumts ar to nesakrīt. Sinonīms <span data-quote=\"true\">«kopējā precizitāte»</span> minēts tikai šeit. Lietojums jāsaskaņo ar lektoru (D40).",
+      "provenance": "term",
+      "card_html": "Precizitātes (mazas izkliedes) un pareizības (mazas novirzes) vienots raksturojums.",
+      "confuse_html": "Vārdu «precizitāte» vienu pašu nedrīkst lietot šajā vispārīgajā nozīmē (D40/S21).",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-sistematiska-kluda",
+      "lv_html": "sistemātiskā kļūda",
+      "en_html": "systematic error",
+      "note_html": "Vienā virzienā novirzīta kļūda.",
+      "provenance": "papildinājums",
+      "card_html": "Kļūda, kas visos atkārtojumos saglabājas nemainīga vai novirzās vienā virzienā.",
+      "confuse_html": "Nejaukt ar gadījuma kļūdu; to nevar samazināt, tikai atkārtojot mērījumus.",
+      "unit_html": "mērvienībā"
+    },
+    {
+      "id": "glossary-gadijuma-kluda",
+      "lv_html": "gadījuma kļūda",
+      "en_html": "random error",
+      "note_html": "Nejauša, abos virzienos vienādi iespējama.",
+      "provenance": "term",
+      "card_html": "Nejauša izkliede abos virzienos, ko izraisa mazi neparedzami faktori.",
+      "confuse_html": "Nejaukt ar rupju kļūdu; gadījuma kļūdas ietekmi samazina, palielinot mērījumu skaitu n.",
+      "unit_html": "mērvienībā"
+    },
+    {
+      "id": "glossary-rupja-kluda",
+      "lv_html": "rupja kļūda",
+      "en_html": "gross error",
+      "note_html": "Nepareizs nolasījums, nepareizs trauks, pārrakstīšanās.",
+      "provenance": "papildinājums",
+      "card_html": "Būtisks izlēciens eksperimentētāja kļūdas, trauka sajaukšanas vai defekta dēļ.",
+      "confuse_html": "Nejaukt ar parastu izkliedi; pirms noraidīšanas jāpārbauda ar Diksona Q testu.",
+      "unit_html": "mērvienībā"
+    },
+    {
+      "id": "glossary-nenoteiktiba",
+      "lv_html": "nenoteiktība",
+      "en_html": "uncertainty",
+      "note_html": "Nenegatīvs izkliedes parametrs (VIM 2.26). Nav zīmēta kļūda un nav pats ticamības intervāls.",
+      "provenance": "papildinājums",
+      "card_html": "Parametrs, kas raksturo vērtību intervālu ap rezultātu, kurā var atrasties mērāmais lielums.",
+      "confuse_html": "Nenoteiktība nav viena kļūda; patiesā kļūda nav zināma, bet nenoteiktība ir novērtējama.",
+      "unit_html": "mērvienībā"
+    },
+    {
+      "id": "glossary-standartnovirze",
+      "lv_html": "standartnovirze",
+      "en_html": "standard deviation",
+      "note_html": "<i>s</i>; paraugam dala ar <i>n</i> − 1.",
+      "provenance": "term",
+      "card_html": "Atsevišķa mērījuma izkliedes mērs ap parauga vidējo: s = √[Σ(x_i − x̄)² / (n − 1)].",
+      "confuse_html": "Nejaukt ar standartkļūdu SEM = s/√n; s raksturo atsevišķu mērījumu, nevis vidējo.",
+      "unit_html": "mērījuma vienībā"
+    },
+    {
+      "id": "glossary-standartkluda",
+      "lv_html": "standartkļūda",
+      "en_html": "standard error of the mean (SEM)",
+      "note_html": "<i>s</i>/√<i>n</i>; attiecas uz vidējo.",
+      "provenance": "papildinājums",
+      "card_html": "Parauga vidējās vērtības izkliedes mērs: s_x̄ = s / √n.",
+      "confuse_html": "Nejaukt ar parauga standartnovirzi s; SEM ir √n reizes mazāka par s.",
+      "unit_html": "mērījuma vienībā"
+    },
+    {
+      "id": "glossary-ticamibas-intervals",
+      "lv_html": "ticamības intervāls",
+      "en_html": "confidence interval",
+      "note_html": "Kursa Stjūdenta intervāls vidējam. Nav zīmēta kļūda un nav VIM 2.26 nenoteiktība.",
+      "provenance": "term",
+      "card_html": "Intervāls x̄ ± t(α, n−1)·s/√n, kurā ar izvēlēto varbūtību atrodas populācijas vidējais.",
+      "confuse_html": "Nejaukt ar kļūdu budžetu (0,5 % + ½ iedaļas); ticamības intervāls ir statistisks.",
+      "unit_html": "mērījuma vienībā"
+    },
+    {
+      "id": "glossary-brivibas-pakapes",
+      "lv_html": "brīvības pakāpes",
+      "en_html": "degrees of freedom",
+      "note_html": "<i>n</i> − 1 vienai sērijai.",
+      "provenance": "papildinājums",
+      "card_html": "Neatkarīgo mērījumu skaits sērijā mīnus saites: vienai sērijai ν = n − 1.",
+      "confuse_html": "Stjūdenta t tabulā vienmēr skatās pēc n − 1, nevis pēc mērījumu skaita n.",
+      "unit_html": "vesels skaitlis"
+    },
+    {
+      "id": "glossary-zimigie-cipari",
+      "lv_html": "zīmīgie cipari",
+      "en_html": "significant figures",
+      "note_html": "Skaita visus ciparus no pirmā zīmīgā.",
+      "provenance": "term",
+      "card_html": "Visi skaitļa cipari, sākot no pirmā nenulles cipara no kreisās puses.",
+      "confuse_html": "Nejaukt ar decimālzīmēm! 12,70 ir četri zīmīgie cipari, bet divas zīmes aiz komata.",
+      "unit_html": "ciparu skaits"
+    },
+    {
+      "id": "glossary-zimes-aiz-komata",
+      "lv_html": "zīmes aiz komata",
+      "en_html": "decimal places",
+      "note_html": "Skaita tikai ciparus aiz komata.",
+      "provenance": "term",
+      "card_html": "Ciparu skaits aiz decimālā komata; nosaka precizitāti saskaitīšanā un atņemšanā.",
+      "confuse_html": "Nejaukt ar zīmīgajiem cipariem! Reizināšanā un dalīšanā skaita zīmīgos ciparus.",
+      "unit_html": "pozīciju skaits"
+    },
+    {
+      "id": "glossary-noapalosana",
+      "lv_html": "noapaļošana",
+      "en_html": "rounding",
+      "note_html": "Vienā solī, nevis atkārtoti.",
+      "provenance": "papildinājums",
+      "card_html": "Skaitļa noapaļošana līdz pamatotai precizitātei vienā solī pēc pēdējā aprēķina posma.",
+      "confuse_html": "Neveiciet divkāršu noapaļošanu (1,1145 → 1,11, nevis 1,12) un nenoapaļojiet starpvērtības.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-ekstrapolacija",
+      "lv_html": "ekstrapolācija",
+      "en_html": "extrapolation",
+      "note_html": "Ārpus kalibrētā diapazona.",
+      "provenance": "papildinājums",
+      "card_html": "Vērtību aprēķināšana ārpus eksperimentāli kalibrētā datu apgabala.",
+      "confuse_html": "Ekstrapolācija nav droša; ja signāls pārsniedz 30 mg/L standartu, šķīdums jāatšķaida.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-interpolacija",
+      "lv_html": "interpolācija",
+      "en_html": "interpolation",
+      "note_html": "Starp zināmām vērtībām.",
+      "provenance": "papildinājums",
+      "card_html": "Starpvērtību noteikšana starp diviem zināmiem tabulas vai eksperimenta punktiem.",
+      "confuse_html": "Interpolācija ir droša tikai kalibrētā apgabalā ar pierādītu sakarību.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-pussabruksanas-periods",
+      "lv_html": "pussabrukšanas periods",
+      "en_html": "half-life",
+      "note_html": "<i>t</i><sub>½</sub>; laiks, kad atlikums samazinās uz pusi.",
+      "provenance": "papildinājums",
+      "card_html": "Laika posms t½, kurā vielas daudzums vai koncentrācija samazinās uz pusi.",
+      "confuse_html": "Nejaukt ar laika atzīmi uz ass! Hidrolīzes grafikā dati sākas pie 115 s; t½ ir laika starpība.",
+      "unit_html": "s, min, h, d"
+    },
+    {
+      "id": "glossary-pirmas-pakapes-reakcija",
+      "lv_html": "pirmās pakāpes reakcija",
+      "en_html": "first-order reaction",
+      "note_html": "Ātrums proporcionāls koncentrācijai.",
+      "provenance": "papildinājums",
+      "card_html": "Reakcija, kuras ātrums ir tieši proporcionāls reaģenta koncentrācijai pirmajā pakāpē.",
+      "confuse_html": "Pirmās pakāpes procesā t½ nav atkarīgs no sākuma koncentrācijas un paliek nemainīgs.",
+      "unit_html": "s⁻¹"
+    },
+    {
+      "id": "glossary-sabruksanas-likne",
+      "lv_html": "sabrukšanas līkne",
+      "en_html": "decay curve",
+      "note_html": "Eksponenciāla atlikuma līkne.",
+      "provenance": "papildinājums",
+      "card_html": "Koncentrācijas vai aktivitātes eksponenciāla samazināšanās līkne laikā.",
+      "confuse_html": "Līkne asimptotiski tuvojas nullei, bet to nesasniedz; t½ ir nemainīgs intervāls.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-hidrolize",
+      "lv_html": "hidrolīze",
+      "en_html": "hydrolysis",
+      "note_html": "Sadalīšanās ar ūdeni.",
+      "provenance": "papildinājums",
+      "card_html": "Ķīmiskās sadalīšanās reakcija, vielai reaģējot ar ūdeni.",
+      "confuse_html": "Nejaukt hidrolīzes reakcijas sākumu ar grafika pirmo mērījuma punktu (t₀ = 115 s).",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-spektrofotometrija",
+      "lv_html": "spektrofotometrija",
+      "en_html": "spectrophotometry",
+      "note_html": "Absorbances <i>A</i> mērīšana atkarībā no viļņa garuma.",
+      "provenance": "papildinājums",
+      "card_html": "Kvantitatīva analīzes metode, kas mēra gaismas absorbciju šķīdumā atkarībā no viļņa garuma.",
+      "confuse_html": "Nejaukt absorbēto gaismu ar caurgājušo gaismu; absorbance A = −log₁₀(T).",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-absorbance",
+      "lv_html": "absorbance",
+      "en_html": "absorbance",
+      "note_html": "<i>A</i>; bezdimensiju lielums, nevis process.",
+      "provenance": "term",
+      "card_html": "Gaismas absorbcijas kvantitatīvs mērs šķīdumā: A = log₁₀(I₀/I) = ε·c·l.",
+      "confuse_html": "Nejaukt ar procesu «gaismas absorbcija» vai molāro absorbcijas koeficientu ε.",
+      "unit_html": "bezdimensiju"
+    },
+    {
+      "id": "glossary-molarais-absorbcijas-koeficients",
+      "lv_html": "molārais absorbcijas koeficients",
+      "en_html": "molar absorptivity",
+      "note_html": "ε; L·mol⁻¹·cm⁻¹.",
+      "provenance": "papildinājums",
+      "card_html": "Vielas spēja absorbēt gaismu pie vienas vienības koncentrācijas un ceļa garuma (ε).",
+      "confuse_html": "Nejaukt ar kalibrēšanas taisnes slīpumu mg/L grafikā (tas ir L/mg).",
+      "unit_html": "L·mol⁻¹·cm⁻¹"
+    },
+    {
+      "id": "glossary-vilna-garums",
+      "lv_html": "viļņa garums",
+      "en_html": "wavelength",
+      "note_html": "λ; nm.",
+      "provenance": "papildinājums",
+      "card_html": "Attālums starp diviem blakus esošiem gaismas viļņa maksimumiem (askorbīnskābei λ = 521 nm).",
+      "confuse_html": "Mērījumiem izvēlas viļņa garumu ar maksimālu absorbciju, kur metodei ir vislielākā jutība.",
+      "unit_html": "nm"
+    },
+    {
+      "id": "glossary-svari",
+      "lv_html": "svari",
+      "en_html": "balance",
+      "note_html": "Mēra masu, nevis svaru.",
+      "provenance": "papildinājums",
+      "card_html": "Laboratorijas ierīce parauga masas precīzai noteikšanai (analītiskie svari ±0,0001 g).",
+      "confuse_html": "Svari mēra masu gramos, nevis fizisko svaru (spēku ņūtonos).",
+      "unit_html": "g, mg"
+    },
+    {
+      "id": "glossary-piltuve",
+      "lv_html": "piltuve",
+      "en_html": "funnel",
+      "note_html": "Pārnesei, nevis mērīšanai.",
+      "provenance": "papildinājums",
+      "card_html": "Konisks trauks šķidrumu drošai pārliešanai un filtrēšanai.",
+      "confuse_html": "Nav mērtrauks; pēc sausu vielu bēršanas mērkolbā piltuve rūpīgi jānoskalo.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-stikla-nujina",
+      "lv_html": "stikla nūjiņa",
+      "en_html": "glass rod",
+      "note_html": "Maisīšanai.",
+      "provenance": "papildinājums",
+      "card_html": "Stikla stienītis šķīdumu maisīšanai un šķidruma virzītai ieliešanai mērkolbā.",
+      "confuse_html": "Neaizmirstiet noskalot nūjiņu mērkolbā, lai nezaudētu analītu.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-korkis",
+      "lv_html": "korķis",
+      "en_html": "stopper",
+      "note_html": "Mērkolbas aizvēršanai; abos svēršanas datos jābūt vienam un tam pašam.",
+      "provenance": "papildinājums",
+      "card_html": "Pieslīpēts vai elastīgs aizbāznis mērkolbas hermētiskai aizvēršanai.",
+      "confuse_html": "Mērkolbas svēršanai pirms un pēc jāizmanto tas pats korķis, jo to masas atšķiras.",
+      "unit_html": ""
+    },
+    {
+      "id": "glossary-tvaika-nosucejs",
+      "lv_html": "tvaika nosūcējs",
+      "en_html": "fume hood",
+      "note_html": "Koncentrētu skābi pārvieto nosūcējā.",
+      "provenance": "term",
+      "card_html": "Ventilēta darba vieta izgarojumu, gāzu un bīstamu reaģentu drošai lietošanai.",
+      "confuse_html": "Koncentrētu sērskābi un gaistošas vielas vienmēr atšķaida tikai velkmes skapī.",
+      "unit_html": ""
+    }
+  ]
+}

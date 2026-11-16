@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-11-16T21:12:03.196599+00:00",
+  "scope": "Workspace preparation only; not simulator implementation or product acceptance",
+  "status": "PASS",
+  "checks": {
+    "copies": {
+      "files": 174,
+      "bytes": 30083827,
+      "roles": {
+        "canonical-master": 7,
+        "course-source": 35,
+        "supporting-reference-data": 65,
+        "planning-reference": 18,
+        "archived-governance-reference": 49
+      },
+      "manifest_sha256": "07d49735060796c3d34191b66b5fe9991232279f5849147c7e2b0f5ad59b72c9",
+      "master_resource_check": "Static loaded-resource attributes only; no browser acceptance"
+    },
+    "preservation": {
+      "regular_files": 15978,
+      "changed": [],
+      "added": [],
+      "missing": [],
+      "compared_fields": [
+        "relative path",
+        "bytes",
+        "mtime_ns",
+        "sha256"
+      ],
+      "baseline_captured_utc": "2026-11-16T20:47:15.404170+00:00",
+      "baseline_sha256": "10b29a3f67c64214e31e0e25b6f1deeb46cd05a589a7c78ed22c76ad9675f1c7",
+      "scope": "All regular non-symlink files under Chemistry_1 through Chemistry_7"
+    },
+    "programme": {
+      "sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+      "bytes": 353208,
+      "pages_inspected": 4,
+      "year": 2025,
+      "page_render_review": "Four Poppler PNGs directly inspected during preparation"
+    },
+    "roadmap": {
+      "sections": 14,
+      "core_tasks": 20,
+      "feature_proposals": 10,
+      "diagnostics": 5,
+      "core_card_shape": "3 main steps; 2 subtasks with 3 substeps each",
+      "sha256": "e218fdf1d83dce3f5bc132bd7ea99ffcd398a67b153b960a225fafc9ecdc66a9"
+    },
+    "design_data": {
+      "coverage_rows": 64,
+      "core_programme_paraphrase_rows": 63,
+      "supplementary_application_rows": 1,
+      "families": 28,
+      "variant_specifications": 112,
+      "question_types": 18,
+      "slots": 21,
+      "points": 100,
+      "minutes": 180,
+      "schema_check": "Draft 2020-12 schema structure checked with installed jsonschema; no release instances exist",
+      "scope": "Specifications only; no 112-item release bank or three assembled forms yet"
+    },
+    "examples": {
+      "examples": 14,
+      "independently_recomputed_numeric_examples": 13,
+      "numeric_fields_checked": 29,
+      "net_redox_atom_charge_balance": true,
+      "limit": "Arithmetic and one structured balance; no official-key, complete scientific or learner-trial acceptance"
+    }
+  },
+  "failures": [],
+  "not_performed": [
+    "Simulator runtime",
+    "Browser rendering of masters/application",
+    "Accessibility/assistive technology",
+    "Assessment paper/PDF rendering",
+    "Full chemistry/source verification",
+    "Student/instructor trial"
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "status": "design-exemplars-not-a-release-bank",
+  "examples": [
+    {
+      "example_id": "EX01",
+      "topic": 1,
+      "title_lv": "Masas nezūdamība",
+      "prompt_lv": "Sabalansē Mg + O₂ → MgO. Magnija masa ir 4,80 g, M(Mg)=24,0 g/mol, M(MgO)=40,0 g/mol; skābeklis ir pārākumā. Aprēķini MgO masu.",
+      "question_type": "Q02",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "coefficients": [
+          2,
+          1,
+          2
+        ],
+        "n_Mg_mol": 0.2,
+        "m_MgO_g": 8.0,
+        "display_lv": "8,00 g"
+      },
+      "rubric": [
+        {
+          "criterion": "Bilance 2:1:2",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "n=m/M",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "n(MgO)=n(Mg)",
+          "points": 1,
+          "grading": "manual"
+        },
+        {
+          "criterion": "m=8,00 g ar vienību",
+          "points": 1,
+          "grading": "auto"
+        }
+      ],
+      "variant": "4,80 g vietā 7,20 g → 12,0 g; strukturāls variants: dota MgO masa, jāatrod Mg masa.",
+      "numeric_check": "stoichiometry"
+    },
+    {
+      "example_id": "EX02",
+      "topic": 1,
+      "title_lv": "Joni un elektrolīts",
+      "prompt_lv": "Izskaidro, kāpēc NaCl ūdens šķīdums vada elektrisko strāvu; uzraksti disociāciju. Salīdzini ar glikozes šķīdumu.",
+      "question_type": "Q15",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "equation": "NaCl → Na⁺ + Cl⁻",
+        "criteria": [
+          "šķīdumā kustīgi joni",
+          "Na⁺ un Cl⁻",
+          "glikoze dotajā modelī neveido jonus"
+        ]
+      },
+      "rubric": [
+        {
+          "criterion": "Disociācija un lādiņi",
+          "points": 1,
+          "grading": "structured-auto"
+        },
+        {
+          "criterion": "Kustīgu jonu loma",
+          "points": 1,
+          "grading": "self-or-human"
+        },
+        {
+          "criterion": "Glikozes salīdzinājums",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "MgCl₂ variants prasa divus Cl⁻; nav pieņemama tikai vielas nosaukuma nomaiņa."
+    },
+    {
+      "example_id": "EX03",
+      "topic": 2,
+      "title_lv": "Birete",
+      "prompt_lv": "Biretes iedaļa ir 0,1 mL, vērtības pieaug uz leju. SVG specifikācijā sākuma menisks ir 2,15 mL un beigu menisks 18,40 mL. Nolasījumu pieraksti līdz 0,01 mL; aprēķini izlietoto tilpumu.",
+      "question_type": "Q10",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "initial_mL": 2.15,
+        "final_mL": 18.4,
+        "delivered_mL": 16.25,
+        "display_lv": "16,25 mL"
+      },
+      "rubric": [
+        {
+          "criterion": "Pareizs skalas virziens un nolasījumi",
+          "points": 2,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Vbeigu−Vsākuma ar vienību",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Divas decimālvietas pēc dotās instrukcijas",
+          "points": 1,
+          "grading": "auto"
+        }
+      ],
+      "variant": "0,35→21,70 mL dod 21,35 mL; cits variants maina skalas iedaļu. Šis ir SVG authoring piemērs, attēls vēl nav izveidots.",
+      "numeric_check": "burette"
+    },
+    {
+      "example_id": "EX04",
+      "topic": 2,
+      "title_lv": "Vienības un precizitāte",
+      "prompt_lv": "Pārvērt 0,00450 kg miligramos, saglabājot trīs zīmīgos ciparus. Atsevišķi noapaļo 2,50×3,42 pēc reizināšanas noteikuma.",
+      "question_type": "Q01",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "mass_mg": 4500,
+        "mass_display": "4,50×10³ mg",
+        "product": 8.55,
+        "significant_figures": 3
+      },
+      "rubric": [
+        {
+          "criterion": "Vienību ķēde kg→g→mg",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Nepārprotami trīs zīmīgie cipari",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Reizinājums 8,55",
+          "points": 1,
+          "grading": "auto"
+        }
+      ],
+      "variant": "Pārvērst 2,50×10⁻⁶ mol mikromolos; cits variants pārbauda saskaitīšanas decimālvietas.",
+      "numeric_check": "units"
+    },
+    {
+      "example_id": "EX05",
+      "topic": 3,
+      "title_lv": "Koncentrācija no iesvara",
+      "prompt_lv": "2,922 g NaCl izšķīdina un papildina līdz 250,0 mL gatavā šķīduma. Dots M=58,44 g/mol. Aprēķini n un c.",
+      "question_type": "Q02",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "n_mol": 0.05,
+        "c_mol_L": 0.2,
+        "display_lv": "n=0,05000 mol; c=0,2000 mol/L"
+      },
+      "rubric": [
+        {
+          "criterion": "n=m/M",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "V=0,2500 L",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "c=n/V",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "Rezultāts un zīmīgie cipari",
+          "points": 1,
+          "grading": "auto"
+        }
+      ],
+      "variant": "Maini iesvaru uz 1,461 g pie tā paša V → c=0,1000 mol/L.",
+      "numeric_check": "concentration"
+    },
+    {
+      "example_id": "EX06",
+      "topic": 3,
+      "title_lv": "Atšķaidījums",
+      "prompt_lv": "No c₁=0,500 mol/L šķīduma jāpagatavo 100,0 mL šķīduma ar c₂=0,0500 mol/L. Atrodi V₁ un apraksti procedūru.",
+      "question_type": "Q08",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "V1_mL": 10.0,
+        "display_lv": "10,0 mL",
+        "sequence": [
+          "nomēra V₁ ar piemērotu pipeti",
+          "pārnes mērkolbā",
+          "pievieno šķīdinātāju un sajauc",
+          "papildina līdz 100,0 mL atzīmei",
+          "samaisa"
+        ]
+      },
+      "rubric": [
+        {
+          "criterion": "c₁V₁=c₂V₂",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "V₁=10,0 mL",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Atšķaida līdz gala tilpumam",
+          "points": 1,
+          "grading": "self-or-human"
+        },
+        {
+          "criterion": "Pamatota mērtrauku secība",
+          "points": 1,
+          "grading": "partial-order"
+        }
+      ],
+      "variant": "c₁=0,200, c₂=0,0200, V₂=250,0 mL → V₁=25,0 mL; precīzi 90,0 mL ūdens nav universāla instrukcija.",
+      "numeric_check": "dilution"
+    },
+    {
+      "example_id": "EX07",
+      "topic": 4,
+      "title_lv": "Gibsa enerģija",
+      "prompt_lv": "ΔH=40,0 kJ/mol, ΔS=150 J/(mol K), T=298 K. Aprēķini ΔG; secini par patvaļīgumu dotajos apstākļos. Pieņemot ΔH un ΔS nemainīgus, atrodi robežtemperatūru.",
+      "question_type": "Q02",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "delta_G_kJ_mol": -4.7,
+        "boundary_T_K": 266.6666666667,
+        "spontaneous": true,
+        "note": "Patvaļīgs šajos apstākļos; nav secinājuma par ātrumu."
+      },
+      "rubric": [
+        {
+          "criterion": "ΔS=0,150 kJ/(mol K)",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "ΔG=40,0−298×0,150",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "ΔG=−4,7 kJ/mol",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Pareizs secinājums un T robeža ar pieņēmumu",
+          "points": 2,
+          "grading": "mixed"
+        }
+      ],
+      "variant": "ΔH=−20,0 kJ/mol un ΔS=−80,0 J/(mol K) → pie 298 K ΔG=3,84 kJ/mol; mainās temperatūras nosacījuma virziens.",
+      "numeric_check": "gibbs"
+    },
+    {
+      "example_id": "EX08",
+      "topic": 4,
+      "title_lv": "Kalorimetrija un zīme",
+      "prompt_lv": "Izolēta kalorimetra vienkāršotajā modelī šķīduma masa ir 100,0 g, cₚ=4,18 J/(g K), ΔT=+5,00 K. Kalorimetra siltumietilpību ignorē. Aprēķini šķīduma un reakcijas siltumu, izskaidro zīmi.",
+      "question_type": "Q17",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "q_solution_J": 2090,
+        "q_reaction_J": -2090,
+        "process": "eksotermisks"
+      },
+      "rubric": [
+        {
+          "criterion": "q=mcₚΔT",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "q šķīdumam=+2,09 kJ",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "q reakcijai=−2,09 kJ",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Sistēmas un apkārtnes skaidrojums",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "ΔT=−3,00 K → q šķīdumam=−1,25 kJ, reakcijai=+1,25 kJ.",
+      "numeric_check": "calorimetry"
+    },
+    {
+      "example_id": "EX09",
+      "topic": 5,
+      "title_lv": "Pusperiods",
+      "prompt_lv": "Dota pirmās pakāpes eliminācijas modeļa tabula: t/min=0,30,60,90; m/mg=80,40,20,10. Nosaki t½, k un atlikušo masu 90 minūtēs. Šis ir mācību modelis.",
+      "question_type": "Q12",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "half_life_min": 30,
+        "k_min_inverse": 0.023104906018664842,
+        "m90_mg": 10
+      },
+      "rubric": [
+        {
+          "criterion": "No grafika/tabulas t½=30 min",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "k=ln2/t½≈0,0231 min⁻¹",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "m90=10 mg",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Nosauc pirmās pakāpes pieņēmumu",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "t½=20 min un m₀=64 mg → pēc 60 min 8 mg; nulltās pakāpes variants prasa citu modeli.",
+      "numeric_check": "halflife"
+    },
+    {
+      "example_id": "EX10",
+      "topic": 5,
+      "title_lv": "Katalizatora profils",
+      "prompt_lv": "Enerģijas profila ordināta ir kJ/mol: reaģenti 20, produkti −10, nekatalizētais maksimums 100, katalizētais 60. Nosaki abas tiešās reakcijas aktivācijas enerģijas un ΔH. Izlabo apgalvojumu, ka katalizators padara ΔH negatīvāku.",
+      "question_type": "Q13",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "Ea_uncatalysed_kJ_mol": 80,
+        "Ea_catalysed_kJ_mol": 40,
+        "delta_H_kJ_mol": -30,
+        "correction": "Katalizators nodrošina citu ceļu ar zemāku barjeru; sākuma un beigu stāvokļa starpība nemainās."
+      },
+      "rubric": [
+        {
+          "criterion": "Abas barjeras attiecībā pret reaģentiem",
+          "points": 2,
+          "grading": "auto"
+        },
+        {
+          "criterion": "ΔH=−30 kJ/mol",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Pamatots apgalvojuma labojums",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "Maini produktu enerģiju uz 50: ΔH kļūst pozitīvs, katalizatora princips paliek tas pats.",
+      "numeric_check": "energy-profile"
+    },
+    {
+      "example_id": "EX11",
+      "topic": 6,
+      "title_lv": "Pusreakcijas un titrēšana",
+      "prompt_lv": "Skābā vidē MnO₄⁻ reaģē ar Fe²⁺, veidojot Mn²⁺ un Fe³⁺. Uzraksti pusreakcijas un kopējo jonu vienādojumu. 25,00 mL Fe²⁺ paraugam vajag 18,60 mL 0,02000 mol/L KMnO₄. Aprēķini c(Fe²⁺).",
+      "question_type": "Q05",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "reduction": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+        "oxidation": "Fe²⁺ → Fe³⁺ + e⁻",
+        "net": "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺",
+        "n_MnO4_mol": 0.000372,
+        "c_Fe_mol_L": 0.0744,
+        "display_lv": "0,07440 mol/L"
+      },
+      "rubric": [
+        {
+          "criterion": "Atomu un lādiņa bilance pusreakcijās",
+          "points": 2,
+          "grading": "structured-auto"
+        },
+        {
+          "criterion": "Elektronu attiecība 1:5",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "n titrantam un n Fe²⁺",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "c Fe²⁺ un vienība",
+          "points": 1,
+          "grading": "auto"
+        }
+      ],
+      "variant": "c titrantam=0,01500 mol/L, V=20,00 mL, Vpar=25,00 mL → cFe=0,06000 mol/L; bāziska vide ir atsevišķi pārskatāms ģimenes variants.",
+      "numeric_check": "titration"
+    },
+    {
+      "example_id": "EX12",
+      "topic": 6,
+      "title_lv": "Nernsta vienādojums",
+      "prompt_lv": "Cu²⁺ + 2e⁻ → Cu(s); E°=0,340 V, a(Cu²⁺)=0,0100, a(Cu)=1, T=298,15 K. Dots decimālā logaritma koeficients 0,05916 V. Izmanto E=E°−(0,05916/n)lg Q. Atrodi Q un E, izlabo apgrieztu Q.",
+      "question_type": "Q13",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "Q": 100,
+        "n": 2,
+        "E_V": 0.28084,
+        "display_lv": "E≈0,281 V"
+      },
+      "rubric": [
+        {
+          "criterion": "Q=1/a(Cu²⁺)=100",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "n=2 un lg100=2",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "E=0,28084 V pirms noapaļošanas",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Pamatots Q labojums",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "a(Cu²⁺)=0,100 → E=0,31042 V; cita pusreakcija prasa citu Q un n.",
+      "numeric_check": "nernst"
+    },
+    {
+      "example_id": "EX13",
+      "topic": 7,
+      "title_lv": "Kalibrēšana ar nenulles nogriezni",
+      "prompt_lv": "Kalibrēšanas dati: γ/(mg/mL)=0;0,004;0,008;0,012 un A=0,010;0,210;0,410;0,610. Izvēlies asis un iegūsti taisni. Parauga A=0,350. Aprēķini γ mērītajā šķīdumā.",
+      "question_type": "Q11",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "slope_mL_mg": 50,
+        "intercept": 0.01,
+        "gamma_measured_mg_mL": 0.0068,
+        "display_lv": "0,00680 mg/mL"
+      },
+      "rubric": [
+        {
+          "criterion": "Asis ar γ un A, vienības un piemērots mērogs",
+          "points": 1,
+          "grading": "manual-or-coordinate"
+        },
+        {
+          "criterion": "Punkti un A=50γ+0,010",
+          "points": 2,
+          "grading": "auto"
+        },
+        {
+          "criterion": "γ=(A−0,010)/50",
+          "points": 1,
+          "grading": "auto-or-method"
+        },
+        {
+          "criterion": "Interpolācija diapazonā",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "A=0,410 → γ=0,00800 mg/mL; nogriežņa piespiedu nulle dod kļūdainu variantu diagnozei.",
+      "numeric_check": "calibration"
+    },
+    {
+      "example_id": "EX14",
+      "topic": 7,
+      "title_lv": "Atšķaidīts paraugs un masa",
+      "prompt_lv": "Izmanto EX13 kalibrēšanas taisni. Pirms mērījuma sākotnējo paraugu atšķaidīja 5,00 reizes. Sākotnējā parauga tilpums ir 25,00 mL, M=376,36 g/mol. No A=0,350 atrodi sākotnējo γ, masu un n.",
+      "question_type": "Q17",
+      "status": "self-authored-planning-example-not-official-question",
+      "expected": {
+        "gamma_original_mg_mL": 0.034,
+        "mass_mg": 0.85,
+        "n_mol": 2.2584759273036453e-06
+      },
+      "rubric": [
+        {
+          "criterion": "Atjauno γ ar atšķaidījuma reizinātāju",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "m=γV=0,850 mg",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "mg→g un n=m/M≈2,26×10⁻⁶ mol",
+          "points": 1,
+          "grading": "auto"
+        },
+        {
+          "criterion": "Nosauc mērīto un sākotnējo šķīdumu",
+          "points": 1,
+          "grading": "self-or-human"
+        }
+      ],
+      "variant": "A=0,410, atšķaidījums 2,00 un V₀=10,00 mL → m=0,160 mg. Gala testā šīs apakšdaļas apvieno vienā gadījumā, neizmanto EX13 atbildi kā redzamu mājienu.",
+      "numeric_check": "spectro-case"
+    }
+  ]
+}

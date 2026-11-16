@@ -1,0 +1,4 @@
+# SHA-256 of the three read-only course files (taken 2026-11-02). C04 compares against this file.
+7d7bccca30c38e10312e82153f7b9f0d81a1e684c5afd974b48b9c68e2ed2951  7_SEM_Optika_analize_2025.pdf
+5ee9207ef4948f4d8091572bb573903373ebbddba78cc1ec3278b486430f55cf  LD_Spektrofotometrija_Paraugs.pdf
+95c1a7d01ff7d2deccb8f7af8b58ffa52914e5b6c224c65ee1a21b056f2bdfd6  Absorbcija_LD_2022.docx

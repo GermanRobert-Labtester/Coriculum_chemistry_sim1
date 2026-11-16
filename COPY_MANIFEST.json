@@ -1,0 +1,1401 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-16T20:59:15.803056+00:00",
+  "root": "/home/robertsrff/Chemistry_Med",
+  "destination": "/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum",
+  "files": [
+    {
+      "source": "Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "destination": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "role": "canonical-master",
+      "bytes": 1018215,
+      "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/1_Neorganiskā ķīmija konspekts atkārtošanai_2024.pdf",
+      "destination": "materials/Chemistry_1/1_Neorganiskā ķīmija konspekts atkārtošanai_2024.pdf",
+      "role": "course-source",
+      "bytes": 966751,
+      "sha256": "803504ea9493b851a12b762dd6162fc18b510109d6bd3e6080a480b58e3f99df",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/1_SEM_MCh_LV_Skid_un_reakcijas_2025.pdf",
+      "destination": "materials/Chemistry_1/1_SEM_MCh_LV_Skid_un_reakcijas_2025.pdf",
+      "role": "course-source",
+      "bytes": 234662,
+      "sha256": "006da912c5b98791d3f96a9d4949ad027e5f6602c3873b10d615fd5bbefe8062",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/1_Temata apraksts 2020.pdf",
+      "destination": "materials/Chemistry_1/1_Temata apraksts 2020.pdf",
+      "role": "course-source",
+      "bytes": 128810,
+      "sha256": "2998717fa097e3eb9a34a7454f80659028f8596faf3908bd4efd7a429a470fb9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/I_temats_TEORIJA_Final_m.pdf",
+      "destination": "materials/Chemistry_1/I_temats_TEORIJA_Final_m.pdf",
+      "role": "course-source",
+      "bytes": 608155,
+      "sha256": "c7c76ce2f4095c84b2cae864d00cae4b0dedb192aab357624fa4bf674a7b84f4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/Kimija_viss-2024 - Prezentacija.pdf",
+      "destination": "materials/Chemistry_1/Kimija_viss-2024 - Prezentacija.pdf",
+      "role": "course-source",
+      "bytes": 2735641,
+      "sha256": "68785eec1923493207d29c22cf908a92fde5139c8031187aa48ab67d1bddc94c",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/SOURCE_LEDGER.md",
+      "destination": "materials/Chemistry_1/SOURCE_LEDGER.md",
+      "role": "supporting-reference-data",
+      "bytes": 26933,
+      "sha256": "27320f9d1a44e067d53d4f4adc84c94045d7adbef83e5f5ed899db5d132d8606",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/OPEN_ISSUES.md",
+      "destination": "materials/Chemistry_1/OPEN_ISSUES.md",
+      "role": "supporting-reference-data",
+      "bytes": 18110,
+      "sha256": "eb5b1251d12762c2673dad11dda60a9cdb3996f2e52ca09ea68d7d92ba49d336",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/formula_registry.py",
+      "destination": "materials/Chemistry_1/build/formula_registry.py",
+      "role": "supporting-reference-data",
+      "bytes": 11888,
+      "sha256": "bb12856eec977b4c0ba6a7630b4d3d44f0effb4085e14ad74673808cce2ea4b1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/quiz.py",
+      "destination": "materials/Chemistry_1/build/quiz.py",
+      "role": "supporting-reference-data",
+      "bytes": 42314,
+      "sha256": "e4001da9b30a49884c3d2a45f162c770a4cbf93499da5d86c22c1e544fef74af",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/reaction_practice.py",
+      "destination": "materials/Chemistry_1/build/reaction_practice.py",
+      "role": "supporting-reference-data",
+      "bytes": 31197,
+      "sha256": "64b8d89b188c1da07d78c2c49e7eac6ac158e732f7f59eccd6f2c68b4db3a044",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/claims.py",
+      "destination": "materials/Chemistry_1/build/claims.py",
+      "role": "supporting-reference-data",
+      "bytes": 42073,
+      "sha256": "de309fe4206b430ce44dbd9e28c286eb94db0bc09e1294f2e1d73c29cefd12cc",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/ledger.py",
+      "destination": "materials/Chemistry_1/build/ledger.py",
+      "role": "supporting-reference-data",
+      "bytes": 54238,
+      "sha256": "319ab4aaaee2a318bdb249ee8eac34566013536272c71f0c966bd4b75edbddf3",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/build/terms.py",
+      "destination": "materials/Chemistry_1/build/terms.py",
+      "role": "supporting-reference-data",
+      "bytes": 39777,
+      "sha256": "071f4e1225ef5d33cb064c3fa90c5988ddeabcf0595aa18eb8027082aab5165d",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_1/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 203064,
+      "sha256": "3278d25049f2d409b964e9b95c39b7d829bcb8ef6515e6ba044a882411b00d46",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/TASK_PLAN_20_polish_restyle_svg.md",
+      "destination": "reference_plans/Chemistry_1/TASK_PLAN_20_polish_restyle_svg.md",
+      "role": "planning-reference",
+      "bytes": 161501,
+      "sha256": "3d8ee0f95c4a8af88593e5161928d24f3c8d3805db2c3645a335fcba9f278a47",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_1/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 8463,
+      "sha256": "88b60b53804beda703b56598c3499cb19a694bce62fec7f9fcdd5217cdd1d7ca",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_1/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 22859,
+      "sha256": "aebf1c2d50f1bdaa2497fddfbd21e10696ee92d7a2a5b1ac09b25b29f080ae5f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_1/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 12159,
+      "sha256": "026bdc9539993564bc34f697795e2daedf18bc12a7e52bec74f9acc731868ab1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_1/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 28546,
+      "sha256": "32a39f81777ccd51ef982fd151320d9f7216846de53367f0529e3dd7c3727092",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_1/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 7337,
+      "sha256": "372c5e137f2d9c9cfa50e3e9613dd3c400b449f041a37d3887891589b141a016",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/AGENTS.md",
+      "destination": "reference_governance/Chemistry_1/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 24537,
+      "sha256": "f5516612b9488b15132a452e4a6585f7248506dcd4cac589be11360a37bbd246",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_1/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_1/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 5876,
+      "sha256": "67a2f792b3abe49c82bf74d579618132b9d1b1c778996c6eee3aa1c9c9b981f9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "destination": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "role": "canonical-master",
+      "bytes": 969738,
+      "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/2A_SEM_MCh_LV_Merijumi,grafiki_2025.pdf",
+      "destination": "materials/Chemistry_2/2A_SEM_MCh_LV_Merijumi,grafiki_2025.pdf",
+      "role": "course-source",
+      "bytes": 264616,
+      "sha256": "319dfef6e821b934005d8fa42301580fb5747ab456ae291fe5d95a57a628a00a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/2B_SEM_MCh_LV_Trauki,skidumi_2025.pdf",
+      "destination": "materials/Chemistry_2/2B_SEM_MCh_LV_Trauki,skidumi_2025.pdf",
+      "role": "course-source",
+      "bytes": 447395,
+      "sha256": "894b5fa3db4e044a6b994b788d0ca13b8e2e3b21b163c60ac1928ebfc00f854c",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.pdf",
+      "destination": "materials/Chemistry_2/2_SEM_MCh_LV_Trauki_Grafiki_Cipari_2026_Atbildes.pdf",
+      "role": "course-source",
+      "bytes": 556688,
+      "sha256": "bfe8fdd3da40d52084aa7f4d5c72253b0427fe74a2b27f00f2cd417a69980f5b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/2_Temata apraksts 2020.docx.pdf",
+      "destination": "materials/Chemistry_2/2_Temata apraksts 2020.docx.pdf",
+      "role": "course-source",
+      "bytes": 149209,
+      "sha256": "c7d423021bc7f661a4b1f35c4e731a9c06101d60791b54ee24c7c3aa7110ede5",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/Analitiskas-metodes_2024.pdf",
+      "destination": "materials/Chemistry_2/Analitiskas-metodes_2024.pdf",
+      "role": "course-source",
+      "bytes": 483215,
+      "sha256": "9d1aeafebc4f85a177119169560b31b48b2413a6e183c3fe4da4fe03ec7d896a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/sources.json",
+      "destination": "materials/Chemistry_2/build/sources.json",
+      "role": "supporting-reference-data",
+      "bytes": 6105,
+      "sha256": "65892beeec27c8bbb638595c4afb7a6ed3a0cb5b448f811c662769025d9d7144",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/claims.json",
+      "destination": "materials/Chemistry_2/build/claims.json",
+      "role": "supporting-reference-data",
+      "bytes": 16662,
+      "sha256": "c3ac24ebf8685cd159f5439850567415d78fa3d4d1c1c33ff3e7b565bd226f48",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/terminology.json",
+      "destination": "materials/Chemistry_2/build/terminology.json",
+      "role": "supporting-reference-data",
+      "bytes": 60757,
+      "sha256": "799c858fcbbc682dd194638a34d9e87bc02cddea81a828799f092f299b0666d6",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/sigfig_cases.json",
+      "destination": "materials/Chemistry_2/build/sigfig_cases.json",
+      "role": "supporting-reference-data",
+      "bytes": 11107,
+      "sha256": "94a528d9cbb9372d4fce7ea454721c252929517946b5a0d32d3f70f88a873537",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/graph_cases.json",
+      "destination": "materials/Chemistry_2/build/graph_cases.json",
+      "role": "supporting-reference-data",
+      "bytes": 5302,
+      "sha256": "1f119111c60c37f3a0ec62b1db7e8f09507828e87e8c0cec90cd3af34b31a51b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/exam_manifest.json",
+      "destination": "materials/Chemistry_2/build/exam_manifest.json",
+      "role": "supporting-reference-data",
+      "bytes": 1954,
+      "sha256": "bf589d856b32cf839803ffdab559bdc1229c3b5fa0691ef08fa26a7939c117ff",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/outcomes.json",
+      "destination": "materials/Chemistry_2/build/outcomes.json",
+      "role": "supporting-reference-data",
+      "bytes": 4152,
+      "sha256": "6e6c59cf90e472dfd93e694979c3dae88a375d9d8e8333962eb0012eeec06919",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/verified.json",
+      "destination": "materials/Chemistry_2/build/verified.json",
+      "role": "supporting-reference-data",
+      "bytes": 10682,
+      "sha256": "af0c1ab60fb28b0313da01797bdad349226c63c1bc0d17918066d9bef917219a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/canonical.py",
+      "destination": "materials/Chemistry_2/build/canonical.py",
+      "role": "supporting-reference-data",
+      "bytes": 11825,
+      "sha256": "63c3544641d1e242610d8bfd4aa05a56ad099ac563c3cfe297799ec151b2aac1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/build/figure_data.py",
+      "destination": "materials/Chemistry_2/build/figure_data.py",
+      "role": "supporting-reference-data",
+      "bytes": 8369,
+      "sha256": "77bd58e5dea7520e7b77fdb799a4f0ce24d7a4ca9dfcafee6d88df88ff36c0dc",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/1st_round_MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_2/1st_round_MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 165979,
+      "sha256": "5e4bf7a535b8766f4de05627d7050af0342a04ea19ef4ac2e49e8345c9628051",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_2/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 225243,
+      "sha256": "25d360d51c46a6a12e3b4899edd1aa95dd317e88ba269bbb983ddb5ab080f326",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/Master_2_tema_20_task_improvement_plan.md",
+      "destination": "reference_plans/Chemistry_2/Master_2_tema_20_task_improvement_plan.md",
+      "role": "planning-reference",
+      "bytes": 141002,
+      "sha256": "05f947df3df302b79a95a47a13bbef2271284a7ed13254db49950594949a47ec",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/Master_2_tema_20_task_plan_v2.md",
+      "destination": "reference_plans/Chemistry_2/Master_2_tema_20_task_plan_v2.md",
+      "role": "planning-reference",
+      "bytes": 187917,
+      "sha256": "3be204b455a1c46dc0012df0511256e9d5aa97cf7241ed48d15a368ecf488c6f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_2/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 7865,
+      "sha256": "d2d5cef19f7043509a54f0fdd93160775304bb0b0ff47a81c0467be6d921b8ab",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_2/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 6086,
+      "sha256": "a4a250fc66ff0d5aabf172204d333ad7110190380e70c92728bf84087ae5a31f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_2/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 10259,
+      "sha256": "65da5fa4b8c5b63d03f7c866b4b188d24c93306d0b7d2efdcdd3ec7b49013efa",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_2/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 18063,
+      "sha256": "86912bec39268a3ae2a45100f308c5ebaffa51d1396b3672f5e1e49cdac13c80",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_2/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 10931,
+      "sha256": "f69c36d9143e91b5e20be3c1a5c4836092fcd8a5ee7a79108edfe78bb4f844e9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/AGENTS.md",
+      "destination": "reference_governance/Chemistry_2/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 18932,
+      "sha256": "c1e1bae2b79944fc2c33d5e9eb1a252ce1c6eac9c8e5124ddf8cb6d659f965b0",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_2/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_2/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2202,
+      "sha256": "209cddbd9c8584fd1fc4090ff4c62c182d8b62536d06ef04b3abcd26f3d0bb92",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "destination": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "role": "canonical-master",
+      "bytes": 1039699,
+      "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/3. Sem_Koncentrāciju_apr_Darab_lapa_2020_MF.pdf",
+      "destination": "materials/Chemistry_3/3. Sem_Koncentrāciju_apr_Darab_lapa_2020_MF.pdf",
+      "role": "course-source",
+      "bytes": 891436,
+      "sha256": "90703a6b368e61ea85a362f903c7eebbbc0a0feb77ecbaf0eb216ebde8cef341",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/3. temata apraksts.pdf",
+      "destination": "materials/Chemistry_3/3. temata apraksts.pdf",
+      "role": "course-source",
+      "bytes": 143313,
+      "sha256": "2ec9400e2dffb1225f5feb0df350161ca2657703e7a40139593601646e9055c5",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/3_SEM_Atbildes_konc_papilduzd_pec_nodarb_2023.pdf",
+      "destination": "materials/Chemistry_3/3_SEM_Atbildes_konc_papilduzd_pec_nodarb_2023.pdf",
+      "role": "course-source",
+      "bytes": 302372,
+      "sha256": "ccacaec6ca713892da87d4b5d9d52da21a5b9f7dbe46fac47f8351f6982ba8a4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/3_Seminars_Koncentraciju aprekini_2023.docx",
+      "destination": "materials/Chemistry_3/3_Seminars_Koncentraciju aprekini_2023.docx",
+      "role": "course-source",
+      "bytes": 63449,
+      "sha256": "b11c4a4f3bfd07c1afcd10835626c0bfceaf7d70a634960a4f522537f7f32165",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/Papilduzdevumi. Koncentrāciju aprēķini. Atbildes. .pdf",
+      "destination": "materials/Chemistry_3/Papilduzdevumi. Koncentrāciju aprēķini. Atbildes. .pdf",
+      "role": "course-source",
+      "bytes": 606084,
+      "sha256": "6a95f97a97b02297870b3e06691d90d3a6754d0e888883d8c3789d4151930639",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/Papilduzdevumi. Koncentrāciju aprēķini..pdf",
+      "destination": "materials/Chemistry_3/Papilduzdevumi. Koncentrāciju aprēķini..pdf",
+      "role": "course-source",
+      "bytes": 319322,
+      "sha256": "7a70381a412a7691a0677570ec83f168bfd851b94ad590c44ded7aa634d8f3b8",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/conflicts.py",
+      "destination": "materials/Chemistry_3/build/conflicts.py",
+      "role": "supporting-reference-data",
+      "bytes": 39722,
+      "sha256": "a6d4c9032900cd91172e9cff912723b77b19192ec8ab8710bddd48b03843b41b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/calc.py",
+      "destination": "materials/Chemistry_3/build/calc.py",
+      "role": "supporting-reference-data",
+      "bytes": 19375,
+      "sha256": "f7d34ec180b94e1cc16422513df63efcf0f6e752425a678fe41aae6236e7d3c0",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/reference.py",
+      "destination": "materials/Chemistry_3/build/reference.py",
+      "role": "supporting-reference-data",
+      "bytes": 24707,
+      "sha256": "eaa14f1a0a8a17c803ef24c0f74b07d9b47540f09942164269f1446a2558df15",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/equations.py",
+      "destination": "materials/Chemistry_3/build/equations.py",
+      "role": "supporting-reference-data",
+      "bytes": 6911,
+      "sha256": "84656051da8b3f3b57dd89d43e72548dc960e7d3c20aaee7e60e33af2fcc3f75",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/error_cases.py",
+      "destination": "materials/Chemistry_3/build/error_cases.py",
+      "role": "supporting-reference-data",
+      "bytes": 14262,
+      "sha256": "a08e83462e1dc7c5802cd29a6e7073f91ae1f692a1eec346a98ace2432173cd4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/percent_basis.py",
+      "destination": "materials/Chemistry_3/build/percent_basis.py",
+      "role": "supporting-reference-data",
+      "bytes": 17370,
+      "sha256": "d475ac98eaa65b3f14e13569e6b8182b5ab57483dcc71544eff05b034903f69f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/unit_strips.py",
+      "destination": "materials/Chemistry_3/build/unit_strips.py",
+      "role": "supporting-reference-data",
+      "bytes": 9156,
+      "sha256": "4c545c073b5f4f3e8146e82d6b07e40879adda778a10201ce8e881dc63e3e2d9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/lexicon.py",
+      "destination": "materials/Chemistry_3/build/lexicon.py",
+      "role": "supporting-reference-data",
+      "bytes": 10783,
+      "sha256": "e0a9b9633b76c3cd2607eca80e1f1b2fcec420a5b840b44474714d735fb87246",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/build/taskbase.py",
+      "destination": "materials/Chemistry_3/build/taskbase.py",
+      "role": "supporting-reference-data",
+      "bytes": 3878,
+      "sha256": "e2e3580836218720a46893c8ce92a8201c44c5ff148cc01d64e1d59446622936",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_3/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 108151,
+      "sha256": "b720a710ffa7c7441de20521f29579e09712913376ac8a9a0d0e428bdd3e11ed",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/TASKS_20_Master_3_tema_Improvement_Plan.md",
+      "destination": "reference_plans/Chemistry_3/TASKS_20_Master_3_tema_Improvement_Plan.md",
+      "role": "planning-reference",
+      "bytes": 127158,
+      "sha256": "64fb059c8183986fe04292083816e3f27b9bf18655cdb2dc3c90e6ed880baec9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/TASKS_20_v2_Deep_Revision_Plan.md",
+      "destination": "reference_plans/Chemistry_3/TASKS_20_v2_Deep_Revision_Plan.md",
+      "role": "planning-reference",
+      "bytes": 119109,
+      "sha256": "59e1a1084f97c45bda3394f4ef933036c17be37ca810049904ecde83fcb3535c",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_3/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 8453,
+      "sha256": "5609cdd4f8dcf1e48798850015543f40bef7dd3222df44d5051393591807e381",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_3/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 1417,
+      "sha256": "d7fc07f5f0129b79f99c57a43f7c67209eded03ebca0e71159d730ca4e4feb3b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_3/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 9669,
+      "sha256": "2f2026665f43044e63e785de7c4f0984f30dff6f51246695743cb007c6fa875b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_3/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 35900,
+      "sha256": "94f442b7a652dd006a3454db4d97c22a2bafbe8caf621765cc1ab8559c8b52af",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_3/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 11714,
+      "sha256": "566997e196c66fa5e358a357f270c88cbc89984f9ca5391e8bee94f227c12e16",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/AGENTS.md",
+      "destination": "reference_governance/Chemistry_3/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 21833,
+      "sha256": "8244cfe94d7362d2d9281daddafd7637cb997a6a79117c4d206e80054054330e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_3/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_3/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2332,
+      "sha256": "7d7c4b92345d25248d30e1ec27afcd2f945e35caca81a29c1bb133da7e26a0ce",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/Master_4_temats_termodinamika.html",
+      "destination": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "role": "canonical-master",
+      "bytes": 2502506,
+      "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/4 temata apraksts.pdf",
+      "destination": "materials/Chemistry_4/4 temata apraksts.pdf",
+      "role": "course-source",
+      "bytes": 139068,
+      "sha256": "fd6a32aaa9a133c75f34a333325a38df33e1f5029211a6ed1e4f183876d598e5",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/4_SEM_Labor_Thermodynamics_2026_LV _Atbildes.pdf",
+      "destination": "materials/Chemistry_4/4_SEM_Labor_Thermodynamics_2026_LV _Atbildes.pdf",
+      "role": "course-source",
+      "bytes": 268902,
+      "sha256": "bb6227cdc419b1197eb7728de106ab166dc0595b866f80ad8aabe510841a993a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/4_SEM_Termodinamika_uzdevumi.pdf",
+      "destination": "materials/Chemistry_4/4_SEM_Termodinamika_uzdevumi.pdf",
+      "role": "course-source",
+      "bytes": 232085,
+      "sha256": "f09cf14dfdaf95a2019a4f231a85b8a5d0c1f50ba14091de1173c66dff7c8360",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/LW_Thermodynamics_2020_LV (2).pdf",
+      "destination": "materials/Chemistry_4/LW_Thermodynamics_2020_LV (2).pdf",
+      "role": "course-source",
+      "bytes": 229296,
+      "sha256": "d1955d5d46d067474d27fdb7a9d5793bf795de9e63c81fde91adf43d9b134c08",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/Termodinamika_pamatkonspekts_2026.pdf",
+      "destination": "materials/Chemistry_4/Termodinamika_pamatkonspekts_2026.pdf",
+      "role": "course-source",
+      "bytes": 684274,
+      "sha256": "753f7a0955c2b1ad55409eed0c2828f326d4162364846e0362fa3a57241f0c91",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/calc.json",
+      "destination": "materials/Chemistry_4/build/calc.json",
+      "role": "supporting-reference-data",
+      "bytes": 119532,
+      "sha256": "cc07d1660d56ae0068b23b770429dce9c83f6dd4570bcde2537b99aa93e034f8",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/calc.py",
+      "destination": "materials/Chemistry_4/build/calc.py",
+      "role": "supporting-reference-data",
+      "bytes": 138493,
+      "sha256": "1250666430aa1cb762f9523d02a9cf5a696614cb05ed1c23782eaf5a7c3131b1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/notation.json",
+      "destination": "materials/Chemistry_4/build/notation.json",
+      "role": "supporting-reference-data",
+      "bytes": 34105,
+      "sha256": "767fcb7a6ad7063958267836357160e4eadf0f500ba094823f0b9e5e83e65fd0",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/source_conflicts.json",
+      "destination": "materials/Chemistry_4/build/source_conflicts.json",
+      "role": "supporting-reference-data",
+      "bytes": 9473,
+      "sha256": "73dd6e2b09217188e8252ad6aa89377dcf33b5f772d31a41571c492fbb877821",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/data_recall.py",
+      "destination": "materials/Chemistry_4/build/data_recall.py",
+      "role": "supporting-reference-data",
+      "bytes": 103433,
+      "sha256": "f82e3cea3bca320246660537bb78376fe82c98b3c86ee516ef4392b61d021c53",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/tasks_data_part1.py",
+      "destination": "materials/Chemistry_4/build/tasks_data_part1.py",
+      "role": "supporting-reference-data",
+      "bytes": 44703,
+      "sha256": "0e882154a7391cee9c846ba037bac419e761617537a4258c78dfa148177c4660",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/tasks_data_part2.py",
+      "destination": "materials/Chemistry_4/build/tasks_data_part2.py",
+      "role": "supporting-reference-data",
+      "bytes": 60312,
+      "sha256": "fb2168548568b85957da75e863dfae035da415db0c9577f474b555586a636764",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/tasks_data_part3.py",
+      "destination": "materials/Chemistry_4/build/tasks_data_part3.py",
+      "role": "supporting-reference-data",
+      "bytes": 33528,
+      "sha256": "d667ca40ade3b59e4d3bc7472c73f33050d64f6e854e919fdb63be460c3d5e22",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/build/tasks_data_part4.py",
+      "destination": "materials/Chemistry_4/build/tasks_data_part4.py",
+      "role": "supporting-reference-data",
+      "bytes": 35736,
+      "sha256": "61a09c5373bd3daf1347c21fd796548a4273555f93ae54442666bbe84c1c9ffd",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/Chemistry_4th_2nd_round_enhanced_plan.md",
+      "destination": "reference_plans/Chemistry_4/Chemistry_4th_2nd_round_enhanced_plan.md",
+      "role": "planning-reference",
+      "bytes": 75075,
+      "sha256": "5e5830b1182968fcc2a53768170edf2f54f406afbfcda052ad474bc323fc4b67",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_4/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 154682,
+      "sha256": "147419e114ea6e7e78af408525df6805b34645d9c80509c585380956b4b6f5bc",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/TASKS_DEEP_INSPECTION_AND_IMPROVEMENTS.md",
+      "destination": "reference_plans/Chemistry_4/TASKS_DEEP_INSPECTION_AND_IMPROVEMENTS.md",
+      "role": "planning-reference",
+      "bytes": 196792,
+      "sha256": "47ae54912118d7e4532010d8c95b416b59bfd2a3dfe430be5c7b14255210c4b8",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_4/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 12768,
+      "sha256": "d17164b9349a2188e670c7c1dfa4fe1ce11a4acf5957a405fa285bf504067ff9",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_4/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 3306,
+      "sha256": "1b317cea65f511df0a57582d3553137ccc943282055bcfbe21cf5ca14430d1b1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_4/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 15723,
+      "sha256": "bd6e07def8c240a25d5e25e10aa9650043c8d6a73147080596bdbbc95c1b9f15",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_4/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 18828,
+      "sha256": "1ef10893242fbd66d47eb0fbb029d189b6b7b4c96dad50b4ec141df28c75b6cd",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_4/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 10926,
+      "sha256": "4c33df9767ba962024b18d266c959a90e798c4868b48375d5e450aa24d4c8f4e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/AGENTS.md",
+      "destination": "reference_governance/Chemistry_4/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 22744,
+      "sha256": "78fbb704244737fa1e31be31a424c7fe2e28f78814585be6ca939d9d441b49aa",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_4/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_4/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2202,
+      "sha256": "209cddbd9c8584fd1fc4090ff4c62c182d8b62536d06ef04b3abcd26f3d0bb92",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "destination": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "role": "canonical-master",
+      "bytes": 1518065,
+      "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/5. temata apraksts.pdf",
+      "destination": "materials/Chemistry_5/5. temata apraksts.pdf",
+      "role": "course-source",
+      "bytes": 144598,
+      "sha256": "3b7683b609a9b44d6541a8d5ab3328e9ad4046fe16379a65245618f8582ed775",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/5LD_Kinetics_Laboratorijas_darbs_Atbildes_2026.pdf",
+      "destination": "materials/Chemistry_5/5LD_Kinetics_Laboratorijas_darbs_Atbildes_2026.pdf",
+      "role": "course-source",
+      "bytes": 370385,
+      "sha256": "dc8b9eaa8320864b6c6084090bb0d35a319e87a7427a0048c7f34db08530ad4e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/5LW_MCh_Kinetics_2025_LV.pdf",
+      "destination": "materials/Chemistry_5/5LW_MCh_Kinetics_2025_LV.pdf",
+      "role": "course-source",
+      "bytes": 441140,
+      "sha256": "921c1ca2efe55d2004678a543399b79f770bcb73119791246a97ca702a9fea32",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/Kinetika.pdf",
+      "destination": "materials/Chemistry_5/Kinetika.pdf",
+      "role": "course-source",
+      "bytes": 545564,
+      "sha256": "e744e7c02bbcdccceb0bd5b79527d3be0881a2b60c6a14573f8ce90530753000",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/Kinetika_Katalize_2020.pdf",
+      "destination": "materials/Chemistry_5/Kinetika_Katalize_2020.pdf",
+      "role": "course-source",
+      "bytes": 595796,
+      "sha256": "621d3d208d9a8f60231cd0c27e4fe86303831857fdfd564161d0132d8a7cf01e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/MU_Kin_1_2015_cAB.pdf",
+      "destination": "materials/Chemistry_5/MU_Kin_1_2015_cAB.pdf",
+      "role": "course-source",
+      "bytes": 545663,
+      "sha256": "0316f9bd2369126f4f6b10e8026e658d1e03939b5dc269c98a88708ac270c235",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/SOURCES_AUDIT.md",
+      "destination": "materials/Chemistry_5/SOURCES_AUDIT.md",
+      "role": "supporting-reference-data",
+      "bytes": 25674,
+      "sha256": "0fbf740452bf2c5fbdae7de5ab28a1532f2ffbd81adc419ded7580c3d7728991",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/numbers.json",
+      "destination": "materials/Chemistry_5/numbers.json",
+      "role": "supporting-reference-data",
+      "bytes": 143419,
+      "sha256": "ca30a4edeaf70a0321db8864b903ea402b7c7ed8d0c200d13aa087de3a50f684",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/numbers_report.md",
+      "destination": "materials/Chemistry_5/numbers_report.md",
+      "role": "supporting-reference-data",
+      "bytes": 70704,
+      "sha256": "1bcc7e67a2d33cd527d7cd26ce68cb02e3b4bd0a83992ada0623e4965429a83d",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/glossary.json",
+      "destination": "materials/Chemistry_5/glossary.json",
+      "role": "supporting-reference-data",
+      "bytes": 34578,
+      "sha256": "134cfcf944bc3967f533038478303c9905adb5fac45d46a3441659cd136a83dd",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/glossary.csv",
+      "destination": "materials/Chemistry_5/glossary.csv",
+      "role": "supporting-reference-data",
+      "bytes": 12370,
+      "sha256": "fb4483f9971beaf0b7b8324a35e68b416e75c13e4087d8b441411ff0db2a9e85",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/termbase.json",
+      "destination": "materials/Chemistry_5/termbase.json",
+      "role": "supporting-reference-data",
+      "bytes": 74965,
+      "sha256": "50d16d8e4449691916b1b47f0b9f2a2067c856ec346ccc22588ccae7af734a72",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/notation.md",
+      "destination": "materials/Chemistry_5/notation.md",
+      "role": "supporting-reference-data",
+      "bytes": 4852,
+      "sha256": "d86ac419e47aeb8ac8f410d238411d247e9d9520131e78ade656062f1e60763a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/inhib_presets.json",
+      "destination": "materials/Chemistry_5/inhib_presets.json",
+      "role": "supporting-reference-data",
+      "bytes": 1226,
+      "sha256": "a7b861f540896a71d10436064cb4160e4c099c0b384d88ff0b9748a6e7de0a9f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/provenance_inventory.csv",
+      "destination": "materials/Chemistry_5/provenance_inventory.csv",
+      "role": "supporting-reference-data",
+      "bytes": 251906,
+      "sha256": "a4c5460f6f422e8b652bc48718639285b18f0963b05900f6644cf476627472c4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/tools/numbers_lib.py",
+      "destination": "materials/Chemistry_5/tools/numbers_lib.py",
+      "role": "supporting-reference-data",
+      "bytes": 4750,
+      "sha256": "95ff09f73c8227448ea29b89da35d013f39b0adf080ce8c18a41e112c9ccb433",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_5/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 189269,
+      "sha256": "88c0dfc77f00b524ef7b4cbb8c8579284cee2d9e8bbeaea7ba58978d9f27a6ef",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/PLAN_20_uzdevumi_kinetika_uzlabojumi.md",
+      "destination": "reference_plans/Chemistry_5/PLAN_20_uzdevumi_kinetika_uzlabojumi.md",
+      "role": "planning-reference",
+      "bytes": 119547,
+      "sha256": "02fe6215e4a5462e06945f5620709b280179b6c448d8239b7d6738ef562c6d97",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_5/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 8270,
+      "sha256": "596475c13a5e83b1f6f24cefda12268c6770a7430b6f1ebf9dad8155fee7ccea",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_5/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 2485,
+      "sha256": "f3f3bd57d08bfc1ff8496357da5235984e0c0b2c12d7c60c5277dcf6b54effdb",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_5/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 6398,
+      "sha256": "8dce908610fc18d27c61bca9929cecc50c717f875927d4d1249e9e4d7718ecbb",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_5/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 6952,
+      "sha256": "2140ee4fc7fa0154448e0c9bc70c149ac4d4c20f4173eaa3da9ad3a15ed87841",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_5/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 9088,
+      "sha256": "ea188d4c1acedcf170dbcf58e984b34fd6cf369401913a686c3fea03fe97bb57",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/AGENTS.md",
+      "destination": "reference_governance/Chemistry_5/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 15236,
+      "sha256": "d98df10732c9dec14f88eafd8de802c0237c418e1463987116eafd304406c9e4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_5/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_5/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2332,
+      "sha256": "7d7c4b92345d25248d30e1ec27afcd2f945e35caca81a29c1bb133da7e26a0ce",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "destination": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "role": "canonical-master",
+      "bytes": 1829918,
+      "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/13 temata apraksts.pdf",
+      "destination": "materials/Chemistry_6/13 temata apraksts.pdf",
+      "role": "course-source",
+      "bytes": 90809,
+      "sha256": "526a9a279e70a0a2d29b600955b20c0445bc7fa498d93e093bee1534f2781a9e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/6LW_MCh_Titration_Permanganatometrija_2025.pdf",
+      "destination": "materials/Chemistry_6/6LW_MCh_Titration_Permanganatometrija_2025.pdf",
+      "role": "course-source",
+      "bytes": 304528,
+      "sha256": "efa427d6d2fe2397180f1bc722a34fa4131a6eb6f620a865d32a1c503438b34a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/6LW_Ox-red_LV_2021.pdf",
+      "destination": "materials/Chemistry_6/6LW_Ox-red_LV_2021.pdf",
+      "role": "course-source",
+      "bytes": 210314,
+      "sha256": "46ba409205958133cd1b6b7060125991920dbff98fe58dc93b48333875e8c945",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/Oksidesana_reducesana_reakcijas_2020.pdf",
+      "destination": "materials/Chemistry_6/Oksidesana_reducesana_reakcijas_2020.pdf",
+      "role": "course-source",
+      "bytes": 207712,
+      "sha256": "49cf84496f7218dbc993a96d224cecae6efd717f93af40e02f6b7949b57eb365",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/Oksidesanas_reducesanas procesi_2022.docx",
+      "destination": "materials/Chemistry_6/Oksidesanas_reducesanas procesi_2022.docx",
+      "role": "course-source",
+      "bytes": 267117,
+      "sha256": "88a7df8b5c7ace088a28225aab5cab10bc403e54b36641d3ee5ebb10b6a544bf",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/SOURCE_AUDIT.md",
+      "destination": "materials/Chemistry_6/SOURCE_AUDIT.md",
+      "role": "supporting-reference-data",
+      "bytes": 25957,
+      "sha256": "eaa7b2fff48732a9371b6d07270a958beed83c593f2581d0c510b56b6d5f6e49",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/qa/sources.csv",
+      "destination": "materials/Chemistry_6/qa/sources.csv",
+      "role": "supporting-reference-data",
+      "bytes": 14101,
+      "sha256": "f8135c063df161fbfad926fc20230fc4031d797fc598d5bc7b1acf4ce2471ec7",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/qa/claims.csv",
+      "destination": "materials/Chemistry_6/qa/claims.csv",
+      "role": "supporting-reference-data",
+      "bytes": 40359,
+      "sha256": "d46a554e9fe5e5dc3868c7b9d1eeb90d5b66c05e676fae51b4dbcf577c4dfa80",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/qa/claims_method.md",
+      "destination": "materials/Chemistry_6/qa/claims_method.md",
+      "role": "supporting-reference-data",
+      "bytes": 17613,
+      "sha256": "e1a19f112cb7e9b3f6a4ac899828952746563bd20d50fc69e00f8337879fe1f0",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/qa/numbers.csv",
+      "destination": "materials/Chemistry_6/qa/numbers.csv",
+      "role": "supporting-reference-data",
+      "bytes": 22813,
+      "sha256": "dcdb91e735ed5f0dba7826df7336cbd9621361ad7050df3f1a5996782b325ad1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/qa/notation_standard.md",
+      "destination": "materials/Chemistry_6/qa/notation_standard.md",
+      "role": "supporting-reference-data",
+      "bytes": 2363,
+      "sha256": "6389b02b9693f1af3d5c96b752fee00fc672138d30434497272bf08c6781eb7b",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/tools/master_data.py",
+      "destination": "materials/Chemistry_6/tools/master_data.py",
+      "role": "supporting-reference-data",
+      "bytes": 139123,
+      "sha256": "f73a9753cbbfb8d8b821285e338af0bfffbfc21816b81dd4ba2f2686a31b9451",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/tools/study_data.py",
+      "destination": "materials/Chemistry_6/tools/study_data.py",
+      "role": "supporting-reference-data",
+      "bytes": 76663,
+      "sha256": "d1963fedda2beb6568113a9c8c6c577fe2c87167e233ed41828d9ad672d2f425",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/tools/check_balance.py",
+      "destination": "materials/Chemistry_6/tools/check_balance.py",
+      "role": "supporting-reference-data",
+      "bytes": 11643,
+      "sha256": "998cfcb07614b4160c5699095f2cd37ecfcc877fca694209ef19cbd08cade3ae",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/tools/termbase.py",
+      "destination": "materials/Chemistry_6/tools/termbase.py",
+      "role": "supporting-reference-data",
+      "bytes": 42829,
+      "sha256": "5583ae79fdcf5f95c10b19bec41b1dfe9c76d60c2e0b898cdaad00924a33b27e",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/tools/terms.csv",
+      "destination": "materials/Chemistry_6/tools/terms.csv",
+      "role": "supporting-reference-data",
+      "bytes": 5294,
+      "sha256": "cdfa68f1595815678203ead97ccb3ba75946204075883cdec21de5bfc862efc1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_6/MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 136773,
+      "sha256": "7ee469165e7490130a64ac73f5c1a50ecccd891829578fb4ae18bf44093fec44",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/lab-6b-integration-execution-plan.md",
+      "destination": "reference_plans/Chemistry_6/lab-6b-integration-execution-plan.md",
+      "role": "planning-reference",
+      "bytes": 44173,
+      "sha256": "e502623f75fc481d81ec9e5f0c091bd31d56ae3786621add3a0ff87a971e6bde",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_6/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 7568,
+      "sha256": "a2bb640f50538cc855c78448338b7b123b0df02f97c9269b0dd4467504cf80ae",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_6/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 40143,
+      "sha256": "5fa4e94e6ccacfcc2926fd3469be49ac460471c51731fca0e1d2292d90efd1f4",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_6/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 16203,
+      "sha256": "75bc85b65f3f615f25a2e4ff5643bc7f717378432130939ff41d20437b8f1794",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_6/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 33154,
+      "sha256": "9d3461de4d58612d34f5c6ee173d906ba55a1dadbbc093a13ca97bfc52a07684",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_6/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 9955,
+      "sha256": "f73810c3704e5ac512563503a36e07430b181f5e1815a01dfe026838b03f38fa",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/AGENTS.md",
+      "destination": "reference_governance/Chemistry_6/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 24544,
+      "sha256": "1a0a48ba1d62ac39bdd787e8cb730f98e6b23639e09ad60f0771c791186792e1",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_6/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_6/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2202,
+      "sha256": "209cddbd9c8584fd1fc4090ff4c62c182d8b62536d06ef04b3abcd26f3d0bb92",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "destination": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "role": "canonical-master",
+      "bytes": 348993,
+      "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/7_SEM_Optika_analize_2025.pdf",
+      "destination": "materials/Chemistry_7/7_SEM_Optika_analize_2025.pdf",
+      "role": "course-source",
+      "bytes": 379091,
+      "sha256": "7d7bccca30c38e10312e82153f7b9f0d81a1e684c5afd974b48b9c68e2ed2951",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/Absorbcija_LD_2022.docx",
+      "destination": "materials/Chemistry_7/Absorbcija_LD_2022.docx",
+      "role": "course-source",
+      "bytes": 371758,
+      "sha256": "95c1a7d01ff7d2deccb8f7af8b58ffa52914e5b6c224c65ee1a21b056f2bdfd6",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/LD_Spektrofotometrija_Paraugs.pdf",
+      "destination": "materials/Chemistry_7/LD_Spektrofotometrija_Paraugs.pdf",
+      "role": "course-source",
+      "bytes": 312295,
+      "sha256": "5ee9207ef4948f4d8091572bb573903373ebbddba78cc1ec3278b486430f55cf",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/terms-source.md",
+      "destination": "materials/Chemistry_7/plan/terms-source.md",
+      "role": "supporting-reference-data",
+      "bytes": 14956,
+      "sha256": "1e38d0d133c41e8ebd3534368fc485ffc6041d275e410cd86e1b1dbe3ead5942",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/errata.md",
+      "destination": "materials/Chemistry_7/plan/errata.md",
+      "role": "supporting-reference-data",
+      "bytes": 4099,
+      "sha256": "ea36592c61a6f86deb088278cd5692aa64e64594cda8bf9f11c66303522d4e13",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/claim-ledger.csv",
+      "destination": "materials/Chemistry_7/plan/claim-ledger.csv",
+      "role": "supporting-reference-data",
+      "bytes": 21627,
+      "sha256": "0ed4fda23cf7d0e4f6ce9a13a89946981262778b01ed63017d322b070788a93d",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/ledger-schema.md",
+      "destination": "materials/Chemistry_7/plan/ledger-schema.md",
+      "role": "supporting-reference-data",
+      "bytes": 6586,
+      "sha256": "c7a2eabd656b3e0cd319619862fc9143013f110486d96b9b24dfd645b1d5173a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/numbers.csv",
+      "destination": "materials/Chemistry_7/plan/numbers.csv",
+      "role": "supporting-reference-data",
+      "bytes": 23723,
+      "sha256": "d088c7e51b68e0a8076d6344112e8969ca750db6f8d456fbf2bddbc5ccf107a0",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/source-hashes.txt",
+      "destination": "materials/Chemistry_7/plan/source-hashes.txt",
+      "role": "supporting-reference-data",
+      "bytes": 384,
+      "sha256": "b6004d056b68941dba23f76d411058b35483b95d1d5249d81adccf46d03b1543",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/plan/calculator-input-contract.md",
+      "destination": "materials/Chemistry_7/plan/calculator-input-contract.md",
+      "role": "supporting-reference-data",
+      "bytes": 8779,
+      "sha256": "78dcfacfd60c9a3aea9beff78241b10632d1245700312706e48bf1d2108cdbb5",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/tools/data.py",
+      "destination": "materials/Chemistry_7/tools/data.py",
+      "role": "supporting-reference-data",
+      "bytes": 46986,
+      "sha256": "212fe0d1e3fd13d9555f5d2dcb482c42bc4374acf639606e79040dfb9d4d2499",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/Chemistry_7th_2nd_round__MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_7/Chemistry_7th_2nd_round__MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 138262,
+      "sha256": "0e21247c34149e14b299ab62011f0d1924a8018058921c720730f435ddaf8f1c",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/Tasks-Chemistry_7th_2nd_round__MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "destination": "reference_plans/Chemistry_7/Tasks-Chemistry_7th_2nd_round__MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "planning-reference",
+      "bytes": 123691,
+      "sha256": "a2c6fac0d6155be093c9165a9a97b397d91b72221d2cff97bd92178b9ef192af",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "destination": "reference_governance/Chemistry_7/docs/governance/ARCH_CSS_DOM_CONTRACTS.md",
+      "role": "archived-governance-reference",
+      "bytes": 17270,
+      "sha256": "9d6c96496de8645c70c152d9e75b2493f550f69856eed378cb5eb82b1d8a3d1a",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/docs/governance/CHANGELOG_ARCHIVE.md",
+      "destination": "reference_governance/Chemistry_7/docs/governance/CHANGELOG_ARCHIVE.md",
+      "role": "archived-governance-reference",
+      "bytes": 36618,
+      "sha256": "ba21ef47452e4e16480775ab35053590a6b125eaf923d2120524809b39eed5db",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "destination": "reference_governance/Chemistry_7/docs/governance/INFRA_PYTHON_TS_JS_AUDIT.md",
+      "role": "archived-governance-reference",
+      "bytes": 23060,
+      "sha256": "807bbbc8ed95b8bfe30703390d1349431b4d6a55e20a9d72bedc30ccdbca219d",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "destination": "reference_governance/Chemistry_7/docs/governance/OPEN_ISSUES_LEDGER.md",
+      "role": "archived-governance-reference",
+      "bytes": 51241,
+      "sha256": "9e5c54de4abfe96094e07a633d3c871a893235dbbc5a67d210c5dfe6cf17d3c8",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "destination": "reference_governance/Chemistry_7/docs/governance/TERMINOLOGY_AND_SOURCES.md",
+      "role": "archived-governance-reference",
+      "bytes": 16807,
+      "sha256": "c29464abeb1a115de7a6aea37febc8f484dfb63522229974c8cd6d79f000f564",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/AGENTS.md",
+      "destination": "reference_governance/Chemistry_7/AGENTS.snapshot.md",
+      "role": "archived-governance-reference",
+      "bytes": 24526,
+      "sha256": "b2e9434a7a7a23a59d3dabecce9df8be71db257dda2204eea3a50439ea4a79c8",
+      "copy_verified": true
+    },
+    {
+      "source": "Chemistry_7/VISUAL_VERIFICATION.md",
+      "destination": "reference_governance/Chemistry_7/VISUAL_VERIFICATION.md",
+      "role": "archived-governance-reference",
+      "bytes": 2544,
+      "sha256": "f20d21b106869865f7e5eed9232a55b2a7be79f8d1fb5b194c2d0861ddd8518f",
+      "copy_verified": true
+    }
+  ],
+  "scope_note": "Reference snapshot of masters, course documents, selected source/data records and plans; not a complete generator checkout. Archived governance is reference only."
+}

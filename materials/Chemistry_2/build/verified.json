@@ -1,0 +1,390 @@
+{
+  "calibration": {
+    "slope": 0.032165714285714284,
+    "intercept": 0.010600000000000017,
+    "r2": 0.9989330217687961,
+    "slope_origin": 0.03265494505494506,
+    "standards": [
+      {
+        "id": "1",
+        "rho": 5.0,
+        "A": 0.168,
+        "A_fit": 0.17142857142857146,
+        "residual_A": -0.0034285714285714475,
+        "residual_mgL": -0.10659086871558063,
+        "A_fit_lv": "0,1714",
+        "residual_A_lv": "−0,0034",
+        "residual_mgL_lv": "−0,11"
+      },
+      {
+        "id": "2",
+        "rho": 10.0,
+        "A": 0.341,
+        "A_fit": 0.33225714285714286,
+        "residual_A": 0.008742857142857163,
+        "residual_mgL": 0.2718067152247297,
+        "A_fit_lv": "0,3323",
+        "residual_A_lv": "+0,0087",
+        "residual_mgL_lv": "+0,27"
+      },
+      {
+        "id": "3",
+        "rho": 15.0,
+        "A": 0.495,
+        "A_fit": 0.49308571428571424,
+        "residual_A": 0.0019142857142857572,
+        "residual_mgL": 0.05951323503286686,
+        "A_fit_lv": "0,4931",
+        "residual_A_lv": "+0,0019",
+        "residual_mgL_lv": "+0,06"
+      },
+      {
+        "id": "4",
+        "rho": 20.0,
+        "A": 0.637,
+        "A_fit": 0.6539142857142858,
+        "residual_A": -0.01691428571428577,
+        "residual_mgL": -0.5258482856635299,
+        "A_fit_lv": "0,6539",
+        "residual_A_lv": "−0,0169",
+        "residual_mgL_lv": "−0,53"
+      },
+      {
+        "id": "5",
+        "rho": 25.0,
+        "A": 0.825,
+        "A_fit": 0.8147428571428571,
+        "residual_A": 0.010257142857142854,
+        "residual_mgL": 0.3188843489074435,
+        "A_fit_lv": "0,8147",
+        "residual_A_lv": "+0,0103",
+        "residual_mgL_lv": "+0,32"
+      },
+      {
+        "id": "6",
+        "rho": 30.0,
+        "A": 0.975,
+        "A_fit": 0.9755714285714285,
+        "residual_A": -0.0005714285714285561,
+        "residual_mgL": -0.01776514478592953,
+        "A_fit_lv": "0,9756",
+        "residual_A_lv": "−0,0006",
+        "residual_mgL_lv": "−0,02"
+      }
+    ],
+    "samples": [
+      {
+        "name": "Āboli",
+        "A": 0.845,
+        "c": 25.940664416414993,
+        "c1": 25.9,
+        "mg100": 25.9,
+        "reading_kind": "interpolācija"
+      },
+      {
+        "name": "Ķirbji",
+        "A": 0.312,
+        "c": 9.370225617338782,
+        "c1": 9.4,
+        "mg100": 9.4,
+        "reading_kind": "interpolācija"
+      },
+      {
+        "name": "Pētersīļa lapas",
+        "A": 0.828,
+        "c": 25.412151359033576,
+        "c1": 25.4,
+        "mg100": 25.4,
+        "reading_kind": "interpolācija"
+      },
+      {
+        "name": "Dilles",
+        "A": 0.768,
+        "c": 23.546811156510927,
+        "c1": 23.5,
+        "mg100": 23.5,
+        "reading_kind": "interpolācija"
+      },
+      {
+        "name": "Citroni",
+        "A": 0.982,
+        "c": 30.199857878841712,
+        "c1": 30.2,
+        "mg100": 30.2,
+        "reading_kind": "ekstrapolācija"
+      },
+      {
+        "name": "Mellenes",
+        "A": 0.795,
+        "c": 24.38621424764612,
+        "c1": 24.4,
+        "mg100": 24.4,
+        "reading_kind": "interpolācija"
+      }
+    ],
+    "range_rho_min": 5.0,
+    "range_rho_max": 30.0,
+    "range_A_min": 0.168,
+    "range_A_max": 0.975,
+    "residual_sign_pattern_lv": "−, +, +, −, +, −",
+    "largest_residual_A_lv": "−0,0169",
+    "largest_residual_mgL_lv": "−0,53",
+    "largest_residual_at_rho": 20.0,
+    "r2_alone_insufficient": true,
+    "no_lod_loq_invented": true,
+    "reported_slope": "0.0322",
+    "reported_intercept": "0.0106",
+    "reported_r2": "0.9989",
+    "full_slope": "0.0321657",
+    "reported_line": "A = 0.0322·ρ + 0.0106"
+  },
+  "q3": {
+    "vals": [
+      12.5,
+      13.05,
+      12.55
+    ],
+    "sum": 38.1,
+    "mean": 12.700000000000001,
+    "n": 3,
+    "df": 2,
+    "ss": 0.18500000000000028,
+    "sd": 0.30413812651491123,
+    "sd_div_n": 0.24832774042918918,
+    "sem": 0.17559422921421247,
+    "sem_n10": 0.0961769203083568,
+    "t": 4.3,
+    "t_n10": 2.3,
+    "ci": 0.7550551856211136,
+    "ci_n10": 0.22120691670922063,
+    "reported_mean": "12,70",
+    "reported_sd": "0,304",
+    "reported_sd_div_n": "0,248",
+    "reported_sem": "0,176",
+    "reported_sem_n10": "0,096",
+    "reported_ci_half": "0,76",
+    "reported_ci_n10": "0,22",
+    "range": 0.5500000000000007,
+    "gap": 0.5,
+    "dixon_q": 0.909090909090908,
+    "dixon_crit": 0.941,
+    "mean_without_1305": 12.525
+  },
+  "q4": {
+    "mg_to_g": 0.4,
+    "gml_to_gl": 500.0,
+    "acid_gl": 147.0
+  },
+  "half_life": {
+    "hg_d": 46.595,
+    "hg_h": 1118.28,
+    "hg_min": 67096.8,
+    "hg_s": 4025808.0,
+    "hg_k": 0.014875999153556075,
+    "hg_t0": 0.0,
+    "hg_course_value_d": 46.595,
+    "hg_course_unit_quoted": "diennakts",
+    "hg_course_locator": "2026 Atbildes Q8, 5. lpp.",
+    "hg_policy": "use_course_value",
+    "hg_nudat_ensdf_d": 46.61,
+    "hg_nudat_ensdf_unc_d": 0.01,
+    "hg_nudat_ensdf_ref": "F.G. Kondev, Nucl. Data Sheets 177, 509 (2021); NuDat 203Hg ground state 5/2−, T½ = 46.610(10) d",
+    "hg_ddep_d": 46.594,
+    "hg_ddep_unc_d": 0.012,
+    "hg_ddep_ref": "LNHB-DDEP / Woods et al. IAEA-CRP 2004WoZZ; Nichols comments Jan 2004: 46.594(12) d",
+    "hyd_t0": 115,
+    "hyd_s": 220,
+    "hyd_min": 3.6666666666666665,
+    "hyd_h": 0.06111111111111111,
+    "hyd_d": 0.0025462962962962965,
+    "hyd_halvings": [
+      115,
+      355,
+      580
+    ],
+    "hyd_deltas": [
+      240,
+      225
+    ],
+    "hyd_mean_dt": 232.5,
+    "hyd_key_reading_s": 220,
+    "hyd_eye_mean_s": 232.5,
+    "offset_demo": {
+      "schema": 1,
+      "kind": "illustrative",
+      "label_lv": "ilustratīvs piemērs, nevis kursa dati",
+      "t_half_min": 60.0,
+      "t0_min": 40.0,
+      "c0": 0.08,
+      "times_min": [
+        40.0,
+        98.0,
+        161.0
+      ],
+      "levels": [
+        0.08,
+        0.04,
+        0.02
+      ],
+      "deltas_min": [
+        58.0,
+        63.0
+      ],
+      "elapsed_min": [
+        0.0,
+        58.0,
+        121.0
+      ],
+      "mean_dt_min": 60.5,
+      "spread_min": 5.0,
+      "model_c": [
+        0.08,
+        0.040934955679871,
+        0.019770280407057923
+      ],
+      "model_dev_pct": [
+        0.0,
+        -2.2840031565754155,
+        1.1619440301922477
+      ],
+      "x_abs_max": 180.0,
+      "x_elapsed_max": 130.0
+    }
+  },
+  "density": {
+    "empty": 48.37,
+    "salt": 5.02,
+    "full": 151.71,
+    "solution_mass": 103.34,
+    "flask_volume_mL": 100.0,
+    "rho": 1.0334,
+    "w_line": 4.863013698630149,
+    "w_direct": 4.857751112831429,
+    "w_from_reported_rho": 4.8082191780821795,
+    "line_at_1": 1.0052,
+    "line_at_4": 1.0271,
+    "line_at_10": 1.0709,
+    "table_1_293": 1.00534,
+    "table_4_293": 1.0268,
+    "table_6_293": 1.04127,
+    "table_4_298": 1.0253,
+    "table_6_298": 1.03963,
+    "reported_rho": "1.033",
+    "intermediate_rho": "1.0334",
+    "reported_w_direct": "4.86",
+    "reported_w_graph": "4.9",
+    "line_equation": "ρ = 0.0073·w + 0.9979",
+    "routes_schema": 2,
+    "volume_policy": "final_solution_volume",
+    "line_temperature_C": 20,
+    "unit_g_per_mL_to_kg_per_m3": 1000,
+    "rho_kg_per_m3": 1033.4,
+    "s16_quote": "izšķīdināti 100 mL šķīdinātāja",
+    "s16_locator": "2026 Atbildes Q7",
+    "s16_interpretation": "final_volume_100_mL_in_volumetric_flask",
+    "procedure_locator": "2B Q3, 4. lpp.; līdz atzīmei",
+    "unit_checks": [
+      {
+        "id": "mass",
+        "from": "g",
+        "to": "mg",
+        "factor": 1000,
+        "direction": "divide"
+      },
+      {
+        "id": "volume",
+        "from": "mL",
+        "to": "L",
+        "factor": 1000,
+        "direction": "divide"
+      },
+      {
+        "id": "density",
+        "from": "g/mL",
+        "to": "kg/m³",
+        "factor": 1000,
+        "direction": "multiply"
+      },
+      {
+        "id": "fraction",
+        "from": "fraction",
+        "to": "%",
+        "factor": 100,
+        "direction": "multiply"
+      }
+    ],
+    "routes": [
+      {
+        "id": "w",
+        "need": "w",
+        "have": "m_solute, m_solution",
+        "formula": "w = m(solute)/m(solution)",
+        "volume": "not_required",
+        "tool": "w",
+        "class_lv": "Masas daļa w (daļa vai %)",
+        "units_lv": "abi lielumi gramos; % = w·100",
+        "exclude_lv": "saucējā tikai šķīdinātāja masa vai tilpums; m(viela) ≥ m(šķīdums)"
+      },
+      {
+        "id": "rho",
+        "need": "rho",
+        "have": "m_solution, V",
+        "formula": "ρ = m/V",
+        "volume": "final_flask_mark",
+        "tool": "rho",
+        "class_lv": "Blīvums ρ (g/mL, g/cm³, kg/m³)",
+        "units_lv": "m g, V mL → g/mL; ×1000 → kg/m³",
+        "exclude_lv": "V ir pievienotā šķīdinātāja tilpums, nevis gala tilpums (S16); m ietver tukšo kolbu"
+      },
+      {
+        "id": "conc",
+        "need": "gamma_c",
+        "have": "w_percent, rho_g_per_mL, M",
+        "formula": "γ = w·ρ·10; c = γ/M",
+        "volume": "embedded_in_rho",
+        "tool": "conc",
+        "class_lv": "Masas koncentrācija γ (g/L) un molārā koncentrācija c (mol/L)",
+        "units_lv": "w %, ρ g/mL, M g/mol; faktors 10 tikai šim pārim",
+        "exclude_lv": "w un ρ dažādās temperatūrās; ρ kā koncentrācija; M kg/mol"
+      },
+      {
+        "id": "dil",
+        "need": "c2",
+        "have": "c1, V1, V2",
+        "formula": "c1·V1 = c2·V2",
+        "volume": "V2_final_after_dilution",
+        "tool": "dil",
+        "class_lv": "Atšķaidīšana: c1 → c2",
+        "units_lv": "V1 un V2 vienā mērvienībā: mL ar mL vai L ar L",
+        "exclude_lv": "V2 ir pievienotā ūdens tilpums; tilpumi dažādās mērvienībās; c1 nav zināma"
+      },
+      {
+        "id": "graph",
+        "need": "w_from_rho",
+        "have": "rho, temperature",
+        "formula": "w = (ρ − 0,9979)/0,0073",
+        "volume": "embedded_in_rho",
+        "tool": null,
+        "class_lv": "Masas daļa w no blīvuma, ja masas nav zināmas",
+        "units_lv": "ρ g/mL; taisne tikai 0–10 % un 20 °C; citādi tabula un interpolācija",
+        "exclude_lv": "ρ ārpus 0–12 % diapazona; temperatūra nav 20 °C; nav kalibrētas ρ–w sakarības"
+      }
+    ]
+  },
+  "sigfig": {
+    "Q1_add": "161.00",
+    "Q4c_product": "147.0000",
+    "Q4c_product_guard": "147.0000",
+    "Q3_avg3": "12.70",
+    "avg2_unrounded": "12.525",
+    "avg2_halfup": "12.53",
+    "S23_once": "1.11",
+    "S23_double": "1.12",
+    "Q4b_chain": "500.00",
+    "dilution": "0.0100",
+    "sub_div": "1.0334",
+    "interp_prefix": "4.863013698630",
+    "mul_345_08": "2.760",
+    "rounding_convention_half_up": "pedagogical; avotā nav norādīts"
+  }
+}

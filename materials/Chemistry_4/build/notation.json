@@ -1,0 +1,922 @@
+{
+  "version": "F02-1",
+  "symbols": [
+    {
+      "id": "Q",
+      "html": "<var>Q</var>",
+      "name": "Sistēmas uzņemtais siltums",
+      "en": "heat absorbed by the system",
+      "unit": "J vai kJ",
+      "sign": "+ ja sistēma saņem siltumu",
+      "anchor": "#sign-ledger",
+      "note": "Kursa konvencija Q = ΔU + A."
+    },
+    {
+      "id": "q",
+      "html": "<var>q</var>",
+      "name": "Siltums (IUPAC apzīmējums)",
+      "en": "heat",
+      "unit": "J vai kJ",
+      "sign": "+ ja sistēma saņem siltumu",
+      "anchor": "#sign-ledger",
+      "note": "ΔU = q + w; q ir tā pati siltuma bilance."
+    },
+    {
+      "id": "qp",
+      "html": "<var>q</var><sub>p</sub>",
+      "name": "Izobārais siltums",
+      "en": "heat at constant pressure",
+      "unit": "J vai kJ",
+      "sign": "= ΔH",
+      "anchor": "#ch4",
+      "note": "q_p = ΔH tikai pie p = const."
+    },
+    {
+      "id": "Qizd",
+      "html": "<var>Q</var><sub>izd.</sub>",
+      "name": "Izdalītais siltums",
+      "en": "heat released to surroundings",
+      "unit": "J vai kJ",
+      "sign": "= −ΔH; + eksotermiskai reakcijai",
+      "anchor": "#ch4",
+      "note": "Lieto tikai ar vārdu «izdalītais»."
+    },
+    {
+      "id": "A",
+      "html": "<var>A</var>",
+      "name": "Sistēmas veiktais darbs",
+      "en": "work done by the system",
+      "unit": "J vai kJ",
+      "sign": "+ ja sistēma izplešas",
+      "anchor": "#ch3",
+      "note": "A = pΔV; IUPAC w = −A."
+    },
+    {
+      "id": "w",
+      "html": "<var>w</var>",
+      "name": "Apkārtnes veiktais darbs pār sistēmu",
+      "en": "work done on the system",
+      "unit": "J vai kJ",
+      "sign": "+ ja apkārtne saspiež sistēmu",
+      "anchor": "#ch3",
+      "note": "w = −A; ΔU = q + w."
+    },
+    {
+      "id": "dU",
+      "html": "Δ<var>U</var>",
+      "name": "Iekšējās enerģijas izmaiņa",
+      "en": "change in internal energy",
+      "unit": "kJ vai J",
+      "sign": "+ ja sistēmas enerģija pieaug",
+      "anchor": "#ch3",
+      "note": "ΔU = Q − A = q + w."
+    },
+    {
+      "id": "dH",
+      "html": "Δ<var>H</var>",
+      "name": "Entalpijas izmaiņa",
+      "en": "enthalpy change",
+      "unit": "kJ vai kJ/mol",
+      "sign": "− eksotermisks; + endotermisks",
+      "anchor": "#ch4",
+      "note": "H = U + pV."
+    },
+    {
+      "id": "dH0",
+      "html": "Δ<var>H</var>°",
+      "name": "Standartentalpijas izmaiņa",
+      "en": "standard enthalpy change",
+      "unit": "kJ/mol",
+      "sign": "− eksotermisks; + endotermisks",
+      "anchor": "#ch5",
+      "note": "Standartstāvoklis; tabulās parasti 298,15 K."
+    },
+    {
+      "id": "dfH0",
+      "html": "Δ<sub>f</sub><var>H</var>°",
+      "name": "Standarta veidošanās entalpija",
+      "en": "standard enthalpy of formation",
+      "unit": "kJ/mol",
+      "sign": "0 vienkāršām vielām stabilākajā fāzē pie p° = 1 bar",
+      "anchor": "#ch5",
+      "note": "Entalpijas izmaiņa, veidojoties 1 mol savienojuma no vienkāršām vielām standartstāvoklī (p° = 1 bar, norādītā T)."
+    },
+    {
+      "id": "dcH0",
+      "html": "Δ<sub>c</sub><var>H</var>°",
+      "name": "Standarta sadegšanas entalpija",
+      "en": "standard enthalpy of combustion",
+      "unit": "kJ/mol",
+      "sign": "vienmēr negatīvs (eksotermisks)",
+      "anchor": "#ch5",
+      "note": "Entalpijas izmaiņa, pilnīgi sadegot 1 mol vielas skābeklī līdz augstākajiem oksīdiem standartstāvoklī."
+    },
+    {
+      "id": "dG",
+      "html": "Δ<var>G</var>",
+      "name": "Gibsa brīvās enerģijas izmaiņa",
+      "en": "Gibbs free-energy change",
+      "unit": "kJ vai kJ/mol",
+      "sign": "− patvaļīgs; + nepatvaļīgs",
+      "anchor": "#ch7",
+      "note": "ΔG = ΔH − TΔS."
+    },
+    {
+      "id": "dG0",
+      "html": "Δ<var>G</var>°",
+      "name": "Standarta Gibsa enerģijas izmaiņa",
+      "en": "standard Gibbs free-energy change",
+      "unit": "kJ/mol",
+      "sign": "− patvaļīgs standartstāvoklī",
+      "anchor": "#ch7",
+      "note": "ΔG° = −RT ln K."
+    },
+    {
+      "id": "dGprime",
+      "html": "Δ<var>G</var>°′",
+      "name": "Bioķīmiskā standartstāvokļa Gibsa izmaiņa",
+      "en": "biochemical standard Gibbs free-energy change",
+      "unit": "kJ/mol",
+      "sign": "− eksergonisks; + endergonisks",
+      "anchor": "#ch11",
+      "note": "pH 7,0, [Mg²⁺] = 1 mM, [H₂O] = 55,5 M; ATF hidrolīzei −30,5 kJ/mol."
+    },
+    {
+      "id": "dGcell",
+      "html": "Δ<var>G</var><sub>šūnā</sub>",
+      "name": "Faktiskā šūnas Gibsa enerģijas izmaiņa",
+      "en": "actual cellular Gibbs free-energy change",
+      "unit": "kJ/mol",
+      "sign": "− eksergonisks šūnas apstākļos",
+      "anchor": "#ch11",
+      "note": "ΔG = ΔG°′ + RT ln Q; šūnā ATF hidrolīzei −50 līdz −55 kJ/mol pie 310,15 K."
+    },
+    {
+      "id": "dS",
+      "html": "Δ<var>S</var>",
+      "name": "Entropijas izmaiņa",
+      "en": "entropy change",
+      "unit": "J/(mol·K) vai J/K",
+      "sign": "+ ja nekārtība/izkliede pieaug",
+      "anchor": "#ch6",
+      "note": "Nejauc J ar kJ pirms TΔS."
+    },
+    {
+      "id": "dSorg",
+      "html": "Δ<var>S</var><sub>org</sub>",
+      "name": "Organisma entropijas izmaiņa",
+      "en": "organism entropy change",
+      "unit": "J/K",
+      "sign": "var būt −; Visuma ΔS joprojām > 0",
+      "anchor": "#ch10",
+      "note": "Atvērta sistēma; nav izolēta."
+    },
+    {
+      "id": "dSenv",
+      "html": "Δ<var>S</var><sub>env</sub>",
+      "name": "Apkārtnes entropijas izmaiņa",
+      "en": "environment entropy change",
+      "unit": "J/K",
+      "sign": "= −ΔH/T pie nemainīgas T",
+      "anchor": "#ch10",
+      "note": "Organisma izdalītais siltums palielina apkārtnes S."
+    },
+    {
+      "id": "dSvis",
+      "html": "Δ<var>S</var><sub>vis</sub>",
+      "name": "Visuma entropijas izmaiņa",
+      "en": "universe entropy change",
+      "unit": "J/K",
+      "sign": "+ patvaļīgam procesam",
+      "anchor": "#ch10",
+      "note": "ΔS_vis = ΔS_org + ΔS_env > 0."
+    },
+    {
+      "id": "diS",
+      "html": "d<sub>i</sub><var>S</var>",
+      "name": "Iekšējā entropijas produkcija",
+      "en": "internal entropy production",
+      "unit": "J/K",
+      "sign": "≥ 0",
+      "anchor": "#ch10",
+      "note": "Prigožina dekompozīcija."
+    },
+    {
+      "id": "deS",
+      "html": "d<sub>e</sub><var>S</var>",
+      "name": "Entropijas apmaiņa ar apkārtni",
+      "en": "entropy exchange",
+      "unit": "J/K",
+      "sign": "var būt − vai +",
+      "anchor": "#ch10",
+      "note": "dS = d_iS + d_eS."
+    },
+    {
+      "id": "nu",
+      "html": "<var>ν</var>",
+      "name": "Stehiometriskais koeficients",
+      "en": "stoichiometric coefficient",
+      "unit": "bez dimensijas",
+      "sign": "− izejvielām; + produktiem",
+      "anchor": "#ch5",
+      "note": "Hesā ΣνΔ_fH°."
+    },
+    {
+      "id": "xi",
+      "html": "<var>ξ</var>",
+      "name": "Reakcijas gaita",
+      "en": "extent of reaction",
+      "unit": "mol",
+      "sign": "0 sākumā; + virzienā uz produktiem",
+      "anchor": "#ch7",
+      "note": "G(ξ) minimums dod līdzsvaru."
+    },
+    {
+      "id": "Q_rxn",
+      "html": "<var>Q</var>",
+      "name": "Reakcijas kvocients (koeficients)",
+      "en": "reaction quotient",
+      "unit": "bez dimensijas",
+      "sign": "Q < K ⇒ ΔrG < 0 (tiešais virziens); Q = K ⇒ līdzsvars",
+      "anchor": "#ch7",
+      "note": "Δ_rG = Δ_rG° + RT ln Q; bezdimensiju termodinamisko aktivitāšu attiecība."
+    },
+    {
+      "id": "K",
+      "html": "<var>K</var>",
+      "name": "Līdzsvara konstante",
+      "en": "equilibrium constant",
+      "unit": "bez dimensijas (termodinamiskā)",
+      "sign": "K > 1 ⇒ ΔG° < 0",
+      "anchor": "#ch7",
+      "note": "ΔG° = −RT ln K."
+    },
+    {
+      "id": "Tcross",
+      "html": "<var>T</var><sub>krusta</sub>",
+      "name": "Krustpunkta temperatūra",
+      "en": "crossover temperature",
+      "unit": "K",
+      "sign": "ΔG = 0; tikai ja ΔH un ΔS ir vienādas zīmes (abi + vai abi −)",
+      "anchor": "#ch7",
+      "note": "T_krusta = ΔH·1000/ΔS pieņem ΔH un ΔS nemainību ar T (ΔCp ≈ 0); nedrīkst ekstrapolēt pāri fāžu pārejām."
+    },
+    {
+      "id": "Ckal",
+      "html": "<var>C</var><sub>kal.</sub>",
+      "name": "Kalorimetra siltumietilpība",
+      "en": "calorimeter heat capacity",
+      "unit": "J/K",
+      "sign": "+ pievieno q = C_kal·ΔT",
+      "anchor": "#ch9",
+      "note": "Nejauc ar īpatnējo c."
+    },
+    {
+      "id": "c",
+      "html": "<var>c</var>",
+      "name": "Īpatnējā siltumietilpība",
+      "en": "specific heat capacity",
+      "unit": "J/(g·K)",
+      "sign": "ūdenim 4,184",
+      "anchor": "#ch8",
+      "note": "q = c·m·ΔT."
+    },
+    {
+      "id": "m",
+      "html": "<var>m</var>",
+      "name": "Masa",
+      "en": "mass",
+      "unit": "g vai kg",
+      "sign": "pozitīva",
+      "anchor": "#ch8",
+      "note": "Kalorimetrijā m = ρV."
+    },
+    {
+      "id": "nlim",
+      "html": "<var>n</var><sub>lim.</sub>",
+      "name": "Limitējošā reaģenta daudzums",
+      "en": "limiting amount",
+      "unit": "mol",
+      "sign": "pozitīvs",
+      "anchor": "#ch9",
+      "note": "ΔH_r = −q/n_lim."
+    },
+    {
+      "id": "states",
+      "html": "(s), (l), (g), (aq)",
+      "name": "Agregātstāvokļa apzīmējumi",
+      "en": "state symbols",
+      "unit": "—",
+      "sign": "—",
+      "anchor": "#ch2",
+      "note": "Cietviela, šķidrums, gāze, šķīdums."
+    },
+    {
+      "id": "Ea",
+      "html": "<var>E</var><sub>a</sub>",
+      "name": "Aktivācijas enerģija",
+      "en": "activation energy",
+      "unit": "kJ/mol",
+      "sign": "kinētisks lielums, nevis ΔH",
+      "anchor": "#ch4",
+      "note": "Katalizators samazina E_a, ne ΔH."
+    },
+    {
+      "id": "W",
+      "html": "<var>W</var>",
+      "name": "Mikrostāvokļu skaits",
+      "en": "number of microstates",
+      "unit": "bez dimensijas",
+      "sign": "vesels skaitlis ≥ 1",
+      "anchor": "#ch6",
+      "note": "S = k_B ln W."
+    },
+    {
+      "id": "kB",
+      "html": "<var>k</var><sub>B</sub>",
+      "name": "Bolcmaņa konstante",
+      "en": "Boltzmann constant",
+      "unit": "J/K",
+      "sign": "1,380649 × 10⁻²³",
+      "anchor": "#ch6",
+      "note": "S = k_B ln W."
+    },
+    {
+      "id": "R",
+      "html": "<var>R</var>",
+      "name": "Gāzu konstante",
+      "en": "gas constant",
+      "unit": "J/(mol·K)",
+      "sign": "8,314462618",
+      "anchor": "#ch7",
+      "note": "ΔG° = −RT ln K."
+    },
+    {
+      "id": "T",
+      "html": "<var>T</var>",
+      "name": "Temperatūra",
+      "en": "temperature",
+      "unit": "K (vai °C ar pārrēķinu)",
+      "sign": "termodinamikā > 0 K",
+      "anchor": "#ch3",
+      "note": "0 °C = 273,15 K."
+    },
+    {
+      "id": "p",
+      "html": "<var>p</var>",
+      "name": "Spiediens",
+      "en": "pressure",
+      "unit": "Pa vai kPa",
+      "sign": "pozitīvs",
+      "anchor": "#ch2",
+      "note": "Standartspiediens 1 bar = 100 kPa."
+    },
+    {
+      "id": "V",
+      "html": "<var>V</var>",
+      "name": "Tilpums",
+      "en": "volume",
+      "unit": "m³ vai L",
+      "sign": "pozitīvs",
+      "anchor": "#ch2",
+      "note": "A = pΔV."
+    },
+    {
+      "id": "n",
+      "html": "<var>n</var>",
+      "name": "Vielas daudzums",
+      "en": "amount of substance",
+      "unit": "mol",
+      "sign": "pozitīvs",
+      "anchor": "#ch2",
+      "note": "n_lim. laboratorijā."
+    },
+    {
+      "id": "U",
+      "html": "<var>U</var>",
+      "name": "Iekšējā enerģija",
+      "en": "internal energy",
+      "unit": "kJ vai J",
+      "sign": "absolūto U nenosaka; tikai ΔU",
+      "anchor": "#ch3",
+      "note": "ΔU = Q − A."
+    },
+    {
+      "id": "H",
+      "html": "<var>H</var>",
+      "name": "Entalpija",
+      "en": "enthalpy",
+      "unit": "kJ vai kJ/mol",
+      "sign": "H = U + pV; q_p = ΔH",
+      "anchor": "#ch4",
+      "note": "Nav siltumsaturs."
+    }
+  ],
+  "local_symbols": [
+    "C",
+    "Cal",
+    "Cm",
+    "E",
+    "F",
+    "G",
+    "G(ξ)",
+    "J",
+    "L",
+    "M",
+    "N",
+    "Ṅ",
+    "P",
+    "QV",
+    "Qp",
+    "REE",
+    "RQ",
+    "S",
+    "T S",
+    "TS",
+    "V̇",
+    "X",
+    "c m",
+    "cal",
+    "dH",
+    "f",
+    "g",
+    "h",
+    "hν",
+    "k",
+    "m g h",
+    "m v",
+    "nRT",
+    "p V",
+    "pV",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "η",
+    "Ckal",
+    "Tkr",
+    "R T",
+    "RT"
+  ],
+  "convention_schema": [
+    {
+      "system": "termodinamiskā gāzes sistēma",
+      "boundary": "kontroles tilpums ar kustīgu virzuli",
+      "heat_direction": "into_system (+Q, +q)",
+      "work_direction": "by_system (+A, −w)",
+      "symbol": "Q = ΔU + A ⇔ ΔU = q + w",
+      "symbol_course": "Q = ΔU + A",
+      "symbol_iupac": "ΔU = q + w",
+      "work_relation": "w = −A",
+      "equivalent_dU": true,
+      "source": "K 2. lpp. (2),(3); Atkins 2. nod.; IUPAC Gold Book"
+    },
+    {
+      "system": "termodinamiskā gāzes sistēma",
+      "boundary": "kontroles tilpums ar kustīgu virzuli",
+      "heat_direction": "out_of_system (−Q, −q, jeb +Q_izd)",
+      "work_direction": "on_system (−A, +w)",
+      "symbol": "Q = ΔU + A (Q < 0, A < 0) ⇔ ΔU = q + w (q < 0, w > 0)",
+      "symbol_course": "Q = ΔU + A  (Q < 0, A < 0)",
+      "symbol_iupac": "ΔU = q + w  (q < 0, w > 0)",
+      "work_relation": "w = −A",
+      "equivalent_dU": true,
+      "source": "K 2. lpp.; IUPAC Gold Book"
+    },
+    {
+      "system": "kalorimetra šķīdums (laboratorija)",
+      "boundary": "termiski izolēta vārglāze pie p=const (ΔV≈0)",
+      "heat_direction": "into_solution (+q_šķīdums no eksotermiskas reakcijas)",
+      "work_direction": "none (A = 0, w = 0)",
+      "symbol": "q_šķīdums = c·m·ΔT; Q_izd = q_šķīdums; ΔH_r = −q_šķīdums / n",
+      "symbol_course": "q_šķīdums = c·m·ΔT; Q_izd = q_šķīdums; ΔH_r = −q_šķīdums / n",
+      "symbol_iupac": "q_p = ΔH_r < 0; w = 0; ΔU ≈ ΔH_r",
+      "work_relation": "w = 0",
+      "equivalent_dU": true,
+      "source": "L 2. lpp.; LA 2. lpp.; S1, S36"
+    }
+  ],
+  "terminology_ledger": [
+    {
+      "id": "TERM-01-endergonisks",
+      "headword": "endergonisks process",
+      "en": "endergonic process",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Termodinamisks process nemainīgā spiedienā un temperatūrā, kurā Gibsa brīvā enerģija pieaug (ΔG > 0); process tiešajā virzienā nav patvaļīgs un norit tikai ar ārēja lietderīgā darba pievadi vai eksergoniskas reakcijas sajūgšanu.",
+      "source": "U5; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S29",
+      "avoid": [
+        "enderģisks",
+        "enderģiska",
+        "enderģisks process",
+        "enderģiska reakcija"
+      ],
+      "use": "endergonisks process / endergoniska reakcija (ΔG > 0); nedrīkst jaukt ar endotermisks (ΔH > 0)",
+      "warrant": "Grieķu sakne ἔργον (ergon = darbs), priedēklis ἐν (en = iekšā). Akadēmiskajā latviešu un starptautiskajā ķīmijas terminoloģijā pareizā forma ir endergonisks (ar piedēkli -onisks); forma enderģisks ir kļūdains pārnesums.",
+      "glossary_anchor": "#glossary-endergonisks-process"
+    },
+    {
+      "id": "TERM-02-eksergonisks",
+      "headword": "eksergonisks process",
+      "en": "exergonic process",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Termodinamisks process nemainīgā spiedienā un temperatūrā, kurā Gibsa brīvā enerģija samazinās (ΔG < 0); process ir termodinamiski patvaļīgs un spēj veikt lietderīgu ārēju darbu.",
+      "source": "U5; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S29",
+      "avoid": [
+        "ekserģisks",
+        "ekserģiska",
+        "ekserģisks process",
+        "ekserģiska reakcija"
+      ],
+      "use": "eksergonisks process / eksergoniska reakcija (ΔG < 0); nedrīkst jaukt ar eksotermisks (ΔH < 0)",
+      "warrant": "Grieķu sakne ἔργον (ergon = darbs), priedēklis ἐξ (ex = ārā). Standarta akadēmiskā forma latviešu valodā ir eksergonisks.",
+      "glossary_anchor": "#glossary-eksergonisks-process"
+    },
+    {
+      "id": "TERM-03-entalpija",
+      "headword": "entalpija",
+      "en": "enthalpy",
+      "inflection": "sieviešu dzimte, 4. deklinācija",
+      "definition": "Termodinamiska stāvokļa funkcija H ≡ U + pV. Konstantā spiedienā (p = const) tās izmaiņa ΔH atbilst sistēmas uzņemtajam vai izdalītajam siltumam q_p.",
+      "source": "K 3. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S3",
+      "avoid": [
+        "siltumsaturs",
+        "siltuma saturs"
+      ],
+      "use": "entalpija H; vēsturiski saukta par siltumsaturu, taču mūsdienās šis termins ir noraidīts",
+      "warrant": "Grieķu ἐν (iekšā) + θάλπειν (thalpein = sildīt). Siltums ir procesa lielums (enerģija pārejā), nevis stāvokļa funkcija; sistēmā nav uzkrāta siltuma satura (kalorika teorijas relikts).",
+      "glossary_anchor": "#glossary-entalpija"
+    },
+    {
+      "id": "TERM-04-leicins",
+      "headword": "leicīns",
+      "en": "leucine (Leu)",
+      "inflection": "vīriešu dzimte, 1. deklinācija, simbols Leu",
+      "definition": "Proteinogēna hidrofoba sazarotās ķēdes aminoskābe. Starptautiskais IUPAC trīsburtu kods ir Leu.",
+      "source": "U3, U4; IUPAC-IUBMB",
+      "provenance": "P",
+      "defect_id": "S30",
+      "avoid": [
+        "Lei",
+        "leicilglicīns kā Lei-Gly"
+      ],
+      "use": "Leu; dipeptīds Leu–Gly (leicilglicīns)",
+      "warrant": "IUPAC un IUBMB standartizētais trīsburtu saīsinājums ir Leu; U uzdevumu lapā lietotais Lei ir nestandarta drukas kļūda.",
+      "glossary_anchor": "#glossary-sajugtas-reakcijas"
+    },
+    {
+      "id": "TERM-05-stavokla-parametrs",
+      "headword": "stāvokļa parametrs",
+      "en": "state variable / parameter",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Tieši izmērāms vai fiksējams makroskopisks lielums (p, V, T, n, c), kas viennozīmīgi nosaka sistēmas termodinamisko stāvokli un nav atkarīgs no tā sasniegšanas priekšvēstures.",
+      "source": "K 1. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S26",
+      "avoid": [
+        "stāvokļa funkcijas V, n, T, p, c"
+      ],
+      "use": "stāvokļa parametri (lielumi): p, V, T, n, c; atšķirt no stāvokļa funkcijām",
+      "warrant": "Parametri ir tieši mērāmi neatkarīgie vai atkarīgie stāvokļa mainīgie; tie nav matemātiski potenciāli.",
+      "glossary_anchor": "#glossary-stavokla-parametrs"
+    },
+    {
+      "id": "TERM-06-stavokla-funkcija",
+      "headword": "stāvokļa funkcija",
+      "en": "state function",
+      "inflection": "sieviešu dzimte, 4. deklinācija, salikts termins",
+      "definition": "Sistēmas termodinamisks lielums (U, H, S, G, F), kura izmaiņa ΔX ir atkarīga tikai no sistēmas sākuma un beigu stāvokļa, nevis no procesa ceļa (∮ dX = 0).",
+      "source": "K 1. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S26",
+      "avoid": [
+        "siltums un darbs kā stāvokļa funkcijas"
+      ],
+      "use": "stāvokļa funkcijas: U, H, S, G, F; siltums un darbs ir procesa (ceļa) lielumi",
+      "warrant": "Stāvokļa funkcijas izmaiņa ir pilns diferenciālis (exact differential); siltumam un darbam diferenciālis ir nepilns (ceļa atkarīgs).",
+      "glossary_anchor": "#glossary-stavokla-funkcija"
+    },
+    {
+      "id": "TERM-07-standartstavoklis",
+      "headword": "standartstāvoklis",
+      "en": "standard state",
+      "inflection": "vīriešu dzimte, 1. deklinācija",
+      "definition": "IUPAC definēts atskaites stāvoklis vielai vai maisījumam pie standarta spiediena p° = 1 bar = 100 kPa. Temperatūra nav standartstāvokļa sastāvdaļa, tā jānorāda atsevišķi (parasti 298,15 K).",
+      "source": "K 4., 19. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S6",
+      "avoid": [
+        "standartapstākļi (1 atm, 25 °C)",
+        "2980 K"
+      ],
+      "use": "standartstāvoklis (p° = 1 bar = 100 kPa); T jānorāda atsevišķi (parasti 298,15 K)",
+      "warrant": "IUPAC kopš 1982. gada standarta spiedienu definē kā 1 bar (100 kPa), nevis 1 atm (101,325 kPa). Konspekta 2980 K ir drukas kļūda (jābūt 298,15 K).",
+      "glossary_anchor": "#glossary-standartstavoklis"
+    },
+    {
+      "id": "TERM-08-veidosanas-entalpija",
+      "headword": "standarta veidošanās entalpija",
+      "en": "standard enthalpy of formation",
+      "inflection": "sieviešu dzimte, 4. deklinācija, salikts termins",
+      "definition": "Reakcijas entalpijas izmaiņa standartstāvoklī, veidojoties 1 molam savienojuma no vienkāršām vielām to stabilākajā termodinamiskajā modifikācijā (Δ_fH°).",
+      "source": "K 4. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S7",
+      "avoid": [
+        "rašanās siltums",
+        "elementa pašas entalpija ir nulle"
+      ],
+      "use": "standarta veidošanās entalpija Δ_fH°; vienkāršām vielām standartstāvoklī Δ_fH° = 0",
+      "warrant": "Absolūto entalpiju H nevar izmērīt; nulles vērtība ir piešķirta veidošanās entalpijai elementu stabilākajām formām standartstāvoklī.",
+      "glossary_anchor": "#glossary-standarta-veidosanas-entalpija"
+    },
+    {
+      "id": "TERM-09-sadegsanas-entalpija",
+      "headword": "standarta sadegšanas entalpija",
+      "en": "standard enthalpy of combustion",
+      "inflection": "sieviešu dzimte, 4. deklinācija, salikts termins",
+      "definition": "Entalpijas izmaiņa, 1 molam vielas pilnīgi sadegot skābeklī standartstāvoklī līdz augstākajiem oksīdiem (simbols Δ_cH°).",
+      "source": "K 5. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S8",
+      "avoid": [
+        "sadegšanas gadījumā nelieto standartentalpijas"
+      ],
+      "use": "standarta sadegšanas entalpija Δ_cH°; Hesa likumā: izejvielas mīnus produkti",
+      "warrant": "Sadegšanas entalpijas tiek tabulētas tieši tāpat standartstāvoklī pie p° = 1 bar.",
+      "glossary_anchor": "#glossary-standarta-sadegsanas-entalpija"
+    },
+    {
+      "id": "TERM-10-homeostaze",
+      "headword": "homeostāze",
+      "en": "homeostasis",
+      "inflection": "sieviešu dzimte, 4. deklinācija",
+      "definition": "Organisma spēja uzturēt iekšējās vides fizikāli ķīmisko parametru dinamisko stabilitāti atvērtā stacionārā stāvoklī tālu no līdzsvara.",
+      "source": "K 15. lpp.; Cannon 1926",
+      "provenance": "P",
+      "defect_id": "S21",
+      "avoid": [
+        "homeostāze no latīņu valodas"
+      ],
+      "use": "homeostāze (grieķu: ὅμοιος homoios + στάσις stasis = stāvēšana līdzīgā stāvoklī)",
+      "warrant": "Terminu 1926. gadā radīja Valters Kennons no diviem sengrieķu, nevis latīņu vārdiem.",
+      "glossary_anchor": "#glossary-homeostaze"
+    },
+    {
+      "id": "TERM-11-kimiotrofs",
+      "headword": "ķīmiotrofs",
+      "en": "chemotroph",
+      "inflection": "vīriešu dzimte, 1. deklinācija",
+      "definition": "Organisms, kas dzīvības uzturēšanai nepieciešamo brīvo enerģiju iegūst no ķīmisko savienojumu oksidēšanās reakcijām.",
+      "source": "K 16. lpp.; IUPAC / LZA TK",
+      "provenance": "V",
+      "defect_id": "S22",
+      "avoid": [
+        "hemotrofs"
+      ],
+      "use": "ķīmiotrofs (chemotroph) [V]; kursa konspektā sastopams hemotrofs",
+      "warrant": "Grieķu sakne χημεία (chēmeia) + τροφή (trophē). Pareizā akadēmiskā latviešu forma ir ķīmiotrofs; hemotrofs ir novecojis krievu kalks.",
+      "glossary_anchor": "#glossary-metabolisms"
+    },
+    {
+      "id": "TERM-12-dislapekla-tetraoksids",
+      "headword": "dislāpekļa tetraoksīds",
+      "en": "dinitrogen tetroxide",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Slāpekļa oksīds N₂O₄, kas atrodas dinamiskā līdzsvarā ar slāpekļa dioksīdu: N₂O₄(g) ⇌ 2NO₂(g).",
+      "source": "K 19. lpp.; IUPAC Red Book",
+      "provenance": "P",
+      "defect_id": "S25",
+      "avoid": [
+        "dislāpekļa dioksīds par N2O4"
+      ],
+      "use": "dislāpekļa tetraoksīds N₂O₄",
+      "warrant": "Formulas vienībā ir četri skābekļa atomi (tetraoksīds), nevis divi (dioksīds ir NO₂).",
+      "glossary_anchor": "#glossary-standartstavoklis"
+    },
+    {
+      "id": "TERM-13-hlorida-jons",
+      "headword": "hlorīda jons",
+      "en": "chloride ion",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Hlora anjons Cl⁻ ar oksidēšanas pakāpi −1.",
+      "source": "L 2. lpp.; IUPAC Red Book",
+      "provenance": "P",
+      "defect_id": null,
+      "avoid": [
+        "hlora jons"
+      ],
+      "use": "hlorīda jons Cl⁻",
+      "warrant": "IUPAC anjonu nomenklatūra prasa izskaņu -īds (hlorīds, oksīds, sulfīds).",
+      "glossary_anchor": "#glossary-limitejosais-reagents"
+    },
+    {
+      "id": "TERM-14-oksonija-jons",
+      "headword": "oksonija jons",
+      "en": "oxonium ion / hydronium ion",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Protonēta ūdens molekula H₃O⁺ (hidratēts ūdeņraža katjons).",
+      "source": "LA 2. lpp.; IUPAC Gold Book",
+      "provenance": "V",
+      "defect_id": "S34",
+      "avoid": [
+        "hidroksonijs bez oksonija norādes"
+      ],
+      "use": "oksonija (vai hidroksonija) jons H₃O⁺ [V]",
+      "warrant": "IUPAC standarta nosaukums ir oksonija jons; kursā un medicīnas literatūrā plaši lieto hidroksonija jons.",
+      "glossary_anchor": "#glossary-limitejosais-reagents"
+    },
+    {
+      "id": "TERM-15-ipatneja-siltumietilpiba",
+      "headword": "īpatnējā siltumietilpība",
+      "en": "specific heat capacity",
+      "inflection": "sieviešu dzimte, 4. deklinācija, salikts termins",
+      "definition": "Siltuma daudzums, kas jāpievada 1 g vielas, lai paaugstinātu tās temperatūru par 1 K; simbols c, mērvienība J/(g·K).",
+      "source": "L 1. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S37",
+      "avoid": [
+        "siltumkapacitāte J/(g·K)"
+      ],
+      "use": "īpatnējā siltumietilpība c (J/(g·K)); siltumietilpība C (J/K)",
+      "warrant": "Siltumietilpība C ir ekstensīvs lielums visam ķermenim (J/K); intensīvais lielums uz masas vienību ir īpatnējā siltumietilpība c.",
+      "glossary_anchor": "#glossary-ipatneja-siltumietilpiba"
+    },
+    {
+      "id": "TERM-16-atvota-faktori",
+      "headword": "Atvota faktori",
+      "en": "Atwater factors / physiological fuel values",
+      "inflection": "vīriešu dzimte, daudzskaitlis, 1. deklinācija",
+      "definition": "Uzturvielu fizioloģiski izmantojamās enerģijas rādītāji: ogļhidrātiem 4 kcal/g, taukiem 9 kcal/g, olbaltumvielām 4 kcal/g.",
+      "source": "K 17.–18. lpp.; Atwater 1900",
+      "provenance": "P",
+      "defect_id": "S24",
+      "avoid": [
+        "bumbas kalorimetrs dod 9/4/4 kcal/g"
+      ],
+      "use": "Atvota fizioloģiskie faktori (metabolizējamā enerģija) atšķiras no bumbas kalorimetrā mērītā bruto sadegšanas siltuma q_V",
+      "warrant": "Bumbas kalorimetrā olbaltumvielas sadeg līdz N₂ (~5,65 kcal/g); organismā galaprodukts ir urīnviela (~4,0 kcal/g).",
+      "glossary_anchor": "#glossary-atvota-faktori"
+    },
+    {
+      "id": "TERM-17-atf",
+      "headword": "adenozīntrifosfāts (ATF)",
+      "en": "adenosine triphosphate (ATP)",
+      "inflection": "vīriešu dzimte, 1. deklinācija, abreviatūra ATF",
+      "definition": "Universāls šūnas bioenerģētikas starpnieks; standarta hidrolīzes brīvā enerģija pie pH 7,0 ir ΔG°′ = −30,5 kJ/mol.",
+      "source": "K 16. lpp.; Lehninger 2021",
+      "provenance": "P",
+      "defect_id": "S22",
+      "avoid": [
+        "ATP kā vienīgā latviešu forma tekstā",
+        "makroerģiskā saite satur enerģiju"
+      ],
+      "use": "ATF (latviešu kursa tekstā); ATP ir angļu valodas un inventāra alias",
+      "warrant": "Latviešu ķīmijas un bioķīmijas nomenklatūrā lieto saīsinājumu ATF; ATP ir starptautiskais angļu kods.",
+      "glossary_anchor": "#glossary-atf"
+    },
+    {
+      "id": "TERM-18-mikrostavoklu-skaits",
+      "headword": "mikrostāvokļu skaits W",
+      "en": "number of microstates (W)",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Sistēmas mikroskopisko stāvokļu kopskaits, kas realizē doto makrostāvokli; vesels skaitlis W ≥ 1 formulā S = k_B ln W.",
+      "source": "K 9. lpp.; Boltzmann 1877",
+      "provenance": "P",
+      "defect_id": "S13",
+      "avoid": [
+        "termodinamiskā varbūtība w",
+        "w kā skaitlis 0 līdz 1"
+      ],
+      "use": "mikrostāvokļu skaits W (vesels skaitlis W ≥ 1)",
+      "warrant": "W nav matemātiskā varbūtība (0 ≤ p ≤ 1), bet gan realizācijas veidu skaits.",
+      "glossary_anchor": "#glossary-mikrostavoklis"
+    },
+    {
+      "id": "TERM-19-patvaligs-process",
+      "headword": "patvaļīgs process",
+      "en": "spontaneous process",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Process, kas dotajos apstākļos noris pats no sevis bez nepārtrauktas enerģijas pievades no ārpuses (pie T, p = const: ΔG < 0).",
+      "source": "K 6. lpp.; IUPAC Gold Book",
+      "provenance": "A",
+      "defect_id": "S9",
+      "avoid": [
+        "patvaļīgs nozīmē ātrs"
+      ],
+      "use": "patvaļīgs process (termodinamiskais dzinējspēks); ātrumu nosaka kinētiskā barjera E_a",
+      "warrant": "Termodinamiskā patvaļība nosaka virzienu un iespējamību, bet ātrums ir atkarīgs no kinētikas.",
+      "glossary_anchor": "#glossary-patvaligs-process"
+    },
+    {
+      "id": "TERM-20-nepatvaligs-process",
+      "headword": "nepatvaļīgs process",
+      "en": "non-spontaneous process",
+      "inflection": "vīriešu dzimte, 1. deklinācija, salikts termins",
+      "definition": "Process, kuram dotajos apstākļos ΔG > 0 pie T, p = const; atsevišķi nenoris, bet šūnā tiek virzīts caur sajūgšanu ar ATF hidrolīzi.",
+      "source": "K 6., 12. lpp.; IUPAC Gold Book",
+      "provenance": "P",
+      "defect_id": "S17",
+      "avoid": [
+        "termodinamiski aizliegta reakcija"
+      ],
+      "use": "nepatvaļīgs kā izolēts process; šūnā norit sajūgtā reakcijā",
+      "warrant": "Reakcija ar ΔG > 0 nav pilnīgi aizliegta, bet gan prasa brīvās enerģijas ieguldījumu no sajūgtas eksergoniskas reakcijas.",
+      "glossary_anchor": "#glossary-nepatvaligs-process"
+    }
+  ],
+  "claim_c11": {
+    "claim_id": "C11",
+    "status": "VERIFIED",
+    "workstream": "Terminology & Sourcing",
+    "description": "Standardized Latvian terminology, amino acid abbreviations, and glossary warrants aligned with IUPAC and course scope",
+    "positive_vector": {
+      "statement": "canonical Latvian term and glossary equivalent align across notation, glossary, and assessment",
+      "mappings": [
+        {
+          "lv": "endergonisks process",
+          "en": "endergonic process",
+          "glossary_anchor": "#glossary-endergonisks-process",
+          "recall_concept": "GIBBS.criterion",
+          "exam_id": "SH-02"
+        },
+        {
+          "lv": "eksergonisks process",
+          "en": "exergonic process",
+          "glossary_anchor": "#glossary-eksergonisks-process",
+          "recall_concept": "GIBBS.criterion",
+          "exam_id": "SH-03"
+        },
+        {
+          "lv": "leicīns (Leu)",
+          "en": "leucine (Leu)",
+          "glossary_anchor": "#glossary-sajugtas-reakcijas",
+          "recall_concept": "PROB.Q3",
+          "symbol_code": "Leu"
+        },
+        {
+          "lv": "stāvokļa parametrs",
+          "en": "state variable / parameter",
+          "glossary_anchor": "#glossary-stavokla-parametrs",
+          "recall_concept": "SYS.statevar",
+          "exam_id": "SH-04"
+        },
+        {
+          "lv": "stāvokļa funkcija",
+          "en": "state function",
+          "glossary_anchor": "#glossary-stavokla-funkcija",
+          "recall_concept": "SYS.statefunction",
+          "exam_id": "SH-04"
+        },
+        {
+          "lv": "entalpija",
+          "en": "enthalpy",
+          "glossary_anchor": "#glossary-entalpija",
+          "recall_concept": "ENTH.definition",
+          "symbol_id": "H"
+        },
+        {
+          "lv": "standartstāvoklis",
+          "en": "standard state",
+          "glossary_anchor": "#glossary-standartstavoklis",
+          "recall_concept": "HESS.standardState",
+          "symbol_id": "dH0"
+        },
+        {
+          "lv": "adenozīntrifosfāts (ATF)",
+          "en": "adenosine triphosphate (ATP)",
+          "glossary_anchor": "#glossary-atf",
+          "recall_concept": "ATF.coupling",
+          "symbol_id": "dGprime"
+        }
+      ],
+      "alignment_verified": true
+    },
+    "negative_fixture": {
+      "statement": "enderģisks used as canonical answer fails",
+      "banned_canonical_terms": [
+        "enderģisks",
+        "enderģiska",
+        "ekserģisks",
+        "ekserģiska",
+        "siltumsaturs",
+        "nesakātots"
+      ],
+      "exam_bank_rejects_banned_terms": true,
+      "recall_answers_reject_banned_terms": true
+    },
+    "boundary_condition": {
+      "statement": "source quotations and correction ledger remain traceable with S-ID links",
+      "quoted_exceptions_allowed": true,
+      "all_banned_occurrences_traced_to_defects": true,
+      "provenance_tagged_a_p_v": true
+    }
+  }
+}

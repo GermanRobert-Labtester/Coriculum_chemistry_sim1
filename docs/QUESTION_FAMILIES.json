@@ -1,0 +1,1331 @@
+{
+  "schema_version": 1,
+  "status": "planned",
+  "families": [
+    {
+      "family_id": "FAM-1A",
+      "topic": 1,
+      "title_lv": "Maisījumu, vielu klašu un reakciju klasifikācija",
+      "question_types": [
+        "Q07",
+        "Q13"
+      ],
+      "programme_outcomes": [
+        "P1-02",
+        "P1-03",
+        "P1-04"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "NaCl(aq), ūdens un smiltis; klasificē fāzes un vielu klases",
+          "seed_key": "FAM-1A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "CuO + H₂; atšķir aizvietošanu no redoksa un pieļauj abus",
+          "seed_key": "FAM-1A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "CaCO₃ sadalīšanās; atrodi nepareizu reakcijas tipu",
+          "seed_key": "FAM-1A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Izveido pretpiemēru apgalvojumam, ka visi maisījumi ir heterogēni",
+          "seed_key": "FAM-1A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-1B",
+      "topic": 1,
+      "title_lv": "Daļiņas, saites un disociācija",
+      "question_types": [
+        "Q06",
+        "Q14",
+        "Q15"
+      ],
+      "programme_outcomes": [
+        "P1-05",
+        "P1-06",
+        "P1-07"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "NaCl, H₂O un glikoze; atomi/joni/molekulas, disociācija",
+          "seed_key": "FAM-1B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "MgCl₂; uzraksti jonus un skaidro elektrovadītspēju",
+          "seed_key": "FAM-1B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Labot apgalvojumu: šķīšana vienmēr veido jonus",
+          "seed_key": "FAM-1B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Salīdzināt jonu un kovalentu saiti ar dotiem piemēriem",
+          "seed_key": "FAM-1B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-1C",
+      "topic": 1,
+      "title_lv": "Bilance un stehiometrija",
+      "question_types": [
+        "Q04",
+        "Q02"
+      ],
+      "programme_outcomes": [
+        "P1-01",
+        "P1-03"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Mg + O₂ → MgO; m(Mg)=4,80 g, M(Mg)=24,0 g/mol",
+          "seed_key": "FAM-1C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Al + O₂ → Al₂O₃; n(Al)=0,200 mol",
+          "seed_key": "FAM-1C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "CaCO₃ → CaO + CO₂; no produkta masas atrod sākuma masu",
+          "seed_key": "FAM-1C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Dotā nepareizā bilance; salabo un izskaidro masas nezūdamību",
+          "seed_key": "FAM-1C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-1D",
+      "topic": 1,
+      "title_lv": "Tabulas un nogulsnēšanās",
+      "question_types": [
+        "Q16",
+        "Q04"
+      ],
+      "programme_outcomes": [
+        "P1-08",
+        "P1-09"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Dota šķīdības tabula: Na₂CO₃ + CaCl₂; saīsināts jonu vienādojums",
+          "seed_key": "FAM-1D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Dota tabula: AgNO₃ + NaCl; pamato nogulsnes",
+          "seed_key": "FAM-1D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dota tabula: NaNO₃ + KCl; pamato, kāpēc nav neto reakcijas",
+          "seed_key": "FAM-1D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "No dotās periodiskās tabulas atrodi M un prognozē jona lādiņu",
+          "seed_key": "FAM-1D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-2A",
+      "topic": 2,
+      "title_lv": "Trauki un mērījuma izvēle",
+      "question_types": [
+        "Q06",
+        "Q08",
+        "Q07"
+      ],
+      "programme_outcomes": [
+        "P2-01",
+        "P2-04"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Pagatavot precīzu tilpumu; izvēlies mērkolbu un pipeti, secība",
+          "seed_key": "FAM-2A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Atšķirt bireti, mērcilindru un vārglāzi pēc lietojuma",
+          "seed_key": "FAM-2A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Svari + pipetes uzpildītājs; kvalitatīvi/kvantitatīvi novērojumi",
+          "seed_key": "FAM-2A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot trauku izvēli dotā atšķaidīšanas procedūrā",
+          "seed_key": "FAM-2A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-2B",
+      "topic": 2,
+      "title_lv": "Vienības, proporcijas un zīmīgie cipari",
+      "question_types": [
+        "Q01",
+        "Q09",
+        "Q13"
+      ],
+      "programme_outcomes": [
+        "P2-02",
+        "P2-03",
+        "P2-05",
+        "P2-06",
+        "P2-10"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "0,00450 kg → mg; pēc tam reizini mērījumus un noapaļo",
+          "seed_key": "FAM-2B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "2,50×10⁻⁶ mol → μmol; nano-, kilo-, mega-, giga- tabula",
+          "seed_key": "FAM-2B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "25,0 °C → K; 18,40−2,15 mL un dalīšanas zīmīgie cipari",
+          "seed_key": "FAM-2B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Apgrieztā proporcija, procenti un kļūdaina 10³ reizinātāja labojums",
+          "seed_key": "FAM-2B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-2C",
+      "topic": 2,
+      "title_lv": "Skala un menisks",
+      "question_types": [
+        "Q10",
+        "Q01"
+      ],
+      "programme_outcomes": [
+        "P2-07",
+        "P2-10"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Birete: 2,15 un 18,40 mL, iedaļa 0,1 mL",
+          "seed_key": "FAM-2C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Birete: 0,35 un 21,70 mL; vertikālā skala aug uz leju",
+          "seed_key": "FAM-2C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Svari: digitāls 1,204 g; atšķir digitālu un analogu nolasījumu",
+          "seed_key": "FAM-2C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Mērcilindra menisks; nosaki diapazonu un nepamatotu papildu ciparu",
+          "seed_key": "FAM-2C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-2D",
+      "topic": 2,
+      "title_lv": "Grafika veidošana un nolasīšana",
+      "question_types": [
+        "Q11",
+        "Q12"
+      ],
+      "programme_outcomes": [
+        "P2-08",
+        "P2-09"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "c/A dati ar pozitīvu nogriezni; izvēlies asis un interpolē",
+          "seed_key": "FAM-2D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Laiks/koncentrācija; izvēlies skalu un nolasījumu",
+          "seed_key": "FAM-2D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dotā grafikā samainītas asis un nav vienību; labot",
+          "seed_key": "FAM-2D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "No datu tabulas izvēlies mērogu, uzzīmē un nosaki slīpumu",
+          "seed_key": "FAM-2D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-3A",
+      "topic": 3,
+      "title_lv": "Koncentrācijas un daļiņu daudzums",
+      "question_types": [
+        "Q01",
+        "Q02",
+        "Q09"
+      ],
+      "programme_outcomes": [
+        "P3-01",
+        "P3-02",
+        "P3-04",
+        "P3-05",
+        "P3-06"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "m=2,922 g NaCl, M=58,44 g/mol, V=250,0 mL; c un joni",
+          "seed_key": "FAM-3A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "n=0,0250 mol, V=100,0 mL; c un m pie dotas M",
+          "seed_key": "FAM-3A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dota c un V; aprēķini n un m, formulē šķīdinātāju/vielu",
+          "seed_key": "FAM-3A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Atšķir w, γ un c dotajās etiķetēs un aizpildi vienību tabulu",
+          "seed_key": "FAM-3A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-3B",
+      "topic": 3,
+      "title_lv": "Blīvums un pārejas w/c/γ",
+      "question_types": [
+        "Q02",
+        "Q03",
+        "Q09"
+      ],
+      "programme_outcomes": [
+        "P3-07",
+        "P3-08",
+        "P3-09"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "w=10,0 %, ρ=1,070 g/mL, M=58,44 g/mol; γ un c",
+          "seed_key": "FAM-3B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "c=0,250 mol/L, M=40,00 g/mol, ρ=1,010 g/mL; w",
+          "seed_key": "FAM-3B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "V=200,0 mL, ρ=1,050 g/mL, w=4,00 %; m un γ",
+          "seed_key": "FAM-3B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Dota γ un M; izsaki c, pēc tam izskaidro trūkstošo ρ pārejai uz w",
+          "seed_key": "FAM-3B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-3C",
+      "topic": 3,
+      "title_lv": "Atšķaidīšana un pagatavošana",
+      "question_types": [
+        "Q02",
+        "Q08",
+        "Q03"
+      ],
+      "programme_outcomes": [
+        "P3-10",
+        "P3-11"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "0,500 mol/L → 100,0 mL 0,0500 mol/L; V₁ un darbību secība",
+          "seed_key": "FAM-3C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "0,200 mol/L → 250,0 mL 0,0200 mol/L; V₁",
+          "seed_key": "FAM-3C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Doti c₁, V₁, V₂; atrod c₂ un pamato gatavā tilpuma nozīmi",
+          "seed_key": "FAM-3C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot instrukciju pievienot V₂ ūdens, nevis atšķaidīt līdz V₂",
+          "seed_key": "FAM-3C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-3D",
+      "topic": 3,
+      "title_lv": "Medicīniskas etiķetes un nepietiekami dati",
+      "question_types": [
+        "Q17",
+        "Q13",
+        "Q15"
+      ],
+      "programme_outcomes": [
+        "P3-03",
+        "P3-11"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "0,9 % NaCl, skaidri dots m/V; masa 250,0 mL un ko etiķete vēl nepasaka",
+          "seed_key": "FAM-3D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "5 % glikoze ar skaidru m/m bāzi; dots ρ un tilpums",
+          "seed_key": "FAM-3D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "3 % H₂O₂, 70 % etanols, 5 % jods: no dotām etiķešu bāzēm izvēlies pārrēķinu",
+          "seed_key": "FAM-3D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Dota analīžu rinda mg/L; pārvērt mmol/L tikai ar norādītu vielu un M",
+          "seed_key": "FAM-3D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-4A",
+      "topic": 4,
+      "title_lv": "Sistēma, enerģija un termodinamikas likumi",
+      "question_types": [
+        "Q07",
+        "Q14",
+        "Q06"
+      ],
+      "programme_outcomes": [
+        "P4-01",
+        "P4-04",
+        "P4-05",
+        "P4-06"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Atvērts, slēgts, izolēts; siltums sistēmā un darbs uz sistēmu",
+          "seed_key": "FAM-4A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Dota q un w; ΔU un ekso/endotermiska interpretācija",
+          "seed_key": "FAM-4A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Standartstāvoklis, kinētiskā/potenciālā enerģija; maldīga definīcija",
+          "seed_key": "FAM-4A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Otrais likums: sistēmas ΔS nav vienīgais patvaļīguma kritērijs",
+          "seed_key": "FAM-4A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-4B",
+      "topic": 4,
+      "title_lv": "Hesa likums un reakcijas ΔS",
+      "question_types": [
+        "Q02",
+        "Q09"
+      ],
+      "programme_outcomes": [
+        "P4-02",
+        "P4-03",
+        "P4-09"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Divas saskaitāmas reakcijas ar ΔH; ΔS no dotas S tabulas",
+          "seed_key": "FAM-4B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Apgriez reakciju, maini ΔH zīmi un sareizini koeficientus",
+          "seed_key": "FAM-4B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Trūkstoša ΔH no termokīmiskā cikla",
+          "seed_key": "FAM-4B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot izlaistus stehiometriskos koeficientus ΔS aprēķinā",
+          "seed_key": "FAM-4B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-4C",
+      "topic": 4,
+      "title_lv": "ΔG un temperatūras robeža",
+      "question_types": [
+        "Q02",
+        "Q16"
+      ],
+      "programme_outcomes": [
+        "P4-02",
+        "P4-08",
+        "P4-10",
+        "P4-11"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "ΔH=40,0 kJ/mol, ΔS=150 J/(mol K), T=298 K",
+          "seed_key": "FAM-4C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "ΔH=−20,0 kJ/mol, ΔS=−80,0 J/(mol K), T=298 K",
+          "seed_key": "FAM-4C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Atrod T robežu un norāda pieņēmumu par ΔH,ΔS nemainību",
+          "seed_key": "FAM-4C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Salīdzina ΔG divās temperatūrās, nesecinot reakcijas ātrumu",
+          "seed_key": "FAM-4C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-4D",
+      "topic": 4,
+      "title_lv": "Kalorimetrija un skaidrojuma kļūdas",
+      "question_types": [
+        "Q17",
+        "Q13",
+        "Q15"
+      ],
+      "programme_outcomes": [
+        "P4-04",
+        "P4-07",
+        "P4-11"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "m=100,0 g, c_p=4,18 J/(g K), ΔT=5,00 K; q videi un reakcijai",
+          "seed_key": "FAM-4D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Sadegšanas siltums dotai pārtikas masai, neizmanto kā medicīnisku rekomendāciju",
+          "seed_key": "FAM-4D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Nenoslēgta sistēma ar siltuma zudumiem; nosaki secinājuma robežu",
+          "seed_key": "FAM-4D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot ΔS<0 nozīmē neiespējams un ΔG<0 nozīmē ātrs",
+          "seed_key": "FAM-4D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-5A",
+      "topic": 5,
+      "title_lv": "Faktori, sadursmes un enerģijas grafiki",
+      "question_types": [
+        "Q12",
+        "Q14",
+        "Q16"
+      ],
+      "programme_outcomes": [
+        "P5-01",
+        "P5-02",
+        "P5-04",
+        "P5-07"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Enerģijas profilā Eᵣ=20, Eₚ=−10, maksimumi 100/60 kJ/mol",
+          "seed_key": "FAM-5A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Divu temperatūru Maksvela–Bolcmaņa līknes; skaidro virs Eₐ daļu",
+          "seed_key": "FAM-5A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Virsmas laukums, koncentrācija un gāzes spiediens; kontrolē pārējos faktorus",
+          "seed_key": "FAM-5A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot apgalvojumu katalizators maina ΔH vai līdzsvara stāvokli",
+          "seed_key": "FAM-5A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-5B",
+      "topic": 5,
+      "title_lv": "Reakcijas pakāpe un k",
+      "question_types": [
+        "Q09",
+        "Q02",
+        "Q11"
+      ],
+      "programme_outcomes": [
+        "P5-05",
+        "P5-09"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "c dubultojas, v četrkāršojas; nosaki pakāpi un k",
+          "seed_key": "FAM-5B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "c dubultojas, v dubultojas; pirmā pakāpe, k vienības",
+          "seed_key": "FAM-5B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "c mainās, v nemainās; nulltā pakāpe",
+          "seed_key": "FAM-5B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "No c(t), ln c(t), 1/c(t) datiem izvēlas lineāru attēlojumu un k",
+          "seed_key": "FAM-5B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-5C",
+      "topic": 5,
+      "title_lv": "Pusperiods un modelis",
+      "question_types": [
+        "Q12",
+        "Q02",
+        "Q17"
+      ],
+      "programme_outcomes": [
+        "P5-08",
+        "P5-10"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Pirmās pakāpes modelis: 80→40 mg 30 min; daudzums pēc 90 min",
+          "seed_key": "FAM-5C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Pirmās pakāpes modelis: t½=20 min, sākumā 64 mg; pēc 60 min",
+          "seed_key": "FAM-5C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "No nulltās pakāpes grafika nosaki t½ pie dotā c₀",
+          "seed_key": "FAM-5C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Salīdzini pirmās/otrās pakāpes t½ atkarību no sākuma c",
+          "seed_key": "FAM-5C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-5D",
+      "topic": 5,
+      "title_lv": "Katalīze, enzīmi un mehānismi",
+      "question_types": [
+        "Q15",
+        "Q13",
+        "Q16",
+        "Q18"
+      ],
+      "programme_outcomes": [
+        "P5-03",
+        "P5-06"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Enzīms un nebioloģisks katalizators; kopīgais un atšķirīgais",
+          "seed_key": "FAM-5D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Daudzstadiju mehānismā dota lēnā stadija; atvasini nosacītu ātruma likumu",
+          "seed_key": "FAM-5D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Atšķir homogēnu/heterogēnu katalīzi dotās fāzēs",
+          "seed_key": "FAM-5D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot reakcijas kopējo koeficientu automātisku lietošanu par pakāpēm",
+          "seed_key": "FAM-5D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-6A",
+      "topic": 6,
+      "title_lv": "Redoksa lomas un potenciālu tabula",
+      "question_types": [
+        "Q07",
+        "Q14",
+        "Q15"
+      ],
+      "programme_outcomes": [
+        "P6-01",
+        "P6-02",
+        "P6-04"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "Doti Zn²⁺/Zn un Cu²⁺/Cu E°; oksidētājs un reducētājs",
+          "seed_key": "FAM-6A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Atpazīst oksidēšanos un reducēšanos no elektronu pārneses",
+          "seed_key": "FAM-6A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Bioloģisks donor/akceptor pāris ar dotu reakciju, vienota E°′ konvencija",
+          "seed_key": "FAM-6A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot oksidētājs atdod elektronus un nekritiski sajauktus E°/E°′",
+          "seed_key": "FAM-6A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-6B",
+      "topic": 6,
+      "title_lv": "Pusreakcijas dažādās vidēs",
+      "question_types": [
+        "Q05",
+        "Q04"
+      ],
+      "programme_outcomes": [
+        "P6-05",
+        "P6-06"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "MnO₄⁻ + Fe²⁺ skābā vidē → Mn²⁺ un Fe³⁺",
+          "seed_key": "FAM-6B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "MnO₄⁻ + SO₃²⁻ neitrālā vidē → MnO₂ un SO₄²⁻",
+          "seed_key": "FAM-6B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "MnO₄⁻ + SO₃²⁻ stipri bāziskā vidē → MnO₄²⁻ un SO₄²⁻",
+          "seed_key": "FAM-6B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Dotā pusreakcijā izlaists H₂O/OH⁻/e⁻; atjauno bilanci",
+          "seed_key": "FAM-6B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-6C",
+      "topic": 6,
+      "title_lv": "Titrēšana un koncentrācija",
+      "question_types": [
+        "Q17",
+        "Q02",
+        "Q08",
+        "Q10"
+      ],
+      "programme_outcomes": [
+        "P6-07",
+        "P6-08"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "0,02000 mol/L KMnO₄, 18,60 mL, 25,00 mL Fe²⁺ skābā vidē",
+          "seed_key": "FAM-6C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "0,01500 mol/L KMnO₄, 20,00 mL, 25,00 mL Fe²⁺ skābā vidē",
+          "seed_key": "FAM-6C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "No dotas Fe²⁺ koncentrācijas atrod vajadzīgo titranta tilpumu",
+          "seed_key": "FAM-6C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Biretes divi nolasījumi, pārtitrēšanas kļūdas virziens un dotais beigu punkta kritērijs",
+          "seed_key": "FAM-6C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-6D",
+      "topic": 6,
+      "title_lv": "Nernsts un nepamatots secinājums",
+      "question_types": [
+        "Q02",
+        "Q13",
+        "Q16"
+      ],
+      "programme_outcomes": [
+        "P6-03"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "E°=0,340 V, Cu²⁺/Cu, a(Cu²⁺)=0,0100, T=298,15 K",
+          "seed_key": "FAM-6D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "Tas pats pāris, a(Cu²⁺)=0,100; salīdzini E ar E°",
+          "seed_key": "FAM-6D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dots Q un n; E=E°−(RT/nF)ln Q, constants given",
+          "seed_key": "FAM-6D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Labot apgrieztu Q vai pieņēmumu, ka E° vienmēr nosaka virzienu",
+          "seed_key": "FAM-6D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-7A",
+      "topic": 7,
+      "title_lv": "Likums un metodes lietojums",
+      "question_types": [
+        "Q03",
+        "Q06",
+        "Q15"
+      ],
+      "programme_outcomes": [
+        "P7-01",
+        "P7-02"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "A=εlc: l=1,00 cm, c=2,00×10⁻⁵ mol/L, ε=12500 L/(mol cm)",
+          "seed_key": "FAM-7A-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "No dotas A, ε un l atrod c",
+          "seed_key": "FAM-7A-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Nosauc A, T, ε, l un c un salīdzini A ar %T kā papildtreniņu",
+          "seed_key": "FAM-7A-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Pamatot spektrofotometrijas lietojumu dotam absorbējošam analītam",
+          "seed_key": "FAM-7A-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-7B",
+      "topic": 7,
+      "title_lv": "Kalibrēšanas grafiks",
+      "question_types": [
+        "Q11",
+        "Q12",
+        "Q09"
+      ],
+      "programme_outcomes": [
+        "P7-03",
+        "P7-04"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "γ=0/0,004/0,008/0,012 mg/mL; A=0,010/0,210/0,410/0,610",
+          "seed_key": "FAM-7B-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "c=0/2/4/6×10⁻⁵ mol/L; A=0,020/0,220/0,420/0,620",
+          "seed_key": "FAM-7B-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dota taisne ar nenulles nogriezni; interpolē, neatmet nogriezni",
+          "seed_key": "FAM-7B-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Punkti ar izlecēju; atšķir diagnostiku no pamatojuma dzēst punktu",
+          "seed_key": "FAM-7B-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-7C",
+      "topic": 7,
+      "title_lv": "Nezināms paraugs un atšķaidījums",
+      "question_types": [
+        "Q17",
+        "Q02"
+      ],
+      "programme_outcomes": [
+        "P7-04"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "A=0,350, A=50γ+0,010; atšķaidījums 5,00; sākotnēji 25,00 mL",
+          "seed_key": "FAM-7C-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "A=0,410, A=50γ+0,010; atšķaidījums 2,00; sākotnēji 10,00 mL",
+          "seed_key": "FAM-7C-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "Dota sākotnējā koncentrācija un atšķaidījums; paredzi A diapazonā",
+          "seed_key": "FAM-7C-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Atrod n no masas ar doto M, nesaistot γ ar molāro c bez M",
+          "seed_key": "FAM-7C-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    },
+    {
+      "family_id": "FAM-7D",
+      "topic": 7,
+      "title_lv": "Kalibrēšanas derīgums un laboratorijas soļi",
+      "question_types": [
+        "Q13",
+        "Q08",
+        "Q16",
+        "Q18"
+      ],
+      "programme_outcomes": [
+        "P7-05"
+      ],
+      "status": "proposal-not-generated",
+      "variants": [
+        {
+          "variant_id": "A",
+          "specification_lv": "A ārpus standartu diapazona; izplāno atšķaidījumu un atkārtotu mērījumu",
+          "seed_key": "FAM-7D-A",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "B",
+          "specification_lv": "R² tuvu 1, bet nobīdīts tukšais paraugs; labo secinājumu",
+          "seed_key": "FAM-7D-B",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "C",
+          "specification_lv": "440 nm ir protokola iestatījums; nav dots spektrs lokālas virsotnes pierādījumam",
+          "seed_key": "FAM-7D-C",
+          "status": "authoring-specification"
+        },
+        {
+          "variant_id": "D",
+          "specification_lv": "Tukšais paraugs, kivetes orientācija un mērījuma secība ar dotu procedūru",
+          "seed_key": "FAM-7D-D",
+          "status": "authoring-specification"
+        }
+      ],
+      "constraints": [
+        "All required constants, units, reaction medium and percentage basis must be explicit.",
+        "A changed substance requires a reviewed chemical model, not string substitution.",
+        "Difficulty equivalence must be reviewed; four labels are not proof of equivalence."
+      ],
+      "grading": "Criterion rubric; exact machine-readable key is authored and independently checked per instance."
+    }
+  ]
+}

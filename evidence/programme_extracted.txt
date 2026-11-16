@@ -1,0 +1,171 @@
+                      Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra
+
+
+          PIRMĀ KOLOKVIJA TĒMAS, SATURS UN PRASMES
+
+                                                 Rudens 2025
+                                           1. studiju gads, 1. semestris
+
+                      Kolokvijs notiek klātienē, darbs tiek rakstīts uz papīra.
+                Maksimālais pārbaudījumam pieejamais laiks 3 stundas (180 minūtes)
+
+                   Temata saturs                                                Prasmes/Aprēķini
+                1. Temats. IEVADS. ŠĶĪDUMI UN ĶĪMISKĀS REAKCIJAS
+Zina un izprot šādus ķīmijas jēdzienus:                      Prot veikt aprēķinus, izmantojot Masas nezūdamības
+Masas nezūdamības likums;                                    likumu un stehiometriju.
+Maisījumi,     homogēns        maisījums,   heterogēns       Prot izmantot Periodisko tabulu un Vielu šķīdības
+    maisījums,                                               tabulu
+Ķīmiskā reakcija, izejvielas un produkti, ķīmisko
+    reakciju veidi (savienošanās, sadalīšanās,
+    apmaiņas un aizvietošanas reakcija, red-oks
+    reakcijas)
+Ķīmisko vielu klases (skābes, bāzes, oksīdi, sāļi)
+atoms, jons, molekula
+Disociācija, elektrolīti, neelektrolīti
+Ķīmiskās saites (jonu, kovalentā)
+
+                2. Temats. APRĒĶINI UN GRAFISKĀS METODES ĶĪMIJĀ
+Zina un izprot šādus ķīmijas jēdzienus:                  Prot pārvērst mērvienības (piem. mg  grami  kg;
+Laboratorijas trauku un piederumu nosaukumus un            ml  L  cm3)
+   izmantošanu: vārglāze, koniskā kolba, pipete,         Prot veikt matemātiskas darbības, zina darbību
+   birete, mēģene, mērcilindrs, mēģene, svari, pipetes     secību; veikt aprēķinus, kas saistīti ar decimāldaļām,
+   uzpildītājs;                                            koeficientiem un procentiem; veic aprēķinus
+Mērvienības: tilpums, masa temperatūra (g, kg, ml, l,      izmantojot tiešo un netiešo proporciju; veikt
+   m3, mol, g/ml, oC, K) un mērvienību priedēkļus          darbības ar skaitļiem pakāpē.
+   (mili-, mikro-, nano-, kilo-, mega-, giga-).          Prot nolasīt vērtības no trauka/svaru skalas, no grafika
+Kvalitatīvi un kvantitatīvi dati.                          un grafika asīm;
+                                                         Zīmējot grafiku izvēlas atbilstošas asis (atkarīgais un
+                                                           neatkarīgais lielums), mērvienības un skalu;
+                                                         Prot noteikt zīmīgo ciparu skaitu dotajā vērtībā; prot
+                                                           pareizi izmantojiet zīmīgos ciparus aritmētiskajās
+                                                           darbībās.
+                                                         Prot veikt nolasījumus no dotās skalas, nosakot
+                                                           zīmīgo ciparu skaitu.
+ Papildus interneta resursi: https://www.acs.org/content/acs/en/chemical-safety/basics/glassware-and-
+ equipment.html
+
+
+
+
+                                                                                                               1/4
+                      Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra
+
+                   3. Temats. ŠĶĪDUMI UN KONCENTRĀCIJU APRĒĶINI
+Zina un izprot šādus ķīmijas jēdzienus:                        Veic aprēķinus:
+Šķīduma koncentrācija (molāra koncentrācija, molaritāte,       a) Izmantojot M (molmasa, g/mol), m (masa, g), V
+  masas daļa, masas koncentrācija);                            (tilpums, ml, l), n (daudzums, mol) un w (masas
+Šķīdums, izšķīdusī viela, šķīdinātājs, disociācija, jons,      daļa), c (molārā koncentrācija, mol/l) ), ρ (blīvums,
+  atšķaidīšana;                                                g/ml),  (masas koncentrācija, g /l);
+Galvenie šķīdumi, kurus izmanto medicīnā (0.9 % NaCl           b) Aprēķiniet vielas masu, ja zināms vielas
+šķīdums, 5 % glikozes šķīdums, 3 % ūdeņraža peroksīda          daudzums (molos) un otrādi;
+(H2O2) šķīdums, 70 % etanola/spirta (C2H5OH) šķīdums,          c) Aprēķiniet šķīduma koncentrāciju (w%, c), ja
+5 % joda (I2) šķīdums spirtā utt., asins analīzes), to         zināma izšķīdušās vielas masa vai daudzums un
+izmantošana.                                                   otrādi;
+                                                               d) Aprēķiniet šķīduma masu, ja zināms šķīduma
+                                                               tilpums un blīvums;
+                                                               e) Aprēķiniet w% (masas daļa) ja zināma molārā
+                                                               koncentrācija c un otrādi;
+                                                               f) Aprēķiniet masas koncentrāciju , ja zināma w%
+                                                               (masas daļa) vai molārā koncentrācija c un otrādi;
+                                                               g) Veic atšķaidīšanas aprēķinus;
+                                                               h) Saprot zīmīgo ciparu nozīmi dotajos skaitļos;
+                                                               Pielieto zīmīgo ciparu jēdzienu, lai mērījumu
+                                                               ierobežotu līdz pareizam ciparu skaitam.
+                                                               d) Prot pārvērst mērvienības (ml <=> L; mg <=> g
+                                                               <=> L)
+Papildus interneta resursi:
+http://www.chem1.com/acad/webtext/solut/solut-1.html#SEC2
+          4. Temats. TERMODINAMIKA UN TĀS PIEMĒRI BIOLOĢISKAJĀS
+                                 SISTĒMĀS
+Zina šādas definīcijas: eksotermisks un endotermisks           Veic aprēķinus ķīmiskai reakcijai: entalpijas
+process, entalpija, entropija, Gibsa enerģija, Hesa            izmaiņa ΔH, entropijas izmaiņa ΔS, Gibbsa
+likums, Pirmais, Otrais termodinamikas likums, atvērta,        enerģijas maiņa ΔG.
+slēgta un izolēta sistēma;                                     Un secina:
+                                                               -) pēc entalpijas maiņas - vai process ir
+Izprot un zina jēdzienus: sistēma un apkārtējā vide,           eksotermisks vai endotermisks;
+kinētiskā enerģija un potenciālā enerģija,                     -) pēc Gibsa enerģijas maiņas - par procesa
+standartapstākļi;                                              patvaļīgumu;
+kalorimetrija, kā raksturot pārtikas uzturvērtību,             -) pēc entropijas maiņas - vai process ir sakārtots
+izmantojot vielu sadegšanas siltumu;                           vai nesakārtots
+temperatūras ietekme uz entropiju un procesa                   Veic Gibsa (brīvās enerģijas) aprēķinus, izmantojot
+patvaļīgumu; kā mainās temperatūra eksotermiskā un             entalpiju un entropiju un temperatūru un secina par
+endotermiskā procesā                                           procesa patvaļīgumu.
+
+Papildus interneta resursi:
+http://chemed.chem.purdue.edu/genchem/topicreview/bp/ch21/chemical.php
+http://www.chem1.com/acad/webtext/energetics/index.html
+
+
+
+
+                                                                                                                   2/4
+                      Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra
+
+        5. Temats. KINĒTIKA UN TĀS NOZĪME BIOLOĢISKAJĀS SISTĒMĀS
+Zina šādas definīcijas: ķīmiskās reakcijas ātrums,               Izprot grafiskos attēlojumus:
+aktivācijas enerģija, katalizators.                              -) aktivācijas enerģijas maiņa pirms un pēc
+ Izprot un zina jēdzienus:                                            katalizatora pievienošanas;
+  Kas un kā ķīmiskās reakcijas ātrumu ietekmē faktori            -) Maksvela (Maksvela – Bolcmaņa) daļiņu
+  (koncentrācija, temperatūra, virsmas laukums, spiediens             ātruma sadalījuma atkarība no temperatūras;
+  un katalizators);                                              -) pirmās, otrās un nultās pakāpes reakcijas
+  Reakcijas ātruma mērvienības;                                  -) pussabrukšanas grafiks, pussabrukšanas perioda
+  Katalīze (homogēna un heterogēna)                                   noteikšana;
+  Pussabrukšanas laiks un tā nozīme farmācijā un                 -) ātruma konstantes noteikšana un izmantošana
+  medicīnā;                                                           aprēķinos
+  Aktīvo sadursmju teorija
+  Salīdzina enzīmu un katalizatoru kopīgās un atšķirīgās
+  īpašības
+ Reakciju mehānismi: koncentrācijas maiņa un
+ ietekme uz nulltās, pirmās un otrās pakāpes
+ reakcijām; reakcijas ātruma maiņa, ja reakcijai ir
+ vairākas pakāpes
+
+Papildus interneta resursi:
+https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chemistry_(OpenSTAX)/12%3A_Kineti
+cs/12.2%3A_Factors_Affecting_Reaction_Rates
+https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chemistry_(OpenSTAX)/12%3A_Kineti
+cs/12.7%3A_Catalysis
+https://chem.libretexts.org/Textbook_Maps/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplement
+al_Modules_(Physical_and_Theoretical_Chemistry)/Kinetics/Reaction_Rates/Half-
+lives_and_Pharmacokinetics
+                   6. Temats. OKSIDĒŠANĀS – REDUCĒŠANĀS PROCESI
+Zina un izprot:                                              Prot:
+Oksidēšanās, reducēšanās, oksidētājs, reducētājs.                a) atpazīt oksidētāju, reducētāju, vidi ox-red
+Oksidēšanas-reducēšanas vienādojumi, pusreakcijas,                  pārvērtībā
+ jonu vienādojums.                                               b) atrast pusreakcijas, iegūt jonu
+Oksidētāju un reducētāju atpazīšana, izmantojot                     vienādojumu dažādās šķīduma vidēs
+ standartpotenciālu tabulu.
+Nernsta vienādojums.                                        Veic aprēķinus :
+Oksidēšanas-reducēšanas reakciju pamati cilvēka             Izmantojot titrēšanas eksperimentā iegūtos datus ;
+ organismā.
+Titrēšana :                                                 Aprēķina masu, daudzumu, koncentrāciju, izmantojot
+    a) Zina titrēšanas izmantošanas iespējas ;              jonu vienādojumus, molekulāros, saīsinātos jonu
+    b) Zina, kā nosaka titrēšanas beigu punktu ;            vienādojumus
+    c) Zina titrēšanai izmantoto trauku un piederumu
+        nosaukumus un izmantošanu
+
+Papildus interneta resursi:
+Titrēšanas aprēķini: https://youtu.be/dHimzaJ61mM
+
+
+
+
+                                                                                                                 3/4
+                     Medicīniskā ķīmija. Cilvēka fizioloģijas un bioķīmijas katedra
+
+                            7. Temats. ANALĪZES METODES ĶĪMIJĀ
+Spektrofotometrija :                                                          Veic aprēķinus :
+   a) Zina izmantošanas iespējas;
+   b) Lamberta – Bēra – Bugēra likumu ;                                       Nosaka un aprēķina koncentrāciju,
+   c) Kalibrēšanas grafika izmantošanas iespējas koncentrācijas               masu, daudzumu, izmantojot
+       noteikšanā                                                             spektrofotmetrijas kalibrēšanas
+                                                                              grafikus.
+Papildus interneta resursi:
+ https://di.uq.edu.au/community-and-alumni/sparq-ed/sparq-ed-services/spectrophotometry
+ https://www.chemguide.co.uk/analysis/uvvisible/beerlambert.html
+
+
+
+
+                                                                                                                  4/4
+

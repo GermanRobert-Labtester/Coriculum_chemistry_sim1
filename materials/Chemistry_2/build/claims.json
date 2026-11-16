@@ -1,0 +1,420 @@
+{
+ "schema": "mch2-claims",
+ "schema_version": 1,
+ "scope": "F10 claim register: 20 core claims seeded C01–C20. A claim names the exact source passage, its scope, and the live section location. Missing source or locator stays open; it is never inferred.",
+ "adjudication": "B03 diagnostic pass 2026-11-07: every course claim re-read from the five PDFs (hashes match this ledger); per-claim confidence/verification/disposition added. Metrology (VIM/ISO/IUPAC/BIPM) and nuclear (NuDat/ENSDF/LNHB) authorities are named but NOT primary-read offline and cannot enter this hash-pinned ledger; C19/C20 stay open. Evidence: B03_source_adjudication.md.",
+ "claims": [
+  {
+   "id": "C01",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Tēmas apraksts 1. lpp.",
+   "disposition": "Retained; five outcomes listed; does not fix a test-point split.",
+   "statement": "2. tēmas aprakstā formulēti pieci sasniedzamie rezultāti.",
+   "kind": "source",
+   "source_ids": [
+    "S-TOPIC"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Tēmas apraksta sasniedzamo rezultātu saraksts; neapstiprina testa punktu sadalījumu.",
+   "locations": [
+    {
+     "file": "build/sections/01_ch1.html",
+     "needle": "2. tēmas aprakstā formulēti pieci rezultāti."
+    }
+   ],
+   "note": "Chapter 1 table O1–O5."
+  },
+  {
+   "id": "C02",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Tēmas apraksts 1. lpp.",
+   "disposition": "Retained; 55% threshold only; never turned into a grade.",
+   "statement": "Ievadtests un Nobeiguma tests ir ieskaitīts ar vismaz 55 % no katra testa kopējā punktu skaita.",
+   "kind": "source",
+   "source_ids": [
+    "S-TOPIC"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Ieskaites slieksnis; avots nedod testa ilgumu, jautājumu skaitu vai punktu sadalījumu.",
+   "locations": [
+    {
+     "file": "build/sections/01_ch1.html",
+     "needle": "Katrs tests ir ieskaitīts, ja iegūti vismaz"
+    }
+   ],
+   "note": "Do not turn the threshold into a grade."
+  },
+  {
+   "id": "C03",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Tēmas apraksts 1. lpp.",
+   "disposition": "Retained; source prefix list, not the full 2022 SI scale.",
+   "statement": "Avota teorijas sarakstā prasīti mili-, mikro-, nano-, kilo-, mega- un giga- priedēkļi.",
+   "kind": "source",
+   "source_ids": [
+    "S-TOPIC"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Priedēkļu prasību saraksts; neapstiprina visas 2022. gada SI priedēkļu skalas.",
+   "locations": [
+    {
+     "file": "build/sections/02_ch2.html",
+     "needle": "Avota teorijas sarakstā prasīti mili-, mikro-, nano-, kilo-, mega- un giga- priedēkļi"
+    }
+   ],
+   "note": "Prefix figure is a redrawn schema, not a source table."
+  },
+  {
+   "id": "C04",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 1. lpp.",
+   "disposition": "Retained; n/mol definition; C_M and ω re-symbolled and logged.",
+   "statement": "Vielas daudzuma n SI mērvienība ir mols.",
+   "kind": "source",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Lieluma n un vienības mol definīcija; avots lieto arī C_M un ω, kas dokumentā pārzīmēti.",
+   "locations": [
+    {
+     "file": "build/sections/02_ch2.html",
+     "needle": "Galvenais ķīmiskais lielums ir vielas daudzums"
+    }
+   ],
+   "note": "Symbol normalisation is recorded in chapter 2."
+  },
+  {
+   "id": "C05",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 1. lpp.",
+   "disposition": "Retained; direct vs indirect measurement definitions.",
+   "statement": "Tiešā mērīšanā lielumu nolasa no instrumenta skalas; netiešajā to aprēķina pēc sakarības y = f(x1, …, xn).",
+   "kind": "source",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Mērīšanas veidu definīcija; neapstiprina konkrēta instrumenta precizitāti.",
+   "locations": [
+    {
+     "file": "build/sections/03_ch3.html",
+     "needle": "Tiešā mērīšanā lielumu nolasa tieši no mērinstrumenta skalas"
+    }
+   ],
+   "note": "Chapter 3 table separates direct and indirect examples."
+  },
+  {
+   "id": "C06",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 1. lpp.",
+   "disposition": "Correction confirmed (S4); v is not the amount symbol.",
+   "statement": "Vielas daudzums iegūstams no masas un molmasas: n = m/M un m = n·M.",
+   "kind": "correction",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Formula un simboli; avotā iespiests «m = M·n, jo [n = v (mol)]», kur v nav vielas daudzuma simbols.",
+   "correction": "n = m/M; m = n·M; v nav vielas daudzuma simbols.",
+   "locations": [
+    {
+     "file": "build/sections/03_ch3.html",
+     "needle": "Avotā formula iespiesta kā"
+    }
+   ],
+   "note": "S4 in Appendix C."
+  },
+  {
+   "id": "C07",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 1. lpp.",
+   "disposition": "Correction confirmed (S5); ε in L·mol⁻¹·cm⁻¹; IUPAC B00626 named, not a ledger row.",
+   "statement": "Beer–Lambert sakarība ir A = a·l·c; lielums A ir absorbance, nevis process.",
+   "kind": "correction",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "1. lpp.",
+   "scope": "Sakarība un mērvienību loģika; avots A sauc par absorbciju un a vienību raksta «1/mol·cm».",
+   "correction": "A = absorbance (bezdimensiju); ε = L·mol⁻¹·cm⁻¹; absorbcija ir process. Kursa a nav automātiski ε.",
+   "locations": [
+    {
+     "file": "build/sections/03_ch3.html",
+     "needle": "Avots saista krāsaina šķīduma koncentrāciju ar"
+    }
+   ],
+   "note": "S5 in Appendix C; IUPAC B00626 is named in the section but not a ledger row."
+  },
+  {
+   "id": "C08",
+   "confidence": "H",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 2. lpp.",
+   "disposition": "Correction confirmed (S6); VIM 2.20/2.21 named, not a ledger row.",
+   "statement": "Precizitāte ir atkārtotu mērījumu izkliede; atkārtojamība ir precizitāte noteiktos atkārtošanas apstākļos, nevis izkliede ap patieso vērtību.",
+   "kind": "correction",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "2. lpp.",
+   "scope": "Terminu nošķīrums; avota teikums sajauc atkārtojamību ar tuvumu patiesajai vērtībai.",
+   "correction": "Atkārtojamība = precizitāte atkārtojamības apstākļos; pareizība = tuvums atsauces vērtībai.",
+   "locations": [
+    {
+     "file": "build/sections/06_ch6.html",
+     "needle": "Otrais teikums sajauc izkliedi ar tuvumu patiesajai vērtībai."
+    }
+   ],
+   "note": "S6 in Appendix C; VIM 2.20/2.21 is named in chapter 6 but is not a ledger row."
+  },
+  {
+   "id": "C09",
+   "confidence": "H/V",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, Analitiskās metodes 3. lpp.",
+   "disposition": "Retained as course convention (S7); not a manufacturer tolerance.",
+   "statement": "Kursa konvencija B klases traukiem lieto 0,5 % pieļaujamo kļūdu; tā nav universāla ražotāja tolerance.",
+   "kind": "source",
+   "source_ids": [
+    "S-ANALIT"
+   ],
+   "locator": "3. lpp.",
+   "scope": "Kursa aprēķina konvencija; reālā tolerance jālasa uz stikla marķējuma vai ražotāja datu lapas.",
+   "locations": [
+    {
+     "file": "build/sections/04_ch4.html",
+     "needle": "Kursa konvencijas kļūdu budžets piecām trauku grupām"
+    }
+   ],
+   "note": "S7 and D53; do not present 0,5 % as a manufacturer tolerance."
+  },
+  {
+   "id": "C10",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2A Q1 & 2026 Q1, 1. lpp.",
+   "disposition": "Retained; recomputed 161,00 g.",
+   "statement": "Saskaitīšanā 10,05 g + 150,95 g = 161,00 g, jo abiem operandiem ir divas zīmes aiz komata.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q1, 1. lpp.; 2026 Q1, 1. lpp.",
+   "scope": "Q1 summa un decimālo zīmju noteikums; avota 2026 atbilde 161,00 g sakrīt ar pārrēķinu.",
+   "locations": [
+    {
+     "file": "build/sections/08_ch8.html",
+     "needle": "10,05 + 150,95 = 161,00&nbsp;g. Paskaidrojums"
+    }
+   ],
+   "note": "Recomputed in chapter 8 and sigfig cases."
+  },
+  {
+   "id": "C11",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2A Q4c & 2026 Q4c, 1. lpp.",
+   "disposition": "Retained; 147 g/L; unrounded 147,0000 kept separate.",
+   "statement": "Reizināšanā 1,50 mol/L · 98,00 g/mol = 147,000 g/L, kas ar trim zīmīgajiem cipariem ir 147 g/L.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q4c, 1. lpp.; 2026 Q4c, 1. lpp.",
+   "scope": "Q4c mērvienību pārrēķins un zīmīgo ciparu noteikums; avota atbilde ir 147 g/L.",
+   "locations": [
+    {
+     "file": "build/sections/08_ch8.html",
+     "needle": "1,50&nbsp;mol/L · 98,00&nbsp;g/mol = 147,0000"
+    }
+   ],
+   "note": "The unrounded intermediate is kept separately from the reported answer."
+  },
+  {
+   "id": "C12",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2A Q3 & 2026 Q3, 1. lpp.",
+   "disposition": "Retained 12,70; 13,05 not rejectable (Dixon Q 0,909 < 0,941).",
+   "statement": "Trīs titrēšanu vidējais no 12,50; 13,05; 12,55 mL ir 12,70 mL ar divām zīmēm aiz komata.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q3, 1. lpp.; 2026 Q3, 1. lpp.",
+   "scope": "Q3 vidējais un decimālo zīmju noteikums; 3 ir precīzs skaits.",
+   "locations": [
+    {
+     "file": "build/sections/08_ch8.html",
+     "needle": "38,10 ÷ 3 = 12,70"
+    }
+   ],
+   "note": "S12/S13 affect the exclusion claim, not this arithmetic."
+  },
+  {
+   "id": "C13",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2A Q4b & 2026 Q4b, 1. lpp.",
+   "disposition": "Retained; 5,0·10² g/L; 1000 mL/L exact, does not limit s.f.",
+   "statement": "0,50 g/mL = 500 g/L = 5,0·10² g/L ar diviem zīmīgajiem cipariem.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q4b, 1. lpp.; 2026 Q4b, 1. lpp.",
+   "scope": "Q4b mērvienību pārrēķins un beigu nulles pieraksts.",
+   "locations": [
+    {
+     "file": "build/sections/08_ch8.html",
+     "needle": "b) 0,50&nbsp;g/mL = 5,0·10²&nbsp;g/L"
+    }
+   ],
+   "note": "1000 mL/L is exact and does not limit significant figures."
+  },
+  {
+   "id": "C14",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2B Q1 (1.–2. lpp.) & 2026 Q6 (3. lpp.)",
+   "disposition": "Retained; Q5 suggested answers are papildinājums, not source.",
+   "statement": "Trauki Q1/Q6 jāranžē pēc mērķa un pieļaujamās kļūdas izcelsmes, nevis tikai pēc tilpuma vai zīmējuma.",
+   "kind": "source",
+   "source_ids": [
+    "S-2B",
+    "S-2026"
+   ],
+   "locator": "2B Q1, 1.–2. lpp.; 2026 Q6, 3. lpp.",
+   "scope": "Ranžēšanas uzdevuma mērķis un avota grupējums; Q5 ieteiktās atbildes ir papildinājums, ne avots.",
+   "locations": [
+    {
+     "file": "build/sections/04_ch4.html",
+     "needle": "Q6 / 2B Q1: kā sarindot traukus"
+    }
+   ],
+   "note": "D24/S11; Q5 is blank in 2026 key."
+  },
+  {
+   "id": "C15",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2B Q2, 3. lpp.",
+   "disposition": "Retained (S22); worked sequence marked as an addition.",
+   "statement": "Biretes izlietais tilpums ir beigu rādījums mīnus sākuma rādījums, un 25 mL birete prasa papildināšanu.",
+   "kind": "source",
+   "source_ids": [
+    "S-2B"
+   ],
+   "locator": "2B Q2, 3. lpp.",
+   "scope": "Biretes protokola secība un nolasījuma noteikums; avotā Q2 modeļa atbildes nav.",
+   "locations": [
+    {
+     "file": "build/sections/05_ch5.html",
+     "needle": "Biretes nolasījumu virkne 2B Q2 protokolā"
+    }
+   ],
+   "note": "S22; the worked sequence is marked as an addition."
+  },
+  {
+   "id": "C16",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2B Q3 (4. lpp.) & 2026 atbilžu lapa (7. lpp.)",
+   "disposition": "Retained (S16); numeric example is illustrative, not a key answer.",
+   "statement": "NaCl šķīduma blīvums ir tabulēts atkarībā no masas daļas un temperatūras; 2B Q3 izmanto blīvuma–w grafiku.",
+   "kind": "source",
+   "source_ids": [
+    "S-2B",
+    "S-2026"
+   ],
+   "locator": "2B Q3, 4. lpp.; 2026 atbilžu lapa, 7. lpp.",
+   "scope": "Datu avots un grafika loma; temperatūras un gala tilpuma nosacījumi jānosauc atsevišķi.",
+   "locations": [
+    {
+     "file": "build/sections/12_ch12.html",
+     "needle": "NaCl šķīduma blīvums ρ, g/mL, dažādās masas daļās un temperatūrās"
+    }
+   ],
+   "note": "S16; the numeric example is illustrative, not a key answer."
+  },
+  {
+   "id": "C17",
+   "confidence": "C",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2A Q5 (2. lpp.) & 2026 Q7 (4.–5. lpp.)",
+   "disposition": "Retained (S15); fitted values are the reference; citrons extrapolated (0,982 > 0,975).",
+   "statement": "Q7 kalibrēšanas standarti pie 521 nm ir seši zināmas koncentrācijas šķīdumi, no kuriem veido taisni.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q5, 2. lpp.; 2026 Q7, 5. lpp.",
+   "scope": "Standartu datu avots un kalibrēšanas mērķis; taisnes parametri un atlikumi ir pārrēķināti dokumentā.",
+   "locations": [
+    {
+     "file": "build/sections/10_ch10.html",
+     "needle": "Q7 kalibrēšanas standarti pie 521&nbsp;nm"
+    }
+   ],
+   "note": "S15; R² alone does not validate the method."
+  },
+  {
+   "id": "C18",
+   "confidence": "C/V",
+   "verification": "[TEXT-VERIFIED] 2026-11-07, 2026 Q8 6. lpp.; decay graph [INSPECTED]",
+   "disposition": "Course 46,595 d retained with «avotā»/«dienas»; internally consistent with source decay curve (50/25/12,5% at ≈50/100/150 d). Evaluated NuDat/ENSDF & LNHB-DDEP values NOT primary-read → stays paired with C19 (open).",
+   "statement": "Hg-203 pussabrukšanas perioda kursa vērtība ir 46,595 dienas.",
+   "kind": "source",
+   "source_ids": [
+    "S-2A",
+    "S-2026"
+   ],
+   "locator": "2A Q6, 4. lpp.; 2026 Q8, 5.–6. lpp.",
+   "scope": "Kursa uzdevuma SoT; vērtība nav aizstāta ar novērtētajām kodoldatu vērtībām.",
+   "locations": [
+    {
+     "file": "build/sections/11_ch11.html",
+     "needle": "46,595&nbsp;dienas (avotā"
+    }
+   ],
+   "note": "D52; course value preserved, unit written «dienas»."
+  },
+  {
+   "id": "C19",
+   "confidence": "A",
+   "verification": "[TEXT-VERIFIED] 2026-11-07: LNHB/DDEP PDF and NuDat 3/ENSDF capture primary-read; both artifacts hash-pinned in build/source-text/",
+   "disposition": "CLOSED: LNHB-DDEP 46,594(12) d and NuDat/ENSDF 46,610(10) d primary-read (S-LNHB, S-NUDAT); both match the evaluated values quoted beside the course datum in ch11. Course value 46,595 d is retained as the course datum; replacement remains a lecturer decision (V).",
+   "statement": "LNHB-DDEP un NuDat/ENSDF novērtētās Hg-203 vērtības ir minētas blakus kursa vērtībai, bet nav avotu ledžera ieraksti.",
+   "kind": "source",
+   "source_ids": [
+    "S-LNHB",
+    "S-NUDAT"
+   ],
+   "locator": "LNHB Hg-203_tables.pdf p. 2; NuDat 3 dataset 203HG (Kondev 2021)",
+   "scope": "Evaluated nuclear data context for the course Hg-203 half-life; supports the parenthetical evaluated values in ch11, does not replace the course value in SoT.",
+   "open_reason": "",
+   "locations": [
+    {
+     "file": "build/sections/11_ch11.html",
+     "needle": "Novērtētās kodoldatu vērtības"
+    }
+   ],
+   "note": "D52/HTML-07 external-value verification satisfied 2026-11-07; course-vs-evaluated replacement stays with the lecturer (V)."
+  },
+  {
+   "id": "C20",
+   "confidence": "open",
+   "verification": "[UNVERIFIED] 2026-11-07; source names the analyte, not a reagent",
+   "disposition": "Stays OPEN: 2A Q5 / 2026 Q7 name askorbīnskābe (vitamin C) as the 521 nm analyte but no chromogenic reagent; no primary source invented; lecturer question stands.",
+   "statement": "Kursa avots nenosauc reaģentu, kas dod signālu pie 521 nm.",
+   "kind": "open",
+   "source_ids": [],
+   "locator": "",
+   "scope": "Avota klusējums; nepieņemt, ka jutība vai selektivitāte ir pierādīta ar IUPAC B00626.",
+   "open_reason": "Nav primārā avota, kas nosauktu reaģentu; jautājums jāuzdod lektoram.",
+   "locations": [
+    {
+     "file": "build/sections/03_ch3.html",
+     "needle": "Avotā arī nav norādīts, kāds reaģents rada signālu pie 521"
+    }
+   ],
+   "note": "Related to D44/HTML-07; not an inferred reagent."
+  }
+ ]
+}
