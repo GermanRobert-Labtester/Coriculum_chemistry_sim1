@@ -1,0 +1,423 @@
+{
+  "acceptance_criteria": {
+    "AC1_happy_path": {
+      "claims": [
+        "All eighteen types have a registry contract with a render, payload, completion, error-surface and ARIA contract; the completed types (Q02, Q04, Q10, Q11, Q12, Q13, Q15) have grading bindings.",
+        "One instance of each of the eighteen types is answered through the component and integration API in a scripted session; every answer goes through session.dispatch(\"answer\", …), and the answer map round-trips through serialize()/deserialize() unchanged.",
+        "The capture-grading parity table shows all eighteen stored payloads consumed by their frozen engines with no adapter: the audit finds zero adapters and zero value rewrites.",
+        "The Q03 template response runs the manual-rubric pending path: pending, never fake-scored."
+      ],
+      "evidence": [
+        "evidence/N22_PARITY_TABLE.json",
+        "evidence/N22_SESSION_TRACE.json",
+        "evidence/N22_RUNTIME_RECORD.json",
+        "tools/check_n22_runtime.js"
+      ],
+      "status": "PASS"
+    },
+    "AC2_negative_or_edge": {
+      "claims": [
+        "The navigator map cells carry the completion verdict from SimInputsRegistry.completion: the eighteen answered slots are complete and the seven deliberately incomplete cases are not.",
+        "The review warning list names exactly the incomplete slots with their Latvian missing names and carries role=\"alert\" for the screen-reader announcement.",
+        "A whitespace-only Q15 is BLANK_RESPONSE with zero points and every criterion denied; a non-blank Q15 is pending with no verdict and no machine points.",
+        "Errors never destroy raw input: the stored payload is the string the learner typed, and an error is an annotation on the completion verdict."
+      ],
+      "evidence": [
+        "evidence/N22_RUNTIME_RECORD.json",
+        "evidence/N22_COMPONENTS_RECORD.json (N22-B: pointer/keyboard payload parity and the mid-interaction abort)"
+      ],
+      "status": "PASS"
+    },
+    "AC3_domain_integrity": {
+      "claims": [
+        "The three in-file smoke vectors (numeric, classification, ordering) are registered, assert the eighteen-type island, drive SimSession and pass.",
+        "The session machine remains the only writer: the integration offers no setter, the accessors hand out deep copies, and one answer() call is exactly one dispatch.",
+        "The label bank is term-keyed: no string literal in src/inputs/*.ts carries a standalone unit symbol, every dotted ARIA key resolves in data/terms.json, the rendered names match the resolved terms, and the input.* terms carry no English UI vocabulary."
+      ],
+      "evidence": [
+        "evidence/N22_TERMS_LINT.json",
+        "src/smoke-subset.js",
+        "data/response_types.json"
+      ],
+      "status": "PASS"
+    }
+  },
+  "byte_budget": {
+    "budgets": [
+      {
+        "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N22 ir 1522087 B, tāpēc izpildītais griests ir 1504 KiB. N22 atbilžu ievades slānis: reakcijas tipu reģistra sala (34,179 B kanoniski), terminoloģijas salas pieaugums (+47,549 B) un trīs dūmu vektori palielina artefaktu līdz 1,522,087 B (1,486,4 KiB), kas pārsniedz N21 noteikto 1,440 KiB griestu par 47,527 B. Griests pārlikts uz mērījuma pamata; deklarētā 700–1,400 KiB josla paliek redzama. N22 ievades moduļi (225,423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270,014 B paliek zem 264 KiB griesta. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "bytes": 1522870,
+        "declared_max_bytes": 1433600,
+        "kib": 1487.2,
+        "max_bytes": 1540096,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 98.88,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N21 ir 266616 B, tāpēc izpildītais griests ir 264 KiB. Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "bytes": 270014,
+        "declared_max_bytes": 225280,
+        "kib": 263.7,
+        "max_bytes": 270336,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 99.88,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 44267,
+        "declared_max_bytes": 81920,
+        "kib": 43.2,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 54.04,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 249798,
+        "declared_max_bytes": 430080,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      }
+    ],
+    "notes": [
+      "The response-input runtime (registry, components, integration) ships from src/ and is NOT inlined into output/simulator.html; only the #sim-response-types island and the three smoke vectors enter the artifact at the merge build. N31 owns the final inline / lazy-load / re-budget decision.",
+      "The measured figures below are the manifest of the last build. They include the three smoke vectors (inlined) and exclude the island until the coordinator rebuilds at merge; the corpus is re-run after that rebuild for the final numbers."
+    ],
+    "re_budget_history": [
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 225192,
+        "new_ceiling_bytes": 237568,
+        "previous_ceiling_bytes": 225280,
+        "reason_lv": "Izmērītais inline runtime JS pēc N20 bija 225,192 B (219,9 KiB); iepriekšais griests tiktu pārkāpts par 88 baitiem, tāpēc tas tika pārbālansēts uz mērījumu, nevis uz noapaņošanos.",
+        "task": "N20"
+      },
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 266616,
+        "new_ceiling_bytes": 270336,
+        "previous_ceiling_bytes": 237568,
+        "reason_lv": "Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "task": "N21"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 1436780,
+        "new_ceiling_bytes": 1474560,
+        "previous_ceiling_bytes": 1433600,
+        "reason_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots; mērītais kopējais apjoms ir 1,436,080 B (1,402,4 KiB), kas pārsniedz deklarēto 1,400 KiB joslu par 2,480 B. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N21"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 1522087,
+        "new_ceiling_bytes": 1540096,
+        "previous_ceiling_bytes": 1474560,
+        "reason_lv": "N22 atbilžu ievades slānis: reakcijas tipu reģistra sala (34,179 B kanoniski), terminoloģijas salas pieaugums (+47,549 B) un trīs dūmu vektori palielina artefaktu līdz 1,522,087 B (1,486,4 KiB), kas pārsniedz N21 noteikto 1,440 KiB griestu par 47,527 B. Griests pārlikts uz mērījuma pamata; deklarētā 700–1,400 KiB josla paliek redzama. N22 ievades moduļi (225,423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270,014 B paliek zem 264 KiB griesta. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N22"
+      }
+    ],
+    "status": "PASS"
+  },
+  "completion_contract": {
+    "binding": {
+      "index": 0,
+      "shape": "(type_id, contract, instance, payload)"
+    },
+    "downstream": [
+      "navigator map cells (N21/N30)",
+      "review warning list (N21/N33)"
+    ],
+    "owner": "SimInputsRegistry.completion (N22-A); the integration owns the call, never the model",
+    "verdict_shape": "{status: complete|incomplete|invalid, missing: [{field_id, name}], errors: [{id, field, message_key}]}"
+  },
+  "digests": {
+    "data/exam_policy.json": {
+      "bytes": 14237,
+      "sha256": "5c72408c203e7684d7bfd4b85250157ddd83fb4a8ea6d1fafafa1dd1f3d25df1"
+    },
+    "data/response_types.json": {
+      "bytes": 48837,
+      "sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72"
+    },
+    "data/terms.json": {
+      "bytes": 223684,
+      "sha256": "fcdea7660c9b147a34b0fa16700f39f52a0ddc072e66d6c10297845c4c3d731f"
+    },
+    "docs/RESPONSE_INPUT_FORMAT.md": {
+      "bytes": 18582,
+      "sha256": "bf8d3c8515238a020d494cf9fffb3c3aef114e4940b32ed8d08e9339e402e95c"
+    },
+    "src/compiled/inputs/components.js": {
+      "bytes": 123374,
+      "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+    },
+    "src/compiled/inputs/integration.js": {
+      "bytes": 43718,
+      "sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+    },
+    "src/compiled/inputs/registry.js": {
+      "bytes": 58817,
+      "sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+    },
+    "src/inputs/components.ts": {
+      "bytes": 112959,
+      "sha256": "c1a16c7286c506154a212a0ecb5f228a46a9f67fe514c277680b67b900ae57a9"
+    },
+    "src/inputs/integration.ts": {
+      "bytes": 44258,
+      "sha256": "d36d778ad19aab6f2904b70363a305efa2c1ebfcba30eb1b745bb99a09d59dba"
+    },
+    "src/inputs/registry.ts": {
+      "bytes": 60824,
+      "sha256": "eddae3aceea02daa2cf36f31915a702555f7c0c18a87b18de0beaa2734d126db"
+    },
+    "src/smoke-subset.js": {
+      "bytes": 31837,
+      "sha256": "b5381bf91afd596eec7d3ce73d3ecfeb7728b00da55b9dc25c3c38bee6c04ac1"
+    },
+    "tools/check_n22_components.js": {
+      "bytes": 61548,
+      "sha256": "b7db9e0f187f7b41ee83b6c377c2431bab76e4c5ca5f3afc70ba22263ab1f323"
+    },
+    "tools/check_n22_runtime.js": {
+      "bytes": 51341,
+      "sha256": "7fe042cb99472fa70940618ae924646c27474cae5438e40b5884d5d90912c2df"
+    },
+    "tools/check_n22_semantics.js": {
+      "bytes": 32562,
+      "sha256": "603df2917da4916e648fdc171f7b081adb3df55e38793ba670f83964fe55f1fd"
+    },
+    "tools/n22_corpus.py": {
+      "bytes": 46213,
+      "sha256": "aa348292543ad66860f39a94480340a4772a9cef6a37b70811b28c35f911091e"
+    },
+    "tools/validate_n22_inputs.py": {
+      "bytes": 34880,
+      "sha256": "b25212a63a3f7cd30156aa4bbc8a52408aa4ae7957d41a20658faf6d79eb90e3"
+    }
+  },
+  "handoff": {
+    "N23_grading": {
+      "parity_table": "evidence/N22_PARITY_TABLE.json",
+      "terminal_record": "ExamSession.toTerminalRecord() carries the raw payloads; the parity table proves each one is what the frozen engine consumes."
+    },
+    "N24_form_assembly": {
+      "payload_vocabulary": "SimInputsIntegration.vocabulary() — type id → kind, variant and the ride-alongs.",
+      "registry": "SimInputs.registry.contractFor(typeId)"
+    },
+    "N30_practice": {
+      "overlays": "completionMapState() and reviewMissingList() — pure functions of the map/review state plus the answers plus the bindings."
+    },
+    "N31_inline": {
+      "island_bytes": 34962,
+      "note": "The three input modules ship from src/; only the island and the smoke vectors are inlined at merge.",
+      "runtime_module_bytes_total": 225909
+    },
+    "N33_accessibility": {
+      "aria_contract": "the registry label bank and the render description; N33 owns the live screen-reader pass."
+    }
+  },
+  "inputs_layer": {
+    "budget_effect": {
+      "artifact_total_headroom_after_island_bytes": -17736,
+      "artifact_total_headroom_before_island_bytes": 17226,
+      "island_bytes": 34962,
+      "projected_artifact_overrun_bytes": 17736,
+      "projected_runtime_js_overrun_bytes": 3076,
+      "runtime_js_headroom_after_smoke_bytes": -3076,
+      "runtime_js_headroom_before_smoke_bytes": 322,
+      "smoke_appended_bytes": 3398
+    },
+    "modules": [
+      {
+        "bytes": 58817,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/registry.js",
+        "sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+      },
+      {
+        "bytes": 123374,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/components.js",
+        "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+      },
+      {
+        "bytes": 43718,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/integration.js",
+        "sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+      }
+    ],
+    "notes": [
+      "The compiled input modules are strict TypeScript output and are committed; the drift guard (tools/compile_n21_ts.py --check) keeps them in step with src/inputs/*.ts.",
+      "The three smoke vectors are appended to src/smoke-subset.js and are inlined, so they consume runtime-JS headroom. Their appended size is measured against the N21 ledger figure for the same file.",
+      "The projection above is what the merge build will measure: the island is inlined, the modules are not. A positive projected_artifact_overrun_bytes means the enforced artifact-total ceiling is exceeded by that many bytes once the island lands; AGENTS.md sets the budget on the measured requirement, so the resolution is a visible re-budget (coordinator / N31), not a silent shrink of the contract."
+    ],
+    "registry_island": {
+      "bytes": 34962,
+      "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" — the same projection the build inlines",
+      "file_bytes": 48837,
+      "inlined_in_artifact": true,
+      "note": "Inlined as #sim-response-types by the merge build; the island is JSON data, so it counts against the artifact total, not the runtime-JS code budget.",
+      "path": "data/response_types.json",
+      "sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72"
+    },
+    "runtime_module_bytes_total": 225909,
+    "smoke_vectors": {
+      "appended_bytes": 3398,
+      "baseline_bytes": 28439,
+      "file": "src/smoke-subset.js",
+      "file_bytes": 31837,
+      "ids": [
+        "SMK-N22-NUMERIC-CAPTURE",
+        "SMK-N22-CLASSIFICATION-CAPTURE",
+        "SMK-N22-ORDERING-CAPTURE"
+      ],
+      "inlined_in_artifact": true
+    }
+  },
+  "not_claimed": [
+    "No official examination, grade or proctoring status.",
+    "No screen-reader acceptance: the ARIA evidence is a mechanical structural check (roles, names, key resolution); N33 performs the live pass.",
+    "No browser-render acceptance: the render descriptions are JSON, not pixels.",
+    "No semantic grading of free text: Q15/Q16 stay pending and Q03 stays manual-rubric.",
+    "No claim that the four variants are four finished questions.",
+    "No keyboard-vs-pointer acceptance here: that fixture belongs to N22-B; this record references its output rather than duplicating it."
+  ],
+  "official_programme_facts": {
+    "examination": "written on paper",
+    "maximum_minutes": 180,
+    "note": "The programme fixes no response component, field count or ARIA name. The input semantics are this simulator's proposal and are labelled as such in the island.",
+    "topics": 7
+  },
+  "owner": "N22",
+  "parity_table": {
+    "adapters_found": 0,
+    "engines": {
+      "graph": 2,
+      "manual_pending": 1,
+      "method": 4,
+      "quantity": 11
+    },
+    "evidence": "evidence/N22_PARITY_TABLE.json",
+    "findings": [
+      "N22-C05",
+      "N22-C06"
+    ],
+    "identity_failures": [],
+    "rows": 18
+  },
+  "payload_contracts": {
+    "graph": {
+      "field_types": {
+        "variant": "raw_string"
+      },
+      "kind": "graph",
+      "note_lv": "Grafika ieraksts (Q11) vai zīmējuma stāvoklis (plot_state).",
+      "required": [
+        "variant"
+      ],
+      "value_type": "raw_string"
+    },
+    "matching": {
+      "field_types": {
+        "pairs": "pair_list"
+      },
+      "kind": "matching",
+      "note_lv": "Pāri tiek glabāti tādi, kā tos izkārtotja.",
+      "required": [
+        "pairs"
+      ],
+      "value_type": "pair_list"
+    },
+    "method": {
+      "field_types": {
+        "variant": "raw_string"
+      },
+      "kind": "method",
+      "note_lv": "Metodes vektors (Q13) vai pāri (Q17).",
+      "required": [
+        "variant"
+      ],
+      "value_type": "raw_string"
+    },
+    "numeric": {
+      "field_types": {
+        "values": "raw_string_map"
+      },
+      "kind": "numeric",
+      "note_lv": "Skaitļi tiek glabāti tādi, kā tos ievadīja; parsēšana pieder vērtēšanai.",
+      "required": [
+        "values"
+      ],
+      "value_type": "raw_string_map"
+    },
+    "option_select": {
+      "field_types": {
+        "justification": "raw_string",
+        "selected": "string_list"
+      },
+      "kind": "option_select",
+      "note_lv": "Izvēles identifikatori un brīvais pamatojums.",
+      "required": [
+        "selected"
+      ],
+      "value_type": "string_list"
+    },
+    "ordering": {
+      "field_types": {
+        "order": "string_list"
+      },
+      "kind": "ordering",
+      "note_lv": "Secība tiek glabāta tāda, kā to izkārtotja.",
+      "required": [
+        "order"
+      ],
+      "value_type": "string_list"
+    },
+    "raw_text": {
+      "field_types": {
+        "text": "raw_string"
+      },
+      "kind": "raw_text",
+      "note_lv": "Neapstrādats ievades teksts, kamēr N22 tipa komponenti nav pievienoti.",
+      "required": [
+        "text"
+      ],
+      "value_type": "raw_string"
+    }
+  },
+  "policy_label": "PROPOSED training policy (N22): the eighteen response components, their payload shapes, completion rules and Latvian ARIA names. The 2025 programme fixes none of them; each registry entry carries its own PROPOSED label.",
+  "schema_version": 1,
+  "status": "PASS",
+  "terms_lint": {
+    "aria_render_flags": 36,
+    "component_term_gaps": 0,
+    "english_hits": 0,
+    "literal_unit_violations": 0,
+    "term_keys_scanned": 207,
+    "unresolved_term_keys": 0
+  }
+}

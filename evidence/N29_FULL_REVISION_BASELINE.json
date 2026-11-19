@@ -1,0 +1,3987 @@
+{
+  "schema_version": 1,
+  "owner": "N29",
+  "note": "Frozen full-revision regression baseline (graded history + N28 remediation queue + F07 self-assessments).",
+  "view_model": {
+    "contract": "N29-revision-view-model",
+    "counts": {
+      "learning": 1,
+      "mastered": 1,
+      "near_mastered": 1,
+      "needs_review": 1,
+      "unavailable": 0,
+      "unseen": 60
+    },
+    "epistemic_label": "PROPOSED",
+    "honesty_note_lv": "PROPOSED mācību politika: šis pārskats apvieno automātiski pārbaudīto apguves stāvokli (N26), atkārtošanas rindu (N28) un jūsu paša kritēriju pašvērtējumu (F07) — katru no sava atsevišķa avota. Pašvērtējums nekad nemaina apguves stāvokli un nav oficiāls RSU vērtējums.",
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_digest": "f571a286d08eb6ff8442e56ab4ee2943947e234807102f1e264e104cf2c2ef2d",
+    "policy_id": "sim-colloq1-revision-v1",
+    "schema_version": 1,
+    "title_lv": "Vienotais atkārtošanas pārskats un kritēriju pašvērtējums (PROPOSED)",
+    "topics": [
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 1,
+          "near_mastered": 0,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 8
+        },
+        "empty_notice_lv": null,
+        "is_empty_topic": false,
+        "name_lv": "Ievads. Šķīdumi un ķīmiskās reakcijas",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX01"
+              ],
+              "concept_id": "P1-01",
+              "family_ids": [
+                "FAM-1C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-1-1C-A-01",
+                "COL1-1-1C-B-01",
+                "COL1-1-1C-C-01",
+                "COL1-1-1C-D-01"
+              ],
+              "master_anchor": "stehiometrija",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 4,
+              "consecutive_correct": 0,
+              "effective_state": "mastered",
+              "icon": "●",
+              "label_lv": "Apgūts (pašmācībā)",
+              "last_practiced_day": 3,
+              "last_practiced_lv": "Pēdējā prakse: 3. diena",
+              "source": "N26:SimMastery",
+              "state": "mastered"
+            },
+            "outcome_id": "P1-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": true,
+              "has_ratings": true,
+              "rated_count": 2,
+              "ratings": {
+                "C1_VALUE": "confident",
+                "C2_SIGFIG": "with_effort"
+              },
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): 2 no 6 kritērijiem novērtēti",
+              "updated_seq": 1
+            },
+            "statement_lv": "Masas nezūdamība un stehiometriski aprēķini",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-02",
+              "family_ids": [
+                "FAM-1A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1A-A-01",
+                "COL1-1-1A-B-01",
+                "COL1-1-1A-C-01",
+                "COL1-1-1A-D-01"
+              ],
+              "master_anchor": "maisijumi",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": true,
+              "has_ratings": true,
+              "rated_count": 1,
+              "ratings": {
+                "C1_PHASE": "not_yet"
+              },
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): 1 no 8 kritērijiem novērtēti",
+              "updated_seq": 2
+            },
+            "statement_lv": "Maisījumi un dispersijas, tostarp homogēni un heterogēni maisījumi",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-03",
+              "family_ids": [
+                "FAM-1A",
+                "FAM-1C"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1A-A-01",
+                "COL1-1-1A-B-01",
+                "COL1-1-1A-C-01",
+                "COL1-1-1A-D-01",
+                "COL1-1-1C-A-01",
+                "COL1-1-1C-B-01",
+                "COL1-1-1C-C-01",
+                "COL1-1-1C-D-01"
+              ],
+              "master_anchor": "reakcijas",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 14,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Izejvielas, produkti un savienošanās, sadalīšanās, apmaiņas, aizvietošanas un redoksa reakcijas",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-04",
+              "family_ids": [
+                "FAM-1A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1A-A-01",
+                "COL1-1-1A-B-01",
+                "COL1-1-1A-C-01",
+                "COL1-1-1A-D-01"
+              ],
+              "master_anchor": "klases",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Skābes, bāzes, oksīdi un sāļi",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX02"
+              ],
+              "concept_id": "P1-05",
+              "family_ids": [
+                "FAM-1B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-1-1B-A-01",
+                "COL1-1-1B-B-01",
+                "COL1-1-1B-C-01",
+                "COL1-1-1B-D-01"
+              ],
+              "master_anchor": "atomi",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Atoms, jons un molekula",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX02"
+              ],
+              "concept_id": "P1-06",
+              "family_ids": [
+                "FAM-1B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-1-1B-A-01",
+                "COL1-1-1B-B-01",
+                "COL1-1-1B-C-01",
+                "COL1-1-1B-D-01"
+              ],
+              "master_anchor": "elektroliti",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Disociācija, elektrolīti un neelektrolīti",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-07",
+              "family_ids": [
+                "FAM-1B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1B-A-01",
+                "COL1-1-1B-B-01",
+                "COL1-1-1B-C-01",
+                "COL1-1-1B-D-01"
+              ],
+              "master_anchor": "saites",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Jonu un kovalentā saite",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-08",
+              "family_ids": [
+                "FAM-1D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1D-A-01",
+                "COL1-1-1D-B-01",
+                "COL1-1-1D-C-01",
+                "COL1-1-1D-D-01"
+              ],
+              "master_anchor": "atomi-tabula",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 11,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Periodiskās tabulas izmantošana",
+            "topic": 1
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P1-09",
+              "family_ids": [
+                "FAM-1D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-1-1D-A-01",
+                "COL1-1-1D-B-01",
+                "COL1-1-1D-C-01",
+                "COL1-1-1D-D-01"
+              ],
+              "master_anchor": "skidiba-tabula",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P1-09",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 11,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Šķīdības tabulas izmantošana",
+            "topic": 1
+          }
+        ],
+        "outcomes_total": 9,
+        "self_rated_outcomes_count": 2,
+        "summary_line_lv": "1. tēma — Apgūti: 1 · Gandrīz apgūti: 0 · Apgūšanā: 0 · Jāatkārto: 0 · Nav mēģināti: 8 · Nepieejami: 0 · Pašvērtēti: 2",
+        "topic": 1
+      },
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 0,
+          "near_mastered": 1,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 9
+        },
+        "empty_notice_lv": null,
+        "is_empty_topic": false,
+        "name_lv": "Aprēķini un grafiskās metodes ķīmijā",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-01",
+              "family_ids": [
+                "FAM-2A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2A-A-01",
+                "COL1-2-2A-B-01",
+                "COL1-2-2A-C-01",
+                "COL1-2-2A-D-01"
+              ],
+              "master_anchor": "ch-4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 2,
+              "consecutive_correct": 0,
+              "effective_state": "near_mastered",
+              "icon": "◑",
+              "label_lv": "Gandrīz apgūts",
+              "last_practiced_day": 2,
+              "last_practiced_lv": "Pēdējā prakse: 2. diena",
+              "source": "N26:SimMastery",
+              "state": "near_mastered"
+            },
+            "outcome_id": "P2-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Laboratorijas trauku, svaru un pipetes uzpildītāja nosaukumi un lietojums",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-02",
+              "family_ids": [
+                "FAM-2B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2B-A-01",
+                "COL1-2-2B-B-01",
+                "COL1-2-2B-C-01",
+                "COL1-2-2B-D-01"
+              ],
+              "master_anchor": "ch-2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Masas, tilpuma, temperatūras, vielas daudzuma un blīvuma mērvienības",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX04"
+              ],
+              "concept_id": "P2-03",
+              "family_ids": [
+                "FAM-2B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-2-2B-A-01",
+                "COL1-2-2B-B-01",
+                "COL1-2-2B-C-01",
+                "COL1-2-2B-D-01"
+              ],
+              "master_anchor": "ch-2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Mili-, mikro-, nano-, kilo-, mega- un giga- priedēkļi",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-04",
+              "family_ids": [
+                "FAM-2A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2A-A-01",
+                "COL1-2-2A-B-01",
+                "COL1-2-2A-C-01",
+                "COL1-2-2A-D-01"
+              ],
+              "master_anchor": "ch-3",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Mērīšana un analītiskais signāls: kvalitatīvi un kvantitatīvi dati",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX03",
+                "EX04"
+              ],
+              "concept_id": "P2-05",
+              "family_ids": [
+                "FAM-2B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-2-2B-A-01",
+                "COL1-2-2B-B-01",
+                "COL1-2-2B-C-01",
+                "COL1-2-2B-D-01"
+              ],
+              "master_anchor": "ch-2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "mg, g, kg, mL, L, cm³ pārvēršana",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-06",
+              "family_ids": [
+                "FAM-2B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2B-A-01",
+                "COL1-2-2B-B-01",
+                "COL1-2-2B-C-01",
+                "COL1-2-2B-D-01"
+              ],
+              "master_anchor": "ch-2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Darbību secība, daļas, procenti, tiešā un apgrieztā proporcija, pakāpes",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX03"
+              ],
+              "concept_id": "P2-07",
+              "family_ids": [
+                "FAM-2C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-2-2C-A-01",
+                "COL1-2-2C-B-01",
+                "COL1-2-2C-C-01",
+                "COL1-2-2C-D-01"
+              ],
+              "master_anchor": "ch-5",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Trauka un svaru skalas nolasīšana",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-08",
+              "family_ids": [
+                "FAM-2D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2D-A-01",
+                "COL1-2-2D-B-01",
+                "COL1-2-2D-C-01",
+                "COL1-2-2D-D-01"
+              ],
+              "master_anchor": "ch-9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Vērtību nolasīšana no grafika un asīm",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P2-09",
+              "family_ids": [
+                "FAM-2D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-2-2D-A-01",
+                "COL1-2-2D-B-01",
+                "COL1-2-2D-C-01",
+                "COL1-2-2D-D-01"
+              ],
+              "master_anchor": "ch-9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-09",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Neatkarīgais un atkarīgais lielums, asu mērvienības un skalas izvēle",
+            "topic": 2
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX04"
+              ],
+              "concept_id": "P2-10",
+              "family_ids": [
+                "FAM-2B",
+                "FAM-2C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-2-2B-A-01",
+                "COL1-2-2B-B-01",
+                "COL1-2-2B-C-01",
+                "COL1-2-2B-D-01",
+                "COL1-2-2C-A-01",
+                "COL1-2-2C-B-01",
+                "COL1-2-2C-C-01",
+                "COL1-2-2C-D-01"
+              ],
+              "master_anchor": "ch-8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P2-10",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 13,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Zīmīgo ciparu skaits un aritmētisko darbību noapaļošana",
+            "topic": 2
+          }
+        ],
+        "outcomes_total": 10,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "2. tēma — Apgūti: 0 · Gandrīz apgūti: 1 · Apgūšanā: 0 · Jāatkārto: 0 · Nav mēģināti: 9 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 2
+      },
+      {
+        "counts": {
+          "learning": 1,
+          "mastered": 0,
+          "near_mastered": 0,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 10
+        },
+        "empty_notice_lv": null,
+        "is_empty_topic": false,
+        "name_lv": "Šķīdumi un koncentrāciju aprēķini",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-01",
+              "family_ids": [
+                "FAM-3A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3A-A-01",
+                "COL1-3-3A-B-01",
+                "COL1-3-3A-C-01",
+                "COL1-3-3A-D-01"
+              ],
+              "master_anchor": "n5",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 1,
+              "consecutive_correct": 0,
+              "effective_state": "learning",
+              "icon": "◔",
+              "label_lv": "Apgūšanas procesā",
+              "last_practiced_day": 3,
+              "last_practiced_lv": "Pēdējā prakse: 3. diena",
+              "source": "N26:SimMastery",
+              "state": "learning"
+            },
+            "outcome_id": "P3-01",
+            "queue": {
+              "active_count": 1,
+              "entry_ids": [
+                "FAM-3A::P3-01"
+              ],
+              "open_count": 1,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Koncentrāciju veidi (c, w, γ) un šķīduma, šķīdinātāja un izšķīdušās vielas jēdzieni",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-02",
+              "family_ids": [
+                "FAM-3A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3A-A-01",
+                "COL1-3-3A-B-01",
+                "COL1-3-3A-C-01",
+                "COL1-3-3A-D-01"
+              ],
+              "master_anchor": "n3",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Disociācija un jonu daudzums šķīdumā",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-03",
+              "family_ids": [
+                "FAM-3D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3D-A-01",
+                "COL1-3-3D-B-01",
+                "COL1-3-3D-C-01",
+                "COL1-3-3D-D-01"
+              ],
+              "master_anchor": "n5",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "NaCl 0,9 %, glikoze 5 %, H₂O₂ 3 %, etanols 70 %, jods 5 % un analīžu konteksts",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX05"
+              ],
+              "concept_id": "P3-04",
+              "family_ids": [
+                "FAM-3A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-3-3A-A-01",
+                "COL1-3-3A-B-01",
+                "COL1-3-3A-C-01",
+                "COL1-3-3A-D-01"
+              ],
+              "master_anchor": "n4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Vielas daudzums, molmasa un mērvienības (M, m, V, n, w, c, ρ, γ)",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX05"
+              ],
+              "concept_id": "P3-05",
+              "family_ids": [
+                "FAM-3A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-3-3A-A-01",
+                "COL1-3-3A-B-01",
+                "COL1-3-3A-C-01",
+                "COL1-3-3A-D-01"
+              ],
+              "master_anchor": "n4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "m ↔ n ar doto molmasu",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX05"
+              ],
+              "concept_id": "P3-06",
+              "family_ids": [
+                "FAM-3A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-3-3A-A-01",
+                "COL1-3-3A-B-01",
+                "COL1-3-3A-C-01",
+                "COL1-3-3A-D-01"
+              ],
+              "master_anchor": "n6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 9,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "w un c no masas, vielas daudzuma un otrādi",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-07",
+              "family_ids": [
+                "FAM-3B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3B-A-01",
+                "COL1-3-3B-B-01",
+                "COL1-3-3B-C-01",
+                "COL1-3-3B-D-01"
+              ],
+              "master_anchor": "n6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Šķīduma masa no tilpuma un blīvuma",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-08",
+              "family_ids": [
+                "FAM-3B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3B-A-01",
+                "COL1-3-3B-B-01",
+                "COL1-3-3B-C-01",
+                "COL1-3-3B-D-01"
+              ],
+              "master_anchor": "n9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "w ↔ c ar blīvumu",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P3-09",
+              "family_ids": [
+                "FAM-3B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-3-3B-A-01",
+                "COL1-3-3B-B-01",
+                "COL1-3-3B-C-01",
+                "COL1-3-3B-D-01"
+              ],
+              "master_anchor": "n9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-09",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "γ ↔ w un γ ↔ c",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX06"
+              ],
+              "concept_id": "P3-10",
+              "family_ids": [
+                "FAM-3C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-3-3C-A-01",
+                "COL1-3-3C-B-01",
+                "COL1-3-3C-C-01",
+                "COL1-3-3C-D-01"
+              ],
+              "master_anchor": "n10",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-10",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Atšķaidīšanas aprēķini un gatavā tilpuma jēdziens",
+            "topic": 3
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX06"
+              ],
+              "concept_id": "P3-11",
+              "family_ids": [
+                "FAM-3C",
+                "FAM-3D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-3-3C-A-01",
+                "COL1-3-3C-B-01",
+                "COL1-3-3C-C-01",
+                "COL1-3-3C-D-01",
+                "COL1-3-3D-A-01",
+                "COL1-3-3D-B-01",
+                "COL1-3-3D-C-01",
+                "COL1-3-3D-D-01"
+              ],
+              "master_anchor": "n4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P3-11",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 15,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Zīmīgie cipari, mg/g un mL/L; nepieļaut masas un tilpuma tiešu pārrēķinu bez blīvuma",
+            "topic": 3
+          }
+        ],
+        "outcomes_total": 11,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "3. tēma — Apgūti: 0 · Gandrīz apgūti: 0 · Apgūšanā: 1 · Jāatkārto: 0 · Nav mēģināti: 10 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 3
+      },
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 0,
+          "near_mastered": 0,
+          "needs_review": 1,
+          "unavailable": 0,
+          "unseen": 10
+        },
+        "empty_notice_lv": null,
+        "is_empty_topic": false,
+        "name_lv": "Termodinamika un tās piemēri bioloģiskajās sistēmās",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P4-01",
+              "family_ids": [
+                "FAM-4A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-4-4A-A-01",
+                "COL1-4-4A-B-01",
+                "COL1-4-4A-C-01",
+                "COL1-4-4A-D-01"
+              ],
+              "master_anchor": "ch4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Eksotermisks un endotermisks process un temperatūras novērojums",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX08"
+              ],
+              "concept_id": "P4-02",
+              "family_ids": [
+                "FAM-4B",
+                "FAM-4C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4B-A-01",
+                "COL1-4-4B-B-01",
+                "COL1-4-4B-C-01",
+                "COL1-4-4B-D-01",
+                "COL1-4-4C-A-01",
+                "COL1-4-4C-B-01",
+                "COL1-4-4C-C-01",
+                "COL1-4-4C-D-01"
+              ],
+              "master_anchor": "ch4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 4,
+              "consecutive_correct": 0,
+              "effective_state": "needs_review",
+              "icon": "↻",
+              "label_lv": "Jāatkārto",
+              "last_practiced_day": 1,
+              "last_practiced_lv": "Pēdējā prakse: 1. diena",
+              "source": "N26:SimMastery",
+              "state": "needs_review"
+            },
+            "outcome_id": "P4-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 12,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Entalpija un siltumefekti",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX08"
+              ],
+              "concept_id": "P4-03",
+              "family_ids": [
+                "FAM-4B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4B-A-01",
+                "COL1-4-4B-B-01",
+                "COL1-4-4B-C-01",
+                "COL1-4-4B-D-01"
+              ],
+              "master_anchor": "ch5",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Hesa likums un ΔH aprēķins",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P4-04",
+              "family_ids": [
+                "FAM-4A",
+                "FAM-4D"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-4-4A-A-01",
+                "COL1-4-4A-B-01",
+                "COL1-4-4A-C-01",
+                "COL1-4-4A-D-01",
+                "COL1-4-4D-A-01",
+                "COL1-4-4D-B-01",
+                "COL1-4-4D-C-01",
+                "COL1-4-4D-D-01"
+              ],
+              "master_anchor": "ch3",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 15,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Pirmais termodinamikas likums un enerģijas bilance",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P4-05",
+              "family_ids": [
+                "FAM-4A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-4-4A-A-01",
+                "COL1-4-4A-B-01",
+                "COL1-4-4A-C-01",
+                "COL1-4-4A-D-01"
+              ],
+              "master_anchor": "ch2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Atvērta, slēgta, izolēta sistēma; sistēma un apkārtējā vide",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P4-06",
+              "family_ids": [
+                "FAM-4A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-4-4A-A-01",
+                "COL1-4-4A-B-01",
+                "COL1-4-4A-C-01",
+                "COL1-4-4A-D-01"
+              ],
+              "master_anchor": "ch2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Kinētiskā un potenciālā enerģija, standartapstākļi",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX08"
+              ],
+              "concept_id": "P4-07",
+              "family_ids": [
+                "FAM-4D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4D-A-01",
+                "COL1-4-4D-B-01",
+                "COL1-4-4D-C-01",
+                "COL1-4-4D-D-01"
+              ],
+              "master_anchor": "ch8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Kalorimetrija un pārtikas sadegšanas siltuma saistība ar enerģētisko vērtību",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX07"
+              ],
+              "concept_id": "P4-08",
+              "family_ids": [
+                "FAM-4C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4C-A-01",
+                "COL1-4-4C-B-01",
+                "COL1-4-4C-C-01",
+                "COL1-4-4C-D-01"
+              ],
+              "master_anchor": "ch7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Gibsa enerģija, patvaļības kritērijs un temperatūras ietekme",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P4-09",
+              "family_ids": [
+                "FAM-4B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-4-4B-A-01",
+                "COL1-4-4B-B-01",
+                "COL1-4-4B-C-01",
+                "COL1-4-4B-D-01"
+              ],
+              "master_anchor": "ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-09",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Reakcijas ΔS no dotajiem datiem un pamatots secinājums",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX07"
+              ],
+              "concept_id": "P4-10",
+              "family_ids": [
+                "FAM-4C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4C-A-01",
+                "COL1-4-4C-B-01",
+                "COL1-4-4C-C-01",
+                "COL1-4-4C-D-01"
+              ],
+              "master_anchor": "ch7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-10",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "ΔG = ΔH − TΔS ar saskaņotām vienībām",
+            "topic": 4
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX07"
+              ],
+              "concept_id": "P4-11",
+              "family_ids": [
+                "FAM-4C",
+                "FAM-4D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-4-4C-A-01",
+                "COL1-4-4C-B-01",
+                "COL1-4-4C-C-01",
+                "COL1-4-4C-D-01",
+                "COL1-4-4D-A-01",
+                "COL1-4-4D-B-01",
+                "COL1-4-4D-C-01",
+                "COL1-4-4D-D-01"
+              ],
+              "master_anchor": "ch7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P4-11",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 14,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Secinājumi pēc ΔH, ΔS un ΔG; sistēmas un kopējās entropijas atšķirība",
+            "topic": 4
+          }
+        ],
+        "outcomes_total": 11,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "4. tēma — Apgūti: 0 · Gandrīz apgūti: 0 · Apgūšanā: 0 · Jāatkārto: 1 · Nav mēģināti: 10 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 4
+      },
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 0,
+          "near_mastered": 0,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 10
+        },
+        "empty_notice_lv": "Šajā tēmā pašlaik nav reģistrētu automātisko mēģinājumu (godīgs sākuma stāvoklis: 0).",
+        "is_empty_topic": true,
+        "name_lv": "Kinētika un tās nozīme bioloģiskajās sistēmās",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P5-01",
+              "family_ids": [
+                "FAM-5A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-5-5A-A-01",
+                "COL1-5-5A-B-01",
+                "COL1-5-5A-C-01",
+                "COL1-5-5A-D-01"
+              ],
+              "master_anchor": "ch1",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Reakcijas ātrums un ātruma vienības",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P5-02",
+              "family_ids": [
+                "FAM-5A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-5-5A-A-01",
+                "COL1-5-5A-B-01",
+                "COL1-5-5A-C-01",
+                "COL1-5-5A-D-01"
+              ],
+              "master_anchor": "ch2",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Koncentrācijas, temperatūras, virsmas, gāzes spiediena un katalizatora ietekme",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX10"
+              ],
+              "concept_id": "P5-03",
+              "family_ids": [
+                "FAM-5D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5D-A-01",
+                "COL1-5-5D-B-01",
+                "COL1-5-5D-C-01",
+                "COL1-5-5D-D-01"
+              ],
+              "master_anchor": "ch8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Homogēna un heterogēna katalīze; enzīmu un citu katalizatoru salīdzinājums",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P5-04",
+              "family_ids": [
+                "FAM-5A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-5-5A-A-01",
+                "COL1-5-5A-B-01",
+                "COL1-5-5A-C-01",
+                "COL1-5-5A-D-01"
+              ],
+              "master_anchor": "ch4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Aktīvās sadursmes un Maksvela–Bolcmaņa sadalījuma grafiks",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P5-05",
+              "family_ids": [
+                "FAM-5B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-5-5B-A-01",
+                "COL1-5-5B-B-01",
+                "COL1-5-5B-C-01",
+                "COL1-5-5B-D-01"
+              ],
+              "master_anchor": "ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Nulltās, pirmās, otrās pakāpes likumi un koncentrācijas ietekme",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX10"
+              ],
+              "concept_id": "P5-06",
+              "family_ids": [
+                "FAM-5D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5D-A-01",
+                "COL1-5-5D-B-01",
+                "COL1-5-5D-C-01",
+                "COL1-5-5D-D-01"
+              ],
+              "master_anchor": "ch7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Daudzpakāpju mehānisms un ātrumu noteicošā stadija",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX10"
+              ],
+              "concept_id": "P5-07",
+              "family_ids": [
+                "FAM-5A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5A-A-01",
+                "COL1-5-5A-B-01",
+                "COL1-5-5A-C-01",
+                "COL1-5-5A-D-01"
+              ],
+              "master_anchor": "ch8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Enerģijas profili pirms/pēc katalizatora; Eₐ un ΔH",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX09"
+              ],
+              "concept_id": "P5-08",
+              "family_ids": [
+                "FAM-5C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5C-A-01",
+                "COL1-5-5C-B-01",
+                "COL1-5-5C-C-01",
+                "COL1-5-5C-D-01"
+              ],
+              "master_anchor": "ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Pussabrukšanas periods un tā nolasīšana no grafika",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX09"
+              ],
+              "concept_id": "P5-09",
+              "family_ids": [
+                "FAM-5B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5B-A-01",
+                "COL1-5-5B-B-01",
+                "COL1-5-5B-C-01",
+                "COL1-5-5B-D-01"
+              ],
+              "master_anchor": "ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-09",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Ātruma konstantes noteikšana, vienības un izmantošana aprēķinā",
+            "topic": 5
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX09"
+              ],
+              "concept_id": "P5-10",
+              "family_ids": [
+                "FAM-5C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-5-5C-A-01",
+                "COL1-5-5C-B-01",
+                "COL1-5-5C-C-01",
+                "COL1-5-5C-D-01"
+              ],
+              "master_anchor": "ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P5-10",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 8,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Pusperioda farmācijas/medicīnas piemērs ar norādītu modeli",
+            "topic": 5
+          }
+        ],
+        "outcomes_total": 10,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "5. tēma — Apgūti: 0 · Gandrīz apgūti: 0 · Apgūšanā: 0 · Jāatkārto: 0 · Nav mēģināti: 10 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 5
+      },
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 0,
+          "near_mastered": 0,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 8
+        },
+        "empty_notice_lv": "Šajā tēmā pašlaik nav reģistrētu automātisko mēģinājumu (godīgs sākuma stāvoklis: 0).",
+        "is_empty_topic": true,
+        "name_lv": "Oksidēšanās – reducēšanās procesi",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P6-01",
+              "family_ids": [
+                "FAM-6A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-6-6A-A-01",
+                "COL1-6-6A-B-01",
+                "COL1-6-6A-C-01",
+                "COL1-6-6A-D-01"
+              ],
+              "master_anchor": "h-ch1",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Oksidēšanās, reducēšanās, oksidētājs un reducētājs",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX12"
+              ],
+              "concept_id": "P6-02",
+              "family_ids": [
+                "FAM-6A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-6-6A-A-01",
+                "COL1-6-6A-B-01",
+                "COL1-6-6A-C-01",
+                "COL1-6-6A-D-01"
+              ],
+              "master_anchor": "h-ch4",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Oksidētāju/reducētāju atpazīšana ar dotu standartpotenciālu tabulu",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX12"
+              ],
+              "concept_id": "P6-03",
+              "family_ids": [
+                "FAM-6D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-6-6D-A-01",
+                "COL1-6-6D-B-01",
+                "COL1-6-6D-C-01",
+                "COL1-6-6D-D-01"
+              ],
+              "master_anchor": "h-ch3",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Nernsta vienādojums ar norādītu pāri un apstākļiem",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P6-04",
+              "family_ids": [
+                "FAM-6A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-6-6A-A-01",
+                "COL1-6-6A-B-01",
+                "COL1-6-6A-C-01",
+                "COL1-6-6A-D-01"
+              ],
+              "master_anchor": "h-ch8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 5,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Redoksa procesu pamati organismā",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX11"
+              ],
+              "concept_id": "P6-05",
+              "family_ids": [
+                "FAM-6B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-6-6B-A-01",
+                "COL1-6-6B-B-01",
+                "COL1-6-6B-C-01",
+                "COL1-6-6B-D-01"
+              ],
+              "master_anchor": "h-ch6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 4,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Pusreakcijas, elektronu bilance un jonu vienādojumi dažādās vidēs",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P6-06",
+              "family_ids": [
+                "FAM-6B"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-6-6B-A-01",
+                "COL1-6-6B-B-01",
+                "COL1-6-6B-C-01",
+                "COL1-6-6B-D-01"
+              ],
+              "master_anchor": "h-ch7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-06",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 4,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Vides noteikšana pēc pārvērtības un dotajiem nosacījumiem",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX11"
+              ],
+              "concept_id": "P6-07",
+              "family_ids": [
+                "FAM-6C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-6-6C-A-01",
+                "COL1-6-6C-B-01",
+                "COL1-6-6C-C-01",
+                "COL1-6-6C-D-01"
+              ],
+              "master_anchor": "h-ch9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-07",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Titrēšanas lietojums, beigu punkts, trauki un piederumi",
+            "topic": 6
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX11"
+              ],
+              "concept_id": "P6-08",
+              "family_ids": [
+                "FAM-6C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-6-6C-A-01",
+                "COL1-6-6C-B-01",
+                "COL1-6-6C-C-01",
+                "COL1-6-6C-D-01"
+              ],
+              "master_anchor": "h-ch9",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P6-08",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 6,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Masa, daudzums un koncentrācija no titrēšanas un molekulāra/saīsināta jonu vienādojuma",
+            "topic": 6
+          }
+        ],
+        "outcomes_total": 8,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "6. tēma — Apgūti: 0 · Gandrīz apgūti: 0 · Apgūšanā: 0 · Jāatkārto: 0 · Nav mēģināti: 8 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 6
+      },
+      {
+        "counts": {
+          "learning": 0,
+          "mastered": 0,
+          "near_mastered": 0,
+          "needs_review": 0,
+          "unavailable": 0,
+          "unseen": 5
+        },
+        "empty_notice_lv": "Šajā tēmā pašlaik nav reģistrētu automātisko mēģinājumu (godīgs sākuma stāvoklis: 0).",
+        "is_empty_topic": true,
+        "name_lv": "Analīzes metodes ķīmijā",
+        "outcomes": [
+          {
+            "affordances": {
+              "chain_ids": [],
+              "concept_id": "P7-01",
+              "family_ids": [
+                "FAM-7A"
+              ],
+              "has_chain": false,
+              "instance_ids": [
+                "COL1-7-7A-A-01",
+                "COL1-7-7A-B-01",
+                "COL1-7-7A-C-01",
+                "COL1-7-7A-D-01"
+              ],
+              "master_anchor": "h1",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P7-01",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Gaismas izmantošana daudzuma mērīšanai: spektrofotometrijas iespējas",
+            "topic": 7
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX13"
+              ],
+              "concept_id": "P7-02",
+              "family_ids": [
+                "FAM-7A"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-7-7A-A-01",
+                "COL1-7-7A-B-01",
+                "COL1-7-7A-C-01",
+                "COL1-7-7A-D-01"
+              ],
+              "master_anchor": "h6",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P7-02",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Bugēra–Lamberta–Bēra likums un lielumu vienības",
+            "topic": 7
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX13",
+                "EX14"
+              ],
+              "concept_id": "P7-03",
+              "family_ids": [
+                "FAM-7B"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-7-7B-A-01",
+                "COL1-7-7B-B-01",
+                "COL1-7-7B-C-01",
+                "COL1-7-7B-D-01"
+              ],
+              "master_anchor": "h8",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P7-03",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 7,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Kalibrēšanas grafika izmantošana koncentrācijas noteikšanai",
+            "topic": 7
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX14"
+              ],
+              "concept_id": "P7-04",
+              "family_ids": [
+                "FAM-7B",
+                "FAM-7C"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-7-7B-A-01",
+                "COL1-7-7B-B-01",
+                "COL1-7-7B-C-01",
+                "COL1-7-7B-D-01",
+                "COL1-7-7C-A-01",
+                "COL1-7-7C-B-01",
+                "COL1-7-7C-C-01",
+                "COL1-7-7C-D-01"
+              ],
+              "master_anchor": "h10",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 8,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P7-04",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 16,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Laboratorijas darbs 6B: koncentrācija, masa un vielas daudzums no kalibrēšanas grafika",
+            "topic": 7
+          },
+          {
+            "affordances": {
+              "chain_ids": [
+                "EX14"
+              ],
+              "concept_id": "P7-05",
+              "family_ids": [
+                "FAM-7D"
+              ],
+              "has_chain": true,
+              "instance_ids": [
+                "COL1-7-7D-A-01",
+                "COL1-7-7D-B-01",
+                "COL1-7-7D-C-01",
+                "COL1-7-7D-D-01"
+              ],
+              "master_anchor": "h7",
+              "practice_available": true,
+              "practice_reason_lv": null,
+              "source": "N02/N07/N16/N30:Affordances"
+            },
+            "availability": {
+              "available": true,
+              "eligible_count": 4,
+              "reason_lv": null,
+              "source": "N24/N26:Eligibility"
+            },
+            "mastery": {
+              "attempts": 0,
+              "consecutive_correct": 0,
+              "effective_state": "unseen",
+              "icon": "○",
+              "label_lv": "Nav mēģināts",
+              "last_practiced_day": null,
+              "last_practiced_lv": "Pēdējā prakse: nav mēģināts (0)",
+              "source": "N26:SimMastery",
+              "state": "unseen"
+            },
+            "outcome_id": "P7-05",
+            "queue": {
+              "active_count": 0,
+              "entry_ids": [],
+              "open_count": 0,
+              "retried_count": 0,
+              "source": "N28:SimRemediation"
+            },
+            "self_assessment": {
+              "criteria_total": 10,
+              "has_note": false,
+              "has_ratings": false,
+              "rated_count": 0,
+              "ratings": {},
+              "source": "N29:F07",
+              "summary_lv": "Pašvērtējums (F07): vēl nav aizpildīts",
+              "updated_seq": 0
+            },
+            "statement_lv": "Metodes nosacījumu, tukšā parauga un kalibrēšanas robežu izskaidrošana kā pielietojuma prasme",
+            "topic": 7
+          }
+        ],
+        "outcomes_total": 5,
+        "self_rated_outcomes_count": 0,
+        "summary_line_lv": "7. tēma — Apgūti: 0 · Gandrīz apgūti: 0 · Apgūšanā: 0 · Jāatkārto: 0 · Nav mēģināti: 5 · Nepieejami: 0 · Pašvērtēti: 0",
+        "topic": 7
+      }
+    ],
+    "total_outcomes": 64,
+    "digest": "d407880deddd66d8b5c7fd216693ab7a68934c748ab2ab421d8465806a85ff22"
+  },
+  "self_assessment_card_p101": {
+    "contract": "N29-f07-self-assessment-card",
+    "criteria": [
+      {
+        "criterion_id": "C1_VALUE",
+        "current_rating": "confident",
+        "label_lv": "Skaitliskās vērtības aprēķins"
+      },
+      {
+        "criterion_id": "C2_SIGFIG",
+        "current_rating": "with_effort",
+        "label_lv": "Zīmīgo ciparu skaits un noapaļošana"
+      },
+      {
+        "criterion_id": "C1_COEFFICIENTS",
+        "current_rating": "",
+        "label_lv": "Reakcijas vienādojuma koeficientu bilance"
+      },
+      {
+        "criterion_id": "C2_BALANCE_CHECK",
+        "current_rating": "",
+        "label_lv": "Atomu un masas bilances pārbaude"
+      },
+      {
+        "criterion_id": "C1_CORRECTION",
+        "current_rating": "",
+        "label_lv": "Kļūdainā apgalvojuma vai vienādojuma labojums"
+      },
+      {
+        "criterion_id": "C2_MASS_REASON",
+        "current_rating": "",
+        "label_lv": "Masas nezūdamības skaidrojums"
+      }
+    ],
+    "epistemic_label": "PROPOSED",
+    "excluded_from_mastery": true,
+    "key_free_criteria_only": true,
+    "note": "Pārbaudīju stehiometriskos koeficientus.",
+    "note_label_lv": "Izvēles brīvā teksta piezīme (nav obligāta)",
+    "note_max_length": 500,
+    "note_never_analyzed_lv": "Brīvā teksta piezīme tiek saglabāta burtiski bez analīzes, atslēgvārdu meklēšanas vai automātiskas vērtēšanas.",
+    "official_counterpart_status": "UNDETERMINED",
+    "outcome_id": "P1-01",
+    "rating_options": [
+      {
+        "id": "",
+        "label_lv": "Nav novērtēts"
+      },
+      {
+        "id": "confident",
+        "label_lv": "Protu droši"
+      },
+      {
+        "id": "with_effort",
+        "label_lv": "Protu ar piepūli"
+      },
+      {
+        "id": "not_yet",
+        "label_lv": "Vēl neprotu"
+      }
+    ],
+    "schema_version": 1,
+    "self_assessment_label_lv": "Izglītojamā paša novērtējums (F07, PROPOSED) — šis nav automātiskais vērtējums un neietekmē apguves stāvokli.",
+    "source": "N29:F07",
+    "statement_lv": "Masas nezūdamība un stehiometriski aprēķini",
+    "title_lv": "Kritēriju pašvērtējuma kartīte (F07) — P1-01",
+    "topic": 1,
+    "digest": "522bd25a290309024f0b72ce161f7436f80177fb1b38fe060177ee3a48a6f8c1"
+  }
+}

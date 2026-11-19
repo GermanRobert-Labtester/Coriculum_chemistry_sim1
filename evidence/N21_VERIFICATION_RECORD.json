@@ -1,0 +1,413 @@
+{
+  "acceptance_criteria": {
+    "AC1_happy_path": {
+      "claims": [
+        "Every transition of the lifecycle matches the transition table of the frozen #sim-exam-policy island.",
+        "A late write after submit, after expiry and after abort is refused with a stable error id (E_SESSION_LATE_WRITE, E_SESSION_EXPIRED_WRITE, E_SESSION_ABORTED_WRITE), and the answers given before the terminal transition are preserved.",
+        "The advisory timer reads a monotonic clock: the 90 % threshold is a status indication only, the elapsed time keeps counting while the tab is hidden, and the expiry transition preserves the answers.",
+        "Answers are stored raw and unparsed; a serialised session deserialises to identical answers, flags and state.",
+        "Rapid navigation during a re-render loses no in-progress answer.",
+        "The terminal record carries the answers, the flags, the elapsed time and the form id.",
+        "The scripted session runs from the start screen to the terminal record and every transition conforms to the table."
+      ],
+      "evidence": [
+        "evidence/N21_RUNTIME_RECORD.json",
+        "evidence/N21_SESSION_TRACE.json",
+        "tools/check_n21_runtime.js"
+      ],
+      "status": "PASS"
+    },
+    "AC2_negative_or_edge": {
+      "claims": [
+        "The scripted answer/flag sequence (slots 1, 5 and 21 answered, slot 3 flagged, the full range navigated) produces exactly the expected map state, in the pure render state and in the rendered cells alike.",
+        "All 21 slots are reachable by pointer and by keyboard alone; the keyboard run answers and flags across all 21 slots without a single pointer event and the focus is never trapped.",
+        "The review screen carries the unanswered warning with role=\"alert\", and the submission requires an explicit confirmation that the machine also enforces (E_SESSION_CONFIRMATION_REQUIRED)."
+      ],
+      "evidence": [
+        "evidence/N21_RUNTIME_RECORD.json",
+        "evidence/N21_SESSION_TRACE.json"
+      ],
+      "status": "PASS"
+    },
+    "AC3_domain_integrity": {
+      "claims": [
+        "The exam render contains zero help-component markers and zero N16 chain step text; a practice render contains zero exam-session fields and zero exam answer content.",
+        "The mode registry maps mode to allowed components, and an unregistered component fails the render contract loudly with E_MODE_COMPONENT_NOT_ALLOWED.",
+        "The built artifact carries the policy island, the two runtime modules, the shell markup and the boot call, with no external script.",
+        "The two in-file smoke vectors run against the built artifact."
+      ],
+      "evidence": [
+        "evidence/N21_RUNTIME_RECORD.json",
+        "src/smoke-subset.js",
+        "data/exam_policy.json"
+      ],
+      "status": "PASS"
+    }
+  },
+  "byte_budget": {
+    "budgets": [
+      {
+        "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N21 ir 1436780 B, tāpēc izpildītais griests ir 1440 KiB. Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots; mērītais kopējais apjoms ir 1,436,080 B (1,402,4 KiB), kas pārsniedz deklarēto 1,400 KiB joslu par 2,480 B. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "bytes": 1436780,
+        "declared_max_bytes": 1433600,
+        "kib": 1403.1,
+        "max_bytes": 1474560,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 97.44,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N21 ir 266616 B, tāpēc izpildītais griests ir 264 KiB. Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "bytes": 266616,
+        "declared_max_bytes": 225280,
+        "kib": 260.4,
+        "max_bytes": 270336,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 98.62,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 44267,
+        "declared_max_bytes": 81920,
+        "kib": 43.2,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 54.04,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 249798,
+        "declared_max_bytes": 430080,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      }
+    ],
+    "notes": [
+      "The exam shell has to run inside the single-file artifact, so its runtime is inlined; that is why the runtime JS and the artifact total were re-set on the measured requirement (byte_budget.RE_BUDGET_HISTORY, conflicts N21-C02 and N21-C03). The declared Section 1.3 bands stay visible next to the enforced ceilings.",
+      "The final inline / lazy-load / re-budget decision belongs to N31."
+    ],
+    "re_budget_history": [
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 225192,
+        "new_ceiling_bytes": 237568,
+        "previous_ceiling_bytes": 225280,
+        "reason_lv": "Izmērītais inline runtime JS pēc N20 bija 225,192 B (219,9 KiB); iepriekšais griests tiktu pārkāpts par 88 baitiem, tāpēc tas tika pārbālansēts uz mērījumu, nevis uz noapaņošanos.",
+        "task": "N20"
+      },
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 266616,
+        "new_ceiling_bytes": 270336,
+        "previous_ceiling_bytes": 237568,
+        "reason_lv": "Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "task": "N21"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 1436780,
+        "new_ceiling_bytes": 1474560,
+        "previous_ceiling_bytes": 1433600,
+        "reason_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots; mērītais kopējais apjoms ir 1,436,080 B (1,402,4 KiB), kas pārsniedz deklarēto 1,400 KiB joslu par 2,480 B. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N21"
+      }
+    ],
+    "status": "PASS"
+  },
+  "digests": {
+    "artifact_sha256": "7ac0f8b1c4044724876524ad98eca80fe0f7da58602069f4ca263885a6d673f6",
+    "exam_module_digest": "9632f62e992a7063d9fe2117cdde3320bc73f20019c4e30d87fa3fda3c5ded77",
+    "policy_island_bytes": 14237,
+    "policy_island_digest": "5c72408c203e7684d7bfd4b85250157ddd83fb4a8ea6d1fafafa1dd1f3d25df1",
+    "session_module_digest": "eae0fb094e10bc14dd0abfad33c35d6d0c3700ef3c09ea3b6c5b217273bd97b0"
+  },
+  "handoff": {
+    "form_assembly_N24": {
+      "note": "The form is still the blueprint plan: the slot host shows the pending-instance note until N24 supplies the instances.",
+      "slots": 21
+    },
+    "grading_N23": {
+      "note": "The payloads are stored raw and unparsed; the normalisation and the grading belong to N23.",
+      "payload_kinds": [
+        "numeric",
+        "option_select",
+        "ordering",
+        "matching",
+        "graph",
+        "method",
+        "raw_text"
+      ],
+      "terminal_record": "ExamSession.toTerminalRecord() — answers, flags, elapsed time, form id, transitions, unanswered and remediation lists."
+    },
+    "inline_and_rebudget_N31": {
+      "artifact_total_bytes": 1436780,
+      "note": "The inline / lazy-load / re-budget decision belongs to N31; N21 re-set the interim ceilings on the measured requirement.",
+      "runtime_js_bytes": 266616
+    },
+    "logging_N25": {
+      "note": "The trace is the integration input of the logging task; the session state itself is never persisted without an explicit learner opt-in.",
+      "session_trace": "evidence/N21_SESSION_TRACE.json"
+    },
+    "remediation_N28": {
+      "remediation_list": "ExamSession.getRemediationSlotIds() — the post-exam list, because a remediation link cannot exist inside the exam before the submission."
+    }
+  },
+  "not_claimed": [
+    "No official examination, grade or proctoring status: the timer is advisory and labelled as such.",
+    "No browser render, screen-reader, print or instructor acceptance: the accessibility evidence is a mechanical structural check (role=\"alert\", aria-pressed, aria-current, focus movement); the renderer-level acceptance belongs to N22/N33/N34.",
+    "No keyword matching as semantic grading: N21 stores the payload raw and never grades it.",
+    "No claim that the four variants are four finished questions: they are four parameterisations of one family template.",
+    "No persisted session: the state lives in memory for as long as the page does, and no localStorage write happens."
+  ],
+  "official_programme_facts": {
+    "examination": "written on paper",
+    "maximum_minutes": 180,
+    "note": "The 2025 programme fixes no point weight, no question count, no pass mark, no allowed aid and no exact exam question type. The 21 slots, the 100 points and the three forms are the training policy of this simulator (PROPOSED).",
+    "topics": 7
+  },
+  "owner": "N21",
+  "policy_label": "PROPOSED training policy (N21): 21 slots, 100 points, three forms and an advisory 180-minute timer. Official programme facts: seven topics, a written-on-paper examination and a maximum of 180 minutes. The timer is advisory and never claims an official rule.",
+  "schema_version": 1,
+  "session_contract": {
+    "conflicts": [
+      {
+        "id": "N21-C01",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N21",
+        "resolution_lv": "Grafikas klase nes gan Q11 ieraksta, gan plot_state variantus, tāpēc planas forma ir pieejama; tipa saiste ar Q18 seko N04 shēmai (option_select). Ceļa norāde netiek klusējusi pielīgota.",
+        "roadmap_label": "N21 uzdevuma tekstā Q18 minēts kā \"plot state\"",
+        "schema_label": "N04 shēma saista Q18 ar option_select klasi",
+        "topic": "Q18 atbildes veids"
+      },
+      {
+        "id": "N21-C02",
+        "label": "DOCUMENTED-AND-RE-BUDGETED",
+        "owner": "N21",
+        "resolution_lv": "AGENTS.md atļauj budžetu noteikt pēc izmērītajām prasībām, nevis pēc mantotās grāmatu mantras. N21 paceļ izmērīto JS griestu no 232 KiB uz 264 KiB (mērījums 266,616 B). Mērīšanas pamats un atkāpe no deklarētās joslas ir fiksēta failā tools/byte_budget.py un N21 verifikācijas ierakstā. Deklarētā josla 120–220 KiB ir pārsniegta, un tas nav klusējami pielāgots.",
+        "roadmap_label": "Plāna 1.3 sadaļas josla: inline runtime JS 120–220 KiB",
+        "schema_label": "Izmērītais inline runtime JS pēc N21 ir 266,616 B (260,4 KiB); izpildītais griests ir 264 KiB",
+        "topic": "Runtime JS izmērs"
+      },
+      {
+        "id": "N21-C03",
+        "label": "DOCUMENTED-AND-RE-BUDGETED",
+        "owner": "N21",
+        "resolution_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots, un kopējais apjoms pārsniedza plāna joslu, kura jau N20 laikā bija 95,9 % izlietota. N21 pārbālansēja griestu uz izmērījumu (tools/byte_budget.py) un atkāpi fiksēja kā konfliktu, nevis klusējami. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31; N22–N25 jāmēra savs pieprasījums.",
+        "roadmap_label": "Plāna 1.3 sadaļas josla: artefakts kopā 700–1400 KiB",
+        "schema_label": "Izmērītais artefakts pēc N21 ir 1,403,1 KiB, kas pārsniedz deklarēto 1,400 KiB joslu par aptuveni 3 KiB; izpildītais griests ir 1,440 KiB",
+        "topic": "Artefakta kopējais apjoms"
+      }
+    ],
+    "error_ids": [
+      "E_SESSION_INVALID_EVENT",
+      "E_SESSION_INVALID_TRANSITION",
+      "E_SESSION_NOT_STARTED",
+      "E_SESSION_ALREADY_STARTED",
+      "E_SESSION_REVIEW_REQUIRED",
+      "E_SESSION_CONFIRMATION_REQUIRED",
+      "E_SESSION_LATE_WRITE",
+      "E_SESSION_EXPIRED_WRITE",
+      "E_SESSION_ABORTED_WRITE",
+      "E_SESSION_TERMINAL",
+      "E_SESSION_UNKNOWN_SLOT",
+      "E_SESSION_FORM_INVALID",
+      "E_SESSION_PAYLOAD_INVALID",
+      "E_SESSION_SERIALIZE_INVALID",
+      "E_SESSION_MISSING_POLICY"
+    ],
+    "events": [
+      "start",
+      "navigate",
+      "flag",
+      "answer",
+      "request-review",
+      "submit",
+      "expire",
+      "abort"
+    ],
+    "named_variants": {
+      "Q11_record": {
+        "kind": "graph",
+        "variant": "record"
+      },
+      "Q13_vector": {
+        "kind": "method",
+        "variant": "vector"
+      },
+      "Q17_pairs": {
+        "kind": "method",
+        "variant": "pairs"
+      },
+      "Q18_plot_state": {
+        "kind": "graph",
+        "variant": "plot_state"
+      }
+    },
+    "payload_contracts": {
+      "graph": {
+        "field_types": {
+          "variant": "raw_string"
+        },
+        "kind": "graph",
+        "note_lv": "Grafika ieraksts (Q11) vai zīmējuma stāvoklis (plot_state).",
+        "required": [
+          "variant"
+        ],
+        "value_type": "raw_string"
+      },
+      "matching": {
+        "field_types": {
+          "pairs": "pair_list"
+        },
+        "kind": "matching",
+        "note_lv": "Pāri tiek glabāti tādi, kā tos izkārtotja.",
+        "required": [
+          "pairs"
+        ],
+        "value_type": "pair_list"
+      },
+      "method": {
+        "field_types": {
+          "variant": "raw_string"
+        },
+        "kind": "method",
+        "note_lv": "Metodes vektors (Q13) vai pāri (Q17).",
+        "required": [
+          "variant"
+        ],
+        "value_type": "raw_string"
+      },
+      "numeric": {
+        "field_types": {
+          "values": "raw_string_map"
+        },
+        "kind": "numeric",
+        "note_lv": "Skaitļi tiek glabāti tādi, kā tos ievadīja; parsēšana pieder vērtēšanai.",
+        "required": [
+          "values"
+        ],
+        "value_type": "raw_string_map"
+      },
+      "option_select": {
+        "field_types": {
+          "justification": "raw_string",
+          "selected": "string_list"
+        },
+        "kind": "option_select",
+        "note_lv": "Izvēles identifikatori un brīvais pamatojums.",
+        "required": [
+          "selected"
+        ],
+        "value_type": "string_list"
+      },
+      "ordering": {
+        "field_types": {
+          "order": "string_list"
+        },
+        "kind": "ordering",
+        "note_lv": "Secība tiek glabāta tāda, kā to izkārtotja.",
+        "required": [
+          "order"
+        ],
+        "value_type": "string_list"
+      },
+      "raw_text": {
+        "field_types": {
+          "text": "raw_string"
+        },
+        "kind": "raw_text",
+        "note_lv": "Neapstrādats ievades teksts, kamēr N22 tipa komponenti nav pievienoti.",
+        "required": [
+          "text"
+        ],
+        "value_type": "raw_string"
+      }
+    },
+    "slots": 21,
+    "states": [
+      "not-started",
+      "running",
+      "review",
+      "submitted",
+      "expired",
+      "aborted"
+    ],
+    "timer": {
+      "advisory_limit_seconds": 10800,
+      "basis_lv": "Limīts ir 180 minūtes, t. i. programmas maksimums, izmantots kā izglītojošs treniņa limīts; 170 + 10 minūšu sadalījums ir PROPOSED.",
+      "clock": "monotonic",
+      "hidden_tab": "keeps_counting",
+      "review_seconds": 600,
+      "threshold_ratio": 0.9,
+      "working_seconds": 10200
+    },
+    "total_points": 100,
+    "transitions": 48,
+    "view_discipline": {
+      "default_mode": "practice",
+      "modes": {
+        "exam": {
+          "allowed_components": [
+            "input",
+            "timer",
+            "navigator",
+            "map",
+            "review"
+          ],
+          "forbidden_components": [
+            "hint",
+            "chain",
+            "method-card",
+            "term-lookup"
+          ]
+        },
+        "practice": {
+          "allowed_components": [
+            "input",
+            "timer",
+            "navigator",
+            "map",
+            "review",
+            "hint",
+            "chain",
+            "method-card",
+            "term-lookup"
+          ],
+          "forbidden_components": []
+        }
+      },
+      "unregistered_component_error": "E_MODE_COMPONENT_NOT_ALLOWED"
+    }
+  },
+  "sources": {
+    "byte_budget": "d7d5a271ddc8b8681376d96766398f395a79d777d99b8eaa2a089f90d91678bc",
+    "compile_tool": "d891fd95163c0f08b582da3b5124cbafdfc173179f02ae23a645a7869b77f3fd",
+    "exam_module": "9632f62e992a7063d9fe2117cdde3320bc73f20019c4e30d87fa3fda3c5ded77",
+    "exam_typescript": "758b12fd8dd1137d9a6ca97c135812f65e8d332f4dc7e5c669d69d9e84bb32d9",
+    "gate": "1d4c4c71748cf07b8f2e612b01c60d7b9064387b84d0617fb91a0e728bfdf9e1",
+    "harness": "69856d06770542f5f5c58052e53322970a1f3ebdc425a700fed400d8aafe574f",
+    "policy_author": "e4ed3b69f3a825f95f1e4fca044dd11fe1eb0c347403457c7f02597731236556",
+    "session_module": "eae0fb094e10bc14dd0abfad33c35d6d0c3700ef3c09ea3b6c5b217273bd97b0",
+    "session_typescript": "62661fc40f28c777ecb0eef1a7bf3fd0e19610f200c09e0b1a89241819c34dda",
+    "shell_markup": "d34c3260dbc2cbebb881e75a3c505215eaad80e23b56e119228e3281d328c271",
+    "smoke_subset": "f94b8d71e418462cda34c7d20118fecbef76de614afb1bbe383c44c1616be56a"
+  },
+  "status": "PASS"
+}

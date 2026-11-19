@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-chains",
+  "owner": "N16",
+  "status": "authored",
+  "scope_note_lv": "Darba piemēru ķēdes ir mācību materiāls (PROPOSED), nevis oficiāli kolokvija jautājumi. Katra skaitliskā vērtība tiek pārrecomputēta no deklarētajiem dotajiem un transformācijām; atbildes tiek aizzīmogotas pirms iegulšanas artefaktā.",
+  "record_required": [
+    "id",
+    "topic",
+    "title_lv",
+    "subtitle_lv",
+    "outcome_ids",
+    "master_citation",
+    "epistemic_label",
+    "banner_lv",
+    "givens",
+    "steps",
+    "figure_refs",
+    "back_links"
+  ],
+  "record_optional": [
+    "scope_note_lv",
+    "given_note_lv",
+    "print_note_lv"
+  ],
+  "step_required": [
+    "step_id",
+    "quantity_lv",
+    "statement_lv",
+    "result",
+    "reasoning_lv",
+    "citations"
+  ],
+  "step_optional": [
+    "recompute"
+  ],
+  "result_required": [
+    "kind",
+    "value",
+    "display_lv",
+    "unit"
+  ],
+  "result_optional": [
+    "sig_figs",
+    "public"
+  ],
+  "result_kinds": [
+    "numeric",
+    "symbolic"
+  ],
+  "recompute_required": [
+    "op",
+    "operands",
+    "unit"
+  ],
+  "recompute_ops": [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "negate",
+    "scale",
+    "multiply_ratio",
+    "power",
+    "log10",
+    "linfit_component",
+    "nernst"
+  ],
+  "figure_ref_required": [
+    "figure_id",
+    "step_id",
+    "role"
+  ],
+  "figure_roles": [
+    "data",
+    "method",
+    "print"
+  ],
+  "citation_required": [
+    "conventions_refs"
+  ],
+  "citation_optional": [
+    "master_refs"
+  ],
+  "given_required": [
+    "id",
+    "label_lv",
+    "value",
+    "display_lv",
+    "unit",
+    "source"
+  ],
+  "given_source_kinds": [
+    "synthetic_given",
+    "conventions",
+    "master",
+    "format_constant"
+  ],
+  "reference_file": "data/chain_references.json",
+  "reference_status": "forward-contract-pending-N19-N20",
+  "honesty": {
+    "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+    "forbidden_positive_claims": [
+      "oficiāls eksāmens",
+      "oficiāls kolokvija eksāmens",
+      "īsts eksāmens",
+      "eksāmena jautājums",
+      "oficiāls uzdevums",
+      "RSU eksāmens",
+      "garantēts vērtējums",
+      "proktors"
+    ],
+    "rule_lv": "Baneris ir fiksēts visās četrpadsmit ķēdēs. Aizliegtās pozitīvās eksāmena frāzes nedrīkst parādīties nevienā ķēdes tekstā; banera noliegums ir atļauts."
+  },
+  "field_tables": [
+    {
+      "field": "id",
+      "type": "string",
+      "rule_lv": "EX01–EX14, unikāls; sakrīt ar docs/EXAMPLE_QUESTIONS.json example_id."
+    },
+    {
+      "field": "topic",
+      "type": "integer 1–7",
+      "rule_lv": "Programmas tēma; katrai tēmai vismaz divas ķēdes."
+    },
+    {
+      "field": "outcome_ids",
+      "type": "string[]",
+      "rule_lv": "Katrs id resolvē #sim-coverage; visi pieder deklarētajai tēmai; primārais ir pirmais."
+    },
+    {
+      "field": "master_citation",
+      "type": "object",
+      "rule_lv": "path + anchor + heading_lv + freeze_id; enkurs resolvē iesaldētajā meistarā un sakrīt ar primāro rezultātu."
+    },
+    {
+      "field": "givens",
+      "type": "object[]",
+      "rule_lv": "Deklarētie ievaddati; katram ir id, vērtība, vienība un avots. Dotie nav atbildes un paliek redzami pirms atklāšanas."
+    },
+    {
+      "field": "steps",
+      "type": "object[]",
+      "rule_lv": "Sakārtots solis; katram ir daudzuma apgalvojums, transformācija ar konvenciju citācijām, rezultāts un pamatojums latviešu valodā."
+    },
+    {
+      "field": "steps[].result",
+      "type": "object",
+      "rule_lv": "Skaitlisks vai simbolisks rezultāts; pirms atklāšanas tas tiek aizzīmogots un DOM nesatur ne vērtību, ne attēlojumu."
+    },
+    {
+      "field": "steps[].recompute",
+      "type": "object",
+      "rule_lv": "Neatkarīga pārrēķina instrukcija: op, operandi (dotais/iepriekšējais solis/konstante), vienība. Uz priekšu vērstas atsauces ir aizliegtas."
+    },
+    {
+      "field": "steps[].citations",
+      "type": "object",
+      "rule_lv": "Vismaz viena konvenciju atsauce katrā solī; atļauta arī divu atsauču forma (vienības pārrēķins + tolerance)."
+    },
+    {
+      "field": "figure_refs",
+      "type": "object[]",
+      "rule_lv": "figure_id + step_id + role; attēls tiek montēts tikai norādītajā solī un tikai pēc tā atklāšanas."
+    },
+    {
+      "field": "back_links",
+      "type": "object",
+      "rule_lv": "method_card_ids un practice_item_ids; abpusēji resolvē data/chain_references.json."
+    },
+    {
+      "field": "banner_lv",
+      "type": "string",
+      "rule_lv": "Fiksēts mācību materiāla baneris; kopēšanas lint aizliedz pozitīvus oficiāla eksāmena apgalvojumus."
+    }
+  ]
+}

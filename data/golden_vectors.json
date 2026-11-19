@@ -1,0 +1,4707 @@
+{
+  "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+  "corpus_version": "1.1.0",
+  "island_id": "sim-golden-vectors",
+  "oracle": {
+    "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+    "oracle_version": "1.0.0",
+    "script": "tools/golden_oracle.py"
+  },
+  "protocol_ref": "data/golden_vector_protocol.json",
+  "retired_ids": [],
+  "schema_digest": "4828fae040bce7a53b72ab996d2dda928ddff2658081916da65bcec44a1e09af",
+  "schema_version": 1,
+  "status": "frozen-stratum-1",
+  "vectors": [
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=mass]",
+        "rounding.rule"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_SIGFIG",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 3.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "M_Mg": 24.0,
+          "M_MgO": 40.0,
+          "m_Mg_g": 4.8
+        },
+        "misconception_signatures": [
+          "MC-1C-01"
+        ],
+        "outcome_ids": [
+          "P1-03"
+        ],
+        "payload": {
+          "display_lv": "8,00 g",
+          "expected_value": 8.0,
+          "input_fields": [
+            {
+              "field_id": "m_MgO",
+              "kind": "number",
+              "label_lv": "m(MgO) (g)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-1-1C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_SIGFIG",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 stoichiometry",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Sabalansē Mg + O₂ → MgO. Ja m(Mg) = 4,80 g (M = 24,0 g/mol, M(MgO) = 40,0 g/mol), aprēķini MgO masu.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pareiza MgO stehiometriskā masa ar komatu (8,00 g).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "g",
+        "value": "8,00"
+      },
+      "vector_id": "GV-S1-T1-Q02-01"
+    },
+    {
+      "case_kind": "near_tolerance_outside",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=mass]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "M_Mg": 24.0,
+          "M_MgO": 40.0,
+          "m_Mg_g": 4.8
+        },
+        "misconception_signatures": [
+          "MC-1C-01"
+        ],
+        "outcome_ids": [
+          "P1-03"
+        ],
+        "payload": {
+          "display_lv": "8,00 g",
+          "expected_value": 8.0,
+          "input_fields": [
+            {
+              "field_id": "m_MgO",
+              "kind": "number",
+              "label_lv": "m(MgO) (g)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-1-1C-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 stoichiometry",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Aprēķini MgO masu no 4,80 g Mg (M(Mg)=24,0 g/mol, M(MgO)=40,0 g/mol).",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Ārpus tolerances (±0,01 g): 8,02 g pret 8,00 g.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "g",
+        "value": "8,02"
+      },
+      "vector_id": "GV-S1-T1-Q02-02"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CLASS",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "system": "NaCl(aq) + smiltis"
+        },
+        "misconception_signatures": [
+          "MC-1A-01"
+        ],
+        "outcome_ids": [
+          "P1-02"
+        ],
+        "payload": {
+          "correct_ids": [
+            "HET",
+            "SUSP"
+          ],
+          "distractors": [
+            {
+              "option_id": "HOM",
+              "rationale_lv": "Smiltis nešķīst ūdenī."
+            }
+          ],
+          "options": [
+            {
+              "option_id": "HET",
+              "text_lv": "Heterogēns maisījums"
+            },
+            {
+              "option_id": "SUSP",
+              "text_lv": "Cietas daļiņas šķidrumā (suspensija)"
+            },
+            {
+              "option_id": "HOM",
+              "text_lv": "Homogēns šķīdums"
+            }
+          ],
+          "requires_justification": false
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-1-1A-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_CLASS",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 mixtures",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Klasificē smilšu un NaCl(aq) maisījumu.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q07",
+        "type_ids": [
+          "Q07"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pareiza maisījuma fāžu klasifikācija.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "HET",
+          "SUSP"
+        ]
+      },
+      "vector_id": "GV-S1-T1-Q07-01"
+    },
+    {
+      "case_kind": "wrong_selection",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_OPTION_SELECTION",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CLASS",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "system": "NaCl(aq) + smiltis"
+        },
+        "misconception_signatures": [
+          "MC-1A-02"
+        ],
+        "outcome_ids": [
+          "P1-02"
+        ],
+        "payload": {
+          "correct_ids": [
+            "HET",
+            "SUSP"
+          ],
+          "distractors": [
+            {
+              "option_id": "HOM",
+              "rationale_lv": "Smiltis veido atsevišķu fāzi."
+            }
+          ],
+          "options": [
+            {
+              "option_id": "HET",
+              "text_lv": "Heterogēns maisījums"
+            },
+            {
+              "option_id": "SUSP",
+              "text_lv": "Suspensija"
+            },
+            {
+              "option_id": "HOM",
+              "text_lv": "Homogēns šķīdums"
+            }
+          ],
+          "requires_justification": false
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-1-1A-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_CLASS",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1A-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 mixtures",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Klasificē smilšu un NaCl(aq) maisījumu.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q07",
+        "type_ids": [
+          "Q07"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Nepareiza klasifikācijas izvēle.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "HOM"
+        ]
+      },
+      "vector_id": "GV-S1-T1-Q07-02"
+    },
+    {
+      "case_kind": "auto_passed_pending_review",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_TRUTH",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_REPAIR",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 2.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 2.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "statement": "Šķīšana vienmēr veido jonus"
+        },
+        "misconception_signatures": [
+          "MC-1B-01"
+        ],
+        "outcome_ids": [
+          "P1-06"
+        ],
+        "payload": {
+          "correct_ids": [
+            "FALSE"
+          ],
+          "distractors": [
+            {
+              "option_id": "TRUE",
+              "rationale_lv": "Glikoze un saharoze šķīst molekulāri."
+            }
+          ],
+          "justification_prompt_lv": "Labo apgalvojumu ar piemēru.",
+          "options": [
+            {
+              "option_id": "TRUE",
+              "text_lv": "Patiess"
+            },
+            {
+              "option_id": "FALSE",
+              "text_lv": "Aplams"
+            }
+          ],
+          "requires_justification": true
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-1-1B-C-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_TRUTH",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_REPAIR",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1B-C-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 dissociation",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Novērtē apgalvojumu: \"Šķīšana ūdenī vienmēr rada jonus.\" un uzraksti labojumu.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q14",
+        "type_ids": [
+          "Q14"
+        ],
+        "variant_id": "C"
+      },
+      "note_lv": "Pareiza patiesuma izvēle; pamatojums paliek pending.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "justification_text": "Glikoze šķīst kā molekulas.",
+        "selected_ids": [
+          "FALSE"
+        ]
+      },
+      "vector_id": "GV-S1-T1-Q14-01"
+    },
+    {
+      "case_kind": "wrong_selection",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_OPTION_SELECTION",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_TRUTH",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_REPAIR",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 2.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 2.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "statement": "Šķīšana vienmēr veido jonus"
+        },
+        "misconception_signatures": [
+          "MC-1B-01"
+        ],
+        "outcome_ids": [
+          "P1-06"
+        ],
+        "payload": {
+          "correct_ids": [
+            "FALSE"
+          ],
+          "distractors": [
+            {
+              "option_id": "TRUE",
+              "rationale_lv": "Neelektrolīti neveido jonus."
+            }
+          ],
+          "justification_prompt_lv": "Labo apgalvojumu.",
+          "options": [
+            {
+              "option_id": "TRUE",
+              "text_lv": "Patiess"
+            },
+            {
+              "option_id": "FALSE",
+              "text_lv": "Aplams"
+            }
+          ],
+          "requires_justification": true
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-1-1B-C-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_TRUTH",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_REPAIR",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1B-C-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 dissociation",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Novērtē apgalvojumu: \"Šķīšana ūdenī vienmēr rada jonus.\"",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q14",
+        "type_ids": [
+          "Q14"
+        ],
+        "variant_id": "C"
+      },
+      "note_lv": "Nepareiza patiesuma izvēle (TRUE).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "TRUE"
+        ]
+      },
+      "vector_id": "GV-S1-T1-Q14-02"
+    },
+    {
+      "case_kind": "pending_self_assessment",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SELF_EXPLAIN",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 2.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 2.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "solutes": [
+            "NaCl",
+            "C6H12O6"
+          ]
+        },
+        "misconception_signatures": [
+          "MC-1B-02"
+        ],
+        "outcome_ids": [
+          "P1-06"
+        ],
+        "payload": {
+          "expected_summary_lv": "NaCl disociējas Na⁺ un Cl⁻ jonos; glikoze paliek neitrālas molekulas.",
+          "explanation_prompt_lv": "Izskaidro vadītspēju ar daļiņu veidu.",
+          "steps": [
+            {
+              "expected": "kustīgi joni",
+              "prompt_lv": "Skaidrojums 2–4 teikumos",
+              "step_id": "S1"
+            }
+          ]
+        },
+        "payload_class": "method",
+        "question_id": "COL1-1-1B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_SELF_EXPLAIN",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 electrolytes",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Izskaidro, kāpēc NaCl šķīdums vada strāvu, bet glikozes šķīdums nevada.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q15",
+        "type_ids": [
+          "Q15"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pašvērtējuma robeža: brīvais teksts netiek vērtēts pēc atslēgvārdiem.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "text": "NaCl šķīdumā veido brīvus jonus, kas vada strāvu, bet glikoze neveido jonus."
+      },
+      "vector_id": "GV-S1-T1-Q15-01"
+    },
+    {
+      "case_kind": "blank_response",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "BLANK_RESPONSE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SELF_EXPLAIN",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "solutes": [
+            "MgCl2"
+          ]
+        },
+        "misconception_signatures": [
+          "MC-1B-02"
+        ],
+        "outcome_ids": [
+          "P1-06"
+        ],
+        "payload": {
+          "expected_summary_lv": "MgCl₂ disociējas par Mg²⁺ un 2Cl⁻.",
+          "explanation_prompt_lv": "Nosauc jonus.",
+          "steps": [
+            {
+              "expected": "Mg2+ un 2Cl-",
+              "prompt_lv": "Skaidrojums",
+              "step_id": "S1"
+            }
+          ]
+        },
+        "payload_class": "method",
+        "question_id": "COL1-1-1B-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_SELF_EXPLAIN",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1B-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 electrolytes",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Izskaidro MgCl₂ šķīduma elektrovadītspēju.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q15",
+        "type_ids": [
+          "Q15"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Tukša brīvā teksta atbilde dod 0 punktus (nav pending).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "text": "   "
+      },
+      "vector_id": "GV-S1-T1-Q15-02"
+    },
+    {
+      "case_kind": "auto_passed_pending_review",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_MULTI",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_JUSTIFY",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 1.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 1.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-1A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "candidates": [
+            "gaisa maisījums",
+            "smiltis ūdenī",
+            "NaCl(aq)"
+          ]
+        },
+        "misconception_signatures": [
+          "MC-1A-03"
+        ],
+        "outcome_ids": [
+          "P1-02"
+        ],
+        "payload": {
+          "correct_ids": [
+            "OPT-A",
+            "OPT-C"
+          ],
+          "distractors": [
+            {
+              "option_id": "OPT-B",
+              "rationale_lv": "Smiltis veido atsevišķu cieto fāzi."
+            }
+          ],
+          "justification_prompt_lv": "Pamato, kāpēc izvēlētie maisījumi ir homogēni.",
+          "options": [
+            {
+              "option_id": "OPT-A",
+              "text_lv": "Sausa gaisa maisījums"
+            },
+            {
+              "option_id": "OPT-B",
+              "text_lv": "Smiltis ūdenī"
+            },
+            {
+              "option_id": "OPT-C",
+              "text_lv": "NaCl ūdens šķīdums"
+            }
+          ],
+          "requires_justification": true
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-1-1A-D-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_MULTI",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_JUSTIFY",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-1A-D-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 1 mixtures",
+            "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+            "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+          }
+        ],
+        "stem_lv": "Atzīmē visus homogēnos maisījumus un pamato vienu.",
+        "time_minutes": 5.0,
+        "topic": 1,
+        "type_id": "Q18",
+        "type_ids": [
+          "Q18"
+        ],
+        "variant_id": "D"
+      },
+      "note_lv": "Vairāku atbilžu izvēle ar pamatojumu (daļa auto, daļa pending).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "justification_text": "Viena fāze bez redzamas robežvirsmas.",
+        "selected_ids": [
+          "OPT-A",
+          "OPT-C"
+        ]
+      },
+      "vector_id": "GV-S1-T1-Q18-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "unit_system.conversions[id=mg_to_g]",
+        "tolerances.quantity_classes[id=mass]",
+        "rounding.rule"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_SIGFIG",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "mass_kg": 0.0045
+        },
+        "misconception_signatures": [
+          "MC-2B-01"
+        ],
+        "outcome_ids": [
+          "P2-02",
+          "P2-05"
+        ],
+        "payload": {
+          "display_lv": "4,50 g",
+          "expected_value": 4.5,
+          "input_fields": [
+            {
+              "field_id": "ans",
+              "kind": "number",
+              "label_lv": "Masa"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_SIGFIG",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 sig figs",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Pārvērt 0,00450 kg gramos vai miligramos ar 3 zīmīgiem cipariem.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pareiza vienību pāreja mg -> g ar 3 zīmīgiem cipariem (4,50×10³ mg = 4,50 g).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg",
+        "value": "4,50×10³"
+      },
+      "vector_id": "GV-S1-T2-Q01-01"
+    },
+    {
+      "case_kind": "partial_sig_figs",
+      "convention_refs": [
+        "unit_system.conversions[id=mg_to_g]",
+        "rounding.rule"
+      ],
+      "expected": {
+        "verdict_class": "partial",
+        "error_class": "SIG_FIG_MISMATCH",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_SIGFIG",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "mass_kg": 0.0045
+        },
+        "misconception_signatures": [
+          "MC-2B-01"
+        ],
+        "outcome_ids": [
+          "P2-05"
+        ],
+        "payload": {
+          "display_lv": "4,50 g",
+          "expected_value": 4.5,
+          "input_fields": [
+            {
+              "field_id": "ans",
+              "kind": "number",
+              "label_lv": "Masa"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2B-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_SIGFIG",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 sig figs",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Pārvērt 0,00450 kg gramos vai miligramos ar 3 zīmīgiem cipariem.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Skaitliskā vērtība pareiza, bet 4500 mg ir tikai 2 zīmīgie cipari (C2_SIGFIG liegts).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg",
+        "value": "4500"
+      },
+      "vector_id": "GV-S1-T2-Q01-02"
+    },
+    {
+      "case_kind": "unreadable_input",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=mass]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "UNREADABLE_INPUT",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 1.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "mass_kg": 0.0045
+        },
+        "misconception_signatures": [
+          "MC-2B-02"
+        ],
+        "outcome_ids": [
+          "P2-02"
+        ],
+        "payload": {
+          "display_lv": "4,50 g",
+          "expected_value": 4.5,
+          "input_fields": [
+            {
+              "field_id": "ans",
+              "kind": "number",
+              "label_lv": "Masa (g)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2B-A-03",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2B-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 units",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Ieraksti masu gramos (4,50 g).",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Jaukti atdalītāji (1,234.56) tiek noraidīti kā UNREADABLE_INPUT.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "g",
+        "value": "1,234.56"
+      },
+      "vector_id": "GV-S1-T2-Q01-03"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "titration"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_PAIR_L1",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_PAIR_L2",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-2A-01"
+        ],
+        "outcome_ids": [
+          "P2-01"
+        ],
+        "payload": {
+          "correct_pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ],
+          "left_items": [
+            {
+              "id": "L1",
+              "text_lv": "Birete"
+            },
+            {
+              "id": "L2",
+              "text_lv": "Mērkolba"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1",
+              "text_lv": "Precīza šķīduma dozēšana titrēšanā"
+            },
+            {
+              "id": "R2",
+              "text_lv": "Precīza gala tilpuma pagatavošana"
+            },
+            {
+              "id": "R3",
+              "text_lv": "Aptuvena ieliešana vārīšanai"
+            }
+          ]
+        },
+        "payload_class": "matching",
+        "question_id": "COL1-2-2A-B-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_PAIR_L1",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_PAIR_L2",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2A-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 glassware",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Sasaisti trauku ar tā precīzo lietojumu.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q06",
+        "type_ids": [
+          "Q06"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Pareiza mērtrauku atbilstību veidošana.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2"
+          }
+        ]
+      },
+      "vector_id": "GV-S1-T2-Q06-01"
+    },
+    {
+      "case_kind": "partial_matching",
+      "convention_refs": [
+        "titration"
+      ],
+      "expected": {
+        "verdict_class": "partial",
+        "error_class": "WRONG_PAIRING",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_PAIR_L1",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_PAIR_L2",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-2A-01"
+        ],
+        "outcome_ids": [
+          "P2-01"
+        ],
+        "payload": {
+          "correct_pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ],
+          "left_items": [
+            {
+              "id": "L1",
+              "text_lv": "Birete"
+            },
+            {
+              "id": "L2",
+              "text_lv": "Mērkolba"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1",
+              "text_lv": "Precīza šķīduma dozēšana titrēšanā"
+            },
+            {
+              "id": "R2",
+              "text_lv": "Precīza gala tilpuma pagatavošana"
+            },
+            {
+              "id": "R3",
+              "text_lv": "Aptuvena ieliešana vārīšanai"
+            }
+          ]
+        },
+        "payload_class": "matching",
+        "question_id": "COL1-2-2A-B-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_PAIR_L1",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_PAIR_L2",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2A-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 glassware",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Sasaisti trauku ar tā precīzo lietojumu.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q06",
+        "type_ids": [
+          "Q06"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Daļēja atbilstība: 1 no 2 pāriem pareizs.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R3"
+          }
+        ]
+      },
+      "vector_id": "GV-S1-T2-Q06-02"
+    },
+    {
+      "case_kind": "wrong_pairing",
+      "convention_refs": [
+        "titration"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_PAIRING",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_MATCH",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-2A-01"
+        ],
+        "outcome_ids": [
+          "P2-01"
+        ],
+        "payload": {
+          "correct_pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ],
+          "left_items": [
+            {
+              "id": "L1",
+              "text_lv": "Birete"
+            },
+            {
+              "id": "L2",
+              "text_lv": "Mērkolba"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1",
+              "text_lv": "Precīza šķīduma dozēšana titrēšanā"
+            },
+            {
+              "id": "R2",
+              "text_lv": "Precīza gala tilpuma pagatavošana"
+            }
+          ]
+        },
+        "payload_class": "matching",
+        "question_id": "COL1-2-2A-B-03",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_MATCH",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2A-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 glassware",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Sasaisti trauku ar tā precīzo lietojumu.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q06",
+        "type_ids": [
+          "Q06"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Apmainīti pāri dod 0 punktus un WRONG_PAIRING.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R2"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R1"
+          }
+        ]
+      },
+      "vector_id": "GV-S1-T2-Q06-03"
+    },
+    {
+      "case_kind": "auto_passed_pending_review",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_ORDER",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_EXPLAIN",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 1.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 1.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-2A-02"
+        ],
+        "outcome_ids": [
+          "P2-01"
+        ],
+        "payload": {
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "explanation_prompt_lv": "Izskaidro, kāpēc atzīmi izlīdzina tikai pēc sajaukšanas.",
+          "items": [
+            {
+              "item_id": "S1",
+              "text_lv": "Nosver vielu"
+            },
+            {
+              "item_id": "S2",
+              "text_lv": "Sagatavo tīru mērkolbu"
+            },
+            {
+              "item_id": "S3",
+              "text_lv": "Sagatavo piltuvi un skalojamo pudeli"
+            },
+            {
+              "item_id": "S4",
+              "text_lv": "Papildina līdz atzīmei un samaisa"
+            }
+          ],
+          "partial_order_rules": [
+            {
+              "item_ids": [
+                "S2",
+                "S3"
+              ],
+              "type": "free_order_group"
+            }
+          ]
+        },
+        "payload_class": "ordering",
+        "question_id": "COL1-2-2A-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_ORDER",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_EXPLAIN",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 preparation",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Sakārto precīza šķīduma pagatavošanas soļus.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q08",
+        "type_ids": [
+          "Q08"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Brīvās kārtības grupa ļauj S2 un S3 samainīšanu; skaidrojums pending.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "order": [
+          "S1",
+          "S3",
+          "S2",
+          "S4"
+        ]
+      },
+      "vector_id": "GV-S1-T2-Q08-01"
+    },
+    {
+      "case_kind": "wrong_order",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_ORDER",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-2A-02"
+        ],
+        "outcome_ids": [
+          "P2-01"
+        ],
+        "payload": {
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "explanation_prompt_lv": "Izskaidro kritisko soli.",
+          "items": [
+            {
+              "item_id": "S1",
+              "text_lv": "Nosver vielu"
+            },
+            {
+              "item_id": "S2",
+              "text_lv": "Pārnes mērkolbā"
+            },
+            {
+              "item_id": "S3",
+              "text_lv": "Papildina līdz atzīmei"
+            }
+          ]
+        },
+        "payload_class": "ordering",
+        "question_id": "COL1-2-2A-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_ORDER",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 preparation",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Sakārto precīza šķīduma pagatavošanas soļus.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q08",
+        "type_ids": [
+          "Q08"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Transponēti obligātie soļi dod WRONG_ORDER.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "order": [
+          "S2",
+          "S1",
+          "S3"
+        ]
+      },
+      "vector_id": "GV-S1-T2-Q08-02"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "unit_system.conversions[id=mol_to_umol]",
+        "unit_system.conversions[id=mol_to_mmol]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CELL",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 1.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "n_mol": 2.5e-06
+        },
+        "misconception_signatures": [
+          "MC-2B-03"
+        ],
+        "outcome_ids": [
+          "P2-02"
+        ],
+        "payload": {
+          "display_lv": "2,50 µmol",
+          "expected_value": 2.5,
+          "input_fields": [
+            {
+              "field_id": "n_umol",
+              "kind": "number",
+              "label_lv": "n (µmol)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "concentration_molar",
+          "unit": "µmol"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2B-B-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_CELL",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2B-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 prefixes",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Tabulā pārvērt 2,50×10⁻⁶ mol mikromolos.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q09",
+        "type_ids": [
+          "Q09"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Tabulas vienību pāreja 2,50×10⁻⁶ mol = 2,50 µmol = 0,00250 mmol.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mmol",
+        "value": "0,00250"
+      },
+      "vector_id": "GV-S1-T2-Q09-01"
+    },
+    {
+      "case_kind": "tolerance_edge_inside",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=burette_volume]",
+        "titration.meniscus"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "final_mL": 18.4,
+          "initial_mL": 2.15
+        },
+        "misconception_signatures": [
+          "MC-2C-01"
+        ],
+        "outcome_ids": [
+          "P2-07"
+        ],
+        "payload": {
+          "display_lv": "16,25 mL",
+          "expected_value": 16.25,
+          "input_fields": [
+            {
+              "field_id": "V_del",
+              "kind": "number",
+              "label_lv": "ΔV (mL)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "burette_volume",
+          "unit": "mL"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 burette",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Biretes sākuma menisks 2,15 mL, beigu 18,40 mL. Aprēķini izlietoto tilpumu.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q10",
+        "type_ids": [
+          "Q10"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Iekļaujoša tolerances robeža: |16,30 - 16,25| = 0,05 <= 0,05 mL.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mL",
+        "value": "16,30"
+      },
+      "vector_id": "GV-S1-T2-Q10-01"
+    },
+    {
+      "case_kind": "tolerance_edge_outside",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=burette_volume]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-2C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "final_mL": 18.4,
+          "initial_mL": 2.15
+        },
+        "misconception_signatures": [
+          "MC-2C-01"
+        ],
+        "outcome_ids": [
+          "P2-07"
+        ],
+        "payload": {
+          "display_lv": "16,25 mL",
+          "expected_value": 16.25,
+          "input_fields": [
+            {
+              "field_id": "V_del",
+              "kind": "number",
+              "label_lv": "ΔV (mL)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "burette_volume",
+          "unit": "mL"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-2-2C-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-2C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 2 burette",
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        ],
+        "stem_lv": "Biretes sākuma menisks 2,15 mL, beigu 18,40 mL. Aprēķini izlietoto tilpumu.",
+        "time_minutes": 5.0,
+        "topic": 2,
+        "type_id": "Q10",
+        "type_ids": [
+          "Q10"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Ārpus tolerances robežas: |16,31 - 16,25| = 0,06 > 0,05 mL.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mL",
+        "value": "16,31"
+      },
+      "vector_id": "GV-S1-T2-Q10-02"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "unit_system.conversions[id=mol_per_l_to_mmol_per_l]",
+        "tolerances.quantity_classes[id=concentration_molar]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_SIGFIG",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 3.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "M_g_mol": 58.44,
+          "V_mL": 250.0,
+          "m_g": 2.922
+        },
+        "misconception_signatures": [
+          "MC-3A-01"
+        ],
+        "outcome_ids": [
+          "P3-01"
+        ],
+        "payload": {
+          "display_lv": "0,2000 mol/L",
+          "expected_value": 0.2,
+          "input_fields": [
+            {
+              "field_id": "c",
+              "kind": "number",
+              "label_lv": "c (mol/L)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "concentration_molar",
+          "unit": "mol/L"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-3-3A-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_SIGFIG",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 molarity",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "2,922 g NaCl (M = 58,44 g/mol) izšķīdina līdz 250,0 mL. Aprēķini c(NaCl).",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Molārā koncentrācija 0,2000 mol/L iesniegta kā 200,0 mmol/L.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mmol/L",
+        "value": "200,0"
+      },
+      "vector_id": "GV-S1-T3-Q01-01"
+    },
+    {
+      "case_kind": "unlabeled_percent_basis",
+      "convention_refs": [
+        "percentage_basis.unlabeled_percent",
+        "concentration_bases.default_for_course"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "UNLABELED_PERCENT_BASIS",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "basis": "m_m",
+          "requires_explicit_basis": true
+        },
+        "misconception_signatures": [
+          "MC-3A-02"
+        ],
+        "outcome_ids": [
+          "P3-05"
+        ],
+        "payload": {
+          "display_lv": "10,0 % (m/m)",
+          "expected_value": 10.0,
+          "input_fields": [
+            {
+              "field_id": "w",
+              "kind": "number",
+              "label_lv": "Koncentrācija"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "percentage_point",
+          "unit": "% (m/m)"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-3-3A-D-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3A-D-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 percent basis",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "Norādi 10,0 % masas daļas koncentrāciju ar obligātu bāzes apzīmējumu.",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "D"
+      },
+      "note_lv": "Neapzīmēts procents (%) aiztur vērtēšanu ar UNLABELED_PERCENT_BASIS (V-02).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "%",
+        "value": "10,0"
+      },
+      "vector_id": "GV-S1-T3-Q01-02"
+    },
+    {
+      "case_kind": "v04_valid_chain",
+      "convention_refs": [
+        "unit_system.chains[id=concentration_mg_per_ml_to_g_per_l]",
+        "density",
+        "tolerances.quantity_classes[id=concentration_mass]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "density_defect_op": "divide",
+          "density_g_per_ml": 1.07,
+          "w_percent_m_m": 10.0
+        },
+        "misconception_signatures": [
+          "MC-3B-01"
+        ],
+        "outcome_ids": [
+          "P3-07",
+          "P3-08"
+        ],
+        "payload": {
+          "display_lv": "107,0 g/L",
+          "expected_value": 107.0,
+          "input_fields": [
+            {
+              "field_id": "gamma",
+              "kind": "number",
+              "label_lv": "γ (g/L)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "concentration_mass",
+          "unit": "g/L"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-3-3B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 density conversion",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "Dotā šķīduma w = 10,0 % (m/m) un blīvums ρ = 1,070 g/mL. Aprēķini masas koncentrāciju γ (g/L).",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "V-04 derīgā ķēde: 107,0 mg/mL = 107,0 g/L (faktors 1/1).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg/mL",
+        "value": "107,0"
+      },
+      "vector_id": "GV-S1-T3-Q02-01"
+    },
+    {
+      "case_kind": "v04_density_defect_omitted_rho",
+      "convention_refs": [
+        "density.mass_volume_rule_lv",
+        "unit_system.chains[id=concentration_mg_per_ml_to_g_per_l]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "DIMENSIONAL_INCONSISTENCY",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "density_defect_op": "divide",
+          "density_g_per_ml": 1.07,
+          "w_percent_m_m": 10.0
+        },
+        "misconception_signatures": [
+          "MC-3B-01"
+        ],
+        "outcome_ids": [
+          "P3-07",
+          "P3-08"
+        ],
+        "payload": {
+          "display_lv": "107,0 g/L",
+          "expected_value": 107.0,
+          "input_fields": [
+            {
+              "field_id": "gamma",
+              "kind": "number",
+              "label_lv": "γ (g/L)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "concentration_mass",
+          "unit": "g/L"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-3-3B-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 density conversion",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "Dotā šķīduma w = 10,0 % (m/m) un blīvums ρ = 1,070 g/mL. Aprēķini masas koncentrāciju γ (g/L).",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "V-04 blīvuma defekts: izlaists blīvums ρ=1,070 (100,0 g/L pret 107,0 g/L) -> DIMENSIONAL_INCONSISTENCY.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "g/L",
+        "value": "100,0"
+      },
+      "vector_id": "GV-S1-T3-Q02-02"
+    },
+    {
+      "case_kind": "v04_blocked_unit",
+      "convention_refs": [
+        "unit_system.conversions[id=mass_to_volume_direct]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "DIMENSIONAL_INCONSISTENCY",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "V_mL": 200.0
+        },
+        "misconception_signatures": [
+          "MC-3B-02"
+        ],
+        "outcome_ids": [
+          "P3-08"
+        ],
+        "payload": {
+          "display_lv": "0,2000 L",
+          "expected_value": 0.2,
+          "input_fields": [
+            {
+              "field_id": "V_L",
+              "kind": "number",
+              "label_lv": "V (L)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "glassware_volume",
+          "unit": "L"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-3-3B-C-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3B-C-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 V-04 blocked mg->L",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "Tilpums ir 200,0 mL. Izsaki šķīduma tilpumu litros (0,2000 L).",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "C"
+      },
+      "note_lv": "V-04 bloķētā vienību pāreja (mg masa pret L tilpums) -> DIMENSIONAL_INCONSISTENCY.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg",
+        "value": "200,0"
+      },
+      "vector_id": "GV-S1-T3-Q02-03"
+    },
+    {
+      "case_kind": "auto_passed_pending_review",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_ORDER",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_EXPLAIN",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 1.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 1.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-3C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "V1_mL": 10.0,
+          "V2_mL": 100.0
+        },
+        "misconception_signatures": [
+          "MC-3C-01"
+        ],
+        "outcome_ids": [
+          "P3-10"
+        ],
+        "payload": {
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "explanation_prompt_lv": "Kāpēc nepievieno vienkārši 90,0 mL ūdens?",
+          "items": [
+            {
+              "item_id": "S1",
+              "text_lv": "Nomēra 10,0 mL ar pipeti"
+            },
+            {
+              "item_id": "S2",
+              "text_lv": "Pārnes 100 mL mērkolbā"
+            },
+            {
+              "item_id": "S3",
+              "text_lv": "Papildina ar šķīdinātāju līdz atzīmei"
+            },
+            {
+              "item_id": "S4",
+              "text_lv": "Aizvāko un samaisa"
+            }
+          ]
+        },
+        "payload_class": "ordering",
+        "question_id": "COL1-3-3C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_ORDER",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_EXPLAIN",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-3C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 3 dilution",
+            "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+            "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+          }
+        ],
+        "stem_lv": "Sakārto 100,0 mL 0,0500 mol/L šķīduma pagatavošanas soļus atšķaidot.",
+        "time_minutes": 5.0,
+        "topic": 3,
+        "type_id": "Q08",
+        "type_ids": [
+          "Q08"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Atšķaidīšanas secība pareiza; kritiskā soļa skaidrojums pending.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "order": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ]
+      },
+      "vector_id": "GV-S1-T3-Q08-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "thermodynamics",
+        "tolerances.quantity_classes[id=energy]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-4C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "T_K": 298.0,
+          "delta_H_kJ_mol": 40.0,
+          "delta_S_J_mol_K": 150.0
+        },
+        "misconception_signatures": [
+          "MC-4C-01"
+        ],
+        "outcome_ids": [
+          "P4-08"
+        ],
+        "payload": {
+          "display_lv": "−4,7 kJ/mol",
+          "expected_value": -4.7,
+          "input_fields": [
+            {
+              "field_id": "dG",
+              "kind": "number",
+              "label_lv": "ΔG (kJ/mol)"
+            }
+          ],
+          "sig_figs": 2,
+          "tolerance_class": "energy",
+          "unit": "kJ/mol"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-4-4C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-4C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 4 Gibbs",
+            "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+            "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+          }
+        ],
+        "stem_lv": "ΔH = 40,0 kJ/mol, ΔS = 150 J/(mol·K), T = 298 K. Aprēķini ΔG (kJ/mol).",
+        "time_minutes": 5.0,
+        "topic": 4,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Gibsa enerģija ΔG = −4,7 kJ/mol ar Unicode mīnusu (U+2212).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "kJ/mol",
+        "value": "−4,7"
+      },
+      "vector_id": "GV-S1-T4-Q02-01"
+    },
+    {
+      "case_kind": "wrong_sign",
+      "convention_refs": [
+        "thermodynamics",
+        "tolerances.quantity_classes[id=energy]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-4C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "T_K": 298.0,
+          "delta_H_kJ_mol": 40.0,
+          "delta_S_J_mol_K": 150.0
+        },
+        "misconception_signatures": [
+          "MC-4C-01"
+        ],
+        "outcome_ids": [
+          "P4-08"
+        ],
+        "payload": {
+          "display_lv": "−4,7 kJ/mol",
+          "expected_value": -4.7,
+          "input_fields": [
+            {
+              "field_id": "dG",
+              "kind": "number",
+              "label_lv": "ΔG (kJ/mol)"
+            }
+          ],
+          "sig_figs": 2,
+          "tolerance_class": "energy",
+          "unit": "kJ/mol"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-4-4C-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-4C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 4 Gibbs",
+            "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+            "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+          }
+        ],
+        "stem_lv": "ΔH = 40,0 kJ/mol, ΔS = 150 J/(mol·K), T = 298 K. Aprēķini ΔG (kJ/mol).",
+        "time_minutes": 5.0,
+        "topic": 4,
+        "type_id": "Q02",
+        "type_ids": [
+          "Q02"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pretēja zīme (+4,7 kJ/mol) krīt ārpus tolerances.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "kJ/mol",
+        "value": "+4,7"
+      },
+      "vector_id": "GV-S1-T4-Q02-02"
+    },
+    {
+      "case_kind": "rounding_half_up_edge",
+      "convention_refs": [
+        "rounding.rule",
+        "tolerances.quantity_classes[id=mass]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 1.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-4B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "round_digits": 2,
+          "round_mode": "decimal_places",
+          "unrounded_expected": "1.125"
+        },
+        "misconception_signatures": [
+          "MC-4B-01"
+        ],
+        "outcome_ids": [
+          "P4-05"
+        ],
+        "payload": {
+          "display_lv": "1,13 g",
+          "expected_value": 1.13,
+          "input_fields": [
+            {
+              "field_id": "m",
+              "kind": "number",
+              "label_lv": "m (g)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-4-4B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-4B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 4 rounding policy",
+            "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+            "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+          }
+        ],
+        "stem_lv": "Aprēķini un noapaļo neapstrādāto starprezultātu 1,125 g līdz divām zīmēm aiz komata.",
+        "time_minutes": 5.0,
+        "topic": 4,
+        "type_id": "Q09",
+        "type_ids": [
+          "Q09"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Konvenciju half_up noapaļošana izšķir robežu: 1,125 -> 1,13 (nevis half_even 1,12), tāpēc 1,14 ir robežā ±0,01.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "g",
+        "value": "1,14"
+      },
+      "vector_id": "GV-S1-T4-Q09-01"
+    },
+    {
+      "case_kind": "pending_self_assessment",
+      "convention_refs": [
+        "thermodynamics"
+      ],
+      "expected": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SELF",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 2.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 2.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-4D",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "q_reaction_J": -2090,
+          "q_solution_J": 2090
+        },
+        "misconception_signatures": [
+          "MC-4D-01"
+        ],
+        "outcome_ids": [
+          "P4-03"
+        ],
+        "payload": {
+          "expected_summary_lv": "Reakcija atdod siltumu šķīdumam (apkārtnei), tāpēc ΔH < 0.",
+          "explanation_prompt_lv": "Nošķir sistēmu no apkārtnes.",
+          "steps": [
+            {
+              "expected": "q_reakc = -q_šķīd",
+              "prompt_lv": "Skaidrojums",
+              "step_id": "S1"
+            }
+          ]
+        },
+        "payload_class": "method",
+        "question_id": "COL1-4-4D-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_SELF",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-4D-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 4 calorimetry sign",
+            "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+            "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+          }
+        ],
+        "stem_lv": "Izskaidro, kāpēc eksotermiskā reakcijā šķīduma q > 0, bet reakcijas ΔH < 0.",
+        "time_minutes": 5.0,
+        "topic": 4,
+        "type_id": "Q15",
+        "type_ids": [
+          "Q15"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Kalorimetrijas sistēmas/apkārtnes zīmes skaidrojums paliek pending.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "text": "Reakcija ir sistēma, kas atdod siltumu šķīdumam."
+      },
+      "vector_id": "GV-S1-T4-Q15-01"
+    },
+    {
+      "case_kind": "tolerance_edge_inside",
+      "convention_refs": [
+        "tolerances.quantity_classes[id=concentration_molar]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CELL",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 1.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-5B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "c0": 1.0,
+          "half_lives": 2
+        },
+        "misconception_signatures": [
+          "MC-5B-01"
+        ],
+        "outcome_ids": [
+          "P5-04"
+        ],
+        "payload": {
+          "display_lv": "0,250 mol/L",
+          "expected_value": 0.25,
+          "input_fields": [
+            {
+              "field_id": "c",
+              "kind": "number",
+              "label_lv": "c (mol/L)"
+            }
+          ],
+          "sig_figs": 3,
+          "tolerance_class": "concentration_molar",
+          "unit": "mol/L"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-5-5B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_CELL",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-5B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 5 kinetics table",
+            "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+            "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+          }
+        ],
+        "stem_lv": "Aizpildi atlikušo koncentrāciju tabulā pēc pirmās pakāpes pussabrukšanas (0,250 mol/L).",
+        "time_minutes": 5.0,
+        "topic": 5,
+        "type_id": "Q09",
+        "type_ids": [
+          "Q09"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Kinētikas koncentrācijas tabulas lauciņš robežā |0,255 - 0,250| = 0,005 <= 0,005 mol/L.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mol/L",
+        "value": "0,255"
+      },
+      "vector_id": "GV-S1-T5-Q09-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "spectrophotometry.calibration.no_extrapolation_rule_lv",
+        "tolerances.quantity_classes[id=mass]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-5C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "half_life_min": 30
+        },
+        "misconception_signatures": [
+          "MC-5C-01"
+        ],
+        "outcome_ids": [
+          "P5-06"
+        ],
+        "payload": {
+          "mode": "interpret",
+          "points": [
+            {
+              "x": 0,
+              "y": 0.08
+            },
+            {
+              "x": 30,
+              "y": 0.04
+            },
+            {
+              "x": 60,
+              "y": 0.02
+            },
+            {
+              "x": 90,
+              "y": 0.01
+            }
+          ],
+          "target_readout": {
+            "expected_value": 0.01,
+            "quantity": "mass",
+            "tolerance_class": "mass",
+            "unit": "g"
+          },
+          "x_axis": {
+            "label_lv": "Laiks",
+            "unit": "min"
+          },
+          "y_axis": {
+            "label_lv": "Masa",
+            "unit": "g"
+          }
+        },
+        "payload_class": "graph",
+        "question_id": "COL1-5-5C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-5C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 5 half-life",
+            "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+            "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+          }
+        ],
+        "stem_lv": "No pusperioda grafika nosaki vielas masu pie t = 90 min.",
+        "time_minutes": 5.0,
+        "topic": 5,
+        "type_id": "Q12",
+        "type_ids": [
+          "Q12"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Grafika interpretācija diapazona robežpunktā x = 90 min (iekļaujoša robeža).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg",
+        "value": "10",
+        "x": "90"
+      },
+      "vector_id": "GV-S1-T5-Q12-01"
+    },
+    {
+      "case_kind": "wrong_selection",
+      "convention_refs": [
+        "epistemic_contract"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_OPTION_SELECTION",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_MULTI",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          },
+          {
+            "criterion_id": "C2_JUSTIFY",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 1.0,
+            "max_points": 1.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 1.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-5D",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {},
+        "misconception_signatures": [
+          "MC-5D-01"
+        ],
+        "outcome_ids": [
+          "P5-08"
+        ],
+        "payload": {
+          "correct_ids": [
+            "OPT-A",
+            "OPT-B"
+          ],
+          "distractors": [
+            {
+              "option_id": "OPT-C",
+              "rationale_lv": "Katalizators nemaina ΔH."
+            }
+          ],
+          "justification_prompt_lv": "Pamato, kāpēc ΔH nemainās.",
+          "options": [
+            {
+              "option_id": "OPT-A",
+              "text_lv": "Samazina aktivācijas enerģiju"
+            },
+            {
+              "option_id": "OPT-B",
+              "text_lv": "Paātrina līdzsvara sasniegšanu"
+            },
+            {
+              "option_id": "OPT-C",
+              "text_lv": "Padara reakcijas ΔH negatīvāku"
+            }
+          ],
+          "requires_justification": true
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-5-5D-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_MULTI",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_JUSTIFY",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 1.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-5D-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 5 catalysis",
+            "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+            "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+          }
+        ],
+        "stem_lv": "Atzīmē patiesos apgalvojumus par katalizatoru un pamato.",
+        "time_minutes": 5.0,
+        "topic": 5,
+        "type_id": "Q18",
+        "type_ids": [
+          "Q18"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Katalizatora multi-izvēle ar maldinošu ΔH apgalvojumu.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "OPT-A",
+          "OPT-C"
+        ]
+      },
+      "vector_id": "GV-S1-T5-Q18-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "potentials"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_MATCH",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-6A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "medium": "skāba"
+        },
+        "misconception_signatures": [
+          "MC-6A-01"
+        ],
+        "outcome_ids": [
+          "P6-02"
+        ],
+        "payload": {
+          "correct_pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ],
+          "left_items": [
+            {
+              "id": "L1",
+              "text_lv": "MnO₄⁻"
+            },
+            {
+              "id": "L2",
+              "text_lv": "Fe²⁺"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1",
+              "text_lv": "Oksidētājs (reducējas)"
+            },
+            {
+              "id": "R2",
+              "text_lv": "Reducētājs (oksidējas)"
+            }
+          ]
+        },
+        "payload_class": "matching",
+        "question_id": "COL1-6-6A-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_MATCH",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-6A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 6 redox roles",
+            "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+            "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+          }
+        ],
+        "stem_lv": "Sasaisti daļiņu ar tās lomu reakcijā MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺.",
+        "time_minutes": 5.0,
+        "topic": 6,
+        "type_id": "Q06",
+        "type_ids": [
+          "Q06"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Pareiza redoksa lomu atbilstība.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2"
+          }
+        ]
+      },
+      "vector_id": "GV-S1-T6-Q06-01"
+    },
+    {
+      "case_kind": "near_tolerance_outside",
+      "convention_refs": [
+        "titration.meniscus",
+        "tolerances.quantity_classes[id=burette_volume]"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-6C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "meniscus_rule": "upper_edge",
+          "solution_color": "dark_purple"
+        },
+        "misconception_signatures": [
+          "MC-6C-01"
+        ],
+        "outcome_ids": [
+          "P6-07"
+        ],
+        "payload": {
+          "display_lv": "18,60 mL",
+          "expected_value": 18.6,
+          "input_fields": [
+            {
+              "field_id": "V",
+              "kind": "number",
+              "label_lv": "V (mL)"
+            }
+          ],
+          "sig_figs": 4,
+          "tolerance_class": "burette_volume",
+          "unit": "mL"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-6-6C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-6C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 6 KMnO4 meniscus",
+            "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+            "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+          }
+        ],
+        "stem_lv": "Nolasi tumšā KMnO₄ šķīduma augšējo meniska malu (18,60 mL).",
+        "time_minutes": 5.0,
+        "topic": 6,
+        "type_id": "Q10",
+        "type_ids": [
+          "Q10"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Tumšā KMnO₄ meniska augšējās malas nolasījums ārpus ±0,05 mL (18,54 pret 18,60 mL).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mL",
+        "value": "18,54"
+      },
+      "vector_id": "GV-S1-T6-Q10-01"
+    },
+    {
+      "case_kind": "auto_passed_pending_review",
+      "convention_refs": [
+        "potentials.symbols"
+      ],
+      "expected": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_TRUTH",
+            "status": "awarded",
+            "awarded_points": 1.0,
+            "pending_points": 0.0,
+            "max_points": 1.0
+          },
+          {
+            "criterion_id": "C2_REPAIR",
+            "status": "pending",
+            "awarded_points": 0.0,
+            "pending_points": 2.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 1.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 2.0,
+        "max_points": 3.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-6A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "pH": 7
+        },
+        "misconception_signatures": [
+          "MC-6A-02"
+        ],
+        "outcome_ids": [
+          "P6-05"
+        ],
+        "payload": {
+          "correct_ids": [
+            "FALSE"
+          ],
+          "distractors": [
+            {
+              "option_id": "TRUE",
+              "rationale_lv": "Ja reakcijā piedalās H⁺, E°′ atšķiras no E°."
+            }
+          ],
+          "justification_prompt_lv": "Uzraksti saistību starp E°′ un E°.",
+          "options": [
+            {
+              "option_id": "TRUE",
+              "text_lv": "Patiess"
+            },
+            {
+              "option_id": "FALSE",
+              "text_lv": "Aplams"
+            }
+          ],
+          "requires_justification": true
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-6-6A-D-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_TRUTH",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 1.0
+          },
+          {
+            "carry_forward": false,
+            "criterion_id": "C2_REPAIR",
+            "depends_on": [],
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-6A-D-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 6 E_prime",
+            "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+            "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+          }
+        ],
+        "stem_lv": "Novērtē apgalvojumu: \"Bioloģiskais formālais potenciāls E°′ pie pH 7 vienmēr sakrīt ar standarta potenciālu E°.\"",
+        "time_minutes": 5.0,
+        "topic": 6,
+        "type_id": "Q14",
+        "type_ids": [
+          "Q14"
+        ],
+        "variant_id": "D"
+      },
+      "note_lv": "Potenciālu apzīmējumu E° vs E°′ nošķiršana (V-03); labojums pending.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "FALSE"
+        ]
+      },
+      "vector_id": "GV-S1-T6-Q14-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "unit_system.conversions[id=mg_to_g]",
+        "tolerances.quantity_classes[id=mass]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-7C",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "V0_mL": 25.0,
+          "dilution_factor": 5.0
+        },
+        "misconception_signatures": [
+          "MC-7C-01"
+        ],
+        "outcome_ids": [
+          "P7-04"
+        ],
+        "payload": {
+          "display_lv": "0,85 g",
+          "expected_value": 0.85,
+          "input_fields": [
+            {
+              "field_id": "m",
+              "kind": "number",
+              "label_lv": "m"
+            }
+          ],
+          "sig_figs": 2,
+          "tolerance_class": "mass",
+          "unit": "g"
+        },
+        "payload_class": "numeric",
+        "question_id": "COL1-7-7C-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_VALUE",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-7C-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 7 dilution sample mass",
+            "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+            "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+          }
+        ],
+        "stem_lv": "Aprēķini vielas masu 25,00 mL sākotnējā parauga (atbilde 0,85 g vai 850 mg).",
+        "time_minutes": 5.0,
+        "topic": 7,
+        "type_id": "Q01",
+        "type_ids": [
+          "Q01"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Parauga masa 0,85 g ievadīta kā 850 mg (vienību pāreja mg -> g).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "mg",
+        "value": "850"
+      },
+      "vector_id": "GV-S1-T7-Q01-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "spectrophotometry.optical_path",
+        "spectrophotometry.calibration"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CLASS",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-7A",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "optical_path_cm": 1.0
+        },
+        "misconception_signatures": [
+          "MC-7A-01"
+        ],
+        "outcome_ids": [
+          "P7-01"
+        ],
+        "payload": {
+          "correct_ids": [
+            "MON",
+            "BLK"
+          ],
+          "distractors": [
+            {
+              "option_id": "EXT",
+              "rationale_lv": "Ekstrapolācija nav pieļaujama."
+            }
+          ],
+          "options": [
+            {
+              "option_id": "MON",
+              "text_lv": "Monohromatiska gaisma (λ_max)"
+            },
+            {
+              "option_id": "BLK",
+              "text_lv": "Kontroles (blank) šķīdums ar to pašu matricu"
+            },
+            {
+              "option_id": "EXT",
+              "text_lv": "Ekstrapolācija ārpus standartu diapazona"
+            }
+          ],
+          "requires_justification": false
+        },
+        "payload_class": "option_select",
+        "question_id": "COL1-7-7A-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_CLASS",
+            "depends_on": [],
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-7A-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 7 spectrophotometry scope",
+            "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+            "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+          }
+        ],
+        "stem_lv": "Izvēlies nosacījumus, kas nepieciešami Bēra-Lamberta likuma lineārajai pielietošanai.",
+        "time_minutes": 5.0,
+        "topic": 7,
+        "type_id": "Q07",
+        "type_ids": [
+          "Q07"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Bēra-Lamberta likuma un optiskā ceļa l=1 cm pieņēmuma klasifikācija (V-06/V-07).",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "selected_ids": [
+          "MON",
+          "BLK"
+        ]
+      },
+      "vector_id": "GV-S1-T7-Q07-01"
+    },
+    {
+      "case_kind": "correct",
+      "convention_refs": [
+        "spectrophotometry.calibration",
+        "tolerances.quantity_classes[id=absorbance]"
+      ],
+      "expected": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "awarded",
+            "awarded_points": 2.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 2.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-7B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "intercept": 0.01,
+          "model": "linear_regression_free_intercept",
+          "slope": 50
+        },
+        "misconception_signatures": [
+          "MC-7B-01"
+        ],
+        "outcome_ids": [
+          "P7-03"
+        ],
+        "payload": {
+          "mode": "interpret",
+          "points": [
+            {
+              "x": 0.0,
+              "y": 0.01
+            },
+            {
+              "x": 0.004,
+              "y": 0.21
+            },
+            {
+              "x": 0.008,
+              "y": 0.41
+            },
+            {
+              "x": 0.012,
+              "y": 0.61
+            }
+          ],
+          "target_readout": {
+            "expected_value": 0.35,
+            "quantity": "absorbance",
+            "tolerance_class": "absorbance",
+            "unit": ""
+          },
+          "x_axis": {
+            "label_lv": "γ",
+            "unit": "mg/mL"
+          },
+          "y_axis": {
+            "label_lv": "A",
+            "unit": ""
+          }
+        },
+        "payload_class": "graph",
+        "question_id": "COL1-7-7B-A-01",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-7B-A-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 7 calibration curve",
+            "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+            "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+          }
+        ],
+        "stem_lv": "Kalibrēšanas taisne A = 50·γ + 0,010 diapazonā γ ∈ [0; 0,012] mg/mL. Nolasi A pie γ = 0,0068 mg/mL.",
+        "time_minutes": 5.0,
+        "topic": 7,
+        "type_id": "Q12",
+        "type_ids": [
+          "Q12"
+        ],
+        "variant_id": "A"
+      },
+      "note_lv": "Kalibrēšanas taisnes interpretācija diapazonā γ ∈ [0; 0,012] mg/mL.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "",
+        "value": "0,352",
+        "x": "0,0068"
+      },
+      "vector_id": "GV-S1-T7-Q12-01"
+    },
+    {
+      "case_kind": "out_of_domain_extrapolation",
+      "convention_refs": [
+        "spectrophotometry.calibration.no_extrapolation_rule_lv"
+      ],
+      "expected": {
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "denied",
+            "awarded_points": 0.0,
+            "pending_points": 0.0,
+            "max_points": 2.0
+          }
+        ],
+        "machine_checked_points": 0.0,
+        "self_assessed_points": 0.0,
+        "human_reviewed_points": 0.0,
+        "pending_points": 0.0,
+        "max_points": 2.0,
+        "oracle_version": "1.0.0",
+        "oracle_digest": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+        "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e"
+      },
+      "instance": {
+        "bank_version": "1.0.0-stratum1",
+        "difficulty": "application",
+        "family_id": "FAM-7B",
+        "feedback_lv": {
+          "correct": "Pareizi aprēķināts un noformēts atbilstoši kursa konvencijām.",
+          "incorrect": "Pārbaudi mērvienības, tolerances robežas, zīmīgos ciparus un nosacījumus."
+        },
+        "givens": {
+          "intercept": 0.01,
+          "model": "linear_regression_free_intercept",
+          "slope": 50
+        },
+        "misconception_signatures": [
+          "MC-7B-02"
+        ],
+        "outcome_ids": [
+          "P7-03"
+        ],
+        "payload": {
+          "mode": "interpret",
+          "points": [
+            {
+              "x": 0.0,
+              "y": 0.01
+            },
+            {
+              "x": 0.004,
+              "y": 0.21
+            },
+            {
+              "x": 0.008,
+              "y": 0.41
+            },
+            {
+              "x": 0.012,
+              "y": 0.61
+            }
+          ],
+          "target_readout": {
+            "expected_value": 0.35,
+            "quantity": "absorbance",
+            "tolerance_class": "absorbance",
+            "unit": ""
+          },
+          "x_axis": {
+            "label_lv": "γ",
+            "unit": "mg/mL"
+          },
+          "y_axis": {
+            "label_lv": "A",
+            "unit": ""
+          }
+        },
+        "payload_class": "graph",
+        "question_id": "COL1-7-7B-A-02",
+        "review": {
+          "accessibility": "passed",
+          "calculation": "passed",
+          "content": "passed",
+          "source": "passed"
+        },
+        "rubric": [
+          {
+            "carry_forward": false,
+            "criterion_id": "C1_READ",
+            "depends_on": [],
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "points": 2.0
+          }
+        ],
+        "schema_version": 1,
+        "seed": "FAM-7B-B-S1",
+        "source_refs": [
+          {
+            "claim_status": "text-verified",
+            "locator": "Topic 7 no-extrapolation",
+            "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+            "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+          }
+        ],
+        "stem_lv": "Kalibrēšanas taisne A = 50·γ + 0,010 diapazonā γ ∈ [0; 0,012] mg/mL. Vai drīkst nolasīt pie γ = 0,015 mg/mL?",
+        "time_minutes": 5.0,
+        "topic": 7,
+        "type_id": "Q12",
+        "type_ids": [
+          "Q12"
+        ],
+        "variant_id": "B"
+      },
+      "note_lv": "Aizliegtā ekstrapolācija pie γ = 0,015 mg/mL ārpus [0; 0,012] -> OUT_OF_DOMAIN_EXTRAPOLATION.",
+      "status": "active",
+      "stratum": "S1-N05",
+      "submission": {
+        "unit": "",
+        "value": "0,760",
+        "x": "0,015"
+      },
+      "vector_id": "GV-S1-T7-Q12-02"
+    }
+  ]
+}

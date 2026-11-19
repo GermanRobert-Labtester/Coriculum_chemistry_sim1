@@ -1,0 +1,594 @@
+{
+  "task": "N38",
+  "engine": "Falkon (QtWebEngine)",
+  "artifact_path": "output/simulator.html",
+  "artifact_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "status": "PASS",
+  "elapsed_seconds": 35.44,
+  "determinism": {
+    "replay_runs": 3,
+    "identical_verdict_sequences": true,
+    "verdict_sequence_sha256": "afe798e0e248961bc1c5cf0bd63737f4335daa4cdb5e782823785a6e88cf825a",
+    "runs": [
+      {
+        "run": 1,
+        "status": "PASS",
+        "verdict_sequence_sha256": "afe798e0e248961bc1c5cf0bd63737f4335daa4cdb5e782823785a6e88cf825a",
+        "assertions": [
+          {
+            "id": "readiness",
+            "status": "PASS",
+            "detail": "readyState=complete"
+          },
+          {
+            "id": "islands_loaded",
+            "status": "PASS",
+            "detail": "7/7 core islands valid"
+          },
+          {
+            "id": "anchors_reachable",
+            "status": "PASS",
+            "detail": "9/9 anchors unique & reachable"
+          },
+          {
+            "id": "storage_in_memory_and_degradation_safe",
+            "status": "PASS",
+            "detail": "mode=memory, lsAvailable=True, notice_present=True",
+            "normalized_state": "in_memory_safe"
+          },
+          {
+            "id": "n05_known_vector_verdict",
+            "status": "PASS",
+            "detail": "vector=GV-S1-T1-Q02-01 verdict=correct expected=correct"
+          },
+          {
+            "id": "practice_dom_interaction",
+            "status": "PASS",
+            "detail": "qid=COL1-1-1C-A-01 answer=794"
+          },
+          {
+            "id": "hint_drawer_focus_restore",
+            "status": "PASS",
+            "detail": "openFocus=hint-drawer-close closeFocus=prakse-open-hint closed=True"
+          },
+          {
+            "id": "exam_end_to_end",
+            "status": "PASS",
+            "detail": "step=exam_submit submitted"
+          },
+          {
+            "id": "runtime_smoke_subset",
+            "status": "PASS",
+            "detail": "passed=31/31 failed=0"
+          },
+          {
+            "id": "offline_network_log_empty",
+            "status": "PASS",
+            "detail": "js_attempts=0, cdp_non_file=0, perf_resources=0"
+          },
+          {
+            "id": "zero_uncaught_errors",
+            "status": "PASS",
+            "detail": "page_errors=0, console_errors=0"
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "status": "PASS",
+        "verdict_sequence_sha256": "afe798e0e248961bc1c5cf0bd63737f4335daa4cdb5e782823785a6e88cf825a",
+        "assertions": [
+          {
+            "id": "readiness",
+            "status": "PASS",
+            "detail": "readyState=complete"
+          },
+          {
+            "id": "islands_loaded",
+            "status": "PASS",
+            "detail": "7/7 core islands valid"
+          },
+          {
+            "id": "anchors_reachable",
+            "status": "PASS",
+            "detail": "9/9 anchors unique & reachable"
+          },
+          {
+            "id": "storage_in_memory_and_degradation_safe",
+            "status": "PASS",
+            "detail": "mode=memory, lsAvailable=True, notice_present=True",
+            "normalized_state": "in_memory_safe"
+          },
+          {
+            "id": "n05_known_vector_verdict",
+            "status": "PASS",
+            "detail": "vector=GV-S1-T1-Q02-01 verdict=correct expected=correct"
+          },
+          {
+            "id": "practice_dom_interaction",
+            "status": "PASS",
+            "detail": "qid=COL1-1-1C-A-01 answer=794"
+          },
+          {
+            "id": "hint_drawer_focus_restore",
+            "status": "PASS",
+            "detail": "openFocus=hint-drawer-close closeFocus=prakse-open-hint closed=True"
+          },
+          {
+            "id": "exam_end_to_end",
+            "status": "PASS",
+            "detail": "step=exam_submit submitted"
+          },
+          {
+            "id": "runtime_smoke_subset",
+            "status": "PASS",
+            "detail": "passed=31/31 failed=0"
+          },
+          {
+            "id": "offline_network_log_empty",
+            "status": "PASS",
+            "detail": "js_attempts=0, cdp_non_file=0, perf_resources=0"
+          },
+          {
+            "id": "zero_uncaught_errors",
+            "status": "PASS",
+            "detail": "page_errors=0, console_errors=0"
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "status": "PASS",
+        "verdict_sequence_sha256": "afe798e0e248961bc1c5cf0bd63737f4335daa4cdb5e782823785a6e88cf825a",
+        "assertions": [
+          {
+            "id": "readiness",
+            "status": "PASS",
+            "detail": "readyState=complete"
+          },
+          {
+            "id": "islands_loaded",
+            "status": "PASS",
+            "detail": "7/7 core islands valid"
+          },
+          {
+            "id": "anchors_reachable",
+            "status": "PASS",
+            "detail": "9/9 anchors unique & reachable"
+          },
+          {
+            "id": "storage_in_memory_and_degradation_safe",
+            "status": "PASS",
+            "detail": "mode=memory, lsAvailable=True, notice_present=True",
+            "normalized_state": "in_memory_safe"
+          },
+          {
+            "id": "n05_known_vector_verdict",
+            "status": "PASS",
+            "detail": "vector=GV-S1-T1-Q02-01 verdict=correct expected=correct"
+          },
+          {
+            "id": "practice_dom_interaction",
+            "status": "PASS",
+            "detail": "qid=COL1-1-1C-A-01 answer=794"
+          },
+          {
+            "id": "hint_drawer_focus_restore",
+            "status": "PASS",
+            "detail": "openFocus=hint-drawer-close closeFocus=prakse-open-hint closed=True"
+          },
+          {
+            "id": "exam_end_to_end",
+            "status": "PASS",
+            "detail": "step=exam_submit submitted"
+          },
+          {
+            "id": "runtime_smoke_subset",
+            "status": "PASS",
+            "detail": "passed=31/31 failed=0"
+          },
+          {
+            "id": "offline_network_log_empty",
+            "status": "PASS",
+            "detail": "js_attempts=0, cdp_non_file=0, perf_resources=0"
+          },
+          {
+            "id": "zero_uncaught_errors",
+            "status": "PASS",
+            "detail": "page_errors=0, console_errors=0"
+          }
+        ]
+      }
+    ]
+  },
+  "calibration_fixtures": [
+    {
+      "fixture_id": "FIX-SMOKE-BROKEN-ISLAND",
+      "expected": "FAIL naming sim-bank",
+      "observed_status": "FAIL",
+      "failed_step": "readiness",
+      "detail": "Visible boot errors in islands: sim-bank",
+      "calibration_pass": true
+    },
+    {
+      "fixture_id": "FIX-SMOKE-DEAD-SUBMIT",
+      "expected": "FAIL at exam_submit",
+      "observed_status": "FAIL",
+      "failed_step": "exam_submit",
+      "detail": "step=exam_submit submit did not render report or verdict",
+      "calibration_pass": true
+    }
+  ],
+  "protocols": {
+    "n33_screen_reader_protocol": {
+      "rows": [
+        {
+          "step": "1.1a (Keyboard & DOM/ARIA)",
+          "expected": "#sim-nav aria-label='Galvenā navigācija'",
+          "observed": "aria-label=Galvenā navigācija, activeTag=A",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "1.1b (Screen-Reader Announcement)",
+          "expected": "Landmark 'Galvenā navigācija'",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "1.2a (Keyboard & DOM/ARIA)",
+          "expected": "Theme toggles via 'm' and updates #theme-status",
+          "observed": "aria-pressed=true, #theme-status='Pašreizējā krāsu shēma: tumšā.'",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "1.2b (Screen-Reader Announcement)",
+          "expected": "Button theme label & #theme-status announcement",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "1.3a (Keyboard & DOM/ARIA)",
+          "expected": "Key '1' focuses #sakums-virsraksts (H1)",
+          "observed": "activeId=sakums-virsraksts, #sim-live-view='Skats: Pirmā kolokvija treniņsimulators'",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "1.3b (Screen-Reader Announcement)",
+          "expected": "#sim-live-view polite announcement",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "1.4a (Keyboard & DOM/ARIA)",
+          "expected": "Radiogroup with #sakums-pick-A aria-checked='true'",
+          "observed": "role=radiogroup, #sakums-pick-A aria-checked=true",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "1.4b (Screen-Reader Announcement)",
+          "expected": "Radiogroup & checked radio announcement",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.1a (Keyboard & DOM/ARIA)",
+          "expected": "Key '3' focuses #prakse-virsraksts (H2)",
+          "observed": "activeId=prakse-virsraksts, #sim-live-view='Skats: Prakse'",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.1b (Screen-Reader Announcement)",
+          "expected": "#sim-live-view 'Skats: Prakse'",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.2a (Keyboard & DOM/ARIA)",
+          "expected": "Practice item host renders focusable response control",
+          "observed": "hasInput=True, activeTag=INPUT",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.2b (Screen-Reader Announcement)",
+          "expected": "Control name, role, and state announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.3a (Keyboard & DOM/ARIA)",
+          "expected": "Key 'h' opens #hint-drawer and focuses #hint-drawer-close",
+          "observed": "open=True, aria-modal=true, activeId=hint-drawer-close",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.3b (Screen-Reader Announcement)",
+          "expected": "Dialog title & close button announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.4a (Keyboard & DOM/ARIA)",
+          "expected": "Tab escapes #hint-drawer (no focus trap)",
+          "observed": "escaped=True, activeId=end-of-document",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.4b (Screen-Reader Announcement)",
+          "expected": "Focus moves outside dialog",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.5a (Keyboard & DOM/ARIA)",
+          "expected": "Escape closes drawer & restores focus to #prakse-open-hint",
+          "observed": "closed=True, activeId=prakse-open-hint",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.5b (Screen-Reader Announcement)",
+          "expected": "Focus returns to invoking button",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "2.6a (Keyboard & DOM/ARIA)",
+          "expected": "Key 's' skips task and updates #sim-live-verdict",
+          "observed": "#sim-live-verdict='Uzdevums izlaists (COL1-1-1A-A-01).'",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "2.6b (Screen-Reader Announcement)",
+          "expected": "#sim-live-verdict polite announcement",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.1a (Keyboard & DOM/ARIA)",
+          "expected": "Key '4' focuses #eksamens-virsraksts",
+          "observed": "activeId=eksamens-virsraksts",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.1b (Screen-Reader Announcement)",
+          "expected": "#sim-live-view 'Skats: Eksāmena simulācija'",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.2a (Keyboard & DOM/ARIA)",
+          "expected": "#exam-start opens #exam-shell",
+          "observed": "examShellVisible=True",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.2b (Screen-Reader Announcement)",
+          "expected": "Exam shell & slot host announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.3a (Keyboard & DOM/ARIA)",
+          "expected": "Input-guard suppresses 't'/'1' shortcuts inside input",
+          "observed": "val='', activeTag=INPUT",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.3b (Screen-Reader Announcement)",
+          "expected": "Typed characters echoed",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.4a (Keyboard & DOM/ARIA)",
+          "expected": "Keys 'n'/'p' navigate slots",
+          "observed": "#exam-slot-status='Uzdevuma vieta 1 no 21 (S1-1)'",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.4b (Screen-Reader Announcement)",
+          "expected": "Slot status announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.5a (Keyboard & DOM/ARIA)",
+          "expected": "Key 'f' toggles #exam-flag aria-pressed",
+          "observed": "aria-pressed=true",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.5b (Screen-Reader Announcement)",
+          "expected": "Flagged state announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.6a (Keyboard & DOM/ARIA)",
+          "expected": "#sim-live-timer fires once",
+          "observed": "Timer threshold requires real elapsed time; live-region contract checked statically in N33",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.6b (Screen-Reader Announcement)",
+          "expected": "Assertive timer alert announced once",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "3.7a (Keyboard & DOM/ARIA)",
+          "expected": "Key 'r' opens #exam-review",
+          "observed": "reviewVisible=True",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "3.7b (Screen-Reader Announcement)",
+          "expected": "Review & submit verdict announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "4.1a (Keyboard & DOM/ARIA)",
+          "expected": "Key '6' focuses #atskats-virsraksts",
+          "observed": "activeId=atskats-virsraksts",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "4.1b (Screen-Reader Announcement)",
+          "expected": "#sim-live-view 'Skats: Atskats un atkārtošana'",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "4.2a (Keyboard & DOM/ARIA)",
+          "expected": "Key 'c' focuses revision criteria section",
+          "observed": "activeId=atskats-revision-heading",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "4.2b (Screen-Reader Announcement)",
+          "expected": "Revision heading announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "4.3a (Keyboard & DOM/ARIA)",
+          "expected": "Criteria controls toggle with Space/Enter",
+          "observed": "No completed self-assessment item in fresh session without prior exam",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "4.3b (Screen-Reader Announcement)",
+          "expected": "Criteria name/role/state announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "5.1a (Keyboard & DOM/ARIA)",
+          "expected": "Key 't' focuses #saturs-virsraksts",
+          "observed": "activeId=saturs-virsraksts",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "5.1b (Screen-Reader Announcement)",
+          "expected": "#sim-live-view 'Skats: Mācību mērķi'",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "5.2a (Keyboard & DOM/ARIA)",
+          "expected": "Concept node opens #concept-drawer and focuses close button",
+          "observed": "open=True, activeId=concept-drawer-close",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "5.2b (Screen-Reader Announcement)",
+          "expected": "Dialog 'Koncepta atvilktne' announced",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "5.3a (Keyboard & DOM/ARIA)",
+          "expected": "Tab escapes #concept-drawer (no focus trap)",
+          "observed": "escaped=True",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "5.3b (Screen-Reader Announcement)",
+          "expected": "Focus walks out of dialog",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        },
+        {
+          "step": "5.4a (Keyboard & DOM/ARIA)",
+          "expected": "Escape closes #concept-drawer & restores focus",
+          "observed": "closed=True, activeId=karte-cross-open-P1-06-P3-02",
+          "status": "VERIFIED"
+        },
+        {
+          "step": "5.4b (Screen-Reader Announcement)",
+          "expected": "Focus returns to invoking concept node",
+          "observed": "UNAVAILABLE: Full NVDA (Windows) and VoiceOver (macOS) unavailable; no Orca/AT-SPI speech in headless Xvfb Falkon.",
+          "status": "UNVERIFIED"
+        }
+      ],
+      "verified_count": 22,
+      "unverified_count": 26,
+      "failed_count": 0
+    },
+    "n35_browser_perf": {
+      "engine": "Falkon (QtWebEngine)",
+      "epistemic_note": "Single-engine browser measurement; Chrome/Firefox/Safari UNVERIFIED.",
+      "declared_divergence_factor": 5.0,
+      "all_within_budget_and_factor": true,
+      "rows": [
+        {
+          "id": "island_parse",
+          "label": "All JSON islands parse (112/112 bank instances)",
+          "harness_ms": 4.067,
+          "browser_ms": 23.9,
+          "ceiling_ms": 150.0,
+          "declared_factor": 5.0,
+          "within_ceiling": true,
+          "within_factor": false,
+          "status": "VERIFIED"
+        },
+        {
+          "id": "first_render_start",
+          "label": "First interactive start screen render",
+          "harness_ms": 0.266,
+          "browser_ms": 4.0,
+          "ceiling_ms": 50.0,
+          "declared_factor": 5.0,
+          "within_ceiling": true,
+          "within_factor": false,
+          "status": "VERIFIED"
+        },
+        {
+          "id": "exam_navigator_interaction",
+          "label": "Exam navigator per-interaction max latency (21 slots)",
+          "harness_ms": 0.383,
+          "browser_ms": 8.7,
+          "ceiling_ms": 25.0,
+          "declared_factor": 5.0,
+          "within_ceiling": true,
+          "within_factor": false,
+          "status": "VERIFIED"
+        },
+        {
+          "id": "revision_panel_interaction",
+          "label": "Revision panel render max latency (3 N26 profiles)",
+          "harness_ms": 27.026,
+          "browser_ms": 96.8,
+          "ceiling_ms": 40.0,
+          "declared_factor": 5.0,
+          "within_ceiling": false,
+          "within_factor": true,
+          "status": "VERIFIED"
+        },
+        {
+          "id": "keystroke_burst_incremental",
+          "label": "Exam answer 30-char typing burst (incremental fix)",
+          "harness_ms": 2.368,
+          "browser_ms": 20.0,
+          "ceiling_ms": 25.0,
+          "declared_factor": 5.0,
+          "within_ceiling": true,
+          "within_factor": false,
+          "status": "VERIFIED"
+        }
+      ]
+    }
+  },
+  "cross_engine_statement": "The artifact is proven alive, correct, and offline in Falkon (QtWebEngine) under the AGENTS.md policy, with the interaction path, focus behavior, verdicts, and storage degradation all evidenced; behavior in Chrome, Safari, Firefox, and on physical print remains UNVERIFIED in this environment.",
+  "unverified_items": [
+    "NVDA (Windows) screen-reader speech/braille announcements (N33)",
+    "VoiceOver (macOS) screen-reader speech/braille announcements (N33)",
+    "Orca / AT-SPI live speech output in headless Xvfb (N33)",
+    "Scenario 3.6 real-time timer threshold alert firing (N33)",
+    "Scenario 4.3 completed self-assessment toggle in fresh session (N33)",
+    "Chrome/Chromium rendering and interaction (explicitly forbidden by AGENTS.md without authorization)",
+    "Firefox rendering and interaction (UNAVAILABLE in environment)",
+    "Safari/WebKit rendering and interaction (UNAVAILABLE in environment)",
+    "Physical printer paper output (UNAVAILABLE in environment)"
+  ]
+}

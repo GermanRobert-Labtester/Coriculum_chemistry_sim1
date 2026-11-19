@@ -1,0 +1,1478 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-response-types",
+  "owner": "N22",
+  "status": "frozen-contract-for-N23-N24-N30-N33",
+  "title_lv": "Atbilžu ievades tipu reģistrs: 18 tipu renderēšanas, datu, komplektēšanas un ARIA līgumi",
+  "epistemic_note_lv": "Programma 2025 nenosaka atbilžu ievades veidus, lauku skaitu vai ARIA nosaukumus. Reģistra lauku veidnes, pabeigtības noteikumi, tastatūras ceļi un pieejamās alternatīvas ir PROPOSED mācību politika (katrā ierakstā policy_label), nevis oficiālas eksāmena prasības. Renderētāju atslēgas un datu klases nāk no N04 saldētās shēmas un src/bank-loader.js; kļūdu id nāk no N17, N18 un N19 līgumiem, un neviens jauns kļūdas id netiek izgudrots.",
+  "completed_types": [
+    "Q02",
+    "Q04",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q15"
+  ],
+  "announcement_keys": {
+    "complete": "input.state.complete",
+    "incomplete": "input.state.incomplete",
+    "invalid": "input.state.invalid",
+    "pending_grading": "input.state.pending_grading",
+    "group_label": "input.group.label",
+    "completion_announce": "input.announce.completion",
+    "error_prefix": "input.error.prefix",
+    "input_preserved": "input.error.preserved"
+  },
+  "conflicts": [
+    {
+      "id": "N22-C01",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "MIXED_SEPARATORS kļūdas id",
+      "roadmap_label": "Ceļa karte A.1.3 nosauc MIXED_SEPARATORS ziņojumu",
+      "contract_label": "N17 taksonomijā un N18/N19 līgumos šāda id nav; ir tikai četras N17 klases, BLANK_RESPONSE un seši E_GRAPH_* id",
+      "resolution_lv": "MIXED_SEPARATORS kā atsevišķs id neeksistē. Jaukta atdalītāja ievads \"1,2,3\" klasificējas kā UNREADABLE_INPUT (N17 1. klase, paraksturs MC-2B-02, vektors EV-N17-CLS-01), un saskarne rāda feedback.error.unreadable tekstu uz blur, neaizturot neapstrādāto ievadi. Ievades saglabāšanas invariants paliek spēkā."
+    },
+    {
+      "id": "N22-C02",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Q18 tips pret Q18_plot_state variantu",
+      "roadmap_label": "Ceļa karte A.1.2 nosauc \"Q18 short plot\" un A.1.1 min plot interakciju",
+      "contract_label": "N04 shēma saista Q18 ar option_select klasi; exam_policy named_variants saista Q18_plot_state ar graph klasi",
+      "resolution_lv": "Q18 kā tips paliek option_select (N04). Plot-state variants ir graph klases vārdnīcas vienums, ko N21 jau dokumentēja kā N21-C01; N22 to ievieto grafa klases reģistra ierakstā (Q11) kā otro variantu, tāpēc \"Q18 short plot\" fixtures tiek pārbaudīts grafa klasē, nevis Q18 tipā. Tipa saite netiek klusējot pārbīdīta."
+    },
+    {
+      "id": "N22-C03",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Q11/Q12 dzinēja etiķete",
+      "roadmap_label": "Ceļa karte N22 atsaucas uz N18 grafiku dzinēju",
+      "contract_label": "N04 types.Q11/Q12.engine ir N17-numeric; data/graph_scoring_contract.json rubrikās lieto N18-graph, bet N04 rubrikas enum to neietver",
+      "resolution_lv": "engine_binding atspoguļo N04 etiķeti (N17-numeric), jo validators to pārbauda pret shēmu; grading_binding.engine nosauc faktisko saldēto vērtētāju N18-graph (SimGraphScoring.scoreDrawing / scoreReading). Abas etiķetes paliek redzamas, nevis viena tiek klusējot pārrakstīta."
+    },
+    {
+      "id": "N22-C04",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Kļūdu paziņojumu terminu atslēgas",
+      "roadmap_label": "Ceļa karte A.1.3 prasa latviešu ziņojuma veidnes, kas atslēgotas ar tiem pašiem id",
+      "contract_label": "N17 taksonomija publicē feedback_key tikai četrām klasēm; N18 un N19 publicē id un label_lv, bet ne terminu atslēgas; BLANK_RESPONSE feedback atslēgas nav",
+      "resolution_lv": "Četras N17 klases un OUT_OF_DOMAIN lieto esošās feedback.error.* atslēgas. BLANK_RESPONSE un seši E_GRAPH_* id iegūst jaunas atslēgas input.error.* nosaukumtelpā ar N22 avotu; N10 salā netiek izgudrotas jaunas feedback.* atslēgas."
+    },
+    {
+      "id": "N22-C05",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Q03 vērtēšanas ceļš",
+      "roadmap_label": "Ceļa karte C.1.1: Q03 veidnes atbilde iet manuālā rubrikas pending ceļu",
+      "contract_label": "N04 types.Q03.engine ir N18-symbolic",
+      "resolution_lv": "Q03 komplektēšana prasa veidnes izvēli, pildījumus un saglabāto lielumu, bet vērtējums paliek manual-rubric-pending; automātisks verdikts netiek izlikts. N04 dzinēja etiķete paliek engine_binding laukā."
+    },
+    {
+      "id": "N22-C06",
+      "label": "OPEN-FOR-N23-N24",
+      "owner": "N22",
+      "topic": "Pašnovērtējuma kritēriji skaitliskajos un grafa tipos",
+      "roadmap_label": "Ceļa karte prasa, lai katram tipam būtu datu ceļš saviem kritērijiem",
+      "contract_label": "Bankas instances Q02, Q09, Q10, Q11 un Q12 deklarē self-assessed kritēriju, bet N04 numeric un graph datu klases nepieļauj teksta lauku",
+      "resolution_lv": "N22 reģistrē tikai tos laukus, ko datu klase atļauj, un nepievieno slepenu teksta lauku. Šiem tipiem pašnovērtējuma kritērijam nav datu pamata, tāpēc N23/N24 ir jāizlemj, vai kritēriju atmest vai pieņemt kā pending bez ievades. Konflikts paliek atklāts un nav noklusēts."
+    },
+    {
+      "id": "N22-C07",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Sesijas datu līguma tips metodei",
+      "roadmap_label": "Ceļa karte A.1.1 prasa lauka līmeņa ARIA nosaukumus visiem tipiem",
+      "contract_label": "exam_policy payload_contracts.method prasa tikai variant; Q03/Q05/Q13/Q15/Q16/Q17 papildu lauki sesijas slānī nav tipizēti",
+      "resolution_lv": "Sesijas līgums paliek strukturāls, un reģistra lauku veidnes ir vienīgā tipizācijas autoritāte. Q03_template, Q04_vector, Q05_rows, Q12_read, Q15_text un Q16_text ir reģistra deklarēti varianti ārpus exam_policy named_variants četrinieka; tie neapstrīd sesijas līgumu, jo tas papildu laukus neaizliedz."
+    },
+    {
+      "id": "N22-C08",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "owner": "N22",
+      "topic": "Artefakta kopapjoma pārbudžets",
+      "roadmap_label": "Ceļa karte 1.3 sadaļa deklarē 700–1 400 KiB joslu; N21 noteica izpildāmo griestu 1 440 KiB",
+      "contract_label": "N22 ievades slānis palielina artefaktu līdz 1 522 087 B (1 486,4 KiB): reakcijas tipu reģistra sala 34 179 B kanoniski, terminoloģijas salas pieaugums +47 549 B un trīs dūmu vektori",
+      "resolution_lv": "Griests pārlikts uz mērījuma pamata (1 504 KiB), kas pierakstīts tools/byte_budget.py vēsturē; deklarētā josla paliek redzama, un galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31. N22 ievades moduļi (225 423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270 014 B paliek zem 264 KiB griesta."
+    }
+  ],
+  "types": {
+    "Q01": {
+      "id": "Q01",
+      "name_key": "input.q01.name",
+      "renderer_key": "renderer-numeric",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "engine_binding": "N17-numeric",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "value",
+          "source": "instance.payload.input_fields",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.numeric.value_cell",
+          "payload_path": "values[field_id]",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "unit",
+          "source": "instance.payload.unit",
+          "control": "select",
+          "value_type": "reference",
+          "required": false,
+          "label_key": "input.numeric.unit_cell",
+          "payload_path": "not_stored",
+          "option_source": "instance.payload.unit"
+        }
+      ],
+      "completion_rule": {
+        "model": "numeric",
+        "values_path": "values",
+        "fields_from": "instance.payload.input_fields",
+        "include_steps": false,
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "value": "input.missing.value"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "DIMENSIONAL_INCONSISTENCY": "feedback.error.dimensional",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.numeric.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q01.label",
+        "term_keys": [
+          "input.alt.q01.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q02": {
+      "id": "Q02",
+      "name_key": "input.q02.name",
+      "renderer_key": "renderer-numeric-multistep",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "engine_binding": "N17-numeric",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "value",
+          "source": "instance.payload.input_fields",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.numeric.value_cell",
+          "payload_path": "values[field_id]",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "step",
+          "source": "instance.payload.substeps",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q02.step_cell",
+          "payload_path": "values[step_id]",
+          "input_mode": "decimal"
+        }
+      ],
+      "completion_rule": {
+        "model": "numeric",
+        "values_path": "values",
+        "fields_from": "instance.payload.input_fields",
+        "include_steps": true,
+        "steps_from": "instance.payload.substeps",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "value": "input.missing.value",
+          "step": "input.missing.step"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "DIMENSIONAL_INCONSISTENCY": "feedback.error.dimensional",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.numeric.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q02.label",
+        "term_keys": [
+          "input.alt.q02.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Skaitliskais datu veids nenes paskaidrojuma lauku; ja instance deklarē pašnovērtējuma kritēriju, tam šajā tipā nav datu pamata (sk. konfliktu N22-C06)."
+    },
+    "Q03": {
+      "id": "Q03",
+      "name_key": "input.q03.name",
+      "renderer_key": "renderer-method-formula",
+      "payload_kind": "method",
+      "payload_variant": "Q03_template",
+      "engine_binding": "N18-symbolic",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "choice",
+          "fill_ins",
+          "conserved"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "choice",
+          "source": "instance.payload.template_options",
+          "control": "radio-group",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q03.template_choice",
+          "payload_path": "choice",
+          "option_source": "instance.payload.template_options"
+        },
+        {
+          "role": "fill_in",
+          "source": "instance.payload.steps",
+          "control": "text-input-map",
+          "value_type": "raw_string_map",
+          "required": true,
+          "label_key": "input.q03.fill_in",
+          "payload_path": "fill_ins[step_id]"
+        },
+        {
+          "role": "conserved",
+          "source": "static",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q03.conserved",
+          "payload_path": "conserved"
+        }
+      ],
+      "completion_rule": {
+        "model": "template",
+        "choice_path": "choice",
+        "fill_ins_path": "fill_ins",
+        "steps_from": "instance.payload.steps",
+        "conserved_path": "conserved",
+        "pending_grading": true,
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "template": "input.missing.template",
+          "fill_in": "input.missing.fill_in",
+          "conserved": "input.missing.conserved"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.formula.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q03.label",
+        "term_keys": [
+          "input.alt.q03.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Veidnes izvēle un pildījumi tiek vērtēti manuāli; komplektēšana nekad neizliekas par automātisku."
+    },
+    "Q04": {
+      "id": "Q04",
+      "name_key": "input.q04.name",
+      "renderer_key": "renderer-method-coefficients",
+      "payload_kind": "method",
+      "payload_variant": "Q04_vector",
+      "engine_binding": "N18-symbolic",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "vector"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "coefficient",
+          "source": "instance.payload.species_list",
+          "control": "text-input-vector",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q04.coefficient_cell",
+          "payload_path": "vector[index]",
+          "input_mode": "decimal"
+        }
+      ],
+      "completion_rule": {
+        "model": "vector",
+        "vector_path": "vector",
+        "species_from": "instance.payload.species_list",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "coefficient": "input.missing.coefficient"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.vector.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q04.label",
+        "term_keys": [
+          "input.alt.q04.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Koeficientu vektoru vērtē N17 saglabāšanas noteikumi (masa un moli); šūna ir viens koeficients."
+    },
+    "Q05": {
+      "id": "Q05",
+      "name_key": "input.q05.name",
+      "renderer_key": "renderer-method-half-reaction",
+      "payload_kind": "method",
+      "payload_variant": "Q05_rows",
+      "engine_binding": "N18-symbolic",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "rows"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "row",
+          "source": "instance.payload.steps",
+          "control": "text-input-map",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q05.row_cell",
+          "payload_path": "rows[step_id]"
+        }
+      ],
+      "completion_rule": {
+        "model": "rows",
+        "rows_path": "rows",
+        "steps_from": "instance.payload.steps",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "row": "input.missing.row"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.vector.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q05.label",
+        "term_keys": [
+          "input.alt.q05.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Rindas ir teksts; ja instance deklarē N17 saglabāšanas pārbaudi, tā paliek automātiska, pretējā gadījumā vērtējums gaida manuālu pārbaudi."
+    },
+    "Q06": {
+      "id": "Q06",
+      "name_key": "input.q06.name",
+      "renderer_key": "renderer-matching",
+      "payload_kind": "matching",
+      "payload_variant": null,
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N19-method",
+        "consumes": [
+          "pairs"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "pair",
+          "source": "instance.payload.left_items",
+          "control": "select",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q06.pair_select",
+          "payload_path": "pairs[index].right_id",
+          "option_source": "instance.payload.right_items"
+        }
+      ],
+      "completion_rule": {
+        "model": "pairs",
+        "pairs_path": "pairs",
+        "left_from": "instance.payload.left_items",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "pair": "input.missing.pair"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.matching.path",
+        "parity_key": "input.kb.parity.keyboard_equivalent",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q06.label",
+        "term_keys": [
+          "input.alt.q06.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q07": {
+      "id": "Q07",
+      "name_key": "input.q07.name",
+      "renderer_key": "renderer-option-classification",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N19-method",
+        "consumes": [
+          "selected"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "option",
+          "source": "instance.payload.options",
+          "control": "checkbox-group",
+          "value_type": "string_list",
+          "required": true,
+          "label_key": "input.q07.option_cell",
+          "payload_path": "selected"
+        }
+      ],
+      "completion_rule": {
+        "model": "selection",
+        "selection_path": "selected",
+        "options_from": "instance.payload.options",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "selection": "input.missing.selection"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.option.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q07.label",
+        "term_keys": [
+          "input.alt.q07.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q08": {
+      "id": "Q08",
+      "name_key": "input.q08.name",
+      "renderer_key": "renderer-ordering",
+      "payload_kind": "ordering",
+      "payload_variant": null,
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "order",
+          "explanation"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "position",
+          "source": "instance.payload.items",
+          "control": "select",
+          "value_type": "string_list",
+          "required": true,
+          "label_key": "input.q08.position_select",
+          "payload_path": "order[index]",
+          "option_source": "instance.payload.items"
+        },
+        {
+          "role": "explanation",
+          "source": "instance.payload.explanation_prompt_lv",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q08.explanation",
+          "payload_path": "explanation"
+        }
+      ],
+      "completion_rule": {
+        "model": "order",
+        "order_path": "order",
+        "items_from": "instance.payload.items",
+        "explanation_required": true,
+        "explanation_path": "explanation",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "order_item": "input.missing.order_item",
+          "explanation": "input.missing.explanation"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.ordering.path",
+        "parity_key": "input.kb.parity.keyboard_equivalent",
+        "abort_rule_key": "input.kb.abort.discard"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q08.label",
+        "term_keys": [
+          "input.alt.q08.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Secību vērtē N19 pēc pozīcijām; paskaidrojums paliek pašnovērtējums, tāpēc klase ir mixed."
+    },
+    "Q09": {
+      "id": "Q09",
+      "name_key": "input.q09.name",
+      "renderer_key": "renderer-numeric-table",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "engine_binding": "N17-numeric",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "value",
+          "source": "instance.payload.input_fields",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q09.table_cell",
+          "payload_path": "values[field_id]",
+          "input_mode": "decimal"
+        }
+      ],
+      "completion_rule": {
+        "model": "numeric",
+        "values_path": "values",
+        "fields_from": "instance.payload.input_fields",
+        "include_steps": false,
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "value": "input.missing.value"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "DIMENSIONAL_INCONSISTENCY": "feedback.error.dimensional",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.numeric.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q09.label",
+        "term_keys": [
+          "input.alt.q09.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q10": {
+      "id": "Q10",
+      "name_key": "input.q10.name",
+      "renderer_key": "renderer-numeric-scale",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "engine_binding": "N17-numeric",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "value",
+          "source": "instance.payload.input_fields",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q10.scale_cell",
+          "payload_path": "values[field_id]",
+          "input_mode": "decimal"
+        }
+      ],
+      "completion_rule": {
+        "model": "numeric",
+        "values_path": "values",
+        "fields_from": "instance.payload.input_fields",
+        "include_steps": false,
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "value": "input.missing.value"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "DIMENSIONAL_INCONSISTENCY": "feedback.error.dimensional",
+        "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.numeric.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q10.label",
+        "term_keys": [
+          "input.alt.q10.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q11": {
+      "id": "Q11",
+      "name_key": "input.q11.name",
+      "renderer_key": "renderer-graph-construct",
+      "payload_kind": "graph",
+      "payload_variant": "Q11_record",
+      "engine_binding": "N17-numeric",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N18-graph",
+        "consumes": [
+          "draw_payload",
+          "record"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "record",
+          "source": "instance.payload.points",
+          "control": "coordinate-table",
+          "value_type": "object",
+          "required": true,
+          "label_key": "input.q11.record_table",
+          "payload_path": "record"
+        },
+        {
+          "role": "draw_payload",
+          "source": "none",
+          "control": "graph-canvas-keyboard",
+          "value_type": "object",
+          "required": false,
+          "label_key": "input.q11.draw_surface",
+          "payload_path": "draw_payload"
+        }
+      ],
+      "completion_rule": {
+        "model": "graph",
+        "variant_rules": {
+          "Q11_record": {
+            "mode": "record",
+            "record_path": "record",
+            "draw_path": "draw_payload",
+            "declared_points_from": "instance.payload.points",
+            "draw_schema": "sim-graph-draw-v1",
+            "emits": [
+              "E_GRAPH_PAYLOAD_MALFORMED",
+              "E_GRAPH_EMPTY_SUBMISSION"
+            ],
+            "missing": {
+              "record": "input.missing.record",
+              "point_count": "input.missing.point_count",
+              "draw": "input.missing.draw"
+            }
+          },
+          "Q18_plot_state": {
+            "mode": "plot_state",
+            "plot_path": "plot_state",
+            "declared_points_from": "instance.payload.plot_point_count",
+            "fallback_points_from": "instance.payload.points",
+            "emits": [
+              "E_GRAPH_PAYLOAD_MALFORMED",
+              "E_GRAPH_EMPTY_SUBMISSION"
+            ],
+            "missing": {
+              "point_count": "input.missing.point_count"
+            }
+          }
+        }
+      },
+      "error_surfaces": [
+        "E_GRAPH_PAYLOAD_MALFORMED",
+        "E_GRAPH_EMPTY_SUBMISSION",
+        "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "E_GRAPH_WRONG_DIRECTION",
+        "E_GRAPH_DOUBLE_BACK",
+        "E_GRAPH_NON_MONOTONIC",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "E_GRAPH_PAYLOAD_MALFORMED": "input.error.graph.malformed",
+        "E_GRAPH_EMPTY_SUBMISSION": "input.error.graph.empty",
+        "E_GRAPH_OUT_OF_AXIS_RANGE": "input.error.graph.out_of_axis",
+        "E_GRAPH_WRONG_DIRECTION": "input.error.graph.wrong_direction",
+        "E_GRAPH_DOUBLE_BACK": "input.error.graph.double_back",
+        "E_GRAPH_NON_MONOTONIC": "input.error.graph.non_monotonic",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.graph_draw.path",
+        "parity_key": "input.kb.parity.keyboard_equivalent",
+        "abort_rule_key": "input.kb.abort.discard"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q11.label",
+        "term_keys": [
+          "input.alt.q11.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Grafika klase nes gan Q11 ieraksta, gan plot_state variantu; plot_state ir grafa veids, nevis atsevišķs Q18 tips (sk. konfliktu N22-C02)."
+    },
+    "Q12": {
+      "id": "Q12",
+      "name_key": "input.q12.name",
+      "renderer_key": "renderer-graph-interpret",
+      "payload_kind": "graph",
+      "payload_variant": "Q12_read",
+      "engine_binding": "N17-numeric",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "auto",
+        "engine": "N18-graph",
+        "consumes": [
+          "read.x",
+          "read.y",
+          "read.figure_binding"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "read_x",
+          "source": "none",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q12.read_x",
+          "payload_path": "read.x",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "read_y",
+          "source": "none",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q12.read_y",
+          "payload_path": "read.y",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "figure_binding",
+          "source": "sim-figures",
+          "control": "select",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q12.figure_binding",
+          "payload_path": "read.figure_binding",
+          "option_source": "sim-figures"
+        }
+      ],
+      "completion_rule": {
+        "model": "graph",
+        "variant_rules": {
+          "Q12_read": {
+            "mode": "read",
+            "read_path": "read",
+            "axes": [
+              "x",
+              "y"
+            ],
+            "binding_field": "figure_binding",
+            "emits": [
+              "E_GRAPH_PAYLOAD_MALFORMED"
+            ],
+            "missing": {
+              "axis": "input.missing.read_axis",
+              "binding": "input.missing.binding"
+            }
+          }
+        }
+      },
+      "error_surfaces": [
+        "E_GRAPH_PAYLOAD_MALFORMED",
+        "E_GRAPH_EMPTY_SUBMISSION",
+        "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "OUT_OF_DOMAIN",
+        "UNREADABLE_INPUT",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "E_GRAPH_PAYLOAD_MALFORMED": "input.error.graph.malformed",
+        "E_GRAPH_EMPTY_SUBMISSION": "input.error.graph.empty",
+        "E_GRAPH_OUT_OF_AXIS_RANGE": "input.error.graph.out_of_axis",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.graph_read.path",
+        "parity_key": "input.kb.parity.keyboard_equivalent",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q12.label",
+        "term_keys": [
+          "input.alt.q12.detail"
+        ]
+      },
+      "policy_label": "PROPOSED"
+    },
+    "Q13": {
+      "id": "Q13",
+      "name_key": "input.q13.name",
+      "renderer_key": "renderer-method-error-repair",
+      "payload_kind": "method",
+      "payload_variant": "Q13_vector",
+      "engine_binding": "N19-method",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "vector",
+          "located",
+          "replacement",
+          "reason"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "coefficient",
+          "source": "instance.payload.species_list",
+          "control": "text-input-vector",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q13.coefficient_cell",
+          "payload_path": "vector[index]",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "located",
+          "source": "instance.payload.species_list",
+          "control": "select",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q13.located",
+          "payload_path": "located",
+          "option_source": "instance.payload.species_list"
+        },
+        {
+          "role": "replacement",
+          "source": "none",
+          "control": "text-input",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q13.replacement",
+          "payload_path": "replacement",
+          "input_mode": "decimal"
+        },
+        {
+          "role": "reason",
+          "source": "none",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q13.reason",
+          "payload_path": "reason"
+        }
+      ],
+      "completion_rule": {
+        "model": "vector",
+        "vector_path": "vector",
+        "species_from": "instance.payload.species_list",
+        "required_fields": [
+          {
+            "field_id": "located",
+            "label_key": "input.q13.located"
+          },
+          {
+            "field_id": "replacement",
+            "label_key": "input.q13.replacement"
+          },
+          {
+            "field_id": "reason",
+            "label_key": "input.q13.reason"
+          }
+        ],
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "coefficient": "input.missing.coefficient"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.vector.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q13.label",
+        "term_keys": [
+          "input.alt.q13.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Koeficientu šūnas vērtē N17 skaitliskie noteikumi, kļūdas vietu — N19 identitātes noteikums, pamatojums paliek pašnovērtējums; tāpēc klase ir mixed."
+    },
+    "Q14": {
+      "id": "Q14",
+      "name_key": "input.q14.name",
+      "renderer_key": "renderer-option-statement",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "selected",
+          "justification"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "option",
+          "source": "instance.payload.options",
+          "control": "checkbox-group",
+          "value_type": "string_list",
+          "required": true,
+          "label_key": "input.selection.selected",
+          "payload_path": "selected"
+        },
+        {
+          "role": "justification",
+          "source": "instance.payload.justification_prompt_lv",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q14.justification",
+          "payload_path": "justification"
+        }
+      ],
+      "completion_rule": {
+        "model": "selection",
+        "selection_path": "selected",
+        "options_from": "instance.payload.options",
+        "justification_path": "justification",
+        "justification_required_from": "instance.payload.requires_justification",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "selection": "input.missing.selection",
+          "justification": "input.missing.justification"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.option.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q14.label",
+        "term_keys": [
+          "input.alt.q14.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Izvēles identifikatori tiek vērtēti automātiski, pamatojums paliek pašnovērtējumam."
+    },
+    "Q15": {
+      "id": "Q15",
+      "name_key": "input.q15.name",
+      "renderer_key": "renderer-method-explanation",
+      "payload_kind": "method",
+      "payload_variant": "Q15_text",
+      "engine_binding": "self-assessed",
+      "required_per_form": true,
+      "completed_type": true,
+      "grading_binding": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "text"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "text",
+          "source": "instance.payload.explanation_prompt_lv",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q15.text",
+          "payload_path": "text"
+        }
+      ],
+      "completion_rule": {
+        "model": "text",
+        "text_path": "text",
+        "min_chars": 1,
+        "blank_error": "BLANK_RESPONSE",
+        "emits": [
+          "BLANK_RESPONSE"
+        ],
+        "missing": {
+          "text": "input.missing.text"
+        }
+      },
+      "error_surfaces": [
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.formula.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q15.label",
+        "term_keys": [
+          "input.alt.q15.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Teksts netiek lasīts; tukšums dod BLANK_RESPONSE, bet jebkurš saturs paliek pending."
+    },
+    "Q16": {
+      "id": "Q16",
+      "name_key": "input.q16.name",
+      "renderer_key": "renderer-method-compare",
+      "payload_kind": "method",
+      "payload_variant": "Q16_text",
+      "engine_binding": "self-assessed",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "self",
+        "engine": "self-assessed",
+        "consumes": [
+          "text"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "text",
+          "source": "instance.payload.explanation_prompt_lv",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q16.text",
+          "payload_path": "text"
+        }
+      ],
+      "completion_rule": {
+        "model": "text",
+        "text_path": "text",
+        "min_chars": 1,
+        "blank_error": "BLANK_RESPONSE",
+        "emits": [
+          "BLANK_RESPONSE"
+        ],
+        "missing": {
+          "text": "input.missing.text"
+        }
+      },
+      "error_surfaces": [
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.formula.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q16.label",
+        "term_keys": [
+          "input.alt.q16.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Salīdzinājums ir pašnovērtējums; automātiska verdikta šim tipam nav."
+    },
+    "Q17": {
+      "id": "Q17",
+      "name_key": "input.q17.name",
+      "renderer_key": "renderer-method-case",
+      "payload_kind": "method",
+      "payload_variant": "Q17_pairs",
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "pair_map",
+          "structure"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "pair",
+          "source": "instance.payload.steps",
+          "control": "text-input-map",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q17.pair_cell",
+          "payload_path": "pair_map[step_id]"
+        },
+        {
+          "role": "structure",
+          "source": "instance.payload.structure_parts",
+          "control": "select-and-place",
+          "value_type": "object",
+          "required": false,
+          "label_key": "input.q17.structure_part",
+          "payload_path": "structure[part_id]",
+          "option_source": "instance.payload.structure_parts"
+        }
+      ],
+      "completion_rule": {
+        "model": "pair_map",
+        "map_path": "pair_map",
+        "steps_from": "instance.payload.steps",
+        "structure_path": "structure",
+        "structure_parts_from": "instance.payload.structure_parts",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "step": "input.missing.step",
+          "structure_part": "input.missing.structure_part"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.pairs.path",
+        "parity_key": "input.kb.parity.keyboard_equivalent",
+        "abort_rule_key": "input.kb.abort.discard"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q17.label",
+        "term_keys": [
+          "input.alt.q17.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Soļu atbildes tiek salīdzinātas pēc identitātes, struktūras daļas novietojums ir atsevišķs solis, un brīvais teksts paliek pašnovērtējums."
+    },
+    "Q18": {
+      "id": "Q18",
+      "name_key": "input.q18.name",
+      "renderer_key": "renderer-option-multiselect",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "engine_binding": "N19-method",
+      "required_per_form": false,
+      "completed_type": false,
+      "grading_binding": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "selected",
+          "justification"
+        ],
+        "adapter": "none"
+      },
+      "fields": [
+        {
+          "role": "option",
+          "source": "instance.payload.options",
+          "control": "checkbox-group",
+          "value_type": "string_list",
+          "required": true,
+          "label_key": "input.selection.selected",
+          "payload_path": "selected"
+        },
+        {
+          "role": "justification",
+          "source": "instance.payload.justification_prompt_lv",
+          "control": "textarea",
+          "value_type": "raw_string",
+          "required": true,
+          "label_key": "input.q18.justification",
+          "payload_path": "justification"
+        }
+      ],
+      "completion_rule": {
+        "model": "selection",
+        "selection_path": "selected",
+        "options_from": "instance.payload.options",
+        "justification_path": "justification",
+        "justification_required_from": "instance.payload.requires_justification",
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "missing": {
+          "selection": "input.missing.selection",
+          "justification": "input.missing.justification"
+        }
+      },
+      "error_surfaces": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "feedback_keys": {
+        "UNREADABLE_INPUT": "feedback.error.unreadable",
+        "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+        "BLANK_RESPONSE": "input.error.blank"
+      },
+      "keyboard": {
+        "path_key": "input.kb.option.path",
+        "parity_key": "input.kb.parity.device_free",
+        "abort_rule_key": "input.kb.abort.none"
+      },
+      "accessible_alternative": {
+        "label_key": "input.alt.q18.label",
+        "term_keys": [
+          "input.alt.q18.detail"
+        ]
+      },
+      "policy_label": "PROPOSED",
+      "note_lv": "Vairākizvēles identifikatori tiek vērtēti automātiski, pamatojums paliek pašnovērtējumam."
+    }
+  }
+}

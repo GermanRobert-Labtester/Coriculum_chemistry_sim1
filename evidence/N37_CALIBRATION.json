@@ -1,0 +1,28 @@
+{
+  "calibration": {
+    "calibrated_thresholds": {
+      "channel_noise_floor": 4,
+      "max_diff_pct": 0.5,
+      "max_mae": 0.5
+    },
+    "comparison": {
+      "diff_pct": 0.0,
+      "diff_pixels": 0,
+      "human_review": false,
+      "mae": 0.0,
+      "region_count": 0,
+      "regions": [],
+      "total_pixels": 1024000,
+      "verdict": "MATCH"
+    },
+    "fixture_id": "FIX-VM-SMOKE-CALIBRATION",
+    "run1_sha256": "8490b88d8c401cf416c05dad5e3f975ef4d2f063b8709c55c7df46c7412d4820",
+    "run2_sha256": "8490b88d8c401cf416c05dad5e3f975ef4d2f063b8709c55c7df46c7412d4820",
+    "status": "PASS",
+    "theme_toggle_check": {
+      "dark_dark_flag": true,
+      "light_dark_flag": false,
+      "status": "PASS"
+    }
+  }
+}

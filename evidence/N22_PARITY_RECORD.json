@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "owner": "N22-B",
+  "kind": "parity",
+  "api_version": "n22-components-1",
+  "module_digest16": "c580a0032358546a",
+  "registry_source": "data/response_types.json",
+  "parity_table": [
+    {
+      "type_id": "Q06",
+      "status": "PASS",
+      "pointer_digest16": "87359d6af6508612",
+      "keyboard_digest16": "87359d6af6508612",
+      "digests_identical": true
+    },
+    {
+      "type_id": "Q08",
+      "status": "PASS",
+      "pointer_digest16": "d993aa8b92fe08da",
+      "keyboard_digest16": "d993aa8b92fe08da",
+      "digests_identical": true
+    },
+    {
+      "type_id": "Q11",
+      "status": "PASS",
+      "pointer_digest16": "8e215b40837d2a5d",
+      "keyboard_digest16": "8e215b40837d2a5d",
+      "digests_identical": true
+    },
+    {
+      "type_id": "Q12",
+      "status": "PASS",
+      "pointer_digest16": "e09a7053277af29e",
+      "keyboard_digest16": "e09a7053277af29e",
+      "digests_identical": true
+    },
+    {
+      "type_id": "Q17",
+      "status": "PASS",
+      "pointer_digest16": "3cec96d35ff64108",
+      "keyboard_digest16": "3cec96d35ff64108",
+      "digests_identical": true
+    }
+  ],
+  "checks": {
+    "parity_q06": {
+      "status": "PASS",
+      "claim": "One identical Q06 task answered by a pointer session and by a keyboard-only session yields a deep-equal, digest-identical payload.",
+      "checks": {
+        "payloads_deep_equal": true,
+        "digests_identical": true,
+        "payload_is_json_serialisable": true,
+        "payload_kind_matches_contract": true,
+        "no_device_marker": true,
+        "every_pair_assigned": true
+      },
+      "failed": [],
+      "type_id": "Q06",
+      "instance": "COL1-2-2A-B-01",
+      "pointer_digest16": "87359d6af6508612",
+      "keyboard_digest16": "87359d6af6508612",
+      "pointer_payload": {
+        "kind": "matching",
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2"
+          },
+          {
+            "left_id": "L3",
+            "right_id": "R3"
+          }
+        ]
+      },
+      "keyboard_payload": {
+        "kind": "matching",
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2"
+          },
+          {
+            "left_id": "L3",
+            "right_id": "R3"
+          }
+        ]
+      }
+    },
+    "parity_q08": {
+      "status": "PASS",
+      "claim": "One identical Q08 task answered by a pointer session and by a keyboard-only session yields a deep-equal, digest-identical payload.",
+      "checks": {
+        "payloads_deep_equal": true,
+        "digests_identical": true,
+        "payload_is_json_serialisable": true,
+        "payload_kind_matches_contract": true,
+        "no_device_marker": true,
+        "order_is_a_permutation": true,
+        "order_matches_the_script": true
+      },
+      "failed": [],
+      "type_id": "Q08",
+      "instance": "COL1-2-2A-A-01",
+      "pointer_digest16": "d993aa8b92fe08da",
+      "keyboard_digest16": "d993aa8b92fe08da",
+      "pointer_payload": {
+        "kind": "ordering",
+        "order": [
+          "S3",
+          "S1",
+          "S4",
+          "S2"
+        ]
+      },
+      "keyboard_payload": {
+        "kind": "ordering",
+        "order": [
+          "S3",
+          "S1",
+          "S4",
+          "S2"
+        ]
+      }
+    },
+    "parity_q11": {
+      "status": "PASS",
+      "claim": "One identical Q11 task answered by a pointer session and by a keyboard-only session yields a deep-equal, digest-identical payload.",
+      "checks": {
+        "payloads_deep_equal": true,
+        "digests_identical": true,
+        "payload_is_json_serialisable": true,
+        "payload_kind_matches_contract": true,
+        "no_device_marker": true,
+        "draw_payload_is_sim_graph_draw_v1": true,
+        "the_drawn_path_is_the_declared_points": true,
+        "record_binds_the_capture_context": true
+      },
+      "failed": [],
+      "type_id": "Q11",
+      "instance": "N22B-SCRATCH-Q11-01",
+      "pointer_digest16": "8e215b40837d2a5d",
+      "keyboard_digest16": "8e215b40837d2a5d",
+      "pointer_payload": {
+        "kind": "graph",
+        "variant": "Q11_record",
+        "record": {
+          "figure_id": null,
+          "capture_context_id": "CAP-T67-CAL-PRACTICE",
+          "mode": "construct",
+          "points": [
+            {
+              "x": 0.002,
+              "y": 0.05
+            },
+            {
+              "x": 0.014,
+              "y": 0.35
+            }
+          ],
+          "x_axis": {
+            "label_lv": "γ",
+            "unit": "mg/mL"
+          },
+          "y_axis": {
+            "label_lv": "A",
+            "unit": ""
+          }
+        },
+        "draw_payload": {
+          "schema_id": "sim-graph-draw-v1",
+          "kind": "line",
+          "points": [
+            {
+              "x": 0.002,
+              "y": 0.05
+            },
+            {
+              "x": 0.004,
+              "y": 0.1
+            },
+            {
+              "x": 0.006,
+              "y": 0.15
+            },
+            {
+              "x": 0.008,
+              "y": 0.2
+            },
+            {
+              "x": 0.01,
+              "y": 0.25
+            },
+            {
+              "x": 0.012,
+              "y": 0.3
+            },
+            {
+              "x": 0.014,
+              "y": 0.35
+            }
+          ],
+          "axes": {
+            "x": {
+              "min": "0",
+              "max": "0.018"
+            },
+            "y": {
+              "min": "0",
+              "max": "0.45"
+            }
+          },
+          "span": {
+            "x_min": "0",
+            "x_max": "0.016",
+            "edge_rule": "inclusive"
+          },
+          "grid": {
+            "x_min": "0",
+            "x_max": "0.018",
+            "step": "0.002"
+          },
+          "path_reversals": 0
+        }
+      },
+      "keyboard_payload": {
+        "kind": "graph",
+        "variant": "Q11_record",
+        "record": {
+          "figure_id": null,
+          "capture_context_id": "CAP-T67-CAL-PRACTICE",
+          "mode": "construct",
+          "points": [
+            {
+              "x": 0.002,
+              "y": 0.05
+            },
+            {
+              "x": 0.014,
+              "y": 0.35
+            }
+          ],
+          "x_axis": {
+            "label_lv": "γ",
+            "unit": "mg/mL"
+          },
+          "y_axis": {
+            "label_lv": "A",
+            "unit": ""
+          }
+        },
+        "draw_payload": {
+          "schema_id": "sim-graph-draw-v1",
+          "kind": "line",
+          "points": [
+            {
+              "x": 0.002,
+              "y": 0.05
+            },
+            {
+              "x": 0.004,
+              "y": 0.1
+            },
+            {
+              "x": 0.006,
+              "y": 0.15
+            },
+            {
+              "x": 0.008,
+              "y": 0.2
+            },
+            {
+              "x": 0.01,
+              "y": 0.25
+            },
+            {
+              "x": 0.012,
+              "y": 0.3
+            },
+            {
+              "x": 0.014,
+              "y": 0.35
+            }
+          ],
+          "axes": {
+            "x": {
+              "min": "0",
+              "max": "0.018"
+            },
+            "y": {
+              "min": "0",
+              "max": "0.45"
+            }
+          },
+          "span": {
+            "x_min": "0",
+            "x_max": "0.016",
+            "edge_rule": "inclusive"
+          },
+          "grid": {
+            "x_min": "0",
+            "x_max": "0.018",
+            "step": "0.002"
+          },
+          "path_reversals": 0
+        }
+      }
+    },
+    "parity_q12": {
+      "status": "PASS",
+      "claim": "One identical Q12 task answered by a pointer session and by a keyboard-only session yields a deep-equal, digest-identical payload.",
+      "checks": {
+        "payloads_deep_equal": true,
+        "digests_identical": true,
+        "payload_is_json_serialisable": true,
+        "payload_kind_matches_contract": true,
+        "no_device_marker": true,
+        "reads_two_decimals": true,
+        "figure_binding_recorded": true
+      },
+      "failed": [],
+      "type_id": "Q12",
+      "instance": "COL1-2-2D-B-01",
+      "pointer_digest16": "e09a7053277af29e",
+      "keyboard_digest16": "e09a7053277af29e",
+      "pointer_payload": {
+        "kind": "graph",
+        "variant": "Q12_read",
+        "read": {
+          "x": "30,00",
+          "y": "75,00",
+          "figure_binding": "FIG-T1-COMP-NACL-BASES"
+        }
+      },
+      "keyboard_payload": {
+        "kind": "graph",
+        "variant": "Q12_read",
+        "read": {
+          "x": "30,00",
+          "y": "75,00",
+          "figure_binding": "FIG-T1-COMP-NACL-BASES"
+        }
+      }
+    },
+    "parity_q17": {
+      "status": "PASS",
+      "claim": "One identical Q17 task answered by a pointer session and by a keyboard-only session yields a deep-equal, digest-identical payload.",
+      "checks": {
+        "payloads_deep_equal": true,
+        "digests_identical": true,
+        "payload_is_json_serialisable": true,
+        "payload_kind_matches_contract": true,
+        "no_device_marker": true,
+        "two_placements_recorded": true,
+        "pair_map_carried": true
+      },
+      "failed": [],
+      "type_id": "Q17",
+      "instance": "N22B-SCRATCH-Q17-01",
+      "pointer_digest16": "3cec96d35ff64108",
+      "keyboard_digest16": "3cec96d35ff64108",
+      "pointer_payload": {
+        "kind": "method",
+        "variant": "Q17_pairs",
+        "pair_map": {
+          "S1": "Na+ un Cl- joni",
+          "S2": "m = 0,27 g"
+        },
+        "structure": {
+          "placements": [
+            {
+              "part_id": "P_NA",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "part_id": "P_CL",
+              "x": 3,
+              "y": 2
+            }
+          ]
+        }
+      },
+      "keyboard_payload": {
+        "kind": "method",
+        "variant": "Q17_pairs",
+        "pair_map": {
+          "S1": "Na+ un Cl- joni",
+          "S2": "m = 0,27 g"
+        },
+        "structure": {
+          "placements": [
+            {
+              "part_id": "P_NA",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "part_id": "P_CL",
+              "x": 3,
+              "y": 2
+            }
+          ]
+        }
+      }
+    },
+    "abort_mid_gesture": {
+      "status": "PASS",
+      "claim": "A mid-interaction abort discards the in-progress gesture: the committed response is unchanged and no partial placement ever appears in the emitted payload.",
+      "checks": {
+        "q17_gesture_was_in_progress": true,
+        "q17_gesture_discarded": true,
+        "q17_committed_unchanged": true,
+        "q17_payload_has_no_placement": true,
+        "q17_cancel_event_recorded": true,
+        "q11_path_was_in_progress": true,
+        "q11_path_discarded": true,
+        "q11_committed_unchanged": true,
+        "q11_payload_has_no_draw": true,
+        "escape_uses_the_cancel_path": true,
+        "escape_discards_the_gesture": true
+      },
+      "failed": [],
+      "observed": {
+        "q17_cancel_events": [
+          {
+            "kind": "cancel",
+            "reason": "navigate_away",
+            "discarded": true,
+            "committed": {
+              "placements": [],
+              "draw_payload": null,
+              "pairs": {},
+              "order": []
+            }
+          }
+        ],
+        "q11_cancel_events": [
+          {
+            "kind": "cancel",
+            "reason": "navigate_away",
+            "discarded": true,
+            "committed": {
+              "placements": [],
+              "draw_payload": null,
+              "pairs": {},
+              "order": []
+            }
+          }
+        ]
+      }
+    },
+    "input_preservation": {
+      "status": "PASS",
+      "claim": "An error state never destroys the learner's raw input: the value stays byte for byte, the error slot carries the shipped Latvian message and the state has text equivalence.",
+      "checks": {
+        "raw_value_kept_byte_for_byte": true,
+        "error_state_rendered": true,
+        "error_id_is_the_taxonomy_class": true,
+        "error_message_is_the_shipped_term": true,
+        "raw_value_survives_the_error": true,
+        "error_state_has_text_equivalence": true,
+        "error_field_has_a_describedby_slot": true,
+        "live_region_carries_the_error": true,
+        "mixed_separator_kept_raw": true,
+        "mixed_separator_is_unreadable": true,
+        "undeclared_error_class_refused": true
+      },
+      "failed": [],
+      "field_id": "m_g",
+      "raw_after_error": "1,2,3",
+      "error_message": "Ievadu nevar nolasīt: pārbaudi skaitļa pierakstu un vienības sintaksi."
+    },
+    "composed_two_part": {
+      "status": "PASS",
+      "claim": "A two-part composed response with mixed completion names only part two's missing field, records both parts' completion separately and keeps an ordered payload map.",
+      "checks": {
+        "verdict_is_incomplete": true,
+        "only_part_two_is_missing": true,
+        "missing_names_the_part_and_field": true,
+        "missing_carries_the_resolved_name": true,
+        "part_one_is_complete": true,
+        "part_two_is_incomplete": true,
+        "part_completion_recorded_separately": true,
+        "payload_is_an_ordered_map": true,
+        "payload_carries_part_one_values": true,
+        "payload_carries_part_two_read": true,
+        "part_labels_from_terms": true,
+        "container_label_from_terms": true,
+        "live_region_announces_the_gap": true,
+        "registry_verdict_is_consumed": true
+      },
+      "failed": [],
+      "parts": [
+        {
+          "part_id": "part1",
+          "type_id": "Q02",
+          "completion": "complete",
+          "missing": []
+        },
+        {
+          "part_id": "part2",
+          "type_id": "Q12",
+          "completion": "incomplete",
+          "missing": [
+            {
+              "field_id": "read.y",
+              "name": "Nav nolasīta y vērtība"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        {
+          "part_id": "part2",
+          "part_index": 1,
+          "type_id": "Q12",
+          "field_id": "read.y",
+          "name": "Nav nolasīta y vērtība",
+          "reason": "incomplete",
+          "label_key": null
+        }
+      ],
+      "payload_keys": [
+        "0",
+        "1"
+      ],
+      "payload_digest16": "d2ea785c10d516db"
+    }
+  },
+  "claim_scope": "Mechanical payload equality under scripted sessions. Not a screen-reader, browser-render or instructor-acceptance claim; N33 owns the live assistive-technology pass.",
+  "status": "PASS"
+}

@@ -1,0 +1,1805 @@
+{
+  "double_build_parity": {
+    "byte_identical": true,
+    "combined_figure_and_scan_bytes": 109504,
+    "css_bytes": 30932,
+    "figure_framework_js_bytes": 43429,
+    "figures_island_bytes": 53947,
+    "leak_scan_js_bytes": 12128,
+    "manifest_sha256": "23cd79862557c6309d42889957af4b0b8a0203031b27c96f0279653a2f1d28d0",
+    "output_bytes": 717923,
+    "output_sha256": "462a3d03b092e3f8f627e4f81893a7a1e6b72a29cd71418e2cebe9dbcdfb4239",
+    "runtime_js_ceiling_bytes": 225280,
+    "runtime_js_code_bytes": 219899,
+    "section_1_3_figure_subbudget_bytes": [
+      61440,
+      143360
+    ],
+    "status": "PASS",
+    "t12_canonical_bytes": 24755,
+    "t23_canonical_bytes": 29588
+  },
+  "figures_validation": {
+    "burette_geometry_table": [
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "196.0",
+        "clarity": "clear",
+        "column_id": "col-whole",
+        "declared_reading_ml": "1.00",
+        "expected_meniscus_y_px": "196.00",
+        "figure_id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "half_subdivision_mm": "1.23",
+        "meniscus_edge": "lower_meniscus",
+        "minor_division_mm": "2.46",
+        "px_per_ml": "1.2E+2",
+        "recomputed_reading_ml": "1.00",
+        "svg_verified": true
+      },
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "94.0",
+        "clarity": "clear",
+        "column_id": "col-near-zero",
+        "declared_reading_ml": "0.15",
+        "expected_meniscus_y_px": "94.00",
+        "figure_id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "half_subdivision_mm": "1.23",
+        "meniscus_edge": "lower_meniscus",
+        "minor_division_mm": "2.46",
+        "px_per_ml": "1.2E+2",
+        "recomputed_reading_ml": "0.15",
+        "svg_verified": true
+      },
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "238.0",
+        "clarity": "clear",
+        "column_id": "col-subdivided",
+        "declared_reading_ml": "5.85",
+        "expected_meniscus_y_px": "238.00",
+        "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "half_subdivision_mm": "1.23",
+        "meniscus_edge": "lower_meniscus",
+        "minor_division_mm": "2.46",
+        "px_per_ml": "1.2E+2",
+        "recomputed_reading_ml": "5.85",
+        "svg_verified": true
+      },
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "298.0",
+        "clarity": "dark",
+        "column_id": "col-dark-cap",
+        "declared_reading_ml": "24.85",
+        "expected_meniscus_y_px": "298.00",
+        "figure_id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "half_subdivision_mm": "1.23",
+        "meniscus_edge": "upper_edge",
+        "minor_division_mm": "2.46",
+        "px_per_ml": "1.2E+2",
+        "recomputed_reading_ml": "24.85",
+        "svg_verified": true
+      },
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "248.0",
+        "clarity": "clear",
+        "column_id": "col-start",
+        "declared_reading_ml": "2.15",
+        "expected_meniscus_y_px": "248.00",
+        "figure_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "half_subdivision_mm": "0.85",
+        "meniscus_edge": "lower_meniscus",
+        "minor_division_mm": "1.69",
+        "px_per_ml": "8E+1",
+        "recomputed_reading_ml": "2.15",
+        "svg_verified": true
+      },
+      {
+        "agrees": true,
+        "authored_meniscus_y_px": "188.0",
+        "clarity": "clear",
+        "column_id": "col-end",
+        "declared_reading_ml": "18.40",
+        "expected_meniscus_y_px": "188.00",
+        "figure_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "half_subdivision_mm": "0.85",
+        "meniscus_edge": "lower_meniscus",
+        "minor_division_mm": "1.69",
+        "px_per_ml": "8E+1",
+        "recomputed_reading_ml": "18.40",
+        "svg_verified": true
+      }
+    ],
+    "burette_scale_labels_checked": 34,
+    "canonical_bytes": 53947,
+    "canonical_sha256": "fa628bc2d200d39c8297ea352c158c5d2dee7f176e1eaf251b4e9ef8dd03576e",
+    "citation_table": [
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T1-COMP-NACL-BASES",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "master_anchor": "ch-8",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 2,
+        "conventions_refs_resolved": 2,
+        "id": "FIG-T1-COMP-ETANOL-VV",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 0,
+        "conventions_refs_resolved": 0,
+        "id": "FIG-T1-BAND-DISPERSION",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T2-PLOT-NACL-DENSITY",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "master_anchor": "ch-2",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "master_anchor": "ch-5",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "master_anchor": "ch5-biretes-protokols-2b-q2",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "master_anchor": "ch5-menisks-un-paralakse",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "master_anchor": "ch-5",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 2,
+        "conventions_refs_resolved": 2,
+        "id": "FIG-T3-DILUTION-CONC-GRADE",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 5,
+        "conventions_refs_resolved": 5,
+        "id": "FIG-T3-CONC-BASES-BRIDGE",
+        "master_anchor": "n9",
+        "master_freeze_id": "C3-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T3-MEDICAL-ION-BASES",
+        "master_anchor": "n5",
+        "master_freeze_id": "C3-MASTER"
+      }
+    ],
+    "description_checks": 19,
+    "dilution_arithmetic_table": [
+      {
+        "V1_ml": "25.00",
+        "V2_ml": "250.0",
+        "agrees": true,
+        "c1_mol_l": "0.500",
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "mode": "worked_arithmetic",
+        "recomputed_c2_mol_l": "0.0500",
+        "recomputed_factor": "10.00",
+        "stated_c2_mol_l": "0.0500",
+        "stated_factor": "10.0",
+        "step_id": "D1",
+        "visible_in_label": true
+      },
+      {
+        "V1_ml": "10.00",
+        "V2_ml": "100.0",
+        "agrees": true,
+        "c1_mol_l": "1.00",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "mode": "worked_arithmetic",
+        "recomputed_c2_mol_l": "0.1000",
+        "recomputed_factor": "10.00",
+        "stated_c2_mol_l": "0.100",
+        "stated_factor": "10.0",
+        "step_id": "S1",
+        "visible_in_label": true
+      },
+      {
+        "V1_ml": "20.00",
+        "V2_ml": "100.0",
+        "agrees": true,
+        "c1_mol_l": "0.100",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "mode": "worked_arithmetic",
+        "recomputed_c2_mol_l": "0.0200",
+        "recomputed_factor": "5.00",
+        "stated_c2_mol_l": "0.0200",
+        "stated_factor": "5.00",
+        "step_id": "S2",
+        "visible_in_label": true
+      },
+      {
+        "V1_ml": "15.0",
+        "V2_ml": "450.0",
+        "agrees": true,
+        "c1_mol_l": "3.00",
+        "figure_id": "FIG-T3-DILUTION-CONC-GRADE",
+        "mode": "formula_only",
+        "recomputed_c2_mol_l": "0.1000",
+        "recomputed_factor": "30.00",
+        "step_id": "G1",
+        "visible_in_label": false
+      }
+    ],
+    "edge_coverage_table": {
+      "near-capacity": [
+        "FIG-T2-BURETTE-DARK-CAPACITY"
+      ],
+      "near-zero": [
+        "FIG-T2-BURETTE-NEAR-ZERO"
+      ],
+      "subdivided": [
+        "FIG-T2-BURETTE-NEAR-ZERO",
+        "FIG-T2-BURETTE-SUBDIVIDED",
+        "FIG-T2-BURETTE-DARK-CAPACITY",
+        "FIG-T2-BURETTE-DELIVERED-GRADE"
+      ],
+      "whole": [
+        "FIG-T2-BURETTE-CLEAR-WHOLE"
+      ]
+    },
+    "errors": [],
+    "figures_count": 19,
+    "label_checks": 98,
+    "reading_contract": {
+      "consumers": [
+        "N12",
+        "N15",
+        "N17",
+        "N18",
+        "N31",
+        "N40"
+      ],
+      "id": "reading-conventions-contract",
+      "sha256": "e12f868229f8effafdfad329b931244ff0d002fbbf814f8795e3f35fb1408075",
+      "status": "frozen-contract-for-N15-N17-N18-N40"
+    },
+    "recompute_table": [
+      {
+        "agrees": true,
+        "authored_value": "4.86",
+        "conventions_sources": [
+          "percentage_basis.default_basis",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NACL-W-MM",
+        "exact_decimal": "4.857751112831430230307722082",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mass_percent_mm",
+        "recomputed_value": "4.86",
+        "sig_figs": 3,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.02",
+        "conventions_sources": [
+          "percentage_basis.allowed_bases",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NACL-W-MV",
+        "exact_decimal": "5.0200",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mass_volume_percent_mv",
+        "recomputed_value": "5.02",
+        "sig_figs": 3,
+        "unit": "% (m/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "27.5",
+        "conventions_sources": [
+          "CIT-C1-DENSITY",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NAOH-W-MV",
+        "exact_decimal": "27.500",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mm_to_mv_via_density",
+        "recomputed_value": "27.5",
+        "sig_figs": 3,
+        "unit": "% (m/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-RB-496",
+        "exact_decimal": "4.96",
+        "figure_id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "formula_kind": "sigfig_round_half_up",
+        "recomputed_value": "5.0",
+        "sig_figs": 2,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-RB-504",
+        "exact_decimal": "5.04",
+        "figure_id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "formula_kind": "sigfig_round_half_up",
+        "recomputed_value": "5.0",
+        "sig_figs": 2,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "30.0",
+        "conventions_sources": [
+          "percentage_basis.allowed_bases",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-ETOH-WATER-VV",
+        "exact_decimal": "30.0",
+        "figure_id": "FIG-T1-COMP-ETANOL-VV",
+        "formula_kind": "complement_100",
+        "recomputed_value": "30.0",
+        "sig_figs": 3,
+        "unit": "% (V/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "3.706",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-AL-N",
+        "exact_decimal": "3.706174486694833592765547402",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "moles_from_mass",
+        "recomputed_value": "3.706",
+        "sig_figs": 4,
+        "unit": "mol"
+      },
+      {
+        "agrees": true,
+        "authored_value": "88.94",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "atomic_masses.O",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-O2-M",
+        "exact_decimal": "88.94262841894596397598398934",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_mass_via_ratio",
+        "recomputed_value": "88.94",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "62.30",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "constants.V_M",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-O2-V",
+        "exact_decimal": "62.30264620858350011118523461",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_gas_volume_stp",
+        "recomputed_value": "62.30",
+        "sig_figs": 4,
+        "unit": "L"
+      },
+      {
+        "agrees": true,
+        "authored_value": "188.9",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "compound_molar_masses.Al2O3",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-AL2O3-M",
+        "exact_decimal": "188.9426284189459639759839893",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_mass_via_compound",
+        "recomputed_value": "188.9",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "28.05",
+        "conventions_sources": [
+          "atomic_masses.K",
+          "atomic_masses.O",
+          "atomic_masses.H",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-KOH-MASS",
+        "exact_decimal": "28.052500",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "28.05",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "18.23",
+        "conventions_sources": [
+          "atomic_masses.H",
+          "atomic_masses.Cl",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-HCL-MASS",
+        "exact_decimal": "18.229000",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "18.23",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "37.27",
+        "conventions_sources": [
+          "atomic_masses.K",
+          "atomic_masses.Cl",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-KCL-MASS",
+        "exact_decimal": "37.274000",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "37.27",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "9.01",
+        "conventions_sources": [
+          "atomic_masses.H",
+          "atomic_masses.O",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-H2O-MASS",
+        "exact_decimal": "9.007500",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "9.01",
+        "sig_figs": 3,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "0.9979",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]"
+        ],
+        "derived_id": "DV-DEN-0",
+        "exact_decimal": "0.9979",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_eval",
+        "recomputed_value": "0.9979",
+        "sig_figs": 4,
+        "unit": "g/mL"
+      },
+      {
+        "agrees": true,
+        "authored_value": "1.0709",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]"
+        ],
+        "derived_id": "DV-DEN-10",
+        "exact_decimal": "1.0709",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_eval",
+        "recomputed_value": "1.0709",
+        "sig_figs": 5,
+        "unit": "g/mL"
+      },
+      {
+        "agrees": true,
+        "authored_value": "4.86",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DEN-W-MEAS",
+        "exact_decimal": "4.863013698630136986301369863",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_inverse",
+        "recomputed_value": "4.86",
+        "sig_figs": 3,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "10.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL1-FACTOR",
+        "exact_decimal": "1E+1",
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "formula_kind": "dilution_factor",
+        "recomputed_value": "10.0",
+        "sig_figs": 3,
+        "unit": "1"
+      },
+      {
+        "agrees": true,
+        "authored_value": "0.0500",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL1-C2",
+        "exact_decimal": "0.0500",
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "formula_kind": "dilution_c2",
+        "recomputed_value": "0.0500",
+        "sig_figs": 3,
+        "unit": "mol/L"
+      },
+      {
+        "agrees": true,
+        "authored_value": "12.5",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL1-N",
+        "exact_decimal": "12.50000",
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "formula_kind": "moles_from_cv_mmol",
+        "recomputed_value": "12.5",
+        "sig_figs": 3,
+        "unit": "mmol"
+      },
+      {
+        "agrees": true,
+        "authored_value": "10.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL2-F1",
+        "exact_decimal": "1E+1",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "formula_kind": "dilution_factor",
+        "recomputed_value": "10.0",
+        "sig_figs": 3,
+        "unit": "1"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.00",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL2-F2",
+        "exact_decimal": "5",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "formula_kind": "dilution_factor",
+        "recomputed_value": "5.00",
+        "sig_figs": 3,
+        "unit": "1"
+      },
+      {
+        "agrees": true,
+        "authored_value": "50.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL2-FTOT",
+        "exact_decimal": "50.000",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "formula_kind": "dilution_serial_factor",
+        "recomputed_value": "50.0",
+        "sig_figs": 3,
+        "unit": "1"
+      },
+      {
+        "agrees": true,
+        "authored_value": "0.0200",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DIL2-CFINAL",
+        "exact_decimal": "0.02",
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "formula_kind": "dilution_serial_c",
+        "recomputed_value": "0.0200",
+        "sig_figs": 3,
+        "unit": "mol/L"
+      }
+    ],
+    "schema_version": 1,
+    "status": "PASS",
+    "t12_slots_closed": 18,
+    "t23_slots_closed": 12,
+    "task": "N11+N12",
+    "tolerance_table": [
+      {
+        "conventions_ref": "CIT-C3-PERCENT",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-COMP-NACL-BASES",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C2-ROUND",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C3-PERCENT",
+        "expected_unit": "% (V/V)",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-COMP-ETANOL-VV",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C1-AL",
+        "expected_unit": "g",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "mode": "mandatory",
+        "tolerance_class": "mass"
+      },
+      {
+        "conventions_ref": "CIT-C3-ATOMS",
+        "expected_unit": "g",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "mode": "mandatory",
+        "tolerance_class": "mass"
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T1-BAND-DISPERSION",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Kvalitatīva disperso sistēmu izmēru klasifikācijas joslu shēma bez mērīta parauga skaitliska nolasījuma; 100 nm robeža ir kursa vienošanās (E17).",
+        "tolerance_class": null
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Konceptuāla trīs soļu darbību secības shēma bez skaitliska parauga nolasījuma; N18 šim attēlam nepiemēro toleranci.",
+        "tolerance_class": null
+      },
+      {
+        "conventions_ref": "CIT-C2-DENSITY-REL",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-PLOT-NACL-DENSITY",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Strukturāla SI priedēkļu un V-04 masas–tilpuma dimensiju saderības shēma ar eksaktiem definīciju koeficientiem, bez mērīta parauga vērtības.",
+        "tolerance_class": null
+      },
+      {
+        "conventions_ref": "CIT-C2-BURETTE-READ",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "mode": "mandatory",
+        "tolerance_class": "burette_volume"
+      },
+      {
+        "conventions_ref": "CIT-C2-BURETTE-READ",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "mode": "mandatory",
+        "tolerance_class": "burette_volume"
+      },
+      {
+        "conventions_ref": "CIT-C2-MENISCUS",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "mode": "mandatory",
+        "tolerance_class": "burette_volume"
+      },
+      {
+        "conventions_ref": "CIT-C6-MENISCUS",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "mode": "mandatory",
+        "tolerance_class": "burette_volume"
+      },
+      {
+        "conventions_ref": "CIT-C2-BURETTE",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "mode": "mandatory",
+        "tolerance_class": "burette_volume"
+      },
+      {
+        "conventions_ref": "CIT-C2-TOLERANCE",
+        "expected_unit": "mL",
+        "has_measured_quantity": true,
+        "id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "mode": "mandatory",
+        "tolerance_class": "glassware_volume"
+      },
+      {
+        "conventions_ref": "CIT-C3-C",
+        "expected_unit": "mol/L",
+        "has_measured_quantity": true,
+        "id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "mode": "mandatory",
+        "tolerance_class": "concentration_molar"
+      },
+      {
+        "conventions_ref": "CIT-C3-C",
+        "expected_unit": "mol/L",
+        "has_measured_quantity": true,
+        "id": "FIG-T3-DILUTION-CONC-GRADE",
+        "mode": "mandatory",
+        "tolerance_class": "concentration_molar"
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T3-CONC-BASES-BRIDGE",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Konceptuāla lielumu pārejas shēma starp w, c, γ, n, m, V un ρ bez konkrēta skaitliska mērījuma.",
+        "tolerance_class": null
+      },
+      {
+        "conventions_ref": "CIT-C3-PERCENT-MV",
+        "expected_unit": "% (m/V)",
+        "has_measured_quantity": true,
+        "id": "FIG-T3-MEDICAL-ION-BASES",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      }
+    ],
+    "unit_checks": 27
+  },
+  "leak_scan_report": {
+    "engine": "unified_leak_scan_v1",
+    "errors": [],
+    "exempt_figures": 7,
+    "exemptions_audit": [
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "1.00"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 1,00 mL, lai demonstrētu divu zīmju aiz komata pierakstu uz veselas iedaļas."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "0.15"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 0,15 mL pie nulles robežas, lai mācītu pēdējā cipara novērtēšanu."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "5.85"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda starpiedaļas nolasījumu 5,85 mL, lai mācītu interpolāciju un paralakses novēršanu."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "24.85"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda tumšā KMnO₄ šķīduma augšējās malas nolasījumu 24,85 mL pie ietilpības robežas."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "1",
+            "value": "10.0"
+          },
+          {
+            "unit": "mol/L",
+            "value": "0.0500"
+          },
+          {
+            "unit": "mmol",
+            "value": "12.5"
+          }
+        ],
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma redzami atvasina atšķaidīšanas faktoru f = 10,0 un gala koncentrāciju 0,0500 mol/L no trauku tilpumiem."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "1",
+            "value": "10.0"
+          },
+          {
+            "unit": "1",
+            "value": "5.00"
+          },
+          {
+            "unit": "1",
+            "value": "50.0"
+          },
+          {
+            "unit": "mol/L",
+            "value": "0.0200"
+          }
+        ],
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma parāda abas atšķaidīšanas pakāpes un faktoru reizinājuma aritmētiku f_kop = 50,0."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "% (m/V)",
+            "value": "0.9"
+          },
+          {
+            "unit": "% (m/V)",
+            "value": "3.0"
+          },
+          {
+            "unit": "% (m/V)",
+            "value": "5.0"
+          },
+          {
+            "unit": "% (V/V)",
+            "value": "70.0"
+          }
+        ],
+        "figure_id": "FIG-T3-MEDICAL-ION-BASES",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_GIVEN_INPUT",
+        "reason_lv": "Mācību parauga diagramma rāda standarta medicīnisko etiķešu nominālvērtības ar obligātu bāzes norādi (% m/V, % V/V)."
+      }
+    ],
+    "figure_results": [
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-COMP-ETANOL-VV",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-BAND-DISPERSION",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "mL",
+              "value": "1.00"
+            }
+          ],
+          "figure_id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 1,00 mL, lai demonstrētu divu zīmju aiz komata pierakstu uz veselas iedaļas."
+        },
+        "figure_id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "mL",
+              "value": "0.15"
+            }
+          ],
+          "figure_id": "FIG-T2-BURETTE-NEAR-ZERO",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 0,15 mL pie nulles robežas, lai mācītu pēdējā cipara novērtēšanu."
+        },
+        "figure_id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "mL",
+              "value": "5.85"
+            }
+          ],
+          "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mācību parauga attēls apzināti rāda starpiedaļas nolasījumu 5,85 mL, lai mācītu interpolāciju un paralakses novēršanu."
+        },
+        "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "mL",
+              "value": "24.85"
+            }
+          ],
+          "figure_id": "FIG-T2-BURETTE-DARK-CAPACITY",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mācību parauga attēls apzināti rāda tumšā KMnO₄ šķīduma augšējās malas nolasījumu 24,85 mL pie ietilpības robežas."
+        },
+        "figure_id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": true,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "1",
+              "value": "10.0"
+            },
+            {
+              "unit": "mol/L",
+              "value": "0.0500"
+            },
+            {
+              "unit": "mmol",
+              "value": "12.5"
+            }
+          ],
+          "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_WORKED_DERIVATION",
+          "reason_lv": "Mācību shēma redzami atvasina atšķaidīšanas faktoru f = 10,0 un gala koncentrāciju 0,0500 mol/L no trauku tilpumiem."
+        },
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "1",
+              "value": "10.0"
+            },
+            {
+              "unit": "1",
+              "value": "5.00"
+            },
+            {
+              "unit": "1",
+              "value": "50.0"
+            },
+            {
+              "unit": "mol/L",
+              "value": "0.0200"
+            }
+          ],
+          "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_WORKED_DERIVATION",
+          "reason_lv": "Mācību shēma parāda abas atšķaidīšanas pakāpes un faktoru reizinājuma aritmētiku f_kop = 50,0."
+        },
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T3-DILUTION-CONC-GRADE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": true,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": false,
+        "exemption_record": null,
+        "figure_id": "FIG-T3-CONC-BASES-BRIDGE",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "PASS"
+      },
+      {
+        "errors": [],
+        "exempt": true,
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "% (m/V)",
+              "value": "0.9"
+            },
+            {
+              "unit": "% (m/V)",
+              "value": "3.0"
+            },
+            {
+              "unit": "% (m/V)",
+              "value": "5.0"
+            },
+            {
+              "unit": "% (V/V)",
+              "value": "70.0"
+            }
+          ],
+          "figure_id": "FIG-T3-MEDICAL-ION-BASES",
+          "matched_hits_count": 0,
+          "reason_code": "EXEMPT_GIVEN_INPUT",
+          "reason_lv": "Mācību parauga diagramma rāda standarta medicīnisko etiķešu nominālvērtības ar obligātu bāzes norādi (% m/V, % V/V)."
+        },
+        "figure_id": "FIG-T3-MEDICAL-ION-BASES",
+        "flags": [],
+        "flags_count": 0,
+        "gradeable": false,
+        "leaks": [],
+        "leaks_count": 0,
+        "outcome": "EXEMPT"
+      }
+    ],
+    "figures_scanned": 19,
+    "flags": [],
+    "flags_count": 0,
+    "gradeable_figures": 2,
+    "n08_convergence_leaks": 0,
+    "rules": {
+      "borderline_rule": {
+        "id": "N12-LEAK-BORDER-01",
+        "verbatim": "Any gradeable figure whose numeric axis range or scale window [min, max] pins a gradeable target value onto an endpoint or within the outer 2% extreme (normalized position <= 0.02 or >= 0.98) or constrains the span to <= 2 steps around the target is flagged with FLAG_BORDERLINE_RANGE for authoring review."
+      },
+      "exemption_rule": {
+        "id": "N12-LEAK-EXEMPT-01",
+        "verbatim": "Only non-gradeable teaching/reading-display figures (gradeable=false) may declare leak_scan_exemption with an explicit reason_code, non-empty Latvian reason_lv (>= 20 chars), and explicit exempted_values list; gradeable figures cannot exempt their own scored answer targets (E_LEAK_ILLEGAL_EXEMPTION), and any unlisted answer-key leak on an exempted figure is still caught. All exemptions are audited at N40 closure."
+      },
+      "significance_rule": {
+        "id": "N12-LEAK-SIG-01",
+        "verbatim": "Only values distinctive to the instance or family are scan targets. Bare un-united integers in {0..9} and common structural/scaling constants {10, 100, 1000, 0.1, 0.01, 0.001, 273.15, 298.15} are NOT scan targets when appearing without a matching unit; they ARE scan targets whenever paired with a dimensionally matching unit (e.g. \"10 mL\", \"100 mmol/L\") or written in a distinctive precision form (e.g. \"10.5\", \"12.35\") or explicitly marked distinctive."
+      }
+    },
+    "schema_version": 1,
+    "status": "PASS",
+    "task": "N12"
+  },
+  "n08_convergence_regression": {
+    "authored_families": 24,
+    "leaks_found": 0,
+    "n08_corpus_status": "PASS",
+    "rendered_scan_status": "PASS",
+    "status": "PASS"
+  },
+  "negative_geometry_and_arithmetic": {
+    "scratch_dilution_arithmetic": {
+      "error": "FIG-SCRATCH-DILUTION-ARITH:D1: [E_FIG_DILUTION_ARITHMETIC] factor/c2 recompute or visible arithmetic failed",
+      "id": "FIG-SCRATCH-DILUTION-ARITH",
+      "status": "PASS"
+    },
+    "scratch_misdrawn_burette": {
+      "error": "FIG-SCRATCH-MISDRAWN-BURETTE:col-subdivided: [E_FIG_BURETTE_GEOMETRY_MISMATCH] expected_y=238.000 != meniscus_y_px=250.0, recomputed_reading=5.9500 != declared=5.85",
+      "id": "FIG-SCRATCH-MISDRAWN-BURETTE",
+      "status": "PASS"
+    },
+    "scratch_wrong_meniscus_edge": {
+      "error": "FIG-SCRATCH-WRONG-EDGE:col-whole: [E_FIG_MENISCUS_RULE] clarity='clear' requires edge='lower_meniscus', got 'upper_edge'",
+      "id": "FIG-SCRATCH-WRONG-EDGE",
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "planted_leak_corpus": {
+    "cases": [
+      {
+        "error": "FIG-SCRATCH-LEAK-ANN: [E_LEAK_DETECTED] (data/numeric) leaked '16.25' (target=16.25)",
+        "id": "PLANTED-LEAK-ANNOTATION",
+        "outcome": "FAIL",
+        "status": "PASS"
+      },
+      {
+        "id": "PLANTED-LEAK-UNIT-NORMALIZED",
+        "leak": {
+          "error_id": "E_LEAK_DETECTED",
+          "family_id": "FIG-SCRATCH-LEAK-UNITNORM",
+          "layer": "data",
+          "leaked_norm": "0.750 (dim={'M': 1, 'L': -3})",
+          "leaked_raw": "750 mg/L",
+          "match_kind": "unit_normalized",
+          "source": "target",
+          "surface": "data",
+          "target_raw": "0.75 mg/mL"
+        },
+        "outcome": "FAIL",
+        "status": "PASS"
+      },
+      {
+        "flag": {
+          "axis": "axes.y",
+          "figure_id": "FIG-SCRATCH-BORDERLINE-RANGE",
+          "flag_id": "FLAG_BORDERLINE_RANGE",
+          "normalized_position": "0.9848",
+          "range": [
+            "0.0",
+            "16.5"
+          ],
+          "reason": "Axis/scale range pins gradeable target to a readable extreme or <=2 steps.",
+          "rule_id": "N12-LEAK-BORDER-01",
+          "target_value": "16.25 mL",
+          "unit": "mL"
+        },
+        "id": "PLANTED-BORDERLINE-RANGE",
+        "outcome": "FLAG",
+        "status": "PASS"
+      },
+      {
+        "exemption_record": {
+          "exempted_values": [
+            {
+              "unit": "mL",
+              "value": "5.85"
+            }
+          ],
+          "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+          "matched_hits_count": 10,
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mācību parauga attēls apzināti rāda starpiedaļas nolasījumu 5,85 mL, lai mācītu interpolāciju un paralakses novēršanu."
+        },
+        "id": "EXEMPT-READING-DISPLAY",
+        "outcome": "EXEMPT",
+        "status": "PASS"
+      },
+      {
+        "id": "SIGNIFICANCE-CONSTANT-10-IGNORED",
+        "outcome": "PASS",
+        "status": "PASS"
+      },
+      {
+        "id": "SIGNIFICANCE-UNIT-PAIRED-10ML-CAUGHT",
+        "leak": {
+          "error_id": "E_LEAK_DETECTED",
+          "family_id": "FIG-SCRATCH-SIG-UNIT-10ML",
+          "layer": "data",
+          "leaked_norm": "0.0100 (dim={'L': 3})",
+          "leaked_raw": "10,0 mL",
+          "match_kind": "unit_normalized",
+          "source": "target",
+          "surface": "data",
+          "target_raw": "10.0 mL"
+        },
+        "outcome": "FAIL",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-ILLEGAL-EXEMPT: [E_LEAK_ILLEGAL_EXEMPTION] Gradeable figure cannot declare leak_scan_exemption.",
+        "id": "ILLEGAL-GRADEABLE-EXEMPTION",
+        "outcome": "FAIL",
+        "status": "PASS"
+      }
+    ],
+    "gate_refusal": {
+      "artifact_written": false,
+      "id": "GATE-REFUSAL-PLANTED-LEAK",
+      "returncode": 1,
+      "status": "PASS",
+      "stderr_head": "FAIL figure_leak_scan gate (order 11, owner N12): FIG-T2-BURETTE-DELIVERED-GRADE: [E_LEAK_DETECTED] (data/unit_normalized) leaked '0,01625 L' (target=16.25 mL)"
+    },
+    "rules_verbatim": {
+      "borderline_rule": {
+        "id": "N12-LEAK-BORDER-01",
+        "verbatim": "Any gradeable figure whose numeric axis range or scale window [min, max] pins a gradeable target value onto an endpoint or within the outer 2% extreme (normalized position <= 0.02 or >= 0.98) or constrains the span to <= 2 steps around the target is flagged with FLAG_BORDERLINE_RANGE for authoring review."
+      },
+      "exemption_rule": {
+        "id": "N12-LEAK-EXEMPT-01",
+        "verbatim": "Only non-gradeable teaching/reading-display figures (gradeable=false) may declare leak_scan_exemption with an explicit reason_code, non-empty Latvian reason_lv (>= 20 chars), and explicit exempted_values list; gradeable figures cannot exempt their own scored answer targets (E_LEAK_ILLEGAL_EXEMPTION), and any unlisted answer-key leak on an exempted figure is still caught. All exemptions are audited at N40 closure."
+      },
+      "significance_rule": {
+        "id": "N12-LEAK-SIG-01",
+        "verbatim": "Only values distinctive to the instance or family are scan targets. Bare un-united integers in {0..9} and common structural/scaling constants {10, 100, 1000, 0.1, 0.01, 0.001, 273.15, 298.15} are NOT scan targets when appearing without a matching unit; they ARE scan targets whenever paired with a dimensionally matching unit (e.g. \"10 mL\", \"100 mmol/L\") or written in a distinctive precision form (e.g. \"10.5\", \"12.35\") or explicitly marked distinctive."
+      }
+    },
+    "status": "PASS"
+  },
+  "prior_regressions": [
+    {
+      "command": "node tools/check_coverage_runtime.js --json",
+      "owner": "N02",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_conventions_runtime.js",
+      "owner": "N03",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_golden_vectors_runtime.js",
+      "owner": "N05",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n06_runtime.js --json",
+      "owner": "N06",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n07_runtime.js --json",
+      "owner": "N07",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n08_runtime.js",
+      "owner": "N08",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n10_runtime.js",
+      "owner": "N10",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n11_runtime.js",
+      "owner": "N11",
+      "status": "PASS"
+    }
+  ],
+  "reading_conventions_contract": {
+    "consumers": [
+      "N12",
+      "N15",
+      "N17",
+      "N18",
+      "N31",
+      "N40"
+    ],
+    "path": "data/reading_conventions_contract.json",
+    "sha256": "e12f868229f8effafdfad329b931244ff0d002fbbf814f8795e3f35fb1408075"
+  },
+  "runtime_harness": {
+    "artifact": "n12-runtime-harness",
+    "artifact_sha256": "462a3d03b092e3f8f627e4f81893a7a1e6b72a29cd71418e2cebe9dbcdfb4239",
+    "burette_scale_labels_checked": 34,
+    "degradation": {
+      "island_error_code": "E_FIGURES_JSON",
+      "p2_07_slot_error_code": "E_FIGURES_JSON",
+      "slot_svgs": 0
+    },
+    "lazy_render": {
+      "initial_svgs": 0,
+      "p2_07_svgs": 5,
+      "p3_10_svgs": 3
+    },
+    "runtime_leak_scan": [
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": false,
+        "flags": 0,
+        "id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "outcome": "PASS"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "outcome": "EXEMPT"
+      },
+      {
+        "exempt": false,
+        "flags": 0,
+        "id": "FIG-T3-DILUTION-CONC-GRADE",
+        "outcome": "PASS"
+      },
+      {
+        "exempt": false,
+        "flags": 0,
+        "id": "FIG-T3-CONC-BASES-BRIDGE",
+        "outcome": "PASS"
+      },
+      {
+        "exempt": true,
+        "flags": 0,
+        "id": "FIG-T3-MEDICAL-ION-BASES",
+        "outcome": "EXEMPT"
+      }
+    ],
+    "schema_version": 1,
+    "smoke_report": {
+      "failed": 0,
+      "passed": 6,
+      "status": "PASS",
+      "total": 6,
+      "vectors": [
+        {
+          "details": {
+            "perTopic": {
+              "1": 9,
+              "2": 10,
+              "3": 11,
+              "4": 11,
+              "5": 10,
+              "6": 8,
+              "7": 5
+            },
+            "total": 64
+          },
+          "id": "SMK-N06-COVERAGE-COUNTS",
+          "owner": "N06",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "crossTopicEdges": 20,
+            "edges": 127,
+            "nodes": 64,
+            "walkEvents": 4
+          },
+          "id": "SMK-N07-MAP-DRAWER-WALK",
+          "owner": "N07",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "eventsRecorded": 4,
+            "examRefused": true,
+            "families": 28,
+            "revealedLayers": 4
+          },
+          "id": "SMK-N08-HINT-LADDER-WALK",
+          "owner": "N08",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "figureAxis": "Molārā koncentrācija c (mol/L)",
+            "iupacPair": "etiķskābe (IUPAC: etānskābe)",
+            "totalEntries": 230,
+            "vectorChecked": 5
+          },
+          "id": "SMK-N10-TERMS-GRAMMAR-LOOKUP",
+          "owner": "N10",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "figuresCount": 19,
+            "lazyPendingOnLoad": true,
+            "svgBytes": 4430,
+            "svgSha256": "55d240dae8d597515eb8c74dff7de892d1dd42624369a7caf634f9025ac7e4fb",
+            "vectorId": "FIG-T1-COMP-NACL-BASES"
+          },
+          "id": "SMK-N11-FIGURE-FRAMEWORK",
+          "owner": "N11",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "buretteVectorId": "FIG-T2-BURETTE-SUBDIVIDED",
+            "exemptOutcome": "EXEMPT",
+            "figuresCount": 19,
+            "gradeOutcome": "PASS",
+            "plantedCaught": true,
+            "svgBytes": 5307,
+            "svgSha256": "61f503ca8fc097acefa06fe71f76942bd258f3cd395aeeb41da2597b01b13eae"
+          },
+          "id": "SMK-N12-BURETTE-READ-SCAN",
+          "owner": "N12",
+          "reason": null,
+          "status": "PASS"
+        }
+      ]
+    },
+    "status": "PASS",
+    "task": "N12",
+    "theme_parity": {
+      "dark_sha256": "27b0b9709894795b8aff71e353f508ccfd6893bdbbc25e17c726af6586128db7",
+      "light_sha256": "5351fee6b52ea19a736bd4c0d9b2932fc40f7719430c90e6003bea5c372879c1",
+      "print_sha256": "0705e2f46c1cdcf6ed39b92c0af578d088e77890b79bc818a1a9a324a0f295eb",
+      "record_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+      "structural_parity_light_vs_dark": true
+    },
+    "two_run_determinism": [
+      {
+        "bytes": 5364,
+        "id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "match": true,
+        "sha256": "778eff25f3903d10550e45699125474af7fedf08cf4b7fa0ea861e3fd59ca99b",
+        "type": "burette"
+      },
+      {
+        "bytes": 4738,
+        "id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "match": true,
+        "sha256": "01ca4e9690b68dad9edf2a5f2fde3ade3638a031696302e29157b4287c2b002a",
+        "type": "burette"
+      },
+      {
+        "bytes": 5307,
+        "id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "match": true,
+        "sha256": "61f503ca8fc097acefa06fe71f76942bd258f3cd395aeeb41da2597b01b13eae",
+        "type": "burette"
+      },
+      {
+        "bytes": 5056,
+        "id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "match": true,
+        "sha256": "9a69f6e2ce9563d20c9db4efcc04cf4e8b165a6da5765e580492cb254e798576",
+        "type": "burette"
+      },
+      {
+        "bytes": 9893,
+        "id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+        "match": true,
+        "sha256": "5351fee6b52ea19a736bd4c0d9b2932fc40f7719430c90e6003bea5c372879c1",
+        "type": "burette"
+      },
+      {
+        "bytes": 2482,
+        "id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "match": true,
+        "sha256": "1ea928fd15da223735eb0956fe2b287fda211e183691119760a4be889836d65a",
+        "type": "dilution"
+      },
+      {
+        "bytes": 3722,
+        "id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "match": true,
+        "sha256": "09854492a7066f9919938c86b6ed3fd321493bd8fc2af5264b34c7cc41e71117",
+        "type": "dilution"
+      },
+      {
+        "bytes": 2381,
+        "id": "FIG-T3-DILUTION-CONC-GRADE",
+        "match": true,
+        "sha256": "8585ea2d190970c983fd24fdce4dde3b5ea8469cd95294f4550101f4fb7732ba",
+        "type": "dilution"
+      },
+      {
+        "bytes": 3072,
+        "id": "FIG-T3-CONC-BASES-BRIDGE",
+        "match": true,
+        "sha256": "3d10d75d0b458a510403858abf2732259ebad1e26f81683e292d8c5a5dc6a90e",
+        "type": "chain"
+      },
+      {
+        "bytes": 4088,
+        "id": "FIG-T3-MEDICAL-ION-BASES",
+        "match": true,
+        "sha256": "5951c6fb3f9ff8c20197c77f5d8eceb9d3c5b04ce02a13863ec6c44c201d9d2e",
+        "type": "bar"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N12",
+  "terms_lint_status": "PASS"
+}

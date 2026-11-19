@@ -1,0 +1,386 @@
+{
+  "build": {
+    "build_id": "f5fea5e89b81bb50",
+    "manifest_sha256": "48bc081291527f74c21b4fe542aa25008eb046e7bbb8a98e778244cb9a93bfde",
+    "output_bytes": 769908,
+    "output_sha256": "0f446ef6923bd544fff547722f5cd2666295c0849be7a44a956404bd91f7e742",
+    "two_build_parity": true
+  },
+  "curve_generation": {
+    "negative_tests": {
+      "bad_params_rejected": "E_FIG_BAD_CURVE_PARAMS",
+      "unknown_class_rejected": "E_FIG_UNKNOWN_CURVE_CLASS"
+    },
+    "python_js_point_parity": true,
+    "registered_classes": [
+      "energy_profile_single_barrier",
+      "maxwell_boltzmann_3d"
+    ],
+    "table": [
+      {
+        "figure_id": "FIG-T4-ENERGY-EXOTHERMIC",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.48,
+          "y": 125
+        },
+        "point_count": 61,
+        "points_sha256": "ec9fc279889a9d8c2a489598535a23f4c6b47722e8b8bb5f16cddee30b272efa",
+        "series_id": "exo-profile",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-ENDOTHERMIC",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.52,
+          "y": 115
+        },
+        "point_count": 61,
+        "points_sha256": "ce480797d64a171423f90dba6159470840d2f57440176bf2bd08eff14b9dd343",
+        "series_id": "endo-profile",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-CATALYZED",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.48,
+          "y": 165
+        },
+        "point_count": 61,
+        "points_sha256": "f8cda71f5eaef2e68a789422aa03314a535aa7903c65a1b7c4b068eb5776bc0e",
+        "series_id": "uncat-path",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-CATALYZED",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.48,
+          "y": 105
+        },
+        "point_count": 61,
+        "points_sha256": "2aeae70e30a798ad7cdfbd4ed88b6335716ba694c993934400a2a6da9e9ff9c4",
+        "series_id": "cat-path",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-GRADE-READING",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.48,
+          "y": 97
+        },
+        "point_count": 61,
+        "points_sha256": "82241b838d1ab131ef1d9d6ee3bd0a77061bcfe2de060d2b6d945e7e808b22b8",
+        "series_id": "grade-uncat",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-GRADE-READING",
+        "function_class": "energy_profile_single_barrier",
+        "peak": {
+          "x": 0.48,
+          "y": 52
+        },
+        "point_count": 61,
+        "points_sha256": "859115b3841d5a1c763fec6a2044561c129ca6a63a3c4e6123a9325b4f8409b6",
+        "series_id": "grade-cat",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+        "function_class": "maxwell_boltzmann_3d",
+        "peak": {
+          "x": 1.2471,
+          "y": 0.194027
+        },
+        "point_count": 193,
+        "points_sha256": "a7eed94ca6d4975bf18b2d09866ba7e83192f652492d56b7c0aa24200ae89afc",
+        "series_id": "mb-300k",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+        "function_class": "maxwell_boltzmann_3d",
+        "peak": {
+          "x": 2.4942,
+          "y": 0.097013
+        },
+        "point_count": 193,
+        "points_sha256": "56a3db1d4d8d4e53024b5f44ede11541e8c2be9847c4dc716fbbe453dd69853c",
+        "series_id": "mb-600k",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-MB-BARRIER-SCOPE",
+        "function_class": "maxwell_boltzmann_3d",
+        "peak": {
+          "x": 1.2471,
+          "y": 0.194027
+        },
+        "point_count": 193,
+        "points_sha256": "a7eed94ca6d4975bf18b2d09866ba7e83192f652492d56b7c0aa24200ae89afc",
+        "series_id": "mb2-300k",
+        "svg_verified": true
+      },
+      {
+        "figure_id": "FIG-T4-MB-BARRIER-SCOPE",
+        "function_class": "maxwell_boltzmann_3d",
+        "peak": {
+          "x": 1.87065,
+          "y": 0.129351
+        },
+        "point_count": 193,
+        "points_sha256": "b59da906790246ef4ac82e59e662abddcf40f974eb6418cad96ae3a1ef2977da",
+        "series_id": "mb2-450k",
+        "svg_verified": true
+      }
+    ]
+  },
+  "digests": {
+    "concept_summaries_sha256": "36d865e3252680b5b9969b0d22213149636b0cb7eb1a07dc57c4791c6c0bcfa9",
+    "energy_conventions_contract_canonical_sha256": "d499f1350c87f98fbbf64076007686469be2010c7e91fddea1111acc3710219e",
+    "energy_conventions_contract_file_sha256": "32e1e2975483b915a57db38e9141e35d4a85eccbe5b1f8abf047b0ac474f422a",
+    "figure_framework_js_sha256": "d9ab02039124e9555e5d59d000448c78f12294d289b4fdc2e9c7ca2c9fc762f6",
+    "figure_schema_sha256": "6e306fccb62a3ef259069fa97ba7dd62ad1daf769bf32b6fa3815ea47ad81db5",
+    "figures_island_merged_sha256": "3a0c0134ae68c8b035f8b9a488a5fb21a26c21e1cde0b2dc83acd2671eeab691",
+    "figures_t4_canonical_sha256": "0552af68f658dccdf691c721a558043cfafb995a766878b0ef1c6099a6ff0ca9",
+    "figures_t4_file_sha256": "eb780847be0fb42d6e352c993c189b6b9d50ab816ec0cd166c6140e6db47fcb7",
+    "terms_canonical_sha256": "cf3af89c0874ec6acdd07cba6b77706c341228631bf81c3f7b9e1ed33379cb0e"
+  },
+  "energy_sign_fidelity": {
+    "c10_honesty_note_lv": "Katalāzes aktivācijas enerģijas kursa vērtība (23 J/mol pret iespējamo 23 kJ/mol, K10) paliek zinātniski atvērta pie kursa docētājas (V-08 / C05; ceļvedī minēts kā C10, sk. N03-OBS-01). Tāpēc šis attēls māca barjeras pazemināšanas modeli ar vispārīgu piemēru (95,0 → 35,0 kJ/mol, nemainīts ΔH = −70,0 kJ/mol), nevis strīdīgos katalāzes skaitļus.",
+    "scratch_sign_flip_rejected_id": "FIG-T4-ENERGY-EXOTHERMIC",
+    "table": [
+      {
+        "E_p": "0.0",
+        "E_r": "70.0",
+        "Ea_fwd": "55.0",
+        "Ea_rev": "125.0",
+        "agrees": true,
+        "catalyzed": false,
+        "declared_dh": "-70.0",
+        "figure_id": "FIG-T4-ENERGY-EXOTHERMIC",
+        "reaction_class": "exothermic",
+        "recomputed_dh": "-70.0"
+      },
+      {
+        "E_p": "75.0",
+        "E_r": "20.0",
+        "Ea_fwd": "95.0",
+        "Ea_rev": "40.0",
+        "agrees": true,
+        "catalyzed": false,
+        "declared_dh": "+55.0",
+        "figure_id": "FIG-T4-ENERGY-ENDOTHERMIC",
+        "reaction_class": "endothermic",
+        "recomputed_dh": "55.0"
+      },
+      {
+        "E_p": "0.0",
+        "E_r": "70.0",
+        "Ea_fwd": "95.0",
+        "Ea_rev": "165.0",
+        "agrees": true,
+        "catalyzed": true,
+        "declared_dh": "-70.0",
+        "figure_id": "FIG-T4-ENERGY-CATALYZED",
+        "reaction_class": "exothermic",
+        "recomputed_dh": "-70.0"
+      },
+      {
+        "agrees": true,
+        "figure_id": "FIG-T4-ENERGY-GRADE-READING",
+        "gradeable_readout": true,
+        "reaction_class": "exothermic"
+      }
+    ]
+  },
+  "hess_cycle_verification": {
+    "scratch_unbalanced_rejected_id": "FIG-T4-HESS-FECL3",
+    "table": [
+      {
+        "closes": true,
+        "direct_kj_mol": "-399.5",
+        "figure_id": "FIG-T4-HESS-FECL3",
+        "has_reverse_trap": false,
+        "recomputed_sum_kj_mol": "-399.5"
+      },
+      {
+        "closes": true,
+        "direct_kj_mol": "-393.5",
+        "figure_id": "FIG-T4-HESS-CO2",
+        "has_reverse_trap": false,
+        "recomputed_sum_kj_mol": "-393.5"
+      },
+      {
+        "closes": true,
+        "direct_kj_mol": "-124.0",
+        "figure_id": "FIG-T4-HESS-REVERSE-TRAP",
+        "has_reverse_trap": true,
+        "recomputed_sum_kj_mol": "-124.0"
+      },
+      {
+        "closes": true,
+        "direct_kj_mol": null,
+        "figure_id": "FIG-T4-HESS-PRACTICE-SYNTH",
+        "has_reverse_trap": false,
+        "recomputed_sum_kj_mol": "-219.0"
+      }
+    ]
+  },
+  "leak_scan": {
+    "exempt_count": 7,
+    "flags_count": 0,
+    "gradeable_count": 4,
+    "hess_practice_planted_leak_caught": true,
+    "hess_practice_synth_outcome": "PASS",
+    "total_scanned": 29
+  },
+  "mb_honesty_verification": {
+    "scratch_exaggerated_claim_rejected_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+    "table": [
+      {
+        "T1_K": 300,
+        "T2_K": 600,
+        "agrees": true,
+        "figure_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+        "norm1": 0.99738,
+        "norm2": 0.99907,
+        "peak1_x": 1.2471,
+        "peak1_y": 0.194027,
+        "peak2_x": 2.4942,
+        "peak2_y": 0.097013,
+        "svg_tail_matches_threshold": true,
+        "tail_T1_exact": 0.09308,
+        "tail_T2_exact": 0.360734,
+        "tail_ratio_exact": 3.8755
+      },
+      {
+        "T1_K": 300,
+        "T2_K": 450,
+        "agrees": true,
+        "figure_id": "FIG-T4-MB-BARRIER-SCOPE",
+        "norm1": 0.99738,
+        "norm2": 0.99857,
+        "peak1_x": 1.2471,
+        "peak1_y": 0.194027,
+        "peak2_x": 1.87065,
+        "peak2_y": 0.129351,
+        "svg_tail_matches_threshold": true,
+        "tail_T1_exact": 0.045629,
+        "tail_T2_exact": 0.148162,
+        "tail_ratio_exact": 3.2471
+      }
+    ]
+  },
+  "runtime_verification": {
+    "curve_fail_closed": {
+      "bad_barrier": "E_FIG_BAD_CURVE_PARAMS",
+      "bad_mb": "E_FIG_BAD_CURVE_PARAMS",
+      "unknown_class": "E_FIG_UNKNOWN_CURVE_CLASS"
+    },
+    "leak_scan_runtime": {
+      "energy_grade": "PASS",
+      "hess_grade": "PASS",
+      "planted_caught": true
+    },
+    "smoke": {
+      "passed": 7,
+      "status": "PASS",
+      "total": 7
+    },
+    "status": "PASS",
+    "svg_digests": {
+      "FIG-T4-ENERGY-CATALYZED": "7153c3e20b64c78e5ee7fa9cc538473edbd427755eb04daa8c91755e93d0a2c6",
+      "FIG-T4-ENERGY-ENDOTHERMIC": "713bc8d5de435a91f896df73eb517c4778a938b217a68b3a961d72d6661b862d",
+      "FIG-T4-ENERGY-EXOTHERMIC": "134f01375ae74dd985dd89f223d9a06177109ddb9fcc4d2a1c9e83deef5fd33e",
+      "FIG-T4-ENERGY-GRADE-READING": "391c658fd14e1ecb41cad1e4c8b0efabf7f9a053aaa669aad0e9cbbe51757d76",
+      "FIG-T4-HESS-CO2": "620c458112d37208effd3a61d04aa69e5d2a41c775f4469fcd7c8dedd5ba6077",
+      "FIG-T4-HESS-FECL3": "80f9a0d520aad92521038a568a00e02f383fbdd7f6946a45ba0cb658c777afc0",
+      "FIG-T4-HESS-PRACTICE-SYNTH": "613dd1807ee429dd25519b5f36f4a92dc8f265e018a16b2a56e3cd537711965a",
+      "FIG-T4-HESS-REVERSE-TRAP": "ce1fe2a592fa42a07579359358b8d3f6a0a7d71652e700786d8a57311480c5cf",
+      "FIG-T4-MB-BARRIER-SCOPE": "1bb5722764524b6faa601b9f8f3fbac38fce8f48e4e77274f400c653166dd581",
+      "FIG-T4-MB-TWO-TEMP-COMPARE": "d9f2c2e88d6325ad24627975f648d350b7eb1f3a0f852628c78a90f36540905b"
+    },
+    "t4_figures": 10,
+    "total_figures": 29,
+    "truncation_code": "E_FIGURES_JSON"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "sub_budget_accounting": {
+    "figure_ceiling_bytes": 143360,
+    "figure_framework_js_bytes": 48182,
+    "figures_island_share_pct": 60.8,
+    "leak_scan_js_bytes": 12128,
+    "merged_figures_island_bytes": 87163,
+    "runtime_js_ceiling_bytes": 225280,
+    "runtime_js_code_bytes": 224646,
+    "t12_canonical_bytes": 24755,
+    "t23_canonical_bytes": 29588,
+    "t4_canonical_bytes": 33431,
+    "t4_data_share_of_ceiling_pct": 23.32
+  },
+  "task": "N13",
+  "v06_scope_and_n10_labels": {
+    "label_checks": 154,
+    "scratch_broken_anchor_rejected_id": "FIG-T4-ENERGY-EXOTHERMIC",
+    "scratch_overgeneralization_rejected_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+    "unit_checks": 49,
+    "v06_scope_table": [
+      {
+        "figure_id": "FIG-T4-ENERGY-EXOTHERMIC",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-ENDOTHERMIC",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-CATALYZED",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-ENERGY-GRADE-READING",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-HESS-FECL3",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-HESS-CO2",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-HESS-REVERSE-TRAP",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-HESS-PRACTICE-SYNTH",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      },
+      {
+        "figure_id": "FIG-T4-MB-BARRIER-SCOPE",
+        "has_v06_note": true,
+        "overgeneralizes": false
+      }
+    ]
+  }
+}

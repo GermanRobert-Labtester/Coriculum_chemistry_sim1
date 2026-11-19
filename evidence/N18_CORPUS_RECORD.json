@@ -1,0 +1,1184 @@
+{
+  "schema_version": 1,
+  "task": "N18",
+  "status": "PASS",
+  "validation": {
+    "status": "PASS",
+    "summary": {
+      "n05_graph_vectors": 3,
+      "n05_pass": 3,
+      "stratum_vectors": 14,
+      "stratum_pass": 14,
+      "validity_cases": 5,
+      "validity_pass": 5,
+      "payload_cases": 6,
+      "payload_pass": 6,
+      "parity_pairs": 7,
+      "parity_pass": 7,
+      "replay_samples": 4,
+      "replay_pass": 4,
+      "inheritance_fixtures": 2,
+      "inheritance_pass": 2,
+      "keyboard_contexts": 6,
+      "keyboard_pass": 6,
+      "keyboard_scratch_cases": 1,
+      "keyboard_scratch_pass": 1,
+      "scratch_cases": 2,
+      "scratch_pass": 2,
+      "tolerance_modes": [
+        "absolute",
+        "significant_figures"
+      ]
+    },
+    "digests": {
+      "contract": "938264ab6d7b3e593c6afa41a3eafb2da76e8013b5f25a974e15d92dd876e379",
+      "conventions": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+      "python_engine": "4db9560750bb45d79165e5a35b64d181dfd6721f99fb7b1e947fca0209e888d0",
+      "js_engine": "988675cadd78f9ebade873ccf8fc62da52e1890fe3158fb911832b71815af76a",
+      "js_capture": "62a70232a725fd999374d40ba4f4a8a76580bbae32d075eab1d868a149c6c47a",
+      "golden_corpus": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88"
+    },
+    "errors": []
+  },
+  "validation_parity": true,
+  "vectors": {
+    "n05_rows": [
+      {
+        "vector_id": "GV-S1-T5-Q12-01",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "tolerance_class": "mass",
+        "tolerance_mode": "absolute",
+        "deviation": 0.0,
+        "tolerance": 0.01,
+        "cited_entries": [
+          "N18-N05-INHERIT-01",
+          "N18-TOLERANCE-01",
+          "N15-NOEXTRAP-01",
+          "N14-SPAN-01",
+          "mass",
+          "N18-UNIT-mg->g",
+          "N18-CITED-ENTRY-01"
+        ]
+      },
+      {
+        "vector_id": "GV-S1-T7-Q12-01",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "tolerance_class": "absorbance",
+        "tolerance_mode": "absolute",
+        "deviation": 0.002,
+        "tolerance": 0.003,
+        "cited_entries": [
+          "N18-N05-INHERIT-01",
+          "N18-TOLERANCE-01",
+          "N15-NOEXTRAP-01",
+          "N14-SPAN-01",
+          "absorbance",
+          "N18-CITED-ENTRY-01"
+        ]
+      },
+      {
+        "vector_id": "GV-S1-T7-Q12-02",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "tolerance_class": "absorbance",
+        "tolerance_mode": "absolute",
+        "deviation": null,
+        "tolerance": null,
+        "cited_entries": [
+          "N18-N05-INHERIT-01",
+          "N18-TOLERANCE-01",
+          "N15-NOEXTRAP-01",
+          "N14-SPAN-01"
+        ]
+      }
+    ],
+    "stratum_rows": [
+      {
+        "vector_id": "GV-S3-T7-Q12-01",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "calibration_line_signal_absolute",
+        "deviation": 0.00084,
+        "tolerance": 0.003
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-02",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "criterion_shape": "calibration_line_signal_absolute",
+        "deviation": 0.00384,
+        "tolerance": 0.003
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-03",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "calibration_line_signal_sigfigs",
+        "deviation": 0.00384,
+        "tolerance": 0.005
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-04",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "calibration_line_concentration",
+        "deviation": 1.1670663e-05,
+        "tolerance": 0.05
+      },
+      {
+        "vector_id": "GV-S3-T6-Q12-01",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "titration_equivalence_volume",
+        "deviation": 0.01,
+        "tolerance": 0.05
+      },
+      {
+        "vector_id": "GV-S3-T6-Q12-02",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "criterion_shape": "titration_equivalence_volume",
+        "deviation": 0.15,
+        "tolerance": 0.05
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-05",
+        "kind": "reading",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "criterion_shape": "calibration_line_concentration",
+        "deviation": null,
+        "tolerance": null
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-01",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "kinetics_linearization_line",
+        "checks": {
+          "slope": true,
+          "intercept": true,
+          "point_acceptance": true
+        },
+        "max_deviation": 0.0,
+        "excluded_points": 0
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-02",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "criterion_shape": "kinetics_linearization_line",
+        "checks": {
+          "slope": true,
+          "intercept": false,
+          "point_acceptance": false
+        },
+        "max_deviation": 0.05,
+        "excluded_points": 0
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-03",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "criterion_shape": "kinetics_linearization_line",
+        "checks": {
+          "slope": false,
+          "intercept": true,
+          "point_acceptance": false
+        },
+        "max_deviation": 0.09,
+        "excluded_points": 0
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-01",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "calibration_line_draw",
+        "checks": {
+          "point_acceptance": true
+        },
+        "max_deviation": 0.0,
+        "excluded_points": 0
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-02",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "calibration_line_draw",
+        "checks": {
+          "point_acceptance": true
+        },
+        "max_deviation": 0.0,
+        "excluded_points": 1
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-03",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "incorrect",
+        "error_class": "OUT_OF_TOLERANCE",
+        "criterion_shape": "calibration_line_draw",
+        "checks": {
+          "point_acceptance": false
+        },
+        "max_deviation": 0.01968,
+        "excluded_points": 0
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-04",
+        "kind": "drawing",
+        "status": "PASS",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "criterion_shape": "kinetics_decay_segment",
+        "checks": {
+          "point_acceptance": true
+        },
+        "max_deviation": 0.0,
+        "excluded_points": 0
+      }
+    ],
+    "tolerance_mode_rows": [
+      {
+        "vector_id": "GV-S3-T7-Q12-01",
+        "mode": "absolute",
+        "tolerance_class": "absorbance",
+        "tolerance": 0.003,
+        "deviation": 0.00084
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-02",
+        "mode": "absolute",
+        "tolerance_class": "absorbance",
+        "tolerance": 0.003,
+        "deviation": 0.00384
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-03",
+        "mode": "significant_figures",
+        "tolerance_class": "absorbance",
+        "tolerance": 0.005,
+        "deviation": 0.00384
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-04",
+        "mode": "absolute",
+        "tolerance_class": "concentration_mass",
+        "tolerance": 0.05,
+        "deviation": 1.1670663e-05
+      },
+      {
+        "vector_id": "GV-S3-T6-Q12-01",
+        "mode": "absolute",
+        "tolerance_class": "burette_volume",
+        "tolerance": 0.05,
+        "deviation": 0.01
+      },
+      {
+        "vector_id": "GV-S3-T6-Q12-02",
+        "mode": "absolute",
+        "tolerance_class": "burette_volume",
+        "tolerance": 0.05,
+        "deviation": 0.15
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-05",
+        "mode": "absolute",
+        "tolerance_class": "concentration_mass",
+        "tolerance": null,
+        "deviation": null
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-01",
+        "mode": "significant_figures",
+        "tolerance_class": "rate_constant_first",
+        "tolerance": 0.0005,
+        "deviation": 0.0
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-02",
+        "mode": "significant_figures",
+        "tolerance_class": "rate_constant_first",
+        "tolerance": 0.0005,
+        "deviation": 0.05
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-03",
+        "mode": "significant_figures",
+        "tolerance_class": "rate_constant_first",
+        "tolerance": 0.0005,
+        "deviation": 0.09
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-01",
+        "mode": "absolute",
+        "tolerance_class": null,
+        "tolerance": 0.003,
+        "deviation": 0.0
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-02",
+        "mode": "absolute",
+        "tolerance_class": null,
+        "tolerance": 0.003,
+        "deviation": 0.0
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-03",
+        "mode": "absolute",
+        "tolerance_class": null,
+        "tolerance": 0.003,
+        "deviation": 0.01968
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-04",
+        "mode": "absolute",
+        "tolerance_class": null,
+        "tolerance": 0.005,
+        "deviation": 0.0
+      }
+    ]
+  },
+  "validity": {
+    "rows": [
+      {
+        "id": "VAL-N18-01",
+        "case": "wrong_direction_slope",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_WRONG_DIRECTION",
+        "actual_class": "E_GRAPH_WRONG_DIRECTION",
+        "verdict_class": "incorrect",
+        "awarded_points": 0.0,
+        "trace": [
+          {
+            "check": "point_count",
+            "count": 11,
+            "result": "pass"
+          },
+          {
+            "check": "axis_range",
+            "result": "pass"
+          },
+          {
+            "check": "assessed_geometry",
+            "span": {
+              "x_min": 0.0,
+              "x_max": 20.0,
+              "edge_rule": "inclusive"
+            },
+            "count": 11,
+            "result": "pass"
+          },
+          {
+            "check": "slope_sign",
+            "drawn_slope": 0.004,
+            "criterion_slope": -0.08,
+            "result": "fail"
+          },
+          {
+            "check": "slope_sign",
+            "result": "fail",
+            "error_class": "E_GRAPH_WRONG_DIRECTION"
+          }
+        ]
+      },
+      {
+        "id": "VAL-N18-02",
+        "case": "doubling_back_segment",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_NON_MONOTONIC",
+        "actual_class": "E_GRAPH_NON_MONOTONIC",
+        "verdict_class": "incorrect",
+        "awarded_points": 0.0,
+        "trace": [
+          {
+            "check": "point_count",
+            "count": 11,
+            "result": "pass"
+          },
+          {
+            "check": "axis_range",
+            "result": "pass"
+          },
+          {
+            "check": "assessed_geometry",
+            "span": {
+              "x_min": 0.0,
+              "x_max": 30.0,
+              "edge_rule": "inclusive"
+            },
+            "count": 11,
+            "result": "pass"
+          },
+          {
+            "check": "slope_sign",
+            "drawn_slope": 0.0042727272727272735,
+            "criterion_slope": null,
+            "result": "pass"
+          },
+          {
+            "check": "path_reversals",
+            "reversals": 0,
+            "result": "pass"
+          },
+          {
+            "check": "monotonicity",
+            "monotonicity": "decreasing",
+            "result": "fail"
+          },
+          {
+            "check": "monotonicity",
+            "result": "fail",
+            "error_class": "E_GRAPH_NON_MONOTONIC"
+          }
+        ]
+      },
+      {
+        "id": "VAL-N18-03",
+        "case": "reading_outside_axes",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "actual_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "verdict_class": "incorrect",
+        "awarded_points": 0.0,
+        "trace": [
+          {
+            "check": "axis_range",
+            "axis": "x",
+            "value": 0.02,
+            "bounds": {
+              "min": 0.0,
+              "max": 0.018
+            },
+            "result": "fail"
+          },
+          {
+            "check": "axis_range",
+            "result": "fail",
+            "error_class": "E_GRAPH_OUT_OF_AXIS_RANGE"
+          }
+        ]
+      },
+      {
+        "id": "VAL-N18-04",
+        "case": "empty_submission",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_EMPTY_SUBMISSION",
+        "actual_class": "E_GRAPH_EMPTY_SUBMISSION",
+        "verdict_class": "incorrect",
+        "awarded_points": 0.0,
+        "trace": [
+          {
+            "check": "point_count",
+            "count": 0,
+            "result": "fail"
+          },
+          {
+            "check": "point_count",
+            "result": "fail",
+            "error_class": "E_GRAPH_EMPTY_SUBMISSION"
+          }
+        ]
+      },
+      {
+        "id": "VAL-N18-05",
+        "case": "unphysical_and_out_of_domain",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "actual_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "verdict_class": "incorrect",
+        "awarded_points": 0.0,
+        "trace": [
+          {
+            "check": "axis_range",
+            "axis": "y",
+            "value": 0.9,
+            "bounds": {
+              "min": 0.0,
+              "max": 0.45
+            },
+            "result": "fail"
+          },
+          {
+            "check": "axis_range",
+            "result": "fail",
+            "error_class": "E_GRAPH_OUT_OF_AXIS_RANGE"
+          }
+        ],
+        "also_detected": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "precedence_note_lv": "Stūrra corners: iesniegums vienlaikus neiespējams (y = 0,9 A ārpus y ass diapazona 0-0,45) un ārpus domēna (x = 0,017 ārpus [0; 0,016]). Derīguma klase E_GRAPH_OUT_OF_AXIS_RANGE (kārta 3) noderīguma klases pirms domēna klases."
+      }
+    ],
+    "precedence_rule_verbatim": "Ja iesniegums atbilst vairākām klasēm, izvēlas mazāko kārtas numuru: 1 (neizlasāms iesniegums) pirms 2 (tukšs iesniegums) pirms 3 (ārpus ass diapazona) pirms 4 (nepareizs novirzes virziens) pirms 5 (dubultā atkāpšana) pirms 6 (monotonitātes pārkāpums); tikai tad, kad neviens derīguma pārkāpums nav atrasts, tiek lietots domēna klase OUT_OF_DOMAIN_EXTRAPOLATION, un tikai pēc tam tolerances klase OUT_OF_TOLERANCE. Pirmā atrastā klase aptur turpmāku pārbaudi; katrs gadījums iegūst tieši vienu klasi.",
+    "corner_case": {
+      "id": "VAL-N18-05",
+      "case": "unphysical_and_out_of_domain",
+      "status": "PASS",
+      "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "actual_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "verdict_class": "incorrect",
+      "awarded_points": 0.0,
+      "trace": [
+        {
+          "check": "axis_range",
+          "axis": "y",
+          "value": 0.9,
+          "bounds": {
+            "min": 0.0,
+            "max": 0.45
+          },
+          "result": "fail"
+        },
+        {
+          "check": "axis_range",
+          "result": "fail",
+          "error_class": "E_GRAPH_OUT_OF_AXIS_RANGE"
+        }
+      ],
+      "also_detected": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "precedence_note_lv": "Stūrra corners: iesniegums vienlaikus neiespējams (y = 0,9 A ārpus y ass diapazona 0-0,45) un ārpus domēna (x = 0,017 ārpus [0; 0,016]). Derīguma klase E_GRAPH_OUT_OF_AXIS_RANGE (kārta 3) noderīguma klases pirms domēna klases."
+    }
+  },
+  "payload_validation": {
+    "rows": [
+      {
+        "id": "PAY-N18-01",
+        "case": "missing_schema_id",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_schema"
+      },
+      {
+        "id": "PAY-N18-02",
+        "case": "points_not_an_array",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_points"
+      },
+      {
+        "id": "PAY-N18-03",
+        "case": "point_missing_coordinate",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_points"
+      },
+      {
+        "id": "PAY-N18-04",
+        "case": "axes_inverted",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_axes"
+      },
+      {
+        "id": "PAY-N18-05",
+        "case": "span_inverted",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_span"
+      },
+      {
+        "id": "PAY-N18-06",
+        "case": "unknown_edge_rule",
+        "status": "PASS",
+        "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+        "check": "payload_span"
+      }
+    ]
+  },
+  "parity_matrix": {
+    "rows": [
+      {
+        "id": "GV-S3-T5-Q11-01",
+        "status": "PASS",
+        "pointer_digest": "216605d644167a27bfab46af3dc9b3025305ad3dac8ea7b4e32529500d63dde5",
+        "keyboard_digest": "216605d644167a27bfab46af3dc9b3025305ad3dac8ea7b4e32529500d63dde5",
+        "point_count": 11,
+        "verdict": "correct/NONE"
+      },
+      {
+        "id": "GV-S3-T5-Q11-02",
+        "status": "PASS",
+        "pointer_digest": "8f7de71fdbf777bb4cdb2ad74dc311ef1a95edf390ef8816a53cd88868573399",
+        "keyboard_digest": "8f7de71fdbf777bb4cdb2ad74dc311ef1a95edf390ef8816a53cd88868573399",
+        "point_count": 11,
+        "verdict": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "id": "GV-S3-T5-Q11-03",
+        "status": "PASS",
+        "pointer_digest": "5f553e696b427b3afa3585d7bfa96b3566680956d84d6099d175e51e2323e20d",
+        "keyboard_digest": "5f553e696b427b3afa3585d7bfa96b3566680956d84d6099d175e51e2323e20d",
+        "point_count": 11,
+        "verdict": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "id": "GV-S3-T7-Q11-01",
+        "status": "PASS",
+        "pointer_digest": "614d25ce823a42661bf9acf8ebe3daa7b788df3eb8a3a45d9b936b5ca2a14a79",
+        "keyboard_digest": "614d25ce823a42661bf9acf8ebe3daa7b788df3eb8a3a45d9b936b5ca2a14a79",
+        "point_count": 9,
+        "verdict": "correct/NONE"
+      },
+      {
+        "id": "GV-S3-T7-Q11-02",
+        "status": "PASS",
+        "pointer_digest": "616316f58bf92815807a91fb201f3a4ebc0375c03c1bf2d5680183fc8abf2190",
+        "keyboard_digest": "616316f58bf92815807a91fb201f3a4ebc0375c03c1bf2d5680183fc8abf2190",
+        "point_count": 10,
+        "verdict": "correct/NONE"
+      },
+      {
+        "id": "GV-S3-T7-Q11-03",
+        "status": "PASS",
+        "pointer_digest": "6be2c51265c5a349f8bc2bc61fea13b92f9d589ca1bd551e32d5de8e9d5b21ec",
+        "keyboard_digest": "6be2c51265c5a349f8bc2bc61fea13b92f9d589ca1bd551e32d5de8e9d5b21ec",
+        "point_count": 9,
+        "verdict": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "id": "GV-S3-T5-Q11-04",
+        "status": "PASS",
+        "pointer_digest": "26e96547506ac96428c8816d9159a0c10d2fe3e52273c0daeef09e712a5cc651",
+        "keyboard_digest": "26e96547506ac96428c8816d9159a0c10d2fe3e52273c0daeef09e712a5cc651",
+        "point_count": 11,
+        "verdict": "correct/NONE"
+      }
+    ],
+    "device_agnostic_rule_verbatim": "Iesnieguma ķermeņa struktūrā nav ierīces lauka. Norādes un tastatūras ceļš rada vienu un to pašu ķermeņa struktūru; ierīces izcelsme, ja tā ir vajadzīga, tiek glabāta ārpus vērtēšanā izmantotajiem datiem. Vērtēšanas rezultāts nevar atšķirties atkarībā no ievades ierīces.",
+    "keyboard_increment_rule_verbatim": "Tastatūras smalkā solis nedrīkst būt rupjāks par pusi no vērtējamās lieluma tolerances joslas, lai tastatūras ceļš netiktu strukturāli sodīts. Smalkā x soļa lielums ir min(māriņa soļa desmitdaļa, x tolerances joslas_half), smalkā y soļa lielums ir min(y ass soļa desmitdaļa, y tolerances joslas_half).",
+    "keyboard_increment_examples": [
+      {
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "coarse_x": "2 s",
+        "coarse_x_value": 2,
+        "fine_x": "0.2 s",
+        "fine_x_value": 0.2,
+        "coarse_y": "0.5",
+        "coarse_y_value": 0.5,
+        "fine_y": "min(0.05, 0.01) = 0.01",
+        "fine_y_value": 0.01
+      },
+      {
+        "capture_context": "CAP-T5-LIN-FIRST",
+        "coarse_x": "3 s",
+        "coarse_x_value": 3,
+        "fine_x": "0.3 s",
+        "fine_x_value": 0.3,
+        "coarse_y": "0.4",
+        "coarse_y_value": 0.4,
+        "fine_y": "min(0.04, 0.01) = 0.01",
+        "fine_y_value": 0.01
+      },
+      {
+        "capture_context": "CAP-T67-CAL-PRACTICE",
+        "coarse_x": "0.002 mg/mL",
+        "coarse_x_value": 0.002,
+        "fine_x": "0.0002 mg/mL",
+        "fine_x_value": 0.0002,
+        "coarse_y": "0.1 A",
+        "coarse_y_value": 0.1,
+        "fine_y": "min(0.01, 0.0015) = 0.0015",
+        "fine_y_value": 0.0015
+      },
+      {
+        "capture_context": "CAP-T67-CAL-MASTER",
+        "coarse_x": "0.002 mg/mL",
+        "coarse_x_value": 0.002,
+        "fine_x": "0.0002 mg/mL",
+        "fine_x_value": 0.0002,
+        "coarse_y": "0.1 A",
+        "coarse_y_value": 0.1,
+        "fine_y": "min(0.01, 0.0015) = 0.0015",
+        "fine_y_value": 0.0015
+      },
+      {
+        "capture_context": "CAP-T5-DECAY-FIRST",
+        "coarse_x": "3 s",
+        "coarse_x_value": 3,
+        "fine_x": "0.3 s",
+        "fine_x_value": 0.3,
+        "coarse_y": "0.2 mol/L",
+        "coarse_y_value": 0.2,
+        "fine_y": "min(0.02, 0.0025) = 0.0025",
+        "fine_y_value": 0.0025
+      },
+      {
+        "capture_context": "CAP-T67-TITR-PRACTICE",
+        "coarse_x": "5 mL",
+        "coarse_x_value": 5,
+        "fine_x": "min(0.5, 0.025) = 0.025",
+        "fine_x_value": 0.025,
+        "coarse_y": "2 pH",
+        "coarse_y_value": 2,
+        "fine_y": "0.2",
+        "fine_y_value": 0.2
+      }
+    ]
+  },
+  "replay": {
+    "rows": [
+      {
+        "vector_id": "GV-S3-T7-Q12-01",
+        "status": "PASS",
+        "original": "correct/NONE",
+        "replayed": "correct/NONE"
+      },
+      {
+        "vector_id": "GV-S3-T7-Q12-02",
+        "status": "PASS",
+        "original": "incorrect/OUT_OF_TOLERANCE",
+        "replayed": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "vector_id": "GV-S3-T5-Q11-02",
+        "status": "PASS",
+        "original": "incorrect/OUT_OF_TOLERANCE",
+        "replayed": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-02",
+        "status": "PASS",
+        "original": "correct/NONE",
+        "replayed": "correct/NONE"
+      }
+    ],
+    "rule_verbatim": "Verdikta pierakstā ir replay bloks, kas satur novērtēto geometriju, kritērija parametrus un citētos ierakstus. Verdikts jāvar atjaunot no šī bloka vieniem apstākļiem; ja atjaunotais verdikts atšķiras, pieraksts nav derīgs."
+  },
+  "inheritance": {
+    "rows": [
+      {
+        "vector_id": "GV-S3-T7-Q11-03",
+        "expectation": "edge point assessed",
+        "status": "PASS",
+        "verdict": "incorrect/OUT_OF_TOLERANCE",
+        "excluded_points": 0,
+        "max_deviation": 0.01968,
+        "rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot."
+      },
+      {
+        "vector_id": "GV-S3-T7-Q11-02",
+        "expectation": "beyond-span geometry not assessed",
+        "status": "PASS",
+        "verdict": "correct/NONE",
+        "excluded_points": 1,
+        "max_deviation": 0.0,
+        "rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot."
+      }
+    ],
+    "rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+    "edge_verbatim": "Punkts tieši uz span.x_min vai span.x_max tiek vērtēts ieskaitot; robeža ir iekļaujoša.",
+    "assertion_verbatim": "Mantotā izslēgšanās no diapazona ir pārbaudīta ar trim robežas nostādēm: punkts tieši uz span.x_max tiek vērtēts (GV-S3-T7-Q11-03), ģeometrija stingri aiz diapazona netiek vērtēta (GV-S3-T7-Q11-02), un nolasījums ārpus diapazona tiek atspoguļots kā neatļauts (GV-S3-T7-Q12-05)."
+  },
+  "keyboard": {
+    "rows": [
+      {
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "status": "PASS",
+        "coarse_x": 2.0,
+        "fine_x": 0.2,
+        "coarse_y": 0.5,
+        "fine_y": 0.01
+      },
+      {
+        "capture_context": "CAP-T5-LIN-FIRST",
+        "status": "PASS",
+        "coarse_x": 3.0,
+        "fine_x": 0.3,
+        "coarse_y": 0.4,
+        "fine_y": 0.01
+      },
+      {
+        "capture_context": "CAP-T67-CAL-PRACTICE",
+        "status": "PASS",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "capture_context": "CAP-T67-CAL-MASTER",
+        "status": "PASS",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "capture_context": "CAP-T5-DECAY-FIRST",
+        "status": "PASS",
+        "coarse_x": 3.0,
+        "fine_x": 0.3,
+        "coarse_y": 0.2,
+        "fine_y": 0.0025
+      },
+      {
+        "capture_context": "CAP-T67-TITR-PRACTICE",
+        "status": "PASS",
+        "coarse_x": 5.0,
+        "fine_x": 0.025,
+        "coarse_y": 2.0,
+        "fine_y": 0.2
+      }
+    ],
+    "scratch_rows": [
+      {
+        "id": "SCR-N18-KEY-01",
+        "case": "keyboard_band_drift_by_context_id",
+        "status": "PASS",
+        "fails_capture_context": "CAP-T67-CAL-PRACTICE",
+        "error": "capture context CAP-T67-CAL-PRACTICE keyboard increments disagree with the declared example: ['fine_y']",
+        "expected_error_contains": "keyboard increments disagree with the declared example"
+      }
+    ],
+    "path_merge_rule_verbatim": "Ceļā, kas ierakstīts no ierīces, kustība, kas nemaina x koordināti, atjaunina esošo punktu, nevis pievieno jaunu. Tastatūras soļošana pa ass ir tāpēc ierakstīta kā daudzpunktu līnija caur noliktajiem punktiem, un nevis kā kāpņu formas ceļš; projekcija lasa ceļu kā x funkciju, tāpēc vertikāls posms pats par sevi nes nekādu y vērtību. Norādes vilkšanas ceļš jau ir šāds.",
+    "keyboard_trace_rule_verbatim": "Tastatūras ceļš var atkārtot norādes ceļu tikai ar deklarēto precizitāti: smalkais y solis ir ne šārsāk par pusi no tolerances joslas, tāpēc katrs noliktais punkts ir tolerances joslas iekšpusē, un līnija, kas izveidota no šiem punktiem, novirzas ne vairāk par toleranci. Kad smalkā soļa attiecība fine_y/fine_x dalās ar kritērija slīpumu bez atlikuma, abi ierīces dod baņtī identisku ķermeni; pārējos gadījumos ķermeņi atšķiras, bet vērtēšanas lēmums ne, jo novirze ir tolerances joslas iekšpusē.",
+    "capture_rows": [
+      {
+        "id": "CAP-INC-CAP-T5-DECAY-FIRST",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 3,
+        "fine_x": 0.3,
+        "coarse_y": 0.2,
+        "fine_y": 0.0025
+      },
+      {
+        "id": "CAP-INC-CAP-T5-LIN-FIRST",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 3,
+        "fine_x": 0.3,
+        "coarse_y": 0.4,
+        "fine_y": 0.01
+      },
+      {
+        "id": "CAP-INC-CAP-T5-LIN-PRACTICE",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 2,
+        "fine_x": 0.2,
+        "coarse_y": 0.5,
+        "fine_y": 0.01
+      },
+      {
+        "id": "CAP-INC-CAP-T67-CAL-MASTER",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "id": "CAP-INC-CAP-T67-CAL-PRACTICE",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "id": "CAP-INC-CAP-T67-TITR-PRACTICE",
+        "kind": "increments",
+        "status": "PASS",
+        "coarse_x": 5,
+        "fine_x": 0.025,
+        "coarse_y": 2,
+        "fine_y": 0.2
+      },
+      {
+        "id": "CAP-PARITY-01",
+        "kind": "payload_parity",
+        "status": "PASS",
+        "slope": 7.5,
+        "pointer_digest": "9a8d7bb9e61e3e6f590ada4ab020bfe70b1be1fa46d5a0d9fa736bab7a210f9f",
+        "keyboard_digest": "9a8d7bb9e61e3e6f590ada4ab020bfe70b1be1fa46d5a0d9fa736bab7a210f9f",
+        "pointer_points": 9,
+        "keyboard_points": 9,
+        "verdict": "incorrect/OUT_OF_TOLERANCE"
+      },
+      {
+        "id": "CAP-PARITY-02",
+        "kind": "verdict_parity",
+        "status": "PASS",
+        "pointer_digest": "614d25ce823a42661bf9acf8ebe3daa7b788df3eb8a3a45d9b936b5ca2a14a79",
+        "keyboard_digest": "7d10e79b1ed46d02d56e67d9af4653d81a8b6cc72459f839c3b331d4d2a22f51",
+        "pointer_deviation": 0,
+        "keyboard_deviation": 0.00066,
+        "tolerance_band": 0.003,
+        "pointer_verdict": "correct/NONE",
+        "keyboard_verdict": "correct/NONE"
+      },
+      {
+        "id": "CAP-PARITY-03",
+        "kind": "mark_parity",
+        "status": "PASS",
+        "pointer_digest": "1e0bddee3315403de6e2d0c6de7777033d52b27433b556750dea053a5dfac322",
+        "keyboard_digest": "1e0bddee3315403de6e2d0c6de7777033d52b27433b556750dea053a5dfac322",
+        "pointer_verdict_digest": "221934384386549b1634fd94b37f85288d5f768a7e250a5dcc648de753f2a6e7",
+        "keyboard_verdict_digest": "221934384386549b1634fd94b37f85288d5f768a7e250a5dcc648de753f2a6e7",
+        "verdict": "correct/NONE"
+      }
+    ],
+    "capture_cross_rows": [
+      {
+        "id": "CAP-INC-CAP-T5-DECAY-FIRST",
+        "kind": "increments",
+        "coarse_x": 3.0,
+        "fine_x": 0.3,
+        "coarse_y": 0.2,
+        "fine_y": 0.0025
+      },
+      {
+        "id": "CAP-INC-CAP-T5-LIN-FIRST",
+        "kind": "increments",
+        "coarse_x": 3.0,
+        "fine_x": 0.3,
+        "coarse_y": 0.4,
+        "fine_y": 0.01
+      },
+      {
+        "id": "CAP-INC-CAP-T5-LIN-PRACTICE",
+        "kind": "increments",
+        "coarse_x": 2.0,
+        "fine_x": 0.2,
+        "coarse_y": 0.5,
+        "fine_y": 0.01
+      },
+      {
+        "id": "CAP-INC-CAP-T67-CAL-MASTER",
+        "kind": "increments",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "id": "CAP-INC-CAP-T67-CAL-PRACTICE",
+        "kind": "increments",
+        "coarse_x": 0.002,
+        "fine_x": 0.0002,
+        "coarse_y": 0.1,
+        "fine_y": 0.0015
+      },
+      {
+        "id": "CAP-INC-CAP-T67-TITR-PRACTICE",
+        "kind": "increments",
+        "coarse_x": 5.0,
+        "fine_x": 0.025,
+        "coarse_y": 2.0,
+        "fine_y": 0.2
+      },
+      {
+        "id": "CAP-PARITY-01",
+        "kind": "payload_parity",
+        "keyboard_digest": "9a8d7bb9e61e3e6f590ada4ab020bfe70b1be1fa46d5a0d9fa736bab7a210f9f"
+      },
+      {
+        "id": "CAP-PARITY-02",
+        "kind": "verdict_parity",
+        "keyboard_digest": "7d10e79b1ed46d02d56e67d9af4653d81a8b6cc72459f839c3b331d4d2a22f51",
+        "keyboard_deviation": 0.00066,
+        "keyboard_verdict": "correct/NONE"
+      },
+      {
+        "id": "CAP-PARITY-03",
+        "kind": "mark_parity",
+        "keyboard_digest": "1e0bddee3315403de6e2d0c6de7777033d52b27433b556750dea053a5dfac322"
+      }
+    ]
+  },
+  "scratch": {
+    "rows": [
+      {
+        "id": "SCR-N18-01",
+        "case": "tolerance_drift_by_vector_id",
+        "status": "PASS",
+        "fails_vector_id": "GV-S3-T5-Q11-01",
+        "failure_class": "E_GRAPH_TOLERANCE_DRIFT",
+        "expected_class": "E_GRAPH_TOLERANCE_DRIFT"
+      },
+      {
+        "id": "SCR-N18-02",
+        "case": "reading_tolerance_by_vector_id",
+        "status": "PASS",
+        "fails_vector_id": "GV-S1-T7-Q12-01",
+        "failure_class": "OUT_OF_TOLERANCE",
+        "expected_class": "OUT_OF_TOLERANCE"
+      }
+    ]
+  },
+  "cross_language": {
+    "status": "PASS",
+    "tables": {
+      "n05": {
+        "python_digest": "1fcd559f9801ab60a3ea43ad311a47ed4925a990ca9593b2ec7b44681fcb0f03",
+        "javascript_digest": "1fcd559f9801ab60a3ea43ad311a47ed4925a990ca9593b2ec7b44681fcb0f03",
+        "status": "PASS",
+        "rows": 3
+      },
+      "stratum": {
+        "python_digest": "5ab6f6b2e089a3ee0600725b325032a67ffa29b42f755bb5a4714bcca88e2c4d",
+        "javascript_digest": "5ab6f6b2e089a3ee0600725b325032a67ffa29b42f755bb5a4714bcca88e2c4d",
+        "status": "PASS",
+        "rows": 14
+      },
+      "capture_cross": {
+        "python_digest": "9956a8fe847db1376a4ee685d47143f567fb1e06a85daf2eaf6349e199ea511d",
+        "javascript_digest": "9956a8fe847db1376a4ee685d47143f567fb1e06a85daf2eaf6349e199ea511d",
+        "status": "PASS",
+        "rows": 9
+      },
+      "validity": {
+        "python_digest": "e965257f17c35fe62c3ef8d5575bbca8b4fd18f05ebd1b4701319e2a19116e51",
+        "javascript_digest": "e965257f17c35fe62c3ef8d5575bbca8b4fd18f05ebd1b4701319e2a19116e51",
+        "status": "PASS",
+        "rows": 5
+      },
+      "payload": {
+        "python_digest": "faa939224b7ccc2611e3e18b4217de501e98b70f964531060c564c0107d41ed5",
+        "javascript_digest": "faa939224b7ccc2611e3e18b4217de501e98b70f964531060c564c0107d41ed5",
+        "status": "PASS",
+        "rows": 6
+      },
+      "parity": {
+        "python_digest": "1978137bfebf838f25bb554dbf9a18c8aedf5a320d24c20c6e6e44e02cebbe6f",
+        "javascript_digest": "1978137bfebf838f25bb554dbf9a18c8aedf5a320d24c20c6e6e44e02cebbe6f",
+        "status": "PASS",
+        "rows": 7
+      },
+      "replay": {
+        "python_digest": "9ce227ab7fc69918b2d816bb80c393e64c223e7505a3ca44c9a2720eb08f2792",
+        "javascript_digest": "9ce227ab7fc69918b2d816bb80c393e64c223e7505a3ca44c9a2720eb08f2792",
+        "status": "PASS",
+        "rows": 4
+      },
+      "verdict_records": {
+        "python_digest": "50f8390c6ff759c652eb562c8ac739ceb2d3f39a751a8bad35a31d67701df2dc",
+        "javascript_digest": "50f8390c6ff759c652eb562c8ac739ceb2d3f39a751a8bad35a31d67701df2dc",
+        "status": "PASS",
+        "rows": 17,
+        "differing_vector_ids": []
+      }
+    }
+  },
+  "corpus_parity": {
+    "n05": true,
+    "stratum": true,
+    "capture_cross": true,
+    "validity": true,
+    "payload": true,
+    "parity": true,
+    "replay": true,
+    "verdict_records": true
+  },
+  "budget": {
+    "runtime_js_code_bytes": 225197,
+    "runtime_js_ceiling_bytes": 225280,
+    "runtime_js_headroom_bytes": 83,
+    "runtime_js_declared_band_bytes": [
+      122880,
+      225280
+    ],
+    "graph_scoring_island_bytes": 39318,
+    "graph_scoring_island_digest": "938264ab6d7b3e593c6afa41a3eafb2da76e8013b5f25a974e15d92dd876e379",
+    "engine_compiled_bytes": 55346,
+    "engine_source_bytes": 61766,
+    "engine_compiled_share_of_ceiling": 0.245676,
+    "engine_compiled_share_of_declared_band": 0.245676,
+    "artifact_bytes": 1124577,
+    "artifact_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b",
+    "graph_scoring_gate": "PASS graph scoring: 3/3 N05 reading, 14/14 S3-N18, 5/5 validity, 6/6 payload, 7/7 parity, 4/4 replay, 6/6 keyboard, 1/1 keyboard scratch, 2/2 scratch, 0 errors",
+    "status": "PASS",
+    "note": "The Section 1.3 runtime-JS code ceiling was already 83 bytes from its limit before N18, so the graph scoring module ships as src/graph-scoring-engine.js, is validated by gate 14, and its contract and vectors ship in #sim-graph-scoring. The runtime harness loads the module directly against the shipped islands. N31 must lazy-load or re-budget before inlining it."
+  },
+  "smoke": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "vector": [
+      {
+        "id": "SMK-N18-GRAPH-SCORING",
+        "owner": "N18",
+        "status": "PASS",
+        "details": {
+          "digest": "842d5af64997be7507260ec5ef60552e3d738495c800b558736ddbe098c89ad9",
+          "reading": "correct",
+          "drawing": "correct"
+        },
+        "reason": null
+      }
+    ]
+  },
+  "smoke_digest": "842d5af64997be7507260ec5ef60552e3d738495c800b558736ddbe098c89ad9",
+  "runtime": {
+    "status": "PASS",
+    "parity": true,
+    "counts": {
+      "n05": 3,
+      "stratum": 14,
+      "capture": 9,
+      "capture_cross": 9,
+      "validity": 5,
+      "payload": 6,
+      "parity": 7,
+      "replay": 4
+    },
+    "digests": {
+      "n05_verdicts": "7ebfefb03fc2fe1078d28345aadb9bf6ed1972cdfc739e6b2363471f31db8d0f",
+      "stratum_verdicts": "d207368665bac9ff47474b12002af9ae154a1c46a54ef377e5338cfaf4e6c9ef",
+      "capture_parity": "88b22fbc4a958d47d454f3011d2e9fa770cc6bdae607fdf6218c022b88055d4f",
+      "capture_cross": "22c0491b0165a86c0cb57d0d68948bd0f8519d5560590948384a7308a176a193",
+      "validity_verdicts": "258f2d825df311442fc7fd75e28c8de1aa03991ec2015c987bd94917f7ffd098",
+      "payload_verdicts": "4ebb034e760c1ad6699977c5090f5a260e6bc58c4e6d3a03f102c2559ac04de5",
+      "parity_digests": "ab81690102df017e4792193b0ba5623ee4d8f2414b11bae10c49d453bce13b03",
+      "replay_verdicts": "90ab70980a93a63dbe0805304edd2039f453e9f4740b6c422364a1d237c106bf",
+      "contract": "938264ab6d7b3e593c6afa41a3eafb2da76e8013b5f25a974e15d92dd876e379",
+      "engine_source": "988675cadd78f9ebade873ccf8fc62da52e1890fe3158fb911832b71815af76a",
+      "capture_source": "62a70232a725fd999374d40ba4f4a8a76580bbae32d075eab1d868a149c6c47a"
+    },
+    "artifact_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b"
+  },
+  "handoff": {
+    "n20": "criterion shapes, tolerance resolution and the reparameterization bounds",
+    "n22": "the sim-graph-draw-v1 payload schema and the input semantics",
+    "n23": "the verdict record schema, the cited-entry rule and the validity precedence",
+    "n33": "the keyboard increments, the assessment grid and the device-agnostic payload",
+    "n31": "inline or lazy-load src/graph-scoring-engine.js and src/graph-capture.js after the budget decision"
+  }
+}

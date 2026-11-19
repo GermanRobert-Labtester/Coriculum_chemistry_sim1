@@ -1,0 +1,870 @@
+{
+  "build": {
+    "build_id": "3837e9d70034ba0f",
+    "manifest_sha256": "afa2b861f860432884ff63cd78ce1d3a9486b550b18bcb3b0e7aaacfadb01b2d",
+    "output_bytes": 991854,
+    "output_sha256": "64d5e0b12cbb947bbc33259749fd145363e8b57c9de2863d43aeeb75db18a052",
+    "two_build_parity": true
+  },
+  "contract_handoff": {
+    "consumers": [
+      "N16",
+      "N18",
+      "N20",
+      "N31",
+      "N40"
+    ],
+    "field_names_frozen_for_N18": [
+      "paired_decay_id",
+      "kinetics_spec.order",
+      "kinetics_spec.C0_mol_l",
+      "kinetics_spec.k",
+      "kinetics_spec.k_unit",
+      "span.x_min",
+      "span.x_max",
+      "span.edge_rule",
+      "span.beyond_span",
+      "fit_line.slope",
+      "fit_line.intercept",
+      "fit_line.x_min",
+      "fit_line.x_max",
+      "tolerance_fields.slope.tolerance_class",
+      "tolerance_fields.slope.tolerance_mode",
+      "tolerance_fields.intercept.tolerance_class",
+      "tolerance_fields.intercept.tolerance_mode",
+      "tolerance_fields.point_acceptance.tolerance_class",
+      "tolerance_fields.point_acceptance.tolerance_mode",
+      "grading_reference.fit_line.slope",
+      "grading_reference.fit_line.intercept"
+    ],
+    "id": "kinetics-linearization-contract",
+    "reparameterization_ranges_for_N20": {
+      "C0_mol_l": {
+        "max": "2.00",
+        "min": "0.10",
+        "step": "0.05"
+      },
+      "allowed_orders": [
+        0,
+        1,
+        2
+      ],
+      "constraint_lv": "Variantu k un C₀ paliek deklarētajās robežās; tādēļ slope/intercept tolerances paliek tajā pašā lieluma kārtā un significant_figures logs paliek godīgs. Ārpus šīm robežām N20 nedrīkst ģenerēt prakses instanci bez jauna N14 lēmuma.",
+      "dataset_points": {
+        "max": 15,
+        "min": 6
+      },
+      "k": {
+        "order_0": {
+          "max": "0.0500",
+          "min": "0.0050",
+          "unit": "mol/(L·s)"
+        },
+        "order_1": {
+          "max": "0.1500",
+          "min": "0.0100",
+          "unit": "s⁻¹"
+        },
+        "order_2": {
+          "max": "0.1000",
+          "min": "0.0100",
+          "unit": "L/(mol·s)"
+        }
+      },
+      "point_count": {
+        "max": 201,
+        "min": 41
+      },
+      "rule_id": "N14-REPARAM-01",
+      "span_s": {
+        "max": 60,
+        "min": 10
+      },
+      "tolerance_inheritance": "N20 instances inherit tolerance_fields verbatim; the variant engine may not retune a tolerance class per item."
+    },
+    "span_rule": {
+      "beyond_semantics_lv": "Novilktās taisnes daļa aiz datu intervāla netiek nepieņemta, ne noraidīta; tā vienkārši netiek vērtēta.",
+      "beyond_span": "not_assessed",
+      "declared_fields": [
+        "span.x_min",
+        "span.x_max",
+        "span.data_x_min",
+        "span.data_x_max",
+        "span.edge_rule",
+        "span.beyond_span"
+      ],
+      "edge_rule": "inclusive",
+      "edge_semantics_lv": "Punkts tieši uz span.x_min vai span.x_max tiek vērtēts ieskaitot; robeža ir iekļaujoša.",
+      "fit_line_must_not_exceed_data_span": true,
+      "render_rule_lv": "Attēlā modeļa taisne tiek zīmēta tikai no span.x_min līdz span.x_max; renderer nogriež jebkuru garāku līniju.",
+      "rule_id": "N14-SPAN-01"
+    },
+    "tolerance_field_vocabulary": {
+      "class_source": "data/conventions.json#/tolerances/quantity_classes",
+      "fields": [
+        "slope",
+        "intercept",
+        "point_acceptance"
+      ],
+      "meaning_lv": "slope = taisnes slīpuma logs; intercept = krustpunkta logs; point_acceptance = novilktās taisnes y attāluma logs no īstās taisnes datu intervālā.",
+      "mode_keys": {
+        "absolute": "abs_value",
+        "significant_figures": "sig_figs"
+      },
+      "modes": [
+        "absolute",
+        "significant_figures"
+      ],
+      "notice_lv": "Visas tolerances ir PROPOSED mācību politika, nevis oficiāla prasība.",
+      "required_keys": [
+        "tolerance_class",
+        "tolerance_mode",
+        "conventions_ref",
+        "expected_unit",
+        "meaning_lv"
+      ]
+    }
+  },
+  "curve_determinism": [
+    {
+      "figure_id": "FIG-T5-DECAY-ZERO",
+      "function_class": "kinetics_decay",
+      "point_count": 81,
+      "points_sha256": "4973a565ac943b387a660cf33fabfb23b403a1e2d203430fe1f3f78ef8bd5ee3",
+      "python_js_parity": true
+    },
+    {
+      "figure_id": "FIG-T5-DECAY-FIRST",
+      "function_class": "kinetics_decay",
+      "point_count": 121,
+      "points_sha256": "016c6f63c394d4da93d2d00eedf63e4853f9f9ba97f53a3c6863506ab68a4144",
+      "python_js_parity": true
+    },
+    {
+      "figure_id": "FIG-T5-DECAY-SECOND",
+      "function_class": "kinetics_decay",
+      "point_count": 121,
+      "points_sha256": "a5951b439e43ed6421e286582515bb3a403a579e3ee6bfc469e28ee2c7c7d34d",
+      "python_js_parity": true
+    }
+  ],
+  "digests": {
+    "figure_framework_js_sha256": "e2faf3cc8f9749ce1c31329689cea056009e91be8a09469786a5470dbefce5fd",
+    "figure_schema_sha256": "979efb1375dc4fee2bad82357d577412b9d64cbecd04f2dbd19c73720f9cdca9",
+    "figures_island_merged_sha256": "b641fd113a3acac618a04da60f17d1f9c56aa5aa12b703e9b98e9bd6ac2655fe",
+    "figures_t5_canonical_sha256": "9fcb93b427a6ac501906f77977d54c74f4503aa9b94daec115b1063b139b90ff",
+    "figures_t5_file_sha256": "b73654098eafd85b059a3b713d6f7cae4f194d71e9e43f31019081bf1cfd3128",
+    "kinetics_contract_canonical_sha256": "50f9ee2b596f6d28e4d828c1abf1276fe902517b82b0397338fc74ca2f2abc5d",
+    "kinetics_contract_file_sha256": "2c264aa8a4e2ef204a268b459aeac601a410a44de02c4739b94039435ec55ddc",
+    "terms_canonical_sha256": "007cce83d6bd689a6c40a0b8081e017c6a83337004604f3a3ed62dee4645cd26"
+  },
+  "golden_vectors_refreeze": {
+    "corpus_version": "1.1.0",
+    "new_conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+    "old_conventions_digest": "6763f5f39266460f365a7a27c141a893bf0c02ee3b75a66cf55af6750a77c7bd",
+    "reason": "N14 added kinetics and six tolerance classes to #sim-conventions; expected verdicts unchanged, only the digest field updated.",
+    "semantic_changes": 0
+  },
+  "labels_and_notation": {
+    "decimal_comma_pass": true,
+    "inverse_axis_unit": "L/mol",
+    "label_checks": 272,
+    "log_axis_term": "Logaritmiskā attiecība ln(c/c₀)",
+    "unit_checks": 95
+  },
+  "leak_scan": {
+    "exempt_count": 10,
+    "exemptions": [
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "1.00"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 1,00 mL, lai demonstrētu divu zīmju aiz komata pierakstu uz veselas iedaļas."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "0.15"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-NEAR-ZERO",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 0,15 mL pie nulles robežas, lai mācītu pēdējā cipara novērtēšanu."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "5.85"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-SUBDIVIDED",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda starpiedaļas nolasījumu 5,85 mL, lai mācītu interpolāciju un paralakses novēršanu."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "24.85"
+          }
+        ],
+        "figure_id": "FIG-T2-BURETTE-DARK-CAPACITY",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda tumšā KMnO₄ šķīduma augšējās malas nolasījumu 24,85 mL pie ietilpības robežas."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "1",
+            "value": "10.0"
+          },
+          {
+            "unit": "mol/L",
+            "value": "0.0500"
+          },
+          {
+            "unit": "mmol",
+            "value": "12.5"
+          }
+        ],
+        "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma redzami atvasina atšķaidīšanas faktoru f = 10,0 un gala koncentrāciju 0,0500 mol/L no trauku tilpumiem."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "1",
+            "value": "10.0"
+          },
+          {
+            "unit": "1",
+            "value": "5.00"
+          },
+          {
+            "unit": "1",
+            "value": "50.0"
+          },
+          {
+            "unit": "mol/L",
+            "value": "0.0200"
+          }
+        ],
+        "figure_id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma parāda abas atšķaidīšanas pakāpes un faktoru reizinājuma aritmētiku f_kop = 50,0."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "% (m/V)",
+            "value": "0.9"
+          },
+          {
+            "unit": "% (m/V)",
+            "value": "3.0"
+          },
+          {
+            "unit": "% (m/V)",
+            "value": "5.0"
+          },
+          {
+            "unit": "% (V/V)",
+            "value": "70.0"
+          }
+        ],
+        "figure_id": "FIG-T3-MEDICAL-ION-BASES",
+        "matched_hits_count": 0,
+        "reason_code": "EXEMPT_GIVEN_INPUT",
+        "reason_lv": "Mācību parauga diagramma rāda standarta medicīnisko etiķešu nominālvērtības ar obligātu bāzes norādi (% m/V, % V/V)."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "25.00"
+          },
+          {
+            "unit": "mL",
+            "value": "7.77"
+          }
+        ],
+        "figure_id": "FIG-T67-TITR-WRONG-IND",
+        "matched_hits_count": 26,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību attēls apzināti parāda gan ekvivalences tilpumu, gan nepareizā indikatora beigu punktu, lai mācītu slazdu; tas nav vērtējams uzdevums."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mg/mL",
+            "value": "0.00849"
+          }
+        ],
+        "figure_id": "FIG-T67-CAL-MASTER",
+        "matched_hits_count": 12,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību attēls parāda pilnu nolasījumu caur taisni, lai demonstrētu metodi; tas nav vērtējams uzdevums."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mg/mL",
+            "value": "0.01549"
+          }
+        ],
+        "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+        "matched_hits_count": 12,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Robežgadījuma mācību attēls parāda nolasījumu 0,01549 mg/mL, lai mācītu diapazona malas disciplīnu; tas nav vērtējams uzdevums."
+      }
+    ],
+    "flags_count": 0,
+    "gradeable_count": 7,
+    "per_record": [
+      {
+        "figure_id": "FIG-T5-DECAY-ZERO",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-DECAY-FIRST",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-DECAY-SECOND",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-DECAY-CATALYST",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-LIN-ZERO",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-LIN-SECOND",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "gradeable": true,
+        "leaks": 0,
+        "outcome": "PASS"
+      }
+    ],
+    "planted_practice_leak_caught": true,
+    "practice_outcome": "PASS",
+    "total_scanned": 45
+  },
+  "n18_preview": {
+    "beyond_not_assessed": true,
+    "edge_inclusive": true,
+    "far_rejected": true,
+    "fixture": [
+      {
+        "case": "inside_accepted",
+        "drawn": {
+          "intercept": 0.005,
+          "slope": -0.0502,
+          "x_max": 30,
+          "x_min": 0
+        },
+        "result": {
+          "assessed_x_range": {
+            "x_max": 30,
+            "x_min": 0
+          },
+          "beyond_span": "not_assessed",
+          "intercept_ok": true,
+          "max_point_deviation": 0.005,
+          "point_ok": true,
+          "slope_ok": true,
+          "status": "ACCEPTED",
+          "tolerances": {
+            "intercept": 0.02,
+            "point_acceptance": 0.02,
+            "slope": 0.0005
+          }
+        }
+      },
+      {
+        "case": "edge_inclusive",
+        "drawn": {
+          "intercept": 0.0,
+          "slope": -0.05,
+          "x_max": 30,
+          "x_min": 0
+        },
+        "result": {
+          "assessed_x_range": {
+            "x_max": 30,
+            "x_min": 0
+          },
+          "beyond_span": "not_assessed",
+          "intercept_ok": true,
+          "max_point_deviation": 0,
+          "point_ok": true,
+          "slope_ok": true,
+          "status": "ACCEPTED",
+          "tolerances": {
+            "intercept": 0.02,
+            "point_acceptance": 0.02,
+            "slope": 0.0005
+          }
+        }
+      },
+      {
+        "case": "beyond_not_assessed",
+        "drawn": {
+          "intercept": 0.005,
+          "slope": -0.0502,
+          "x_max": 95,
+          "x_min": 0
+        },
+        "result": {
+          "assessed_x_range": {
+            "x_max": 30,
+            "x_min": 0
+          },
+          "beyond_span": "not_assessed",
+          "intercept_ok": true,
+          "max_point_deviation": 0.005,
+          "point_ok": true,
+          "slope_ok": true,
+          "status": "ACCEPTED",
+          "tolerances": {
+            "intercept": 0.02,
+            "point_acceptance": 0.02,
+            "slope": 0.0005
+          }
+        }
+      },
+      {
+        "case": "far_rejected",
+        "drawn": {
+          "intercept": 0.2,
+          "slope": -0.08,
+          "x_max": 30,
+          "x_min": 0
+        },
+        "result": {
+          "assessed_x_range": {
+            "x_max": 30,
+            "x_min": 0
+          },
+          "beyond_span": "not_assessed",
+          "intercept_ok": false,
+          "max_point_deviation": 0.7,
+          "point_ok": false,
+          "slope_ok": false,
+          "status": "REJECTED",
+          "tolerances": {
+            "intercept": 0.02,
+            "point_acceptance": 0.02,
+            "slope": 0.0005
+          }
+        }
+      }
+    ],
+    "inside_accepted": true,
+    "rendered_preview": {
+      "beyond_span": "not_assessed",
+      "clipped": true,
+      "rendered_x_max": 30,
+      "rendered_x_min": 0,
+      "scratch_preview_line": {
+        "intercept": 0.005,
+        "slope": -0.0502,
+        "x_max": 95,
+        "x_min": 0
+      },
+      "svg_bytes": 5474,
+      "svg_sha256": "deec04a25216a9a8a970a24cefe6b84cf5d488c5253b3b57e350509ccec460fa"
+    }
+  },
+  "runtime_verification": {
+    "curve_guard": "E_FIG_BAD_CURVE_PARAMS",
+    "dataset_tables": 4,
+    "drawn_line": {
+      "beyond": "ACCEPTED/not_assessed",
+      "edge": "ACCEPTED",
+      "inside": "ACCEPTED",
+      "reject": "REJECTED"
+    },
+    "fit_span": {
+      "first": "0-30",
+      "second": "0-30",
+      "zero": "0-40"
+    },
+    "practice_leak": "PASS",
+    "smoke": {
+      "passed": 10,
+      "status": "PASS",
+      "total": 10
+    },
+    "status": "PASS",
+    "svg_digests": {
+      "FIG-T5-DECAY-CATALYST": "3938834d0d5d21eefcf22214abd783860d4475d66ce5064d35d87b1cc598c2f2",
+      "FIG-T5-DECAY-FIRST": "4603cd34285dfdf45b60a3b21a003bdd57a9fca2d1f20a1b5b5cdd577e511d8c",
+      "FIG-T5-DECAY-SECOND": "a34bd45484939e160c297f982197c62aa649fe4dd9db5d9033847094c6ccbcb2",
+      "FIG-T5-DECAY-ZERO": "22539a58a6e93bddb7937c93bbd79d1b92079500e21c2472a9787a4f26e26041",
+      "FIG-T5-LIN-FIRST": "0bc9571580a780656287e3d028c0c416185d42da02f8c18865537f15db5c7b85",
+      "FIG-T5-LIN-PRACTICE": "583ad5d17070cc9ad03f3d16668973f520e0e83fe89d7c016d9bd392ebfafd40",
+      "FIG-T5-LIN-SECOND": "88a102da9fb6250895baafa236bc41d4eb42e8217fd63f6469cdbf43708c927e",
+      "FIG-T5-LIN-ZERO": "2bfc29bd3ac95e250c15f81dfcf3ed5c7065434ec009e904a32828be37c37ecd"
+    },
+    "t5_figures": 8,
+    "total_figures": 45,
+    "truncation_code": "E_FIGURES_JSON"
+  },
+  "schema_version": 1,
+  "span_rule": {
+    "beyond_span": "not_assessed",
+    "edge_rule": "inclusive",
+    "scratch_over_span_rejected_id": "FIG-T5-LIN-FIRST",
+    "table": [
+      {
+        "agrees": true,
+        "beyond_span": "not_assessed",
+        "data_x_max": 40,
+        "data_x_min": 0,
+        "edge_rule": "inclusive",
+        "figure_id": "FIG-T5-LIN-ZERO",
+        "rendered_extent_matches": true,
+        "span_x_max": 40,
+        "span_x_min": 0
+      },
+      {
+        "agrees": true,
+        "beyond_span": "not_assessed",
+        "data_x_max": 30,
+        "data_x_min": 0,
+        "edge_rule": "inclusive",
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "rendered_extent_matches": true,
+        "span_x_max": 30,
+        "span_x_min": 0
+      },
+      {
+        "agrees": true,
+        "beyond_span": "not_assessed",
+        "data_x_max": 30,
+        "data_x_min": 0,
+        "edge_rule": "inclusive",
+        "figure_id": "FIG-T5-LIN-SECOND",
+        "rendered_extent_matches": true,
+        "span_x_max": 30,
+        "span_x_min": 0
+      },
+      {
+        "agrees": true,
+        "beyond_span": "not_assessed",
+        "data_x_max": 20,
+        "data_x_min": 0,
+        "edge_rule": "inclusive",
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "rendered_extent_matches": true,
+        "span_x_max": 20,
+        "span_x_min": 0
+      }
+    ]
+  },
+  "status": "PASS",
+  "sub_budget_accounting": {
+    "figure_ceiling_bytes": 143360,
+    "figure_framework_js_bytes": 55308,
+    "figures_island_share_pct": 99.46,
+    "merged_figures_island_bytes": 142579,
+    "runtime_js_ceiling_bytes": 225280,
+    "runtime_js_code_bytes": 225197,
+    "t5_canonical_bytes": 30294,
+    "t5_share_of_ceiling_pct": 21.13
+  },
+  "task": "N14",
+  "teaching_trace": [
+    {
+      "action": "open decay figure",
+      "figure": "FIG-T5-DECAY-FIRST",
+      "read": {
+        "C0_mol_l": "1.00",
+        "k": "0.0500",
+        "t_half_s": "13.9"
+      },
+      "step": 1
+    },
+    {
+      "action": "open linear figure",
+      "figure": "FIG-T5-LIN-FIRST",
+      "read": {
+        "intercept": "0.00",
+        "slope": "-0.0500"
+      },
+      "step": 2
+    },
+    {
+      "action": "recompute k from slope",
+      "arithmetic": "k = -slope = -(-0.0500) = 0.0500 s^-1",
+      "step": 3,
+      "value": "0.0500"
+    },
+    {
+      "action": "recompute half-life",
+      "arithmetic": "t_half = ln2/k = 0.6931/0.0500 = 13.8629 s (display 13,9 s)",
+      "step": 4,
+      "value": "13.862944"
+    }
+  ],
+  "tolerance_coupling": {
+    "modes_present": [
+      "absolute",
+      "significant_figures"
+    ],
+    "scratch_self_violation_rejected_id": "FIG-T5-LIN-FIRST",
+    "scratch_unknown_class_rejected_id": "FIG-T5-LIN-FIRST",
+    "table": [
+      {
+        "fields": {
+          "intercept": {
+            "tolerance_class": "concentration_molar",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.01"
+          },
+          "point_acceptance": {
+            "tolerance_class": "concentration_molar",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.01"
+          },
+          "slope": {
+            "tolerance_class": "rate_constant_zero",
+            "tolerance_mode": "significant_figures",
+            "tolerance_value": "0.0005"
+          }
+        },
+        "figure_id": "FIG-T5-LIN-ZERO",
+        "intercept_difference": "0.00",
+        "max_point_difference": "0",
+        "rendered_line_within_own_tolerance": true,
+        "slope_difference": "0.0000"
+      },
+      {
+        "fields": {
+          "intercept": {
+            "tolerance_class": "log_concentration_ratio",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.02"
+          },
+          "point_acceptance": {
+            "tolerance_class": "log_concentration_ratio",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.02"
+          },
+          "slope": {
+            "tolerance_class": "rate_constant_first",
+            "tolerance_mode": "significant_figures",
+            "tolerance_value": "0.0005"
+          }
+        },
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "intercept_difference": "0.00",
+        "max_point_difference": "0",
+        "rendered_line_within_own_tolerance": true,
+        "slope_difference": "0.0000"
+      },
+      {
+        "fields": {
+          "intercept": {
+            "tolerance_class": "inverse_concentration",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.05"
+          },
+          "point_acceptance": {
+            "tolerance_class": "inverse_concentration",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.05"
+          },
+          "slope": {
+            "tolerance_class": "rate_constant_second",
+            "tolerance_mode": "significant_figures",
+            "tolerance_value": "0.0005"
+          }
+        },
+        "figure_id": "FIG-T5-LIN-SECOND",
+        "intercept_difference": "0.00",
+        "max_point_difference": "0",
+        "rendered_line_within_own_tolerance": true,
+        "slope_difference": "0.0000"
+      },
+      {
+        "fields": {
+          "intercept": {
+            "tolerance_class": "log_concentration_ratio",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.02"
+          },
+          "point_acceptance": {
+            "tolerance_class": "log_concentration_ratio",
+            "tolerance_mode": "absolute",
+            "tolerance_value": "0.02"
+          },
+          "slope": {
+            "tolerance_class": "rate_constant_first",
+            "tolerance_mode": "significant_figures",
+            "tolerance_value": "0.0005"
+          }
+        },
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "intercept_difference": "0.00",
+        "max_point_difference": "0",
+        "rendered_line_within_own_tolerance": true,
+        "slope_difference": "0.0000"
+      }
+    ]
+  },
+  "transform_consistency": {
+    "half_life_table": [
+      {
+        "agrees": true,
+        "authored_half_life_s": "25.0",
+        "figure_id": "FIG-T5-DECAY-ZERO",
+        "order": 0,
+        "recomputed_half_life_s": "25.000000"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": "13.9",
+        "figure_id": "FIG-T5-DECAY-FIRST",
+        "order": 1,
+        "recomputed_half_life_s": "13.862944"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": "25.0",
+        "figure_id": "FIG-T5-DECAY-SECOND",
+        "order": 2,
+        "recomputed_half_life_s": "25.000000"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": null,
+        "figure_id": "FIG-T5-DECAY-CATALYST",
+        "order": 1,
+        "recomputed_half_life_s": "27.725887"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": null,
+        "figure_id": "FIG-T5-LIN-ZERO",
+        "order": 0,
+        "recomputed_half_life_s": "25.000000"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": null,
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "order": 1,
+        "recomputed_half_life_s": "13.862944"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": null,
+        "figure_id": "FIG-T5-LIN-SECOND",
+        "order": 2,
+        "recomputed_half_life_s": "25.000000"
+      },
+      {
+        "agrees": true,
+        "authored_half_life_s": null,
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "order": 1,
+        "recomputed_half_life_s": "8.664340"
+      }
+    ],
+    "scratch_inconsistent_rejected_id": "FIG-T5-LIN-FIRST",
+    "table": [
+      {
+        "C0_mol_l": "1.00",
+        "agrees": true,
+        "authored_intercept": "1.00",
+        "authored_slope": "-0.0200",
+        "figure_id": "FIG-T5-LIN-ZERO",
+        "k": "0.0200",
+        "order": 0,
+        "pair_parameters_match": true,
+        "paired_decay_id": "FIG-T5-DECAY-ZERO",
+        "recomputed_intercept": "1.00",
+        "recomputed_slope": "-0.0200"
+      },
+      {
+        "C0_mol_l": "1.00",
+        "agrees": true,
+        "authored_intercept": "0.00",
+        "authored_slope": "-0.0500",
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "k": "0.0500",
+        "order": 1,
+        "pair_parameters_match": true,
+        "paired_decay_id": "FIG-T5-DECAY-FIRST",
+        "recomputed_intercept": "0",
+        "recomputed_slope": "-0.0500"
+      },
+      {
+        "C0_mol_l": "1.00",
+        "agrees": true,
+        "authored_intercept": "1.00",
+        "authored_slope": "0.0400",
+        "figure_id": "FIG-T5-LIN-SECOND",
+        "k": "0.0400",
+        "order": 2,
+        "pair_parameters_match": true,
+        "paired_decay_id": "FIG-T5-DECAY-SECOND",
+        "recomputed_intercept": "1",
+        "recomputed_slope": "0.0400"
+      },
+      {
+        "C0_mol_l": "0.50",
+        "agrees": true,
+        "authored_intercept": "0.00",
+        "authored_slope": "-0.0800",
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "k": "0.0800",
+        "order": 1,
+        "pair_parameters_match": true,
+        "paired_decay_id": null,
+        "recomputed_intercept": "0",
+        "recomputed_slope": "-0.0800"
+      }
+    ]
+  }
+}

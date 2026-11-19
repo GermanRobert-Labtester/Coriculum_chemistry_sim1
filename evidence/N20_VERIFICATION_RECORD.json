@@ -1,0 +1,190 @@
+{
+  "acceptance_criteria": {
+    "AC1_happy_path": {
+      "claims": [
+        "Every family template validates: ranges, conventions entries, response types, payload classes, tolerance classes and rubric weights.",
+        "A scratch template with an out-of-range parameter fails validation by family and parameter name.",
+        "The required types Q02, Q04, Q10, Q11, Q12, Q13 and Q15 are covered and their families are named in the template validation record.",
+        "Identical seeds yield byte-identical instances, and the Python and the JavaScript twins agree byte for byte on all 112 instances."
+      ],
+      "evidence": [
+        "tools/validate_family_templates.py",
+        "evidence/N20_TEMPLATE_VALIDATION.json",
+        "evidence/N20_DETERMINISM_RECORD.json",
+        "evidence/N20_RUNTIME_RECORD.json"
+      ],
+      "status": "PASS"
+    },
+    "AC2_negative_or_edge": {
+      "claims": [
+        "All 112 instances validate against the N04 schema with zero violations.",
+        "Every numeric key value was recomputed through the N17 quantity engine or the N18 criterion discipline, and the recompute is recorded per instance.",
+        "The review workflow gate passes, and an unreviewed scratch instance refuses the build by id.",
+        "The leak scan finds no unexempted leak; every exemption carries an N12 reason code, a Latvian reason and an explicit scope.",
+        "The grading alignment is graded through the owning engine for every payload class."
+      ],
+      "evidence": [
+        "evidence/N20_REVIEW_WORKFLOW.json",
+        "evidence/N20_RECOMPUTE_RECORD.json",
+        "evidence/N20_LEAK_SCAN_RECORD.json"
+      ],
+      "status": "PASS"
+    },
+    "AC3_domain_integrity": {
+      "claims": [
+        "The runtime loader rejects a tampered island by digest mismatch and a missing digest by name.",
+        "The ephemeral retry path is deterministic, excludes the frozen seeds and never persists.",
+        "The frozen and the ephemeral instance are graded through identical engine code and yield the same verdict class.",
+        "The in-file smoke vector runs against the built artifact and asserts the grading verdict of a fixed bank instance."
+      ],
+      "evidence": [
+        "evidence/N20_RUNTIME_RECORD.json",
+        "src/smoke-subset.js"
+      ],
+      "status": "PASS"
+    }
+  },
+  "budgets": {
+    "budgets": [
+      {
+        "basis": "Section 1.3 total artifact budget",
+        "bytes": 1374364,
+        "kib": 1342.2,
+        "max_bytes": 1433600,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 95.87,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 bank sub-budget",
+        "bytes": 249798,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 runtime JS budget, ceiling re-set on the measured requirement by AGENTS.md (was 225,280 B; the N20 requirement is 225,192 B measured)",
+        "bytes": 225192,
+        "kib": 219.9,
+        "max_bytes": 237568,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 94.79,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 CSS range; the enforced value is the ceiling. The measured CSS is below the plan target, which is prior-phase content and is recorded, not changed, by N20.",
+        "bytes": 39796,
+        "kib": 38.9,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 48.58,
+        "within_max": true,
+        "within_min": false
+      }
+    ],
+    "notes": [
+      "The bank island is the runtime projection of the frozen bank; the per-instance audit tables (draws, derived, review workflow) stay in data/bank/*.json and in the N20 evidence records.",
+      "The CSS measurement is below the Section 1.3 target range; that content belongs to earlier phases and N20 records the measurement instead of changing it."
+    ],
+    "status": "PASS"
+  },
+  "ephemeral_contract": {
+    "exclusion_rule": "A retry seed that is already a frozen seed is skipped; the attempt counter advances until an unused seed is found.",
+    "identity": "The ephemeral instance carries its own question id (-EPH-{attempt}) so that it cannot be confused with the frozen instance.",
+    "persistence": "never persisted; the instance lives in the in-memory session only.",
+    "seed_key_pattern": "{family}-{variant}-EPH-{attempt}"
+  },
+  "evidence_index": {
+    "artifacts": {
+      "evidence/N20_CORPUS_RECORD.json": "The extended corpus: four gates, the runtime harness, the byte accounting and the handoff. Byte-identical across two runs.",
+      "evidence/N20_DETERMINISM_RECORD.json": "The determinism proof: 112/112 byte-identical on a repeated instantiation and 112/112 equal to the frozen bank instance.",
+      "evidence/N20_LEAK_SCAN_RECORD.json": "The N12 leak scan over all 112 instances, the reasoned exemptions and the borderline-significance cases.",
+      "evidence/N20_RECOMPUTE_RECORD.json": "The N17 recompute table: every derived value recomputed through the N17 quantity engine with its engine path.",
+      "evidence/N20_REVIEW_WORKFLOW.json": "The review workflow: 112 instances in the accepted state, five mechanical checks each, the named checks and the sign-off.",
+      "evidence/N20_RUNTIME_RECORD.json": "The runtime harness: cross-language parity, determinism, the ephemeral path, the parity fixture, the tamper fixture and the in-file smoke vector against the built artifact.",
+      "evidence/N20_SEED_TABLE.json": "The per-instance seed table: family, variant, seed key, seed and the derived-values record.",
+      "evidence/N20_TEMPLATE_VALIDATION.json": "The per-family validation table: ranges, conventions entries, types, payload classes, tolerance classes and rubric weights.",
+      "evidence/N20_VALIDATION_RECORD.json": "The gate-level summary: each gate, its status, its command and its findings.",
+      "evidence/N20_VERIFICATION_RECORD.md": "The narrative record of the same evidence, with the reasoning behind the design choices."
+    },
+    "note": "Every N20 evidence artifact and what it holds. The gate-level summary is the validation record; the per-instance detail lives in the records it points at."
+  },
+  "frozen_bank": {
+    "embedded_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "families": 28,
+    "instances": 112,
+    "island_bytes": 249798,
+    "island_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "projection": {
+      "audit_trail": [
+        "data/bank/*.json",
+        "evidence/N20_REVIEW_WORKFLOW.json",
+        "evidence/N20_RECOMPUTE_RECORD.json",
+        "evidence/N20_LEAK_SCAN_RECORD.json"
+      ],
+      "dropped_extension_fields": [
+        "draws",
+        "derived",
+        "review_workflow"
+      ],
+      "reason": "The drawn values, the derived values and the review workflow record are the audit trail. They stay in the frozen bank files and in the N20 evidence records; the artifact embeds the runtime projection so that the Section 1.3 budget (700–1400 KiB total) holds."
+    },
+    "review_gate": "N20 bank_review (order 16): every instance must be in the accepted review state; the gate refuses the build otherwise.",
+    "source_digest": "1c263cdb37396f0eb910c52cf9e6a0b30725533358d57fd7de85c4b58c78acb6",
+    "variants_per_family": 4
+  },
+  "handoff": {
+    "exam_assembly_N24": {
+      "bank_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+      "instance_ids": "COL1-{topic}-{family}-{variant}-01, 112 in total"
+    },
+    "grading_surfaces_N23": {
+      "method_payload_class": "self-assessed; N17 denies machine criteria on it",
+      "numeric_graph": "N17-numeric",
+      "option_select_ordering_matching": "N19-method"
+    },
+    "remediation_N28_and_bounded_practice_N30": {
+      "ephemeral_contract": {
+        "exclusion_rule": "A retry seed that is already a frozen seed is skipped; the attempt counter advances until an unused seed is found.",
+        "identity": "The ephemeral instance carries its own question id (-EPH-{attempt}) so that it cannot be confused with the frozen instance.",
+        "persistence": "never persisted; the instance lives in the in-memory session only.",
+        "seed_key_pattern": "{family}-{variant}-EPH-{attempt}"
+      },
+      "family_templates": "data/family_templates",
+      "runtime_module": "src/variant-engine.js"
+    }
+  },
+  "not_claimed": [
+    "No official examination, grade or proctoring status.",
+    "No browser render, screen-reader, print or instructor acceptance: the accessibility review is a mechanical structural check, and the renderer-level acceptance is deferred to N22/N34.",
+    "No keyword matching as semantic grading: the N12 scanner is a token and unit-normalised rule, not a semantic grader.",
+    "No claim that the four variants are four finished questions: they are four parameterisations of one family template."
+  ],
+  "official_programme_facts": {
+    "examination": "written on paper",
+    "maximum_minutes": 180,
+    "note": "The 2025 programme fixes no point weight, no question count, no pass mark, no allowed aid and no exact exam question type.",
+    "topics": 7
+  },
+  "owner": "N20",
+  "policy_label": "PROPOSED training policy (N20): 28 families x 4 variants = 112 instances, point weights and minute budgets are proposals. Official programme facts: seven topics, a written-on-paper examination and a maximum of 180 minutes.",
+  "schema_version": 1,
+  "status": "PASS",
+  "templates": {
+    "data": "data/family_templates",
+    "families": 28,
+    "inlined_in_artifact": false,
+    "runtime_asset": "src/variant-templates.js",
+    "template_digest": "64c492264c669b6b0b48fa00abac59e3bcaf6fc714e4fb9e0e3dc6c42efa80ad",
+    "variants": 112
+  }
+}

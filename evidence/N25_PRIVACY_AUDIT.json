@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "task": "N25",
+  "status": "PASS",
+  "schema_keys": [
+    "sim_colloq1_store_v2"
+  ],
+  "keys_during_memory_phase": [],
+  "writes_during_memory_phase": 0,
+  "outlier_keys": [],
+  "leaked_answer_strings": [],
+  "network_attempts_count": 0,
+  "network_attempts": [],
+  "keys_after_erase": [],
+  "rogue_outlier_caught": [
+    "sim_render_cache"
+  ],
+  "f10_boundary": {
+    "rejected_feature": "F10",
+    "status": "rejected-by-policy",
+    "ledger_reference": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md §4.3 (F10 REJECTED) & evidence/VERIFICATION_LEDGER.md",
+    "reasoning_lv": "F10 vizuālie atskaišu paneļi, sērijas (streaks) un spēļošana ir noraidīti ar politiku: tie kalpo izsekotājam, nevis izglītojamam.",
+    "reasoning_en": "Completionist visualization serves the tracker, not the learner; no chart, streak, or score-history components are exported.",
+    "forbidden_exports": [
+      "chart",
+      "charts",
+      "streak",
+      "streaks",
+      "gamification",
+      "scoreHistory",
+      "score_history",
+      "dashboard",
+      "leaderboard"
+    ]
+  },
+  "f10_banned_exports_found": [],
+  "access_log_count": 5,
+  "access_log": [
+    {
+      "seq": 1,
+      "phase": "opt-in-and-persist",
+      "operation": "getItem",
+      "key": "sim_colloq1_store_v2",
+      "bytes": 0
+    },
+    {
+      "seq": 2,
+      "phase": "opt-in-and-persist",
+      "operation": "setItem",
+      "key": "sim_colloq1_store_v2",
+      "bytes": 16176
+    },
+    {
+      "seq": 3,
+      "phase": "opt-in-and-persist",
+      "operation": "setItem",
+      "key": "sim_colloq1_store_v2",
+      "bytes": 16421
+    },
+    {
+      "seq": 4,
+      "phase": "opt-in-and-persist",
+      "operation": "setItem",
+      "key": "sim_colloq1_store_v2",
+      "bytes": 16424
+    },
+    {
+      "seq": 5,
+      "phase": "export-and-erase",
+      "operation": "removeItem",
+      "key": "sim_colloq1_store_v2",
+      "bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "contract_version": 1,
+  "island_id": "sim-method-engine",
+  "owner": "N19",
+  "status": "frozen-contract-for-N20-N22-N23-N28",
+  "title_lv": "Metodisko kartīšu un trīs nestatisko dzinēju līgums",
+  "purpose_lv": "Viena deklarēta saskarne: kārtīgo soļu, atbilstību pāru un secības pabeigšanas atbildes tiek vērtētas strukturāli, kā tiek paziņots paraksturs un kur ir robeža starp automātiski pārbaudāmo un pašnovērtējamo.",
+  "epistemic_note_lv": "Dzinējs pats nesauc ne saturu, ne atzīmes. Visi soļu identifikatori, pāru identitātes un pieņemamie soļi nāk no deklarētā specifikācijas; visi atgriezeniskās saites teksti nāk no #sim-terms un no kartīšu soļu piezīmēm. Neveido oficiālu eksāmenu, nepiešķir vērtējumu un neaizstāj docētāju.",
+  "handoff": {
+    "from": [
+      "N02",
+      "N04",
+      "N05",
+      "N10",
+      "N16"
+    ],
+    "to": [
+      "N20",
+      "N22",
+      "N23",
+      "N28",
+      "N36"
+    ],
+    "n09_gap_notice": "N09 misconceptions reģistrs šajā darba telpā vēl nav izpildīts. Paraksturi lieto N04 deklarēto stub-parakstu MC-[1-7][A-D]-[0-9]{2} un atbilst esošiem #sim-golden-vectors vektoriem; katrs paraksturs atzīmēts reģistrā ar savu izcelsmi. N09 izpildot, jāpārbauda reģistra saiste, nevis dzinēja loģika."
+  },
+  "no_keyword_rule_verbatim_lv": "Grading never reads the learner's wording. A step, a pair and a next step are recognised only by their declared identity (an id). The engines contain no similarity, no keyword list, no stemming and no case folding; a submission that uses a synonym of the correct step text is graded wrong because the text is not an id.",
+  "identity_rule_verbatim_lv": "Vertīkums ir id, nevis teksts. Kartītes soļa id, pāra kreisā un labā id un secības pieņemamā soļa id ir vienīgie salīdzināšanas objekti.",
+  "partial_order_rule_verbatim_lv": "Kārtība ir punktēta: katrs soļa slots ir vai nu pareizs, vai nepareizs. Nav gandrīz pareizu kārtību un nav daļēji pareizu secību. Brīvās kārtības grupas dalībnieki savā starpā tiek pieņemti abā secībā, jo meistars šo secību neierobežo.",
+  "engines": {
+    "ordering": {
+      "id": "N19-ordering",
+      "submission_shape": "{\"order\": [step_id, ...]}",
+      "spec_fields": [
+        "item_ids",
+        "correct_order",
+        "free_groups",
+        "step_meta",
+        "rubric"
+      ],
+      "diagnostic_unit": "position",
+      "diagnostic_statuses": [
+        "correct",
+        "free_order_equivalent",
+        "misplaced",
+        "unknown_step",
+        "missing_step"
+      ],
+      "error_classes": [
+        "NONE",
+        "BLANK_RESPONSE",
+        "WRONG_ORDER"
+      ],
+      "rule_lv": "Katra pozīcija tiek salīdzināta ar deklarēto kārtību. Divi soļi no vienas brīvās kārtības grupas uzskatīti par savstarpēji pieņemamiem. Katrs nepareizais slots atgriež soļa paraksturu un piezīmi, tāpēc diagnoze ir precīza, nevis vispārēja."
+    },
+    "matching": {
+      "id": "N19-matching",
+      "submission_shape": "{\"pairs\": [{\"left_id\": ..., \"right_id\": ...}, ...]}",
+      "spec_fields": [
+        "left_items",
+        "right_items",
+        "correct_pairs",
+        "pair_meta",
+        "rubric"
+      ],
+      "diagnostic_unit": "pair",
+      "diagnostic_statuses": [
+        "correct",
+        "wrong_pair",
+        "unmatched",
+        "repeated_left",
+        "repeated_right",
+        "unknown_left",
+        "unknown_right"
+      ],
+      "error_classes": [
+        "NONE",
+        "BLANK_RESPONSE",
+        "WRONG_PAIRING"
+      ],
+      "rule_lv": "Pāri tiek salīdzināti pa kreisā id. Kreisā id atkārtošanās atzīmē visus tās pārus kā nepareizus; neuzliktais kreisais id atzīmēts kā neiedots; nezināms id atzīmēts kā nezināms."
+    },
+    "sequence": {
+      "id": "N19-sequence",
+      "submission_shape": "{\"next_step_id\": step_id}",
+      "spec_fields": [
+        "acceptance_step_ids",
+        "distractors",
+        "default_signature",
+        "step_meta",
+        "rubric"
+      ],
+      "diagnostic_unit": "next_step",
+      "diagnostic_statuses": [
+        "accepted",
+        "distractor",
+        "unknown"
+      ],
+      "error_classes": [
+        "NONE",
+        "BLANK_RESPONSE",
+        "WRONG_ORDER"
+      ],
+      "rule_lv": "Nākamais solis tiek atzīts, ja viņa id ir pieņemamajā kopumā. Deklarētais klucējošais solis atgriež savu paraksturu, nezināms id atgriež uzveduma noklusējuma paraksturu."
+    },
+    "self_assessment": {
+      "id": "N19-self",
+      "submission_shape": "{\"text\": \"...\"}",
+      "spec_fields": [
+        "rubric"
+      ],
+      "diagnostic_unit": "none",
+      "error_classes": [
+        "NONE",
+        "BLANK_RESPONSE"
+      ],
+      "rule_lv": "Pašnovērtējuma teksts netiek lasīts. Dzinējs pārbauda tikai, vai atbilde ir tukša, un atgriež pending ierakstu bez verdikta un bez parakstura."
+    }
+  },
+  "verdict_record": {
+    "envelope_required": [
+      "engine",
+      "kind",
+      "verdict_class",
+      "error_class",
+      "awarded_criteria",
+      "machine_checked_points",
+      "self_assessed_points",
+      "human_reviewed_points",
+      "pending_points",
+      "max_points",
+      "diagnostics",
+      "replay"
+    ],
+    "verdict_classes": [
+      "correct",
+      "partial",
+      "incorrect",
+      "pending_self_assessment",
+      "auto_passed_pending_review"
+    ],
+    "criterion_statuses": [
+      "awarded",
+      "denied",
+      "pending"
+    ],
+    "diagnostics_required": [
+      "signatures",
+      "remediation"
+    ],
+    "replay_required": [
+      "spec_digest",
+      "submission_digest"
+    ],
+    "rule_lv": "Ieskaite ir atkārtojama: replay bloks kopā ar spec un iesniegumu lai atjauno verdiktu bez papildu konteksta. Punktu summas un kriteriju saraksts ir tāds pats, ko atgriež sasaldētais N05 orakuls."
+  },
+  "pending_semantics": {
+    "owner": "N19",
+    "consumer": "N23",
+    "rule_verbatim_lv": "Brīvā teksta paskaidrojums ir pašnovērtējums. Dzinējs to pieraksta un atzīmē kā pending; tas nedod ne punktu, ne verdiktu, ne paraksturu. Tukša atbilde (tikai atstarpes) dod 0 punktus un BLANK_RESPONSE; tas ir vienīgais teksta pārbaudes veids.",
+    "blank_rule_verbatim_lv": "Tukšums ir teksts, kas pēc atstarpju noņemšanas ir tukšs. Saturācija netiek pārbaudīta.",
+    "no_parse_assertion_verbatim_lv": "Šajā ceļā nav neviena salīdzinājuma ar teksta saturu. Fiksētais N05 orakuls šim ceļam atbilst, un N19 vectora komplekts to pārbauda.",
+    "grading_class_ref": "N23 gaida pending klasi šim kritērijam; N19 neizdalīs punktus."
+  },
+  "signature_registry": [
+    {
+      "signature": "MC-1C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX01"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T1-Q02-01",
+        "GV-S1-T1-Q02-02"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-1C vektori: divsoļu aprēķins, tā pati saime, kurā ir MC-EX01."
+    },
+    {
+      "signature": "MC-1B-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX02"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T1-Q14-01",
+        "GV-S1-T1-Q14-02"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-1B vektori: apgalvojuma labošana elektrolītu saimē, kurā ir MC-EX02."
+    },
+    {
+      "signature": "MC-2C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX03"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T2-Q10-01",
+        "GV-S1-T2-Q10-02"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03."
+    },
+    {
+      "signature": "MC-2B-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX04"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T2-Q01-01",
+        "GV-S1-T2-Q01-02"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-2B vektori: vienību un precizitātes aprēķini, tā pati saime, kurā ir MC-EX04."
+    },
+    {
+      "signature": "MC-3A-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX05"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T3-Q01-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-3A vektori: koncentrācijas aprēķins, tā pati saime, kurā ir MC-EX05."
+    },
+    {
+      "signature": "MC-3C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX06"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T3-Q08-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-3C vektori: atšķaidīšanas secības kārtošana, tā pati saime, kurā ir MC-EX06."
+    },
+    {
+      "signature": "MC-4C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX07"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T4-Q02-01",
+        "GV-S1-T4-Q02-02"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-4C vektori: Gibsa enerģijas aprēķins, tā pati saime, kurā ir MC-EX07."
+    },
+    {
+      "signature": "MC-4B-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX08"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T4-Q09-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-4B vektori: Hesa cikla aprēķins, tā pati saime, kurā ir MC-EX08."
+    },
+    {
+      "signature": "MC-5C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX09"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T5-Q12-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-5C vektori: grafika interpretācija, tā pati saime, kurā ir MC-EX09."
+    },
+    {
+      "signature": "MC-5D-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX10"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T5-Q18-01"
+      ],
+      "provenance": "nearest-available-cross-family",
+      "note_lv": "FAM-5A saimē (P5-01, P5-02, P5-04, P5-07) S1 stratuma vektora nav; izvēlēts FAM-5D paraksturs, kas aptver P5-03 un P5-06. Rekvizīts piezīmēts, nevis aizstāts klusējot."
+    },
+    {
+      "signature": "MC-6C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX11"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T6-Q10-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-6C vektori: titrēšanas skalas nolasīšana, tā pati saime, kurā ir MC-EX11."
+    },
+    {
+      "signature": "MC-6A-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX12"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T6-Q06-01"
+      ],
+      "provenance": "nearest-available-cross-family",
+      "note_lv": "FAM-6D saimē (P6-03) S1 stratuma vektora nav; izvēlēts FAM-6A paraksturs, kas aptver redoksa lomas un potenciāla virzienu. Rekvizīts piezīmēts."
+    },
+    {
+      "signature": "MC-7B-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX13"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T7-Q12-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-7B vektori: kalibrēšanas grafika interpretācija, tā pati saime, kurā ir MC-EX13."
+    },
+    {
+      "signature": "MC-7C-01",
+      "feedback_key": "feedback.concept_link_label",
+      "cards": [
+        "MC-EX14"
+      ],
+      "corpus_vectors": [
+        "GV-S1-T7-Q01-01"
+      ],
+      "provenance": "exact-family",
+      "note_lv": "FAM-7C vektori: atšķaidītā parauga aprēķins, tā pati saime, kurā ir MC-EX14."
+    }
+  ],
+  "method_vectors": {
+    "schema_version": 1,
+    "island_ref": "sim-golden-vectors",
+    "protocol_ref": "data/golden_vector_protocol.json",
+    "stratum": "S4-N19",
+    "owner": "N19",
+    "status": "frozen-contract-vectors",
+    "note_lv": "N19 stratums: kartīšu soļu secības, atbilstību pāru un secības pabeigšanas vektori, tostarp adversariālie near-synonym dalībnieki, kuriem jābūt nepareiziem. S1 vektori netiek grozīti; tie tiek atkārtoti verdikt-für-verdikt.",
+    "ordering_vectors": [
+      {
+        "id": "NV-N19-ORD-01",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "note_lv": "Pilnīgi pareiza biretes secība.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "free_groups": [],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "wrong_positions": [],
+          "signatures": []
+        }
+      },
+      {
+        "id": "NV-N19-ORD-02",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "note_lv": "Transponēts pāris: divi blakus esoši soļi apmainīti. Abi soļi jāatzīmē un jāatgriež abi paraksturi.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "free_groups": [],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S1",
+            "S3",
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            1,
+            2
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-ORD-03",
+        "kind": "ordering",
+        "card_id": "MC-EX06",
+        "note_lv": "Brīvās kārtības grupas dalībnieki apmainīti: dzinējs to ne soda.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "free_groups": [
+            [
+              "S1",
+              "S2"
+            ]
+          ],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S2",
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        },
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "wrong_positions": [],
+          "signatures": []
+        }
+      },
+      {
+        "id": "NV-N19-ORD-04",
+        "kind": "ordering",
+        "card_id": "MC-EX06",
+        "note_lv": "Brīvās kārtības grupas ārpuses secības pārkāpums jāsoda.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "free_groups": [
+            [
+              "S1",
+              "S2"
+            ]
+          ],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S1",
+            "S2",
+            "S4",
+            "S3",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            2,
+            3
+          ],
+          "signatures": [
+            "MC-3C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-ORD-05",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "note_lv": "Adversariālais near-synonym: soļa teksta sinonims nav id, tāpēc tas nepasaka.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "free_groups": [],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "Ielej noteikto tilpumu"
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            5
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-ORD-06",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "note_lv": "Trūkstošs solis: iesniegums nav permutācija. Paziņojums, ka slots bez soļa jāatzīmē un ka trūkstošā soļa note tiek atgriezta.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "free_groups": [],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "order": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            5
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      }
+    ],
+    "matching_vectors": [
+      {
+        "id": "NV-N19-MAT-01",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "note_lv": "Trīs pareizi pāri.",
+        "spec": {
+          "kind": "matching",
+          "left_items": [
+            {
+              "id": "L1"
+            },
+            {
+              "id": "L2"
+            },
+            {
+              "id": "L3"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1"
+            },
+            {
+              "id": "R2"
+            },
+            {
+              "id": "R3"
+            }
+          ],
+          "correct_pairs": {
+            "L1": "R1",
+            "L2": "R2",
+            "L3": "R3"
+          },
+          "rubric": [
+            {
+              "criterion_id": "C1_PAIR_L1",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L2",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L3",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            },
+            {
+              "left_id": "L3",
+              "right_id": "R3"
+            }
+          ]
+        },
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "correct"
+          },
+          "signatures": []
+        }
+      },
+      {
+        "id": "NV-N19-MAT-02",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "note_lv": "Viens nepareizs pārs pārējāmā veidā: pāri nav apmainīti, bet viens ir nepareizs.",
+        "spec": {
+          "kind": "matching",
+          "left_items": [
+            {
+              "id": "L1"
+            },
+            {
+              "id": "L2"
+            },
+            {
+              "id": "L3"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1"
+            },
+            {
+              "id": "R2"
+            },
+            {
+              "id": "R3"
+            }
+          ],
+          "correct_pairs": {
+            "L1": "R1",
+            "L2": "R2",
+            "L3": "R3"
+          },
+          "rubric": [
+            {
+              "criterion_id": "C1_PAIR_L1",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L2",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L3",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R3"
+            },
+            {
+              "left_id": "L3",
+              "right_id": "R2"
+            }
+          ]
+        },
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "wrong_pair",
+            "L3": "wrong_pair"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-MAT-03",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "note_lv": "Atkārtots kreisais id: visi tā pāri jāatzīmē kā nepareizi.",
+        "spec": {
+          "kind": "matching",
+          "left_items": [
+            {
+              "id": "L1"
+            },
+            {
+              "id": "L2"
+            },
+            {
+              "id": "L3"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1"
+            },
+            {
+              "id": "R2"
+            },
+            {
+              "id": "R3"
+            }
+          ],
+          "correct_pairs": {
+            "L1": "R1",
+            "L2": "R2",
+            "L3": "R3"
+          },
+          "rubric": [
+            {
+              "criterion_id": "C1_PAIR_L1",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L2",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L3",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L1",
+              "right_id": "R2"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "repeated_left",
+            "L2": "repeated_right",
+            "L3": "unmatched"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-MAT-04",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "note_lv": "Neuzliktais kreisais id: tas ir neiedots, nevis nepareizs.",
+        "spec": {
+          "kind": "matching",
+          "left_items": [
+            {
+              "id": "L1"
+            },
+            {
+              "id": "L2"
+            },
+            {
+              "id": "L3"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1"
+            },
+            {
+              "id": "R2"
+            },
+            {
+              "id": "R3"
+            }
+          ],
+          "correct_pairs": {
+            "L1": "R1",
+            "L2": "R2",
+            "L3": "R3"
+          },
+          "rubric": [
+            {
+              "criterion_id": "C1_PAIR_L1",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L2",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L3",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "R2"
+            }
+          ]
+        },
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "unmatched"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-MAT-05",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "note_lv": "Adversariālais near-synonym: labā puses tekstu sinonims nav id, tāpēc tas nepasaka.",
+        "spec": {
+          "kind": "matching",
+          "left_items": [
+            {
+              "id": "L1"
+            },
+            {
+              "id": "L2"
+            }
+          ],
+          "right_items": [
+            {
+              "id": "R1"
+            },
+            {
+              "id": "R2"
+            }
+          ],
+          "correct_pairs": {
+            "L1": "R1",
+            "L2": "R2"
+          },
+          "rubric": [
+            {
+              "criterion_id": "C1_PAIR_L1",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            },
+            {
+              "criterion_id": "C1_PAIR_L2",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "pairs": [
+            {
+              "left_id": "L1",
+              "right_id": "R1"
+            },
+            {
+              "left_id": "L2",
+              "right_id": "Precīza gala tilpuma pagatavošana"
+            }
+          ]
+        },
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "unknown_right"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        }
+      }
+    ],
+    "sequence_vectors": [
+      {
+        "id": "NV-N19-SEQ-01",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "note_lv": "Pieņemamais nākamais solis.",
+        "spec": {
+          "kind": "sequence",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": {
+            "S3": {
+              "signature": "MC-3C-01"
+            },
+            "S6": {
+              "signature": "MC-3C-01"
+            }
+          },
+          "default_signature": "MC-3C-01",
+          "rubric": [
+            {
+              "criterion_id": "C1_SEQ",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "next_step_id": "S5"
+        },
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "status": "accepted",
+          "signatures": []
+        }
+      },
+      {
+        "id": "NV-N19-SEQ-02",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "note_lv": "Deklarētais klucējošais solis atgriež savu paraksturu.",
+        "spec": {
+          "kind": "sequence",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": {
+            "S3": {
+              "signature": "MC-3C-01"
+            },
+            "S6": {
+              "signature": "MC-3C-01"
+            }
+          },
+          "default_signature": "MC-3C-01",
+          "rubric": [
+            {
+              "criterion_id": "C1_SEQ",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "next_step_id": "S6"
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "status": "distractor",
+          "signatures": [
+            "MC-3C-01"
+          ]
+        }
+      },
+      {
+        "id": "NV-N19-SEQ-03",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "note_lv": "Nezināms id atgriež uzveduma noklusējuma paraksturu.",
+        "spec": {
+          "kind": "sequence",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": {
+            "S3": {
+              "signature": "MC-3C-01"
+            },
+            "S6": {
+              "signature": "MC-3C-01"
+            }
+          },
+          "default_signature": "MC-3C-01",
+          "rubric": [
+            {
+              "criterion_id": "C1_SEQ",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 1.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "next_step_id": "Uzpilda līdz atzīmei"
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "status": "unknown",
+          "signatures": [
+            "MC-3C-01"
+          ]
+        }
+      }
+    ],
+    "self_assessment_vectors": [
+      {
+        "id": "NV-N19-SELF-01",
+        "kind": "self_assessment",
+        "card_id": "MC-EX06",
+        "note_lv": "Pašnovērtējuma teksts paliek pending: nav verdikta, nav parakstura, nav punktu.",
+        "spec": {
+          "kind": "self_assessment",
+          "rubric": [
+            {
+              "criterion_id": "C1_SELF",
+              "grading": "self",
+              "engine_binding": "self-assessed",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "text": "Gala tilpumu nosaka atzīme, tāpēc ūdens porciju neizmēra, bet papildina līdz atzīmei."
+        },
+        "expected": {
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE",
+          "pending_points": 2.0,
+          "signatures": []
+        }
+      },
+      {
+        "id": "NV-N19-SELF-02",
+        "kind": "self_assessment",
+        "card_id": "MC-EX06",
+        "note_lv": "Tukša pašnovērtējuma atbilde dod 0 punktus un BLANK_RESPONSE.",
+        "spec": {
+          "kind": "self_assessment",
+          "rubric": [
+            {
+              "criterion_id": "C1_SELF",
+              "grading": "self",
+              "engine_binding": "self-assessed",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "card",
+        "submission": {
+          "text": "   "
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "BLANK_RESPONSE",
+          "pending_points": 0.0,
+          "signatures": []
+        }
+      }
+    ],
+    "scratch": {
+      "ordering": {
+        "id": "NV-N19-SCRATCH-ORD",
+        "note_lv": "Skratcha negativais: brīvās kārtības grupas locekli nevar būt ārpus grupas secības brīvī.",
+        "spec": {
+          "kind": "ordering",
+          "item_ids": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "correct_order": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "free_groups": [
+            [
+              "S1",
+              "S2"
+            ]
+          ],
+          "rubric": [
+            {
+              "criterion_id": "C1_ORDER",
+              "grading": "auto",
+              "engine_binding": "N19-method",
+              "points": 2.0
+            }
+          ]
+        },
+        "spec_source": "self_contained",
+        "submission": {
+          "order": [
+            "S3",
+            "S2",
+            "S1"
+          ]
+        },
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            0,
+            2
+          ],
+          "signatures": []
+        }
+      }
+    }
+  },
+  "budgets": {
+    "method_cards_island_bytes": {
+      "ceiling": 131072,
+      "note_lv": "Kartīšu salas lielums. Izmērīts N19 korpusā."
+    },
+    "method_engine_contract_bytes": {
+      "ceiling": 131072,
+      "note_lv": "Līguma salas lielums. Izmērīts N19 korpusā."
+    },
+    "method_engine_js_bytes": {
+      "ceiling": 40960,
+      "note_lv": "Runtime dzinēja moduļa lielums. Izmērīts N19 korpusā."
+    },
+    "runtime_js_inlining": {
+      "rule_lv": "N19 runtime modulis netiek inlinēts output/simulator.html, jo N17 laikā Section 1.3 runtime-JS griestu bija tikai 83 B atvērtas. Modulis tiek pārbaudīts no src/ un N31 tas jāinline vai jāpārlādē vai jāpārbudgetē.",
+      "note_lv": "Šis ir ieraksts, nevis klusējums: griestu izmaiņa netiek veikta klusējot."
+    }
+  },
+  "handoff_contract": {
+    "to_N22": "Input semantics for the ordering strip, the pair matcher and the next-step selector. Every component submits ids only; a component never submits free text into these three engines.",
+    "to_N23": "The verdict record envelope, the diagnostic statuses, the pending semantics for self-assessed items and the signature mapping. N23 aggregates points from awarded_criteria and surfaces pending criteria in its own pending class.",
+    "to_N28": "A wrong ordering or matching verdict carries diagnostics.remediation entries that point at the card id, the step id and the step's misconception note; the remediation link resolves to that step note.",
+    "to_N20": "The card id list, the card's chain id and the family id per card. A method practice instance declares card_id and is graded by the same engines."
+  }
+}

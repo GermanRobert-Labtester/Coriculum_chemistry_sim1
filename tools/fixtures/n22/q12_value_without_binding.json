@@ -1,0 +1,27 @@
+{
+  "fixture_id": "N22-FX-Q12-VALUE-WITHOUT-BINDING",
+  "type_id": "Q12",
+  "claim": "A read declaration with x and y but no figure binding is incomplete and the missing list names the binding.",
+  "bank_question_id": "COL1-2-2D-B-01",
+  "payload": {
+    "kind": "graph",
+    "variant": "Q12_read",
+    "read": {
+      "x": "30",
+      "y": "75"
+    }
+  },
+  "expected": {
+    "status": "incomplete",
+    "missing_field_ids": [
+      "read.figure_binding"
+    ],
+    "name_contains": [
+      "piesaiste"
+    ],
+    "name_terms": [
+      "input.missing.binding"
+    ],
+    "error_ids": []
+  }
+}

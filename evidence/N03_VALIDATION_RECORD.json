@@ -1,0 +1,995 @@
+{
+  "artifact": "conventions-validation",
+  "chain_results": [
+    {
+      "composed_unit": "g",
+      "computed_factor": "0.001",
+      "computed_offset": "0",
+      "declared_factor": "0.001",
+      "declared_offset": "0",
+      "from": "mg",
+      "id": "mass_mg_to_g",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "g"
+    },
+    {
+      "composed_unit": "L",
+      "computed_factor": "0.001",
+      "computed_offset": "0",
+      "declared_factor": "0.001",
+      "declared_offset": "0",
+      "from": "mL",
+      "id": "volume_ml_to_l",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "L"
+    },
+    {
+      "composed_unit": "g/L",
+      "computed_factor": "1",
+      "computed_offset": "0",
+      "declared_factor": "1",
+      "declared_offset": "0",
+      "from": "mg/mL",
+      "id": "concentration_mg_per_ml_to_g_per_l",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "g/L"
+    },
+    {
+      "composed_unit": "g/mL",
+      "computed_factor": "0.000001",
+      "computed_offset": "0",
+      "declared_factor": "0.000001",
+      "declared_offset": "0",
+      "from": "mg/L",
+      "id": "concentration_mg_per_l_to_g_per_ml",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "g/mL"
+    },
+    {
+      "composed_unit": "kg/L",
+      "computed_factor": "1",
+      "computed_offset": "0",
+      "declared_factor": "1",
+      "declared_offset": "0",
+      "from": "g/mL",
+      "id": "concentration_g_per_ml_to_kg_per_l",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "kg/L"
+    },
+    {
+      "composed_unit": "g/L",
+      "computed_factor": "10",
+      "computed_offset": "0",
+      "declared_factor": "10",
+      "declared_offset": "0",
+      "from": "% (m/V)",
+      "id": "percent_m_v_to_g_per_l",
+      "kind": "multiplicative",
+      "status": "PASS",
+      "to": "g/L"
+    },
+    {
+      "composed_unit": "K",
+      "computed_factor": "1",
+      "computed_offset": "273.15",
+      "declared_factor": "1",
+      "declared_offset": "273.15",
+      "from": "°C",
+      "id": "temperature_c_to_k",
+      "kind": "affine",
+      "status": "PASS",
+      "to": "K"
+    },
+    {
+      "from": "mol/L",
+      "id": "molarity_to_mass_concentration",
+      "kind": "symbolic",
+      "status": "PASS",
+      "to": "g/L"
+    },
+    {
+      "from": "g",
+      "id": "density_mass_to_volume",
+      "kind": "symbolic",
+      "status": "PASS",
+      "to": "mL"
+    }
+  ],
+  "checks": {
+    "atomic_masses": {
+      "elements": 10
+    },
+    "chains": {
+      "count": 9,
+      "failed": 0,
+      "numeric": 7,
+      "symbolic": 2
+    },
+    "citations": {
+      "defined": 79,
+      "failed": 0,
+      "used": 79
+    },
+    "compounds": {
+      "compounds": 23
+    },
+    "constants": {
+      "constants": 10
+    },
+    "conversions": {
+      "bidirectional": 34,
+      "blocked": 2,
+      "count": 36,
+      "errors": 0,
+      "one_way": 2
+    },
+    "registry": {
+      "entries": 22,
+      "status": "PASS",
+      "status_counts": {
+        "documented-and-accepted": 5,
+        "open-with-owner": 2,
+        "resolved-by-task": 15
+      }
+    },
+    "tolerances": {
+      "classes": 18,
+      "rounding_examples": 3
+    }
+  },
+  "citation_results": [
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-PROG-PAPER",
+      "literal": "darbs tiek rakstīts uz papīra",
+      "source_class": "official-programme",
+      "source_id": "PROGRAMME-EXTRACT",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-PROG-180",
+      "literal": "180 minūtes",
+      "source_class": "official-programme",
+      "source_id": "PROGRAMME-EXTRACT",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-PROG-TOPICS",
+      "literal": null,
+      "source_class": "official-programme",
+      "source_id": "PROGRAMME-EXTRACT",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-PROG-SIGFIG",
+      "literal": "zīmīgo ciparu",
+      "source_class": "official-programme",
+      "source_id": "PROGRAMME-EXTRACT",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-PROG-MGL",
+      "literal": "mg <=> g",
+      "source_class": "official-programme",
+      "source_id": "PROGRAMME-EXTRACT",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ex-stehiometrija-1",
+      "failures": [],
+      "id": "CIT-C1-MOLAR-VOL",
+      "literal": "V0 = 22,414 L/mol (0 °C, 101,325 kPa)",
+      "source_class": "master",
+      "source_id": "C1-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ex-stehiometrija-1",
+      "failures": [],
+      "id": "CIT-C1-AL",
+      "literal": "M(Al) = 26,982 g/mol",
+      "source_class": "master",
+      "source_id": "C1-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "formulu-lapa-table",
+      "failures": [],
+      "id": "CIT-C1-DENSITY",
+      "literal": "1,25 g/mL",
+      "source_class": "master",
+      "source_id": "C1-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "formulu-lapa-table",
+      "failures": [],
+      "id": "CIT-C1-KW",
+      "literal": "1,0 · 10−14",
+      "source_class": "master",
+      "source_id": "C1-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-C1-SIGFIG-ROUND",
+      "literal": "Noapaļot tikai atbildē",
+      "source_class": "master",
+      "source_id": "C1-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch5-menisks-un-paralakse",
+      "failures": [],
+      "id": "CIT-C2-MENISCUS",
+      "literal": "meniska zemāko daļu acu līmenī",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "glossary-menisks",
+      "failures": [],
+      "id": "CIT-C2-MENISCUS-DARK",
+      "literal": "tumšiem šķīdumiem — augšējo malu",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch-5",
+      "failures": [],
+      "id": "CIT-C2-BURETTE",
+      "literal": "izlietais tilpums ir beigu nolasījums mīnus sākuma nolasījums",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch-4",
+      "failures": [],
+      "id": "CIT-C2-BURETTE-READ",
+      "literal": "biretei iedaļa 0,1 mL, nolasījums ±0,05 mL",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch4-trauku-pielaujama-kluda-mertrauku-salidzinajums",
+      "failures": [],
+      "id": "CIT-C2-TOLERANCE",
+      "literal": "0,5 % no nominālā tilpuma",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch8-divas-darbibu-atskiribas",
+      "failures": [],
+      "id": "CIT-C2-SIGFIG",
+      "literal": "Rezultātam ir tik zīmīgo ciparu",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch8-ka-noapalot-lidz-zimigajiem-cipariem",
+      "failures": [],
+      "id": "CIT-C2-ROUND",
+      "literal": "noapaļot tikai gala rezultātu",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch-2",
+      "failures": [],
+      "id": "CIT-C2-UNITS",
+      "literal": "1 L = 1000 mL = 1000 cm³ = 1 dm³",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch-2",
+      "failures": [],
+      "id": "CIT-C2-TEMP",
+      "literal": "T/K = t/°C + 273,15",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch12-density-units",
+      "failures": [],
+      "id": "CIT-C2-DENSITY-UNITS",
+      "literal": "1 g/mL = 1000 kg/m³",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch12-blivums-atkariba-no-masas-dalas",
+      "failures": [],
+      "id": "CIT-C2-DENSITY-REL",
+      "literal": "ρ = 0,0073w + 0,9979",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": null,
+      "failures": [],
+      "id": "CIT-C2-WATER",
+      "literal": "M(H₂O) = 18,02 g/mol",
+      "source_class": "master",
+      "source_id": "C2-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-MOLMASS",
+      "literal": "M(Na2SO4) = 2·22,990 + 32,06 + 4·15,999 = 142,04 g/mol",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-ATOMS",
+      "literal": "M(KOH) = 39,098 + 15,999 + 1,008 = 56,105",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-AVOGADRO",
+      "literal": "6,02214076",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-MOLMASS-TABLE",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-CACL2",
+      "literal": "40,078",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-I",
+      "literal": "126,904",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-CL",
+      "literal": "35,45",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-KOH",
+      "literal": "56,106",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n4",
+      "failures": [],
+      "id": "CIT-C3-H2O2",
+      "literal": "34,01",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "procentu-bazes-title",
+      "failures": [],
+      "id": "CIT-C3-PERCENT",
+      "literal": "Kursā aprēķini notiek ar masas daļu",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n5",
+      "failures": [],
+      "id": "CIT-C3-PERCENT-MV",
+      "literal": "m/V (pieņemts)",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n5",
+      "failures": [],
+      "id": "CIT-C3-BASES",
+      "literal": "Koncentrāciju veidi",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n6",
+      "failures": [],
+      "id": "CIT-C3-W",
+      "literal": "w = m(B)",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7",
+      "failures": [],
+      "id": "CIT-C3-C",
+      "literal": "c = n/V",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n8",
+      "failures": [],
+      "id": "CIT-C3-GAMMA",
+      "literal": "γ = m/V",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "fig-unit_ladder",
+      "failures": [],
+      "id": "CIT-C3-UNIT-LADDER",
+      "literal": "mL → L: dala ar 1000",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n8",
+      "failures": [],
+      "id": "CIT-C3-ACETYL",
+      "literal": "179,2",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n8",
+      "failures": [],
+      "id": "CIT-C3-SUCROSE",
+      "literal": "342,3",
+      "source_class": "master",
+      "source_id": "C3-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "sign-ledger",
+      "failures": [],
+      "id": "CIT-C4-SIGN",
+      "literal": "Q = ΔU + A",
+      "source_class": "master",
+      "source_id": "C4-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "sign-ledger",
+      "failures": [],
+      "id": "CIT-C4-IUPAC",
+      "literal": "ΔU = q + w",
+      "source_class": "master",
+      "source_id": "C4-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "sec-ch4-16",
+      "failures": [],
+      "id": "CIT-C4-ENTHALPY",
+      "literal": "H = U + pV",
+      "source_class": "master",
+      "source_id": "C4-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "table-28",
+      "failures": [],
+      "id": "CIT-C4-GIBBS",
+      "literal": "ΔG = ΔH − TΔS",
+      "source_class": "master",
+      "source_id": "C4-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "def-K10",
+      "failures": [],
+      "id": "CIT-C5-K10",
+      "literal": "23 J/mol",
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "def-K10",
+      "failures": [],
+      "id": "CIT-C5-K10-OPEN",
+      "literal": "docētāja apstiprinājums nav saņemts",
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "def-K17",
+      "failures": [],
+      "id": "CIT-C5-K17",
+      "literal": "H₂O₂ + HI",
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch2",
+      "failures": [],
+      "id": "CIT-C6-E-CONV",
+      "literal": "E° – standarts (pH 0); E – faktiskais; E°′ – bioloģiskais (pH 7)",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch2",
+      "failures": [],
+      "id": "CIT-C6-EPRIME",
+      "literal": "E°′ = E° − 0,0592·(m/n)·pH",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch3",
+      "failures": [],
+      "id": "CIT-C6-NERNST",
+      "literal": "R = 8,314 J/(mol·K), T = 298,15 K, F = 96 485 C/mol",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "l25-worked",
+      "failures": [],
+      "id": "CIT-C6-ENDPOINT",
+      "literal": "beigu punktu, nevis ekvivalences punktu",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "bench-cap",
+      "failures": [],
+      "id": "CIT-C6-ENDPOINT-FIRST",
+      "literal": "Pirmā pastāvīgā rozā ir galapunkts",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "bench-title",
+      "failures": [],
+      "id": "CIT-C6-MENISCUS",
+      "literal": "menisks, augšējā mala",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "l25-worked",
+      "failures": [],
+      "id": "CIT-C6-BURETTE",
+      "literal": "Biretes nolasījumu pieraksta tieši (12,35 mL)",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "l25-worked",
+      "failures": [],
+      "id": "CIT-C6-CONCORDANCE",
+      "literal": "0,10 mL",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "numeric",
+      "failures": [],
+      "id": "CIT-C6-FE",
+      "literal": "55,845",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "l25-worked",
+      "failures": [],
+      "id": "CIT-C6-FESO4",
+      "literal": "151,91",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "l25-worked",
+      "failures": [],
+      "id": "CIT-C6-FESO4-HYDRATE",
+      "literal": "278,02",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "numeric",
+      "failures": [],
+      "id": "CIT-C6-KMNO4",
+      "literal": "158,034",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "numeric",
+      "failures": [],
+      "id": "CIT-C6-H2O2",
+      "literal": "34,0147",
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch2",
+      "failures": [],
+      "id": "CIT-C6-POTENTIALS",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch2",
+      "failures": [],
+      "id": "CIT-C6-EPRIME-VALUES",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C6-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7-2",
+      "failures": [],
+      "id": "CIT-C7-440",
+      "literal": "kursa iestatījums 440 nm",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7-2",
+      "failures": [],
+      "id": "CIT-C7-444",
+      "literal": "444 nm",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7-2",
+      "failures": [],
+      "id": "CIT-C7-FLAT",
+      "literal": "ierobežots secinājums",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n6-1",
+      "failures": [],
+      "id": "CIT-C7-PATH",
+      "literal": "Optiskais ceļš (l = 1 cm)",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n6-1",
+      "failures": [],
+      "id": "CIT-C7-CUVETTE",
+      "literal": "Standarta kivete ir 10 mm",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n8-3",
+      "failures": [],
+      "id": "CIT-C7-CALIB",
+      "literal": "Taisne caur nulli vai brīvā regresija",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n1-2",
+      "failures": [],
+      "id": "CIT-C7-NOEXTRAP",
+      "literal": "Nevar izmantot ārpus kalibrētā diapazona",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7-5",
+      "failures": [],
+      "id": "CIT-C7-MATRIX",
+      "literal": "vienā un tajā pašā šķīdinātājā un pH",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n7",
+      "failures": [],
+      "id": "CIT-C7-INTERCEPT",
+      "literal": "krustpunkts +0,0017 A",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n10-7",
+      "failures": [],
+      "id": "CIT-C7-SLOPE",
+      "literal": "30,39",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n10-7",
+      "failures": [],
+      "id": "CIT-C7-RIBOFLAVIN",
+      "literal": "376,36",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "n2-4",
+      "failures": [],
+      "id": "CIT-C7-H",
+      "literal": "6,626",
+      "source_class": "master",
+      "source_id": "C7-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "ch6",
+      "failures": [],
+      "id": "CIT-C5-RATE-DEF",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "der-order-integrated",
+      "failures": [],
+      "id": "CIT-C5-INTEGRATED",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "der-order-integrated",
+      "failures": [],
+      "id": "CIT-C5-HALFLIFE",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "dose-thalf",
+      "failures": [],
+      "id": "CIT-C5-KUNITS",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    },
+    {
+      "anchor": "fig-integrated",
+      "failures": [],
+      "id": "CIT-C5-GRAPH",
+      "literal": null,
+      "source_class": "master",
+      "source_id": "C5-MASTER",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "atomic_masses": 10,
+    "chains": 9,
+    "citations": 79,
+    "compounds": 23,
+    "conflict_c": 10,
+    "conflict_v": 12,
+    "constants": 10,
+    "conversions": 36,
+    "derived_vectors": 7,
+    "observations": 4,
+    "tolerance_classes": 18
+  },
+  "errors": [],
+  "island": "data/conventions.json",
+  "island_bytes": 148609,
+  "island_sha256": "1ae95d0ed47eec057cce5fe2df9039e2599d453d9f5da2063ac9f2c8bcc21dbd",
+  "registry_results": {
+    "c_count": 10,
+    "digest": "27cd592043e257698fa57d263c5a2a31345fe271b4104dcbe7ed539ebc86537a",
+    "entry_count": 22,
+    "errors": [],
+    "observation_count": 4,
+    "roadmap_claims": {
+      "V-01": [
+        "N01"
+      ],
+      "V-02": [
+        "N03",
+        "N11",
+        "N17"
+      ],
+      "V-03": [
+        "N03",
+        "N10"
+      ],
+      "V-04": [
+        "N17"
+      ],
+      "V-05": [
+        "N03",
+        "N15"
+      ],
+      "V-06": [
+        "N13"
+      ],
+      "V-07": [
+        "N15"
+      ],
+      "V-08": [
+        "N13",
+        "N09"
+      ],
+      "V-09": [
+        "N25",
+        "N26"
+      ],
+      "V-10": [
+        "N06",
+        "N31"
+      ],
+      "V-11": [
+        "N31"
+      ],
+      "V-12": [
+        "N34"
+      ]
+    },
+    "roadmap_tasks": 40,
+    "status_counts": {
+      "documented-and-accepted": 5,
+      "open-with-owner": 2,
+      "resolved-by-task": 15
+    },
+    "v_count": 12
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N03",
+  "vector_results": [
+    {
+      "consumer": "N05",
+      "id": "VEC-CONV-MGML-GL",
+      "kind": "conversion",
+      "resolved": "1",
+      "source_ref": "unit_system.chains[id=concentration_mg_per_ml_to_g_per_l].factor",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N05",
+      "id": "VEC-CONV-MGL-GML",
+      "kind": "conversion",
+      "resolved": "0.000001",
+      "source_ref": "unit_system.chains[id=concentration_mg_per_l_to_g_per_ml].factor",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N11",
+      "id": "VEC-TOL-BURETTE",
+      "kind": "tolerance",
+      "resolved": "0.05",
+      "source_ref": "tolerances.quantity_classes[id=burette_volume].absolute.value",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N13",
+      "id": "VEC-TOL-POTENTIAL",
+      "kind": "tolerance",
+      "resolved": "0.01",
+      "source_ref": "tolerances.quantity_classes[id=potential].absolute.value",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N10",
+      "id": "VEC-POT-EPRIME",
+      "kind": "symbol",
+      "resolved": "E°′",
+      "source_ref": "potentials.symbols[id=E_prime].symbol",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N10",
+      "id": "VEC-PCT-DEFAULT",
+      "kind": "basis",
+      "resolved": "m_m",
+      "source_ref": "concentration_bases.default_for_course",
+      "status": "PASS"
+    },
+    {
+      "consumer": "N17",
+      "id": "VEC-ROUND-RULE",
+      "kind": "rounding",
+      "resolved": "half_up",
+      "source_ref": "rounding.rule",
+      "status": "PASS"
+    }
+  ]
+}

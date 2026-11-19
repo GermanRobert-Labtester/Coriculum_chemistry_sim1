@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "owner": "N23",
+  "status": "PASS",
+  "claim": "The same terminal record + bindings + context yields byte-identical canonical graded records twice in-process and in a fresh Node process, and the canonical text survives a JSON round-trip.",
+  "reason": null,
+  "form_id": "FX-N23-MIXED",
+  "in_process_1": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+  "in_process_2": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+  "fresh_process": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+  "round_trip_identical": true,
+  "canonical_sha256": "a2969a156f5588d171cb209601013f619cfab47bfc4c2f7699bd493f8bb15461",
+  "checks": {
+    "in_process_identical": true,
+    "round_trip_identical": true,
+    "canonical_key_order_stable": true,
+    "fresh_process_available": true,
+    "fresh_process_identical": true,
+    "fresh_process_canonical_identical": true
+  },
+  "failed": [],
+  "fresh_process_error": null,
+  "driver": {
+    "path": "/tmp/opencode/n23-g3/n23_fresh_grade_driver.js",
+    "payload": "/tmp/opencode/n23-g3/n23_fresh_grade_payload.json"
+  }
+}

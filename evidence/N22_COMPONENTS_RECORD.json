@@ -1,0 +1,1808 @@
+{
+  "schema_version": 1,
+  "owner": "N22-B",
+  "kind": "components",
+  "api_version": "n22-components-1",
+  "module": {
+    "path": "src/compiled/inputs/components.js",
+    "source_module": "src/inputs/components.ts",
+    "bytes": 123374,
+    "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64",
+    "digest16": "c580a0032358546a"
+  },
+  "phase": "phase-2-island-bound",
+  "registry": {
+    "source": "data/response_types.json",
+    "island_status": "frozen-contract-for-N23-N24-N30-N33",
+    "island_owner": "N22",
+    "island_bytes": 48837,
+    "island_sha256_16": "cef12867f3504481",
+    "module": "src/compiled/inputs/registry.js",
+    "module_loaded": true,
+    "completion_authority": "SimInputsRegistry.completion (component fallback recorded per verdict)",
+    "note": "The fixtures run against the shipped registry island; there is no private contract fallback."
+  },
+  "terms": {
+    "island": "data/terms.json",
+    "key_count": 451,
+    "island_sha256_16": "fcdea7660c9b147a"
+  },
+  "graph_dependency": {
+    "modules": [
+      "src/graph-scoring-engine.js",
+      "src/graph-capture.js"
+    ],
+    "capture_context_used_for_q11": "CAP-T67-CAL-PRACTICE"
+  },
+  "fixtures_used": {
+    "Q03": "The shipped Q03 registry field declares source instance.payload.template_options, and no bank instance carries it (see observations). The scratch instance adds the three authored template options so the radio group can be exercised.",
+    "Q11": "Parity draws a two-point line with the scratch q11_two_point instance because the shipped Q11 instance has no capture context whose axes cover its y span (see observations).",
+    "Q17": "The shipped Q17 instance has no payload.structure_parts, so the palette is absent there; the scratch q17_structure instance carries two structure parts so select-and-place can be exercised."
+  },
+  "binding_summary": {
+    "Q01": {
+      "contract_fields": 2,
+      "rendered_fields": 2,
+      "field_ids": [
+        "m_g",
+        "unit"
+      ]
+    },
+    "Q02": {
+      "contract_fields": 2,
+      "rendered_fields": 3,
+      "field_ids": [
+        "c",
+        "S1",
+        "S2"
+      ]
+    },
+    "Q03": {
+      "contract_fields": 3,
+      "rendered_fields": 5,
+      "field_ids": [
+        "choice",
+        "fill_S1",
+        "fill_S2",
+        "fill_S3",
+        "conserved"
+      ]
+    },
+    "Q04": {
+      "contract_fields": 1,
+      "rendered_fields": 3,
+      "field_ids": [
+        "coef_0",
+        "coef_1",
+        "coef_2"
+      ]
+    },
+    "Q05": {
+      "contract_fields": 1,
+      "rendered_fields": 4,
+      "field_ids": [
+        "row_S1",
+        "row_S2",
+        "row_S3",
+        "row_S4"
+      ]
+    },
+    "Q06": {
+      "contract_fields": 1,
+      "rendered_fields": 3,
+      "field_ids": [
+        "pair_L1",
+        "pair_L2",
+        "pair_L3"
+      ]
+    },
+    "Q07": {
+      "contract_fields": 1,
+      "rendered_fields": 4,
+      "field_ids": [
+        "opt_HET",
+        "opt_SUSP",
+        "opt_HOM",
+        "opt_KOL"
+      ]
+    },
+    "Q08": {
+      "contract_fields": 2,
+      "rendered_fields": 5,
+      "field_ids": [
+        "slot_1",
+        "slot_2",
+        "slot_3",
+        "slot_4",
+        "explanation"
+      ]
+    },
+    "Q09": {
+      "contract_fields": 1,
+      "rendered_fields": 1,
+      "field_ids": [
+        "n_mmol"
+      ]
+    },
+    "Q10": {
+      "contract_fields": 1,
+      "rendered_fields": 1,
+      "field_ids": [
+        "V_del"
+      ]
+    },
+    "Q11": {
+      "contract_fields": 2,
+      "rendered_fields": 2,
+      "field_ids": [
+        "record",
+        "draw_payload"
+      ]
+    },
+    "Q12": {
+      "contract_fields": 3,
+      "rendered_fields": 3,
+      "field_ids": [
+        "read_x",
+        "read_y",
+        "figure_binding"
+      ]
+    },
+    "Q13": {
+      "contract_fields": 4,
+      "rendered_fields": 7,
+      "field_ids": [
+        "coef_0",
+        "coef_1",
+        "coef_2",
+        "coef_3",
+        "located",
+        "replacement",
+        "reason"
+      ]
+    },
+    "Q14": {
+      "contract_fields": 2,
+      "rendered_fields": 5,
+      "field_ids": [
+        "opt_T1",
+        "opt_T2",
+        "opt_T3",
+        "opt_T4",
+        "justification"
+      ]
+    },
+    "Q15": {
+      "contract_fields": 1,
+      "rendered_fields": 1,
+      "field_ids": [
+        "text"
+      ]
+    },
+    "Q16": {
+      "contract_fields": 1,
+      "rendered_fields": 1,
+      "field_ids": [
+        "text"
+      ]
+    },
+    "Q17": {
+      "contract_fields": 2,
+      "rendered_fields": 3,
+      "field_ids": [
+        "pair_S1",
+        "pair_S2",
+        "pair_S3"
+      ]
+    },
+    "Q18": {
+      "contract_fields": 2,
+      "rendered_fields": 5,
+      "field_ids": [
+        "opt_S1",
+        "opt_S2",
+        "opt_S3",
+        "opt_S4",
+        "justification"
+      ]
+    }
+  },
+  "observations": [
+    {
+      "id": "N22B-OBS-01",
+      "topic": "Q03 data gap",
+      "observed": "data/response_types.json Q03 declares fields[0].source = instance.payload.template_options (radio group) and fields[2].source = static (conserved), but no data/bank instance carries payload.template_options.",
+      "component_behaviour": "render(Q03, ...) throws E_INPUTS_CONTRACT_VIOLATION naming field \"choice\" instead of rendering an empty radio group.",
+      "needed": "N22-A: either declare the template options in the registry (a contract-level option_source) or add payload.template_options to the Q03 instances; N24 needs one of the two before the Q03 widget can be assembled."
+    },
+    {
+      "id": "N22B-OBS-02",
+      "topic": "Q11 capture context coverage",
+      "observed": "No registry entry declares a capture context or figure for Q11/Q12, and the shipped N18 capture contexts (capture_contract.capture_contexts) have y_max <= 0,55 while the bank Q11 instance COL1-2-2D-A-01 has y values 0,30..0,74.",
+      "component_behaviour": "The capture context is supplied by the assembler through initialState(..., {capture_context_id}); without one the Q11 draw path fails with E_INPUTS_CONTRACT_VIOLATION naming draw_payload.",
+      "needed": "N22-A/N24: declare (or bind at assembly) a capture context whose evaluated axes cover the instance span."
+    },
+    {
+      "id": "N22B-OBS-03",
+      "topic": "Q12 figure binding granularity",
+      "observed": "Q12 figure_binding uses option_source sim-figures, so the select offers every figure in the island (45 options) for a single declared reading.",
+      "component_behaviour": "Options are named by each figure's title_key; the binding stays a required field (the A.1.2 corner case: a read with values but no binding is incomplete).",
+      "needed": "N22-A/N24: bind the field to the instance's own figure list rather than the whole island."
+    },
+    {
+      "id": "N22B-OBS-04",
+      "topic": "Q14/Q18 per-option naming",
+      "observed": "Q14 and Q18 option fields both use label_key input.selection.selected (\"Izvēlētās atbildes\"), so every checkbox in the group resolves to the same accessible name; Q07 has a per-option pattern (input.q07.option_cell with {option}).",
+      "component_behaviour": "Each checkbox is its own field with its own id (opt_<option_id>) and the option text in visible_label, but the aria_name is the group phrase repeated.",
+      "needed": "N22-A: give Q14/Q18 a per-option pattern (for example input.selection.option_cell with {option}); N33's live pass will otherwise hear four identically named checkboxes."
+    },
+    {
+      "id": "N22B-OBS-05",
+      "topic": "per-field state phrases",
+      "observed": "The term bank has response-level state phrases (input.state.complete/incomplete/invalid/pending_grading) and per-field missing messages (input.missing.*) but no per-field \"filled\" phrase.",
+      "component_behaviour": "A field's state_text is the completion missing message when empty, the Latvian error message when in error, the pending phrase while a self-assessed answer waits, and the stored text itself once filled. No colour-only state and no invented Latvian."
+    }
+  ],
+  "checks": {
+    "render_q01": {
+      "status": "PASS",
+      "claim": "The Q01 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q01",
+      "renderer_key": "renderer-numeric",
+      "instance": "COL1-2-2B-A-01",
+      "field_ids": [
+        "m_g",
+        "unit"
+      ],
+      "aria_names": [
+        "Skaitliskā atbilde: m (g)",
+        "Mērvienības izvēle: g"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "0ff2bbc921f205d6",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q02": {
+      "status": "PASS",
+      "claim": "The Q02 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q02",
+      "renderer_key": "renderer-numeric-multistep",
+      "instance": "COL1-3-3A-A-01",
+      "field_ids": [
+        "c",
+        "S1",
+        "S2"
+      ],
+      "aria_names": [
+        "Skaitliskā atbilde: c (mol/L)",
+        "Starpsoļa vērtība: n(NaCl) = m/M (mol)",
+        "Starpsoļa vērtība: c = n/V (mol/L)"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "9e920d577ebd0f66",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q03": {
+      "status": "PASS",
+      "claim": "The Q03 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q03",
+      "renderer_key": "renderer-method-formula",
+      "instance": "N22B-SCRATCH-Q03-01",
+      "field_ids": [
+        "choice",
+        "fill_S1",
+        "fill_S2",
+        "fill_S3",
+        "conserved"
+      ],
+      "aria_names": [
+        "Formulas veidne",
+        "Pildāmais lauks: Kā izteikt c, ja γ ir g/L un M ir g/mol?",
+        "Pildāmais lauks: Kā izteikt w (m/m), ja γ ir g/L un ρ ir g/mL?",
+        "Pildāmais lauks: Kāpēc ρ ir vajadzīgs?",
+        "Saglabātais lielums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "92fb1ddb8247a339",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q04": {
+      "status": "PASS",
+      "claim": "The Q04 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q04",
+      "renderer_key": "renderer-method-coefficients",
+      "instance": "COL1-1-1C-B-01",
+      "field_ids": [
+        "coef_0",
+        "coef_1",
+        "coef_2"
+      ],
+      "aria_names": [
+        "Koeficients priekš Al",
+        "Koeficients priekš O2",
+        "Koeficients priekš Al2O3"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "08efcc0476164b73",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q05": {
+      "status": "PASS",
+      "claim": "The Q05 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q05",
+      "renderer_key": "renderer-method-half-reaction",
+      "instance": "COL1-6-6B-A-01",
+      "field_ids": [
+        "row_S1",
+        "row_S2",
+        "row_S3",
+        "row_S4"
+      ],
+      "aria_names": [
+        "Pusreakcijas rinda: Redukcijas pusreakcija",
+        "Pusreakcijas rinda: Oksidācijas pusreakcija",
+        "Pusreakcijas rinda: Kopējais jonu vienādojums",
+        "Pusreakcijas rinda: Elektronu bilance"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "9d3e9ba07765b49b",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q06": {
+      "status": "PASS",
+      "claim": "The Q06 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "pairs_are_select_based": true,
+        "option_count_is_right_items": true
+      },
+      "failed": [],
+      "type_id": "Q06",
+      "renderer_key": "renderer-matching",
+      "instance": "COL1-2-2A-B-01",
+      "field_ids": [
+        "pair_L1",
+        "pair_L2",
+        "pair_L3"
+      ],
+      "aria_names": [
+        "Pāris priekš Birete",
+        "Pāris priekš Mērcilindrs",
+        "Pāris priekš Vārglāze"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "362fa5a91e0f645d",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q07": {
+      "status": "PASS",
+      "claim": "The Q07 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q07",
+      "renderer_key": "renderer-option-classification",
+      "instance": "COL1-1-1A-A-01",
+      "field_ids": [
+        "opt_HET",
+        "opt_SUSP",
+        "opt_HOM",
+        "opt_KOL"
+      ],
+      "aria_names": [
+        "Apgalvojuma atzīme: Heterogēns maisījums",
+        "Apgalvojuma atzīme: Suspensija: cietas daļiņas šķidrumā",
+        "Apgalvojuma atzīme: Homogēns šķīdums",
+        "Apgalvojuma atzīme: Koloidāls šķīdums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "ca2e5b6c116b1ea0",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q08": {
+      "status": "PASS",
+      "claim": "The Q08 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "ordering_is_select_based": true,
+        "position_fields_offer_items": true
+      },
+      "failed": [],
+      "type_id": "Q08",
+      "renderer_key": "renderer-ordering",
+      "instance": "COL1-2-2A-A-01",
+      "field_ids": [
+        "slot_1",
+        "slot_2",
+        "slot_3",
+        "slot_4",
+        "explanation"
+      ],
+      "aria_names": [
+        "Pozīcija 1",
+        "Pozīcija 2",
+        "Pozīcija 3",
+        "Pozīcija 4",
+        "Secības pamatojums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "e7a6529b7e74fbfb",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q09": {
+      "status": "PASS",
+      "claim": "The Q09 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q09",
+      "renderer_key": "renderer-numeric-table",
+      "instance": "COL1-2-2B-B-01",
+      "field_ids": [
+        "n_mmol"
+      ],
+      "aria_names": [
+        "Tabulas šūna: n (mmol)"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "d2e9667b5a6cbfdc",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q10": {
+      "status": "PASS",
+      "claim": "The Q10 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q10",
+      "renderer_key": "renderer-numeric-scale",
+      "instance": "COL1-2-2C-A-01",
+      "field_ids": [
+        "V_del"
+      ],
+      "aria_names": [
+        "Skalas nolasījums: ΔV (mL)"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "65e7ac3ba1cd6a44",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q11": {
+      "status": "PASS",
+      "claim": "The Q11 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "plot_surface_declared": true,
+        "plot_surface_binds_the_capture_context": true,
+        "coordinate_table_has_rows": true,
+        "table_rows_expose_coordinates": true
+      },
+      "failed": [],
+      "type_id": "Q11",
+      "renderer_key": "renderer-graph-construct",
+      "instance": "COL1-2-2D-A-01",
+      "field_ids": [
+        "record",
+        "draw_payload"
+      ],
+      "aria_names": [
+        "Konstruēšanas ieraksta tabula",
+        "Zīmējuma virsma"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "78d58fcf1790fbae",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q12": {
+      "status": "PASS",
+      "claim": "The Q12 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "figure_binding_is_a_select": true,
+        "figure_binding_options_are_named": true
+      },
+      "failed": [],
+      "type_id": "Q12",
+      "renderer_key": "renderer-graph-interpret",
+      "instance": "COL1-2-2D-B-01",
+      "field_ids": [
+        "read_x",
+        "read_y",
+        "figure_binding"
+      ],
+      "aria_names": [
+        "Nolasītā x vērtība",
+        "Nolasītā y vērtība",
+        "Grafika piesaiste"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "7a26ae68eababfc1",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q13": {
+      "status": "PASS",
+      "claim": "The Q13 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q13",
+      "renderer_key": "renderer-method-error-repair",
+      "instance": "COL1-1-1A-B-01",
+      "field_ids": [
+        "coef_0",
+        "coef_1",
+        "coef_2",
+        "coef_3",
+        "located",
+        "replacement",
+        "reason"
+      ],
+      "aria_names": [
+        "Koeficients priekš CuO",
+        "Koeficients priekš H2",
+        "Koeficients priekš Cu",
+        "Koeficients priekš H2O",
+        "Vieta, kur atrasta kļūda",
+        "Labotā vērtība",
+        "Labojuma pamatojums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "2da1ddbbde337ab4",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q14": {
+      "status": "PASS",
+      "claim": "The Q14 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q14",
+      "renderer_key": "renderer-option-statement",
+      "instance": "COL1-1-1B-C-01",
+      "field_ids": [
+        "opt_T1",
+        "opt_T2",
+        "opt_T3",
+        "opt_T4",
+        "justification"
+      ],
+      "aria_names": [
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Labojuma pamatojums"
+      ],
+      "duplicate_aria_names": [
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes"
+      ],
+      "descriptor_digest16": "68459109be25ab5a",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q15": {
+      "status": "PASS",
+      "claim": "The Q15 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "text_area_is_multiline": true
+      },
+      "failed": [],
+      "type_id": "Q15",
+      "renderer_key": "renderer-method-explanation",
+      "instance": "COL1-1-1B-B-01",
+      "field_ids": [
+        "text"
+      ],
+      "aria_names": [
+        "Skaidrojums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "471d97281f5b6424",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q16": {
+      "status": "PASS",
+      "claim": "The Q16 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "text_area_is_multiline": true
+      },
+      "failed": [],
+      "type_id": "Q16",
+      "renderer_key": "renderer-method-compare",
+      "instance": "COL1-1-1D-B-01",
+      "field_ids": [
+        "text"
+      ],
+      "aria_names": [
+        "Salīdzinājums un pamatojums"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "d9c45cab6a82d858",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q17": {
+      "status": "PASS",
+      "claim": "The Q17 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true,
+        "pairs_are_text_fields": true
+      },
+      "failed": [],
+      "type_id": "Q17",
+      "renderer_key": "renderer-method-case",
+      "instance": "COL1-3-3D-A-01",
+      "field_ids": [
+        "pair_S1",
+        "pair_S2",
+        "pair_S3"
+      ],
+      "aria_names": [
+        "Soļa atbilde: Kā no procentu bāzes iegūst masu koncentrāciju?",
+        "Soļa atbilde: Kā iegūto masu koncentrāciju lieto?",
+        "Soļa atbilde: Ko etiķete vēl nepasaka?"
+      ],
+      "duplicate_aria_names": [],
+      "descriptor_digest16": "66822d02e516a194",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "render_q18": {
+      "status": "PASS",
+      "claim": "The Q18 render description carries exactly the field set the registry contract expands to, and every ARIA name is the term island's resolved pattern.",
+      "checks": {
+        "descriptor_is_json_serialisable": true,
+        "type_id_matches": true,
+        "renderer_key_matches_bank_loader": true,
+        "payload_kind_matches_bank_loader": true,
+        "field_set_matches_contract": true,
+        "controls_match_contract": true,
+        "aria_names_match_term_bank": true,
+        "aria_names_fully_resolved": true,
+        "every_state_has_text": true,
+        "states_are_declared": true,
+        "every_field_has_role": true,
+        "required_flags_are_boolean": true,
+        "stores_are_declared": true,
+        "group_label_from_terms": true,
+        "name_from_terms": true,
+        "labelledby_and_describedby": true,
+        "keyboard_hint_from_terms": true,
+        "parity_note_from_terms": true,
+        "abort_note_from_terms": true,
+        "polite_live_region_present": true,
+        "accessible_alternative_resolved": true,
+        "completion_verdict_present": true,
+        "select_like_fields_have_options": true,
+        "options_have_text": true
+      },
+      "failed": [],
+      "type_id": "Q18",
+      "renderer_key": "renderer-option-multiselect",
+      "instance": "COL1-5-5D-D-01",
+      "field_ids": [
+        "opt_S1",
+        "opt_S2",
+        "opt_S3",
+        "opt_S4",
+        "justification"
+      ],
+      "aria_names": [
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Pamatojums nepareizajiem apgalvojumiem"
+      ],
+      "duplicate_aria_names": [
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes",
+        "Izvēlētās atbildes"
+      ],
+      "descriptor_digest16": "b89d57a2fa62c7c1",
+      "aria_mismatches": [],
+      "unresolved_aria": [],
+      "state_text_missing": []
+    },
+    "scratch_contract_violation": {
+      "status": "PASS",
+      "claim": "Every type's contract, with one field template deleted, fails loudly with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+      "checks": {
+        "all_eighteen_name_their_field": true
+      },
+      "failed": [],
+      "per_type": {
+        "Q01": {
+          "status": "PASS",
+          "claim": "A scratch Q01 contract with the \"value\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q01",
+          "removed_role": "value",
+          "named_field_id": "m_g",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"value\" (vadīkla \"m_g\"), ko renderētājs prasa tipam Q01.",
+            "details": {
+              "type_id": "Q01",
+              "field_id": "m_g",
+              "role": "value"
+            }
+          }
+        },
+        "Q02": {
+          "status": "PASS",
+          "claim": "A scratch Q02 contract with the \"value\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q02",
+          "removed_role": "value",
+          "named_field_id": "c",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"value\" (vadīkla \"c\"), ko renderētājs prasa tipam Q02.",
+            "details": {
+              "type_id": "Q02",
+              "field_id": "c",
+              "role": "value"
+            }
+          }
+        },
+        "Q03": {
+          "status": "PASS",
+          "claim": "A scratch Q03 contract with the \"choice\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q03",
+          "removed_role": "choice",
+          "named_field_id": "choice",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"choice\" (vadīkla \"choice\"), ko renderētājs prasa tipam Q03.",
+            "details": {
+              "type_id": "Q03",
+              "field_id": "choice",
+              "role": "choice"
+            }
+          }
+        },
+        "Q04": {
+          "status": "PASS",
+          "claim": "A scratch Q04 contract with the \"coefficient\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q04",
+          "removed_role": "coefficient",
+          "named_field_id": "coef_0",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q04 nav neviena lauka, tāpēc vadīklu \"coef_0\" nevar novietot.",
+            "details": {
+              "type_id": "Q04",
+              "field_id": "coef_0",
+              "role": "coefficient"
+            }
+          }
+        },
+        "Q05": {
+          "status": "PASS",
+          "claim": "A scratch Q05 contract with the \"row\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q05",
+          "removed_role": "row",
+          "named_field_id": "row_S1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q05 nav neviena lauka, tāpēc vadīklu \"row_S1\" nevar novietot.",
+            "details": {
+              "type_id": "Q05",
+              "field_id": "row_S1",
+              "role": "row"
+            }
+          }
+        },
+        "Q06": {
+          "status": "PASS",
+          "claim": "A scratch Q06 contract with the \"pair\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q06",
+          "removed_role": "pair",
+          "named_field_id": "pair_L1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q06 nav neviena lauka, tāpēc vadīklu \"pair_L1\" nevar novietot.",
+            "details": {
+              "type_id": "Q06",
+              "field_id": "pair_L1",
+              "role": "pair"
+            }
+          }
+        },
+        "Q07": {
+          "status": "PASS",
+          "claim": "A scratch Q07 contract with the \"option\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q07",
+          "removed_role": "option",
+          "named_field_id": "opt_HET",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q07 nav neviena lauka, tāpēc vadīklu \"opt_HET\" nevar novietot.",
+            "details": {
+              "type_id": "Q07",
+              "field_id": "opt_HET",
+              "role": "option"
+            }
+          }
+        },
+        "Q08": {
+          "status": "PASS",
+          "claim": "A scratch Q08 contract with the \"position\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q08",
+          "removed_role": "position",
+          "named_field_id": "slot_1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"position\" (vadīkla \"slot_1\"), ko renderētājs prasa tipam Q08.",
+            "details": {
+              "type_id": "Q08",
+              "field_id": "slot_1",
+              "role": "position"
+            }
+          }
+        },
+        "Q09": {
+          "status": "PASS",
+          "claim": "A scratch Q09 contract with the \"value\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q09",
+          "removed_role": "value",
+          "named_field_id": "n_mmol",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q09 nav neviena lauka, tāpēc vadīklu \"n_mmol\" nevar novietot.",
+            "details": {
+              "type_id": "Q09",
+              "field_id": "n_mmol",
+              "role": "value"
+            }
+          }
+        },
+        "Q10": {
+          "status": "PASS",
+          "claim": "A scratch Q10 contract with the \"value\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q10",
+          "removed_role": "value",
+          "named_field_id": "V_del",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q10 nav neviena lauka, tāpēc vadīklu \"V_del\" nevar novietot.",
+            "details": {
+              "type_id": "Q10",
+              "field_id": "V_del",
+              "role": "value"
+            }
+          }
+        },
+        "Q11": {
+          "status": "PASS",
+          "claim": "A scratch Q11 contract with the \"record\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q11",
+          "removed_role": "record",
+          "named_field_id": "pt0_x",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"record\" (vadīkla \"pt0_x\"), ko renderētājs prasa tipam Q11.",
+            "details": {
+              "type_id": "Q11",
+              "field_id": "pt0_x",
+              "role": "record"
+            }
+          }
+        },
+        "Q12": {
+          "status": "PASS",
+          "claim": "A scratch Q12 contract with the \"read_x\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q12",
+          "removed_role": "read_x",
+          "named_field_id": "read_x",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"read_x\" (vadīkla \"read_x\"), ko renderētājs prasa tipam Q12.",
+            "details": {
+              "type_id": "Q12",
+              "field_id": "read_x",
+              "role": "read_x"
+            }
+          }
+        },
+        "Q13": {
+          "status": "PASS",
+          "claim": "A scratch Q13 contract with the \"coefficient\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q13",
+          "removed_role": "coefficient",
+          "named_field_id": "coef_0",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"coefficient\" (vadīkla \"coef_0\"), ko renderētājs prasa tipam Q13.",
+            "details": {
+              "type_id": "Q13",
+              "field_id": "coef_0",
+              "role": "coefficient"
+            }
+          }
+        },
+        "Q14": {
+          "status": "PASS",
+          "claim": "A scratch Q14 contract with the \"option\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q14",
+          "removed_role": "option",
+          "named_field_id": "opt_T1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"option\" (vadīkla \"opt_T1\"), ko renderētājs prasa tipam Q14.",
+            "details": {
+              "type_id": "Q14",
+              "field_id": "opt_T1",
+              "role": "option"
+            }
+          }
+        },
+        "Q15": {
+          "status": "PASS",
+          "claim": "A scratch Q15 contract with the \"text\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q15",
+          "removed_role": "text",
+          "named_field_id": "text",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q15 nav neviena lauka, tāpēc vadīklu \"text\" nevar novietot.",
+            "details": {
+              "type_id": "Q15",
+              "field_id": "text",
+              "role": "text"
+            }
+          }
+        },
+        "Q16": {
+          "status": "PASS",
+          "claim": "A scratch Q16 contract with the \"text\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q16",
+          "removed_role": "text",
+          "named_field_id": "text",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā tipam Q16 nav neviena lauka, tāpēc vadīklu \"text\" nevar novietot.",
+            "details": {
+              "type_id": "Q16",
+              "field_id": "text",
+              "role": "text"
+            }
+          }
+        },
+        "Q17": {
+          "status": "PASS",
+          "claim": "A scratch Q17 contract with the \"pair\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q17",
+          "removed_role": "pair",
+          "named_field_id": "pair_S1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"pair\" (vadīkla \"pair_S1\"), ko renderētājs prasa tipam Q17.",
+            "details": {
+              "type_id": "Q17",
+              "field_id": "pair_S1",
+              "role": "pair"
+            }
+          }
+        },
+        "Q18": {
+          "status": "PASS",
+          "claim": "A scratch Q18 contract with the \"option\" template deleted fails with E_INPUTS_CONTRACT_VIOLATION naming the field it cannot place.",
+          "checks": {
+            "throws_loudly": true,
+            "code_is_contract_violation": true,
+            "names_a_field_id": true,
+            "removed_role_was_the_one_needed": true
+          },
+          "failed": [],
+          "type_id": "Q18",
+          "removed_role": "option",
+          "named_field_id": "opt_S1",
+          "observed": {
+            "name": "InputsError",
+            "code": "E_INPUTS_CONTRACT_VIOLATION",
+            "message": "Reģistra līgumā trūkst lauka \"option\" (vadīkla \"opt_S1\"), ko renderētājs prasa tipam Q18.",
+            "details": {
+              "type_id": "Q18",
+              "field_id": "opt_S1",
+              "role": "option"
+            }
+          }
+        }
+      },
+      "failed_types": []
+    },
+    "keyboard_contracts": {
+      "status": "PASS",
+      "claim": "The keyboard contracts document the select-based paths for Q06 and Q08, the Q11 and Q12 coordinate table path, the Q17 select-and-place keys, the abort rule, and they carry the registry's own Latvian path/parity/abort texts.",
+      "checks": {
+        "covers_all_eighteen": true,
+        "every_contract_has_keys": true,
+        "tab_never_intercepted": true,
+        "q06_q08_are_select_based": true,
+        "q11_has_the_table_path": true,
+        "q11_abort_documented": true,
+        "q12_reads_through_the_table": true,
+        "q17_palette_and_place": true,
+        "registry_keyboard_texts_resolved": true,
+        "unknown_type_refused": true
+      },
+      "failed": [],
+      "types": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18"
+      ]
+    },
+    "registry_verdict_alignment": {
+      "status": "PASS",
+      "claim": "The component's assembled payloads reach the registry's own completion verdict with the registry's own Latvian missing names (the A.1.2 Q13 and Q12 cases).",
+      "checks": {
+        "q13_missing_is_named": true,
+        "q13_missing_carries_the_species": true,
+        "q12_missing_binding_is_named": true,
+        "q12_missing_names_only_the_binding": true
+      },
+      "failed": [],
+      "q13": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "vector[1]",
+            "name": "Nav aizpildīts koeficients priekš H2"
+          }
+        ],
+        "errors": [],
+        "source": "SimInputsRegistry.completion"
+      },
+      "q12": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "read.figure_binding",
+            "name": "Nav izvēlēta grafa piesaiste"
+          }
+        ],
+        "errors": [],
+        "source": "SimInputsRegistry.completion"
+      }
+    },
+    "registry_binding": {
+      "status": "PASS",
+      "claim": "The shipped registry covers all eighteen types with a renderer key, payload kind, field set, completion model, error surfaces, keyboard contract and accessible alternative, bound to the bank loader's own mapping.",
+      "checks": {
+        "covers_all_eighteen": true,
+        "island_declares_the_same_eighteen": true,
+        "renderer_keys_match_bank_loader": true,
+        "payload_kinds_match_bank_loader": true,
+        "every_contract_declares_fields": true,
+        "every_contract_declares_completion": true,
+        "every_contract_declares_error_surfaces": true,
+        "every_contract_declares_keyboard": true,
+        "every_contract_declares_alternative": true,
+        "completed_types_have_grading_bindings": true,
+        "unknown_type_refused": true,
+        "completion_delegates_to_the_registry": true,
+        "registry_module_loaded": true
+      },
+      "failed": [],
+      "source": "data/response_types.json",
+      "island_status": "frozen-contract-for-N23-N24-N30-N33",
+      "island_owner": "N22",
+      "types": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18"
+      ],
+      "completion_sources": [
+        {
+          "type_id": "Q01",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q02",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q03",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q04",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q05",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q06",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q07",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q08",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q09",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q10",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q11",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q12",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q13",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q14",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q15",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q16",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q17",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        },
+        {
+          "type_id": "Q18",
+          "source": "SimInputsRegistry.completion",
+          "status": "invalid"
+        }
+      ]
+    }
+  },
+  "status": "PASS"
+}

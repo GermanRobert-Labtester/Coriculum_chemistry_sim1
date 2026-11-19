@@ -1,0 +1,318 @@
+{
+  "artifact_bytes": 2834200,
+  "artifact_kib": 2767.8,
+  "artifact_path": "output/simulator.html",
+  "artifact_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "assertions": {
+    "charset": "utf-8",
+    "core_section_1_2_island_count": 7,
+    "core_section_1_2_islands": [
+      "sim-coverage",
+      "sim-conventions",
+      "sim-bank",
+      "sim-forms",
+      "sim-golden-vectors",
+      "sim-terms",
+      "sim-analytics"
+    ],
+    "duplicate_id_count": 0,
+    "executable_script_count": 1,
+    "external_script_count": 0,
+    "external_stylesheet_count": 0,
+    "external_url_count": 0,
+    "landmark_sections_count": 15,
+    "lang": "lv",
+    "required_section_1_2_anchor_count": 9,
+    "required_section_1_2_anchors": {
+      "atskats": 1,
+      "druka": 1,
+      "eksamens": 1,
+      "iestatijumi": 1,
+      "metodika": 1,
+      "prakse": 1,
+      "rezultati": 1,
+      "sakums": 1,
+      "saturs": 1
+    },
+    "total_island_count": 22,
+    "unique_ascii_id_count": 326,
+    "unresolved_internal_href_count": 0
+  },
+  "composition_table": {
+    "artifact_total_bytes": 2834200,
+    "bank_island_bytes": 249798,
+    "budgets": [
+      {
+        "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N34 ir 2826711 B, tāpēc izpildītais griests ir 2780 KiB. N34 pievieno vienota avota statisko <noscript> saturu (64 jēdzieni, metodika, 673 terminu tabula un godīgo ierobežojumu paziņojums: ~133,8 KiB), pilno @media print slāni un F04 papīra darba lapas moduli (SimPaper); izmērītais artefakts ~2,760 KiB, griests fiksēts uz 2,780 KiB.",
+        "bytes": 2834200,
+        "declared_max_bytes": 1433600,
+        "kib": 2767.8,
+        "max_bytes": 2846720,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 99.56,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N31 ir 1152126 B, tāpēc izpildītais griests ir 1168 KiB. N31 galīgais vienfaila būves lēmums inline'o visus 11 IV–V fāzes dzinēju, ievades un vērtēšanas runtime moduļus (quantity-engine.js, graph-scoring-engine.js, graph-capture.js, method-engine.js, method-card-view.js, variant-engine.js, inputs/{registry,components,integration}.js, grading.js, feedback.js) ar moduļu robežkomentāriem un SMK-N31-BUILD-CONTRACT dūmu vektoru, kamēr 308,6 KiB ģeneratora šabloni (src/variant-templates.js) paliek ārpus artefakta. Izmērītais runtime JS ir 1,152,126 B (1,125,1 KiB); griests fiksēts uz 1,168 KiB.",
+        "bytes": 1192024,
+        "declared_max_bytes": 225280,
+        "kib": 1164.1,
+        "max_bytes": 1196032,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 99.66,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 67997,
+        "declared_max_bytes": 81920,
+        "kib": 66.4,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 83.0,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 249798,
+        "declared_max_bytes": 430080,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 142579,
+        "declared_max_bytes": 143360,
+        "kib": 139.2,
+        "max_bytes": 143360,
+        "min_bytes": 61440,
+        "name": "figures_island",
+        "share_percent_of_max": 99.46,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      }
+    ],
+    "css_bytes": 67997,
+    "embedded_js_data_bytes": 73830,
+    "executable_script_total_bytes": 1265855,
+    "failed_segments": [],
+    "figures_island_bytes": 142579,
+    "island_bytes_by_id": {
+      "sim-analytics": 6673,
+      "sim-bank": 249798,
+      "sim-chains": 71253,
+      "sim-conventions": 111641,
+      "sim-coverage": 46502,
+      "sim-engines": 12814,
+      "sim-exam-policy": 14237,
+      "sim-feedback-classification": 63716,
+      "sim-figures": 142579,
+      "sim-forms": 16067,
+      "sim-golden-vectors": 91739,
+      "sim-grading-policy": 12143,
+      "sim-graph-scoring": 39318,
+      "sim-mastery-policy": 10378,
+      "sim-method-cards": 109919,
+      "sim-method-engine": 22448,
+      "sim-practice-policy": 7163,
+      "sim-remediation-policy": 4208,
+      "sim-response-types": 34962,
+      "sim-revision-policy": 4338,
+      "sim-scheduler-policy": 5161,
+      "sim-terms": 250451
+    },
+    "islands_total_bytes": 1327508,
+    "other_islands_bytes": 935131,
+    "runtime_js_code_bytes": 1192024,
+    "segments": [
+      {
+        "bytes": 249798,
+        "declared_band_bytes": [
+          204800,
+          430080
+        ],
+        "description": "Frozen #sim-bank JSON island (112 reviewed instances across 28 families)",
+        "enforced_ceiling_bytes": 430080,
+        "kib": 243.9,
+        "segment": "bank_island",
+        "share_percent_of_artifact": 8.81,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 142579,
+        "declared_band_bytes": [
+          61440,
+          143360
+        ],
+        "description": "Declarative SVG figure specs (#sim-figures, 45 T1–T7 records)",
+        "enforced_ceiling_bytes": 143360,
+        "kib": 139.2,
+        "segment": "figures_island",
+        "share_percent_of_artifact": 5.03,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 935131,
+        "declared_band_bytes": null,
+        "description": "Remaining 20 JSON islands (coverage, conventions, forms, golden vectors, terms, analytics, policies, chains, engines, method cards, grading)",
+        "enforced_ceiling_bytes": null,
+        "kib": 913.2,
+        "segment": "other_islands",
+        "share_percent_of_artifact": 32.99,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 1192024,
+        "declared_band_bytes": [
+          122880,
+          225280
+        ],
+        "description": "37 inlined runtime JS modules + bootstrap + module boundary comments",
+        "enforced_ceiling_bytes": 1196032,
+        "kib": 1164.1,
+        "segment": "runtime_js_code",
+        "share_percent_of_artifact": 42.06,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 73830,
+        "declared_band_bytes": null,
+        "description": "4 canonical JS data projection globals (COVERAGE_INVARIANTS, CONCEPT_DRAWER_DATA, ANCHOR_REGISTRY, RECALL_LAYERS_DATA)",
+        "enforced_ceiling_bytes": null,
+        "kib": 72.1,
+        "segment": "embedded_js_data",
+        "share_percent_of_artifact": 2.6,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 67997,
+        "declared_band_bytes": [
+          40960,
+          81920
+        ],
+        "description": "Inline <style> block (src/tokens.css + src/styles.css)",
+        "enforced_ceiling_bytes": 81920,
+        "kib": 66.4,
+        "segment": "css",
+        "share_percent_of_artifact": 2.4,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 172840,
+        "declared_band_bytes": null,
+        "description": "HTML5 skeleton markup, Latvian copy, meta digest tags, and <script>/<style> wrappers",
+        "enforced_ceiling_bytes": null,
+        "kib": 168.8,
+        "segment": "template_overhead",
+        "share_percent_of_artifact": 6.1,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 2834200,
+        "declared_band_bytes": [
+          716800,
+          1433600
+        ],
+        "description": "Complete single-file deliverable output/simulator.html",
+        "enforced_ceiling_bytes": 2846720,
+        "kib": 2767.8,
+        "segment": "artifact_total",
+        "share_percent_of_artifact": 100.0,
+        "within_ceiling": true
+      }
+    ],
+    "status": "PASS",
+    "template_overhead_bytes": 172840
+  },
+  "errors": [],
+  "gate": "artifact_contract",
+  "manifest_parity": {
+    "artifact_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+    "checked": true,
+    "composite_digest": "cfa4e986b05ca3d67a4eaa35144bd5d693edbc5b963e97f79c19ab561cb63a90",
+    "manifest_output_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+    "status": "PASS"
+  },
+  "noscript_check": {
+    "concept_anchors_count": 64,
+    "dangling_links": [],
+    "errors": [],
+    "expected_term_count": null,
+    "external_links": [],
+    "has_terms_table": true,
+    "interactive_controls": [],
+    "noscript_links_checked": 142,
+    "noscript_text_chars": 77307,
+    "notice_count": 1,
+    "status": "PASS"
+  },
+  "offline_url_scan": {
+    "external_url_count": 0,
+    "status": "PASS",
+    "violations": [],
+    "whitelisted_hits": [],
+    "whitelisted_url_count": 0
+  },
+  "offline_url_scan_fixture": {
+    "injected_line": 11,
+    "injected_line_context": "<script src=\"https://cdn.example.invalid/external-tracker.js\"></script>",
+    "injected_url": "https://cdn.example.invalid/external-tracker.js",
+    "injected_url_caught": true,
+    "status": "PASS",
+    "whitelist_exemption_verified": true
+  },
+  "oversized_island_fixture": {
+    "oversized_bank_island_case": {
+      "ceiling_bytes": 430080,
+      "failed_segments": [
+        "bank_island"
+      ],
+      "injected_bytes": 462848,
+      "status": "FAIL"
+    },
+    "oversized_figures_island_case": {
+      "ceiling_bytes": 143360,
+      "failed_segments": [
+        "figures_island"
+      ],
+      "injected_bytes": 159744,
+      "status": "FAIL"
+    },
+    "status": "PASS"
+  },
+  "print_check": {
+    "errors": [],
+    "media_print_blocks": 5,
+    "selectors_checked": 133,
+    "status": "PASS",
+    "unmatched_selectors": []
+  },
+  "schema_version": 1,
+  "script_verification": {
+    "bootstrap_boundary_present": true,
+    "first_module_boundary": "/* === MODULE: src/coverage-loader.js === */",
+    "last_module_boundary": "/* === MODULE: src/smoke-subset.js === */",
+    "module_boundaries_count": 39,
+    "parser_engine": "node:vm.Script",
+    "script_parses_cleanly": true,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "task": "N31"
+}

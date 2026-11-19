@@ -1,0 +1,122 @@
+{
+  "budgets": {
+    "budgets": [
+      {
+        "basis": "Section 1.3 total artifact budget",
+        "bytes": 1374364,
+        "kib": 1342.2,
+        "max_bytes": 1433600,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 95.87,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 bank sub-budget",
+        "bytes": 249798,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 runtime JS budget, ceiling re-set on the measured requirement by AGENTS.md (was 225,280 B; the N20 requirement is 225,192 B measured)",
+        "bytes": 225192,
+        "kib": 219.9,
+        "max_bytes": 237568,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 94.79,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Section 1.3 CSS range; the enforced value is the ceiling. The measured CSS is below the plan target, which is prior-phase content and is recorded, not changed, by N20.",
+        "bytes": 39796,
+        "kib": 38.9,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 48.58,
+        "within_max": true,
+        "within_min": false
+      }
+    ],
+    "notes": [
+      "The bank island is the runtime projection of the frozen bank; the per-instance audit tables (draws, derived, review workflow) stay in data/bank/*.json and in the N20 evidence records.",
+      "The CSS measurement is below the Section 1.3 target range; that content belongs to earlier phases and N20 records the measurement instead of changing it."
+    ],
+    "status": "PASS"
+  },
+  "counts": {
+    "artifact_bytes": 1374364,
+    "bank_island_bytes": 249798,
+    "families": 28,
+    "instances": 112,
+    "variants": 112
+  },
+  "digests": {
+    "artifact_sha256": "59565e30a6f8a9bcc418ce98ec0ace68fe12f3b34cc1aa48b375bcfdcf79183d",
+    "bank_embedded_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "bank_island_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "bank_source_digest": "1c263cdb37396f0eb910c52cf9e6a0b30725533358d57fd7de85c4b58c78acb6",
+    "template_digest": "64c492264c669b6b0b48fa00abac59e3bcaf6fc714e4fb9e0e3dc6c42efa80ad"
+  },
+  "gates": {
+    "bank_review": {
+      "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/validate_bank_review.py",
+      "evidence": "evidence/N20_REVIEW_WORKFLOW.json",
+      "instances": 112,
+      "status": "PASS",
+      "violations": []
+    },
+    "bank_schema": {
+      "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/validate_bank.py --bank data/bank --require-types",
+      "status": "PASS",
+      "violations": []
+    },
+    "determinism": {
+      "claim": "Identical seeds produce byte-identical instances; the frozen bank is reproducible from the templates and the seed alone.",
+      "evidence": "evidence/N20_DETERMINISM_RECORD.json",
+      "status": "PASS"
+    },
+    "runtime": {
+      "checks": {
+        "cross_language_parity": "PASS",
+        "determinism": "PASS",
+        "ephemeral_path": "PASS",
+        "parity_fixture": "PASS",
+        "smoke_vector": "PASS",
+        "tamper_fixture": "PASS"
+      },
+      "evidence": "evidence/N20_RUNTIME_RECORD.json",
+      "status": "PASS"
+    },
+    "scratch_refusal": {
+      "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/validate_bank_review.py --prove-scratch-refusal",
+      "refusal": [
+        {
+          "code": "E_REVIEW_NOT_ACCEPTED",
+          "message": "review.content ir 'pending', nevis \"passed\".",
+          "question_id": "COL1-1-1A-ZZ-99"
+        }
+      ],
+      "scratch_question_id": "COL1-1-1A-ZZ-99",
+      "status": "PASS"
+    },
+    "template_validation": {
+      "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/validate_family_templates.py --no-evidence",
+      "evidence": "evidence/N20_TEMPLATE_VALIDATION.json",
+      "status": "PASS",
+      "violations": []
+    }
+  },
+  "owner": "N20",
+  "schema_version": 1,
+  "status": "PASS",
+  "violations": []
+}

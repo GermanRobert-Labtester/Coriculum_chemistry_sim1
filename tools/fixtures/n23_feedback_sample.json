@@ -1,0 +1,662 @@
+{
+  "schema_version": 1,
+  "owner": "N23",
+  "fixture_id": "FX-N23-FEEDBACK-SAMPLE",
+  "record_kind": "feedback-core-sample",
+  "note_lv": "Minimāls, ar roku sastādīts vērtēšanas kodola paraugs (GRADING_FORMAT §4 forma) atgriezeniskās saites moduļa vienības testam. Četri sloti: daudzparaksturu skaitliskais slots (dzinēja MC-3B-01 + instances MC-5B-01), daļējs kārtošanas slots ar diviem N19 remediation_entries ierakstiem, manual_pending slots un invalid slots ar saglabātu ievadu. Šis paraugs nav bankas instance un neaizstāj tools/fixtures/n23_score_matrix.json.",
+  "core": {
+    "schema_version": 1,
+    "owner": "N23",
+    "record_kind": "graded-record-sample",
+    "session": {
+      "session_id": "FX-N23-FEEDBACK-SAMPLE",
+      "form_id": "FX-N23-SAMPLE",
+      "state": "submitted",
+      "started_at_ms": 0,
+      "finished_at_ms": 0,
+      "elapsed_ms": 0,
+      "flags": [],
+      "unanswered_slot_ids": [],
+      "remediation_slot_ids": [],
+      "transition_count": 0,
+      "terminal_digest": "sample"
+    },
+    "slots": [
+      {
+        "slot_id": "S5-2",
+        "topic": 5,
+        "slot_points": 6,
+        "instance_id": "COL1-5-5B-A-01",
+        "family_id": "FAM-5B",
+        "type_id": "Q02",
+        "state": "graded",
+        "verdict_class": "incorrect",
+        "error_class": "DIMENSIONAL_INCONSISTENCY",
+        "criteria": [
+          {
+            "criterion_id": "C1_SETUP",
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "max_points": 2,
+            "status": "denied",
+            "awarded_points": 0,
+            "pending_points": 0,
+            "verdict_class": "incorrect",
+            "error_class": "DIMENSIONAL_INCONSISTENCY",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [
+              "MC-3B-01"
+            ],
+            "feedback_keys": [
+              "feedback.error.dimensional"
+            ],
+            "remediation_entries": []
+          },
+          {
+            "criterion_id": "C2_VALUE",
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "max_points": 3,
+            "status": "denied",
+            "awarded_points": 0,
+            "pending_points": 0,
+            "verdict_class": "incorrect",
+            "error_class": "DIMENSIONAL_INCONSISTENCY",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [
+              "MC-3B-01"
+            ],
+            "feedback_keys": [
+              "feedback.error.dimensional"
+            ],
+            "remediation_entries": []
+          },
+          {
+            "criterion_id": "C3_ORDER",
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "max_points": 1,
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.self_assess"
+            ],
+            "remediation_entries": []
+          }
+        ],
+        "task": {
+          "auto_points": 0,
+          "auto_max_points": 5,
+          "pending_points": 1,
+          "pending_max_points": 1,
+          "max_points": 6
+        },
+        "outcome_ids": [
+          "P5-05",
+          "P5-09"
+        ],
+        "misconception_signatures": [
+          "MC-5B-01"
+        ],
+        "raw_input": {
+          "field": "k",
+          "value": "0.25",
+          "unit": "L"
+        }
+      },
+      {
+        "slot_id": "S2-2",
+        "topic": 2,
+        "slot_points": 4,
+        "instance_id": "MC-EX03",
+        "family_id": "FAM-2C",
+        "type_id": "Q08",
+        "state": "graded",
+        "verdict_class": "partial",
+        "error_class": "WRONG_ORDER",
+        "criteria": [
+          {
+            "criterion_id": "C1_ORDER",
+            "engine_binding": "N19-method",
+            "grading": "auto",
+            "max_points": 2,
+            "status": "denied",
+            "awarded_points": 0,
+            "pending_points": 0,
+            "verdict_class": "partial",
+            "error_class": "WRONG_ORDER",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [
+              "MC-2C-01"
+            ],
+            "feedback_keys": [
+              "feedback.concept_link_label"
+            ],
+            "remediation_entries": [
+              {
+                "card_id": "MC-EX03",
+                "step_id": "S2",
+                "misconception_signature": "MC-2C-01",
+                "note_lv": "Piltuves atstāšana biretē ir klasiņas klūda: tā maina sākuma līmeni nezināmo veidā.",
+                "feedback_key": "feedback.concept_link_label",
+                "feedback_text": "Atkārtot saistīto konceptu"
+              },
+              {
+                "card_id": "MC-EX03",
+                "step_id": "S3",
+                "misconception_signature": "MC-2C-01",
+                "note_lv": "Sākuma nolasījumu nedrīkst pielādēt līdz nullei: izlietotais tilpums ir starpība, un izliekts sākuma līmenis to izjauc.",
+                "feedback_key": "feedback.concept_link_label",
+                "feedback_text": "Atkārtot saistīto konceptu"
+              }
+            ]
+          },
+          {
+            "criterion_id": "C2_EXPLAIN",
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "max_points": 2,
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.self_assess"
+            ],
+            "remediation_entries": []
+          }
+        ],
+        "task": {
+          "auto_points": 0,
+          "auto_max_points": 2,
+          "pending_points": 2,
+          "pending_max_points": 2,
+          "max_points": 4
+        },
+        "outcome_ids": [
+          "P2-07",
+          "P2-05"
+        ],
+        "misconception_signatures": [
+          "MC-2C-01"
+        ],
+        "raw_input": {
+          "order": [
+            "S1",
+            "S3",
+            "S2"
+          ]
+        }
+      },
+      {
+        "slot_id": "S7-1",
+        "topic": 7,
+        "slot_points": 5,
+        "instance_id": "COL1-7-7A-A-01",
+        "family_id": "FAM-7A",
+        "type_id": "Q03",
+        "state": "manual_pending",
+        "verdict_class": "NONE",
+        "error_class": "MANUAL_PENDING",
+        "criteria": [
+          {
+            "criterion_id": "C1_TEMPLATE",
+            "engine_binding": "human-review",
+            "grading": "human",
+            "max_points": 2,
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "verdict_class": null,
+            "error_class": "NONE",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.pending_review"
+            ],
+            "remediation_entries": []
+          },
+          {
+            "criterion_id": "C2_FILL",
+            "engine_binding": "human-review",
+            "grading": "human",
+            "max_points": 3,
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 3,
+            "verdict_class": null,
+            "error_class": "NONE",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.pending_review"
+            ],
+            "remediation_entries": []
+          }
+        ],
+        "task": {
+          "auto_points": 0,
+          "auto_max_points": 0,
+          "pending_points": 5,
+          "pending_max_points": 5,
+          "max_points": 5
+        },
+        "outcome_ids": [
+          "P7-01",
+          "P7-02"
+        ],
+        "misconception_signatures": [
+          "MC-7A-01"
+        ],
+        "raw_input": {
+          "template": "B",
+          "fill": [
+            "0,365",
+            "30,39"
+          ]
+        }
+      },
+      {
+        "slot_id": "S2-4",
+        "topic": 2,
+        "slot_points": 4,
+        "instance_id": "COL1-2-2B-B-01",
+        "family_id": "FAM-2B",
+        "type_id": "Q09",
+        "state": "invalid",
+        "verdict_class": "NONE",
+        "error_class": "UNREADABLE_INPUT",
+        "criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "engine_binding": "N17-numeric",
+            "grading": "auto",
+            "max_points": 3,
+            "status": "denied",
+            "awarded_points": 0,
+            "pending_points": 0,
+            "verdict_class": null,
+            "error_class": "UNREADABLE_INPUT",
+            "errors": [
+              {
+                "id": "UNREADABLE_INPUT",
+                "field": "values.c",
+                "message_key": "feedback.error.unreadable"
+              }
+            ],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.error.unreadable"
+            ],
+            "remediation_entries": []
+          },
+          {
+            "criterion_id": "C2_STEP",
+            "engine_binding": "self-assessed",
+            "grading": "self",
+            "max_points": 1,
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "verdict_class": null,
+            "error_class": "NONE",
+            "errors": [],
+            "missing": [],
+            "signature_ids": [],
+            "feedback_keys": [
+              "feedback.self_assess"
+            ],
+            "remediation_entries": []
+          }
+        ],
+        "task": {
+          "auto_points": 0,
+          "auto_max_points": 3,
+          "pending_points": 1,
+          "pending_max_points": 1,
+          "max_points": 4
+        },
+        "outcome_ids": [
+          "P2-02",
+          "P2-03",
+          "P2-05",
+          "P2-06",
+          "P2-10"
+        ],
+        "misconception_signatures": [
+          "MC-2B-02"
+        ],
+        "raw_input": {
+          "values": {
+            "c": "1,2,3"
+          }
+        }
+      }
+    ],
+    "totals": {
+      "auto_points": 0,
+      "auto_max_points": 10,
+      "pending_external_points": 9,
+      "pending_max_points": 9,
+      "form_max_points": 19,
+      "unblended": true,
+      "slots_total": 4,
+      "slots_graded": 2,
+      "slots_incomplete": 0,
+      "slots_invalid": 1,
+      "slots_unattempted": 0,
+      "slots_manual_pending": 1
+    },
+    "feedback": null
+  },
+  "expected": {
+    "note_lv": "Gaidas ir ar roku atvasinātas un pēc tam lauks pa laukam pārbaudītas pret assemble() izvadi: 9 kartītes, pirmās divas uzdevuma līmenī ar priority 20 un 60 (daudzparaksturu stūris), divi N19 soļu ieraksti ar method_card MC-EX03 S2 un S3, trīs gaidīšanas etiķetes un viens stāvokļa etiķetes ieraksts.",
+    "item_count": 9,
+    "items": [
+      {
+        "slot_id": "S5-2",
+        "level": "task",
+        "criterion_id": null,
+        "verdict_class": "incorrect",
+        "error_class": "DIMENSIONAL_INCONSISTENCY",
+        "signature_id": "MC-3B-01",
+        "misconception_name": "Dimensiju neatbilstība",
+        "feedback_key": "feedback.error.dimensional",
+        "feedback_text": "Vienību algebra neslēdzas: masa un tilpums nav savstarpēji pārrēķināmi bez deklarēta blīvuma ρ.",
+        "citations": [
+          {
+            "kind": "conventions_ref",
+            "id": "CIT-C2-DENSITY-UNITS"
+          }
+        ],
+        "remediation": {
+          "concept_ids": [
+            "P2-05",
+            "P3-07",
+            "P3-11",
+            "P5-05",
+            "P5-09"
+          ],
+          "chain_ids": [
+            "EX04"
+          ],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 20
+      },
+      {
+        "slot_id": "S5-2",
+        "level": "task",
+        "criterion_id": null,
+        "verdict_class": "incorrect",
+        "error_class": "DIMENSIONAL_INCONSISTENCY",
+        "signature_id": "MC-5B-01",
+        "misconception_name": "Reakcijas pakāpe un k — MC-5B-01",
+        "feedback_key": "feedback.fallback_notice",
+        "feedback_text": "Kļūdas modelis nav piesaistīts konkrētam distraktoram; pārbaudi aprēķina soļus un vienības.",
+        "citations": [],
+        "remediation": {
+          "concept_ids": [
+            "P5-05",
+            "P5-09"
+          ],
+          "chain_ids": [
+            "EX09"
+          ],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 60
+      },
+      {
+        "slot_id": "S5-2",
+        "level": "criterion",
+        "criterion_id": "C3_ORDER",
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "signature_id": null,
+        "misconception_name": null,
+        "feedback_key": "feedback.self_assess",
+        "feedback_text": "Pašnovērtējums (nav automātiski pārbaudīts)",
+        "citations": [],
+        "remediation": {
+          "concept_ids": [],
+          "chain_ids": [],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 94
+      },
+      {
+        "slot_id": "S2-2",
+        "level": "task",
+        "criterion_id": null,
+        "verdict_class": "partial",
+        "error_class": "WRONG_ORDER",
+        "signature_id": "MC-2C-01",
+        "misconception_name": "FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "citations": [
+          {
+            "kind": "contract_rule",
+            "id": "GV-S1-T2-Q10-01"
+          }
+        ],
+        "remediation": {
+          "concept_ids": [
+            "P2-05",
+            "P2-07",
+            "P2-10"
+          ],
+          "chain_ids": [
+            "EX03"
+          ],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 50
+      },
+      {
+        "slot_id": "S2-2",
+        "level": "criterion",
+        "criterion_id": "C1_ORDER",
+        "verdict_class": "partial",
+        "error_class": "WRONG_ORDER",
+        "signature_id": "MC-2C-01",
+        "misconception_name": "FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "citations": [
+          {
+            "kind": "contract_rule",
+            "id": "GV-S1-T2-Q10-01"
+          }
+        ],
+        "remediation": {
+          "concept_ids": [
+            "P2-05",
+            "P2-07",
+            "P2-10"
+          ],
+          "chain_ids": [
+            "EX03"
+          ],
+          "method_card": {
+            "card_id": "MC-EX03",
+            "step_id": "S2"
+          },
+          "note": "Piltuves atstāšana biretē ir klasiņas klūda: tā maina sākuma līmeni nezināmo veidā."
+        },
+        "priority": 50
+      },
+      {
+        "slot_id": "S2-2",
+        "level": "criterion",
+        "criterion_id": "C1_ORDER",
+        "verdict_class": "partial",
+        "error_class": "WRONG_ORDER",
+        "signature_id": "MC-2C-01",
+        "misconception_name": "FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "citations": [
+          {
+            "kind": "contract_rule",
+            "id": "GV-S1-T2-Q10-01"
+          }
+        ],
+        "remediation": {
+          "concept_ids": [
+            "P2-05",
+            "P2-07",
+            "P2-10"
+          ],
+          "chain_ids": [
+            "EX03"
+          ],
+          "method_card": {
+            "card_id": "MC-EX03",
+            "step_id": "S3"
+          },
+          "note": "Sākuma nolasījumu nedrīkst pielādēt līdz nullei: izlietotais tilpums ir starpība, un izliekts sākuma līmenis to izjauc."
+        },
+        "priority": 50
+      },
+      {
+        "slot_id": "S2-2",
+        "level": "criterion",
+        "criterion_id": "C2_EXPLAIN",
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "signature_id": null,
+        "misconception_name": null,
+        "feedback_key": "feedback.self_assess",
+        "feedback_text": "Pašnovērtējums (nav automātiski pārbaudīts)",
+        "citations": [],
+        "remediation": {
+          "concept_ids": [],
+          "chain_ids": [],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 94
+      },
+      {
+        "slot_id": "S7-1",
+        "level": "task",
+        "criterion_id": null,
+        "verdict_class": "NONE",
+        "error_class": "MANUAL_PENDING",
+        "signature_id": null,
+        "misconception_name": null,
+        "feedback_key": "feedback.pending_review",
+        "feedback_text": "Gaida manuālu vai pašnovērtējumu",
+        "citations": [],
+        "remediation": {
+          "concept_ids": [],
+          "chain_ids": [],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 94
+      },
+      {
+        "slot_id": "S2-4",
+        "level": "task",
+        "criterion_id": null,
+        "verdict_class": "NONE",
+        "error_class": "UNREADABLE_INPUT",
+        "signature_id": null,
+        "misconception_name": "Neizlasāms ievads",
+        "feedback_key": "feedback.error.unreadable",
+        "feedback_text": "Ievadu nevar nolasīt: pārbaudi skaitļa pierakstu un vienības sintaksi.",
+        "citations": [
+          {
+            "kind": "conventions_ref",
+            "id": "CIT-C2-UNITS"
+          }
+        ],
+        "remediation": {
+          "concept_ids": [
+            "P2-02",
+            "P2-03",
+            "P2-05",
+            "P2-06",
+            "P2-10"
+          ],
+          "chain_ids": [
+            "EX04"
+          ],
+          "method_card": null,
+          "note": ""
+        },
+        "priority": 10
+      }
+    ],
+    "render": {
+      "contains": [
+        "Automātiski pārbaudītie punkti: 0 no 10",
+        "Gaidīšanas punkti (netiek pieskaitīti automātiskajai kopsummai): 9 no 9",
+        "Automātiskā kopsumma un gaidīšanas punkti tiek rādīti atsevišķi un netiek sajaukti.",
+        "Kļūdu klasifikācija ir mācību politikas atgriezeniskā saite, nevis oficiāla diagnostika.",
+        "Atbilde nav ieskaitīta: ievads nav nolasāms, tāpēc punkti par šo daļu netiek piešķirti.",
+        "Ievads ir saglabāts neizmainīts: {&quot;values&quot;:{&quot;c&quot;:&quot;1,2,3&quot;}}",
+        "Pašnovērtējums (nav automātiski pārbaudīts)",
+        "Gaida manuālu vai pašnovērtējumu",
+        "data-slot-id=\"S2-4\" data-state=\"invalid\"",
+        "data-level=\"task\" data-signature=\"MC-3B-01\"",
+        "data-card=\"MC-EX03\" data-step=\"S3\"",
+        "Konvencijas vai koncepta atsauce: CIT-C2-DENSITY-UNITS"
+      ],
+      "once": [
+        "Kļūdu klasifikācija ir mācību politikas atgriezeniskā saite",
+        "Automātiskā kopsumma un gaidīšanas punkti tiek rādīti atsevišķi"
+      ],
+      "concept_ids": [
+        "P2-02",
+        "P2-03",
+        "P2-05",
+        "P2-06",
+        "P2-07",
+        "P2-10",
+        "P3-07",
+        "P3-11",
+        "P5-05",
+        "P5-09"
+      ],
+      "chain_ids": [
+        "EX03",
+        "EX04",
+        "EX09"
+      ],
+      "method_cards": [
+        {
+          "card_id": "MC-EX03",
+          "step_id": "S2"
+        },
+        {
+          "card_id": "MC-EX03",
+          "step_id": "S3"
+        }
+      ]
+    }
+  }
+}

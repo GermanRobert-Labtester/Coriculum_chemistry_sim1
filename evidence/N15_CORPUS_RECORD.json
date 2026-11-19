@@ -1,0 +1,593 @@
+{
+  "budget": {
+    "figure_ceiling_bytes": 143360,
+    "figure_headroom_bytes": 781,
+    "html_bytes": 1124577,
+    "html_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b",
+    "merged_figure_island_bytes": 142579,
+    "runtime_ceiling_bytes": 225280,
+    "runtime_headroom_bytes": 83,
+    "runtime_js_code_bytes": 225197,
+    "t67_canonical_bytes": 25858
+  },
+  "calibration_assumptions": [
+    {
+      "assumption_honesty": true,
+      "assumptions": [
+        {
+          "id": "linear_range",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL ar 9 standartiem.",
+          "status": "stated"
+        },
+        {
+          "id": "matrix_match",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH.",
+          "status": "absent_stated"
+        },
+        {
+          "id": "intercept_meaning",
+          "statement_lv": "Krustpunkts fiksēts 0, jo tukšais paraugs ir atņemts.",
+          "status": "stated"
+        },
+        {
+          "id": "blank_correction",
+          "statement_lv": "Tukšais paraugs satur šķīdinātāju un reaģentus; instruments iestatīts uz nulli ar to.",
+          "status": "stated"
+        }
+      ],
+      "figure_id": "FIG-T67-CAL-MASTER"
+    },
+    {
+      "assumption_honesty": true,
+      "assumptions": [
+        {
+          "id": "linear_range",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL; nezināmais ir 96,8 % no augšējās malas.",
+          "status": "stated"
+        },
+        {
+          "id": "matrix_match",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH.",
+          "status": "absent_stated"
+        },
+        {
+          "id": "intercept_meaning",
+          "statement_lv": "Krustpunkts +0,0017 ir sistēmas/tukšā nobīde, nevis nezināmā signāls.",
+          "status": "stated"
+        },
+        {
+          "id": "blank_correction",
+          "statement_lv": "Tukšais paraugs atņemts pirms mērījuma; atlikušais krustpunkts ir brīvais loceklis.",
+          "status": "stated"
+        }
+      ],
+      "figure_id": "FIG-T67-CAL-NEAR-EDGE"
+    },
+    {
+      "assumption_honesty": true,
+      "assumptions": [
+        {
+          "id": "linear_range",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL ar 5 standartiem.",
+          "status": "stated"
+        },
+        {
+          "id": "matrix_match",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH.",
+          "status": "absent_stated"
+        },
+        {
+          "id": "intercept_meaning",
+          "statement_lv": "Krustpunkts fiksēts 0; tukšais paraugs atņemts.",
+          "status": "stated"
+        },
+        {
+          "id": "blank_correction",
+          "statement_lv": "Tukšais paraugs atņemts pirms mērījuma.",
+          "status": "stated"
+        }
+      ],
+      "figure_id": "FIG-T67-CAL-PRACTICE"
+    }
+  ],
+  "calibration_readings": [
+    {
+      "assumption_honesty": true,
+      "figure_id": "FIG-T67-CAL-MASTER",
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "reading_agrees": true,
+      "reading_mg_ml": "0.00849",
+      "reading_recomputed_mg_ml": "0.008490",
+      "render_clipped": true,
+      "signal": "0.258"
+    },
+    {
+      "assumption_honesty": true,
+      "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "reading_agrees": true,
+      "reading_mg_ml": "0.01549",
+      "reading_recomputed_mg_ml": "0.015486",
+      "render_clipped": true,
+      "signal": "0.470"
+    },
+    {
+      "assumption_honesty": true,
+      "figure_id": "FIG-T67-CAL-PRACTICE",
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "reading_agrees": true,
+      "reading_mg_ml": "0.01459",
+      "reading_recomputed_mg_ml": "0.014588",
+      "render_clipped": true,
+      "signal": "0.365"
+    }
+  ],
+  "contracts": {
+    "calibration": {
+      "consumers": [
+        "N18",
+        "N37"
+      ],
+      "no_extrapolation_verbatim_sha256": "ef438e4361746745c362dc6f41d9996a4824156d385c0af078f72947735d5632",
+      "path": "data/calibration_contract.json",
+      "sha256": "53bf121a156920b85b852ea7ac3faa9736fb3fbace3bb2eb136f81bd446767f8"
+    },
+    "n37_type_registry": {
+      "curve_function_classes": [
+        "titration_pH_strong_strong",
+        "titration_pH_weak_strong",
+        "titration_redox_potential"
+      ],
+      "figure_types": [
+        "curve",
+        "scatter"
+      ]
+    },
+    "titration": {
+      "consumers": [
+        "N17",
+        "N18",
+        "N37"
+      ],
+      "path": "data/titration_contract.json",
+      "sha256": "6a99319281522c101d3618e6e2e0c99f880281ced28cf9163fda11578225117f"
+    }
+  },
+  "determinism": {
+    "curves": [
+      {
+        "figure_id": "FIG-T67-TITR-STRONG",
+        "function_class": "titration_pH_strong_strong",
+        "point_count": 401,
+        "points_sha256": "74494e1afb3d656024f7acfebc4505322ca81db61cb390bdb1a6dc923cc7615f",
+        "python_js_parity": true
+      },
+      {
+        "figure_id": "FIG-T67-TITR-WEAK",
+        "function_class": "titration_pH_weak_strong",
+        "point_count": 401,
+        "points_sha256": "b0db60548bf1c6ad1abe2a9b68c5cd322c1b350928c47a419aba9ff0b4f04edd",
+        "python_js_parity": true
+      },
+      {
+        "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+        "function_class": "titration_redox_potential",
+        "point_count": 401,
+        "points_sha256": "5ae0413ef45648396fc1be4d6c5c747448d1839e2516a4e7bf19c67411998bb8",
+        "python_js_parity": true
+      }
+    ],
+    "two_run_validation_sha256": "b641fd113a3acac618a04da60f17d1f9c56aa5aa12b703e9b98e9bd6ac2655fe"
+  },
+  "figures": {
+    "calibration": 3,
+    "slots_closed": 13,
+    "t67": 8,
+    "titration": 5,
+    "total": 45
+  },
+  "leak_scan": {
+    "exemptions": [
+      {
+        "exempted_values": [
+          {
+            "unit": "mL",
+            "value": "25.00"
+          },
+          {
+            "unit": "mL",
+            "value": "7.77"
+          }
+        ],
+        "figure_id": "FIG-T67-TITR-WRONG-IND",
+        "matched_hits_count": 26,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību attēls apzināti parāda gan ekvivalences tilpumu, gan nepareizā indikatora beigu punktu, lai mācītu slazdu; tas nav vērtējams uzdevums."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mg/mL",
+            "value": "0.00849"
+          }
+        ],
+        "figure_id": "FIG-T67-CAL-MASTER",
+        "matched_hits_count": 12,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību attēls parāda pilnu nolasījumu caur taisni, lai demonstrētu metodi; tas nav vērtējams uzdevums."
+      },
+      {
+        "exempted_values": [
+          {
+            "unit": "mg/mL",
+            "value": "0.01549"
+          }
+        ],
+        "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+        "matched_hits_count": 12,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Robežgadījuma mācību attēls parāda nolasījumu 0,01549 mg/mL, lai mācītu diapazona malas disciplīnu; tas nav vērtējams uzdevums."
+      }
+    ],
+    "per_record": [
+      {
+        "figure_id": "FIG-T67-TITR-STRONG",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T67-TITR-WEAK",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T67-TITR-WRONG-IND",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T67-TITR-PRACTICE",
+        "gradeable": true,
+        "leaks": 0,
+        "outcome": "PASS"
+      },
+      {
+        "figure_id": "FIG-T67-CAL-MASTER",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+        "gradeable": false,
+        "leaks": 0,
+        "outcome": "EXEMPT"
+      },
+      {
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "gradeable": true,
+        "leaks": 0,
+        "outcome": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "model_checks": [
+    {
+      "agrees": true,
+      "buffer": null,
+      "buffer_agrees": true,
+      "declared_veq_ml": "25.0000",
+      "deterministic": true,
+      "equivalence_agrees": true,
+      "figure_id": "FIG-T67-TITR-STRONG",
+      "indicator_agrees": true,
+      "inflection_agrees": true,
+      "inflection_ml": "24.9375",
+      "initial_agrees": true,
+      "initial_recomputed": "1.000000",
+      "model_class": "strong_acid_strong_base",
+      "model_veq_ml": "25.0000",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true,
+      "v05": {
+        "agrees": true,
+        "distinction_explained": true,
+        "endpoint_named": true,
+        "equivalence_named": true,
+        "figure_id": "FIG-T67-TITR-STRONG",
+        "no_universal_time": true,
+        "synonym_forbidden": true
+      }
+    },
+    {
+      "agrees": true,
+      "buffer": {
+        "agrees": true,
+        "buffer_slope_ph_per_ml": "0.0762",
+        "equivalence_slope_ph_per_ml": "60.6584"
+      },
+      "buffer_agrees": true,
+      "declared_veq_ml": "25.0000",
+      "deterministic": true,
+      "equivalence_agrees": true,
+      "figure_id": "FIG-T67-TITR-WEAK",
+      "indicator_agrees": true,
+      "inflection_agrees": true,
+      "inflection_ml": "24.9375",
+      "initial_agrees": true,
+      "initial_recomputed": "2.875277",
+      "model_class": "weak_acid_strong_base",
+      "model_veq_ml": "25.0000",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true,
+      "v05": {
+        "agrees": true,
+        "distinction_explained": true,
+        "endpoint_named": true,
+        "equivalence_named": true,
+        "figure_id": "FIG-T67-TITR-WEAK",
+        "no_universal_time": true,
+        "synonym_forbidden": true
+      }
+    },
+    {
+      "agrees": true,
+      "buffer": {
+        "agrees": true,
+        "buffer_slope_ph_per_ml": "0.0762",
+        "equivalence_slope_ph_per_ml": "60.6584"
+      },
+      "buffer_agrees": true,
+      "declared_veq_ml": "25.0000",
+      "deterministic": true,
+      "equivalence_agrees": true,
+      "figure_id": "FIG-T67-TITR-WRONG-IND",
+      "indicator_agrees": true,
+      "inflection_agrees": true,
+      "inflection_ml": "24.9375",
+      "initial_agrees": true,
+      "initial_recomputed": "2.875277",
+      "model_class": "weak_acid_strong_base",
+      "model_veq_ml": "25.0000",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true,
+      "v05": {
+        "agrees": true,
+        "distinction_explained": true,
+        "endpoint_named": true,
+        "equivalence_named": true,
+        "figure_id": "FIG-T67-TITR-WRONG-IND",
+        "no_universal_time": true,
+        "synonym_forbidden": true
+      }
+    },
+    {
+      "agrees": true,
+      "buffer": null,
+      "buffer_agrees": true,
+      "declared_veq_ml": "12.3500",
+      "deterministic": true,
+      "equivalence_agrees": true,
+      "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+      "indicator_agrees": true,
+      "inflection_agrees": true,
+      "inflection_ml": "12.3438",
+      "initial_agrees": true,
+      "initial_recomputed": "0.533203",
+      "model_class": "redox_potential",
+      "model_veq_ml": "12.3500",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true,
+      "v05": {
+        "agrees": true,
+        "distinction_explained": true,
+        "endpoint_named": true,
+        "equivalence_named": true,
+        "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+        "no_universal_time": true,
+        "synonym_forbidden": true
+      }
+    },
+    {
+      "agrees": true,
+      "buffer": {
+        "agrees": true,
+        "buffer_slope_ph_per_ml": "0.0932",
+        "equivalence_slope_ph_per_ml": "68.3225"
+      },
+      "buffer_agrees": true,
+      "declared_veq_ml": "20.4545",
+      "deterministic": true,
+      "equivalence_agrees": true,
+      "figure_id": "FIG-T67-TITR-PRACTICE",
+      "indicator_agrees": true,
+      "inflection_agrees": true,
+      "inflection_ml": "20.4375",
+      "initial_agrees": true,
+      "initial_recomputed": "2.898313",
+      "model_class": "weak_acid_strong_base",
+      "model_veq_ml": "20.4545",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true,
+      "v05": {
+        "agrees": true,
+        "distinction_explained": false,
+        "endpoint_named": true,
+        "equivalence_named": true,
+        "figure_id": "FIG-T67-TITR-PRACTICE",
+        "no_universal_time": true,
+        "synonym_forbidden": true
+      }
+    }
+  ],
+  "negative_cases": {
+    "inflection_disagreement": "FIG-T67-TITR-STRONG / E_FIG_TITRATION_EQUIVALENCE",
+    "over_span_fit": "FIG-T67-CAL-MASTER / E_FIG_CAL_FIT_OUT_OF_SPAN",
+    "over_span_reading": "FIG-T67-CAL-MASTER / E_FIG_CAL_READING_OUT_OF_SPAN",
+    "wrong_reading": "FIG-T67-CAL-MASTER / E_FIG_CAL_READING_MISMATCH"
+  },
+  "no_extrapolation": [
+    {
+      "figure_id": "FIG-T67-CAL-MASTER",
+      "fit_within_span": true,
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "render_clipped": true
+    },
+    {
+      "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+      "fit_within_span": true,
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "render_clipped": true
+    },
+    {
+      "figure_id": "FIG-T67-CAL-PRACTICE",
+      "fit_within_span": true,
+      "inside_span": true,
+      "no_extrapolation_ok": true,
+      "render_clipped": true
+    }
+  ],
+  "prints": {
+    "calibration": {
+      "bytes": 58835,
+      "path": "evidence/N15_PRINT_CALIBRATION.png",
+      "sha256": "a901515bf2f56789266dd06992ec40e5b7b2b042db11f7bdfae780089c66e0d9"
+    },
+    "titration": {
+      "bytes": 57118,
+      "path": "evidence/N15_PRINT_TITRATION.png",
+      "sha256": "db2481600264d208b704fd6fedc81ecb585cf669db6fabf295a03b66ca270555"
+    }
+  },
+  "reading_coupling": [
+    {
+      "declared_reading_ml": "25.00",
+      "deterministic": true,
+      "figure_id": "FIG-T67-TITR-STRONG",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true
+    },
+    {
+      "declared_reading_ml": "24.99",
+      "deterministic": true,
+      "figure_id": "FIG-T67-TITR-WEAK",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true
+    },
+    {
+      "declared_reading_ml": "7.77",
+      "deterministic": true,
+      "figure_id": "FIG-T67-TITR-WRONG-IND",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true
+    },
+    {
+      "declared_reading_ml": "12.35",
+      "deterministic": true,
+      "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true
+    },
+    {
+      "declared_reading_ml": "0.00",
+      "deterministic": true,
+      "figure_id": "FIG-T67-TITR-PRACTICE",
+      "reading_coupling_ok": true,
+      "subdivision_mm": "9.47",
+      "svg_present": true
+    }
+  ],
+  "runtime": {
+    "smoke": {
+      "passed": 9,
+      "total": 9
+    },
+    "svg_sha256": {
+      "FIG-T67-CAL-MASTER": "b017d2f410191eef3c585e7d8c6b912d66644f7c860327538b401f0e15c5743a",
+      "FIG-T67-CAL-NEAR-EDGE": "af40f71333a0ec6856927dfd26c448762b988e2eb99da7e3a1176291c1e93c6c",
+      "FIG-T67-CAL-PRACTICE": "fb74dfa052ad8b0bfec6cb6c3631a788893fd05a583039a81ae545a4b8df9491",
+      "FIG-T67-TITR-MASTER-KMNO4": "5a17ad3137ace4006a01d9d7d89edf091d48620dfd3485de87f45bc25f403ba8",
+      "FIG-T67-TITR-PRACTICE": "9e52207d58630ad64b62486827c8141fd93ec365c1046ef2d8d3731b2bc44cc2",
+      "FIG-T67-TITR-STRONG": "e25b5bb5d4c6e0810d032c8aae238f77522bfb8337b03d1e6e0b8cf053d9dca7",
+      "FIG-T67-TITR-WEAK": "5f55ba85dc1ccc3237dd5d3844c24729ab9f3454e83c567ff94a7a8a59233728",
+      "FIG-T67-TITR-WRONG-IND": "9b9256843eb42357eea7c4afdca532cce8b0c249754d38b2dd72e582a3895aee"
+    },
+    "t67_figures": 8,
+    "total_figures": 45,
+    "truncation": "E_FIGURES_JSON"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N15",
+  "v05_copy": [
+    {
+      "agrees": true,
+      "distinction_explained": true,
+      "endpoint_named": true,
+      "equivalence_named": true,
+      "figure_id": "FIG-T67-TITR-STRONG",
+      "no_universal_time": true,
+      "synonym_forbidden": true
+    },
+    {
+      "agrees": true,
+      "distinction_explained": true,
+      "endpoint_named": true,
+      "equivalence_named": true,
+      "figure_id": "FIG-T67-TITR-WEAK",
+      "no_universal_time": true,
+      "synonym_forbidden": true
+    },
+    {
+      "agrees": true,
+      "distinction_explained": true,
+      "endpoint_named": true,
+      "equivalence_named": true,
+      "figure_id": "FIG-T67-TITR-WRONG-IND",
+      "no_universal_time": true,
+      "synonym_forbidden": true
+    },
+    {
+      "agrees": true,
+      "distinction_explained": true,
+      "endpoint_named": true,
+      "equivalence_named": true,
+      "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+      "no_universal_time": true,
+      "synonym_forbidden": true
+    },
+    {
+      "agrees": true,
+      "distinction_explained": false,
+      "endpoint_named": true,
+      "equivalence_named": true,
+      "figure_id": "FIG-T67-TITR-PRACTICE",
+      "no_universal_time": true,
+      "synonym_forbidden": true
+    }
+  ]
+}

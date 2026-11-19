@@ -1,0 +1,138 @@
+{
+  "contract_sha256": "07410d1e87277fab201dd7f665d7269fefb176e67b9d16db346aab00fd724a05",
+  "draws_per_seed": 100,
+  "green_comparison": {
+    "bounded_digests": [
+      {
+        "draws_consumed": 50,
+        "id": "BOUND-21-S1",
+        "sha256": "c391e6575c4a9afe67a52834d979593da2eb26c518693f13cf31fec1e7e47efa"
+      },
+      {
+        "draws_consumed": 50,
+        "id": "BOUND-7-N24A",
+        "sha256": "4dd871e31f916c5f44538213c3c175b26a090be5fa70e6b447f67b2ccf408ccc"
+      },
+      {
+        "draws_consumed": 5,
+        "id": "BOUND-1-EDGE",
+        "sha256": "fd76db5c8ad0929aeca788d3e83adb863069b1dc11c4c707e9c14286388dc970"
+      },
+      {
+        "draws_consumed": 30,
+        "id": "RANGE-10-20",
+        "sha256": "6400e73fcbfd74f0d3ec62f01fcb5022d8114acdaf22c116a6a9e1ac8aaf8abf"
+      },
+      {
+        "draws_consumed": 25,
+        "id": "BOUND-BIG-U64SEED",
+        "sha256": "2e1fac594cbc4c4de8c3ca380f7a0857104abdfc3f59d0ada080dc11cb33b72b"
+      }
+    ],
+    "divergences": [],
+    "divergences_count": 0,
+    "illegal_bounds_rejected": 3,
+    "illegal_seeds_rejected": 10,
+    "shuffle_digests": [
+      {
+        "draws_consumed": 20,
+        "id": "SHUFFLE-21-SLOTS",
+        "sha256": "d21fff4fe26f215845a19091ae38cc34cd9a0dff74257fcba89fb28802fdfb32"
+      },
+      {
+        "draws_consumed": 3,
+        "id": "SHUFFLE-4-OPTIONS",
+        "sha256": "a041b1759a026921bf7f8350e9ba54b07f64e327899580afb51d76a8b36247c2"
+      },
+      {
+        "draws_consumed": 0,
+        "id": "SHUFFLE-1-ITEM",
+        "sha256": "990655330780a126452411bec34a926252b3960edd17abf31b7b74d88f64148c"
+      },
+      {
+        "draws_consumed": 0,
+        "id": "SHUFFLE-EMPTY",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    ],
+    "stream_digests": [
+      {
+        "seed_dec": "1",
+        "sha256": "3b5e7ac481811f733b2f37d614367e0e263855548af7b9391d4efe3c4d46438b"
+      },
+      {
+        "seed_dec": "2",
+        "sha256": "396e34989b87308d55ab661789f891876ea52af0238cd2e02fe7d1844f58579e"
+      },
+      {
+        "seed_dec": "42",
+        "sha256": "07697948a7dc77722c38b9d8784240b4ab282463ce80c4e97f33951fcd8dc58e"
+      },
+      {
+        "seed_dec": "1337",
+        "sha256": "88f1f33cae90850cf8173b84e1757298c289750ce8b11d28d0f62514ab685d9e"
+      },
+      {
+        "seed_dec": "2025",
+        "sha256": "95100de30b3f926da90dbca986d1b819eb6271a8cc7afed9b961d9718df26231"
+      },
+      {
+        "seed_dec": "20261116",
+        "sha256": "5297a15a80cf2f31d96d11690ff592e2e3df9669c5441337e65b55319371e2d9"
+      },
+      {
+        "seed_dec": "240001",
+        "sha256": "ec5fd0ba0f59e55501c22cb067db533d6115a1340c8561ba269468b8eb8b86a5"
+      },
+      {
+        "seed_dec": "2147483647",
+        "sha256": "aa57745f3f07b737db322e7d0070b6044ef4fc500d022de12d41b87cf28107b8"
+      },
+      {
+        "seed_dec": "4294967295",
+        "sha256": "ffe86d5accc6ea84f8b4ea43d2e65ef6770053bbc89e2e558237f92cb70d11e6"
+      },
+      {
+        "seed_dec": "9007199254740993",
+        "sha256": "06878cb34efb4f0d552950fccd6c9e0fbd87352bc583fbc9e5692a6dc6aa1e52"
+      },
+      {
+        "seed_dec": "18446744073709551615",
+        "sha256": "69517e56d7ded704d8f3bfd30f463141ecd9eb9e3c28cbbfee042d51575c011f"
+      }
+    ]
+  },
+  "js_prng_sha256": "9f85ef21b65f7274e4e5dea9320d2a676b0cb7670607636fb92c6ef8184a414c",
+  "negative_perturbation_js_gamma": {
+    "caught": true,
+    "divergences_count": 16,
+    "first_divergence": {
+      "draw_index": 0,
+      "js_value": "10905525725756348110",
+      "kind": "stream_draw_divergence",
+      "python_value": "10451216379200822465",
+      "seed_dec": "1"
+    },
+    "perturbed_constant": "GAMMA (0x9E3779B97F4A7C15n -> 0x9E3779B97F4A7C16n)"
+  },
+  "negative_perturbation_py_mul1": {
+    "caught": true,
+    "divergences_count": 17,
+    "first_divergence": {
+      "draw_index": 0,
+      "js_value": "10451216379200822465",
+      "kind": "stream_draw_divergence",
+      "python_value": "16781798957938450705",
+      "seed_dec": "1"
+    },
+    "perturbed_constant": "MUL1 (0xBF58476D1CE4E5B9 -> 0xBF58476D1CE4E5BA)"
+  },
+  "policy_id": "splitmix64-u64-v1",
+  "py_prng_sha256": "c23d48d2d0b6768e4718f9933cea0edd8a05a9986cfefd1b1aa85770206cbff9",
+  "schema_version": 1,
+  "seed_count": 11,
+  "status": "PASS",
+  "table_sha256": "eb5dd65faae6eda2d098dec424bf11d8c066b8fa1cb0abba1f58cbfee5f617c6",
+  "task": "N05",
+  "total_stream_draws_compared": 1100
+}

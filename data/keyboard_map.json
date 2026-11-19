@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "policy_id": "n33-keyboard-map-v1",
+  "owner_task": "N33",
+  "title_lv": "Tastatūras īsinājumtaustiņu karte un fokusa līgums",
+  "contexts": [
+    "exam",
+    "practice",
+    "revision",
+    "settings",
+    "drawer-open"
+  ],
+  "modifier_rules": {
+    "no_bare_keys_in_typing_contexts": true,
+    "typing_context_tags": [
+      "TEXTAREA",
+      "SELECT"
+    ],
+    "typing_context_input_types": [
+      "text",
+      "number",
+      "search",
+      "email",
+      "url",
+      "tel",
+      "password"
+    ],
+    "ignore_when_modifiers_pressed": [
+      "ctrlKey",
+      "altKey",
+      "metaKey"
+    ],
+    "reserved_browser_at_keys": [
+      "Tab",
+      "Shift+Tab",
+      "F1",
+      "F5",
+      "F6",
+      "F11",
+      "F12"
+    ]
+  },
+  "focus_contract": {
+    "visible_focus_always": true,
+    "focus_indicator_tokens": [
+      "--state-focus",
+      "--focus-ring-width",
+      "--focus-ring-offset"
+    ],
+    "focus_follows_view_transition": true,
+    "restore_focus_on_drawer_close": true,
+    "no_focus_trap_in_drawers": true,
+    "drawer_ids": [
+      "concept-drawer",
+      "hint-drawer",
+      "store-erase-confirm-box"
+    ],
+    "tab_order_per_view": {
+      "navigation": [
+        "#sim-nav a",
+        "#theme-toggle-btn"
+      ],
+      "start": [
+        "#sakums-virsraksts",
+        "#sakums-form-picker button",
+        "#sakums-navigacija a"
+      ],
+      "concept_map": [
+        "#saturs-virsraksts",
+        "#coverage-nav a",
+        "#concept-map-host button"
+      ],
+      "practice": [
+        "#prakse-virsraksts",
+        "#prakse-filters button",
+        "#prakse-runner-item-host :is(input,select,textarea,button)",
+        "#prakse-help-slot button",
+        "#prakse-runner-controls button"
+      ],
+      "exam": [
+        "#eksamens-virsraksts",
+        "#exam-navigator button",
+        "#exam-map button",
+        "#exam-slot-host :is(input,select,textarea,button)"
+      ],
+      "results": [
+        "#rezultati-virsraksts"
+      ],
+      "revision": [
+        "#atskats-virsraksts",
+        "#atskats button, #atskats input"
+      ],
+      "methods": [
+        "#metodika-virsraksts"
+      ],
+      "print": [
+        "#druka-virsraksts",
+        "#druka button"
+      ],
+      "settings": [
+        "#iestatijumi-virsraksts",
+        "#iestatijumi button, #iestatijumi input"
+      ],
+      "drawer-open": [
+        "#concept-drawer-close",
+        "#concept-drawer a, #concept-drawer button",
+        "#hint-drawer-close",
+        "#hint-drawer button"
+      ]
+    }
+  },
+  "global_shortcuts": [
+    {
+      "key": "t",
+      "action": "topic_jump",
+      "target": "#saturs",
+      "heading_id": "saturs-virsraksts",
+      "label_lv": "Pārlēkt uz programmas tēmām"
+    },
+    {
+      "key": "m",
+      "action": "theme_toggle",
+      "target": "#theme-toggle-btn",
+      "label_lv": "Pārslēgt gaišo vai tumšo krāsu shēmu"
+    },
+    {
+      "key": "1",
+      "action": "section_jump_1",
+      "target": "#sakums",
+      "heading_id": "sakums-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Sākums"
+    },
+    {
+      "key": "2",
+      "action": "section_jump_2",
+      "target": "#saturs",
+      "heading_id": "saturs-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Saturs un mērķi"
+    },
+    {
+      "key": "3",
+      "action": "section_jump_3",
+      "target": "#prakse",
+      "heading_id": "prakse-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Prakse"
+    },
+    {
+      "key": "4",
+      "action": "section_jump_4",
+      "target": "#eksamens",
+      "heading_id": "eksamens-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Eksāmena simulācija"
+    },
+    {
+      "key": "5",
+      "action": "section_jump_5",
+      "target": "#rezultati",
+      "heading_id": "rezultati-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Rezultāti"
+    },
+    {
+      "key": "6",
+      "action": "section_jump_6",
+      "target": "#atskats",
+      "heading_id": "atskats-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Atskats un atkārtošana"
+    },
+    {
+      "key": "7",
+      "action": "section_jump_7",
+      "target": "#metodika",
+      "heading_id": "metodika-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Metodika"
+    },
+    {
+      "key": "8",
+      "action": "section_jump_8",
+      "target": "#druka",
+      "heading_id": "druka-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Druka"
+    },
+    {
+      "key": "9",
+      "action": "section_jump_9",
+      "target": "#iestatijumi",
+      "heading_id": "iestatijumi-virsraksts",
+      "label_lv": "Pārlēkt uz sadaļu Iestatījumi"
+    }
+  ],
+  "context_shortcuts": {
+    "exam": [
+      {
+        "key": "n",
+        "action": "exam_next",
+        "target": "#exam-next",
+        "label_lv": "Nākamais eksāmena uzdevums"
+      },
+      {
+        "key": "p",
+        "action": "exam_prev",
+        "target": "#exam-prev",
+        "label_lv": "Iepriekšējais eksāmena uzdevums"
+      },
+      {
+        "key": "f",
+        "action": "exam_flag",
+        "target": "#exam-flag",
+        "label_lv": "Atzīmēt vai noņemt atzīmi uzdevumam"
+      },
+      {
+        "key": "r",
+        "action": "exam_review",
+        "target": "#exam-review-button",
+        "label_lv": "Atvērt pārbaudes un iesniegšanas ekrānu"
+      }
+    ],
+    "practice": [
+      {
+        "key": "h",
+        "action": "practice_hint",
+        "target": "#prakse-help-slot button",
+        "label_lv": "Atvērt palīdzības kāpnes"
+      },
+      {
+        "key": "s",
+        "action": "practice_skip",
+        "target": "#prakse-skip-btn",
+        "label_lv": "Izlaist prakses uzdevumu"
+      },
+      {
+        "key": "n",
+        "action": "practice_next",
+        "target": "#prakse-next-btn",
+        "label_lv": "Nākamais prakses uzdevums"
+      }
+    ],
+    "revision": [
+      {
+        "key": "c",
+        "action": "revision_self_check",
+        "target": "#atskats-revision-heading",
+        "label_lv": "Pāriet uz pašvērtējuma kritērijiem"
+      }
+    ],
+    "settings": [
+      {
+        "key": "k",
+        "action": "settings_storage_toggle",
+        "target": "#store-opt-in-toggle",
+        "label_lv": "Pārslēgt lokālo saglabāšanu"
+      }
+    ],
+    "drawer-open": [
+      {
+        "key": "Escape",
+        "action": "drawer_close",
+        "target": "#concept-drawer-close, #hint-drawer-close",
+        "label_lv": "Aizvērt aktīvo atvilktni un atgriezt fokusu"
+      }
+    ]
+  },
+  "live_regions": {
+    "timer_threshold": {
+      "id": "sim-live-timer",
+      "politeness": "assertive",
+      "role": "alert",
+      "atomic": true
+    },
+    "verdict_posted": {
+      "id": "sim-live-verdict",
+      "politeness": "polite",
+      "role": "status",
+      "atomic": true
+    },
+    "view_changed": {
+      "id": "sim-live-view",
+      "politeness": "polite",
+      "role": "status",
+      "atomic": true
+    }
+  }
+}

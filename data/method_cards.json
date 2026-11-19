@@ -1,0 +1,2552 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-method-cards",
+  "owner": "N19",
+  "status": "authored",
+  "title_lv": "Metodiskās kartītes: meistara procedūras kā dati",
+  "purpose_lv": "Četrpadsmit procedūras kartītes, kas māca tās darbības, kuras kolokvija metodes jautājumi pārbauda. Katrai kartītei ir kārtīgie kritiskie soļi, katra soļa pamatojums, misconceptions saite, drošības ieraksti, brīvās kārtības grupa tur, kur meistars secību neierobežo, un norāde uz pārrēķināto ķēdi kā ciparnisko pavadoni.",
+  "scope_note_lv": "Kartīšu soļu secība ir meistara mācīšanas secība. Katrs skaitliskais lielums nāk no pārrēķinātās ķēdes soļa; kartīte neatvasina neko jaunu.",
+  "epistemic_label": "PROPOSED training policy; master method anchor; the step order is the master's teaching order, not an examination requirement.",
+  "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+  "n09_gap_notice_lv": "N09 misconceptions reģistrs šajā darba telpā vēl nav izpildīts. Kartīšu soļi lieto N04 deklarēto stub-parakstu MC-[1-7][A-D]-[0-9]{2} un pievieno savu skaidrojuma tekstu; katrs paraksturs atbilst kādam esošam #sim-golden-vectors vektoram. N09 izpildot, jāpārbauda šī saiste, nevis kartīšu loģika.",
+  "cards": [
+    {
+      "card_id": "MC-EX01",
+      "procedure_key": "stehiometrija_no_masas",
+      "title_lv": "Stehiometrija no masas",
+      "subtitle_lv": "No reakcijas vienādojuma līdz produkta masai: pāreja uz moliem, koeficientu attiecība un atpakaļ uz gramiem.",
+      "topic": 1,
+      "family_id": "FAM-1C",
+      "chain_id": "EX01",
+      "outcome_ids": [
+        "P1-01"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "anchor": "stehiometrija",
+        "heading_lv": "Stehiometrija",
+        "freeze_id": "C1-MASTER",
+        "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+          "anchor": "reakcijas",
+          "heading_lv": "Reakcijas un vienādojumi",
+          "freeze_id": "C1-MASTER",
+          "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+        }
+      ],
+      "order_citation_lv": "Meistara nodaļa «Stehiometrija» secība ir: sabalansēt vienādojumu, pāriet uz moliem, pielāgoties koeficientu attiecībai un tikai tad aprēķināt masu; šī secība nav izvēlēta šeit.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Sabalansē reakcijas vienādojumu pirms jebkura skaitliskā aprēķina.",
+          "reasoning_lv": "Koeficienti izsaka vielas daudzumus, nevis masu attiecību. Bez balansēta vienādojuma nav ko pielāgot, tāpēc šis solis ir pirmais.",
+          "misconception_signature": "MC-1C-01",
+          "misconception_note_lv": "Masa un koeficientu attiecība netieši noder: koeficienti rāda molu skaitu, tāpēc aprēķinu sāk ar balansētu vienādojumu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX01",
+              "chain_step_id": "S1",
+              "value_display_lv": "2 : 1 : 2",
+              "unit": "1",
+              "quantity_lv": "Bilances koeficienti"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Pāriet no masas uz moliem: n = m / M.",
+          "reasoning_lv": "Vienības saīsinās: g / (g/mol) = mol. Tas ir vienīgais ceļš no gramiem uz vielas daudzumu.",
+          "misconception_signature": "MC-1C-01",
+          "misconception_note_lv": "Dalot masu ar molmasu, iegūst molus;dalot molu ar molmasu, iegūst gramus. Sajaukšana šajā pārejā bieži padara rezultātu par desmitiem reižu lielāku.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX01",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,200",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(Mg)"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Pielāgo molu daudzumu bilances koeficientu attiecībai.",
+          "reasoning_lv": "Koeficientu attiecība n(MgO) : n(Mg) = 2 : 2 = 1 : 1, tāpēc daudzums šajā pārejā nemainās.",
+          "misconception_signature": "MC-1C-01",
+          "misconception_note_lv": "Koeficientu attiecība jāliek pašā molu daudzumā, nevis masā: šeit 2 : 2 ir 1 : 1, un tas izslēdz desmitkārtu kļūdu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX01",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,200",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(MgO)"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Aprēķini produkta masu no tā molu daudzuma un molmasas.",
+          "reasoning_lv": "m = n · M = 0,200 mol · 40,0 g/mol = 8,00 g.",
+          "misconception_signature": "MC-1C-01",
+          "misconception_note_lv": "Atpakaļpāreja no moliem uz gramiem izmanto reizināšanu, nevis dalīšanu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX01",
+              "chain_step_id": "S4",
+              "value_display_lv": "8,00",
+              "unit": "g",
+              "dimension": "mass",
+              "quantity_lv": "m(MgO)"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Salīdzini iegūto produkta masu ar reakcijā ieradušās skābekļa masu.",
+          "reasoning_lv": "Skābeklis ir pārākumā, tāpēc MgO masa ir 4,80 g + 3,20 g = 8,00 g. Masas bilance aizvērtas.",
+          "misconception_signature": "MC-1C-01",
+          "misconception_note_lv": "Masas nezūdamība pārbauda rezultātu no otras puses: ieradušā skābekļa masa ir jāsalāgo ar produktu, nevis jāignorē.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX01",
+              "chain_step_id": "S7",
+              "value_display_lv": "8,00",
+              "unit": "g",
+              "dimension": "mass",
+              "quantity_lv": "Masas bilance"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX01-1",
+          "prompt_lv": "Pēc kura soļa ir zināms MgO vielas daudzums, lai aprēķinātu tā masu?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-1C-01",
+              "note_lv": "Koeficientu zināšana nedod vielas daudzumu: tā tam vēl jāaprēķina no masas."
+            },
+            {
+              "step_id": "S5",
+              "misconception_signature": "MC-1C-01",
+              "note_lv": "Masas bilance pārbauda jau iegūto rezultātu, tā neizmēra MgO daudzumu."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX01-2",
+          "prompt_lv": "Ko darīt, ja skābeklis reakcijā ir pārākumā un aprēķinātais MgO ir 8,00 g?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-1C-01",
+              "note_lv": "Masas aprēķins jau pabeigts; pārbaude ir atsevišķa nākamā darbība."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc koeficientus neizmanto masu, bet gan molu attiecībā.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX02",
+      "procedure_key": "disociacija_un_jonu_skats",
+      "title_lv": "Disociācija un jonu skaits",
+      "subtitle_lv": "No elektrolīta identifikācijas līdz joniem šķīdumā un to skaitam.",
+      "topic": 1,
+      "family_id": "FAM-1B",
+      "chain_id": "EX02",
+      "outcome_ids": [
+        "P1-06",
+        "P1-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "anchor": "elektroliti",
+        "heading_lv": "Elektrolīti un disociācija",
+        "freeze_id": "C1-MASTER",
+        "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+          "anchor": "atomi",
+          "heading_lv": "Atomi, joni, molekulas",
+          "freeze_id": "C1-MASTER",
+          "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+        }
+      ],
+      "order_citation_lv": "Meistara nodaļa «Elektrolīti un disociācija» secība ir: disociācijas vienādojums, vielas daudzums, katra jona daudzums, kopējais jonu daudzums un tikai tad jonu skaits.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Pieraksti elektrolīta disociācijas vienādojumu un norādi, kuri joni veidojas.",
+          "reasoning_lv": "NaCl → Na⁺ + Cl⁻. Vienādojums nosaka, kādas daļiņas būs šķīdumā, un tādējā arī to skaitli.",
+          "misconception_signature": "MC-1B-01",
+          "misconception_note_lv": "Iegūtais jons nav tas pats, kas izšķīdinātā viela: NaCl molekula šķīdumā nepaliek vesela.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX02",
+              "chain_step_id": "S1",
+              "value_display_lv": "NaCl → Na⁺ + Cl⁻",
+              "unit": "1",
+              "quantity_lv": "Dissociācijas vienādojums"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Aprēķini izšķīdinātās vielas daudzumu no masas un molmasas.",
+          "reasoning_lv": "n = m / M; šeit 0,100 mol.",
+          "misconception_signature": "MC-1B-01",
+          "misconception_note_lv": "Vielas daudzums jāaprēķina pirms jonu daudzuma: tas ir pamats, uz kura balstās pārēķins.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX02",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,100",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(Na⁺)"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Izmanto disociācijas koeficientus, lai noteiktu katra jona daudzumu.",
+          "reasoning_lv": "Koeficienti 1 : 1 : 1 nozīmē, ka n(Na⁺) = n(Cl⁻) = 0,100 mol.",
+          "misconception_signature": "MC-1B-01",
+          "misconception_note_lv": "Pārēkuma jona daudzums nav vienāds ar visas vielas daudzumu; to nosaka tikai disociācijas koeficienti.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX02",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,100",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(Cl⁻)"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Summē katru jona daudzumu, lai iegūtu kopējo jonu daudzumu.",
+          "reasoning_lv": "0,100 mol + 0,100 mol = 0,200 mol. Kopējais joni nav jādalina ar Avogadro skaitli, lai iegūtu atsevišķu jonu daudzumu.",
+          "misconception_signature": "MC-1B-01",
+          "misconception_note_lv": "Kopējā jonu daudzuma un atsevišķa jona daudzuma mērķi ir dažādi; tos nedrīkst sajaukt.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX02",
+              "chain_step_id": "S4",
+              "value_display_lv": "0,200",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "Kopējais jonu daudzums"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Pārrēķini jonu daudzumu uz jonu skaitu, izmantojot Avogadro konstanti.",
+          "reasoning_lv": "0,200 mol · 6,022·10²³ mol⁻¹ = 1,204·10²³ joni.",
+          "misconception_signature": "MC-1B-01",
+          "misconception_note_lv": "Avogadro konstanti lieto tikai pārejā no moliem uz atsevišķām daļiņām, nevis no masas.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX02",
+              "chain_step_id": "S5",
+              "value_display_lv": "1,204·10²³",
+              "unit": "1",
+              "quantity_lv": "Joni skaits"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX02-1",
+          "prompt_lv": "Pēc kura soļa ir zināms, ka šķīdumā ir divi dažādi joni?",
+          "acceptance_step_ids": [
+            "S1"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-1B-01",
+              "note_lv": "Joni jau jābūt nosaukti, pirms var aprēķināt to daudzumu."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX02-2",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināts kopējais jonu daudzums 0,200 mol?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S2",
+              "misconception_signature": "MC-1B-01",
+              "note_lv": "Vielas daudzuma aprēķins jau atpakāk; tā neizmanto kopējo jonu daudzumu."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc glikoze šķīdumā neveido jonus.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX03",
+      "procedure_key": "biretes_izlietotais_tilpums",
+      "title_lv": "Biretes protokols",
+      "subtitle_lv": "Biretes sagatavošana, sākuma līmeņa iestatīšana un izlietotā tilpuma aprēķins kā starpība.",
+      "topic": 2,
+      "family_id": "FAM-2C",
+      "chain_id": "EX03",
+      "outcome_ids": [
+        "P2-07",
+        "P2-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "anchor": "ch5-biretes-protokols-2b-q2",
+        "heading_lv": "Biretes protokols: 2B Q2",
+        "freeze_id": "C2-MASTER",
+        "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch5-menisks-un-paralakse",
+          "heading_lv": "Menisks un paralakse",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        },
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch4-drosiba-ar-iemeslu",
+          "heading_lv": "Drošība ar iemeslu",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        }
+      ],
+      "order_citation_lv": "Meistara sadaļa «Biretes protokols: 2B Q2» dod sešus soļus noteiktā secībā: krāna pārbaude, uzpildīšana, sākuma līmenis, izliešana ar pārbaudi, atkārtojošās izliešanas nolasījums un papildināšana, ja tilpums pārsniedz skalu.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Pārbaudi krānu un novieto zem biretes trauku, kas uztvertu nejaušu noplūdi.",
+          "reasoning_lv": "Meistars sāk ar drošības pārbaudi, nevis ar uzpildīšanu, lai noplūde netūk pamanīta pēc tam, kad darbs jau sācies.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Krāna un savācēja trauka pārbaude ir protokola daļa, nevis formalitāte; bez tās pirmais nolasījums nav uzticams.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "safety": {
+            "entry_lv": "Aizsargbrilles aizsargā acis no šļakatām un tvaikiem; tās jāuzliek pirms darba ar trauslu stiklu vai kodīgu šķīdumu.",
+            "citation": {
+              "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+              "anchor": "ch4-drosiba-ar-iemeslu",
+              "heading_lv": "Drošība ar iemeslu",
+              "freeze_id": "C2-MASTER",
+              "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+            }
+          }
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Uzpildi bireti ar destilētu ūdeni un pēc uzpildes noņem piltuvi.",
+          "reasoning_lv": "Piltuvē palikušais šķidrums var pilēt biretē arī tad, kad krāns ir aizvērts, un izmainīt nolasījumu. Tāpēc piltuve jāizņem.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Piltuves atstāšana biretē ir klasiņas klūda: tā maina sākuma līmeni nezināmo veidā.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Iestadi sākuma līmeni un nolasi to acu līmenī, nolasot apakšējo menisku.",
+          "reasoning_lv": "Ja nulli nevar sasniegt, pieraksta faktisko sākuma nolasījumu; to nedrīkst uzspiest uz nulli.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Sākuma nolasījumu nedrīkst pielādēt līdz nullei: izlietotais tilpums ir starpība, un izliekts sākuma līmenis to izjauc.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Ielej noteikto tilpumu un pirms nolasīšanas gaidī, līdz šķidrums notek no sienām.",
+          "reasoning_lv": "Nolasīšana pirms notekšanas rāda pārāk lielu vai pārāk mazu vērtību, jo uz sienām paliek kārtisks šķidruma slānis.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Nolasīšana pirms notekšanas ir vēl viena klūda, kas padara izlietoto tilpumu par daļu lielāku.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Nolasi beigu līmeni un aprēķini izlietoto tilpumu kā beigu un sākuma nolasījuma starpību.",
+          "reasoning_lv": "18,40 mL − 2,15 mL = 16,25 mL. Biretes skala aug uz leju un rāda, cik izliets kopš nulles, tāpēc nolasījumus atņem, nevis saskaita.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Biretes divus nolasījumus ne saskaita, bet atņem; saskaitīšana dod neiespējamu tilpumu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX03",
+              "chain_step_id": "S1",
+              "value_display_lv": "16,25",
+              "unit": "mL",
+              "dimension": "volume",
+              "quantity_lv": "Izlietotais tilpums"
+            },
+            {
+              "chain_id": "EX03",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,01625",
+              "unit": "L",
+              "dimension": "volume",
+              "quantity_lv": "Tilpums litros"
+            }
+          ]
+        },
+        {
+          "step_id": "S6",
+          "statement_lv": "Ja plānotais izlietotais tilpums pārsniedz biretes skalu, bireti papildina un no jauna iestadi sākuma līmeni.",
+          "reasoning_lv": "25 mL biretes skala beidzas pie 25 mL, tāpēc lielāks kopējais izliešanas tilpums jāsadala divos piepildījumos, un katrā no jauna jāzina sākuma līmenis.",
+          "misconception_signature": "MC-2C-01",
+          "misconception_note_lv": "Biretes papildināšana vidējā izliešanas reizē, nevis pirms tās, liek aprēķināt starpību pret nepareizu sākuma līmeni.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX03-1",
+          "prompt_lv": "Ko darīt pirms pirmā izliešanas nolasīšanas?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S5",
+              "misconception_signature": "MC-2C-01",
+              "note_lv": "Starpības aprēķins ir pēdējais solis, nevis priekšējais."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX03-2",
+          "prompt_lv": "Ko darīt, ja plānotais izlietotais tilpums ir lielāks par biretes skalas diapazonu?",
+          "acceptance_step_ids": [
+            "S6"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-2C-01",
+              "note_lv": "Izliešana ar pārbaudi ir normāls gājums; problēma ir tilpuma apjoms, nevis tehnika."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "matching": {
+        "left_items": [
+          {
+            "id": "L1",
+            "text_lv": "Birete"
+          },
+          {
+            "id": "L2",
+            "text_lv": "Mērkolba"
+          },
+          {
+            "id": "L3",
+            "text_lv": "Pipete"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "R1",
+            "text_lv": "Precīza šķīduma dozēšana titrēšanā"
+          },
+          {
+            "id": "R2",
+            "text_lv": "Precīza gala tilpuma pagatavošana"
+          },
+          {
+            "id": "R3",
+            "text_lv": "Precīzas fiksēta tilpuma daļas pārnešana"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1",
+            "misconception_signature": "MC-2C-01",
+            "note_lv": "Birete ir titrēšanas dozēšanas trauks; tā nav gala tilpuma trauks.",
+            "feedback_key": "feedback.concept_link_label"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2",
+            "misconception_signature": "MC-2C-01",
+            "note_lv": "Mērkolba nosaka fiksētu gala tilpumu, nevis izlietojamu daudzumu.",
+            "feedback_key": "feedback.concept_link_label"
+          },
+          {
+            "left_id": "L3",
+            "right_id": "R3",
+            "misconception_signature": "MC-2C-01",
+            "note_lv": "Pipete pārnes precīzu fiksētu tilpumu; tā nav titrantu.",
+            "feedback_key": "feedback.concept_link_label"
+          }
+        ]
+      },
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc biretes skalu laso uz leju un kāpēc nolasījumus atņem.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX04",
+      "procedure_key": "vienibu_kede_un_zimigie_cipi",
+      "title_lv": "Vienību ķēde un zīmīgie cipari",
+      "subtitle_lv": "Pārvēršana pa prefiksu ķēdi, zinātniskais pieraksts un noapaļošana reizināšanas un dalīšanas beigās.",
+      "topic": 2,
+      "family_id": "FAM-2B",
+      "chain_id": "EX04",
+      "outcome_ids": [
+        "P2-05",
+        "P2-10",
+        "P2-03"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "anchor": "ch2-mervienibu-parversana-ar-vienibu-kedi",
+        "heading_lv": "Mērvienību pārvēršana ar vienību ķēdi",
+        "freeze_id": "C2-MASTER",
+        "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+          "anchor": "zimigie-cipari",
+          "heading_lv": "Zīmīgie cipari: piecu soļu procedūra",
+          "freeze_id": "C3-MASTER",
+          "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+        },
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch8-ka-noapalot-lidz-zimigajiem-cipariem",
+          "heading_lv": "Kā noapaļot līdz zīmīgajiem cipariem",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        }
+      ],
+      "order_citation_lv": "Meistara vienību ķēde ir pārvēršana no lielākās vienības uz mazāko, un zīmīgo ciparu procedūra nosaka, ka noapaļošana notiek aprēķina beigās, nevis pa ceļam.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Pārrēķini lielumu uz lielāko vienību, kurā skaitlis paliek vesels.",
+          "reasoning_lv": "Piemēram, 4500 mg pārrēķina uz 4,50 g. Lielākā vienība ar veselu skaitli padara nākamo soli vienkāršāku.",
+          "misconception_signature": "MC-2B-01",
+          "misconception_note_lv": "Pārāk lielas vienības izvēle (piemēram kg) ne vienmēr palielina precizitāti, bet apgrūtina tālāko aprēķinu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX04",
+              "chain_step_id": "S1",
+              "value_display_lv": "4,50",
+              "unit": "g",
+              "dimension": "mass",
+              "quantity_lv": "Masa gramos"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Pārrēķini uz mazāko vienību, kurā skaitlis joprojām paliek vesels, un pieraksti tā zīmīgo ciparu skaitu.",
+          "reasoning_lv": "4,50 g = 4500 mg; šeit 4500 ir četri zīmīgie cipari, jo 4,50 bija trīs.",
+          "misconception_signature": "MC-2B-01",
+          "misconception_note_lv": "Zīmīgo ciparu skaits ceļas garumā nemainās; to nosaka ievades dati, nevis vienības izvēle.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX04",
+              "chain_step_id": "S2",
+              "value_display_lv": "4500",
+              "unit": "mg",
+              "dimension": "mass",
+              "quantity_lv": "Masa miligramos"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Pieraksti lielumu zinātniskajā pierakstā, atzīmējot zīmīgo ciparu skaitu.",
+          "reasoning_lv": "4,50·10³ mg ir četri zīmīgie cipari; rakstība padara skaitli un precizitāti vienādu lasītājam.",
+          "misconception_signature": "MC-2B-01",
+          "misconception_note_lv": "Zinātniskais pieraksts nedrīkst mainīt skaitlisko vērtību; tas ir formāls veids, nevis jauns skaitlis.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX04",
+              "chain_step_id": "S3",
+              "value_display_lv": "4,50·10³ mg",
+              "unit": "mg",
+              "dimension": "mass",
+              "quantity_lv": "Zinātniskais pieraksts"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Reizināšanas un dalīšanas rezultātu noapaļo tikai beigās, atzīmējot ierobežojošo mērījumu.",
+          "reasoning_lv": "Reizinājumā un dalījumā rezultātu ierobežo mērījums ar mazāko zīmīgo ciparu skaitu; starprezultātos papildu cipari nepadara rezultātu precīzāku.",
+          "misconception_signature": "MC-2B-01",
+          "misconception_note_lv": "Noapaļošana pa ceļam vaiņina rezultātu; tā jāatliek uz beigām, lai precīzitātes zudumu rādītu tikai ierobežojošais skaitlis.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX04",
+              "chain_step_id": "S4",
+              "value_display_lv": "8,55",
+              "unit": "1",
+              "quantity_lv": "Reizinājums"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX04-1",
+          "prompt_lv": "Ko darīt pēc tam, kad 4,50 g ir pārrēķināts uz miligramiem?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-2B-01",
+              "note_lv": "Pārvēršana uz lielāko vienību jau notika; atgriešana atpakaļ neprecīzē rezultātu."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX04-2",
+          "prompt_lv": "Kad jānoapaļo reizināšanas rezultāts?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S2",
+              "misconception_signature": "MC-2B-01",
+              "note_lv": "Vienības pārvēršana nav noapaļošana; tā nemaina skaitli."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc 10 mL un 10,0 mL nav vienāds mērījums.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX05",
+      "procedure_key": "koncentracija_no_iesvara",
+      "title_lv": "Koncentrācija no iesvara",
+      "subtitle_lv": "No vielas daudzuma līdz molārai koncentrācijai un tā zīmīgo ciparu pierakstam.",
+      "topic": 3,
+      "family_id": "FAM-3A",
+      "chain_id": "EX05",
+      "outcome_ids": [
+        "P3-04",
+        "P3-06",
+        "P3-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "anchor": "n5",
+        "heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+        "freeze_id": "C3-MASTER",
+        "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+          "anchor": "volumetric-steps-title",
+          "heading_lv": "Šķīduma pagatavošana mērkolbā soli pa solim",
+          "freeze_id": "C3-MASTER",
+          "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+        }
+      ],
+      "order_citation_lv": "Meistara nodaļa 5 koncentrācijas lielumu secība ir: vielas daudzums, šķīduma tilpums litros, tad c = n / V; pēc tam jona koncentrācijas un zīmīgo ciparu pieraksts.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Aprēķini vielas daudzumu n no masas un molmasas.",
+          "reasoning_lv": "n = m / M = 2,922 g / 58,44 g/mol = 0,05000 mol.",
+          "misconception_signature": "MC-3A-01",
+          "misconception_note_lv": "Bez vielas daudzuma koncentrāciju aprēķināt nevar; mola un masa nav savstarpēji aizvietojamas vienības.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX05",
+              "chain_step_id": "S1",
+              "value_display_lv": "0,05000",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(NaCl)"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Pārrēķini šķīduma tilpumu uz litriem.",
+          "reasoning_lv": "250,0 mL = 0,2500 L. Koncentrācijas formā lieto litrus, nevis mililitrus.",
+          "misconception_signature": "MC-3A-01",
+          "misconception_note_lv": "Tilpuma vienības maiņa maina skaitlisko vērtību, tāpēc to nedrīkst atstāt aprēķina beigās.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX05",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,2500",
+              "unit": "L",
+              "dimension": "volume",
+              "quantity_lv": "V šķīduma"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Aprēķini molāro koncentrāciju c = n / V.",
+          "reasoning_lv": "c = 0,05000 mol / 0,2500 L = 0,2000 mol/L.",
+          "misconception_signature": "MC-3A-01",
+          "misconception_note_lv": "Dalot molus ar tilpuma litriem, iegūst mol/L; dalot ar mililitriem, iegūst tūkstošreiz lielāku skaitli.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX05",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,2000",
+              "unit": "mol/L",
+              "dimension": "concentration_amount",
+              "quantity_lv": "c(NaCl)"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Ja šķīdumā ir elektrolīts, norādi arī katra jona koncentrāciju.",
+          "reasoning_lv": "Disociācija ir 1 : 1, tāpēc c(Na⁺) = c(Cl⁻) = 0,2000 mol/L. Iesvaļa un kationa koncentrācijas nav vienādas.",
+          "misconception_signature": "MC-3A-01",
+          "misconception_note_lv": "Elektrolīta šķīdumā izšķīdinātās vielas un kāda jona koncentrācija nav viena un tā paša lieluma, ja disociācija nav 1 : 1.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX05",
+              "chain_step_id": "S4",
+              "value_display_lv": "c(Na⁺)=0,2000 mol/L; c(Cl⁻)=0,2000 mol/L",
+              "unit": "mol/L",
+              "dimension": "concentration_amount",
+              "quantity_lv": "Joni koncentrācijas"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Pieraksti zīmīgo ciparu skaitu, ko ierobežo vismazāk precīzais ievades lielums.",
+          "reasoning_lv": "Dalīšanas rezultātu ierobežo ievades ar mazāko zīmīgo ciparu skaitu; šeizmērījums ir ar četriem zīmīgajiem cipariem, tāpēc arī atbildei ir četri.",
+          "misconception_signature": "MC-3A-01",
+          "misconception_note_lv": "Zīmīgie cipari nedrīkst paņemt no skaitļa raksta, ja tas nav mērījums; precīzi definēcijas un koeficienti netiek skaitīti kā mērījumi.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX05",
+              "chain_step_id": "S5",
+              "value_display_lv": "4 zīmīgie cipi",
+              "unit": "1",
+              "quantity_lv": "Zīmīgie cipi"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX05-1",
+          "prompt_lv": "Ko darīt, kad zināms vielas daudzums 0,05000 mol, bet vēl nezināms šķīduma tilpums?",
+          "acceptance_step_ids": [
+            "S2"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-3A-01",
+              "note_lv": "Dalīšana prasa tilpumu litros; bez tā koncentrācija nav aprēķināma."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX05-2",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināta koncentrācija c(NaCl)?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-3A-01",
+              "note_lv": "Vielas daudzuma aprēķins jau atpakāk."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc šķīduma tilpums formulā ir gala tilpums, nevis pievienotā ūdens tilpums.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX06",
+      "procedure_key": "atskaisana_lidz_gala_tilpumam",
+      "title_lv": "Atšķaidīšana līdz gala tilpumam",
+      "subtitle_lv": "Mērkolbā neizmēra aprēķinātu ūdens porciju: nomēra, pārnes, atšķaida, uzpilda līdz atzīmei un samaisa.",
+      "topic": 3,
+      "family_id": "FAM-3C",
+      "chain_id": "EX06",
+      "outcome_ids": [
+        "P3-10",
+        "P3-11"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "anchor": "n10",
+        "heading_lv": "Nodaļa 10. Atšķaidīšana un šķīdumu sajaukšana",
+        "freeze_id": "C3-MASTER",
+        "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch12-darba-gaita",
+          "heading_lv": "Darba gaita un katra soļa jēga",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        },
+        {
+          "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+          "anchor": "volumetric-steps-title",
+          "heading_lv": "Šķīduma pagatavošana mērkolbā soli pa solim",
+          "freeze_id": "C3-MASTER",
+          "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+        }
+      ],
+      "order_citation_lv": "Meistara 10. nodaļa atšķaidīšanas procedūra ir: nomēra un pārnes sākuma šķīdumu (vai iesver un pārnes vielu), pievieno šķīdinātāju apmēram līdz divām trešdaļām un samaisa vai izšķīdina, uzpilda līdz atzīmei un samaisa. Šī kartīte seko «iesver un pārnes vielu» zaram, kura sešu rindu darba gaitu meistars aprakstījis nodaļā 12.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Nosver tukšu 100 mL mērkolbu ar korķi, lai iegūtu atskaites masu.",
+          "reasoning_lv": "Mērkolbas svēršanai pirms un pēc jāizmanto tas pats korķis, jo korķa masa atšķiras. Bez tukšās masas nevar aprēķināt šķīduma masu.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Korķa nomaiņa starp svēršanas reizēm padara šķīduma masu neprecīzu, pat ja mērījums pats ir labs.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Nosver aptuveni 5 g NaCl ar precizitāti 0,01 g.",
+          "reasoning_lv": "Šī sveršana ir neatkarīga no tukšās mērkolbas svēršanas; katra dod savu lielumu, un kopā tās nosaka šķīduma masu.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Pārsveršoties par svaru precīzitāti, rezultāts tiek ievērots, bet precīzitātes zudums nav attaisināts.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Pārnes nosvērto vielu mērkolbā, izmantojot piltuvi un nedaudz destilēta ūdens.",
+          "reasoning_lv": "Kvantitatīva pārnese: visa nosvērtā viela nonāk kolbā. Pārnešes zudumi ir sistemātiska kļūda, kas samazina koncentrāciju.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Muchas pārnešes zudumi nav nejaušas kļūdas, bet sistemātiskas: tās vienmēr samazina koncentrāciju.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX06",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,00500",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "c₂V₂"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Pievieno šķīdinātāju apmēram līdz divām trešdaļām un samaisa vai izšķīdina.",
+          "reasoning_lv": "Šķīšana un sajaukšana notiek pirms gala tilpuma iestatīšanas, jo šķīšanas laikā tilpums var mainīties un atzīme vairs nav ticama.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Šķīdināšana līdz atzīmei no paša sākuma padara atzīmi par neprecīzu gala tilpuma atzīmi.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Uzpilda līdz atzīmei: atzīme nosaka galīgo šķīduma tilpumu V₂.",
+          "reasoning_lv": "V₂ = 0,1000 L. Mērkolbā neizmēra aprēķinātu ūdens porciju, tāpēc nevar pievienot precīzi 90,0 mL.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Pievienotā ūdens tilpums un gala tilpums ir dažādi lielumi; aprēķināts ūdens daudzums pēc mērkolbas atzīmes nevar būt pārsvērts.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX06",
+              "chain_step_id": "S1",
+              "value_display_lv": "0,1000",
+              "unit": "L",
+              "dimension": "volume",
+              "quantity_lv": "V₂"
+            }
+          ]
+        },
+        {
+          "step_id": "S6",
+          "statement_lv": "Aizvāc un samaisa, lai šķīdums būtu viendabīgs.",
+          "reasoning_lv": "Nepietiekama sajaukšana dod koncentrācijas gradientu; paraugs no augšas nav reprezentatīvs.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Neizsamaisīts šķīdums nav viendabīgs: alikvots no augšas un apakšas var atšķirties pat tad, ja tilpums ir pareizs.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S7",
+          "statement_lv": "Pārliecini, ka vielas daudzums saglabājās: c₁V₁ = c₂V₂.",
+          "reasoning_lv": "Pievienojot tikai šķīdinātāju un nezaudējot vielu, izšķīdinātās vielas daudzums un masa nemainās. Šeit c₂V₂ = 0,00500 mol.",
+          "misconception_signature": "MC-3C-01",
+          "misconception_note_lv": "Atšķaidīšana maina tilpumu un koncentrāciju, bet ne vielas daudzumu; ja n(mainās), aprēķins nav atšķaidīšana.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX06",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,00500",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "c₂V₂"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [
+        {
+          "group_id": "FOG-EX06-1",
+          "step_ids": [
+            "S1",
+            "S2"
+          ],
+          "reason_lv": "Tukšās mērkolbas svēršana un vielas svēršana ir divas neatkarīgas sagatavošanas darbības. Meistars neuzliek vienu pirms otras, un katra no tām jānotiek pirms pārnešas. Tāpēc šo divu soļu secību dzinējs neizvērtē.",
+          "citation": {
+            "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+            "anchor": "ch12-darba-gaita",
+            "heading_lv": "Darba gaita un katra soļa jēga",
+            "freeze_id": "C2-MASTER",
+            "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+          }
+        }
+      ],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX06-1",
+          "prompt_lv": "Ko darīt, kad šķīdums ir izšķīdināts un samaisīts apmēram līdz divām trešdaļām?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-3C-01",
+              "note_lv": "Pārnešana notiek pirms šķīšanas; šis solis jau ir aiz muguras."
+            },
+            {
+              "step_id": "S6",
+              "misconception_signature": "MC-3C-01",
+              "note_lv": "Samaisīšana ir pēdējais solis pēc atzīmes iestatīšanas."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX06-2",
+          "prompt_lv": "Kāpēc nepievieno precīzi 90,0 mL ūdens, lai sasniegtu 100,0 mL?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-3C-01",
+              "note_lv": "Šķīdinātāja tilpuma pievienošana ir sagatavošanas solis, nevis galīgā tilpuma noteikšana."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc aditivitātes pieņēmums ir tikai pieņēmums, nevis mērījums.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX07",
+      "procedure_key": "gibsa_energija_un_robeztemperatura",
+      "title_lv": "Gibsa enerģija un robežtemperatūra",
+      "subtitle_lv": "No standartentropijas līdz ΔG un līdz temperatūrai, kurā reakcija maina raksturu.",
+      "topic": 4,
+      "family_id": "FAM-4C",
+      "chain_id": "EX07",
+      "outcome_ids": [
+        "P4-08",
+        "P4-10",
+        "P4-11"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "anchor": "sec-ch7-49",
+        "heading_lv": "7.6. Faktiskais virzītājspēks ΔG, standartvērtība ΔG° un līdzsvara konstante K (C05–C06; IUPAC G02629/S05915)",
+        "freeze_id": "C4-MASTER",
+        "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+          "anchor": "sec-ch7-50",
+          "heading_lv": "Ķīmiskais līdzsvars un saikne ar konstanti K",
+          "freeze_id": "C4-MASTER",
+          "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+        }
+      ],
+      "order_citation_lv": "Meistara 7. nodaļas secība ir: entropijas izmaiņa no standartvērtībām, TΔS termins, ΔG = ΔH − TΔS un pēc tam robežtemperatūra, kurā ΔG = 0.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Aprēķini entropijas izmaiņu ΔS no standartvērtībām.",
+          "reasoning_lv": "ΔS = 0,150 kJ/(mol·K). Pievienotā un atņemtā standartentropijas vērtība jāpārceļ vienībā, kurā to lietos TΔS termenī.",
+          "misconception_signature": "MC-4C-01",
+          "misconception_note_lv": "ΔS nav joni, bet izmaiņa; to iegūst starpībā, nevis kā vienu no standartvērtībām.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX07",
+              "chain_step_id": "S1",
+              "value_display_lv": "0,150",
+              "unit": "kJ/(mol·K)",
+              "dimension": "molar_entropy",
+              "quantity_lv": "ΔS"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Izvērtē TΔS pie 298 K.",
+          "reasoning_lv": "TΔS = 298 K · 0,150 kJ/(mol·K) = 44,7 kJ/mol.",
+          "misconception_signature": "MC-4C-01",
+          "misconception_note_lv": "TΔS ir entalpijas un tās izmaiņas vienāda tipa lielums; to nedrīkst ņemt bez zīmes, jo izmaiņas zīme ir svarīga.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX07",
+              "chain_step_id": "S2",
+              "value_display_lv": "44,7",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "TΔS"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Aprēķini ΔG = ΔH − TΔS.",
+          "reasoning_lv": "ΔG = −12,1 kJ/mol − 44,7 kJ/mol = −4,7 kJ/mol. Negatīvs ΔG nozīmē, ka reakcija norisinās patvaļīgi šajā temperatūrā.",
+          "misconception_signature": "MC-4C-01",
+          "misconception_note_lv": "Zīmes konvencija: ΔG = ΔH − TΔS. Pluszīmes lietošana šeit maina patvaļīguma secinājumu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX07",
+              "chain_step_id": "S3",
+              "value_display_lv": "−4,7",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "ΔG"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Atrī robežtemperatūru, kurā ΔG = 0.",
+          "reasoning_lv": "T = ΔH / ΔS = 266,7 K. Pie šīs temperatūras reakcijas virziens mainās.",
+          "misconception_signature": "MC-4C-01",
+          "misconception_note_lv": "Robežtemperatūra tiek atrasta no ΔG = 0, nevis no ΔH = 0; šīs divas nav viens un tas pats.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX07",
+              "chain_step_id": "S4",
+              "value_display_lv": "266,7",
+              "unit": "K",
+              "dimension": "temperature",
+              "quantity_lv": "Robežtemperatūra"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Formulē secinājumu par reakcijas patvaļīgumu pie 298 K.",
+          "reasoning_lv": "Reakcija ir patvaļīga pie 298 K, jo ΔG < 0; virziens mainās virs robežtemperatūras 266,7 K.",
+          "misconception_signature": "MC-4C-01",
+          "misconception_note_lv": "Secinājums par patvaļīgumu nāk no ΔG zīmes, nevis no tā, ka reakcija vispār var notikt.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX07",
+              "chain_step_id": "S5",
+              "value_display_lv": "patvaļīgs pie 298 K; robeža 266,7 K",
+              "unit": "1",
+              "quantity_lv": "Secinājums"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX07-1",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināts TΔS = 44,7 kJ/mol?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-4C-01",
+              "note_lv": "Robežtemperatūra nāk no ΔG, tāpēc vispirms jāaprēķina ΔG."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX07-2",
+          "prompt_lv": "Ko darīt, kad zināms ΔG = −4,7 kJ/mol?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S2",
+              "misconception_signature": "MC-4C-01",
+              "note_lv": "TΔS jau aprēķināts; šis solis neizmanto ΔG."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc ΔG nevar būt vienāds ΔH pat tad, ja TΔS ir maza.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX08",
+      "procedure_key": "kalorimetrija_un_hesa_cikls",
+      "title_lv": "Kalorimetrija un Hesa cikls",
+      "subtitle_lv": "Siltuma daudzuma mērīšana kalorimetrā un reakcijas entalpijas iegūšana pa divsoļu ceļu.",
+      "topic": 4,
+      "family_id": "FAM-4B",
+      "chain_id": "EX08",
+      "outcome_ids": [
+        "P4-03",
+        "P4-02",
+        "P4-07"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "anchor": "sec-ch9-62",
+        "heading_lv": "9.1. Darba gaita un katra soļa fizikālais pamatojums",
+        "freeze_id": "C4-MASTER",
+        "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+          "anchor": "sec-ch8-55",
+          "heading_lv": "8.1. Siltumietilpības trīs hierarhiskie līmeņi un kalorimetrijas pamatvienādojums",
+          "freeze_id": "C4-MASTER",
+          "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+        },
+        {
+          "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+          "anchor": "sec-ch5-21",
+          "heading_lv": "5.1. Hesa likums un tā nosacījums",
+          "freeze_id": "C4-MASTER",
+          "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+        }
+      ],
+      "order_citation_lv": "Meistara 9.1. sadaļa ir septiņu soļu procedūra ar fizikālu pamatojumu katram soļam: tilpumu mērīšana, bāzes ieliešana, sensora ievietošana un priekšperioda fiksēšana, skābes pievienošana, maisīšana, temperatūras maksimums un entalpijas aprēķins.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Nomēra ar mērcilindru skābes un bāzes tilpumus un aprēķina kopējo šķīduma masu.",
+          "reasoning_lv": "V kopā = 160,0 mL + 40,0 mL = 200,0 mL, un ūdens blīvuma pieņēmumā m = 200,0 g. Bez kopējās masas siltuma daudzumu aprēķināt nevar.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Šķīduma siltumietilpība ir c · m; ja ūdens masa netiek ņemta, siltuma daudzums ir nepareizs pat ar pareizu ΔT.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S1",
+              "value_display_lv": "2090",
+              "unit": "J",
+              "dimension": "energy",
+              "quantity_lv": "q(šķīdums)"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Ieliec lielāko tilpumu pirmo, lai tas pilnībā iegremdētu sensoru un maisītāju.",
+          "reasoning_lv": "Bāzes šķīdums tiek ielikts pirmais, jo tā lielākais tilpums samazinā brīvo gaisa telpu un siltuma zudumus.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Pārliešanas zudumi un pie trauka sienām paliekošie pilipi ir mazi, bet tie mazi, ja lielākais tilpums nāk pirmais.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "safety": {
+            "entry_lv": "Koncentrētu skābi lej ūdenī, nevis ūdeni koncentrētā skābē, un maisa ar stikla nūjiņu; iemesls ir tas, ka atšķaidīšana izdala siltumu.",
+            "citation": {
+              "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+              "anchor": "ch4-drosiba-ar-iemeslu",
+              "heading_lv": "Drošība ar iemeslu",
+              "freeze_id": "C2-MASTER",
+              "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+            }
+          }
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Ievieto temperatūras sensoru un fiksē stabilu priekšperioda fona.",
+          "reasoning_lv": "Priekšperiodā dT/dt = 0, tāpēc pirms sajaukšanas q = 0 un vēlākais temperatūras pieaugums ir tikai reakcijas sekas.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Bez priekšperioda fona nevar atšķirīt reakcijas siltumu no kalorimetra atslābināšanas.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Pievieno visu skābi vienā paņēmienā un nepārtraukti maisi.",
+          "reasoning_lv": "Lēna pilināšana pagarinātu reakcijas laiku, un daļa siltuma paspētu izkliedēties apkārtējā vidē pirms maksimuma. Vienmērīga maisīšana novērš lokālu pārkaršanu.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Skābes lēna pievienošana samazina izmērīto temperatūras pieaugumu un tādējā arī noteikto siltuma daudzumu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Nolasi temperatūras maksimumu un aprēķini šķīduma uzņemto siltumu.",
+          "reasoning_lv": "q = m · cₚ · ΔT = 100,0 g · 4,18 J/(g·K) · 5,00 K = 2090 J = 2,090 kJ.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Sistēmas siltumietilpība C un īpatnējā siltumietilpība c nav viens un tas pats; sajauktas tās dod desmitiem reižu lielāku vai mazāku rezultātu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S2",
+              "value_display_lv": "2,090",
+              "unit": "kJ",
+              "dimension": "energy",
+              "quantity_lv": "q(šķīdums) kJ"
+            }
+          ]
+        },
+        {
+          "step_id": "S6",
+          "statement_lv": "Nosaki reakcijas siltumu ar pretēju zīmi un pamato procesa raksturu.",
+          "reasoning_lv": "Reakcija atdod siltumu, tāpēc q(reakcija) = −2,090 kJ un process ir eksotermisks.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Šķīduma uzņemtais siltums un reakcijas atdotais siltums ir pretējās zīmes; bez pārneses process izskatās endotermisks.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S3",
+              "value_display_lv": "−2,090",
+              "unit": "kJ",
+              "dimension": "energy",
+              "quantity_lv": "q(reakcija)"
+            },
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S6",
+              "value_display_lv": "eksotermisks",
+              "unit": "1",
+              "quantity_lv": "Procesa raksturs"
+            }
+          ]
+        },
+        {
+          "step_id": "S7",
+          "statement_lv": "Iegūst reakcijas entalpiju pa divsoļu ceļu un aprēķina vielas daudzumu.",
+          "reasoning_lv": "Hesa cikla summa ir −399,5 kJ/mol; no reakcijas siltuma un entalpijas n = 5,23·10⁻³ mol.",
+          "misconception_signature": "MC-4B-01",
+          "misconception_note_lv": "Hesa likums saskaita ceļus uz to pašu stāvokli, tāpēc zīmes ir svarīgas: ceļi ar pretējām zīmēm nevar tikt saskatīti.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S4",
+              "value_display_lv": "−399,5",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "Hesa cikla summa"
+            },
+            {
+              "chain_id": "EX08",
+              "chain_step_id": "S5",
+              "value_display_lv": "5,23·10⁻³",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(reakcija)"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX08-1",
+          "prompt_lv": "Ko darīt pirms skābes pievienošanas?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S5",
+              "misconception_signature": "MC-4B-01",
+              "note_lv": "Siltuma aprēķins notiek pēc temperatūras maksimuma, nevis pirms reakcijas."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX08-2",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināts šķīduma uzņemtais siltums 2,090 kJ?",
+          "acceptance_step_ids": [
+            "S6"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-4B-01",
+              "note_lv": "Skābes pievienošana jau notika; tagad jāpārnes zīme."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc skābi pievieno vienā paņēmienā.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX09",
+      "procedure_key": "pusperioda_modelis_un_linearizacija",
+      "title_lv": "Pusperioda modelis un linearizācija",
+      "subtitle_lv": "Pirmās pakāpes modelis: pusperiods, ātruma konstante un linearizētie dati.",
+      "topic": 5,
+      "family_id": "FAM-5C",
+      "chain_id": "EX09",
+      "outcome_ids": [
+        "P5-08",
+        "P5-09",
+        "P5-10"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "anchor": "ch6",
+        "heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+        "freeze_id": "C5-MASTER",
+        "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+          "anchor": "lab-report-h",
+          "heading_lv": "Laboratorijas atskaite: tiosulfāta pulkstenis",
+          "freeze_id": "C5-MASTER",
+          "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+        }
+      ],
+      "order_citation_lv": "Meistara laboratorijas atskaites kontrolsaraksts nosaka secību: 1. grafiks C pret t ar pusperioda atzīmi, tad 2. grafiks ln C pret t ar slīpumu, un tikai tad k un t½ norādīšana no abiem grafikiem.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Linearizē datus: pirmās pakāpes modelī ln(m/m₀) pret t ir taisne.",
+          "reasoning_lv": "Tieši šī transformācija padara eksponenciālo likumu lineāru, un tās slīpums ir −k.",
+          "misconception_signature": "MC-5C-01",
+          "misconception_note_lv": "ln C pret t nav vienas reakcijas gaitas: tas ir 1. pakāpes modela veids, nevis vispārīgs apraksts.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX09",
+              "chain_step_id": "S5",
+              "value_display_lv": "ln(m/m₀) pret t ir taisne ar slīpumu −k",
+              "unit": "1",
+              "quantity_lv": "Linearizācija"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Aprēķini ātruma konstanti k no pusperioda.",
+          "reasoning_lv": "k = ln 2 / t½ = 0,693147 / 30 min = 0,02310 min⁻¹. Vienība min⁻¹ ir ātruma konstantei, nevis reakcijas ātrumam.",
+          "misconception_signature": "MC-5C-01",
+          "misconception_note_lv": "Ātruma konstante un reakcijas ātrums nav viens un tas pats: k nav atkarīgs no koncentrācijas, ātrums ir.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX09",
+              "chain_step_id": "S1",
+              "value_display_lv": "0,02310",
+              "unit": "min^-1",
+              "dimension": "rate_constant_1",
+              "quantity_lv": "k"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Aprēķini, cik pusperiodu pagājuši, un atlikušo daļu pēc trim pusperiodiem.",
+          "reasoning_lv": "90 min / 30 min = 3 pusperiodi; atlikusi (1/2)³ = 0,125, tas ir 12,5 % no sākuma masas.",
+          "misconception_signature": "MC-5C-01",
+          "misconception_note_lv": "Pēc katra pusperioda paliek puse, nevis tā paša daļa; trīs pusperiodi nozīmē 1/8, nevis 1/3.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX09",
+              "chain_step_id": "S2",
+              "value_display_lv": "3",
+              "unit": "1",
+              "quantity_lv": "Pusperiodu skaits"
+            },
+            {
+              "chain_id": "EX09",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,125",
+              "unit": "1",
+              "quantity_lv": "Atlikusī daļa"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Pārrēķini atlikušo masu pēc 90 min.",
+          "reasoning_lv": "m = 80 mg · 0,125 = 10,0 mg.",
+          "misconception_signature": "MC-5C-01",
+          "misconception_note_lv": "Atlikusī masa tiek aprēķināta no sākuma masas un atlikušās daļas, nevis no tās, kas palikusi pēc pirmā pusperioda.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX09",
+              "chain_step_id": "S4",
+              "value_display_lv": "10,0",
+              "unit": "mg",
+              "dimension": "mass",
+              "quantity_lv": "m(90 min)"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Pieraksti k un t½ no abiem grafikiem un pārbaudi, vai tie saskan.",
+          "reasoning_lv": "Meistara kontrolsaraksts prasa, lai k un t½ būtu redzami abos graphically izmērīti un savstarpēji saskaņoti; kursa atslēgā var būt divas k vērtības, un to jāatzīmē.",
+          "misconception_signature": "MC-5C-01",
+          "misconception_note_lv": "Atslēgas numuru izvēle, nevis grafika nolasīšana, nosaka, kura k vērtība tiek atzīmēta; izslēgtais variants jāpamato.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX09-1",
+          "prompt_lv": "Ko darīt, ja zināms pusperiods 30 min, bet vēl nezināms ātruma konstantes?",
+          "acceptance_step_ids": [
+            "S2"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-5C-01",
+              "note_lv": "Pusperiodu skaits nav k; to aprēķina no k, nevis otrādi."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX09-2",
+          "prompt_lv": "Ko darīt pēc tam, kad uzzīmēts ln C pret t grafiks?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-5C-01",
+              "note_lv": "Atlikusī masa ir datu aprēķins, nevis grafika secinājums."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc vienā reakcijā nevar vienlaikus uzzīmēt C pret t un ln C pret t un būt vienā gaitā.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX10",
+      "procedure_key": "aktivacijas_barjera_un_katalizators",
+      "title_lv": "Aktivācijas barjera un katalizators",
+      "subtitle_lv": "Enerģijas profils, Eₐ pirms un pēc katalizatora un ātrumu noteicošā stadija.",
+      "topic": 5,
+      "family_id": "FAM-5A",
+      "chain_id": "EX10",
+      "outcome_ids": [
+        "P5-07",
+        "P5-03",
+        "P5-06"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "anchor": "ea-slieksnis",
+        "heading_lv": "Aktivācijas enerģija kā slieksnis",
+        "freeze_id": "C5-MASTER",
+        "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+          "anchor": "ch8",
+          "heading_lv": "8 Katalīze",
+          "freeze_id": "C5-MASTER",
+          "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+        },
+        {
+          "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+          "anchor": "elementarstadija",
+          "heading_lv": "Elementārstadija pret kopējo reakciju",
+          "freeze_id": "C5-MASTER",
+          "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+        }
+      ],
+      "order_citation_lv": "Meistara piecsoļu secība ir: nolasīt enerģijas profila līmeni, aprēķināt ΔH, salīdzināt barjeru pirms un pēc katalizatora, tad secināt par ātrumu noteicošo stadiju.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Nolasī enerģijas profilu un aprēķini reakcijas entalpiju ΔH.",
+          "reasoning_lv": "ΔH = −10 kJ/mol − 20 kJ/mol = −30 kJ/mol. ΔH raksturo produktu un reaģentu stāvokļu atšķirību, nevis ceļu.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "ΔH nosaka sākuma un beigu stāvokļus, nevis reakcijas ātrumu; ātrumu nosaka barjera, nevis entalpija.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S1",
+              "value_display_lv": "−30",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "ΔH"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Nolasī nekatalizētā ceļa aktivācijas enerģiju no profila maksimuma.",
+          "reasoning_lv": "Eₐ = 100 kJ/mol − 20 kJ/mol = 80 kJ/mol.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "Aktivācijas enerģija ir starpība no reaġentu līmeņa līdz maksimumam, nevis pats maksimums.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S2",
+              "value_display_lv": "80",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "Eₐ nekatalizēts"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Nolasī katalizētā ceļa aktivācijas enerģiju.",
+          "reasoning_lv": "Eₐ = 60 kJ/mol − 20 kJ/mol = 40 kJ/mol.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "Katalizators samazina barjeru, nevis sākuma un beigu stāvokļus; tāpēc jāsalīdzina Eₐ, nevis ΔH.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S3",
+              "value_display_lv": "40",
+              "unit": "kJ/mol",
+              "dimension": "molar_energy",
+              "quantity_lv": "Eₐ katalizēts"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Secini, kāpēc katalizators nemaina ΔH.",
+          "reasoning_lv": "Katalizators maina ceļu, nevis sākuma un beigu stāvokļus; tāpēc ΔH paliek tāds pats.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "Katalizators nepadara reakciju eksotermiskāku: viņš maina ceļu, tāpēc ΔH nemainās.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S4",
+              "value_display_lv": "ΔH nemainās",
+              "unit": "1",
+              "quantity_lv": "Katalizatora loma"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Izlabo apgalvojumu, ka katalizators padara ΔH negatīvāku.",
+          "reasoning_lv": "Pareizais apgalvojums: katalizators maina ceļu, ne ΔH. Ātrums palielinās, bet reakcijas entalpija paliek tāda pati.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "Ātruma palielināšanās un entalpijas izmaiņa nav viens un tas pats; katalizators nedod enerģija priekš.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S5",
+              "value_display_lv": "katalizators maina ceļu, ne ΔH",
+              "unit": "1",
+              "quantity_lv": "Kļūdas labojums"
+            }
+          ]
+        },
+        {
+          "step_id": "S6",
+          "statement_lv": "Divpakāpju mehānismā norādi ātrumu noteicošo stadiju.",
+          "reasoning_lv": "Ātrumu noteicošā stadija ir augstākās barjeras stadija, jo tā nosaka kopējo ātrumu.",
+          "misconception_signature": "MC-5D-01",
+          "misconception_note_lv": "Ātrumu noteicošā stadija ir tā, kuras barjera ir augstākā, nevis tā, kas pēdējā vai kura izskatās sarežģītāka.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX10",
+              "chain_step_id": "S6",
+              "value_display_lv": "augstākās barjeras stadija nosaka kopējo ātrumu",
+              "unit": "1",
+              "quantity_lv": "Ātrumu noteicošā stadija"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX10-1",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināts ΔH?",
+          "acceptance_step_ids": [
+            "S2"
+          ],
+          "distractors": [
+            {
+              "step_id": "S6",
+              "misconception_signature": "MC-5D-01",
+              "note_lv": "Ātrumu noteicošā stadija tiek meklēta pēc tam, kad zināmi abi profili."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX10-2",
+          "prompt_lv": "Ko darīt, kad zināms, ka katalizators nemaina ΔH?",
+          "acceptance_step_ids": [
+            "S5"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-5D-01",
+              "note_lv": "Katalizētā ceļa barjera jau nolasīta; šis solis izlabo klūdu."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc katalizators neizmaina reakcijas kopējo siltuma efektu.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX11",
+      "procedure_key": "redoksa_titresana_permanganatometrija",
+      "title_lv": "Redoksa titrēšana: MnO₄⁻ un Fe²⁺",
+      "subtitle_lv": "Pieci soļi no parauga sagatavošanas līdz koncentrācijas aprēķināšanai.",
+      "topic": 6,
+      "family_id": "FAM-6C",
+      "chain_id": "EX11",
+      "outcome_ids": [
+        "P6-08",
+        "P6-05",
+        "P6-07"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "anchor": "procedure",
+        "heading_lv": "9.2. Pieci soļi: darbība, iemesls, kļūda",
+        "freeze_id": "C6-MASTER",
+        "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+          "anchor": "h-ch9",
+          "heading_lv": "9.Tilpuma analīze un permanganatometrija",
+          "freeze_id": "C6-MASTER",
+          "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+        },
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch4-drosiba-ar-iemeslu",
+          "heading_lv": "Drošība ar iemeslu",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        }
+      ],
+      "order_citation_lv": "Meistara 9.2. tabula dod piecus soļus noteiktā secībā: parauga kolba, alikvots un skābe, titrēšana līdz pirmajai noturīgajai rozā krāsai, konordanto titru izvēle, c un m aprēķins.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Kvantitatīvi pārnes FeSO₄ paraugu 100,0 mL mērkolbā, izšķīdina un uzpilda līdz atzīmei, sakratot vismaz 20 reizes.",
+          "reasoning_lv": "Tilpums nosaka visu n(FeSO₄) kolbā; viendabīgs šķīdums nodrošina, ka 10,00 mL alikvots ir reprezentatīvs. Šķīdums pārsniedz atzīmi — tad paraugs vairs nav precīzs.",
+          "misconception_signature": "MC-6C-01",
+          "misconception_note_lv": "Pārsniegta atzīme nav izlīdzināma ar ūdeni; tāda parauga gadījumā jālūdz jauns paraugs, nevis jāatšķaida.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Ar vienzīmes pipeti pārnes 10,00 mL alikvotu koniskajā kolbā un pievieno aptuveni 10 mL atšķaidītas H₂SO₄.",
+          "reasoning_lv": "Alikvots ir precīzi zināms, un no tā aprēķina koncentrāciju. Skābe ir pārākumā, tāpēc tās tilpums nav jāmēra precīzi, bet tā nodrošina MnO₄⁻ → Mn²⁺.",
+          "misconception_signature": "MC-6C-01",
+          "misconception_note_lv": "Precīzi mēra tikai alikvotu; H₂SO₄ mēra ar pipeti, bet alikvotu ne mēra ar pipeti. Alikvota mērīšana ar mērcilindru ir precīzitātes zudums.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "safety": {
+            "entry_lv": "Koncentrētu skābi lej ūdenī, nevis ūdeni koncentrētā skābē, un maisa ar stikla nūjiņu; iemesls ir tas, ka atšķaidīšana izdala siltumu.",
+            "citation": {
+              "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+              "anchor": "ch4-drosiba-ar-iemeslu",
+              "heading_lv": "Drošība ar iemeslu",
+              "freeze_id": "C2-MASTER",
+              "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+            }
+          }
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Titrē pilienu pa pilienam, maisot, līdz vāji rozā krāsa saglabājas.",
+          "reasoning_lv": "Pirmais liekais MnO₄⁻ ir pats indikators; maisīšana novērš lokālu pārākumu. Krāsa, kas pazūd, vēl nav beigu punkts.",
+          "misconception_signature": "MC-6C-01",
+          "misconception_note_lv": "Krāsas pazušana nav beigu punkts; to var būt vietēja pārākumspēja, kas vēl nav izšķīdinājusies.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Atkārto titrēšanu vismaz trīs reizes, katrreiz iestādot līmeni uz 0, un izvēlies konordantus titrus.",
+          "reasoning_lv": "Starpība starp mazāko un lielāko titru nedrīkst pārsniegt 0,10 mL. Izteiktu izlēcēju izslēdz un pamato.",
+          "misconception_signature": "MC-6C-01",
+          "misconception_note_lv": "Vidējais no visiem titriem, ieskaitot izlēcēju, nav ticams rezultāts; izslēgšana jāpamato protokolā.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Aprēķini c un m: vispirms c(Fe²⁺) no alikvota, tad n un m no 100,0 mL kolbas.",
+          "reasoning_lv": "Alikvots dod koncentrāciju; mērkolba dod masu. Alikvota tilpumu aizstāj ar mērkolbas tilpumu; hidrāts maina M, nevis c.",
+          "misconception_signature": "MC-6C-01",
+          "misconception_note_lv": "Alikvota tilpums un mērkolbas tilpums ir divi atšķirīgi lielumi; to sajaukšana liek aprēķināt n nevis šajā, bet visā paraugā.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX11",
+              "chain_step_id": "S3",
+              "value_display_lv": "1,860·10⁻³",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n(Fe²⁺)"
+            },
+            {
+              "chain_id": "EX11",
+              "chain_step_id": "S4",
+              "value_display_lv": "0,07440",
+              "unit": "mol/L",
+              "dimension": "concentration_amount",
+              "quantity_lv": "c(Fe²⁺)"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX11-1",
+          "prompt_lv": "Ko darīt pirms titrēšanas sākuma?",
+          "acceptance_step_ids": [
+            "S2"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-6C-01",
+              "note_lv": "Titrēšana notiek pēc alikvota un skābes pievienošanas."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX11-2",
+          "prompt_lv": "Ko darīt pēc tam, kad iegūti trīs titri?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-6C-01",
+              "note_lv": "Parauga sagatavošana notiek pirms titrēšanas, nevis pēc tās."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "matching": {
+        "left_items": [
+          {
+            "id": "L1",
+            "text_lv": "MnO₄⁻"
+          },
+          {
+            "id": "L2",
+            "text_lv": "Fe²⁺"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "R1",
+            "text_lv": "Oksidētājs (reducējas)"
+          },
+          {
+            "id": "R2",
+            "text_lv": "Reducētājs (oksidējas)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1",
+            "misconception_signature": "MC-6C-01",
+            "note_lv": "Permanganāts skābā vidē reducējas līdz Mn²⁺, tāpēc tas ir oksidētājs.",
+            "feedback_key": "feedback.concept_link_label"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2",
+            "misconception_signature": "MC-6C-01",
+            "note_lv": "Fe²⁺ oksidējas līdz Fe³⁺, tāpēc tas ir reducētājs.",
+            "feedback_key": "feedback.concept_link_label"
+          }
+        ]
+      },
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc skābes tilpumu šajā titrēšanā neprecīzi mēra.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX12",
+      "procedure_key": "nernsta_vienadojums",
+      "title_lv": "Nernsta vienādojums",
+      "subtitle_lv": "Reakcijas kvartanta, potenciāla aprēķins un reakcijas kvartanta apzīmējuma kļūdas labošana.",
+      "topic": 6,
+      "family_id": "FAM-6D",
+      "chain_id": "EX12",
+      "outcome_ids": [
+        "P6-03",
+        "P6-02"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "anchor": "h-ch3",
+        "heading_lv": "3.Nernsta vienādojums",
+        "freeze_id": "C6-MASTER",
+        "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+          "anchor": "nernst-expressions",
+          "heading_lv": "3.3. Izteiksmes, kas jāprot uzrakstīt",
+          "freeze_id": "C6-MASTER",
+          "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+        },
+        {
+          "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+          "anchor": "h-ch4",
+          "heading_lv": "4.Reakcijas virziens",
+          "freeze_id": "C6-MASTER",
+          "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+        }
+      ],
+      "order_citation_lv": "Meistara Nernsta nodaļa secība ir: pārbaudīt pāra un virzienu, pierakstīt reakcijas kvartantu, aprēķināt Q, tad E, un tikai beigās noapaļot atbilde.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Pieraksti elektroda pāri un reakcijas kvartantu pirms skaitļu aprēķina.",
+          "reasoning_lv": "Kvartants nosaka, kas ir reducētājs un kas oksidētājs, un tāpēc arī Q zīmi un zīmi E priekšpusī.",
+          "misconception_signature": "MC-6A-01",
+          "misconception_note_lv": "Bez kvartanta Q un E nav definēti; vidēji kvartanti nevar mainīt zīmes vai izlaiž noteiktajā aprēķina secībā.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Aprēķini reakcijas kvartantu Q.",
+          "reasoning_lv": "Q = [Red]/[Ox] = 1/a(Cu²⁺) = 100. Kvartantā iekļauj tikai tās daļiņas, kas mainās.",
+          "misconception_signature": "MC-6A-01",
+          "misconception_note_lv": "Q veido reducētā un oksidētā veidojuma attiecība, nevis otrādi; apgriezta kvartanta dod logaritma zīmi, tāpēc rezultāts kļūst nepareizs.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX12",
+              "chain_step_id": "S1",
+              "value_display_lv": "100",
+              "unit": "1",
+              "quantity_lv": "Q"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Aprēķini potenciālu E ar Nernsta vienādojumu.",
+          "reasoning_lv": "E = E° − (0,0592 V / n) · log Q = 0,337 V − (0,0592 V / 2) · 2 = 0,2778 V.",
+          "misconception_signature": "MC-6A-01",
+          "misconception_note_lv": "Dalītājs n ir elektronu skaits pusreakcijā, nevis koeficients reakcijas vienādojumā.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX12",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,2778",
+              "unit": "V",
+              "dimension": "potential",
+              "quantity_lv": "E"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Noapaļo E atbilstoši zīmīgo ciparu noteikumam.",
+          "reasoning_lv": "E = 0,278 V ar trim zīmīgajiem cipariem, jo slīpums 0,0592 V ir ar trim zīmīgajiem cipariem.",
+          "misconception_signature": "MC-6A-01",
+          "misconception_note_lv": "Potenciāla noapaļošanu ierobežo slīpuma precizitāte, nevis E° zīmīgie cipari.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX12",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,278",
+              "unit": "V",
+              "dimension": "potential",
+              "quantity_lv": "E noapaļots"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Izlabo apgalvojumu, ka Q jāliek apgriezti.",
+          "reasoning_lv": "Pareizs apgalvojums: Q = [Red]/[Ox], nevis [Ox]/[Red].",
+          "misconception_signature": "MC-6A-01",
+          "misconception_note_lv": "Kvartanta apgriešana neizmaina tā formu, bet pārgrēbj logaritma zīmi un tādējā arī potenciāla vērtību.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false,
+          "quantity_links": [
+            {
+              "chain_id": "EX12",
+              "chain_step_id": "S4",
+              "value_display_lv": "Q = [Red]/[Ox], nevis [Ox]/[Red]",
+              "unit": "1",
+              "quantity_lv": "Kļūdas labojums"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX12-1",
+          "prompt_lv": "Ko darīt pirms Q aprēķina?",
+          "acceptance_step_ids": [
+            "S1"
+          ],
+          "distractors": [
+            {
+              "step_id": "S3",
+              "misconception_signature": "MC-6A-01",
+              "note_lv": "Potenciāla aprēķins notiek pēc Q, nevis pirms tā."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX12-2",
+          "prompt_lv": "Ko darīt pēc tam, kad aprēķināts E = 0,2778 V?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S2",
+              "misconception_signature": "MC-6A-01",
+              "note_lv": "Q jau aprēķināts; šis solis noder par noapaļošanu."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc koncentrācijas ietekme uz potenciālu ir logaritmiska, nevis lineāra.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX13",
+      "procedure_key": "kalibresana_ar_nenulles_krustpunktu",
+      "title_lv": "Kalibrēšana ar nenulles krustpunktu",
+      "subtitle_lv": "Absorbances un koncentrācijas kalibrēšanas taisne, slīpums, inversija un diapazona pārbaude.",
+      "topic": 7,
+      "family_id": "FAM-7B",
+      "chain_id": "EX13",
+      "outcome_ids": [
+        "P7-03",
+        "P7-02"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "anchor": "h8",
+        "heading_lv": "8. Kalibrēšanas metode",
+        "freeze_id": "C7-MASTER",
+        "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+          "anchor": "n8-2",
+          "heading_lv": "8.2. Standarti, tukšais paraugs un taisne",
+          "freeze_id": "C7-MASTER",
+          "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+        },
+        {
+          "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+          "anchor": "ch3-kalibresana-tris-solos",
+          "heading_lv": "Kalibrēšana trīs soļos",
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        }
+      ],
+      "order_citation_lv": "Meistara kalibrēšanas shēma ir trīs soļi: izveido kalibrēšanas taisni no standartiem, izmēra parauga signālu Aₓ, pēc tam apgriež nolasījumu uz koncentrācijas asi.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Izvēlies kalibrēšanas grafikas asis: x ir koncentrācija γ, y ir absorbance A.",
+          "reasoning_lv": "Taisne ir empīriska funkcija A = a · c + b; tās slīpums nav ε un tā nav molārais Beer–Lamberta vienādojums.",
+          "misconception_signature": "MC-7B-01",
+          "misconception_note_lv": "Astoņu pret ziemeļu asi maiņa izjauc inversiju: šķīrba uzlabā A un horizontālā uzlabā γ.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX13",
+              "chain_step_id": "S1",
+              "value_display_lv": "x=γ (mg/mL); y=A",
+              "unit": "1",
+              "quantity_lv": "Asis"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "No standartu punktiem aprēķini taisnes slīpumu a.",
+          "reasoning_lv": "a = 50,0 mL/mg. Slīpums ir koncentrācijas uz absorbenci, nevis molārais absroptivitātes koeficients.",
+          "misconception_signature": "MC-7B-01",
+          "misconception_note_lv": "Kalibrēšanas slīpums un molārais absroptivitātes koeficients nav viens un tas pats lielums.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX13",
+              "chain_step_id": "S2",
+              "value_display_lv": "50,0",
+              "unit": "mL/mg",
+              "quantity_lv": "Slīpums a"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Ar krustpunktu b aprēķini nezināmo koncentrāciju inversijā.",
+          "reasoning_lv": "cₓ = (Aₓ − b) / a = (0,350 − 0,010) / 50,0 = 0,00680 mg/mL.",
+          "misconception_signature": "MC-7B-01",
+          "misconception_note_lv": "Nenulles krustpunktu neignorē: tā izņemšana maina inversijas rezultātu, pat ja izņemšana maza.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX13",
+              "chain_step_id": "S3",
+              "value_display_lv": "0,00680",
+              "unit": "mg/mL",
+              "dimension": "concentration_mass",
+              "quantity_lv": "γ mērītajā šķīdumā"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Pārbaudi, vai iegūtā koncentrācija ir standartu diapazonā.",
+          "reasoning_lv": "0,00680 mg/mL ir 0–0,012 mg/mL diapazonā. Ārpus diapazona nolasījums ir ekstrapolācija, un tā nav droša.",
+          "misconception_signature": "MC-7B-01",
+          "misconception_note_lv": "Ārpus kalibrētā diapazona nolasījums nav nepareizts aprēķins, bet neuzticams rezultāts; tāds paraugs jāatšķaida.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX13",
+              "chain_step_id": "S4",
+              "value_display_lv": "0,00680 mg/mL ir 0–0,012 mg/mL diapazonā",
+              "unit": "1",
+              "quantity_lv": "Diapazona pārbaude"
+            }
+          ]
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX13-1",
+          "prompt_lv": "Ko darīt pēc tam, kad uzzīmēta kalibrēšanas taisne?",
+          "acceptance_step_ids": [
+            "S3"
+          ],
+          "distractors": [
+            {
+              "step_id": "S2",
+              "misconception_signature": "MC-7B-01",
+              "note_lv": "Slīpuma aprēķins notiek pirms inversijas, nevis pēc tās."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX13-2",
+          "prompt_lv": "Ko darīt, ja aprēķinātā koncentrācija iziet ārpus standartu diapazona?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-7B-01",
+              "note_lv": "Asa izvēle notiek pirms grafika zīmēšanas, nevis pēc nolasījuma."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc tukšais paraugs ir kalibrēšanas daļa, nevis atsevišķs mērījums.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    },
+    {
+      "card_id": "MC-EX14",
+      "procedure_key": "atskaisits_paraugs_masa_un_daumzums",
+      "title_lv": "Atšķaidīts paraugs: masa un vielas daudzums",
+      "subtitle_lv": "No kalibrētās koncentrācijas līdz parauga masai un vielas daudzumam, ievērojot atšķaidījuma faktoru.",
+      "topic": 7,
+      "family_id": "FAM-7C",
+      "chain_id": "EX14",
+      "outcome_ids": [
+        "P7-04",
+        "P7-03",
+        "P7-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "anchor": "n10-6",
+        "heading_lv": "10.6. Atšķaidīšanas aprēķins",
+        "freeze_id": "C7-MASTER",
+        "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+      },
+      "secondary_citations": [
+        {
+          "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+          "anchor": "h10",
+          "heading_lv": "10. Laboratorijas darbs 6B soli pa solim",
+          "freeze_id": "C7-MASTER",
+          "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+        }
+      ],
+      "order_citation_lv": "Meistara laboratorijas darba secība ir: parauga mērīšana pie ierīces, kalibrēšanas šķīdumi, atšķaidīšanas aprēķins un pēc tam rezultātu kvalitāte un zīmīgie cipari.",
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "steps": [
+        {
+          "step_id": "S1",
+          "statement_lv": "Atmērā parauga koncentrāciju un pārrēķini to uz oriģinālo paraugu ar atšķaidījuma faktora palīdzību.",
+          "reasoning_lv": "γ oriģinālā = 0,00600 mg/mL · 5,00 = 0,0300 mg/mL. Mērītā koncentrācija attiecas uz atšķaidīto paraugu.",
+          "misconception_signature": "MC-7C-01",
+          "misconception_note_lv": "Atšķaidījuma faktors jāpiemēro pareizā virzienā: mērītā vērtība palielinās, nevis samazinās.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX14",
+              "chain_step_id": "S1",
+              "value_display_lv": "0,0300",
+              "unit": "mg/mL",
+              "dimension": "concentration_mass",
+              "quantity_lv": "γ oriģinālajā paraugā"
+            }
+          ]
+        },
+        {
+          "step_id": "S2",
+          "statement_lv": "Aprēķini vielas masu paraugā, izmantojot koncentrāciju un parauga tilpumu.",
+          "reasoning_lv": "m = γ · V = 0,0300 mg/mL · 25,00 mL = 0,750 mg.",
+          "misconception_signature": "MC-7C-01",
+          "misconception_note_lv": "Tilpuma un koncentrācijas reizināšumā vienībām jāatbilst; mg/mL · mL dod mg.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX14",
+              "chain_step_id": "S2",
+              "value_display_lv": "0,750",
+              "unit": "mg",
+              "dimension": "mass",
+              "quantity_lv": "Masa paraugā"
+            }
+          ]
+        },
+        {
+          "step_id": "S3",
+          "statement_lv": "Pārvērt masu gramos, lai to lietotu molmasas aprēķinā.",
+          "reasoning_lv": "0,750 mg = 7,50·10⁻⁴ g. Molmasa ir vienībā g/mol, tāpēc masa tai jābūt gramos.",
+          "misconception_signature": "MC-7C-01",
+          "misconception_note_lv": "Miligrāmi un grami nav savstarpēji aizvietojami bez pārrēķina; māla dalīšana dod tūkstošreiz lielāku skaitli.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX14",
+              "chain_step_id": "S3",
+              "value_display_lv": "7,50·10⁻⁴",
+              "unit": "g",
+              "dimension": "mass",
+              "quantity_lv": "Masa gramos"
+            }
+          ]
+        },
+        {
+          "step_id": "S4",
+          "statement_lv": "Aprēķini vielas daudzumu: n = m / M.",
+          "reasoning_lv": "n = 7,50·10⁻⁴ g / 376,36 g/mol = 1,99·10⁻⁶ mol.",
+          "misconception_signature": "MC-7C-01",
+          "misconception_note_lv": "Dalot masu ar molmasu, iegūst molus; šī ir pēdējā pāreja no kalibrētā signāla uz vielas daudzumu.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": true,
+          "quantity_links": [
+            {
+              "chain_id": "EX14",
+              "chain_step_id": "S4",
+              "value_display_lv": "1,99·10⁻⁶",
+              "unit": "mol",
+              "dimension": "amount",
+              "quantity_lv": "n vielas daudzums"
+            }
+          ]
+        },
+        {
+          "step_id": "S5",
+          "statement_lv": "Pieraksti rezultātu ar pamatotu zīmīgo ciparu skaitu.",
+          "reasoning_lv": "Meistara prasa, lai katrai mērītajai A būtu γ ar pamatotu ciparu skaitu; pārāk daudz ciparu rāda, ka papildu precizitāte ir ilustratīva, nevis mērīta.",
+          "misconception_signature": "MC-7C-01",
+          "misconception_note_lv": "Papildu zīmīgie cipari nepadara rezultātu precīzāku; tie rāda, ka dati ir ilustratīvi.",
+          "feedback_key": "feedback.concept_link_label",
+          "critical": false
+        }
+      ],
+      "free_order_groups": [],
+      "sequence_prompts": [
+        {
+          "prompt_id": "SEQ-EX14-1",
+          "prompt_lv": "Ko darīt, kad zināma koncentrācija oriģinālajā paraugā, bet vēl nezināma masa?",
+          "acceptance_step_ids": [
+            "S2"
+          ],
+          "distractors": [
+            {
+              "step_id": "S4",
+              "misconception_signature": "MC-7C-01",
+              "note_lv": "Vielas daudzuma aprēķins prasa masu, kas vēl nav aprēķināta."
+            }
+          ],
+          "criterion_id": "C1_SEQ",
+          "points": 1.0
+        },
+        {
+          "prompt_id": "SEQ-EX14-2",
+          "prompt_lv": "Ko darīt pēc tam, kad masa pārrēķināta gramos?",
+          "acceptance_step_ids": [
+            "S4"
+          ],
+          "distractors": [
+            {
+              "step_id": "S1",
+              "misconception_signature": "MC-7C-01",
+              "note_lv": "Atšķaidījuma faktors jau lietots; šis solis aprēķina vielas daudzumu."
+            }
+          ],
+          "criterion_id": "C2_SEQ",
+          "points": 1.0
+        }
+      ],
+      "matching": {
+        "left_items": [
+          {
+            "id": "L1",
+            "text_lv": "Absorbance A"
+          },
+          {
+            "id": "L2",
+            "text_lv": "Koncentrācija γ"
+          },
+          {
+            "id": "L3",
+            "text_lv": "Vielas masa m"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "R1",
+            "text_lv": "Bezdimensionāls signāls, kas aug līdz ar koncentrāciju"
+          },
+          {
+            "id": "R2",
+            "text_lv": "Masa tilpuma vienībā, piemēram mg/mL"
+          },
+          {
+            "id": "R3",
+            "text_lv": "Vielas daudzums koncentrācijas un tilpuma reizinājums"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1",
+            "misconception_signature": "MC-7C-01",
+            "note_lv": "Absorbance ir bezdimensionāls signāls, nevis koncentrācija.",
+            "feedback_key": "feedback.concept_link_label"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2",
+            "misconception_signature": "MC-7C-01",
+            "note_lv": "Koncentrācijas vienība izteikta uz tilpuma, tāpēc tā ir mg/mL, nevis mg.",
+            "feedback_key": "feedback.concept_link_label"
+          },
+          {
+            "left_id": "L3",
+            "right_id": "R3",
+            "misconception_signature": "MC-7C-01",
+            "note_lv": "Masa ir koncentrācijas un tilpuma reizinājums, nevis to summa.",
+            "feedback_key": "feedback.concept_link_label"
+          }
+        ]
+      },
+      "self_assessment": {
+        "prompt_lv": "Paskidro, kāpēc kalibrēšanas koncentrācija un parauga koncentrācija nav vienādas.",
+        "grading": "self",
+        "pending_semantics_lv": "Skolēna paskaidrojums tiek pierakstīts un atzīmēts kā pašnovērtējums. Dzinējs tekstu neizlasa, neiedala punktus un neizdod verdiktu."
+      }
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "owner": "N24",
+  "status": "PASS",
+  "checks": {
+    "ac1_happy_path": {
+      "shortages_zero": true,
+      "forms": {
+        "A": {
+          "checker_pass": true,
+          "slots": true,
+          "points": true,
+          "required_types_covered": true,
+          "matches_disk_digest": true,
+          "topic_counts": {
+            "1": 3,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          },
+          "topic_points": {
+            "1": 10,
+            "2": 12,
+            "3": 20,
+            "4": 15,
+            "5": 16,
+            "6": 15,
+            "7": 12
+          },
+          "conflicts": [
+            "N23-C01"
+          ]
+        },
+        "B": {
+          "checker_pass": true,
+          "slots": true,
+          "points": true,
+          "required_types_covered": true,
+          "matches_disk_digest": true,
+          "topic_counts": {
+            "1": 3,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          },
+          "topic_points": {
+            "1": 10,
+            "2": 12,
+            "3": 20,
+            "4": 15,
+            "5": 16,
+            "6": 15,
+            "7": 12
+          },
+          "conflicts": [
+            "N23-C01"
+          ]
+        },
+        "C": {
+          "checker_pass": true,
+          "slots": true,
+          "points": true,
+          "required_types_covered": true,
+          "matches_disk_digest": true,
+          "topic_counts": {
+            "1": 3,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          },
+          "topic_points": {
+            "1": 10,
+            "2": 12,
+            "3": 20,
+            "4": 15,
+            "5": 16,
+            "6": 15,
+            "7": 12
+          },
+          "conflicts": [
+            "N23-C01"
+          ]
+        }
+      },
+      "status": "PASS"
+    },
+    "a11_corner_and_negative": {
+      "status": "PASS",
+      "zero_slack": {
+        "status": "AVAILABLE",
+        "checker": "PASS"
+      },
+      "one_short_assembly": {
+        "schema_version": 1,
+        "form_id": "SHORT1",
+        "status": "SHORTAGE",
+        "disabled": true,
+        "binding_constraint": "slot_family_eligibility",
+        "topic": 1,
+        "slot_id": "S1-2",
+        "missing_family": "FAM-1C",
+        "missing_type": null,
+        "required_count": 1,
+        "available_count": 0,
+        "count_short": 1,
+        "pending_review_families": [],
+        "disabled_reason_lv": "SHORT1 forma pagaidām nav pieejama: nepietiek atbilstošu uzdevumu (FAM-1C, vieta S1-2, iztrūkst 1)."
+      },
+      "one_short_checker": {
+        "status": "FAIL",
+        "errors": [
+          "Uzdevumu vietu skaits ir 20, bet jābūt 21 (tēma 1: 2/3).",
+          "Uzdevumu vietu secība vai identifikatori neatbilst plāna vietām.",
+          "Tēmai 1 ir 2 vietas, jābūt 3.",
+          "Tēmai 1 punktu summa ir 7, jābūt 10.",
+          "Kopējā punktu summa ir 97, jābūt 100.",
+          "Formā trūkst obligātais uzdevuma tips Q15."
+        ]
+      }
+    },
+    "a12_fairness_and_determinism": {
+      "status": "PASS",
+      "blueprint_sweep": {
+        "forms_generated": 30,
+        "families_seen": 28,
+        "families_missing": [],
+        "tripled_flexible_family_slots": 0,
+        "tripled_instance_slots": 0,
+        "all_checks_passed": true,
+        "double_regen_parity": true,
+        "digests_by_seed": [
+          {
+            "base_seed": "100101",
+            "forms": {
+              "A": "565b0d53978a2592aafe32b9a45e9df8ebe783eba922d5e2f3b409edbe6f3b34",
+              "B": "c04dc6de6e1e41bcb51dcebf0c0d881350b0a9debd9290fa90342a9a910b6fcc",
+              "C": "b4458318260577191203969155019f092c482022bfe89862893323982d934cd8"
+            }
+          },
+          {
+            "base_seed": "100102",
+            "forms": {
+              "A": "ed62e483277d481c16bfbccddb39d855d29dd75ab2cf351546161a35a40545d2",
+              "B": "f45e59851f8d38984a5fa7a34e885a783d69db6ed49f514da15e2a7c9bc0b42d",
+              "C": "4d32b9781219bd4e350e798c42f68c332ac22c70ed221d45d913afe184b8efc1"
+            }
+          },
+          {
+            "base_seed": "100103",
+            "forms": {
+              "A": "b4ea30bbb5fdc4fc61763cc639e34640635a57dae4afcb03b59830196c6a658c",
+              "B": "bc3c057204ff798393144478f81e0456f0a1d9dccf7b79e2e313a46925a6fe2e",
+              "C": "933b630bc49b20cd364c5457d6668a2fb59c1ce478b0a2b1e46d9bdc00b50dc4"
+            }
+          },
+          {
+            "base_seed": "100104",
+            "forms": {
+              "A": "2b1260de31f35556ad00a1178cdb3c3ef71c5a32431234cdeae1c577a78c15ec",
+              "B": "f003d57014dcf7ea09473b57dfd6f2d935a05c6f89eb252241e924bf39e7bf08",
+              "C": "4f3e9e2e852bb66e3838daafaa831e710968fa1416ef005ffa060702c796c05e"
+            }
+          },
+          {
+            "base_seed": "100105",
+            "forms": {
+              "A": "ea3db11145540677f6a315bf257e636b874bae6ce9dcc9100946319ca50604b0",
+              "B": "fa2df851c0efe26d43bb2b797794be9566e48545646250a64a6c86028a3b5baf",
+              "C": "cca9379970488b57570bf0adec75d433bd387546de85b6c40b2e24ca747abe12"
+            }
+          },
+          {
+            "base_seed": "100106",
+            "forms": {
+              "A": "b04f2ff562c0fe4323d93a7aa8a59be9741b934f15d21ac9b2c605f2b7d4f939",
+              "B": "9ab19b2bd1b4ff4ffd576960bb830164f8d11f28a18fcd7057ada04e962c5e6d",
+              "C": "dd76bbc49e688c4671b255e455d559123131f6a2fa1675c6b10a925dccd0a138"
+            }
+          },
+          {
+            "base_seed": "100107",
+            "forms": {
+              "A": "f549fe52f4fd87a1ffb48a77ead05707c8c04805487776dfbf88ef629e2b9a45",
+              "B": "20ee4fe07d896f4f281a675645e0f4c09ea8e4f0442e1d655f5e5286a5ae8ef4",
+              "C": "44d696c8cf42354bc496433a81989fe6a951f879dd6f299316800daffc83ba10"
+            }
+          },
+          {
+            "base_seed": "100108",
+            "forms": {
+              "A": "fcd1ba39eeba749f46156ae122e6730e7aab98f991c1b38d15768c45e1d9315a",
+              "B": "95eb41e70f18168e7c6453604c54e95483110806c07c29652ac9b559ebd092ae",
+              "C": "03e38b486ab9e0d41256550f0ce929f35b43d669f1abc5a095cd6e965492648e"
+            }
+          },
+          {
+            "base_seed": "100109",
+            "forms": {
+              "A": "b09139c9141a462111f13a842d010519281e2bd39f3d2081d8f71f0c61705853",
+              "B": "edc3da6a6a5075d8c7fda07912efba5b2e5f9e98a9ec3514bf8a006210c1b14f",
+              "C": "70d3d4ca3eccf5a79aaeaa1d55f3eccbbfd168f75099fdc41e090e9b006ad7b7"
+            }
+          },
+          {
+            "base_seed": "100110",
+            "forms": {
+              "A": "40eeacea61d6a58f95db32feb51677d5ab37b3b714a77d90aba6eb297fd22a92",
+              "B": "7ea904554b6967166dafda80691751789f14483e7de28599c3944d748f3cd7b3",
+              "C": "dec19ef38e4bbb57f73509ff8de819ad0044a7c1b14615d255ff1482203ab0f7"
+            }
+          }
+        ]
+      },
+      "flexible_topic_sweep": {
+        "forms_generated": 30,
+        "families_seen": 28,
+        "tripled_family_slots_all": 0,
+        "all_checks_passed": true,
+        "double_regen_parity": true
+      }
+    },
+    "a13_seeded_training": {
+      "status": "PASS",
+      "draws": [
+        {
+          "seed": "101001",
+          "status": "AVAILABLE",
+          "checker": "PASS",
+          "ephemeral_count": 5,
+          "ephemeral_ids": [
+            "COL1-1-1B-D-EPH-0",
+            "COL1-1-1C-B-EPH-1",
+            "COL1-1-1D-B-EPH-2",
+            "COL1-2-2A-D-EPH-3",
+            "COL1-2-2C-D-EPH-4"
+          ],
+          "all_eph_marked": true,
+          "manifest_digest": "7642a82d6db0899ae1f9cef764963afe68f8c0ed54310554ea251bb1e19ac9b8"
+        },
+        {
+          "seed": "101002",
+          "status": "AVAILABLE",
+          "checker": "PASS",
+          "ephemeral_count": 5,
+          "ephemeral_ids": [
+            "COL1-1-1A-B-EPH-0",
+            "COL1-1-1C-D-EPH-1",
+            "COL1-1-1D-D-EPH-2",
+            "COL1-2-2B-C-EPH-3",
+            "COL1-2-2C-A-EPH-4"
+          ],
+          "all_eph_marked": true,
+          "manifest_digest": "a888d408004ec3faaff492fd42247229d066d530a27e455b32b35bfd226fc7b6"
+        },
+        {
+          "seed": "101003",
+          "status": "AVAILABLE",
+          "checker": "PASS",
+          "ephemeral_count": 5,
+          "ephemeral_ids": [
+            "COL1-1-1A-A-EPH-0",
+            "COL1-1-1C-B-EPH-1",
+            "COL1-1-1D-B-EPH-2",
+            "COL1-2-2B-D-EPH-3",
+            "COL1-2-2C-A-EPH-4"
+          ],
+          "all_eph_marked": true,
+          "manifest_digest": "69e558723ce2a494a506d2fdc24a073c4925c88e82e1f11274a5051aa2b29453"
+        },
+        {
+          "seed": "101004",
+          "status": "AVAILABLE",
+          "checker": "PASS",
+          "ephemeral_count": 5,
+          "ephemeral_ids": [
+            "COL1-1-1A-B-EPH-0",
+            "COL1-1-1C-B-EPH-1",
+            "COL1-1-1D-C-EPH-2",
+            "COL1-2-2B-B-EPH-3",
+            "COL1-2-2C-B-EPH-4"
+          ],
+          "all_eph_marked": true,
+          "manifest_digest": "0601a4e85e3a2819da3c96eab98b5377efe6c1386b5793897b3e5d9809d3ba78"
+        },
+        {
+          "seed": "101005",
+          "status": "AVAILABLE",
+          "checker": "PASS",
+          "ephemeral_count": 5,
+          "ephemeral_ids": [
+            "COL1-1-1B-B-EPH-0",
+            "COL1-1-1C-B-EPH-1",
+            "COL1-1-1D-B-EPH-2",
+            "COL1-2-2B-C-EPH-3",
+            "COL1-2-2C-C-EPH-4"
+          ],
+          "all_eph_marked": true,
+          "manifest_digest": "8c303ab7e06b1791803edb04070dd9f95e18c83c908bd03f777fef16ded53198"
+        }
+      ]
+    },
+    "b11_shortage_and_recovery": {
+      "status": "PASS",
+      "shortage_report": {
+        "schema_version": 1,
+        "form_id": "B",
+        "status": "SHORTAGE",
+        "disabled": true,
+        "binding_constraint": "slot_family_eligibility",
+        "topic": 1,
+        "slot_id": "S1-2",
+        "missing_family": "FAM-1C",
+        "missing_type": null,
+        "required_count": 1,
+        "available_count": 0,
+        "count_short": 1,
+        "pending_review_families": [
+          "FAM-1C"
+        ],
+        "disabled_reason_lv": "B forma pagaidām nav pieejama: gaida recenziju (FAM-1C, vieta S1-2, iztrūkst 1)."
+      },
+      "disabled_start_error": "E_EXAM_FORM_DISABLED",
+      "recovered_form_digest": "c0efd19eeabec3ecb06c21fc17232485fcd9b743a2b48f97492777ac3dfa6e55"
+    },
+    "b13_picker_to_session": {
+      "status": "PASS",
+      "sessions": {
+        "A": {
+          "form_id": "A",
+          "slots_count": 21,
+          "total_points": 100,
+          "slots_match_manifest": true
+        },
+        "B": {
+          "form_id": "B",
+          "slots_count": 21,
+          "total_points": 100,
+          "slots_match_manifest": true
+        },
+        "C": {
+          "form_id": "C",
+          "slots_count": 21,
+          "total_points": 100,
+          "slots_match_manifest": true
+        }
+      }
+    },
+    "c11_pipeline_order_refusal": {
+      "status": "PASS",
+      "absent_error": "E_ASSEMBLY_BANK_UNVERIFIED",
+      "stale_error": "E_ASSEMBLY_BANK_UNVERIFIED"
+    },
+    "c12_built_artifact_smoke": {
+      "status": "PASS",
+      "smoke_total": 20,
+      "smoke_passed": 20,
+      "n24_vector": {
+        "id": "SMK-N24-ASSEMBLY-DRAW",
+        "owner": "N24",
+        "status": "PASS",
+        "details": {
+          "formsInIsland": 3,
+          "miniBankFamilies": 6,
+          "miniSlots": 6,
+          "miniPoints": 22,
+          "unreviewedExcluded": true,
+          "independentCheck": "PASS"
+        },
+        "reason": null
+      }
+    }
+  }
+}

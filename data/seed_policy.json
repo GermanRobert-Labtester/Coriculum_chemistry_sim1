@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "policy_id": "splitmix64-u64-v1",
+  "status": "frozen-contract",
+  "owner": "N05",
+  "non_cryptographic_notice": "NON-CRYPTOGRAPHIC: SplitMix64 is a deterministic 64-bit integer PRNG for reproducible sampling, form assembly, and test generation only. It provides NO cryptographic strength and MUST NEVER be used for security, authentication, tokens, or proctoring.",
+  "no_third_party_libraries": true,
+  "algorithm": {
+    "name": "SplitMix64",
+    "reference": "Steele, Lea, Flood (2014) SplitMix64 unsigned 64-bit mixing step",
+    "bit_width": 64,
+    "unsigned": true,
+    "constants": {
+      "mask_64": {
+        "hex": "0xFFFFFFFFFFFFFFFF",
+        "dec": "18446744073709551615"
+      },
+      "gamma": {
+        "hex": "0x9E3779B97F4A7C15",
+        "dec": "11400714819323198485"
+      },
+      "mul1": {
+        "hex": "0xBF58476D1CE4E5B9",
+        "dec": "13787848793156543929"
+      },
+      "mul2": {
+        "hex": "0x94D049BB133111EB",
+        "dec": "10723151780598845931"
+      },
+      "shift1": 30,
+      "shift2": 27,
+      "shift3": 31
+    },
+    "step_formula": [
+      "state = (state + gamma) & mask_64",
+      "z = state",
+      "z = ((z ^ (z >> 30)) * mul1) & mask_64",
+      "z = ((z ^ (z >> 27)) * mul2) & mask_64",
+      "z = z ^ (z >> 31)",
+      "return z & mask_64"
+    ]
+  },
+  "seed_constraints": {
+    "min_seed_dec": "1",
+    "max_seed_dec": "18446744073709551615",
+    "illegal_seeds": [
+      "0",
+      "negative integers (< 0)",
+      "integers > 2^64 - 1",
+      "non-integer numbers (floats, NaN, Infinity)",
+      "booleans, strings, null, undefined, objects"
+    ],
+    "error_code": "E_PRNG_INVALID_SEED",
+    "rule": "Both Python and JavaScript twins MUST reject any illegal seed identically by throwing/raising E_PRNG_INVALID_SEED before allocating a stream."
+  },
+  "js_integer_safety_rule": {
+    "rule": "All PRNG state, step multiplication, bitwise shifts, and rejection-sampling arithmetic in JavaScript MUST use ES BigInt (64-bit masked via & 0xFFFFFFFFFFFFFFFFn). Floating-point Number arithmetic, Math.random(), Date.now(), 32-bit signed bitwise operators (| 0, >>), and unsafe Number integers (> Number.MAX_SAFE_INTEGER = 9007199254740991) are FORBIDDEN inside PRNG computations.",
+    "json_serialization_rule": "64-bit integer values (u64 draws and seeds > 2^53 - 1) MUST be serialized as exact decimal strings in JSON artifacts because JSON.parse in JavaScript converts unquoted large numbers to IEEE-754 float64 and silently loses low bits."
+  },
+  "operations": {
+    "createStream": {
+      "python": "SplitMix64(seed) / create_stream(seed)",
+      "javascript": "SimPRNG.createStream(seed)",
+      "description": "Validates seed in [1, 2^64 - 1] and initializes deterministic 64-bit state."
+    },
+    "nextU64": {
+      "python": "stream.next_u64() -> int",
+      "javascript": "stream.nextU64() -> BigInt",
+      "description": "Advances state by gamma mod 2^64 and emits the 64-bit unsigned mixed integer."
+    },
+    "nextInt": {
+      "python": "stream.next_int(bound) -> int",
+      "javascript": "stream.nextInt(bound) -> Number (or nextBoundedBigInt for BigInt bounds)",
+      "bound_constraints": "integer bound >= 1 (<= 2^53 - 1 for JS nextInt returning safe Number; <= 2^64 for Python / nextBoundedBigInt); bound <= 0 raises E_PRNG_INVALID_BOUND",
+      "debiasing_rule": "Unbiased 64-bit rejection sampling: threshold = ((1 << 64) - bound) % bound; draw r = nextU64() repeatedly until r >= threshold; return r % bound. Even for bound = 1, consumes one nextU64() draw (threshold = 0) and returns 0."
+    },
+    "nextRange": {
+      "python": "stream.next_range(min_inclusive, max_inclusive) -> int",
+      "javascript": "stream.nextRange(minInclusive, maxInclusive) -> Number",
+      "rule": "Requires integer bounds with min_inclusive <= max_inclusive; returns min_inclusive + nextInt(max_inclusive - min_inclusive + 1)."
+    },
+    "shuffle": {
+      "python": "stream.shuffle(items) -> list",
+      "javascript": "stream.shuffle(items) -> Array",
+      "fisher_yates_rule": "Non-mutating top-down Fisher-Yates (Durstenfeld): copy input list/array; for i = n - 1 down to 1: j = nextInt(i + 1); swap arr[i] and arr[j]. When n <= 1, consumes 0 draws and returns a shallow copy."
+    }
+  },
+  "seed_vocabulary": {
+    "N24_assembly": {
+      "owner": "N24",
+      "purpose": "A/B/C form assembly draws, fairness sweeps, and seeded training draws",
+      "range_inclusive": ["100000", "199999"],
+      "reserved_assignments": {
+        "form_A": "100001",
+        "form_B": "100002",
+        "form_C": "100003",
+        "fairness_sweep": ["100101", "100110"],
+        "seeded_training": ["101000", "199999"]
+      },
+      "recording_rule": "Every assembled form manifest MUST record form_seed, policy_id ('splitmix64-u64-v1'), and prng_contract_digest."
+    },
+    "N27_sample_selection": {
+      "owner": "N27",
+      "purpose": "Leitner spaced-selection tie-breaking and deterministic card sampling",
+      "range_inclusive": ["200000", "299999"],
+      "recording_rule": "Every scheduler selection event MUST record sample_seed and policy_id in the in-memory session log."
+    },
+    "N30_workload_generation": {
+      "owner": "N30",
+      "purpose": "Bounded practice path sampling and ephemeral retry variant parameter draws",
+      "range_inclusive": ["300000", "399999"],
+      "recording_rule": "Every practice path and ephemeral variant draw MUST record workload_seed, family_id, and policy_id."
+    },
+    "N20_bank_authoring": {
+      "owner": "N20",
+      "purpose": "Deterministic variant authoring for the 112-instance frozen bank",
+      "range_inclusive": ["400000", "499999"],
+      "recording_rule": "Every bank variant authoring manifest MUST record numeric prng_seed alongside instance.seed and policy_id."
+    },
+    "N05_N36_verification": {
+      "owner": "N05 / N36",
+      "purpose": "Cross-language contract table, property sweeps, and deterministic test sampling",
+      "range_inclusive": ["500000", "599999"],
+      "contract_seeds_dec": [
+        "1",
+        "2",
+        "42",
+        "1337",
+        "2025",
+        "20261116",
+        "240001",
+        "2147483647",
+        "4294967295",
+        "9007199254740993",
+        "18446744073709551615"
+      ],
+      "recording_rule": "Property and regression test manifests MUST record sweep seeds and policy_id."
+    }
+  },
+  "replay_rule": {
+    "formula": "recorded_seed + algorithm_id + constants_digest + policy_version + input_list => bit-identical reproducible draw sequence",
+    "contract_requirement": "Any refactor to tools/prng.py or src/prng.js MUST reproduce all 11 contract seeds × 100 u64 draws, bounded draws, shuffle fixtures, and illegal-seed rejections byte-for-byte."
+  }
+}

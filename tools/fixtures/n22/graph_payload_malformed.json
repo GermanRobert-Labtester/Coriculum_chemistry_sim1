@@ -1,0 +1,68 @@
+{
+  "fixture_id": "N22-FX-GRAPH-PAYLOAD-MALFORMED",
+  "type_id": "Q11",
+  "claim": "A drawn line that is not the frozen sim-graph-draw-v1 shape is invalid and names E_GRAPH_PAYLOAD_MALFORMED.",
+  "bank_question_id": "COL1-2-2D-A-01",
+  "payload": {
+    "kind": "graph",
+    "variant": "Q11_record",
+    "record": {
+      "points": [
+        {
+          "x": 0,
+          "y": 0.3
+        },
+        {
+          "x": 0.0002,
+          "y": 0.355
+        },
+        {
+          "x": 0.0016,
+          "y": 0.74
+        }
+      ]
+    },
+    "draw_payload": {
+      "schema_id": "sim-graph-draw-v0",
+      "kind": "line",
+      "points": [
+        {
+          "x": 0,
+          "y": 0.3
+        },
+        {
+          "x": 0.0016,
+          "y": 0.74
+        }
+      ],
+      "axes": {
+        "x": {
+          "min": 0,
+          "max": 0.002
+        },
+        "y": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "span": {
+        "x_min": 0,
+        "x_max": 0.002,
+        "edge_rule": "inclusive"
+      },
+      "grid": {
+        "x_min": 0,
+        "x_max": 0.002,
+        "step": 0.0002
+      }
+    }
+  },
+  "expected": {
+    "status": "invalid",
+    "missing_field_ids": [],
+    "name_contains": [],
+    "error_ids": [
+      "E_GRAPH_PAYLOAD_MALFORMED"
+    ]
+  }
+}

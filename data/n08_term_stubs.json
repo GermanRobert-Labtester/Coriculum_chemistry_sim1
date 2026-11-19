@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "artifact": "n08-term-stubs",
+  "owner": "N08",
+  "target_closure_task": "N10",
+  "status": "stub-pending-N10",
+  "notes": "N08 recall-ladder and hint-drawer UI/layer keys recorded for N10-A.1.3 stub-closure verification against data/terms.json (#sim-terms).",
+  "keys": [
+    {"key": "hint.drawer.title", "text_lv": "Palīdzības kāpnes — pakāpeniska atsauce", "region": "#hint-drawer"},
+    {"key": "hint.drawer.close", "text_lv": "Aizvērt", "region": "#hint-drawer-close"},
+    {"key": "hint.drawer.reveal_next", "text_lv": "Atklāt nākamo slāni", "region": "#hint-reveal-next"},
+    {"key": "hint.drawer.max_depth_reached", "text_lv": "Sasniegts šīs saimes maksimālais palīdzības dziļums.", "region": "#hint-drawer-body"},
+    {"key": "hint.drawer.depth_rule_note", "text_lv": "Dziļuma ierobežojums: viena soļa uzdevuma variantam 4. slānis netiek rādīts, lai neatklātu atbildi.", "region": "#hint-drawer-body"},
+    {"key": "hint.drawer.gap_notice", "text_lv": "Šai uzdevumu saimei palīdzības kāpnes vēl nav sagatavotas (reģistrēts iztrūkums).", "region": "#hint-drawer-body"},
+    {"key": "hint.drawer.open_concept", "text_lv": "Atvērt koncepta atvilktni", "region": "#hint-drawer-ladder"},
+    {"key": "hint.layer.1.cue", "text_lv": "1. Virziena norāde", "region": "#hint-drawer-ladder"},
+    {"key": "hint.layer.2.concept_link", "text_lv": "2. Saistītais koncepts", "region": "#hint-drawer-ladder"},
+    {"key": "hint.layer.3.rule_citation", "text_lv": "3. Likums vai formula ar atsauci", "region": "#hint-drawer-ladder"},
+    {"key": "hint.layer.4.first_step", "text_lv": "4. Risinājuma pirmais solis", "region": "#hint-drawer-ladder"},
+    {"key": "hint.practice.help_button", "text_lv": "Palīdzība (kāpnes)", "region": "#prakse"},
+    {"key": "hint.exam.forbidden", "text_lv": "Eksāmena režīmā palīdzības kāpnes nav pieejamas.", "region": "#hint-drawer"},
+    {"key": "hint.summary.used_help", "text_lv": "Izmantotā palīdzība (informatīva atzīme, bez soda punktiem)", "region": "#prakse"},
+    {"key": "hint.summary.no_help", "text_lv": "Palīdzības slāņi netika izmantoti.", "region": "#prakse"}
+  ]
+}

@@ -1,0 +1,1927 @@
+{
+  "epistemic_contract": {
+    "anchor_rule": "master_anchor tiek salīdzināts ar meistara id atribūtu tieši, reģistrjutīgi, bez normalizācijas.",
+    "master_authority": "Meistaru sadaļu teksts ir zinātniskā autoritāte; plānošanas formulējums tiek saglabāts planning_statement_lv laukā un atšķirība — comment laukā.",
+    "official": "Programmas PDF septiņas tēmas, darbs uz papīra un 180 minūšu maksimums.",
+    "proposed": "64 rezultātu granularitāte, rezultātu formulējumi, priekšnosacījumu šķautnes un punktu/minūšu sloti ir mācību politikas priekšlikumi (PROPOSED)."
+  },
+  "expected": {
+    "per_topic": {
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 11,
+      "5": 10,
+      "6": 8,
+      "7": 5
+    },
+    "total": 64
+  },
+  "island_id": "sim-coverage",
+  "official_facts": [
+    {
+      "evidence_quote": "1. Temats. IEVADS. ŠĶĪDUMI UN ĶĪMISKĀS REAKCIJAS",
+      "id": "OF-1",
+      "label": "PROGRAMME-SOURCED",
+      "source": "programme-pdf",
+      "statement_lv": "Programmā ir septiņas tēmas."
+    },
+    {
+      "evidence_quote": "Kolokvijs notiek klātienē, darbs tiek rakstīts uz papīra.",
+      "id": "OF-2",
+      "label": "PROGRAMME-SOURCED",
+      "source": "programme-pdf",
+      "statement_lv": "Kolokvijs notiek klātienē, darbs tiek rakstīts uz papīra."
+    },
+    {
+      "evidence_quote": "Maksimālais pārbaudījumam pieejamais laiks 3 stundas (180 minūtes)",
+      "id": "OF-3",
+      "label": "PROGRAMME-SOURCED",
+      "source": "programme-pdf",
+      "statement_lv": "Maksimālais pārbaudījumam pieejamais laiks ir 3 stundas (180 minūtes)."
+    }
+  ],
+  "outcomes": [
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-01",
+      "master_anchor": "stehiometrija",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Stehiometrija",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Masas nezūdamība un stehiometriski aprēķini",
+      "prerequisites": [
+        "P1-03",
+        "P1-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Masas nezūdamība un stehiometriski aprēķini",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1A"
+        ]
+      },
+      "comment": "Meistara sadaļas virsraksts ir “Maisījumi un dispersijas”; plānošanas formulējums “Homogēni un heterogēni maisījumi” ir šaurāks, tāpēc saglabāts kā apakšjēdziens, nevis aizstāj sadaļas tvērumu.",
+      "granularity_label": "PROPOSED",
+      "id": "P1-02",
+      "master_anchor": "maisijumi",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Maisījumi un dispersijas",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Homogēni un heterogēni maisījumi",
+      "prerequisites": [],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Maisījumi un dispersijas, tostarp homogēni un heterogēni maisījumi",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1A",
+          "FAM-1C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-03",
+      "master_anchor": "reakcijas",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Reakcijas un vienādojumi",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Izejvielas, produkti un savienošanās, sadalīšanās, apmaiņas, aizvietošanas un redoksa reakcijas",
+      "prerequisites": [
+        "P1-05",
+        "P1-06",
+        "P1-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Izejvielas, produkti un savienošanās, sadalīšanās, apmaiņas, aizvietošanas un redoksa reakcijas",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-04",
+      "master_anchor": "klases",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Savienojumu klases",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Skābes, bāzes, oksīdi un sāļi",
+      "prerequisites": [
+        "P1-05",
+        "P1-06",
+        "P1-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Skābes, bāzes, oksīdi un sāļi",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-05",
+      "master_anchor": "atomi",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Atomi, joni, molekulas",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Atoms, jons un molekula",
+      "prerequisites": [],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Atoms, jons un molekula",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-06",
+      "master_anchor": "elektroliti",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Elektrolīti un disociācija",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Disociācija, elektrolīti un neelektrolīti",
+      "prerequisites": [
+        "P1-05",
+        "P1-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Disociācija, elektrolīti un neelektrolīti",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-07",
+      "master_anchor": "saites",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Ķīmiskās saites",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Jonu un kovalentā saite",
+      "prerequisites": [
+        "P1-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Jonu un kovalentā saite",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-08",
+      "master_anchor": "atomi-tabula",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Periodiskā tabula",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Periodiskās tabulas izmantošana",
+      "prerequisites": [
+        "P1-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Periodiskās tabulas izmantošana",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-1D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P1-09",
+      "master_anchor": "skidiba-tabula",
+      "master_freeze_id": "C1-MASTER",
+      "master_heading_lv": "Kā lasīt šķīdības tabulu",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "planning_statement_lv": "Šķīdības tabulas izmantošana",
+      "prerequisites": [
+        "P1-02",
+        "P1-05",
+        "P1-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Šķīdības tabulas izmantošana",
+      "topic": 1
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-01",
+      "master_anchor": "ch-4",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "4. Laboratorijas trauki un piederumi",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Laboratorijas trauku, svaru un pipetes uzpildītāja nosaukumi un lietojums",
+      "prerequisites": [],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Laboratorijas trauku, svaru un pipetes uzpildītāja nosaukumi un lietojums",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-02",
+      "master_anchor": "ch-2",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Masas, tilpuma, temperatūras, vielas daudzuma un blīvuma mērvienības",
+      "prerequisites": [],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Masas, tilpuma, temperatūras, vielas daudzuma un blīvuma mērvienības",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-03",
+      "master_anchor": "ch-2",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Mili-, mikro-, nano-, kilo-, mega- un giga- priedēkļi",
+      "prerequisites": [
+        "P2-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Mili-, mikro-, nano-, kilo-, mega- un giga- priedēkļi",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2A"
+        ]
+      },
+      "comment": "Meistara sadaļas virsraksts ir “Mērīšana un analītiskais signāls”; plānošanas formulējums “Kvalitatīvi un kvantitatīvi dati” ir viens no sadaļas aspektiem.",
+      "granularity_label": "PROPOSED",
+      "id": "P2-04",
+      "master_anchor": "ch-3",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "3. Mērīšana un analītiskais signāls",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Kvalitatīvi un kvantitatīvi dati",
+      "prerequisites": [
+        "P2-01",
+        "P2-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Mērīšana un analītiskais signāls: kvalitatīvi un kvantitatīvi dati",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-05",
+      "master_anchor": "ch-2",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "mg, g, kg, mL, L, cm³ pārvēršana",
+      "prerequisites": [
+        "P2-02",
+        "P2-03"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "mg, g, kg, mL, L, cm³ pārvēršana",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-06",
+      "master_anchor": "ch-2",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Darbību secība, daļas, procenti, tiešā un apgrieztā proporcija, pakāpes",
+      "prerequisites": [
+        "P2-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Darbību secība, daļas, procenti, tiešā un apgrieztā proporcija, pakāpes",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-07",
+      "master_anchor": "ch-5",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "5. Skalu nolasīšana un biretes lietošana",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Trauka un svaru skalas nolasīšana",
+      "prerequisites": [
+        "P2-01",
+        "P2-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Trauka un svaru skalas nolasīšana",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-08",
+      "master_anchor": "ch-9",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Vērtību nolasīšana no grafika un asīm",
+      "prerequisites": [
+        "P2-02",
+        "P2-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Vērtību nolasīšana no grafika un asīm",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-09",
+      "master_anchor": "ch-9",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Neatkarīgais un atkarīgais lielums, asu mērvienības un skalas izvēle",
+      "prerequisites": [
+        "P2-06",
+        "P2-08"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Neatkarīgais un atkarīgais lielums, asu mērvienības un skalas izvēle",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-2B",
+          "FAM-2C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P2-10",
+      "master_anchor": "ch-8",
+      "master_freeze_id": "C2-MASTER",
+      "master_heading_lv": "8. Zīmīgie cipari un noapaļošana",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "planning_statement_lv": "Zīmīgo ciparu skaits un aritmētisko darbību noapaļošana",
+      "prerequisites": [
+        "P2-02",
+        "P2-05",
+        "P2-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Zīmīgo ciparu skaits un aritmētisko darbību noapaļošana",
+      "topic": 2
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3A"
+        ]
+      },
+      "comment": "Meistara sadaļas virsraksts ir “Koncentrāciju veidi un to lietojums medicīnā”; plānošanas formulējums uzskaita lielumus, bet meistars pievieno lietojumu medicīnā.",
+      "granularity_label": "PROPOSED",
+      "id": "P3-01",
+      "master_anchor": "n5",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "c, w, γ un šķīduma, šķīdinātāja, izšķīdušās vielas jēdzieni",
+      "prerequisites": [
+        "P3-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Koncentrāciju veidi (c, w, γ) un šķīduma, šķīdinātāja un izšķīdušās vielas jēdzieni",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-02",
+      "master_anchor": "n3",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 3. Elektrolītiskā disociācija un joni šķīdumā",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "Disociācija un jonu daudzums šķīdumā",
+      "prerequisites": [
+        "P1-06",
+        "P3-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Disociācija un jonu daudzums šķīdumā",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-03",
+      "master_anchor": "n5",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "NaCl 0,9 %, glikoze 5 %, H₂O₂ 3 %, etanols 70 %, jods 5 % un analīžu konteksts",
+      "prerequisites": [
+        "P3-06",
+        "P3-08",
+        "P3-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "NaCl 0,9 %, glikoze 5 %, H₂O₂ 3 %, etanols 70 %, jods 5 % un analīžu konteksts",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3A"
+        ]
+      },
+      "comment": "Meistara sadaļas virsraksts ir “Vielas daudzums, molmasa un mērvienības”; plānošanas formulējums “M, m, V, n, w, c, ρ un γ saistības un vienības” ir plašāks par sadaļas virsrakstu, tāpēc lielumu saraksts saglabāts iekavās.",
+      "granularity_label": "PROPOSED",
+      "id": "P3-04",
+      "master_anchor": "n4",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "M, m, V, n, w, c, ρ un γ saistības un vienības",
+      "prerequisites": [
+        "P2-02",
+        "P2-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Vielas daudzums, molmasa un mērvienības (M, m, V, n, w, c, ρ, γ)",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-05",
+      "master_anchor": "n4",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "m ↔ n ar doto molmasu",
+      "prerequisites": [
+        "P3-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "m ↔ n ar doto molmasu",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-06",
+      "master_anchor": "n6",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "w un c no masas, vielas daudzuma un otrādi",
+      "prerequisites": [
+        "P3-01",
+        "P3-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "w un c no masas, vielas daudzuma un otrādi",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-07",
+      "master_anchor": "n6",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "Šķīduma masa no tilpuma un blīvuma",
+      "prerequisites": [
+        "P2-02",
+        "P3-01"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Šķīduma masa no tilpuma un blīvuma",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-08",
+      "master_anchor": "n9",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "w ↔ c ar blīvumu",
+      "prerequisites": [
+        "P3-01",
+        "P3-04",
+        "P3-06",
+        "P3-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "w ↔ c ar blīvumu",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-09",
+      "master_anchor": "n9",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "γ ↔ w un γ ↔ c",
+      "prerequisites": [
+        "P3-04",
+        "P3-06",
+        "P3-08"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "γ ↔ w un γ ↔ c",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-10",
+      "master_anchor": "n10",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 10. Atšķaidīšana un šķīdumu sajaukšana",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "Atšķaidīšanas aprēķini un gatavā tilpuma jēdziens",
+      "prerequisites": [
+        "P3-04",
+        "P3-06",
+        "P3-08"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Atšķaidīšanas aprēķini un gatavā tilpuma jēdziens",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-3C",
+          "FAM-3D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P3-11",
+      "master_anchor": "n4",
+      "master_freeze_id": "C3-MASTER",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "planning_statement_lv": "Zīmīgie cipari, mg/g un mL/L; nepieļaut masas un tilpuma tiešu pārrēķinu bez blīvuma",
+      "prerequisites": [
+        "P2-10",
+        "P3-07",
+        "P3-08"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Zīmīgie cipari, mg/g un mL/L; nepieļaut masas un tilpuma tiešu pārrēķinu bez blīvuma",
+      "topic": 3
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-01",
+      "master_anchor": "ch4",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Eksotermisks un endotermisks process un temperatūras novērojums",
+      "prerequisites": [
+        "P4-04",
+        "P4-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Eksotermisks un endotermisks process un temperatūras novērojums",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4B",
+          "FAM-4C"
+        ]
+      },
+      "comment": "Meistara sadaļa #ch4 ir “Entalpija un siltumefekti”; plānošanas formulējums “Entalpija, entropija un Gibsa enerģija” aptver trīs atsevišķas meistara sadaļas (#ch4, #ch6, #ch7). Šis ieraksts paliek pie enkura #ch4; entropiju un Gibsa enerģiju sedz P4-09, P4-08 un P4-10.",
+      "granularity_label": "PROPOSED",
+      "id": "P4-02",
+      "master_anchor": "ch4",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Entalpija, entropija un Gibsa enerģija",
+      "prerequisites": [
+        "P4-03",
+        "P4-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Entalpija un siltumefekti",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-03",
+      "master_anchor": "ch5",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "5. Hesa likums un standartentalpijas",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Hesa likums un ΔH aprēķins",
+      "prerequisites": [
+        "P4-01",
+        "P4-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Hesa likums un ΔH aprēķins",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4A",
+          "FAM-4D"
+        ]
+      },
+      "comment": "Meistara sadaļa #ch3 ir “Pirmais likums”; plānošanas formulējums “Pirmais un Otrais termodinamikas likums” aptver arī #ch6. Otrais likums paliek P4-09.",
+      "granularity_label": "PROPOSED",
+      "id": "P4-04",
+      "master_anchor": "ch3",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "3. Pirmais likums",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Pirmais un Otrais termodinamikas likums",
+      "prerequisites": [
+        "P4-05",
+        "P4-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Pirmais termodinamikas likums un enerģijas bilance",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-05",
+      "master_anchor": "ch2",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Atvērta, slēgta, izolēta sistēma; sistēma un apkārtējā vide",
+      "prerequisites": [],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Atvērta, slēgta, izolēta sistēma; sistēma un apkārtējā vide",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-06",
+      "master_anchor": "ch2",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Kinētiskā un potenciālā enerģija, standartapstākļi",
+      "prerequisites": [
+        "P4-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Kinētiskā un potenciālā enerģija, standartapstākļi",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-07",
+      "master_anchor": "ch8",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "8. Kalorimetrija un vielmaiņa",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Kalorimetrija un pārtikas sadegšanas siltuma saistība ar enerģētisko vērtību",
+      "prerequisites": [
+        "P4-01",
+        "P4-03",
+        "P4-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Kalorimetrija un pārtikas sadegšanas siltuma saistība ar enerģētisko vērtību",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4C"
+        ]
+      },
+      "comment": "Meistara sadaļa #ch7 ir “Gibsa enerģija un patvaļības kritērijs”; plānošanas formulējums “Temperatūras ietekme uz entropiju un patvaļīgumu” ir daļa no sadaļas tvēruma.",
+      "granularity_label": "PROPOSED",
+      "id": "P4-08",
+      "master_anchor": "ch7",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Temperatūras ietekme uz entropiju un patvaļīgumu",
+      "prerequisites": [
+        "P4-02",
+        "P4-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Gibsa enerģija, patvaļības kritērijs un temperatūras ietekme",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-09",
+      "master_anchor": "ch6",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "6. Otrais un trešais likums: entropija",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Reakcijas ΔS no dotajiem datiem un pamatots secinājums",
+      "prerequisites": [
+        "P4-05",
+        "P4-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Reakcijas ΔS no dotajiem datiem un pamatots secinājums",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-10",
+      "master_anchor": "ch7",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "ΔG = ΔH − TΔS ar saskaņotām vienībām",
+      "prerequisites": [
+        "P4-02",
+        "P4-03",
+        "P4-08",
+        "P4-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "ΔG = ΔH − TΔS ar saskaņotām vienībām",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-4C",
+          "FAM-4D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P4-11",
+      "master_anchor": "ch7",
+      "master_freeze_id": "C4-MASTER",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "planning_statement_lv": "Secinājumi pēc ΔH, ΔS un ΔG; sistēmas un kopējās entropijas atšķirība",
+      "prerequisites": [
+        "P4-08",
+        "P4-09",
+        "P4-10"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Secinājumi pēc ΔH, ΔS un ΔG; sistēmas un kopējās entropijas atšķirība",
+      "topic": 4
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5A"
+        ]
+      },
+      "comment": "Meistara sadaļa #ch1 ir “Reakcijas ātrums”; plānošanas formulējums “Reakcijas ātrums, ātruma vienības, aktivācijas enerģija un katalizators” aptver arī #ch4, #ch8 un citas sadaļas. Aktivācijas enerģiju un katalizatoru sedz P5-04, P5-07 un P5-03.",
+      "granularity_label": "PROPOSED",
+      "id": "P5-01",
+      "master_anchor": "ch1",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "1 Reakcijas ātrums",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Reakcijas ātrums, ātruma vienības, aktivācijas enerģija un katalizators",
+      "prerequisites": [
+        "P1-03"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Reakcijas ātrums un ātruma vienības",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-02",
+      "master_anchor": "ch2",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "2 Kas nosaka ātrumu",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Koncentrācijas, temperatūras, virsmas, gāzes spiediena un katalizatora ietekme",
+      "prerequisites": [
+        "P5-01"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Koncentrācijas, temperatūras, virsmas, gāzes spiediena un katalizatora ietekme",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-03",
+      "master_anchor": "ch8",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "8 Katalīze",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Homogēna un heterogēna katalīze; enzīmu un citu katalizatoru salīdzinājums",
+      "prerequisites": [
+        "P5-02",
+        "P5-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Homogēna un heterogēna katalīze; enzīmu un citu katalizatoru salīdzinājums",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-04",
+      "master_anchor": "ch4",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "4 Sadursmes un aktivācijas barjera",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Aktīvās sadursmes un Maksvela–Bolcmaņa sadalījuma grafiks",
+      "prerequisites": [
+        "P5-01",
+        "P5-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Aktīvās sadursmes un Maksvela–Bolcmaņa sadalījuma grafiks",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-05",
+      "master_anchor": "ch6",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Nulltās, pirmās, otrās pakāpes likumi un koncentrācijas ietekme",
+      "prerequisites": [
+        "P5-01",
+        "P5-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Nulltās, pirmās, otrās pakāpes likumi un koncentrācijas ietekme",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-06",
+      "master_anchor": "ch7",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "7 Reakciju mehānismi",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Daudzpakāpju mehānisms un ātrumu noteicošā stadija",
+      "prerequisites": [
+        "P5-04",
+        "P5-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Daudzpakāpju mehānisms un ātrumu noteicošā stadija",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-07",
+      "master_anchor": "ch8",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "8 Katalīze",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Enerģijas profili pirms/pēc katalizatora; Eₐ un ΔH",
+      "prerequisites": [
+        "P4-01",
+        "P5-04",
+        "P5-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Enerģijas profili pirms/pēc katalizatora; Eₐ un ΔH",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-08",
+      "master_anchor": "ch6",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Pussabrukšanas periods un tā nolasīšana no grafika",
+      "prerequisites": [
+        "P2-08",
+        "P5-05",
+        "P5-09"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Pussabrukšanas periods un tā nolasīšana no grafika",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-09",
+      "master_anchor": "ch6",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Ātruma konstantes noteikšana, vienības un izmantošana aprēķinā",
+      "prerequisites": [
+        "P5-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Ātruma konstantes noteikšana, vienības un izmantošana aprēķinā",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-5C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P5-10",
+      "master_anchor": "ch6",
+      "master_freeze_id": "C5-MASTER",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "planning_statement_lv": "Pusperioda farmācijas/medicīnas piemērs ar norādītu modeli",
+      "prerequisites": [
+        "P5-08"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Pusperioda farmācijas/medicīnas piemērs ar norādītu modeli",
+      "topic": 5
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-01",
+      "master_anchor": "h-ch1",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "1.Oksidēšanās un reducēšanās",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Oksidēšanās, reducēšanās, oksidētājs un reducētājs",
+      "prerequisites": [
+        "P1-03",
+        "P1-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Oksidēšanās, reducēšanās, oksidētājs un reducētājs",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-02",
+      "master_anchor": "h-ch4",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "4.Reakcijas virziens",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Oksidētāju/reducētāju atpazīšana ar dotu standartpotenciālu tabulu",
+      "prerequisites": [
+        "P6-01"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Oksidētāju/reducētāju atpazīšana ar dotu standartpotenciālu tabulu",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-03",
+      "master_anchor": "h-ch3",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "3.Nernsta vienādojums",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Nernsta vienādojums ar norādītu pāri un apstākļiem",
+      "prerequisites": [
+        "P6-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Nernsta vienādojums ar norādītu pāri un apstākļiem",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-04",
+      "master_anchor": "h-ch8",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "8.Oksidēšanās-reducēšanās procesi organismā",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Redoksa procesu pamati organismā",
+      "prerequisites": [
+        "P6-01",
+        "P6-02",
+        "P6-03"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Redoksa procesu pamati organismā",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-05",
+      "master_anchor": "h-ch6",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "6.Vienādojumu sastādīšana: jonu-elektronu metode",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Pusreakcijas, elektronu bilance un jonu vienādojumi dažādās vidēs",
+      "prerequisites": [
+        "P6-01"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Pusreakcijas, elektronu bilance un jonu vienādojumi dažādās vidēs",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-06",
+      "master_anchor": "h-ch7",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "7.Permanganāts trīs vidēs",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Vides noteikšana pēc pārvērtības un dotajiem nosacījumiem",
+      "prerequisites": [
+        "P6-05"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Vides noteikšana pēc pārvērtības un dotajiem nosacījumiem",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-07",
+      "master_anchor": "h-ch9",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Titrēšanas lietojums, beigu punkts, trauki un piederumi",
+      "prerequisites": [
+        "P2-01",
+        "P3-04",
+        "P3-06",
+        "P6-05",
+        "P6-06"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Titrēšanas lietojums, beigu punkts, trauki un piederumi",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-6C"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P6-08",
+      "master_anchor": "h-ch9",
+      "master_freeze_id": "C6-MASTER",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "planning_statement_lv": "Masa, daudzums un koncentrācija no titrēšanas un molekulāra/saīsināta jonu vienādojuma",
+      "prerequisites": [
+        "P3-04",
+        "P3-06",
+        "P6-05",
+        "P6-06",
+        "P6-07"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Masa, daudzums un koncentrācija no titrēšanas un molekulāra/saīsināta jonu vienādojuma",
+      "topic": 6
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-7A"
+        ]
+      },
+      "comment": "Meistara sadaļa #h1 ir “Kāpēc gaismu var izmantot daudzuma mērīšanai”; plānošanas formulējums “Spektrofotometrijas izmantošanas iespējas” ir pielietojuma kopsavilkums.",
+      "granularity_label": "PROPOSED",
+      "id": "P7-01",
+      "master_anchor": "h1",
+      "master_freeze_id": "C7-MASTER",
+      "master_heading_lv": "1. Kāpēc gaismu var izmantot daudzuma mērīšanai",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "planning_statement_lv": "Spektrofotometrijas izmantošanas iespējas",
+      "prerequisites": [
+        "P2-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Gaismas izmantošana daudzuma mērīšanai: spektrofotometrijas iespējas",
+      "topic": 7
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-7A"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P7-02",
+      "master_anchor": "h6",
+      "master_freeze_id": "C7-MASTER",
+      "master_heading_lv": "6. Bugēra–Lamberta–Bēra likums",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "planning_statement_lv": "Bugēra–Lamberta–Bēra likums un lielumu vienības",
+      "prerequisites": [
+        "P7-01"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Bugēra–Lamberta–Bēra likums un lielumu vienības",
+      "topic": 7
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-7B"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P7-03",
+      "master_anchor": "h8",
+      "master_freeze_id": "C7-MASTER",
+      "master_heading_lv": "8. Kalibrēšanas metode",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "planning_statement_lv": "Kalibrēšanas grafika izmantošana koncentrācijas noteikšanai",
+      "prerequisites": [
+        "P2-08",
+        "P2-09",
+        "P7-02"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Kalibrēšanas grafika izmantošana koncentrācijas noteikšanai",
+      "topic": 7
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-7B",
+          "FAM-7C"
+        ]
+      },
+      "comment": "Meistara sadaļa #h10 ir “Laboratorijas darbs 6B soli pa solim”; plānošanas formulējums apraksta darba aprēķina iznākumu, nevis sadaļas virsrakstu.",
+      "granularity_label": "PROPOSED",
+      "id": "P7-04",
+      "master_anchor": "h10",
+      "master_freeze_id": "C7-MASTER",
+      "master_heading_lv": "10. Laboratorijas darbs 6B soli pa solim",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "planning_statement_lv": "Koncentrācija, masa un vielas daudzums no kalibrēšanas grafika",
+      "prerequisites": [
+        "P3-04",
+        "P3-06",
+        "P7-03"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Laboratorijas darbs 6B: koncentrācija, masa un vielas daudzums no kalibrēšanas grafika",
+      "topic": 7
+    },
+    {
+      "bindings": {
+        "exam_slots": [],
+        "minutes": null,
+        "points": null,
+        "policy_owner": "N24",
+        "practice_families": [
+          "FAM-7D"
+        ]
+      },
+      "comment": null,
+      "granularity_label": "PROPOSED",
+      "id": "P7-05",
+      "master_anchor": "h7",
+      "master_freeze_id": "C7-MASTER",
+      "master_heading_lv": "7. Kad likums neizpildās",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "planning_statement_lv": "Metodes nosacījumu, tukšā parauga un kalibrēšanas robežu izskaidrošana kā pielietojuma prasme",
+      "prerequisites": [
+        "P7-02",
+        "P7-03",
+        "P7-04"
+      ],
+      "statement_label": "PROPOSED",
+      "statement_lv": "Metodes nosacījumu, tukšā parauga un kalibrēšanas robežu izskaidrošana kā pielietojuma prasme",
+      "topic": 7
+    }
+  ],
+  "purpose_lv": "Viens autoritatīvs mācību rezultātu saraksts, ko lasa visas skata, dzinēju un atskaišu daļas.",
+  "schema_version": 1,
+  "source": {
+    "masters": [
+      {
+        "bytes": 1018215,
+        "freeze_id": "C1-MASTER",
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39",
+        "topic": 1
+      },
+      {
+        "bytes": 969738,
+        "freeze_id": "C2-MASTER",
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea",
+        "topic": 2
+      },
+      {
+        "bytes": 1039699,
+        "freeze_id": "C3-MASTER",
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f",
+        "topic": 3
+      },
+      {
+        "bytes": 2502506,
+        "freeze_id": "C4-MASTER",
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845",
+        "topic": 4
+      },
+      {
+        "bytes": 1518065,
+        "freeze_id": "C5-MASTER",
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb",
+        "topic": 5
+      },
+      {
+        "bytes": 1829918,
+        "freeze_id": "C6-MASTER",
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7",
+        "topic": 6
+      },
+      {
+        "bytes": 348993,
+        "freeze_id": "C7-MASTER",
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f",
+        "topic": 7
+      }
+    ],
+    "planning": "docs/PROGRAMME_COVERAGE_MATRIX.csv",
+    "planning_sha256": "89c38b9e44a82840380e012d46303dacd1f22b70548b62917118e9b16aaac3c0",
+    "programme_extract": "evidence/programme_extracted.txt",
+    "programme_pdf": "RSU_MedChem_Colloq1_Prog_LV_2025.pdf",
+    "programme_pdf_sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9"
+  },
+  "title_lv": "Pirmā kolokvija pārklājuma sala",
+  "topics": [
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Ievads. Šķīdumi un ķīmiskās reakcijas",
+      "official_heading": "1. Temats. IEVADS. ŠĶĪDUMI UN ĶĪMISKĀS REAKCIJAS",
+      "outcome_ids": [
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04",
+        "P1-05",
+        "P1-06",
+        "P1-07",
+        "P1-08",
+        "P1-09"
+      ],
+      "source": "programme-pdf",
+      "topic": 1
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Aprēķini un grafiskās metodes ķīmijā",
+      "official_heading": "2. Temats. APRĒĶINI UN GRAFISKĀS METODES ĶĪMIJĀ",
+      "outcome_ids": [
+        "P2-01",
+        "P2-02",
+        "P2-03",
+        "P2-04",
+        "P2-05",
+        "P2-06",
+        "P2-07",
+        "P2-08",
+        "P2-09",
+        "P2-10"
+      ],
+      "source": "programme-pdf",
+      "topic": 2
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Šķīdumi un koncentrāciju aprēķini",
+      "official_heading": "3. Temats. ŠĶĪDUMI UN KONCENTRĀCIJU APRĒĶINI",
+      "outcome_ids": [
+        "P3-01",
+        "P3-02",
+        "P3-03",
+        "P3-04",
+        "P3-05",
+        "P3-06",
+        "P3-07",
+        "P3-08",
+        "P3-09",
+        "P3-10",
+        "P3-11"
+      ],
+      "source": "programme-pdf",
+      "topic": 3
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Termodinamika un tās piemēri bioloģiskajās sistēmās",
+      "official_heading": "4. Temats. TERMODINAMIKA UN TĀS PIEMĒRI BIOLOĢISKAJĀS SISTĒMĀS",
+      "outcome_ids": [
+        "P4-01",
+        "P4-02",
+        "P4-03",
+        "P4-04",
+        "P4-05",
+        "P4-06",
+        "P4-07",
+        "P4-08",
+        "P4-09",
+        "P4-10",
+        "P4-11"
+      ],
+      "source": "programme-pdf",
+      "topic": 4
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Kinētika un tās nozīme bioloģiskajās sistēmās",
+      "official_heading": "5. Temats. KINĒTIKA UN TĀS NOZĪME BIOLOĢISKAJĀS SISTĒMĀS",
+      "outcome_ids": [
+        "P5-01",
+        "P5-02",
+        "P5-03",
+        "P5-04",
+        "P5-05",
+        "P5-06",
+        "P5-07",
+        "P5-08",
+        "P5-09",
+        "P5-10"
+      ],
+      "source": "programme-pdf",
+      "topic": 5
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Oksidēšanās – reducēšanās procesi",
+      "official_heading": "6. Temats. OKSIDĒŠANĀS – REDUCĒŠANĀS PROCESI",
+      "outcome_ids": [
+        "P6-01",
+        "P6-02",
+        "P6-03",
+        "P6-04",
+        "P6-05",
+        "P6-06",
+        "P6-07",
+        "P6-08"
+      ],
+      "source": "programme-pdf",
+      "topic": 6
+    },
+    {
+      "label": "PROGRAMME-SOURCED",
+      "name_lv": "Analīzes metodes ķīmijā",
+      "official_heading": "7. Temats. ANALĪZES METODES ĶĪMIJĀ",
+      "outcome_ids": [
+        "P7-01",
+        "P7-02",
+        "P7-03",
+        "P7-04",
+        "P7-05"
+      ],
+      "source": "programme-pdf",
+      "topic": 7
+    }
+  ],
+  "training_policy": [
+    {
+      "id": "TP-1",
+      "label": "PROPOSED",
+      "note": "Programmas PDF nenosaka rezultātu līmeni; sadalījums ir šīs mācību politikas priekšlikums.",
+      "statement_lv": "64 rezultātu sadalījums pa tēmām ir 9, 10, 11, 11, 10, 8, 5."
+    },
+    {
+      "id": "TP-2",
+      "label": "PROPOSED",
+      "note": "Formulējuma granularitāte ir PROPOSED; meistara sadaļas virsraksts ir zinātniskā atsauce.",
+      "statement_lv": "Katra rezultāta Latvijas formulējums ir atvasinājums no meistara sadaļas, nevis oficiāls programmas teksts."
+    },
+    {
+      "id": "TP-3",
+      "label": "PROPOSED",
+      "note": "N02 atstāj points un minutes kā null; N24 piešķir politikas vērtības.",
+      "statement_lv": "Punktu un minūšu piesaistes ir deklarēti sloti, ko aizpilda N24."
+    },
+    {
+      "id": "TP-4",
+      "label": "PROPOSED",
+      "note": "1. tēmas meistara skaidrās “Pirms šīs nodaļas” saites ir ievērotas; pārējā secība atvasināta no meistaru nodaļu kārtas.",
+      "statement_lv": "Priekšnosacījumu šķautnes ir šīs mācību politikas konceptu grafs."
+    }
+  ]
+}

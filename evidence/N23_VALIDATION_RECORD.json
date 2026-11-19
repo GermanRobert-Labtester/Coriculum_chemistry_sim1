@@ -1,0 +1,357 @@
+{
+  "checks": {
+    "classification": {
+      "error_class_totality": true,
+      "feedback_keys": true,
+      "island_id": true,
+      "mapping_present": true,
+      "misconception_names": true,
+      "ordering_rule": true,
+      "owner": true,
+      "priority_int": true,
+      "remediation_chains": true,
+      "remediation_concepts": true,
+      "schema_version": true,
+      "signature_totality": true,
+      "slot_state_totality": true,
+      "unmapped_rule": true
+    },
+    "policy": {
+      "SF-N23-FULL:expected": true,
+      "SF-N23-FULL:slot_points": true,
+      "SF-N23-MALFORMED:expected": true,
+      "SF-N23-MALFORMED:slot_points": true,
+      "SF-N23-PARTIAL:expected": true,
+      "SF-N23-PARTIAL:slot_points": true,
+      "conflict:N22-C06-resolution": true,
+      "conflict:N23-C01": true,
+      "conflict_ref": true,
+      "criterion_statuses": true,
+      "display_copy_keys": true,
+      "engine_bindings": true,
+      "event_types": true,
+      "form_max_points": true,
+      "island_id": true,
+      "manual_binding:Q03": true,
+      "manual_binding:Q05": true,
+      "manual_pending_error_class": true,
+      "manual_pending_types": true,
+      "mismatch_rule": true,
+      "no_answer_text_rule": true,
+      "owner": true,
+      "points_rule": true,
+      "points_rule_proposed": true,
+      "proposed_label": true,
+      "schema_version": true,
+      "self_test_ids": true,
+      "slot_points_authoritative": true,
+      "slot_state:graded": true,
+      "slot_state:incomplete": true,
+      "slot_state:invalid": true,
+      "slot_state:manual_pending": true,
+      "slot_state:unattempted": true,
+      "slot_states": true,
+      "unattempted_error_class": true,
+      "unblended": true,
+      "unknown_verdict_rule": true,
+      "verdict_count:auto_passed_pending_review": true,
+      "verdict_count:correct": true,
+      "verdict_count:incorrect": true,
+      "verdict_count:not_assessed": true,
+      "verdict_count:partial": true,
+      "verdict_count:pending_self_assessment": true,
+      "verdict_totality": true
+    },
+    "score_matrix": {
+      "FX-N23-FULL": {
+        "bindings": 21,
+        "rubric_sum_checked": 21,
+        "slot_points": 100.0,
+        "states": {
+          "graded": 19,
+          "incomplete": 0,
+          "invalid": 0,
+          "manual_pending": 2,
+          "unattempted": 0
+        },
+        "totals": {
+          "auto_points": 48.0,
+          "denied_points": 0.0,
+          "form_max_points": 100.0,
+          "pending_external_points": 52.0,
+          "zeroed_points": 0.0
+        }
+      },
+      "FX-N23-MIXED": {
+        "bindings": 21,
+        "rubric_sum_checked": 21,
+        "slot_points": 100.0,
+        "states": {
+          "graded": 13,
+          "incomplete": 3,
+          "invalid": 1,
+          "manual_pending": 2,
+          "unattempted": 2
+        },
+        "totals": {
+          "auto_points": 18.0,
+          "denied_points": 14.0,
+          "form_max_points": 100.0,
+          "pending_external_points": 37.0,
+          "zeroed_points": 31.0
+        }
+      },
+      "FX-N23-PARTIAL": {
+        "bindings": 21,
+        "rubric_sum_checked": 21,
+        "slot_points": 100.0,
+        "states": {
+          "graded": 19,
+          "incomplete": 0,
+          "invalid": 0,
+          "manual_pending": 2,
+          "unattempted": 0
+        },
+        "totals": {
+          "auto_points": 44.5,
+          "denied_points": 3.5,
+          "form_max_points": 100.0,
+          "pending_external_points": 52.0,
+          "zeroed_points": 0.0
+        }
+      },
+      "FX-N23-ZERO": {
+        "bindings": 21,
+        "rubric_sum_checked": 21,
+        "slot_points": 100.0,
+        "states": {
+          "graded": 19,
+          "incomplete": 0,
+          "invalid": 0,
+          "manual_pending": 2,
+          "unattempted": 0
+        },
+        "totals": {
+          "auto_points": 0.0,
+          "denied_points": 48.0,
+          "form_max_points": 100.0,
+          "pending_external_points": 52.0,
+          "zeroed_points": 0.0
+        }
+      }
+    },
+    "source_scan": {
+      "feedback": {
+        "bytes": 65044,
+        "digest_block": "sha256-comment+function",
+        "globals": [],
+        "numeric_literals": [],
+        "source": "src/feedback.ts",
+        "status": "CHECKED"
+      },
+      "grading": {
+        "bytes": 72669,
+        "digest_block": "n23-markers",
+        "globals": [],
+        "numeric_literals": [],
+        "source": "src/grading.ts",
+        "status": "CHECKED"
+      }
+    }
+  },
+  "classification": {
+    "checks": {
+      "error_class_totality": true,
+      "feedback_keys": true,
+      "island_id": true,
+      "mapping_present": true,
+      "misconception_names": true,
+      "ordering_rule": true,
+      "owner": true,
+      "priority_int": true,
+      "remediation_chains": true,
+      "remediation_concepts": true,
+      "schema_version": true,
+      "signature_totality": true,
+      "slot_state_totality": true,
+      "unmapped_rule": true
+    },
+    "digest": "dbb3fc84fc9fd1f508a473f69852e0b96989c340a204def62d60a90870b6a3f8",
+    "mapped": {
+      "error_classes": 19,
+      "signatures": 62,
+      "slot_states": 5
+    },
+    "mapping_rows": 88,
+    "required": {
+      "error_classes": 19,
+      "signatures": 62,
+      "slot_states": 5
+    },
+    "source": "data/feedback_classification.json",
+    "status": "CHECKED"
+  },
+  "conflicts": [
+    "N22-C05-followed",
+    "N22-C06-resolution",
+    "N23-C01",
+    "N23-C03"
+  ],
+  "errors": [],
+  "failed_checks": [],
+  "frozen_verdict_classes": [
+    "auto_passed_pending_review",
+    "correct",
+    "incorrect",
+    "not_assessed",
+    "partial",
+    "pending_self_assessment"
+  ],
+  "gate": "grading",
+  "islands": {
+    "classification": {
+      "digest": "dbb3fc84fc9fd1f508a473f69852e0b96989c340a204def62d60a90870b6a3f8",
+      "rows": 88,
+      "status": "CHECKED"
+    },
+    "policy": {
+      "bytes": 12143,
+      "digest": "6e252cadcfe23d26ec9bf1d36339cade549db2d15418e8ef7653a4384af9ed5c",
+      "id": "sim-grading-policy"
+    }
+  },
+  "mixed_separator": "1.000,50",
+  "notes_lv": [
+    "Šis vārti nepalaiž tools/build.py un nekompilē TypeScript: oficiālā kompilācija un 19. vārtu reģistrācija pieder koordinētājam.",
+    "Klasifikācijas sala tiek autora paralēli; kamēr tā nav, tās pārbaude ir PENDING, nevis FAIL.",
+    "Punktu matrica ir skriptēta datu kopa, nevis eksāmena forma; tā pārbauda vērtēšanas kodolu, nevis N24 komplektēšanu."
+  ],
+  "owner": "N23",
+  "pending": [],
+  "schema_version": 1,
+  "score_forms": {
+    "FX-N23-FULL": {
+      "bindings": 21,
+      "rubric_sum_checked": 21,
+      "slot_points": 100.0,
+      "states": {
+        "graded": 19,
+        "incomplete": 0,
+        "invalid": 0,
+        "manual_pending": 2,
+        "unattempted": 0
+      },
+      "totals": {
+        "auto_points": 48.0,
+        "denied_points": 0.0,
+        "form_max_points": 100.0,
+        "pending_external_points": 52.0,
+        "zeroed_points": 0.0
+      }
+    },
+    "FX-N23-MIXED": {
+      "bindings": 21,
+      "rubric_sum_checked": 21,
+      "slot_points": 100.0,
+      "states": {
+        "graded": 13,
+        "incomplete": 3,
+        "invalid": 1,
+        "manual_pending": 2,
+        "unattempted": 2
+      },
+      "totals": {
+        "auto_points": 18.0,
+        "denied_points": 14.0,
+        "form_max_points": 100.0,
+        "pending_external_points": 37.0,
+        "zeroed_points": 31.0
+      }
+    },
+    "FX-N23-PARTIAL": {
+      "bindings": 21,
+      "rubric_sum_checked": 21,
+      "slot_points": 100.0,
+      "states": {
+        "graded": 19,
+        "incomplete": 0,
+        "invalid": 0,
+        "manual_pending": 2,
+        "unattempted": 0
+      },
+      "totals": {
+        "auto_points": 44.5,
+        "denied_points": 3.5,
+        "form_max_points": 100.0,
+        "pending_external_points": 52.0,
+        "zeroed_points": 0.0
+      }
+    },
+    "FX-N23-ZERO": {
+      "bindings": 21,
+      "rubric_sum_checked": 21,
+      "slot_points": 100.0,
+      "states": {
+        "graded": 19,
+        "incomplete": 0,
+        "invalid": 0,
+        "manual_pending": 2,
+        "unattempted": 0
+      },
+      "totals": {
+        "auto_points": 0.0,
+        "denied_points": 48.0,
+        "form_max_points": 100.0,
+        "pending_external_points": 52.0,
+        "zeroed_points": 0.0
+      }
+    }
+  },
+  "self_test_fixtures": [
+    {
+      "auto": 4.0,
+      "id": "SF-N23-FULL",
+      "pending_external": 1.0,
+      "slot_points": 5
+    },
+    {
+      "auto": 2.0,
+      "id": "SF-N23-PARTIAL",
+      "pending_external": 1.0,
+      "slot_points": 5
+    },
+    {
+      "auto": 0.0,
+      "id": "SF-N23-MALFORMED",
+      "pending_external": 0.0,
+      "slot_points": 5
+    }
+  ],
+  "slot_count": 21,
+  "slot_states": [
+    "graded",
+    "incomplete",
+    "invalid",
+    "unattempted",
+    "manual_pending"
+  ],
+  "source_scan": {
+    "feedback": {
+      "bytes": 65044,
+      "digest_block": "sha256-comment+function",
+      "globals": [],
+      "numeric_literals": [],
+      "source": "src/feedback.ts",
+      "status": "CHECKED"
+    },
+    "grading": {
+      "bytes": 72669,
+      "digest_block": "n23-markers",
+      "globals": [],
+      "numeric_literals": [],
+      "source": "src/grading.ts",
+      "status": "CHECKED"
+    }
+  },
+  "status": "PASS"
+}

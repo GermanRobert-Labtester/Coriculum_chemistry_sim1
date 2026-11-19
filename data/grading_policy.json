@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-grading-policy",
+  "owner": "N23",
+  "status": "authored",
+  "title_lv": "Vērtēšanas politikas sala: verdiktu, kritēriju statusu un uzdevumu stāvokļu noteikumi",
+  "epistemic_note": "PROPOSED mācību politika. 2025. gada programma nenosaka punktu skalas sadalījumu, daļējās atzīmes noteikumu, sliekšņus vai vērtēšanas prioritātes; visa šī sala ir simulatora deklarācija, nevis oficiāla eksāmena prasība. Punkti nāk no data/exam_policy.json slotiem (100 punkti, 21 vieta) un no N20 bankas rubrikām; dzinēju verdikti nāk no N17/N18/N19 līgumiem. N09 maldīgo priekšstatu reģistrs šajā darba telpā nav izpildīts, tāpēc klasifikācija (data/feedback_classification.json) ir N23 autora kartējums pār sasaldētajiem dzinēju vokabulāriem; šī sala tur tikai punktu un stāvokļu noteikumus.",
+  "citations": {
+    "grading_format": "docs/GRADING_FORMAT.md",
+    "exam_policy": "data/exam_policy.json#/slots",
+    "question_schema": "data/question_schema.json#/payload_classes",
+    "response_types": "data/response_types.json#/types",
+    "quantity_engine": "src/quantity-engine.js",
+    "graph_engine": "src/graph-scoring-engine.js",
+    "method_engine": "src/method-engine.js",
+    "golden_vector_protocol": "data/golden_vector_protocol.json#/verdict_classes",
+    "graph_verdict_record": "data/graph_scoring_contract.json#/verdict_record",
+    "terms": "data/terms.json"
+  },
+  "rubric_policy": {
+    "verdict_rules": {
+      "correct": {
+        "count": "every auto criterion at full awarded points; no pending criterion in the slot",
+        "meaning_lv": "Visi automātiski vērtētie kritēriji ir pilnā apjomā."
+      },
+      "partial": {
+        "count": "auto criteria mixed awarded/denied; 0 < machine_checked_points < auto_max",
+        "meaning_lv": "Daļa automātiski vērtēto kritēriju ir iegūta, daļa nav; punkti netiek pārdalīti."
+      },
+      "incorrect": {
+        "count": "zero machine points; pending criteria keep their pending state",
+        "meaning_lv": "Neviens automātiski vērtētais kritērijs nav iegūts; pašvērtējums paliek pending."
+      },
+      "pending_self_assessment": {
+        "count": "no auto points; every point of the slot is pending-external",
+        "meaning_lv": "Uzdevumā nav automātiski vērtējamu punktu; visi punkti gaida ārēju vērtējumu."
+      },
+      "auto_passed_pending_review": {
+        "count": "auto criteria at full points; self/manual criteria stay pending-external",
+        "meaning_lv": "Automātiskā daļa ir pilna, bet daļa punktu joprojām gaida ārēju vērtējumu."
+      },
+      "not_assessed": {
+        "count": "zero auto points (out-of-span geometry); the excluded geometry is recorded in the verdict",
+        "meaning_lv": "Iesnieguma novērtējamā daļa ir tukša; tas nav ne pareizi, ne nepareizi, un punkti netiek piešķirti."
+      }
+    },
+    "unknown_verdict_rule": "fail E_GRADING_UNKNOWN_VERDICT naming the slot, criterion and verdict; never a silent zero",
+    "criterion_status_rules": {
+      "awarded": "the criterion's declared points are machine-awarded; awarded_points == max_points, pending_points == 0",
+      "denied": "no points; awarded_points == 0 and pending_points == 0",
+      "pending": "external review; awarded_points == 0 and pending_points == max_points; never counted into the auto total"
+    },
+    "slot_state_rules": {
+      "graded": "completion complete -> the frozen engine call for the type's grading binding",
+      "incomplete": "completion incomplete -> zero, the named missing list is carried, no engine call (PROPOSED)",
+      "invalid": "completion invalid or an engine structural error -> zero, the named errors are carried, the raw payload is preserved",
+      "unattempted": "no stored answer -> zero, error_class UNATTEMPTED (declared by this island); never scored and never sent to an engine",
+      "manual_pending": "a Q03/Q05 manual-rubric slot -> every point pending-external, no engine call, error_class MANUAL_PENDING (declared by this island)"
+    },
+    "pre_grade_routing": {
+      "manual_pending_types": [
+        "Q03",
+        "Q05"
+      ],
+      "unattempted_error_class": "UNATTEMPTED",
+      "manual_pending_error_class": "MANUAL_PENDING",
+      "note_lv": "Tikai Q03 un Q05 ir manuāli vērtējamas vietas ar grading_binding.class = pending, kur dzinējs nevar sniegt verdiktu. Q15/Q16 arī ir self-assessed, bet to tekstu pabeigtību pārbauda N22 un tos vērtē N19 ar pending_self_assessment verdiktu, tāpēc tie paliek graded stāvoklī ar pending punktiem. Šī atšķirība ir deklarēta, nevis klusējot pieņemta."
+    },
+    "points_rule_verbatim_lv": "Par katru rubrikas kritēriju punktus piešķir vai nepiešķir pilnā apjomā: kritērija deklarētie punkti ir arī tā maksimums, un daļskaitļi (piemēram, 0,75 FAM-7A atbilstības kritērijos) ir deklarētie kritērija punkti, nevis mīkstināta atzīme. Daļēja atzīme uzdevumā ir tikai tad, ja 0 < machine_checked_points < auto_max. Pašvērtējuma un manuālās pārbaudes punkti netiek pārdalīti un paliek pending. Šis ir PROPOSED mācību politikas noteikums, nevis oficiāla eksāmena prasība.",
+    "attachment_rule": {
+      "signature_attachment": "N17 signature/feedback_key and N19 diagnostics.signatures attach to the criteria that lost points (status denied); an N19 remediation entry attaches to the criterion whose id ends with _PAIR_<step_id> or _STEP_<step_id>, otherwise to the first denied criterion; nothing is invented and nothing is dropped",
+      "n18_note": "N18 verdicts carry error_class/validity.class and cited_entries kinds; the record keeps them at the slot level (taxonomy_class, cited_entries) because the graph engine diagnoses geometry, not a single rubric criterion"
+    },
+    "engine_bindings": [
+      "N17-numeric",
+      "N18-symbolic",
+      "N18-graph",
+      "N19-method",
+      "self-assessed",
+      "manual-rubric-pending",
+      "human-review"
+    ]
+  },
+  "honesty_accounting": {
+    "form_max_points": 100,
+    "unblended": true,
+    "auto_total_rule": "totals.auto_points = sum of slot.task.auto_points; awarded-only, never includes pending points",
+    "pending_external_rule": "totals.pending_external_points = sum of slot.task.pending_points; every pending point is outside the auto total and labelled pending-external",
+    "max_rule": "totals.auto_max_points + totals.pending_max_points == form_max_points; a mismatch fails E_GRADING_BINDING_POINTS (N23-C01)",
+    "zero_state_rule_lv": "Neaizpildīta, nepilnīga vai bojāta atbilde saņem nulli; tās punkti netiek ne piešķirti, ne pārvērsti pending punktos, un neaizpildīta vieta nekad netiek vērtēta.",
+    "display_copy_keys": [
+      "feedback.results.auto_total",
+      "feedback.results.pending_total",
+      "feedback.results.unblended",
+      "feedback.results.honesty",
+      "feedback.results.unattempted",
+      "feedback.results.task_level",
+      "feedback.results.criterion_disclosure",
+      "feedback.results.misconception",
+      "feedback.results.remediation",
+      "feedback.results.raw_preserved",
+      "feedback.results.malformed_zero",
+      "feedback.results.incomplete_zero"
+    ]
+  },
+  "binding_rule": {
+    "slot_points_authoritative": true,
+    "rubric_sum_rule": "sum(instance.rubric[].points) must equal the slot's declared points; a binding is refused by id, never rescaled",
+    "mismatch_rule": "E_GRADING_BINDING_POINTS naming slot, instance and both sums",
+    "conflict_ref": "N23-C01",
+    "digest_rule": "binding_digest is the SHA-256 of the canonical [{slot_id, type_id, instance_id, figure_id?}] projection in form order"
+  },
+  "analytics_contract": {
+    "event_types": [
+      "session-completed",
+      "task-answered",
+      "remediation-state"
+    ],
+    "no_answer_text_rule": "no analytics event carries any answer text, raw string or payload fragment; task-answered carries only criterion verdicts",
+    "pending_count_rule": "session-completed.pending_count counts slots with pending-external points > 0",
+    "remediation_rule": "remediation-state events exist only for graded incorrect, invalid or incomplete slots that carry feedback items with mapped concept/chain ids or a signature; the entries are the open items of N28's queue",
+    "digest_link_rule": "every event carries graded_digest == the full record's digest"
+  },
+  "self_test_fixtures": [
+    {
+      "id": "SF-N23-FULL",
+      "slot_points": 5,
+      "slot_state": "graded",
+      "criteria": [
+        {
+          "criterion_id": "C1_VALUE",
+          "points": 2,
+          "status": "awarded"
+        },
+        {
+          "criterion_id": "C2_SIGFIG",
+          "points": 2,
+          "status": "awarded"
+        },
+        {
+          "criterion_id": "C3_NOTE",
+          "points": 1,
+          "status": "pending"
+        }
+      ],
+      "expected": {
+        "auto": 4,
+        "pending_external": 1
+      },
+      "note": "full auto plus one pending-external point; 4 + 1 = 5 slot points"
+    },
+    {
+      "id": "SF-N23-PARTIAL",
+      "slot_points": 5,
+      "slot_state": "graded",
+      "criteria": [
+        {
+          "criterion_id": "C1_VALUE",
+          "points": 2,
+          "status": "awarded"
+        },
+        {
+          "criterion_id": "C2_SIGFIG",
+          "points": 2,
+          "status": "denied"
+        },
+        {
+          "criterion_id": "C3_NOTE",
+          "points": 1,
+          "status": "pending"
+        }
+      ],
+      "expected": {
+        "auto": 2,
+        "pending_external": 1
+      },
+      "note": "partial: 0 < 2 < 4 auto; the denied point is neither awarded nor pending"
+    },
+    {
+      "id": "SF-N23-MALFORMED",
+      "slot_points": 5,
+      "slot_state": "invalid",
+      "criteria": [
+        {
+          "criterion_id": "C1_VALUE",
+          "points": 2,
+          "status": "awarded"
+        },
+        {
+          "criterion_id": "C2_SIGFIG",
+          "points": 2,
+          "status": "awarded"
+        },
+        {
+          "criterion_id": "C3_NOTE",
+          "points": 1,
+          "status": "pending"
+        }
+      ],
+      "expected": {
+        "auto": 0,
+        "pending_external": 0
+      },
+      "note": "the slot-state rule forbids a malformed answer from earning anything: rows that claim awarded/pending are zeroed, so the malformed case proves the state override"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "N23-C01",
+      "owner": "N23",
+      "status": "documented-and-accepted",
+      "handoff": "N24",
+      "topic": "FAM-7C/FAM-7D 9-point rubrics versus the 5-point slot S7-3",
+      "observation": "data/bank/FAM-7C.json and data/bank/FAM-7D.json carry 9-point rubrics; data/exam_policy.json declares 5 points for S7-3. A form that seats such a family in that slot would grade 9 points where the form declares 5.",
+      "resolution_lv": "Punktu skala ir slota: rubrikas summa, kas neatbilst slota punktiem, tiek noraidīta ar E_GRADING_BINDING_POINTS, nosaucot slotu, instanci un abas summas. N23 punktus nepārmēro un klusējot nepielāgo. Šīs salas un score matrix fixtures neievieto FAM-7C/FAM-7D 5 punktu slotā; 8 punktu S3-3 saņem tikai 8 punktu instanci (FAM-3D Q17).",
+      "fixtures_note": "tools/fixtures/n23_score_matrix.json binds only instances whose rubric sum equals the slot points; tools/validate_n23_grading.py re-proves it over every binding."
+    },
+    {
+      "id": "N22-C06-resolution",
+      "owner": "N23",
+      "status": "decided-by-n23",
+      "handoff": "N24",
+      "topic": "self-assessed criteria of Q02/Q09/Q10/Q11/Q12 have no declared text annex",
+      "observation": "The numeric and graph payload classes declare no free-text field, but some instances carry a self-assessed rubric criterion (for example FAM-2C C2_UNITS, FAM-2D C2_SCALE, FAM-3A C3_IONS).",
+      "resolution_lv": "N23 pieņem šos kritērijus kā pending-external, neizgudrojot ievades lauku: dzinēji tos jau atzīmē kā pending, un vērtēšanas ieraksts tos nes pending_external_points ar nosaukumu. Kritēriju izmešana ir N24 komplektēšanas lēmums, nevis N23 vērtēšanas lēmums; viltus teksta lauks netiek pievienots."
+    },
+    {
+      "id": "N23-C03",
+      "owner": "N23",
+      "status": "open-gap",
+      "handoff": "N24",
+      "topic": "Q11 drawing slots need a figure binding the frozen binding shape does not carry",
+      "observation": "SimGraphScoring.scoreDrawing(record, payload, rubric) needs the figure record whose axes and fit line define the criterion. A binding is [{slot_id, type_id, instance_id}] and the Q11 instance payload declares no figure id, so the module cannot resolve a record from the binding alone.",
+      "resolution_lv": "N23 pieņem neobligātu binding.figure_id tikai Q11 vietām; ja tā nav, gradeTerminalRecord atsakās ar E_GRADING_CONTEXT, nosaucot slotu, nevis klusējot izvēlas figūru. Score matrix fixtures neietver Q11 (to nenosaka neviens slota tips); N24 formu manifestam jānes figure_id grafika zīmēšanas vietām.",
+      "fixtures_note": "The runtime harness proves the Q11 path with an explicit figure_id outside the fixture files."
+    },
+    {
+      "id": "N22-C05-followed",
+      "owner": "N23",
+      "status": "documented-and-accepted",
+      "handoff": "N22/N24",
+      "topic": "Q07/Q14/Q18 registry label N19-method versus the frozen quantity-engine dispatch",
+      "observation": "data/response_types.json labels the option_select grading binding engine N19-method, but SimMethodEngine.specFromInstance refuses payload_class option_select (E_METHOD_PAYLOAD_CLASS). tools/check_n22_runtime.js records the divergence as N22-C05 and uses the quantity engine's option_select branch.",
+      "resolution_lv": "N23 seko sasaldētajai N22 tabellei: Q07/Q14/Q18 izvēles identifikatori iet uz SimEngines.grade ar selected_ids, bez adaptera. Reģistra marķējums netiek klusējot pārrakstīts; tas paliek redzams šajā konfliktā un N22-C05 ierakstā."
+    }
+  ]
+}

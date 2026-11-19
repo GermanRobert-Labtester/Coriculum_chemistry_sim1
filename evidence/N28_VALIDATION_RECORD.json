@@ -1,0 +1,97 @@
+{
+  "errors": [],
+  "gate": "remediation",
+  "negative_fixtures": {
+    "forced_gating_rejected": true,
+    "js_negative_probe": {
+      "linkErr": {
+        "code": "E_REMEDIATION_DANGLING_LINK",
+        "message": "Atkārtošanas saite atsaucas uz neeksistējošu koncepta enkuru \"P9-99-DANGLING\"."
+      },
+      "polRes": {
+        "errors": [
+          "recommend_only must be true (no forced remediation gating)"
+        ],
+        "valid": false
+      }
+    },
+    "regrade_rejected": true,
+    "status": "PASS",
+    "unsupported_mode_rejected": true
+  },
+  "policy": {
+    "bytes": 4208,
+    "deduplication_key": [
+      "family_id",
+      "outcome_id"
+    ],
+    "digest": "02268d355e2ff8146da958bf58fc93c7a3ad230c6151b3eaf064be5891be4b56",
+    "errors": [],
+    "file_sha256": "cc320a5279dd9999aeb757cfa1861fded8b1438d4b15709117f2f0d878aa39c0",
+    "policy_id": "sim-colloq1-remediation-v1",
+    "recommend_only": true,
+    "resolution_mode": "confirm_required",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "missing_placeholders": [],
+    "required_ids_present": 12,
+    "required_ids_total": 12,
+    "status": "PASS"
+  },
+  "sources": {
+    "exports": [
+      "ISLAND_ID",
+      "SCHEMA_VERSION",
+      "ONE_CORRECT_EVIDENCE_COPY_LV",
+      "errors",
+      "RemediationError",
+      "validatePolicy",
+      "loadPolicy",
+      "buildRegistries",
+      "validateLinks",
+      "validateQueueLinks",
+      "applyMissToDraft",
+      "applyGradedRecordDraft",
+      "addMiss",
+      "resolveEntry",
+      "recordRetryVerdict",
+      "selectRetryInstance",
+      "buildStudyHandoff",
+      "buildRetryHandoff",
+      "getQueueSnapshot",
+      "openStudyAnchor",
+      "openStudyChain",
+      "returnToQueue",
+      "launchRetry",
+      "renderQueue",
+      "renderFromStore",
+      "renderError",
+      "init"
+    ],
+    "src/compiled/remediation.js": {
+      "bytes": 88466,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "dbffc634d390e5a6c734174b43bb90cd404f007dce9e2b85bb9c726ea5c553e9"
+    },
+    "src/remediation.ts": {
+      "bytes": 89567,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "7b88c82988e9c53f78b9ed84bc1da4aa8cba37849a37960a437126d08922f519"
+    }
+  },
+  "status": "PASS",
+  "task": "N28",
+  "terms_lint": {
+    "checked_term_keys": 235,
+    "errors": [],
+    "status": "PASS"
+  },
+  "ts_drift": "PASS"
+}

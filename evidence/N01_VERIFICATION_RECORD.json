@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "artifact": "n01-verification-record",
+  "task": "N01 - Freeze the consumed sources and make repository-local verification runnable",
+  "recorded_utc": "2026-11-16T22:06:09Z",
+  "environment": {
+    "workspace_under_test": "/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum",
+    "published_copy": "/tmp/opencode/n01-published (byte-identical copy of the published tree, no .git, no sibling Chemistry_1 through Chemistry_7)",
+    "clean_clone": "/tmp/opencode/n01-clean-clone (git clone at commit 677156a32bc917e146ca1e3e7e5988ef925a1733, original pre-N01 script)",
+    "python": "3.12.16",
+    "platform": "Linux 7.3.3-200.fc44.x86_64 x86_64",
+    "siblings_present_in_workspace": true,
+    "siblings_present_in_published_copy": false
+  },
+  "epistemic_labels": {
+    "V-01 reproduction": "VERIFIED (2026-11-16)",
+    "repository-local PASS": "VERIFIED (2026-11-16)",
+    "inventory checker PASS": "VERIFIED (2026-11-16)",
+    "programme PDF digest reproduction": "VERIFIED (2026-11-16)",
+    "committed evidence/PREPARATION_VERIFICATION.json": "DOCUMENTED BUT NOT RERUN from a clean clone",
+    "full-workspace default mode": "VERIFIED (2026-11-16) in the author workspace present in this environment; not a clean-clone reproduction"
+  },
+  "v01": {
+    "entry": "evidence/V01_CONFLICT_ENTRY.json",
+    "reproduced": true,
+    "exit_code": 1,
+    "exception": "KeyError: 1",
+    "failing_line": 177,
+    "failing_function": "verify_data",
+    "manifest_entry_class": "canonical-master",
+    "two_environment_boundary_recorded": true
+  },
+  "assertion_classification": [
+    {"id": "A01", "assertion": "manifest['destination'] equals the current workspace path", "location": "verify_copies", "class": "runnable-locally (location-sensitive)", "repo_local_treatment": "not asserted; a clean clone or scratch copy has a different absolute path", "evidence": "verify_copies destination check"},
+    {"id": "A02", "assertion": "no duplicate destination paths", "location": "verify_copies", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "174 unique destinations"},
+    {"id": "A03", "assertion": "source file and destination file both exist", "location": "verify_copies", "class": "sibling-dependent", "repo_local_treatment": "source half not asserted; destination half asserted", "evidence": "src = ROOT/item['source']; ROOT is the parent directory holding the unpublished siblings"},
+    {"id": "A04", "assertion": "source bytes == destination bytes == manifest bytes", "location": "verify_copies", "class": "sibling-dependent (source half); runnable-locally (manifest-only half)", "repo_local_treatment": "destination bytes == manifest bytes asserted; 174/174", "evidence": "Repo-local PASS byte total 30,083,827"},
+    {"id": "A05", "assertion": "source SHA-256 == destination SHA-256 == manifest SHA-256", "location": "verify_copies", "class": "sibling-dependent (source half); runnable-locally (manifest-only half)", "repo_local_treatment": "destination SHA-256 == manifest SHA-256 asserted; 174/174", "evidence": "Repo-local PASS hash_matches 174"},
+    {"id": "A06", "assertion": "role counts 7/35/65/18/49", "location": "verify_copies", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "Repo-local PASS roles"},
+    {"id": "A07", "assertion": "canonical master loads no remote resource and every local src/resource exists", "location": "verify_copies", "class": "runnable-locally (destination files only)", "repo_local_treatment": "asserted from the published master", "evidence": "HTMLInventory over materials/Chemistry_n masters"},
+    {"id": "A08", "assertion": "COPY_MANIFEST has 174 file records", "location": "verify_copies", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "Repo-local PASS files 174"},
+    {"id": "A09", "assertion": "manifest byte total equals 30,083,827", "location": "verify_copies (added for repo-local)", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "Repo-local PASS bytes 30,083,827"},
+    {"id": "A10", "assertion": "published tree contains exactly the declared destinations (no undeclared, no absent)", "location": "verify_copies (added for repo-local)", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "Repo-local PASS published_set 174 declared / 174 enumerated"},
+    {"id": "A11", "assertion": "source-workspace preservation baseline (15,978 files: path, bytes, mtime_ns, sha256)", "location": "verify_preservation", "class": "sibling-dependent", "repo_local_treatment": "NOT ASSERTED; recorded honestly", "evidence": "evidence/source_workspace_baseline.json; sibling trees absent"},
+    {"id": "A12", "assertion": "programme PDF SHA-256 and byte size", "location": "verify_programme", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9; 353,208 bytes"},
+    {"id": "A13", "assertion": "programme extraction contains '180 minutes' and '2025'", "location": "verify_programme", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "evidence/programme_extracted.txt"},
+    {"id": "A14", "assertion": "roadmap 14 sections, 20 T / 10 F / 5 B cards, 3 steps and 2x3 substeps per card", "location": "verify_plan", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md"},
+    {"id": "A15", "assertion": "README/roadmap/type-doc links resolve and tables are not malformed", "location": "verify_plan", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "link walk from each document"},
+    {"id": "A16", "assertion": "64 coverage rows, 28 families, 18 types, 21 slots, 100 points, 170+10 minutes, family/outcome symmetry", "location": "verify_data", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "docs/*.json and docs/PROGRAMME_COVERAGE_MATRIX.csv"},
+    {"id": "A17", "assertion": "every coverage master_path exists", "location": "verify_data", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "materials/Chemistry_n masters"},
+    {"id": "A18", "assertion": "every coverage master_anchor resolves inside masters[topic].ids", "location": "verify_data", "class": "runnable-locally if masters are parsed from published destinations; sibling-transitively dependent in the default mode", "repo_local_treatment": "asserted from published destinations (64/64); a missing master fails by name instead of raising", "evidence": "This is the exact line that raises KeyError: 1 in the default clean clone"},
+    {"id": "A19", "assertion": "14 examples, 2 per topic; 13 numeric examples independently recomputed; 29 numeric fields; EX11 atom/charge balance; rubric points > 0", "location": "verify_examples", "class": "runnable-locally", "repo_local_treatment": "asserted", "evidence": "docs/EXAMPLE_QUESTIONS.json only; no sibling access. This corrects a loose reading of the N01 brief: the 13-of-14 recomputation does not depend on the source trees."},
+    {"id": "A20", "assertion": "optional Draft 2020-12 schema structure check when jsonschema is installed", "location": "verify_data", "class": "runnable-locally (environment-dependent)", "repo_local_treatment": "asserted when the library is present", "evidence": "import jsonschema; not required"}
+  ],
+  "repository_local_verification": {
+    "command": "python3 tools/verify_preparation.py --repo-local --report evidence/REPO_LOCAL_VERIFICATION.json",
+    "record": "evidence/REPO_LOCAL_VERIFICATION.json",
+    "status": "PASS",
+    "scope": "Repository-local: published file set only (174 COPY_MANIFEST destinations and their recorded hashes/totals); sibling source trees and the 15,978-file preservation baseline are not asserted",
+    "files": 174,
+    "bytes": 30083827,
+    "hash_matches": 174,
+    "roles": {"canonical-master": 7, "course-source": 35, "supporting-reference-data": 65, "planning-reference": 18, "archived-governance-reference": 49},
+    "manifest_sha256": "07d49735060796c3d34191b66b5fe9991232279f5849147c7e2b0f5ad59b72c9",
+    "manifest_matches_committed_record": true,
+    "published_set": {"declared": 174, "enumerated": 174, "undeclared": [], "absent": []},
+    "preservation": "NOT ASSERTED",
+    "clean_copy_run": {"path": "/tmp/opencode/n01-published", "checked_utc": "2026-11-16T22:11:47.194014+00:00", "status": "PASS", "files": 174, "bytes": 30083827, "hash_matches": 174, "differences_from_committed_report": "checked_utc and environment.workspace only"},
+    "hash_format_reading": "All 174 COPY_MANIFEST sha256 values are 64 lowercase hex characters. The inspection quoted the manifest digest as the 16-character prefix 07d49735060796c3; the comparator accepts a full digest by equality and any 4-64 character lowercase hex value as a prefix. A scratch fixture with all 174 hashes shortened to 16 characters still PASSes (recorded_lengths [16], hash_matches 174)."
+  },
+  "negative_fixtures": [
+    {"fixture": "tamper", "scratch": "/tmp/opencode/fx-tamper", "mutation": "appended one byte 'X' to materials/Chemistry_1/SOURCE_LEDGER.md", "exit_code": 1, "status": "FAIL", "failures": ["Published size mismatch: materials/Chemistry_1/SOURCE_LEDGER.md", "Published hash mismatch: materials/Chemistry_1/SOURCE_LEDGER.md"], "hash_matches": 173, "byte_exact_note": "cp -a copy; only the target file was changed, from 26,933 to 26,934 bytes"},
+    {"fixture": "delete", "scratch": "/tmp/opencode/fx-delete", "mutation": "deleted materials/Chemistry_3/build/taskbase.py", "exit_code": 1, "status": "FAIL", "failures": ["Missing published file: materials/Chemistry_3/build/taskbase.py", "Copied role counts differ", "Declared files absent from the published set: ['materials/Chemistry_3/build/taskbase.py']"], "published_set": {"declared": 174, "enumerated": 173, "absent": ["materials/Chemistry_3/build/taskbase.py"]}},
+    {"fixture": "truncate", "scratch": "/tmp/opencode/fx-truncate", "mutation": "truncated materials/Chemistry_4/build/source_conflicts.json from 9,473 to 4,736 bytes", "exit_code": 1, "status": "FAIL", "failures": ["Published size mismatch: materials/Chemistry_4/build/source_conflicts.json", "Published hash mismatch: materials/Chemistry_4/build/source_conflicts.json"], "hash_matches": 173},
+    {"fixture": "deleted-master supplemental", "scratch": "/tmp/opencode/fx-delete-master", "mutation": "deleted materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html", "exit_code": 1, "status": "FAIL gracefully, no traceback", "failures": ["Missing published file: materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html", "Missing one or more topic masters", "Missing published master for coverage topic 1; anchor not checked (repeated per coverage row)"], "why": "Proves a missing canonical master fails by name rather than reproducing the V-01 KeyError in repository-local mode"},
+    {"fixture": "short-hash prefix", "scratch": "/tmp/opencode/fx-prefix", "mutation": "rewrote all 174 manifest sha256 values to their first 16 characters", "exit_code": 0, "status": "PASS", "hash_matches": 174, "hash_format": {"recorded_lengths": [16], "all_lowercase_hex": true}, "why": "Proves the comparator honors the manifest's own format instead of assuming 64-character digests"}
+  ],
+  "default_mode": {
+    "command": "python3 tools/verify_preparation.py",
+    "full_workspace_rerun_2026_11_16_utc": "PASS; output identical to evidence/PREPARATION_VERIFICATION.json except checked_utc",
+    "clean_clone_published_copy": "FAIL with KeyError: 1 at verify_data line 259 after the additive edit (the same failing expression; the line moved because the mode flag was added)",
+    "default_behavior_changed": false,
+    "committed_record_label": "DOCUMENTED BUT NOT RERUN from a clean clone"
+  },
+  "source_inventory": {
+    "artifact": "evidence/SOURCE_FREEZE_INVENTORY.json",
+    "checker": "tools/check_source_inventory.py",
+    "entries": 19,
+    "frozen": 18,
+    "unavailable": 1,
+    "unavailable_id": "SIBLING-SOURCES",
+    "green_pass": "PASS source-freeze-inventory: 19 entries, 18 frozen, 1 unavailable",
+    "pdf_match": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+    "tamper_fixture": {"scratch": "/tmp/opencode/fx-inventory-tamper", "mutation": "appended one byte 'X' to C1 master (1,018,215 -> 1,018,216 bytes)", "exit_code": 1, "status": "FAIL", "named": ["C1-MASTER: bytes 1018216 != 1018215", "C1-MASTER: sha256 3e89a320... != 037f847f..."]},
+    "clean_copy_pass": "/tmp/opencode/n01-published (19 entries, 18 frozen, 1 unavailable, PDF anchor matched)"
+  },
+  "handoff": {
+    "to": ["N02", "N03", "N04", "N05"],
+    "baseline": "evidence/SOURCE_FREEZE_INVENTORY.json",
+    "rule": "Cite inventory ids; recompute the digest through tools/check_source_inventory.py; a changed source is a visible event, never a silent substitution."
+  }
+}

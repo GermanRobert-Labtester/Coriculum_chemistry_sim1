@@ -1,0 +1,314 @@
+{
+  "double_build_parity": {
+    "byte_identical": true,
+    "manifest_sha256": "ea4b722cad2e09d8860ebda055b3e45ea79795050ffef1052025f950271abc4c",
+    "output_bytes": 489647,
+    "output_sha256": "3b0d89dabcbfbe52cd591c409b5f890a90addc69f520b7340164ac04e8ca3921",
+    "status": "PASS"
+  },
+  "negative_fixtures": [
+    {
+      "error": "FAM-1A L2: unresolved concept_link concept_id 'P9-99'",
+      "id": "NEG-BAD-CONCEPT",
+      "status": "PASS"
+    },
+    {
+      "error": "FAM-1C L3: unresolved convention citation 'CIT-DOES-NOT-EXIST'",
+      "id": "NEG-BAD-CITATION",
+      "status": "PASS"
+    },
+    {
+      "error": "E_LEAK_DETECTED: FAM-1C L3 leaked '8.0' (GV-S1-T1-Q02-01)",
+      "id": "NEG-PLANTED-DATA-LEAK",
+      "status": "PASS"
+    },
+    {
+      "error": "FAM-1A: depth rule violation — one_step variant requires max_depth <= 3 and depth_rule_applied=true",
+      "id": "NEG-DEPTH-RULE-VIOLATION",
+      "status": "PASS"
+    },
+    {
+      "artifact_written": false,
+      "id": "GATE-REFUSAL-PLANTED-LEAK",
+      "returncode": 1,
+      "status": "PASS",
+      "stderr_head": "FAIL recall_layers gate (order 8, owner N08): E_LEAK_DETECTED: FAM-1C L3 leaked '8.0' (GV-S1-T1-Q02-01)"
+    }
+  ],
+  "prior_phase_regressions": [
+    {
+      "command": "node tools/check_coverage_runtime.js --json",
+      "owner": "N02",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_conventions_runtime.js",
+      "owner": "N03",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_golden_vectors_runtime.js",
+      "owner": "N05",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n06_runtime.js",
+      "owner": "N06",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n07_runtime.js",
+      "owner": "N07",
+      "returncode": 0,
+      "status": "PASS"
+    }
+  ],
+  "rendered_leak_scan": {
+    "clean_findings_count": 0,
+    "formula_symbol_edge_case_findings": 0,
+    "planted_rendered_leak_caught": true,
+    "planted_rendered_leak_sample": {
+      "error_id": "E_LEAK_DETECTED",
+      "family_id": "FAM-1C",
+      "layer": "planted-rendered",
+      "leaked_norm": "8.00",
+      "leaked_raw": "8.0",
+      "source": "GV-S1-T1-Q02-01",
+      "surface": "rendered"
+    },
+    "scanned_families": 24,
+    "status": "PASS"
+  },
+  "runtime_fixtures": {
+    "depthRuleOneStepMax": 3,
+    "focusFixture": {
+      "eventsCount": 4,
+      "restoredTo": "practice-help-btn",
+      "status": "PASS"
+    },
+    "modeRefusalFixture": {
+      "controlDisabled": true,
+      "errorId": "E_HINT_EXAM_MODE_FORBIDDEN",
+      "eventsRecorded": 0,
+      "revealedLayers": 0,
+      "status": "PASS"
+    },
+    "nestedHandoffFixture": {
+      "chain": [
+        "practice-help-btn",
+        "hint-drawer-close",
+        "hint-open-concept-P1-01",
+        "concept-drawer-close",
+        "hint-open-concept-P1-01",
+        "practice-help-btn"
+      ],
+      "status": "PASS"
+    },
+    "neutralityFixture": {
+      "digestsMatch": true,
+      "eventsWithHelp": 4,
+      "eventsWithoutHelp": 0,
+      "gradedRecordDigestWithHelp": "dbde6d3e331cb8154dd4d88b921fe6bcd216ca4740179833712fd9f331b06632",
+      "gradedRecordDigestWithoutHelp": "dbde6d3e331cb8154dd4d88b921fe6bcd216ca4740179833712fd9f331b06632",
+      "status": "PASS",
+      "vectorId": "GV-S1-T1-Q02-01"
+    },
+    "renderedFamiliesCount": 24,
+    "reopenFixture": {
+      "finalLayers": [
+        1,
+        2,
+        3
+      ],
+      "persistedAfterClose": [
+        1,
+        2
+      ],
+      "resumedButtonText": "Atklāt 3. slāni: Likums vai formula ar atsauci (3 / 4)",
+      "status": "PASS"
+    },
+    "smokeReport": {
+      "failed": 0,
+      "passed": 3,
+      "status": "PASS",
+      "total": 3,
+      "vectors": [
+        {
+          "details": {
+            "perTopic": {
+              "1": 9,
+              "2": 10,
+              "3": 11,
+              "4": 11,
+              "5": 10,
+              "6": 8,
+              "7": 5
+            },
+            "total": 64
+          },
+          "id": "SMK-N06-COVERAGE-COUNTS",
+          "owner": "N06",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "crossTopicEdges": 20,
+            "edges": 127,
+            "nodes": 64,
+            "walkEvents": 4
+          },
+          "id": "SMK-N07-MAP-DRAWER-WALK",
+          "owner": "N07",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "eventsRecorded": 4,
+            "examRefused": true,
+            "families": 28,
+            "revealedLayers": 4
+          },
+          "id": "SMK-N08-HINT-LADDER-WALK",
+          "owner": "N08",
+          "reason": null,
+          "status": "PASS"
+        }
+      ]
+    },
+    "status": "PASS",
+    "threeRevealFixture": {
+      "eventLayers": [
+        1,
+        2,
+        3
+      ],
+      "status": "PASS",
+      "summaryText": "Izmantotā palīdzība: 3/4 slāņi (1. Virziena norāde, 2. Saistītais koncepts, 3. Likums vai formula ar atsauci) — informatīva atzīme, bez soda punktiem."
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N08",
+  "validation": {
+    "canonical_sha256": "5e3014fe180be4f4646b7792875edc5c205853eb2638d1c54ce725607032bf7c",
+    "errors": [],
+    "leak_findings": [],
+    "schema_version": 1,
+    "status": "PASS",
+    "summary": {
+      "authored_families": 24,
+      "copy_lint": {
+        "errors": [],
+        "linted_string_count": 123,
+        "status": "PASS",
+        "stub_dependency": "N10 (data/n08_term_stubs.json -> stub-pending-N10)",
+        "stub_key_count": 15
+      },
+      "depth_rule_families": [
+        "FAM-1A",
+        "FAM-2A",
+        "FAM-2C",
+        "FAM-7A"
+      ],
+      "gap_families": 4,
+      "leak_findings_count": 0,
+      "total_families": 28
+    },
+    "topic_coverage_table": [
+      {
+        "authored": [
+          "FAM-1A",
+          "FAM-1B",
+          "FAM-1C"
+        ],
+        "depth_rule_families": [
+          "FAM-1A"
+        ],
+        "gaps": [
+          "FAM-1D"
+        ],
+        "topic": 1
+      },
+      {
+        "authored": [
+          "FAM-2A",
+          "FAM-2B",
+          "FAM-2C",
+          "FAM-2D"
+        ],
+        "depth_rule_families": [
+          "FAM-2A",
+          "FAM-2C"
+        ],
+        "gaps": [],
+        "topic": 2
+      },
+      {
+        "authored": [
+          "FAM-3A",
+          "FAM-3B",
+          "FAM-3C"
+        ],
+        "depth_rule_families": [],
+        "gaps": [
+          "FAM-3D"
+        ],
+        "topic": 3
+      },
+      {
+        "authored": [
+          "FAM-4A",
+          "FAM-4B",
+          "FAM-4C",
+          "FAM-4D"
+        ],
+        "depth_rule_families": [],
+        "gaps": [],
+        "topic": 4
+      },
+      {
+        "authored": [
+          "FAM-5A",
+          "FAM-5B",
+          "FAM-5C",
+          "FAM-5D"
+        ],
+        "depth_rule_families": [],
+        "gaps": [],
+        "topic": 5
+      },
+      {
+        "authored": [
+          "FAM-6A",
+          "FAM-6B",
+          "FAM-6C"
+        ],
+        "depth_rule_families": [],
+        "gaps": [
+          "FAM-6D"
+        ],
+        "topic": 6
+      },
+      {
+        "authored": [
+          "FAM-7A",
+          "FAM-7B",
+          "FAM-7C"
+        ],
+        "depth_rule_families": [
+          "FAM-7A"
+        ],
+        "gaps": [
+          "FAM-7D"
+        ],
+        "topic": 7
+      }
+    ]
+  }
+}

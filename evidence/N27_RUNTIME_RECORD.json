@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "task": "N27",
+  "status": "PASS",
+  "checks": {
+    "a11_non_increasing_interval_refusal": {
+      "status": "PASS",
+      "non_increasing_pairs": [
+        {
+          "lower_box": 1,
+          "upper_box": 2,
+          "lower_days": 1,
+          "upper_days": 1
+        }
+      ],
+      "errors": [
+        "Leitnera intervāli nav stingri pieaugoši starp box 1 (1 d.) un box 2 (1 d.)."
+      ]
+    },
+    "a12_day_clock_week_apart_fixture": {
+      "status": "PASS",
+      "date_week1": "2026-11-10",
+      "date_week2": "2026-11-17",
+      "week1_overdue": [
+        "P1-01"
+      ],
+      "week2_overdue": [
+        "P1-01",
+        "P2-01",
+        "P4-01",
+        "P3-01"
+      ],
+      "week1_queue": [
+        {
+          "id": "P1-01",
+          "reason": "overdue",
+          "overdue_days": 1
+        },
+        {
+          "id": "P1-02",
+          "reason": "new",
+          "overdue_days": 0
+        },
+        {
+          "id": "P1-03",
+          "reason": "new",
+          "overdue_days": 0
+        },
+        {
+          "id": "P1-04",
+          "reason": "new",
+          "overdue_days": 0
+        },
+        {
+          "id": "P1-05",
+          "reason": "new",
+          "overdue_days": 0
+        }
+      ],
+      "week2_queue": [
+        {
+          "id": "P1-01",
+          "reason": "overdue",
+          "overdue_days": 8
+        },
+        {
+          "id": "P2-01",
+          "reason": "overdue",
+          "overdue_days": 6
+        },
+        {
+          "id": "P4-01",
+          "reason": "overdue",
+          "overdue_days": 5
+        },
+        {
+          "id": "P3-01",
+          "reason": "overdue",
+          "overdue_days": 2
+        },
+        {
+          "id": "P1-02",
+          "reason": "new",
+          "overdue_days": 0
+        }
+      ],
+      "invalid_date_error": "E_SCHEDULER_INVALID_DATE"
+    },
+    "a13_box_mapping_round_trip": {
+      "status": "PASS",
+      "box_history": [
+        {
+          "step": 0,
+          "state": "unseen",
+          "box": 1,
+          "role": "early",
+          "interval_days": 1,
+          "event": "initial",
+          "day": null
+        },
+        {
+          "step": 1,
+          "state": "learning",
+          "box": 1,
+          "role": "early",
+          "interval_days": 1,
+          "event": "incorrect",
+          "day": 1
+        },
+        {
+          "step": 2,
+          "state": "learning",
+          "box": 1,
+          "role": "early",
+          "interval_days": 1,
+          "event": "correct",
+          "day": 2
+        },
+        {
+          "step": 3,
+          "state": "near_mastered",
+          "box": 2,
+          "role": "mid",
+          "interval_days": 3,
+          "event": "correct",
+          "day": 3
+        },
+        {
+          "step": 4,
+          "state": "near_mastered",
+          "box": 2,
+          "role": "mid",
+          "interval_days": 3,
+          "event": "correct",
+          "day": 4
+        },
+        {
+          "step": 5,
+          "state": "mastered",
+          "box": 3,
+          "role": "late",
+          "interval_days": 7,
+          "event": "correct",
+          "day": 5
+        },
+        {
+          "step": 6,
+          "state": "needs_review",
+          "box": 1,
+          "role": "early",
+          "interval_days": 1,
+          "event": "decay(14d)",
+          "day": null
+        },
+        {
+          "step": 7,
+          "state": "learning",
+          "box": 1,
+          "role": "early",
+          "interval_days": 1,
+          "event": "incorrect",
+          "day": 20
+        }
+      ]
+    },
+    "b11_property_fixtures_and_fresh_corner": {
+      "status": "PASS",
+      "determinism_digests": {
+        "run1": "ddce3db7639860785d585dc2120b642af03975c9450a4d5c6d5f3e758c54f45c",
+        "run2": "ddce3db7639860785d585dc2120b642af03975c9450a4d5c6d5f3e758c54f45c",
+        "fresh_process": "ddce3db7639860785d585dc2120b642af03975c9450a4d5c6d5f3e758c54f45c"
+      },
+      "cap_output": [
+        {
+          "outcome_id": "P1-01",
+          "overdue_days": 18
+        },
+        {
+          "outcome_id": "P1-04",
+          "overdue_days": 18
+        },
+        {
+          "outcome_id": "P1-07",
+          "overdue_days": 18
+        },
+        {
+          "outcome_id": "P2-01",
+          "overdue_days": 18
+        },
+        {
+          "outcome_id": "P2-04",
+          "overdue_days": 18
+        }
+      ],
+      "exclusion_output": {
+        "queue_ids": [
+          "P1-04",
+          "P1-07",
+          "P2-01",
+          "P2-04",
+          "P1-02"
+        ],
+        "excluded_ids": [
+          "P1-01"
+        ]
+      },
+      "tie_break_output": [
+        {
+          "outcome_id": "P1-09",
+          "overdue_days": 5
+        },
+        {
+          "outcome_id": "P2-05",
+          "overdue_days": 5
+        },
+        {
+          "outcome_id": "P3-01",
+          "overdue_days": 5
+        },
+        {
+          "outcome_id": "P4-02",
+          "overdue_days": 5
+        },
+        {
+          "outcome_id": "P6-03",
+          "overdue_days": 5
+        }
+      ],
+      "fresh_learner_output": [
+        {
+          "outcome_id": "P1-01",
+          "reason_code": "new",
+          "box": 1
+        },
+        {
+          "outcome_id": "P1-02",
+          "reason_code": "new",
+          "box": 1
+        },
+        {
+          "outcome_id": "P1-03",
+          "reason_code": "new",
+          "box": 1
+        },
+        {
+          "outcome_id": "P1-04",
+          "reason_code": "new",
+          "box": 1
+        },
+        {
+          "outcome_id": "P1-05",
+          "reason_code": "new",
+          "box": 1
+        }
+      ],
+      "least_recently_practiced_output": [
+        {
+          "outcome_id": "P2-04",
+          "last_practiced_day": 12,
+          "reason_code": "least_recently_practiced"
+        },
+        {
+          "outcome_id": "P3-03",
+          "last_practiced_day": 12,
+          "reason_code": "least_recently_practiced"
+        },
+        {
+          "outcome_id": "P5-04",
+          "last_practiced_day": 12,
+          "reason_code": "least_recently_practiced"
+        },
+        {
+          "outcome_id": "P7-01",
+          "last_practiced_day": 12,
+          "reason_code": "least_recently_practiced"
+        },
+        {
+          "outcome_id": "P7-02",
+          "last_practiced_day": 12,
+          "reason_code": "least_recently_practiced"
+        }
+      ]
+    },
+    "b12_n24_family_availability_exclusion": {
+      "status": "PASS",
+      "unreviewed_t7_families": [
+        {
+          "family": "FAM-7A",
+          "available": false,
+          "pending": 4
+        },
+        {
+          "family": "FAM-7B",
+          "available": false,
+          "pending": 4
+        },
+        {
+          "family": "FAM-7C",
+          "available": false,
+          "pending": 4
+        },
+        {
+          "family": "FAM-7D",
+          "available": false,
+          "pending": 4
+        }
+      ],
+      "excluded_outcomes": [
+        {
+          "eligible_count": 0,
+          "eligible_families": [
+            "FAM-7A"
+          ],
+          "outcome_id": "P7-01",
+          "pending_review_count": 4,
+          "reason_code": "unavailable",
+          "reason_key": "scheduler.reason.unavailable",
+          "reason_lv": "Pagaidām nav pieejams praksei: nav treniņformai derīgu uzdevumu.",
+          "statement_lv": "Gaismas izmantošana daudzuma mērīšanai: spektrofotometrijas iespējas",
+          "topic": 7
+        },
+        {
+          "eligible_count": 0,
+          "eligible_families": [
+            "FAM-7A"
+          ],
+          "outcome_id": "P7-02",
+          "pending_review_count": 4,
+          "reason_code": "unavailable",
+          "reason_key": "scheduler.reason.unavailable",
+          "reason_lv": "Pagaidām nav pieejams praksei: nav treniņformai derīgu uzdevumu.",
+          "statement_lv": "Bugēra–Lamberta–Bēra likums un lielumu vienības",
+          "topic": 7
+        },
+        {
+          "eligible_count": 0,
+          "eligible_families": [
+            "FAM-7B"
+          ],
+          "outcome_id": "P7-03",
+          "pending_review_count": 4,
+          "reason_code": "unavailable",
+          "reason_key": "scheduler.reason.unavailable",
+          "reason_lv": "Pagaidām nav pieejams praksei: nav treniņformai derīgu uzdevumu.",
+          "statement_lv": "Kalibrēšanas grafika izmantošana koncentrācijas noteikšanai",
+          "topic": 7
+        },
+        {
+          "eligible_count": 0,
+          "eligible_families": [
+            "FAM-7B",
+            "FAM-7C"
+          ],
+          "outcome_id": "P7-04",
+          "pending_review_count": 8,
+          "reason_code": "unavailable",
+          "reason_key": "scheduler.reason.unavailable",
+          "reason_lv": "Pagaidām nav pieejams praksei: nav treniņformai derīgu uzdevumu.",
+          "statement_lv": "Laboratorijas darbs 6B: koncentrācija, masa un vielas daudzums no kalibrēšanas grafika",
+          "topic": 7
+        },
+        {
+          "eligible_count": 0,
+          "eligible_families": [
+            "FAM-7D"
+          ],
+          "outcome_id": "P7-05",
+          "pending_review_count": 4,
+          "reason_code": "unavailable",
+          "reason_key": "scheduler.reason.unavailable",
+          "reason_lv": "Pagaidām nav pieejams praksei: nav treniņformai derīgu uzdevumu.",
+          "statement_lv": "Metodes nosacījumu, tukšā parauga un kalibrēšanas robežu izskaidrošana kā pielietojuma prasme",
+          "topic": 7
+        }
+      ],
+      "offered_queue_ids": [
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04",
+        "P1-05"
+      ]
+    },
+    "b13_term_keyed_render_fixture": {
+      "status": "PASS",
+      "queue_reasons": [
+        {
+          "outcome_id": "P4-01",
+          "reason_code": "overdue",
+          "reason_key": "scheduler.reason.overdue",
+          "reason_lv": "Nokavēts par 18 d. (kaste 1, intervāls 1 d.)"
+        },
+        {
+          "outcome_id": "P2-01",
+          "reason_code": "overdue",
+          "reason_key": "scheduler.reason.overdue",
+          "reason_lv": "Nokavēts par 3 d. (kaste 1, intervāls 1 d.)"
+        },
+        {
+          "outcome_id": "P3-01",
+          "reason_code": "due_today",
+          "reason_key": "scheduler.reason.due_today",
+          "reason_lv": "Atkārtojums pienācis šodien (kaste 2, intervāls 3 d.)"
+        },
+        {
+          "outcome_id": "P1-01",
+          "reason_code": "new",
+          "reason_key": "scheduler.reason.new",
+          "reason_lv": "Jauns mērķis — vēl nav mēģināts (kaste 1)"
+        },
+        {
+          "outcome_id": "P1-02",
+          "reason_code": "new",
+          "reason_key": "scheduler.reason.new",
+          "reason_lv": "Jauns mērķis — vēl nav mēģināts (kaste 1)"
+        }
+      ],
+      "render_digest": "98aa29eab6ce15f4763cc6b8de22d1945dac52024255258028a12d91bd5aaad0"
+    },
+    "c11_e2e_practice_handoff_and_recompute": {
+      "status": "PASS",
+      "before_queue": [
+        "P1-05",
+        "P2-01",
+        "P1-01",
+        "P1-02",
+        "P1-03"
+      ],
+      "handoff": {
+        "box": 1,
+        "contract": "N27-to-N30-practice-entry",
+        "entry_source": "scheduler_queue",
+        "filters": {
+          "family_ids": [
+            "FAM-1B"
+          ],
+          "instance_ids": [
+            "COL1-1-1B-A-01",
+            "COL1-1-1B-B-01",
+            "COL1-1-1B-C-01",
+            "COL1-1-1B-D-01"
+          ],
+          "outcome_id": "P1-05",
+          "topic": 1
+        },
+        "mastery_state": "learning",
+        "outcome_id": "P1-05",
+        "reason_code": "overdue",
+        "reason_lv": "Nokavēts par 3 d. (kaste 1, intervāls 1 d.)",
+        "schema_version": 1,
+        "topic": 1
+      },
+      "leaked_fields": [],
+      "post_p1_05_state": "near_mastered",
+      "after_queue": [
+        "P2-01",
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04"
+      ]
+    },
+    "c13_built_artifact_smoke": {
+      "status": "PASS",
+      "total_smoke_vectors": 23,
+      "passed_smoke_vectors": 23,
+      "n27Vec": {
+        "id": "SMK-N27-SCHEDULER-QUEUE",
+        "owner": "N27",
+        "status": "PASS",
+        "details": {
+          "policyId": "sim-colloq1-leitner-scheduler-v1",
+          "date": 12,
+          "queue": [
+            "P4-01",
+            "P2-01",
+            "P3-01",
+            "P1-01",
+            "P1-02"
+          ],
+          "digest": "9e7c612f1783ddb34e4c3f78523f83289c5ae868f84e6856315c143bc2de9560"
+        },
+        "reason": null
+      },
+      "rendered_queue_items": 5
+    }
+  },
+  "failures": []
+}

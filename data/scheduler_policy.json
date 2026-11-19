@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-scheduler-policy",
+  "owner": "N27",
+  "status": "authored",
+  "policy_id": "sim-colloq1-leitner-scheduler-v1",
+  "title_lv": "Bezsaistes Leitnera atkārtojumu plānotāja politika (PROPOSED)",
+  "epistemic_label": "PROPOSED",
+  "official_counterpart_status": "UNDETERMINED",
+  "algorithm_provenance": "Standard 3-box day-granular Leitner scheme approved as training policy by the predecessor plan; no third-party Anki/SuperMemo/SM-2 algorithm copied.",
+  "honesty_note_lv": "PROPOSED mācību politikas priekšlikums: 2025. gada oficiālā programma (RSU_MedChem_Colloq1_Prog_LV_2025.pdf) nenosaka atkārtošanas intervālus vai prakses rindas kārtību (oficiāls analogs: UNDETERMINED). Leitnera rinda ir patstāvīgas mācīšanās palīgs, nevis oficiāla studiju vai eksāmena prasība.",
+  "honesty_note_en": "PROPOSED training policy: the 2025 programme sets no spaced-repetition schedule or official practice queue. Selection is an offline day-granular Leitner study aid.",
+  "predecessor_decisions": [
+    {
+      "card_id": "Leitner-Direction",
+      "ref": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md#4.3",
+      "decision": "Leitner spaced repetition (approved direction): Implemented by N27 over the mastery state machine (N26)."
+    },
+    {
+      "card_id": "F08",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F08",
+      "decision": "Adaptive difficulty remains DEFERRED until mastery (N26) and Leitner scheduling (N27) stabilize."
+    },
+    {
+      "card_id": "F03",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F03",
+      "decision": "Bounded practice paths (N30) consume N27 queue handoffs using eligible family/instance filters."
+    },
+    {
+      "card_id": "N26-Handoff",
+      "ref": "docs/MASTERY_FORMAT.md#6",
+      "decision": "N27 consumes MasteryMap.outcomes[oid].state, last_practiced_day, and N24/N26 availability without maintaining a separate state copy."
+    }
+  ],
+  "day_clock_contract": {
+    "granularity": "day",
+    "epistemic_label": "PROPOSED",
+    "timezone_rule": "Local calendar date YYYY-MM-DD mapped to coarse integer day index; zero sub-day/hour precision; tests inject deterministic dates via DayClock.",
+    "default_source": "local_calendar_date_only"
+  },
+  "queue_cap": {
+    "value": 5,
+    "epistemic_label": "PROPOSED",
+    "note_lv": "PROPOSED mācību politika: ieteikumu rindā vienlaikus piedāvā ne vairāk kā 5 pieejamos mācību mērķus."
+  },
+  "boxes": [
+    {
+      "box": 1,
+      "role": "early",
+      "interval_days": 1,
+      "epistemic_label": "PROPOSED",
+      "label_key": "scheduler.box.1.label",
+      "mastery_states": [
+        "unseen",
+        "learning",
+        "needs_review"
+      ],
+      "note_lv": "PROPOSED: agrīnā kaste nemēģinātajiem ('unseen'), iesāktajiem ('learning') un atkārtošanai atgrieztajiem ('needs_review') mērķiem; 1 dienas intervāls."
+    },
+    {
+      "box": 2,
+      "role": "mid",
+      "interval_days": 3,
+      "epistemic_label": "PROPOSED",
+      "label_key": "scheduler.box.2.label",
+      "mastery_states": [
+        "near_mastered"
+      ],
+      "note_lv": "PROPOSED: vidējā kaste gandrīz apgūtajiem ('near_mastered') mērķiem; 3 dienu intervāls."
+    },
+    {
+      "box": 3,
+      "role": "late",
+      "interval_days": 7,
+      "epistemic_label": "PROPOSED",
+      "label_key": "scheduler.box.3.label",
+      "mastery_states": [
+        "mastered"
+      ],
+      "note_lv": "PROPOSED: vēlākā kaste pašmācībā apgūtajiem ('mastered') mērķiem; 7 dienu intervāls pirms 14 dienu novecošanas sliekšņa."
+    }
+  ],
+  "state_to_box": {
+    "unseen": 1,
+    "learning": 1,
+    "needs_review": 1,
+    "near_mastered": 2,
+    "mastered": 3
+  },
+  "selection_rule": {
+    "epistemic_label": "PROPOSED",
+    "overdueness_formula": "is_never_seen ? 0 : Math.max(0, (current_day - last_practiced_day) - box.interval_days)",
+    "tiers": [
+      {
+        "tier": 1,
+        "id": "overdue_and_due",
+        "order": "overdue_days DESC, outcome_id ASC",
+        "description_lv": "Vispirms nokavētie mērķi dilstošā nokavējuma secībā, tad šodien pienākušie (overdue_days = 0), neizšķirtu šķeļot pēc outcome_id."
+      },
+      {
+        "tier": 2,
+        "id": "never_seen",
+        "order": "topic ASC, outcome_id ASC",
+        "description_lv": "Pēc tam vēl nemēģinātie (unseen) mērķi tēmas un outcome_id secībā."
+      },
+      {
+        "tier": 3,
+        "id": "least_recently_practiced",
+        "order": "last_practiced_day ASC, outcome_id ASC",
+        "description_lv": "Visbeidzot agrāk praktizētie mērķi no vissenāk praktizētā uz jaunāko, neizšķirtu šķeļot pēc outcome_id."
+      }
+    ],
+    "tie_break": "outcome_id ASC",
+    "availability_exclusion_rule": "Outcomes with 0 form-eligible instances (N24/N26 availability) are excluded from the recommended queue and recorded in excluded[] with their honest reason."
+  },
+  "reason_templates": {
+    "overdue": {
+      "code": "overdue",
+      "term_key": "scheduler.reason.overdue"
+    },
+    "due_today": {
+      "code": "due_today",
+      "term_key": "scheduler.reason.due_today"
+    },
+    "new": {
+      "code": "new",
+      "term_key": "scheduler.reason.new"
+    },
+    "least_recently_practiced": {
+      "code": "least_recently_practiced",
+      "term_key": "scheduler.reason.least_recently_practiced"
+    },
+    "unavailable": {
+      "code": "unavailable",
+      "term_key": "scheduler.reason.unavailable"
+    }
+  },
+  "copy_entries": {
+    "title": {
+      "title_key": "scheduler.queue.title"
+    },
+    "honesty_note": {
+      "term_key": "scheduler.queue.honesty_note"
+    },
+    "status_summary": {
+      "term_key": "scheduler.queue.status_summary"
+    },
+    "empty_unavailable": {
+      "term_key": "scheduler.queue.empty_unavailable"
+    },
+    "action_practice": {
+      "label_key": "scheduler.queue.action_practice"
+    },
+    "handoff_heading": {
+      "title_key": "scheduler.queue.handoff_heading"
+    },
+    "handoff_note": {
+      "term_key": "scheduler.queue.handoff_note"
+    },
+    "topic_summary": {
+      "term_key": "scheduler.topic.summary_line"
+    }
+  }
+}

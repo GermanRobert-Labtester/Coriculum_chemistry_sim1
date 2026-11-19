@@ -1,0 +1,1010 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-recall-layers",
+  "owner": "N08",
+  "status": "authored-stratum-1",
+  "epistemic_label": "PROPOSED training policy (N08 scaffolded recall)",
+  "layer_semantics": [
+    {
+      "layer": 1,
+      "kind": "cue",
+      "label_lv": "Virziena norāde",
+      "purpose_lv": "Īsa virziena norāde par uzdevuma pieeju bez formulas vai skaitliskās atbildes."
+    },
+    {
+      "layer": 2,
+      "kind": "concept_link",
+      "label_lv": "Saistītais koncepts",
+      "purpose_lv": "Saite uz koncepta atvilktni (N07) pamatojošā mācību mērķa atkārtošanai."
+    },
+    {
+      "layer": 3,
+      "kind": "rule_citation",
+      "label_lv": "Likums vai formula ar atsauci",
+      "purpose_lv": "Vispārīgais likums, sakarība vai formula ar norādi uz kursu konvenciju vai konceptu."
+    },
+    {
+      "layer": 4,
+      "kind": "first_step",
+      "label_lv": "Risinājuma pirmais solis",
+      "purpose_lv": "Pirmais metodiskais risinājuma solis bez konkrētā varianta gala atbildes."
+    }
+  ],
+  "contracts": {
+    "binding_rule": {
+      "primary_key": "family_id",
+      "override_slot": "item_overrides",
+      "variant_inheritance": "N20 inherits family binding rather than duplicating text per instance."
+    },
+    "reveal_discipline": {
+      "step_size": 1,
+      "auto_reveal": false,
+      "keep_revealed_open": true,
+      "record_session_events": true
+    },
+    "exam_mode_boundary": {
+      "error_id": "E_HINT_EXAM_MODE_FORBIDDEN",
+      "allowed_modes": ["practice"],
+      "forbidden_modes": ["exam", "eksamens"]
+    },
+    "depth_rule": {
+      "default_max_depth": 4,
+      "one_step_max_depth": 3,
+      "rule_lv": "Ja viena soļa (one_step) uzdevuma 4. slānis faktiski atklātu pašu atbildi, saime deklarē maksimālo dziļumu 3 šai variantu klasei."
+    }
+  },
+  "families": [
+    {
+      "family_id": "FAM-1A",
+      "topic": 1,
+      "title_lv": "Maisījumu, vielu klašu un reakciju klasifikācija",
+      "status": "authored",
+      "concept_ids": ["P1-02", "P1-03", "P1-04"],
+      "primary_concept_id": "P1-02",
+      "max_depth_by_variant_class": {"default": 4, "one_step": 3},
+      "depth_rule_applied": true,
+      "depth_rule_reason_lv": "Viena soļa klasifikācijas variantos (one_step) tiešs pirmais solis jau nosauktu piederīgo klasi, tāpēc maksimālais dziļums ir 3 slāņi.",
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Pārbaudi fāžu skaitu un sastāva vienmērīgumu visā parauga tilpumā.",
+          "citation": {"kind": "concept", "id": "P1-02"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P1-02",
+          "text_lv": "Atkārto maisījumu un tīru vielu iedalījumu koncepta atvilktnē (P1-02).",
+          "citation": {"kind": "concept", "id": "P1-02"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Klasifikāciju nosaka daļiņu izmērs, fāžu robežas un reakcijas pazīmes pēc kursu pamatdefinīcijām.",
+          "citation": {"kind": "concept", "id": "P1-04"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Vispirms nošķir tīru vielu no maisījuma un nosaki, vai sistēmā redzama viena vai vairākas fāzes.",
+          "citation": {"kind": "concept", "id": "P1-03"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-1B",
+      "topic": 1,
+      "title_lv": "Daļiņas, saites un disociācija",
+      "status": "authored",
+      "concept_ids": ["P1-05", "P1-06", "P1-07"],
+      "primary_concept_id": "P1-06",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Nosaki, vai viela šķīdumā veido jonus vai paliek neitrālu molekulu veidā.",
+          "citation": {"kind": "concept", "id": "P1-06"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P1-06",
+          "text_lv": "Atver koncepta atvilktni par elektrolītu disociāciju un saites tipu (P1-06).",
+          "citation": {"kind": "concept", "id": "P1-06"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Stipri elektrolīti ūdens šķīdumā disociējas praktiski pilnībā, bet neelektrolīti saglabā molekulāru struktūru.",
+          "citation": {"kind": "concept", "id": "P1-07"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pārbaudi vielas piederību sāļiem, stiprajām skābēm/bāzēm vai molekulāriem savienojumiem un uzraksti jonu lādiņus.",
+          "citation": {"kind": "concept", "id": "P1-05"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-1C",
+      "topic": 1,
+      "title_lv": "Bilance un stehiometrija",
+      "status": "authored",
+      "concept_ids": ["P1-01", "P1-03"],
+      "primary_concept_id": "P1-01",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Stehiometrijas aprēķinu sāc ar vienādojuma izlīdzināšanu un pāreju uz vielas daudzumu molos.",
+          "citation": {"kind": "concept", "id": "P1-01"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P1-01",
+          "text_lv": "Skati stehiometrijas un molu attiecības kopsavilkumu koncepta atvilktnē (P1-01).",
+          "citation": {"kind": "concept", "id": "P1-01"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Lieto n = m / M un reakcijas koeficientu attiecību; gāzēm normālos apstākļos V₀ = 22,414 L/mol.",
+          "citation": {"kind": "convention", "id": "CIT-C1-MOLAR-VOL"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Izlīdzini reakcijas vienādojumu, pārveido doto lielumu molos un salīdzini koeficientus starp doto un meklēto vielu.",
+          "citation": {"kind": "convention", "id": "CIT-C1-SIGFIG-ROUND"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-1D",
+      "topic": 1,
+      "title_lv": "Tabulas un nogulsnēšanās",
+      "status": "gap-recorded",
+      "concept_ids": ["P1-08", "P1-09"],
+      "gap_reason_lv": "Pirmajā slānī (Stratum 1) nav iekļauts; paredzēts paplašināšanai pēc uzdevumu bankas pamatdaļas izveides.",
+      "layers": []
+    },
+    {
+      "family_id": "FAM-2A",
+      "topic": 2,
+      "title_lv": "Trauki un mērījuma izvēle",
+      "status": "authored",
+      "concept_ids": ["P2-01", "P2-04"],
+      "primary_concept_id": "P2-01",
+      "max_depth_by_variant_class": {"default": 4, "one_step": 3},
+      "depth_rule_applied": true,
+      "depth_rule_reason_lv": "Viena soļa trauka izvēles uzdevumā (one_step) 4. slānis norādītu pašu trauku, tāpēc maksimālais dziļums ir 3 slāņi.",
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Salīdzini uzdevumā prasīto tilpuma precizitāti ar laboratorijas trauku iedaļu un pielaidi.",
+          "citation": {"kind": "concept", "id": "P2-01"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P2-01",
+          "text_lv": "Atver koncepta atvilktni par mērtraukiem un precizitātes prasībām (P2-01).",
+          "citation": {"kind": "concept", "id": "P2-01"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Precīzai tilpuma mērīšanai izvēlas pipeti, bireti vai mērkolbu, ņemot vērā trauku pieļaujamo kļūdu.",
+          "citation": {"kind": "convention", "id": "CIT-C2-TOLERANCE"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Nosaki, vai tilpums ir jāmēra analītiski precīzi vai tikai aptuveni, un izslēdz neatbilstošās precizitātes klases traukus.",
+          "citation": {"kind": "concept", "id": "P2-04"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-2B",
+      "topic": 2,
+      "title_lv": "Vienības, proporcijas un zīmīgie cipari",
+      "status": "authored",
+      "concept_ids": ["P2-02", "P2-03", "P2-05", "P2-06", "P2-10"],
+      "primary_concept_id": "P2-02",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Pārbaudi mērvienību dimensijas pirms skaitļu ievietošanas aprēķinā un noapaļo tikai beigu rezultātu.",
+          "citation": {"kind": "concept", "id": "P2-02"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P2-02",
+          "text_lv": "Atkārto SI mērvienību pārejas un zīmīgo ciparu noteikumus (P2-02).",
+          "citation": {"kind": "concept", "id": "P2-02"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Reizināšanā un dalīšanā gala rezultātu nosaka mazākais zīmīgo ciparu skaits; masa un tilpums prasa blīvumu (C02).",
+          "citation": {"kind": "convention", "id": "CIT-C2-SIGFIG"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pārvērt visus dotos lielumus saskaņotās vienībās (1 L = 1000 mL) un saglabā starprezultātos liekos ciparus.",
+          "citation": {"kind": "convention", "id": "CIT-C2-UNITS"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-2C",
+      "topic": 2,
+      "title_lv": "Skala un menisks",
+      "status": "authored",
+      "concept_ids": ["P2-07", "P2-10"],
+      "primary_concept_id": "P2-07",
+      "max_depth_by_variant_class": {"default": 4, "one_step": 3},
+      "depth_rule_applied": true,
+      "depth_rule_reason_lv": "Viena skaitļa skalas nolasījumā (one_step) 4. slānis pārklājas ar pašu nolasāmo lielumu, tāpēc dziļums ir ierobežots līdz 3 slāņiem.",
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Vispirms nosaki mazākās iedaļas vērtību un pārbaudi šķīduma caurspīdīgumu.",
+          "citation": {"kind": "concept", "id": "P2-07"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P2-07",
+          "text_lv": "Atver koncepta atvilktni par meniska nolasīšanu un biretes iedaļu (P2-07).",
+          "citation": {"kind": "concept", "id": "P2-07"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Caurspīdīgiem šķīdumiem nolasa meniska zemāko daļu acu līmenī; izlietais tilpums ir V(beigu) − V(sākuma).",
+          "citation": {"kind": "convention", "id": "CIT-C2-MENISCUS"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Nolasi sākuma un beigu stāvokli ar biretes precizitāti (±0,05 mL) un aprēķini starpību.",
+          "citation": {"kind": "convention", "id": "CIT-C2-BURETTE-READ"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-2D",
+      "topic": 2,
+      "title_lv": "Grafika veidošana un nolasīšana",
+      "status": "authored",
+      "concept_ids": ["P2-08", "P2-09"],
+      "primary_concept_id": "P2-08",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Nošķir neatkarīgo un atkarīgo mainīgo un pārbaudi abu asu mērvienības.",
+          "citation": {"kind": "concept", "id": "P2-08"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P2-08",
+          "text_lv": "Skati grafiku veidošanas un interpolācijas pamatprincipus atvilktnē (P2-08).",
+          "citation": {"kind": "concept", "id": "P2-08"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Neatkarīgo lielumu liek uz x ass, atkarīgo uz y ass; mērogu izvēlas vienmērīgu un pārskatāmu.",
+          "citation": {"kind": "concept", "id": "P2-09"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Aprēķini vienas rūtiņas vērtību katrai asij un pārbaudi, vai punkti atrodas datu diapazonā.",
+          "citation": {"kind": "concept", "id": "P2-08"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-3A",
+      "topic": 3,
+      "title_lv": "Koncentrācijas un daļiņu daudzums",
+      "status": "authored",
+      "concept_ids": ["P3-01", "P3-02", "P3-04", "P3-05", "P3-06"],
+      "primary_concept_id": "P3-04",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Identificē koncentrācijas veidu (c, w vai γ) un pārbaudi, vai tilpums ir izteikts litros.",
+          "citation": {"kind": "concept", "id": "P3-04"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P3-04",
+          "text_lv": "Atver koncepta atvilktni par molāro koncentrāciju un masas daļu (P3-04).",
+          "citation": {"kind": "concept", "id": "P3-04"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Lieto c = n / V (mol/L) un w = m(B) / m(šķīduma); procentu bāzei jābūt skaidri nosauktai (C03).",
+          "citation": {"kind": "convention", "id": "CIT-C3-C"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Aprēķini izšķīdušās vielas molmasu M vai pārvērt tilpumu litros pirms c vai m meklēšanas.",
+          "citation": {"kind": "convention", "id": "CIT-C3-UNIT-LADDER"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-3B",
+      "topic": 3,
+      "title_lv": "Blīvums un pārejas w/c/γ",
+      "status": "authored",
+      "concept_ids": ["P3-07", "P3-08", "P3-09"],
+      "primary_concept_id": "P3-08",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Lai pārietu starp masas daļu w un molāro koncentrāciju c, izmanto šķīduma blīvumu ρ.",
+          "citation": {"kind": "concept", "id": "P3-08"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P3-08",
+          "text_lv": "Skati koncentrāciju pāreju saikni caur blīvumu koncepta atvilktnē (P3-08).",
+          "citation": {"kind": "concept", "id": "P3-08"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Šķīduma masu un tilpumu saista ρ = m(šķīduma) / V(šķīduma); pieņem 1 L vai 100 g kā aprēķina bāzi.",
+          "citation": {"kind": "convention", "id": "CIT-C3-GAMMA"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Izvēlies 1 L šķīduma bāzi, aprēķini šķīduma masu ar blīvumu ρ un atrodi izšķīdušās vielas masu.",
+          "citation": {"kind": "convention", "id": "CIT-C3-W"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-3C",
+      "topic": 3,
+      "title_lv": "Atšķaidīšana un pagatavošana",
+      "status": "authored",
+      "concept_ids": ["P3-10", "P3-11"],
+      "primary_concept_id": "P3-10",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Atšķaidot šķīdumu, izšķīdušās vielas daudzums n (vai masa) pirms un pēc atšķaidīšanas paliek nemainīgs.",
+          "citation": {"kind": "concept", "id": "P3-10"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P3-10",
+          "text_lv": "Atver koncepta atvilktni par atšķaidīšanas likumu un šķīduma pagatavošanu (P3-10).",
+          "citation": {"kind": "concept", "id": "P3-10"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Molārajai koncentrācijai lieto c₁·V₁ = c₂·V₂, saglabājot vienādas tilpuma vienības abās pusēs.",
+          "citation": {"kind": "convention", "id": "CIT-C3-C"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Aprēķini nepieciešamo sākotnējā šķīduma tilpumu V₁ un atceries, ka mērkolbā šķīdinātāju pievieno līdz atzīmei.",
+          "citation": {"kind": "concept", "id": "P3-11"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-3D",
+      "topic": 3,
+      "title_lv": "Medicīniskas etiķetes un nepietiekami dati",
+      "status": "gap-recorded",
+      "concept_ids": ["P3-03", "P3-11"],
+      "gap_reason_lv": "Pirmajā slānī (Stratum 1) nav iekļauts; paredzēts paplašināšanai pēc uzdevumu bankas pamatdaļas izveides.",
+      "layers": []
+    },
+    {
+      "family_id": "FAM-4A",
+      "topic": 4,
+      "title_lv": "Sistēma, enerģija un termodinamikas likumi",
+      "status": "authored",
+      "concept_ids": ["P4-01", "P4-04", "P4-05", "P4-06"],
+      "primary_concept_id": "P4-01",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Vispirms nosaki termodinamisko sistēmu, apkārtējo vidi un enerģijas plūsmas zīmi.",
+          "citation": {"kind": "concept", "id": "P4-01"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P4-01",
+          "text_lv": "Skati sistēmu tipus un pirmo termodinamikas likumu koncepta atvilktnē (P4-01).",
+          "citation": {"kind": "concept", "id": "P4-01"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Pārbaudi zīmju konvenciju: IUPAC ΔU = q + w pretstatā klasiskajai Q = ΔU + A (C04).",
+          "citation": {"kind": "convention", "id": "CIT-C4-IUPAC"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pieraksti uzdevumā norādīto zīmju konvenciju un piešķir pozitīvu vai negatīvu zīmi pievadītajam siltumam un darbam.",
+          "citation": {"kind": "convention", "id": "CIT-C4-SIGN"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-4B",
+      "topic": 4,
+      "title_lv": "Hesa likums un reakcijas ΔS",
+      "status": "authored",
+      "concept_ids": ["P4-02", "P4-03", "P4-09"],
+      "primary_concept_id": "P4-03",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Hesa likumā saskaita produktu veidošanās entalpijas un atņem reaģentu veidošanās entalpijas, ņemot vērā koeficientus.",
+          "citation": {"kind": "concept", "id": "P4-03"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P4-03",
+          "text_lv": "Atver koncepta atvilktni par Hesa likumu un entropijas izmaiņu (P4-03).",
+          "citation": {"kind": "concept", "id": "P4-03"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "ΔrH° = Σ ν·ΔfH°(produkti) − Σ ν·ΔfH°(reaģenti); vienkāršām vielām standarta stāvoklī ΔfH° = 0.",
+          "citation": {"kind": "convention", "id": "CIT-C4-ENTHALPY"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pārbaudi stehiometriskos koeficientus un agregātstāvokļus, tad aprēķini atsevišķi produktu un reaģentu summas.",
+          "citation": {"kind": "concept", "id": "P4-02"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-4C",
+      "topic": 4,
+      "title_lv": "ΔG un temperatūras robeža",
+      "status": "authored",
+      "concept_ids": ["P4-02", "P4-08", "P4-10", "P4-11"],
+      "primary_concept_id": "P4-10",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Saskaņo ΔH un ΔS enerģijas vienības (abas kJ vai abas J) un pārveido temperatūru kelvinos.",
+          "citation": {"kind": "concept", "id": "P4-10"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P4-10",
+          "text_lv": "Atver koncepta atvilktni par Gibsa brīvo enerģiju un patvaļīguma kritēriju (P4-10).",
+          "citation": {"kind": "concept", "id": "P4-10"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Lieto ΔG = ΔH − T·ΔS un T/K = t/°C + 273,15; ΔG < 0 norāda uz termodinamiski patvaļīgu procesu.",
+          "citation": {"kind": "convention", "id": "CIT-C4-GIBBS"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pārrēķini ΔS no J/(mol·K) uz kJ/(mol·K) un temperatūru K, tad ievieto vienādojumā (vai pielīdzini ΔG = 0 robežai).",
+          "citation": {"kind": "convention", "id": "CIT-C2-TEMP"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-4D",
+      "topic": 4,
+      "title_lv": "Kalorimetrija un skaidrojuma kļūdas",
+      "status": "authored",
+      "concept_ids": ["P4-04", "P4-07", "P4-11"],
+      "primary_concept_id": "P4-07",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Nosaki, vai kalorimetrā temperatūra pieauga (eksotermiska reakcija) vai samazinājās, un aprēķini siltumu uz molu.",
+          "citation": {"kind": "concept", "id": "P4-07"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P4-07",
+          "text_lv": "Skati kalorimetrijas un termodinamiskās kontroles kopsavilkumu atvilktnē (P4-07).",
+          "citation": {"kind": "concept", "id": "P4-07"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Q = m·c·ΔT, bet reakcijas entalpija ΔrH ir ar pretēju zīmi šķīduma uzņemtajam siltumam (C04).",
+          "citation": {"kind": "concept", "id": "P4-11"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Aprēķini ΔT un siltuma daudzumu J, tad izdali ar izreaģējušo vielas daudzumu molos.",
+          "citation": {"kind": "concept", "id": "P4-04"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-5A",
+      "topic": 5,
+      "title_lv": "Faktori, sadursmes un enerģijas grafiki",
+      "status": "authored",
+      "concept_ids": ["P5-01", "P5-02", "P5-04", "P5-07"],
+      "primary_concept_id": "P5-07",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Enerģijas profilā aktivācijas enerģija Ea ir atšķirība starp reaģentu līmeni un pārejas stāvokļa maksimumu.",
+          "citation": {"kind": "concept", "id": "P5-07"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P5-07",
+          "text_lv": "Atver koncepta atvilktni par sadursmju teoriju un aktivācijas enerģiju (P5-07).",
+          "citation": {"kind": "concept", "id": "P5-07"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Katalizators pazemina Ea, palielinot aktīvo sadursmju daļu, bet nemaina reakcijas kopējo ΔH.",
+          "citation": {"kind": "concept", "id": "P5-04"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Nolasi reaģentu, pārejas stāvokļa un produktu enerģijas līmeņus grafikā un atšķir Ea no ΔH.",
+          "citation": {"kind": "concept", "id": "P5-02"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-5B",
+      "topic": 5,
+      "title_lv": "Reakcijas pakāpe un k",
+      "status": "authored",
+      "concept_ids": ["P5-05", "P5-09"],
+      "primary_concept_id": "P5-05",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Salīdzini divus eksperimentus, kuros mainās tikai viena reaģenta koncentrācija, lai noteiktu kārtu.",
+          "citation": {"kind": "concept", "id": "P5-05"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P5-05",
+          "text_lv": "Skati kinētiskā vienādojuma un ātruma konstantes k vienību atvilktni (P5-05).",
+          "citation": {"kind": "concept", "id": "P5-05"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "v = k·[A]ᵃ·[B]ᵇ; konstantes k mērvienība ir atkarīga no kopējās reakcijas kārtas (a + b).",
+          "citation": {"kind": "concept", "id": "P5-09"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Izdali divu mēģinājumu ātrumu attiecību ar koncentrāciju attiecību, lai atrastu pakāpes rādītāju.",
+          "citation": {"kind": "concept", "id": "P5-05"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-5C",
+      "topic": 5,
+      "title_lv": "Pusperiods un modelis",
+      "status": "authored",
+      "concept_ids": ["P5-08", "P5-10"],
+      "primary_concept_id": "P5-08",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Pārbaudi, vai koncentrācijas samazināšanās uz pusi atkārtojas vienādos laika intervālos.",
+          "citation": {"kind": "concept", "id": "P5-08"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P5-08",
+          "text_lv": "Atver koncepta atvilktni par pusperiodu un pirmās kārtas kinētiku (P5-08).",
+          "citation": {"kind": "concept", "id": "P5-08"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Pirmās kārtas reakcijai pusperiods t₁/₂ = ln(2) / k ir neatkarīgs no sākotnējās koncentrācijas.",
+          "citation": {"kind": "concept", "id": "P5-10"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Nosaki laiku, kurā sākotnējā koncentrācija c₀ samazinās līdz c₀/2, un saisti to ar k.",
+          "citation": {"kind": "concept", "id": "P5-08"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-5D",
+      "topic": 5,
+      "title_lv": "Katalīze, enzīmi un mehānismi",
+      "status": "authored",
+      "concept_ids": ["P5-03", "P5-06"],
+      "primary_concept_id": "P5-06",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Enzīmu kinētikā pie zemas substrāta koncentrācijas ātrums aug lineāri, bet pie piesātinājuma sasniedz Vmax.",
+          "citation": {"kind": "concept", "id": "P5-06"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P5-06",
+          "text_lv": "Skati katalīzes un enzīmu piesātinājuma skaidrojumu atvilktnē (P5-06).",
+          "citation": {"kind": "concept", "id": "P5-06"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Ātruma ierobežojošais posms ir lēnākais elementārais solis; KM ir substrāta koncentrācija pie pusmaksimālā ātruma.",
+          "citation": {"kind": "concept", "id": "P5-03"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Identificē starpproduktu vai katalizatoru posmos un pārbaudi, vai aktīvie centri ir piesātināti.",
+          "citation": {"kind": "convention", "id": "CIT-C5-K17"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-6A",
+      "topic": 6,
+      "title_lv": "Redoksa lomas un potenciālu tabula",
+      "status": "authored",
+      "concept_ids": ["P6-01", "P6-02", "P6-04"],
+      "primary_concept_id": "P6-01",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Aprēķini oksidēšanas pakāpes pirms un pēc reakcijas: oksidētājs elektronus pieņem, reducētājs atdod.",
+          "citation": {"kind": "concept", "id": "P6-01"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P6-01",
+          "text_lv": "Atver koncepta atvilktni par oksidēšanās pakāpēm un standartpotenciāliem (P6-01).",
+          "citation": {"kind": "concept", "id": "P6-01"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Spontānā virzienā katods ir pusreakcija ar augstāku reducēšanās potenciālu: E°(šūnas) = E°(katods) − E°(anods).",
+          "citation": {"kind": "convention", "id": "CIT-C6-E-CONV"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Salīdzini dotos E° lielumus tabulā, nosaki katoda un anoda pāri un neapgriez potenciāla zīmi bez formulas.",
+          "citation": {"kind": "concept", "id": "P6-04"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-6B",
+      "topic": 6,
+      "title_lv": "Pusreakcijas dažādās vidēs",
+      "status": "authored",
+      "concept_ids": ["P6-05", "P6-06"],
+      "primary_concept_id": "P6-05",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Skābā vidē skābekli līdzsvaro ar H₂O un ūdeņradi ar H⁺; bāziskā vidē lieto OH⁻ un H₂O.",
+          "citation": {"kind": "concept", "id": "P6-05"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P6-05",
+          "text_lv": "Skati elektronu-jonu bilances secību koncepta atvilktnē (P6-05).",
+          "citation": {"kind": "concept", "id": "P6-05"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Katrā pusreakcijā vispirms izlīdzina atomus (O ar H₂O, H ar H⁺/OH⁻), tikai pēc tam kopējo lādiņu ar e⁻.",
+          "citation": {"kind": "concept", "id": "P6-06"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Uzraksti atsevišķi oksidēšanās un reducēšanās pusreakcijas un pārbaudi uzdevumā norādīto reakcijas vidi.",
+          "citation": {"kind": "concept", "id": "P6-05"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-6C",
+      "topic": 6,
+      "title_lv": "Titrēšana un koncentrācija",
+      "status": "authored",
+      "concept_ids": ["P6-07", "P6-08"],
+      "primary_concept_id": "P6-07",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Titrēšanas aprēķinos vispirms atrodi titranta vielas daudzumu molos un lieto reakcijas stehiometriju.",
+          "citation": {"kind": "concept", "id": "P6-07"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P6-07",
+          "text_lv": "Atver koncepta atvilktni par redokstitrēšanu un beigu punktu (P6-07).",
+          "citation": {"kind": "concept", "id": "P6-07"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Konkordances kritērijs paralēliem titrējumiem ir 0,10 mL; tilpumus pārvērš litros aprēķinam n = c·V.",
+          "citation": {"kind": "convention", "id": "CIT-C6-CONCORDANCE"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Izvēlies saskanīgos titrēšanas tilpumus, aprēķini vidējo V(titranta) un pārej uz analīta moliem caur koeficientiem.",
+          "citation": {"kind": "convention", "id": "CIT-C6-ENDPOINT"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-6D",
+      "topic": 6,
+      "title_lv": "Nernsts un nepamatots secinājums",
+      "status": "gap-recorded",
+      "concept_ids": ["P6-03"],
+      "gap_reason_lv": "Pirmajā slānī (Stratum 1) nav iekļauts; paredzēts paplašināšanai pēc uzdevumu bankas pamatdaļas izveides.",
+      "layers": []
+    },
+    {
+      "family_id": "FAM-7A",
+      "topic": 7,
+      "title_lv": "Likums un metodes lietojums",
+      "status": "authored",
+      "concept_ids": ["P7-01", "P7-02"],
+      "primary_concept_id": "P7-01",
+      "max_depth_by_variant_class": {"default": 4, "one_step": 3},
+      "depth_rule_applied": true,
+      "depth_rule_reason_lv": "Viena soļa likuma vai mainīgā identificēšanas variantā (one_step) 4. slānis norādītu atbildi, tāpēc dziļums ir 3 slāņi.",
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Saisti gaismas absorbciju ar koncentrāciju, ceļa garumu un molāro absorbcijas koeficientu.",
+          "citation": {"kind": "concept", "id": "P7-01"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P7-01",
+          "text_lv": "Skati Bugēra–Lamberta–Bēra likumu koncepta atvilktnē (P7-01).",
+          "citation": {"kind": "concept", "id": "P7-01"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "A = ε·l·c; standarta kivetes optiskais ceļš ir l = 1 cm (10 mm) vienādā šķīdinātājā un pH.",
+          "citation": {"kind": "convention", "id": "CIT-C7-PATH"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Pārbaudi, kuri lielumi (A, ε, l vai c) ir doti ar saskanīgām vienībām, un izsaki meklēto lielumu.",
+          "citation": {"kind": "convention", "id": "CIT-C7-CUVETTE"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-7B",
+      "topic": 7,
+      "title_lv": "Kalibrēšanas grafiks",
+      "status": "authored",
+      "concept_ids": ["P7-03", "P7-04"],
+      "primary_concept_id": "P7-03",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Kalibrēšanas taisnē neatkarīgais mainīgais ir standartu koncentrācija c uz x ass, bet absorbcija A — uz y ass.",
+          "citation": {"kind": "concept", "id": "P7-03"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P7-03",
+          "text_lv": "Atver koncepta atvilktni par kalibrēšanas līkni un regresijas modeli (P7-03).",
+          "citation": {"kind": "concept", "id": "P7-03"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "Izmanto doto kalibrēšanas vienādojumu (ar vai bez brīvā locekļa b); neekstrapolē ārpus standartu diapazona (C09).",
+          "citation": {"kind": "convention", "id": "CIT-C7-CALIB"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Nolasi vienādojuma slīpumu un krustpunktu un pārbaudi, vai parauga absorbcija ietilpst kalibrētajā intervālā.",
+          "citation": {"kind": "convention", "id": "CIT-C7-NOEXTRAP"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-7C",
+      "topic": 7,
+      "title_lv": "Nezināms paraugs un atšķaidījums",
+      "status": "authored",
+      "concept_ids": ["P7-04"],
+      "primary_concept_id": "P7-04",
+      "max_depth_by_variant_class": {"default": 4},
+      "depth_rule_applied": false,
+      "item_overrides": {},
+      "layers": [
+        {
+          "layer": 1,
+          "kind": "cue",
+          "text_lv": "Vispirms aprēķini mērītā šķīduma koncentrāciju no kalibrēšanas vai Bēra likuma, tikai tad reizini ar atšķaidījuma faktoru.",
+          "citation": {"kind": "concept", "id": "P7-04"}
+        },
+        {
+          "layer": 2,
+          "kind": "concept_link",
+          "concept_id": "P7-04",
+          "text_lv": "Skati nezināmā parauga koncentrācijas un atšķaidījuma aprēķinu atvilktnē (P7-04).",
+          "citation": {"kind": "concept", "id": "P7-04"}
+        },
+        {
+          "layer": 3,
+          "kind": "rule_citation",
+          "text_lv": "c(sākotnējais) = c(mērītais) · (V(kopējais) / V(alikvota)); ievēro vienādu šķīdinātāju un pH.",
+          "citation": {"kind": "convention", "id": "CIT-C7-MATRIX"}
+        },
+        {
+          "layer": 4,
+          "kind": "first_step",
+          "text_lv": "Ievieto izmērīto absorbciju A kalibrēšanas vienādojumā, lai iegūtu atšķaidītā parauga koncentrāciju.",
+          "citation": {"kind": "convention", "id": "CIT-C7-NOEXTRAP"}
+        }
+      ]
+    },
+    {
+      "family_id": "FAM-7D",
+      "topic": 7,
+      "title_lv": "Kalibrēšanas derīgums un laboratorijas soļi",
+      "status": "gap-recorded",
+      "concept_ids": ["P7-05"],
+      "gap_reason_lv": "Pirmajā slānī (Stratum 1) nav iekļauts; paredzēts paplašināšanai pēc uzdevumu bankas pamatdaļas izveides.",
+      "layers": []
+    }
+  ]
+}

@@ -1,0 +1,2380 @@
+{
+  "schema_version": 1,
+  "task": "N19",
+  "status": "PASS",
+  "artifact": "method cards and the ordering, matching and sequence verdict engines",
+  "validation": {
+    "status": "PASS",
+    "summary": {
+      "cards": 14,
+      "steps": 74,
+      "free_order_groups": 1,
+      "sequence_prompts": 28,
+      "matching_exercises": 3,
+      "safety_entries": 3,
+      "method_outcomes": 35,
+      "n05_vectors": 10,
+      "n05_pass": 10,
+      "stratum_vectors": 17,
+      "stratum_pass": 17,
+      "signatures": 14,
+      "dangling_signatures": 0,
+      "copy_lint": "PASS",
+      "no_keyword_scan": "PASS",
+      "no_keyword_behaviour": "PASS"
+    },
+    "digests": {
+      "cards": "94a6ef8a4e2bfd54490908dc9b2c615253af1322464ba3660aa5900514aee31e",
+      "card_schema": "de7f6b411bb04371d4a01249a19b6cfede69ef2141e6da410e65f0733c2aa5de",
+      "contract": "65f961740be3be477e3d04cef0e572ff4a4b5dd09229d422f1b848904f49c4d6",
+      "python_engine": "5792e2dbf94b6a28733b6327c26692cb4339f574b68e80ca99826c350a80d665",
+      "js_engine": "6739da2ca6a1d8ae5f6ef94b4c37a7cafa41b1c2de91cda23345b6d08b947bfb",
+      "golden_corpus": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88",
+      "chains": "52448ee3ff9a62ba73431207aadc5872bebe836d129d2aa814844b0af12aaf34"
+    },
+    "errors": []
+  },
+  "cards": {
+    "rows": [
+      {
+        "card_id": "MC-EX01",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      },
+      {
+        "card_id": "MC-EX02",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      },
+      {
+        "card_id": "MC-EX03",
+        "steps": 6,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 1,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3,
+        "safety_overlap": [
+          {
+            "step_id": "S1",
+            "content_words": 10,
+            "covered": 10,
+            "ratio": 1.0
+          }
+        ]
+      },
+      {
+        "card_id": "MC-EX04",
+        "steps": 4,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3
+      },
+      {
+        "card_id": "MC-EX05",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      },
+      {
+        "card_id": "MC-EX06",
+        "steps": 7,
+        "free_order_groups": 1,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3
+      },
+      {
+        "card_id": "MC-EX07",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      },
+      {
+        "card_id": "MC-EX08",
+        "steps": 7,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 1,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3,
+        "safety_overlap": [
+          {
+            "step_id": "S2",
+            "content_words": 13,
+            "covered": 13,
+            "ratio": 1.0
+          }
+        ]
+      },
+      {
+        "card_id": "MC-EX09",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      },
+      {
+        "card_id": "MC-EX10",
+        "steps": 6,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3
+      },
+      {
+        "card_id": "MC-EX11",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 1,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3,
+        "safety_overlap": [
+          {
+            "step_id": "S2",
+            "content_words": 13,
+            "covered": 13,
+            "ratio": 1.0
+          }
+        ]
+      },
+      {
+        "card_id": "MC-EX12",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3
+      },
+      {
+        "card_id": "MC-EX13",
+        "steps": 4,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 3,
+        "citations_total": 3
+      },
+      {
+        "card_id": "MC-EX14",
+        "steps": 5,
+        "free_order_groups": 0,
+        "sequence_prompts": 2,
+        "safety_entries": 0,
+        "errors": [],
+        "citations_resolved": 2,
+        "citations_total": 2
+      }
+    ],
+    "coverage_rows": [
+      {
+        "outcome_id": "P1-01",
+        "topic": 1,
+        "families": [
+          "FAM-1C"
+        ],
+        "cards": [
+          "MC-EX01"
+        ],
+        "declared_by_card": [
+          "MC-EX01"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P1-03",
+        "topic": 1,
+        "families": [
+          "FAM-1C"
+        ],
+        "cards": [
+          "MC-EX01"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P1-05",
+        "topic": 1,
+        "families": [
+          "FAM-1B"
+        ],
+        "cards": [
+          "MC-EX02"
+        ],
+        "declared_by_card": [
+          "MC-EX02"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P1-06",
+        "topic": 1,
+        "families": [
+          "FAM-1B"
+        ],
+        "cards": [
+          "MC-EX02"
+        ],
+        "declared_by_card": [
+          "MC-EX02"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P1-07",
+        "topic": 1,
+        "families": [
+          "FAM-1B"
+        ],
+        "cards": [
+          "MC-EX02"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-02",
+        "topic": 2,
+        "families": [
+          "FAM-2B"
+        ],
+        "cards": [
+          "MC-EX04"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-03",
+        "topic": 2,
+        "families": [
+          "FAM-2B"
+        ],
+        "cards": [
+          "MC-EX04"
+        ],
+        "declared_by_card": [
+          "MC-EX04"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-05",
+        "topic": 2,
+        "families": [
+          "FAM-2B"
+        ],
+        "cards": [
+          "MC-EX04"
+        ],
+        "declared_by_card": [
+          "MC-EX03",
+          "MC-EX04"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-06",
+        "topic": 2,
+        "families": [
+          "FAM-2B"
+        ],
+        "cards": [
+          "MC-EX04"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-07",
+        "topic": 2,
+        "families": [
+          "FAM-2C"
+        ],
+        "cards": [
+          "MC-EX03"
+        ],
+        "declared_by_card": [
+          "MC-EX03"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P2-10",
+        "topic": 2,
+        "families": [
+          "FAM-2B",
+          "FAM-2C"
+        ],
+        "cards": [
+          "MC-EX03",
+          "MC-EX04"
+        ],
+        "declared_by_card": [
+          "MC-EX04"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-01",
+        "topic": 3,
+        "families": [
+          "FAM-3A"
+        ],
+        "cards": [
+          "MC-EX05"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-02",
+        "topic": 3,
+        "families": [
+          "FAM-3A"
+        ],
+        "cards": [
+          "MC-EX05"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-04",
+        "topic": 3,
+        "families": [
+          "FAM-3A"
+        ],
+        "cards": [
+          "MC-EX05"
+        ],
+        "declared_by_card": [
+          "MC-EX05"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-05",
+        "topic": 3,
+        "families": [
+          "FAM-3A"
+        ],
+        "cards": [
+          "MC-EX05"
+        ],
+        "declared_by_card": [
+          "MC-EX05"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-06",
+        "topic": 3,
+        "families": [
+          "FAM-3A"
+        ],
+        "cards": [
+          "MC-EX05"
+        ],
+        "declared_by_card": [
+          "MC-EX05"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-10",
+        "topic": 3,
+        "families": [
+          "FAM-3C"
+        ],
+        "cards": [
+          "MC-EX06"
+        ],
+        "declared_by_card": [
+          "MC-EX06"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P3-11",
+        "topic": 3,
+        "families": [
+          "FAM-3C"
+        ],
+        "cards": [
+          "MC-EX06"
+        ],
+        "declared_by_card": [
+          "MC-EX06"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-02",
+        "topic": 4,
+        "families": [
+          "FAM-4B",
+          "FAM-4C"
+        ],
+        "cards": [
+          "MC-EX07",
+          "MC-EX08"
+        ],
+        "declared_by_card": [
+          "MC-EX08"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-03",
+        "topic": 4,
+        "families": [
+          "FAM-4B"
+        ],
+        "cards": [
+          "MC-EX08"
+        ],
+        "declared_by_card": [
+          "MC-EX08"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-08",
+        "topic": 4,
+        "families": [
+          "FAM-4C"
+        ],
+        "cards": [
+          "MC-EX07"
+        ],
+        "declared_by_card": [
+          "MC-EX07"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-09",
+        "topic": 4,
+        "families": [
+          "FAM-4B"
+        ],
+        "cards": [
+          "MC-EX08"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-10",
+        "topic": 4,
+        "families": [
+          "FAM-4C"
+        ],
+        "cards": [
+          "MC-EX07"
+        ],
+        "declared_by_card": [
+          "MC-EX07"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P4-11",
+        "topic": 4,
+        "families": [
+          "FAM-4C"
+        ],
+        "cards": [
+          "MC-EX07"
+        ],
+        "declared_by_card": [
+          "MC-EX07"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-01",
+        "topic": 5,
+        "families": [
+          "FAM-5A"
+        ],
+        "cards": [
+          "MC-EX10"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-02",
+        "topic": 5,
+        "families": [
+          "FAM-5A"
+        ],
+        "cards": [
+          "MC-EX10"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-04",
+        "topic": 5,
+        "families": [
+          "FAM-5A"
+        ],
+        "cards": [
+          "MC-EX10"
+        ],
+        "declared_by_card": [],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-07",
+        "topic": 5,
+        "families": [
+          "FAM-5A"
+        ],
+        "cards": [
+          "MC-EX10"
+        ],
+        "declared_by_card": [
+          "MC-EX10"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-08",
+        "topic": 5,
+        "families": [
+          "FAM-5C"
+        ],
+        "cards": [
+          "MC-EX09"
+        ],
+        "declared_by_card": [
+          "MC-EX09"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P5-10",
+        "topic": 5,
+        "families": [
+          "FAM-5C"
+        ],
+        "cards": [
+          "MC-EX09"
+        ],
+        "declared_by_card": [
+          "MC-EX09"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P6-03",
+        "topic": 6,
+        "families": [
+          "FAM-6D"
+        ],
+        "cards": [
+          "MC-EX12"
+        ],
+        "declared_by_card": [
+          "MC-EX12"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P6-07",
+        "topic": 6,
+        "families": [
+          "FAM-6C"
+        ],
+        "cards": [
+          "MC-EX11"
+        ],
+        "declared_by_card": [
+          "MC-EX11"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P6-08",
+        "topic": 6,
+        "families": [
+          "FAM-6C"
+        ],
+        "cards": [
+          "MC-EX11"
+        ],
+        "declared_by_card": [
+          "MC-EX11"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P7-03",
+        "topic": 7,
+        "families": [
+          "FAM-7B"
+        ],
+        "cards": [
+          "MC-EX13"
+        ],
+        "declared_by_card": [
+          "MC-EX13",
+          "MC-EX14"
+        ],
+        "status": "COVERED"
+      },
+      {
+        "outcome_id": "P7-04",
+        "topic": 7,
+        "families": [
+          "FAM-7B",
+          "FAM-7C"
+        ],
+        "cards": [
+          "MC-EX13",
+          "MC-EX14"
+        ],
+        "declared_by_card": [
+          "MC-EX14"
+        ],
+        "status": "COVERED"
+      }
+    ],
+    "reference_rows": [
+      {
+        "card_id": "MC-EX01",
+        "chain_id": "EX01",
+        "outcome_ids": [
+          "P1-01"
+        ],
+        "outcomes_declarating_the_family": [
+          "P1-01",
+          "P1-03"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX01"
+        ],
+        "practice_refs": [
+          "PRAC-EX01"
+        ],
+        "chains_naming_the_card": [
+          "EX01"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX02",
+        "chain_id": "EX02",
+        "outcome_ids": [
+          "P1-06",
+          "P1-05"
+        ],
+        "outcomes_declarating_the_family": [
+          "P1-05",
+          "P1-06",
+          "P1-07"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX02"
+        ],
+        "practice_refs": [
+          "PRAC-EX02"
+        ],
+        "chains_naming_the_card": [
+          "EX02"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX03",
+        "chain_id": "EX03",
+        "outcome_ids": [
+          "P2-07",
+          "P2-05"
+        ],
+        "outcomes_declarating_the_family": [
+          "P2-07",
+          "P2-10"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX03",
+          "MC-EX04"
+        ],
+        "practice_refs": [
+          "PRAC-EX03"
+        ],
+        "chains_naming_the_card": [
+          "EX03"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX04",
+        "chain_id": "EX04",
+        "outcome_ids": [
+          "P2-05",
+          "P2-10",
+          "P2-03"
+        ],
+        "outcomes_declarating_the_family": [
+          "P2-02",
+          "P2-03",
+          "P2-05",
+          "P2-06",
+          "P2-10"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX03",
+          "MC-EX04"
+        ],
+        "practice_refs": [
+          "PRAC-EX04"
+        ],
+        "chains_naming_the_card": [
+          "EX04"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX05",
+        "chain_id": "EX05",
+        "outcome_ids": [
+          "P3-04",
+          "P3-06",
+          "P3-05"
+        ],
+        "outcomes_declarating_the_family": [
+          "P3-01",
+          "P3-02",
+          "P3-04",
+          "P3-05",
+          "P3-06"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX05"
+        ],
+        "practice_refs": [
+          "PRAC-EX05"
+        ],
+        "chains_naming_the_card": [
+          "EX05"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX06",
+        "chain_id": "EX06",
+        "outcome_ids": [
+          "P3-10",
+          "P3-11"
+        ],
+        "outcomes_declarating_the_family": [
+          "P3-10",
+          "P3-11"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX06"
+        ],
+        "practice_refs": [
+          "PRAC-EX06"
+        ],
+        "chains_naming_the_card": [
+          "EX06"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX07",
+        "chain_id": "EX07",
+        "outcome_ids": [
+          "P4-08",
+          "P4-10",
+          "P4-11"
+        ],
+        "outcomes_declarating_the_family": [
+          "P4-02",
+          "P4-08",
+          "P4-10",
+          "P4-11"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX07"
+        ],
+        "practice_refs": [
+          "PRAC-EX07"
+        ],
+        "chains_naming_the_card": [
+          "EX07"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX08",
+        "chain_id": "EX08",
+        "outcome_ids": [
+          "P4-03",
+          "P4-02",
+          "P4-07"
+        ],
+        "outcomes_declarating_the_family": [
+          "P4-02",
+          "P4-03",
+          "P4-09"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX08"
+        ],
+        "practice_refs": [
+          "PRAC-EX08"
+        ],
+        "chains_naming_the_card": [
+          "EX08"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX09",
+        "chain_id": "EX09",
+        "outcome_ids": [
+          "P5-08",
+          "P5-09",
+          "P5-10"
+        ],
+        "outcomes_declarating_the_family": [
+          "P5-08",
+          "P5-10"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX09"
+        ],
+        "practice_refs": [
+          "PRAC-EX09"
+        ],
+        "chains_naming_the_card": [
+          "EX09"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX10",
+        "chain_id": "EX10",
+        "outcome_ids": [
+          "P5-07",
+          "P5-03",
+          "P5-06"
+        ],
+        "outcomes_declarating_the_family": [
+          "P5-01",
+          "P5-02",
+          "P5-04",
+          "P5-07"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX10"
+        ],
+        "practice_refs": [
+          "PRAC-EX10"
+        ],
+        "chains_naming_the_card": [
+          "EX10"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX11",
+        "chain_id": "EX11",
+        "outcome_ids": [
+          "P6-08",
+          "P6-05",
+          "P6-07"
+        ],
+        "outcomes_declarating_the_family": [
+          "P6-07",
+          "P6-08"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX11"
+        ],
+        "practice_refs": [
+          "PRAC-EX11"
+        ],
+        "chains_naming_the_card": [
+          "EX11"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX12",
+        "chain_id": "EX12",
+        "outcome_ids": [
+          "P6-03",
+          "P6-02"
+        ],
+        "outcomes_declarating_the_family": [
+          "P6-03"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX12"
+        ],
+        "practice_refs": [
+          "PRAC-EX12"
+        ],
+        "chains_naming_the_card": [
+          "EX12"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX13",
+        "chain_id": "EX13",
+        "outcome_ids": [
+          "P7-03",
+          "P7-02"
+        ],
+        "outcomes_declarating_the_family": [
+          "P7-03",
+          "P7-04"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX13",
+          "MC-EX14"
+        ],
+        "practice_refs": [
+          "PRAC-EX13"
+        ],
+        "chains_naming_the_card": [
+          "EX13"
+        ],
+        "status": "BIDIRECTIONAL"
+      },
+      {
+        "card_id": "MC-EX14",
+        "chain_id": "EX14",
+        "outcome_ids": [
+          "P7-04",
+          "P7-03",
+          "P7-05"
+        ],
+        "outcomes_declarating_the_family": [
+          "P7-04"
+        ],
+        "cards_declaring_the_same_outcomes": [
+          "MC-EX13",
+          "MC-EX14"
+        ],
+        "practice_refs": [
+          "PRAC-EX14"
+        ],
+        "chains_naming_the_card": [
+          "EX14"
+        ],
+        "status": "BIDIRECTIONAL"
+      }
+    ],
+    "copy_lint": {
+      "status": "PASS",
+      "checked_unit_fields": 541,
+      "checked_term_keys": 232,
+      "exempt_prose_fields": 435,
+      "errors": []
+    },
+    "signature_rows": [
+      {
+        "signature": "MC-1B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX02"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-1C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX01"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-2B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX04"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-2C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX03"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-3A-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX05"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-3C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX06"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-4B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX08"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-4C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX07"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-5C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX09"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-5D-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX10"
+        ],
+        "provenance": "nearest-available-cross-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-6A-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX12"
+        ],
+        "provenance": "nearest-available-cross-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-6C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX11"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-7B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX13"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-7C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "cards": [
+          "MC-EX14"
+        ],
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "status": "RESOLVED"
+      }
+    ]
+  },
+  "vectors": {
+    "n05_rows": [
+      {
+        "vector_id": "GV-S1-T1-Q15-01",
+        "type_id": "Q15",
+        "case_kind": "pending_self_assessment",
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q15-02",
+        "type_id": "Q15",
+        "case_kind": "blank_response",
+        "verdict_class": "incorrect",
+        "error_class": "BLANK_RESPONSE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-01",
+        "type_id": "Q06",
+        "case_kind": "correct",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-02",
+        "type_id": "Q06",
+        "case_kind": "partial_matching",
+        "verdict_class": "partial",
+        "error_class": "WRONG_PAIRING",
+        "signatures": [
+          "MC-2A-01"
+        ],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-03",
+        "type_id": "Q06",
+        "case_kind": "wrong_pairing",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_PAIRING",
+        "signatures": [
+          "MC-2A-01"
+        ],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q08-01",
+        "type_id": "Q08",
+        "case_kind": "auto_passed_pending_review",
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q08-02",
+        "type_id": "Q08",
+        "case_kind": "wrong_order",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "signatures": [
+          "MC-2A-02"
+        ],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q08-01",
+        "type_id": "Q08",
+        "case_kind": "auto_passed_pending_review",
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T4-Q15-01",
+        "type_id": "Q15",
+        "case_kind": "pending_self_assessment",
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T6-Q06-01",
+        "type_id": "Q06",
+        "case_kind": "correct",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "signatures": [],
+        "status": "PASS"
+      }
+    ],
+    "stratum_rows": [
+      {
+        "id": "NV-N19-ORD-01",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "wrong_positions": [],
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "signatures": [],
+          "wrong_positions": []
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-02",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            1,
+            2
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "wrong_positions": [
+            1,
+            2
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-03",
+        "kind": "ordering",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "wrong_positions": [],
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "signatures": [],
+          "wrong_positions": []
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-04",
+        "kind": "ordering",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            2,
+            3
+          ],
+          "signatures": [
+            "MC-3C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-3C-01"
+          ],
+          "wrong_positions": [
+            2,
+            3
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-05",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            5
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "wrong_positions": [
+            5
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-06",
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            5
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "wrong_positions": [
+            5
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-01",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "correct"
+          },
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "signatures": [],
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "correct"
+          }
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-02",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "wrong_pair",
+            "L3": "wrong_pair"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "wrong_pair",
+            "L3": "wrong_pair"
+          }
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-03",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "repeated_left",
+            "L2": "repeated_right",
+            "L3": "unmatched"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_PAIRING",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "pair_statuses": {
+            "L1": "repeated_left",
+            "L2": "repeated_right",
+            "L3": "unmatched"
+          }
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-04",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "unmatched"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "correct",
+            "L3": "unmatched"
+          }
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-05",
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "expected": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "unknown_right"
+          },
+          "signatures": [
+            "MC-2C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "partial",
+          "error_class": "WRONG_PAIRING",
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "pair_statuses": {
+            "L1": "correct",
+            "L2": "unknown_right"
+          }
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-01",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "status": "accepted",
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "correct",
+          "error_class": "NONE",
+          "signatures": [],
+          "status": "accepted"
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-02",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "status": "distractor",
+          "signatures": [
+            "MC-3C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-3C-01"
+          ],
+          "status": "distractor"
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-03",
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "status": "unknown",
+          "signatures": [
+            "MC-3C-01"
+          ]
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [
+            "MC-3C-01"
+          ],
+          "status": "unknown"
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SELF-01",
+        "kind": "self_assessment",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE",
+          "pending_points": 2.0,
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE",
+          "signatures": [],
+          "pending_points": 2.0
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SELF-02",
+        "kind": "self_assessment",
+        "card_id": "MC-EX06",
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "BLANK_RESPONSE",
+          "pending_points": 0.0,
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "BLANK_RESPONSE",
+          "signatures": [],
+          "pending_points": 0.0
+        },
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SCRATCH-ORD",
+        "kind": "ordering",
+        "card_id": null,
+        "expected": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            0,
+            2
+          ],
+          "signatures": []
+        },
+        "actual": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "signatures": [],
+          "wrong_positions": [
+            0,
+            2
+          ]
+        },
+        "status": "PASS"
+      }
+    ],
+    "determinism_rows": [
+      {
+        "id": "NV-N19-ORD-01",
+        "digest": "4c3b0228c355708b277ea829738c5f43261c61b3465aae0f08765c4e42066d7b",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-02",
+        "digest": "8255e02e8c4a6f2cdcf032ce0137679b6752a2154a2c5e43fa71672217687338",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-03",
+        "digest": "7333f00d0eb5fb113dff2bb61165e3ef74a2ffb26371b7826266ffc6cf24cbe5",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-04",
+        "digest": "bdc559345abe390744897994490f14dda3a8b149deb47fe4a86ce33cf0dc5b08",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-05",
+        "digest": "99842e2d7616a0ad7323fde0bf268173bc9a347f8b5a45e58939deb821ace7de",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-ORD-06",
+        "digest": "f05569993a0655e06cae591fcf41bd7f76ec24b0c1d87ef79c375b8f61a53d13",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-01",
+        "digest": "d78f2ef9074cfff669a5f75ab137c9236033531170e40597c25a754a24b6d0d4",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-02",
+        "digest": "25a780d9cd1ddab21c8490099b74a006214e88321a53d21682633fcb7efb0838",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-03",
+        "digest": "3b3a3d5bcdd78eabae6688f8466a2375400293d5ea051a8677eab52b44482864",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-04",
+        "digest": "a514797b911b3a05d3c76be4a5ba78075029adb6d59bf82d6c7fc4a636917878",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-MAT-05",
+        "digest": "f64465189268c29e91abbe73ef2c092aaff49b7e390383a2d257501e6ddac4b9",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-01",
+        "digest": "e65e5bda8f047c3950e5caab707241cb60ebdcae85e27140d62565882e383b24",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-02",
+        "digest": "5d3e2c6934c9740891c437d34cb7c4606da1c38d2f7855cf9896038e4d93de4c",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SEQ-03",
+        "digest": "ee44c2e308b92f89b4b59eaa38c8470569654a92391db53d61973e663008841a",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SELF-01",
+        "digest": "2216e56b5541697e35309814ae4fba02d1aafd9c7d5d5cd365264cf3cafd3ce8",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SELF-02",
+        "digest": "61029b3017b0145eed2245700a77899b185f7a28c5e05fa8d41697d432b5dc7e",
+        "status": "PASS"
+      },
+      {
+        "id": "NV-N19-SCRATCH-ORD",
+        "digest": "6b10a26ac92aba8e04149655e7e7b2c8131955b418a847a3d02cc7f857fc31ce",
+        "status": "PASS"
+      }
+    ]
+  },
+  "no_keyword": {
+    "source_findings": [
+      {
+        "source": "tools/method_engine.py",
+        "forbidden_identifiers": [],
+        "domain_keyword_literals": [],
+        "prose_comparisons": [],
+        "status": "PASS"
+      },
+      {
+        "source": "src/method-engine.js",
+        "forbidden_identifiers": [],
+        "domain_keyword_literals": [],
+        "prose_comparisons": [],
+        "status": "PASS"
+      }
+    ],
+    "behaviour_rows": [
+      {
+        "kind": "ordering",
+        "card_id": "MC-EX03",
+        "verdict_without_text": "correct",
+        "verdict_with_text": "correct",
+        "verdict_unchanged": true,
+        "status": "PASS"
+      },
+      {
+        "kind": "matching",
+        "card_id": "MC-EX03",
+        "verdict_without_text": "correct",
+        "verdict_with_text": "correct",
+        "verdict_unchanged": true,
+        "status": "PASS"
+      },
+      {
+        "kind": "sequence",
+        "card_id": "MC-EX06",
+        "verdict_without_text": "correct",
+        "verdict_with_text": "correct",
+        "verdict_unchanged": true,
+        "status": "PASS"
+      }
+    ],
+    "rule_verbatim": "Grading never reads the learner's wording. A step, a pair and a next step are recognised only by their declared identity (an id). The engines contain no similarity, no keyword list, no stemming and no case folding; a submission that uses a synonym of the correct step text is graded wrong because the text is not an id.",
+    "identity_rule_verbatim": "Vertīkums ir id, nevis teksts. Kartītes soļa id, pāra kreisā un labā id un secības pieņemamā soļa id ir vienīgie salīdzināšanas objekti."
+  },
+  "feedback_trace": {
+    "card_id": "MC-EX03",
+    "submission": [
+      "S1",
+      "S3",
+      "S2",
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "wrong_positions": [
+      1,
+      2
+    ],
+    "signatures": [
+      "MC-2C-01"
+    ],
+    "per_step_signatures": [
+      {
+        "position": 1,
+        "step_id": "S3",
+        "signature": "MC-2C-01"
+      },
+      {
+        "position": 2,
+        "step_id": "S2",
+        "signature": "MC-2C-01"
+      }
+    ],
+    "steps": [
+      {
+        "position": 1,
+        "step_id": "S3",
+        "expected_step_id": "S2",
+        "status": "misplaced",
+        "misconception_signature": "MC-2C-01",
+        "misconception_note_lv": "Sākuma nolasījumu nedrīkst pielādēt līdz nullei: izlietotais tilpums ir starpība, un izliekts sākuma līmenis to izjauc.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu"
+      },
+      {
+        "position": 2,
+        "step_id": "S2",
+        "expected_step_id": "S3",
+        "status": "misplaced",
+        "misconception_signature": "MC-2C-01",
+        "misconception_note_lv": "Piltuves atstāšana biretē ir klasiņas klūda: tā maina sākuma līmeni nezināmo veidā.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu"
+      }
+    ],
+    "remediation": [
+      {
+        "card_id": "MC-EX03",
+        "step_id": "S3",
+        "misconception_signature": "MC-2C-01",
+        "note_lv": "Sākuma nolasījumu nedrīkst pielādēt līdz nullei: izlietotais tilpums ir starpība, un izliekts sākuma līmenis to izjauc.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu"
+      },
+      {
+        "card_id": "MC-EX03",
+        "step_id": "S2",
+        "misconception_signature": "MC-2C-01",
+        "note_lv": "Piltuves atstāšana biretē ir klasiņas klūda: tā maina sākuma līmeni nezināmo veidā.",
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_text": "Atkārtot saistīto konceptu"
+      }
+    ]
+  },
+  "pending_boundary": {
+    "pending": {
+      "verdict_class": "pending_self_assessment",
+      "error_class": "NONE",
+      "pending_points": 2,
+      "max_points": 2,
+      "signatures": [],
+      "text_parsed": false,
+      "status": "PASS"
+    },
+    "blank": {
+      "verdict_class": "incorrect",
+      "error_class": "BLANK_RESPONSE",
+      "pending_points": 0,
+      "status": "PASS"
+    }
+  },
+  "pending_semantics": {
+    "owner": "N19",
+    "consumer": "N23",
+    "rule_verbatim_lv": "Brīvā teksta paskaidrojums ir pašnovērtējums. Dzinējs to pieraksta un atzīmē kā pending; tas nedod ne punktu, ne verdiktu, ne paraksturu. Tukša atbilde (tikai atstarpes) dod 0 punktus un BLANK_RESPONSE; tas ir vienīgais teksta pārbaudes veids.",
+    "blank_rule_verbatim_lv": "Tukšums ir teksts, kas pēc atstarpju noņemšanas ir tukšs. Saturācija netiek pārbaudīta.",
+    "no_parse_assertion_verbatim_lv": "Šajā ceļā nav neviena salīdzinājuma ar teksta saturu. Fiksētais N05 orakuls šim ceļam atbilst, un N19 vectora komplekts to pārbauda.",
+    "grading_class_ref": "N23 gaida pending klasi šim kritērijam; N19 neizdalīs punktus."
+  },
+  "focus_traces": [
+    {
+      "card_id": "MC-EX03",
+      "heading_focused": true,
+      "trigger_id": "map-btn-P2-07",
+      "steps": 6,
+      "revealed_count": 0
+    }
+  ],
+  "cross_language": {
+    "status": "PASS",
+    "tables": [
+      {
+        "id": "NV-N19-ORD-01",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "python_digest": "4c3b0228c355708b277ea829738c5f43261c61b3465aae0f08765c4e42066d7b",
+        "javascript_digest": "4c3b0228c355708b277ea829738c5f43261c61b3465aae0f08765c4e42066d7b",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-ORD-02",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "8255e02e8c4a6f2cdcf032ce0137679b6752a2154a2c5e43fa71672217687338",
+        "javascript_digest": "8255e02e8c4a6f2cdcf032ce0137679b6752a2154a2c5e43fa71672217687338",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-ORD-03",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "python_digest": "7333f00d0eb5fb113dff2bb61165e3ef74a2ffb26371b7826266ffc6cf24cbe5",
+        "javascript_digest": "7333f00d0eb5fb113dff2bb61165e3ef74a2ffb26371b7826266ffc6cf24cbe5",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-ORD-04",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "bdc559345abe390744897994490f14dda3a8b149deb47fe4a86ce33cf0dc5b08",
+        "javascript_digest": "bdc559345abe390744897994490f14dda3a8b149deb47fe4a86ce33cf0dc5b08",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-ORD-05",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "99842e2d7616a0ad7323fde0bf268173bc9a347f8b5a45e58939deb821ace7de",
+        "javascript_digest": "99842e2d7616a0ad7323fde0bf268173bc9a347f8b5a45e58939deb821ace7de",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-ORD-06",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "f05569993a0655e06cae591fcf41bd7f76ec24b0c1d87ef79c375b8f61a53d13",
+        "javascript_digest": "f05569993a0655e06cae591fcf41bd7f76ec24b0c1d87ef79c375b8f61a53d13",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-MAT-01",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "python_digest": "d78f2ef9074cfff669a5f75ab137c9236033531170e40597c25a754a24b6d0d4",
+        "javascript_digest": "d78f2ef9074cfff669a5f75ab137c9236033531170e40597c25a754a24b6d0d4",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-MAT-02",
+        "verdict_class": "partial",
+        "error_class": "WRONG_PAIRING",
+        "python_digest": "25a780d9cd1ddab21c8490099b74a006214e88321a53d21682633fcb7efb0838",
+        "javascript_digest": "25a780d9cd1ddab21c8490099b74a006214e88321a53d21682633fcb7efb0838",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-MAT-03",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_PAIRING",
+        "python_digest": "3b3a3d5bcdd78eabae6688f8466a2375400293d5ea051a8677eab52b44482864",
+        "javascript_digest": "3b3a3d5bcdd78eabae6688f8466a2375400293d5ea051a8677eab52b44482864",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-MAT-04",
+        "verdict_class": "partial",
+        "error_class": "WRONG_PAIRING",
+        "python_digest": "a514797b911b3a05d3c76be4a5ba78075029adb6d59bf82d6c7fc4a636917878",
+        "javascript_digest": "a514797b911b3a05d3c76be4a5ba78075029adb6d59bf82d6c7fc4a636917878",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-MAT-05",
+        "verdict_class": "partial",
+        "error_class": "WRONG_PAIRING",
+        "python_digest": "f64465189268c29e91abbe73ef2c092aaff49b7e390383a2d257501e6ddac4b9",
+        "javascript_digest": "f64465189268c29e91abbe73ef2c092aaff49b7e390383a2d257501e6ddac4b9",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SEQ-01",
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "python_digest": "e65e5bda8f047c3950e5caab707241cb60ebdcae85e27140d62565882e383b24",
+        "javascript_digest": "e65e5bda8f047c3950e5caab707241cb60ebdcae85e27140d62565882e383b24",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SEQ-02",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "5d3e2c6934c9740891c437d34cb7c4606da1c38d2f7855cf9896038e4d93de4c",
+        "javascript_digest": "5d3e2c6934c9740891c437d34cb7c4606da1c38d2f7855cf9896038e4d93de4c",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SEQ-03",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "ee44c2e308b92f89b4b59eaa38c8470569654a92391db53d61973e663008841a",
+        "javascript_digest": "ee44c2e308b92f89b4b59eaa38c8470569654a92391db53d61973e663008841a",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SELF-01",
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "python_digest": "2216e56b5541697e35309814ae4fba02d1aafd9c7d5d5cd365264cf3cafd3ce8",
+        "javascript_digest": "2216e56b5541697e35309814ae4fba02d1aafd9c7d5d5cd365264cf3cafd3ce8",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SELF-02",
+        "verdict_class": "incorrect",
+        "error_class": "BLANK_RESPONSE",
+        "python_digest": "61029b3017b0145eed2245700a77899b185f7a28c5e05fa8d41697d432b5dc7e",
+        "javascript_digest": "61029b3017b0145eed2245700a77899b185f7a28c5e05fa8d41697d432b5dc7e",
+        "status": "EQUAL"
+      },
+      {
+        "id": "NV-N19-SCRATCH-ORD",
+        "verdict_class": "incorrect",
+        "error_class": "WRONG_ORDER",
+        "python_digest": "6b10a26ac92aba8e04149655e7e7b2c8131955b418a847a3d02cc7f857fc31ce",
+        "javascript_digest": "6b10a26ac92aba8e04149655e7e7b2c8131955b418a847a3d02cc7f857fc31ce",
+        "status": "EQUAL"
+      }
+    ],
+    "mismatches": []
+  },
+  "budget": {
+    "method_cards_island_bytes": {
+      "measured": 109919,
+      "measured_basis": "shipped #sim-method-cards island (sealed runtime projection)",
+      "source_bytes": 84088,
+      "ceiling": 131072,
+      "headroom_bytes": 21153,
+      "status": "PASS"
+    },
+    "method_engine_contract_bytes": {
+      "measured": 22448,
+      "ceiling": 131072,
+      "headroom_bytes": 108624,
+      "status": "PASS"
+    },
+    "method_engine_js_bytes": {
+      "measured": 35170,
+      "ceiling": 40960,
+      "headroom_bytes": 5790,
+      "status": "PASS"
+    },
+    "method_card_view_js_bytes": {
+      "measured": 12105,
+      "ceiling": 65536,
+      "headroom_bytes": 53431,
+      "status": "PASS"
+    }
+  },
+  "runtime": {
+    "status": "PASS",
+    "parity": true,
+    "harness_parity": true,
+    "counts": {
+      "n05": 10,
+      "stratum": 17,
+      "signatures": 14,
+      "cards": 14
+    },
+    "digests": {
+      "n05_verdicts": "c05edff76f1e50fe6f61921852d1d423c398048949cb9de35cf5075d2c86ad60",
+      "stratum_verdicts": "ec44907f4253e0163e3437c3837576e1243acc6643a0ee71f847a5a673c66f81",
+      "determinism": "8a14feeece21c055e35623ad8855c38d9e7fcf4504b6016c3fa629bebab8535e",
+      "signature_mapping": "9bc3f566c4370dec4a9e45d65413bbdfcd26a8ce8a8098d216f885b379042ee9",
+      "feedback_trace": "97cd294828543e1a3327351f992caa193487df9bad9d247dcfdd32e14107d9a2",
+      "boundary": "06dbdd2bc13cdb701a0225e41633a8cd1702151b8b4f2d458545d6b7dd771abc",
+      "focus": "bfa4002cdff1ab1a41c1d2136f3a5920e442803c94407dcfbea33ece52895dea",
+      "verdict_records": "daad39a83203e20f7e267e761e826d4c24d5ef77d8b7563b2b420f0d2f50ad92",
+      "contract": "65f961740be3be477e3d04cef0e572ff4a4b5dd09229d422f1b848904f49c4d6",
+      "cards_island": "e4774467ee45c191308bdad4eb7b09d77ca3ba49e685ef1cdc6f68bd08df9c15",
+      "engine_source": "6739da2ca6a1d8ae5f6ef94b4c37a7cafa41b1c2de91cda23345b6d08b947bfb",
+      "card_view_source": "ff666e5382987a293744bf7dad244f1155c409314676a4eca92a9a9074c283bd"
+    },
+    "artifact_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b",
+    "runtime_js_note": "The method verdict engine and the method card view are verified from src/method-engine.js and src/method-card-view.js against the shipped islands; neither is inlined into the artifact, because the runtime-JS ceiling headroom is 83 bytes (N31 owns the resolution).",
+    "signature_mapping_rows": [
+      {
+        "signature": "MC-1B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-1C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-2B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-2C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": true,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-3A-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-3C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": true,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-4B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-4C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-5C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-5D-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "nearest-available-cross-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-6A-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "nearest-available-cross-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-6C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-7B-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      },
+      {
+        "signature": "MC-7C-01",
+        "in_registry": true,
+        "in_golden_corpus": true,
+        "feedback_key": "feedback.concept_link_label",
+        "feedback_resolved": true,
+        "feedback_text": "Atkārtot saistīto konceptu",
+        "provenance": "exact-family",
+        "declared_by_card": true,
+        "used_by_vector": false,
+        "problems": [],
+        "status": "RESOLVED"
+      }
+    ]
+  },
+  "smoke": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "vector": [
+      {
+        "status": "PASS",
+        "id": "SMK-N19-METHOD-ORDERING",
+        "owner": "N19",
+        "description": "A fixed transposed ordering submission grades per-step: both slots are marked and the card signature is returned.",
+        "details": {
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_ORDER",
+          "wrong_positions": [
+            1,
+            2
+          ],
+          "per_step": [
+            {
+              "position": 0,
+              "step_id": "S1",
+              "status": "correct"
+            },
+            {
+              "position": 1,
+              "step_id": "S3",
+              "status": "misplaced"
+            },
+            {
+              "position": 2,
+              "step_id": "S2",
+              "status": "misplaced"
+            }
+          ],
+          "signatures": [
+            "MC-2C-01"
+          ],
+          "digest": "b73cbb002141c3f0fcd90449df5a1e3b0df338ba3fc76842d4e362d5abf594a4"
+        }
+      }
+    ]
+  },
+  "handoff": {
+    "to_N22": "Input semantics for the ordering strip, the pair matcher and the next-step selector. Every component submits ids only; a component never submits free text into these three engines.",
+    "to_N23": "The verdict record envelope, the diagnostic statuses, the pending semantics for self-assessed items and the signature mapping. N23 aggregates points from awarded_criteria and surfaces pending criteria in its own pending class.",
+    "to_N28": "A wrong ordering or matching verdict carries diagnostics.remediation entries that point at the card id, the step id and the step's misconception note; the remediation link resolves to that step note.",
+    "to_N20": "The card id list, the card's chain id and the family id per card. A method practice instance declares card_id and is graded by the same engines."
+  },
+  "sources": {
+    "cards": "b8a1427a8e397e72cfdece5d3443e9bcbe7e5135cb6cf511c377c2166218d8aa",
+    "contract": "fb1f1f64849c06e417d5b0dd4fdf352e78eacdd6e622dd8d7f0cab68fabd9ca8",
+    "python_engine": "5792e2dbf94b6a28733b6327c26692cb4339f574b68e80ca99826c350a80d665",
+    "javascript_engine": "6739da2ca6a1d8ae5f6ef94b4c37a7cafa41b1c2de91cda23345b6d08b947bfb",
+    "card_view": "ff666e5382987a293744bf7dad244f1155c409314676a4eca92a9a9074c283bd",
+    "validator": "65fcea6fc39ec8e16d0ad7dc4a5ab07d167aa5f486dc7760f2753107a7882a3a",
+    "harness": "bbf4cae9c74e89fb505803c0c095f98ce68cfa37c1fb37e0d4dbd970aa2c1f82"
+  }
+}

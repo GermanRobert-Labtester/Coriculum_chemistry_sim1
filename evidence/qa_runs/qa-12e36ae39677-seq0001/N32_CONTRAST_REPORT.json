@@ -1,0 +1,1693 @@
+{
+  "contrast": {
+    "errors": [],
+    "pairs": [
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 15.54,
+          "light": 14.92,
+          "print": 21.0
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 13.65,
+          "light": 13.55,
+          "print": 21.0
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 12.01,
+          "light": 16.04,
+          "print": 19.26
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--state-hover-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-hover",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 10.31,
+          "light": 12.17,
+          "print": 16.83
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--state-active-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-active",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 11.84,
+          "light": 13.42,
+          "print": 17.94
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.3,
+          "light": 7.47,
+          "print": 12.63
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.17,
+          "light": 6.78,
+          "print": 12.63
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.19,
+          "light": 8.03,
+          "print": 11.59
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54,
+          "print": 21.0
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.28,
+          "light": 6.85,
+          "print": 21.0
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1,
+          "print": 19.26
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-subtle",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-accent-subtle",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.18,
+          "light": 6.78,
+          "print": 17.94
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-solid",
+        "fg_token": "--fg-on-accent",
+        "id": "pair-on-accent-solid",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.12,
+          "light": 9.23,
+          "print": 18.88
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-official",
+        "fg_token": "--fg-official",
+        "id": "pair-official-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.65,
+          "print": 19.09
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-proposed",
+        "fg_token": "--fg-proposed",
+        "id": "pair-proposed-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.24,
+          "light": 7.89,
+          "print": 19.09
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-error",
+        "fg_token": "--fg-error",
+        "id": "pair-error-alert",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.05,
+          "light": 7.96,
+          "print": 19.09
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-ok",
+        "fg_token": "--fg-ok",
+        "id": "pair-ok-status",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.74,
+          "print": 19.09
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--state-disabled-fg",
+        "id": "pair-pending-slot",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.23,
+          "light": 6.08,
+          "print": 8.45
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 5.13,
+          "light": 4.17,
+          "print": 8.45
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-surface",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 4.5,
+          "light": 3.79,
+          "print": 8.45
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 3.96,
+          "light": 4.48,
+          "print": 7.75
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-strong",
+        "id": "pair-border-strong-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.16,
+          "light": 8.3,
+          "print": 21.0
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-official",
+        "id": "pair-border-official-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.05,
+          "light": 7.01,
+          "print": 21.0
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-proposed",
+        "id": "pair-border-proposed-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.27,
+          "light": 6.15,
+          "print": 21.0
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-error",
+        "id": "pair-border-error-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 6.73,
+          "light": 7.81,
+          "print": 21.0
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54,
+          "print": 21.0
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1,
+          "print": 19.26
+        },
+        "use_class": "state-classed"
+      }
+    ],
+    "pairs_checked": 27,
+    "scope_statement": "WCAG 2.2 AA contrast (4.5:1 body text, 3:1 large text and UI boundaries/focus), 44x44 px touch target floor with declared hit-area padding exceptions, and no color-only meaning; WCAG 2.2 AAA and external body certification are explicitly out of scope.",
+    "status": "PASS",
+    "themes_checked": [
+      "light",
+      "dark",
+      "print"
+    ]
+  },
+  "errors": [],
+  "fixtures": {
+    "fixtures": [
+      {
+        "errors_detected": [
+          "Contrast failure in theme 'light' for 'pair-muted-on-elevated' (text-classed): 4.42:1 < 4.5:1"
+        ],
+        "id": "fixture-near-miss-4.4",
+        "status": "PASS"
+      },
+      {
+        "errors_detected": [
+          "Use-class violation for 'scratch-misuse-text-3-2': use_class 'text-classed' requires >= 4.5:1, declared min_ratio=3.2",
+          "Contrast failure in theme 'light' for 'scratch-misuse-text-3-2' (text-classed): 4.17:1 < 4.5:1"
+        ],
+        "id": "fixture-use-class-misuse-3.2",
+        "status": "PASS"
+      },
+      {
+        "errors_detected": [
+          "Undersized interactive control '.scratch-tiny-btn' (standard-button): missing min-height: var(--target-min)"
+        ],
+        "id": "fixture-undersized-target",
+        "status": "PASS"
+      },
+      {
+        "findings": [
+          {
+            "context": ".practice-runner-regression { color: #ff0000; }",
+            "kind": "raw-hex-color",
+            "line": 2531,
+            "source": "src/styles.css#practice-runner-regression",
+            "value": "#ff0000"
+          }
+        ],
+        "id": "fixture-hex-regression",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "hex_scan": {
+    "findings": [],
+    "findings_count": 0,
+    "status": "PASS"
+  },
+  "layout_reflow": {
+    "breakpoints_px": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "errors": [],
+    "geometry_checks": 120,
+    "profiles": [
+      "fresh",
+      "mid_progress",
+      "near_complete"
+    ],
+    "records": [
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      }
+    ],
+    "status": "PASS",
+    "views_checked": 10
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "styles_digest": "a3953873fc59d4995b72175cf35134c3e9f10929f2182e34f0428fc92c362cc8",
+  "targets": {
+    "controls": [
+      {
+        "class": "standard-button",
+        "selector": ".btn-control",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".sim-nav-link",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".exam-map-cell",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".skip-link",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".drawer-close",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".concept-node-btn",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".hint-step-btn",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".exam-answer-input",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".prakse-input-field",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".prakse-filter-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".revision-sa-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".revision-sa-note",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".settings-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".input-control",
+        "status": "PASS"
+      },
+      {
+        "class": "dense-inline-chip",
+        "exception_id": "timer-chip-dense-inline",
+        "selector": ".exam-timer-chip",
+        "status": "PASS"
+      }
+    ],
+    "controls_checked": 15,
+    "errors": [],
+    "exceptions_count": 1,
+    "status": "PASS"
+  },
+  "task": "N32",
+  "tokens_digest": "6007c4412f86d5a49524603500694143997ae3b9a786b76d0a4458db71f74502"
+}

@@ -1,0 +1,847 @@
+{
+  "byte_accounting": {
+    "island": {
+      "bytes": 34962,
+      "digest": "82d3552deefd0780b3e0d35db30c23a98bb69cd38be706fd1ff18b2001c8c04a",
+      "source": "data/response_types.json",
+      "source_bytes": 48837
+    },
+    "note_lv": "Šie ir izmērītie N22 apjomi; griestu pārbudžetēšana pieder koordinētājam un N31, nevis šai pārbaudei.",
+    "registry_module": {
+      "compiled": "src/compiled/inputs/registry.js",
+      "compiled_bytes": 58817,
+      "compiled_digest": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a",
+      "source": "src/inputs/registry.ts",
+      "source_digest": "eddae3aceea02daa2cf36f31915a702555f7c0c18a87b18de0beaa2734d126db"
+    },
+    "terms_island": {
+      "bytes": 165933,
+      "digest": "bab2fd82356aedcdfa1838fb09ee740ab6abc7d375613aaa4e8d69411fbcde5b",
+      "source": "data/terms.json"
+    }
+  },
+  "compile_drift_check": {
+    "command": "python3 tools/compile_n21_ts.py --check",
+    "modules_checked": 5,
+    "registry_lines": [
+      "PASS src/compiled/inputs/registry.js matches its TypeScript source (58817 bytes)"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": ""
+  },
+  "completion_emits": {
+    "rows": [
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "DIMENSIONAL_INCONSISTENCY",
+          "OUT_OF_DOMAIN",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q01"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "DIMENSIONAL_INCONSISTENCY",
+          "OUT_OF_DOMAIN",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q02"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q03"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q04"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q05"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q06"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q07"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q08"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "DIMENSIONAL_INCONSISTENCY",
+          "OUT_OF_DOMAIN",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q09"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "DIMENSIONAL_INCONSISTENCY",
+          "OUT_OF_DOMAIN",
+          "PHYSICALLY_IMPLAUSIBLE",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q10"
+      },
+      {
+        "emits": [
+          "E_GRAPH_EMPTY_SUBMISSION",
+          "E_GRAPH_PAYLOAD_MALFORMED"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "E_GRAPH_DOUBLE_BACK",
+          "E_GRAPH_EMPTY_SUBMISSION",
+          "E_GRAPH_NON_MONOTONIC",
+          "E_GRAPH_OUT_OF_AXIS_RANGE",
+          "E_GRAPH_PAYLOAD_MALFORMED",
+          "E_GRAPH_WRONG_DIRECTION"
+        ],
+        "type_id": "Q11"
+      },
+      {
+        "emits": [
+          "E_GRAPH_PAYLOAD_MALFORMED"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "E_GRAPH_EMPTY_SUBMISSION",
+          "E_GRAPH_OUT_OF_AXIS_RANGE",
+          "E_GRAPH_PAYLOAD_MALFORMED",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q12"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q13"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q14"
+      },
+      {
+        "emits": [
+          "BLANK_RESPONSE"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE"
+        ],
+        "type_id": "Q15"
+      },
+      {
+        "emits": [
+          "BLANK_RESPONSE"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE"
+        ],
+        "type_id": "Q16"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q17"
+      },
+      {
+        "emits": [
+          "UNREADABLE_INPUT"
+        ],
+        "surfaces": [
+          "BLANK_RESPONSE",
+          "OUT_OF_DOMAIN",
+          "UNREADABLE_INPUT"
+        ],
+        "type_id": "Q18"
+      }
+    ]
+  },
+  "error_ids": {
+    "declared_by_type": {
+      "Q01": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q02": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q03": [
+        "UNREADABLE_INPUT",
+        "BLANK_RESPONSE"
+      ],
+      "Q04": [
+        "UNREADABLE_INPUT",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "BLANK_RESPONSE"
+      ],
+      "Q05": [
+        "UNREADABLE_INPUT",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "BLANK_RESPONSE"
+      ],
+      "Q06": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q07": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q08": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q09": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q10": [
+        "UNREADABLE_INPUT",
+        "DIMENSIONAL_INCONSISTENCY",
+        "PHYSICALLY_IMPLAUSIBLE",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q11": [
+        "E_GRAPH_PAYLOAD_MALFORMED",
+        "E_GRAPH_EMPTY_SUBMISSION",
+        "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "E_GRAPH_WRONG_DIRECTION",
+        "E_GRAPH_DOUBLE_BACK",
+        "E_GRAPH_NON_MONOTONIC",
+        "BLANK_RESPONSE"
+      ],
+      "Q12": [
+        "E_GRAPH_PAYLOAD_MALFORMED",
+        "E_GRAPH_EMPTY_SUBMISSION",
+        "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "OUT_OF_DOMAIN",
+        "UNREADABLE_INPUT",
+        "BLANK_RESPONSE"
+      ],
+      "Q13": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q14": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q15": [
+        "BLANK_RESPONSE"
+      ],
+      "Q16": [
+        "BLANK_RESPONSE"
+      ],
+      "Q17": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ],
+      "Q18": [
+        "UNREADABLE_INPUT",
+        "OUT_OF_DOMAIN",
+        "BLANK_RESPONSE"
+      ]
+    },
+    "feedback_keys": {
+      "BLANK_RESPONSE": "input.error.blank",
+      "DIMENSIONAL_INCONSISTENCY": "feedback.error.dimensional",
+      "E_GRAPH_DOUBLE_BACK": "input.error.graph.double_back",
+      "E_GRAPH_EMPTY_SUBMISSION": "input.error.graph.empty",
+      "E_GRAPH_NON_MONOTONIC": "input.error.graph.non_monotonic",
+      "E_GRAPH_OUT_OF_AXIS_RANGE": "input.error.graph.out_of_axis",
+      "E_GRAPH_PAYLOAD_MALFORMED": "input.error.graph.malformed",
+      "E_GRAPH_WRONG_DIRECTION": "input.error.graph.wrong_direction",
+      "OUT_OF_DOMAIN": "feedback.error.out_of_domain",
+      "PHYSICALLY_IMPLAUSIBLE": "feedback.error.implausible",
+      "UNREADABLE_INPUT": "feedback.error.unreadable"
+    },
+    "frozen_ids": [
+      "BLANK_RESPONSE",
+      "DIMENSIONAL_INCONSISTENCY",
+      "E_GRAPH_DOUBLE_BACK",
+      "E_GRAPH_EMPTY_SUBMISSION",
+      "E_GRAPH_NON_MONOTONIC",
+      "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "E_GRAPH_PAYLOAD_MALFORMED",
+      "E_GRAPH_WRONG_DIRECTION",
+      "OUT_OF_DOMAIN",
+      "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "OUT_OF_TOLERANCE",
+      "PHYSICALLY_IMPLAUSIBLE",
+      "SIG_FIG_MISMATCH",
+      "UNLABELED_PERCENT_BASIS",
+      "UNREADABLE_INPUT",
+      "WRONG_OPTION_SELECTION",
+      "WRONG_ORDER",
+      "WRONG_PAIRING"
+    ],
+    "frozen_sources": {
+      "BLANK_RESPONSE": "data/engine_taxonomy.json#n05_error_classes",
+      "DIMENSIONAL_INCONSISTENCY": "data/engine_taxonomy.json",
+      "E_GRAPH_DOUBLE_BACK": "data/graph_scoring_contract.json",
+      "E_GRAPH_EMPTY_SUBMISSION": "data/graph_scoring_contract.json",
+      "E_GRAPH_NON_MONOTONIC": "data/graph_scoring_contract.json",
+      "E_GRAPH_OUT_OF_AXIS_RANGE": "data/graph_scoring_contract.json",
+      "E_GRAPH_PAYLOAD_MALFORMED": "data/graph_scoring_contract.json",
+      "E_GRAPH_WRONG_DIRECTION": "data/graph_scoring_contract.json",
+      "OUT_OF_DOMAIN": "data/engine_taxonomy.json",
+      "OUT_OF_DOMAIN_EXTRAPOLATION": "data/engine_taxonomy.json#n05_error_classes",
+      "OUT_OF_TOLERANCE": "data/engine_taxonomy.json#n05_error_classes",
+      "PHYSICALLY_IMPLAUSIBLE": "data/engine_taxonomy.json",
+      "SIG_FIG_MISMATCH": "data/engine_taxonomy.json#n05_error_classes",
+      "UNLABELED_PERCENT_BASIS": "data/engine_taxonomy.json#n05_error_classes",
+      "UNREADABLE_INPUT": "data/engine_taxonomy.json",
+      "WRONG_OPTION_SELECTION": "data/engine_taxonomy.json#n05_error_classes",
+      "WRONG_ORDER": "data/engine_taxonomy.json#n05_error_classes",
+      "WRONG_PAIRING": "data/engine_taxonomy.json#n05_error_classes"
+    }
+  },
+  "errors": [],
+  "island": {
+    "bytes": 34962,
+    "digest": "82d3552deefd0780b3e0d35db30c23a98bb69cd38be706fd1ff18b2001c8c04a",
+    "id": "sim-response-types",
+    "source": "data/response_types.json"
+  },
+  "island_shape": {
+    "completed_types": [
+      "Q02",
+      "Q04",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q15"
+    ],
+    "conflict_ids": [
+      "N22-C01",
+      "N22-C02",
+      "N22-C03",
+      "N22-C04",
+      "N22-C05",
+      "N22-C06",
+      "N22-C07",
+      "N22-C08"
+    ],
+    "island_id": "sim-response-types",
+    "missing_type_ids": [],
+    "owner": "N22",
+    "schema_version": 1,
+    "type_count": 18,
+    "unknown_type_ids": []
+  },
+  "notes_lv": [
+    "Šī pārbaude nepalaiž tools/build.py: 18. vārtu savienošana ar būvi pieder koordinētājam.",
+    "tools/check_n10_runtime.js lasa jau uzbūvēto artefaktu, tāpēc jaunās terminu atslēgas tajā parādās tikai pēc pārbūves; tā iepriekšējā SMK-N20 kļūda nav šīs izmaiņas sekas."
+  ],
+  "owner": "N22",
+  "payload_variants": {
+    "named_variants": [
+      "Q11_record",
+      "Q13_vector",
+      "Q17_pairs",
+      "Q18_plot_state"
+    ],
+    "payload_contracts": [
+      "graph",
+      "matching",
+      "method",
+      "numeric",
+      "option_select",
+      "ordering",
+      "raw_text"
+    ],
+    "ride_along_notes": [
+      {
+        "field": "text",
+        "type_id": "Q15",
+        "typed_by": "raw_text",
+        "value_type": "raw_string"
+      },
+      {
+        "field": "text",
+        "type_id": "Q16",
+        "typed_by": "raw_text",
+        "value_type": "raw_string"
+      }
+    ],
+    "rows": [
+      {
+        "declared_kind": true,
+        "kind": "numeric",
+        "type_id": "Q01",
+        "used_fields": [
+          "values"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "numeric",
+        "type_id": "Q02",
+        "used_fields": [
+          "values"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q03",
+        "used_fields": [
+          "choice",
+          "conserved",
+          "fill_ins",
+          "variant"
+        ],
+        "variant": "Q03_template"
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q04",
+        "used_fields": [
+          "variant",
+          "vector"
+        ],
+        "variant": "Q04_vector"
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q05",
+        "used_fields": [
+          "rows",
+          "variant"
+        ],
+        "variant": "Q05_rows"
+      },
+      {
+        "declared_kind": true,
+        "kind": "matching",
+        "type_id": "Q06",
+        "used_fields": [
+          "pairs"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "option_select",
+        "type_id": "Q07",
+        "used_fields": [
+          "selected"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "ordering",
+        "type_id": "Q08",
+        "used_fields": [
+          "explanation",
+          "order"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "numeric",
+        "type_id": "Q09",
+        "used_fields": [
+          "values"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "numeric",
+        "type_id": "Q10",
+        "used_fields": [
+          "values"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "graph",
+        "type_id": "Q11",
+        "used_fields": [
+          "draw_payload",
+          "plot_state",
+          "record",
+          "variant"
+        ],
+        "variant": "Q11_record"
+      },
+      {
+        "declared_kind": true,
+        "kind": "graph",
+        "type_id": "Q12",
+        "used_fields": [
+          "read",
+          "variant"
+        ],
+        "variant": "Q12_read"
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q13",
+        "used_fields": [
+          "variant",
+          "vector"
+        ],
+        "variant": "Q13_vector"
+      },
+      {
+        "declared_kind": true,
+        "kind": "option_select",
+        "type_id": "Q14",
+        "used_fields": [
+          "justification",
+          "selected"
+        ],
+        "variant": null
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q15",
+        "used_fields": [
+          "text",
+          "variant"
+        ],
+        "variant": "Q15_text"
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q16",
+        "used_fields": [
+          "text",
+          "variant"
+        ],
+        "variant": "Q16_text"
+      },
+      {
+        "declared_kind": true,
+        "kind": "method",
+        "type_id": "Q17",
+        "used_fields": [
+          "pair_map",
+          "structure",
+          "variant"
+        ],
+        "variant": "Q17_pairs"
+      },
+      {
+        "declared_kind": true,
+        "kind": "option_select",
+        "type_id": "Q18",
+        "used_fields": [
+          "justification",
+          "selected"
+        ],
+        "variant": null
+      }
+    ]
+  },
+  "schema_consistency": {
+    "completed_types_from_schema": [
+      "Q02",
+      "Q04",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q15"
+    ],
+    "renderer_registry_keys": [
+      "renderer-graph-construct",
+      "renderer-graph-interpret",
+      "renderer-matching",
+      "renderer-method-case",
+      "renderer-method-coefficients",
+      "renderer-method-compare",
+      "renderer-method-error-repair",
+      "renderer-method-explanation",
+      "renderer-method-formula",
+      "renderer-method-half-reaction",
+      "renderer-numeric",
+      "renderer-numeric-multistep",
+      "renderer-numeric-scale",
+      "renderer-numeric-table",
+      "renderer-option-classification",
+      "renderer-option-multiselect",
+      "renderer-option-statement",
+      "renderer-ordering"
+    ],
+    "rows": [
+      {
+        "completed_type": false,
+        "grading_class": "auto",
+        "grading_engine": "N17-numeric",
+        "payload_kind": "numeric",
+        "renderer_key": "renderer-numeric",
+        "type_id": "Q01"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "auto",
+        "grading_engine": "N17-numeric",
+        "payload_kind": "numeric",
+        "renderer_key": "renderer-numeric-multistep",
+        "type_id": "Q02"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "pending",
+        "grading_engine": "manual-rubric-pending",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-formula",
+        "type_id": "Q03"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "auto",
+        "grading_engine": "N17-numeric",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-coefficients",
+        "type_id": "Q04"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "pending",
+        "grading_engine": "manual-rubric-pending",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-half-reaction",
+        "type_id": "Q05"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "auto",
+        "grading_engine": "N19-method",
+        "payload_kind": "matching",
+        "renderer_key": "renderer-matching",
+        "type_id": "Q06"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "auto",
+        "grading_engine": "N19-method",
+        "payload_kind": "option_select",
+        "renderer_key": "renderer-option-classification",
+        "type_id": "Q07"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "mixed",
+        "grading_engine": "N19-method",
+        "payload_kind": "ordering",
+        "renderer_key": "renderer-ordering",
+        "type_id": "Q08"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "auto",
+        "grading_engine": "N17-numeric",
+        "payload_kind": "numeric",
+        "renderer_key": "renderer-numeric-table",
+        "type_id": "Q09"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "auto",
+        "grading_engine": "N17-numeric",
+        "payload_kind": "numeric",
+        "renderer_key": "renderer-numeric-scale",
+        "type_id": "Q10"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "auto",
+        "grading_engine": "N18-graph",
+        "payload_kind": "graph",
+        "renderer_key": "renderer-graph-construct",
+        "type_id": "Q11"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "auto",
+        "grading_engine": "N18-graph",
+        "payload_kind": "graph",
+        "renderer_key": "renderer-graph-interpret",
+        "type_id": "Q12"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "mixed",
+        "grading_engine": "N19-method",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-error-repair",
+        "type_id": "Q13"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "mixed",
+        "grading_engine": "N19-method",
+        "payload_kind": "option_select",
+        "renderer_key": "renderer-option-statement",
+        "type_id": "Q14"
+      },
+      {
+        "completed_type": true,
+        "grading_class": "pending",
+        "grading_engine": "manual-rubric-pending",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-explanation",
+        "type_id": "Q15"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "self",
+        "grading_engine": "self-assessed",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-compare",
+        "type_id": "Q16"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "mixed",
+        "grading_engine": "N19-method",
+        "payload_kind": "method",
+        "renderer_key": "renderer-method-case",
+        "type_id": "Q17"
+      },
+      {
+        "completed_type": false,
+        "grading_class": "mixed",
+        "grading_engine": "N19-method",
+        "payload_kind": "option_select",
+        "renderer_key": "renderer-option-multiselect",
+        "type_id": "Q18"
+      }
+    ]
+  },
+  "status": "PASS",
+  "terms": {
+    "bad_slots": [],
+    "english_words": [],
+    "referenced_keys": 244,
+    "unique_keys": 135,
+    "unit_literals": [],
+    "unresolved": [],
+    "validate_terms_cross_check": {
+      "command": "python3 tools/validate_terms.py --extra-data data/response_types.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "terminology: PASS | entries=451 (terms=206, quantities=31, instruments=13, interface=191, iupac=10) | units=481 keys=303 exempt_prose=393"
+    }
+  }
+}

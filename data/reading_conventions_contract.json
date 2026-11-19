@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "reading-conventions-contract",
+  "title": "N12 Frozen Reading-Conventions, Geometric Fidelity, and Leak-Scan Contract",
+  "owner": "N12",
+  "status": "frozen-contract-for-N15-N17-N18-N40",
+  "consumers": ["N12", "N15", "N17", "N18", "N31", "N40"],
+  "conventions_island_ref": "#sim-conventions",
+  "conventions_bindings": {
+    "meniscus": "titration.meniscus",
+    "burette": "titration.burette",
+    "endpoint": "titration.endpoint",
+    "burette_reading_uncertainty": "tolerances.master_grounded_instrument_uncertainty[id=burette_reading]",
+    "burette_volume_tolerance": "tolerances.quantity_classes[id=burette_volume]",
+    "glassware_volume_tolerance": "tolerances.quantity_classes[id=glassware_volume]",
+    "rounding": "rounding",
+    "conflicts": ["N03-OBS-04", "V-02", "V-04", "V-05"]
+  },
+  "reading_rules": {
+    "eye_level_required": true,
+    "clear_solution_edge": "lower_meniscus",
+    "dark_solution_edge": "upper_edge",
+    "scale_direction": "increases_downward",
+    "zero_at_top": true,
+    "division_ml": "0.1",
+    "reading_uncertainty_ml": "0.05",
+    "reported_decimals": 2,
+    "delivered_volume_formula": "V_delivered = V_end - V_start",
+    "never_subtract_from_nominal": true,
+    "decimal_formatting_rule_lv": "Katram biretes skalas un nolasījuma pierakstam jālieto tieši 2 zīmes aiz komata (piemēram, 0,00 mL, 1,00 mL, 5,85 mL), saskaņā ar titration.burette.reported_decimals = 2."
+  },
+  "geometric_contract": {
+    "rule_id": "N12-BURETTE-GEOM-01",
+    "formula": "expected_meniscus_y_px = y_top_px + (declared_reading_ml - view_min_ml) * px_per_ml",
+    "px_per_ml_formula": "px_per_ml = (y_bottom_px - y_top_px) / (view_max_ml - view_min_ml)",
+    "max_position_error_px": "0.01",
+    "max_reading_error_ml": "0.001",
+    "print_subdivision_floor_mm": {
+      "minor_division_0_1_ml_min_mm": "1.50",
+      "half_subdivision_0_05_ml_min_mm": "0.75",
+      "scale_label_min_pt": "6.5"
+    }
+  },
+  "grading_coupling": {
+    "coupled_tasks": ["N15", "N17", "N18"],
+    "tolerance_class": "burette_volume",
+    "tolerance_abs_ml": "0.05",
+    "misread_error_taxonomy": [
+      {
+        "error_class": "missing_estimated_decimal",
+        "description_lv": "Nolasījums pierakstīts ar 1 vai 0 zīmēm aiz komata (piemēram, 5,8 vai 1), ignorējot pēdējo novērtēto ciparu."
+      },
+      {
+        "error_class": "wrong_meniscus_edge_clear_vs_dark",
+        "description_lv": "Caurspīdīgam šķīdumam nolasīta augšējā mala vai tumšam (KMnO₄) — apakšējais menisks (N03-OBS-04)."
+      },
+      {
+        "error_class": "inverted_scale_direction",
+        "description_lv": "Biretes lejupejošā skala nolasīta no apakšas uz augšu kā mērcilindram."
+      },
+      {
+        "error_class": "parallax_error",
+        "description_lv": "Skatījums virs vai zem meniska līmeņa rada sistemātisku nobīdi (CIT-C2-MENISCUS)."
+      },
+      {
+        "error_class": "added_instead_of_subtracted",
+        "description_lv": "Sākuma un beigu nolasījums saskaitīts, nevis atņemts (V_beigu − V_sākuma)."
+      },
+      {
+        "error_class": "subtracted_from_nominal",
+        "description_lv": "Nolasījums atņemts no nominālā tilpuma 25,00 mL, nevis izmantota tiešā starpība V_beigu − V_sākuma."
+      }
+    ]
+  },
+  "leak_scan_contract": {
+    "significance_rule": {
+      "rule_id": "N12-LEAK-SIG-01",
+      "verbatim": "Only values distinctive to the instance or family are scan targets. Bare un-united integers in {0..9} and common structural/scaling constants {10, 100, 1000, 0.1, 0.01, 0.001, 273.15, 298.15} are NOT scan targets when appearing without a matching unit; they ARE scan targets whenever paired with a dimensionally matching unit (e.g. '10 mL', '100 mmol/L') or written in a distinctive precision form (e.g. '10.5', '12.35') or explicitly marked distinctive."
+    },
+    "borderline_rule": {
+      "rule_id": "N12-LEAK-BORDER-01",
+      "verbatim": "Any gradeable figure whose numeric axis range or scale window [min, max] pins a gradeable target value onto an endpoint or within the outer 2% extreme (normalized position <= 0.02 or >= 0.98) or constrains the span to <= 2 steps around the target is flagged with FLAG_BORDERLINE_RANGE for authoring review."
+    },
+    "exemption_rule": {
+      "rule_id": "N12-LEAK-EXEMPT-01",
+      "verbatim": "Only non-gradeable teaching/reading-display figures (gradeable=false) may declare leak_scan_exemption with an explicit reason_code, non-empty Latvian reason_lv (>= 20 chars), and explicit exempted_values list; gradeable figures cannot exempt their own scored answer targets (E_LEAK_ILLEGAL_EXEMPTION), and any unlisted answer-key leak on an exempted figure is still caught. All exemptions are audited at N40 closure."
+    }
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "schema_version": 1,
+  "owner": "N22",
+  "status": "PASS",
+  "claim": "For each of the 18 types the stored payload, consumed by its frozen engine, produces the recorded criterion shape without adaptation or coercion: the audit finds no adapter.",
+  "digest_method": "SimInputsIntegration.contentDigest — two FNV-1a 32-bit lanes over a canonical JSON projection, 16 lowercase hex characters.",
+  "rows": [
+    {
+      "type_id": "Q01",
+      "instance_id": "COL1-2-2B-A-01",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "payload_digest": "6ba54482dea5ab9e",
+      "engine": "SimEngines.grade (N17-numeric binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "values[m_g]",
+        "engine_field": "submission.value"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_VALUE",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_SIGFIG",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 4,
+        "pending_points": 0,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q02",
+      "instance_id": "COL1-3-3A-A-01",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "payload_digest": "b6af879bbba781b7",
+      "engine": "SimEngines.grade (N17-numeric binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "values[c]",
+        "engine_field": "submission.value"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SETUP",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_VALUE",
+            "status": "awarded",
+            "awarded_points": 3,
+            "pending_points": 0,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C3_IONS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 5,
+        "pending_points": 1,
+        "max_points": 6
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q03",
+      "instance_id": "COL1-3-3B-D-01",
+      "payload_kind": "method",
+      "payload_variant": "Q03_template",
+      "payload_digest": "f877fe0d789b20c9",
+      "engine": "manual-rubric-pending",
+      "registry_grading": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "choice",
+          "fill_ins",
+          "conserved"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "the stored payload (recorded unparsed)",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": null,
+        "error_class": null,
+        "awarded_criteria": [],
+        "machine_checked_points": 0,
+        "pending_points": null,
+        "max_points": null,
+        "class": "pending",
+        "graded": false,
+        "verdict": null
+      },
+      "adapter": "none",
+      "note": "Manual rubric: the template choice and the typed fill-ins are stored, never auto-scored.",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q04",
+      "instance_id": "COL1-1-1C-B-01",
+      "payload_kind": "method",
+      "payload_variant": "Q04_vector",
+      "payload_digest": "795b0010512f136c",
+      "engine": "SimEngines.grade (N17-numeric binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "vector"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "the stored payload (recorded unparsed)",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_COEFFICIENTS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_BALANCE_CHECK",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 3,
+        "max_points": 3
+      },
+      "adapter": "none",
+      "note": "The coefficient vector is recorded, not parsed: the instance rubric is self-assessed, so the engine returns the pending shape for the criteria the rubric declares. The completion model is what reads the vector (registry model \"vector\").",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q05",
+      "instance_id": "COL1-6-6B-A-01",
+      "payload_kind": "method",
+      "payload_variant": "Q05_rows",
+      "payload_digest": "be0d136050cdcb04",
+      "engine": "SimEngines.grade (manual-rubric-pending binding)",
+      "registry_grading": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "rows"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "the stored payload (recorded unparsed)",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_HALF_REACTIONS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 3,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C2_OVERALL",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 5,
+        "max_points": 5
+      },
+      "adapter": "none",
+      "note": "The instance rubric is self-assessed: the frozen engine records the payload unparsed and returns the pending shape. Nothing is keyword-matched.",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q06",
+      "instance_id": "COL1-2-2A-B-01",
+      "payload_kind": "matching",
+      "payload_variant": null,
+      "payload_digest": "11befb4cf4642640",
+      "engine": "SimMethodEngine.gradeMatching (N19-method)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N19-method",
+        "consumes": [
+          "pairs"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "pairs",
+        "engine_field": "submission.pairs"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_PAIR_L1",
+            "status": "awarded",
+            "awarded_points": 1,
+            "pending_points": 0,
+            "max_points": 1
+          },
+          {
+            "criterion_id": "C2_PAIR_L2",
+            "status": "awarded",
+            "awarded_points": 1,
+            "pending_points": 0,
+            "max_points": 1
+          },
+          {
+            "criterion_id": "C3_PAIR_L3",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 4,
+        "pending_points": 0,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q07",
+      "instance_id": "COL1-1-1A-A-01",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "payload_digest": "8a5d28b49f1ede78",
+      "engine": "SimEngines.grade (N19-method binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N19-method",
+        "consumes": [
+          "selected"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "selected",
+        "engine_field": "submission.selected_ids"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_PHASE",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_REASON",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 2,
+        "pending_points": 1,
+        "max_points": 3
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS",
+      "engine_note": "The registry labels the binding N19-method, but SimMethodEngine.specFromInstance refuses payload_class option_select (E_METHOD_PAYLOAD_CLASS); the frozen engine that consumes a selection is the quantity engine's option_select branch, which is the path the N05 golden oracle uses. Recorded, not improvised."
+    },
+    {
+      "type_id": "Q08",
+      "instance_id": "COL1-2-2A-A-01",
+      "payload_kind": "ordering",
+      "payload_variant": null,
+      "payload_digest": "3a5edb31aa648a7d",
+      "engine": "SimMethodEngine.gradeOrdering (N19-method)",
+      "registry_grading": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "order",
+          "explanation"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "order",
+        "engine_field": "submission.order"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_ORDER",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_EXPLAIN",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 2,
+        "pending_points": 2,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q09",
+      "instance_id": "COL1-2-2B-B-01",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "payload_digest": "13ace5c6ba76f4aa",
+      "engine": "SimEngines.grade (N17-numeric binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "values[n_mmol]",
+        "engine_field": "submission.value"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CELL",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_PREFIX_TABLE",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 2,
+        "pending_points": 2,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q10",
+      "instance_id": "COL1-2-2C-A-01",
+      "payload_kind": "numeric",
+      "payload_variant": null,
+      "payload_digest": "121445aab8830566",
+      "engine": "SimEngines.grade (N17-numeric binding)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N17-numeric",
+        "consumes": [
+          "values"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "values[V_del]",
+        "engine_field": "submission.value"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "awarded",
+            "awarded_points": 3,
+            "pending_points": 0,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C2_UNITS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 3,
+        "pending_points": 1,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q11",
+      "instance_id": "COL1-2-2D-A-01",
+      "payload_kind": "graph",
+      "payload_variant": "Q11_record",
+      "payload_digest": "9bf0c69982b70b85",
+      "engine": "SimGraphScoring.scoreDrawing (N18-graph)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N18-graph",
+        "consumes": [
+          "draw_payload",
+          "record"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "draw_payload",
+        "engine_field": "scoreDrawing(record, payload)"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READOUT",
+            "status": "awarded",
+            "awarded_points": 3,
+            "pending_points": 0,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C2_AXES",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 3,
+        "pending_points": 1,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q12",
+      "instance_id": "COL1-2-2D-B-01",
+      "payload_kind": "graph",
+      "payload_variant": "Q12_read",
+      "payload_digest": "a9fc19b35607eadf",
+      "engine": "SimGraphScoring.scoreReading (N18-graph)",
+      "registry_grading": {
+        "class": "auto",
+        "engine": "N18-graph",
+        "consumes": [
+          "read.x",
+          "read.y",
+          "read.figure_binding"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "read.x / read.y",
+        "engine_field": "submission.x / submission.value"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "correct",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_READ",
+            "status": "awarded",
+            "awarded_points": 3,
+            "pending_points": 0,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C2_SCALE",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 3,
+        "pending_points": 1,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q13",
+      "instance_id": "COL1-1-1A-B-01",
+      "payload_kind": "method",
+      "payload_variant": "Q13_vector",
+      "payload_digest": "37184a2c7d51c5b8",
+      "engine": "SimEngines.grade (N19-method binding)",
+      "registry_grading": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "vector",
+          "located",
+          "replacement",
+          "reason"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "the stored payload (recorded unparsed)",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_TYPE",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          },
+          {
+            "criterion_id": "C2_REASON",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 3,
+        "max_points": 3
+      },
+      "adapter": "none",
+      "note": "The instance rubric is self-assessed: the frozen engine records the payload unparsed and returns the pending shape. Nothing is keyword-matched.",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q14",
+      "instance_id": "COL1-1-1B-C-01",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "payload_digest": "c8e6bfb7d5c22043",
+      "engine": "SimEngines.grade (N19-method binding)",
+      "registry_grading": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "selected",
+          "justification"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "selected",
+        "engine_field": "submission.selected_ids"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_TRUTH",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_REPAIR",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          }
+        ],
+        "machine_checked_points": 2,
+        "pending_points": 1,
+        "max_points": 3
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS",
+      "engine_note": "The registry labels the binding N19-method, but SimMethodEngine.specFromInstance refuses payload_class option_select (E_METHOD_PAYLOAD_CLASS); the frozen engine that consumes a selection is the quantity engine's option_select branch, which is the path the N05 golden oracle uses. Recorded, not improvised."
+    },
+    {
+      "type_id": "Q15",
+      "instance_id": "COL1-1-1B-B-01",
+      "payload_kind": "method",
+      "payload_variant": "Q15_text",
+      "payload_digest": "ace840d5759bfc59",
+      "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+      "registry_grading": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "consumes": [
+          "text"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "text",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SELF_EXPLAIN",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 3,
+            "max_points": 3
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 3,
+        "max_points": 3
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q16",
+      "instance_id": "COL1-1-1D-B-01",
+      "payload_kind": "method",
+      "payload_variant": "Q16_text",
+      "payload_digest": "1dcddcd2954d2686",
+      "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+      "registry_grading": {
+        "class": "self",
+        "engine": "self-assessed",
+        "consumes": [
+          "text"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "text",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_CASE1",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          },
+          {
+            "criterion_id": "C2_CASE2",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 1,
+            "max_points": 1
+          },
+          {
+            "criterion_id": "C3_COMPARE",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 4,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "The registry class is self; the instance rubric declares the criterion self-assessed, so the frozen engine's rubric split makes the shape pending. The rubric decides, not the label.",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q17",
+      "instance_id": "COL1-3-3D-A-01",
+      "payload_kind": "method",
+      "payload_variant": "Q17_pairs",
+      "payload_digest": "99ff896278cbf19e",
+      "engine": "SimEngines.grade (N19-method binding)",
+      "registry_grading": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "pair_map",
+          "structure"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "the stored payload (recorded unparsed)",
+        "engine_field": "submission.text / the rubric"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "pending_self_assessment",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_MASS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 3,
+            "max_points": 3
+          },
+          {
+            "criterion_id": "C2_BASIS",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C3_MISSING",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 3,
+            "max_points": 3
+          }
+        ],
+        "machine_checked_points": 0,
+        "pending_points": 8,
+        "max_points": 8
+      },
+      "adapter": "none",
+      "note": "The instance rubric is self-assessed: the frozen engine records the payload unparsed and returns the pending shape. Nothing is keyword-matched.",
+      "status": "PASS"
+    },
+    {
+      "type_id": "Q18",
+      "instance_id": "COL1-5-5D-D-01",
+      "payload_kind": "option_select",
+      "payload_variant": null,
+      "payload_digest": "1a6d6e0116c63575",
+      "engine": "SimEngines.grade (N19-method binding)",
+      "registry_grading": {
+        "class": "mixed",
+        "engine": "N19-method",
+        "consumes": [
+          "selected",
+          "justification"
+        ],
+        "adapter": "none"
+      },
+      "submission_binding": {
+        "payload_field": "selected",
+        "engine_field": "submission.selected_ids"
+      },
+      "value_identity": "byte-identical",
+      "identity_ok": true,
+      "criterion_shape": {
+        "verdict_class": "auto_passed_pending_review",
+        "error_class": "NONE",
+        "awarded_criteria": [
+          {
+            "criterion_id": "C1_SELECTION",
+            "status": "awarded",
+            "awarded_points": 2,
+            "pending_points": 0,
+            "max_points": 2
+          },
+          {
+            "criterion_id": "C2_JUSTIFY",
+            "status": "pending",
+            "awarded_points": 0,
+            "pending_points": 2,
+            "max_points": 2
+          }
+        ],
+        "machine_checked_points": 2,
+        "pending_points": 2,
+        "max_points": 4
+      },
+      "adapter": "none",
+      "note": "",
+      "status": "PASS",
+      "engine_note": "The registry labels the binding N19-method, but SimMethodEngine.specFromInstance refuses payload_class option_select (E_METHOD_PAYLOAD_CLASS); the frozen engine that consumes a selection is the quantity engine's option_select branch, which is the path the N05 golden oracle uses. Recorded, not improvised."
+    }
+  ],
+  "audit": {
+    "rows": 18,
+    "adapters_found": 0,
+    "identity_failures": [],
+    "engines": {
+      "quantity": 11,
+      "method": 4,
+      "graph": 2,
+      "manual_pending": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "N22-C05",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "topic": "option_select has no N19-method spec builder",
+      "observation": "SimMethodEngine.specFromInstance refuses payload_class option_select.",
+      "observed_error": {
+        "code": "E_METHOD_PAYLOAD_CLASS",
+        "message": "Payload class option_select is not graded by the N19 engines."
+      },
+      "resolution": "The parity row for Q07/Q14/Q18 names the quantity engine's option_select branch — the frozen path the N05 golden corpus uses — and passes payload.selected verbatim as selected_ids."
+    },
+    {
+      "id": "N22-C06",
+      "label": "DOCUMENTED-AND-ACCEPTED",
+      "topic": "variant vocabulary: named-variant key versus short value",
+      "observation": "data/exam_policy.json named_variants maps Q11_record → variant \"record\", while data/response_types.json declares payload_variant \"Q11_record\".",
+      "resolution": "The stored payload carries the registry form (Q11_record, Q12_read, Q13_vector, …), because response_types.json is the response-type single source that N23/N24/N30/N33 read. The session accepts either (variant is a raw string). Reported as a naming divergence, not silently unified."
+    }
+  ],
+  "not_claimed": [
+    "No semantic grading of free text: the Q04/Q05/Q13/Q15/Q16/Q17 rows show the pending shape the rubric produces, not a machine judgement of the learner's wording.",
+    "No claim that the four variants are four finished questions.",
+    "No official examination, grade or proctoring status."
+  ]
+}

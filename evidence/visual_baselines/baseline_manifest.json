@@ -1,0 +1,1636 @@
+{
+  "artifact_digest": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "artifact_path": "output/simulator.html",
+  "build_manifest_digest": "661c4ec799b35f97ebe60777ca933ee421e2bbbff4702bab22ac76953fad6682",
+  "composite_digest": "5f3ba5924b51be9a3c6da99b0b5127407a79eb13edc9aa6ecda9b9ba382d6681",
+  "created_at": "2026-11-19T22:51:54.717434+00:00",
+  "reason": "Post-N38 versioned baseline freeze (6 DOM/keyboard defect fixes in N38-E01 rebuilt output/simulator.html from 99fd5c40... to 12e36ae3...)",
+  "render_count": 73,
+  "renders": {
+    "atskats__1280__dark__screen": {
+      "bytes": 94375,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__1280__dark__screen",
+        "theme": "dark",
+        "view": "revision",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 11.332,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__1280__dark__screen.png",
+      "png_sha256": "f627e12e36bb863805ef95ff2d7ed95dceefa95da9125063c07badf12a834668",
+      "render_key": "atskats__1280__dark__screen"
+    },
+    "atskats__1280__light__screen": {
+      "bytes": 93711,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__1280__light__screen",
+        "theme": "light",
+        "view": "revision",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 10.357,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__1280__light__screen.png",
+      "png_sha256": "0877d6a100fbe5c60c59b7fc0ade07d587f119191fbcfb9f678c3fa4ae11ca66",
+      "render_key": "atskats__1280__light__screen"
+    },
+    "atskats__320__dark__screen": {
+      "bytes": 47533,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__320__dark__screen",
+        "theme": "dark",
+        "view": "revision",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 7.346,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__320__dark__screen.png",
+      "png_sha256": "a46d03703ea86854e2f59e8bb9b8f33395005f98a55ccb58a12e1c3151fe7021",
+      "render_key": "atskats__320__dark__screen"
+    },
+    "atskats__320__light__screen": {
+      "bytes": 46542,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__320__light__screen",
+        "theme": "light",
+        "view": "revision",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.193,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__320__light__screen.png",
+      "png_sha256": "03a71bad08e5987a4baf5410c2ef6e63c817e0ba9f9dd3f4d0b27c41aa6c76ea",
+      "render_key": "atskats__320__light__screen"
+    },
+    "atskats__390__dark__screen": {
+      "bytes": 61086,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__390__dark__screen",
+        "theme": "dark",
+        "view": "revision",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 8.545,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__390__dark__screen.png",
+      "png_sha256": "1583ef39d5ea8071dec17a0bf4e332f98c6702a5a42da3397a71953e951f33de",
+      "render_key": "atskats__390__dark__screen"
+    },
+    "atskats__390__light__screen": {
+      "bytes": 60523,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__390__light__screen",
+        "theme": "light",
+        "view": "revision",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 7.304,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__390__light__screen.png",
+      "png_sha256": "98a0c8dd01ba08ec8ace8edda8f30c02b9a21eef6b7f446e8cdd75176fade1ff",
+      "render_key": "atskats__390__light__screen"
+    },
+    "atskats__768__dark__screen": {
+      "bytes": 115349,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__768__dark__screen",
+        "theme": "dark",
+        "view": "revision",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 7.546,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__768__dark__screen.png",
+      "png_sha256": "85441084f007019e9d20e39de8cd0b0fd414273660632603798374ea956844cd",
+      "render_key": "atskats__768__dark__screen"
+    },
+    "atskats__768__light__screen": {
+      "bytes": 114709,
+      "capture_params": {
+        "anchor": "atskats",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#atskats",
+        "render_key": "atskats__768__light__screen",
+        "theme": "light",
+        "view": "revision",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 10.189,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/atskats__768__light__screen.png",
+      "png_sha256": "12e11a06e05a4a4ef8ee2e2b2dae1a8b3204a46b87c43af76b27ef77fe2e51ed",
+      "render_key": "atskats__768__light__screen"
+    },
+    "druka__1280__dark__screen": {
+      "bytes": 96090,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__1280__dark__screen",
+        "theme": "dark",
+        "view": "print",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.964,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__1280__dark__screen.png",
+      "png_sha256": "e87ee30ea4147c7e8da877b3fa6365dca9dd1cf269781dfdddd9174f3a851e29",
+      "render_key": "druka__1280__dark__screen"
+    },
+    "druka__1280__light__print": {
+      "bytes": 79106,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 1280,
+        "mode": "print",
+        "readiness_marker": "#druka",
+        "render_key": "druka__1280__light__print",
+        "theme": "light",
+        "view": "print",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 12.035,
+      "media_print": true,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__1280__light__print.png",
+      "png_sha256": "ca3a2da031aa4d26e2d84d0ded7c49851fd6c52043d2e8116f71397066baca90",
+      "render_key": "druka__1280__light__print"
+    },
+    "druka__1280__light__screen": {
+      "bytes": 96311,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__1280__light__screen",
+        "theme": "light",
+        "view": "print",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.503,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__1280__light__screen.png",
+      "png_sha256": "e9cd306f4a185705b203d1e4d96d29c590a38b9596504a003a2fadbd27200ad1",
+      "render_key": "druka__1280__light__screen"
+    },
+    "druka__320__dark__screen": {
+      "bytes": 50284,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__320__dark__screen",
+        "theme": "dark",
+        "view": "print",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 9.514,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__320__dark__screen.png",
+      "png_sha256": "02a9ff5bd010399f81f4a99d19209e7e1a9f36a453cdf6f2913f51b74473826a",
+      "render_key": "druka__320__dark__screen"
+    },
+    "druka__320__light__screen": {
+      "bytes": 50689,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__320__light__screen",
+        "theme": "light",
+        "view": "print",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 9.897,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__320__light__screen.png",
+      "png_sha256": "580764537345ec2855f88c9c21682f08e6388071103ae3d7527ddecba3bf27cf",
+      "render_key": "druka__320__light__screen"
+    },
+    "druka__390__dark__screen": {
+      "bytes": 69490,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__390__dark__screen",
+        "theme": "dark",
+        "view": "print",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 8.127,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__390__dark__screen.png",
+      "png_sha256": "d248a28ce7d4da85015cf5849cad07021ebc560c8655adb49c45eae82f77e28f",
+      "render_key": "druka__390__dark__screen"
+    },
+    "druka__390__light__screen": {
+      "bytes": 69519,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__390__light__screen",
+        "theme": "light",
+        "view": "print",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 7.214,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__390__light__screen.png",
+      "png_sha256": "82b0674a02a7f3fcdcbc435436bce5b66be629b50fcadcf24642fc772054447a",
+      "render_key": "druka__390__light__screen"
+    },
+    "druka__768__dark__screen": {
+      "bytes": 117541,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__768__dark__screen",
+        "theme": "dark",
+        "view": "print",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 7.234,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__768__dark__screen.png",
+      "png_sha256": "25dc06d06e3d113c5fea4ed42139db74d3df17ff16714fd4823d929b3413a8bc",
+      "render_key": "druka__768__dark__screen"
+    },
+    "druka__768__light__screen": {
+      "bytes": 117505,
+      "capture_params": {
+        "anchor": "druka",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#druka",
+        "render_key": "druka__768__light__screen",
+        "theme": "light",
+        "view": "print",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 7.003,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/druka__768__light__screen.png",
+      "png_sha256": "5e42e1cf9a1312e4159b85812e81adb4db531543d743a8cdf631ebbe669b50cc",
+      "render_key": "druka__768__light__screen"
+    },
+    "eksamens__1280__dark__screen": {
+      "bytes": 112726,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__1280__dark__screen",
+        "theme": "dark",
+        "view": "exam",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.35,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__1280__dark__screen.png",
+      "png_sha256": "ea2ccc11bd87cc2a966daf24f047ef892094beefd4c077a668ccac70ce2786a5",
+      "render_key": "eksamens__1280__dark__screen"
+    },
+    "eksamens__1280__light__screen": {
+      "bytes": 112633,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__1280__light__screen",
+        "theme": "light",
+        "view": "exam",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.109,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__1280__light__screen.png",
+      "png_sha256": "a319eba4133c1664416aedb34d27a85d4bef04efea951b43eb925b5a2323b252",
+      "render_key": "eksamens__1280__light__screen"
+    },
+    "eksamens__320__dark__screen": {
+      "bytes": 49730,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__320__dark__screen",
+        "theme": "dark",
+        "view": "exam",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 7.658,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__320__dark__screen.png",
+      "png_sha256": "8f11ee0291fb0741e4fa2b23e3a3572c3f9e1dab4dbc9e3820fc627f4a074884",
+      "render_key": "eksamens__320__dark__screen"
+    },
+    "eksamens__320__light__screen": {
+      "bytes": 50497,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__320__light__screen",
+        "theme": "light",
+        "view": "exam",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.077,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__320__light__screen.png",
+      "png_sha256": "eb2f0fc9255bc68123446808d2ec72b9126391118712dd61c6d74309d67e0b8e",
+      "render_key": "eksamens__320__light__screen"
+    },
+    "eksamens__390__dark__screen": {
+      "bytes": 77860,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__390__dark__screen",
+        "theme": "dark",
+        "view": "exam",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 7.421,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__390__dark__screen.png",
+      "png_sha256": "047e56b435e69ff5d1d2dfaa68a715c5a6a0eb8a5f2be29a2c03dd7c7f678989",
+      "render_key": "eksamens__390__dark__screen"
+    },
+    "eksamens__390__light__screen": {
+      "bytes": 78197,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__390__light__screen",
+        "theme": "light",
+        "view": "exam",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.656,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__390__light__screen.png",
+      "png_sha256": "a8079391f972efb31a6b506d30daf31b2dc2328df691234100952d26e48c3e04",
+      "render_key": "eksamens__390__light__screen"
+    },
+    "eksamens__768__dark__screen": {
+      "bytes": 134646,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__768__dark__screen",
+        "theme": "dark",
+        "view": "exam",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.475,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__768__dark__screen.png",
+      "png_sha256": "dffcd1d4cb3f434d9061050f9fd5d22fdb6aa31a3617467909ec6f3da9983571",
+      "render_key": "eksamens__768__dark__screen"
+    },
+    "eksamens__768__light__screen": {
+      "bytes": 133445,
+      "capture_params": {
+        "anchor": "eksamens",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#eksamens",
+        "render_key": "eksamens__768__light__screen",
+        "theme": "light",
+        "view": "exam",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 6.313,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/eksamens__768__light__screen.png",
+      "png_sha256": "0ce71e2f814384eb07154b4d76762b06a197f15fbbb7e1dfaddb1e1be3fee2e0",
+      "render_key": "eksamens__768__light__screen"
+    },
+    "iestatijumi__1280__dark__screen": {
+      "bytes": 111610,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__1280__dark__screen",
+        "theme": "dark",
+        "view": "settings",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.236,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__1280__dark__screen.png",
+      "png_sha256": "a5c21e63514577a9e4be2c0cf47550271b89c9a73125f000cc75e3b486888f7d",
+      "render_key": "iestatijumi__1280__dark__screen"
+    },
+    "iestatijumi__1280__light__screen": {
+      "bytes": 112036,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__1280__light__screen",
+        "theme": "light",
+        "view": "settings",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 8.258,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__1280__light__screen.png",
+      "png_sha256": "eb7e3cc03daef37f450e4f4cf97a32465e01c6e0114e472e3afd3b36d2f8a02f",
+      "render_key": "iestatijumi__1280__light__screen"
+    },
+    "iestatijumi__320__dark__screen": {
+      "bytes": 48456,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__320__dark__screen",
+        "theme": "dark",
+        "view": "settings",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 7.272,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__320__dark__screen.png",
+      "png_sha256": "2e443f3a7a6c6be2987a05ed93129367db12b3166f9c9320aa424c270e1ee1e2",
+      "render_key": "iestatijumi__320__dark__screen"
+    },
+    "iestatijumi__320__light__screen": {
+      "bytes": 48524,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__320__light__screen",
+        "theme": "light",
+        "view": "settings",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 5.816,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__320__light__screen.png",
+      "png_sha256": "830424f43107d765c25a8d7f328c4f1f42c943809c7f0689562e99593d24fb60",
+      "render_key": "iestatijumi__320__light__screen"
+    },
+    "iestatijumi__390__dark__screen": {
+      "bytes": 70636,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__390__dark__screen",
+        "theme": "dark",
+        "view": "settings",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.357,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__390__dark__screen.png",
+      "png_sha256": "94c96fe3d2e6b3f9205277ee240ead95b76bc5c167234473d9e49407268d8efb",
+      "render_key": "iestatijumi__390__dark__screen"
+    },
+    "iestatijumi__390__light__screen": {
+      "bytes": 71337,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__390__light__screen",
+        "theme": "light",
+        "view": "settings",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.959,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__390__light__screen.png",
+      "png_sha256": "5a7b801896be3e4a206ed0f4b061e633a1918c7d9a80911e4c3487d071ebc6cb",
+      "render_key": "iestatijumi__390__light__screen"
+    },
+    "iestatijumi__768__dark__screen": {
+      "bytes": 114200,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__768__dark__screen",
+        "theme": "dark",
+        "view": "settings",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.022,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__768__dark__screen.png",
+      "png_sha256": "f9111a0da016b3dd4c2128fe6c69ff56c0755c98888ca05729804f42a7a04ab1",
+      "render_key": "iestatijumi__768__dark__screen"
+    },
+    "iestatijumi__768__light__screen": {
+      "bytes": 114421,
+      "capture_params": {
+        "anchor": "iestatijumi",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#iestatijumi",
+        "render_key": "iestatijumi__768__light__screen",
+        "theme": "light",
+        "view": "settings",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.319,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/iestatijumi__768__light__screen.png",
+      "png_sha256": "0c8650e9dfb120cd0d2139deaacc9c5eb02e6cc4ea500814f1b34edb452be9f8",
+      "render_key": "iestatijumi__768__light__screen"
+    },
+    "metodika__1280__dark__screen": {
+      "bytes": 105102,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__1280__dark__screen",
+        "theme": "dark",
+        "view": "methods",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 9.593,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__1280__dark__screen.png",
+      "png_sha256": "b5291ec7977b88ecced633bc0d10bd325dab8411851f76e6d66312d1dd793255",
+      "render_key": "metodika__1280__dark__screen"
+    },
+    "metodika__1280__light__screen": {
+      "bytes": 104803,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__1280__light__screen",
+        "theme": "light",
+        "view": "methods",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 9.36,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__1280__light__screen.png",
+      "png_sha256": "768a105bc5042e667ca3b60913fbf14621c14a12603ec96b6f08765e9c801288",
+      "render_key": "metodika__1280__light__screen"
+    },
+    "metodika__320__dark__screen": {
+      "bytes": 51466,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__320__dark__screen",
+        "theme": "dark",
+        "view": "methods",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.407,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__320__dark__screen.png",
+      "png_sha256": "93c893f13567e9669b3cb19e8a64e292d58143de6245260917a0f920bf0fd2b3",
+      "render_key": "metodika__320__dark__screen"
+    },
+    "metodika__320__light__screen": {
+      "bytes": 51388,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__320__light__screen",
+        "theme": "light",
+        "view": "methods",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.972,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__320__light__screen.png",
+      "png_sha256": "4482842eb99d86a1967a273ccd1a81a743dcbc46af4351a86faf17c5abb6bffa",
+      "render_key": "metodika__320__light__screen"
+    },
+    "metodika__390__dark__screen": {
+      "bytes": 76855,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__390__dark__screen",
+        "theme": "dark",
+        "view": "methods",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 8.057,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__390__dark__screen.png",
+      "png_sha256": "2aab3351b6332ca56af1e1f1181142c4f505b79981e9cfe3b8d188b6e09f5787",
+      "render_key": "metodika__390__dark__screen"
+    },
+    "metodika__390__light__screen": {
+      "bytes": 77849,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__390__light__screen",
+        "theme": "light",
+        "view": "methods",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.68,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__390__light__screen.png",
+      "png_sha256": "d1080426b0c47b7e613b00f92bcf166fb74cebc72d81382b46e00cfe8f68c72d",
+      "render_key": "metodika__390__light__screen"
+    },
+    "metodika__768__dark__screen": {
+      "bytes": 119259,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__768__dark__screen",
+        "theme": "dark",
+        "view": "methods",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 8.428,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__768__dark__screen.png",
+      "png_sha256": "5d9b82707bde5946fae52579881b9390d303bc0b1779717e7cbf60881288564f",
+      "render_key": "metodika__768__dark__screen"
+    },
+    "metodika__768__light__screen": {
+      "bytes": 118470,
+      "capture_params": {
+        "anchor": "metodika",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#metodika",
+        "render_key": "metodika__768__light__screen",
+        "theme": "light",
+        "view": "methods",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 8.181,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/metodika__768__light__screen.png",
+      "png_sha256": "069ca21161e999b050870fbd19dec7036905932ca5026bb72534314c06bd79ff",
+      "render_key": "metodika__768__light__screen"
+    },
+    "prakse__1280__dark__screen": {
+      "bytes": 97062,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__1280__dark__screen",
+        "theme": "dark",
+        "view": "practice",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 7.621,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__1280__dark__screen.png",
+      "png_sha256": "7d10f4f9d4a59ea2b9cbc36665178261da77444ba93f81f4b7e5ca15ce814e5c",
+      "render_key": "prakse__1280__dark__screen"
+    },
+    "prakse__1280__light__screen": {
+      "bytes": 95830,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__1280__light__screen",
+        "theme": "light",
+        "view": "practice",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 7.123,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__1280__light__screen.png",
+      "png_sha256": "e9ac3bc6331108c497216ba870ce3b6e6619e3168946c8e566682ae7fb7f49a4",
+      "render_key": "prakse__1280__light__screen"
+    },
+    "prakse__320__dark__screen": {
+      "bytes": 46043,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__320__dark__screen",
+        "theme": "dark",
+        "view": "practice",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 9.922,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__320__dark__screen.png",
+      "png_sha256": "703afcda4b97b5fd6339d48ce1a2521b5002406bf7cde3dcfa13f48b1eb46d82",
+      "render_key": "prakse__320__dark__screen"
+    },
+    "prakse__320__light__screen": {
+      "bytes": 45503,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__320__light__screen",
+        "theme": "light",
+        "view": "practice",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 10.048,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__320__light__screen.png",
+      "png_sha256": "533d52a2b77da996ff9e21131fc22167c24e03d7395c95787936933d67168c2a",
+      "render_key": "prakse__320__light__screen"
+    },
+    "prakse__390__dark__screen": {
+      "bytes": 73243,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__390__dark__screen",
+        "theme": "dark",
+        "view": "practice",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 7.192,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__390__dark__screen.png",
+      "png_sha256": "11f01ea25d44639d927d4f0b05145173d4f7f314fb4bca4a5380d8a38437b32d",
+      "render_key": "prakse__390__dark__screen"
+    },
+    "prakse__390__light__screen": {
+      "bytes": 72047,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__390__light__screen",
+        "theme": "light",
+        "view": "practice",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 8.121,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__390__light__screen.png",
+      "png_sha256": "600ebea7b7e96023cf768a6609c90eb00fcfa706e21ce78f8c35bb63f0c1d301",
+      "render_key": "prakse__390__light__screen"
+    },
+    "prakse__768__dark__screen": {
+      "bytes": 120565,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__768__dark__screen",
+        "theme": "dark",
+        "view": "practice",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.262,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__768__dark__screen.png",
+      "png_sha256": "f595cbe46636590d66b150659e5e836811623523bb3656009d46a33ad68d908c",
+      "render_key": "prakse__768__dark__screen"
+    },
+    "prakse__768__light__screen": {
+      "bytes": 119288,
+      "capture_params": {
+        "anchor": "prakse",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#prakse",
+        "render_key": "prakse__768__light__screen",
+        "theme": "light",
+        "view": "practice",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.098,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/prakse__768__light__screen.png",
+      "png_sha256": "311468d38037f8a4e7118e36b1d53b1feb6b0ef775ce3caf80d4432fbbb9e905",
+      "render_key": "prakse__768__light__screen"
+    },
+    "rezultati__1280__dark__screen": {
+      "bytes": 110477,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__1280__dark__screen",
+        "theme": "dark",
+        "view": "results",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 7.223,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__1280__dark__screen.png",
+      "png_sha256": "6dfc1e7b6fea8ed45672b1a65cf025cf985e140201992765537b0a43f3a4ab2e",
+      "render_key": "rezultati__1280__dark__screen"
+    },
+    "rezultati__1280__light__screen": {
+      "bytes": 109608,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__1280__light__screen",
+        "theme": "light",
+        "view": "results",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 7.027,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__1280__light__screen.png",
+      "png_sha256": "4361fc86cd5549f6594a96b9b3148747de8f3d5ab23a19094cc8551775ea898d",
+      "render_key": "rezultati__1280__light__screen"
+    },
+    "rezultati__320__dark__screen": {
+      "bytes": 50206,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__320__dark__screen",
+        "theme": "dark",
+        "view": "results",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.564,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__320__dark__screen.png",
+      "png_sha256": "ae6fc7bfd068ddefec18581c61ddde9490e51fb74d11ac5fed0b13a4cfd80d73",
+      "render_key": "rezultati__320__dark__screen"
+    },
+    "rezultati__320__light__screen": {
+      "bytes": 49123,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__320__light__screen",
+        "theme": "light",
+        "view": "results",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 6.31,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__320__light__screen.png",
+      "png_sha256": "6f1ddcfb868f5e3abd155ed781ea0312a106faf3a4fc60e283b377d35f25e011",
+      "render_key": "rezultati__320__light__screen"
+    },
+    "rezultati__390__dark__screen": {
+      "bytes": 78847,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__390__dark__screen",
+        "theme": "dark",
+        "view": "results",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 7.102,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__390__dark__screen.png",
+      "png_sha256": "772717896a5cf602ba0dfcfacee51b1fcdc9ac84ae24d01a28d7ee97b1b4b3e9",
+      "render_key": "rezultati__390__dark__screen"
+    },
+    "rezultati__390__light__screen": {
+      "bytes": 77753,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__390__light__screen",
+        "theme": "light",
+        "view": "results",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 8.221,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__390__light__screen.png",
+      "png_sha256": "9f4b1ca661e9414416a555fdb64ad937859582f32601a85132545fae98c7ed25",
+      "render_key": "rezultati__390__light__screen"
+    },
+    "rezultati__768__dark__screen": {
+      "bytes": 127913,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__768__dark__screen",
+        "theme": "dark",
+        "view": "results",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.634,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__768__dark__screen.png",
+      "png_sha256": "c46a87046ff793b8f2aad7067873eb7763c2a77b1ed3bc40d65b83be04509f47",
+      "render_key": "rezultati__768__dark__screen"
+    },
+    "rezultati__768__light__screen": {
+      "bytes": 126836,
+      "capture_params": {
+        "anchor": "rezultati",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#rezultati",
+        "render_key": "rezultati__768__light__screen",
+        "theme": "light",
+        "view": "results",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.402,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/rezultati__768__light__screen.png",
+      "png_sha256": "a0a2c32e9bcd61e889a3567385260f5a6e24d915eece379bb3f7624496240ae5",
+      "render_key": "rezultati__768__light__screen"
+    },
+    "sakums__1280__dark__screen": {
+      "bytes": 183588,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__1280__dark__screen",
+        "theme": "dark",
+        "view": "start",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 10.972,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__1280__dark__screen.png",
+      "png_sha256": "45508d9bcf89e7ed8b908d2940b251b54df91e031d12dcae8b83eb43f0dd1845",
+      "render_key": "sakums__1280__dark__screen"
+    },
+    "sakums__1280__light__screen": {
+      "bytes": 182377,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__1280__light__screen",
+        "theme": "light",
+        "view": "start",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 9.323,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__1280__light__screen.png",
+      "png_sha256": "c594c4ade176e079f4df55995c0a56acd8e9c86648fc7d9b3e0cc91e5055f6ee",
+      "render_key": "sakums__1280__light__screen"
+    },
+    "sakums__320__dark__screen": {
+      "bytes": 48699,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__320__dark__screen",
+        "theme": "dark",
+        "view": "start",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 14.381,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__320__dark__screen.png",
+      "png_sha256": "25bb3677952152be3000962b73493c675c6dcc405a53245169355efc8e9265ca",
+      "render_key": "sakums__320__dark__screen"
+    },
+    "sakums__320__light__screen": {
+      "bytes": 49450,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__320__light__screen",
+        "theme": "light",
+        "view": "start",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 9.469,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__320__light__screen.png",
+      "png_sha256": "a54948975bae7016bb85421939817751ebbb5a78c9ec4b0a486ef787e8c9e2cb",
+      "render_key": "sakums__320__light__screen"
+    },
+    "sakums__390__dark__screen": {
+      "bytes": 77967,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__390__dark__screen",
+        "theme": "dark",
+        "view": "start",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 12.019,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__390__dark__screen.png",
+      "png_sha256": "bce1944716db98f8d72ad3c2129d5c456c326b0d07deab2ec0d50dd48e62f8e4",
+      "render_key": "sakums__390__dark__screen"
+    },
+    "sakums__390__light__screen": {
+      "bytes": 77669,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__390__light__screen",
+        "theme": "light",
+        "view": "start",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 11.746,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__390__light__screen.png",
+      "png_sha256": "ee6ec5f0a07ed19f8e43df0d6f7554cdb855c29d5d6dfa530e625bf486b7e94c",
+      "render_key": "sakums__390__light__screen"
+    },
+    "sakums__768__dark__screen": {
+      "bytes": 185089,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__768__dark__screen",
+        "theme": "dark",
+        "view": "start",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 9.981,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__768__dark__screen.png",
+      "png_sha256": "a0bd890f717b2567675810a9d43f5e3395d7d458ceefdbd904204864f532e335",
+      "render_key": "sakums__768__dark__screen"
+    },
+    "sakums__768__light__screen": {
+      "bytes": 183267,
+      "capture_params": {
+        "anchor": "sakums",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#sakums",
+        "render_key": "sakums__768__light__screen",
+        "theme": "light",
+        "view": "start",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 11.219,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/sakums__768__light__screen.png",
+      "png_sha256": "1f09e9cbedf1285501c9f8a6faaac29a02ae35522e12ec768f83fe4217e1a235",
+      "render_key": "sakums__768__light__screen"
+    },
+    "saturs__1280__dark__screen": {
+      "bytes": 117158,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__1280__dark__screen",
+        "theme": "dark",
+        "view": "concept_map",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 9.868,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__1280__dark__screen.png",
+      "png_sha256": "9bde596cd48ac29f6e85433ac9740662eee75d6a90b487aabd1dde981f9d6143",
+      "render_key": "saturs__1280__dark__screen"
+    },
+    "saturs__1280__light__screen": {
+      "bytes": 117126,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 1280,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__1280__light__screen",
+        "theme": "light",
+        "view": "concept_map",
+        "viewport": {
+          "height": 800,
+          "width": 1280
+        }
+      },
+      "elapsed_s": 11.096,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__1280__light__screen.png",
+      "png_sha256": "5176c5b2049b389b8998b2cb25f94241c3d94c0be989d1f3e11c92867639a92f",
+      "render_key": "saturs__1280__light__screen"
+    },
+    "saturs__320__dark__screen": {
+      "bytes": 50062,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__320__dark__screen",
+        "theme": "dark",
+        "view": "concept_map",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 8.529,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__320__dark__screen.png",
+      "png_sha256": "7235818122ab9ea3739611f8789e992ac188d7e2a2a0f90dc797adcefc657735",
+      "render_key": "saturs__320__dark__screen"
+    },
+    "saturs__320__light__screen": {
+      "bytes": 51003,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 320,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__320__light__screen",
+        "theme": "light",
+        "view": "concept_map",
+        "viewport": {
+          "height": 640,
+          "width": 320
+        }
+      },
+      "elapsed_s": 12.044,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__320__light__screen.png",
+      "png_sha256": "4ca393c184466c6ce41f031607c7ed71ce5afa32cf4910f233720019b64a0667",
+      "render_key": "saturs__320__light__screen"
+    },
+    "saturs__390__dark__screen": {
+      "bytes": 74514,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__390__dark__screen",
+        "theme": "dark",
+        "view": "concept_map",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.619,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__390__dark__screen.png",
+      "png_sha256": "f66bba687b1e7bc942fda5f43bb6a0e00c6da59b89b4927f58d18987b1f862f7",
+      "render_key": "saturs__390__dark__screen"
+    },
+    "saturs__390__light__screen": {
+      "bytes": 74968,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 390,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__390__light__screen",
+        "theme": "light",
+        "view": "concept_map",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      },
+      "elapsed_s": 9.031,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__390__light__screen.png",
+      "png_sha256": "86dfd9252b463a6b90c02c6fe206a07223da293606cf39d58689e2c315d66162",
+      "render_key": "saturs__390__light__screen"
+    },
+    "saturs__768__dark__screen": {
+      "bytes": 134740,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__768__dark__screen",
+        "theme": "dark",
+        "view": "concept_map",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 7.76,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__768__dark__screen.png",
+      "png_sha256": "fcdd4c6e88c0a27e564d5900320b8b9ebd0b97689e91888a4d508376d23de0f1",
+      "render_key": "saturs__768__dark__screen"
+    },
+    "saturs__768__light__screen": {
+      "bytes": 134655,
+      "capture_params": {
+        "anchor": "saturs",
+        "breakpoint": 768,
+        "mode": "screen",
+        "readiness_marker": "#saturs",
+        "render_key": "saturs__768__light__screen",
+        "theme": "light",
+        "view": "concept_map",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "elapsed_s": 11.001,
+      "media_print": false,
+      "overflow": false,
+      "png_relpath": "evidence/visual_baselines/saturs__768__light__screen.png",
+      "png_sha256": "0c63ce1c1d4e4b890c4817243e5c88a81e89162f8dd8f848f851b7ac330668a1",
+      "render_key": "saturs__768__light__screen"
+    }
+  },
+  "schema_version": 1,
+  "task": "N37",
+  "update_history": [
+    {
+      "event": "full_baseline_refreeze_post_n38",
+      "new_artifact_digest": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+      "new_build_manifest_digest": "661c4ec799b35f97ebe60777ca933ee421e2bbbff4702bab22ac76953fad6682",
+      "new_composite_digest": "5f3ba5924b51be9a3c6da99b0b5127407a79eb13edc9aa6ecda9b9ba382d6681",
+      "previous_artifact_digest": "99fd5c406950be1739b1d3480645d1698ed03eac6558f706d9f2c85b5f11745a",
+      "previous_build_manifest_digest": "4cdee3e440a41f2793d4eb5b859449ec069b0271341b0be8b3b04de744198a51",
+      "previous_composite_digest": "447569bfd83c85301919bab44ef7c8de7e50adcb89ee4a181af13434f5662291",
+      "previous_version": 1,
+      "reason": "Post-N38 versioned baseline freeze (6 DOM/keyboard defect fixes in N38-E01 rebuilt output/simulator.html from 99fd5c40... to 12e36ae3...)",
+      "render_count": 73,
+      "timestamp": "2026-11-19T22:51:54.726992+00:00",
+      "version": 2
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,94 @@
+{
+  "errors": [],
+  "gate": "practice",
+  "negative_fixtures": {
+    "cases": [
+      {
+        "errors": [
+          "topic 3: declared_length (17) exceeds live eligible instance count (16)"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N30-OVERLONG-TOPIC-3",
+        "named_topic_3": true,
+        "observed": "FAIL",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "filter_semantics.response_type_vocabulary must declare all 18 response types",
+          "filter_semantics.response_type_vocabulary references unknown type 'Q99'"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N30-UNKNOWN-RESPONSE-TYPE",
+        "named_q99": true,
+        "observed": "FAIL",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "bounds_rules must enforce no-repeat, current-session exclusion, and no unreviewed padding"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N30-ALLOW-UNREVIEWED-PADDING",
+        "observed": "FAIL",
+        "rejected": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "policy": {
+    "bytes": 7163,
+    "digest": "efaaab47eb3d47351807032741baf9763d194986655360f7bb19b099d4ba5f79",
+    "eligible_counts": {
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 16,
+      "6": 16,
+      "7": 16
+    },
+    "epistemic_label": "PROPOSED",
+    "errors": [],
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-practice-paths-v1",
+    "status": "PASS",
+    "topic_lengths": {
+      "1": 6,
+      "2": 7,
+      "3": 8,
+      "4": 8,
+      "5": 7,
+      "6": 6,
+      "7": 5
+    }
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "missing_placeholders": [],
+    "required_ids_checked": 30,
+    "status": "PASS"
+  },
+  "source_scans": {
+    "clock_hits": [],
+    "f10_hits": [],
+    "js_sha256": "80c0dcc4d3043757f6093d98ea0cdbb20d4abb88487dd79aa5b02ca17bf301e9",
+    "network_hits": [],
+    "status": "PASS",
+    "ts_sha256": "097e08baad4ffc33d148159f33d531e45efcd38e7d53286708f156b8d6611a36"
+  },
+  "status": "PASS",
+  "task": "N30",
+  "terms_lint": {
+    "copy_keys_checked": 27,
+    "endorsement_hits": [],
+    "missing_copy_keys": [],
+    "n10_terms_status": "PASS",
+    "status": "PASS"
+  },
+  "ts_drift": {
+    "returncode": 0,
+    "status": "PASS"
+  }
+}

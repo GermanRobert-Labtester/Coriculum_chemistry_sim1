@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-remediation-policy",
+  "owner": "N28",
+  "status": "authored",
+  "policy_id": "sim-colloq1-remediation-v1",
+  "title_lv": "Kļūdu atkārtošanas rindas, alternatīvo variantu un apstiprināšanas politika (PROPOSED)",
+  "epistemic_label": "PROPOSED",
+  "official_counterpart_status": "UNDETERMINED",
+  "honesty_note_lv": "PROPOSED mācību politikas priekšlikums: 2025. gada oficiālā programma (RSU_MedChem_Colloq1_Prog_LV_2025.pdf) nenosaka kļūdu atkārtošanas rindu, atkārtojuma variantu izvēli vai pabeigšanas apstiprināšanu (oficiāls analogs: UNDETERMINED). Atkārtošana ir ieteikums patstāvīgai mācīšanai bez piespiedu ierobežošanas, un sākotnējais vērtējums paliek nemainīts.",
+  "honesty_note_en": "PROPOSED training policy: the 2025 programme sets no remediation queue, variant selection rule, or resolution rule. Remediation is recommend-only and never alters the original graded record.",
+  "predecessor_decisions": [
+    {
+      "card_id": "N23-Remediation",
+      "ref": "docs/GRADING_FORMAT.md",
+      "decision": "N23 feedback items emit resolvable concept_ids, chain_ids, signature_id, and method_card links for N28."
+    },
+    {
+      "card_id": "N25-Queue",
+      "ref": "docs/ANALYTICS_STORE_FORMAT.md",
+      "decision": "N25 SimStore persists remediation_queue inside opt-in localStorage (sim_colloq1_store_v2) with in-memory default."
+    },
+    {
+      "card_id": "N20-Ephemeral",
+      "ref": "docs/VARIANT_ENGINE_FORMAT.md",
+      "decision": "N20 provides alternate bank variants (A-D) and deterministic ephemeral variants excluding frozen seeds."
+    },
+    {
+      "card_id": "N26-Mastery",
+      "ref": "docs/MASTERY_FORMAT.md",
+      "decision": "N28 graded retries update mastery via SimMastery in one consistent chain."
+    }
+  ],
+  "recommend_only": true,
+  "recommend_only_copy_lv": "Atkārtošana ir tikai ieteikums — nav piespiedu bloķēšanas; jūs varat brīvi turpināt citu praksi vai eksāmena mēģinājumu.",
+  "regrade_original_attempt": false,
+  "require_resolvable_links": true,
+  "deduplication": {
+    "key": [
+      "family_id",
+      "outcome_id"
+    ],
+    "resolved_resurrection": "open-new-entry",
+    "note_lv": "Atkārtotas kļūdas vienā saimē un mācību mērķī saplūst vienā aktīvā ierakstā (palielinot miss_count un apvienojot saites). Ja iepriekšējais ieraksts jau ir atrisināts, jauna kļūda atver jaunu ierakstu, nepārtinot vēsturi."
+  },
+  "resolution_policy": {
+    "mode": "confirm_required",
+    "supported_modes": [
+      "confirm_required",
+      "one_correct_resolves"
+    ],
+    "auto_resolve_on_correct_retry": false,
+    "one_correct_evidence_copy_lv": "Viena pareiza atbilde ir pierādījums virzībai, nevis pilnīga apguve — apstipriniet pabeigšanu manuāli vai praktizējiet tālāk.",
+    "one_correct_evidence_key": "remediation.policy.one_correct_evidence",
+    "auto_resolve_copy_lv": "Atrisināts automātiski pēc deklarētās politikas (viena pareiza atbilde atrisina).",
+    "auto_resolve_key": "remediation.policy.auto_resolved",
+    "manual_resolve_copy_lv": "Izglītojamais manuāli apstiprināja atrisināšanu.",
+    "manual_resolve_key": "remediation.policy.manual_resolved"
+  },
+  "variant_selection": {
+    "cycle_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "never_reserve_failed_instance": true,
+    "ephemeral_fallback_enabled": true,
+    "note_lv": "Atkārtojumam deterministiski izvēlas nākamo neizpildīto varianta burtu tajā pašā saimē (nekad neatkārtojot neveiksmīgo uzdevumu). Kad visi bankas varianti ir mēģināti, izmanto N20 efemēro ceļu."
+  },
+  "states": {
+    "open": {
+      "label_key": "remediation.state.open",
+      "desc_key": "remediation.state.open_desc",
+      "active": true
+    },
+    "retried": {
+      "label_key": "remediation.state.retried",
+      "desc_key": "remediation.state.retried_desc",
+      "active": true
+    },
+    "resolved": {
+      "label_key": "remediation.state.resolved",
+      "desc_key": "remediation.state.resolved_desc",
+      "active": false
+    }
+  },
+  "copy_keys": {
+    "queue_title": "remediation.queue.title",
+    "queue_honesty_note": "remediation.queue.honesty_note",
+    "queue_empty": "remediation.queue.empty",
+    "study_anchor": "remediation.action.study_anchor",
+    "study_chain": "remediation.action.study_chain",
+    "return_queue": "remediation.action.return_queue",
+    "retry": "remediation.action.retry",
+    "resolve": "remediation.action.resolve",
+    "one_correct_evidence": "remediation.policy.one_correct_evidence",
+    "auto_resolved": "remediation.policy.auto_resolved",
+    "manual_resolved": "remediation.policy.manual_resolved",
+    "dangling_link": "remediation.error.dangling_link"
+  }
+}

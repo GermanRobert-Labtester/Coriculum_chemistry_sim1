@@ -1,0 +1,2403 @@
+{
+  "schema_version": 1,
+  "owner_task": "N33",
+  "target_html": "output/simulator.html",
+  "status": "PASS",
+  "static_audit": {
+    "interactive_count": 191,
+    "interactive_controls": [
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Pāriet uz galveno saturu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Sākums",
+        "name_source": "textContent",
+        "term_key": "nav.sakums"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Saturs un mērķi",
+        "name_source": "textContent",
+        "term_key": "nav.saturs"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Darba piemēri",
+        "name_source": "textContent",
+        "term_key": "nav.piemeri"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Prakse",
+        "name_source": "textContent",
+        "term_key": "nav.prakse"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Eksāmena simulācija",
+        "name_source": "textContent",
+        "term_key": "nav.eksamens"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Rezultāti",
+        "name_source": "textContent",
+        "term_key": "nav.rezultati"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Atskats",
+        "name_source": "textContent",
+        "term_key": "nav.atskats"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Metodika",
+        "name_source": "textContent",
+        "term_key": "nav.metodika"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Druka",
+        "name_source": "textContent",
+        "term_key": "nav.druka"
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Iestatījumi",
+        "name_source": "textContent",
+        "term_key": "nav.iestatijumi"
+      },
+      {
+        "id": "sakums-pick-A",
+        "tag": "button",
+        "role": "radio",
+        "name": "A forma (sēkla 100001)",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "sakums-pick-B",
+        "tag": "button",
+        "role": "radio",
+        "name": "B forma (sēkla 100002)",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "sakums-pick-C",
+        "tag": "button",
+        "role": "radio",
+        "name": "C forma (sēkla 100003)",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "sakums-pick-SEEDED",
+        "tag": "button",
+        "role": "radio",
+        "name": "Sēklots treniņa zīmējums",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "sakums-seed-input",
+        "tag": "input",
+        "role": "input",
+        "name": "Treniņa sēkla (101000–199999)",
+        "name_source": "label[for]",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Prakse",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Eksāmena simulācija",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Atskats un atkārtošana",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Skatīt 64 mācību mērķus",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Jēdzienu karte",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Metodika",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Terminu saraksts",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Druka (#druka)",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "Ierobežojumi",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "1. Temats. IEVADS. ŠĶĪDUMI UN ĶĪMISKĀS REAKCIJAS",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "2. Temats. APRĒĶINI UN GRAFISKĀS METODES ĶĪMIJĀ",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "3. Temats. ŠĶĪDUMI UN KONCENTRĀCIJU APRĒĶINI",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-10",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "4. Temats. TERMODINAMIKA UN TĀS PIEMĒRI BIOLOĢISKAJĀS SISTĒMĀS",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-10",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "5. Temats. KINĒTIKA UN TĀS NOZĪME BIOLOĢISKAJĀS SISTĒMĀS",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P4-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P5-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "6. Temats. OKSIDĒŠANĀS – REDUCĒŠANĀS PROCESI",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P1-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-05",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P6-07",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "7. Temats. ANALĪZES METODES ĶĪMIJĀ",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-01",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-08",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P2-09",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P3-06",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-02",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-03",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "P7-04",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "metodikas sadaļu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "drukas sadaļu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "drukas sadaļu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "prakse-filter-type",
+        "tag": "select",
+        "role": "select",
+        "name": "Atbilžu tips:",
+        "name_source": "label[for]",
+        "term_key": null
+      },
+      {
+        "id": "prakse-filter-unattempted",
+        "tag": "input",
+        "role": "input",
+        "name": "Tikai nemēģinātie uzdevumi",
+        "name_source": "label[wrapping]",
+        "term_key": null
+      },
+      {
+        "id": "prakse-submit-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Pārbaudīt atbildi",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "prakse-skip-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Izlaist uzdevumu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "prakse-next-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Nākamais uzdevums",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "prakse-end-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Beigt prakses ceļu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-pick-A",
+        "tag": "button",
+        "role": "radio",
+        "name": "A forma",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-pick-B",
+        "tag": "button",
+        "role": "radio",
+        "name": "B forma",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-pick-C",
+        "tag": "button",
+        "role": "radio",
+        "name": "C forma",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-pick-SEEDED",
+        "tag": "button",
+        "role": "radio",
+        "name": "Sēklots treniņa zīmējums",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-seed-input",
+        "tag": "input",
+        "role": "input",
+        "name": "Treniņa sēkla (101000–199999)",
+        "name_source": "label[for]",
+        "term_key": null
+      },
+      {
+        "id": "exam-start",
+        "tag": "button",
+        "role": "button",
+        "name": "Sākt treniņsesiju",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-prev",
+        "tag": "button",
+        "role": "button",
+        "name": "Iepriekšējais uzdevums",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-next",
+        "tag": "button",
+        "role": "button",
+        "name": "Nākamais uzdevums",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-flag",
+        "tag": "button",
+        "role": "button",
+        "name": "Atzīmēt uzdevumu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "exam-review-button",
+        "tag": "button",
+        "role": "button",
+        "name": "Pārbaude un iesniegšana",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "paper-form-select",
+        "tag": "select",
+        "role": "select",
+        "name": "Izvēlēties papīra darba lapas formu",
+        "name_source": "label[for]",
+        "term_key": null
+      },
+      {
+        "id": "paper-print-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Drukāt darba lapu",
+        "name_source": "textContent",
+        "term_key": "print.button"
+      },
+      {
+        "id": "theme-toggle",
+        "tag": "button",
+        "role": "button",
+        "name": "Tumšais režīms",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "store-opt-in-toggle",
+        "tag": "button",
+        "role": "button",
+        "name": "Ieslēgt lokālo saglabāšanu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "store-export-btn",
+        "tag": "button",
+        "role": "button",
+        "name": "Eksportēt progresu (JSON)",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "store-erase-request",
+        "tag": "button",
+        "role": "button",
+        "name": "Dzēst visus lokālos datus",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "store-erase-confirm",
+        "tag": "button",
+        "role": "button",
+        "name": "Apstiprināt dzēšanu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "store-erase-cancel",
+        "tag": "button",
+        "role": "button",
+        "name": "Atcelt",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "settings-paper-form-select",
+        "tag": "select",
+        "role": "select",
+        "name": "Izvēlēties papīra darba lapas formu",
+        "name_source": "label[for]",
+        "term_key": null
+      },
+      {
+        "id": null,
+        "tag": "a",
+        "role": "a",
+        "name": "drukas sadaļu",
+        "name_source": "textContent",
+        "term_key": null
+      },
+      {
+        "id": "concept-drawer-back",
+        "tag": "button",
+        "role": "button",
+        "name": "Atpakaļ",
+        "name_source": "textContent",
+        "term_key": "drawer.concept.back"
+      },
+      {
+        "id": "concept-drawer-close",
+        "tag": "button",
+        "role": "button",
+        "name": "Aizvērt",
+        "name_source": "textContent",
+        "term_key": "drawer.concept.close"
+      },
+      {
+        "id": "hint-drawer-close",
+        "tag": "button",
+        "role": "button",
+        "name": "Aizvērt",
+        "name_source": "textContent",
+        "term_key": "hint.drawer.close"
+      }
+    ],
+    "name_errors": [],
+    "landmarks": {
+      "main_count": 1,
+      "nav_count": 3,
+      "nav_labels": [
+        "Galvenā navigācija",
+        "Sākuma ātrās darbības",
+        "Programmas tēmas"
+      ],
+      "missing_nav_labels": [],
+      "required_sections": [
+        {
+          "id": "sakums",
+          "aria_labelledby": "sakums-virsraksts",
+          "heading_text": "Pirmā kolokvija treniņsimulators"
+        },
+        {
+          "id": "saturs",
+          "aria_labelledby": "saturs-virsraksts",
+          "heading_text": "Mācību mērķi un programmas pārklājums"
+        },
+        {
+          "id": "prakse",
+          "aria_labelledby": "prakse-virsraksts",
+          "heading_text": "Prakse"
+        },
+        {
+          "id": "eksamens",
+          "aria_labelledby": "eksamens-virsraksts",
+          "heading_text": "Eksāmena simulācija"
+        },
+        {
+          "id": "rezultati",
+          "aria_labelledby": "rezultati-virsraksts",
+          "heading_text": "Rezultāti"
+        },
+        {
+          "id": "atskats",
+          "aria_labelledby": "atskats-virsraksts",
+          "heading_text": "Atskats un atkārtošana"
+        },
+        {
+          "id": "metodika",
+          "aria_labelledby": "metodika-virsraksts",
+          "heading_text": "Metodika un iegultie datu slāņi"
+        },
+        {
+          "id": "druka",
+          "aria_labelledby": "druka-virsraksts",
+          "heading_text": "Druka un papīra darba lapa"
+        },
+        {
+          "id": "iestatijumi",
+          "aria_labelledby": "iestatijumi-virsraksts",
+          "heading_text": "Iestatījumi"
+        }
+      ],
+      "section_errors": [],
+      "h1_count": 1,
+      "heading_skips": [],
+      "exam_navigator_list_rule": "Repeated question summary buttons in #exam-map/#exam-navigator carry numbered item labels inside a declared group/list container and are intentionally permitted as list items.",
+      "pass": true
+    },
+    "live_regions": {
+      "channels": {
+        "timer_threshold": {
+          "id": "sim-live-timer",
+          "politeness": "assertive",
+          "role": "alert",
+          "pass": true
+        },
+        "verdict_posted": {
+          "id": "sim-live-verdict",
+          "politeness": "polite",
+          "role": "status",
+          "pass": true
+        },
+        "view_changed": {
+          "id": "sim-live-view",
+          "politeness": "polite",
+          "role": "status",
+          "pass": true
+        }
+      },
+      "errors": [],
+      "pass": true
+    }
+  },
+  "node_suite": {
+    "map_validation": {
+      "valid": true,
+      "contexts_checked": 5,
+      "resolved_bindings": 54
+    },
+    "collision_fixture": {
+      "pass": true,
+      "message": "Key collision in context \"exam\" for key \"n\": actions [exam_next, exam_note_scratch]."
+    },
+    "focus_escape_fixture": {
+      "pass": true,
+      "trace": {
+        "drawerId": "concept-drawer",
+        "invokerId": "concept-node-T1-01",
+        "insideIds": [
+          "concept-drawer-close",
+          "concept-drawer-prereq-1",
+          "concept-drawer-practice-link"
+        ],
+        "escapedToId": "post-drawer-next-control",
+        "escapedOutsideDrawer": true,
+        "sequence": [
+          "concept-drawer-close",
+          "concept-drawer-prereq-1",
+          "concept-drawer-practice-link",
+          "post-drawer-next-control"
+        ]
+      },
+      "restored_id": "concept-node-T1-01"
+    },
+    "typing_fixture": {
+      "pass": true,
+      "result": {
+        "handled": false,
+        "suppressed": true,
+        "reason": "typing_context",
+        "action": null
+      }
+    },
+    "live_fixture": {
+      "pass": true,
+      "counts": {
+        "timer_threshold": 1,
+        "verdict_posted": 1,
+        "view_changed": 1
+      }
+    },
+    "components_18": [
+      {
+        "type_id": "Q01",
+        "name_key": "input.q01.name",
+        "computed_name": "Skaitliska atbilde ar mērvienību",
+        "labelledby": "inputs-q01-label",
+        "describedby": "inputs-q01-hint",
+        "field_count": 2,
+        "fields": [
+          {
+            "field_id": "m_g",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Skaitliskā atbilde: m (g)",
+            "state": "empty",
+            "state_text": "Nav aizpildīta vērtība: m (g)",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "unit",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Mērvienības izvēle: g",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q02",
+        "name_key": "input.q02.name",
+        "computed_name": "Daudzsoļu aprēķins",
+        "labelledby": "inputs-q02-label",
+        "describedby": "inputs-q02-hint",
+        "field_count": 3,
+        "fields": [
+          {
+            "field_id": "c",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Skaitliskā atbilde: c (mol/L)",
+            "state": "empty",
+            "state_text": "Nav aizpildīta vērtība: c (mol/L)",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "S1",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Starpsoļa vērtība: n(NaCl) = m/M (mol)",
+            "state": "empty",
+            "state_text": "Nav aizpildīts solis: n(NaCl) = m/M (mol)",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "S2",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Starpsoļa vērtība: c = n/V (mol/L)",
+            "state": "empty",
+            "state_text": "Nav aizpildīts solis: c = n/V (mol/L)",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q03",
+        "name_key": "input.q03.name",
+        "computed_name": "Formulas pārveidošana",
+        "labelledby": "inputs-q03-label",
+        "describedby": "inputs-q03-hint",
+        "field_count": 5,
+        "fields": [
+          {
+            "field_id": "choice",
+            "role": "radio",
+            "control": "radio",
+            "computed_name": "Formulas veidne",
+            "state": "empty",
+            "state_text": "Nav izvēlēta formulas veidne",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "fill_S1",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pildāmais lauks: Kā izteikt c, ja γ ir g/L un M ir g/mol?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts lauks: Kā izteikt c, ja γ ir g/L un M ir g/mol?",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "fill_S2",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pildāmais lauks: Kā izteikt w (m/m), ja γ ir g/L un ρ ir g/mL?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts lauks: Kā izteikt w (m/m), ja γ ir g/L un ρ ir g/mL?",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "fill_S3",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pildāmais lauks: Kāpēc ρ ir vajadzīgs?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts lauks: Kāpēc ρ ir vajadzīgs?",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "conserved",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Saglabātais lielums",
+            "state": "empty",
+            "state_text": "Nav ierakstīts saglabātais lielums",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q04",
+        "name_key": "input.q04.name",
+        "computed_name": "Vienādojuma koeficienti",
+        "labelledby": "inputs-q04-label",
+        "describedby": "inputs-q04-hint",
+        "field_count": 3,
+        "fields": [
+          {
+            "field_id": "coef_0",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš Al",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš Al",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "coef_1",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš O2",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš O2",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "coef_2",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš Al2O3",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš Al2O3",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q05",
+        "name_key": "input.q05.name",
+        "computed_name": "Pusreakcija un elektronu bilance",
+        "labelledby": "inputs-q05-label",
+        "describedby": "inputs-q05-hint",
+        "field_count": 4,
+        "fields": [
+          {
+            "field_id": "row_S1",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pusreakcijas rinda: Redukcijas pusreakcija",
+            "state": "empty",
+            "state_text": "Nav aizpildīta rinda: Redukcijas pusreakcija",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "row_S2",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pusreakcijas rinda: Oksidācijas pusreakcija",
+            "state": "empty",
+            "state_text": "Nav aizpildīta rinda: Oksidācijas pusreakcija",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "row_S3",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pusreakcijas rinda: Kopējais jonu vienādojums",
+            "state": "empty",
+            "state_text": "Nav aizpildīta rinda: Kopējais jonu vienādojums",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "row_S4",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Pusreakcijas rinda: Elektronu bilance",
+            "state": "empty",
+            "state_text": "Nav aizpildīta rinda: Elektronu bilance",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q06",
+        "name_key": "input.q06.name",
+        "computed_name": "Atbilstību veidošana",
+        "labelledby": "inputs-q06-label",
+        "describedby": "inputs-q06-hint",
+        "field_count": 3,
+        "fields": [
+          {
+            "field_id": "pair_L1",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pāris priekš Birete",
+            "state": "empty",
+            "state_text": "Nav izvēlēts pāris priekš Birete",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "pair_L2",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pāris priekš Mērcilindrs",
+            "state": "empty",
+            "state_text": "Nav izvēlēts pāris priekš Mērcilindrs",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "pair_L3",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pāris priekš Vārglāze",
+            "state": "empty",
+            "state_text": "Nav izvēlēts pāris priekš Vārglāze",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q07",
+        "name_key": "input.q07.name",
+        "computed_name": "Klasifikācijas tabula",
+        "labelledby": "inputs-q07-label",
+        "describedby": "inputs-q07-hint",
+        "field_count": 4,
+        "fields": [
+          {
+            "field_id": "opt_HET",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Apgalvojuma atzīme: Heterogēns maisījums",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_SUSP",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Apgalvojuma atzīme: Suspensija: cietas daļiņas šķidrumā",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_HOM",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Apgalvojuma atzīme: Homogēns šķīdums",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_KOL",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Apgalvojuma atzīme: Koloidāls šķīdums",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q08",
+        "name_key": "input.q08.name",
+        "computed_name": "Darbību secība",
+        "labelledby": "inputs-q08-label",
+        "describedby": "inputs-q08-hint",
+        "field_count": 5,
+        "fields": [
+          {
+            "field_id": "slot_1",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pozīcija 1",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "slot_2",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pozīcija 2",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "slot_3",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pozīcija 3",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "slot_4",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Pozīcija 4",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "explanation",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Secības pamatojums",
+            "state": "empty",
+            "state_text": "Nav ierakstīts paskaidrojums",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q09",
+        "name_key": "input.q09.name",
+        "computed_name": "Tabulas aizpildīšana",
+        "labelledby": "inputs-q09-label",
+        "describedby": "inputs-q09-hint",
+        "field_count": 1,
+        "fields": [
+          {
+            "field_id": "n_mmol",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Tabulas šūna: n (mmol)",
+            "state": "empty",
+            "state_text": "Nav aizpildīta vērtība: n (mmol)",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q10",
+        "name_key": "input.q10.name",
+        "computed_name": "Skalas nolasīšana",
+        "labelledby": "inputs-q10-label",
+        "describedby": "inputs-q10-hint",
+        "field_count": 1,
+        "fields": [
+          {
+            "field_id": "V_del",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Skalas nolasījums: ΔV (mL)",
+            "state": "empty",
+            "state_text": "Nav aizpildīta vērtība: ΔV (mL)",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q11",
+        "name_key": "input.q11.name",
+        "computed_name": "Grafika konstruēšana",
+        "labelledby": "inputs-q11-label",
+        "describedby": "inputs-q11-hint",
+        "field_count": 2,
+        "fields": [
+          {
+            "field_id": "record",
+            "role": "group",
+            "control": "coordinate_table",
+            "computed_name": "Konstruēšanas ieraksta tabula",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "draw_payload",
+            "role": "group",
+            "control": "graph_canvas",
+            "computed_name": "Zīmējuma virsma",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q12",
+        "name_key": "input.q12.name",
+        "computed_name": "Grafika interpretācija",
+        "labelledby": "inputs-q12-label",
+        "describedby": "inputs-q12-hint",
+        "field_count": 3,
+        "fields": [
+          {
+            "field_id": "read_x",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Nolasītā x vērtība",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "read_y",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Nolasītā y vērtība",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "figure_binding",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Grafika piesaiste",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q13",
+        "name_key": "input.q13.name",
+        "computed_name": "Kļūdas atrašana un labošana",
+        "labelledby": "inputs-q13-label",
+        "describedby": "inputs-q13-hint",
+        "field_count": 7,
+        "fields": [
+          {
+            "field_id": "coef_0",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš CuO",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš CuO",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "coef_1",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš H2",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš H2",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "coef_2",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš Cu",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš Cu",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "coef_3",
+            "role": "textbox",
+            "control": "coefficient",
+            "computed_name": "Koeficients priekš H2O",
+            "state": "empty",
+            "state_text": "Nav aizpildīts koeficients priekš H2O",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "located",
+            "role": "combobox",
+            "control": "select",
+            "computed_name": "Vieta, kur atrasta kļūda",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "replacement",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Labotā vērtība",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "reason",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Labojuma pamatojums",
+            "state": "empty",
+            "state_text": "Atbilde nav pabeigta",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q14",
+        "name_key": "input.q14.name",
+        "computed_name": "Apgalvojums un labojums",
+        "labelledby": "inputs-q14-label",
+        "describedby": "inputs-q14-hint",
+        "field_count": 5,
+        "fields": [
+          {
+            "field_id": "opt_T1",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_T2",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_T3",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_T4",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "justification",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Labojuma pamatojums",
+            "state": "empty",
+            "state_text": "Nav ierakstīts pamatojums",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q15",
+        "name_key": "input.q15.name",
+        "computed_name": "Īss skaidrojums",
+        "labelledby": "inputs-q15-label",
+        "describedby": "inputs-q15-hint",
+        "field_count": 1,
+        "fields": [
+          {
+            "field_id": "text",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Skaidrojums",
+            "state": "empty",
+            "state_text": "Nav ierakstīts teksts",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q16",
+        "name_key": "input.q16.name",
+        "computed_name": "Salīdzini un pamato",
+        "labelledby": "inputs-q16-label",
+        "describedby": "inputs-q16-hint",
+        "field_count": 1,
+        "fields": [
+          {
+            "field_id": "text",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Salīdzinājums un pamatojums",
+            "state": "empty",
+            "state_text": "Nav ierakstīts teksts",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q17",
+        "name_key": "input.q17.name",
+        "computed_name": "Saistīts gadījums",
+        "labelledby": "inputs-q17-label",
+        "describedby": "inputs-q17-hint",
+        "field_count": 3,
+        "fields": [
+          {
+            "field_id": "pair_S1",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Soļa atbilde: Kā no procentu bāzes iegūst masu koncentrāciju?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts solis: Kā no procentu bāzes iegūst masu koncentrāciju?",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "pair_S2",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Soļa atbilde: Kā iegūto masu koncentrāciju lieto?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts solis: Kā iegūto masu koncentrāciju lieto?",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "pair_S3",
+            "role": "textbox",
+            "control": "textbox",
+            "computed_name": "Soļa atbilde: Ko etiķete vēl nepasaka?",
+            "state": "empty",
+            "state_text": "Nav aizpildīts solis: Ko etiķete vēl nepasaka?",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      },
+      {
+        "type_id": "Q18",
+        "name_key": "input.q18.name",
+        "computed_name": "Vairāku atbilžu izvēle ar pamatojumu",
+        "labelledby": "inputs-q18-label",
+        "describedby": "inputs-q18-hint",
+        "field_count": 5,
+        "fields": [
+          {
+            "field_id": "opt_S1",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_S2",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_S3",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "opt_S4",
+            "role": "checkbox",
+            "control": "checkbox",
+            "computed_name": "Izvēlētās atbildes",
+            "state": "empty",
+            "state_text": "Nav atzīmēta neviena atbilde",
+            "non_empty_name": true
+          },
+          {
+            "field_id": "justification",
+            "role": "textbox",
+            "control": "textarea",
+            "computed_name": "Pamatojums nepareizajiem apgalvojumiem",
+            "state": "empty",
+            "state_text": "Nav ierakstīts pamatojums",
+            "non_empty_name": true
+          }
+        ],
+        "non_empty_name": true
+      }
+    ]
+  },
+  "empty_label_fixture": {
+    "pass": true,
+    "component": "scratch-icon-flag",
+    "error": "E_EMPTY_ARIA_LABEL: component \"scratch-icon-flag\" has empty aria-label=\"\""
+  },
+  "all_18_response_types_pass": true
+}

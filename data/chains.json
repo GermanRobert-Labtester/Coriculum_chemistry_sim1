@@ -1,0 +1,3251 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-chains",
+  "owner": "N16",
+  "status": "authored",
+  "title_lv": "Darba piemēru ķēdes EX01–EX14",
+  "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+  "honesty": {
+    "label": "training-material-not-official-exam",
+    "rule_lv": "Katrā ķēdē ir fiksēts mācību materiāla baneris; pozitīvi oficiāla eksāmena apgalvojumi ir aizliegti."
+  },
+  "chains": [
+    {
+      "id": "EX01",
+      "topic": 1,
+      "title_lv": "Masas nezūdamība: Mg + O₂ → MgO",
+      "subtitle_lv": "Stehiometriska ķēde no 4,80 g Mg līdz MgO masai; skābeklis ir pārākumā.",
+      "outcome_ids": [
+        "P1-01"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "anchor": "stehiometrija",
+        "heading_lv": "Stehiometrija",
+        "freeze_id": "C1-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic rounded givens (M(Mg)=24,0, M(MgO)=40,0, M(O₂)=32,0).",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "m_Mg",
+          "label_lv": "magnija masa",
+          "value": "4.80",
+          "display_lv": "4,80",
+          "unit": "g",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX01"
+          }
+        },
+        {
+          "id": "M_Mg",
+          "label_lv": "magnija molmasa",
+          "value": "24.0",
+          "display_lv": "24,0",
+          "unit": "g/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX01"
+          },
+          "note_lv": "Noapaļota mācību vērtība; Mg nav N03 atommasu tabulā."
+        },
+        {
+          "id": "M_MgO",
+          "label_lv": "magnija oksīda molmasa",
+          "value": "40.0",
+          "display_lv": "40,0",
+          "unit": "g/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX01"
+          },
+          "note_lv": "Noapaļota mācību vērtība, kas saskan ar M(Mg)=24,0 un M(O)=16,0."
+        },
+        {
+          "id": "M_O2",
+          "label_lv": "skābekļa molmasa",
+          "value": "32.0",
+          "display_lv": "32,0",
+          "unit": "g/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX01"
+          },
+          "note_lv": "Noapaļota mācību vērtība 2 × 16,0; N03 tabulā O ir 15,999."
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Bilances koeficienti",
+          "statement_lv": "Sabalansē vienādojumu Mg + O₂ → MgO.",
+          "result": {
+            "kind": "symbolic",
+            "value": "2:1:2",
+            "display_lv": "2 : 1 : 2",
+            "unit": "1"
+          },
+          "reasoning_lv": "Magnija atomu skaits abās pusēs ir vienāds tikai ar koeficientiem 2 un 2; skābeklim pietiek ar vienu O₂ molekulu. Tāpēc bilance ir 2 Mg + O₂ → 2 MgO.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.rule",
+              "compound_molar_masses.compounds[Mg(OH)2]"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "n(Mg)",
+          "statement_lv": "No dotās magnija masas 4,80 g un molmasas 24,0 g/mol aprēķini n(Mg).",
+          "result": {
+            "kind": "numeric",
+            "value": "0.2",
+            "display_lv": "0,200",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "n = m / M = 4,80 g / 24,0 g/mol = 0,200 mol. Vienības saīsinās: g / (g/mol) = mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "m_Mg"
+              },
+              {
+                "given": "M_Mg"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "n(MgO)",
+          "statement_lv": "Izmanto bilances koeficientu attiecību starp Mg un MgO, lai no n(Mg) iegūtu n(MgO).",
+          "result": {
+            "kind": "numeric",
+            "value": "0.2",
+            "display_lv": "0,200",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "Mg un MgO koeficienti ir vienādi, tāpēc n(MgO) = n(Mg) × 2/2 = 0,200 mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "number": "1"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "m(MgO)",
+          "statement_lv": "Aprēķini MgO masu no n(MgO) un dotās molmasas 40,0 g/mol.",
+          "result": {
+            "kind": "numeric",
+            "value": "8",
+            "display_lv": "8,00",
+            "unit": "g",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "m = n × M = 0,200 mol × 40,0 g/mol = 8,00 g. Rezultāts saglabā trīs zīmīgos cipus.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S3"
+              },
+              {
+                "given": "M_MgO"
+              }
+            ],
+            "unit": "g"
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "n(O₂)",
+          "statement_lv": "Nosaki patērētā skābekļa daudzumu no tās pašas bilances.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.1",
+            "display_lv": "0,100",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "Koeficientu attiecība O₂:Mg ir 1:2, tāpēc n(O₂) = 0,200 mol × 1/2 = 0,100 mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "number": "0.5"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S6",
+          "quantity_lv": "m(O₂)",
+          "statement_lv": "Aprēķini patērētā skābekļa masu ar M(O₂) = 32,0 g/mol.",
+          "result": {
+            "kind": "numeric",
+            "value": "3.2",
+            "display_lv": "3,20",
+            "unit": "g",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "m(O₂) = n × M = 0,100 mol × 32,0 g/mol = 3,20 g.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S5"
+              },
+              {
+                "given": "M_O2"
+              }
+            ],
+            "unit": "g"
+          }
+        },
+        {
+          "step_id": "S7",
+          "quantity_lv": "Masas bilance",
+          "statement_lv": "Pārbaudi masas nezūdamību: saskaiti izejvielu masas un salīdzini ar produkta masu.",
+          "result": {
+            "kind": "numeric",
+            "value": "8",
+            "display_lv": "8,00",
+            "unit": "g",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "4,80 g Mg + 3,20 g O₂ = 8,00 g. Produkta masa arī ir 8,00 g, tāpēc ar dotajām noapaļotajām molmasām bilance sakrīt.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.addition_subtraction"
+            ],
+            "master_refs": [
+              "#stehiometrija"
+            ]
+          },
+          "recompute": {
+            "op": "add",
+            "operands": [
+              {
+                "given": "m_Mg"
+              },
+              {
+                "step": "S6"
+              }
+            ],
+            "unit": "g"
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+          "step_id": "S2",
+          "role": "method",
+          "note_lv": "Attēls rāda to pašu masas→molu→stehiometrijas metodi ar Al; ķēdes skaitļi ir Mg piemēra dotie lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX01"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX01"
+        ]
+      },
+      "given_note_lv": "Doti lielumi ir mācību piemēra ievaddati, nevis atbildes. M(Mg), M(MgO) un M(O₂) ir noapaļotas mācību vērtības, jo N03 atommasu tabulā Mg nav; tas ir skaidri marķēts."
+    },
+    {
+      "id": "EX02",
+      "topic": 1,
+      "title_lv": "Joni un elektrolīts: NaCl šķīdums",
+      "subtitle_lv": "Disociācija, jonu daudzums un jonu skaits no 0,100 mol NaCl; glikozes salīdzinājums.",
+      "outcome_ids": [
+        "P1-06",
+        "P1-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "anchor": "elektroliti",
+        "heading_lv": "Elektrolīti un disociācija",
+        "freeze_id": "C1-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic 0,100 mol given.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "n_NaCl",
+          "label_lv": "izšķīdinātais NaCl daudzums",
+          "value": "0.100",
+          "display_lv": "0,100",
+          "unit": "mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX02"
+          }
+        },
+        {
+          "id": "N_A",
+          "label_lv": "Avogadro konstante",
+          "value": "6.02214076e23",
+          "display_lv": "6,02214076·10²³",
+          "unit": "mol^-1",
+          "source": {
+            "kind": "conventions",
+            "ref": "constants.values[N_A]"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Disociācijas vienādojums",
+          "statement_lv": "Uzraksti NaCl disociāciju ūdens šķīdumā.",
+          "result": {
+            "kind": "symbolic",
+            "value": "NaCl → Na⁺ + Cl⁻",
+            "display_lv": "NaCl → Na⁺ + Cl⁻",
+            "unit": "1"
+          },
+          "reasoning_lv": "NaCl ir jonu savienojums; ūdenī tas sadalās atsevišķos Na⁺ un Cl⁻ jonos. Glikoze šajā modelī neveido jonus.",
+          "citations": {
+            "conventions_refs": [
+              "compound_molar_masses.compounds[NaCl]",
+              "atomic_masses.elements[Na]"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "n(Na⁺)",
+          "statement_lv": "No 0,100 mol NaCl nosaki Na⁺ jonu daudzumu.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.1",
+            "display_lv": "0,100",
+            "unit": "mol",
+            "sig_figs": 3,
+            "public": true
+          },
+          "reasoning_lv": "Disociācijas koeficienti ir 1:1:1, tāpēc n(Na⁺) = n(NaCl) × 1/1 = 0,100 mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division",
+              "compound_molar_masses.compounds[NaCl]"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "n_NaCl"
+              },
+              {
+                "number": "1"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "n(Cl⁻)",
+          "statement_lv": "No 0,100 mol NaCl nosaki Cl⁻ jonu daudzumu.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.1",
+            "display_lv": "0,100",
+            "unit": "mol",
+            "sig_figs": 3,
+            "public": true
+          },
+          "reasoning_lv": "Tā pati 1:1 attiecība dod n(Cl⁻) = 0,100 mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division",
+              "atomic_masses.elements[Cl]"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "n_NaCl"
+              },
+              {
+                "number": "1"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Kopējais jonu daudzums",
+          "statement_lv": "Saskaiti abu jonu daudzumus.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.2",
+            "display_lv": "0,200",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "n(joni) = n(Na⁺) + n(Cl⁻) = 0,100 + 0,100 = 0,200 mol.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.addition_subtraction"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          },
+          "recompute": {
+            "op": "add",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "step": "S3"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Jonu skaits",
+          "statement_lv": "Aprēķini jonu skaitu, izmantojot Avogadro konstanti.",
+          "result": {
+            "kind": "numeric",
+            "value": "1.204428152e23",
+            "display_lv": "1,204·10²³",
+            "unit": "1",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "N = n × N_A = 0,200 mol × 6,02214076·10²³ mol⁻¹ = 1,204·10²³ jonu.",
+          "citations": {
+            "conventions_refs": [
+              "constants.values[N_A]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S4"
+              },
+              {
+                "given": "N_A"
+              }
+            ],
+            "unit": "1"
+          }
+        },
+        {
+          "step_id": "S6",
+          "quantity_lv": "Glikozes salīdzinājums",
+          "statement_lv": "Paskaidro, kāpēc glikozes šķīdums šajā modelī nevada strāvu tikpat labi kā NaCl šķīdums.",
+          "result": {
+            "kind": "symbolic",
+            "value": "Glikoze neveido jonus",
+            "display_lv": "Glikoze neveido jonus",
+            "unit": "1"
+          },
+          "reasoning_lv": "Glikoze šķīst molekulāri; tajā nav brīvi kustīgu jonu, tāpēc elektrovadītspēja ir ļoti zema salīdzinājumā ar NaCl šķīdumu.",
+          "citations": {
+            "conventions_refs": [
+              "compound_molar_masses.compounds[C6H12O6]"
+            ],
+            "master_refs": [
+              "#elektroliti"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+          "step_id": "S2",
+          "role": "method",
+          "note_lv": "Shēma atgādina, ka koeficienti darbojas starp moliem; tā neuzrāda šīs ķēdes skaitļus."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX02"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX02"
+        ]
+      }
+    },
+    {
+      "id": "EX03",
+      "topic": 2,
+      "title_lv": "Birete: izlietotais tilpums",
+      "subtitle_lv": "Divi meniska nolasījumi 0,1 mL skalā; izlietotā tilpuma aprēķins un vienības pārrēķins.",
+      "outcome_ids": [
+        "P2-07",
+        "P2-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "anchor": "ch-5",
+        "heading_lv": "5. Skalu nolasīšana un biretes lietošana",
+        "freeze_id": "C2-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; burette readings are declared givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "V_initial",
+          "label_lv": "sākuma menisks",
+          "value": "2.15",
+          "display_lv": "2,15",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX03"
+          }
+        },
+        {
+          "id": "V_final",
+          "label_lv": "beigu menisks",
+          "value": "18.40",
+          "display_lv": "18,40",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX03"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Izlietotais tilpums",
+          "statement_lv": "Biretes sākuma menisks ir 2,15 mL, beigu menisks 18,40 mL. Aprēķini izlietoto tilpumu.",
+          "result": {
+            "kind": "numeric",
+            "value": "16.25",
+            "display_lv": "16,25",
+            "unit": "mL",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "Izlietotais tilpums = beigu nolasījums − sākuma nolasījums = 18,40 mL − 2,15 mL = 16,25 mL. Biretes skala pieaug uz leju, tāpēc atņem sākumu no beigām.",
+          "citations": {
+            "conventions_refs": [
+              "titration.burette.reading_rule_lv",
+              "tolerances.quantity_classes[burette_volume]"
+            ],
+            "master_refs": [
+              "#ch-5"
+            ]
+          },
+          "recompute": {
+            "op": "subtract",
+            "operands": [
+              {
+                "given": "V_final"
+              },
+              {
+                "given": "V_initial"
+              }
+            ],
+            "unit": "mL"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Nolasījuma precizitāte",
+          "statement_lv": "Pārbaudi, vai rezultāts atbilst 0,1 mL iedaļai un divu decimāļu pierakstam.",
+          "result": {
+            "kind": "numeric",
+            "value": "325",
+            "display_lv": "325",
+            "unit": "1",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "16,25 mL satur 325 soļus pa 0,05 mL; iedaļa ir 0,1 mL, tāpēc starpība ir pierakstāma ar divām decimāldaļām. Nolasījuma nenoteiktība ir ±0,05 mL.",
+          "citations": {
+            "conventions_refs": [
+              "tolerances.quantity_classes[burette_volume]",
+              "titration.burette.reported_decimals"
+            ],
+            "master_refs": [
+              "#ch-5"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S1"
+              },
+              {
+                "number": "0.05"
+              }
+            ],
+            "unit": "1"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "Tilpums litros",
+          "statement_lv": "Pārvērt izlietoto tilpumu litros, saglabājot to pašu precizitāti.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.01625",
+            "display_lv": "0,01625",
+            "unit": "L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "1 mL = 10⁻³ L, tāpēc 16,25 mL = 16,25 × 10⁻³ L = 0,01625 L. Šis solis demonstrē vienlaicīgu vienības pārrēķina un biretes tolerances atsauci.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[ml_to_l]",
+              "tolerances.quantity_classes[burette_volume]"
+            ],
+            "master_refs": [
+              "#ch-5"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "L",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+          "step_id": "S1",
+          "role": "data",
+          "note_lv": "Attēls rāda abus meniskus (2,15 mL un 18,40 mL) tajā pašā 0,1 mL skalā; izlietotais tilpums attēlā nav uzrakstīts."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX03"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX03"
+        ]
+      }
+    },
+    {
+      "id": "EX04",
+      "topic": 2,
+      "title_lv": "Vienības un precizitāte",
+      "subtitle_lv": "Prefiksu ķēde kg→g→mg un reizināšanas zīmīgo cipu pārbaude.",
+      "outcome_ids": [
+        "P2-05",
+        "P2-10",
+        "P2-03"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "anchor": "ch-2",
+        "heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+        "freeze_id": "C2-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; exact SI prefix definitions.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "m_kg",
+          "label_lv": "dotā masa",
+          "value": "0.00450",
+          "display_lv": "0,00450",
+          "unit": "kg",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX04"
+          }
+        },
+        {
+          "id": "a",
+          "label_lv": "pirmais faktors",
+          "value": "2.50",
+          "display_lv": "2,50",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX04"
+          }
+        },
+        {
+          "id": "b",
+          "label_lv": "otrais faktors",
+          "value": "3.42",
+          "display_lv": "3,42",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX04"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Masa gramos",
+          "statement_lv": "Pārvērt 0,00450 kg gramos.",
+          "result": {
+            "kind": "numeric",
+            "value": "4.5",
+            "display_lv": "4,50",
+            "unit": "g",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "1 kg = 1000 g, tāpēc 0,00450 kg × 1000 = 4,50 g. Trīs zīmīgie cipi saglabājas.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[kg_to_g]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch-2"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "m_kg"
+              },
+              {
+                "number": "1000"
+              }
+            ],
+            "unit": "g"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Masa miligramos",
+          "statement_lv": "Pārvērt iegūto masu miligramos.",
+          "result": {
+            "kind": "numeric",
+            "value": "4500",
+            "display_lv": "4500",
+            "unit": "mg",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "1 g = 1000 mg, tāpēc 4,50 g × 1000 = 4500 mg jeb 4,50·10³ mg.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[g_to_mg]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch-2"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S1"
+              },
+              {
+                "number": "1000"
+              }
+            ],
+            "unit": "mg"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "Zinātniskais pieraksts",
+          "statement_lv": "Pārraksti iegūto masu zinātniskajā pierakstā ar trim zīmīgajiem cipiem.",
+          "result": {
+            "kind": "symbolic",
+            "value": "4.50e3 mg",
+            "display_lv": "4,50·10³ mg",
+            "unit": "mg"
+          },
+          "reasoning_lv": "4500 mg = 4,50·10³ mg. Mantisa 4,50 satur trīs zīmīgos cipus, tāpēc pieraksts nav jānoapaļo tālāk.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.rule",
+              "unit_system.conversions[g_to_mg]"
+            ],
+            "master_refs": [
+              "#ch-2"
+            ]
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Reizinājums",
+          "statement_lv": "Aprēķini 2,50 × 3,42 pēc reizināšanas noteikuma.",
+          "result": {
+            "kind": "numeric",
+            "value": "8.55",
+            "display_lv": "8,55",
+            "unit": "1",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "2,50 × 3,42 = 8,55. Abiem faktoriem ir trīs zīmīgie cipi, tāpēc rezultātā arī ir trīs.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch-2"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "a"
+              },
+              {
+                "given": "b"
+              }
+            ],
+            "unit": "1"
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T2-CHAIN-PREFIX-SCALE",
+          "step_id": "S1",
+          "role": "method",
+          "note_lv": "Shēma rāda to pašu prefiksu ķēdi ar definīciju koeficientiem; ķēdes skaitļi ir dotie lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX04"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX04"
+        ]
+      }
+    },
+    {
+      "id": "EX05",
+      "topic": 3,
+      "title_lv": "Koncentrācija no iesvara",
+      "subtitle_lv": "2,922 g NaCl izšķīdina un papildina līdz 250,0 mL; n un c aprēķins.",
+      "outcome_ids": [
+        "P3-04",
+        "P3-06",
+        "P3-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "anchor": "n4",
+        "heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+        "freeze_id": "C3-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; conventional M(NaCl)=58,44 g/mol.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "m_NaCl",
+          "label_lv": "izsvērtā NaCl masa",
+          "value": "2.922",
+          "display_lv": "2,922",
+          "unit": "g",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX05"
+          }
+        },
+        {
+          "id": "M_NaCl",
+          "label_lv": "NaCl molmasa",
+          "value": "58.44",
+          "display_lv": "58,44",
+          "unit": "g/mol",
+          "source": {
+            "kind": "conventions",
+            "ref": "compound_molar_masses.compounds[NaCl]"
+          }
+        },
+        {
+          "id": "V_mL",
+          "label_lv": "gatavais tilpums",
+          "value": "250.0",
+          "display_lv": "250,0",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX05"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "n(NaCl)",
+          "statement_lv": "No 2,922 g NaCl un M=58,44 g/mol aprēķini n(NaCl).",
+          "result": {
+            "kind": "numeric",
+            "value": "0.05",
+            "display_lv": "0,05000",
+            "unit": "mol",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "n = m / M = 2,922 g / 58,44 g/mol = 0,05000 mol.",
+          "citations": {
+            "conventions_refs": [
+              "compound_molar_masses.compounds[NaCl]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#n5"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "m_NaCl"
+              },
+              {
+                "given": "M_NaCl"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "V šķīduma",
+          "statement_lv": "Pārvērt gatavo tilpumu 250,0 mL litros.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.25",
+            "display_lv": "0,2500",
+            "unit": "L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "V = 250,0 mL / 1000 = 0,2500 L.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[ml_to_l]"
+            ],
+            "master_refs": [
+              "#n5"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "given": "V_mL"
+              }
+            ],
+            "unit": "L",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "c(NaCl)",
+          "statement_lv": "Aprēķini molāro koncentrāciju no n un gatavā tilpuma.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.2",
+            "display_lv": "0,2000",
+            "unit": "mol/L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "c = n / V = 0,05000 mol / 0,2500 L = 0,2000 mol/L. Tilpums ir gatavais, nevis pievienotā ūdens tilpums.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#n5"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S1"
+              },
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "mol/L"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Jonu koncentrācijas",
+          "statement_lv": "Nosaki Na⁺ un Cl⁻ koncentrācijas šajā šķīdumā.",
+          "result": {
+            "kind": "symbolic",
+            "value": "c(Na⁺)=0,2000 mol/L; c(Cl⁻)=0,2000 mol/L",
+            "display_lv": "c(Na⁺)=0,2000 mol/L; c(Cl⁻)=0,2000 mol/L",
+            "unit": "mol/L"
+          },
+          "reasoning_lv": "NaCl disociē 1:1, tāpēc abu jonu koncentrācijas ir vienādas ar 0,2000 mol/L.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "compound_molar_masses.compounds[NaCl]"
+            ],
+            "master_refs": [
+              "#n5"
+            ]
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Zīmīgie cipi",
+          "statement_lv": "Pamato, kāpēc atbilde pierakstīta ar četriem zīmīgajiem cipiem.",
+          "result": {
+            "kind": "symbolic",
+            "value": "4 zīmīgie cipi",
+            "display_lv": "4 zīmīgie cipi",
+            "unit": "1"
+          },
+          "reasoning_lv": "2,922 g un 250,0 mL dod četrus zīmīgos cipus; 58,44 g/mol arī ir četri. Tāpēc c=0,2000 mol/L, nevis 0,2.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.rule"
+            ],
+            "master_refs": [
+              "#n5"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T3-CONC-BASES-BRIDGE",
+          "step_id": "S3",
+          "role": "method",
+          "note_lv": "Shēma rāda c = n/V un caur blīvumu ietās pārejas; tā neuzrāda šīs ķēdes skaitļus."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX05"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX05"
+        ]
+      }
+    },
+    {
+      "id": "EX06",
+      "topic": 3,
+      "title_lv": "Atšķaidījums: c₁V₁ = c₂V₂",
+      "subtitle_lv": "No 0,500 mol/L šķīduma pagatavo 100,0 mL 0,0500 mol/L šķīduma.",
+      "outcome_ids": [
+        "P3-10",
+        "P3-11"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "anchor": "n10",
+        "heading_lv": "Nodaļa 10. Atšķaidīšana un šķīdumu sajaukšana",
+        "freeze_id": "C3-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic dilution givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "c1",
+          "label_lv": "sākotnējā koncentrācija",
+          "value": "0.500",
+          "display_lv": "0,500",
+          "unit": "mol/L",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX06"
+          }
+        },
+        {
+          "id": "c2",
+          "label_lv": "gala koncentrācija",
+          "value": "0.0500",
+          "display_lv": "0,0500",
+          "unit": "mol/L",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX06"
+          }
+        },
+        {
+          "id": "V2_mL",
+          "label_lv": "gala tilpums",
+          "value": "100.0",
+          "display_lv": "100,0",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX06"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "V₂ litros",
+          "statement_lv": "Pārvērt gatavo tilpumu 100,0 mL litros.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.1",
+            "display_lv": "0,1000",
+            "unit": "L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "V₂ = 100,0 mL / 1000 = 0,1000 L.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[ml_to_l]"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "given": "V2_mL"
+              }
+            ],
+            "unit": "L",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "c₁V₁ = c₂V₂",
+          "statement_lv": "Aprēķini c₂V₂.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.005",
+            "display_lv": "0,00500",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "c₂V₂ = 0,0500 mol/L × 0,1000 L = 0,00500 mol.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "c2"
+              },
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "V₁ litros",
+          "statement_lv": "No c₁V₁ = c₂V₂ atrodi V₁.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.01",
+            "display_lv": "0,01000",
+            "unit": "L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "V₁ = c₂V₂ / c₁ = 0,00500 mol / 0,500 mol/L = 0,01000 L.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "given": "c1"
+              }
+            ],
+            "unit": "L"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "V₁ mililitros",
+          "statement_lv": "Pārvērt V₁ mililitros.",
+          "result": {
+            "kind": "numeric",
+            "value": "10.0",
+            "display_lv": "10,0",
+            "unit": "mL",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "V₁ = 0,01000 L × 1000 = 10,0 mL.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[l_to_ml]"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "step": "S3"
+              }
+            ],
+            "unit": "mL",
+            "factor": {
+              "num": 1000,
+              "den": 1
+            }
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Pagatavošanas secība",
+          "statement_lv": "Apraksti pareizo atšķaidīšanas secību.",
+          "result": {
+            "kind": "symbolic",
+            "value": "nomērīt V₁; pārnest mērkolbā; pievienot šķīdinātāju; papildināt līdz 100,0 mL; samaisīt",
+            "display_lv": "nomērīt V₁; pārnest mērkolbā; pievienot šķīdinātāju; papildināt līdz 100,0 mL; samaisīt",
+            "unit": "1"
+          },
+          "reasoning_lv": "Vispirms nomēra V₁ ar piemērotu pipeti, pārnes mērkolbā, pievieno šķīdinātāju un sajauc, tad papildina līdz gala atzīmei un vēlreiz samaisa. Gala tilpums ir 100,0 mL, nevis pievienotā ūdens tilpums.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "unit_system.conversions[ml_to_l]"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          }
+        },
+        {
+          "step_id": "S6",
+          "quantity_lv": "Gala tilpuma pārbaude",
+          "statement_lv": "Paskaidro, kāpēc nepievieno precīzi 90,0 mL ūdens.",
+          "result": {
+            "kind": "symbolic",
+            "value": "gala tilpums nosaka papildināšanu līdz atzīmei",
+            "display_lv": "gala tilpums nosaka papildināšanu līdz atzīmei",
+            "unit": "mL"
+          },
+          "reasoning_lv": "Atšķaidīšanā svarīgs ir gala tilpums: mērkolbu papildina līdz 100,0 mL atzīmei. Precīzi 90,0 mL ūdens nav universāla instrukcija, jo šķīduma tilpums nav vienkārši aditīvs.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "unit_system.conversions[ml_to_l]"
+            ],
+            "master_refs": [
+              "#n10"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+          "step_id": "S5",
+          "role": "method",
+          "note_lv": "Attēls rāda pipetes–mērkolbas procedūru ar citu koncentrāciju; ķēdes skaitļi ir dotie lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX06"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX06"
+        ]
+      }
+    },
+    {
+      "id": "EX07",
+      "topic": 4,
+      "title_lv": "Gibsa enerģija un robežtemperatūra",
+      "subtitle_lv": "ΔH=40,0 kJ/mol, ΔS=150 J/(mol·K), T=298 K; ΔG un T robeža.",
+      "outcome_ids": [
+        "P4-08",
+        "P4-10",
+        "P4-11"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "anchor": "ch7",
+        "heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+        "freeze_id": "C4-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic thermodynamic givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "dH",
+          "label_lv": "reakcijas entalpija",
+          "value": "40.0",
+          "display_lv": "40,0",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX07"
+          }
+        },
+        {
+          "id": "dS_J",
+          "label_lv": "reakcijas entropija",
+          "value": "150",
+          "display_lv": "150",
+          "unit": "J/(mol·K)",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX07"
+          }
+        },
+        {
+          "id": "T",
+          "label_lv": "temperatūra",
+          "value": "298",
+          "display_lv": "298",
+          "unit": "K",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX07"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "ΔS kJ/(mol·K)",
+          "statement_lv": "Pārvērt ΔS = 150 J/(mol·K) uz kJ/(mol·K).",
+          "result": {
+            "kind": "numeric",
+            "value": "0.15",
+            "display_lv": "0,150",
+            "unit": "kJ/(mol·K)",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "1 kJ = 1000 J, tāpēc 150 J/(mol·K) = 0,150 kJ/(mol·K). Enerģijas vienības tagad saskan ar ΔH.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division",
+              "thermodynamics.c04_note_lv"
+            ],
+            "master_refs": [
+              "#ch7"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "given": "dS_J"
+              }
+            ],
+            "unit": "kJ/(mol·K)",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "TΔS",
+          "statement_lv": "Aprēķini TΔS pie 298 K.",
+          "result": {
+            "kind": "numeric",
+            "value": "44.7",
+            "display_lv": "44,7",
+            "unit": "kJ/mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "TΔS = 298 K × 0,150 kJ/(mol·K) = 44,7 kJ/mol. Kelvini un kJ/(mol·K) dod kJ/mol.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.gibbs.equation",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch7"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "T"
+              },
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "ΔG",
+          "statement_lv": "Aprēķini ΔG = ΔH − TΔS.",
+          "result": {
+            "kind": "numeric",
+            "value": "-4.7",
+            "display_lv": "−4,7",
+            "unit": "kJ/mol",
+            "sig_figs": 2
+          },
+          "reasoning_lv": "ΔG = 40,0 kJ/mol − 44,7 kJ/mol = −4,7 kJ/mol. Negatīva ΔG nozīmē, ka process ir patvaļīgs dotajos apstākļos.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.gibbs.equation",
+              "thermodynamics.gibbs.spontaneity_lv"
+            ],
+            "master_refs": [
+              "#ch7"
+            ]
+          },
+          "recompute": {
+            "op": "subtract",
+            "operands": [
+              {
+                "given": "dH"
+              },
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Robežtemperatūra",
+          "statement_lv": "Atrodi temperatūru, kurā ΔG = 0, pieņemot, ka ΔH un ΔS nemainās.",
+          "result": {
+            "kind": "numeric",
+            "value": "266.6666666666666667",
+            "display_lv": "266,7",
+            "unit": "K",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "0 = ΔH − TΔS ⇒ T = ΔH / ΔS = 40,0 / 0,150 = 266,7 K. Virs šīs temperatūras ΔG kļūst negatīva.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.gibbs.equation",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch7"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "dH"
+              },
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "K"
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Secinājums",
+          "statement_lv": "Paskaidro, ko nozīmē iegūtā ΔG un robežtemperatūra.",
+          "result": {
+            "kind": "symbolic",
+            "value": "patvaļīgs pie 298 K; robeža 266,7 K",
+            "display_lv": "patvaļīgs pie 298 K; robeža 266,7 K",
+            "unit": "1"
+          },
+          "reasoning_lv": "Pie 298 K ΔG < 0, tāpēc process ir patvaļīgs. Tas nav apgalvojums par ātrumu: ΔG nerada kinētisko barjeru. Robeža 266,7 K ir aprēķināta, pieņemot nemainīgus ΔH un ΔS.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.gibbs.spontaneity_lv",
+              "thermodynamics.c04_note_lv"
+            ],
+            "master_refs": [
+              "#ch7"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T4-ENERGY-EXOTHERMIC",
+          "step_id": "S3",
+          "role": "method",
+          "note_lv": "Attēls rāda enerģijas profilu un ΔH zīmi; tas nav šīs Gibsa ķēdes grafiks."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX07"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX07"
+        ]
+      }
+    },
+    {
+      "id": "EX08",
+      "topic": 4,
+      "title_lv": "Kalorimetrija un Hesa cikls",
+      "subtitle_lv": "Šķīduma siltums, reakcijas zīme un FeCl₃ Hesa cikls ar siltuma–entalpijas saiti.",
+      "outcome_ids": [
+        "P4-03",
+        "P4-02",
+        "P4-07"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "anchor": "ch5",
+        "heading_lv": "5. Hesa likums un standartentalpijas",
+        "freeze_id": "C4-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; calorimetry givens synthetic, Hess values master-grounded.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "m_sol",
+          "label_lv": "šķīduma masa",
+          "value": "100.0",
+          "display_lv": "100,0",
+          "unit": "g",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX08"
+          }
+        },
+        {
+          "id": "cp",
+          "label_lv": "īpatnējā siltumietilpība",
+          "value": "4.18",
+          "display_lv": "4,18",
+          "unit": "J/(g·K)",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX08"
+          }
+        },
+        {
+          "id": "dT",
+          "label_lv": "temperatūras pieaugums",
+          "value": "5.00",
+          "display_lv": "5,00",
+          "unit": "K",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX08"
+          }
+        },
+        {
+          "id": "H1",
+          "label_lv": "FeCl₃ 1. posms",
+          "value": "-341.8",
+          "display_lv": "−341,8",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "master",
+            "ref": "materials/Chemistry_4/Master_4_temats_termodinamika.html#fig-hess"
+          }
+        },
+        {
+          "id": "H2",
+          "label_lv": "FeCl₃ 2. posms",
+          "value": "-57.7",
+          "display_lv": "−57,7",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "master",
+            "ref": "materials/Chemistry_4/Master_4_temats_termodinamika.html#fig-hess"
+          }
+        },
+        {
+          "id": "H_abs",
+          "label_lv": "divsoļu summas absolūtā vērtība",
+          "value": "399.5",
+          "display_lv": "399,5",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "master",
+            "ref": "materials/Chemistry_4/Master_4_temats_termodinamika.html#fig-hess"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "q(šķīdums)",
+          "statement_lv": "Aprēķini šķīduma uzņemto siltumu: m=100,0 g, cₚ=4,18 J/(g·K), ΔT=+5,00 K.",
+          "result": {
+            "kind": "numeric",
+            "value": "2090",
+            "display_lv": "2090",
+            "unit": "J",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "q = m cₚ ΔT = 100,0 g × 4,18 J/(g·K) × 5,00 K = 2090 J. Temperatūra pieaug, tāpēc šķīdums siltumu uzņem.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.q_p_rule_lv",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "m_sol"
+              },
+              {
+                "given": "cp"
+              },
+              {
+                "given": "dT"
+              }
+            ],
+            "unit": "J"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "q(šķīdums) kJ",
+          "statement_lv": "Pārvērt iepriekšējā solī iegūto siltumu kilodžoulos.",
+          "result": {
+            "kind": "numeric",
+            "value": "2.09",
+            "display_lv": "2,090",
+            "unit": "kJ",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "2090 J / 1000 = 2,090 kJ. Tālākā Hesa cikla entalpija ir kJ/mol, tāpēc vienības jāsaskaņo.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.multiplication_division",
+              "thermodynamics.enthalpy.reaction_enthalpy"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "kJ",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "q(reakcija)",
+          "statement_lv": "Nosaki reakcijas siltumu ar pretēju zīmi.",
+          "result": {
+            "kind": "numeric",
+            "value": "-2.09",
+            "display_lv": "−2,090",
+            "unit": "kJ",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "Izolētā sistēmā q(reakcija) = −q(šķīdums) = −2,090 kJ. Reakcija siltumu atdod, tāpēc tās zīme ir negatīva.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.exothermic",
+              "thermodynamics.sign_convention"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          },
+          "recompute": {
+            "op": "negate",
+            "operands": [
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "kJ"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Hesa cikla summa",
+          "statement_lv": "Aprēķini FeCl₃ veidošanās entalpiju pa divsoļu ceļu: −341,8 un −57,7 kJ/mol.",
+          "result": {
+            "kind": "numeric",
+            "value": "-399.5",
+            "display_lv": "−399,5",
+            "unit": "kJ/mol",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "ΔH = −341,8 + (−57,7) = −399,5 kJ/mol. Hesa likums ļauj saskaitīt starpposmus, jo process ir pie nemainīga spiediena un fiksētām fāzēm.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "thermodynamics.enthalpy.q_p_rule_lv"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          },
+          "recompute": {
+            "op": "add",
+            "operands": [
+              {
+                "given": "H1"
+              },
+              {
+                "given": "H2"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "n(reakcija)",
+          "statement_lv": "No reakcijas siltuma un Hesa entalpijas nosaki vielas daudzumu.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.00523153942428035",
+            "display_lv": "5,23·10⁻³",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "n = q / |ΔH| = 2,090 kJ / 399,5 kJ/mol = 5,23·10⁻³ mol. Šis ir daudzums, kas atbilst izmērītajam siltumam.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "given": "H_abs"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S6",
+          "quantity_lv": "Procesa raksturs",
+          "statement_lv": "Pamato procesa siltuma zīmi.",
+          "result": {
+            "kind": "symbolic",
+            "value": "eksotermisks",
+            "display_lv": "eksotermisks",
+            "unit": "1"
+          },
+          "reasoning_lv": "q(reakcija) < 0 un ΔH < 0, tāpēc reakcija atdod siltumu apkārtnei. Katalizators šo zīmi nemainītu.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.exothermic",
+              "thermodynamics.sign_convention"
+            ],
+            "master_refs": [
+              "#ch5"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T4-HESS-CO2",
+          "step_id": "S4",
+          "role": "method",
+          "note_lv": "Attēls rāda Hesa metodi ar CO₂ ciklu; ķēde lieto FeCl₃ ciklu no meistara, tāpēc attēla skaitļi nav ķēdes rezultāti."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX08"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX08"
+        ]
+      }
+    },
+    {
+      "id": "EX09",
+      "topic": 5,
+      "title_lv": "Pusperiods un pirmās pakāpes linearizācija",
+      "subtitle_lv": "Masa 80, 40, 20 mg pie 0, 30, 60 min; t½, k un atlikusī masa pēc 90 min.",
+      "outcome_ids": [
+        "P5-08",
+        "P5-09",
+        "P5-10"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "anchor": "ch6",
+        "heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+        "freeze_id": "C5-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; table is a declared teaching dataset.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "m0",
+          "label_lv": "sākuma masa",
+          "value": "80",
+          "display_lv": "80",
+          "unit": "mg",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX09"
+          }
+        },
+        {
+          "id": "t_half",
+          "label_lv": "pusperiods",
+          "value": "30",
+          "display_lv": "30",
+          "unit": "min",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX09"
+          }
+        },
+        {
+          "id": "t_total",
+          "label_lv": "kopējais laiks",
+          "value": "90",
+          "display_lv": "90",
+          "unit": "min",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX09"
+          }
+        },
+        {
+          "id": "ln2",
+          "label_lv": "ln2",
+          "value": "0.6931471805599453",
+          "display_lv": "0,693147…",
+          "unit": "1",
+          "source": {
+            "kind": "conventions",
+            "ref": "constants.values[LN2]"
+          }
+        },
+        {
+          "id": "half",
+          "label_lv": "viena pusperioda daļa",
+          "value": "0.5",
+          "display_lv": "0,5",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX09"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "k",
+          "statement_lv": "Pirmās pakāpes modelī pusperiods ir 30 min. Aprēķini k.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.023104906018664844",
+            "display_lv": "0,02310",
+            "unit": "min^-1",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "k = ln2 / t½ = 0,693147... / 30 min = 0,02310 min⁻¹. Pusperiodu nolasa no tabulas: masa samazinās uz pusi ik pēc 30 min.",
+          "citations": {
+            "conventions_refs": [
+              "constants.values[LN2]",
+              "kinetics.integrated_forms[order=1].half_life"
+            ],
+            "master_refs": [
+              "#ch6"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "ln2"
+              },
+              {
+                "given": "t_half"
+              }
+            ],
+            "unit": "min^-1"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Pusperiodu skaits",
+          "statement_lv": "Cik pusperiodu ir 90 minūtēs?",
+          "result": {
+            "kind": "numeric",
+            "value": "3",
+            "display_lv": "3",
+            "unit": "1",
+            "sig_figs": 2
+          },
+          "reasoning_lv": "90 min / 30 min = 3 pusperiodi.",
+          "citations": {
+            "conventions_refs": [
+              "kinetics.integrated_forms[order=1].integrated"
+            ],
+            "master_refs": [
+              "#ch6"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "t_total"
+              },
+              {
+                "given": "t_half"
+              }
+            ],
+            "unit": "1"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "Atlikusī daļa",
+          "statement_lv": "Aprēķini atlikušo masas daļu pēc trim pusperiodiem.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.125",
+            "display_lv": "0,125",
+            "unit": "1",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "Atlikusī daļa = (1/2)³ = 0,125.",
+          "citations": {
+            "conventions_refs": [
+              "kinetics.integrated_forms[order=1].integrated"
+            ],
+            "master_refs": [
+              "#ch6"
+            ]
+          },
+          "recompute": {
+            "op": "power",
+            "operands": [
+              {
+                "given": "half"
+              },
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "1"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "m(90 min)",
+          "statement_lv": "Aprēķini atlikušo masu pēc 90 min, ja sākuma masa ir 80 mg.",
+          "result": {
+            "kind": "numeric",
+            "value": "10.0",
+            "display_lv": "10,0",
+            "unit": "mg",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "m = m₀ × 0,125 = 80 mg × 0,125 = 10,0 mg. Rezultāts atbilst trim pusperiodiem.",
+          "citations": {
+            "conventions_refs": [
+              "kinetics.integrated_forms[order=1].integrated",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#ch6"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "m0"
+              },
+              {
+                "step": "S3"
+              }
+            ],
+            "unit": "mg"
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Linearizācija",
+          "statement_lv": "Paskaidro, kāpēc pirmās pakāpes datiem lieto ln(m/m₀) pret t.",
+          "result": {
+            "kind": "symbolic",
+            "value": "ln(m/m₀) pret t ir taisne ar slīpumu −k",
+            "display_lv": "ln(m/m₀) pret t ir taisne ar slīpumu −k",
+            "unit": "1"
+          },
+          "reasoning_lv": "Pirmās pakāpes integrālā forma ir ln(m/m₀) = −kt. Tāpēc ln(m/m₀) pret t ir taisne ar slīpumu −k un krustpunktu 0; tikai datu deklarētajā intervālā.",
+          "citations": {
+            "conventions_refs": [
+              "kinetics.linearization_rule_lv",
+              "kinetics.integrated_forms[order=1].linear_form"
+            ],
+            "master_refs": [
+              "#ch6"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T5-LIN-FIRST",
+          "step_id": "S5",
+          "role": "method",
+          "note_lv": "Attēls rāda pirmās pakāpes linearizāciju ar citu k; ķēdes skaitļi nāk no tabulas."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX09"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX09"
+        ]
+      }
+    },
+    {
+      "id": "EX10",
+      "topic": 5,
+      "title_lv": "Katalizatora profils un ātrumu noteicošā stadija",
+      "subtitle_lv": "Enerģijas profils: reaģenti 20, produkti −10, maksimumi 100 un 60 kJ/mol; divpakāpju mehānisma ātrumu noteicošā stadija.",
+      "outcome_ids": [
+        "P5-07",
+        "P5-03",
+        "P5-06"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "anchor": "ch8",
+        "heading_lv": "8 Katalīze",
+        "freeze_id": "C5-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchors ch7/ch8; synthetic profile values.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "E_reactants",
+          "label_lv": "reaģentu enerģija",
+          "value": "20",
+          "display_lv": "20",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX10"
+          }
+        },
+        {
+          "id": "E_products",
+          "label_lv": "produktu enerģija",
+          "value": "-10",
+          "display_lv": "−10",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX10"
+          }
+        },
+        {
+          "id": "peak_uncat",
+          "label_lv": "nekatalizētais maksimums",
+          "value": "100",
+          "display_lv": "100",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX10"
+          }
+        },
+        {
+          "id": "peak_cat",
+          "label_lv": "katalizētais maksimums",
+          "value": "60",
+          "display_lv": "60",
+          "unit": "kJ/mol",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX10"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "ΔH",
+          "statement_lv": "No enerģijas profila (reaģenti 20, produkti −10 kJ/mol) aprēķini ΔH.",
+          "result": {
+            "kind": "numeric",
+            "value": "-30",
+            "display_lv": "−30",
+            "unit": "kJ/mol",
+            "sig_figs": 2
+          },
+          "reasoning_lv": "ΔH = H(produkti) − H(reaģenti) = −10 − 20 = −30 kJ/mol. Process ir eksotermisks.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "thermodynamics.enthalpy.exothermic"
+            ],
+            "master_refs": [
+              "#ch8"
+            ]
+          },
+          "recompute": {
+            "op": "subtract",
+            "operands": [
+              {
+                "given": "E_products"
+              },
+              {
+                "given": "E_reactants"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Eₐ nekatalizēts",
+          "statement_lv": "Aprēķini nekatalizētā ceļa aktivācijas enerģiju (maksimums 100 kJ/mol).",
+          "result": {
+            "kind": "numeric",
+            "value": "80",
+            "display_lv": "80",
+            "unit": "kJ/mol",
+            "sig_figs": 2
+          },
+          "reasoning_lv": "Eₐ = E(‡) − E(reaģenti) = 100 − 20 = 80 kJ/mol.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "rounding.addition_subtraction"
+            ],
+            "master_refs": [
+              "#ch8"
+            ]
+          },
+          "recompute": {
+            "op": "subtract",
+            "operands": [
+              {
+                "given": "peak_uncat"
+              },
+              {
+                "given": "E_reactants"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "Eₐ katalizēts",
+          "statement_lv": "Aprēķini katalizētā ceļa aktivācijas enerģiju (maksimums 60 kJ/mol).",
+          "result": {
+            "kind": "numeric",
+            "value": "40",
+            "display_lv": "40",
+            "unit": "kJ/mol",
+            "sig_figs": 2
+          },
+          "reasoning_lv": "Eₐ = 60 − 20 = 40 kJ/mol. Katalizators pazemina barjeru, bet nemaina reaģentu un produktu līmeņus.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "rounding.addition_subtraction"
+            ],
+            "master_refs": [
+              "#ch8"
+            ]
+          },
+          "recompute": {
+            "op": "subtract",
+            "operands": [
+              {
+                "given": "peak_cat"
+              },
+              {
+                "given": "E_reactants"
+              }
+            ],
+            "unit": "kJ/mol"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Katalizatora loma",
+          "statement_lv": "Paskaidro, kāpēc katalizators nemaina ΔH.",
+          "result": {
+            "kind": "symbolic",
+            "value": "ΔH nemainās",
+            "display_lv": "ΔH nemainās",
+            "unit": "1"
+          },
+          "reasoning_lv": "Katalizators nodrošina citu ceļu ar zemāku barjeru; sākuma un beigu stāvokļa entalpijas paliek tās pašas, tāpēc ΔH nemainās.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "thermodynamics.gibbs.spontaneity_lv"
+            ],
+            "master_refs": [
+              "#ch8"
+            ]
+          }
+        },
+        {
+          "step_id": "S5",
+          "quantity_lv": "Kļūdas labojums",
+          "statement_lv": "Izlabo apgalvojumu, ka katalizators padara ΔH negatīvāku.",
+          "result": {
+            "kind": "symbolic",
+            "value": "katalizators maina ceļu, ne ΔH",
+            "display_lv": "katalizators maina ceļu, ne ΔH",
+            "unit": "1"
+          },
+          "reasoning_lv": "Apgalvojums ir nepareizs: katalizators nepievieno enerģiju produktiem un neizņem to no reaģentiem. ΔH ir stāvokļa funkciju starpība, tāpēc tā paliek −30 kJ/mol.",
+          "citations": {
+            "conventions_refs": [
+              "thermodynamics.enthalpy.reaction_enthalpy",
+              "kinetics.rate_law_lv"
+            ],
+            "master_refs": [
+              "#ch8"
+            ]
+          }
+        },
+        {
+          "step_id": "S6",
+          "quantity_lv": "Ātrumu noteicošā stadija",
+          "statement_lv": "Paskaidro, kā divpakāpju mehānismā atrast ātrumu noteicošo stadiju.",
+          "result": {
+            "kind": "symbolic",
+            "value": "augstākās barjeras stadija nosaka kopējo ātrumu",
+            "display_lv": "augstākās barjeras stadija nosaka kopējo ātrumu",
+            "unit": "1"
+          },
+          "reasoning_lv": "Divpakāpju mehānismā katrai stadijai ir sava barjera; kopējo ātrumu ierobežo stadija ar augstāko aktivācijas barjeru. Katalizators pazemina barjeru, bet nemaina ΔH.",
+          "citations": {
+            "conventions_refs": [
+              "kinetics.rate_law_lv"
+            ],
+            "master_refs": [
+              "#ch7",
+              "#ch8"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T4-ENERGY-CATALYZED",
+          "step_id": "S3",
+          "role": "method",
+          "note_lv": "Attēls rāda barjeras pazemināšanu ar citiem skaitļiem (95→35, ΔH=−70); ķēdes profils ir dotais mācību piemērs."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX10"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX10"
+        ]
+      }
+    },
+    {
+      "id": "EX11",
+      "topic": 6,
+      "title_lv": "Redoksa titrēšana: MnO₄⁻ un Fe²⁺",
+      "subtitle_lv": "Skābā vidē 1:5 stehiometrija; 18,60 mL 0,02000 mol/L KMnO₄ pret 25,00 mL Fe²⁺.",
+      "outcome_ids": [
+        "P6-08",
+        "P6-05",
+        "P6-07"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "anchor": "h-ch9",
+        "heading_lv": "9.Tilpuma analīze un permanganatometrija",
+        "freeze_id": "C6-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; redox stoichiometry master-grounded.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "c_KMnO4",
+          "label_lv": "KMnO₄ koncentrācija",
+          "value": "0.02000",
+          "display_lv": "0,02000",
+          "unit": "mol/L",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX11"
+          }
+        },
+        {
+          "id": "V_KMnO4",
+          "label_lv": "KMnO₄ tilpums",
+          "value": "18.60",
+          "display_lv": "18,60",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX11"
+          }
+        },
+        {
+          "id": "V_KMnO4_L",
+          "label_lv": "KMnO₄ tilpums litros",
+          "value": "0.01860",
+          "display_lv": "0,01860",
+          "unit": "L",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX11"
+          }
+        },
+        {
+          "id": "V_sample",
+          "label_lv": "Fe²⁺ parauga tilpums",
+          "value": "25.00",
+          "display_lv": "25,00",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX11"
+          }
+        },
+        {
+          "id": "V_sample_L",
+          "label_lv": "Fe²⁺ parauga tilpums litros",
+          "value": "0.02500",
+          "display_lv": "0,02500",
+          "unit": "L",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX11"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Pusreakcijas",
+          "statement_lv": "Skābā vidē uzraksti MnO₄⁻ reducēšanos un Fe²⁺ oksidēšanos.",
+          "result": {
+            "kind": "symbolic",
+            "value": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O; Fe²⁺ → Fe³⁺ + e⁻",
+            "display_lv": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O; Fe²⁺ → Fe³⁺ + e⁻",
+            "unit": "1"
+          },
+          "reasoning_lv": "Skābā vidē permanganāts patērē 8 H⁺ un 5 elektronus, veidojot Mn²⁺ un 4 H₂O. Dzelzs(II) zaudē vienu elektronu, veidojot Fe³⁺. Elektronu bilance prasa 5 Fe²⁺ uz 1 MnO₄⁻.",
+          "citations": {
+            "conventions_refs": [
+              "potentials.reference_values[Fe3_Fe2]",
+              "potentials.default_convention"
+            ],
+            "master_refs": [
+              "#h-ch6"
+            ]
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "n(MnO₄⁻)",
+          "statement_lv": "Aprēķini titranta daudzumu: 18,60 mL 0,02000 mol/L KMnO₄.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.000372",
+            "display_lv": "3,720·10⁻⁴",
+            "unit": "mol",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "n = cV = 0,02000 mol/L × 0,01860 L = 3,720·10⁻⁴ mol.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h-ch9"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "c_KMnO4"
+              },
+              {
+                "given": "V_KMnO4_L"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "n(Fe²⁺)",
+          "statement_lv": "Izmanto elektronu bilances attiecību 5:1.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.00186",
+            "display_lv": "1,860·10⁻³",
+            "unit": "mol",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "n(Fe²⁺) = 5 × n(MnO₄⁻) = 5 × 3,720·10⁻⁴ = 1,860·10⁻³ mol.",
+          "citations": {
+            "conventions_refs": [
+              "titration.endpoint.equivalence_definition_lv",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h-ch9"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S2"
+              },
+              {
+                "number": "5"
+              }
+            ],
+            "unit": "mol"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "c(Fe²⁺)",
+          "statement_lv": "Aprēķini Fe²⁺ koncentrāciju 25,00 mL paraugā.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.0744",
+            "display_lv": "0,07440",
+            "unit": "mol/L",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "c = n / V = 1,860·10⁻³ mol / 0,02500 L = 0,07440 mol/L. Titrēšanas beigu punkts ir novērotais signāls; ekvivalences punkts ir stehiometriskais aprēķins.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=molar].formula",
+              "titration.endpoint.wording_rule_lv"
+            ],
+            "master_refs": [
+              "#h-ch9"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S3"
+              },
+              {
+                "given": "V_sample_L"
+              }
+            ],
+            "unit": "mol/L"
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+          "step_id": "S2",
+          "role": "method",
+          "note_lv": "Attēls rāda to pašu 1:5 KMnO₄/Fe²⁺ titrēšanu ar meistara C6 datiem (0,1235 mol/L, 12,35 mL); ķēdes skaitļi ir mācību piemēra dotie lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX11"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX11"
+        ]
+      }
+    },
+    {
+      "id": "EX12",
+      "topic": 6,
+      "title_lv": "Nernsta vienādojums Cu²⁺/Cu",
+      "subtitle_lv": "E°=0,337 V, a(Cu²⁺)=0,0100, n=2, 298,15 K; Q un E.",
+      "outcome_ids": [
+        "P6-03",
+        "P6-02"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "anchor": "h-ch3",
+        "heading_lv": "3.Nernsta vienādojums",
+        "freeze_id": "C6-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; N03 reference potential and slope.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "E0",
+          "label_lv": "Cu²⁺/Cu standartpotenciāls",
+          "value": "0.337",
+          "display_lv": "0,337",
+          "unit": "V",
+          "source": {
+            "kind": "conventions",
+            "ref": "potentials.reference_values[Cu2_Cu]"
+          }
+        },
+        {
+          "id": "a_Cu2",
+          "label_lv": "Cu²⁺ aktivitāte",
+          "value": "0.0100",
+          "display_lv": "0,0100",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX12"
+          }
+        },
+        {
+          "id": "n",
+          "label_lv": "elektronu skaits",
+          "value": "2",
+          "display_lv": "2",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX12"
+          }
+        },
+        {
+          "id": "slope",
+          "label_lv": "Nernsta slīpums 298,15 K",
+          "value": "0.0592",
+          "display_lv": "0,0592",
+          "unit": "V",
+          "source": {
+            "kind": "conventions",
+            "ref": "constants.values[NERNST_SLOPE]"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Q",
+          "statement_lv": "Cu²⁺ + 2e⁻ → Cu(s), a(Cu²⁺)=0,0100. Aprēķini Q = 1/a(Cu²⁺).",
+          "result": {
+            "kind": "numeric",
+            "value": "100",
+            "display_lv": "100",
+            "unit": "1",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "Q = [Red]/[Ox] = 1 / 0,0100 = 100. Aktivitates tuvinātas koncentrācijām; tas ir deklarēts Nernsta modelis.",
+          "citations": {
+            "conventions_refs": [
+              "potentials.nernst.equation",
+              "potentials.symbols[id=E_actual]"
+            ],
+            "master_refs": [
+              "#h-ch3"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "number": "1"
+              },
+              {
+                "given": "a_Cu2"
+              }
+            ],
+            "unit": "1"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "E",
+          "statement_lv": "Aprēķini E ar E°=0,337 V, n=2 un slīpumu 0,0592 V.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.2778",
+            "display_lv": "0,2778",
+            "unit": "V",
+            "sig_figs": 4
+          },
+          "reasoning_lv": "E = E° − (0,0592 / n) · lg Q = 0,337 − (0,0592/2) · lg 100 = 0,337 − 0,0592 = 0,2778 V.",
+          "citations": {
+            "conventions_refs": [
+              "potentials.nernst.equation",
+              "constants.values[NERNST_SLOPE]"
+            ],
+            "master_refs": [
+              "#h-ch3"
+            ]
+          },
+          "recompute": {
+            "op": "nernst",
+            "operands": [
+              {
+                "given": "E0"
+              },
+              {
+                "given": "slope"
+              },
+              {
+                "given": "n"
+              },
+              {
+                "step": "S1"
+              }
+            ],
+            "unit": "V"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "E noapaļots",
+          "statement_lv": "Noapaļo E līdz trim zīmīgajiem cipiem.",
+          "result": {
+            "kind": "symbolic",
+            "value": "0.278",
+            "display_lv": "0,278",
+            "unit": "V"
+          },
+          "reasoning_lv": "0,2778 V noapaļo uz 0,278 V. Darba tabulās potenciālu citē līdz 0,01 V, bet starprezultātu var pierakstīt ar trim zīmīgajiem cipiem.",
+          "citations": {
+            "conventions_refs": [
+              "rounding.rule",
+              "potentials.working_precision_V"
+            ],
+            "master_refs": [
+              "#h-ch3"
+            ]
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Kļūdas labojums",
+          "statement_lv": "Izlabo apgalvojumu, ka Q jāliek apgriezti.",
+          "result": {
+            "kind": "symbolic",
+            "value": "Q = [Red]/[Ox], nevis [Ox]/[Red]",
+            "display_lv": "Q = [Red]/[Ox], nevis [Ox]/[Red]",
+            "unit": "1"
+          },
+          "reasoning_lv": "Nernsta vienādojumā Q ir reducētās formas attiecība pret oksidēto. Ja Q apgriež, zīme pie logaritma mainās un E kļūst nepareizs; šajā piemērā apgriezta Q dotu 0,3962 V.",
+          "citations": {
+            "conventions_refs": [
+              "potentials.nernst.equation",
+              "potentials.mixing_rule_lv"
+            ],
+            "master_refs": [
+              "#h-ch3"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX12"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX12"
+        ]
+      }
+    },
+    {
+      "id": "EX13",
+      "topic": 7,
+      "title_lv": "Kalibrēšana ar nenulles krustpunktu",
+      "subtitle_lv": "Standarti 0–0,012 mg/mL, A=0,010–0,610; parauga A=0,350, brīva regresija.",
+      "outcome_ids": [
+        "P7-03",
+        "P7-02"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "anchor": "h8",
+        "heading_lv": "8. Kalibrēšanas metode",
+        "freeze_id": "C7-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; calibration points synthetic.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "A_sample",
+          "label_lv": "parauga absorbcija",
+          "value": "0.350",
+          "display_lv": "0,350",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX13"
+          }
+        },
+        {
+          "id": "intercept",
+          "label_lv": "krustpunkts (tukšā parauga absorbcija)",
+          "value": "0.010",
+          "display_lv": "0,010",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX13"
+          }
+        },
+        {
+          "id": "A_minus_b",
+          "label_lv": "A − b",
+          "value": "0.34",
+          "display_lv": "0,340",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX13"
+          }
+        },
+        {
+          "id": "cal_points",
+          "label_lv": "kalibrēšanas standarti",
+          "kind": "points",
+          "unit": "mg/mL; 1",
+          "points": [
+            [
+              0,
+              0.01
+            ],
+            [
+              0.004,
+              0.21
+            ],
+            [
+              0.008,
+              0.41
+            ],
+            [
+              0.012,
+              0.61
+            ]
+          ],
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX13"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "Asis",
+          "statement_lv": "Izvēlies asis kalibrēšanas grafikam.",
+          "result": {
+            "kind": "symbolic",
+            "value": "x=γ (mg/mL); y=A",
+            "display_lv": "x=γ (mg/mL); y=A",
+            "unit": "1"
+          },
+          "reasoning_lv": "Koncentrācija ir neatkarīgais lielums (x ass), absorbcija ir atkarīgais (y ass). Vienības jānorāda uz asīm; modelis ir brīva regresija A = aγ + b.",
+          "citations": {
+            "conventions_refs": [
+              "spectrophotometry.calibration.model_rule_lv",
+              "spectrophotometry.calibration.allowed_models"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Slīpums a",
+          "statement_lv": "No standartu punktiem aprēķini taisnes slīpumu.",
+          "result": {
+            "kind": "numeric",
+            "value": "50",
+            "display_lv": "50,0",
+            "unit": "mL/mg",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "Punkti (0;0,010), (0,004;0,210), (0,008;0,410), (0,012;0,610) veido taisni ar slīpumu (0,210−0,010)/0,004 = 50,0 mL/mg. Regresija dod to pašu.",
+          "citations": {
+            "conventions_refs": [
+              "spectrophotometry.calibration.model_rule_lv",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "linfit_component",
+            "operands": [],
+            "unit": "mL/mg",
+            "points": [
+              [
+                0,
+                0.01
+              ],
+              [
+                0.004,
+                0.21
+              ],
+              [
+                0.008,
+                0.41
+              ],
+              [
+                0.012,
+                0.61
+              ]
+            ],
+            "component": "slope"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "γ mērītajā šķīdumā",
+          "statement_lv": "Ar krustpunktu 0,010 un iepriekšējā solī iegūto slīpumu aprēķini γ, ja A=0,350.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.0068",
+            "display_lv": "0,00680",
+            "unit": "mg/mL",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "γ = (A − b) / a = (0,350 − 0,010) / 50,0 = 0,00680 mg/mL. Vērtība ir standartu diapazonā 0–0,012 mg/mL, tāpēc ekstrapolācija nav nepieciešama.",
+          "citations": {
+            "conventions_refs": [
+              "spectrophotometry.calibration.model_rule_lv",
+              "spectrophotometry.calibration.no_extrapolation_rule_lv"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "given": "A_minus_b"
+              },
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "mg/mL"
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "Diapazona pārbaude",
+          "statement_lv": "Pārbaudi, vai iegūtā γ ir standartu diapazonā.",
+          "result": {
+            "kind": "symbolic",
+            "value": "0,00680 mg/mL ir 0–0,012 mg/mL diapazonā",
+            "display_lv": "0,00680 mg/mL ir 0–0,012 mg/mL diapazonā",
+            "unit": "1"
+          },
+          "reasoning_lv": "0,00680 mg/mL ir starp 0 un 0,012 mg/mL, tāpēc nolasījums ir atļauts. R²=1,00 vien neapstiprina metodes derīgumu; jānosauc modelis, tukšais paraugs un matricas atbilstība.",
+          "citations": {
+            "conventions_refs": [
+              "spectrophotometry.calibration.no_extrapolation_rule_lv",
+              "spectrophotometry.calibration.r_squared_is_not_validation"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+          "step_id": "S3",
+          "role": "method",
+          "note_lv": "Attēls rāda brīvās regresijas kalibrēšanu ar citiem standartiem; ķēdes punkti ir dotie mācību lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX13"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX13"
+        ]
+      }
+    },
+    {
+      "id": "EX14",
+      "topic": 7,
+      "title_lv": "Atšķaidīts paraugs: masa un vielas daudzums",
+      "subtitle_lv": "Kalibrēšanas nolasījums 0,00600 mg/mL, atšķaidījums 5,00, paraugs 25,00 mL, M=376,36 g/mol.",
+      "outcome_ids": [
+        "P7-04",
+        "P7-03",
+        "P7-05"
+      ],
+      "master_citation": {
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "anchor": "h10",
+        "heading_lv": "10. Laboratorijas darbs 6B soli pa solim",
+        "freeze_id": "C7-MASTER"
+      },
+      "epistemic_label": "PROPOSED training policy; master method anchor; synthetic dilution and sample givens.",
+      "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+      "givens": [
+        {
+          "id": "gamma_measured",
+          "label_lv": "mērītā koncentrācija pēc atšķaidīšanas",
+          "value": "0.00600",
+          "display_lv": "0,00600",
+          "unit": "mg/mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX14"
+          }
+        },
+        {
+          "id": "dilution_factor",
+          "label_lv": "atšķaidījuma faktors",
+          "value": "5.00",
+          "display_lv": "5,00",
+          "unit": "1",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX14"
+          }
+        },
+        {
+          "id": "V_sample",
+          "label_lv": "parauga tilpums",
+          "value": "25.00",
+          "display_lv": "25,00",
+          "unit": "mL",
+          "source": {
+            "kind": "synthetic_given",
+            "ref": "docs/EXAMPLE_QUESTIONS.json#EX14"
+          }
+        },
+        {
+          "id": "M_compound",
+          "label_lv": "savienojuma molmasa",
+          "value": "376.36",
+          "display_lv": "376,36",
+          "unit": "g/mol",
+          "source": {
+            "kind": "conventions",
+            "ref": "compound_molar_masses.compounds[C17H20N4O6]"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step_id": "S1",
+          "quantity_lv": "γ oriģinālajā paraugā",
+          "statement_lv": "Mērītā koncentrācija pēc atšķaidīšanas ir 0,00600 mg/mL; atšķaidījuma faktors 5,00. Aprēķini γ oriģinālajā paraugā.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.03",
+            "display_lv": "0,0300",
+            "unit": "mg/mL",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "γ(oriģinālais) = γ(mērītais) × f = 0,00600 mg/mL × 5,00 = 0,0300 mg/mL. Atšķaidīšana samazina koncentrāciju, tāpēc sākotnējā ir lielāka.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=m_v].formula",
+              "spectrophotometry.calibration.model_rule_lv"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "given": "gamma_measured"
+              },
+              {
+                "given": "dilution_factor"
+              }
+            ],
+            "unit": "mg/mL"
+          }
+        },
+        {
+          "step_id": "S2",
+          "quantity_lv": "Masa paraugā",
+          "statement_lv": "Aprēķini vielas masu 25,00 mL oriģinālā parauga.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.75",
+            "display_lv": "0,750",
+            "unit": "mg",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "m = γ × V = 0,0300 mg/mL × 25,00 mL = 0,750 mg.",
+          "citations": {
+            "conventions_refs": [
+              "concentration_bases.bases[id=m_v].formula",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "multiply",
+            "operands": [
+              {
+                "step": "S1"
+              },
+              {
+                "given": "V_sample"
+              }
+            ],
+            "unit": "mg"
+          }
+        },
+        {
+          "step_id": "S3",
+          "quantity_lv": "Masa gramos",
+          "statement_lv": "Pārvērt masu gramos molmasas aprēķinam.",
+          "result": {
+            "kind": "numeric",
+            "value": "0.00075",
+            "display_lv": "7,50·10⁻⁴",
+            "unit": "g",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "0,750 mg / 1000 = 7,50·10⁻⁴ g. Molmasa ir g/mol, tāpēc masa jāizsaka gramos.",
+          "citations": {
+            "conventions_refs": [
+              "unit_system.conversions[mg_to_g]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "scale",
+            "operands": [
+              {
+                "step": "S2"
+              }
+            ],
+            "unit": "g",
+            "factor": {
+              "num": 1,
+              "den": 1000
+            }
+          }
+        },
+        {
+          "step_id": "S4",
+          "quantity_lv": "n vielas daudzums",
+          "statement_lv": "Aprēķini vielas daudzumu ar M=376,36 g/mol.",
+          "result": {
+            "kind": "numeric",
+            "value": "1.9927728770326283e-06",
+            "display_lv": "1,99·10⁻⁶",
+            "unit": "mol",
+            "sig_figs": 3
+          },
+          "reasoning_lv": "n = m / M = 7,50·10⁻⁴ g / 376,36 g/mol = 1,99·10⁻⁶ mol.",
+          "citations": {
+            "conventions_refs": [
+              "compound_molar_masses.compounds[C17H20N4O6]",
+              "rounding.multiplication_division"
+            ],
+            "master_refs": [
+              "#h8"
+            ]
+          },
+          "recompute": {
+            "op": "divide",
+            "operands": [
+              {
+                "step": "S3"
+              },
+              {
+                "given": "M_compound"
+              }
+            ],
+            "unit": "mol"
+          }
+        }
+      ],
+      "figure_refs": [
+        {
+          "figure_id": "FIG-T67-CAL-MASTER",
+          "step_id": "S1",
+          "role": "method",
+          "note_lv": "Attēls rāda kalibrēšanas nolasījumu ar citiem standartiem; ķēdes skaitļi ir dotie mācību lielumi."
+        }
+      ],
+      "back_links": {
+        "method_card_ids": [
+          "MC-EX14"
+        ],
+        "practice_item_ids": [
+          "PRAC-EX14"
+        ]
+      }
+    }
+  ]
+}

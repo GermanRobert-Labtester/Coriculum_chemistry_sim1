@@ -1,0 +1,5790 @@
+{
+  "authority": "N17 quantity engine (tools/quantity_engine.py)",
+  "instances": [
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1A",
+      "question_id": "COL1-1-1A-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1A",
+      "question_id": "COL1-1-1A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1A",
+      "question_id": "COL1-1-1A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1A",
+      "question_id": "COL1-1-1A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1B",
+      "question_id": "COL1-1-1B-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1B",
+      "question_id": "COL1-1-1B-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1B",
+      "question_id": "COL1-1-1B-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1B",
+      "question_id": "COL1-1-1B-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "794",
+        "problems": [],
+        "recomputed_raw": "793.5590393595730486991327553",
+        "recomputed_rounded": "794",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_Al2O3_g",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-1C",
+      "question_id": "COL1-1-1C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "794",
+          "problems": [],
+          "recomputed_raw": "793.5590393595730486991327553",
+          "recomputed_rounded": "794",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_Al2O3_g",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "M_Al_g_mol",
+              "two"
+            ],
+            "declared_unit": "g/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "53,964",
+            "op": "mul",
+            "recomputed_value": "53.964",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "M_Al_x2",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "M_O_g_mol",
+              "three"
+            ],
+            "declared_unit": "g/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "47,997",
+            "op": "mul",
+            "recomputed_value": "47.997",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "M_O_x3",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "M_Al_x2",
+              "M_O_x3"
+            ],
+            "declared_unit": "g/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "101,961",
+            "op": "add",
+            "recomputed_value": "101.961",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "M_Al2O3_g_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_al_g",
+              "M_Al_g_mol"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.00000015588169891038470091",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "15,565933",
+            "op": "div",
+            "recomputed_value": "15.56593284411830108961529909",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_Al_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_Al_mol",
+              "two"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000422059150544807649545",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "7,782966",
+            "op": "div",
+            "recomputed_value": "7.782966422059150544807649545",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_Al2O3_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_Al2O3_mol",
+              "M_Al2O3_g_mol"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000393595730486991327553",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "793,559",
+            "op": "mul",
+            "recomputed_value": "793.5590393595730486991327553",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_Al2O3_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1C",
+      "question_id": "COL1-1-1C-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "26",
+        "problems": [],
+        "recomputed_raw": "25.97114317425083240843507214",
+        "recomputed_rounded": "26.0",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_AlOH3_g",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-1C",
+      "question_id": "COL1-1-1C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "26",
+          "problems": [],
+          "recomputed_raw": "25.97114317425083240843507214",
+          "recomputed_rounded": "26.0",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_AlOH3_g",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_h2o_g",
+              "M_H2O_g_mol"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000610432852386237513873",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,499445",
+            "op": "div",
+            "recomputed_value": "0.4994450610432852386237513873",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_H2O_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_H2O_mol",
+              "two"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000001220865704772475027746",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,998890",
+            "op": "mul",
+            "recomputed_value": "0.9988901220865704772475027746",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_H2O_x2",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_H2O_x2",
+              "three"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000003740288568257491675915",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,332963",
+            "op": "div",
+            "recomputed_value": "0.3329633740288568257491675915",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_AlOH3_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_AlOH3_mol",
+              "M_AlOH3_g_mol"
+            ],
+            "declared_unit": "g",
+            "difference": "0.00014317425083240843507214",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "25,971",
+            "op": "mul",
+            "recomputed_value": "25.97114317425083240843507214",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_AlOH3_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1C",
+      "question_id": "COL1-1-1C-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1D",
+      "question_id": "COL1-1-1D-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1D",
+      "question_id": "COL1-1-1D-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1D",
+      "question_id": "COL1-1-1D-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-1D",
+      "question_id": "COL1-1-1D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-2A",
+      "question_id": "COL1-2-2A-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-2A",
+      "question_id": "COL1-2-2A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-2A",
+      "question_id": "COL1-2-2A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-2A",
+      "question_id": "COL1-2-2A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/convert",
+        "frozen_expected": "4.7",
+        "problems": [],
+        "recomputed_raw": "4.70000",
+        "recomputed_rounded": "4.70",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_g",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2B",
+      "question_id": "COL1-2-2B-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/convert",
+          "frozen_expected": "4.7",
+          "problems": [],
+          "recomputed_raw": "4.70000",
+          "recomputed_rounded": "4.70",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_g",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_kg",
+              "kg_to_g_num"
+            ],
+            "declared_unit": "g",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/convert",
+            "frozen_value": "4,700",
+            "op": "mul",
+            "recomputed_value": "4.70000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/convert",
+        "frozen_expected": "0.19",
+        "problems": [],
+        "recomputed_raw": "0.1900000",
+        "recomputed_rounded": "0.190",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "n_mmol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2B",
+      "question_id": "COL1-2-2B-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/convert",
+          "frozen_expected": "0.19",
+          "problems": [],
+          "recomputed_raw": "0.1900000",
+          "recomputed_rounded": "0.190",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "n_mmol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "n_mol",
+              "mol_to_mmol_num"
+            ],
+            "declared_unit": "mmol",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/convert",
+            "frozen_value": "0,1900",
+            "op": "mul",
+            "recomputed_value": "0.1900000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "n_mmol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "19.25",
+        "problems": [],
+        "recomputed_raw": "19.25",
+        "recomputed_rounded": "19.25",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "burette_volume",
+        "value_id": "V_del_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2B",
+      "question_id": "COL1-2-2B-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "19.25",
+          "problems": [],
+          "recomputed_raw": "19.25",
+          "recomputed_rounded": "19.25",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "burette_volume",
+          "value_id": "V_del_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_final_ml",
+              "V_initial_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "19,25",
+            "op": "sub",
+            "recomputed_value": "19.25",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_del_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-2B",
+      "question_id": "COL1-2-2B-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "5.25",
+        "problems": [],
+        "recomputed_raw": "5.25",
+        "recomputed_rounded": "5.25",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "burette_volume",
+        "value_id": "V_del_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2C",
+      "question_id": "COL1-2-2C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "5.25",
+          "problems": [],
+          "recomputed_raw": "5.25",
+          "recomputed_rounded": "5.25",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "burette_volume",
+          "value_id": "V_del_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_initial_ml",
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "7,05",
+            "op": "add",
+            "recomputed_value": "7.05",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_final_ml",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "5,25",
+            "op": "identity",
+            "recomputed_value": "5.25",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_del_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "13",
+        "problems": [],
+        "recomputed_raw": "13.00",
+        "recomputed_rounded": "13.00",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "burette_volume",
+        "value_id": "V_del_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2C",
+      "question_id": "COL1-2-2C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "13",
+          "problems": [],
+          "recomputed_raw": "13.00",
+          "recomputed_rounded": "13.00",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "burette_volume",
+          "value_id": "V_del_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_initial_ml",
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "13,90",
+            "op": "add",
+            "recomputed_value": "13.90",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_final_ml",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "13,00",
+            "op": "identity",
+            "recomputed_value": "13.00",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_del_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "0.1204",
+        "problems": [],
+        "recomputed_raw": "0.1204",
+        "recomputed_rounded": "0.1204",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_sample_g",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2C",
+      "question_id": "COL1-2-2C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "0.1204",
+          "problems": [],
+          "recomputed_raw": "0.1204",
+          "recomputed_rounded": "0.1204",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_sample_g",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_with_g",
+              "m_tare_g"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0004",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,120",
+            "op": "sub",
+            "recomputed_value": "0.1204",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_sample_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "490",
+        "problems": [],
+        "recomputed_raw": "490",
+        "recomputed_rounded": "490",
+        "sig_figs": 2,
+        "status": "PASS",
+        "tolerance": "0.5",
+        "tolerance_class": "glassware_volume",
+        "value_id": "V_lower_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2C",
+      "question_id": "COL1-2-2C-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "490",
+          "problems": [],
+          "recomputed_raw": "490",
+          "recomputed_rounded": "490",
+          "sig_figs": 2,
+          "status": "PASS",
+          "tolerance": "0.5",
+          "tolerance_class": "glassware_volume",
+          "value_id": "V_lower_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_reading_ml",
+              "u_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "490",
+            "op": "sub",
+            "recomputed_value": "490",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "V_lower_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.5475",
+        "problems": [],
+        "recomputed_raw": "0.54750",
+        "recomputed_rounded": "0.54750",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2D",
+      "question_id": "COL1-2-2D-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.5475",
+          "problems": [],
+          "recomputed_raw": "0.54750",
+          "recomputed_rounded": "0.54750",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "c2_mol_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "0,0018",
+            "op": "add",
+            "recomputed_value": "0.0018",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_sum_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_sum_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,0009",
+            "op": "div",
+            "recomputed_value": "0.0009",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_read_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c1_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,3550",
+            "op": "lin",
+            "recomputed_value": "0.35500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A1",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c2_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,7400",
+            "op": "lin",
+            "recomputed_value": "0.74000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A2",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c_read_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,5475",
+            "op": "lin",
+            "recomputed_value": "0.54750",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "75",
+        "problems": [],
+        "recomputed_raw": "75",
+        "recomputed_rounded": "75",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_read_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2D",
+      "question_id": "COL1-2-2D-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "75",
+          "problems": [],
+          "recomputed_raw": "75",
+          "recomputed_rounded": "75",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_read_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "c2_mol_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "150,0000",
+            "op": "add",
+            "recomputed_value": "150",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_sum_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_sum_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "75,0000",
+            "op": "div",
+            "recomputed_value": "75",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_read_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.000000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.2425",
+        "problems": [],
+        "recomputed_raw": "0.242500",
+        "recomputed_rounded": "0.242500",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2D",
+      "question_id": "COL1-2-2D-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.2425",
+          "problems": [],
+          "recomputed_raw": "0.242500",
+          "recomputed_rounded": "0.242500",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "c2_mol_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "0,0019",
+            "op": "add",
+            "recomputed_value": "0.0019",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_sum_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_sum_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.00005",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,0010",
+            "op": "div",
+            "recomputed_value": "0.00095",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_read_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c1_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,1300",
+            "op": "lin",
+            "recomputed_value": "0.13000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A1",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c2_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,3550",
+            "op": "lin",
+            "recomputed_value": "0.35500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A2",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_A_per_c",
+              "c_read_mol_l",
+              "A0"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,2425",
+            "op": "lin",
+            "recomputed_value": "0.242500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "77.5",
+        "problems": [],
+        "recomputed_raw": "77.5",
+        "recomputed_rounded": "77.5",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_read_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-2D",
+      "question_id": "COL1-2-2D-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "77.5",
+          "problems": [],
+          "recomputed_raw": "77.5",
+          "recomputed_rounded": "77.5",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_read_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "c2_mol_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "155,0000",
+            "op": "add",
+            "recomputed_value": "155",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_sum_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_sum_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "77,5000",
+            "op": "div",
+            "recomputed_value": "77.5",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_read_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "1.6",
+        "problems": [],
+        "recomputed_raw": "1.597079625827059091946155601",
+        "recomputed_rounded": "1.60",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3A",
+      "question_id": "COL1-3-3A-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "1.6",
+          "problems": [],
+          "recomputed_raw": "1.597079625827059091946155601",
+          "recomputed_rounded": "1.60",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,030000",
+            "op": "div",
+            "recomputed_value": "0.03",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_nacl_g",
+              "M_NaCl_g_mol"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.00000038877481177275838466804",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,047912",
+            "op": "div",
+            "recomputed_value": "0.04791238877481177275838466804",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "V_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000374172940908053844399",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "1,597080",
+            "op": "div",
+            "recomputed_value": "1.597079625827059091946155601",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "1.43",
+        "problems": [],
+        "recomputed_raw": "1.428571428571428571428571429",
+        "recomputed_rounded": "1.43",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3A",
+      "question_id": "COL1-3-3A-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "1.43",
+          "problems": [],
+          "recomputed_raw": "1.428571428571428571428571429",
+          "recomputed_rounded": "1.43",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,017500",
+            "op": "div",
+            "recomputed_value": "0.0175",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "V_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000428571428571428571429",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "1,428571",
+            "op": "div",
+            "recomputed_value": "1.428571428571428571428571429",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "M_NaCl_g_mol"
+            ],
+            "declared_unit": "g",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "1,4610",
+            "op": "mul",
+            "recomputed_value": "1.461000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_nacl_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.175",
+        "problems": [],
+        "recomputed_raw": "0.1753200",
+        "recomputed_rounded": "0.175",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_nacl_g",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3A",
+      "question_id": "COL1-3-3A-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.175",
+          "problems": [],
+          "recomputed_raw": "0.1753200",
+          "recomputed_rounded": "0.175",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_nacl_g",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,010000",
+            "op": "div",
+            "recomputed_value": "0.01",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_mol_l",
+              "V_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,003000",
+            "op": "mul",
+            "recomputed_value": "0.00300",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "M_NaCl_g_mol"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000200",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,1753",
+            "op": "mul",
+            "recomputed_value": "0.1753200",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_nacl_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "60",
+        "problems": [],
+        "recomputed_raw": "60.00000",
+        "recomputed_rounded": "60.0",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "concentration_mass",
+        "value_id": "gamma_g_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3A",
+      "question_id": "COL1-3-3A-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "60",
+          "problems": [],
+          "recomputed_raw": "60.00000",
+          "recomputed_rounded": "60.0",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "concentration_mass",
+          "value_id": "gamma_g_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "w_percent",
+              "hundred"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,060000",
+            "op": "div",
+            "recomputed_value": "0.06",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "w_fraction",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "w_fraction",
+              "rho_g_ml"
+            ],
+            "declared_unit": "g/mL",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0600",
+            "op": "mul",
+            "recomputed_value": "0.06000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_g_ml",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_g_ml",
+              "ml_per_l"
+            ],
+            "declared_unit": "g/L",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "60,0000",
+            "op": "mul",
+            "recomputed_value": "60.00000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_g_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "1.49",
+        "problems": [],
+        "recomputed_raw": "1.492128678986995208761122519",
+        "recomputed_rounded": "1.49",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3B",
+      "question_id": "COL1-3-3B-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "1.49",
+          "problems": [],
+          "recomputed_raw": "1.492128678986995208761122519",
+          "recomputed_rounded": "1.49",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,010000",
+            "op": "div",
+            "recomputed_value": "0.01",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "rho_g_ml",
+              "V_ml"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "10,9000",
+            "op": "mul",
+            "recomputed_value": "10.9000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solution_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "w_percent",
+              "hundred"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,080000",
+            "op": "div",
+            "recomputed_value": "0.08",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "w_fraction",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solution_g",
+              "w_fraction"
+            ],
+            "declared_unit": "g",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,8720",
+            "op": "mul",
+            "recomputed_value": "0.872000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solute_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solute_g",
+              "M_NaCl_g_mol"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.00000028678986995208761122519",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,014921",
+            "op": "div",
+            "recomputed_value": "0.01492128678986995208761122519",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "V_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000321013004791238877481",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "1,492129",
+            "op": "div",
+            "recomputed_value": "1.492128678986995208761122519",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.952",
+        "problems": [],
+        "recomputed_raw": "0.9523095238095238095238095238",
+        "recomputed_rounded": "0.952",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "percentage_point",
+        "value_id": "w_percent",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3B",
+      "question_id": "COL1-3-3B-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.952",
+          "problems": [],
+          "recomputed_raw": "0.9523095238095238095238095238",
+          "recomputed_rounded": "0.952",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "percentage_point",
+          "value_id": "w_percent",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,010000",
+            "op": "div",
+            "recomputed_value": "0.01",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_mol_l",
+              "V_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,002500",
+            "op": "mul",
+            "recomputed_value": "0.00250",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "cV_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "cV_mol",
+              "M_NaOH_g_mol"
+            ],
+            "declared_unit": "g",
+            "difference": "0.00000750",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,1000",
+            "op": "mul",
+            "recomputed_value": "0.09999250",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solute_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "rho_g_ml",
+              "V_ml"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "10,5000",
+            "op": "mul",
+            "recomputed_value": "10.5000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solution_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solute_g",
+              "m_solution_g"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000095238095238095238095238",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,009523",
+            "op": "div",
+            "recomputed_value": "0.009523095238095238095238095238",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "w_fraction",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "w_fraction",
+              "hundred"
+            ],
+            "declared_unit": "%",
+            "difference": "0.0003095238095238095238095238",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,952",
+            "op": "mul",
+            "recomputed_value": "0.9523095238095238095238095238",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "w_percent",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "1",
+        "problems": [],
+        "recomputed_raw": "1.00000",
+        "recomputed_rounded": "1.00",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "concentration_mass",
+        "value_id": "gamma_g_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3B",
+      "question_id": "COL1-3-3B-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "1",
+          "problems": [],
+          "recomputed_raw": "1.00000",
+          "recomputed_rounded": "1.00",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "concentration_mass",
+          "value_id": "gamma_g_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,050000",
+            "op": "div",
+            "recomputed_value": "0.05",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "rho_g_ml",
+              "V_ml"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "50,0000",
+            "op": "mul",
+            "recomputed_value": "50.0000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solution_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "w_percent",
+              "hundred"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,001000",
+            "op": "div",
+            "recomputed_value": "0.001",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "w_fraction",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solution_g",
+              "w_fraction"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0500",
+            "op": "mul",
+            "recomputed_value": "0.0500000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solute_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solute_g",
+              "V_L"
+            ],
+            "declared_unit": "g/L",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "1,0000",
+            "op": "div",
+            "recomputed_value": "1.00000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_g_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3B",
+      "question_id": "COL1-3-3B-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "gamma_g_l",
+              "M_NaCl_g_mol"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000003483915126625598904860",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,342231",
+            "op": "div",
+            "recomputed_value": "0.3422313483915126625598904860",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/convert",
+        "frozen_expected": "0.6",
+        "problems": [],
+        "recomputed_raw": "0.6000",
+        "recomputed_rounded": "0.600",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.5",
+        "tolerance_class": "glassware_volume",
+        "value_id": "V1_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3C",
+      "question_id": "COL1-3-3C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/convert",
+          "frozen_expected": "0.6",
+          "problems": [],
+          "recomputed_raw": "0.6000",
+          "recomputed_rounded": "0.600",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.5",
+          "tolerance_class": "glassware_volume",
+          "value_id": "V1_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V2_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,010000",
+            "op": "div",
+            "recomputed_value": "0.01",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V2_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c2_mol_l",
+              "V2_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,000600",
+            "op": "mul",
+            "recomputed_value": "0.00060",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "c1_mol_l"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,000600",
+            "op": "div",
+            "recomputed_value": "0.0006",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V1_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V1_L",
+              "thousand"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/convert",
+            "frozen_value": "0,6000",
+            "op": "mul",
+            "recomputed_value": "0.6000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "V1_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/convert",
+        "frozen_expected": "4.57",
+        "problems": [],
+        "recomputed_raw": "4.571428571428571428571428571",
+        "recomputed_rounded": "4.57",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.5",
+        "tolerance_class": "glassware_volume",
+        "value_id": "V1_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3C",
+      "question_id": "COL1-3-3C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/convert",
+          "frozen_expected": "4.57",
+          "problems": [],
+          "recomputed_raw": "4.571428571428571428571428571",
+          "recomputed_rounded": "4.57",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.5",
+          "tolerance_class": "glassware_volume",
+          "value_id": "V1_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V2_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,040000",
+            "op": "div",
+            "recomputed_value": "0.04",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V2_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c2_mol_l",
+              "V2_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,001600",
+            "op": "mul",
+            "recomputed_value": "0.00160",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "c1_mol_l"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000428571428571428571428571",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,004571",
+            "op": "div",
+            "recomputed_value": "0.004571428571428571428571428571",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V1_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V1_L",
+              "thousand"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.000028571428571428571428571",
+            "engine_path": "N17-numeric:quantity/convert",
+            "frozen_value": "4,5714",
+            "op": "mul",
+            "recomputed_value": "4.571428571428571428571428571",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "V1_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "0.036",
+        "problems": [],
+        "recomputed_raw": "0.036",
+        "recomputed_rounded": "0.036",
+        "sig_figs": 2,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c2_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-3C",
+      "question_id": "COL1-3-3C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "0.036",
+          "problems": [],
+          "recomputed_raw": "0.036",
+          "recomputed_rounded": "0.036",
+          "sig_figs": 2,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c2_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V1_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,001000",
+            "op": "div",
+            "recomputed_value": "0.001",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V1_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V2_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025000",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V2_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c1_mol_l",
+              "V1_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,000900",
+            "op": "mul",
+            "recomputed_value": "0.000900",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_mol",
+              "V2_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,036000",
+            "op": "div",
+            "recomputed_value": "0.036",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c2_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3C",
+      "question_id": "COL1-3-3C-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3D",
+      "question_id": "COL1-3-3D-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "w_percent",
+              "pct_mv_basis"
+            ],
+            "declared_unit": "g/mL",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,00900",
+            "op": "mul",
+            "recomputed_value": "0.009",
+            "status": "PASS",
+            "tolerance": "0.000005000001",
+            "value_id": "gamma_g_ml",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_g_ml",
+              "ml_per_l"
+            ],
+            "declared_unit": "g/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "9,0000",
+            "op": "mul",
+            "recomputed_value": "9.000",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_g_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_g_ml",
+              "V_ml"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,27",
+            "op": "mul",
+            "recomputed_value": "0.2700",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "m_nacl_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3D",
+      "question_id": "COL1-3-3D-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,015000",
+            "op": "div",
+            "recomputed_value": "0.015",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "rho_g_ml",
+              "V_ml"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "15,4500",
+            "op": "mul",
+            "recomputed_value": "15.4500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_solution_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "w_percent",
+              "hundred"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,050000",
+            "op": "div",
+            "recomputed_value": "0.05",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "w_fraction",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_solution_g",
+              "w_fraction"
+            ],
+            "declared_unit": "g",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,7725",
+            "op": "mul",
+            "recomputed_value": "0.772500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "m_glucose_g",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3D",
+      "question_id": "COL1-3-3D-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-3D",
+      "question_id": "COL1-3-3D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4A",
+      "question_id": "COL1-4-4A-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4A",
+      "question_id": "COL1-4-4A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4A",
+      "question_id": "COL1-4-4A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4A",
+      "question_id": "COL1-4-4A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "42",
+        "problems": [],
+        "recomputed_raw": "42.0",
+        "recomputed_rounded": "42.00",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "dH1_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4B",
+      "question_id": "COL1-4-4B-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "42",
+          "problems": [],
+          "recomputed_raw": "42.0",
+          "recomputed_rounded": "42.00",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "dH1_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dH2_kJ_mol",
+              "two"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "42,0",
+            "op": "mul",
+            "recomputed_value": "42.0",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "dH1_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/negate",
+        "frozen_expected": "-27",
+        "problems": [],
+        "recomputed_raw": "-27.0",
+        "recomputed_rounded": "-27.00",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "dH_rev_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4B",
+      "question_id": "COL1-4-4B-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/negate",
+          "frozen_expected": "-27",
+          "problems": [],
+          "recomputed_raw": "-27.0",
+          "recomputed_rounded": "-27.00",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "dH_rev_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dH_kJ_mol",
+              "two"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "27,000",
+            "op": "div",
+            "recomputed_value": "27.0",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dH_half_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_half_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/negate",
+            "frozen_value": "-27,000",
+            "op": "negate",
+            "recomputed_value": "-27.0",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dH_rev_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "8",
+        "problems": [],
+        "recomputed_raw": "8.0",
+        "recomputed_rounded": "8.0",
+        "sig_figs": 2,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "dH_total_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4B",
+      "question_id": "COL1-4-4B-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "8",
+          "problems": [],
+          "recomputed_raw": "8.0",
+          "recomputed_rounded": "8.0",
+          "sig_figs": 2,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "dH_total_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dH1_kJ_mol",
+              "dH2_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "8,0",
+            "op": "sub",
+            "recomputed_value": "8.0",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "dH_total_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "-36.9",
+        "problems": [],
+        "recomputed_raw": "-36.9",
+        "recomputed_rounded": "-36.90",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.02",
+        "tolerance_class": "log_concentration_ratio",
+        "value_id": "dS_J_mol_K",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4B",
+      "question_id": "COL1-4-4B-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "-36.9",
+          "problems": [],
+          "recomputed_raw": "-36.9",
+          "recomputed_rounded": "-36.90",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.02",
+          "tolerance_class": "log_concentration_ratio",
+          "value_id": "dS_J_mol_K",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "S_H2O",
+              "two"
+            ],
+            "declared_unit": "J/(mol·K)",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "12,2",
+            "op": "mul",
+            "recomputed_value": "12.2",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "S_products",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "S_H2",
+              "two"
+            ],
+            "declared_unit": "J/(mol·K)",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "27,6",
+            "op": "mul",
+            "recomputed_value": "27.6",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "S_H2_scaled",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "S_H2_scaled",
+              "S_O2"
+            ],
+            "declared_unit": "J/(mol·K)",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "49,1",
+            "op": "add",
+            "recomputed_value": "49.1",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "S_reactants",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "S_products",
+              "S_reactants"
+            ],
+            "declared_unit": "J/(mol·K)",
+            "difference": "0.0",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "-36,9",
+            "op": "sub",
+            "recomputed_value": "-36.9",
+            "status": "PASS",
+            "tolerance": "0.050000000001",
+            "value_id": "dS_J_mol_K",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "-29.5",
+        "problems": [],
+        "recomputed_raw": "-29.50",
+        "recomputed_rounded": "-29.50",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "dG_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4C",
+      "question_id": "COL1-4-4C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "-29.5",
+          "problems": [],
+          "recomputed_raw": "-29.50",
+          "recomputed_rounded": "-29.50",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "dG_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dS_J_mol_K",
+              "thousand"
+            ],
+            "declared_unit": "kJ/(mol·K)",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,250000",
+            "op": "div",
+            "recomputed_value": "0.25",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "dS_kJ_mol_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "T_K",
+              "dS_kJ_mol_K"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "74,500",
+            "op": "mul",
+            "recomputed_value": "74.50",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "T_dS_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_kJ_mol",
+              "T_dS_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "-29,500",
+            "op": "sub",
+            "recomputed_value": "-29.50",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dG_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "17",
+        "problems": [],
+        "recomputed_raw": "17.02",
+        "recomputed_rounded": "17.0",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "dG_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4C",
+      "question_id": "COL1-4-4C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "17",
+          "problems": [],
+          "recomputed_raw": "17.02",
+          "recomputed_rounded": "17.0",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "dG_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dS_J_mol_K",
+              "thousand"
+            ],
+            "declared_unit": "kJ/(mol·K)",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,010000",
+            "op": "div",
+            "recomputed_value": "0.01",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "dS_kJ_mol_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "T_K",
+              "dS_kJ_mol_K"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "2,980",
+            "op": "mul",
+            "recomputed_value": "2.98",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "T_dS_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_kJ_mol",
+              "T_dS_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "17,020",
+            "op": "sub",
+            "recomputed_value": "17.02",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dG_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "171.4",
+        "problems": [],
+        "recomputed_raw": "171.4285714285714285714285714",
+        "recomputed_rounded": "171.4",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.5",
+        "tolerance_class": "temperature",
+        "value_id": "T_boundary_K",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-4C",
+      "question_id": "COL1-4-4C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "171.4",
+          "problems": [],
+          "recomputed_raw": "171.4285714285714285714285714",
+          "recomputed_rounded": "171.4",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.5",
+          "tolerance_class": "temperature",
+          "value_id": "T_boundary_K",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dS_J_mol_K",
+              "thousand"
+            ],
+            "declared_unit": "kJ/(mol·K)",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,175000",
+            "op": "div",
+            "recomputed_value": "0.175",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "dS_kJ_mol_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_kJ_mol",
+              "dS_kJ_mol_K"
+            ],
+            "declared_unit": "K",
+            "difference": "0.0000285714285714285714286",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "171,4286",
+            "op": "div",
+            "recomputed_value": "171.4285714285714285714285714",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "T_boundary_K",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4C",
+      "question_id": "COL1-4-4C-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "dS_J_mol_K",
+              "thousand"
+            ],
+            "declared_unit": "kJ/(mol·K)",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,200000",
+            "op": "div",
+            "recomputed_value": "0.2",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "dS_kJ_mol_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "T1_K",
+              "dS_kJ_mol_K"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "59,600",
+            "op": "mul",
+            "recomputed_value": "59.6",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "T1_dS_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "T2_K",
+              "dS_kJ_mol_K"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "100,000",
+            "op": "mul",
+            "recomputed_value": "100.0",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "T2_dS_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_kJ_mol",
+              "T1_dS_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "-19,600",
+            "op": "sub",
+            "recomputed_value": "-19.6",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dG1_kJ_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "dH_kJ_mol",
+              "T2_dS_kJ_mol"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "-60,000",
+            "op": "sub",
+            "recomputed_value": "-60.0",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "dG2_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4D",
+      "question_id": "COL1-4-4D-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_g",
+              "cp_J_g_K"
+            ],
+            "declared_unit": "J/K",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "20,900",
+            "op": "mul",
+            "recomputed_value": "20.900",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "mcp_J_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "mcp_J_K",
+              "dT_K"
+            ],
+            "declared_unit": "J",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "83,600",
+            "op": "mul",
+            "recomputed_value": "83.60000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "q_solution_J",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "q_solution_J"
+            ],
+            "declared_unit": "J",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/negate",
+            "frozen_value": "-83,600",
+            "op": "negate",
+            "recomputed_value": "-83.60000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "q_reaction_J",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4D",
+      "question_id": "COL1-4-4D-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_g",
+              "q_kJ_g"
+            ],
+            "declared_unit": "kJ",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "100,000",
+            "op": "mul",
+            "recomputed_value": "100.0",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "q_total_kJ",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4D",
+      "question_id": "COL1-4-4D-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m_g",
+              "cp_J_g_K"
+            ],
+            "declared_unit": "J/K",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "104,500",
+            "op": "mul",
+            "recomputed_value": "104.500",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "mcp_J_K",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "mcp_J_K",
+              "dT_K"
+            ],
+            "declared_unit": "J",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "522,500",
+            "op": "mul",
+            "recomputed_value": "522.50000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "q_solution_J",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-4D",
+      "question_id": "COL1-4-4D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "95",
+        "problems": [],
+        "recomputed_raw": "95",
+        "recomputed_rounded": "95",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "1.0",
+        "tolerance_class": "energy",
+        "value_id": "E_a_uncat_kJ_mol",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5A",
+      "question_id": "COL1-5-5A-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "95",
+          "problems": [],
+          "recomputed_raw": "95",
+          "recomputed_rounded": "95",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "1.0",
+          "tolerance_class": "energy",
+          "value_id": "E_a_uncat_kJ_mol",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "E_max_uncat",
+              "E_reactants"
+            ],
+            "declared_unit": "kJ/mol",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "95,00",
+            "op": "sub",
+            "recomputed_value": "95",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "E_a_uncat_kJ_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5A",
+      "question_id": "COL1-5-5A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5A",
+      "question_id": "COL1-5-5A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5A",
+      "question_id": "COL1-5-5A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "0.25",
+        "problems": [],
+        "recomputed_raw": "0.25",
+        "recomputed_rounded": "0.250",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "rate_constant_second",
+        "value_id": "k_l_mol_s",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5B",
+      "question_id": "COL1-5-5B-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "0.25",
+          "problems": [],
+          "recomputed_raw": "0.25",
+          "recomputed_rounded": "0.250",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "rate_constant_second",
+          "value_id": "k_l_mol_s",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,200",
+            "op": "mul",
+            "recomputed_value": "0.200",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "c2_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "v1_mol_l_s",
+              "four"
+            ],
+            "declared_unit": "mol/(L·s)",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0100",
+            "op": "mul",
+            "recomputed_value": "0.0100",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "v2_mol_l_s",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c1_mol_l",
+              "c1_mol_l"
+            ],
+            "declared_unit": "mol²/L²",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,010000",
+            "op": "mul",
+            "recomputed_value": "0.010000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c1_squared",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "v1_mol_l_s",
+              "c1_squared"
+            ],
+            "declared_unit": "L/(mol·s)",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,2500",
+            "op": "div",
+            "recomputed_value": "0.25",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "k_l_mol_s",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "0.004",
+        "problems": [],
+        "recomputed_raw": "0.004",
+        "recomputed_rounded": "0.004",
+        "sig_figs": 1,
+        "status": "PASS",
+        "tolerance": "0.0005",
+        "tolerance_class": "rate_constant_first",
+        "value_id": "k_s_inv",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5B",
+      "question_id": "COL1-5-5B-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "0.004",
+          "problems": [],
+          "recomputed_raw": "0.004",
+          "recomputed_rounded": "0.004",
+          "sig_figs": 1,
+          "status": "PASS",
+          "tolerance": "0.0005",
+          "tolerance_class": "rate_constant_first",
+          "value_id": "k_s_inv",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "c1_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,500",
+            "op": "mul",
+            "recomputed_value": "0.500",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "c2_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "v1_mol_l_s",
+              "two"
+            ],
+            "declared_unit": "mol/(L·s)",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0020",
+            "op": "mul",
+            "recomputed_value": "0.0020",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "v2_mol_l_s",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "v1_mol_l_s",
+              "c1_mol_l"
+            ],
+            "declared_unit": "1/s",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,00400",
+            "op": "div",
+            "recomputed_value": "0.004",
+            "status": "PASS",
+            "tolerance": "0.000005000001",
+            "value_id": "k_s_inv",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0005",
+        "engine_path": "N17-numeric:quantity/identity",
+        "frozen_expected": "0.0025",
+        "problems": [],
+        "recomputed_raw": "0.0025",
+        "recomputed_rounded": "0.003",
+        "sig_figs": 1,
+        "status": "PASS",
+        "tolerance": "0.0005",
+        "tolerance_class": "rate_constant_zero",
+        "value_id": "k_zero_mol_l_s",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5B",
+      "question_id": "COL1-5-5B-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0005",
+          "engine_path": "N17-numeric:quantity/identity",
+          "frozen_expected": "0.0025",
+          "problems": [],
+          "recomputed_raw": "0.0025",
+          "recomputed_rounded": "0.003",
+          "sig_figs": 1,
+          "status": "PASS",
+          "tolerance": "0.0005",
+          "tolerance_class": "rate_constant_zero",
+          "value_id": "k_zero_mol_l_s",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "v1_mol_l_s"
+            ],
+            "declared_unit": "mol/(L·s)",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/identity",
+            "frozen_value": "0,0025",
+            "op": "identity",
+            "recomputed_value": "0.0025",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "k_zero_mol_l_s",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/identity",
+        "frozen_expected": "180",
+        "problems": [],
+        "recomputed_raw": "180",
+        "recomputed_rounded": "180",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "time",
+        "value_id": "t_half_read_s",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5B",
+      "question_id": "COL1-5-5B-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/identity",
+          "frozen_expected": "180",
+          "problems": [],
+          "recomputed_raw": "180",
+          "recomputed_rounded": "180",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "time",
+          "value_id": "t_half_read_s",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "t_half_s",
+              "two"
+            ],
+            "declared_unit": "s",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "360",
+            "op": "mul",
+            "recomputed_value": "360",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "t2_s",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "t2_s",
+              "two"
+            ],
+            "declared_unit": "s",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "720",
+            "op": "mul",
+            "recomputed_value": "720",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "t3_s",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c0_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,050",
+            "op": "div",
+            "recomputed_value": "0.050",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "c1_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c1_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "c2_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c2_mol_l",
+              "two"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0005",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,013",
+            "op": "div",
+            "recomputed_value": "0.0125",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "c3_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "t_half_s"
+            ],
+            "declared_unit": "s",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/identity",
+            "frozen_value": "180",
+            "op": "identity",
+            "recomputed_value": "180",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "t_half_read_s",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/identity",
+        "frozen_expected": "10",
+        "problems": [],
+        "recomputed_raw": "10",
+        "recomputed_rounded": "10",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_read_mg",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5C",
+      "question_id": "COL1-5-5C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/identity",
+          "frozen_expected": "10",
+          "problems": [],
+          "recomputed_raw": "10",
+          "recomputed_rounded": "10",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_read_mg",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m3_mg"
+            ],
+            "declared_unit": "mg",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/identity",
+            "frozen_value": "10",
+            "op": "identity",
+            "recomputed_value": "10",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "m_read_mg",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "8",
+        "problems": [],
+        "recomputed_raw": "8",
+        "recomputed_rounded": "8.00",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "mass",
+        "value_id": "m_read_mg",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5C",
+      "question_id": "COL1-5-5C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "8",
+          "problems": [],
+          "recomputed_raw": "8",
+          "recomputed_rounded": "8.00",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "mass",
+          "value_id": "m_read_mg",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "m0_mg",
+              "two"
+            ],
+            "declared_unit": "mg",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "32,000",
+            "op": "div",
+            "recomputed_value": "32",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_half_mg",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_half_mg",
+              "two"
+            ],
+            "declared_unit": "mg",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "16,000",
+            "op": "div",
+            "recomputed_value": "16",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_quarter_mg",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "m_quarter_mg",
+              "two"
+            ],
+            "declared_unit": "mg",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "8,000",
+            "op": "div",
+            "recomputed_value": "8",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "m_read_mg",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.00000000022222222222222222",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "77.777777778",
+        "problems": [],
+        "recomputed_raw": "77.77777777777777777777777778",
+        "recomputed_rounded": "77.77777777777777777777777778",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "time",
+        "value_id": "t_half_s",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-5C",
+      "question_id": "COL1-5-5C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00000000022222222222222222",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "77.777777778",
+          "problems": [],
+          "recomputed_raw": "77.77777777777777777777777778",
+          "recomputed_rounded": "77.77777777777777777777777778",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "time",
+          "value_id": "t_half_s",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "k_mol_l_s",
+              "t_span_s"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,900000",
+            "op": "mul",
+            "recomputed_value": "0.900",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "kt_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c0_mol_l",
+              "kt_mol_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,5000",
+            "op": "sub",
+            "recomputed_value": "0.500",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "c_end_mol_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "k_mol_l_s",
+              "two"
+            ],
+            "declared_unit": "mol/(L·s)",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,018",
+            "op": "mul",
+            "recomputed_value": "0.018",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "two_k_mol_l_s",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c0_mol_l",
+              "two_k_mol_l_s"
+            ],
+            "declared_unit": "s",
+            "difference": "0.00002222222222222222222222",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "77,7778",
+            "op": "div",
+            "recomputed_value": "77.77777777777777777777777778",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "t_half_s",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5C",
+      "question_id": "COL1-5-5C-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5D",
+      "question_id": "COL1-5-5D-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5D",
+      "question_id": "COL1-5-5D-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5D",
+      "question_id": "COL1-5-5D-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-5D",
+      "question_id": "COL1-5-5D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6A",
+      "question_id": "COL1-6-6A-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6A",
+      "question_id": "COL1-6-6A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6A",
+      "question_id": "COL1-6-6A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6A",
+      "question_id": "COL1-6-6A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6B",
+      "question_id": "COL1-6-6B-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6B",
+      "question_id": "COL1-6-6B-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6B",
+      "question_id": "COL1-6-6B-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6B",
+      "question_id": "COL1-6-6B-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "0.072",
+        "problems": [],
+        "recomputed_raw": "0.07200",
+        "recomputed_rounded": "0.0720",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_fe_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6C",
+      "question_id": "COL1-6-6C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "0.072",
+          "problems": [],
+          "recomputed_raw": "0.07200",
+          "recomputed_rounded": "0.0720",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_fe_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_titrant_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,018000",
+            "op": "div",
+            "recomputed_value": "0.018",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_titrant_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_sample_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025000",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_sample_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_titrant_mol_l",
+              "V_titrant_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.00000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,000360",
+            "op": "mul",
+            "recomputed_value": "0.00036000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_titrant_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_titrant_mol",
+              "five"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.00000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,001800",
+            "op": "mul",
+            "recomputed_value": "0.00180000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_sample_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_sample_mol",
+              "V_sample_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,072000",
+            "op": "div",
+            "recomputed_value": "0.07200",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_fe_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "0.06",
+        "problems": [],
+        "recomputed_raw": "0.0600",
+        "recomputed_rounded": "0.0600",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.005",
+        "tolerance_class": "concentration_molar",
+        "value_id": "c_fe_mol_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6C",
+      "question_id": "COL1-6-6C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "0.06",
+          "problems": [],
+          "recomputed_raw": "0.0600",
+          "recomputed_rounded": "0.0600",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.005",
+          "tolerance_class": "concentration_molar",
+          "value_id": "c_fe_mol_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_titrant_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,020000",
+            "op": "div",
+            "recomputed_value": "0.02",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_titrant_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_sample_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025000",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_sample_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_titrant_mol_l",
+              "V_titrant_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,000300",
+            "op": "mul",
+            "recomputed_value": "0.0003000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_titrant_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_titrant_mol",
+              "five"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,001500",
+            "op": "mul",
+            "recomputed_value": "0.0015000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_sample_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_sample_mol",
+              "V_sample_L"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,060000",
+            "op": "div",
+            "recomputed_value": "0.0600",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "c_fe_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0",
+        "engine_path": "N17-numeric:quantity/convert",
+        "frozen_expected": "20",
+        "problems": [],
+        "recomputed_raw": "20.00",
+        "recomputed_rounded": "20.0",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "burette_volume",
+        "value_id": "V_titrant_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6C",
+      "question_id": "COL1-6-6C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0",
+          "engine_path": "N17-numeric:quantity/convert",
+          "frozen_expected": "20",
+          "problems": [],
+          "recomputed_raw": "20.00",
+          "recomputed_rounded": "20.0",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "burette_volume",
+          "value_id": "V_titrant_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_sample_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025000",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_sample_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "c_fe_mol_l",
+              "V_sample_L"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,002000",
+            "op": "mul",
+            "recomputed_value": "0.0020000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_sample_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_sample_mol",
+              "five"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,000400",
+            "op": "div",
+            "recomputed_value": "0.0004000",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "n_titrant_mol",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "n_titrant_mol",
+              "c_titrant_mol_l"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,020000",
+            "op": "div",
+            "recomputed_value": "0.02",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_titrant_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_titrant_L",
+              "thousand"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/convert",
+            "frozen_value": "20,00",
+            "op": "mul",
+            "recomputed_value": "20.00",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_titrant_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "22.25",
+        "problems": [],
+        "recomputed_raw": "22.25",
+        "recomputed_rounded": "22.25",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "burette_volume",
+        "value_id": "V_del_ml",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6C",
+      "question_id": "COL1-6-6C-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "22.25",
+          "problems": [],
+          "recomputed_raw": "22.25",
+          "recomputed_rounded": "22.25",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "burette_volume",
+          "value_id": "V_del_ml",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "V_initial_ml",
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/add",
+            "frozen_value": "23,65",
+            "op": "add",
+            "recomputed_value": "23.65",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_final_ml",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_delta_ml"
+            ],
+            "declared_unit": "mL",
+            "difference": "0.00",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "22,25",
+            "op": "identity",
+            "recomputed_value": "22.25",
+            "status": "PASS",
+            "tolerance": "0.005000000001",
+            "value_id": "V_del_ml",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "0.3074",
+        "problems": [],
+        "recomputed_raw": "0.3074",
+        "recomputed_rounded": "0.3074",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "potential",
+        "value_id": "E_V",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6D",
+      "question_id": "COL1-6-6D-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "0.3074",
+          "problems": [],
+          "recomputed_raw": "0.3074",
+          "recomputed_rounded": "0.3074",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "potential",
+          "value_id": "E_V",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "one",
+              "a_cu2"
+            ],
+            "declared_unit": "1",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "10",
+            "op": "div",
+            "recomputed_value": "10",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "Q",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "Q"
+            ],
+            "declared_unit": "1",
+            "difference": "0",
+            "engine_path": "N17-numeric:exact/log10-pow10",
+            "frozen_value": "1",
+            "op": "log10_pow10",
+            "recomputed_value": "1",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "lgQ",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_V",
+              "lgQ"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0592",
+            "op": "mul",
+            "recomputed_value": "0.0592",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "slope_lgQ_V",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_lgQ_V",
+              "two"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,0296",
+            "op": "div",
+            "recomputed_value": "0.0296",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "E_shift_V",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "E0_V",
+              "E_shift_V"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,3074",
+            "op": "sub",
+            "recomputed_value": "0.3074",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "E_V",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0",
+        "engine_path": "N17-numeric:quantity/divide",
+        "frozen_expected": "10",
+        "problems": [],
+        "recomputed_raw": "10",
+        "recomputed_rounded": "10",
+        "sig_figs": 1,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "potential",
+        "value_id": "Q",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6D",
+      "question_id": "COL1-6-6D-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0",
+          "engine_path": "N17-numeric:quantity/divide",
+          "frozen_expected": "10",
+          "problems": [],
+          "recomputed_raw": "10",
+          "recomputed_rounded": "10",
+          "sig_figs": 1,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "potential",
+          "value_id": "Q",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "one",
+              "a_cu2"
+            ],
+            "declared_unit": "1",
+            "difference": "0",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "10",
+            "op": "div",
+            "recomputed_value": "10",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "Q",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/subtract",
+        "frozen_expected": "0.2778",
+        "problems": [],
+        "recomputed_raw": "0.2778",
+        "recomputed_rounded": "0.2778",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.01",
+        "tolerance_class": "potential",
+        "value_id": "E_V",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-6D",
+      "question_id": "COL1-6-6D-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/subtract",
+          "frozen_expected": "0.2778",
+          "problems": [],
+          "recomputed_raw": "0.2778",
+          "recomputed_rounded": "0.2778",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.01",
+          "tolerance_class": "potential",
+          "value_id": "E_V",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "Q"
+            ],
+            "declared_unit": "1",
+            "difference": "0",
+            "engine_path": "N17-numeric:exact/log10-pow10",
+            "frozen_value": "2",
+            "op": "log10_pow10",
+            "recomputed_value": "2",
+            "status": "PASS",
+            "tolerance": "0.500000000001",
+            "value_id": "lgQ",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_V",
+              "lgQ"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,1184",
+            "op": "mul",
+            "recomputed_value": "0.1184",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "slope_lgQ_V",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope_lgQ_V",
+              "two"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,0592",
+            "op": "div",
+            "recomputed_value": "0.0592",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "E_shift_V",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "E0_V",
+              "E_shift_V"
+            ],
+            "declared_unit": "V",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,2778",
+            "op": "sub",
+            "recomputed_value": "0.2778",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "E_V",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-6D",
+      "question_id": "COL1-6-6D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7A",
+      "question_id": "COL1-7-7A-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "eps_L_mol_cm",
+              "l_cm"
+            ],
+            "declared_unit": "L/mol",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "12500,0000",
+            "op": "mul",
+            "recomputed_value": "12500.00",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "A_value",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "A_value",
+              "c_mol_l"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,250",
+            "op": "mul",
+            "recomputed_value": "0.250000000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7A",
+      "question_id": "COL1-7-7A-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "eps_L_mol_cm",
+              "l_cm"
+            ],
+            "declared_unit": "L/mol",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "12500,0000",
+            "op": "mul",
+            "recomputed_value": "12500.00",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "eps_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "A_value",
+              "eps_l"
+            ],
+            "declared_unit": "mol/L",
+            "difference": "0.0000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,0000200",
+            "op": "div",
+            "recomputed_value": "0.00002",
+            "status": "PASS",
+            "tolerance": "0.000000050001",
+            "value_id": "c_mol_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7A",
+      "question_id": "COL1-7-7A-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7A",
+      "question_id": "COL1-7-7A-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.00000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.0134",
+        "problems": [],
+        "recomputed_raw": "0.01340",
+        "recomputed_rounded": "0.01340",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7B",
+      "question_id": "COL1-7-7B-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.0134",
+          "problems": [],
+          "recomputed_raw": "0.01340",
+          "recomputed_rounded": "0.01340",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "slope",
+              "gamma_read_mg_l",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00040",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,013",
+            "op": "lin",
+            "recomputed_value": "0.01340",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.000000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.07",
+        "problems": [],
+        "recomputed_raw": "0.070000",
+        "recomputed_rounded": "0.070000",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7B",
+      "question_id": "COL1-7-7B-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.07",
+          "problems": [],
+          "recomputed_raw": "0.070000",
+          "recomputed_rounded": "0.070000",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "slope",
+              "c_read_mol_l",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,070",
+            "op": "lin",
+            "recomputed_value": "0.070000",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.012",
+        "problems": [],
+        "recomputed_raw": "0.0120",
+        "recomputed_rounded": "0.0120",
+        "sig_figs": 0,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7B",
+      "question_id": "COL1-7-7B-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.012",
+          "problems": [],
+          "recomputed_raw": "0.0120",
+          "recomputed_rounded": "0.0120",
+          "sig_figs": 0,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "slope",
+              "gamma_read_mg_l",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,012",
+            "op": "lin",
+            "recomputed_value": "0.0120",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": {
+        "difference": "0.0004",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.0134",
+        "problems": [],
+        "recomputed_raw": "0.01340",
+        "recomputed_rounded": "0.013",
+        "sig_figs": 2,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_read",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7B",
+      "question_id": "COL1-7-7B-D-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0004",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.0134",
+          "problems": [],
+          "recomputed_raw": "0.01340",
+          "recomputed_rounded": "0.013",
+          "sig_figs": 2,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_read",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "slope",
+              "gamma_read_mg_l",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.00040",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,013",
+            "op": "lin",
+            "recomputed_value": "0.01340",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_read",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": {
+        "difference": "0.000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "1.7",
+        "problems": [],
+        "recomputed_raw": "1.70",
+        "recomputed_rounded": "1.700",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "concentration_mass",
+        "value_id": "gamma_original_mg_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7C",
+      "question_id": "COL1-7-7C-A-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "1.7",
+          "problems": [],
+          "recomputed_raw": "1.70",
+          "recomputed_rounded": "1.700",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "concentration_mass",
+          "value_id": "gamma_original_mg_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "A_value",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,340",
+            "op": "sub",
+            "recomputed_value": "0.340",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_minus_b",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "A_minus_b",
+              "slope"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "34,0000",
+            "op": "div",
+            "recomputed_value": "34",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_measured_mg_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_measured_mg_l",
+              "dilution"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "1,7000",
+            "op": "mul",
+            "recomputed_value": "1.70",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_original_mg_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": {
+        "difference": "0.0000",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "0.8",
+        "problems": [],
+        "recomputed_raw": "0.80",
+        "recomputed_rounded": "0.8000",
+        "sig_figs": 4,
+        "status": "PASS",
+        "tolerance": "0.05",
+        "tolerance_class": "concentration_mass",
+        "value_id": "gamma_original_mg_l",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7C",
+      "question_id": "COL1-7-7C-B-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.0000",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "0.8",
+          "problems": [],
+          "recomputed_raw": "0.80",
+          "recomputed_rounded": "0.8000",
+          "sig_figs": 4,
+          "status": "PASS",
+          "tolerance": "0.05",
+          "tolerance_class": "concentration_mass",
+          "value_id": "gamma_original_mg_l",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "A_value",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,400",
+            "op": "sub",
+            "recomputed_value": "0.400",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_minus_b",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "A_minus_b",
+              "slope"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "40,0000",
+            "op": "div",
+            "recomputed_value": "40",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_measured_mg_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_measured_mg_l",
+              "dilution"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,8000",
+            "op": "mul",
+            "recomputed_value": "0.80",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_original_mg_l",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": {
+        "difference": "0.00",
+        "engine_path": "N17-numeric:quantity/multiply",
+        "frozen_expected": "4.01",
+        "problems": [],
+        "recomputed_raw": "4.010",
+        "recomputed_rounded": "4.01",
+        "sig_figs": 3,
+        "status": "PASS",
+        "tolerance": "0.003",
+        "tolerance_class": "absorbance",
+        "value_id": "A_predicted",
+        "within_tolerance": true
+      },
+      "engine_path": null,
+      "family_id": "FAM-7C",
+      "question_id": "COL1-7-7C-C-01",
+      "recompute": {
+        "answer": {
+          "difference": "0.00",
+          "engine_path": "N17-numeric:quantity/multiply",
+          "frozen_expected": "4.01",
+          "problems": [],
+          "recomputed_raw": "4.010",
+          "recomputed_rounded": "4.01",
+          "sig_figs": 3,
+          "status": "PASS",
+          "tolerance": "0.003",
+          "tolerance_class": "absorbance",
+          "value_id": "A_predicted",
+          "within_tolerance": true
+        },
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "gamma_original_mg_l",
+              "dilution"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "400,0000",
+            "op": "div",
+            "recomputed_value": "400",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_measured_mg_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "slope",
+              "gamma_measured_mg_l",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "4,010",
+            "op": "lin",
+            "recomputed_value": "4.010",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_predicted",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7C",
+      "question_id": "COL1-7-7C-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": [
+          {
+            "args": [
+              "A_value",
+              "intercept"
+            ],
+            "declared_unit": "1",
+            "difference": "0.000",
+            "engine_path": "N17-numeric:quantity/subtract",
+            "frozen_value": "0,340",
+            "op": "sub",
+            "recomputed_value": "0.340",
+            "status": "PASS",
+            "tolerance": "0.000500000001",
+            "value_id": "A_minus_b",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "A_minus_b",
+              "slope"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "34,0000",
+            "op": "div",
+            "recomputed_value": "34",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_measured_mg_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_measured_mg_l",
+              "dilution"
+            ],
+            "declared_unit": "mg/L",
+            "difference": "0.0000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "1,7000",
+            "op": "mul",
+            "recomputed_value": "1.70",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "gamma_original_mg_l",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "V_original_ml",
+              "thousand"
+            ],
+            "declared_unit": "L",
+            "difference": "0.000000",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,025000",
+            "op": "div",
+            "recomputed_value": "0.025",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "V_original_L",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "gamma_original_mg_l",
+              "V_original_L"
+            ],
+            "declared_unit": "mg",
+            "difference": "0.00000",
+            "engine_path": "N17-numeric:quantity/multiply",
+            "frozen_value": "0,0425",
+            "op": "mul",
+            "recomputed_value": "0.04250",
+            "status": "PASS",
+            "tolerance": "0.000050000001",
+            "value_id": "mass_mg",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "mass_mg",
+              "thousand"
+            ],
+            "declared_unit": "g",
+            "difference": "0.0000005",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,000043",
+            "op": "div",
+            "recomputed_value": "0.0000425",
+            "status": "PASS",
+            "tolerance": "0.000000500001",
+            "value_id": "mass_g",
+            "within_tolerance": true
+          },
+          {
+            "args": [
+              "mass_g",
+              "M_g_mol"
+            ],
+            "declared_unit": "mol",
+            "difference": "0.0000000029237963651822722924859177",
+            "engine_path": "N17-numeric:quantity/divide",
+            "frozen_value": "0,00000011",
+            "op": "div",
+            "recomputed_value": "0.0000001129237963651822722924859177",
+            "status": "PASS",
+            "tolerance": "0.000000005001",
+            "value_id": "n_mol",
+            "within_tolerance": true
+          }
+        ]
+      },
+      "variant_id": "D"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7D",
+      "question_id": "COL1-7-7D-A-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "A"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7D",
+      "question_id": "COL1-7-7D-B-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "B"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7D",
+      "question_id": "COL1-7-7D-C-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "C"
+    },
+    {
+      "answer": null,
+      "engine_path": null,
+      "family_id": "FAM-7D",
+      "question_id": "COL1-7-7D-D-01",
+      "recompute": {
+        "answer": null,
+        "problems": [],
+        "status": "PASS",
+        "values": []
+      },
+      "variant_id": "D"
+    }
+  ],
+  "owner": "N20",
+  "schema_version": 1
+}

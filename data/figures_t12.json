@@ -1,0 +1,826 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-figures",
+  "status": "authored",
+  "owner": "N11",
+  "scope": "Topics 1-2 (T1-2) stoichiometry, mixture composition, rounding boundary, and density-graph figures",
+  "figures": [
+    {
+      "id": "FIG-T1-COMP-NACL-BASES",
+      "type": "bar",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-02", "P2-06"],
+      "title_key": "fig.title.t1_comp_nacl_bases",
+      "subtitle_lv": "Viena un tā pati NaCl (5,02 g / 100,0 mL) un 22 % NaOH (ρ = 1,25 g/mL) bāžu salīdzinājums",
+      "description_lv": "Stabiņu diagramma salīdzina šķīduma sastāvu masas daļā procentos (m/m) un masas–tilpuma procentos (m/V) diviem šķīdumiem. NaCl paraugam (5,02 g NaCl 100,0 mL jeb 103,34 g šķīduma) masas daļa ir 4,86 % (m/m), bet masas–tilpuma bāzē tā ir 5,02 % (m/V). NaOH šķīdumam ar blīvumu 1,25 g/mL masas daļa 22,0 % (m/m) atbilst 27,5 % (m/V). Katrs procents norādīts ar bāzi pēc V-02 noteikuma.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "percentage_basis": ["m_m", "m_v"],
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "percentage_point",
+        "conventions_ref": "CIT-C3-PERCENT",
+        "target_quantity_term_key": "fig.axis.mass_fraction_pct_mm",
+        "expected_unit": "% (m/m)",
+        "sig_figs_rule": "least_of_givens",
+        "percentage_basis": "m_m"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.solution_sample",
+          "unit": null,
+          "scale_type": "categorical"
+        },
+        "y": {
+          "term_key": "fig.axis.mass_fraction_pct_mm",
+          "unit": "% (m/m)",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "nacl-naoh-mm",
+          "legend_key": "fig.legend.basis_mm",
+          "style_role": "primary",
+          "basis": "m_m",
+          "unit": "% (m/m)",
+          "data": [
+            {
+              "label_lv": "NaCl (5,02 g; 103,34 g)",
+              "value": 4.86,
+              "exact_value": 4.8577511128,
+              "sig_figs": 3,
+              "basis": "m_m",
+              "display_lv": "4,86 % (m/m)"
+            },
+            {
+              "label_lv": "NaOH (ρ = 1,25 g/mL)",
+              "value": 22.0,
+              "exact_value": 22.0,
+              "sig_figs": 3,
+              "basis": "m_m",
+              "display_lv": "22,0 % (m/m)"
+            }
+          ]
+        },
+        {
+          "id": "nacl-naoh-mv",
+          "legend_key": "fig.legend.basis_mv",
+          "style_role": "secondary",
+          "basis": "m_v",
+          "unit": "% (m/V)",
+          "data": [
+            {
+              "label_lv": "NaCl (5,02 g; 100,0 mL)",
+              "value": 5.02,
+              "exact_value": 5.02,
+              "sig_figs": 3,
+              "basis": "m_v",
+              "display_lv": "5,02 % (m/V)"
+            },
+            {
+              "label_lv": "NaOH (ρ = 1,25 g/mL)",
+              "value": 27.5,
+              "exact_value": 27.5,
+              "sig_figs": 3,
+              "basis": "m_v",
+              "display_lv": "27,5 % (m/V)"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-v02-basis",
+          "annotation_key": "fig.annot.v02_explicit_basis",
+          "citation_ref": "CIT-C3-PERCENT",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C3-PERCENT", "CIT-C3-PERCENT-MV", "CIT-C1-DENSITY", "V-02"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-NACL-W-MM",
+          "label_lv": "NaCl masas daļa % (m/m)",
+          "formula_kind": "mass_percent_mm",
+          "inputs": {"m_solute_g": "5.02", "m_solution_g": "103.34"},
+          "conventions_sources": ["percentage_basis.default_basis", "rounding.rule"],
+          "value": "4.86",
+          "unit": "% (m/m)",
+          "sig_figs": 3,
+          "display_lv": "4,86 % (m/m)"
+        },
+        {
+          "id": "DV-NACL-W-MV",
+          "label_lv": "NaCl masas–tilpuma daļa % (m/V)",
+          "formula_kind": "mass_volume_percent_mv",
+          "inputs": {"m_solute_g": "5.02", "V_solution_ml": "100.0"},
+          "conventions_sources": ["percentage_basis.allowed_bases", "rounding.rule"],
+          "value": "5.02",
+          "unit": "% (m/V)",
+          "sig_figs": 3,
+          "display_lv": "5,02 % (m/V)"
+        },
+        {
+          "id": "DV-NAOH-W-MV",
+          "label_lv": "22,0 % (m/m) NaOH pārveide uz % (m/V) ar ρ = 1,25 g/mL",
+          "formula_kind": "mm_to_mv_via_density",
+          "inputs": {"w_mm_pct": "22.0", "density_g_ml": "1.25"},
+          "conventions_sources": ["CIT-C1-DENSITY", "rounding.rule"],
+          "value": "27.5",
+          "unit": "% (m/V)",
+          "sig_figs": 3,
+          "display_lv": "27,5 % (m/V)"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 150, "height_mm": 95, "viewBox": [0, 0, 720, 380], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+      "type": "bar",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-06", "P2-10"],
+      "title_key": "fig.title.t2_comp_rounding_boundary",
+      "subtitle_lv": "Sargciparu zīmējums: 4,96 %, 5,00 % un 5,04 % (m/m) pie 2 z.c. visi noapaļojas uz 5,0 %",
+      "description_lv": "Robežgadījuma stabiņu diagramma parāda trīs NaCl šķīdumus ar masas daļām 4,96 % (m/m), 5,00 % (m/m) un 5,04 % (m/m). Noapaļojot pēc pusaugšupējās kārtulas līdz diviem zīmīgajiem cipariem, visas trīs vērtības dod 5,0 % (m/m), tāpēc zīmējot izmanto sargciparu vērtības un pievieno abas atzīmes.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "percentage_basis": "m_m",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "percentage_point",
+        "conventions_ref": "CIT-C2-ROUND",
+        "target_quantity_term_key": "fig.axis.mass_fraction_pct_mm",
+        "expected_unit": "% (m/m)",
+        "sig_figs_rule": "least_of_givens",
+        "percentage_basis": "m_m"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.solution_sample",
+          "unit": null,
+          "scale_type": "categorical"
+        },
+        "y": {
+          "term_key": "fig.axis.mass_fraction_pct_mm",
+          "unit": "% (m/m)",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 6,
+          "step": 1,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "rounding-edge-bars",
+          "legend_key": "fig.legend.exact_guard",
+          "style_role": "accent",
+          "basis": "m_m",
+          "unit": "% (m/m)",
+          "data": [
+            {
+              "label_lv": "Paraugs B (4,96 g / 100,0 g)",
+              "value": 4.96,
+              "exact_value": 4.96,
+              "rounded_2sf": 5.0,
+              "sig_figs": 2,
+              "basis": "m_m",
+              "display_lv": "4,96 % (m/m) → 5,0 % (2 z.c.)"
+            },
+            {
+              "label_lv": "Atsauce (5,00 g / 100,0 g)",
+              "value": 5.00,
+              "exact_value": 5.00,
+              "rounded_2sf": 5.0,
+              "sig_figs": 2,
+              "basis": "m_m",
+              "display_lv": "5,00 % (m/m) → 5,0 % (2 z.c.)"
+            },
+            {
+              "label_lv": "Paraugs A (5,04 g / 100,0 g)",
+              "value": 5.04,
+              "exact_value": 5.04,
+              "rounded_2sf": 5.0,
+              "sig_figs": 2,
+              "basis": "m_m",
+              "display_lv": "5,04 % (m/m) → 5,0 % (2 z.c.)"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-rounding-boundary",
+          "annotation_key": "fig.annot.rounding_boundary_note",
+          "citation_ref": "CIT-C2-ROUND",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch-8",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-ROUND", "CIT-C2-SIGFIG", "CIT-C3-PERCENT", "V-02"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-RB-496",
+          "label_lv": "Parauga B 4,96 % (m/m) noapaļojums uz 2 z.c.",
+          "formula_kind": "sigfig_round_half_up",
+          "inputs": {"raw_value": "4.96", "digits": 2},
+          "conventions_sources": ["rounding.rule"],
+          "value": "5.0",
+          "unit": "% (m/m)",
+          "sig_figs": 2,
+          "display_lv": "5,0 % (m/m)",
+          "rounding_note_lv": "Stabiņa augstums saglabā sargciparus (4,96), bet 2 z.c. noapaļojums dod 5,0 % (m/m)."
+        },
+        {
+          "id": "DV-RB-504",
+          "label_lv": "Parauga A 5,04 % (m/m) noapaļojums uz 2 z.c.",
+          "formula_kind": "sigfig_round_half_up",
+          "inputs": {"raw_value": "5.04", "digits": 2},
+          "conventions_sources": ["rounding.rule"],
+          "value": "5.0",
+          "unit": "% (m/m)",
+          "sig_figs": 2,
+          "display_lv": "5,0 % (m/m)",
+          "rounding_note_lv": "Stabiņa augstums saglabā sargciparus (5,04), bet 2 z.c. noapaļojums dod 5,0 % (m/m)."
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 150, "height_mm": 95, "viewBox": [0, 0, 720, 380], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T1-COMP-ETANOL-VV",
+      "type": "bar",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-02", "P2-05", "P2-06"],
+      "title_key": "fig.title.t1_comp_etanol_vv",
+      "subtitle_lv": "Medicīniskais 70,0 % (V/V) etanola šķīdums: tilpuma daļas bāze V/V nav aizvietojama ar m/m",
+      "description_lv": "Stabiņu diagramma parāda 70,0 % (V/V) etanola–ūdens maisījuma sastāvu tilpuma daļas bāzē: 70,0 % (V/V) etanola un 30,0 % (V/V) ūdens. Norādīta V-02 bāzes disciplīna, ka tilpuma procenti % (V/V) nav vienādi ar masas procentiem % (m/m).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "percentage_basis": "v_v",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "percentage_point",
+        "conventions_ref": "CIT-C3-PERCENT",
+        "target_quantity_term_key": "fig.axis.volume_fraction_pct_vv",
+        "expected_unit": "% (V/V)",
+        "sig_figs_rule": "least_of_givens",
+        "percentage_basis": "v_v"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.solution_sample",
+          "unit": null,
+          "scale_type": "categorical"
+        },
+        "y": {
+          "term_key": "fig.axis.volume_fraction_pct_vv",
+          "unit": "% (V/V)",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 100,
+          "step": 20,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "ethanol-water-vv",
+          "legend_key": "fig.legend.basis_vv",
+          "style_role": "primary",
+          "basis": "v_v",
+          "unit": "% (V/V)",
+          "data": [
+            {
+              "label_lv": "Etanols (izšķīdinātā)",
+              "value": 70.0,
+              "exact_value": 70.0,
+              "sig_figs": 3,
+              "basis": "v_v",
+              "display_lv": "70,0 % (V/V)"
+            },
+            {
+              "label_lv": "Ūdens (papildinājums)",
+              "value": 30.0,
+              "exact_value": 30.0,
+              "sig_figs": 3,
+              "basis": "v_v",
+              "display_lv": "30,0 % (V/V)"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-etanol-v02",
+          "annotation_key": "fig.annot.v02_explicit_basis",
+          "citation_ref": "CIT-C3-PERCENT",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER",
+        "conventions_refs": ["CIT-C3-PERCENT", "V-02"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-ETOH-WATER-VV",
+          "label_lv": "Ūdens tilpuma daļas papildinājums % (V/V)",
+          "formula_kind": "complement_100",
+          "inputs": {"component_pct": "70.0"},
+          "conventions_sources": ["percentage_basis.allowed_bases", "rounding.rule"],
+          "value": "30.0",
+          "unit": "% (V/V)",
+          "sig_figs": 3,
+          "display_lv": "30,0 % (V/V)"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 150, "height_mm": 90, "viewBox": [0, 0, 720, 360], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T1-CHAIN-AL-OXIDATION",
+      "type": "chain",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-01", "P1-03", "P1-08"],
+      "title_key": "fig.title.t1_chain_al_oxidation",
+      "subtitle_lv": "4Al + 3O₂ → 2Al₂O₃ (V₀ = 22,414 L/mol pie 0 °C un 101,325 kPa)",
+      "description_lv": "Stehiometriskā masas ķēde alumīnija oksidēšanai (4Al + 3O₂ → 2Al₂O₃) no 100,0 g Al: vispirms aprēķina vielas daudzumu n(Al) = 3,706 mol ar M(Al) = 26,982 g/mol, tad pēc koeficientu attiecības 3:4 atrod n(O₂) = 2,780 mol (88,94 g jeb 62,30 L pie 0 °C un 101,325 kPa) un 2:4 dod n(Al₂O₃) = 1,853 mol (188,9 g). Izejvielu masu summa 100,0 g + 88,94 g = 188,94 g saskan ar produkta masu.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "mass",
+        "conventions_ref": "CIT-C1-AL",
+        "target_quantity_term_key": "qty.mass",
+        "expected_unit": "g",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "series": [
+        {
+          "id": "al-stoich-chain",
+          "legend_key": "fig.legend.stoich_chain",
+          "style_role": "primary",
+          "nodes": [
+            {"id": "n-al-mass", "step": "Dots", "title_lv": "m(Al) = 100,0 g", "detail_lv": "M(Al) = 26,982 g/mol"},
+            {"id": "n-al-mol", "step": "1. solis", "title_lv": "n(Al) = 3,706 mol", "detail_lv": "100,0 / 26,982"},
+            {"id": "n-o2-mol", "step": "2. solis (O₂)", "title_lv": "n(O₂) = 2,780 mol", "detail_lv": "m = 88,94 g · V = 62,3 L"},
+            {"id": "n-al2o3", "step": "3. solis (Al₂O₃)", "title_lv": "m(Al₂O₃) = 188,9 g", "detail_lv": "n = 1,853 mol · M = 101,961"}
+          ],
+          "edges": [
+            {"from": "n-al-mass", "to": "n-al-mol", "label_lv": "÷ M(Al)"},
+            {"from": "n-al-mol", "to": "n-o2-mol", "label_lv": "× 3/4"},
+            {"from": "n-al-mol", "to": "n-al2o3", "label_lv": "× 2/4 · × M"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-al-conservation",
+          "annotation_key": "fig.annot.mass_conservation",
+          "citation_ref": "CIT-C1-AL",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER",
+        "conventions_refs": ["CIT-C1-AL", "CIT-C1-MOLAR-VOL", "CIT-C3-MOLMASS"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-AL-N",
+          "label_lv": "n(Al) no 100,0 g",
+          "formula_kind": "moles_from_mass",
+          "inputs": {"mass_g": "100.0", "element_symbol": "Al"},
+          "conventions_sources": ["atomic_masses.Al", "rounding.rule"],
+          "value": "3.706",
+          "unit": "mol",
+          "sig_figs": 4,
+          "display_lv": "3,706 mol"
+        },
+        {
+          "id": "DV-O2-M",
+          "label_lv": "Reaģējošā O₂ masa",
+          "formula_kind": "stoich_mass_via_ratio",
+          "inputs": {"mass_g": "100.0", "from_element": "Al", "from_coeff": 4, "to_formula_elements": {"O": 2}, "to_coeff": 3},
+          "conventions_sources": ["atomic_masses.Al", "atomic_masses.O", "rounding.rule"],
+          "value": "88.94",
+          "unit": "g",
+          "sig_figs": 4,
+          "display_lv": "88,94 g"
+        },
+        {
+          "id": "DV-O2-V",
+          "label_lv": "Reaģējošā O₂ tilpums (0 °C, 101,325 kPa)",
+          "formula_kind": "stoich_gas_volume_stp",
+          "inputs": {"mass_g": "100.0", "from_element": "Al", "from_coeff": 4, "to_coeff": 3, "molar_volume_key": "V_M"},
+          "conventions_sources": ["atomic_masses.Al", "constants.V_M", "rounding.rule"],
+          "value": "62.30",
+          "unit": "L",
+          "sig_figs": 4,
+          "display_lv": "62,30 L"
+        },
+        {
+          "id": "DV-AL2O3-M",
+          "label_lv": "Iegūtā Al₂O₃ masa",
+          "formula_kind": "stoich_mass_via_compound",
+          "inputs": {"mass_g": "100.0", "from_element": "Al", "from_coeff": 4, "to_compound": "Al2O3", "to_coeff": 2},
+          "conventions_sources": ["atomic_masses.Al", "compound_molar_masses.Al2O3", "rounding.rule"],
+          "value": "188.9",
+          "unit": "g",
+          "sig_figs": 4,
+          "display_lv": "188,9 g"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 85, "viewBox": [0, 0, 760, 320], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+      "type": "chain",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-01", "P1-04", "P1-06"],
+      "title_key": "fig.title.t1_chain_koh_neutralization",
+      "subtitle_lv": "KOH + HCl → KCl + H₂O (0,500 mol neitralizācijas masas bilance)",
+      "description_lv": "Masas nezūdamības ķēde neitralizācijas reakcijai KOH + HCl → KCl + H₂O pie 0,500 mol: 28,05 g KOH un 18,23 g HCl kopā dod 46,28 g izejvielu, kas pilnībā pārvēršas 37,27 g KCl un 9,01 g H₂O (kopā 46,28 g produktu), rēķinot no konvenciju salas atommasām.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "mass",
+        "conventions_ref": "CIT-C3-ATOMS",
+        "target_quantity_term_key": "qty.mass",
+        "expected_unit": "g",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "series": [
+        {
+          "id": "koh-hcl-chain",
+          "legend_key": "fig.legend.stoich_chain",
+          "style_role": "primary",
+          "nodes": [
+            {"id": "koh-in", "step": "Izejvielas", "title_lv": "28,05 g KOH + 18,23 g HCl", "detail_lv": "Σ = 46,28 g (0,500 mol)"},
+            {"id": "koh-mol", "step": "Attiecība 1 : 1", "title_lv": "n(KOH) = n(HCl) = 0,500 mol", "detail_lv": "n(KCl) = n(H₂O) = 0,500 mol"},
+            {"id": "koh-out", "step": "Produkti", "title_lv": "37,27 g KCl + 9,01 g H₂O", "detail_lv": "Σ = 46,28 g (nezūdamība)"}
+          ],
+          "edges": [
+            {"from": "koh-in", "to": "koh-mol", "label_lv": "n = m / M"},
+            {"from": "koh-mol", "to": "koh-out", "label_lv": "m = n · M"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-koh-conservation",
+          "annotation_key": "fig.annot.mass_conservation",
+          "citation_ref": "CIT-C3-ATOMS",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER",
+        "conventions_refs": ["CIT-C3-ATOMS", "CIT-C3-CL", "CIT-C3-MOLMASS-TABLE"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-KOH-MASS",
+          "label_lv": "0,500 mol KOH masa no atommasām",
+          "formula_kind": "mass_from_moles_elements",
+          "inputs": {"moles": "0.500", "elements": {"K": 1, "O": 1, "H": 1}},
+          "conventions_sources": ["atomic_masses.K", "atomic_masses.O", "atomic_masses.H", "rounding.rule"],
+          "value": "28.05",
+          "unit": "g",
+          "sig_figs": 4,
+          "display_lv": "28,05 g"
+        },
+        {
+          "id": "DV-HCL-MASS",
+          "label_lv": "0,500 mol HCl masa no atommasām",
+          "formula_kind": "mass_from_moles_elements",
+          "inputs": {"moles": "0.500", "elements": {"H": 1, "Cl": 1}},
+          "conventions_sources": ["atomic_masses.H", "atomic_masses.Cl", "rounding.rule"],
+          "value": "18.23",
+          "unit": "g",
+          "sig_figs": 4,
+          "display_lv": "18,23 g"
+        },
+        {
+          "id": "DV-KCL-MASS",
+          "label_lv": "0,500 mol KCl masa no atommasām",
+          "formula_kind": "mass_from_moles_elements",
+          "inputs": {"moles": "0.500", "elements": {"K": 1, "Cl": 1}},
+          "conventions_sources": ["atomic_masses.K", "atomic_masses.Cl", "rounding.rule"],
+          "value": "37.27",
+          "unit": "g",
+          "sig_figs": 4,
+          "display_lv": "37,27 g"
+        },
+        {
+          "id": "DV-H2O-MASS",
+          "label_lv": "0,500 mol H₂O masa no atommasām",
+          "formula_kind": "mass_from_moles_elements",
+          "inputs": {"moles": "0.500", "elements": {"H": 2, "O": 1}},
+          "conventions_sources": ["atomic_masses.H", "atomic_masses.O", "rounding.rule"],
+          "value": "9.01",
+          "unit": "g",
+          "sig_figs": 3,
+          "display_lv": "9,01 g"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 80, "viewBox": [0, 0, 760, 300], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T1-BAND-DISPERSION",
+      "type": "band",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-02", "P1-05", "P1-06"],
+      "title_key": "fig.title.t1_band_dispersion",
+      "subtitle_lv": "Kursa klasifikācijas joslas logaritmiskā skalā (0,1 nm – 10 µm)",
+      "description_lv": "Daļiņu izmēru joslu shēma logaritmiskā skalā no 0,1 nm līdz 10 µm: īstie šķīdumi ir mazāki par 1 nm, koloīdi no 1 līdz 100 nm, rupjdispersās sistēmas (suspensijas, emulsijas) virs 100 nm. Atzīmēta arī avota 1000 nm piezīme (E17). Šī ir kvalitatīva klasifikācijas shēma bez vērtējama mērījuma.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": false,
+      "tolerance_coupling": null,
+      "structural_only_reason_lv": "Kvalitatīva disperso sistēmu izmēru klasifikācijas joslu shēma bez mērīta parauga skaitliska nolasījuma; 100 nm robeža ir kursa vienošanās (E17).",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.particle_size_nm",
+          "unit": "nm",
+          "dimension": "length",
+          "min": -1,
+          "max": 4,
+          "step": 1,
+          "scale_type": "log10",
+          "tick_labels": ["0,1 nm", "1 nm", "10 nm", "100 nm", "1 µm", "10 µm"]
+        }
+      },
+      "series": [
+        {
+          "id": "dispersion-zones",
+          "legend_key": "fig.legend.dispersion_bands",
+          "style_role": "primary",
+          "bands": [
+            {"min_exp": -1, "max_exp": 0, "label_lv": "Īstie šķīdumi (< 1 nm)", "style_role": "primary"},
+            {"min_exp": 0, "max_exp": 2, "label_lv": "Koloīdi (1–100 nm)", "style_role": "secondary"},
+            {"min_exp": 2, "max_exp": 4, "label_lv": "Rupjdispersās (> 100 nm)", "style_role": "accent"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-disp-conv",
+          "annotation_key": "fig.annot.dispersion_convention",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER",
+        "conventions_refs": []
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 75, "viewBox": [0, 0, 760, 270], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+      "type": "chain",
+      "version": 1,
+      "topic": 1,
+      "concept_ids": ["P1-01", "P1-03", "P1-05", "P1-07", "P1-08", "P1-09"],
+      "title_key": "fig.title.t1_chain_mole_bridge",
+      "subtitle_lv": "Vienādojuma koeficienti darbojas tikai starp moliem n(A) un n(B), nekad tieši starp gramiem",
+      "description_lv": "Strukturāla trīs soļu stehiometrijas shēma: I solis pārvērš doto lielumu (masu m/M, gāzes tilpumu V/V₀ vai koncentrāciju c·V) vielas daudzumā n(A); II solis izmanto koeficientu attiecību b/a, lai iegūtu n(B); III solis pārvērš n(B) prasītajā lielumā. Šī ir konceptuāla shēma bez mērīta parauga.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": false,
+      "tolerance_coupling": null,
+      "structural_only_reason_lv": "Konceptuāla trīs soļu darbību secības shēma bez skaitliska parauga nolasījuma; N18 šim attēlam nepiemēro toleranci.",
+      "axes": {},
+      "series": [
+        {
+          "id": "mole-bridge-steps",
+          "legend_key": "fig.legend.stoich_chain",
+          "style_role": "primary",
+          "nodes": [
+            {"id": "step-1", "step": "I solis", "title_lv": "Dotais → n(A)", "detail_lv": "m ÷ M · V ÷ V₀ · c · V"},
+            {"id": "step-2", "step": "II solis", "title_lv": "n(A) → n(B)", "detail_lv": "n(B) = n(A) · (b / a)"},
+            {"id": "step-3", "step": "III solis", "title_lv": "n(B) → Atbilde", "detail_lv": "m = n·M · V = n·V₀ · N = n·N_A"}
+          ],
+          "edges": [
+            {"from": "step-1", "to": "step-2", "label_lv": "tikai molos"},
+            {"from": "step-2", "to": "step-3", "label_lv": "mērķa lielums"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-mole-bridge",
+          "annotation_key": "fig.annot.mole_bridge_rule",
+          "citation_ref": "CIT-C1-AL",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER",
+        "conventions_refs": ["CIT-C1-AL", "CIT-C1-MOLAR-VOL", "CIT-C3-AVOGADRO"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 75, "viewBox": [0, 0, 760, 260], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-PLOT-NACL-DENSITY",
+      "type": "schema_plot",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-02", "P2-04", "P2-05", "P2-08", "P2-09"],
+      "title_key": "fig.title.t2_plot_nacl_density",
+      "subtitle_lv": "NaCl 20 °C: ρ = 0,0073·w + 0,9979 (0–10 % (m/m)); x = w, y = ρ",
+      "description_lv": "N04 shēmai piesaistīts grafiks NaCl šķīduma blīvuma ρ (g/mL) atkarībai no masas daļas w (% (m/m)) 20 °C temperatūrā. Taisne ρ = 0,0073·w + 0,9979 novilkta 0–10 % (m/m) diapazonā bez ekstrapolācijas. Atzīmēts tabulas punkts (4,0 % (m/m); 1,0268 g/mL) un mērījuma nolasījums ρ = 1,0334 g/mL → w = 4,86 % (m/m) ar ±0,05 procentpunktu pieņemšanas joslu.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "percentage_basis": "m_m",
+      "mode": "interpret",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "percentage_point",
+        "conventions_ref": "CIT-C2-DENSITY-REL",
+        "target_quantity_term_key": "fig.axis.mass_fraction_pct_mm",
+        "expected_unit": "% (m/m)",
+        "sig_figs_rule": "least_of_givens",
+        "percentage_basis": "m_m",
+        "band_half_width": 0.05
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.mass_fraction_pct_mm",
+          "unit": "% (m/m)",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.density_g_ml",
+          "unit": "g/mL",
+          "dimension": "density",
+          "min": 0.99,
+          "max": 1.08,
+          "step": 0.01,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "nacl-density-fit",
+          "legend_key": "fig.legend.density_line",
+          "style_role": "primary",
+          "line": {"x1": 0, "y1": 0.9979, "x2": 10, "y2": 1.0709},
+          "points": [
+            {"id": "pt-intercept", "x": 0, "y": 0.9979, "label_lv": "w = 0 % (m/m); ρ = 0,9979 g/mL"},
+            {"id": "pt-table-4", "x": 4.0, "y": 1.0268, "label_lv": "Tabula: 4,0 % (m/m) → 1,0268 g/mL"},
+            {"id": "pt-meas", "x": 4.86, "y": 1.0334, "label_lv": "Mērījums: 4,86 % (m/m); ρ = 1,0334 g/mL"},
+            {"id": "pt-end-10", "x": 10.0, "y": 1.0709, "label_lv": "Robeža: 10 % (m/m) → 1,0709 g/mL"}
+          ]
+        }
+      ],
+      "target_readout": {
+        "quantity": "masas daļa w",
+        "term_key": "fig.axis.mass_fraction_pct_mm",
+        "expected_value": 4.86,
+        "unit": "% (m/m)",
+        "tolerance_class": "percentage_point"
+      },
+      "annotations": [
+        {
+          "id": "ann-density-scope",
+          "annotation_key": "fig.annot.density_scope_0_10",
+          "citation_ref": "CIT-C2-DENSITY-REL",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-DENSITY-REL", "CIT-C2-DENSITY-UNITS", "V-02", "V-04"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-DEN-0",
+          "label_lv": "Taisnes krustpunkts pie w = 0 % (m/m)",
+          "formula_kind": "linear_eval",
+          "inputs": {"slope": "0.0073", "intercept": "0.9979", "x": "0"},
+          "conventions_sources": ["density.reference_relations[id=nacl_20c]"],
+          "value": "0.9979",
+          "unit": "g/mL",
+          "sig_figs": 4,
+          "display_lv": "0,9979 g/mL"
+        },
+        {
+          "id": "DV-DEN-10",
+          "label_lv": "Taisnes vērtība pie w = 10 % (m/m)",
+          "formula_kind": "linear_eval",
+          "inputs": {"slope": "0.0073", "intercept": "0.9979", "x": "10"},
+          "conventions_sources": ["density.reference_relations[id=nacl_20c]"],
+          "value": "1.0709",
+          "unit": "g/mL",
+          "sig_figs": 5,
+          "display_lv": "1,0709 g/mL"
+        },
+        {
+          "id": "DV-DEN-W-MEAS",
+          "label_lv": "Masas daļa w no ρ = 1,0334 g/mL",
+          "formula_kind": "linear_inverse",
+          "inputs": {"slope": "0.0073", "intercept": "0.9979", "y": "1.0334"},
+          "conventions_sources": ["density.reference_relations[id=nacl_20c]", "rounding.rule"],
+          "value": "4.86",
+          "unit": "% (m/m)",
+          "sig_figs": 3,
+          "display_lv": "4,86 % (m/m)"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 110, "viewBox": [0, 0, 760, 440], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+      "type": "chain",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-01", "P2-02", "P2-03", "P2-05"],
+      "title_key": "fig.title.t2_chain_prefix_scale",
+      "subtitle_lv": "Eksaktas masas un tilpuma pārejas pret V-04 bloķēto masas↔tilpuma ceļu bez blīvuma ρ",
+      "description_lv": "Strukturāla mērvienību pārvēršanas ķēde 2. tēmai: masas rindā 1 kg = 1000 g = 10⁶ mg; tilpuma rindā 1 L = 1000 mL = 1000 cm³. Starp masu un tilpumu ir bloķēta tiešā pāreja bez blīvuma ρ (V-04). Shēma rāda eksaktus definīciju koeficientus bez mērīta parauga.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": false,
+      "tolerance_coupling": null,
+      "structural_only_reason_lv": "Strukturāla SI priedēkļu un V-04 masas–tilpuma dimensiju saderības shēma ar eksaktiem definīciju koeficientiem, bez mērīta parauga vērtības.",
+      "axes": {},
+      "series": [
+        {
+          "id": "si-prefix-chain",
+          "legend_key": "fig.legend.stoich_chain",
+          "style_role": "primary",
+          "nodes": [
+            {"id": "mass-kg-g", "step": "Masa", "title_lv": "1 kg = 1000 g", "detail_lv": "1 g = 1000 mg"},
+            {"id": "blocked-mv", "step": "V-04 robeža", "title_lv": "m ↔ V prasa ρ", "detail_lv": "ρ = m(šķīd.) / V(šķīd.)"},
+            {"id": "vol-l-ml", "step": "Tilpums", "title_lv": "1 L = 1000 mL", "detail_lv": "1 mL = 1 cm³"}
+          ],
+          "edges": [
+            {"from": "mass-kg-g", "to": "blocked-mv", "label_lv": "m / ρ → V"},
+            {"from": "blocked-mv", "to": "vol-l-ml", "label_lv": "tikai ar ρ"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-v04-blocked",
+          "annotation_key": "fig.annot.v04_no_direct_mv",
+          "citation_ref": "CIT-C2-DENSITY-UNITS",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch-2",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-UNITS", "CIT-C2-DENSITY-UNITS", "V-04"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 75, "viewBox": [0, 0, 760, 260], "monochrome_safe": true}
+    }
+  ]
+}

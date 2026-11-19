@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "artifact": "conflict-registry-handover",
+  "handover_from": "N01",
+  "handover_to": "N03",
+  "format_note": "Forward-compatible fragment for data/conventions.json's conflict registry. N03 consolidates this entry with V-02 through V-12 and the inherited C01-C10. Every entry carries an id, class, finding, evidence, a status from the N03 vocabulary (resolved-by-task, documented-and-accepted, open-with-owner), an owner or resolution task, and a mitigation where the root cause stays external. The file digest is recorded in evidence/VERIFICATION_LEDGER.md; N03 must preserve the id and the evidence strings verbatim.",
+  "entries": [
+    {
+      "id": "V-01",
+      "title": "verify_preparation.py crashes on a clean clone; the committed PASS is not reproducible repository-locally",
+      "class": "verification-reproducibility",
+      "finding": "tools/verify_preparation.py raises KeyError: 1 inside verify_data when run against the published repository alone. COPY_MANIFEST.json's 174 destination records are published, but its 'source' fields point at sibling Chemistry_1 through Chemistry_7 trees that are not published. verify_copies therefore skips every record at 'if not src.is_file() or not dst.is_file(): continue' before the canonical-master branch can populate the masters dictionary, which is keyed by programme topic (1-7). verify_data then dereferences masters[topic] for the first coverage row and raises KeyError: 1. The missing key is the topic number in the verifier's in-memory masters map, not a literal COPY_MANIFEST key; the absent files are the seven canonical-master source entries.",
+      "failing_location": {
+        "file": "tools/verify_preparation.py",
+        "line": 177,
+        "function": "verify_data",
+        "expression": "check(row['master_anchor'] in masters[topic].ids, ...)",
+        "exception": "KeyError: 1",
+        "manifest_entry_class": "canonical-master",
+        "manifest_entry_count": 7,
+        "first_absent_source": "Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "script_sha256_at_reproduction": "d2edb7033dba7f7d80c908959d29eb49623111d97ab7c4d7a85cf45543a1d102"
+      },
+      "reproduction": {
+        "command": "cd /tmp/opencode/n01-clean-clone && python3 tools/verify_preparation.py",
+        "exit_code": 1,
+        "traceback": "Traceback (most recent call last):\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 292, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 273, in main\n    verify_data(masters)\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 177, in verify_data\n    check(row['master_anchor'] in masters[topic].ids, f\"Missing coverage anchor: {row['outcome_id']} #{row['master_anchor']}\")\n                                  ~~~~~~~^^^^^^^\nKeyError: 1",
+        "environment": {
+          "repository": "git clone of /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum at commit 677156a32bc917e146ca1e3e7e5988ef925a1733",
+          "sibling_trees_present": false,
+          "python": "3.12.16",
+          "platform": "Linux 7.3.3-200.fc44.x86_64 x86_64",
+          "utc": "2026-11-16T22:03Z (recorded run)"
+        }
+      },
+      "two_environment_boundary": {
+        "published_repository_alone": "FAILS: the sibling source trees are absent, verify_copies skips the canonical-master records, masters stays empty and verify_data raises KeyError: 1.",
+        "author_full_workspace": "PASSES: with Chemistry_1 through Chemistry_7 present in the parent directory, the default mode ran on 2026-11-16 (UTC) and produced status PASS with 174 files, 30,083,827 bytes, 15,978 preserved files, and output identical to the committed evidence/PREPARATION_VERIFICATION.json except checked_utc.",
+        "conflation_rule": "The crash is a property of the published repository alone. The author-workspace PASS does not transfer to a clean clone, and the clean-clone failure does not invalidate the author-workspace record."
+      },
+      "status": "documented-and-accepted",
+      "status_reason": "The root cause is external: the sibling Chemistry_1 through Chemistry_7 workspaces are not published and publishing or reconstructing them is out of the roadmap's scope. The clean-clone reproducibility defect is documented and mitigated, not erased.",
+      "owner": "external source workspaces Chemistry_1 through Chemistry_7 (not published)",
+      "resolution_task": null,
+      "mitigation_task": "N01",
+      "mitigation": "--repo-local verifies the 174 published destinations against COPY_MANIFEST's own recorded hashes, byte total and role counts without dereferencing the sibling trees, and writes only evidence/REPO_LOCAL_VERIFICATION.json with an explicit repository-local scope line. The default full-workspace mode is unchanged and still fails on a clean clone by design of the published set.",
+      "evidence": [
+        "Reproduction traceback and environment in this entry",
+        "tools/verify_preparation.py assertion classification (evidence/N01_VERIFICATION_RECORD.md, section 2)",
+        "Repository-local PASS (evidence/REPO_LOCAL_VERIFICATION.json)",
+        "Negative fixtures tamper, delete and truncate (evidence/N01_VERIFICATION_RECORD.md, section 4)",
+        "Committed full-workspace record (evidence/PREPARATION_VERIFICATION.json) remains DOCUMENTED BUT NOT RERUN repository-locally"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) reproduction; committed PASS remains DOCUMENTED BUT NOT RERUN from a clean clone",
+      "handoff_notes": "N03 must register V-01 with the status above and cite N01 as the mitigation task. Do not restate V-01 as fully resolved: the sibling publication gap stays open with the external owner."
+    }
+  ]
+}

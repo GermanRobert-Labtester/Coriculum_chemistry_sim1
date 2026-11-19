@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "data/golden_vector_protocol.json": "36ff7cf197bf2c5dd18dafd68b544a6ba36acc61bda9b78f1727f45cd6d6b308",
+    "data/golden_vectors.json": "258a316e15bd6952fcbc55fdafe4b4ddce81e44956a4ad30465ec923351bc7a9",
+    "data/prng_contract_vectors.json": "07410d1e87277fab201dd7f665d7269fefb176e67b9d16db346aab00fd724a05",
+    "data/seed_policy.json": "d8404b2dd5106bb704181431c38133354503f10b68614a0487aef64806f35b26",
+    "output/build-manifest.json": "a0362e64fe469ef533d469d2db3d1755d201edab17fd041bd4aedf0e451cd85a",
+    "output/simulator.html": "fe3eb90168c1035322c25d9f016eb094120e0bb35c09c08fb42852c5986976d9",
+    "src/golden-vectors-loader.js": "fd2bc28b45c996c5f51786177d18c9aebb7a3d7d3e2c6a75224139ca6e8b7338",
+    "src/prng.js": "9f85ef21b65f7274e4e5dea9320d2a676b0cb7670607636fb92c6ef8184a414c",
+    "src/shell.html": "4ed82fe14815a40108d6a8569747d58a06a27c68652c9ed3baa70ad836732b05",
+    "tools/build.py": "331c592c8e566443951cca6b7364307a77eedb61e8aa544c0544f53f5d9a89a9",
+    "tools/golden_oracle.py": "f7781ddc23fa2f33b7d580959aa7e8c02d6e7aff7dc9e9f79a7602db9e5bb493",
+    "tools/prng.py": "c23d48d2d0b6768e4718f9933cea0edd8a05a9986cfefd1b1aa85770206cbff9",
+    "tools/validate_golden_vectors.py": "a3af62e53fc3c72da8c616de5df81a502d218d1d887217e023b7158330035734"
+  },
+  "build_gate": {
+    "committed_matches_fresh_build": true,
+    "double_build_parity": true,
+    "double_build_sha256": "fe3eb90168c1035322c25d9f016eb094120e0bb35c09c08fb42852c5986976d9",
+    "refusal_artifact_written": false,
+    "refusal_returncode": 1,
+    "refusal_stderr": "FAIL golden_vectors gate (order 4, owner N05): Active vector 'GV-S1-T1-Q02-01' reuses a retired_id\nRefusing build. The artifact was not written."
+  },
+  "failures": [],
+  "prng_determinism": {
+    "draws_per_seed": 100,
+    "green_divergences": 0,
+    "js_gamma_perturbation_caught": true,
+    "py_mul1_perturbation_caught": true,
+    "seed_count": 11,
+    "status": "PASS",
+    "table_sha256": "eb5dd65faae6eda2d098dec424bf11d8c066b8fa1cb0abba1f58cbfee5f617c6"
+  },
+  "replay_and_perturbation": {
+    "flipped_detail": {
+      "baseline": {
+        "error_class": "NONE",
+        "verdict_class": "correct"
+      },
+      "perturbed": {
+        "error_class": "OUT_OF_TOLERANCE",
+        "verdict_class": "incorrect"
+      },
+      "vector_id": "GV-S1-T2-Q10-01"
+    },
+    "flipped_vector_ids": [
+      "GV-S1-T2-Q10-01"
+    ],
+    "perturbed_conventions_change": "burette_volume.absolute.value: 0.05 -> 0.01",
+    "perturbed_results_sha256": "ae6ba4f77ddd5891da65fe4554167711b494dbbb69e383278d4bb5090d435b07",
+    "replay_identical": true,
+    "replay_results_sha256": "7b705dbf8edd0efd20af6208ac374988d4980020173c86ee55bb12062e94e214",
+    "replay_run1_sha256": "5544864314dac72250e925da992ca1cb735b518b4fe57813a351969b4178b309",
+    "replay_run2_sha256": "5544864314dac72250e925da992ca1cb735b518b4fe57813a351969b4178b309",
+    "revert_restored": true,
+    "reverted_results_sha256": "7b705dbf8edd0efd20af6208ac374988d4980020173c86ee55bb12062e94e214"
+  },
+  "retired_id_negative_fixture": {
+    "errors": [
+      "Active vector 'GV-S1-T1-Q02-01' reuses a retired_id"
+    ],
+    "status": "FAIL"
+  },
+  "runtime_harness": {
+    "artifact": "golden-vectors-runtime-harness",
+    "artifact_sha256": "fe3eb90168c1035322c25d9f016eb094120e0bb35c09c08fb42852c5986976d9",
+    "degradation": {
+      "missing": {
+        "code": "E_VECTORS_MISSING",
+        "message": "[E_VECTORS_MISSING] Trūkst #sim-golden-vectors salas elementa.",
+        "name": "GoldenVectorsError"
+      },
+      "retired_reuse": {
+        "code": "E_VECTORS_RETIRED_REUSE",
+        "message": "[E_VECTORS_RETIRED_REUSE] #sim-golden-vectors aktīvs vektors atkārto atsauktu id GV-S1-T1-Q02-01.",
+        "name": "GoldenVectorsError"
+      },
+      "truncated": {
+        "code": "E_VECTORS_JSON",
+        "message": "[E_VECTORS_JSON] #sim-golden-vectors satur nederīgu JSON. Zelta vektori nav ielādējami.",
+        "name": "GoldenVectorsError"
+      }
+    },
+    "schema_version": 1,
+    "shipped": {
+      "counts": {
+        "active": 40,
+        "retired": 0,
+        "topics": 7,
+        "types": 11
+      },
+      "prng_smoke": {
+        "illegal_zero_rejected": true,
+        "seed1_draw0": "10451216379200822465"
+      },
+      "status_text": "Zelta vektori (#sim-golden-vectors): 40 aktīvi vektori, 7 tēmas, 11 tipi; PRNG (splitmix64-u64-v1) paškontrole OK."
+    },
+    "status": "PASS",
+    "task": "N05"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N05"
+}

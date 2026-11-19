@@ -1,0 +1,2299 @@
+{
+  "schema_version": 1,
+  "contract": "N29-honesty-audit",
+  "status": "PASS",
+  "total_elements": 327,
+  "untraceable_count": 0,
+  "merged_sources_count": 0,
+  "entries": [
+    {
+      "element": "P1-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-09.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-09.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-09.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-09.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P1-09.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-09.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-09.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-09.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-09.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-09.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-10.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-10.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-10.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-10.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P2-10.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-09.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-09.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-09.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-09.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-09.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-10.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-10.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-10.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-10.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-10.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-11.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-11.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-11.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-11.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P3-11.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-09.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-09.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-09.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-09.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-09.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-10.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-10.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-10.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-10.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-10.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-11.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-11.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-11.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-11.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P4-11.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-09.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-09.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-09.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-09.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-09.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-10.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-10.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-10.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-10.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P5-10.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-06.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-06.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-06.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-06.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-06.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-07.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-07.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-07.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-07.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-07.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-08.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-08.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-08.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-08.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P6-08.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-01.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-01.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-01.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-01.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-02.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-02.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-02.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-02.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-02.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-03.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-03.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-03.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-03.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-03.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-04.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-04.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-04.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-04.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-04.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-05.mastery",
+      "source": "N26:SimMastery",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-05.availability",
+      "source": "N24/N26:Eligibility",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-05.queue",
+      "source": "N28:SimRemediation",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-05.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "P7-05.affordances",
+      "source": "N02/N07/N16/N30:Affordances",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.self_assessment",
+      "source": "N29:F07",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C1_VALUE",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C2_SIGFIG",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C1_COEFFICIENTS",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C2_BALANCE_CHECK",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C1_CORRECTION",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    },
+    {
+      "element": "card.P1-01.criterion.C2_MASS_REASON",
+      "source": "N23/N10:CriteriaLabels",
+      "single_source": true,
+      "merged": false,
+      "traceable": true
+    }
+  ]
+}

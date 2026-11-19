@@ -1,0 +1,59 @@
+{
+  "canonical_bytes": 239132,
+  "canonical_sha256": "192d3f57e60722684e2eb12f59a5d7094242f7413d7f8e8197d06329280c88ff",
+  "concept_bindings_count": 260,
+  "counts_by_class": {
+    "instruments": 13,
+    "interface": 381,
+    "iupac": 10,
+    "quantities": 31,
+    "terms": 206
+  },
+  "errors": [],
+  "grammar_elements_count": 26,
+  "lint": {
+    "checked_term_keys": 232,
+    "checked_unit_fields": 481,
+    "errors": [],
+    "exempt_prose_fields": 381,
+    "status": "PASS"
+  },
+  "nested_unit_slots_count": 6,
+  "orphan_elements": [],
+  "schema_version": 1,
+  "status": "PASS",
+  "stub_closure": {
+    "missing_entries": [],
+    "rows": [
+      {
+        "file": "data/n06_term_stubs.json",
+        "missing_keys": [],
+        "resolved_keys": 21,
+        "status": "CLOSED",
+        "task": "N06",
+        "total_keys": 21
+      },
+      {
+        "file": "data/n08_term_stubs.json",
+        "missing_keys": [],
+        "resolved_keys": 15,
+        "status": "CLOSED",
+        "task": "N08",
+        "total_keys": 15
+      },
+      {
+        "file": "data/n09_term_stubs.json",
+        "missing_keys": [],
+        "resolved_keys": 0,
+        "status": "pending-N09 (N09 not yet executed in workspace; feedback interface keys pre-authored in #sim-terms)",
+        "task": "N09",
+        "total_keys": 0
+      }
+    ],
+    "status": "PASS",
+    "text_mismatches": []
+  },
+  "task": "N10",
+  "total_entries": 641,
+  "unit_slots_count": 62
+}

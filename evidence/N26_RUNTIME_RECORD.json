@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "task": "N26",
+  "status": "PASS",
+  "checks": {
+    "a1_unreachable_state_fixture": {
+      "status": "PASS",
+      "unreachable_states": [
+        "stranded_vault"
+      ],
+      "errors": [
+        "Nesasniedzami apguves stāvokļi politikā: stranded_vault"
+      ]
+    },
+    "a12_criterion_mapping_totality": {
+      "status": "PASS",
+      "families": 28,
+      "instances": 112,
+      "criteria": 267,
+      "unmapped": 0,
+      "negative_code": "E_MASTERY_UNMAPPED_CRITERION"
+    },
+    "a13_reducer_transitions_and_determinism": {
+      "status": "PASS",
+      "path": [
+        "unseen",
+        "learning",
+        "learning",
+        "near_mastered",
+        "near_mastered",
+        "mastered",
+        "needs_review"
+      ],
+      "digest_run1": "a4f28bad132f5fa1c0bee13c5569c3bc7bf1f748bce0ae1ed8331f5ebf0cb83b",
+      "digest_run2": "a4f28bad132f5fa1c0bee13c5569c3bc7bf1f748bce0ae1ed8331f5ebf0cb83b",
+      "recovery": "near_mastered",
+      "regression": "learning",
+      "miss_in_mastered": "needs_review",
+      "partial": {
+        "P3_01": {
+          "attempts": 1,
+          "consecutive_correct": 1,
+          "correct_count": 1,
+          "incorrect_count": 0,
+          "last_practiced_day": 1,
+          "last_verdict": "correct",
+          "miss_in_mastered": 0,
+          "outcome_id": "P3-01",
+          "state": "learning"
+        },
+        "P3_02": {
+          "attempts": 1,
+          "consecutive_correct": 0,
+          "correct_count": 0,
+          "incorrect_count": 1,
+          "last_practiced_day": 1,
+          "last_verdict": "incorrect",
+          "miss_in_mastered": 0,
+          "outcome_id": "P3-02",
+          "state": "learning"
+        },
+        "P3_03": {
+          "attempts": 0,
+          "consecutive_correct": 0,
+          "correct_count": 0,
+          "incorrect_count": 0,
+          "last_practiced_day": null,
+          "last_verdict": null,
+          "miss_in_mastered": 0,
+          "outcome_id": "P3-03",
+          "state": "unseen"
+        }
+      },
+      "trace": [
+        {
+          "step": 0,
+          "state": "unseen",
+          "streak": 0
+        },
+        {
+          "step": 1,
+          "event": "incorrect",
+          "state": "learning",
+          "streak": 0
+        },
+        {
+          "step": 2,
+          "event": "correct",
+          "state": "learning",
+          "streak": 1
+        },
+        {
+          "step": 3,
+          "event": "correct",
+          "state": "near_mastered",
+          "streak": 0
+        },
+        {
+          "step": 4,
+          "event": "correct",
+          "state": "near_mastered",
+          "streak": 1
+        },
+        {
+          "step": 5,
+          "event": "correct",
+          "state": "mastered",
+          "streak": 0
+        },
+        {
+          "step": 6,
+          "event": "decay(14d)",
+          "state": "needs_review",
+          "streak": 0
+        }
+      ]
+    },
+    "c11_fresh_replay_and_interleaved_independence": {
+      "status": "PASS",
+      "in_process_digest": "a4f28bad132f5fa1c0bee13c5569c3bc7bf1f748bce0ae1ed8331f5ebf0cb83b",
+      "fresh_process_digest": "a4f28bad132f5fa1c0bee13c5569c3bc7bf1f748bce0ae1ed8331f5ebf0cb83b",
+      "interleaved_P1_01": "mastered",
+      "interleaved_P4_02": "near_mastered"
+    },
+    "b11_store_migration_roundtrip_and_erase": {
+      "status": "PASS",
+      "pre_mastery_all_unseen": true,
+      "newer_version_error": "E_STORE_WRITE_BLOCKED_NEWER_VERSION",
+      "roundtrip_store_digest": "85e04785b9d72da2e8fb1d22aab7d40bc0a27b64cca43f0b09d64d540d8f70d6",
+      "roundtrip_mastery_digest": "a4f28bad132f5fa1c0bee13c5569c3bc7bf1f748bce0ae1ed8331f5ebf0cb83b",
+      "keys_after_erase": 0,
+      "after_erase_all_unseen": true
+    },
+    "b12_view_profiles_honesty_and_unavailable": {
+      "status": "PASS",
+      "fresh_counts": {
+        "learning": 0,
+        "mastered": 0,
+        "near_mastered": 0,
+        "needs_review": 0,
+        "unavailable": 0,
+        "unseen": 64
+      },
+      "mid_counts": {
+        "learning": 1,
+        "mastered": 1,
+        "near_mastered": 1,
+        "needs_review": 1,
+        "unavailable": 0,
+        "unseen": 60
+      },
+      "near_counts": {
+        "learning": 2,
+        "mastered": 54,
+        "near_mastered": 6,
+        "needs_review": 2,
+        "unavailable": 0,
+        "unseen": 0
+      },
+      "unavailable_t7_counts": {
+        "learning": 0,
+        "mastered": 0,
+        "near_mastered": 0,
+        "needs_review": 0,
+        "unavailable": 5,
+        "unseen": 0
+      },
+      "icon_nodes": 168,
+      "label_nodes": 128
+    },
+    "b13_end_to_end_mixed_session": {
+      "status": "PASS",
+      "e2e_mastery_digest": "b48d52188aa4845681a2c51e6626ceb1256a4b9940e03e5bb5a5ee26ba48cd25",
+      "expected_digest": "b48d52188aa4845681a2c51e6626ceb1256a4b9940e03e5bb5a5ee26ba48cd25",
+      "rendered_summary": "○  Nav mēģināts: 34 ◔  Apgūšanas procesā: 25 ◑  Gandrīz apgūts: 5 ●  Apgūts (pašmācībā): 0 ↻  Jāatkārto: 0",
+      "sample_outcomes": {
+        "P1_05": "near_mastered",
+        "P5_05": "near_mastered",
+        "P2_01": "learning",
+        "P6_01": "learning",
+        "P4_02": "learning",
+        "P1_02_self_only": "unseen",
+        "P1_08_pending_only": "unseen"
+      }
+    },
+    "c13_built_artifact_smoke": {
+      "status": "PASS",
+      "total_smoke_vectors": 22,
+      "passed_smoke_vectors": 22,
+      "n26Vec": {
+        "id": "SMK-N26-MASTERY-WALK",
+        "owner": "N26",
+        "status": "PASS",
+        "details": {
+          "policyId": "sim-colloq1-mastery-policy-v1",
+          "epistemicLabel": "PROPOSED",
+          "walk": [
+            "unseen",
+            "learning",
+            "near_mastered",
+            "learning"
+          ],
+          "digest": "8c93721f05567444a24c96b77bd31b0391466887643da50314964a7b828fd5e7"
+        },
+        "reason": null
+      },
+      "fresh_prakse_rendered": true
+    }
+  },
+  "failures": []
+}

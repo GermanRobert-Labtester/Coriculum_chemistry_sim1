@@ -1,0 +1,5 @@
+  default_mode_writes=0 (expected 0)
+  journey_writes=230 max_footprint=32521 B / 262144 B
+  events_cap=200/200 pruned=20 note_max_len=500
+  scratch_undeclared_key_fixture=PASS (code=E_STORAGE_UNDECLARED_KEY, key=sim_undeclared_leak_key, module=scratch-rogue-module.js)
+audit_storage PASS -> /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/qa_runs/qa-12e36ae39677-seq0001/N35_STORAGE_RECORD.json

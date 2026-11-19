@@ -1,0 +1,417 @@
+{
+  "build_parity": {
+    "byte_accounting": {
+      "concept_drawer_js_bytes": 23486,
+      "concept_map_js_bytes": 22138,
+      "css_bytes": 21721,
+      "embedded_registry_bytes": 10599,
+      "embedded_summaries_bytes": 27015,
+      "runtime_js_bytes": 153235,
+      "template_overhead_bytes": 14888
+    },
+    "html_identical": true,
+    "manifest_identical": true,
+    "manifest_sha256": "6a6e5f7deee264079912663c0457d515cd12707d166afcf0bae6f2db8d3b8f8d",
+    "output_bytes": 432039,
+    "output_sha256": "883187cc6fb6a2561fb145fd1c85954f5fc09418cafd9d4292d11cac532fab3a"
+  },
+  "failures": [],
+  "negative_fixtures": {
+    "broken_master_anchor": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "errors": [
+        "P1-01: summary master_anchor='neeksistejoss-enkurs' mismatches coverage 'stehiometrija'",
+        "P1-01: master_anchor #neeksistejoss-enkurs not found (case-exact) in materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html"
+      ],
+      "stderr": "FAIL concept_map gate (order 7, owner N07): P1-01: summary master_anchor='neeksistejoss-enkurs' mismatches coverage 'stehiometrija'\n  - P1-01: master_anchor #neeksistejoss-enkurs not found (case-exact) in materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    },
+    "cycle_in_coverage": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "errors": [
+        "Cycle detected in prerequisite graph: P1-01 -> P1-03 -> P1-05 -> P1-01",
+        "P1-05: registry prerequisite_edges [] != coverage ['P1-01']"
+      ],
+      "stderr": "FAIL coverage gate (order 1, owner N02): Cyclic prerequisite edge set: P1-01 -> P1-03 -> P1-05 -> P1-01\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    },
+    "dangling_concept_link": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "errors": [
+        "P1-01: dangling prerequisite link 'P9-99' -> '#karte-P9-99'",
+        "P1-01: registry prerequisite_edges ['P1-03', 'P1-05', 'P9-99'] != coverage ['P1-03', 'P1-05']"
+      ],
+      "stderr": "FAIL concept_map gate (order 7, owner N07): P1-01: dangling prerequisite link 'P9-99' -> '#karte-P9-99'\n  - P1-01: registry prerequisite_edges ['P1-03', 'P1-05', 'P9-99'] != coverage ['P1-03', 'P1-05']\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    },
+    "missing_slot_owner": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "errors": [
+        "P1-01 slot 'figures': invalid or missing owner_task None",
+        "P1-01 slot 'figures': status 'pending-N11' != pending-None"
+      ],
+      "stderr": "FAIL concept_map gate (order 7, owner N07): P1-01 slot 'figures': invalid or missing owner_task None\n  - P1-01 slot 'figures': status 'pending-N11' != pending-None\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    },
+    "missing_v02_v03_dissent": {
+      "errors": [
+        "P3-01: missing V-02 conventions reference or named m/m vs m/V dissent note",
+        "P6-02: missing V-03 conventions reference or named E° vs E°′ dissent note"
+      ],
+      "validator_status": "FAIL"
+    }
+  },
+  "prior_runtime_regression": {
+    "n02_coverage": "PASS",
+    "n03_conventions": "PASS",
+    "n05_golden_vectors": "PASS",
+    "n06_shell": "PASS"
+  },
+  "runtime_harness": {
+    "artifact": "n07-runtime-harness",
+    "artifact_path": "output/simulator.html",
+    "artifact_sha256": "883187cc6fb6a2561fb145fd1c85954f5fc09418cafd9d4292d11cac532fab3a",
+    "checks": {
+      "direct_link_no_map": {
+        "citation_has_ch7": true,
+        "map_element_exists": false,
+        "opened_title": "P4-10 — ΔG = ΔH − TΔS ar saskaņotām vienībām",
+        "restored_focus_id": "rem-link-P4-10"
+      },
+      "focus_sequence": [
+        {
+          "activeId": "karte-btn-P1-01",
+          "step": "invoke"
+        },
+        {
+          "activeId": "concept-drawer-close",
+          "step": "opened"
+        },
+        {
+          "activeId": "concept-drawer-close",
+          "prevented": true,
+          "step": "tab-wrap-forward"
+        },
+        {
+          "activeId": "karte-btn-P1-01",
+          "step": "closed-restore"
+        }
+      ],
+      "layout": {
+        "cross_topic_edges": 20,
+        "cycle_rejected_code": "E_MAP_CYCLE",
+        "deterministic": true,
+        "diamond_layer1_order": [
+          "B",
+          "C"
+        ],
+        "diamond_layers": {
+          "A": 0,
+          "B": 1,
+          "C": 1,
+          "D": 2
+        },
+        "edges": 127,
+        "layout_digest": "1ee006ae3827293b84696bb1c6509ec4ce03aec2f4787c2b59ec41f30d450f96",
+        "nodes": 64,
+        "wide_layer_row_sizes": [
+          3,
+          3,
+          3,
+          2
+        ],
+        "wide_layer_wrapped": true
+      },
+      "nested_restore": [
+        {
+          "activeId": "concept-drawer-close",
+          "concept": "P1-01",
+          "step": "outer-open"
+        },
+        {
+          "activeId": "concept-drawer-close",
+          "concept": "P1-03",
+          "stackDepth": 2,
+          "step": "inner-open"
+        },
+        {
+          "activeId": "drawer-prereq-btn-P1-03",
+          "concept": "P1-01",
+          "stackDepth": 1,
+          "step": "inner-close-restore"
+        },
+        {
+          "activeId": "karte-btn-P1-01",
+          "isOpen": false,
+          "step": "outer-close-restore"
+        }
+      ],
+      "semantic": {
+        "all_buttons_labelled": true,
+        "all_edges_announced": true,
+        "ascii_graphs_count": 7,
+        "cross_topic_links_count": 20,
+        "edge_links_count": 127,
+        "node_buttons_count": 64
+      },
+      "smoke_vector": {
+        "details": {
+          "crossTopicEdges": 20,
+          "edges": 127,
+          "nodes": 64,
+          "walkEvents": 4
+        },
+        "id": "SMK-N07-MAP-DRAWER-WALK",
+        "owner": "N07",
+        "reason": null,
+        "status": "PASS"
+      },
+      "walk_trace": {
+        "checkpoints": {
+          "afterBackFocus": "drawer-prereq-btn-P1-05",
+          "afterCrossRestoreFocus": "karte-cross-open-P1-06-P3-02",
+          "afterMapRestoreFocus": "karte-btn-P5-07",
+          "finalState": {
+            "activeChainExpanded": false,
+            "activeConceptId": null,
+            "activeSource": null,
+            "initialized": true,
+            "isOpen": false,
+            "stackDepth": 0,
+            "stackIds": []
+          }
+        },
+        "events_count": 7,
+        "identical": true,
+        "run_a_digest": "6d0d18f455620e2fe596f5f634d78de4531c2e5e44d136065e4d583950656e15",
+        "run_b_digest": "6d0d18f455620e2fe596f5f634d78de4531c2e5e44d136065e4d583950656e15",
+        "trace": [
+          {
+            "action": "open",
+            "conceptId": "P5-07",
+            "restoredToId": "karte-btn-P5-07",
+            "seq": 1,
+            "source": "map",
+            "stackDepth": 1,
+            "stackIds": [
+              "P5-07"
+            ],
+            "targetId": "concept-drawer-close"
+          },
+          {
+            "action": "toggle-chain",
+            "conceptId": "P5-07",
+            "restoredToId": null,
+            "seq": 2,
+            "source": "map",
+            "stackDepth": 1,
+            "stackIds": [
+              "P5-07"
+            ],
+            "targetId": "concept-drawer-chain-toggle"
+          },
+          {
+            "action": "open",
+            "conceptId": "P1-05",
+            "restoredToId": "drawer-prereq-btn-P1-05",
+            "seq": 3,
+            "source": "drawer-chain",
+            "stackDepth": 2,
+            "stackIds": [
+              "P5-07",
+              "P1-05"
+            ],
+            "targetId": "concept-drawer-close"
+          },
+          {
+            "action": "close-nested",
+            "conceptId": "P1-05",
+            "restoredToId": "drawer-prereq-btn-P1-05",
+            "seq": 4,
+            "source": "drawer-chain",
+            "stackDepth": 1,
+            "stackIds": [
+              "P5-07"
+            ],
+            "targetId": "P5-07"
+          },
+          {
+            "action": "close-restore",
+            "conceptId": "P5-07",
+            "restoredToId": "karte-btn-P5-07",
+            "seq": 5,
+            "source": "map",
+            "stackDepth": 0,
+            "stackIds": [],
+            "targetId": null
+          },
+          {
+            "action": "open",
+            "conceptId": "P3-02",
+            "restoredToId": "karte-cross-open-P1-06-P3-02",
+            "seq": 6,
+            "source": "map-cross-edge",
+            "stackDepth": 1,
+            "stackIds": [
+              "P3-02"
+            ],
+            "targetId": "concept-drawer-close"
+          },
+          {
+            "action": "close-restore",
+            "conceptId": "P3-02",
+            "restoredToId": "karte-cross-open-P1-06-P3-02",
+            "seq": 7,
+            "source": "map-cross-edge",
+            "stackDepth": 0,
+            "stackIds": [],
+            "targetId": null
+          }
+        ]
+      }
+    },
+    "failures": [],
+    "schema_version": 1,
+    "status": "PASS",
+    "task": "N07"
+  },
+  "schema_version": 1,
+  "source_digests": {
+    "data/anchor_registry.json": {
+      "bytes": 55812,
+      "sha256": "c8e343f1b828b79ef15ea5d1fc3add093315fd5dddd56aa4de1266dff3d302cb"
+    },
+    "data/concept_summaries.json": {
+      "bytes": 99411,
+      "sha256": "a479dd9d24cfa578e2f4812a70bf246900007c9e67a96416ec04bab20c051946"
+    },
+    "src/concept-drawer.js": {
+      "bytes": 23486,
+      "sha256": "edce0ec0b9949f3d0e619adffba6b465cc79b4222924b52fbffd35a3d44e6107"
+    },
+    "src/concept-map.js": {
+      "bytes": 22138,
+      "sha256": "fc9fff9ceed75eb9145bbdaefb35bca03888a302d139f0350d6c7670332870e6"
+    },
+    "src/coverage-view.js": {
+      "bytes": 5598,
+      "sha256": "454cc99c1b9a764efee5d0010342f0a352b7ba0a89a7b64a88632df3e960be84"
+    },
+    "src/shell.html": {
+      "bytes": 17018,
+      "sha256": "ec8897e6e3ad9396b24ca396d491a86134b4528044b2f45c45d3ec40b40c547c"
+    },
+    "src/smoke-subset.js": {
+      "bytes": 7774,
+      "sha256": "24e4b51b977b9f06f5c71e36787f99fe8dff03e6de5b26ede233cf3bcadee821"
+    },
+    "src/styles.css": {
+      "bytes": 18329,
+      "sha256": "7e6b59f4011bfdc6f880468056e356e98a06c85c7c1fa385989dcb0c85b42adc"
+    },
+    "tools/build.py": {
+      "bytes": 31651,
+      "sha256": "61648d0f2bbae79b67c944b41881e4ea725cb868ce92e957ca129aee22b7c61a"
+    },
+    "tools/check_n07_runtime.js": {
+      "bytes": 22259,
+      "sha256": "a1b2406f67af2bebcacf260209d9b3e2e8a2e8cfbf23d09f0a39947a5d58de16"
+    },
+    "tools/validate_n07_map.py": {
+      "bytes": 21663,
+      "sha256": "fe80f0297cb09e6e59857cc2775b0ae42e29c97ded079781af670b14fed007f6"
+    }
+  },
+  "status": "PASS",
+  "task": "N07",
+  "validation": {
+    "anchor_revalidation": {
+      "freeze_bound": true,
+      "resolved": 64,
+      "total": 64
+    },
+    "artifact": "n07-map-drawer-validation",
+    "conventions_dissent": {
+      "v02_checked": 5,
+      "v03_checked": 3
+    },
+    "errors": [],
+    "fixtures": {
+      "diamond": {
+        "layer_1_order": [
+          "B",
+          "C"
+        ],
+        "node_layers": {
+          "A": 0,
+          "B": 1,
+          "C": 1,
+          "D": 2
+        },
+        "status": "PASS"
+      },
+      "wide_layer_topic3": {
+        "node_count": 11,
+        "row_sizes": [
+          3,
+          3,
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "P3-01",
+            "P3-02",
+            "P3-03"
+          ],
+          [
+            "P3-04",
+            "P3-05",
+            "P3-06"
+          ],
+          [
+            "P3-07",
+            "P3-08",
+            "P3-09"
+          ],
+          [
+            "P3-10",
+            "P3-11"
+          ]
+        ],
+        "status": "PASS",
+        "wrap_threshold": 3,
+        "wrapped": true
+      }
+    },
+    "layout": {
+      "cross_topic_edges": 20,
+      "layout_digest": "3a43d26087bc177e60cf7b3606b8368397a00d7a79ef119a1d6355625e3be913",
+      "max_layer": 10,
+      "total_edges": 127,
+      "total_nodes": 64,
+      "wrap_threshold": 3
+    },
+    "registry_digest": "053d8cc4aa941430c9c1e402f095c314c41dc6d3c6c703c737fe346cb91206de",
+    "registry_resolution": {
+      "concepts_resolved": 64,
+      "edge_links_resolved": 127,
+      "topic_anchors": 7
+    },
+    "schema_version": 1,
+    "slots_checked": 192,
+    "status": "PASS",
+    "summaries_digest": "233db2512e1a5f4aba7ac4d220f9edaf96bfc10e778fc81699de1737caa8f7ca",
+    "task": "N07"
+  },
+  "walk_replay_parity": {
+    "all_identical": true,
+    "fresh_process_digest": "6d0d18f455620e2fe596f5f634d78de4531c2e5e44d136065e4d583950656e15",
+    "in_process_run_a": "6d0d18f455620e2fe596f5f634d78de4531c2e5e44d136065e4d583950656e15",
+    "in_process_run_b": "6d0d18f455620e2fe596f5f634d78de4531c2e5e44d136065e4d583950656e15"
+  }
+}

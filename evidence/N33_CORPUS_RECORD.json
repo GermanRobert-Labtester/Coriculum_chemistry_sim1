@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "owner_task": "N33",
+  "machine_status": "VERIFIED",
+  "manual_protocol_status": "UNVERIFIED",
+  "manual_protocol_path": "docs/SCREEN_READER_PROTOCOL.md",
+  "two_run_parity": {
+    "identical": true,
+    "run1": {
+      "html_bytes": 2674476,
+      "html_sha256": "9b3be45e19f741792b396b1015c7e97313b4e8461e3c906531575fb555228eaf",
+      "manifest_sha256": "77ebb57b4f8779293e64d1a64f7fa46cc8549536739fd51b57d25a798150c7d5"
+    },
+    "run2": {
+      "html_bytes": 2674476,
+      "html_sha256": "9b3be45e19f741792b396b1015c7e97313b4e8461e3c906531575fb555228eaf",
+      "manifest_sha256": "77ebb57b4f8779293e64d1a64f7fa46cc8549536739fd51b57d25a798150c7d5"
+    }
+  },
+  "checks": {
+    "a11y_summary": "a11y_contract PASS: controls=46 name_errors=0 components_18=18/18 landmarks=True live_regions=True collision_fix=True escape_fix=True typing_fix=True empty_label_fix=True",
+    "runtime_summary": "n31_runtime PASS: modules=38/38 globals=37 islands=22/22 smoke=29/29",
+    "artifact_summary": "artifact_contract PASS: bytes=2674476 (2611.8 KiB) lang=lv anchors=9/9 core_islands=7/7 all_islands=22/22 scripts=1 ext_urls=0",
+    "n22_components_status": "PASS",
+    "n22_semantics_status": "PASS"
+  },
+  "deliverables": {
+    "data/keyboard_map.json": {
+      "bytes": 6924,
+      "sha256": "1cee12033863d33f2c8a0f23d8dc71f3c7ef26281e5aa3f7d719115a5b033e54"
+    },
+    "src/focus.ts": {
+      "bytes": 22819,
+      "sha256": "d3de1e97e2e58819beab79ce57f428d63d76264da6b90ea991aefea604a5d7ed"
+    },
+    "src/compiled/focus.js": {
+      "bytes": 23053,
+      "sha256": "4cfc5950b2124fcc69216d1714ad19b0296d48ece3f976b48b9c0541e03273f5"
+    },
+    "tools/check_a11y.py": {
+      "bytes": 27148,
+      "sha256": "bc3e42cf78d976b8ee3cee32e4edb8ee6fca42fa76d23b82ac3522abc0848f7a"
+    },
+    "docs/SCREEN_READER_PROTOCOL.md": {
+      "bytes": 7710,
+      "sha256": "79f61340b679adcc9e4b4240fbfa4927361dab8c139dd49491aaab16586e3615"
+    },
+    "src/smoke-subset.js": {
+      "bytes": 69397,
+      "sha256": "dad3c8fc453936ce368807ef61560c4f716c0967405abb8d7bffafc8e5ee7f40"
+    },
+    "output/simulator.html": {
+      "bytes": 2674476,
+      "sha256": "9b3be45e19f741792b396b1015c7e97313b4e8461e3c906531575fb555228eaf"
+    },
+    "output/build-manifest.json": {
+      "bytes": 92636,
+      "sha256": "77ebb57b4f8779293e64d1a64f7fa46cc8549536739fd51b57d25a798150c7d5"
+    },
+    "evidence/N33_A11Y_REPORT.json": {
+      "bytes": 37135,
+      "sha256": "06f6a8d1bc0ca5b5368c7764e78d82b6a399ba2e1d355db039fb6b3d097ae4f5"
+    }
+  }
+}

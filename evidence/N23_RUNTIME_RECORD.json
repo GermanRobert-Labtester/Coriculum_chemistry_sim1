@@ -1,0 +1,1152 @@
+{
+  "schema_version": 1,
+  "owner": "N23",
+  "status": "PASS",
+  "digest_method": "canonical JSON (sorted keys, separators (\",\", \":\"), ensure_ascii=False) -> UTF-8 -> SHA-256, the N04 emission rule; the graded record digest excludes its own digest field.",
+  "contract": "docs/GRADING_FORMAT.md (frozen 2026-11-19)",
+  "runtime_modules": [
+    "src/compiled/grading.js",
+    "src/compiled/feedback.js"
+  ],
+  "source_modules": [
+    "src/grading.ts",
+    "src/feedback.ts"
+  ],
+  "engine_modules": [
+    "src/quantity-engine.js",
+    "src/method-engine.js",
+    "src/graph-scoring-engine.js"
+  ],
+  "islands": [
+    "data/grading_policy.json",
+    "data/feedback_classification.json"
+  ],
+  "preflight": {
+    "missing_modules": [],
+    "missing_sources": [],
+    "missing_islands": [],
+    "missing_core": [],
+    "pending": false,
+    "blocking": false
+  },
+  "context_binding": {
+    "method": "the constructed N19 MethodEngine instance (grade / specFromInstance) with the module MethodEngine constructor attached; SimMethodEngine publishes no static grade, and GRADING_FORMAT §0 names the instance methods. Recorded, not improvised.",
+    "figures": "SimGraphScoring.state.figures after graph.load(doc)",
+    "terms": "resolved key -> text_lv map from #sim-terms",
+    "bank": "{instancesById} from data/bank/*.json",
+    "examPolicy": "SimExam.loadPolicy(doc) (the N21 island, slots authoritative)"
+  },
+  "smoke": {
+    "status": "PASS",
+    "suite": {
+      "total": 19,
+      "passed": 10,
+      "failed": 9
+    },
+    "vectors": [
+      {
+        "id": "SMK-N23-GRADE-FULL",
+        "owner": "N23",
+        "status": "PASS",
+        "details": {
+          "island": "read",
+          "verdictRules": 6,
+          "fixture": "SF-N23-FULL",
+          "fixtures": 3,
+          "rows": 3,
+          "malformed": false,
+          "expected": {
+            "auto": 4,
+            "pending_external": 1
+          },
+          "observed": {
+            "auto": 4,
+            "pending_external": 1
+          },
+          "engine": "ships-from-src-not-inlined"
+        },
+        "reason": null
+      },
+      {
+        "id": "SMK-N23-GRADE-PARTIAL",
+        "owner": "N23",
+        "status": "PASS",
+        "details": {
+          "island": "read",
+          "verdictRules": 6,
+          "fixture": "SF-N23-PARTIAL",
+          "fixtures": 3,
+          "rows": 3,
+          "malformed": false,
+          "expected": {
+            "auto": 2,
+            "pending_external": 1
+          },
+          "observed": {
+            "auto": 2,
+            "pending_external": 1
+          },
+          "engine": "ships-from-src-not-inlined"
+        },
+        "reason": null
+      },
+      {
+        "id": "SMK-N23-GRADE-MALFORMED",
+        "owner": "N23",
+        "status": "PASS",
+        "details": {
+          "island": "read",
+          "verdictRules": 6,
+          "fixture": "SF-N23-MALFORMED",
+          "fixtures": 3,
+          "rows": 3,
+          "malformed": true,
+          "expected": {
+            "auto": 0,
+            "pending_external": 0
+          },
+          "observed": {
+            "auto": 0,
+            "pending_external": 0
+          },
+          "engine": "ships-from-src-not-inlined"
+        },
+        "reason": null
+      }
+    ],
+    "checks": {
+      "SMK-N23-GRADE-FULL_present": true,
+      "SMK-N23-GRADE-FULL_passes": true,
+      "SMK-N23-GRADE-PARTIAL_present": true,
+      "SMK-N23-GRADE-PARTIAL_passes": true,
+      "SMK-N23-GRADE-MALFORMED_present": true,
+      "SMK-N23-GRADE-MALFORMED_passes": true
+    },
+    "failed": [],
+    "policy_island_present": true
+  },
+  "digests": {
+    "src/grading.ts": {
+      "path": "src/grading.ts",
+      "bytes": 72669,
+      "sha256": "bad981df4e904f9d80d3af17f49220379bbbcc76e13d5a272cb12ed463c53e94"
+    },
+    "src/feedback.ts": {
+      "path": "src/feedback.ts",
+      "bytes": 65044,
+      "sha256": "8389126595138fd7488350718d8bde0775bc60a1401b36fecef6b308f299188b"
+    },
+    "src/compiled/grading.js": {
+      "path": "src/compiled/grading.js",
+      "bytes": 73429,
+      "sha256": "3e5c4bf2195e5d342c2713cee16c84b16b7857d94d4b52caaf5ba2fe5fc6b6f1"
+    },
+    "src/compiled/feedback.js": {
+      "path": "src/compiled/feedback.js",
+      "bytes": 60692,
+      "sha256": "7738e7ecf47307e5e754bdeae3d1563b80d95e24eb231b6c1bcb76f4cbe91697"
+    },
+    "data/grading_policy.json": {
+      "path": "data/grading_policy.json",
+      "bytes": 14011,
+      "sha256": "f5ad0824d1bc39787891f06e5cd6328b19ea60731f322c0b99ec3443a705e395"
+    },
+    "data/feedback_classification.json": {
+      "path": "data/feedback_classification.json",
+      "bytes": 83847,
+      "sha256": "f0e1c87881c7108578789e1ea8a9c2b8a5bbb81e870bb1c8ddc8433f38dd8f73"
+    },
+    "tools/fixtures/n23_score_matrix.json": {
+      "path": "tools/fixtures/n23_score_matrix.json",
+      "bytes": 71994,
+      "sha256": "7d44a6aaf22778ac27e86308f17166425d4cc453243f5a479dede42431f2b79f"
+    },
+    "tools/fixtures/n23_feedback_sample.json": {
+      "path": "tools/fixtures/n23_feedback_sample.json",
+      "bytes": 19888,
+      "sha256": "f5b1797e17205612df566057846003ed1e200057657f7485737ba4a38bae48db"
+    },
+    "tools/validate_n23_grading.py": {
+      "path": "tools/validate_n23_grading.py",
+      "bytes": 45037,
+      "sha256": "42255d7cc55484e7773410897713e1195cd547fd0cf113cbd6236dd53b64a9e7"
+    },
+    "tools/n23_classification.py": {
+      "path": "tools/n23_classification.py",
+      "bytes": 58205,
+      "sha256": "afa196e7e8fcbc6c5855539c2d602294f8f1c66cdfb291fc7f4ffa3751e1fb2b"
+    },
+    "tools/check_n23_runtime.js": {
+      "path": "tools/check_n23_runtime.js",
+      "bytes": 79540,
+      "sha256": "f383068646f0eed341d88e1ff61db69b5811326a473e5d07055382ce51ce29da"
+    },
+    "src/smoke-subset.js": {
+      "path": "src/smoke-subset.js",
+      "bytes": 39224,
+      "sha256": "5cddd5c5f1f62b896de6d0e9b93e6ea227ecc5350e4c83d38081401f99006acc"
+    },
+    "src/shell.html": {
+      "path": "src/shell.html",
+      "bytes": 24928,
+      "sha256": "2b05b920093b99bff2d0113e837265e95f0a0291fcff93c5c5bf62b8023083d2"
+    }
+  },
+  "forms": [
+    {
+      "form_id": "FX-N23-FULL",
+      "kind": "FULL",
+      "status": "PASS",
+      "failed": [],
+      "pending": [],
+      "totals": {
+        "auto_max_points": 48,
+        "auto_points": 48,
+        "form_max_points": 100,
+        "pending_external_points": 52,
+        "pending_max_points": 52,
+        "slots_graded": 19,
+        "slots_incomplete": 0,
+        "slots_invalid": 0,
+        "slots_manual_pending": 2,
+        "slots_total": 21,
+        "slots_unattempted": 0,
+        "unblended": true
+      },
+      "terminal_digest": "a5c927129e1bab2ee52be9260bc084d51667760c001dc45bfb1b85081c528c2f",
+      "graded_digest": "d7ab6bafe6bb3547ba410c6433d6a899a9c78bb8c219a9a21130a61266ab39ae",
+      "answered_slots": [
+        "S1-1",
+        "S1-2",
+        "S1-3",
+        "S2-1",
+        "S2-2",
+        "S2-3",
+        "S3-1",
+        "S3-2",
+        "S3-3",
+        "S4-1",
+        "S4-2",
+        "S4-3",
+        "S5-1",
+        "S5-2",
+        "S5-3",
+        "S6-1",
+        "S6-2",
+        "S6-3",
+        "S7-1",
+        "S7-2",
+        "S7-3"
+      ],
+      "unattempted_slots": [],
+      "assertions": [
+        {
+          "id": "slot_count",
+          "ok": true,
+          "detail": {
+            "slots": 21,
+            "policy_slots": 21
+          }
+        },
+        {
+          "id": "form_max_points_is_100",
+          "ok": true,
+          "detail": {
+            "form_max_points": 100
+          }
+        },
+        {
+          "id": "unblended_flag",
+          "ok": true,
+          "detail": {
+            "unblended": true
+          }
+        },
+        {
+          "id": "sum_auto_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 48,
+            "total": 48
+          }
+        },
+        {
+          "id": "sum_pending_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 52,
+            "total": 52
+          }
+        },
+        {
+          "id": "no_merged_total_field",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "per_slot_expectations_match_fixture",
+          "ok": true,
+          "detail": {
+            "slots_compared": 21,
+            "mismatches": []
+          }
+        },
+        {
+          "id": "auto_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 48,
+            "observed": 48
+          }
+        },
+        {
+          "id": "auto_equals_auto_max_declared",
+          "ok": true,
+          "detail": {
+            "expected": 48,
+            "observed": 48
+          }
+        },
+        {
+          "id": "pending_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "pending_equals_pending_max",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "auto_points_equal_auto_max",
+          "ok": true,
+          "detail": {
+            "auto_points": 48,
+            "auto_max_points": 48
+          }
+        },
+        {
+          "id": "accounted_is_100",
+          "ok": true,
+          "detail": {
+            "accounted": 100
+          }
+        },
+        {
+          "id": "zero_denied_criteria",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "fixture_declares_zero_denied",
+          "ok": true,
+          "detail": {
+            "denied_points": 0
+          }
+        },
+        {
+          "id": "bindings_complete",
+          "ok": true,
+          "detail": {
+            "count": 21
+          }
+        }
+      ]
+    },
+    {
+      "form_id": "FX-N23-PARTIAL",
+      "kind": "PARTIAL",
+      "status": "PASS",
+      "failed": [],
+      "pending": [],
+      "totals": {
+        "auto_max_points": 48,
+        "auto_points": 44.5,
+        "form_max_points": 100,
+        "pending_external_points": 52,
+        "pending_max_points": 52,
+        "slots_graded": 19,
+        "slots_incomplete": 0,
+        "slots_invalid": 0,
+        "slots_manual_pending": 2,
+        "slots_total": 21,
+        "slots_unattempted": 0,
+        "unblended": true
+      },
+      "terminal_digest": "95c534226e3d7ade6114aff8aec9eafc80cdd347e98086f9bf0f1ab05a32ecd6",
+      "graded_digest": "f41066c655fa7c11d8e77148d1de994d13510dbe6dac3b0e4a13e1fe15c428a4",
+      "answered_slots": [
+        "S1-1",
+        "S1-2",
+        "S1-3",
+        "S2-1",
+        "S2-2",
+        "S2-3",
+        "S3-1",
+        "S3-2",
+        "S3-3",
+        "S4-1",
+        "S4-2",
+        "S4-3",
+        "S5-1",
+        "S5-2",
+        "S5-3",
+        "S6-1",
+        "S6-2",
+        "S6-3",
+        "S7-1",
+        "S7-2",
+        "S7-3"
+      ],
+      "unattempted_slots": [],
+      "assertions": [
+        {
+          "id": "slot_count",
+          "ok": true,
+          "detail": {
+            "slots": 21,
+            "policy_slots": 21
+          }
+        },
+        {
+          "id": "form_max_points_is_100",
+          "ok": true,
+          "detail": {
+            "form_max_points": 100
+          }
+        },
+        {
+          "id": "unblended_flag",
+          "ok": true,
+          "detail": {
+            "unblended": true
+          }
+        },
+        {
+          "id": "sum_auto_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 44.5,
+            "total": 44.5
+          }
+        },
+        {
+          "id": "sum_pending_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 52,
+            "total": 52
+          }
+        },
+        {
+          "id": "no_merged_total_field",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "per_slot_expectations_match_fixture",
+          "ok": true,
+          "detail": {
+            "slots_compared": 21,
+            "mismatches": []
+          }
+        },
+        {
+          "id": "auto_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 44.5,
+            "observed": 44.5
+          }
+        },
+        {
+          "id": "auto_equals_auto_max_declared",
+          "ok": true,
+          "detail": {
+            "expected": 48,
+            "observed": 48
+          }
+        },
+        {
+          "id": "pending_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "pending_equals_pending_max",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "has_mixed_awarded_and_denied_criteria",
+          "ok": true,
+          "detail": [
+            "S1-1",
+            "S4-1"
+          ]
+        },
+        {
+          "id": "partial_is_strictly_between_zero_and_max",
+          "ok": true,
+          "detail": {
+            "auto": 44.5,
+            "auto_max": 48
+          }
+        },
+        {
+          "id": "bindings_complete",
+          "ok": true,
+          "detail": {
+            "count": 21
+          }
+        }
+      ]
+    },
+    {
+      "form_id": "FX-N23-ZERO",
+      "kind": "ZERO",
+      "status": "PASS",
+      "failed": [],
+      "pending": [],
+      "totals": {
+        "auto_max_points": 48,
+        "auto_points": 0,
+        "form_max_points": 100,
+        "pending_external_points": 52,
+        "pending_max_points": 52,
+        "slots_graded": 19,
+        "slots_incomplete": 0,
+        "slots_invalid": 0,
+        "slots_manual_pending": 2,
+        "slots_total": 21,
+        "slots_unattempted": 0,
+        "unblended": true
+      },
+      "terminal_digest": "e6b59327f3a66edd2a0d445eb4af64d1ffd03bf54a3d0dc3c5e9c238d0cfecc8",
+      "graded_digest": "eea329d93a234c3071bb4e0bfa352208190cc0624ddc082b0a143446804fe85a",
+      "answered_slots": [
+        "S1-1",
+        "S1-2",
+        "S1-3",
+        "S2-1",
+        "S2-2",
+        "S2-3",
+        "S3-1",
+        "S3-2",
+        "S3-3",
+        "S4-1",
+        "S4-2",
+        "S4-3",
+        "S5-1",
+        "S5-2",
+        "S5-3",
+        "S6-1",
+        "S6-2",
+        "S6-3",
+        "S7-1",
+        "S7-2",
+        "S7-3"
+      ],
+      "unattempted_slots": [],
+      "assertions": [
+        {
+          "id": "slot_count",
+          "ok": true,
+          "detail": {
+            "slots": 21,
+            "policy_slots": 21
+          }
+        },
+        {
+          "id": "form_max_points_is_100",
+          "ok": true,
+          "detail": {
+            "form_max_points": 100
+          }
+        },
+        {
+          "id": "unblended_flag",
+          "ok": true,
+          "detail": {
+            "unblended": true
+          }
+        },
+        {
+          "id": "sum_auto_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "sum_pending_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 52,
+            "total": 52
+          }
+        },
+        {
+          "id": "no_merged_total_field",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "per_slot_expectations_match_fixture",
+          "ok": true,
+          "detail": {
+            "slots_compared": 21,
+            "mismatches": []
+          }
+        },
+        {
+          "id": "auto_points_zero",
+          "ok": true,
+          "detail": {
+            "auto_points": 0
+          }
+        },
+        {
+          "id": "pending_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "pending_max_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "every_criterion_verdict_recorded",
+          "ok": true,
+          "detail": {
+            "criteria": 51,
+            "violations": []
+          }
+        },
+        {
+          "id": "bindings_complete",
+          "ok": true,
+          "detail": {
+            "count": 21
+          }
+        }
+      ]
+    },
+    {
+      "form_id": "FX-N23-MIXED",
+      "kind": "MIXED",
+      "status": "PASS",
+      "failed": [],
+      "pending": [],
+      "totals": {
+        "auto_max_points": 48,
+        "auto_points": 18,
+        "form_max_points": 100,
+        "pending_external_points": 37,
+        "pending_max_points": 52,
+        "slots_graded": 13,
+        "slots_incomplete": 3,
+        "slots_invalid": 1,
+        "slots_manual_pending": 2,
+        "slots_total": 21,
+        "slots_unattempted": 2,
+        "unblended": true
+      },
+      "terminal_digest": "6eb8b0a805dc92ac2c0c86533e61c56148f38a8d7a7283fbe59bf5fa47ec4518",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+      "answered_slots": [
+        "S1-1",
+        "S1-2",
+        "S1-3",
+        "S2-1",
+        "S2-2",
+        "S2-3",
+        "S3-1",
+        "S3-2",
+        "S3-3",
+        "S4-1",
+        "S4-2",
+        "S5-1",
+        "S5-2",
+        "S5-3",
+        "S6-1",
+        "S6-2",
+        "S7-1",
+        "S7-2",
+        "S7-3"
+      ],
+      "unattempted_slots": [
+        "S4-3",
+        "S6-3"
+      ],
+      "assertions": [
+        {
+          "id": "slot_count",
+          "ok": true,
+          "detail": {
+            "slots": 21,
+            "policy_slots": 21
+          }
+        },
+        {
+          "id": "form_max_points_is_100",
+          "ok": true,
+          "detail": {
+            "form_max_points": 100
+          }
+        },
+        {
+          "id": "unblended_flag",
+          "ok": true,
+          "detail": {
+            "unblended": true
+          }
+        },
+        {
+          "id": "sum_auto_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 18,
+            "total": 18
+          }
+        },
+        {
+          "id": "sum_pending_matches_total",
+          "ok": true,
+          "detail": {
+            "summed": 37,
+            "total": 37
+          }
+        },
+        {
+          "id": "no_merged_total_field",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "per_slot_expectations_match_fixture",
+          "ok": true,
+          "detail": {
+            "slots_compared": 21,
+            "mismatches": []
+          }
+        },
+        {
+          "id": "auto_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 18,
+            "observed": 18
+          }
+        },
+        {
+          "id": "pending_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 37,
+            "observed": 37
+          }
+        },
+        {
+          "id": "auto_max_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 48,
+            "observed": 48
+          }
+        },
+        {
+          "id": "pending_max_equals_hand_computed",
+          "ok": true,
+          "detail": {
+            "expected": 52,
+            "observed": 52
+          }
+        },
+        {
+          "id": "slot_state_counts_match_fixture",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "malformed_slots_present",
+          "ok": true,
+          "detail": [
+            "S1-2",
+            "S2-3",
+            "S3-1",
+            "S3-2",
+            "S4-1"
+          ]
+        },
+        {
+          "id": "malformed_slots_are_zero_with_named_error_and_raw_preserved",
+          "ok": true,
+          "detail": []
+        },
+        {
+          "id": "unattempted_slots_are_zero",
+          "ok": true,
+          "detail": {
+            "slots": [
+              "S4-3",
+              "S6-3"
+            ],
+            "violations": []
+          }
+        },
+        {
+          "id": "q03_manual_pending_outside_auto_total",
+          "ok": true,
+          "detail": {
+            "manual_pending_slots": [
+              "S6-2",
+              "S7-1"
+            ],
+            "q03_slots": [
+              "S7-1"
+            ],
+            "violations": []
+          }
+        },
+        {
+          "id": "pending_points_outside_auto_total",
+          "ok": true,
+          "detail": {
+            "auto": 18,
+            "pending": 37,
+            "form_max": 100
+          }
+        },
+        {
+          "id": "bindings_complete",
+          "ok": true,
+          "detail": {
+            "count": 21
+          }
+        }
+      ]
+    }
+  ],
+  "chain": {
+    "status": "PASS",
+    "claim": "The terminal record, the graded record and the analytics events are one digest-linked chain, and no answer text reaches an event.",
+    "checks": {
+      "session_completed_once": true,
+      "task_answered_per_answered_slot": true,
+      "every_event_digest_linked": true,
+      "no_answer_text_in_events": true,
+      "remediation_events_exactly_for_incorrect_or_malformed": true,
+      "remediation_state_is_open": true
+    },
+    "failed": [],
+    "detail": {
+      "event_types": {
+        "session-completed": 1,
+        "task-answered": 19,
+        "remediation-state": 5
+      },
+      "event_count": 25,
+      "answered_slots": 19,
+      "raw_strings_scanned": 60,
+      "vocabulary_strings_excluded": 0,
+      "text_scan_candidates": 33,
+      "value_scan_candidates": 60,
+      "leaked_in_canonical_text": [],
+      "leaked_in_event_string_values": [],
+      "leaked_strings": [],
+      "expected_remediation_slots": [
+        "S2-3",
+        "S4-1",
+        "S4-2",
+        "S6-1",
+        "S7-3"
+      ],
+      "actual_remediation_slots": [
+        "S2-3",
+        "S4-1",
+        "S4-2",
+        "S6-1",
+        "S7-3"
+      ]
+    },
+    "linkage": {
+      "session_id": "SES-FX-N23-MIXED-0",
+      "form_id": "FX-N23-MIXED",
+      "terminal_digest": "6eb8b0a805dc92ac2c0c86533e61c56148f38a8d7a7283fbe59bf5fa47ec4518",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+      "analytics_event_digest": "163bbc74ad3fb564802898147b0f9f9bc7069539d83b675f03a813c307771cdf",
+      "event_count": 25
+    },
+    "event_summary": [
+      {
+        "event": "session-completed",
+        "slot_id": null,
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S1-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S1-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S1-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S2-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S2-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S2-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S3-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S3-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S3-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S4-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S4-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S5-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S5-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S5-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S6-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S6-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S7-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S7-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "task-answered",
+        "slot_id": "S7-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "remediation-state",
+        "slot_id": "S2-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "remediation-state",
+        "slot_id": "S4-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "remediation-state",
+        "slot_id": "S4-2",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "remediation-state",
+        "slot_id": "S6-1",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "event": "remediation-state",
+        "slot_id": "S7-3",
+        "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      }
+    ]
+  },
+  "render": {
+    "status": "PASS",
+    "claim": "The mixed-form score report is the §8 DOM stub: unblended totals, pending labels, one honesty note, feedback cards with remediation data-attributes and the preserved raw input line.",
+    "checks": {
+      "has_score_report": true,
+      "carries_graded_digest": true,
+      "auto_total_shown": true,
+      "pending_total_shown": true,
+      "unblended_note_shown": true,
+      "honesty_note_exactly_once": true,
+      "no_merged_total_line": true,
+      "pending_slots_labelled": true,
+      "feedback_cards_present": true,
+      "remediation_data_attributes": true,
+      "malformed_rows_show_named_error": true,
+      "raw_input_preserved": true,
+      "raw_line_present": true,
+      "graded_malformed_slots": [
+        "S4-1"
+      ]
+    },
+    "failed": [],
+    "digest": "614c23077cd4ab6ee8c98eed1485924aec36294be30c0d56a41f42b14f5df8d1",
+    "html_bytes": 31951,
+    "sha256": "614c23077cd4ab6ee8c98eed1485924aec36294be30c0d56a41f42b14f5df8d1",
+    "html_excerpt": "<section class=\"score-report\" data-graded-digest=\"5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0\">\n  <div class=\"score-totals\">\n    <p class=\"score-auto\">Automātiski pārbaudītie punkti: 18 no 48</p>\n    <p class=\"score-pending\">Gaidīšanas punkti (netiek pieskaitīti automātiskajai kopsummai): 37 no 52</p>\n    <p class=\"score-unblended-note\">Automātiskā kopsumma un gaidīšanas punkt"
+  },
+  "determinism": {
+    "status": "PASS",
+    "claim": "The same terminal record + bindings + context yields byte-identical canonical graded records twice in-process and in a fresh Node process, and the canonical text survives a JSON round-trip.",
+    "checks": {
+      "in_process_identical": true,
+      "round_trip_identical": true,
+      "canonical_key_order_stable": true,
+      "fresh_process_available": true,
+      "fresh_process_identical": true,
+      "fresh_process_canonical_identical": true
+    },
+    "failed": [],
+    "in_process_1": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+    "in_process_2": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+    "fresh_process": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+    "fresh_process_error": null,
+    "round_trip_identical": true,
+    "canonical_sha256": "a2969a156f5588d171cb209601013f619cfab47bfc4c2f7699bd493f8bb15461",
+    "driver": {
+      "path": "/tmp/opencode/n23-g3/n23_fresh_grade_driver.js",
+      "payload": "/tmp/opencode/n23-g3/n23_fresh_grade_payload.json"
+    }
+  },
+  "batch": {
+    "status": "PASS",
+    "batch_digest": "66756a271c31bbe1293a8fc4ff82289154102b20fd0e6e4d3fa7dc75cf8f25f3",
+    "graded_forms": 4,
+    "graded_digests": [
+      {
+        "form_id": "FX-N23-FULL",
+        "digest": "d7ab6bafe6bb3547ba410c6433d6a899a9c78bb8c219a9a21130a61266ab39ae"
+      },
+      {
+        "form_id": "FX-N23-MIXED",
+        "digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+      },
+      {
+        "form_id": "FX-N23-PARTIAL",
+        "digest": "f41066c655fa7c11d8e77148d1de994d13510dbe6dac3b0e4a13e1fe15c428a4"
+      },
+      {
+        "form_id": "FX-N23-ZERO",
+        "digest": "eea329d93a234c3071bb4e0bfa352208190cc0624ddc082b0a143446804fe85a"
+      }
+    ],
+    "classification_corpus": {
+      "status": "READ",
+      "file": "evidence/N23_CLASSIFICATION_TABLE.json",
+      "sha256": "75bed1e695e7fd32a3322a34aa10e0105e1828fb4034af01ff0c46a495968f3b",
+      "canonical_sha256": "41285ca8a39c673b23ff077f22b3953bf1edf179175d3c04fe1b212b8d462459"
+    },
+    "payload_digest": "66756a271c31bbe1293a8fc4ff82289154102b20fd0e6e4d3fa7dc75cf8f25f3"
+  },
+  "missing": {
+    "modules": [],
+    "sources": [],
+    "islands": [],
+    "fixture": null
+  },
+  "not_claimed": [
+    "No browser render, screen-reader, print or instructor acceptance: this harness is a machine-level proof of the grading and feedback contract; N32/N33/N34 own the visual and assistive gates.",
+    "No official examination, grade or proctoring status: every policy value is PROPOSED training policy.",
+    "No semantic grading of free text: self-assessed criteria stay pending-external.",
+    "The fresh-process determinism proof runs the same harness code in a second Node process; it is a process-level determinism proof, not a machine reboot or a different runtime."
+  ],
+  "fixture": {
+    "file": "tools/fixtures/n23_score_matrix.json",
+    "adapter": "forms",
+    "form_count": 4,
+    "form_ids": [
+      "FX-N23-FULL",
+      "FX-N23-PARTIAL",
+      "FX-N23-ZERO",
+      "FX-N23-MIXED"
+    ],
+    "slot_keys": [
+      "answers",
+      "bindings",
+      "expected",
+      "form_id",
+      "form_label_lv",
+      "notes"
+    ],
+    "status": "READ",
+    "reason": null
+  },
+  "classification_corpus": {
+    "status": "READ",
+    "file": "evidence/N23_CLASSIFICATION_TABLE.json",
+    "sha256": "75bed1e695e7fd32a3322a34aa10e0105e1828fb4034af01ff0c46a495968f3b",
+    "canonical_sha256": "41285ca8a39c673b23ff077f22b3953bf1edf179175d3c04fe1b212b8d462459"
+  },
+  "status_detail": {
+    "failures": [],
+    "pending": []
+  }
+}

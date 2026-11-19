@@ -1,0 +1,1 @@
+a11y_contract PASS: controls=191 name_errors=0 components_18=18/18 landmarks=True live_regions=True collision_fix=True escape_fix=True typing_fix=True empty_label_fix=True

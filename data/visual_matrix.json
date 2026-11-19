@@ -1,0 +1,5217 @@
+{
+  "anchors": [
+    "sakums",
+    "saturs",
+    "prakse",
+    "eksamens",
+    "rezultati",
+    "atskats",
+    "metodika",
+    "druka",
+    "iestatijumi"
+  ],
+  "breakpoints": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "cell_count": 219,
+  "cells": [
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "fresh__sakums__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "fresh__sakums__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "fresh__sakums__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "fresh__sakums__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "fresh__sakums__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "fresh__sakums__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "fresh__sakums__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "fresh__sakums__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "fresh__saturs__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "fresh__saturs__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "fresh__saturs__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "fresh__saturs__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "fresh__saturs__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "fresh__saturs__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "fresh__saturs__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "fresh__saturs__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "fresh__prakse__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "fresh__prakse__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "fresh__prakse__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "fresh__prakse__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "fresh__prakse__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "fresh__prakse__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "fresh__prakse__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "fresh__prakse__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "fresh__eksamens__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "fresh__eksamens__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "fresh__eksamens__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "fresh__eksamens__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "fresh__eksamens__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "fresh__eksamens__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "fresh__eksamens__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "fresh__eksamens__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "fresh__rezultati__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "fresh__rezultati__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "fresh__rezultati__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "fresh__rezultati__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "fresh__rezultati__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "fresh__rezultati__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "fresh__rezultati__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "fresh__rezultati__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "fresh__atskats__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "fresh__atskats__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "fresh__atskats__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "fresh__atskats__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "fresh__atskats__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "fresh__atskats__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "fresh__atskats__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "fresh__atskats__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "fresh__metodika__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "fresh__metodika__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "fresh__metodika__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "fresh__metodika__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "fresh__metodika__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "fresh__metodika__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "fresh__metodika__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "fresh__metodika__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "fresh__druka__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "fresh__druka__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "fresh__druka__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "fresh__druka__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "fresh__druka__768__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "fresh__druka__768__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "fresh__druka__1280__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "fresh__druka__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "fresh__iestatijumi__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "fresh__iestatijumi__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "fresh__iestatijumi__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "fresh__iestatijumi__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "fresh__iestatijumi__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "fresh__iestatijumi__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "fresh__iestatijumi__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "fresh__iestatijumi__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "fresh",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "fresh__druka__1280__light__print",
+      "expected_geometry": {
+        "link_url_policy": "hide-internal-anchors",
+        "print_fig_min_width": "85mm",
+        "print_fig_width": "140mm"
+      },
+      "mode": "print",
+      "profile": "fresh",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__print",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__sakums__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__sakums__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__sakums__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__sakums__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__sakums__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__sakums__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__sakums__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__sakums__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__saturs__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__saturs__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__saturs__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__saturs__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__saturs__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__saturs__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__saturs__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__saturs__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__prakse__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__prakse__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__prakse__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__prakse__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__prakse__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__prakse__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__prakse__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__prakse__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__eksamens__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__eksamens__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__eksamens__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__eksamens__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__eksamens__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__eksamens__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__eksamens__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__eksamens__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__rezultati__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__rezultati__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__rezultati__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__rezultati__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__rezultati__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__rezultati__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__rezultati__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__rezultati__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__atskats__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__atskats__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__atskats__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__atskats__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__atskats__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__atskats__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__atskats__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__atskats__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__metodika__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__metodika__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__metodika__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__metodika__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__metodika__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__metodika__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__metodika__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__metodika__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__druka__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__druka__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__druka__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__druka__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__druka__768__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__druka__768__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__druka__1280__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__druka__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__iestatijumi__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "mid_progress__iestatijumi__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__iestatijumi__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "mid_progress__iestatijumi__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__iestatijumi__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "mid_progress__iestatijumi__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__iestatijumi__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__iestatijumi__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "mid_progress",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "mid_progress__druka__1280__light__print",
+      "expected_geometry": {
+        "link_url_policy": "hide-internal-anchors",
+        "print_fig_min_width": "85mm",
+        "print_fig_width": "140mm"
+      },
+      "mode": "print",
+      "profile": "mid_progress",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__print",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "near_complete__sakums__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "cell_id": "near_complete__sakums__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "near_complete__sakums__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "cell_id": "near_complete__sakums__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "near_complete__sakums__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "cell_id": "near_complete__sakums__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__sakums__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__sakums__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "near_complete__saturs__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "cell_id": "near_complete__saturs__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "near_complete__saturs__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "cell_id": "near_complete__saturs__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "drawer_mode": "full-sheet",
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "near_complete__saturs__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "cell_id": "near_complete__saturs__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__saturs__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__saturs__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "drawer_mode": "side-sheet",
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "near_complete__prakse__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "cell_id": "near_complete__prakse__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "near_complete__prakse__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "cell_id": "near_complete__prakse__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "near_complete__prakse__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "cell_id": "near_complete__prakse__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__prakse__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__prakse__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid-topics-single-runner"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "near_complete__eksamens__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "cell_id": "near_complete__eksamens__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "near_complete__eksamens__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "cell_id": "near_complete__eksamens__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack",
+        "navigator_mode": "sheet"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "near_complete__eksamens__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "cell_id": "near_complete__eksamens__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__eksamens__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__eksamens__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "two-pane",
+        "navigator_mode": "sidebar"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "near_complete__rezultati__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "cell_id": "near_complete__rezultati__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "near_complete__rezultati__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "cell_id": "near_complete__rezultati__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "near_complete__rezultati__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "cell_id": "near_complete__rezultati__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__rezultati__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__rezultati__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "near_complete__atskats__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "cell_id": "near_complete__atskats__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "near_complete__atskats__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "cell_id": "near_complete__atskats__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "near_complete__atskats__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "cell_id": "near_complete__atskats__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__atskats__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__atskats__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "near_complete__metodika__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "cell_id": "near_complete__metodika__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "near_complete__metodika__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "cell_id": "near_complete__metodika__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "near_complete__metodika__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "cell_id": "near_complete__metodika__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__metodika__1280__light__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__metodika__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 3,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "near_complete__druka__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "cell_id": "near_complete__druka__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "near_complete__druka__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "cell_id": "near_complete__druka__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "near_complete__druka__768__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "cell_id": "near_complete__druka__768__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__druka__1280__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__druka__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "near_complete__iestatijumi__320__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "cell_id": "near_complete__iestatijumi__320__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "near_complete__iestatijumi__390__light__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "cell_id": "near_complete__iestatijumi__390__dark__screen",
+      "expected_geometry": {
+        "columns": 1,
+        "flow": "stack"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "near_complete__iestatijumi__768__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "cell_id": "near_complete__iestatijumi__768__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__iestatijumi__1280__light__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__iestatijumi__1280__dark__screen",
+      "expected_geometry": {
+        "columns": 2,
+        "flow": "grid"
+      },
+      "mode": "screen",
+      "profile": "near_complete",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "cell_id": "near_complete__druka__1280__light__print",
+      "expected_geometry": {
+        "link_url_policy": "hide-internal-anchors",
+        "print_fig_min_width": "85mm",
+        "print_fig_width": "140mm"
+      },
+      "mode": "print",
+      "profile": "near_complete",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__print",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    }
+  ],
+  "modes": [
+    "screen",
+    "print"
+  ],
+  "profiles": [
+    "fresh",
+    "mid_progress",
+    "near_complete"
+  ],
+  "schema_version": 1,
+  "task": "N37",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "channel_noise_floor": 4,
+    "max_diff_pct": 0.5,
+    "max_mae": 0.5
+  },
+  "unique_render_count": 73,
+  "unique_renders": [
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__320__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__390__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__768__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__light__screen",
+      "theme": "light",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "sakums",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#sakums",
+      "render_key": "sakums__1280__dark__screen",
+      "theme": "dark",
+      "view": "start",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__320__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__390__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__768__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__light__screen",
+      "theme": "light",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "saturs",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#saturs",
+      "render_key": "saturs__1280__dark__screen",
+      "theme": "dark",
+      "view": "concept_map",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__320__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__390__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__768__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__light__screen",
+      "theme": "light",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "prakse",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#prakse",
+      "render_key": "prakse__1280__dark__screen",
+      "theme": "dark",
+      "view": "practice",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__320__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__390__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__768__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__light__screen",
+      "theme": "light",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "eksamens",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#eksamens",
+      "render_key": "eksamens__1280__dark__screen",
+      "theme": "dark",
+      "view": "exam",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__320__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__390__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__768__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__light__screen",
+      "theme": "light",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "rezultati",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#rezultati",
+      "render_key": "rezultati__1280__dark__screen",
+      "theme": "dark",
+      "view": "results",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__320__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__390__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__768__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__light__screen",
+      "theme": "light",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "atskats",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#atskats",
+      "render_key": "atskats__1280__dark__screen",
+      "theme": "dark",
+      "view": "revision",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__320__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__390__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__768__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__light__screen",
+      "theme": "light",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "metodika",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#metodika",
+      "render_key": "metodika__1280__dark__screen",
+      "theme": "dark",
+      "view": "methods",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__320__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__390__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__768__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__screen",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__dark__screen",
+      "theme": "dark",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 320,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__320__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 640,
+        "width": 320
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 390,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__390__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 768,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__768__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__light__screen",
+      "theme": "light",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "iestatijumi",
+      "breakpoint": 1280,
+      "mode": "screen",
+      "readiness_marker": "#iestatijumi",
+      "render_key": "iestatijumi__1280__dark__screen",
+      "theme": "dark",
+      "view": "settings",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "anchor": "druka",
+      "breakpoint": 1280,
+      "mode": "print",
+      "readiness_marker": "#druka",
+      "render_key": "druka__1280__light__print",
+      "theme": "light",
+      "view": "print",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    }
+  ],
+  "views": [
+    "start",
+    "concept_map",
+    "practice",
+    "exam",
+    "results",
+    "revision",
+    "methods",
+    "print",
+    "settings"
+  ]
+}

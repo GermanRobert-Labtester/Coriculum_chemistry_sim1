@@ -1,0 +1,210 @@
+{
+  "expected_map": [
+    {
+      "answered": true,
+      "current": false,
+      "flagged": false,
+      "index": 1,
+      "slot_id": "S1-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 2,
+      "slot_id": "S1-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": true,
+      "index": 3,
+      "slot_id": "S1-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 4,
+      "slot_id": "S2-1"
+    },
+    {
+      "answered": true,
+      "current": false,
+      "flagged": false,
+      "index": 5,
+      "slot_id": "S2-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 6,
+      "slot_id": "S2-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 7,
+      "slot_id": "S3-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 8,
+      "slot_id": "S3-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 9,
+      "slot_id": "S3-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 10,
+      "slot_id": "S4-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 11,
+      "slot_id": "S4-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 12,
+      "slot_id": "S4-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 13,
+      "slot_id": "S5-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 14,
+      "slot_id": "S5-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 15,
+      "slot_id": "S5-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 16,
+      "slot_id": "S6-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 17,
+      "slot_id": "S6-2"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 18,
+      "slot_id": "S6-3"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 19,
+      "slot_id": "S7-1"
+    },
+    {
+      "answered": false,
+      "current": false,
+      "flagged": false,
+      "index": 20,
+      "slot_id": "S7-2"
+    },
+    {
+      "answered": true,
+      "current": true,
+      "flagged": false,
+      "index": 21,
+      "slot_id": "S7-3"
+    }
+  ],
+  "note": "The scripted session from the start screen to the terminal record. Every transition is one row of the transition table of #sim-exam-policy; the trace is the integration input of the grading task (N23) and of the logging task (N25).",
+  "owner": "N21",
+  "schema_version": 1,
+  "states": [
+    "not-started",
+    "running",
+    "review",
+    "submitted",
+    "expired",
+    "aborted"
+  ],
+  "terminal_record_fields": [
+    "answers",
+    "elapsed_ms",
+    "finished_at_ms",
+    "flags",
+    "form_id",
+    "remediation_slot_ids",
+    "schema_version",
+    "session_id",
+    "started_at_ms",
+    "state",
+    "transitions",
+    "unanswered_slot_ids"
+  ],
+  "transitions": [
+    "not-started --start--> running",
+    "running --navigate--> running",
+    "running --answer--> running",
+    "running --flag--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --answer--> running",
+    "running --navigate--> running",
+    "running --flag--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --answer--> running",
+    "running --flag--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --flag--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --navigate--> running",
+    "running --flag--> running",
+    "running --request-review--> review",
+    "review --submit--> submitted"
+  ]
+}

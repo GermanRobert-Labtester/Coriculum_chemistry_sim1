@@ -1,0 +1,825 @@
+{
+  "append_rule_lv": "Reģistrs ir pievienošanas žurnāls. Ieraksta id un tā vēsture nemainās. Ja vēlāka fāze konfliktu atkārtoti atver, esošajam ierakstam pievieno jaunu history notikumu ar event=\"reopened\", uzdevumu un statusu; vecie notikumi paliek. Statusa lauks vienmēr atspoguļo pēdējo history notikumu. N40 manto pilnu cilpu, nevis pārrakstītu vēsturi.",
+  "artifact": "conflict-registry",
+  "entries": [
+    {
+      "binding_task": "N01",
+      "class": "verification-reproducibility",
+      "epistemic_label": "VERIFIED (2026-11-16) reproduction; committed PASS remains DOCUMENTED BUT NOT RERUN from a clean clone",
+      "evidence": [
+        "Reproduction traceback and environment in this entry",
+        "tools/verify_preparation.py assertion classification (evidence/N01_VERIFICATION_RECORD.md, section 2)",
+        "Repository-local PASS (evidence/REPO_LOCAL_VERIFICATION.json)",
+        "Negative fixtures tamper, delete and truncate (evidence/N01_VERIFICATION_RECORD.md, section 4)",
+        "Committed full-workspace record (evidence/PREPARATION_VERIFICATION.json) remains DOCUMENTED BUT NOT RERUN repository-locally"
+      ],
+      "failing_location": {
+        "exception": "KeyError: 1",
+        "expression": "check(row['master_anchor'] in masters[topic].ids, ...)",
+        "file": "tools/verify_preparation.py",
+        "first_absent_source": "Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "function": "verify_data",
+        "line": 177,
+        "manifest_entry_class": "canonical-master",
+        "manifest_entry_count": 7,
+        "script_sha256_at_reproduction": "d2edb7033dba7f7d80c908959d29eb49623111d97ab7c4d7a85cf45543a1d102"
+      },
+      "finding": "tools/verify_preparation.py raises KeyError: 1 inside verify_data when run against the published repository alone. COPY_MANIFEST.json's 174 destination records are published, but its 'source' fields point at sibling Chemistry_1 through Chemistry_7 trees that are not published. verify_copies therefore skips every record at 'if not src.is_file() or not dst.is_file(): continue' before the canonical-master branch can populate the masters dictionary, which is keyed by programme topic (1-7). verify_data then dereferences masters[topic] for the first coverage row and raises KeyError: 1. The missing key is the topic number in the verifier's in-memory masters map, not a literal COPY_MANIFEST key; the absent files are the seven canonical-master source entries.",
+      "handoff_notes": "N03 must register V-01 with the status above and cite N01 as the mitigation task. Do not restate V-01 as fully resolved: the sibling publication gap stays open with the external owner.",
+      "history": [
+        {
+          "event": "recorded",
+          "note_lv": "Handed over in evidence/V01_CONFLICT_ENTRY.json.",
+          "status": "documented-and-accepted",
+          "task": "N01"
+        },
+        {
+          "event": "registered",
+          "note_lv": "Registered verbatim in the N03 registry; no field changed.",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "V-01",
+      "mitigation": "--repo-local verifies the 174 published destinations against COPY_MANIFEST's own recorded hashes, byte total and role counts without dereferencing the sibling trees, and writes only evidence/REPO_LOCAL_VERIFICATION.json with an explicit repository-local scope line. The default full-workspace mode is unchanged and still fails on a clean clone by design of the published set.",
+      "mitigation_task": "N01",
+      "owner": "external source workspaces Chemistry_1 through Chemistry_7 (not published)",
+      "reproduction": {
+        "command": "cd /tmp/opencode/n01-clean-clone && python3 tools/verify_preparation.py",
+        "environment": {
+          "platform": "Linux 7.3.3-200.fc44.x86_64 x86_64",
+          "python": "3.12.16",
+          "repository": "git clone of /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum at commit 677156a32bc917e146ca1e3e7e5988ef925a1733",
+          "sibling_trees_present": false,
+          "utc": "2026-11-16T22:03Z (recorded run)"
+        },
+        "exit_code": 1,
+        "traceback": "Traceback (most recent call last):\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 292, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 273, in main\n    verify_data(masters)\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 177, in verify_data\n    check(row['master_anchor'] in masters[topic].ids, f\"Missing coverage anchor: {row['outcome_id']} #{row['master_anchor']}\")\n                                  ~~~~~~~^^^^^^^\nKeyError: 1"
+      },
+      "resolution_task": null,
+      "roadmap_claim_task_ids": [
+        "N01"
+      ],
+      "status": "documented-and-accepted",
+      "status_reason": "The root cause is external: the sibling Chemistry_1 through Chemistry_7 workspaces are not published and publishing or reconstructing them is out of the roadmap's scope. The clean-clone reproducibility defect is documented and mitigated, not erased.",
+      "title": "verify_preparation.py crashes on a clean clone; the committed PASS is not reproducible repository-locally",
+      "two_environment_boundary": {
+        "author_full_workspace": "PASSES: with Chemistry_1 through Chemistry_7 present in the parent directory, the default mode ran on 2026-11-16 (UTC) and produced status PASS with 174 files, 30,083,827 bytes, 15,978 preserved files, and output identical to the committed evidence/PREPARATION_VERIFICATION.json except checked_utc.",
+        "conflation_rule": "The crash is a property of the published repository alone. The author-workspace PASS does not transfer to a clean clone, and the clean-clone failure does not invalidate the author-workspace record.",
+        "published_repository_alone": "FAILS: the sibling source trees are absent, verify_copies skips the canonical-master records, masters stays empty and verify_data raises KeyError: 1."
+      }
+    },
+    {
+      "binding_task": "N03",
+      "class": "percentage-basis",
+      "enforcement_tasks": [
+        "N11",
+        "N17"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Chemistry_3 §5: \"Kursā aprēķini notiek ar masas daļu (m/m)\"; the same section lists m/V and V/V labels.",
+        "Chemistry_3 §5 10. tabula: 0,9 % NaCl and 5 % glucose are explicitly \"m/V (pieņemts)\".",
+        "Chemistry_1 formula table: 22 % NaOH example uses ρ = 1,25 g/mL.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C03."
+      ],
+      "finding": "C3 says course calculations use mass fraction (m/m), but medical labels commonly mean m/V and ethanol is V/V; C1's 22 % NaOH example uses a density, and the predecessor C03 requires every percentage to state m/m, m/V or V/V. An unlabeled percent therefore has more than one possible denominator.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-02",
+      "owner": "N03",
+      "resolution_task": "N03",
+      "resolution_text": "concentration_bases.default_for_course = m_m; label_required = true; unlabeled_percent = withhold scoring. Figures must label the basis; engines must reject an unlabeled percent before scoring.",
+      "roadmap_claim_task_ids": [
+        "N03",
+        "N11",
+        "N17"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The conventions artifact declares m/m as the course default and requires every percentage to name its basis; the choice is recorded with the masters' dissent.",
+      "title": "Percentage basis is ambiguous (mass versus volume percent) in the masters and the predecessor plan"
+    },
+    {
+      "binding_task": "N03",
+      "class": "potential-notation",
+      "enforcement_tasks": [
+        "N10"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Chemistry_6 §2 \"Simboli vienā mirklī\": E° – standarts (pH 0); E – faktiskais; E°′ – bioloģiskais (pH 7).",
+        "Chemistry_6 §2 \"Konvenciju karte\" and the A5 correction note.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C06."
+      ],
+      "finding": "The redox master's source records mixed E° (pH 0, unit activities), E (actual conditions) and E°′ (pH 7, biochemical convention) in one work column. A mixed column can invert the apparent electron-flow direction even when every individual number is correct.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-03",
+      "owner": "N03",
+      "resolution_task": "N03",
+      "resolution_text": "potentials.mixing_rule_lv: one table one convention; E° and E°′ must never share a work column; E°′ = E° − 0,0592·(m/n)·pH at pH 7.",
+      "roadmap_claim_task_ids": [
+        "N03",
+        "N10"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The potentials section declares one convention per column and the E°′ conversion rule; the terminology island renders the symbols.",
+      "title": "Standard-potential notation mixing (E° versus E°′)"
+    },
+    {
+      "binding_task": "N17",
+      "class": "unit-chain",
+      "enforcement_tasks": [
+        "N17"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Programme p.3: \"mg <=> g\" and \"<=> L\" in the same unit-conversion line.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C02.",
+        "Chemistry_2 §2 unit table: 1 g/mL = 1000 kg/m³; 1 mg/mL = 1 g/L.",
+        "Chemistry_3 §4 unit ladder: mg → g → kg and mL → L are each a factor 1000."
+      ],
+      "finding": "The programme itself prints a malformed \"mg ⇔ g ⇔ L\" conversion, and the predecessor C02 records it. Mass and volume are not interchangeable without density; a direct mg→L step is dimensionally invalid. The defect class appears in learner answers as mg with L against g with mL.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Rule and composition gate authored here; N17 owns the structural gate.",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-04",
+      "owner": "N17",
+      "resolution_state": "rule authored and composition-gated at N03; structural enforcement is bound to N17",
+      "resolution_task": "N17",
+      "resolution_text": "unit_system.blocked_conversions contains mass_to_volume_direct and volume_to_mass_direct; density.density_mass_to_volume is symbolic and requires ρ; concentration_mg_per_ml_to_g_per_l composes mg→g and mL→L to exactly 1. The N17 dimension gate rejects any chain whose dimensions do not close before a number exists.",
+      "roadmap_claim_task_ids": [
+        "N17"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "N03 declares the dimension rule and the composition gate; N17 implements the structural dimension gate that makes the defect inexpressible.",
+      "supporting_tasks": [
+        "N03"
+      ],
+      "title": "mg/g/L density conversion defect (the classic dimensional slip)"
+    },
+    {
+      "binding_task": "N15",
+      "class": "titration-wording",
+      "enforcement_tasks": [
+        "N15"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Chemistry_6 §9: \"krāsas maiņa parāda tieši beigu punktu, nevis ekvivalences punktu\".",
+        "Chemistry_6 §9 figure caption: \"Pirmā pastāvīgā rozā ir galapunkts\".",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C07: no invented universal time."
+      ],
+      "finding": "The redox master uses \"beigu punkts\" for the observed first persistent colour and \"ekvivalences punkts\" for the theoretical n₁z₁ = n₂z₂ point; the predecessor C07 records that source passages disagree about endpoint persistence. Treating the two names as synonyms teaches a false identity and hides the titration error.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-05",
+      "owner": "N03",
+      "resolution_task": "N03",
+      "resolution_text": "titration.endpoint.wording_rule_lv requires distinct naming wherever both appear, explains the one-drop titration error, and takes the persistence criterion from the task rather than inventing a universal time.",
+      "roadmap_claim_task_ids": [
+        "N03",
+        "N15"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The titration section declares the two definitions and the wording rule; N15 enforces it in figure copy.",
+      "title": "Endpoint versus equivalence-point wording (and endpoint persistence)"
+    },
+    {
+      "binding_task": "N13",
+      "class": "spectrophotometry-scope",
+      "enforcement_tasks": [
+        "N13"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Chemistry_7 §7.2: \"kursa iestatījums 440 nm, nevis no šī parauga spektra nolasīts maksimums\".",
+        "Chemistry_7 §7.2: literature maximum 444 nm; \"ierobežots secinājums\".",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C08."
+      ],
+      "finding": "The spectrophotometry master measures at 440 nm as a course instrument setting, while the literature riboflavin maximum in water is 444 nm. The master explicitly calls a \"flat maximum at 440 nm\" a bounded inference, not a measurement, because the sample spectrum was not recorded.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Rule authored here; N13 owns the figure context.",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-06",
+      "owner": "N13",
+      "resolution_task": "N13",
+      "resolution_text": "spectrophotometry.wavelength: 440 nm is a course setting; 444 nm is a literature value for water; a flatness claim is a bounded inference and must not be keyed as established. N13 applies the scope note to every figure.",
+      "roadmap_claim_task_ids": [
+        "N13"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The spectrophotometry section records the scope rule; N13 enforces it in figure context.",
+      "supporting_tasks": [
+        "N03"
+      ],
+      "title": "440 nm flatness claim scope"
+    },
+    {
+      "binding_task": "N15",
+      "class": "calibration-assumptions",
+      "enforcement_tasks": [
+        "N15"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Chemistry_7 §6.1: \"Optiskais ceļš (l = 1 cm)\".",
+        "Chemistry_7 §6.2 rail: \"Standarta kivete ir 10 mm\"; actual thickness not verified.",
+        "Chemistry_7 §8.3: free regression versus through-zero; §1.2 no use outside the calibrated range.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C09."
+      ],
+      "finding": "The spectrophotometry master uses a 1 cm path but the protocol does not state the actual cuvette thickness; the calibration model (free intercept versus through zero), blank correction, linear range and matrix match are not always named. The predecessor C09 requires fit, axis, blank/intercept and assumptions per instance.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Rule authored here; N15 owns the calibration labeling.",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-07",
+      "owner": "N15",
+      "resolution_task": "N15",
+      "resolution_text": "spectrophotometry.optical_path and .calibration: l = 1 cm is a declared assumption; the model, blank, intercept, linear range and matrix match are named per record; no line or reading is rendered beyond the standards span. N15 applies the labels and the no-extrapolation rule.",
+      "roadmap_claim_task_ids": [
+        "N15"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The spectrophotometry section declares the assumption vocabulary and the no-extrapolation rule; N15 enforces the labeling.",
+      "supporting_tasks": [
+        "N03"
+      ],
+      "title": "Calibration and optical-path assumptions unstated"
+    },
+    {
+      "binding_task": "N13",
+      "class": "enzyme-values",
+      "enforcement_tasks": [
+        "N13",
+        "N09"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding; scientific question OPEN",
+      "evidence": [
+        "Chemistry_5 §12.4 def-K10: 23 J/mol, \"Nav apstiprināts\", \"docētāja apstiprinājums nav saņemts\".",
+        "Chemistry_5 §12.4 def-K17: H₂O₂ + HI example \"Nav apstiprināts\".",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C05."
+      ],
+      "finding": "Chemistry_5 records the K10 catalase activation energy as 23 J·mol⁻¹, which is below RT at 300 K and therefore not physically credible; 23 kJ·mol⁻¹ is a proposed unit correction, not an approved value. K17's H₂O₂/HI coupled-reaction example is also tentative. The course lecturer has not confirmed either. The values must not be asserted as single unqualified facts.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Carried open verbatim; no value asserted.",
+          "status": "open-with-owner",
+          "task": "N03"
+        }
+      ],
+      "id": "V-08",
+      "owner": "RSU kursa docētāja (course lecturer)",
+      "question_verbatim": "Vai kursa katalāzes aktivācijas enerģija ir 23 J·mol⁻¹ (kā iespiests), 23 kJ·mol⁻¹ (piedāvātais vienības labojums) vai cita vērtība, un kādos apstākļos (katalāzes avots, temperatūra, pH, H₂O₂ koncentrācija) tā noteikta? Avotā: \"23 J·mol⁻¹, kas nav fizikāli ticami; iespējams, domāts 23 kJ·mol⁻¹, bet tas nav apstiprināts. Avota skaitlis netiek mainīts. ... Kura vērtība atbilst kursa mērījumam — jāapstiprina docētājai.\"",
+      "resolution_task": null,
+      "resolution_text": "No disputed catalase value is asserted. N13 teaches the barrier-lowering model with a generic example; N09 carries the honesty note; the exact value and conditions remain with the course lecturer.",
+      "roadmap_claim_task_ids": [
+        "N13",
+        "N09"
+      ],
+      "status": "open-with-owner",
+      "status_reason": "The scientific question is unresolved in the frozen master; N03 cannot resolve it by decree and must not invent a value.",
+      "title": "Catalase K10/K17 values are scientifically unresolved"
+    },
+    {
+      "binding_task": "N25",
+      "class": "persistence-divergence",
+      "enforcement_tasks": [
+        "N26"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Inspection count on 2026-11-16: C1 2, C2 0, C3 0, C4 16, C5 0, C6 2, C7 0 localStorage references.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row V-09.",
+        "AGENTS.md: in-memory sessions by default; persistence is opt-in and local only."
+      ],
+      "finding": "The masters differ in whether and how they persist state: C4 uses 16 localStorage references, C1 and C6 use 2 each, and C2/C3/C5/C7 use none. The single-file simulator needs one versioned, opt-in, local-only store rather than a mixture of master conventions.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Binding recorded; implementation scheduled at N25.",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-09",
+      "owner": "N25",
+      "resolution_task": "N25",
+      "resolution_text": "One versioned store, one key namespace, explicit opt-in, no reuse of master keys, in-memory default. N25 implements it; N26 reads/writes mastery through it.",
+      "roadmap_claim_task_ids": [
+        "N25",
+        "N26"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The store is versioned and opt-in; N25 owns the store and N26 the mastery state that uses it.",
+      "title": "localStorage persistence diverges across the masters (2/16/0 references)"
+    },
+    {
+      "binding_task": "N31",
+      "class": "id-collision",
+      "enforcement_tasks": [
+        "N06"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding; count rule clarified in N03-OBS-02",
+      "evidence": [
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §3.2 and §4 row V-10: 382 id attributes in C1.",
+        "N03 re-count under the declared rule \"all id attributes in the HTML\": C1 957; the difference is a counting-rule difference, recorded in N03-OBS-02 rather than silently reconciled."
+      ],
+      "finding": "The masters are large single documents with dense id attributes; the roadmap records 382 ids in C1, and a naive single-file concatenation can duplicate ids across sections and islands. A single assembled document needs a namespace policy and a duplicate-id gate.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-10",
+      "owner": "N31",
+      "resolution_task": "N31",
+      "resolution_text": "All simulator-owned ids use the sim- namespace; island ids are sim-coverage, sim-conventions, sim-bank, sim-forms, sim-golden-vectors, sim-terms and sim-analytics; N31 refuses duplicate ids in the assembled file. N06 registers the first namespace set.",
+      "roadmap_claim_task_ids": [
+        "N06",
+        "N31"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "The assembly policy namespaces all simulator-owned ids and gates duplicates; N31 owns the assembled file, N06 the first namespace registry.",
+      "title": "id-attribute density in the masters creates collision risk"
+    },
+    {
+      "binding_task": "N31",
+      "class": "island-shape",
+      "enforcement_tasks": [
+        "N31"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Inspection count on 2026-11-16: C4 4 application/json islands, C5 1, C6 1, C1/C2/C3/C7 0.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §1.2 and §4 row V-11.",
+        "N02 build emission rule: sorted keys, compact separators, UTF-8, \"</\" escaped."
+      ],
+      "finding": "The masters embed different JSON island shapes (C4 four application/json islands, C5 one, C6 one, the others none), with different field names and nesting. A single-file build needs one island schema set and one emission rule, not seven conventions.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-11",
+      "owner": "N31",
+      "resolution_task": "N31",
+      "resolution_text": "One canonical JSON emission and one island id per concern; N31 assembles all islands under the same schema registry and digest rule.",
+      "roadmap_claim_task_ids": [
+        "N31"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "N31 owns the single island schema set; N02 and N03 already use the same emission rule.",
+      "supporting_tasks": [
+        "N02",
+        "N03"
+      ],
+      "title": "JSON island shapes diverge across the masters"
+    },
+    {
+      "binding_task": "N34",
+      "class": "print-convention",
+      "enforcement_tasks": [
+        "N34"
+      ],
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "evidence": [
+        "Inspection count on 2026-11-16: @media print occurrences C1 1, C2 1, C3 2, C4 18, C5 20, C6 5, C7 9.",
+        "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row V-12."
+      ],
+      "finding": "The masters use different print rules: @media print occurs 1, 1, 2, 18, 20, 5 and 9 times across C1-C7. A single paper-examination simulator needs one print contract, not seven partial ones.",
+      "history": [
+        {
+          "event": "created",
+          "note_lv": "Binding recorded; implementation scheduled at N34.",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "V-12",
+      "owner": "N34",
+      "resolution_task": "N34",
+      "resolution_text": "One print stylesheet, one page-break policy, one no-JavaScript fallback and one paper worksheet; N34 implements and tests it.",
+      "roadmap_claim_task_ids": [
+        "N34"
+      ],
+      "status": "resolved-by-task",
+      "status_reason": "N34 owns the unified print and no-JavaScript contract.",
+      "title": "Print-convention differences across the masters"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [TEXT-VERIFIED] for the 2025 scope",
+      "evidence": [
+        "Predecessor audit §4 row C01: Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark."
+      ],
+      "finding": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "C01",
+      "owner": "official programme (2025 scope)",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C01",
+      "predecessor_row": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark.",
+      "resolution_task": null,
+      "resolution_text": "Seven topics, paper format and 180 minutes are cited from PROGRAMME-EXTRACT; the simulator labels its 100-point/A-B-C/21-slot design as PROPOSED.",
+      "status": "documented-and-accepted",
+      "status_reason": "The official facts are authoritative only for the supplied 2025 scope; no official weights, question types or pass mark are invented.",
+      "title": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [INSPECTED]",
+      "evidence": [
+        "Predecessor audit §4 row C02: Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L."
+      ],
+      "finding": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "C02",
+      "owned_by": "V-04",
+      "owner": "N17 (via V-04)",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C02",
+      "predecessor_row": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L.",
+      "resolution_task": null,
+      "resolution_text": "unit_system.blocked_conversions records mass_to_volume_direct and volume_to_mass_direct; the V-04 composition chain is exact only for concentration normalization, never for mass→volume.",
+      "status": "documented-and-accepted",
+      "status_reason": "The defect is preserved as the programme's own text and owned by V-04; N03 declares the blocked conversion, N17 implements the gate.",
+      "title": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [INSPECTED]",
+      "evidence": [
+        "Predecessor audit §4 row C03: Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld."
+      ],
+      "finding": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "C03",
+      "owned_by": "V-02",
+      "owner": "N03 (via V-02)",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C03",
+      "predecessor_row": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld.",
+      "resolution_task": null,
+      "resolution_text": "concentration_bases.label_required = true and unlabeled_percent = withhold scoring.",
+      "status": "documented-and-accepted",
+      "status_reason": "Owned by V-02; the rule is declared and the ambiguous key is withheld.",
+      "title": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [
+        "N13",
+        "N17"
+      ],
+      "epistemic_label": "Predecessor audit [INSPECTED]; N03 rule authored",
+      "evidence": [
+        "Predecessor audit §4 row C04: Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring."
+      ],
+      "finding": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "C04",
+      "owner": "N03",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C04",
+      "predecessor_row": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring.",
+      "resolution_task": "N03",
+      "resolution_text": "thermodynamics: course form Q = ΔU + A, IUPAC mapping ΔU = q + w, ΔH = H(products) − H(reactants), ΔG = ΔH − TΔS, T in K. Exact primary passages remain a later authoring check (N13).",
+      "status": "resolved-by-task",
+      "status_reason": "N03 declares the sign convention, Kelvin rule, enthalpy and Gibbs definitions; N13 and N17 apply them.",
+      "title": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [INSPECTED]; scientific question OPEN",
+      "evidence": [
+        "Predecessor audit §4 row C05: Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude."
+      ],
+      "finding": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude.",
+      "history": [
+        {
+          "event": "created",
+          "status": "open-with-owner",
+          "task": "N03"
+        }
+      ],
+      "id": "C05",
+      "owned_by": "V-08",
+      "owner": "RSU kursa docētāja (course lecturer)",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C05",
+      "predecessor_row": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude.",
+      "question_verbatim": "Vai kursa katalāzes aktivācijas enerģija ir 23 J·mol⁻¹ (kā iespiests), 23 kJ·mol⁻¹ (piedāvātais vienības labojums) vai cita vērtība, un kādos apstākļos (katalāzes avots, temperatūra, pH, H₂O₂ koncentrācija) tā noteikta? Avotā: \"23 J·mol⁻¹, kas nav fizikāli ticami; iespējams, domāts 23 kJ·mol⁻¹, bet tas nav apstiprināts. Avota skaitlis netiek mainīts. ... Kura vērtība atbilst kursa mērījumam — jāapstiprina docētājai.\"",
+      "resolution_task": null,
+      "resolution_text": "No disputed value is asserted; N13 and N09 carry the honesty note; the exact value/conditions remain with the lecturer.",
+      "status": "open-with-owner",
+      "status_reason": "The scientific question is unresolved in the frozen master and cannot be closed by the simulator.",
+      "title": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [
+        "N03",
+        "N10"
+      ],
+      "epistemic_label": "Predecessor audit [INSPECTED]; N02 mapping VERIFIED (2026-11-17)",
+      "evidence": [
+        "Predecessor audit §4 row C06: Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated."
+      ],
+      "finding": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "C06",
+      "owned_by": "V-03",
+      "owner": "N02 + N03",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C06",
+      "predecessor_row": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated.",
+      "resolution_task": "N02",
+      "resolution_text": "N02 maps local Topic 13 to programme Topic 6; potentials.mixing_rule_lv and the E°′ formula resolve the notation; N10 renders the symbols.",
+      "status": "resolved-by-task",
+      "status_reason": "The Topic 13 → programme Topic 6 mapping is already resolved by N02; the E°/E°′ mixing is owned by V-03 and declared in N03.",
+      "title": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [
+        "N15"
+      ],
+      "epistemic_label": "Predecessor audit [INSPECTED]",
+      "evidence": [
+        "Predecessor audit §4 row C07: Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time."
+      ],
+      "finding": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "C07",
+      "owned_by": "V-05",
+      "owner": "N03",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C07",
+      "predecessor_row": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time.",
+      "resolution_task": "N03",
+      "resolution_text": "titration.endpoint.persistence_criterion = supplied_by_task; no universal time; endpoint and equivalence point named distinctly.",
+      "status": "resolved-by-task",
+      "status_reason": "The wording and persistence rule is declared; N15 enforces it in figures.",
+      "title": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [INSPECTED]",
+      "evidence": [
+        "Predecessor audit §4 row C08: Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference."
+      ],
+      "finding": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "C08",
+      "owned_by": "V-06",
+      "owner": "N13",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C08",
+      "predecessor_row": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference.",
+      "resolution_task": "N13",
+      "resolution_text": "spectrophotometry.wavelength: 440 nm is a course setting, 444 nm is a literature value, flatness is a bounded inference; no key asserts a flat maximum.",
+      "status": "resolved-by-task",
+      "status_reason": "The scope rule is declared in N03 and enforced in N13 figure context.",
+      "supporting_tasks": [
+        "N03"
+      ],
+      "title": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [INSPECTED]",
+      "evidence": [
+        "Predecessor audit §4 row C09: Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance."
+      ],
+      "finding": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "C09",
+      "owned_by": "V-07",
+      "owner": "N15",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C09",
+      "predecessor_row": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance.",
+      "resolution_task": "N15",
+      "resolution_text": "spectrophotometry.calibration names the model, blank, intercept, linear range and matrix match; no reading outside the standards span.",
+      "status": "resolved-by-task",
+      "status_reason": "The assumption vocabulary and no-extrapolation rule are declared; N15 enforces them.",
+      "supporting_tasks": [
+        "N03"
+      ],
+      "title": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]`"
+    },
+    {
+      "class": "inherited-predecessor",
+      "enforcement_tasks": [],
+      "epistemic_label": "Predecessor audit [TARGET]",
+      "evidence": [
+        "Predecessor audit §4 row C10: Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review."
+      ],
+      "finding": "Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "C10",
+      "mitigation_task": "N05",
+      "note_lv": "The 40-task roadmap's B.1.1 and N40 refer to \"C10's catalase question\". The predecessor audit's catalase item is C05, not C10; C10 is the synthetic-examples item. This registry preserves the predecessor numbering and records the discrepancy in N03-OBS-01; the catalase question is carried verbatim under C05 and V-08.",
+      "owner": "N05",
+      "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C10",
+      "predecessor_row": "Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review.",
+      "resolution_task": null,
+      "resolution_text": "The 14 examples remain labelled synthetic; N05 freezes the golden vectors and N39 records the evidence. No official attribution is made.",
+      "status": "documented-and-accepted",
+      "status_reason": "The examples are synthetic by design; independent arithmetic checks and the golden-vector corpus are the correct mitigation, not an official-source claim.",
+      "title": "Current plan’s 14 examples are synthetic givens `[TARGET]`"
+    }
+  ],
+  "handoff_to_N40": {
+    "authority": "authoritative conflict list for this roadmap",
+    "digest_rule": "The registry digest is the SHA-256 of the canonical JSON of this conflicts object; it is recorded in the N03 ledger.",
+    "rule_lv": "N40 closes every V and C entry, carries N03-OBS-01 through N03-OBS-04, and preserves the catalase question verbatim from V-08/C05."
+  },
+  "observations": [
+    {
+      "epistemic_label": "VERIFIED (2026-11-16) inspection of both roadmap texts",
+      "finding": "The 40-task roadmap's N03 B.1.1 and N40 B.1.2 refer to \"C10's catalase question\". In the predecessor audit, catalase is C05 and C10 is \"Current plan's 14 examples are synthetic givens\". The registry preserves the predecessor numbering: C05 and V-08 carry the catalase question open verbatim, while C10 records the synthetic-examples item and this nomenclature discrepancy.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "N03-OBS-01",
+      "owner": "N40",
+      "resolution_task": null,
+      "resolution_text": "No renumbering: C10 remains the predecessor C10. N40 must read C05/V-08 for catalase and must not claim C10 is catalase.",
+      "status": "documented-and-accepted",
+      "title": "Roadmap B.1.1/N40 call C10 the catalase question; predecessor C10 is synthetic examples"
+    },
+    {
+      "epistemic_label": "VERIFIED (2026-11-16) recount in this environment",
+      "finding": "The roadmap records 382 id attributes in C1. Under the declared N03 counting rule (every id=\"...\" attribute in the HTML source, including islands and duplicated anchors), the count is 957. The difference is a counting-rule difference, not a contradiction about the document.",
+      "history": [
+        {
+          "event": "created",
+          "status": "documented-and-accepted",
+          "task": "N03"
+        }
+      ],
+      "id": "N03-OBS-02",
+      "owner": "N31",
+      "resolution_task": null,
+      "resolution_text": "V-10 keeps the roadmap's 382 as its historical finding. N31 must apply one declared count rule and the duplicate-id gate; the rule is recorded here so the two numbers are not conflated.",
+      "status": "documented-and-accepted",
+      "title": "C1 id-attribute count differs between the roadmap (382) and the N03 rule (957)"
+    },
+    {
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "finding": "C3 prints M(KOH) = 56,105 in the worked calculation and 56,106 in the 6. table. C3 prints M(H2O2) = 34,01 and C6 prints 34,0147. The differences are below the reported answer precision but must not be silently unified.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "N03-OBS-03",
+      "owner": "N03",
+      "resolution_task": "N03",
+      "resolution_text": "compound_molar_masses keeps working_value (56.105, 34.0147) and course_rounded (56, 34.01); engine answers use working_value, course display uses course_rounded, and both citations remain attached.",
+      "status": "resolved-by-task",
+      "title": "KOH and H2O2 working molar masses differ in the last printed digit across master passages"
+    },
+    {
+      "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+      "finding": "C2 says water solutions are read at the lower meniscus and dark solutions at the upper edge; C6 labels an upper edge and calls reading the lower meniscus a mistake for its dark KMnO4 titrant. The apparent conflict is reconciled by the solution-colour condition.",
+      "history": [
+        {
+          "event": "created",
+          "status": "resolved-by-task",
+          "task": "N03"
+        }
+      ],
+      "id": "N03-OBS-04",
+      "owner": "N03",
+      "resolution_task": "N03",
+      "resolution_text": "titration.meniscus records both cases in one rule; N12 applies the clear/dark condition in bureau figures.",
+      "status": "resolved-by-task",
+      "title": "Meniscus wording appears to conflict between C2 and C6"
+    }
+  ],
+  "registry_sha256": "27cd592043e257698fa57d263c5a2a31345fe271b4104dcbe7ed539ebc86537a",
+  "schema_version": 1,
+  "source": "data/conventions.json",
+  "source_sha256": "1ae95d0ed47eec057cce5fe2df9039e2599d453d9f5da2063ac9f2c8bcc21dbd",
+  "status_vocabulary": [
+    "resolved-by-task",
+    "documented-and-accepted",
+    "open-with-owner"
+  ],
+  "task": "N03",
+  "validation": {
+    "counts": {
+      "atomic_masses": 10,
+      "chains": 9,
+      "citations": 79,
+      "compounds": 23,
+      "conflict_c": 10,
+      "conflict_v": 12,
+      "constants": 10,
+      "conversions": 36,
+      "derived_vectors": 7,
+      "observations": 4,
+      "tolerance_classes": 18
+    },
+    "registry": {
+      "documented-and-accepted": 5,
+      "open-with-owner": 2,
+      "resolved-by-task": 15
+    },
+    "status": "PASS"
+  }
+}

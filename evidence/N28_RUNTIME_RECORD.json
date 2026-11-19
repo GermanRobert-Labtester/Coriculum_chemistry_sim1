@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "task": "N28",
+  "status": "PASS",
+  "checks": {
+    "a11_coalescing_partial_and_no_rewind": {
+      "status": "PASS",
+      "detail": {
+        "coalescedOk": true,
+        "partialAdded": true,
+        "noResurrectOk": true,
+        "miss_count_coalesced": 3,
+        "new_entry_id": "FAM-6A::P6-01::4",
+        "resolved_entry_miss_count": 3
+      }
+    },
+    "a1_policy_driven_resolution": {
+      "status": "PASS",
+      "detail": {
+        "confirm_state": "retried",
+        "confirm_copy": "Viena pareiza atbilde ir pierādījums virzībai, nevis pilnīga apguve — apstipriniet pabeigšanu manuāli vai praktizējiet tālāk.",
+        "auto_state": "resolved",
+        "auto_reason": "auto_one_correct"
+      }
+    },
+    "a12_four_retry_selection_and_ephemeral": {
+      "status": "PASS",
+      "detail": {
+        "failedId": "COL1-6-6A-A-01",
+        "picks": [
+          {
+            "step": 1,
+            "source": "bank",
+            "variant_id": "B",
+            "instance_id": "COL1-6-6A-B-01",
+            "persisted": true
+          },
+          {
+            "step": 2,
+            "source": "bank",
+            "variant_id": "C",
+            "instance_id": "COL1-6-6A-C-01",
+            "persisted": true
+          },
+          {
+            "step": 3,
+            "source": "bank",
+            "variant_id": "D",
+            "instance_id": "COL1-6-6A-D-01",
+            "persisted": true
+          },
+          {
+            "step": 4,
+            "source": "ephemeral",
+            "variant_id": "A",
+            "instance_id": "COL1-6-6A-A-EPH-3",
+            "persisted": false
+          },
+          {
+            "step": 5,
+            "source": "ephemeral",
+            "variant_id": "B",
+            "instance_id": "COL1-6-6A-B-EPH-4",
+            "persisted": false
+          }
+        ]
+      }
+    },
+    "b1_end_to_end_classification_loop_trace": {
+      "status": "PASS",
+      "detail": {
+        "trace_digest": "ea4771f62815d250febc1df8f172dc41c98ae058907796988a5260e732ba132a",
+        "steps_count": 7,
+        "final_active": 0,
+        "final_resolved": 1
+      }
+    },
+    "b11_nullable_chain_anchor_only": {
+      "status": "PASS",
+      "detail": {
+        "family_id": "FAM-1A",
+        "chain_id": null,
+        "noChainBtns": true,
+        "anchorBtns": true
+      }
+    },
+    "b12_dangling_anchor_on_read_fails_loudly": {
+      "status": "PASS",
+      "detail": {
+        "error": {
+          "code": "E_REMEDIATION_DANGLING_LINK",
+          "message": "Atkārtošanas saite atsaucas uz neeksistējošu koncepta enkuru \"P9-99-BROKEN-ANCHOR\"."
+        },
+        "domError": "Atkārtošanas rindas kļūda (E_REMEDIATION_DANGLING_LINK): Atkārtošanas saite atsaucas uz neeksistējošu koncepta enkuru \"P9-99-BROKEN-ANCHOR\"."
+      }
+    },
+    "b13_bounded_path_respects_exhaustion": {
+      "status": "PASS",
+      "detail": {
+        "first": {
+          "status": "LAUNCHED",
+          "remaining": 0
+        },
+        "second": {
+          "status": "PATH_EXHAUSTED",
+          "reason": "Prakses ceļa limits ir sasniegts (0 atlikušo uzdevumu). Atkārtojuma mēģinājums neapiet ceļa ierobežojumu; varat pārskatīt jēdziena avotu vai sākt jaunu prakses ceļu."
+        }
+      }
+    },
+    "c11_fresh_process_replay_determinism": {
+      "status": "PASS",
+      "detail": {
+        "in_process_digest": "ea4771f62815d250febc1df8f172dc41c98ae058907796988a5260e732ba132a",
+        "fresh_process_digest": "ea4771f62815d250febc1df8f172dc41c98ae058907796988a5260e732ba132a"
+      }
+    },
+    "c11_store_roundtrip_erase_and_privacy": {
+      "status": "PASS",
+      "detail": {
+        "memWrites": 0,
+        "d1": "3db78e4c3b56e4fcfba4a85e69715e75377d46993307d4847b7778ae393ceb55",
+        "d2": "3db78e4c3b56e4fcfba4a85e69715e75377d46993307d4847b7778ae393ceb55",
+        "qDigest1": "d34d0bccedb8f864bf5903c419c47d0c50a941cedb988e4ce0c9840f8e3e9d3e",
+        "qDigest2": "d34d0bccedb8f864bf5903c419c47d0c50a941cedb988e4ce0c9840f8e3e9d3e",
+        "keysAfterErase": [],
+        "domCountAfterErase": "0",
+        "queueFieldsCount": 30
+      }
+    },
+    "c13_built_artifact_smoke": {
+      "status": "PASS",
+      "detail": {
+        "total": 24,
+        "passed": 24,
+        "n28Vec": {
+          "id": "SMK-N28-REMEDIATION-WALK",
+          "owner": "N28",
+          "status": "PASS",
+          "details": {
+            "policyId": "sim-colloq1-remediation-v1",
+            "coalescedMissCount": 2,
+            "selectedVariant": "D",
+            "retryState": "retried",
+            "finalState": "resolved"
+          },
+          "reason": null
+        }
+      }
+    }
+  },
+  "failures": []
+}

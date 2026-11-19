@@ -1,0 +1,1715 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-figures",
+  "status": "authored",
+  "owner": "N13",
+  "scope": "Topic 4 (T4) energy-path diagrams, Hess thermodynamic cycles, and Maxwell-Boltzmann distributions",
+  "figures": [
+    {
+      "id": "FIG-T4-ENERGY-EXOTHERMIC",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-01",
+        "P4-02",
+        "P4-04",
+        "P4-05",
+        "P4-07",
+        "P4-11"
+      ],
+      "title_key": "fig.title.t4_energy_exothermic",
+      "subtitle_lv": "S(70,0) → ‡(125,0) → P(0,0 kJ/mol): ΔH = −70,0 kJ/mol < 0, Eₐ,tiešā < Eₐ,pretējā",
+      "description_lv": "Ģenerēts eksotermiskas reakcijas enerģijas profils pie p = const: izejvielas S = 70,0 kJ/mol, pārejas stāvoklis ‡ = 125,0 kJ/mol, produkti P = 0,0 kJ/mol. Tiešā aktivācijas enerģija Eₐ,tiešā = 55,0 kJ/mol ir mazāka par pretējo Eₐ,pretējā = 125,0 kJ/mol; reakcijas entalpija ΔH = H(P) − H(S) = −70,0 kJ/mol.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): profils un vērtības attiecas tikai uz deklarēto vienpakāpes eksotermisko modeli (p = const, 298,15 K) un nav vispārināmi uz citām reakcijām.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.reaction_coordinate",
+          "unit": "1",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 1,
+          "step": 0.5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": -25,
+          "max": 150,
+          "step": 25,
+          "scale_type": "linear"
+        }
+      },
+      "energy_spec": {
+        "reaction_class": "exothermic",
+        "E_r_kj_mol": "70.0",
+        "E_ts_kj_mol": "125.0",
+        "E_p_kj_mol": "0.0",
+        "Ea_fwd_kj_mol": "55.0",
+        "Ea_rev_kj_mol": "125.0",
+        "declared_delta_h_kj_mol": "-70.0",
+        "sign_rule_ref": "CIT-C4-ENTHALPY"
+      },
+      "energy_markers": {
+        "levels": [
+          {
+            "y": 70.0,
+            "x1": 0.0,
+            "x2": 0.45,
+            "label_lv": "S: 70,0"
+          },
+          {
+            "y": 125.0,
+            "x1": 0.25,
+            "x2": 0.78,
+            "label_lv": "‡: 125,0"
+          },
+          {
+            "y": 0.0,
+            "x1": 0.52,
+            "x2": 1.0,
+            "label_lv": "P: 0,0"
+          }
+        ],
+        "arrows": [
+          {
+            "x": 0.28,
+            "y_from": 70.0,
+            "y_to": 125.0,
+            "label_lv": "Eₐ,tiešā = 55,0",
+            "role": "fwd"
+          },
+          {
+            "x": 0.74,
+            "y_from": 0.0,
+            "y_to": 125.0,
+            "label_lv": "Eₐ,pret. = 125,0",
+            "role": "rev"
+          },
+          {
+            "x": 0.88,
+            "y_from": 70.0,
+            "y_to": 0.0,
+            "label_lv": "ΔH = −70,0",
+            "role": "dh"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "exo-profile",
+          "legend_key": "fig.legend.energy_path_exo",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.48,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 70.0,
+              "E_ts_kj_mol": 125.0,
+              "E_p_kj_mol": 0.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-exo-sign",
+          "annotation_key": "fig.annot.t4_enthalpy_sign_exo",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "fig-profiles",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "CIT-C4-SIGN",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-EXO-DH",
+          "label_lv": "Reakcijas entalpija ΔH = H(P) − H(S)",
+          "formula_kind": "enthalpy_products_minus_reactants",
+          "inputs": {
+            "E_r_kj_mol": "70.0",
+            "E_p_kj_mol": "0.0"
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "-70.0",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "−70,0 kJ/mol"
+        },
+        {
+          "id": "DV-EXO-EAREV",
+          "label_lv": "Pretējās reakcijas barjera Eₐ,pret. = E_‡ − H(P)",
+          "formula_kind": "activation_energy_reverse",
+          "inputs": {
+            "E_r_kj_mol": "70.0",
+            "E_ts_kj_mol": "125.0",
+            "E_p_kj_mol": "0.0"
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "125.0",
+          "unit": "kJ/mol",
+          "sig_figs": 4,
+          "display_lv": "125,0 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 84,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-ENERGY-ENDOTHERMIC",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-01",
+        "P4-02",
+        "P4-05",
+        "P4-07"
+      ],
+      "title_key": "fig.title.t4_energy_endothermic",
+      "subtitle_lv": "S(20,0) → ‡(115,0) → P(75,0 kJ/mol): ΔH = +55,0 kJ/mol > 0, Eₐ,pretējā < Eₐ,tiešā",
+      "description_lv": "Ģenerēts endotermiskas reakcijas enerģijas profils pie p = const: izejvielas S = 20,0 kJ/mol, pārejas stāvoklis ‡ = 115,0 kJ/mol, produkti P = 75,0 kJ/mol. Reakcijas entalpija ΔH = H(P) − H(S) = +55,0 kJ/mol, bet pretējās reakcijas barjera Eₐ,pretējā = 40,0 kJ/mol ir zemāka nekā tiešā Eₐ,tiešā = 95,0 kJ/mol.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): profils un vērtības attiecas tikai uz deklarēto vienpakāpes endotermisko modeli (p = const, 298,15 K) un nav vispārināmi uz citām reakcijām.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.reaction_coordinate",
+          "unit": "1",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 1,
+          "step": 0.5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": 0,
+          "max": 150,
+          "step": 25,
+          "scale_type": "linear"
+        }
+      },
+      "energy_spec": {
+        "reaction_class": "endothermic",
+        "E_r_kj_mol": "20.0",
+        "E_ts_kj_mol": "115.0",
+        "E_p_kj_mol": "75.0",
+        "Ea_fwd_kj_mol": "95.0",
+        "Ea_rev_kj_mol": "40.0",
+        "declared_delta_h_kj_mol": "+55.0",
+        "sign_rule_ref": "CIT-C4-ENTHALPY"
+      },
+      "energy_markers": {
+        "levels": [
+          {
+            "y": 20.0,
+            "x1": 0.0,
+            "x2": 0.5,
+            "label_lv": "S: 20,0"
+          },
+          {
+            "y": 115.0,
+            "x1": 0.25,
+            "x2": 0.8,
+            "label_lv": "‡: 115,0"
+          },
+          {
+            "y": 75.0,
+            "x1": 0.55,
+            "x2": 1.0,
+            "label_lv": "P: 75,0"
+          }
+        ],
+        "arrows": [
+          {
+            "x": 0.28,
+            "y_from": 20.0,
+            "y_to": 115.0,
+            "label_lv": "Eₐ,tiešā = 95,0",
+            "role": "fwd"
+          },
+          {
+            "x": 0.74,
+            "y_from": 75.0,
+            "y_to": 115.0,
+            "label_lv": "Eₐ,pret. = 40,0",
+            "role": "rev"
+          },
+          {
+            "x": 0.88,
+            "y_from": 20.0,
+            "y_to": 75.0,
+            "label_lv": "ΔH = +55,0",
+            "role": "dh"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "endo-profile",
+          "legend_key": "fig.legend.energy_path_endo",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.52,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 20.0,
+              "E_ts_kj_mol": 115.0,
+              "E_p_kj_mol": 75.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-endo-sign",
+          "annotation_key": "fig.annot.t4_enthalpy_sign_endo",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "fig-profiles",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "CIT-C4-SIGN",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-ENDO-DH",
+          "label_lv": "Reakcijas entalpija ΔH = H(P) − H(S)",
+          "formula_kind": "enthalpy_products_minus_reactants",
+          "inputs": {
+            "E_r_kj_mol": "20.0",
+            "E_p_kj_mol": "75.0"
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "55.0",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "+55,0 kJ/mol"
+        },
+        {
+          "id": "DV-ENDO-EAREV",
+          "label_lv": "Pretējās reakcijas barjera Eₐ,pret. = E_‡ − H(P)",
+          "formula_kind": "activation_energy_reverse",
+          "inputs": {
+            "E_r_kj_mol": "20.0",
+            "E_ts_kj_mol": "115.0",
+            "E_p_kj_mol": "75.0"
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "40.0",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "40,0 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 84,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-ENERGY-CATALYZED",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-08",
+        "P4-11",
+        "P5-07"
+      ],
+      "title_key": "fig.title.t4_energy_catalyzed",
+      "subtitle_lv": "Vispārīgs barjeras pazemināšanas piemērs: Eₐ 95,0 → 35,0 kJ/mol, ΔH = −70,0 kJ/mol nemainīgs",
+      "description_lv": "Katalizēts un nekatalizēts eksotermisks ceļš ar vienādiem sākuma S = 70,0 un beigu P = 0,0 kJ/mol līmeņiem (ΔH = −70,0 kJ/mol nemainās). Nekatalizētā barjera Eₐ = 95,0 kJ/mol samazinās līdz 35,0 kJ/mol. Vispārīgs mācību piemērs; katalāzes K10 skaitļi (23 J/mol pret 23 kJ/mol) paliek atvērti pie docētājas (V-08/C05).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "c10_honesty_note_lv": "Katalāzes aktivācijas enerģijas kursa vērtība (23 J/mol pret iespējamo 23 kJ/mol, K10) paliek zinātniski atvērta pie kursa docētājas (V-08 / C05; ceļvedī minēts kā C10, sk. N03-OBS-01). Tāpēc šis attēls māca barjeras pazemināšanas modeli ar vispārīgu piemēru (95,0 → 35,0 kJ/mol, nemainīts ΔH = −70,0 kJ/mol), nevis strīdīgos katalāzes skaitļus.",
+      "scope_note_lv": "Tvēruma piezīme (V-06): vispārīgs barjeras pazemināšanas mācību piemērs deklarētajam pārim; katalāzes K10 vērtības paliek atvērtas (V-08/C05) un netiek apgalvotas.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.reaction_coordinate",
+          "unit": "1",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 1,
+          "step": 0.5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": -25,
+          "max": 185,
+          "step": 35,
+          "scale_type": "linear"
+        }
+      },
+      "energy_spec": {
+        "reaction_class": "exothermic",
+        "E_r_kj_mol": "70.0",
+        "E_ts_kj_mol": "165.0",
+        "E_ts_cat_kj_mol": "105.0",
+        "E_p_kj_mol": "0.0",
+        "Ea_fwd_kj_mol": "95.0",
+        "Ea_fwd_cat_kj_mol": "35.0",
+        "Ea_rev_kj_mol": "165.0",
+        "Ea_rev_cat_kj_mol": "105.0",
+        "declared_delta_h_kj_mol": "-70.0",
+        "sign_rule_ref": "CIT-C4-ENTHALPY"
+      },
+      "energy_markers": {
+        "levels": [
+          {
+            "y": 70.0,
+            "x1": 0.0,
+            "x2": 0.45,
+            "label_lv": "S: 70,0"
+          },
+          {
+            "y": 165.0,
+            "x1": 0.25,
+            "x2": 0.65,
+            "label_lv": "‡: 165,0"
+          },
+          {
+            "y": 105.0,
+            "x1": 0.35,
+            "x2": 0.72,
+            "label_lv": "‡,kat: 105,0"
+          },
+          {
+            "y": 0.0,
+            "x1": 0.52,
+            "x2": 1.0,
+            "label_lv": "P: 0,0"
+          }
+        ],
+        "arrows": [
+          {
+            "x": 0.24,
+            "y_from": 70.0,
+            "y_to": 165.0,
+            "label_lv": "Eₐ = 95,0",
+            "role": "fwd"
+          },
+          {
+            "x": 0.7,
+            "y_from": 70.0,
+            "y_to": 105.0,
+            "label_lv": "Eₐ,kat = 35,0",
+            "role": "cat"
+          },
+          {
+            "x": 0.88,
+            "y_from": 70.0,
+            "y_to": 0.0,
+            "label_lv": "ΔH = −70,0",
+            "role": "dh"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "uncat-path",
+          "legend_key": "fig.legend.uncatalyzed",
+          "style_role": "primary",
+          "catalyzed": false,
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.48,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 70.0,
+              "E_ts_kj_mol": 165.0,
+              "E_p_kj_mol": 0.0
+            }
+          }
+        },
+        {
+          "id": "cat-path",
+          "legend_key": "fig.legend.catalyzed",
+          "style_role": "secondary",
+          "catalyzed": true,
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.48,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 70.0,
+              "E_ts_kj_mol": 105.0,
+              "E_p_kj_mol": 0.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-cat-c05",
+          "annotation_key": "fig.annot.t4_catalyzed_c05_honesty",
+          "citation_ref": "V-08",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "fig-catalysis",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "CIT-C5-K10",
+          "CIT-C5-K10-OPEN",
+          "V-08",
+          "C05"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-CAT-DH",
+          "label_lv": "Nemainīgā ΔH abiem ceļiem",
+          "formula_kind": "enthalpy_products_minus_reactants",
+          "inputs": {
+            "E_r_kj_mol": "70.0",
+            "E_p_kj_mol": "0.0"
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "-70.0",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "−70,0 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 88,
+        "viewBox": [
+          0,
+          0,
+          760,
+          420
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-ENERGY-GRADE-READING",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-02",
+        "P4-10"
+      ],
+      "title_key": "fig.title.t4_energy_grade_reading",
+      "subtitle_lv": "Vērtējams treniņuzdevums (PROPOSED): S = 15,0; P = −18,0; ‡₁ = 97,0; ‡₂ = 52,0 kJ/mol",
+      "description_lv": "Vērtējams enerģijas profila nolasīšanas uzdevums ar nekatalizētu un katalizētu līkni. Dotie līmeņi ir S = 15,0 kJ/mol, P = −18,0 kJ/mol, ‡₁ = 97,0 kJ/mol un ‡₂ = 52,0 kJ/mol; studentam pašam jāaprēķina ΔH un abas tiešās aktivācijas enerģijas.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "leak_scan_exemption": null,
+      "answer_targets": [
+        {
+          "value": "-33.0",
+          "unit": "kJ/mol",
+          "family_id": "FAM-4A",
+          "distinctive": true
+        },
+        {
+          "value": "82.0",
+          "unit": "kJ/mol",
+          "family_id": "FAM-4A",
+          "distinctive": true
+        },
+        {
+          "value": "37.0",
+          "unit": "kJ/mol",
+          "family_id": "FAM-4A",
+          "distinctive": true
+        }
+      ],
+      "scope_note_lv": "Tvēruma piezīme (V-06): sintētiski līmeņi (PROPOSED) konkrētajam nolasīšanas uzdevumam pie p = const; nav vispārināmi ārpus šīs shēmas.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.reaction_coordinate",
+          "unit": "1",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 1,
+          "step": 0.5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": -40,
+          "max": 120,
+          "step": 40,
+          "scale_type": "linear"
+        }
+      },
+      "energy_spec": {
+        "reaction_class": "exothermic",
+        "gradeable_readout": true,
+        "sign_rule_ref": "CIT-C4-ENTHALPY"
+      },
+      "energy_markers": {
+        "levels": [
+          {
+            "y": 15.0,
+            "x1": 0.0,
+            "x2": 0.45,
+            "label_lv": "S: 15,0"
+          },
+          {
+            "y": 97.0,
+            "x1": 0.25,
+            "x2": 0.65,
+            "label_lv": "‡₁: 97,0"
+          },
+          {
+            "y": 52.0,
+            "x1": 0.35,
+            "x2": 0.72,
+            "label_lv": "‡₂: 52,0"
+          },
+          {
+            "y": -18.0,
+            "x1": 0.52,
+            "x2": 1.0,
+            "label_lv": "P: −18,0"
+          }
+        ],
+        "arrows": [
+          {
+            "x": 0.24,
+            "y_from": 15.0,
+            "y_to": 97.0,
+            "label_lv": "Eₐ,1 = ?",
+            "role": "fwd"
+          },
+          {
+            "x": 0.7,
+            "y_from": 15.0,
+            "y_to": 52.0,
+            "label_lv": "Eₐ,2 = ?",
+            "role": "cat"
+          },
+          {
+            "x": 0.88,
+            "y_from": 15.0,
+            "y_to": -18.0,
+            "label_lv": "ΔH = ?",
+            "role": "dh"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "grade-uncat",
+          "legend_key": "fig.legend.uncatalyzed",
+          "style_role": "primary",
+          "catalyzed": false,
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.48,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 15.0,
+              "E_ts_kj_mol": 97.0,
+              "E_p_kj_mol": -18.0
+            }
+          }
+        },
+        {
+          "id": "grade-cat",
+          "legend_key": "fig.legend.catalyzed",
+          "style_role": "secondary",
+          "catalyzed": true,
+          "curve_model": {
+            "function_class": "energy_profile_single_barrier",
+            "point_count": 61,
+            "params": {
+              "x_min": 0,
+              "x_max": 1,
+              "x_ts": 0.48,
+              "plateau_frac": 0.12,
+              "E_r_kj_mol": 15.0,
+              "E_ts_kj_mol": 52.0,
+              "E_p_kj_mol": -18.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-grade-energy",
+          "annotation_key": "fig.annot.t4_energy_grade_prompt",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "fig-profiles",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "C04",
+          "C10"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 84,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-HESS-FECL3",
+      "type": "hess_cycle",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-03",
+        "P4-04",
+        "P4-06"
+      ],
+      "title_key": "fig.title.t4_hess_fecl3",
+      "subtitle_lv": "Fe(s) + 3/2 Cl₂(g) → FeCl₃(s) tieši (−399,5 kJ/mol) un caur FeCl₂(s) (−341,8 + −57,7 kJ/mol)",
+      "description_lv": "Meistara 3. attēla Hesa likuma cikls dzelzs(III) hlorīda FeCl₃ sintēzei pie p = const un 298,15 K: tiešais ceļš dod ΔH₁ = −399,5 kJ/mol, bet divsoļu ceļš caur FeCl₂(s) + ½Cl₂(g) dod −341,8 + (−57,7) = −399,5 kJ/mol, noslēdzot ciklu ∮ dH = 0,00 kJ/mol.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): cikls attiecas tikai uz deklarēto FeCl₃ veidošanos pie nemainīga spiediena (p = const, 298,15 K) un dotajām fāzēm.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "hess_spec": {
+        "constant_condition": "p = const, 298,15 K",
+        "initial_state_lv": "Fe(s) + 3/2 Cl₂(g)",
+        "intermediate_state_lv": "FeCl₂(s) + ½Cl₂(g)",
+        "final_state_lv": "FeCl₃(s)",
+        "direct_path": {
+          "id": "D1",
+          "dh_kj_mol": "-399.5",
+          "label_lv": "Tiešais: ΔH₁ = −399,5 kJ/mol"
+        },
+        "steps": [
+          {
+            "id": "H1",
+            "from": "S",
+            "to": "I",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-341.8",
+            "effective_dh_kj_mol": "-341.8",
+            "label_lv": "1. posms: ΔH₂ = −341,8 kJ/mol"
+          },
+          {
+            "id": "H2",
+            "from": "I",
+            "to": "P",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-57.7",
+            "effective_dh_kj_mol": "-57.7",
+            "label_lv": "2. posms: ΔH₃ = −57,7 kJ/mol"
+          }
+        ],
+        "closure_label_lv": "Bilance: −341,8 + (−57,7) = −399,5 kJ/mol · ∮ dH = 0,00 kJ/mol"
+      },
+      "series": [
+        {
+          "id": "hess-fecl3",
+          "legend_key": "fig.legend.hess_cycle",
+          "style_role": "primary",
+          "data": [
+            {
+              "id": "H1",
+              "dh": "-341.8"
+            },
+            {
+              "id": "H2",
+              "dh": "-57.7"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-hess-fecl3",
+          "annotation_key": "fig.annot.t4_hess_fecl3_sum",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "fig-hess",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-HESS-FECL3-SUM",
+          "label_lv": "FeCl₃ cikla starpposmu summa",
+          "formula_kind": "hess_cycle_sum",
+          "inputs": {
+            "steps": [
+              {
+                "dh": "-341.8",
+                "sign": 1
+              },
+              {
+                "dh": "-57.7",
+                "sign": 1
+              }
+            ]
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "-399.5",
+          "unit": "kJ/mol",
+          "sig_figs": 4,
+          "display_lv": "−399,5 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 76,
+        "viewBox": [
+          0,
+          0,
+          760,
+          360
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-HESS-CO2",
+      "type": "hess_cycle",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-03",
+        "P4-07",
+        "P4-10"
+      ],
+      "title_key": "fig.title.t4_hess_co2",
+      "subtitle_lv": "C(s) + O₂(g) → CO₂(g) tieši (−393,5 kJ/mol) un caur CO(g) (−110,5 + −283,0 kJ/mol)",
+      "description_lv": "Klasiskais oglekļa sadegšanas Hesa cikls no C4 5.7. sadaļas: tiešais ceļš C(s) + O₂(g) → CO₂(g) dod −393,5 kJ/mol; divsoļu ceļš caur CO(g) + ½O₂(g) dod −110,5 + (−283,0) = −393,5 kJ/mol, ∮ dH = 0,00 kJ/mol.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): cikls attiecas tikai uz deklarēto C(grafīts) sadegšanu pie p = const un 298,15 K ar fiksētām fāzēm.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "hess_spec": {
+        "constant_condition": "p = const, 298,15 K",
+        "initial_state_lv": "C(s) + O₂(g)",
+        "intermediate_state_lv": "CO(g) + ½O₂(g)",
+        "final_state_lv": "CO₂(g)",
+        "direct_path": {
+          "id": "D1",
+          "dh_kj_mol": "-393.5",
+          "label_lv": "Tiešais: ΔH₁ = −393,5 kJ/mol"
+        },
+        "steps": [
+          {
+            "id": "H1",
+            "from": "S",
+            "to": "I",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-110.5",
+            "effective_dh_kj_mol": "-110.5",
+            "label_lv": "1. posms: ΔH₂ = −110,5 kJ/mol"
+          },
+          {
+            "id": "H2",
+            "from": "I",
+            "to": "P",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-283.0",
+            "effective_dh_kj_mol": "-283.0",
+            "label_lv": "2. posms: ΔH₃ = −283,0 kJ/mol"
+          }
+        ],
+        "closure_label_lv": "Bilance: −110,5 + (−283,0) = −393,5 kJ/mol · ∮ dH = 0,00 kJ/mol"
+      },
+      "series": [
+        {
+          "id": "hess-co2",
+          "legend_key": "fig.legend.hess_cycle",
+          "style_role": "primary",
+          "data": [
+            {
+              "id": "H1",
+              "dh": "-110.5"
+            },
+            {
+              "id": "H2",
+              "dh": "-283.0"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-hess-co2",
+          "annotation_key": "fig.annot.t4_hess_co2_sum",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "sec-ch5-27",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-HESS-CO2-SUM",
+          "label_lv": "CO₂ cikla starpposmu summa",
+          "formula_kind": "hess_cycle_sum",
+          "inputs": {
+            "steps": [
+              {
+                "dh": "-110.5",
+                "sign": 1
+              },
+              {
+                "dh": "-283.0",
+                "sign": 1
+              }
+            ]
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "-393.5",
+          "unit": "kJ/mol",
+          "sig_figs": 4,
+          "display_lv": "−393,5 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 76,
+        "viewBox": [
+          0,
+          0,
+          760,
+          360
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-HESS-REVERSE-TRAP",
+      "type": "hess_cycle",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-03"
+      ],
+      "title_key": "fig.title.t4_hess_reverse_trap",
+      "subtitle_lv": "C₃H₆(g) + H₂(g) → C₃H₈(g): 2. posmu šķērso pret sadegšanas bultu (zīme mainās!)",
+      "description_lv": "Hesa cikla pretbultas zīmes slazda piemērs no C4 5.7. sadaļas: 1. posms iet pa bultu līdz 3CO₂ + 4H₂O (ΔH₁ = −2343,8 kJ/mol), bet 2. posma bulta ir uzzīmēta pretēji (C₃H₈ sadegšana ar ΔH₂ = −2219,8 kJ/mol). Ejot pret šo bultu uz produktiem, zīme jāapvērš (+2219,8), dodot −124,0 kJ/mol.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): cikls attiecas tikai uz deklarēto propēna hidrogenēšanu caur sadegšanas produktiem pie p = const un 298,15 K.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "hess_spec": {
+        "constant_condition": "p = const, 298,15 K",
+        "initial_state_lv": "C₃H₆(g) + H₂(g) + 5 O₂(g)",
+        "intermediate_state_lv": "3 CO₂(g) + 4 H₂O(l)",
+        "final_state_lv": "C₃H₈(g) + 5 O₂(g)",
+        "reverse_traversal_explained": true,
+        "direct_path": {
+          "id": "D1",
+          "dh_kj_mol": "-124.0",
+          "label_lv": "Tiešais: ΔH_tiešais = −124,0 kJ/mol"
+        },
+        "steps": [
+          {
+            "id": "H1",
+            "from": "S",
+            "to": "I",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-2343.8",
+            "effective_dh_kj_mol": "-2343.8",
+            "label_lv": "Pa bultu: ΔH₁ = −2343,8 kJ/mol"
+          },
+          {
+            "id": "H2",
+            "from": "I",
+            "to": "P",
+            "arrow_direction": "reverse",
+            "traversal_direction": "reverse",
+            "given_dh_kj_mol": "-2219.8",
+            "effective_dh_kj_mol": "2219.8",
+            "label_lv": "Pret bultu (× −1): dotais −2219,8 → +2219,8 kJ/mol"
+          }
+        ],
+        "closure_label_lv": "Pretbultas aritmētika: −2343,8 − (−2219,8) = −124,0 kJ/mol · ∮ dH = 0,00"
+      },
+      "series": [
+        {
+          "id": "hess-reverse",
+          "legend_key": "fig.legend.hess_cycle",
+          "style_role": "primary",
+          "data": [
+            {
+              "id": "H1",
+              "dh": "-2343.8"
+            },
+            {
+              "id": "H2",
+              "dh": "2219.8"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-hess-rev",
+          "annotation_key": "fig.annot.t4_hess_reverse_trap",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "sec-ch5-27",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-HESS-REV-SUM",
+          "label_lv": "Propēna hidrogenēšana ar pretbultas apvērsi",
+          "formula_kind": "hess_cycle_sum",
+          "inputs": {
+            "steps": [
+              {
+                "dh": "-2343.8",
+                "sign": 1
+              },
+              {
+                "dh": "-2219.8",
+                "sign": -1
+              }
+            ]
+          },
+          "conventions_sources": [
+            "thermodynamics.enthalpy.reaction_enthalpy"
+          ],
+          "value": "-124.0",
+          "unit": "kJ/mol",
+          "sig_figs": 4,
+          "display_lv": "−124,0 kJ/mol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 165,
+        "height_mm": 80,
+        "viewBox": [
+          0,
+          0,
+          780,
+          370
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-HESS-PRACTICE-SYNTH",
+      "type": "hess_cycle",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-03"
+      ],
+      "title_key": "fig.title.t4_hess_practice_synth",
+      "subtitle_lv": "Sintētisks prakses cikls (PROPOSED): X(s) + 2 Y(g) → XY₂(s) caur XY(s)",
+      "description_lv": "Sintētisks Hesa likuma prakses uzdevums (PROPOSED): 1. posms X(s) + Y(g) → XY(s) dod ΔH₁ = −136,5 kJ/mol, 2. posms XY(s) + Y(g) → XY₂(s) dod ΔH₂ = −82,5 kJ/mol. Studentam jāaprēķina tiešā ceļa entalpija ΔH_tiešais bez atbildes parādīšanas attēlā.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "leak_scan_exemption": null,
+      "answer_targets": [
+        {
+          "value": "-219.0",
+          "unit": "kJ/mol",
+          "family_id": "FAM-4B",
+          "distinctive": true
+        }
+      ],
+      "scope_note_lv": "Tvēruma piezīme (V-06): sintētiska prakses sistēma (PROPOSED, C10 disciplīna) pie p = const bez vispārinājuma ārpus uzdevuma.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "hess_spec": {
+        "constant_condition": "p = const, 298,15 K",
+        "initial_state_lv": "X(s) + 2 Y(g)",
+        "intermediate_state_lv": "XY(s) + Y(g)",
+        "final_state_lv": "XY₂(s)",
+        "direct_path": {
+          "id": "D1",
+          "dh_kj_mol": null,
+          "label_lv": "Tiešais: ΔH_tiešais = ? kJ/mol"
+        },
+        "steps": [
+          {
+            "id": "H1",
+            "from": "S",
+            "to": "I",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-136.5",
+            "effective_dh_kj_mol": "-136.5",
+            "label_lv": "1. posms: ΔH₁ = −136,5 kJ/mol"
+          },
+          {
+            "id": "H2",
+            "from": "I",
+            "to": "P",
+            "arrow_direction": "forward",
+            "traversal_direction": "forward",
+            "given_dh_kj_mol": "-82.5",
+            "effective_dh_kj_mol": "-82.5",
+            "label_lv": "2. posms: ΔH₂ = −82,5 kJ/mol"
+          }
+        ],
+        "closure_label_lv": "Uzdevums: ΔH_tiešais = ΔH₁ + ΔH₂ = ? kJ/mol (p = const)"
+      },
+      "series": [
+        {
+          "id": "hess-synth",
+          "legend_key": "fig.legend.hess_cycle",
+          "style_role": "primary",
+          "data": [
+            {
+              "id": "H1",
+              "dh": "-136.5"
+            },
+            {
+              "id": "H2",
+              "dh": "-82.5"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-hess-synth",
+          "annotation_key": "fig.annot.t4_hess_practice_prompt",
+          "citation_ref": "CIT-C4-ENTHALPY",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "master_anchor": "ch5",
+        "master_freeze_id": "C4-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "C04",
+          "C10"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 76,
+        "viewBox": [
+          0,
+          0,
+          760,
+          360
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-MB-TWO-TEMP-COMPARE",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-06",
+        "P4-08",
+        "P4-09",
+        "P5-04"
+      ],
+      "title_key": "fig.title.t4_mb_two_temp_compare",
+      "subtitle_lv": "T₁ = 300 K (maks. 1,25 kJ/mol) pret T₂ = 600 K (maks. 2,49 kJ/mol), slieksnis Eₐ = 8,0 kJ/mol",
+      "description_lv": "Analītiski ģenerētas Maksvela–Bolcmaņa enerģiju sadalījuma līknes pie 300 K un 600 K (R = 8,314 J/(mol·K)) ar aktivācijas slieksni Eₐ = 8,0 kJ/mol un iekrāsotu asti E ≥ 8,0 kJ/mol. Pieaugot T, maksimums nobīdās pa labi un saplacinās, bet daļa virs Eₐ pieaug no 0,0931 līdz 0,361 (3,88 reizes). Attiecas tikai uz šo deklarēto modeli (V-06).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): slieksnis Eₐ = 8,0 kJ/mol un astes daļas (0,0931 pie 300 K, 0,361 pie 600 K) attiecas tikai uz šajā attēlā deklarēto reakciju un temperatūrām; skaitļi nav vispārināmi.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.kinetic_energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.kinetic_energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": 0,
+          "max": 24,
+          "step": 4,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.mb_density",
+          "unit": "(kJ/mol)⁻¹",
+          "dimension": "inverse_molar_energy",
+          "min": 0,
+          "max": 0.22,
+          "step": 0.05,
+          "scale_type": "linear"
+        }
+      },
+      "threshold_line": {
+        "x": 8.0,
+        "label_lv": "Eₐ = 8,0 kJ/mol (deklarētajai reakcijai)"
+      },
+      "mb_model_spec": {
+        "T1_K": "300",
+        "T2_K": "600",
+        "Ea_kj_mol": "8.0",
+        "E_max_kj_mol": "24.0",
+        "tail_T1": "0.0931",
+        "tail_T2": "0.361",
+        "tail_ratio": "3.88"
+      },
+      "series": [
+        {
+          "id": "mb-300k",
+          "legend_key": "fig.legend.mb_t_300",
+          "style_role": "primary",
+          "shade_tail_from": 8.0,
+          "curve_model": {
+            "function_class": "maxwell_boltzmann_3d",
+            "point_count": 193,
+            "params": {
+              "T_K": 300,
+              "R_kj_mol_k": 0.008314,
+              "E_min_kj_mol": 0,
+              "E_max_kj_mol": 24.0,
+              "Ea_threshold_kj_mol": 8.0
+            }
+          }
+        },
+        {
+          "id": "mb-600k",
+          "legend_key": "fig.legend.mb_t_600",
+          "style_role": "secondary",
+          "shade_tail_from": 8.0,
+          "curve_model": {
+            "function_class": "maxwell_boltzmann_3d",
+            "point_count": 193,
+            "params": {
+              "T_K": 600,
+              "R_kj_mol_k": 0.008314,
+              "E_min_kj_mol": 0,
+              "E_max_kj_mol": 24.0,
+              "Ea_threshold_kj_mol": 8.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-mb-300-600",
+          "annotation_key": "fig.annot.t4_mb_300_600_scope",
+          "citation_ref": "V-06",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-maxwell",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "V-06",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-MB1-EP1",
+          "label_lv": "Maksimums E_maks pie 300 K",
+          "formula_kind": "mb_peak_energy",
+          "inputs": {
+            "T_K": "300",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "1.25",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "1,25 kJ/mol"
+        },
+        {
+          "id": "DV-MB1-EP2",
+          "label_lv": "Maksimums E_maks pie 600 K",
+          "formula_kind": "mb_peak_energy",
+          "inputs": {
+            "T_K": "600",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "2.49",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "2,49 kJ/mol"
+        },
+        {
+          "id": "DV-MB1-TAIL1",
+          "label_lv": "Aktīvo molekulu daļa P(E ≥ 8,0) pie 300 K",
+          "formula_kind": "mb_tail_fraction",
+          "inputs": {
+            "T_K": "300",
+            "Ea_kj_mol": "8.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "0.0931",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "0,0931"
+        },
+        {
+          "id": "DV-MB1-TAIL2",
+          "label_lv": "Aktīvo molekulu daļa P(E ≥ 8,0) pie 600 K",
+          "formula_kind": "mb_tail_fraction",
+          "inputs": {
+            "T_K": "600",
+            "Ea_kj_mol": "8.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "0.361",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "0,361"
+        },
+        {
+          "id": "DV-MB1-RATIO",
+          "label_lv": "Astes daļu attiecība (600 K / 300 K)",
+          "formula_kind": "mb_tail_ratio",
+          "inputs": {
+            "T1_K": "300",
+            "T2_K": "600",
+            "Ea_kj_mol": "8.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "3.88",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "3,88"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 165,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          440
+        ],
+        "monochrome_safe": true
+      }
+    },
+    {
+      "id": "FIG-T4-MB-BARRIER-SCOPE",
+      "type": "curve",
+      "version": 1,
+      "topic": 4,
+      "concept_ids": [
+        "P4-06",
+        "P4-08",
+        "P4-09"
+      ],
+      "title_key": "fig.title.t4_mb_barrier_scope",
+      "subtitle_lv": "T₁ = 300 K pret T₂ = 450 K pie augstāka sliekšņa Eₐ = 10,0 kJ/mol (nevis vispārināms)",
+      "description_lv": "Otrs analītiski ģenerētais Maksvela–Bolcmaņa sadalījums pie 300 K un 450 K ar slieksni Eₐ = 10,0 kJ/mol. Daļa virs sliekšņa pieaug no 0,0456 līdz 0,148 (3,25 reizes), un maksimālā varbūtības enerģija nobīdās no 1,25 uz 1,87 kJ/mol. Slieksnis derīgs tikai šai deklarētajai reakcijai (V-06).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "scope_note_lv": "Tvēruma piezīme (V-06): slieksnis Eₐ = 10,0 kJ/mol un astes daļas (0,0456 pie 300 K, 0,148 pie 450 K) pieder vienīgi šim deklarētajam modelim un nav vispārināmi uz citām reakcijām.",
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "energy",
+        "conventions_ref": "CIT-C4-ENTHALPY",
+        "target_quantity_term_key": "fig.axis.kinetic_energy_kj_mol",
+        "expected_unit": "kJ/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.kinetic_energy_kj_mol",
+          "unit": "kJ/mol",
+          "dimension": "molar_energy",
+          "min": 0,
+          "max": 24,
+          "step": 4,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.mb_density",
+          "unit": "(kJ/mol)⁻¹",
+          "dimension": "inverse_molar_energy",
+          "min": 0,
+          "max": 0.22,
+          "step": 0.05,
+          "scale_type": "linear"
+        }
+      },
+      "threshold_line": {
+        "x": 10.0,
+        "label_lv": "Eₐ = 10,0 kJ/mol (deklarētajai reakcijai)"
+      },
+      "mb_model_spec": {
+        "T1_K": "300",
+        "T2_K": "450",
+        "Ea_kj_mol": "10.0",
+        "E_max_kj_mol": "24.0",
+        "tail_T1": "0.0456",
+        "tail_T2": "0.148",
+        "tail_ratio": "3.25"
+      },
+      "series": [
+        {
+          "id": "mb2-300k",
+          "legend_key": "fig.legend.mb_t_300",
+          "style_role": "primary",
+          "shade_tail_from": 10.0,
+          "curve_model": {
+            "function_class": "maxwell_boltzmann_3d",
+            "point_count": 193,
+            "params": {
+              "T_K": 300,
+              "R_kj_mol_k": 0.008314,
+              "E_min_kj_mol": 0,
+              "E_max_kj_mol": 24.0,
+              "Ea_threshold_kj_mol": 10.0
+            }
+          }
+        },
+        {
+          "id": "mb2-450k",
+          "legend_key": "fig.legend.mb_t_450",
+          "style_role": "secondary",
+          "shade_tail_from": 10.0,
+          "curve_model": {
+            "function_class": "maxwell_boltzmann_3d",
+            "point_count": 193,
+            "params": {
+              "T_K": 450,
+              "R_kj_mol_k": 0.008314,
+              "E_min_kj_mol": 0,
+              "E_max_kj_mol": 24.0,
+              "Ea_threshold_kj_mol": 10.0
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-mb-300-450",
+          "annotation_key": "fig.annot.t4_mb_300_450_scope",
+          "citation_ref": "V-06",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-maxwell",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C4-ENTHALPY",
+          "V-06",
+          "C04"
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-MB2-EP1",
+          "label_lv": "Maksimums E_maks pie 300 K",
+          "formula_kind": "mb_peak_energy",
+          "inputs": {
+            "T_K": "300",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "1.25",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "1,25 kJ/mol"
+        },
+        {
+          "id": "DV-MB2-EP2",
+          "label_lv": "Maksimums E_maks pie 450 K",
+          "formula_kind": "mb_peak_energy",
+          "inputs": {
+            "T_K": "450",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "1.87",
+          "unit": "kJ/mol",
+          "sig_figs": 3,
+          "display_lv": "1,87 kJ/mol"
+        },
+        {
+          "id": "DV-MB2-TAIL1",
+          "label_lv": "Aktīvo molekulu daļa P(E ≥ 10,0) pie 300 K",
+          "formula_kind": "mb_tail_fraction",
+          "inputs": {
+            "T_K": "300",
+            "Ea_kj_mol": "10.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "0.0456",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "0,0456"
+        },
+        {
+          "id": "DV-MB2-TAIL2",
+          "label_lv": "Aktīvo molekulu daļa P(E ≥ 10,0) pie 450 K",
+          "formula_kind": "mb_tail_fraction",
+          "inputs": {
+            "T_K": "450",
+            "Ea_kj_mol": "10.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "0.148",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "0,148"
+        },
+        {
+          "id": "DV-MB2-RATIO",
+          "label_lv": "Astes daļu attiecība (450 K / 300 K)",
+          "formula_kind": "mb_tail_ratio",
+          "inputs": {
+            "T1_K": "300",
+            "T2_K": "450",
+            "Ea_kj_mol": "10.0",
+            "R_kj_mol_k": "0.008314"
+          },
+          "conventions_sources": [
+            "constants.values[id=R]"
+          ],
+          "value": "3.25",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "3,25"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 165,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          440
+        ],
+        "monochrome_safe": true
+      }
+    }
+  ]
+}

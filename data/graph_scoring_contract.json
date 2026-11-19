@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-graph-scoring",
+  "id": "graph-scoring-contract",
+  "title_lv": "N18 Grafiku vērtēšanas līgums: kritēriju formas, ievades ievērošana un mantota izslēgšanās no diapazona",
+  "owner": "N18",
+  "status": "frozen-contract-for-N20-N22-N23-N33",
+  "consumers": ["N18", "N20", "N22", "N23", "N33", "N40"],
+  "purpose_lv": "Viena grafiku interpretācijas un zīmēšanas vērtēšanas autoritāte. Līgums nosaka divas uzdevumu ģimenes (nolasīšana un zīmēšana), kritēriju formas, tolerances atrisināšanas noteikumus, iesnieguma derīguma klašu secību, ievades ierīces neatkarīgo iesnieguma struktūru un mantoto izslēgšanās no diapazona noteikumu, kas pērmantots no N15 un N14.",
+  "epistemic_note": "Programma 2025 neizvirza tolerances, svarīguma zīmju skaiti, zīmēšanas punktu skaitli vai nolasīšanas veidus. Visi šeit deklarētie līgumi ir PROPOSED mācību politika, izņemot tos, kas pārņemti vārda veidā no N12/N14/N15 sasaldētajiem līgumiem. Šis līgums nedod oficiālu eksāmena, atzīmes vai proktorēšanas statusu.",
+  "not_in_scope": [
+    "Nav estētikas vērtēšanas: tiek vērtēta tikai pozīcija un forma, nekad rakstura vai izliektība.",
+    "Nav vērtēšanas ārpus deklarētajiem vērtējamajiem apgabaliem; mantotā izslēgšanās no diapazona noteikums ir absolūts.",
+    "Nav slēptu tolerances pārdefinēšanu: katrs vērtēšanas lēmums citē tolerances lauku konvencijās ierakstu.",
+    "Nav semantiskā atzīmēšanas: atslēgvārdu atpazīšana nav vērtēšana."
+  ],
+  "inherited_rules": {
+    "no_extrapolation": {
+      "rule_id": "N15-NOEXTRAP-01",
+      "source": "data/calibration_contract.json#/no_extrapolation_rule + data/conventions.json#/spectrophotometry/calibration/no_extrapolation_rule_lv",
+      "verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+      "inherited_verbatim": true,
+      "scoring_meaning_lv": "Ģeometrija ārpus deklarētā diapazona netiek ne pieņemta, ne noraidīta: tā vienkārši netiek vērtēta. N18 to pārmanto bez pārinterpretācijas.",
+      "conventions_ref": "CIT-C7-NOEXTRAP"
+    },
+    "span_edge": {
+      "rule_id": "N14-SPAN-01",
+      "source": "data/kinetics_linearization_contract.json#/span_rule",
+      "edge_rule": "inclusive",
+      "edge_semantics_lv": "Punkts tieši uz span.x_min vai span.x_max tiek vērtēts ieskaitot; robeža ir iekļaujoša.",
+      "beyond_span": "not_assessed",
+      "beyond_semantics_lv": "Novilktās taisnes daļa aiz datu intervāla netiek pieņemta, ne noraidīta; tā vienkārši netiek vērtēta.",
+      "scoring_meaning_lv": "N18 novērtēto geometriju izmanto tikai punktus ar span.x_min <= x <= span.x_max. Punkti tieši uz robežu ir iekļauti."
+    },
+    "reading_coupling": {
+      "rule_id": "N12-BURETTE-GEOM-01",
+      "source": "data/reading_conventions_contract.json#/grading_coupling",
+      "tolerance_class": "burette_volume",
+      "tolerance_abs_ml": "0.05",
+      "scoring_meaning_lv": "Biretes tilpuma nolasījumu vērtē N18 ar toleranci burette_volume (±0,05 mL), nevis ar ad-hoc vērtību."
+    },
+    "n05_oracle_policy": {
+      "rule_id": "N18-N05-INHERIT-01",
+      "source": "tools/golden_oracle.py (payload_class=graph branch)",
+      "verbatim": "N18 pārmanto N05 zivisko protokola grafiku lasīšanas politiku: diapazons tiek atvasināts no datu punktiem, tā ārpusmā lasījums ir OUT_OF_DOMAIN_EXTRAPOLATION, tolerances klase atbilst payload.target_readout.tolerance_class un režīms ir absolūts.",
+      "scoring_meaning_lv": "N05 lasīšanas vektori jāvērtē identiski, nepareizi izņemot tos no pārbaudes."
+    }
+  },
+  "families": {
+    "reading": {
+      "id": "reading",
+      "label_lv": "Nolasīšana uz attēla",
+      "submission_shape": "atzīmēts punkts (x, y) vai skaitliska nolasījuma vērtība ar deklarētu x",
+      "out_of_scope_lv": "Nolasīšana netiek vērtēta pēc formas vai rakstura; vērtē tikai vērtība un tās atrašanās vieta attēlā."
+    },
+    "drawing": {
+      "id": "drawing",
+      "label_lv": "Zīmēšana uz deklarētajām asīm",
+      "submission_shape": "ķērmenis ar punktu sarakstu attēla koordinātēs",
+      "out_of_scope_lv": "Ķermeņa forma, izliektība un raksts netiek vērtēti."
+    }
+  },
+  "tolerance_resolution": {
+    "rule_id": "N18-TOLERANCE-01",
+    "rule_verbatim": "Tolerances klasi nosaka ieraksts vai šis līgums; tās vērtība tiek atrisināta no #sim-conventions vērtēšanas brīdī un nekad netiek kopēta uz ierakstu. Režīms absolute ņem konvencijās deklarēto absolūto vērtību; režīms significant_figures atvasina to no deklarētās lieluma pakāpes eksponenta un tolerances laukā deklarētā zīmīgo ciparu skaita.",
+    "modes": ["absolute", "significant_figures"],
+    "absolute_rule_lv": "tolerance = conventions.tolerances.quantity_classes[id].absolute.value",
+    "significant_figures_derivation": "tolerance = 0.5 * 10^(e - sf + 1), kur e ir vērtējamās lieluma pakāpes eksponents (Decimal.adjusted) un sf ir tolerances laukā deklarētais sig_figs.",
+    "n14_consistency": "N18 atvasināšana ir identiska N14 SimFigures.evaluateFitLine fieldTol atvasināšanai, tāpēc N18 un N14 nevar atšķirties par toleranci.",
+    "least_of_givens_note_lv": "Konvencijās norādītais least_of_givens ir atbildes noapaļošanas politika, nevis tolerances loģika; tolerances zīmīgo ciparu skaitu nosaka tolerances laukā deklarētais sig_figs.",
+    "absolute_drift_check": "Ja ieraksta tolerances lauks deklarē abs_value, tas ir jābūt vienāds ar konvencijās atrisināto absolūto vērtību; atšķirība ir E_GRAPH_TOLERANCE_DRIFT.",
+    "cited_entries_rule_id": "N18-CITED-ENTRY-01"
+  },
+  "cited_entry_rule": {
+    "rule_id": "N18-CITED-ENTRY-01",
+    "verbatim": "Katra vērtēšanas lēmuma pierakstā ir norādītas citētās ieraksti: tolerances klases ieraksts, tā režīms un atrisinātā vērtība, ieraksta tolerances lauka conventions_ref, šī līguma noteikuma identifikators un mantotā izslēgšanās no diapazona noteikuma identifikators. Bez citēšanas nav pieņemama neviena skaitliskā atzīme.",
+    "entry_kinds": ["tolerance_class", "record_tolerance_field", "contract_rule", "inherited_rule", "conventions_ref"],
+    "audit_lv": "Katrs vērtēšanas lēmums ir jāvar atskaņot no tā pieraksta vieniem apstākļiem: novērtētā geometrija, kritērija parametri un citētie ieraksti."
+  },
+  "validity_rules": {
+    "precedence_rule_verbatim": "Ja iesniegums atbilst vairākām klasēm, izvēlas mazāko kārtas numuru: 1 (neizlasāms iesniegums) pirms 2 (tukšs iesniegums) pirms 3 (ārpus ass diapazona) pirms 4 (nepareizs novirzes virziens) pirms 5 (dubultā atkāpšana) pirms 6 (monotonitātes pārkāpums); tikai tad, kad neviens derīguma pārkāpums nav atrasts, tiek lietots domēna klase OUT_OF_DOMAIN_EXTRAPOLATION, un tikai pēc tam tolerances klase OUT_OF_TOLERANCE. Pirmā atrastā klase aptur turpmāku pārbaudi; katrs gadījums iegūst tieši vienu klasi.",
+    "precedence_note_lv": "Derīguma klases pirms domēna klases, jo ģeometrija ārpus diapazona netiek vērtēta, bet nevis liegta, un tādēļ nevar klusējot norītīt neiespējamu iekšdiapazona ģeometriju.",
+    "classes": [
+      {
+        "rank": 1,
+        "id": "E_GRAPH_PAYLOAD_MALFORMED",
+        "label_lv": "Nelasāms iesnieguma ķermenis",
+        "checks": ["payload_schema", "payload_points", "payload_axes", "payload_span"]
+      },
+      {
+        "rank": 2,
+        "id": "E_GRAPH_EMPTY_SUBMISSION",
+        "label_lv": "Tukšs iesniegums",
+        "checks": ["point_count"]
+      },
+      {
+        "rank": 3,
+        "id": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "label_lv": "Atzīme ārpus attēla asu diapazona",
+        "checks": ["axis_range"]
+      },
+      {
+        "rank": 4,
+        "id": "E_GRAPH_WRONG_DIRECTION",
+        "label_lv": "Nepareizs novirzes virziens",
+        "checks": ["slope_sign"]
+      },
+      {
+        "rank": 5,
+        "id": "E_GRAPH_DOUBLE_BACK",
+        "label_lv": "Zīmējums atgriežas atpakaļ pa savu ceļu",
+        "checks": ["path_reversals"]
+      },
+      {
+        "rank": 6,
+        "id": "E_GRAPH_NON_MONOTONIC",
+        "label_lv": "Zīmējums nav monotonis deklarētajā virzienā",
+        "checks": ["monotonicity"]
+      }
+    ],
+    "domain_class": {
+      "id": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "label_lv": "Nolasījums ārpus deklarētā diapazona",
+      "rule_verbatim": "Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot."
+    },
+    "tolerance_class": {
+      "id": "OUT_OF_TOLERANCE",
+      "label_lv": "Nolasījums ārpus tolerances"
+    },
+    "not_assessed_class": {
+      "id": "NOT_ASSESSED",
+      "label_lv": "Iesniegums pilnībā ārpus deklarētā diapazona, tāpēc nav ko vērtēt",
+      "rule_verbatim": "Novilktās taisnes daļa aiz datu intervāla netiek pieņemta, ne noraidīta; tā vienkārši netiek vērtēta."
+    }
+  },
+  "criterion_shapes": {
+    "reading": {
+      "n05_payload_readout": {
+        "applies_to": "N05 protokola payload_class=graph instances ar mode=interpret",
+        "criterion_lv": "payload.target_readout.expected_value",
+        "assessed_axis": "y",
+        "position_axis": "x",
+        "tolerance_class_from": "payload.target_readout.tolerance_class",
+        "tolerance_mode": "absolute",
+        "tolerance_mode_reason_lv": "N05 ziviskais protokola izmanto absolūto tolerances klasi; N18 pērmanto to, lai N05 lasīšanas vektori tiktu vērtēti identiski.",
+        "span_from": "payload.points[].x (min/max, iekļaujoši)",
+        "conventions_ref": "CIT-C7-NOEXTRAP"
+      },
+      "calibration_line_signal_absolute": {
+        "applies_to": "ieraksti ar calibration_spec un fit_line",
+        "criterion_lv": "fit_line.slope * x + fit_line.intercept (vai grading_reference.fit_line)",
+        "assessed_axis": "y",
+        "position_axis": "x",
+        "tolerance_class": "absorbance",
+        "tolerance_mode": "absolute",
+        "tolerance_source": "tolerances.quantity_classes[id=absorbance]",
+        "span_from": "span",
+        "declared_by": "N18",
+        "epistemic": "PROPOSED training policy: 2025 programma nenosaka zīmēšanas vai lasīšanas tolerances."
+      },
+      "calibration_line_signal_sigfigs": {
+        "applies_to": "ieraksti ar calibration_spec un fit_line",
+        "criterion_lv": "fit_line.slope * x + fit_line.intercept (vai grading_reference.fit_line)",
+        "assessed_axis": "y",
+        "position_axis": "x",
+        "tolerance_class": "absorbance",
+        "tolerance_mode": "significant_figures",
+        "sig_figs": 2,
+        "tolerance_source": "tolerances.quantity_classes[id=absorbance]",
+        "span_from": "span",
+        "declared_by": "N18",
+        "epistemic": "PROPOSED training policy: tas pats nolasa uzdevums, kas vērtēts pēc zīmīgo ciparu režīma; režīms izmaina toleranci un tādēļ arī verdictu."
+      },
+      "calibration_line_concentration": {
+        "applies_to": "ieraksti ar calibration_spec, fit_line un answer_targets",
+        "criterion_lv": "answer_targets[0].value",
+        "assessed_axis": "x",
+        "position_axis": "y",
+        "position_from": "calibration_spec.unknown_signal",
+        "tolerance_class_from": "tolerance_coupling.tolerance_class",
+        "tolerance_mode": "absolute",
+        "span_from": "span",
+        "declared_by": "N18",
+        "epistemic": "PROPOSED training policy. Piezīme: ieraksta koncentrācijas tolerances klase concentration_mass (0,05 g/L) ir plašāka par kalibrēšanas diapazonu 0-0,016 mg/mL; N18 to nepaslēgpina un N20 nevar tolerances klasi pēc savu ieskumu retuņēt."
+      },
+      "titration_equivalence_volume": {
+        "applies_to": "ieraksti ar titration_spec.answer_required = equivalence_volume_ml",
+        "criterion_lv": "answer_targets[0].value",
+        "assessed_axis": "x",
+        "position_axis": "y",
+        "tolerance_class": "burette_volume",
+        "tolerance_mode": "absolute",
+        "tolerance_source": "tolerances.quantity_classes[id=burette_volume] (N12-BURETTE-GEOM-01)",
+        "span_from": "series[].curve_model.params.V_max_ml (0 .. V_max)",
+        "declared_by": "N12 + N18",
+        "epistemic": "PROPOSED training policy biretes nolasījuma tolerancē; ±0,05 mL ir balstīts uz N12 skolasolasījuma nenoteiktību."
+      }
+    },
+    "drawing": {
+      "kinetics_linearization_line": {
+        "applies_to": "ieraksti ar tolerance_fields.slope, tolerance_fields.intercept un tolerance_fields.point_acceptance",
+        "criterion_line_from": "fit_line vai grading_reference.fit_line",
+        "tolerance_fields_from": "tolerance_fields",
+        "checks": ["slope", "intercept", "point_acceptance"],
+        "sample_count": 11,
+        "sample_rule_lv": "11 vienmērīgi izdalīti punkti novērtētajā x diapazonā; tā pati izvēle kā N14 evaluateFitLine.",
+        "span_from": "span",
+        "slope_sign_from": "kritērija taisnes slīpuma zīme",
+        "monotonicity": null,
+        "monotonicity_note_lv": "Lineārizācijas kritērijs ir taisne, tāpēc monotontitāte netiek pārbaudīta atsevišķi; to nosaka jau punta pieņemšanas novirze."
+      },
+      "calibration_line_draw": {
+        "applies_to": "ieraksti ar calibration_spec un fit_line, kas nav tolerance_fields īpašnieki",
+        "criterion_line_from": "fit_line",
+        "checks": ["point_acceptance"],
+        "sample_rule_lv": "novirze tiek aprēķināta deklarēto standartu x koordinātās, kas ir diapazonā",
+        "tolerance_class": "absorbance",
+        "tolerance_mode": "absolute",
+        "tolerance_source": "tolerances.quantity_classes[id=absorbance]",
+        "span_from": "span",
+        "declared_by": "N18",
+        "epistemic": "PROPOSED training policy: kalibrēšanas līknes novirze tiek mērīta absorbances vienībās, nevis koncentrācijas vienībās."
+      },
+      "kinetics_decay_segment": {
+        "applies_to": "ieraksti ar series[].curve_model.function_class = kinetics_decay",
+        "criterion_model_from": "series[].curve_model",
+        "checks": ["point_acceptance"],
+        "sample_count": 11,
+        "tolerance_class_from": "tolerance_coupling.tolerance_class",
+        "tolerance_mode": "absolute",
+        "span_from": "series[].curve_model.params.t_min_s .. t_max_s",
+        "monotonicity": "decreasing",
+        "curvature": "concave_up",
+        "shape_source": "N14 kinetics_linearization_contract transform_contract (integrētās kārtības) un N14 modelu formulas",
+        "declared_by": "N18",
+        "epistemic": "PROPOSED training policy. Izliektība netiek vērtēta kā estētika: tā ietilpst punkta pieņemšanas novirzē pret deklarēto modeli."
+      }
+    }
+  },
+  "capture_contract": {
+    "payload_schema": {
+      "schema_id": "sim-graph-draw-v1",
+      "required": ["schema_id", "kind", "points", "axes", "span", "grid"],
+      "properties": {
+        "schema_id": {"const": "sim-graph-draw-v1"},
+        "kind": {"enum": ["line", "segment"]},
+        "points": {
+          "type": "array",
+          "minItems": 0,
+          "items": {"required": ["x", "y"], "additional": false}
+        },
+        "axes": {
+          "type": "object",
+          "required": ["x", "y"],
+          "x": {"required": ["min", "max"]},
+          "y": {"required": ["min", "max"]}
+        },
+        "span": {
+          "type": "object",
+          "required": ["x_min", "x_max", "edge_rule"],
+          "edge_rule": {"const": "inclusive"}
+        },
+        "grid": {
+          "type": "object",
+          "required": ["x_min", "x_max", "step"]
+        },
+        "path_reversals": {"type": "integer", "minimum": 0}
+      },
+      "additional": false
+    },
+    "device_agnostic_rule_id": "N18-CAPTURE-AGNOSTIC-01",
+    "device_agnostic_rule_verbatim": "Iesnieguma ķermeņa struktūrā nav ierīces lauka. Norādes un tastatūras ceļš rada vienu un to pašu ķermeņa struktūru; ierīces izcelsme, ja tā ir vajadzīga, tiek glabāta ārpus vērtēšanā izmantotajiem datiem. Vērtēšanas rezultāts nevar atšķirties atkarībā no ievades ierīces.",
+    "quantization": {
+      "decimals": 12,
+      "rule_verbatim": "Ķermeņa koordinātas ir normalizētas uz 12 zīmēm aiz komata (deklarētais ievades kvants), tāpēc peldošā aritmētika nevar radīt atšķirību starp ierīcēm.",
+      "digest_rule_verbatim": "Ķermeņa digestu aprēķina pēc deklarētā kanoniskā attēla: visi skaitļi tiek attēloti ar tieši 12 zīmēm aiz komata, atslēgas ir sakārtotas, un tekstā nav nevēlēmā atstarpe."
+    },
+    "grid_rule_id": "N18-CAPTURE-GRID-01",
+    "grid_rule_verbatim": "Iesniegums tiek projicēts uz deklarēto māriņu: katram māriņa punktam, ko zīmējums aptver, y vērtība tiek iegūta ar lineāru interpolāciju pa zīmējuma ceļu. Māriņa punkti, ko zīmējums neaptver, ķermenī neiekļauj.",
+    "path_merge_rule_id": "N18-CAPTURE-PATH-01",
+    "path_merge_rule_verbatim": "Ceļā, kas ierakstīts no ierīces, kustība, kas nemaina x koordināti, atjaunina esošo punktu, nevis pievieno jaunu. Tastatūras soļošana pa ass ir tāpēc ierakstīta kā daudzpunktu līnija caur noliktajiem punktiem, un nevis kā kāpņu formas ceļš; projekcija lasa ceļu kā x funkciju, tāpēc vertikāls posms pats par sevi nes nekādu y vērtību. Norādes vilkšanas ceļš jau ir šāds.",
+    "keyboard_trace_rule_id": "N18-CAPTURE-TRACE-01",
+    "keyboard_trace_rule_verbatim": "Tastatūras ceļš var atkārtot norādes ceļu tikai ar deklarēto precizitāti: smalkais y solis ir ne šārsāk par pusi no tolerances joslas, tāpēc katrs noliktais punkts ir tolerances joslas iekšpusē, un līnija, kas izveidota no šiem punktiem, novirzas ne vairāk par toleranci. Kad smalkā soļa attiecība fine_y/fine_x dalās ar kritērija slīpumu bez atlikuma, abi ierīces dod baņtī identisku ķermeni; pārējos gadījumos ķermeņi atšķiras, bet vērtēšanas lēmums ne, jo novirze ir tolerances joslas iekšpusē.",
+    "pointer_sampling_rule_id": "N18-CAPTURE-POINTER-01",
+    "pointer_sampling_rule_verbatim": "Norādes ceļš tiek paraugiņots tā, lai attālums starp paraugiņiem būtu vismaz deklarētā māriņa soļa desmitdaļa; paraugiņš ir tikai ievades līdzeklis, jo ķermenis tiek projicēts uz māriņu un paraugušanai tāpēc nav ietekmes uz vērtēšanu.",
+    "keyboard_increments": {
+      "rule_id": "N18-CAPTURE-KEY-01",
+      "rule_verbatim": "Tastatūras smalkā solis nedrīkst būt rupjāks par pusi no vērtējamās lieluma tolerances joslas, lai tastatūras ceļš netiktu strukturāli sodīts. Smalkā x soļa lielums ir min(māriņa soļa desmitdaļa, x tolerances joslas_half), smalkā y soļa lielums ir min(y ass soļa desmitdaļa, y tolerances joslas_half).",
+      "coarse_x_rule_lv": "rupjais x solis ir māriņa soļa lielums, lai tastatūra var precīzi aizsniegties visiem māriņa punktiem",
+      "coarse_y_rule_lv": "rupjais y solis ir y ass soļa lielums, lai tastatūra var precīzi aizsniegties visām y ass atzīmēm",
+      "fine_x_rule_lv": "smalkais x solis ir min(māriņa soļa desmitdaļa, x tolerances joslas_half)",
+      "fine_y_rule_lv": "smalkais y solis ir min(y ass soļa desmitdaļa, y tolerances joslas_half)",
+      "diagonal_rule_lv": "diagonālais solis (Alt + bultiņa) pārnes aktīvo punktu par (fine_x, fine_y) vienā reizē; tas ļauj precīzi atrast taisnes, kuru slīpums ir vesels skaitītājs reizinājums fine_y/fine_x, tāpēc atšķirība starp ierīcēm nav ne tikai kvantificēta, bet arī neeksistē",
+      "band_rule_lv": "tolerances joslas_half ir puse no vērtējamās lieluma deklarētās tolerances joslas konkrētajā ass; ja konkrētā ass netiek vērtējama, josla ir null un soļa lielumu nosaka tikai māriņa vai y ass soļa desmitdaļa",
+      "keyboard_increment_examples": [
+        {"capture_context": "CAP-T5-LIN-PRACTICE", "coarse_x": "2 s", "coarse_x_value": 2, "fine_x": "0.2 s", "fine_x_value": 0.2, "coarse_y": "0.5", "coarse_y_value": 0.5, "fine_y": "min(0.05, 0.01) = 0.01", "fine_y_value": 0.01},
+        {"capture_context": "CAP-T5-LIN-FIRST", "coarse_x": "3 s", "coarse_x_value": 3, "fine_x": "0.3 s", "fine_x_value": 0.3, "coarse_y": "0.4", "coarse_y_value": 0.4, "fine_y": "min(0.04, 0.01) = 0.01", "fine_y_value": 0.01},
+        {"capture_context": "CAP-T67-CAL-PRACTICE", "coarse_x": "0.002 mg/mL", "coarse_x_value": 0.002, "fine_x": "0.0002 mg/mL", "fine_x_value": 0.0002, "coarse_y": "0.1 A", "coarse_y_value": 0.1, "fine_y": "min(0.01, 0.0015) = 0.0015", "fine_y_value": 0.0015},
+        {"capture_context": "CAP-T67-CAL-MASTER", "coarse_x": "0.002 mg/mL", "coarse_x_value": 0.002, "fine_x": "0.0002 mg/mL", "fine_x_value": 0.0002, "coarse_y": "0.1 A", "coarse_y_value": 0.1, "fine_y": "min(0.01, 0.0015) = 0.0015", "fine_y_value": 0.0015},
+        {"capture_context": "CAP-T5-DECAY-FIRST", "coarse_x": "3 s", "coarse_x_value": 3, "fine_x": "0.3 s", "fine_x_value": 0.3, "coarse_y": "0.2 mol/L", "coarse_y_value": 0.2, "fine_y": "min(0.02, 0.0025) = 0.0025", "fine_y_value": 0.0025},
+        {"capture_context": "CAP-T67-TITR-PRACTICE", "coarse_x": "5 mL", "coarse_x_value": 5, "fine_x": "min(0.5, 0.025) = 0.025", "fine_x_value": 0.025, "coarse_y": "2 pH", "coarse_y_value": 2, "fine_y": "0.2", "fine_y_value": 0.2}
+      ]
+    },
+    "capture_contexts": {
+      "CAP-T5-LIN-PRACTICE": {
+        "figure_id": "FIG-T5-LIN-PRACTICE",
+        "kind": "line",
+        "criterion_shape": "kinetics_linearization_line",
+        "grid": {"x_min": "0", "x_max": "20", "step": "2"},
+        "axes": {"x": {"min": "0", "max": "20"}, "y": {"min": "-1.7", "max": "0.1"}},
+        "span": {"x_min": "0", "x_max": "20", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 0.5,
+          "x_tolerance_band": null,
+          "y_tolerance_band": 0.02,
+          "band_source_lv": "tolerance_fields.point_acceptance.abs_value = 0,02 (tolerance_class log_concentration_ratio, N03 conventions); x ass netiek vērtējama, tāpēc x josla ir null"
+        }
+      },
+      "CAP-T5-LIN-FIRST": {
+        "figure_id": "FIG-T5-LIN-FIRST",
+        "kind": "line",
+        "criterion_shape": "kinetics_linearization_line",
+        "grid": {"x_min": "0", "x_max": "30", "step": "3"},
+        "axes": {"x": {"min": "0", "max": "30"}, "y": {"min": "-1.6", "max": "0.1"}},
+        "span": {"x_min": "0", "x_max": "30", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 0.4,
+          "x_tolerance_band": null,
+          "y_tolerance_band": 0.02,
+          "band_source_lv": "tolerance_fields.point_acceptance.abs_value = 0,02 (tolerance_class log_concentration_ratio, N03 conventions); x ass netiek vērtējama, tāpēc x josla ir null"
+        }
+      },
+      "CAP-T67-CAL-PRACTICE": {
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "kind": "line",
+        "criterion_shape": "calibration_line_draw",
+        "grid": {"x_min": "0", "x_max": "0.018", "step": "0.002"},
+        "axes": {"x": {"min": "0", "max": "0.018"}, "y": {"min": "0", "max": "0.45"}},
+        "span": {"x_min": "0", "x_max": "0.016", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 0.1,
+          "x_tolerance_band": null,
+          "y_tolerance_band": 0.003,
+          "band_source_lv": "tolerances.quantity_classes[absorbance].absolute = 0,003 A (N03 conventions); x ass netiek vērtējama, tāpēc x josla ir null"
+        }
+      },
+      "CAP-T67-CAL-MASTER": {
+        "figure_id": "FIG-T67-CAL-MASTER",
+        "kind": "line",
+        "criterion_shape": "calibration_line_draw",
+        "grid": {"x_min": "0", "x_max": "0.018", "step": "0.002"},
+        "axes": {"x": {"min": "0", "max": "0.018"}, "y": {"min": "0", "max": "0.55"}},
+        "span": {"x_min": "0", "x_max": "0.016", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 0.1,
+          "x_tolerance_band": null,
+          "y_tolerance_band": 0.003,
+          "band_source_lv": "tolerances.quantity_classes[absorbance].absolute = 0,003 A (N03 conventions); x ass netiek vērtējama, tāpēc x josla ir null"
+        }
+      },
+      "CAP-T5-DECAY-FIRST": {
+        "figure_id": "FIG-T5-DECAY-FIRST",
+        "kind": "segment",
+        "criterion_shape": "kinetics_decay_segment",
+        "grid": {"x_min": "0", "x_max": "30", "step": "3"},
+        "axes": {"x": {"min": "0", "max": "30"}, "y": {"min": "0", "max": "1.1"}},
+        "span": {"x_min": "0", "x_max": "30", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 0.2,
+          "x_tolerance_band": null,
+          "y_tolerance_band": 0.005,
+          "band_source_lv": "tolerances.quantity_classes[concentration_molar].absolute = 0,005 mol/L (N03 conventions); x ass netiek vērtējama, tāpēc x josla ir null"
+        }
+      },
+      "CAP-T67-TITR-PRACTICE": {
+        "figure_id": "FIG-T67-TITR-PRACTICE",
+        "kind": "line",
+        "criterion_shape": "titration_equivalence_volume",
+        "grid": {"x_min": "0", "x_max": "50", "step": "5"},
+        "axes": {"x": {"min": "0", "max": "50"}, "y": {"min": "0", "max": "14"}},
+        "span": {"x_min": "0", "x_max": "50", "edge_rule": "inclusive"},
+        "keyboard": {
+          "y_axis_step": 2,
+          "x_tolerance_band": 0.05,
+          "y_tolerance_band": null,
+          "band_source_lv": "x ass tiek vērtējama: tolerances.quantity_classes[burette_volume].absolute = 0,05 mL (N12-BURETTE-GEOM-01); y ass netiek vērtējama, tāpēc y josla ir null"
+        }
+      }
+    }
+  },
+  "verdict_record": {
+    "n05_oracle_fields": [
+      "verdict_class", "error_class", "awarded_criteria", "machine_checked_points",
+      "self_assessed_points", "human_reviewed_points", "pending_points", "max_points",
+      "oracle_version", "oracle_digest", "conventions_digest"
+    ],
+    "n18_extension_fields": [
+      "family", "criterion_id", "criterion_shape", "cited_entries", "criterion",
+      "assessed_geometry", "validity", "capture", "replay"
+    ],
+    "verdict_classes": ["correct", "partial", "incorrect", "pending_self_assessment", "auto_passed_pending_review", "not_assessed"],
+    "verdict_class_note_lv": "not_assessed ir N18 papildinājums: iesniegums, kura novērtējamā daļa nav, ne tiek atzīts par pareizu, ne par nepareizu, un tam netiek piešķirti punkti.",
+    "error_class_vocabulary": [
+      "NONE", "OUT_OF_TOLERANCE", "OUT_OF_DOMAIN_EXTRAPOLATION", "UNREADABLE_INPUT",
+      "NOT_ASSESSED", "E_GRAPH_PAYLOAD_MALFORMED", "E_GRAPH_EMPTY_SUBMISSION",
+      "E_GRAPH_OUT_OF_AXIS_RANGE", "E_GRAPH_WRONG_DIRECTION", "E_GRAPH_DOUBLE_BACK",
+      "E_GRAPH_NON_MONOTONIC", "E_GRAPH_TOLERANCE_DRIFT"
+    ],
+    "replay_rule_verbatim": "Verdikta pierakstā ir replay bloks, kas satur novērtēto geometriju, kritērija parametrus un citētos ierakstus. Verdikts jāvar atjaunot no šī bloka vieniem apstākļiem; ja atjaunotais verdikts atšķiras, pieraksts nav derīgs.",
+    "points_rule_verbatim": "Automātiski pārbaudītajiem punktiem piešķir vai neatņem pilnu punktu skaitu; pašvērtēšanas un cilvēka pārskata punkti netiek pārdalīti un paliek pending."
+  },
+  "graph_vectors": {
+    "stratum": "S3-N18",
+    "owner": "N18",
+    "protocol_ref": "data/golden_vector_protocol.json#/stratum_registry/S3-N18",
+    "note_lv": "S3-N18 kārtu nosaka N05 augšanas protokols: grafiku konstruēšanas kritēriju formas (Q11) un grafiku interpretācija (Q12) ar norādes un tastatūras paritāti. S1-N05 vektori netiek grozīti; tie tiek atkārtoti vērtēti identiski.",
+    "reading_vectors": [
+      {
+        "id": "GV-S3-T7-Q12-01",
+        "family": "reading",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_signal_absolute",
+        "submission": {"x": "0,008", "y": "0,201"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 2.0, "max_points": 2.0},
+        "note_lv": "Absorbances nolasīšana kalibrēšanas līknē pie γ = 0,008 mg/mL; kritērijs 25,02 · 0,008 = 0,20016 A, novirze 0,00084 A ≤ 0,003 A."
+      },
+      {
+        "id": "GV-S3-T7-Q12-02",
+        "family": "reading",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_signal_absolute",
+        "submission": {"x": "0,008", "y": "0,204"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_TOLERANCE", "awarded_points": 0.0, "max_points": 2.0},
+        "note_lv": "Tas pats nolasa absolūtajā režīmā: novirze 0,00384 A > 0,003 A, tāpēc ārpus tolerances."
+      },
+      {
+        "id": "GV-S3-T7-Q12-03",
+        "family": "reading",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_signal_sigfigs",
+        "submission": {"x": "0,008", "y": "0,204"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 2.0, "max_points": 2.0},
+        "note_lv": "Tas pats iesniegums zīmīgo ciparu režīmā: tolerances 0,5 · 10^(-1-2+1) = 0,005 A, novirze 0,00384 A ≤ 0,005 A. Režīms maina verdiktu, tāpēc tolerances nav dekoratīva."
+      },
+      {
+        "id": "GV-S3-T7-Q12-04",
+        "family": "reading",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_concentration",
+        "submission": {"x": "0,0146", "y": "0,365"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 2.0, "max_points": 2.0},
+        "note_lv": "Koncentrācijas nolasīšana pie deklarētā signāla 0,365 A: kritērijs 0,01459 mg/mL, tolerances klase concentration_mass, vienība pārrēķināta mg/mL → g/L."
+      },
+      {
+        "id": "GV-S3-T6-Q12-01",
+        "family": "reading",
+        "figure_id": "FIG-T67-TITR-PRACTICE",
+        "criterion_shape": "titration_equivalence_volume",
+        "submission": {"x": "20,44", "y": "7,0"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 2.0, "max_points": 2.0},
+        "note_lv": "Ekvivalences tilpuma nolasīšana no titrēšanas līknes: novirze 0,01 mL ≤ 0,05 mL (burette_volume)."
+      },
+      {
+        "id": "GV-S3-T6-Q12-02",
+        "family": "reading",
+        "figure_id": "FIG-T67-TITR-PRACTICE",
+        "criterion_shape": "titration_equivalence_volume",
+        "submission": {"x": "20,60", "y": "7,0"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_TOLERANCE", "awarded_points": 0.0, "max_points": 2.0},
+        "note_lv": "Nolasījums ir ass diapazonā un deklarētā diapazonā, bet 0,15 mL > 0,05 mL, tāpēc ārpus tolerances."
+      },
+      {
+        "id": "GV-S3-T7-Q12-05",
+        "family": "reading",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_concentration",
+        "submission": {"x": "0,017", "y": "0,365"},
+        "rubric": [{"criterion_id": "C1_READ", "grading": "auto", "points": 2.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION", "awarded_points": 0.0, "max_points": 2.0},
+        "note_lv": "Nolasījums pie γ = 0,017 mg/mL ir ārpus deklarētā diapazona [0; 0,016], tāpēc neatļauts, nevis klusējot pieņemts (N15-NOEXTRAP-01)."
+      }
+    ],
+    "drawing_vectors": [
+      {
+        "id": "GV-S3-T5-Q11-01",
+        "family": "drawing",
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "target_geometry": {"kind": "line", "slope": "-0.08", "intercept": "0", "x_min": "0", "x_max": "20"},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 3.0, "max_points": 3.0},
+        "note_lv": "Novilkta taisne precīzi atbilst kritērijam: slīpums -0,08 s⁻¹ (tolerance 0,0005, significant_figures), krustpunkts 0 (tolerance 0,02), punktu novirze 0."
+      },
+      {
+        "id": "GV-S3-T5-Q11-02",
+        "family": "drawing",
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "target_geometry": {"kind": "line", "slope": "-0.08", "intercept": "0.05", "x_min": "0", "x_max": "20"},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_TOLERANCE", "awarded_points": 0.0, "max_points": 3.0},
+        "note_lv": "Tuvu-miss: slīpums tolerances iekšpusē, krustpunkts 0,05 > 0,02 ārpus tolerances; pierakstā redzams, kura pārbaude krita."
+      },
+      {
+        "id": "GV-S3-T5-Q11-03",
+        "family": "drawing",
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "target_geometry": {"kind": "line", "slope": "-0.085", "intercept": "0.01", "x_min": "0", "x_max": "20"},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_TOLERANCE", "awarded_points": 0.0, "max_points": 3.0},
+        "note_lv": "Tuvu-miss: slīpuma novirze 0,005 > 0,0005, krustpunkts 0,01 tolerances iekšpusē (0,02). Zīmējums paliek ass diapazonā, tāpēc pārkāpums ir tolerances, nevis derīguma klase."
+      },
+      {
+        "id": "GV-S3-T7-Q11-01",
+        "family": "drawing",
+        "capture_context": "CAP-T67-CAL-PRACTICE",
+        "target_geometry": {"kind": "line", "slope": "25.02", "intercept": "0", "x_min": "0", "x_max": "0.016"},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 3.0, "max_points": 3.0},
+        "note_lv": "Kalibrēšanas līkne: novirze pie deklarētajiem standurtiem ≤ 0,003 A."
+      },
+      {
+        "id": "GV-S3-T7-Q11-02",
+        "family": "drawing",
+        "capture_context": "CAP-T67-CAL-PRACTICE",
+        "target_geometry": {"kind": "polyline", "points": [["0", "0"], ["0.016", "0.40032"], ["0.018", "0.05"]]},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 3.0, "max_points": 3.0},
+        "note_lv": "Taisna daļa diapazonā, savukārt aiz tā stipri nepareiza: ģeometrija ārpus [0; 0,016] netiek vērtēta (N14-SPAN-01). Pierakstā redzama izslēgtā novirze."
+      },
+      {
+        "id": "GV-S3-T7-Q11-03",
+        "family": "drawing",
+        "capture_context": "CAP-T67-CAL-PRACTICE",
+        "target_geometry": {"kind": "polyline", "points": [["0", "0"], ["0.014", "0.35112"], ["0.016", "0.42"]]},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "incorrect", "error_class": "OUT_OF_TOLERANCE", "awarded_points": 0.0, "max_points": 3.0},
+        "note_lv": "Punkts tieši uz span.x_max = 0,016 ir iekļauts, tāpēc tā novirze tiek vērtēta: pierakstā visas pārējās novirzes ≤ 0,00072 A un tikai robežas punkta novirze 0,01968 A ir liela."
+      },
+      {
+        "id": "GV-S3-T5-Q11-04",
+        "family": "drawing",
+        "capture_context": "CAP-T5-DECAY-FIRST",
+        "target_geometry": {"kind": "model", "model": "kinetics_decay", "params": {"order": 1, "k": 0.05, "C0_mol_l": 1.0}, "x_min": "0", "x_max": "30"},
+        "rubric": [{"criterion_id": "C1_DRAW", "grading": "auto", "points": 3.0, "engine_binding": "N18-graph", "depends_on": [], "carry_forward": false}],
+        "expected": {"verdict_class": "correct", "error_class": "NONE", "awarded_points": 3.0, "max_points": 3.0},
+        "note_lv": "Zīmēts līknes segments atbilst deklarētajam pirmās pakāpes sabrukšanas modelim; novirze ≤ 0,005 mol/L."
+      }
+    ],
+    "validity_corpus": [
+      {
+        "id": "VAL-N18-01",
+        "family": "drawing",
+        "case": "wrong_direction_slope",
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "target_geometry": {"kind": "line", "slope": "0.004", "intercept": "0", "x_min": "0", "x_max": "20"},
+        "expected_class": "E_GRAPH_WRONG_DIRECTION",
+        "note_lv": "Novirze uz augšu, kur kritērijs prasa slīpumu uz leju. Zīmējums paliek ass diapazonā (y ≤ 0,1), tāpēc klase ir nepareizais virziens, nevis ārpus ass diapazona."
+      },
+      {
+        "id": "VAL-N18-02",
+        "family": "drawing",
+        "case": "doubling_back_segment",
+        "capture_context": "CAP-T5-DECAY-FIRST",
+        "target_geometry": {"kind": "polyline", "points": [["0", "1"], ["6", "0.74"], ["12", "0.55"], ["18", "0.6"], ["24", "0.9"], ["30", "1.05"]]},
+        "expected_class": "E_GRAPH_NON_MONOTONIC",
+        "note_lv": "Segments kāp uz augšu, kur modelis prasa monotonu samazināšanos."
+      },
+      {
+        "id": "VAL-N18-03",
+        "family": "reading",
+        "case": "reading_outside_axes",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_concentration",
+        "submission": {"x": "0,020", "y": "0,365"},
+        "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "note_lv": "Atzīme ārpus ass diapazona (x ass max 0,018 mg/mL)."
+      },
+      {
+        "id": "VAL-N18-04",
+        "family": "drawing",
+        "case": "empty_submission",
+        "capture_context": "CAP-T5-LIN-PRACTICE",
+        "target_geometry": {"kind": "empty"},
+        "expected_class": "E_GRAPH_EMPTY_SUBMISSION",
+        "note_lv": "Nav neviena punkta."
+      },
+      {
+        "id": "VAL-N18-05",
+        "family": "reading",
+        "case": "unphysical_and_out_of_domain",
+        "figure_id": "FIG-T67-CAL-PRACTICE",
+        "criterion_shape": "calibration_line_concentration",
+        "submission": {"x": "0,017", "y": "0,9"},
+        "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+        "also_detected": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "note_lv": "Stūrra corners: iesniegums vienlaikus neiespējams (y = 0,9 A ārpus y ass diapazona 0-0,45) un ārpus domēna (x = 0,017 ārpus [0; 0,016]). Derīguma klase E_GRAPH_OUT_OF_AXIS_RANGE (kārta 3) noderīguma klases pirms domēna klases."
+      }
+    ],
+    "payload_validation_corpus": [
+      {"id": "PAY-N18-01", "case": "missing_schema_id", "payload": {"kind": "line", "points": [{"x": 0, "y": 0}], "axes": {"x": {"min": 0, "max": 1}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 0, "x_max": 1, "edge_rule": "inclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"},
+      {"id": "PAY-N18-02", "case": "points_not_an_array", "payload": {"schema_id": "sim-graph-draw-v1", "kind": "line", "points": "nope", "axes": {"x": {"min": 0, "max": 1}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 0, "x_max": 1, "edge_rule": "inclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"},
+      {"id": "PAY-N18-03", "case": "point_missing_coordinate", "payload": {"schema_id": "sim-graph-draw-v1", "kind": "line", "points": [{"x": 0}], "axes": {"x": {"min": 0, "max": 1}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 0, "x_max": 1, "edge_rule": "inclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"},
+      {"id": "PAY-N18-04", "case": "axes_inverted", "payload": {"schema_id": "sim-graph-draw-v1", "kind": "line", "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "axes": {"x": {"min": 1, "max": 0}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 0, "x_max": 1, "edge_rule": "inclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"},
+      {"id": "PAY-N18-05", "case": "span_inverted", "payload": {"schema_id": "sim-graph-draw-v1", "kind": "line", "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "axes": {"x": {"min": 0, "max": 1}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 1, "x_max": 0, "edge_rule": "inclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"},
+      {"id": "PAY-N18-06", "case": "unknown_edge_rule", "payload": {"schema_id": "sim-graph-draw-v1", "kind": "line", "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "axes": {"x": {"min": 0, "max": 1}, "y": {"min": 0, "max": 1}}, "span": {"x_min": 0, "x_max": 1, "edge_rule": "exclusive"}, "grid": {"x_min": 0, "x_max": 1, "step": 0.1}}, "expected_class": "E_GRAPH_PAYLOAD_MALFORMED"}
+    ],
+    "scratch": [
+      {
+        "id": "SCR-N18-01",
+        "case": "tolerance_drift_by_vector_id",
+        "description_lv": "Skrāpja konvencijās kopija ar izmainītu log_concentration_ratio absolūto vērtību padara zīmēšanas vektoru GV-S3-T5-Q11-01 neizturīt pēc vektora id: tolerances lauka deklarētā abs_value vairs nesakrīt ar konvencijās atrisināto vērtību (E_GRAPH_TOLERANCE_DRIFT).",
+        "mutate": {"tolerance_class": "log_concentration_ratio", "absolute_value": "999"},
+        "fails_vector_id": "GV-S3-T5-Q11-01",
+        "expected_class": "E_GRAPH_TOLERANCE_DRIFT"
+      },
+      {
+        "id": "SCR-N18-02",
+        "case": "reading_tolerance_by_vector_id",
+        "description_lv": "Skrāpja konvencijās kopija ar samazinātu absorbances absolūto vērtību padara N05 lasīšanas vektoru GV-S1-T7-Q12-01 neizturīt pēc vektora id, jo tā tolerances vairs netiek piemērota.",
+        "mutate": {"tolerance_class": "absorbance", "absolute_value": "0.001"},
+        "fails_vector_id": "GV-S1-T7-Q12-01",
+        "expected_class": "OUT_OF_TOLERANCE"
+      }
+    ],
+    "keyboard_scratch": [
+      {
+        "id": "SCR-N18-KEY-01",
+        "case": "keyboard_band_drift_by_context_id",
+        "description_lv": "Skrāpja līguma kopija ar samazinātu tolerances joslu padara CAP-T67-CAL-PRACTICE smalko y soli atšķirties no deklarētā; vārtu pārbaude to pamodina pēc ievades konteksta id, jo smalkais solis tiek atrisināts no tolerances joslas un tāpēc josla nav dekoratīva.",
+        "mutate": {"capture_context": "CAP-T67-CAL-PRACTICE", "y_tolerance_band": 0.0002},
+        "fails_capture_context": "CAP-T67-CAL-PRACTICE",
+        "expected_error_contains": "keyboard increments disagree with the declared example"
+      }
+    ]
+  },
+  "inheritance_check": {
+    "rule_id": "N18-INHERIT-01",
+    "rule_text_path": "data/calibration_contract.json#/no_extrapolation_rule/verbatim",
+    "edge_text_path": "data/kinetics_linearization_contract.json#/span_rule/edge_semantics_lv",
+    "behaviour_path": "SimGraphScoring.scoreReading / SimGraphScoring.scoreDrawing",
+    "assertion_verbatim": "Mantotā izslēgšanās no diapazona ir pārbaudīta ar trim robežas nostādēm: punkts tieši uz span.x_max tiek vērtēts (GV-S3-T7-Q11-03), ģeometrija stingri aiz diapazona netiek vērtēta (GV-S3-T7-Q11-02), un nolasījums ārpus diapazona tiek atspoguļots kā neatļauts (GV-S3-T7-Q12-05).",
+    "fixtures": ["GV-S3-T7-Q11-02", "GV-S3-T7-Q11-03", "GV-S3-T7-Q12-05"]
+  },
+  "smoke": {
+    "id": "SMK-N18-GRAPH-SCORING",
+    "owner": "N18",
+    "description_lv": "Absorbances nolasīšana kalibrēšanas līknē un zīmēšanas novirze pie kritērija, ar fiksētu digestu.",
+    "case": {
+      "reading": {"figure_id": "FIG-T67-CAL-PRACTICE", "criterion_shape": "calibration_line_signal_absolute", "submission": {"x": "0,008", "y": "0,201"}},
+      "drawing": {"capture_context": "CAP-T67-CAL-PRACTICE", "target_geometry": {"kind": "line", "slope": "25.02", "intercept": "0", "x_min": "0", "x_max": "0.016"}}
+    },
+    "expected": {"reading_verdict": "correct", "drawing_verdict": "correct"}
+  },
+  "handoff": {
+    "n20": "Kritēriju formas, tolerances atrisināšana un grafiku prakses vienumus: N20 var pārvariēt skaitļus tikai N14 deklarēto robežu ietvaros un nevar pārdefinēt tolerances klasi vai režīmu.",
+    "n22": "Iesnieguma ķermeņa shēma sim-graph-draw-v1 un ievades semantika: zīmēšanas komponente un tās atzīšanas lauki.",
+    "n23": "Verdikta pieraksta shēma, citēto ierakstu noteikums un derīguma klašu secība.",
+    "n33": "Tastatūras soli, māriņš un ierīces neatkarīgais ķermenis; tastatūras ceļš tiek vērtēts ar tādiem pašiem noteikumiem kā norādes ceļš.",
+    "n40": "Konfliktu reģistrs: tolerances klases un no-extrapolation noteikuma atsauces."
+  }
+}

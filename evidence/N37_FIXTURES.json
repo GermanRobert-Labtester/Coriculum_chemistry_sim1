@@ -1,0 +1,54 @@
+{
+  "fixtures": {
+    "FIX-VM-DANGLING-CELL": {
+      "detected": true,
+      "errors": [
+        "E_DANGLING_ANCHOR: fresh__neeksistejoss_skats__1280__light__screen -> anchor=neeksistejoss_skats",
+        "E_DANGLING_VIEW: fresh__neeksistejoss_skats__1280__light__screen -> view=nonexistent_view anchor=neeksistejoss_skats"
+      ],
+      "status": "PASS"
+    },
+    "FIX-VM-NEVER-READY": {
+      "detected": true,
+      "error": "Readiness/paint timeout for never_ready_blank.png: frame unpainted (colors=1 < 16, ink=0% < 2%)",
+      "status": "PASS"
+    },
+    "FIX-VM-PLANTED-NOISE": {
+      "cell": "fresh__sakums__1280__light__screen",
+      "classified_as_noise": true,
+      "comparison": {
+        "diff_pct": 0.0,
+        "diff_pixels": 0,
+        "human_review": false,
+        "mae": 0.0,
+        "region_count": 0,
+        "regions": [],
+        "total_pixels": 1024000,
+        "verdict": "NOISE"
+      },
+      "status": "PASS"
+    },
+    "FIX-VM-PLANTED-OVERLAP": {
+      "cell": "fresh__sakums__1280__light__screen",
+      "comparison": {
+        "diff_pct": 42.9192,
+        "diff_pixels": 439493,
+        "human_review": true,
+        "mae": 21.1678,
+        "region_count": 1,
+        "regions": [
+          [
+            96,
+            0,
+            1184,
+            800
+          ]
+        ],
+        "total_pixels": 1024000,
+        "verdict": "REGRESSION"
+      },
+      "detected": true,
+      "status": "PASS"
+    }
+  }
+}

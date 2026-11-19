@@ -1,0 +1,2639 @@
+{
+  "schema_version": 1,
+  "owner": "N23",
+  "record_kind": "n23-score-matrix",
+  "title_lv": "N23 vērtēšanas punktu matrica: četras skriptētas 21 slota formas",
+  "epistemic_note_lv": "PROPOSED mācību politika. Instances nāk no N20 bankas; atbildes ir skolēna rakstībā (decimālkoma, mērvienības nav atkārtotas, jo tās nāk no instances). Punktu summas ir aprēķinātas ar roku no deklarētās rubrikas un sasaldētā pilna-vai-nulles noteikuma; tās nav oficiālas eksāmena atzīmes.",
+  "computation_note": "Per slot: auto = sum of awarded criterion points, pending = sum of pending-external criterion points, denied = auto_max − auto (graded slots only), zeroed = auto_max + pending_max (unattempted/incomplete/invalid slots, whose points are neither awarded, denied nor pending). Every form satisfies auto + pending_external + denied + zeroed = 100 and auto_max + pending_max = 100.",
+  "slot_point_source": "data/exam_policy.json#/slots (authoritative; N23-C01)",
+  "engine_contracts": [
+    "src/quantity-engine.js",
+    "src/method-engine.js",
+    "src/graph-scoring-engine.js",
+    "src/compiled/inputs/registry.js",
+    "src/compiled/inputs/integration.js"
+  ],
+  "forms": [
+    {
+      "form_id": "FX-N23-FULL",
+      "form_label_lv": "Visa forma atbildēta pareizi",
+      "bindings": [
+        {
+          "slot_id": "S1-1",
+          "type_id": "Q06",
+          "instance_id": "COL1-1-1B-A-01"
+        },
+        {
+          "slot_id": "S1-2",
+          "type_id": "Q13",
+          "instance_id": "COL1-1-1A-B-01"
+        },
+        {
+          "slot_id": "S1-3",
+          "type_id": "Q04",
+          "instance_id": "COL1-1-1D-A-01"
+        },
+        {
+          "slot_id": "S2-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-2-2A-C-01"
+        },
+        {
+          "slot_id": "S2-2",
+          "type_id": "Q18",
+          "instance_id": "COL1-5-5D-D-01"
+        },
+        {
+          "slot_id": "S2-3",
+          "type_id": "Q12",
+          "instance_id": "COL1-2-2D-B-01"
+        },
+        {
+          "slot_id": "S3-1",
+          "type_id": "Q02",
+          "instance_id": "COL1-3-3A-A-01"
+        },
+        {
+          "slot_id": "S3-2",
+          "type_id": "Q08",
+          "instance_id": "COL1-3-3C-D-01"
+        },
+        {
+          "slot_id": "S3-3",
+          "type_id": "Q17",
+          "instance_id": "COL1-3-3D-A-01"
+        },
+        {
+          "slot_id": "S4-1",
+          "type_id": "Q01",
+          "instance_id": "COL1-2-2C-C-01"
+        },
+        {
+          "slot_id": "S4-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-4-4B-A-01"
+        },
+        {
+          "slot_id": "S4-3",
+          "type_id": "Q16",
+          "instance_id": "COL1-4-4C-D-01"
+        },
+        {
+          "slot_id": "S5-1",
+          "type_id": "Q15",
+          "instance_id": "COL1-6-6A-B-01"
+        },
+        {
+          "slot_id": "S5-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-5-5B-A-01"
+        },
+        {
+          "slot_id": "S5-3",
+          "type_id": "Q10",
+          "instance_id": "COL1-6-6C-D-01"
+        },
+        {
+          "slot_id": "S6-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-6-6A-A-01"
+        },
+        {
+          "slot_id": "S6-2",
+          "type_id": "Q05",
+          "instance_id": "COL1-6-6B-A-01"
+        },
+        {
+          "slot_id": "S6-3",
+          "type_id": "Q02",
+          "instance_id": "COL1-6-6C-A-01"
+        },
+        {
+          "slot_id": "S7-1",
+          "type_id": "Q03",
+          "instance_id": "COL1-7-7A-A-01"
+        },
+        {
+          "slot_id": "S7-2",
+          "type_id": "Q09",
+          "instance_id": "COL1-7-7B-D-01"
+        },
+        {
+          "slot_id": "S7-3",
+          "type_id": "Q09",
+          "instance_id": "COL1-4-4B-C-01"
+        }
+      ],
+      "answers": {
+        "S1-1": {
+          "capture": {
+            "pairs": [
+              {
+                "left_id": "L1",
+                "right_id": "R1"
+              },
+              {
+                "left_id": "L2",
+                "right_id": "R2"
+              },
+              {
+                "left_id": "L3",
+                "right_id": "R3"
+              }
+            ]
+          }
+        },
+        "S1-2": {
+          "capture": {
+            "vector": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "located": "CuO",
+            "replacement": "CuO + H2 → Cu + H2O",
+            "reason": "Cu(II) reducējas līdz Cu(0), tāpēc tā ir arī redoksa reakcija."
+          }
+        },
+        "S1-3": {
+          "capture": {
+            "vector": [
+              "1",
+              "1",
+              "1",
+              "2"
+            ]
+          }
+        },
+        "S2-1": {
+          "capture": {
+            "selected": [
+              "K2",
+              "K4"
+            ],
+            "justification": "K2 un K4 atbilst šķīduma klasifikācijai; K1 un K3 ir nepareizi."
+          }
+        },
+        "S2-2": {
+          "capture": {
+            "selected": [
+              "S2",
+              "S3"
+            ],
+            "justification": "S2 un S3 ir patiesi; S1 un S4 sajauc koeficientus ar ātruma pakāpi."
+          }
+        },
+        "S2-3": {
+          "capture": {
+            "read": {
+              "x": "30",
+              "y": "75",
+              "figure_binding": "FIG-T5-DECAY-FIRST"
+            }
+          }
+        },
+        "S3-1": {
+          "capture": {
+            "fields": {
+              "c": "1,60",
+              "S1": "0,0479",
+              "S2": "1,597"
+            }
+          }
+        },
+        "S3-2": {
+          "capture": {
+            "order": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ],
+            "explanation": "Secība ir pareiza, jo šķīduma tilpums mainās tikai pēc sajaukšanas."
+          }
+        },
+        "S3-3": {
+          "capture": {
+            "pair_map": {
+              "S1": "γ = w·(1 g/mL)",
+              "S2": "m(NaCl) = γ·V",
+              "S3": "Trūkst blīvuma ρ."
+            }
+          }
+        },
+        "S4-1": {
+          "capture": {
+            "fields": {
+              "m": "0,1204"
+            }
+          }
+        },
+        "S4-2": {
+          "capture": {
+            "fields": {
+              "dH_A": "42,00",
+              "S1": "2 × 21,0"
+            }
+          }
+        },
+        "S4-3": {
+          "capture": {
+            "text": "ΔG nosaka patvaļīgumu, nevis ātrumu; ātrumu nosaka aktivācijas barjera."
+          }
+        },
+        "S5-1": {
+          "capture": {
+            "text": "Oksidēšanās ir elektronu atdošana, reducēšanās ir to saņemšana."
+          }
+        },
+        "S5-2": {
+          "capture": {
+            "fields": {
+              "k": "0,250",
+              "S1": "0,025",
+              "S2": "0,10",
+              "S3": "0,25"
+            }
+          }
+        },
+        "S5-3": {
+          "capture": {
+            "fields": {
+              "V_del": "22,25"
+            }
+          }
+        },
+        "S6-1": {
+          "capture": {
+            "selected": [
+              "O1",
+              "O3"
+            ],
+            "justification": "Cu²⁺ saņem elektronus, Zn atdod; O2 un O4 ir nepareizas lomas."
+          }
+        },
+        "S6-2": {
+          "capture": {
+            "rows": {
+              "S1": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+              "S2": "Fe²⁺ → Fe³⁺ + e⁻",
+              "S3": "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺",
+              "S4": "5 elektroni"
+            }
+          }
+        },
+        "S6-3": {
+          "capture": {
+            "fields": {
+              "c_fe": "0,0720",
+              "S1": "0,0144",
+              "S2": "0,36",
+              "S3": "0,0720"
+            }
+          }
+        },
+        "S7-1": {
+          "capture": {
+            "choice": "A = ε·l·c",
+            "fill_ins": {
+              "S1": "A = ε·l·c",
+              "S2": "A = 12500 · 1,00 · 0,0000200 = 0,250",
+              "S3": "A ir bezvienības lielums."
+            },
+            "conserved": "ε"
+          }
+        },
+        "S7-2": {
+          "capture": {
+            "fields": {
+              "A": "0,013",
+              "S1": "0,01 + 0,01 · 0,34 / 0,34"
+            }
+          }
+        },
+        "S7-3": {
+          "capture": {
+            "fields": {
+              "dH_total": "8,0"
+            }
+          }
+        }
+      },
+      "expected": {
+        "totals": {
+          "auto_points": 48,
+          "auto_max_points": 48,
+          "pending_external_points": 52,
+          "pending_max_points": 52,
+          "denied_points": 0,
+          "zeroed_points": 0,
+          "form_max_points": 100,
+          "accounted_points": 100,
+          "slots_graded": 19,
+          "slots_incomplete": 0,
+          "slots_invalid": 0,
+          "slots_unattempted": 0,
+          "slots_manual_pending": 2
+        },
+        "slots": {
+          "S1-1": {
+            "state": "graded",
+            "verdict_class": "correct",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S1-2": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S1-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-3": {
+            "state": "graded",
+            "verdict_class": "correct",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 8,
+            "pending_max": 8,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-1": {
+            "state": "graded",
+            "verdict_class": "correct",
+            "error_class": "NONE",
+            "auto": 4,
+            "auto_max": 4,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 4,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 6,
+            "pending_max": 6,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-1": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-2": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 5,
+            "pending_max": 5,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-1": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 4,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          }
+        }
+      },
+      "notes": "Every slot answered with the correct-submission builder of tools/validate_bank_review.py:check_grading_alignment (learner number at the declared significant figures, correct_ids, correct_order, correct_pairs, target_readout.expected_value, non-blank self text). Auto criteria are full; self/manual criteria stay pending-external. Q03/Q05 are manual pending and have no auto verdict."
+    },
+    {
+      "form_id": "FX-N23-PARTIAL",
+      "form_label_lv": "Daļēji pareiza forma",
+      "bindings": [
+        {
+          "slot_id": "S1-1",
+          "type_id": "Q06",
+          "instance_id": "COL1-7-7A-C-01"
+        },
+        {
+          "slot_id": "S1-2",
+          "type_id": "Q13",
+          "instance_id": "COL1-1-1A-B-01"
+        },
+        {
+          "slot_id": "S1-3",
+          "type_id": "Q04",
+          "instance_id": "COL1-1-1D-A-01"
+        },
+        {
+          "slot_id": "S2-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-2-2A-C-01"
+        },
+        {
+          "slot_id": "S2-2",
+          "type_id": "Q18",
+          "instance_id": "COL1-5-5D-D-01"
+        },
+        {
+          "slot_id": "S2-3",
+          "type_id": "Q12",
+          "instance_id": "COL1-2-2D-B-01"
+        },
+        {
+          "slot_id": "S3-1",
+          "type_id": "Q02",
+          "instance_id": "COL1-3-3A-A-01"
+        },
+        {
+          "slot_id": "S3-2",
+          "type_id": "Q08",
+          "instance_id": "COL1-3-3C-D-01"
+        },
+        {
+          "slot_id": "S3-3",
+          "type_id": "Q17",
+          "instance_id": "COL1-3-3D-A-01"
+        },
+        {
+          "slot_id": "S4-1",
+          "type_id": "Q01",
+          "instance_id": "COL1-2-2C-C-01"
+        },
+        {
+          "slot_id": "S4-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-4-4B-A-01"
+        },
+        {
+          "slot_id": "S4-3",
+          "type_id": "Q16",
+          "instance_id": "COL1-4-4C-D-01"
+        },
+        {
+          "slot_id": "S5-1",
+          "type_id": "Q15",
+          "instance_id": "COL1-6-6A-B-01"
+        },
+        {
+          "slot_id": "S5-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-5-5B-A-01"
+        },
+        {
+          "slot_id": "S5-3",
+          "type_id": "Q10",
+          "instance_id": "COL1-6-6C-D-01"
+        },
+        {
+          "slot_id": "S6-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-6-6A-A-01"
+        },
+        {
+          "slot_id": "S6-2",
+          "type_id": "Q05",
+          "instance_id": "COL1-6-6B-A-01"
+        },
+        {
+          "slot_id": "S6-3",
+          "type_id": "Q02",
+          "instance_id": "COL1-6-6C-A-01"
+        },
+        {
+          "slot_id": "S7-1",
+          "type_id": "Q03",
+          "instance_id": "COL1-7-7A-A-01"
+        },
+        {
+          "slot_id": "S7-2",
+          "type_id": "Q09",
+          "instance_id": "COL1-7-7B-D-01"
+        },
+        {
+          "slot_id": "S7-3",
+          "type_id": "Q09",
+          "instance_id": "COL1-4-4B-C-01"
+        }
+      ],
+      "answers": {
+        "S1-1": {
+          "capture": {
+            "pairs": [
+              {
+                "left_id": "L1",
+                "right_id": "R2"
+              },
+              {
+                "left_id": "L2",
+                "right_id": "R1"
+              },
+              {
+                "left_id": "L3",
+                "right_id": "R3"
+              },
+              {
+                "left_id": "L4",
+                "right_id": "R4"
+              }
+            ]
+          }
+        },
+        "S1-2": {
+          "capture": {
+            "vector": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "located": "CuO",
+            "replacement": "CuO + H2 → Cu + H2O",
+            "reason": "Cu(II) reducējas līdz Cu(0), tāpēc tā ir arī redoksa reakcija."
+          }
+        },
+        "S1-3": {
+          "capture": {
+            "vector": [
+              "1",
+              "1",
+              "1",
+              "2"
+            ]
+          }
+        },
+        "S2-1": {
+          "capture": {
+            "selected": [
+              "K2",
+              "K4"
+            ],
+            "justification": "K2 un K4 atbilst šķīduma klasifikācijai; K1 un K3 ir nepareizi."
+          }
+        },
+        "S2-2": {
+          "capture": {
+            "selected": [
+              "S2",
+              "S3"
+            ],
+            "justification": "S2 un S3 ir patiesi; S1 un S4 sajauc koeficientus ar ātruma pakāpi."
+          }
+        },
+        "S2-3": {
+          "capture": {
+            "read": {
+              "x": "30",
+              "y": "75",
+              "figure_binding": "FIG-T5-DECAY-FIRST"
+            }
+          }
+        },
+        "S3-1": {
+          "capture": {
+            "fields": {
+              "c": "1,60",
+              "S1": "0,0479",
+              "S2": "1,597"
+            }
+          }
+        },
+        "S3-2": {
+          "capture": {
+            "order": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ],
+            "explanation": "Secība ir pareiza, jo šķīduma tilpums mainās tikai pēc sajaukšanas."
+          }
+        },
+        "S3-3": {
+          "capture": {
+            "pair_map": {
+              "S1": "γ = w·(1 g/mL)",
+              "S2": "m(NaCl) = γ·V",
+              "S3": "Trūkst blīvuma ρ."
+            }
+          }
+        },
+        "S4-1": {
+          "capture": {
+            "fields": {
+              "m": "0,120"
+            }
+          }
+        },
+        "S4-2": {
+          "capture": {
+            "fields": {
+              "dH_A": "42,00",
+              "S1": "2 × 21,0"
+            }
+          }
+        },
+        "S4-3": {
+          "capture": {
+            "text": "ΔG nosaka patvaļīgumu, nevis ātrumu; ātrumu nosaka aktivācijas barjera."
+          }
+        },
+        "S5-1": {
+          "capture": {
+            "text": "Oksidēšanās ir elektronu atdošana, reducēšanās ir to saņemšana."
+          }
+        },
+        "S5-2": {
+          "capture": {
+            "fields": {
+              "k": "0,250",
+              "S1": "0,025",
+              "S2": "0,10",
+              "S3": "0,25"
+            }
+          }
+        },
+        "S5-3": {
+          "capture": {
+            "fields": {
+              "V_del": "22,25"
+            }
+          }
+        },
+        "S6-1": {
+          "capture": {
+            "selected": [
+              "O1",
+              "O3"
+            ],
+            "justification": "Cu²⁺ saņem elektronus, Zn atdod; O2 un O4 ir nepareizas lomas."
+          }
+        },
+        "S6-2": {
+          "capture": {
+            "rows": {
+              "S1": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+              "S2": "Fe²⁺ → Fe³⁺ + e⁻",
+              "S3": "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺",
+              "S4": "5 elektroni"
+            }
+          }
+        },
+        "S6-3": {
+          "capture": {
+            "fields": {
+              "c_fe": "0,0720",
+              "S1": "0,0144",
+              "S2": "0,36",
+              "S3": "0,0720"
+            }
+          }
+        },
+        "S7-1": {
+          "capture": {
+            "choice": "A = ε·l·c",
+            "fill_ins": {
+              "S1": "A = ε·l·c",
+              "S2": "A = 12500 · 1,00 · 0,0000200 = 0,250",
+              "S3": "A ir bezvienības lielums."
+            },
+            "conserved": "ε"
+          }
+        },
+        "S7-2": {
+          "capture": {
+            "fields": {
+              "A": "0,013",
+              "S1": "0,01 + 0,01 · 0,34 / 0,34"
+            }
+          }
+        },
+        "S7-3": {
+          "capture": {
+            "fields": {
+              "dH_total": "8,0"
+            }
+          }
+        }
+      },
+      "expected": {
+        "totals": {
+          "auto_points": 44.5,
+          "auto_max_points": 48,
+          "pending_external_points": 52,
+          "pending_max_points": 52,
+          "denied_points": 3.5,
+          "zeroed_points": 0,
+          "form_max_points": 100,
+          "accounted_points": 100.0,
+          "slots_graded": 19,
+          "slots_incomplete": 0,
+          "slots_invalid": 0,
+          "slots_unattempted": 0,
+          "slots_manual_pending": 2
+        },
+        "slots": {
+          "S1-1": {
+            "state": "graded",
+            "verdict_class": "partial",
+            "error_class": "WRONG_PAIRING",
+            "auto": 1.5,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 1.5,
+            "zeroed": 0
+          },
+          "S1-2": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S1-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-3": {
+            "state": "graded",
+            "verdict_class": "correct",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S3-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 8,
+            "pending_max": 8,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-1": {
+            "state": "graded",
+            "verdict_class": "partial",
+            "error_class": "SIG_FIG_MISMATCH",
+            "auto": 2,
+            "auto_max": 4,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 2,
+            "zeroed": 0
+          },
+          "S4-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 4,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 6,
+            "pending_max": 6,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-1": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-2": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 5,
+            "pending_max": 5,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-1": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 4,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0
+          }
+        }
+      },
+      "notes": "Two slots yield partial verdicts: S1-1 is FAM-7A-C (four 0,75-point pair criteria) with a transposed pair (C1/C2 denied, C3/C4 awarded → 1,5/3) and S4-1 is the significant-figure twin (value 0,120 in tolerance, 3 sig figs instead of the declared 4 → C1_VALUE awarded, C2_SIGFIG denied → 2/4). All other slots keep the FX-N23-FULL answers, so the pending total does not move."
+    },
+    {
+      "form_id": "FX-N23-ZERO",
+      "form_label_lv": "Visa forma atbildēta nepareizi",
+      "bindings": [
+        {
+          "slot_id": "S1-1",
+          "type_id": "Q06",
+          "instance_id": "COL1-1-1B-A-01"
+        },
+        {
+          "slot_id": "S1-2",
+          "type_id": "Q13",
+          "instance_id": "COL1-1-1A-B-01"
+        },
+        {
+          "slot_id": "S1-3",
+          "type_id": "Q04",
+          "instance_id": "COL1-1-1D-A-01"
+        },
+        {
+          "slot_id": "S2-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-2-2A-C-01"
+        },
+        {
+          "slot_id": "S2-2",
+          "type_id": "Q18",
+          "instance_id": "COL1-5-5D-D-01"
+        },
+        {
+          "slot_id": "S2-3",
+          "type_id": "Q12",
+          "instance_id": "COL1-2-2D-B-01"
+        },
+        {
+          "slot_id": "S3-1",
+          "type_id": "Q02",
+          "instance_id": "COL1-3-3A-A-01"
+        },
+        {
+          "slot_id": "S3-2",
+          "type_id": "Q08",
+          "instance_id": "COL1-3-3C-D-01"
+        },
+        {
+          "slot_id": "S3-3",
+          "type_id": "Q17",
+          "instance_id": "COL1-3-3D-A-01"
+        },
+        {
+          "slot_id": "S4-1",
+          "type_id": "Q01",
+          "instance_id": "COL1-2-2C-C-01"
+        },
+        {
+          "slot_id": "S4-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-4-4B-A-01"
+        },
+        {
+          "slot_id": "S4-3",
+          "type_id": "Q16",
+          "instance_id": "COL1-4-4C-D-01"
+        },
+        {
+          "slot_id": "S5-1",
+          "type_id": "Q15",
+          "instance_id": "COL1-6-6A-B-01"
+        },
+        {
+          "slot_id": "S5-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-5-5B-A-01"
+        },
+        {
+          "slot_id": "S5-3",
+          "type_id": "Q10",
+          "instance_id": "COL1-6-6C-D-01"
+        },
+        {
+          "slot_id": "S6-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-6-6A-A-01"
+        },
+        {
+          "slot_id": "S6-2",
+          "type_id": "Q05",
+          "instance_id": "COL1-6-6B-A-01"
+        },
+        {
+          "slot_id": "S6-3",
+          "type_id": "Q02",
+          "instance_id": "COL1-6-6C-A-01"
+        },
+        {
+          "slot_id": "S7-1",
+          "type_id": "Q03",
+          "instance_id": "COL1-7-7A-A-01"
+        },
+        {
+          "slot_id": "S7-2",
+          "type_id": "Q09",
+          "instance_id": "COL1-7-7B-D-01"
+        },
+        {
+          "slot_id": "S7-3",
+          "type_id": "Q09",
+          "instance_id": "COL1-4-4B-C-01"
+        }
+      ],
+      "answers": {
+        "S1-1": {
+          "capture": {
+            "pairs": [
+              {
+                "left_id": "L1",
+                "right_id": "R2"
+              },
+              {
+                "left_id": "L2",
+                "right_id": "R3"
+              },
+              {
+                "left_id": "L3",
+                "right_id": "R1"
+              }
+            ]
+          }
+        },
+        "S1-2": {
+          "capture": {
+            "vector": [
+              "2",
+              "2",
+              "2",
+              "2"
+            ],
+            "located": "H2",
+            "replacement": "CuO → Cu",
+            "reason": "Nepareizs skaidrojums."
+          }
+        },
+        "S1-3": {
+          "capture": {
+            "vector": [
+              "2",
+              "2",
+              "2",
+              "2"
+            ]
+          }
+        },
+        "S2-1": {
+          "capture": {
+            "selected": [
+              "K1",
+              "K3"
+            ],
+            "justification": "Izvēlēti nepareizie varianti."
+          }
+        },
+        "S2-2": {
+          "capture": {
+            "selected": [
+              "S1",
+              "S4"
+            ],
+            "justification": "Izvēlēti nepareizie varianti."
+          }
+        },
+        "S2-3": {
+          "capture": {
+            "read": {
+              "x": "30",
+              "y": "99",
+              "figure_binding": "FIG-T5-DECAY-FIRST"
+            }
+          }
+        },
+        "S3-1": {
+          "capture": {
+            "fields": {
+              "c": "1,00",
+              "S1": "0,100",
+              "S2": "1,000"
+            }
+          }
+        },
+        "S3-2": {
+          "capture": {
+            "order": [
+              "S4",
+              "S3",
+              "S2",
+              "S1"
+            ],
+            "explanation": "Secība ir apgriezta."
+          }
+        },
+        "S3-3": {
+          "capture": {
+            "pair_map": {
+              "S1": "nē",
+              "S2": "nē",
+              "S3": "nē"
+            }
+          }
+        },
+        "S4-1": {
+          "capture": {
+            "fields": {
+              "m": "0,5000"
+            }
+          }
+        },
+        "S4-2": {
+          "capture": {
+            "fields": {
+              "dH_A": "99,00",
+              "S1": "2 × 99,0"
+            }
+          }
+        },
+        "S4-3": {
+          "capture": {
+            "text": "Nepareizs skaidrojums, kas tomēr nav tukšs."
+          }
+        },
+        "S5-1": {
+          "capture": {
+            "text": "Nepareizs skaidrojums, kas tomēr nav tukšs."
+          }
+        },
+        "S5-2": {
+          "capture": {
+            "fields": {
+              "k": "0,900",
+              "S1": "1",
+              "S2": "2",
+              "S3": "3"
+            }
+          }
+        },
+        "S5-3": {
+          "capture": {
+            "fields": {
+              "V_del": "10,00"
+            }
+          }
+        },
+        "S6-1": {
+          "capture": {
+            "selected": [
+              "O2",
+              "O4"
+            ],
+            "justification": "Izvēlētas nepareizās lomas."
+          }
+        },
+        "S6-2": {
+          "capture": {
+            "rows": {
+              "S1": "nē",
+              "S2": "nē",
+              "S3": "nē",
+              "S4": "nē"
+            }
+          }
+        },
+        "S6-3": {
+          "capture": {
+            "fields": {
+              "c_fe": "0,5000",
+              "S1": "1",
+              "S2": "2",
+              "S3": "3"
+            }
+          }
+        },
+        "S7-1": {
+          "capture": {
+            "choice": "c = γ/M",
+            "fill_ins": {
+              "S1": "c = γ/M",
+              "S2": "c = 1",
+              "S3": "nē"
+            },
+            "conserved": "M"
+          }
+        },
+        "S7-2": {
+          "capture": {
+            "fields": {
+              "A": "0,500",
+              "S1": "nē"
+            }
+          }
+        },
+        "S7-3": {
+          "capture": {
+            "fields": {
+              "dH_total": "90,0"
+            }
+          }
+        }
+      },
+      "expected": {
+        "totals": {
+          "auto_points": 0,
+          "auto_max_points": 48,
+          "pending_external_points": 52,
+          "pending_max_points": 52,
+          "denied_points": 48,
+          "zeroed_points": 0,
+          "form_max_points": 100,
+          "accounted_points": 100,
+          "slots_graded": 19,
+          "slots_incomplete": 0,
+          "slots_invalid": 0,
+          "slots_unattempted": 0,
+          "slots_manual_pending": 2
+        },
+        "slots": {
+          "S1-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_PAIRING",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 3,
+            "zeroed": 0
+          },
+          "S1-2": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S1-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S2-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_OPTION_SELECTION",
+            "auto": 0,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 2,
+            "zeroed": 0
+          },
+          "S2-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_OPTION_SELECTION",
+            "auto": 0,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 2,
+            "zeroed": 0
+          },
+          "S2-3": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 3,
+            "zeroed": 0
+          },
+          "S3-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 5,
+            "zeroed": 0
+          },
+          "S3-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_ORDER",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 3,
+            "zeroed": 0
+          },
+          "S3-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 8,
+            "pending_max": 8,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S4-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 4,
+            "zeroed": 0
+          },
+          "S4-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 4,
+            "zeroed": 0
+          },
+          "S4-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 6,
+            "pending_max": 6,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-1": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S5-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 5,
+            "zeroed": 0
+          },
+          "S5-3": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 3,
+            "zeroed": 0
+          },
+          "S6-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_OPTION_SELECTION",
+            "auto": 0,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 2,
+            "zeroed": 0
+          },
+          "S6-2": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 5,
+            "pending_max": 5,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S6-3": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 5,
+            "zeroed": 0
+          },
+          "S7-1": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0
+          },
+          "S7-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 3,
+            "zeroed": 0
+          },
+          "S7-3": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 4,
+            "zeroed": 0
+          }
+        }
+      },
+      "notes": "Every slot carries an answer; every machine criterion is denied with its engine verdict recorded. Wrong numerics keep the declared dimension and unit and sit far outside the tolerance, wrong selections use declared distractor ids, the ordering is reversed, the pairs are permuted. Self-assessed and manual criteria stay pending-external — a wrong free text is never scored."
+    },
+    {
+      "form_id": "FX-N23-MIXED",
+      "form_label_lv": "Jaukta forma: pareizi, nepareizi, bojāti, neaizpildīti",
+      "bindings": [
+        {
+          "slot_id": "S1-1",
+          "type_id": "Q06",
+          "instance_id": "COL1-1-1B-A-01"
+        },
+        {
+          "slot_id": "S1-2",
+          "type_id": "Q13",
+          "instance_id": "COL1-1-1A-B-01"
+        },
+        {
+          "slot_id": "S1-3",
+          "type_id": "Q04",
+          "instance_id": "COL1-1-1D-A-01"
+        },
+        {
+          "slot_id": "S2-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-2-2A-C-01"
+        },
+        {
+          "slot_id": "S2-2",
+          "type_id": "Q18",
+          "instance_id": "COL1-5-5D-D-01"
+        },
+        {
+          "slot_id": "S2-3",
+          "type_id": "Q12",
+          "instance_id": "COL1-2-2D-B-01"
+        },
+        {
+          "slot_id": "S3-1",
+          "type_id": "Q02",
+          "instance_id": "COL1-3-3A-A-01"
+        },
+        {
+          "slot_id": "S3-2",
+          "type_id": "Q08",
+          "instance_id": "COL1-3-3C-D-01"
+        },
+        {
+          "slot_id": "S3-3",
+          "type_id": "Q17",
+          "instance_id": "COL1-3-3D-A-01"
+        },
+        {
+          "slot_id": "S4-1",
+          "type_id": "Q01",
+          "instance_id": "COL1-2-2C-C-01"
+        },
+        {
+          "slot_id": "S4-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-4-4B-A-01"
+        },
+        {
+          "slot_id": "S4-3",
+          "type_id": "Q16",
+          "instance_id": "COL1-4-4C-D-01"
+        },
+        {
+          "slot_id": "S5-1",
+          "type_id": "Q15",
+          "instance_id": "COL1-6-6A-B-01"
+        },
+        {
+          "slot_id": "S5-2",
+          "type_id": "Q02",
+          "instance_id": "COL1-5-5B-A-01"
+        },
+        {
+          "slot_id": "S5-3",
+          "type_id": "Q10",
+          "instance_id": "COL1-6-6C-D-01"
+        },
+        {
+          "slot_id": "S6-1",
+          "type_id": "Q07",
+          "instance_id": "COL1-6-6A-A-01"
+        },
+        {
+          "slot_id": "S6-2",
+          "type_id": "Q05",
+          "instance_id": "COL1-6-6B-A-01"
+        },
+        {
+          "slot_id": "S6-3",
+          "type_id": "Q02",
+          "instance_id": "COL1-6-6C-A-01"
+        },
+        {
+          "slot_id": "S7-1",
+          "type_id": "Q03",
+          "instance_id": "COL1-7-7A-A-01"
+        },
+        {
+          "slot_id": "S7-2",
+          "type_id": "Q09",
+          "instance_id": "COL1-7-7B-D-01"
+        },
+        {
+          "slot_id": "S7-3",
+          "type_id": "Q09",
+          "instance_id": "COL1-4-4B-C-01"
+        }
+      ],
+      "answers": {
+        "S1-1": {
+          "capture": {
+            "pairs": [
+              {
+                "left_id": "L1",
+                "right_id": "R1"
+              },
+              {
+                "left_id": "L2",
+                "right_id": "R2"
+              },
+              {
+                "left_id": "L3",
+                "right_id": "R3"
+              }
+            ]
+          }
+        },
+        "S1-2": {
+          "capture": {
+            "vector": [
+              "1",
+              "",
+              "1",
+              "1"
+            ],
+            "located": "CuO",
+            "replacement": "CuO + H2 → Cu + H2O",
+            "reason": "Trūkst otrā koeficienta; atbilde nav pabeigta."
+          }
+        },
+        "S1-3": {
+          "capture": {
+            "vector": [
+              "1",
+              "1",
+              "1",
+              "2"
+            ]
+          }
+        },
+        "S2-1": {
+          "capture": {
+            "selected": [
+              "K2",
+              "K4"
+            ],
+            "justification": "K2 un K4 atbilst šķīduma klasifikācijai; K1 un K3 ir nepareizi."
+          }
+        },
+        "S2-2": {
+          "capture": {
+            "selected": [
+              "S2",
+              "S3"
+            ],
+            "justification": "S2 un S3 ir patiesi; S1 un S4 sajauc koeficientus ar ātruma pakāpi."
+          }
+        },
+        "S2-3": {
+          "stored_payload": {
+            "kind": "graph",
+            "variant": "Q12_read",
+            "read": {
+              "x": 30,
+              "y": "75",
+              "figure_binding": "FIG-T5-DECAY-FIRST"
+            }
+          }
+        },
+        "S3-1": {
+          "capture": {
+            "fields": {
+              "c": "1,60",
+              "S1": "   ",
+              "S2": "1,597"
+            }
+          }
+        },
+        "S3-2": {
+          "capture": {
+            "order": [
+              "S1",
+              "S2",
+              "S3"
+            ],
+            "explanation": "Trūkst pēdējā soļa."
+          }
+        },
+        "S3-3": {
+          "capture": {
+            "pair_map": {
+              "S1": "γ = w·(1 g/mL)",
+              "S2": "m(NaCl) = γ·V",
+              "S3": "Trūkst blīvuma ρ."
+            }
+          }
+        },
+        "S4-1": {
+          "capture": {
+            "fields": {
+              "m": "1.000,50"
+            }
+          }
+        },
+        "S4-2": {
+          "capture": {
+            "fields": {
+              "dH_A": "99,00",
+              "S1": "2 × 99,0"
+            }
+          }
+        },
+        "S5-1": {
+          "capture": {
+            "text": "Oksidēšanās ir elektronu atdošana, reducēšanās ir to saņemšana."
+          }
+        },
+        "S5-2": {
+          "capture": {
+            "fields": {
+              "k": "0,250",
+              "S1": "0,025",
+              "S2": "0,10",
+              "S3": "0,25"
+            }
+          }
+        },
+        "S5-3": {
+          "capture": {
+            "fields": {
+              "V_del": "22,25"
+            }
+          }
+        },
+        "S6-1": {
+          "capture": {
+            "selected": [
+              "O2",
+              "O4"
+            ],
+            "justification": "Izvēlētas nepareizās lomas."
+          }
+        },
+        "S6-2": {
+          "capture": {
+            "rows": {
+              "S1": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+              "S2": "Fe²⁺ → Fe³⁺ + e⁻",
+              "S3": "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺",
+              "S4": "5 elektroni"
+            }
+          }
+        },
+        "S7-1": {
+          "capture": {
+            "choice": "A = ε·l·c",
+            "fill_ins": {
+              "S1": "A = ε·l·c",
+              "S2": "A = 12500 · 1,00 · 0,0000200 = 0,250",
+              "S3": "A ir bezvienības lielums."
+            },
+            "conserved": "ε"
+          }
+        },
+        "S7-2": {
+          "capture": {
+            "fields": {
+              "A": "0,013",
+              "S1": "0,01 + 0,01 · 0,34 / 0,34"
+            }
+          }
+        },
+        "S7-3": {
+          "capture": {
+            "fields": {
+              "dH_total": "90,0"
+            }
+          }
+        }
+      },
+      "expected": {
+        "totals": {
+          "auto_points": 18,
+          "auto_max_points": 48,
+          "pending_external_points": 37,
+          "pending_max_points": 52,
+          "denied_points": 14,
+          "zeroed_points": 31,
+          "form_max_points": 100,
+          "accounted_points": 100,
+          "slots_graded": 13,
+          "slots_incomplete": 3,
+          "slots_invalid": 1,
+          "slots_unattempted": 2,
+          "slots_manual_pending": 2
+        },
+        "slots": {
+          "S1-1": {
+            "state": "graded",
+            "verdict_class": "correct",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_PAIR_L1",
+                "status": "awarded",
+                "awarded_points": 1,
+                "pending_points": 0,
+                "max_points": 1
+              },
+              {
+                "criterion_id": "C2_PAIR_L2",
+                "status": "awarded",
+                "awarded_points": 1,
+                "pending_points": 0,
+                "max_points": 1
+              },
+              {
+                "criterion_id": "C3_PAIR_L3",
+                "status": "awarded",
+                "awarded_points": 1,
+                "pending_points": 0,
+                "max_points": 1
+              }
+            ]
+          },
+          "S1-2": {
+            "state": "incomplete",
+            "verdict_class": null,
+            "error_class": null,
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 0,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 3,
+            "criteria": [
+              {
+                "criterion_id": "C1_TYPE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 1
+              },
+              {
+                "criterion_id": "C2_REASON",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              }
+            ]
+          },
+          "S1-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_MOLECULAR",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              },
+              {
+                "criterion_id": "C2_NET_IONIC",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_SPECTATOR",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          },
+          "S2-1": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_CLASSIFY",
+                "status": "awarded",
+                "awarded_points": 2,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_JUSTIFY",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              }
+            ]
+          },
+          "S2-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 2,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_SELECTION",
+                "status": "awarded",
+                "awarded_points": 2,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_JUSTIFY",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              }
+            ]
+          },
+          "S2-3": {
+            "state": "invalid",
+            "verdict_class": null,
+            "error_class": "E_GRAPH_PAYLOAD_MALFORMED",
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 4,
+            "criteria": [
+              {
+                "criterion_id": "C1_READ",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_SCALE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 1
+              }
+            ]
+          },
+          "S3-1": {
+            "state": "incomplete",
+            "verdict_class": null,
+            "error_class": null,
+            "auto": 0,
+            "auto_max": 5,
+            "pending": 0,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 6,
+            "criteria": [
+              {
+                "criterion_id": "C1_SETUP",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C3_IONS",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 1
+              }
+            ]
+          },
+          "S3-2": {
+            "state": "incomplete",
+            "verdict_class": null,
+            "error_class": null,
+            "auto": 0,
+            "auto_max": 3,
+            "pending": 0,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 6,
+            "criteria": [
+              {
+                "criterion_id": "C1_ORDER",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_ERROR",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 3
+              }
+            ]
+          },
+          "S3-3": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 8,
+            "pending_max": 8,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_MASS",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 3,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_BASIS",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_MISSING",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 3,
+                "max_points": 3
+              }
+            ]
+          },
+          "S4-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "UNREADABLE_INPUT",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 0,
+            "pending_max": 0,
+            "denied": 4,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_VALUE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_SIGFIG",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              }
+            ]
+          },
+          "S4-2": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 4,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_SETUP",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_ENTROPY",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          },
+          "S4-3": {
+            "state": "unattempted",
+            "verdict_class": null,
+            "error_class": "UNATTEMPTED",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 0,
+            "pending_max": 6,
+            "denied": 0,
+            "zeroed": 6,
+            "criteria": [
+              {
+                "criterion_id": "C1_COMPARE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_GIBBS",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_NO_RATE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              }
+            ]
+          },
+          "S5-1": {
+            "state": "graded",
+            "verdict_class": "pending_self_assessment",
+            "error_class": "NONE",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 4,
+            "pending_max": 4,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_SELF_EXPLAIN",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 4,
+                "max_points": 4
+              }
+            ]
+          },
+          "S5-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 5,
+            "auto_max": 5,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_SETUP",
+                "status": "awarded",
+                "awarded_points": 2,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "awarded",
+                "awarded_points": 3,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C3_ORDER",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          },
+          "S5-3": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_READ",
+                "status": "awarded",
+                "awarded_points": 3,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_ERROR_DIRECTION",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_ENDPOINT",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          },
+          "S6-1": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "WRONG_OPTION_SELECTION",
+            "auto": 0,
+            "auto_max": 2,
+            "pending": 2,
+            "pending_max": 2,
+            "denied": 2,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_ROLES",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_JUSTIFY",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              }
+            ]
+          },
+          "S6-2": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 5,
+            "pending_max": 5,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_HALF_REACTIONS",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 3,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_OVERALL",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              }
+            ]
+          },
+          "S6-3": {
+            "state": "unattempted",
+            "verdict_class": null,
+            "error_class": "UNATTEMPTED",
+            "auto": 0,
+            "auto_max": 5,
+            "pending": 0,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 6,
+            "criteria": [
+              {
+                "criterion_id": "C1_SETUP",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C3_MEDIUM",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 1
+              }
+            ]
+          },
+          "S7-1": {
+            "state": "manual_pending",
+            "verdict_class": null,
+            "error_class": "MANUAL_PENDING",
+            "auto": 0,
+            "auto_max": 0,
+            "pending": 3,
+            "pending_max": 3,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_RELATION",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 2,
+                "max_points": 2
+              }
+            ]
+          },
+          "S7-2": {
+            "state": "graded",
+            "verdict_class": "auto_passed_pending_review",
+            "error_class": "NONE",
+            "auto": 3,
+            "auto_max": 3,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 0,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_VALUE",
+                "status": "awarded",
+                "awarded_points": 3,
+                "pending_points": 0,
+                "max_points": 3
+              },
+              {
+                "criterion_id": "C2_DIAGNOSTIC",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          },
+          "S7-3": {
+            "state": "graded",
+            "verdict_class": "incorrect",
+            "error_class": "OUT_OF_TOLERANCE",
+            "auto": 0,
+            "auto_max": 4,
+            "pending": 1,
+            "pending_max": 1,
+            "denied": 4,
+            "zeroed": 0,
+            "criteria": [
+              {
+                "criterion_id": "C1_SETUP",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C2_VALUE",
+                "status": "denied",
+                "awarded_points": 0,
+                "pending_points": 0,
+                "max_points": 2
+              },
+              {
+                "criterion_id": "C3_CYCLE",
+                "status": "pending",
+                "awarded_points": 0,
+                "pending_points": 1,
+                "max_points": 1
+              }
+            ]
+          }
+        }
+      },
+      "notes": "The honesty matrix. Malformed trio: (1) S4-1 is a mixed-separator numeric \"1.000,50\" caught by the engine as UNREADABLE_INPUT (slot stays graded, zero, raw preserved); (2) S3-2 is a truncated ordering list caught by the completion gate as incomplete; (3) S1-2 is a Q13 vector with an empty coefficient cell, also incomplete. A fourth structural case: S2-3 is a stored Q12 payload whose read.x is a number (a shape the component cannot produce but a stored/imported session can), caught by the completion gate as invalid. S3-1 is a Q02 with a blank substep (incomplete); S4-3 and S6-3 are unattempted; S6-2 (Q05) and S7-1 (Q03) are manual pending; S5-1 is a Q15 self-assessment text; S2-1/S2-2/S6-1 are option_select with justification (auto selection plus pending justification)."
+    }
+  ]
+}

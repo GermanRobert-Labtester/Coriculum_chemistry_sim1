@@ -1,0 +1,1170 @@
+{
+  "schema_version": 1,
+  "owner": "N22",
+  "digest_method": "SimInputsIntegration.contentDigest — two FNV-1a 32-bit lanes over a canonical JSON projection, 16 lowercase hex characters. An identity token for the trace, not a cryptographic seal.",
+  "form": {
+    "form_id": "N22-SCRATCH-18",
+    "slot_count": 25,
+    "complete_slots": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "incomplete_slots": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25"
+    ],
+    "bindings": [
+      {
+        "slot_id": "S1",
+        "type_id": "Q01",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S2",
+        "type_id": "Q02",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S3",
+        "type_id": "Q03",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S4",
+        "type_id": "Q04",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S5",
+        "type_id": "Q05",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S6",
+        "type_id": "Q06",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S7",
+        "type_id": "Q07",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S8",
+        "type_id": "Q08",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S9",
+        "type_id": "Q09",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S10",
+        "type_id": "Q10",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S11",
+        "type_id": "Q11",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S12",
+        "type_id": "Q12",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S13",
+        "type_id": "Q13",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S14",
+        "type_id": "Q14",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S15",
+        "type_id": "Q15",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S16",
+        "type_id": "Q16",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S17",
+        "type_id": "Q17",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S18",
+        "type_id": "Q18",
+        "incomplete_case": false
+      },
+      {
+        "slot_id": "S19",
+        "type_id": "Q02",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S20",
+        "type_id": "Q04",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S21",
+        "type_id": "Q10",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S22",
+        "type_id": "Q11",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S23",
+        "type_id": "Q12",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S24",
+        "type_id": "Q13",
+        "incomplete_case": true
+      },
+      {
+        "slot_id": "S25",
+        "type_id": "Q15",
+        "incomplete_case": true
+      }
+    ]
+  },
+  "answers": [
+    {
+      "slot_id": "S1",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "6ba54482dea5ab9e",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "m_g": " 4,70 "
+        }
+      }
+    },
+    {
+      "slot_id": "S2",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "b6af879bbba781b7",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "c": "1,60",
+          "S1": "0,0479",
+          "S2": "1,597"
+        }
+      }
+    },
+    {
+      "slot_id": "S3",
+      "kind": "method",
+      "variant": "Q03_template",
+      "payload_digest": "f877fe0d789b20c9",
+      "payload": {
+        "kind": "method",
+        "variant": "Q03_template",
+        "choice": "c = γ/M",
+        "fill_ins": {
+          "S1": "c = γ/M",
+          "S2": "w = γ/(ρ·1000)",
+          "S3": "ρ ir vajadzīgs, lai pārietu no tilpuma uz masu"
+        },
+        "conserved": "ρ"
+      }
+    },
+    {
+      "slot_id": "S4",
+      "kind": "method",
+      "variant": "Q04_vector",
+      "payload_digest": "795b0010512f136c",
+      "payload": {
+        "kind": "method",
+        "variant": "Q04_vector",
+        "vector": [
+          "4",
+          "3",
+          "2"
+        ]
+      }
+    },
+    {
+      "slot_id": "S5",
+      "kind": "method",
+      "variant": "Q05_rows",
+      "payload_digest": "be0d136050cdcb04",
+      "payload": {
+        "kind": "method",
+        "variant": "Q05_rows",
+        "rows": {
+          "S1": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+          "S2": "Fe²⁺ → Fe³⁺ + e⁻",
+          "S3": "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺",
+          "S4": "5 elektroni"
+        }
+      }
+    },
+    {
+      "slot_id": "S6",
+      "kind": "matching",
+      "variant": null,
+      "payload_digest": "11befb4cf4642640",
+      "payload": {
+        "kind": "matching",
+        "pairs": [
+          {
+            "left_id": "L1",
+            "right_id": "R1"
+          },
+          {
+            "left_id": "L2",
+            "right_id": "R2"
+          },
+          {
+            "left_id": "L3",
+            "right_id": "R3"
+          }
+        ]
+      }
+    },
+    {
+      "slot_id": "S7",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "8a5d28b49f1ede78",
+      "payload": {
+        "kind": "option_select",
+        "selected": [
+          "HET",
+          "SUSP"
+        ]
+      }
+    },
+    {
+      "slot_id": "S8",
+      "kind": "ordering",
+      "variant": null,
+      "payload_digest": "3a5edb31aa648a7d",
+      "payload": {
+        "kind": "ordering",
+        "order": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "explanation": "Atzīmi izlīdzina tikai pēc sajaukšanas, jo šķīduma tilpums mainās."
+      }
+    },
+    {
+      "slot_id": "S9",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "13ace5c6ba76f4aa",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "n_mmol": "0,190"
+        }
+      }
+    },
+    {
+      "slot_id": "S10",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "121445aab8830566",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "V_del": "5,25"
+        }
+      }
+    },
+    {
+      "slot_id": "S11",
+      "kind": "graph",
+      "variant": "Q11_record",
+      "payload_digest": "9bf0c69982b70b85",
+      "payload": {
+        "kind": "graph",
+        "variant": "Q11_record",
+        "record": {
+          "mode": "construct",
+          "x_axis": "c",
+          "y_axis": "A",
+          "scale": "auto",
+          "points": [
+            {
+              "x": 0,
+              "y": 0.3
+            },
+            {
+              "x": 0.0002,
+              "y": 0.355
+            },
+            {
+              "x": 0.0016,
+              "y": 0.74
+            }
+          ]
+        },
+        "draw_payload": {
+          "schema_id": "sim-graph-draw-v1",
+          "kind": "line",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0.002,
+              "y": 0.0495
+            },
+            {
+              "x": 0.004,
+              "y": 0.1005
+            },
+            {
+              "x": 0.006,
+              "y": 0.15
+            },
+            {
+              "x": 0.008,
+              "y": 0.1995
+            },
+            {
+              "x": 0.01,
+              "y": 0.2505
+            },
+            {
+              "x": 0.012,
+              "y": 0.3
+            },
+            {
+              "x": 0.014,
+              "y": 0.351
+            },
+            {
+              "x": 0.016,
+              "y": 0.4005
+            }
+          ],
+          "axes": {
+            "x": {
+              "min": "0",
+              "max": "0.018"
+            },
+            "y": {
+              "min": "0",
+              "max": "0.45"
+            }
+          },
+          "span": {
+            "x_min": "0",
+            "x_max": "0.016",
+            "edge_rule": "inclusive"
+          },
+          "grid": {
+            "x_min": "0",
+            "x_max": "0.018",
+            "step": "0.002"
+          },
+          "path_reversals": 0
+        }
+      }
+    },
+    {
+      "slot_id": "S12",
+      "kind": "graph",
+      "variant": "Q12_read",
+      "payload_digest": "a9fc19b35607eadf",
+      "payload": {
+        "kind": "graph",
+        "variant": "Q12_read",
+        "read": {
+          "x": "30",
+          "y": "75",
+          "figure_binding": "FIG-T5-LIN-PRACTICE"
+        }
+      }
+    },
+    {
+      "slot_id": "S13",
+      "kind": "method",
+      "variant": "Q13_vector",
+      "payload_digest": "37184a2c7d51c5b8",
+      "payload": {
+        "kind": "method",
+        "variant": "Q13_vector",
+        "vector": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "located": "CuO",
+        "replacement": "CuO + H2 → Cu + H2O",
+        "reason": "Cu(II) reducējas līdz Cu(0), tāpēc tā ir arī redoksa reakcija."
+      }
+    },
+    {
+      "slot_id": "S14",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "c8e6bfb7d5c22043",
+      "payload": {
+        "kind": "option_select",
+        "selected": [
+          "T2",
+          "T4"
+        ],
+        "justification": "T1 un T3 ir nepareizi: glikoze šķīst kā molekulas."
+      }
+    },
+    {
+      "slot_id": "S15",
+      "kind": "method",
+      "variant": "Q15_text",
+      "payload_digest": "ace840d5759bfc59",
+      "payload": {
+        "kind": "method",
+        "variant": "Q15_text",
+        "text": "MgCl₂ šķīdumā ir kustīgi joni Mg²⁺ un Cl⁻, kas pārnēsā elektrību."
+      }
+    },
+    {
+      "slot_id": "S16",
+      "kind": "method",
+      "variant": "Q16_text",
+      "payload_digest": "1dcddcd2954d2686",
+      "payload": {
+        "kind": "method",
+        "variant": "Q16_text",
+        "text": "AgCl ir nešķīstams, tāpēc veidojas nogulsne; NaNO₃ un KCl nogulsni neveido."
+      }
+    },
+    {
+      "slot_id": "S17",
+      "kind": "method",
+      "variant": "Q17_pairs",
+      "payload_digest": "99ff896278cbf19e",
+      "payload": {
+        "kind": "method",
+        "variant": "Q17_pairs",
+        "pair_map": {
+          "S1": "γ = w·(1 g/mL)",
+          "S2": "m(NaCl) = γ·V",
+          "S3": "Trūkst blīvuma ρ."
+        },
+        "structure": {}
+      }
+    },
+    {
+      "slot_id": "S18",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "1a6d6e0116c63575",
+      "payload": {
+        "kind": "option_select",
+        "selected": [
+          "S2",
+          "S3"
+        ],
+        "justification": "S1 un S4 ir nepareizi: kopējie koeficienti nenosaka reakcijas pakāpi."
+      }
+    },
+    {
+      "slot_id": "S19",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "6897ebfbec849367",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "c": "   "
+        }
+      }
+    },
+    {
+      "slot_id": "S20",
+      "kind": "method",
+      "variant": "Q04_vector",
+      "payload_digest": "997c16beebfc90a2",
+      "payload": {
+        "kind": "method",
+        "variant": "Q04_vector",
+        "vector": [
+          "4",
+          "3"
+        ]
+      }
+    },
+    {
+      "slot_id": "S21",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "62a7cc7c916b5d00",
+      "payload": {
+        "kind": "numeric",
+        "values": {
+          "V_del": ""
+        }
+      }
+    },
+    {
+      "slot_id": "S22",
+      "kind": "graph",
+      "variant": "Q11_record",
+      "payload_digest": "d1c3b3ad74215091",
+      "payload": {
+        "kind": "graph",
+        "variant": "Q11_record",
+        "record": {
+          "mode": "construct",
+          "x_axis": "c",
+          "y_axis": "A"
+        }
+      }
+    },
+    {
+      "slot_id": "S23",
+      "kind": "graph",
+      "variant": "Q12_read",
+      "payload_digest": "d6c75d6da9342c31",
+      "payload": {
+        "kind": "graph",
+        "variant": "Q12_read",
+        "read": {
+          "x": "30",
+          "y": "75"
+        }
+      }
+    },
+    {
+      "slot_id": "S24",
+      "kind": "method",
+      "variant": "Q13_vector",
+      "payload_digest": "1311d2b460452238",
+      "payload": {
+        "kind": "method",
+        "variant": "Q13_vector",
+        "vector": [
+          "1",
+          "1"
+        ],
+        "located": "CuO",
+        "reason": "Nepilnīgs skaidrojums."
+      }
+    },
+    {
+      "slot_id": "S25",
+      "kind": "method",
+      "variant": "Q15_text",
+      "payload_digest": "3a9181b3f18567cf",
+      "payload": {
+        "kind": "method",
+        "variant": "Q15_text",
+        "text": "   "
+      }
+    }
+  ],
+  "payload_table": [
+    {
+      "slot_id": "S1",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "6ba54482dea5ab9e"
+    },
+    {
+      "slot_id": "S2",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "b6af879bbba781b7"
+    },
+    {
+      "slot_id": "S3",
+      "kind": "method",
+      "variant": "Q03_template",
+      "payload_digest": "f877fe0d789b20c9"
+    },
+    {
+      "slot_id": "S4",
+      "kind": "method",
+      "variant": "Q04_vector",
+      "payload_digest": "795b0010512f136c"
+    },
+    {
+      "slot_id": "S5",
+      "kind": "method",
+      "variant": "Q05_rows",
+      "payload_digest": "be0d136050cdcb04"
+    },
+    {
+      "slot_id": "S6",
+      "kind": "matching",
+      "variant": null,
+      "payload_digest": "11befb4cf4642640"
+    },
+    {
+      "slot_id": "S7",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "8a5d28b49f1ede78"
+    },
+    {
+      "slot_id": "S8",
+      "kind": "ordering",
+      "variant": null,
+      "payload_digest": "3a5edb31aa648a7d"
+    },
+    {
+      "slot_id": "S9",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "13ace5c6ba76f4aa"
+    },
+    {
+      "slot_id": "S10",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "121445aab8830566"
+    },
+    {
+      "slot_id": "S11",
+      "kind": "graph",
+      "variant": "Q11_record",
+      "payload_digest": "9bf0c69982b70b85"
+    },
+    {
+      "slot_id": "S12",
+      "kind": "graph",
+      "variant": "Q12_read",
+      "payload_digest": "a9fc19b35607eadf"
+    },
+    {
+      "slot_id": "S13",
+      "kind": "method",
+      "variant": "Q13_vector",
+      "payload_digest": "37184a2c7d51c5b8"
+    },
+    {
+      "slot_id": "S14",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "c8e6bfb7d5c22043"
+    },
+    {
+      "slot_id": "S15",
+      "kind": "method",
+      "variant": "Q15_text",
+      "payload_digest": "ace840d5759bfc59"
+    },
+    {
+      "slot_id": "S16",
+      "kind": "method",
+      "variant": "Q16_text",
+      "payload_digest": "1dcddcd2954d2686"
+    },
+    {
+      "slot_id": "S17",
+      "kind": "method",
+      "variant": "Q17_pairs",
+      "payload_digest": "99ff896278cbf19e"
+    },
+    {
+      "slot_id": "S18",
+      "kind": "option_select",
+      "variant": null,
+      "payload_digest": "1a6d6e0116c63575"
+    },
+    {
+      "slot_id": "S19",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "6897ebfbec849367"
+    },
+    {
+      "slot_id": "S20",
+      "kind": "method",
+      "variant": "Q04_vector",
+      "payload_digest": "997c16beebfc90a2"
+    },
+    {
+      "slot_id": "S21",
+      "kind": "numeric",
+      "variant": null,
+      "payload_digest": "62a7cc7c916b5d00"
+    },
+    {
+      "slot_id": "S22",
+      "kind": "graph",
+      "variant": "Q11_record",
+      "payload_digest": "d1c3b3ad74215091"
+    },
+    {
+      "slot_id": "S23",
+      "kind": "graph",
+      "variant": "Q12_read",
+      "payload_digest": "d6c75d6da9342c31"
+    },
+    {
+      "slot_id": "S24",
+      "kind": "method",
+      "variant": "Q13_vector",
+      "payload_digest": "1311d2b460452238"
+    },
+    {
+      "slot_id": "S25",
+      "kind": "method",
+      "variant": "Q15_text",
+      "payload_digest": "3a9181b3f18567cf"
+    }
+  ],
+  "digests": {
+    "answers": "11565a9edd2a3e3a",
+    "answers_after_roundtrip": "11565a9edd2a3e3a",
+    "payload_table": "06be2082ccf3bebe",
+    "serialized": "eacee849f8a41ffa6bc9bab16ec795c650324ab1f4e6eed1aae52aefb45e4a8b",
+    "terminal_record": "d20c3a48ef70147c"
+  },
+  "round_trip": {
+    "answers_identical": true,
+    "flags_identical": true,
+    "state_identical": true
+  },
+  "terminal_record_fields": [
+    "answers",
+    "elapsed_ms",
+    "finished_at_ms",
+    "flags",
+    "form_id",
+    "remediation_slot_ids",
+    "schema_version",
+    "session_id",
+    "started_at_ms",
+    "state",
+    "transitions",
+    "unanswered_slot_ids"
+  ],
+  "state": "submitted",
+  "transitions": [
+    {
+      "seq": 0,
+      "from": "not-started",
+      "event": "start",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 1,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 2,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 3,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 4,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 5,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 6,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 7,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 8,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 9,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 10,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 11,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 12,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 13,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 14,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 15,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 16,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 17,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 18,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 19,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 20,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 21,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 22,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 23,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 24,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 25,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 26,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 27,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 28,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 29,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 30,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 31,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 32,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 33,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 34,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 35,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 36,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 37,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 38,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 39,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 40,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 41,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 42,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 43,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 44,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 45,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 46,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 47,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 48,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 49,
+      "from": "running",
+      "event": "navigate",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 50,
+      "from": "running",
+      "event": "answer",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 51,
+      "from": "running",
+      "event": "flag",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 52,
+      "from": "running",
+      "event": "flag",
+      "to": "running",
+      "at_ms": 1000
+    },
+    {
+      "seq": 53,
+      "from": "running",
+      "event": "request-review",
+      "to": "review",
+      "at_ms": 1000
+    },
+    {
+      "seq": 54,
+      "from": "review",
+      "event": "submit",
+      "to": "submitted",
+      "at_ms": 1000
+    }
+  ]
+}

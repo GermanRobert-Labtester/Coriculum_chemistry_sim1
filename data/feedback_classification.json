@@ -1,0 +1,2400 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-feedback-classification",
+  "owner": "N23",
+  "status": "authored",
+  "title_lv": "Klasifikācijas un atgriezeniskās saites kartējuma sala",
+  "epistemic_note": "PROPOSED mācību politika. Šī sala kartē sasaldētos dzinēju vokabulārus (N17 četras kļūdu klases un to paraksturus, N17 konservācijas paraksturu MC-1C-01, N19 14 paraksturu reģistru, N18 kļūdu vokabulāru, N20 bankas misconception_signatures un N23 stāvokļu vokabulāru) uz esošiem #sim-terms atslēgām un uz resolvējamiem konceptu un ķēžu id. N09 reģistra šajā darba telpā nav; 44 bankas parakstiem nav neviena sasaldēta nosaukuma avota, tāpēc to nosaukumi ir N23 autora PROPOSED teksti (island \"declared\"). Prioritāšu kārtība ir autora politikas lēmums, ne oficiāla eksāmena prasība; tā nav nekur citur sasaldēta.",
+  "provenance": {
+    "vocabulary_sources": [
+      "data/engine_taxonomy.json#/error_taxonomy/classes",
+      "data/engine_taxonomy.json#/conservation/imbalance_signature",
+      "data/method_engine_contract.json#/signature_registry",
+      "data/graph_scoring_contract.json#/verdict_record/error_class_vocabulary",
+      "data/bank/*.json#/questions[]/misconception_signatures",
+      "data/response_types.json#/types[]/error_surfaces",
+      "data/grading_policy.json#/rubric_policy/slot_state_rules (N23 §2 vocabulary)"
+    ],
+    "copy_source": "data/terms.json (#sim-terms)",
+    "remediation_sources": [
+      "data/anchor_registry.json",
+      "data/concept_summaries.json",
+      "data/chains.json",
+      "data/method_cards.json"
+    ],
+    "citation_basis_lv": "N17 klases citē savu conventions_ref; N17 domēna klase citē N15-NOEXTRAP-01; N18 klases citē sasaldētos graph_rule id; N19 paraksturiem sava noteikuma id nav, tāpēc citēts reģistra korpusa vektors, kas paraksturu piesaista (contract_rule). 44 bankas parakstiem nav neviena sasaldēta noteikuma id — to citations ir tukšs, nevis izdomāts.",
+    "resolution_rule_lv": "Konceptu id ir bankas instanču outcome_ids un autora papildinājumi; ķēžu id ir vai nu kartītes chain_id, vai ķēde ar lielāko outcome_ids pārklājumu; kur pārklājuma nav, chain_ids ir tukšs un saite ir tikai uz konceptu (null_chain_allowed).",
+    "conflict_id_renumber_note": "N23-C04 tika pārnumurēts no N23-C03 integrācijas laikā (2026-11-19), jo grading_policy sala ar N23-C03 jau apzīmē Q11 zīmējuma saišu spraugu; šis ieraksts ir N17 n05 parakstura aliasa noteikums."
+  },
+  "name_source_vocabulary": {
+    "engine_taxonomy.name_lv": "N17 kļūdu klases latviešu nosaukums (4 taksonomijas parakstiem un 4 klašu ierakstiem).",
+    "method_engine_contract.note_lv": "N19 paraksturu reģistra piezīme (14 reģistra parakstiem).",
+    "terms.key": "Atsauce uz #sim-terms atslēgu; šajā salā neviens ieraksts to nelieto kā nosaukumu, jo terminu salā nav pa parakstam nosaukta teksta.",
+    "declared.text_lv": "N23 autora PROPOSED nosaukums. Lietots tikai 44 bankas parakstiem, kuriem N09 reģistrā nav neviena nosaukuma avota. GRADING_FORMAT §3 skice uzskaita trīs avotus; šis ceturtais ir deklarēts šeit un redzams katrā ierakstā (misconception_name.island = \"declared\"), nevis paslēpts. Kad N09 tiks izpildīts, šie ieraksti jāpārsaista uz reģistru."
+  },
+  "ordering_rule": {
+    "rule": "priority-ascending-then-match_value",
+    "proposed": true,
+    "n09_gap_notice_lv": "N09 maldīgo priekšstatu reģistrs šajā darba telpā vēl nav izpildīts (sk. README un data/method_cards.json n09_gap_notice_lv). Tāpēc šī kartējuma prioritātes lauks ir N23 autora PROPOSED politika pār sasaldētajiem dzinēju vokabulāriem, nevis N09 reģistra lauks; kad N09 tiks izpildīts, pārbaudāms ir tieši šis lauks un kartējuma saites, nevis dzinēju loģika.",
+    "tie_break_lv": "Vienādas prioritātes gadījumā rindas kārto pēc match_value augoši; vienāda parakstura atkārtojumu vienā slotā dedublē."
+  },
+  "specificity_ladder": [
+    {
+      "priority": 10,
+      "band_lv": "ievades gramatika",
+      "rule_lv": "Neizlasāms ievads rādāms pirmais: tālākas pārbaudes nav iespējamas."
+    },
+    {
+      "priority": 12,
+      "band_lv": "tukša atbilde",
+      "rule_lv": "Tukšums ir fiksēts stāvoklis, kas rādāms uzreiz aiz neizlasāma ievada."
+    },
+    {
+      "priority": 20,
+      "band_lv": "vienību algebra",
+      "rule_lv": "Dimensiju kļūda lokalizējas vienībās un ir specifiskāka par satura modeli."
+    },
+    {
+      "priority": 30,
+      "band_lv": "bilance un fiziskā jēga",
+      "rule_lv": "Bilances vai fiziskās jēgas pārkāpums ir konkrēts lieluma līmenī."
+    },
+    {
+      "priority": 40,
+      "band_lv": "domēns un diapazons",
+      "rule_lv": "Deklarētā apgabala robeža ir precīzi norobežota."
+    },
+    {
+      "priority": 42,
+      "band_lv": "neizvērtēts apgabals",
+      "rule_lv": "Neizvērtētais apgabals izriet no diapazona un rādāms aiz tiešas ārpusdomēna atbildes."
+    },
+    {
+      "priority": 50,
+      "band_lv": "kartītes solis",
+      "rule_lv": "Kartītes soļa paraksturs norāda konkrētu procedūras vietu."
+    },
+    {
+      "priority": 52,
+      "band_lv": "procedūras pozīcija",
+      "rule_lv": "Kārtošanas vai pāru kļūda norāda konkrētu pozīciju vai pāri."
+    },
+    {
+      "priority": 60,
+      "band_lv": "saimes satura modelis",
+      "rule_lv": "Bankas saimes modelis nosauc saimi, ne soli; N09 nosaukuma nav."
+    },
+    {
+      "priority": 70,
+      "band_lv": "lieluma līmenis",
+      "rule_lv": "Tolerances, zīmīgo ciparu un procentu bāzes kļūdas rādāmas pēc strukturālajām."
+    },
+    {
+      "priority": 45,
+      "band_lv": "grafika derīgums un ģeometrija",
+      "rule_lv": "Grafika derīguma kļūda ir struktūras, ne satura kļūda, un rādāma pirms saimes satura modeļa."
+    },
+    {
+      "priority": 46,
+      "band_lv": "grafika kontrakts",
+      "rule_lv": "Kontrakta tolerances novirze ir integritātes kļūda."
+    },
+    {
+      "priority": 91,
+      "band_lv": "stāvoklis: invalid",
+      "rule_lv": "Stāvokļa etiķete aizstāj kļūdas modeli."
+    },
+    {
+      "priority": 92,
+      "band_lv": "stāvoklis: incomplete",
+      "rule_lv": "Stāvokļa etiķete aizstāj kļūdas modeli."
+    },
+    {
+      "priority": 93,
+      "band_lv": "stāvoklis: unattempted",
+      "rule_lv": "Stāvokļa etiķete aizstāj kļūdas modeli."
+    },
+    {
+      "priority": 94,
+      "band_lv": "stāvoklis: manual_pending",
+      "rule_lv": "Stāvokļa etiķete aizstāj kļūdas modeli."
+    },
+    {
+      "priority": 95,
+      "band_lv": "stāvoklis: graded",
+      "rule_lv": "Stāvokļa etiķete aizstāj kļūdas modeli."
+    },
+    {
+      "priority": 96,
+      "band_lv": "nav kļūdas",
+      "rule_lv": "Pareizs ieraksts neveido kartīti."
+    }
+  ],
+  "assembly_rules": {
+    "resolution_precedence": [
+      "signature",
+      "error_class",
+      "slot_state"
+    ],
+    "state_families": [
+      "UNATTEMPTED",
+      "MANUAL_PENDING",
+      "GRADED",
+      "INCOMPLETE",
+      "INVALID"
+    ],
+    "state_fallback_lv": "UNATTEMPTED un MANUAL_PENDING ir N23 deklarētas stāvokļa etiķetes, nevis dzinēja kļūdas klases: tās nekad netiek meklētas kā error_class, bet tikai kā slot_state.",
+    "task_signature_sources": {
+      "engine": "kritēriju signature_ids[] (dzinēja verdikta paraksturi)",
+      "instance": "slota misconception_signatures[] saskaņā ar bound_signature_policy",
+      "rule_lv": "Uzdevuma līmenī paraksturi tiek apvienoti bez atkārtojumiem; katrs paraksturs dod vienu kartīti."
+    },
+    "bound_signature_policy": {
+      "role_lv": "Instances misconception_signatures ir bankas autora satura modelis. To pievieno uzdevuma līmenī tikai tad, kad verdikts nav correct un kļūda nav neizlasāma vai tukša atbilde; neizlasāms ievads neko nepasaka par satura modeli, tāpēc tur to nepievieno.",
+      "apply_states": [
+        "graded"
+      ],
+      "apply_verdicts": [
+        "incorrect",
+        "partial",
+        "not_assessed"
+      ],
+      "skip_error_classes": [
+        "UNREADABLE_INPUT",
+        "BLANK_RESPONSE",
+        "NONE",
+        "UNATTEMPTED",
+        "MANUAL_PENDING"
+      ],
+      "skip_signature_families": [
+        "MC-2B-02",
+        "MC-3B-01",
+        "MC-3A-02",
+        "MC-7B-02"
+      ],
+      "skip_signature_reason_lv": "Četri N17 taksonomijas paraksturi ir dzinēja kļūdu klašu paraksturi, nevis satura modeļi; tos pievieno tikai caur kritēriju signature_ids, nevis kā saimes modeli."
+    },
+    "engine_signature_alias_rule": {
+      "suppressed_for_error_classes": [
+        "WRONG_OPTION_SELECTION",
+        "WRONG_ORDER",
+        "WRONG_PAIRING"
+      ],
+      "alias_signatures": [
+        "MC-7B-02"
+      ],
+      "reason_lv": "N17 n05→parakstura karte satura izvēles kļūdas (WRONG_OPTION_SELECTION, WRONG_ORDER, WRONG_PAIRING) piesaista OUT_OF_DOMAIN taksonomijas parakstam MC-7B-02. Tas ir klašu aliass, nevis konkrētās atbildes diagnoze, tāpēc assemble to neizrāda kā kļūdas modeli; paliek kļūdas klase un instances satura modelis. Konflikts N23-C04."
+    },
+    "generic_copy_keys": [
+      "feedback.fallback_notice"
+    ],
+    "error_class_item_rule_lv": "Ja uzdevuma līmenī ir parakstura kartītes, kļūdas klases kartīti pievieno tikai tad, ja tās feedback_key ir konkrēts (nevis generic_copy_keys sarakstā) un neviena parakstura kartīte jau nelieto to pašu atslēgu. Tā kļūdas klase netiek paslēpta (piemēram, E_GRAPH_*), bet netiek arī dublēta ar to pašu tekstu.",
+    "pending_only_rule_lv": "Ja slots ir graded un vienīgais ne-correct iemesls ir gaidīšana (pending_self_assessment vai auto_passed_pending_review ar NONE kļūdu), uzdevuma līmeņa kartīte netiek veidota: gaidīšanas etiķeti nes kritērija līmeņa kartīte, lai tā neatkārtotos divreiz.",
+    "multi_signature_rule_lv": "Verdikts, kas nes vairākus paraksturus (piemēram, dimensiju kļūda un saimes satura modelis), dod vienu kartīti uz katru unikālo paraksturu; kartītes kārto pēc priority augoši, tad pēc match_value.",
+    "criterion_item_rule_lv": "Kritērija līmeņa kartītes veido tikai tad, ja tās pievieno informāciju: (a) kritērijs ir pending (etiķete feedback.self_assess vai feedback.pending_review pēc grading lauka), (b) kritērijam ir N19 remediation_entries (viena kartīte uz katru ierakstu, ar method_card {card_id, step_id}), (c) kritērija paraksturs nav jau uzdevuma līmenī, vai (d) kritērija error_class atšķiras no slota error_class. Slotos, kas nav graded, kritēriju kartītes neveido — slota etiķete tās aizstāj.",
+    "pending_label_rule": {
+      "self": "feedback.self_assess",
+      "human-review": "feedback.pending_review",
+      "mixed": "feedback.pending_review"
+    },
+    "remediation_merge_lv": "Kartītes remediation ir kartējuma concept_ids un chain_ids, kam pievieno slota outcome_ids (vienmēr resolvējami) un N19 remediation_entries method_card atslēgu; dublikāti tiek noņemti, id kārto augoši. Tukšs chain_ids ir atļauts (null_chain_allowed).",
+    "name_resolution_lv": "Vārds tiek ņemts no kartējuma misconception_name.declared_text_lv; ja konteksts piegādā classificationNames (engine_taxonomy_classes vai method_signature_registry), tas pārraksta deklarēto tekstu attiecīgajiem avotiem. Tā kā #sim-engines un #sim-method-engine nav inlainētas kā JSON salas zem dokumenta, deklarētais teksts ir autoritatīvais noklusējums."
+  },
+  "mapping": [
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2B-02",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Neizlasāms ievads"
+      },
+      "feedback_key": "feedback.error.unreadable",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-UNITS"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-02",
+          "P2-03"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 10,
+      "specificity_note_lv": "Ievades gramatika «Neizlasāms ievads» ir pirmā pārbaudāmā kārta, tāpēc tās paraksturs rādāms pirms visiem satura modeļiem."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3B-01",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Dimensiju neatbilstība"
+      },
+      "feedback_key": "feedback.error.dimensional",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-DENSITY-UNITS"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-05",
+          "P3-07",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 20,
+      "specificity_note_lv": "Vienību algebra «Dimensiju neatbilstība» lokalizē kļūdu dimensijās un ir specifiskāka par jebkuru satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-1C vektori: divsoļu aprēķins, tā pati saime, kurā ir MC-EX01."
+      },
+      "feedback_key": "feedback.error.implausible",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C1-AL"
+        },
+        {
+          "kind": "engine_rule",
+          "id": "mass_in_equals_mass_out"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P1-01",
+          "P1-03"
+        ],
+        "chain_ids": [
+          "EX01"
+        ]
+      },
+      "priority": 30,
+      "specificity_note_lv": "Bilances pārkāpums «FAM-1C vektori: divsoļu aprēķins, tā pati saime, kurā ir MC-EX01.» ir konkrēts lieluma līmenī un rādāms pirms satura modeļiem; reģistra pats paraksturs lieto feedback.concept_link_label, bet šeit diagnoze nāk no konservācijas klases PHYSICALLY_IMPLAUSIBLE."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3A-02",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Fiziski neiespējams dimensiju ietvaros"
+      },
+      "feedback_key": "feedback.error.implausible",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C3-PERCENT"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P3-01",
+          "P3-06"
+        ],
+        "chain_ids": [
+          "EX05"
+        ]
+      },
+      "priority": 30,
+      "specificity_note_lv": "Bilances vai fiziskās jēgas pārkāpums «Fiziski neiespējams dimensiju ietvaros» ir konkrēts lieluma līmenī un rādāms pirms satura modeļiem."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7B-02",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Sintaktiski derīgs, bet ārpus domēna"
+      },
+      "feedback_key": "feedback.error.out_of_domain",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-03",
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 40,
+      "specificity_note_lv": "Deklarētā apgabala robeža «Sintaktiski derīgs, bet ārpus domēna» ir precīzi norobežota, tāpēc tā ir specifiskāka par vispārīgu satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1B-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-1B vektori: apgalvojuma labošana elektrolītu saimē, kurā ir MC-EX02."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T1-Q14-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P1-05",
+          "P1-06",
+          "P1-07"
+        ],
+        "chain_ids": [
+          "EX02"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-1B vektori: apgalvojuma labošana elektrolītu saimē, kurā ir MC-EX02.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2B-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-2B vektori: vienību un precizitātes aprēķini, tā pati saime, kurā ir MC-EX04."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T2-Q01-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-02",
+          "P2-03",
+          "P2-05",
+          "P2-06",
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-2B vektori: vienību un precizitātes aprēķini, tā pati saime, kurā ir MC-EX04.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T2-Q10-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-07",
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX03"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-2C vektori: skalas nolasīšana, tā pati saime, kurā ir MC-EX03.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3A-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-3A vektori: koncentrācijas aprēķins, tā pati saime, kurā ir MC-EX05."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T3-Q01-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P3-01",
+          "P3-02",
+          "P3-04",
+          "P3-05",
+          "P3-06"
+        ],
+        "chain_ids": [
+          "EX05"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-3A vektori: koncentrācijas aprēķins, tā pati saime, kurā ir MC-EX05.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-3C vektori: atšķaidīšanas secības kārtošana, tā pati saime, kurā ir MC-EX06."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T3-Q08-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P3-10",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX06"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-3C vektori: atšķaidīšanas secības kārtošana, tā pati saime, kurā ir MC-EX06.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4B-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-4B vektori: Hesa cikla aprēķins, tā pati saime, kurā ir MC-EX08."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T4-Q09-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P4-02",
+          "P4-03",
+          "P4-09"
+        ],
+        "chain_ids": [
+          "EX08"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-4B vektori: Hesa cikla aprēķins, tā pati saime, kurā ir MC-EX08.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-4C vektori: Gibsa enerģijas aprēķins, tā pati saime, kurā ir MC-EX07."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T4-Q02-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P4-02",
+          "P4-08",
+          "P4-10",
+          "P4-11"
+        ],
+        "chain_ids": [
+          "EX07"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-4C vektori: Gibsa enerģijas aprēķins, tā pati saime, kurā ir MC-EX07.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-5C vektori: grafika interpretācija, tā pati saime, kurā ir MC-EX09."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T5-Q12-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P5-08",
+          "P5-10"
+        ],
+        "chain_ids": [
+          "EX09"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-5C vektori: grafika interpretācija, tā pati saime, kurā ir MC-EX09.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5D-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-5A saimē (P5-01, P5-02, P5-04, P5-07) S1 stratuma vektora nav; izvēlēts FAM-5D paraksturs, kas aptver P5-03 un P5-06. Rekvizīts piezīmēts, nevis aizstāts klusējot."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T5-Q18-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P5-03",
+          "P5-06"
+        ],
+        "chain_ids": [
+          "EX10"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-5A saimē (P5-01, P5-02, P5-04, P5-07) S1 stratuma vektora nav; izvēlēts FAM-5D paraksturs, kas aptver P5-03 un P5-06. Rekvizīts piezīmēts, nevis aizstāts klusējot.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6A-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-6D saimē (P6-03) S1 stratuma vektora nav; izvēlēts FAM-6A paraksturs, kas aptver redoksa lomas un potenciāla virzienu. Rekvizīts piezīmēts."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T6-Q06-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P6-01",
+          "P6-02",
+          "P6-04"
+        ],
+        "chain_ids": [
+          "EX12"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-6D saimē (P6-03) S1 stratuma vektora nav; izvēlēts FAM-6A paraksturs, kas aptver redoksa lomas un potenciāla virzienu. Rekvizīts piezīmēts.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-6C vektori: titrēšanas skalas nolasīšana, tā pati saime, kurā ir MC-EX11."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T6-Q10-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P6-07",
+          "P6-08"
+        ],
+        "chain_ids": [
+          "EX11"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-6C vektori: titrēšanas skalas nolasīšana, tā pati saime, kurā ir MC-EX11.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7B-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-7B vektori: kalibrēšanas grafika interpretācija, tā pati saime, kurā ir MC-EX13."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T7-Q12-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-03",
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX13"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-7B vektori: kalibrēšanas grafika interpretācija, tā pati saime, kurā ir MC-EX13.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7C-01",
+      "misconception_name": {
+        "island": "method_engine_contract",
+        "field": "note_lv",
+        "declared_text_lv": "FAM-7C vektori: atšķaidītā parauga aprēķins, tā pati saime, kurā ir MC-EX14."
+      },
+      "feedback_key": "feedback.concept_link_label",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "GV-S1-T7-Q01-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 50,
+      "specificity_note_lv": "Kartītes soļa paraksturs «FAM-7C vektori: atšķaidītā parauga aprēķins, tā pati saime, kurā ir MC-EX14.» norāda konkrētu procedūras vietu un ir specifiskāks par saimes satura modeli."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1A-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-02",
+          "P1-03",
+          "P1-04"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-02",
+          "P1-03",
+          "P1-04"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1A-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-02",
+          "P1-03",
+          "P1-04"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Maisījumu, vielu klašu un reakciju klasifikācija — MC-1A-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1B-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Daļiņas, saites un disociācija — MC-1B-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-05",
+          "P1-06",
+          "P1-07"
+        ],
+        "chain_ids": [
+          "EX02"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Daļiņas, saites un disociācija — MC-1B-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Tabulas un nogulsnēšanās — MC-1D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-08",
+          "P1-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Tabulas un nogulsnēšanās — MC-1D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Tabulas un nogulsnēšanās — MC-1D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-08",
+          "P1-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Tabulas un nogulsnēšanās — MC-1D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-1D-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Tabulas un nogulsnēšanās — MC-1D-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P1-08",
+          "P1-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Tabulas un nogulsnēšanās — MC-1D-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2A-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Trauki un mērījuma izvēle — MC-2A-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-01",
+          "P2-04"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Trauki un mērījuma izvēle — MC-2A-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Trauki un mērījuma izvēle — MC-2A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-01",
+          "P2-04"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Trauki un mērījuma izvēle — MC-2A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2B-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Vienības, proporcijas un zīmīgie cipari — MC-2B-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-02",
+          "P2-03",
+          "P2-05",
+          "P2-06",
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Vienības, proporcijas un zīmīgie cipari — MC-2B-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Skala un menisks — MC-2C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-07",
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX03"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Skala un menisks — MC-2C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafika veidošana un nolasīšana — MC-2D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-08",
+          "P2-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Grafika veidošana un nolasīšana — MC-2D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafika veidošana un nolasīšana — MC-2D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-08",
+          "P2-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Grafika veidošana un nolasīšana — MC-2D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-2D-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafika veidošana un nolasīšana — MC-2D-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P2-08",
+          "P2-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Grafika veidošana un nolasīšana — MC-2D-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3B-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Blīvums un pārejas w/c/γ — MC-3B-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P3-07",
+          "P3-08",
+          "P3-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Blīvums un pārejas w/c/γ — MC-3B-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Atšķaidīšana un pagatavošana — MC-3C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P3-10",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX06"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Atšķaidīšana un pagatavošana — MC-3C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Medicīniskas etiķetes un nepietiekami dati — MC-3D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P3-03",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX06"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Medicīniskas etiķetes un nepietiekami dati — MC-3D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-3D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Medicīniskas etiķetes un nepietiekami dati — MC-3D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P3-03",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX06"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Medicīniskas etiķetes un nepietiekami dati — MC-3D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4A-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Sistēma, enerģija un termodinamikas likumi — MC-4A-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-01",
+          "P4-04",
+          "P4-05",
+          "P4-06"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Sistēma, enerģija un termodinamikas likumi — MC-4A-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Sistēma, enerģija un termodinamikas likumi — MC-4A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-01",
+          "P4-04",
+          "P4-05",
+          "P4-06"
+        ],
+        "chain_ids": []
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Sistēma, enerģija un termodinamikas likumi — MC-4A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4B-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Hesa likums un reakcijas ΔS — MC-4B-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-02",
+          "P4-03",
+          "P4-09"
+        ],
+        "chain_ids": [
+          "EX08"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Hesa likums un reakcijas ΔS — MC-4B-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "ΔG un temperatūras robeža — MC-4C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-02",
+          "P4-08",
+          "P4-10",
+          "P4-11"
+        ],
+        "chain_ids": [
+          "EX07"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «ΔG un temperatūras robeža — MC-4C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalorimetrija un skaidrojuma kļūdas — MC-4D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-04",
+          "P4-07",
+          "P4-11"
+        ],
+        "chain_ids": [
+          "EX07"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalorimetrija un skaidrojuma kļūdas — MC-4D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalorimetrija un skaidrojuma kļūdas — MC-4D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-04",
+          "P4-07",
+          "P4-11"
+        ],
+        "chain_ids": [
+          "EX07"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalorimetrija un skaidrojuma kļūdas — MC-4D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-4D-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalorimetrija un skaidrojuma kļūdas — MC-4D-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P4-04",
+          "P4-07",
+          "P4-11"
+        ],
+        "chain_ids": [
+          "EX07"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalorimetrija un skaidrojuma kļūdas — MC-4D-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5A-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Faktori, sadursmes un enerģijas grafiki — MC-5A-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-01",
+          "P5-02",
+          "P5-04",
+          "P5-07"
+        ],
+        "chain_ids": [
+          "EX10"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Faktori, sadursmes un enerģijas grafiki — MC-5A-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Faktori, sadursmes un enerģijas grafiki — MC-5A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-01",
+          "P5-02",
+          "P5-04",
+          "P5-07"
+        ],
+        "chain_ids": [
+          "EX10"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Faktori, sadursmes un enerģijas grafiki — MC-5A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5A-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Faktori, sadursmes un enerģijas grafiki — MC-5A-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-01",
+          "P5-02",
+          "P5-04",
+          "P5-07"
+        ],
+        "chain_ids": [
+          "EX10"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Faktori, sadursmes un enerģijas grafiki — MC-5A-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5B-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Reakcijas pakāpe un k — MC-5B-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-05",
+          "P5-09"
+        ],
+        "chain_ids": [
+          "EX09"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Reakcijas pakāpe un k — MC-5B-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5B-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Reakcijas pakāpe un k — MC-5B-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-05",
+          "P5-09"
+        ],
+        "chain_ids": [
+          "EX09"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Reakcijas pakāpe un k — MC-5B-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Pusperiods un modelis — MC-5C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-08",
+          "P5-10"
+        ],
+        "chain_ids": [
+          "EX09"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Pusperiods un modelis — MC-5C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-5D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Katalīze, enzīmi un mehānismi — MC-5D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P5-03",
+          "P5-06"
+        ],
+        "chain_ids": [
+          "EX10"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Katalīze, enzīmi un mehānismi — MC-5D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Redoksa lomas un potenciālu tabula — MC-6A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-01",
+          "P6-02",
+          "P6-04"
+        ],
+        "chain_ids": [
+          "EX12"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Redoksa lomas un potenciālu tabula — MC-6A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6B-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Pusreakcijas dažādās vidēs — MC-6B-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-05",
+          "P6-06"
+        ],
+        "chain_ids": [
+          "EX11"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Pusreakcijas dažādās vidēs — MC-6B-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6B-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Pusreakcijas dažādās vidēs — MC-6B-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-05",
+          "P6-06"
+        ],
+        "chain_ids": [
+          "EX11"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Pusreakcijas dažādās vidēs — MC-6B-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Titrēšana un koncentrācija — MC-6C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-07",
+          "P6-08"
+        ],
+        "chain_ids": [
+          "EX11"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Titrēšana un koncentrācija — MC-6C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nernsts un nepamatots secinājums — MC-6D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-03"
+        ],
+        "chain_ids": [
+          "EX12"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Nernsts un nepamatots secinājums — MC-6D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-6D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nernsts un nepamatots secinājums — MC-6D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P6-03"
+        ],
+        "chain_ids": [
+          "EX12"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Nernsts un nepamatots secinājums — MC-6D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7A-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Likums un metodes lietojums — MC-7A-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-01",
+          "P7-02"
+        ],
+        "chain_ids": [
+          "EX13"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Likums un metodes lietojums — MC-7A-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7A-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Likums un metodes lietojums — MC-7A-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-01",
+          "P7-02"
+        ],
+        "chain_ids": [
+          "EX13"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Likums un metodes lietojums — MC-7A-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7C-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nezināms paraugs un atšķaidījums — MC-7C-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Nezināms paraugs un atšķaidījums — MC-7C-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7D-01",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-01"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-05"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-01» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7D-02",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-02"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-05"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-02» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "signature",
+      "match_value": "MC-7D-03",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-03"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [
+          "P7-05"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 60,
+      "specificity_note_lv": "Saimes satura modelis «Kalibrēšanas derīgums un laboratorijas soļi — MC-7D-03» nosauc saimi, ne konkrētu soli; N09 reģistra nosaukuma nav, tāpēc nosaukums ir N23 autora PROPOSED teksts."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "UNREADABLE_INPUT",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Neizlasāms ievads"
+      },
+      "feedback_key": "feedback.error.unreadable",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-UNITS"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-02",
+          "P2-03"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 10,
+      "specificity_note_lv": "Ievades gramatika «Neizlasāms ievads» ir pirmā pārbaudāmā kārta, tāpēc tās paraksturs rādāms pirms visiem satura modeļiem."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "BLANK_RESPONSE",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Tukša atbilde (kļūdas klase)"
+      },
+      "feedback_key": "input.error.blank",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "BLANK_RESPONSE"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 12,
+      "specificity_note_lv": "Tukša atbilde «Tukša atbilde (kļūdas klase)» ir fiksēts stāvoklis, kas rādāms uzreiz aiz neizlasāma ievada."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "DIMENSIONAL_INCONSISTENCY",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Dimensiju neatbilstība"
+      },
+      "feedback_key": "feedback.error.dimensional",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-DENSITY-UNITS"
+        },
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-UNITS"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-05",
+          "P3-07",
+          "P3-11"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 20,
+      "specificity_note_lv": "Vienību algebra «Dimensiju neatbilstība» lokalizē kļūdu dimensijās un ir specifiskāka par jebkuru satura modeli."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "PHYSICALLY_IMPLAUSIBLE",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Fiziski neiespējams dimensiju ietvaros"
+      },
+      "feedback_key": "feedback.error.implausible",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C3-PERCENT"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P3-01",
+          "P3-06"
+        ],
+        "chain_ids": [
+          "EX05"
+        ]
+      },
+      "priority": 30,
+      "specificity_note_lv": "Bilances vai fiziskās jēgas pārkāpums «Fiziski neiespējams dimensiju ietvaros» ir konkrēts lieluma līmenī un rādāms pirms satura modeļiem."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "OUT_OF_DOMAIN",
+      "misconception_name": {
+        "island": "engine_taxonomy",
+        "field": "name_lv",
+        "declared_text_lv": "Sintaktiski derīgs, bet ārpus domēna"
+      },
+      "feedback_key": "feedback.error.out_of_domain",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-03",
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 40,
+      "specificity_note_lv": "Deklarētā apgabala robeža «Sintaktiski derīgs, bet ārpus domēna» ir precīzi norobežota, tāpēc tā ir specifiskāka par vispārīgu satura modeli."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Ārpus deklarētā diapazona (ekstrapolācija)"
+      },
+      "feedback_key": "feedback.error.out_of_domain",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        },
+        {
+          "kind": "engine_rule",
+          "id": "N15-NOEXTRAP-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-03",
+          "P7-04"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 40,
+      "specificity_note_lv": "Deklarētā apgabala robeža «Ārpus deklarētā diapazona (ekstrapolācija)» ir precīzi norobežota, tāpēc tā ir specifiskāka par vispārīgu satura modeli."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "NOT_ASSESSED",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Neizvērtēts apgabals (ārpus diapazona)"
+      },
+      "feedback_key": "feedback.error.out_of_domain",
+      "citations": [
+        {
+          "kind": "graph_rule",
+          "id": "N18-INHERIT-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P7-03"
+        ],
+        "chain_ids": [
+          "EX14"
+        ]
+      },
+      "priority": 42,
+      "specificity_note_lv": "Neizvērtētais apgabals «Neizvērtēts apgabals (ārpus diapazona)» izriet no diapazona un rādāms aiz tiešas ārpusdomēna atbildes."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_DOUBLE_BACK",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Zīmējums atgriežas atpakaļ"
+      },
+      "feedback_key": "input.error.graph.double_back",
+      "citations": [
+        {
+          "kind": "graph_rule",
+          "id": "N18-CAPTURE-PATH-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Zīmējums atgriežas atpakaļ» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_EMPTY_SUBMISSION",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafikā nav neviena posma"
+      },
+      "feedback_key": "input.error.graph.empty",
+      "citations": [
+        {
+          "kind": "graph_rule",
+          "id": "N18-CAPTURE-PATH-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-08"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Grafikā nav neviena posma» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_NON_MONOTONIC",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Zīmējums nav monotons"
+      },
+      "feedback_key": "input.error.graph.non_monotonic",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "calibration_line_draw"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-09"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Zīmējums nav monotons» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Atzīme ārpus asu diapazona"
+      },
+      "feedback_key": "input.error.graph.out_of_axis",
+      "citations": [
+        {
+          "kind": "graph_rule",
+          "id": "N18-CAPTURE-GRID-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-08",
+          "P7-03"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Atzīme ārpus asu diapazona» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_PAYLOAD_MALFORMED",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafika iesnieguma struktūra nav nolasāma"
+      },
+      "feedback_key": "input.error.graph.malformed",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "sim-graph-draw-v1"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-08"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Grafika iesnieguma struktūra nav nolasāma» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_WRONG_DIRECTION",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nepareizs atkarības virziens"
+      },
+      "feedback_key": "input.error.graph.wrong_direction",
+      "citations": [
+        {
+          "kind": "contract_rule",
+          "id": "calibration_line_draw"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-09",
+          "P7-03"
+        ],
+        "chain_ids": []
+      },
+      "priority": 45,
+      "specificity_note_lv": "Grafika derīguma kļūda «Nepareizs atkarības virziens» ir iesnieguma struktūras kļūda, kas rādāma pirms saimes satura modeļa."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "E_GRAPH_TOLERANCE_DRIFT",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Grafika tolerances kontrakta novirze"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "graph_rule",
+          "id": "N18-TOLERANCE-01"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 46,
+      "specificity_note_lv": "Grafika kontrakta novirze «Grafika tolerances kontrakta novirze» ir integritātes kļūda un rādāma uzreiz aiz derīguma kļūdām."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "WRONG_ORDER",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nepareiza soļu kārtība"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 52,
+      "specificity_note_lv": "Procedūras kļūda «Nepareiza soļu kārtība» norāda konkrētu pozīciju vai pāri un ir specifiskāka par saimes satura modeli."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "WRONG_PAIRING",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nepareizi saistīti pāri"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 52,
+      "specificity_note_lv": "Procedūras kļūda «Nepareizi saistīti pāri» norāda konkrētu pozīciju vai pāri un ir specifiskāka par saimes satura modeli."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "OUT_OF_TOLERANCE",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Ārpus deklarētās tolerances"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-TOLERANCE"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 70,
+      "specificity_note_lv": "Lieluma līmeņa kļūda «Ārpus deklarētās tolerances» rādāma pēc strukturālajām kļūdām, jo tā neizskaidro, kurā solī kļūda radās."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "SIG_FIG_MISMATCH",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Zīmīgo ciparu neatbilstība"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-SIGFIG"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-10"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 70,
+      "specificity_note_lv": "Lieluma līmeņa kļūda «Zīmīgo ciparu neatbilstība» rādāma pēc strukturālajām kļūdām, jo tā neizskaidro, kurā solī kļūda radās."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "UNLABELED_PERCENT_BASIS",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nenorādīta procentu bāze"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C3-PERCENT"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P3-03",
+          "P3-06"
+        ],
+        "chain_ids": [
+          "EX05"
+        ]
+      },
+      "priority": 70,
+      "specificity_note_lv": "Lieluma līmeņa kļūda «Nenorādīta procentu bāze» rādāma pēc strukturālajām kļūdām, jo tā neizskaidro, kurā solī kļūda radās."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "WRONG_OPTION_SELECTION",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nepareizi izvēlēti varianti"
+      },
+      "feedback_key": "feedback.fallback_notice",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C7-NOEXTRAP"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 70,
+      "specificity_note_lv": "Lieluma līmeņa kļūda «Nepareizi izvēlēti varianti» rādāma pēc strukturālajām kļūdām, jo tā neizskaidro, kurā solī kļūda radās."
+    },
+    {
+      "match_kind": "error_class",
+      "match_value": "NONE",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nav kļūdas (kļūdas klase NONE)"
+      },
+      "feedback_key": "feedback.correct",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 96,
+      "specificity_note_lv": "«Nav kļūdas (kļūdas klase NONE)» apzīmē pilnīgu un pareizu ierakstu, tāpēc atgriezeniskās saites kartīte neveidojas."
+    },
+    {
+      "match_kind": "slot_state",
+      "match_value": "invalid",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nelasāms ievads (stāvoklis invalid)"
+      },
+      "feedback_key": "feedback.results.malformed_zero",
+      "citations": [
+        {
+          "kind": "conventions_ref",
+          "id": "CIT-C2-UNITS"
+        }
+      ],
+      "remediation": {
+        "concept_ids": [
+          "P2-02"
+        ],
+        "chain_ids": [
+          "EX04"
+        ]
+      },
+      "priority": 91,
+      "specificity_note_lv": "Stāvokļa etiķete «Nelasāms ievads (stāvoklis invalid)» aizstāj kļūdas modeli, jo šajā stāvoklī satura diagnoze nav pieejama."
+    },
+    {
+      "match_kind": "slot_state",
+      "match_value": "incomplete",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nepabeigta atbilde (stāvoklis incomplete)"
+      },
+      "feedback_key": "feedback.results.incomplete_zero",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 92,
+      "specificity_note_lv": "Stāvokļa etiķete «Nepabeigta atbilde (stāvoklis incomplete)» aizstāj kļūdas modeli, jo šajā stāvoklī satura diagnoze nav pieejama."
+    },
+    {
+      "match_kind": "slot_state",
+      "match_value": "unattempted",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Nav atbildēts (stāvoklis unattempted)"
+      },
+      "feedback_key": "feedback.results.unattempted",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 93,
+      "specificity_note_lv": "Stāvokļa etiķete «Nav atbildēts (stāvoklis unattempted)» aizstāj kļūdas modeli, jo šajā stāvoklī satura diagnoze nav pieejama."
+    },
+    {
+      "match_kind": "slot_state",
+      "match_value": "manual_pending",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Gaida manuālu vai pašnovērtējuma pārbaudi (stāvoklis manual_pending)"
+      },
+      "feedback_key": "feedback.pending_review",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 94,
+      "specificity_note_lv": "Stāvokļa etiķete «Gaida manuālu vai pašnovērtējuma pārbaudi (stāvoklis manual_pending)» aizstāj kļūdas modeli, jo šajā stāvoklī satura diagnoze nav pieejama."
+    },
+    {
+      "match_kind": "slot_state",
+      "match_value": "graded",
+      "misconception_name": {
+        "island": "declared",
+        "field": "text_lv",
+        "declared_text_lv": "Novērtēts bez kļūdas (stāvoklis graded)"
+      },
+      "feedback_key": "feedback.correct",
+      "citations": [],
+      "remediation": {
+        "concept_ids": [],
+        "chain_ids": []
+      },
+      "priority": 95,
+      "specificity_note_lv": "Stāvokļa etiķete «Novērtēts bez kļūdas (stāvoklis graded)» aizstāj kļūdas modeli, jo šajā stāvoklī satura diagnoze nav pieejama."
+    }
+  ],
+  "unmapped_rule": {
+    "id": "E_FEEDBACK_UNMAPPED",
+    "rule_lv": "Nekartēts paraksturs vai kļūdas klase nekad netiek klusi izlaista: assemble izmet E_FEEDBACK_UNMAPPED ar slota id un vērtību. Build gate un klasifikācijas slaucējs pieprasa nulle nekartētu vērtību pār visu sasaldēto vokabulāru savienību."
+  },
+  "remediation_resolution": {
+    "concept_ids_must_resolve_in": [
+      "data/anchor_registry.json",
+      "data/concept_summaries.json"
+    ],
+    "chain_ids_must_resolve_in": [
+      "data/chains.json"
+    ],
+    "method_card_steps_must_resolve_in": [
+      "data/method_cards.json"
+    ],
+    "null_chain_allowed": true,
+    "null_chain_reason_lv": "N28 B.1.1: saimēm bez darba piemēra ķēdes saite netiek izdomāta; kartīte rāda tikai konceptu saites, un chain_ids ir tukšs saraksts, nevis bojāta saite."
+  },
+  "render_contract": {
+    "root": "section.score-report",
+    "root_attributes": [
+      "data-graded-digest"
+    ],
+    "blocks": [
+      "div.score-totals > p.score-auto / p.score-pending / p.score-unblended-note / p.score-honesty-note",
+      "ul.score-slots > li.score-slot[data-slot-id][data-state]",
+      "div.score-slot-row > span.score-slot-id / span.score-slot-points / span.score-slot-state",
+      "details.score-criteria > summary + table.criteria-table (criterion_id, engine_binding, status, awarded/max, error)",
+      "p.score-raw (tikai state=invalid)",
+      "div.feedback-cards > h4 + article.feedback-card[data-level][data-signature]"
+    ],
+    "copy_keys": [
+      "feedback.results.auto_total",
+      "feedback.results.pending_total",
+      "feedback.results.unblended",
+      "feedback.results.honesty",
+      "feedback.results.unattempted",
+      "feedback.results.task_level",
+      "feedback.results.criterion_disclosure",
+      "feedback.results.misconception",
+      "feedback.results.remediation",
+      "feedback.results.raw_preserved",
+      "feedback.results.malformed_zero",
+      "feedback.results.incomplete_zero",
+      "feedback.correct",
+      "feedback.partial",
+      "feedback.incorrect",
+      "feedback.self_assess",
+      "feedback.pending_review",
+      "feedback.citation_label"
+    ],
+    "verdict_labels": {
+      "correct": "feedback.correct",
+      "partial": "feedback.partial",
+      "incorrect": "feedback.incorrect",
+      "pending_self_assessment": "feedback.self_assess",
+      "auto_passed_pending_review": "feedback.pending_review",
+      "not_assessed": "feedback.error.out_of_domain"
+    },
+    "state_labels": {
+      "invalid": "feedback.results.malformed_zero",
+      "incomplete": "feedback.results.incomplete_zero",
+      "unattempted": "feedback.results.unattempted",
+      "manual_pending": "feedback.pending_review"
+    },
+    "honesty_note_once": true,
+    "unblended_totals": true,
+    "raw_preserved_only_state": "invalid",
+    "remediation_attributes": [
+      "data-concept",
+      "data-chain",
+      "data-card",
+      "data-step"
+    ],
+    "link_resolvers": {
+      "concept": "SimConceptDrawer.openFromLink({conceptId})",
+      "chain": "SimChains.openFromLink({chainId})",
+      "card": "SimMethodCards.stepNote(cardId, stepId, loaded)"
+    },
+    "escape_rule_lv": "Visas interpolētās vērtības, ieskaitot mācību teksta kopijas un saglabāto ievadu, tiek HTML-eskapētas (& < >).",
+    "digest_rule": "sha256 pār izdalīto HTML (UTF-8), N04 kanoniskā serializācija atsevišķi ieraksta digestam.",
+    "structure_note_lv": "N32 drīkst pārveidot stilu, bet ne pārbūvēt šo struktūru; katras redzamās virknes avots ir #sim-terms atslēga."
+  },
+  "coverage": {
+    "required_families": {
+      "n17_error_taxonomy_classes": 4,
+      "n17_fallback": 1,
+      "n17_conservation_signature": 1,
+      "n19_signature_registry": 14,
+      "n18_error_class_vocabulary": 12,
+      "n20_bank_misconception_signatures": 62,
+      "n22_slot_states": 5,
+      "n17_n05_error_classes": 10
+    },
+    "unique_signature_families": 62,
+    "unique_error_class_families": 21,
+    "unique_slot_state_families": 5,
+    "note_lv": "Savienība pārsniedz minimālo prasību: papildus kartētas ir visas N17 n05 kļūdu klases, BLANK_RESPONSE un N22 error_surfaces vērtības, lai neviens dzinēja izsauktais error_class ne nonāk līdz E_FEEDBACK_UNMAPPED."
+  },
+  "conflicts": [
+    {
+      "id": "N23-C02",
+      "status": "open-reference",
+      "statement_lv": "N19 signature_registry katram no 14 paraksturiem deklarē feedback_key \"feedback.concept_link_label\", kas ir saites etiķete, nevis diagnozes teksts. Šī sala patver to kā atslēgu 13 parakstiem, bet MC-1C-01 diagnozei lieto konservācijas klases feedback.error.implausible; starpība ir redzama katrā ierakstā, nevis paslēpta.",
+      "handoff": "N19/N28"
+    },
+    {
+      "id": "N23-C04",
+      "status": "open-reference",
+      "statement_lv": "N17 n05→signature karte satura izvēles kļūdām piešķir OUT_OF_DOMAIN paraksturu MC-7B-02. Šī sala to atzīst par klases aliasu un slāpē tikai tur, kur tas nav diagnoze (engine_signature_alias_rule); dzinēja loģika netiek mainīta.",
+      "handoff": "N17/N23"
+    },
+    {
+      "id": "N09-GAP",
+      "status": "recorded-dependency-gap",
+      "statement_lv": "N09 maldīgo priekšstatu reģistrs šajā darba telpā vēl nav izpildīts (sk. README un data/method_cards.json n09_gap_notice_lv). Tāpēc šī kartējuma prioritātes lauks ir N23 autora PROPOSED politika pār sasaldētajiem dzinēju vokabulāriem, nevis N09 reģistra lauks; kad N09 tiks izpildīts, pārbaudāms ir tieši šis lauks un kartējuma saites, nevis dzinēju loģika.",
+      "handoff": "N09"
+    }
+  ]
+}

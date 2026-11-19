@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "energy-conventions-contract",
+  "title": "N13 Frozen Topic 4 Energy, Hess Cycle, and Maxwell-Boltzmann Conventions Contract",
+  "owner": "N13",
+  "status": "frozen-contract-for-N16-N18",
+  "consumers": ["N13", "N16", "N17", "N18", "N31", "N40"],
+  "conventions_island_ref": "#sim-conventions",
+  "conventions_bindings": {
+    "sign_convention": "thermodynamics.sign_convention",
+    "enthalpy": "thermodynamics.enthalpy",
+    "gibbs": "thermodynamics.gibbs",
+    "temperature_unit": "thermodynamics.temperature_unit",
+    "gas_constant": "constants.values[id=R]",
+    "energy_tolerance": "tolerances.quantity_classes[id=energy]",
+    "temperature_tolerance": "tolerances.quantity_classes[id=temperature]",
+    "rounding": "rounding",
+    "conflicts": ["C04", "V-06", "V-08", "C05", "C10", "N03-OBS-01"]
+  },
+  "sign_rules": {
+    "course_first_law_form": "Q = ΔU + A",
+    "iupac_first_law_form": "ΔU = q + w",
+    "reaction_enthalpy_formula": "ΔH = H(produkti) − H(izejvielas)",
+    "exothermic_condition": "ΔH < 0",
+    "endothermic_condition": "ΔH > 0",
+    "forward_barrier_formula": "E_a,tiešā = E_‡ − E_izejv > 0",
+    "reverse_barrier_formula": "E_a,pretējā = E_‡ − E_prod > 0",
+    "barrier_enthalpy_identity": "ΔH = E_a,tiešā − E_a,pretējā",
+    "hess_closure_formula": "∮ dH = ΔH_tiešais − Σ(s_i · ΔH_i) = 0",
+    "hess_step_direction_rule": "s_i = +1, ja posma pāreja sakrīt ar bultas virzienu; s_i = −1, ja posmu šķērso pret bultas virzienu.",
+    "unicode_minus_rule_lv": "Negatīvām ΔH, E un ΔG vērtībām attēlos un ķēdēs lieto Unicode mīnusu '−' (U+2212) un komatu (piem., −70,0 kJ/mol); pozitīvai reakcijas entalpijai rāda skaidru '+' zīmi (piem., +55,0 kJ/mol)."
+  },
+  "number_format_for_chains": {
+    "decimal_separator_lv": ",",
+    "rounding_mode": "half_up",
+    "final_only": true,
+    "enthalpy_unit": "kJ/mol",
+    "entropy_unit": "J/(mol·K)",
+    "temperature_unit": "K",
+    "gas_constant_value_j_mol_k": "8.314",
+    "gas_constant_value_kj_mol_k": "0.008314",
+    "hess_display_decimals": 1,
+    "closure_display_decimals": 2
+  },
+  "grading_coupling": {
+    "coupled_tasks": ["N16", "N17", "N18"],
+    "tolerance_class": "energy",
+    "tolerance_abs_kj_mol": "1.0",
+    "temperature_tolerance_class": "temperature",
+    "temperature_tolerance_abs_k": "0.5",
+    "expected_unit": "kJ/mol",
+    "sig_figs_rule": "least_of_givens",
+    "sign_error_fatal": true,
+    "gradeable_reading_targets": [
+      "delta_h_kj_mol",
+      "ea_forward_kj_mol",
+      "ea_reverse_kj_mol",
+      "hess_direct_kj_mol"
+    ],
+    "sign_trap_note_lv": "Zīmes apvēršana (piem., +70,0 kJ/mol eksotermiskam procesam vai −ΔH_i aizmiršana pretbultas Hesa posmā) vienmēr ir kļūda neatkarīgi no |ΔH| moduļa."
+  },
+  "honesty_and_scope_contracts": {
+    "v06_scope_discipline_lv": "Katrs sadalījuma vai enerģijas profila slieksnis un skaitlis attiecas tikai uz attēlā deklarēto reakciju, temperatūru un nosacījumiem un nav vispārināms uz citām reakcijām (V-06 analoģija).",
+    "v08_c05_catalase_honesty_lv": "Katalāzes E_a avota vērtība (23 J/mol pret iespējamo 23 kJ/mol, K10) paliek zinātniski atvērta pie kursa docētājas (V-08 / C05; ceļvedī N13 minēts kā C10, sk. N03-OBS-01). Katalizētā profila attēls māca barjeras pazemināšanas modeli ar vispārīgu piemēru (95 → 35 kJ/mol, nemainīts ΔH = −70,0 kJ/mol), neapgalvojot strīdīgos katalāzes skaitļus."
+  }
+}

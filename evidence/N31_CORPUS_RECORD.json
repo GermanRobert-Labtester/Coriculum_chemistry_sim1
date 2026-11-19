@@ -1,0 +1,499 @@
+{
+  "build_id": "c05b1a8c29b52c8a",
+  "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+  "deliverable": {
+    "bytes": 2649417,
+    "gates_passed": 28,
+    "inlined_modules_count": 37,
+    "kib": 2587.3,
+    "manifest_bytes": 91673,
+    "manifest_path": "output/build-manifest.json",
+    "manifest_sha256": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+    "path": "output/simulator.html",
+    "sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+    "sources_tracked": 132
+  },
+  "iso_date": "2026-11-19",
+  "policy_id": "n31-single-file-build-policy-v1",
+  "schema_version": 1,
+  "status": "PASS",
+  "step_a_policy_and_order": {
+    "circular_dependency_fixture": {
+      "both_modules_named": true,
+      "error_message": "E_MODULE_ORDER_VIOLATION: ModuleA (#1) consumes SimModuleA_TargetB from later module ModuleB (#2)",
+      "named_modules": [
+        "ModuleA",
+        "ModuleB"
+      ],
+      "rejected": true,
+      "status": "PASS"
+    },
+    "iso_date": "2026-11-19",
+    "module_order_validation": {
+      "module_count": 37,
+      "provided_symbols_count": 38,
+      "resolved_dependency_edges": 137,
+      "status": "PASS"
+    },
+    "policy_id": "n31-single-file-build-policy-v1",
+    "policy_sha256": "ad1c05be676675cecf0f065af28b55a6d5d623f4bc5036ef7d3cca45a69e0b0c",
+    "stamp_fixture": {
+      "composite_digest_run_1": "e515c7fcb3b207b0c24f3f20070bc3d0180deed7ff23bb2b80a7101db3e48ed6",
+      "composite_digest_run_2": "e515c7fcb3b207b0c24f3f20070bc3d0180deed7ff23bb2b80a7101db3e48ed6",
+      "one_byte_island_mutation": {
+        "flipped_islands": [
+          "sim-terms"
+        ],
+        "flipped_sources": [
+          "data/terms.json"
+        ],
+        "mutated_composite_digest": "334df6b78d7a759fcf14a0d26e283efb610b4f9cf8c03544d501bef64f92c781",
+        "mutated_path": "data/terms.json"
+      },
+      "one_byte_module_mutation": {
+        "flipped_islands": [],
+        "flipped_modules": [
+          "src/quantity-engine.js"
+        ],
+        "flipped_sources": [
+          "src/quantity-engine.js"
+        ],
+        "mutated_composite_digest": "6cba29b9922365102857df9ca4816c56b17a12c2012b74a8509dc65d77dc269d",
+        "mutated_path": "src/quantity-engine.js"
+      },
+      "status": "PASS",
+      "unchanged_runs_identical": true
+    },
+    "template_validation": {
+      "core_islands_verified": [
+        "sim-coverage",
+        "sim-conventions",
+        "sim-bank",
+        "sim-forms",
+        "sim-golden-vectors",
+        "sim-terms",
+        "sim-analytics"
+      ],
+      "dry_run_filled_points_count": 99,
+      "duplicate_call_fixture": {
+        "error_message": "E_TEMPLATE_DUPLICATE_INSERTION: duplicate insertion attempted for #sim-bank (__SIM_BANK_JSON__)",
+        "named_point": "#sim-bank",
+        "rejected": true,
+        "status": "PASS"
+      },
+      "duplicate_template_point_fixture": {
+        "error_message": "E_TEMPLATE_DUPLICATE_POINT: island insertion point #sim-coverage appears 2 times in skeleton template",
+        "named_point": "#sim-coverage",
+        "rejected": true,
+        "status": "PASS"
+      },
+      "status": "PASS",
+      "total_islands_verified": 22,
+      "total_modules_verified": 37
+    },
+    "version": "1.0.0-n31"
+  },
+  "step_b_assembly_and_idempotence": {
+    "b11_json_emission_fixture": {
+      "byte_identical_across_orderings": true,
+      "emitted_bytes": 332,
+      "emitted_sha256": "b19a55d7eeedf4ae693ffa33f90101085ac85758f205e33490cd5b71fb40dfe7",
+      "latvian_utf8_readable": true,
+      "orderings_tested": 3,
+      "script_close_escaped": true,
+      "status": "PASS"
+    },
+    "b12_wrapper_and_runtime": {
+      "in_file_smoke": {
+        "facade_checks": {
+          "n20_bank_and_engine_in_file": true,
+          "n22_inputs_facade_exercised": true,
+          "n23_grading_facade_exercised": true,
+          "n31_build_contract_vector_pass": true
+        },
+        "failed": 0,
+        "n31_vector": {
+          "details": {
+            "coreIslands": 7,
+            "inlinedGlobals": 36
+          },
+          "id": "SMK-N31-BUILD-CONTRACT",
+          "owner": "N31",
+          "reason": null,
+          "status": "PASS"
+        },
+        "passed": 27,
+        "status": "PASS",
+        "total": 27
+      },
+      "module_regions_mapped": 37,
+      "parser_engine": "node:vm.Script",
+      "runtime_globals_verified_count": 37,
+      "status": "PASS"
+    },
+    "b13_idempotence_and_atomicity": {
+      "atomicity_fixture": {
+        "after_failure_artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+        "failed_build_exit_code": 1,
+        "injected_fault": "corrupt UTF-8 bytes (0xff 0xfe) in scratch --terms source",
+        "previous_artifact_bytes": 2649417,
+        "previous_artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+        "previous_artifact_untouched": true,
+        "previous_manifest_untouched": true,
+        "status": "PASS",
+        "stray_temp_files_count": 0
+      },
+      "status": "PASS",
+      "temp_collision_fixture": {
+        "active_temp_cleaned_up": true,
+        "stale_temp_name": "direct_atomic.html.stale_collision.tmp",
+        "status": "PASS",
+        "survived_without_collision": true,
+        "target_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c"
+      },
+      "three_run_idempotence": {
+        "all_html_byte_identical": true,
+        "all_manifests_byte_identical": true,
+        "artifact_bytes": 2649417,
+        "artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+        "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+        "manifest_sha256": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+        "rebuild_diff_bytes": 0,
+        "runs": [
+          {
+            "artifact_bytes": 2649417,
+            "artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+            "build_id": "c05b1a8c29b52c8a",
+            "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+            "manifest_bytes": 91673,
+            "manifest_sha256": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+            "process_exit_code": 0,
+            "run": 1
+          },
+          {
+            "artifact_bytes": 2649417,
+            "artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+            "build_id": "c05b1a8c29b52c8a",
+            "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+            "manifest_bytes": 91673,
+            "manifest_sha256": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+            "process_exit_code": 0,
+            "run": 2
+          },
+          {
+            "artifact_bytes": 2649417,
+            "artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+            "build_id": "c05b1a8c29b52c8a",
+            "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+            "manifest_bytes": 91673,
+            "manifest_sha256": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+            "process_exit_code": 0,
+            "run": 3
+          }
+        ],
+        "runs_count": 3,
+        "status": "PASS"
+      }
+    }
+  },
+  "step_c_contract_and_budgets": {
+    "assertions": {
+      "charset": "utf-8",
+      "core_section_1_2_island_count": 7,
+      "core_section_1_2_islands": [
+        "sim-coverage",
+        "sim-conventions",
+        "sim-bank",
+        "sim-forms",
+        "sim-golden-vectors",
+        "sim-terms",
+        "sim-analytics"
+      ],
+      "duplicate_id_count": 0,
+      "executable_script_count": 1,
+      "external_script_count": 0,
+      "external_stylesheet_count": 0,
+      "external_url_count": 0,
+      "landmark_sections_count": 11,
+      "lang": "lv",
+      "required_section_1_2_anchor_count": 9,
+      "required_section_1_2_anchors": {
+        "atskats": 1,
+        "druka": 1,
+        "eksamens": 1,
+        "iestatijumi": 1,
+        "metodika": 1,
+        "prakse": 1,
+        "rezultati": 1,
+        "sakums": 1,
+        "saturs": 1
+      },
+      "total_island_count": 22,
+      "unique_ascii_id_count": 245,
+      "unresolved_internal_href_count": 0
+    },
+    "composition_table": {
+      "artifact_total_bytes": 2649417,
+      "bank_island_bytes": 249798,
+      "budgets": [
+        {
+          "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N31 ir 2649417 B, tāpēc izpildītais griests ir 2624 KiB. N31 vienfaila būves konveijers apvieno visas 22 kanoniskās JSON salas, 37 topoloģiski sakārtotos runtime moduļus, CSS/SVG slāņus un būves zīmogus vienā bezsaistes output/simulator.html failā (2,649,417 B / 2,587,3 KiB); griests fiksēts uz 2,624 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu.",
+          "bytes": 2649417,
+          "declared_max_bytes": 1433600,
+          "kib": 2587.3,
+          "max_bytes": 2686976,
+          "min_bytes": 716800,
+          "name": "artifact_total",
+          "share_percent_of_max": 98.6,
+          "within_declared_band": false,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N31 ir 1152126 B, tāpēc izpildītais griests ir 1168 KiB. N31 galīgais vienfaila būves lēmums inline'o visus 11 IV–V fāzes dzinēju, ievades un vērtēšanas runtime moduļus (quantity-engine.js, graph-scoring-engine.js, graph-capture.js, method-engine.js, method-card-view.js, variant-engine.js, inputs/{registry,components,integration}.js, grading.js, feedback.js) ar moduļu robežkomentāriem un SMK-N31-BUILD-CONTRACT dūmu vektoru, kamēr 308,6 KiB ģeneratora šabloni (src/variant-templates.js) paliek ārpus artefakta. Izmērītais runtime JS ir 1,152,126 B (1,125,1 KiB); griests fiksēts uz 1,168 KiB.",
+          "bytes": 1152126,
+          "declared_max_bytes": 225280,
+          "kib": 1125.1,
+          "max_bytes": 1196032,
+          "min_bytes": 122880,
+          "name": "runtime_js_code",
+          "share_percent_of_max": 96.33,
+          "within_declared_band": false,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+          "bytes": 59899,
+          "declared_max_bytes": 81920,
+          "kib": 58.5,
+          "max_bytes": 81920,
+          "min_bytes": 40960,
+          "name": "css",
+          "share_percent_of_max": 73.12,
+          "within_declared_band": true,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+          "bytes": 249798,
+          "declared_max_bytes": 430080,
+          "kib": 243.9,
+          "max_bytes": 430080,
+          "min_bytes": 204800,
+          "name": "bank_island",
+          "share_percent_of_max": 58.08,
+          "within_declared_band": true,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+          "bytes": 142579,
+          "declared_max_bytes": 143360,
+          "kib": 139.2,
+          "max_bytes": 143360,
+          "min_bytes": 61440,
+          "name": "figures_island",
+          "share_percent_of_max": 99.46,
+          "within_declared_band": true,
+          "within_max": true,
+          "within_min": true
+        }
+      ],
+      "css_bytes": 59899,
+      "embedded_js_data_bytes": 73830,
+      "executable_script_total_bytes": 1225957,
+      "failed_segments": [],
+      "figures_island_bytes": 142579,
+      "island_bytes_by_id": {
+        "sim-analytics": 6673,
+        "sim-bank": 249798,
+        "sim-chains": 71253,
+        "sim-conventions": 111641,
+        "sim-coverage": 46502,
+        "sim-engines": 12814,
+        "sim-exam-policy": 14237,
+        "sim-feedback-classification": 63716,
+        "sim-figures": 142579,
+        "sim-forms": 16067,
+        "sim-golden-vectors": 91739,
+        "sim-grading-policy": 12143,
+        "sim-graph-scoring": 39318,
+        "sim-mastery-policy": 10378,
+        "sim-method-cards": 109919,
+        "sim-method-engine": 22448,
+        "sim-practice-policy": 7163,
+        "sim-remediation-policy": 4208,
+        "sim-response-types": 34962,
+        "sim-revision-policy": 4338,
+        "sim-scheduler-policy": 5161,
+        "sim-terms": 248312
+      },
+      "islands_total_bytes": 1325369,
+      "other_islands_bytes": 932992,
+      "runtime_js_code_bytes": 1152126,
+      "segments": [
+        {
+          "bytes": 249798,
+          "declared_band_bytes": [
+            204800,
+            430080
+          ],
+          "description": "Frozen #sim-bank JSON island (112 reviewed instances across 28 families)",
+          "enforced_ceiling_bytes": 430080,
+          "kib": 243.9,
+          "segment": "bank_island",
+          "share_percent_of_artifact": 9.43,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 142579,
+          "declared_band_bytes": [
+            61440,
+            143360
+          ],
+          "description": "Declarative SVG figure specs (#sim-figures, 45 T1–T7 records)",
+          "enforced_ceiling_bytes": 143360,
+          "kib": 139.2,
+          "segment": "figures_island",
+          "share_percent_of_artifact": 5.38,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 932992,
+          "declared_band_bytes": null,
+          "description": "Remaining 20 JSON islands (coverage, conventions, forms, golden vectors, terms, analytics, policies, chains, engines, method cards, grading)",
+          "enforced_ceiling_bytes": null,
+          "kib": 911.1,
+          "segment": "other_islands",
+          "share_percent_of_artifact": 35.21,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 1152126,
+          "declared_band_bytes": [
+            122880,
+            225280
+          ],
+          "description": "37 inlined runtime JS modules + bootstrap + module boundary comments",
+          "enforced_ceiling_bytes": 1196032,
+          "kib": 1125.1,
+          "segment": "runtime_js_code",
+          "share_percent_of_artifact": 43.49,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 73830,
+          "declared_band_bytes": null,
+          "description": "4 canonical JS data projection globals (COVERAGE_INVARIANTS, CONCEPT_DRAWER_DATA, ANCHOR_REGISTRY, RECALL_LAYERS_DATA)",
+          "enforced_ceiling_bytes": null,
+          "kib": 72.1,
+          "segment": "embedded_js_data",
+          "share_percent_of_artifact": 2.79,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 59899,
+          "declared_band_bytes": [
+            40960,
+            81920
+          ],
+          "description": "Inline <style> block (src/tokens.css + src/styles.css)",
+          "enforced_ceiling_bytes": 81920,
+          "kib": 58.5,
+          "segment": "css",
+          "share_percent_of_artifact": 2.26,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 38192,
+          "declared_band_bytes": null,
+          "description": "HTML5 skeleton markup, Latvian copy, meta digest tags, and <script>/<style> wrappers",
+          "enforced_ceiling_bytes": null,
+          "kib": 37.3,
+          "segment": "template_overhead",
+          "share_percent_of_artifact": 1.44,
+          "within_ceiling": true
+        },
+        {
+          "bytes": 2649417,
+          "declared_band_bytes": [
+            716800,
+            1433600
+          ],
+          "description": "Complete single-file deliverable output/simulator.html",
+          "enforced_ceiling_bytes": 2686976,
+          "kib": 2587.3,
+          "segment": "artifact_total",
+          "share_percent_of_artifact": 100.0,
+          "within_ceiling": true
+        }
+      ],
+      "status": "PASS",
+      "template_overhead_bytes": 38192
+    },
+    "manifest_parity": {
+      "artifact_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+      "checked": true,
+      "composite_digest": "c05b1a8c29b52c8ace5b28a9f6eb5d5596f948045fc286924ee4d5d83147e3b8",
+      "manifest_output_sha256": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+      "status": "PASS"
+    },
+    "offline_url_scan": {
+      "external_url_count": 0,
+      "status": "PASS",
+      "violations": [],
+      "whitelisted_hits": [],
+      "whitelisted_url_count": 0
+    },
+    "offline_url_scan_fixture": {
+      "injected_line": 11,
+      "injected_line_context": "<script src=\"https://cdn.example.invalid/external-tracker.js\"></script>",
+      "injected_url": "https://cdn.example.invalid/external-tracker.js",
+      "injected_url_caught": true,
+      "status": "PASS",
+      "whitelist_exemption_verified": true
+    },
+    "oversized_island_fixture": {
+      "oversized_bank_island_case": {
+        "ceiling_bytes": 430080,
+        "failed_segments": [
+          "bank_island"
+        ],
+        "injected_bytes": 462848,
+        "status": "FAIL"
+      },
+      "oversized_figures_island_case": {
+        "ceiling_bytes": 143360,
+        "failed_segments": [
+          "figures_island"
+        ],
+        "injected_bytes": 159744,
+        "status": "FAIL"
+      },
+      "status": "PASS"
+    }
+  },
+  "task": "N31",
+  "tool_and_artifact_digests": {
+    "data/build_policy.json": "ad1c05be676675cecf0f065af28b55a6d5d623f4bc5036ef7d3cca45a69e0b0c",
+    "docs/BUILD_PIPELINE_FORMAT.md": "90dd174a173d46c1143a68872c820857dceec8caeae8f77014206172877760a2",
+    "output/build-manifest.json": "eccd12f5e25e9fdc2b6da660db77775c13a4877ef1b8c30789fe061ce93c3e99",
+    "output/simulator.html": "d17237c39ab6d930fc5c5e94307f15a8ea7e5188eb2a5bcf0aa021de0a8cbe3c",
+    "src/shell.html": "e9bc172ebf7d7b201f59d1b22acabded612ba5f828834ffbc166bbcd70e03f30",
+    "src/smoke-subset.js": "4d04a6d9196a31b1a8ad65f8432a596e14847173c2fed3fab36a734a568e7add",
+    "tools/build.py": "cd553703bf56789ee7fb5d9d4e26224ba3c32fbc4167abe89418f024aa002df1",
+    "tools/byte_budget.py": "7f1a86e0b250c05fee105ebfc3b557643d49a8be2af305bdae3124bc8d4d1bba",
+    "tools/check_artifact.py": "3f2c7b542fc2dc0922316ade8b307c5beaf2119e114dd7d697af6fe1b8091231",
+    "tools/check_n31_runtime.js": "3dbc36f0a9a41f4f50160f2d26451bbf7d60e91ef6e8c8dff90e192cce35b888",
+    "tools/validate_n31_build_policy.py": "852c7b58c52e964edec557c20afafcdce3a364ecadbc04c5ce3dc5e978c7af7c"
+  },
+  "two_invocation_parity": {
+    "digest_run_1": "4232fc0eff56bad14fcc204b9e04d7f255197da39fdbc23e682428d8c23926e6",
+    "digest_run_2": "4232fc0eff56bad14fcc204b9e04d7f255197da39fdbc23e682428d8c23926e6",
+    "status": "PASS"
+  },
+  "version": "1.0.0-n31"
+}

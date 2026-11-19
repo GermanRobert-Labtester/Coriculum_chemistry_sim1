@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "data/qa_manifest_schema.json",
+  "title": "N39 Reproducible QA Run Manifest Schema",
+  "description": "Schema for SHA-256 evidence-chained QA run manifests produced by tools/qa_runner.py using a two-pass JSON trailer write.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task",
+    "run_id",
+    "sequence_number",
+    "started_utc",
+    "finished_utc",
+    "artifact",
+    "build_manifest",
+    "registry",
+    "sources",
+    "sources_composite_sha256",
+    "suites_integrity",
+    "suites_composite_sha256",
+    "environment",
+    "normalization_rule",
+    "suites",
+    "normalized_verdict_vector",
+    "normalized_verdict_vector_sha256",
+    "overall_verdict",
+    "manifest_trailer"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "task": { "type": "string", "const": "N39" },
+    "run_id": {
+      "type": "string",
+      "pattern": "^qa-[0-9a-f]{12}-seq[0-9]{4}$"
+    },
+    "sequence_number": { "type": "integer", "minimum": 1 },
+    "started_utc": { "type": "string", "minLength": 20 },
+    "finished_utc": { "type": "string", "minLength": 20 },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "path",
+        "bytes",
+        "sha256",
+        "build_id",
+        "composite_digest",
+        "ledger_expected_sha256",
+        "digest_matches_ledger"
+      ],
+      "properties": {
+        "path": { "type": "string" },
+        "bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "build_id": { "type": "string" },
+        "composite_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "ledger_expected_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "digest_matches_ledger": { "type": "boolean" }
+      }
+    },
+    "build_manifest": {
+      "type": "object",
+      "required": ["path", "bytes", "sha256"],
+      "properties": {
+        "path": { "type": "string" },
+        "bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "registry": {
+      "type": "object",
+      "required": ["path", "version", "sha256", "suite_count", "update_history"],
+      "properties": {
+        "path": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "suite_count": { "type": "integer", "minimum": 1 },
+        "update_history": { "type": "array" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "bytes", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+        }
+      }
+    },
+    "sources_composite_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "suites_integrity": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["suite_id", "path", "bytes", "sha256", "expected_sha256", "matched"],
+        "properties": {
+          "suite_id": { "type": "string" },
+          "path": { "type": "string" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "expected_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "matched": { "type": "boolean" }
+        }
+      }
+    },
+    "suites_composite_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "environment": {
+      "type": "object",
+      "required": [
+        "python_version",
+        "node_version",
+        "falkon_version",
+        "platform",
+        "machine",
+        "lite_shot_path"
+      ],
+      "properties": {
+        "python_version": { "type": "string" },
+        "node_version": { "type": "string" },
+        "falkon_version": { "type": "string" },
+        "platform": { "type": "string" },
+        "machine": { "type": "string" },
+        "lite_shot_path": { "type": "string" }
+      }
+    },
+    "normalization_rule": {
+      "type": "object",
+      "required": ["included_fields", "excluded_fields", "statement"],
+      "properties": {
+        "included_fields": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "excluded_fields": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "statement": { "type": "string" }
+      }
+    },
+    "suites": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "suite_id",
+          "tier",
+          "tier_order",
+          "owner_task",
+          "invocation",
+          "expected_exit_codes",
+          "timeout_seconds",
+          "exit_code",
+          "timed_out",
+          "verdict",
+          "duration_ms",
+          "stdout_path",
+          "stderr_path",
+          "stdout_sha256",
+          "stderr_sha256",
+          "report_path",
+          "report_sha256",
+          "output_digest"
+        ],
+        "properties": {
+          "suite_id": { "type": "string" },
+          "tier": { "type": "string" },
+          "tier_order": { "type": "integer", "minimum": 1 },
+          "owner_task": { "type": "string" },
+          "invocation": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "expected_exit_codes": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "timeout_seconds": { "type": "number", "exclusiveMinimum": 0 },
+          "exit_code": { "type": ["integer", "null"] },
+          "timed_out": { "type": "boolean" },
+          "verdict": {
+            "type": "string",
+            "enum": ["PASS", "FAIL", "TIMEOUT", "SKIPPED"]
+          },
+          "duration_ms": { "type": "number", "minimum": 0 },
+          "stdout_path": { "type": ["string", "null"] },
+          "stderr_path": { "type": ["string", "null"] },
+          "stdout_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "stderr_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "report_path": { "type": ["string", "null"] },
+          "report_sha256": { "type": ["string", "null"] },
+          "output_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "failure_reason": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "normalized_verdict_vector": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["suite_id", "tier", "verdict", "exit_code", "timed_out"],
+        "properties": {
+          "suite_id": { "type": "string" },
+          "tier": { "type": "string" },
+          "verdict": {
+            "type": "string",
+            "enum": ["PASS", "FAIL", "TIMEOUT", "SKIPPED"]
+          },
+          "exit_code": { "type": ["integer", "null"] },
+          "timed_out": { "type": "boolean" }
+        }
+      }
+    },
+    "normalized_verdict_vector_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "overall_verdict": {
+      "type": "string",
+      "enum": ["PASS", "FAIL"]
+    },
+    "manifest_trailer": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "format",
+        "body_bytes",
+        "body_sha256",
+        "recompute_rule"
+      ],
+      "properties": {
+        "algorithm": { "type": "string", "const": "sha256" },
+        "format": { "type": "string", "const": "two-pass-json-trailer-v1" },
+        "body_bytes": { "type": "integer", "minimum": 2 },
+        "body_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "recompute_rule": { "type": "string" }
+      }
+    }
+  }
+}

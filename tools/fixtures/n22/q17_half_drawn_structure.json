@@ -1,0 +1,46 @@
+{
+  "fixture_id": "N22-FX-Q17-HALF-DRAWN-STRUCTURE",
+  "type_id": "Q17",
+  "claim": "A structure with one part unplaced is incomplete and the missing list names that part only.",
+  "instance": {
+    "type_id": "Q17",
+    "payload": {
+      "steps": [
+        {
+          "step_id": "S1",
+          "prompt_lv": "Kā iegūst masu?"
+        }
+      ],
+      "structure_parts": [
+        {
+          "part_id": "P1",
+          "label_lv": "spirts"
+        },
+        {
+          "part_id": "P2",
+          "label_lv": "ūdens"
+        }
+      ]
+    }
+  },
+  "payload": {
+    "kind": "method",
+    "variant": "Q17_pairs",
+    "pair_map": {
+      "S1": "m = γ·V"
+    },
+    "structure": {
+      "P1": "slot-1"
+    }
+  },
+  "expected": {
+    "status": "incomplete",
+    "missing_field_ids": [
+      "structure.P2"
+    ],
+    "name_contains": [
+      "ūdens"
+    ],
+    "error_ids": []
+  }
+}

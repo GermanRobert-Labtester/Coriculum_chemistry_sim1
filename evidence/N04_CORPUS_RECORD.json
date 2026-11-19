@@ -1,0 +1,398 @@
+{
+  "artifacts": {
+    "data/question_schema.json": "2c55d0dd1c9208664ea08727bcd89328d64311bfb06e5ca3c435b35ed8ae2f2d",
+    "src/bank-loader.js": "206b2d025439abbeb0672f8d7a448d68772e9842036d65c76d2954c60a6a3363",
+    "src/shell.html": "2cc21d2a657932ea6dc2f0344492ebd7b9117fe3e8dc9854835167b8791c9683",
+    "tools/build.py": "9a4b0da584b6a3e6c42aac3b0ebdd17c3d7acd9d70a85e67ea0e0f7108c76fe4",
+    "tools/validate_bank.py": "b6ffcf1ec5f1000d7b61d5bf6ede599c2ea1913a7f9a5c6f3699855ee51b4ec2"
+  },
+  "build_gate_pass": {
+    "artifact_written": true,
+    "returncode": 0
+  },
+  "build_gate_refusal": {
+    "artifact_written": false,
+    "returncode": 1,
+    "stderr": "FAIL bank gate (order 3, owner N04): [instance] tools/fixtures/n04/neg_missing_stem.json (COL1-1-1A-A-01) stem_lv: 'stem_lv' is a required property\n  - [set] /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/fixtures/n04/neg_missing_stem.json (<unknown>) required_types_per_form: Bank is missing required per-form types: ['Q02', 'Q04', 'Q10', 'Q11', 'Q12', 'Q13', 'Q15']\nRefusing build. The artifact was not written."
+  },
+  "failures": [],
+  "full_112_scratch": {
+    "counts": {
+      "by_family": {
+        "FAM-1A": 4,
+        "FAM-1B": 4,
+        "FAM-1C": 4,
+        "FAM-1D": 4,
+        "FAM-2A": 4,
+        "FAM-2B": 4,
+        "FAM-2C": 4,
+        "FAM-2D": 4,
+        "FAM-3A": 4,
+        "FAM-3B": 4,
+        "FAM-3C": 4,
+        "FAM-3D": 4,
+        "FAM-4A": 4,
+        "FAM-4B": 4,
+        "FAM-4C": 4,
+        "FAM-4D": 4,
+        "FAM-5A": 4,
+        "FAM-5B": 4,
+        "FAM-5C": 4,
+        "FAM-5D": 4,
+        "FAM-6A": 4,
+        "FAM-6B": 4,
+        "FAM-6C": 4,
+        "FAM-6D": 4,
+        "FAM-7A": 4,
+        "FAM-7B": 4,
+        "FAM-7C": 4,
+        "FAM-7D": 4
+      },
+      "by_payload_class": {
+        "graph": 12,
+        "matching": 6,
+        "method": 44,
+        "numeric": 26,
+        "option_select": 18,
+        "ordering": 6
+      },
+      "by_topic": {
+        "1": 16,
+        "2": 16,
+        "3": 16,
+        "4": 16,
+        "5": 16,
+        "6": 16,
+        "7": 16
+      },
+      "by_type": {
+        "Q01": 7,
+        "Q02": 7,
+        "Q03": 7,
+        "Q04": 7,
+        "Q05": 6,
+        "Q06": 6,
+        "Q07": 6,
+        "Q08": 6,
+        "Q09": 6,
+        "Q10": 6,
+        "Q11": 6,
+        "Q12": 6,
+        "Q13": 6,
+        "Q14": 6,
+        "Q15": 6,
+        "Q16": 6,
+        "Q17": 6,
+        "Q18": 6
+      },
+      "files": 112,
+      "instances": 112
+    },
+    "fast_gate_under_1000ms": true,
+    "status": "PASS"
+  },
+  "negative_corpus": {
+    "bad_family": {
+      "fields": [
+        "family_id",
+        "family_id"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "family_id",
+          "file": "tools/fixtures/n04/neg_bad_family.json",
+          "level": "instance",
+          "message": "'BAD-FAM' does not match '^FAM-[1-7][A-D]$'",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "family_id",
+          "file": "tools/fixtures/n04/neg_bad_family.json",
+          "level": "instance",
+          "message": "family_id 'BAD-FAM' not found in docs/QUESTION_FAMILIES.json",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "bad_misconception": {
+      "fields": [
+        "misconception_signatures.0",
+        "misconception_signatures"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "misconception_signatures.0",
+          "file": "tools/fixtures/n04/neg_bad_misconception.json",
+          "level": "instance",
+          "message": "'BAD-MC' does not match '^MC-[1-7][A-D]-[0-9]{2}$'",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "misconception_signatures",
+          "file": "tools/fixtures/n04/neg_bad_misconception.json",
+          "level": "instance",
+          "message": "misconception signature 'BAD-MC' does not match N09 stub pattern",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "bad_outcome": {
+      "fields": [
+        "outcome_ids.0",
+        "outcome_ids"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "outcome_ids.0",
+          "file": "tools/fixtures/n04/neg_bad_outcome.json",
+          "level": "instance",
+          "message": "'P9-99' does not match '^P[1-7]-[0-9]{2}$'",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "outcome_ids",
+          "file": "tools/fixtures/n04/neg_bad_outcome.json",
+          "level": "instance",
+          "message": "outcome_id 'P9-99' not found in data/coverage.json",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "bad_tolerance": {
+      "fields": [
+        "payload.tolerance_class"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "payload.tolerance_class",
+          "file": "tools/fixtures/n04/neg_bad_tolerance.json",
+          "level": "instance",
+          "message": "tolerance_class 'nonexistent_tol' not found in data/conventions.json",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "discriminator_mismatch": {
+      "fields": [
+        "payload_class",
+        "payload.options",
+        "payload.correct_ids",
+        "payload.distractors",
+        "payload.requires_justification",
+        "payload.<root>"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "payload_class",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "Type Q01 requires payload_class 'numeric', got 'option_select'",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "payload.options",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "'options' is a required property",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "payload.correct_ids",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "'correct_ids' is a required property",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "payload.distractors",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "'distractors' is a required property",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "payload.requires_justification",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "'requires_justification' is a required property",
+          "question_id": "COL1-1-1A-A-01"
+        },
+        {
+          "field": "payload.<root>",
+          "file": "tools/fixtures/n04/neg_discriminator_mismatch.json",
+          "level": "instance",
+          "message": "Additional properties are not allowed ('display_lv', 'expected_value', 'input_fields', 'sig_figs', 'tolerance_class', 'unit' were unexpected)",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "duplicate_id": {
+      "fields": [
+        "question_id"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "question_id",
+          "file": "tools/fixtures/n04/neg_duplicate_id/part2.json",
+          "level": "set",
+          "message": "Duplicate question_id 'COL1-1-1A-A-01' (first seen in tools/fixtures/n04/neg_duplicate_id/part1.json)",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "missing_stem": {
+      "fields": [
+        "stem_lv"
+      ],
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "stem_lv",
+          "file": "tools/fixtures/n04/neg_missing_stem.json",
+          "level": "instance",
+          "message": "'stem_lv' is a required property",
+          "question_id": "COL1-1-1A-A-01"
+        }
+      ]
+    },
+    "schema_malformed": {
+      "status": "FAIL",
+      "violations": [
+        {
+          "field": "<root>",
+          "file": "tools/fixtures/n04/schema_malformed.json",
+          "level": "schema",
+          "message": "Malformed schema JSON: Expecting ',' delimiter: line 1 column 21 (char 20)",
+          "question_id": "<unknown>"
+        }
+      ]
+    }
+  },
+  "runtime_harness": {
+    "artifact": "bank-runtime-harness",
+    "artifact_sha256": "f2223f321dc693352e3c782231ebd0d6cb4602f72f763d53855a1ddacc581fb2",
+    "degradation": {
+      "missing_island": {
+        "code": "E_BANK_MISSING",
+        "message": "Trūkst #sim-bank salas elementa.",
+        "name": "BankError"
+      },
+      "missing_required_type": {
+        "code": "E_BANK_MISSING_REQUIRED_TYPE",
+        "message": "#sim-bank trūkst obligāto formas tipu: Q15.",
+        "name": "BankError"
+      },
+      "truncated_error_rendered": "[E_BANK_JSON] #sim-bank satur nederīgu JSON. Uzdevumu banka nav ielādējama.",
+      "truncated_island": {
+        "code": "E_BANK_JSON",
+        "message": "#sim-bank satur nederīgu JSON. Uzdevumu banka nav ielādējama.",
+        "name": "BankError"
+      },
+      "unknown_type": {
+        "code": "E_BANK_UNKNOWN_TYPE",
+        "message": "#sim-bank satur neatpazītu jautājuma tipu Q99 (nav reģistrēts renderētājs).",
+        "name": "BankError"
+      }
+    },
+    "full_bank_load": {
+      "assembly_count": 112,
+      "families": 28,
+      "q02_renderer_count": 7,
+      "sample_engine_bindings": [
+        {
+          "carry_forward": false,
+          "criterion_id": "C1",
+          "engine_binding": "N17-numeric",
+          "grading": "auto",
+          "points": 2
+        }
+      ],
+      "sample_renderer_key": "renderer-numeric",
+      "total": 112,
+      "types": 18
+    },
+    "schema_version": 1,
+    "shipped_island": {
+      "status": "pre-N20-schema-only",
+      "status_text": "Uzdevumu bankas shēma (#sim-bank): 0 jautājumi, statuss: pre-N20-schema-only.",
+      "total": 0
+    },
+    "status": "PASS",
+    "task": "N04"
+  },
+  "schema_self_check": {
+    "schema_check": {
+      "payload_classes": [
+        "graph",
+        "matching",
+        "method",
+        "numeric",
+        "option_select",
+        "ordering"
+      ],
+      "required_types_per_form": [
+        "Q02",
+        "Q04",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q15"
+      ],
+      "status": "PASS",
+      "types_count": 18
+    },
+    "schema_sha256": "2c55d0dd1c9208664ea08727bcd89328d64311bfb06e5ca3c435b35ed8ae2f2d",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N04",
+  "valid_18_scratch": {
+    "counts": {
+      "by_family": {
+        "FAM-1A": 18
+      },
+      "by_payload_class": {
+        "graph": 2,
+        "matching": 1,
+        "method": 7,
+        "numeric": 4,
+        "option_select": 3,
+        "ordering": 1
+      },
+      "by_topic": {
+        "1": 18
+      },
+      "by_type": {
+        "Q01": 1,
+        "Q02": 1,
+        "Q03": 1,
+        "Q04": 1,
+        "Q05": 1,
+        "Q06": 1,
+        "Q07": 1,
+        "Q08": 1,
+        "Q09": 1,
+        "Q10": 1,
+        "Q11": 1,
+        "Q12": 1,
+        "Q13": 1,
+        "Q14": 1,
+        "Q15": 1,
+        "Q16": 1,
+        "Q17": 1,
+        "Q18": 1
+      },
+      "files": 18,
+      "instances": 18
+    },
+    "status": "PASS"
+  }
+}

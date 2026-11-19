@@ -1,0 +1,767 @@
+{
+  "digests": {
+    "contract": "938264ab6d7b3e593c6afa41a3eafb2da76e8013b5f25a974e15d92dd876e379",
+    "conventions": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+    "golden_corpus": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88",
+    "js_capture": "62a70232a725fd999374d40ba4f4a8a76580bbae32d075eab1d868a149c6c47a",
+    "js_engine": "988675cadd78f9ebade873ccf8fc62da52e1890fe3158fb911832b71815af76a",
+    "python_engine": "4db9560750bb45d79165e5a35b64d181dfd6721f99fb7b1e947fca0209e888d0"
+  },
+  "errors": [],
+  "inheritance_rows": [
+    {
+      "excluded_points": 0,
+      "expectation": "edge point assessed",
+      "max_deviation": 0.01968,
+      "rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-03",
+      "verdict": "incorrect/OUT_OF_TOLERANCE"
+    },
+    {
+      "excluded_points": 1,
+      "expectation": "beyond-span geometry not assessed",
+      "max_deviation": 0.0,
+      "rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-02",
+      "verdict": "correct/NONE"
+    }
+  ],
+  "inherited_rule_verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+  "keyboard_rows": [
+    {
+      "capture_context": "CAP-T5-LIN-PRACTICE",
+      "coarse_x": 2.0,
+      "coarse_y": 0.5,
+      "fine_x": 0.2,
+      "fine_y": 0.01,
+      "status": "PASS"
+    },
+    {
+      "capture_context": "CAP-T5-LIN-FIRST",
+      "coarse_x": 3.0,
+      "coarse_y": 0.4,
+      "fine_x": 0.3,
+      "fine_y": 0.01,
+      "status": "PASS"
+    },
+    {
+      "capture_context": "CAP-T67-CAL-PRACTICE",
+      "coarse_x": 0.002,
+      "coarse_y": 0.1,
+      "fine_x": 0.0002,
+      "fine_y": 0.0015,
+      "status": "PASS"
+    },
+    {
+      "capture_context": "CAP-T67-CAL-MASTER",
+      "coarse_x": 0.002,
+      "coarse_y": 0.1,
+      "fine_x": 0.0002,
+      "fine_y": 0.0015,
+      "status": "PASS"
+    },
+    {
+      "capture_context": "CAP-T5-DECAY-FIRST",
+      "coarse_x": 3.0,
+      "coarse_y": 0.2,
+      "fine_x": 0.3,
+      "fine_y": 0.0025,
+      "status": "PASS"
+    },
+    {
+      "capture_context": "CAP-T67-TITR-PRACTICE",
+      "coarse_x": 5.0,
+      "coarse_y": 2.0,
+      "fine_x": 0.025,
+      "fine_y": 0.2,
+      "status": "PASS"
+    }
+  ],
+  "keyboard_scratch_rows": [
+    {
+      "case": "keyboard_band_drift_by_context_id",
+      "error": "capture context CAP-T67-CAL-PRACTICE keyboard increments disagree with the declared example: ['fine_y']",
+      "expected_error_contains": "keyboard increments disagree with the declared example",
+      "fails_capture_context": "CAP-T67-CAL-PRACTICE",
+      "id": "SCR-N18-KEY-01",
+      "status": "PASS"
+    }
+  ],
+  "n05_rows": [
+    {
+      "cited_entries": [
+        "N18-N05-INHERIT-01",
+        "N18-TOLERANCE-01",
+        "N15-NOEXTRAP-01",
+        "N14-SPAN-01",
+        "mass",
+        "N18-UNIT-mg->g",
+        "N18-CITED-ENTRY-01"
+      ],
+      "deviation": 0.0,
+      "error_class": "NONE",
+      "status": "PASS",
+      "tolerance": 0.01,
+      "tolerance_class": "mass",
+      "tolerance_mode": "absolute",
+      "vector_id": "GV-S1-T5-Q12-01",
+      "verdict_class": "correct"
+    },
+    {
+      "cited_entries": [
+        "N18-N05-INHERIT-01",
+        "N18-TOLERANCE-01",
+        "N15-NOEXTRAP-01",
+        "N14-SPAN-01",
+        "absorbance",
+        "N18-CITED-ENTRY-01"
+      ],
+      "deviation": 0.002,
+      "error_class": "NONE",
+      "status": "PASS",
+      "tolerance": 0.003,
+      "tolerance_class": "absorbance",
+      "tolerance_mode": "absolute",
+      "vector_id": "GV-S1-T7-Q12-01",
+      "verdict_class": "correct"
+    },
+    {
+      "cited_entries": [
+        "N18-N05-INHERIT-01",
+        "N18-TOLERANCE-01",
+        "N15-NOEXTRAP-01",
+        "N14-SPAN-01"
+      ],
+      "deviation": null,
+      "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "status": "PASS",
+      "tolerance": null,
+      "tolerance_class": "absorbance",
+      "tolerance_mode": "absolute",
+      "vector_id": "GV-S1-T7-Q12-02",
+      "verdict_class": "incorrect"
+    }
+  ],
+  "parity_rows": [
+    {
+      "keyboard_digest": "216605d644167a27bfab46af3dc9b3025305ad3dac8ea7b4e32529500d63dde5",
+      "point_count": 11,
+      "pointer_digest": "216605d644167a27bfab46af3dc9b3025305ad3dac8ea7b4e32529500d63dde5",
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-01",
+      "verdict": "correct/NONE"
+    },
+    {
+      "keyboard_digest": "8f7de71fdbf777bb4cdb2ad74dc311ef1a95edf390ef8816a53cd88868573399",
+      "point_count": 11,
+      "pointer_digest": "8f7de71fdbf777bb4cdb2ad74dc311ef1a95edf390ef8816a53cd88868573399",
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-02",
+      "verdict": "incorrect/OUT_OF_TOLERANCE"
+    },
+    {
+      "keyboard_digest": "5f553e696b427b3afa3585d7bfa96b3566680956d84d6099d175e51e2323e20d",
+      "point_count": 11,
+      "pointer_digest": "5f553e696b427b3afa3585d7bfa96b3566680956d84d6099d175e51e2323e20d",
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-03",
+      "verdict": "incorrect/OUT_OF_TOLERANCE"
+    },
+    {
+      "keyboard_digest": "614d25ce823a42661bf9acf8ebe3daa7b788df3eb8a3a45d9b936b5ca2a14a79",
+      "point_count": 9,
+      "pointer_digest": "614d25ce823a42661bf9acf8ebe3daa7b788df3eb8a3a45d9b936b5ca2a14a79",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-01",
+      "verdict": "correct/NONE"
+    },
+    {
+      "keyboard_digest": "616316f58bf92815807a91fb201f3a4ebc0375c03c1bf2d5680183fc8abf2190",
+      "point_count": 10,
+      "pointer_digest": "616316f58bf92815807a91fb201f3a4ebc0375c03c1bf2d5680183fc8abf2190",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-02",
+      "verdict": "correct/NONE"
+    },
+    {
+      "keyboard_digest": "6be2c51265c5a349f8bc2bc61fea13b92f9d589ca1bd551e32d5de8e9d5b21ec",
+      "point_count": 9,
+      "pointer_digest": "6be2c51265c5a349f8bc2bc61fea13b92f9d589ca1bd551e32d5de8e9d5b21ec",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-03",
+      "verdict": "incorrect/OUT_OF_TOLERANCE"
+    },
+    {
+      "keyboard_digest": "26e96547506ac96428c8816d9159a0c10d2fe3e52273c0daeef09e712a5cc651",
+      "point_count": 11,
+      "pointer_digest": "26e96547506ac96428c8816d9159a0c10d2fe3e52273c0daeef09e712a5cc651",
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-04",
+      "verdict": "correct/NONE"
+    }
+  ],
+  "payload_rows": [
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "missing_schema_id",
+      "check": "payload_schema",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-01",
+      "status": "PASS"
+    },
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "points_not_an_array",
+      "check": "payload_points",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-02",
+      "status": "PASS"
+    },
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "point_missing_coordinate",
+      "check": "payload_points",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-03",
+      "status": "PASS"
+    },
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "axes_inverted",
+      "check": "payload_axes",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-04",
+      "status": "PASS"
+    },
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "span_inverted",
+      "check": "payload_span",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-05",
+      "status": "PASS"
+    },
+    {
+      "actual_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "case": "unknown_edge_rule",
+      "check": "payload_span",
+      "expected_class": "E_GRAPH_PAYLOAD_MALFORMED",
+      "id": "PAY-N18-06",
+      "status": "PASS"
+    }
+  ],
+  "precedence_rule_verbatim": "Ja iesniegums atbilst vairākām klasēm, izvēlas mazāko kārtas numuru: 1 (neizlasāms iesniegums) pirms 2 (tukšs iesniegums) pirms 3 (ārpus ass diapazona) pirms 4 (nepareizs novirzes virziens) pirms 5 (dubultā atkāpšana) pirms 6 (monotonitātes pārkāpums); tikai tad, kad neviens derīguma pārkāpums nav atrasts, tiek lietots domēna klase OUT_OF_DOMAIN_EXTRAPOLATION, un tikai pēc tam tolerances klase OUT_OF_TOLERANCE. Pirmā atrastā klase aptur turpmāku pārbaudi; katrs gadījums iegūst tieši vienu klasi.",
+  "replay_rows": [
+    {
+      "original": "correct/NONE",
+      "replayed": "correct/NONE",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q12-01"
+    },
+    {
+      "original": "incorrect/OUT_OF_TOLERANCE",
+      "replayed": "incorrect/OUT_OF_TOLERANCE",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q12-02"
+    },
+    {
+      "original": "incorrect/OUT_OF_TOLERANCE",
+      "replayed": "incorrect/OUT_OF_TOLERANCE",
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-02"
+    },
+    {
+      "original": "correct/NONE",
+      "replayed": "correct/NONE",
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-02"
+    }
+  ],
+  "scratch_rows": [
+    {
+      "case": "tolerance_drift_by_vector_id",
+      "expected_class": "E_GRAPH_TOLERANCE_DRIFT",
+      "fails_vector_id": "GV-S3-T5-Q11-01",
+      "failure_class": "E_GRAPH_TOLERANCE_DRIFT",
+      "id": "SCR-N18-01",
+      "status": "PASS"
+    },
+    {
+      "case": "reading_tolerance_by_vector_id",
+      "expected_class": "OUT_OF_TOLERANCE",
+      "fails_vector_id": "GV-S1-T7-Q12-01",
+      "failure_class": "OUT_OF_TOLERANCE",
+      "id": "SCR-N18-02",
+      "status": "PASS"
+    }
+  ],
+  "span_edge_verbatim": "Punkts tieši uz span.x_min vai span.x_max tiek vērtēts ieskaitot; robeža ir iekļaujoša.",
+  "status": "PASS",
+  "stratum_rows": [
+    {
+      "criterion_shape": "calibration_line_signal_absolute",
+      "deviation": 0.00084,
+      "error_class": "NONE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.003,
+      "vector_id": "GV-S3-T7-Q12-01",
+      "verdict_class": "correct"
+    },
+    {
+      "criterion_shape": "calibration_line_signal_absolute",
+      "deviation": 0.00384,
+      "error_class": "OUT_OF_TOLERANCE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.003,
+      "vector_id": "GV-S3-T7-Q12-02",
+      "verdict_class": "incorrect"
+    },
+    {
+      "criterion_shape": "calibration_line_signal_sigfigs",
+      "deviation": 0.00384,
+      "error_class": "NONE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.005,
+      "vector_id": "GV-S3-T7-Q12-03",
+      "verdict_class": "correct"
+    },
+    {
+      "criterion_shape": "calibration_line_concentration",
+      "deviation": 1.1670663e-05,
+      "error_class": "NONE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.05,
+      "vector_id": "GV-S3-T7-Q12-04",
+      "verdict_class": "correct"
+    },
+    {
+      "criterion_shape": "titration_equivalence_volume",
+      "deviation": 0.01,
+      "error_class": "NONE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.05,
+      "vector_id": "GV-S3-T6-Q12-01",
+      "verdict_class": "correct"
+    },
+    {
+      "criterion_shape": "titration_equivalence_volume",
+      "deviation": 0.15,
+      "error_class": "OUT_OF_TOLERANCE",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": 0.05,
+      "vector_id": "GV-S3-T6-Q12-02",
+      "verdict_class": "incorrect"
+    },
+    {
+      "criterion_shape": "calibration_line_concentration",
+      "deviation": null,
+      "error_class": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "kind": "reading",
+      "status": "PASS",
+      "tolerance": null,
+      "vector_id": "GV-S3-T7-Q12-05",
+      "verdict_class": "incorrect"
+    },
+    {
+      "checks": {
+        "intercept": true,
+        "point_acceptance": true,
+        "slope": true
+      },
+      "criterion_shape": "kinetics_linearization_line",
+      "error_class": "NONE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.0,
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-01",
+      "verdict_class": "correct"
+    },
+    {
+      "checks": {
+        "intercept": false,
+        "point_acceptance": false,
+        "slope": true
+      },
+      "criterion_shape": "kinetics_linearization_line",
+      "error_class": "OUT_OF_TOLERANCE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.05,
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-02",
+      "verdict_class": "incorrect"
+    },
+    {
+      "checks": {
+        "intercept": true,
+        "point_acceptance": false,
+        "slope": false
+      },
+      "criterion_shape": "kinetics_linearization_line",
+      "error_class": "OUT_OF_TOLERANCE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.09,
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-03",
+      "verdict_class": "incorrect"
+    },
+    {
+      "checks": {
+        "point_acceptance": true
+      },
+      "criterion_shape": "calibration_line_draw",
+      "error_class": "NONE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.0,
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-01",
+      "verdict_class": "correct"
+    },
+    {
+      "checks": {
+        "point_acceptance": true
+      },
+      "criterion_shape": "calibration_line_draw",
+      "error_class": "NONE",
+      "excluded_points": 1,
+      "kind": "drawing",
+      "max_deviation": 0.0,
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-02",
+      "verdict_class": "correct"
+    },
+    {
+      "checks": {
+        "point_acceptance": false
+      },
+      "criterion_shape": "calibration_line_draw",
+      "error_class": "OUT_OF_TOLERANCE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.01968,
+      "status": "PASS",
+      "vector_id": "GV-S3-T7-Q11-03",
+      "verdict_class": "incorrect"
+    },
+    {
+      "checks": {
+        "point_acceptance": true
+      },
+      "criterion_shape": "kinetics_decay_segment",
+      "error_class": "NONE",
+      "excluded_points": 0,
+      "kind": "drawing",
+      "max_deviation": 0.0,
+      "status": "PASS",
+      "vector_id": "GV-S3-T5-Q11-04",
+      "verdict_class": "correct"
+    }
+  ],
+  "summary": {
+    "inheritance_fixtures": 2,
+    "inheritance_pass": 2,
+    "keyboard_contexts": 6,
+    "keyboard_pass": 6,
+    "keyboard_scratch_cases": 1,
+    "keyboard_scratch_pass": 1,
+    "n05_graph_vectors": 3,
+    "n05_pass": 3,
+    "parity_pairs": 7,
+    "parity_pass": 7,
+    "payload_cases": 6,
+    "payload_pass": 6,
+    "replay_pass": 4,
+    "replay_samples": 4,
+    "scratch_cases": 2,
+    "scratch_pass": 2,
+    "stratum_pass": 14,
+    "stratum_vectors": 14,
+    "tolerance_modes": [
+      "absolute",
+      "significant_figures"
+    ],
+    "validity_cases": 5,
+    "validity_pass": 5
+  },
+  "task": "N18",
+  "tolerance_mode_rows": [
+    {
+      "deviation": 0.00084,
+      "mode": "absolute",
+      "tolerance": 0.003,
+      "tolerance_class": "absorbance",
+      "vector_id": "GV-S3-T7-Q12-01"
+    },
+    {
+      "deviation": 0.00384,
+      "mode": "absolute",
+      "tolerance": 0.003,
+      "tolerance_class": "absorbance",
+      "vector_id": "GV-S3-T7-Q12-02"
+    },
+    {
+      "deviation": 0.00384,
+      "mode": "significant_figures",
+      "tolerance": 0.005,
+      "tolerance_class": "absorbance",
+      "vector_id": "GV-S3-T7-Q12-03"
+    },
+    {
+      "deviation": 1.1670663e-05,
+      "mode": "absolute",
+      "tolerance": 0.05,
+      "tolerance_class": "concentration_mass",
+      "vector_id": "GV-S3-T7-Q12-04"
+    },
+    {
+      "deviation": 0.01,
+      "mode": "absolute",
+      "tolerance": 0.05,
+      "tolerance_class": "burette_volume",
+      "vector_id": "GV-S3-T6-Q12-01"
+    },
+    {
+      "deviation": 0.15,
+      "mode": "absolute",
+      "tolerance": 0.05,
+      "tolerance_class": "burette_volume",
+      "vector_id": "GV-S3-T6-Q12-02"
+    },
+    {
+      "deviation": null,
+      "mode": "absolute",
+      "tolerance": null,
+      "tolerance_class": "concentration_mass",
+      "vector_id": "GV-S3-T7-Q12-05"
+    },
+    {
+      "deviation": 0.0,
+      "mode": "significant_figures",
+      "tolerance": 0.0005,
+      "tolerance_class": "rate_constant_first",
+      "vector_id": "GV-S3-T5-Q11-01"
+    },
+    {
+      "deviation": 0.05,
+      "mode": "significant_figures",
+      "tolerance": 0.0005,
+      "tolerance_class": "rate_constant_first",
+      "vector_id": "GV-S3-T5-Q11-02"
+    },
+    {
+      "deviation": 0.09,
+      "mode": "significant_figures",
+      "tolerance": 0.0005,
+      "tolerance_class": "rate_constant_first",
+      "vector_id": "GV-S3-T5-Q11-03"
+    },
+    {
+      "deviation": 0.0,
+      "mode": "absolute",
+      "tolerance": 0.003,
+      "tolerance_class": null,
+      "vector_id": "GV-S3-T7-Q11-01"
+    },
+    {
+      "deviation": 0.0,
+      "mode": "absolute",
+      "tolerance": 0.003,
+      "tolerance_class": null,
+      "vector_id": "GV-S3-T7-Q11-02"
+    },
+    {
+      "deviation": 0.01968,
+      "mode": "absolute",
+      "tolerance": 0.003,
+      "tolerance_class": null,
+      "vector_id": "GV-S3-T7-Q11-03"
+    },
+    {
+      "deviation": 0.0,
+      "mode": "absolute",
+      "tolerance": 0.005,
+      "tolerance_class": null,
+      "vector_id": "GV-S3-T5-Q11-04"
+    }
+  ],
+  "validity_rows": [
+    {
+      "actual_class": "E_GRAPH_WRONG_DIRECTION",
+      "awarded_points": 0.0,
+      "case": "wrong_direction_slope",
+      "expected_class": "E_GRAPH_WRONG_DIRECTION",
+      "id": "VAL-N18-01",
+      "status": "PASS",
+      "trace": [
+        {
+          "check": "point_count",
+          "count": 11,
+          "result": "pass"
+        },
+        {
+          "check": "axis_range",
+          "result": "pass"
+        },
+        {
+          "check": "assessed_geometry",
+          "count": 11,
+          "result": "pass",
+          "span": {
+            "edge_rule": "inclusive",
+            "x_max": 20.0,
+            "x_min": 0.0
+          }
+        },
+        {
+          "check": "slope_sign",
+          "criterion_slope": -0.08,
+          "drawn_slope": 0.004,
+          "result": "fail"
+        },
+        {
+          "check": "slope_sign",
+          "error_class": "E_GRAPH_WRONG_DIRECTION",
+          "result": "fail"
+        }
+      ],
+      "verdict_class": "incorrect"
+    },
+    {
+      "actual_class": "E_GRAPH_NON_MONOTONIC",
+      "awarded_points": 0.0,
+      "case": "doubling_back_segment",
+      "expected_class": "E_GRAPH_NON_MONOTONIC",
+      "id": "VAL-N18-02",
+      "status": "PASS",
+      "trace": [
+        {
+          "check": "point_count",
+          "count": 11,
+          "result": "pass"
+        },
+        {
+          "check": "axis_range",
+          "result": "pass"
+        },
+        {
+          "check": "assessed_geometry",
+          "count": 11,
+          "result": "pass",
+          "span": {
+            "edge_rule": "inclusive",
+            "x_max": 30.0,
+            "x_min": 0.0
+          }
+        },
+        {
+          "check": "slope_sign",
+          "criterion_slope": null,
+          "drawn_slope": 0.0042727272727272735,
+          "result": "pass"
+        },
+        {
+          "check": "path_reversals",
+          "result": "pass",
+          "reversals": 0
+        },
+        {
+          "check": "monotonicity",
+          "monotonicity": "decreasing",
+          "result": "fail"
+        },
+        {
+          "check": "monotonicity",
+          "error_class": "E_GRAPH_NON_MONOTONIC",
+          "result": "fail"
+        }
+      ],
+      "verdict_class": "incorrect"
+    },
+    {
+      "actual_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "awarded_points": 0.0,
+      "case": "reading_outside_axes",
+      "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "id": "VAL-N18-03",
+      "status": "PASS",
+      "trace": [
+        {
+          "axis": "x",
+          "bounds": {
+            "max": 0.018,
+            "min": 0.0
+          },
+          "check": "axis_range",
+          "result": "fail",
+          "value": 0.02
+        },
+        {
+          "check": "axis_range",
+          "error_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+          "result": "fail"
+        }
+      ],
+      "verdict_class": "incorrect"
+    },
+    {
+      "actual_class": "E_GRAPH_EMPTY_SUBMISSION",
+      "awarded_points": 0.0,
+      "case": "empty_submission",
+      "expected_class": "E_GRAPH_EMPTY_SUBMISSION",
+      "id": "VAL-N18-04",
+      "status": "PASS",
+      "trace": [
+        {
+          "check": "point_count",
+          "count": 0,
+          "result": "fail"
+        },
+        {
+          "check": "point_count",
+          "error_class": "E_GRAPH_EMPTY_SUBMISSION",
+          "result": "fail"
+        }
+      ],
+      "verdict_class": "incorrect"
+    },
+    {
+      "actual_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "also_detected": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "awarded_points": 0.0,
+      "case": "unphysical_and_out_of_domain",
+      "expected_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+      "id": "VAL-N18-05",
+      "precedence_note_lv": "Stūrra corners: iesniegums vienlaikus neiespējams (y = 0,9 A ārpus y ass diapazona 0-0,45) un ārpus domēna (x = 0,017 ārpus [0; 0,016]). Derīguma klase E_GRAPH_OUT_OF_AXIS_RANGE (kārta 3) noderīguma klases pirms domēna klases.",
+      "status": "PASS",
+      "trace": [
+        {
+          "axis": "y",
+          "bounds": {
+            "max": 0.45,
+            "min": 0.0
+          },
+          "check": "axis_range",
+          "result": "fail",
+          "value": 0.9
+        },
+        {
+          "check": "axis_range",
+          "error_class": "E_GRAPH_OUT_OF_AXIS_RANGE",
+          "result": "fail"
+        }
+      ],
+      "verdict_class": "incorrect"
+    }
+  ]
+}

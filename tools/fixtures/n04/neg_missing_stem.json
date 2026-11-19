@@ -1,0 +1,67 @@
+{
+  "bank_version": "0.1.0-scratch",
+  "difficulty": "application",
+  "family_id": "FAM-1A",
+  "feedback_lv": {
+    "correct": "Pareizi.",
+    "incorrect": "Pārbaudi nosacījumus un vienības."
+  },
+  "givens": {
+    "medium": "ūdens šķīdums"
+  },
+  "misconception_signatures": [
+    "MC-1A-01"
+  ],
+  "outcome_ids": [
+    "P1-01"
+  ],
+  "payload": {
+    "display_lv": "8,00 g",
+    "expected_value": 8.0,
+    "input_fields": [
+      {
+        "field_id": "ans",
+        "kind": "number",
+        "label_lv": "Masa (g)"
+      }
+    ],
+    "sig_figs": 3,
+    "tolerance_class": "mass",
+    "unit": "g"
+  },
+  "payload_class": "numeric",
+  "question_id": "COL1-1-1A-A-01",
+  "review": {
+    "accessibility": "pending",
+    "calculation": "pending",
+    "content": "pending",
+    "source": "pending"
+  },
+  "rubric": [
+    {
+      "carry_forward": false,
+      "criterion_id": "C1",
+      "depends_on": [],
+      "engine_binding": "N17-numeric",
+      "grading": "auto",
+      "points": 2.0
+    }
+  ],
+  "schema_version": 1,
+  "seed": "FAM-1A-A",
+  "source_refs": [
+    {
+      "claim_status": "proposal-explicit-givens",
+      "locator": "Topic 1",
+      "path": "RSU_MedChem_Colloq1_Prog_LV_2025.pdf",
+      "sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9"
+    }
+  ],
+  "time_minutes": 5.0,
+  "topic": 1,
+  "type_id": "Q01",
+  "type_ids": [
+    "Q01"
+  ],
+  "variant_id": "A"
+}

@@ -1,0 +1,785 @@
+{
+  "schema_version": 1,
+  "owner": "N21",
+  "status": "PASS",
+  "runtime_modules": [
+    "src/compiled/session.js",
+    "src/compiled/exam.js"
+  ],
+  "source_modules": [
+    "src/session.ts",
+    "src/exam.ts"
+  ],
+  "island": "data/exam_policy.json",
+  "note": "The TypeScript sources are the source of truth; the compiled modules are committed and are checked for drift by tools/compile_n21_ts.py --check.",
+  "checks": {
+    "artifact_wiring": {
+      "status": "PASS",
+      "claim": "The built artifact carries the policy island, the two runtime modules, the shell markup and the boot call — offline, with no external script.",
+      "checks": {
+        "island_present": true,
+        "digest_meta_present": true,
+        "session_runtime_inlined": true,
+        "exam_runtime_inlined": true,
+        "shell_markup_present": true,
+        "boot_call_present": true,
+        "no_external_script": true,
+        "honesty_copy_present": true
+      },
+      "failed": []
+    },
+    "lifecycle": {
+      "status": "PASS",
+      "claim": "The lifecycle runs start → answer → flag → navigate → review → submit and every transition conforms to the transition table of the frozen policy island.",
+      "checks": {
+        "answer_before_start_refused": true,
+        "transition_count": true,
+        "transition_table_conforms": true,
+        "final_state_submitted": true,
+        "answer_stored": true,
+        "flag_stored": true,
+        "current_slot_after_navigate": true,
+        "elapsed_uses_monotonic_clock": true,
+        "limit_from_policy": true
+      },
+      "failed": [],
+      "transitions": [
+        {
+          "seq": 0,
+          "from": "not-started",
+          "event": "start",
+          "to": "running"
+        },
+        {
+          "seq": 1,
+          "from": "running",
+          "event": "answer",
+          "to": "running"
+        },
+        {
+          "seq": 2,
+          "from": "running",
+          "event": "flag",
+          "to": "running"
+        },
+        {
+          "seq": 3,
+          "from": "running",
+          "event": "navigate",
+          "to": "running"
+        },
+        {
+          "seq": 4,
+          "from": "running",
+          "event": "request-review",
+          "to": "review"
+        },
+        {
+          "seq": 5,
+          "from": "review",
+          "event": "submit",
+          "to": "submitted"
+        }
+      ],
+      "detail": ""
+    },
+    "late_write_guard": {
+      "status": "PASS",
+      "claim": "After a terminal transition every mutation is refused with a stable error id, and the answers given before the terminal transition are preserved.",
+      "checks": {
+        "submitted_answer_refused": true,
+        "submitted_flag_refused": true,
+        "submitted_navigate_refused": true,
+        "submitted_start_refused": true,
+        "submitted_answers_preserved": true,
+        "expired_answer_refused": true,
+        "expired_flag_refused": true,
+        "expired_answers_preserved": true,
+        "expired_state": true,
+        "aborted_answer_refused": true,
+        "aborted_state": true,
+        "submit_without_review_refused": true,
+        "submit_without_confirmation_refused": true,
+        "unknown_event_refused": true,
+        "unknown_slot_refused": true
+      },
+      "failed": [],
+      "observed": {
+        "late_answer": {
+          "code": "E_SESSION_LATE_WRITE",
+          "message": "Sesija ir iesniegta: atbildes vairs nav maināmas."
+        },
+        "late_flag": {
+          "code": "E_SESSION_LATE_WRITE",
+          "message": "Sesija ir iesniegta: atbildes vairs nav maināmas."
+        },
+        "late_navigate": {
+          "code": "E_SESSION_TERMINAL",
+          "message": "Sesija ir galīgā; šis notikums vairs nav pieļaujams."
+        },
+        "late_start": {
+          "code": "E_SESSION_TERMINAL",
+          "message": "Sesija ir galīgā; šis notikums vairs nav pieļaujams."
+        },
+        "expired_answer": {
+          "code": "E_SESSION_EXPIRED_WRITE",
+          "message": "Laika ierobežojums ir izsaukts: atbildes vairs nav maināmas."
+        },
+        "expired_flag": {
+          "code": "E_SESSION_EXPIRED_WRITE",
+          "message": "Laika ierobežojums ir izsaukts: atbildes vairs nav maināmas."
+        },
+        "aborted_answer": {
+          "code": "E_SESSION_ABORTED_WRITE",
+          "message": "Sesija ir pārtraukta: atbildes vairs nav maināmas."
+        },
+        "skip_review": {
+          "code": "E_SESSION_REVIEW_REQUIRED",
+          "message": "Pirms iesniegšanas jāpieprasa pārbaudes ekrāns."
+        },
+        "unconfirmed": {
+          "code": "E_SESSION_CONFIRMATION_REQUIRED",
+          "message": "Iesniegšanai nepieciešama skaidra apstiprināšana."
+        },
+        "unknown_event": {
+          "code": "E_SESSION_INVALID_EVENT",
+          "message": "Nezināms sesijas notikums: explode."
+        },
+        "unknown_slot": {
+          "code": "E_SESSION_UNKNOWN_SLOT",
+          "message": "Nezināma uzdevumu vieta: S9-9."
+        }
+      }
+    },
+    "timer_contract": {
+      "status": "PASS",
+      "claim": "The advisory timer uses a monotonic clock: the 90 % threshold is status only, the elapsed time keeps counting while the tab is hidden, and the expiry transition preserves the answers.",
+      "limit_ms": 10800000,
+      "threshold_ms": 9720000,
+      "checks": {
+        "elapsed_starts_at_zero": true,
+        "threshold_reached": true,
+        "threshold_does_not_change_state": true,
+        "threshold_marker_visible": true,
+        "hidden_tab_keeps_counting": true,
+        "expired_state": true,
+        "expiry_preserved_answers": true,
+        "expiry_preserves_answers": true,
+        "expired_rejects_writes": true,
+        "timer_limit_is_advisory_label": true,
+        "threshold_ratio_is_90_percent": true
+      },
+      "failed": []
+    },
+    "payload_contract": {
+      "status": "PASS",
+      "claim": "Answers are stored raw and unparsed: the learner's own text survives byte for byte, and a malformed payload is refused by a stable error id without being stored.",
+      "checks": {
+        "numeric_stored_raw": true,
+        "numeric_stored_as_string": true,
+        "ordering_stored_as_typed": true,
+        "matching_stored_as_typed": true,
+        "justification_stored_raw": true,
+        "graph_variant_preserved": true,
+        "method_variant_preserved": true,
+        "missing_field_refused": true,
+        "unknown_kind_refused": true,
+        "non_object_refused": true,
+        "refused_payload_not_stored": true
+      },
+      "failed": []
+    },
+    "serialization": {
+      "status": "PASS",
+      "claim": "A serialised session deserialises to identical answers, flags and state — the precondition N34's storage layer depends on.",
+      "checks": {
+        "round_trip_answers_identical": true,
+        "round_trip_flags_identical": true,
+        "round_trip_state_identical": true,
+        "round_trip_current_slot_identical": true,
+        "round_trip_transition_count": true,
+        "round_trip_raw_value_preserved": true,
+        "serialized_is_plain_json": true,
+        "broken_serialization_refused": true,
+        "wrong_shape_refused": true
+      },
+      "failed": []
+    },
+    "view_discipline": {
+      "status": "PASS",
+      "claim": "The boundary is architectural in both directions: the exam render contains zero help markers and zero N16 chain step text, and a practice render contains zero exam-session fields.",
+      "checks": {
+        "exam_has_no_help_components": true,
+        "exam_dom_has_no_hint_marker": true,
+        "exam_dom_has_no_chain_marker": true,
+        "exam_dom_has_no_method_card_marker": true,
+        "exam_dom_has_no_term_lookup_marker": true,
+        "exam_dom_has_no_hint_drawer": true,
+        "exam_dom_has_no_chain_step_text": true,
+        "chain_step_texts_checked": 138,
+        "exam_map_has_21_cells": true,
+        "practice_has_no_exam_session_fields": true,
+        "practice_does_not_leak_the_answer": true,
+        "practice_does_not_leak_the_session_id": true,
+        "practice_keeps_help_components": true,
+        "practice_has_no_slot_status": true,
+        "exam_session_fields_checked": 9
+      },
+      "failed": [],
+      "leaked_steps": [],
+      "leaked_fields": []
+    },
+    "mode_registry": {
+      "status": "PASS",
+      "claim": "The mode registry is the single source mapping mode → allowed components, and an unregistered component fails the render contract loudly.",
+      "checks": {
+        "exam_allowed_matches_island": true,
+        "practice_allowed_matches_island": true,
+        "exam_allows_the_five_core_components": true,
+        "practice_adds_the_four_help_components": true,
+        "exam_forbids_help": true,
+        "hint_refused_in_exam": true,
+        "map_allowed_in_exam": true,
+        "hint_allowed_in_practice": true,
+        "unregistered_component_fails_loudly": true
+      },
+      "failed": [],
+      "scratch_error": {
+        "code": "E_MODE_COMPONENT_NOT_ALLOWED",
+        "message": "Komponents \"map\" nav atļauts režīmā \"exam\"."
+      }
+    },
+    "navigation": {
+      "status": "PASS",
+      "claim": "The scripted answer/flag sequence produces exactly the expected map state, and every one of the 21 slots is reachable by pointer.",
+      "checks": {
+        "map_cell_count": true,
+        "map_matches_expected": true,
+        "map_counts": true,
+        "map_current_slot": true,
+        "rendered_map_matches_state": true,
+        "all_slots_reachable_by_pointer": true
+      },
+      "failed": [],
+      "expected_map": [
+        {
+          "slot_id": "S1-1",
+          "index": 1,
+          "answered": true,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S1-2",
+          "index": 2,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S1-3",
+          "index": 3,
+          "answered": false,
+          "flagged": true,
+          "current": false
+        },
+        {
+          "slot_id": "S2-1",
+          "index": 4,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S2-2",
+          "index": 5,
+          "answered": true,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S2-3",
+          "index": 6,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S3-1",
+          "index": 7,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S3-2",
+          "index": 8,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S3-3",
+          "index": 9,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S4-1",
+          "index": 10,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S4-2",
+          "index": 11,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S4-3",
+          "index": 12,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S5-1",
+          "index": 13,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S5-2",
+          "index": 14,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S5-3",
+          "index": 15,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S6-1",
+          "index": 16,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S6-2",
+          "index": 17,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S6-3",
+          "index": 18,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S7-1",
+          "index": 19,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S7-2",
+          "index": 20,
+          "answered": false,
+          "flagged": false,
+          "current": false
+        },
+        {
+          "slot_id": "S7-3",
+          "index": 21,
+          "answered": true,
+          "flagged": false,
+          "current": true
+        }
+      ],
+      "observed_map": [
+        {
+          "slot_id": "S1-1",
+          "index": 1,
+          "answered": true,
+          "flagged": false,
+          "current": false,
+          "points": 3,
+          "topic": 1
+        },
+        {
+          "slot_id": "S1-2",
+          "index": 2,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 3,
+          "topic": 1
+        },
+        {
+          "slot_id": "S1-3",
+          "index": 3,
+          "answered": false,
+          "flagged": true,
+          "current": false,
+          "points": 4,
+          "topic": 1
+        },
+        {
+          "slot_id": "S2-1",
+          "index": 4,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 2
+        },
+        {
+          "slot_id": "S2-2",
+          "index": 5,
+          "answered": true,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 2
+        },
+        {
+          "slot_id": "S2-3",
+          "index": 6,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 2
+        },
+        {
+          "slot_id": "S3-1",
+          "index": 7,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 3
+        },
+        {
+          "slot_id": "S3-2",
+          "index": 8,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 3
+        },
+        {
+          "slot_id": "S3-3",
+          "index": 9,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 8,
+          "topic": 3
+        },
+        {
+          "slot_id": "S4-1",
+          "index": 10,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 4
+        },
+        {
+          "slot_id": "S4-2",
+          "index": 11,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 5,
+          "topic": 4
+        },
+        {
+          "slot_id": "S4-3",
+          "index": 12,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 4
+        },
+        {
+          "slot_id": "S5-1",
+          "index": 13,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 5
+        },
+        {
+          "slot_id": "S5-2",
+          "index": 14,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 5
+        },
+        {
+          "slot_id": "S5-3",
+          "index": 15,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 5
+        },
+        {
+          "slot_id": "S6-1",
+          "index": 16,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 6
+        },
+        {
+          "slot_id": "S6-2",
+          "index": 17,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 5,
+          "topic": 6
+        },
+        {
+          "slot_id": "S6-3",
+          "index": 18,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 6,
+          "topic": 6
+        },
+        {
+          "slot_id": "S7-1",
+          "index": 19,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 3,
+          "topic": 7
+        },
+        {
+          "slot_id": "S7-2",
+          "index": 20,
+          "answered": false,
+          "flagged": false,
+          "current": false,
+          "points": 4,
+          "topic": 7
+        },
+        {
+          "slot_id": "S7-3",
+          "index": 21,
+          "answered": true,
+          "flagged": false,
+          "current": true,
+          "points": 5,
+          "topic": 7
+        }
+      ]
+    },
+    "keyboard_traversal": {
+      "status": "PASS",
+      "claim": "A scripted keyboard run answers and flags across all 21 slots without a single pointer event, and the focus is never trapped.",
+      "checks": {
+        "visited_all_slots": true,
+        "answered_all_slots": true,
+        "flagged_every_second_slot": true,
+        "no_pointer_events": true,
+        "arrows_prevent_default": true,
+        "tab_not_intercepted": true,
+        "focus_moves_into_the_slot": true
+      },
+      "failed": [],
+      "pointer_events": 0
+    },
+    "submit_gate": {
+      "status": "PASS",
+      "claim": "The review screen carries the unanswered warning with role=\"alert\", the submission requires an explicit confirmation that the machine also enforces, and the submission is one-way.",
+      "checks": {
+        "review_visible": true,
+        "unanswered_warning_has_alert_role": true,
+        "unanswered_warning_mentions_the_gap": true,
+        "review_table_has_21_rows": true,
+        "submit_disabled_without_confirmation": true,
+        "confirmation_checkbox_present": true,
+        "submit_refused_without_confirmation": true,
+        "state_still_review": true,
+        "warning_dismissed": true,
+        "submit_enabled_after_confirmation": true,
+        "submitted_state": true,
+        "submission_is_one_way": true
+      },
+      "failed": []
+    },
+    "buffer_race": {
+      "status": "PASS",
+      "claim": "Rapid navigation during a re-render loses no in-progress answer: the machine buffers the answer by slot id and repopulates the re-created input.",
+      "checks": {
+        "answer_not_lost": true,
+        "answer_value_intact": true,
+        "input_repopulated_after_rerender": true,
+        "current_slot_after_race": true,
+        "other_slots_untouched": true
+      },
+      "failed": []
+    },
+    "terminal_record": {
+      "status": "PASS",
+      "claim": "The terminal session record carries the answers, the flags, the elapsed time and the form id that N23 grades and N25 logs.",
+      "checks": {
+        "has_answers": true,
+        "has_flags": true,
+        "has_elapsed_time": true,
+        "has_form_id": true,
+        "has_session_id": true,
+        "has_transitions": true,
+        "has_unanswered_list": true,
+        "remediation_is_unanswered_plus_flagged": true,
+        "state_is_submitted": true
+      },
+      "failed": [],
+      "record_fields": [
+        "answers",
+        "elapsed_ms",
+        "finished_at_ms",
+        "flags",
+        "form_id",
+        "remediation_slot_ids",
+        "schema_version",
+        "session_id",
+        "started_at_ms",
+        "state",
+        "transitions",
+        "unanswered_slot_ids"
+      ]
+    },
+    "end_to_end_trace": {
+      "status": "PASS",
+      "claim": "The scripted session runs from the start screen through full navigation, several answer types, flags, review and a confirmed submission to the terminal record, and every transition conforms to the table.",
+      "checks": {
+        "boot_returns_an_app": true,
+        "session_absent_before_start": true,
+        "start_button_starts_the_session": true,
+        "entry_hidden_after_start": true,
+        "shell_visible_after_start": true,
+        "status_line_from_policy": true,
+        "review_state_reached": true,
+        "unanswered_warning_present": true,
+        "submitted": true,
+        "terminal_record_emitted": true,
+        "terminal_record_has_answers": true,
+        "terminal_record_has_form_id": true,
+        "every_transition_conforms": true,
+        "transition_count": 32,
+        "offender": ""
+      },
+      "failed": [],
+      "trace": [
+        "not-started --start--> running",
+        "running --navigate--> running",
+        "running --answer--> running",
+        "running --flag--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --answer--> running",
+        "running --navigate--> running",
+        "running --flag--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --answer--> running",
+        "running --flag--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --flag--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --navigate--> running",
+        "running --flag--> running",
+        "running --request-review--> review",
+        "review --submit--> submitted"
+      ]
+    },
+    "smoke_vectors": {
+      "status": "PASS",
+      "claim": "The two in-file smoke vectors run against the built artifact.",
+      "artifact": "output/simulator.html",
+      "suite": {
+        "total": 13,
+        "passed": 3,
+        "failed": 10
+      },
+      "vectors": [
+        {
+          "id": "SMK-N21-SESSION-TRANSITION",
+          "owner": "N21",
+          "status": "PASS",
+          "details": {
+            "transitions": 6,
+            "finalState": "submitted",
+            "lateWriteError": "E_SESSION_LATE_WRITE",
+            "flags": [
+              "S1-3"
+            ],
+            "answered": 1
+          },
+          "reason": null
+        },
+        {
+          "id": "SMK-N21-NAVIGATION-MAP",
+          "owner": "N21",
+          "status": "PASS",
+          "details": {
+            "cells": 21,
+            "answered": 3,
+            "flagged": 1,
+            "unanswered": 18,
+            "current": "S7-3"
+          },
+          "reason": null
+        }
+      ],
+      "checks": {
+        "session_vector_present": true,
+        "session_vector_passes": true,
+        "navigation_vector_present": true,
+        "navigation_vector_passes": true
+      },
+      "failed": []
+    }
+  }
+}

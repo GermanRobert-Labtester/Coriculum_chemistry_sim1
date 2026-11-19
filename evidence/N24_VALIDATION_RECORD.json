@@ -1,0 +1,102 @@
+{
+  "bank_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+  "compile_drift": "PASS",
+  "errors": [],
+  "forms": {
+    "A": {
+      "checks": {
+        "eligibility": true,
+        "family_uniqueness": true,
+        "instance_uniqueness": true,
+        "per_topic_points_and_counts": true,
+        "q11_figure_binding": true,
+        "required_types_coverage": true,
+        "slot_count": true,
+        "slot_order": true,
+        "topic_and_slot_constraints": true,
+        "total_points": true
+      },
+      "errors": [],
+      "form_seed": "100001",
+      "manifest_digest": "b1ac2f07085b244eea29cae721d3a205cd2dd9cd076983f303d1a503ef0e08e0",
+      "status": "PASS",
+      "total_points": 100,
+      "total_slots": 21
+    },
+    "B": {
+      "checks": {
+        "eligibility": true,
+        "family_uniqueness": true,
+        "instance_uniqueness": true,
+        "per_topic_points_and_counts": true,
+        "q11_figure_binding": true,
+        "required_types_coverage": true,
+        "slot_count": true,
+        "slot_order": true,
+        "topic_and_slot_constraints": true,
+        "total_points": true
+      },
+      "errors": [],
+      "form_seed": "100002",
+      "manifest_digest": "55531768cd785997773ebc69949c9dba6aff7508f5de5af28fd4f454c62e2541",
+      "status": "PASS",
+      "total_points": 100,
+      "total_slots": 21
+    },
+    "C": {
+      "checks": {
+        "eligibility": true,
+        "family_uniqueness": true,
+        "instance_uniqueness": true,
+        "per_topic_points_and_counts": true,
+        "q11_figure_binding": true,
+        "required_types_coverage": true,
+        "slot_count": true,
+        "slot_order": true,
+        "topic_and_slot_constraints": true,
+        "total_points": true
+      },
+      "errors": [],
+      "form_seed": "100003",
+      "manifest_digest": "5781f7973c006497c41da05e646d0f1a28f7e911e5b50f50609da65a04172d42",
+      "status": "PASS",
+      "total_points": 100,
+      "total_slots": 21
+    }
+  },
+  "forms_island_bytes": 16067,
+  "forms_island_digest": "61df93c0390a0a0f8ec1b22814cf7d106a25e6c794cf1941ddd7b5d22de72f1f",
+  "js_parity": {
+    "forms": {
+      "A": {
+        "byte_identical": true,
+        "js_digest": "b1ac2f07085b244eea29cae721d3a205cd2dd9cd076983f303d1a503ef0e08e0",
+        "py_digest": "b1ac2f07085b244eea29cae721d3a205cd2dd9cd076983f303d1a503ef0e08e0"
+      },
+      "B": {
+        "byte_identical": true,
+        "js_digest": "55531768cd785997773ebc69949c9dba6aff7508f5de5af28fd4f454c62e2541",
+        "py_digest": "55531768cd785997773ebc69949c9dba6aff7508f5de5af28fd4f454c62e2541"
+      },
+      "C": {
+        "byte_identical": true,
+        "js_digest": "5781f7973c006497c41da05e646d0f1a28f7e911e5b50f50609da65a04172d42",
+        "py_digest": "5781f7973c006497c41da05e646d0f1a28f7e911e5b50f50609da65a04172d42"
+      }
+    },
+    "status": "PASS"
+  },
+  "owner": "N24",
+  "pipeline_guard": {
+    "absent_digest_refused": true,
+    "stale_digest_refused": true,
+    "unverified_flag_refused": true
+  },
+  "shell_markup": {
+    "missing_ids": [],
+    "required_ids_present": 16,
+    "required_ids_total": 16,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

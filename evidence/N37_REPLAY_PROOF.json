@@ -1,0 +1,23 @@
+{
+  "artifact_digest": "99fd5c406950be1739b1d3480645d1698ed03eac6558f706d9f2c85b5f11745a",
+  "identical_verdicts": true,
+  "run1_summary": {
+    "MATCH": 219,
+    "NOISE": 0,
+    "REGRESSION": 0,
+    "total_cells": 219,
+    "unique_renders": 73
+  },
+  "run1_verdict_sequence_sha256": "803e4093af99f66ffa5116cf520b502742e1461bc8dc7271c1d30deb6b989eeb",
+  "run2_summary": {
+    "MATCH": 219,
+    "NOISE": 0,
+    "REGRESSION": 0,
+    "total_cells": 219,
+    "unique_renders": 73
+  },
+  "run2_verdict_sequence_sha256": "803e4093af99f66ffa5116cf520b502742e1461bc8dc7271c1d30deb6b989eeb",
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N37"
+}

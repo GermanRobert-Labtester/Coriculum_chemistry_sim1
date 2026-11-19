@@ -1,0 +1,2284 @@
+{
+  "authority": "N12 leak scanner (tools/leak_scan.py)",
+  "exemption_codes": [
+    "EXEMPT_GIVEN_INPUT",
+    "EXEMPT_READING_DISPLAY",
+    "EXEMPT_WORKED_DERIVATION"
+  ],
+  "instances": [
+    {
+      "family_id": "FAM-1A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-1A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-1A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-1A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-1B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-1B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-1B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-1B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-1C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-1C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-1C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-1C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-1D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-1D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-1D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-1D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-1-1D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-2A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-2A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-2A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-2A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-2B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": {
+          "exempted_surfaces": [],
+          "exempted_values": [
+            "0.0047"
+          ],
+          "reason_code": "EXEMPT_GIVEN_INPUT",
+          "reason_lv": "Uzdevums pats par sevi ir vienību pārvērtība: atbilde ir tā pati masa, kas tekstā dota kilograms. Vienību-normalizētais noteikums to atpazīst par tādu pašu lielumu, nevis par atbildes noplūdi."
+        },
+        "exempted_findings": [
+          {
+            "error_id": "E_LEAK_DETECTED",
+            "exemption_reason_code": "EXEMPT_GIVEN_INPUT",
+            "exemption_reason_lv": "Uzdevums pats par sevi ir vienību pārvērtība: atbilde ir tā pati masa, kas tekstā dota kilograms. Vienību-normalizētais noteikums to atpazīst par tādu pašu lielumu, nevis par atbildes noplūdi.",
+            "family_id": "FAM-2B",
+            "layer": "COL1-2-2B-A-01",
+            "leaked_norm": "4.70000 (dim={'M': 1})",
+            "leaked_raw": "0,00470 kg",
+            "match_kind": "unit_normalized",
+            "source": "COL1-2-2B-A-01",
+            "surface": "stem",
+            "target_raw": "4.7 g"
+          },
+          {
+            "error_id": "E_LEAK_DETECTED",
+            "exemption_reason_code": "EXEMPT_GIVEN_INPUT",
+            "exemption_reason_lv": "Uzdevums pats par sevi ir vienību pārvērtība: atbilde ir tā pati masa, kas tekstā dota kilograms. Vienību-normalizētais noteikums to atpazīst par tādu pašu lielumu, nevis par atbildes noplūdi.",
+            "family_id": "FAM-2B",
+            "layer": "COL1-2-2B-A-01",
+            "leaked_norm": "4.70000 (dim={'M': 1})",
+            "leaked_raw": "0,00470 kg",
+            "match_kind": "unit_normalized",
+            "source": "COL1-2-2B-A-01",
+            "surface": "stem",
+            "target_raw": "4.7 g"
+          }
+        ],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-2B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": {
+          "exempted_surfaces": [],
+          "exempted_values": [
+            "0.00019"
+          ],
+          "reason_code": "EXEMPT_GIVEN_INPUT",
+          "reason_lv": "Uzdevums ir vieles daudzuma pārvērtība uz mikromoliem; atbilde ir tas pats daudzums, kas tekstā dota mooliem. Tas nav atbildes noplūde, bet uzdevuma priekšmeta aprēķins."
+        },
+        "exempted_findings": [
+          {
+            "error_id": "E_LEAK_DETECTED",
+            "exemption_reason_code": "EXEMPT_GIVEN_INPUT",
+            "exemption_reason_lv": "Uzdevums ir vieles daudzuma pārvērtība uz mikromoliem; atbilde ir tas pats daudzums, kas tekstā dota mooliem. Tas nav atbildes noplūde, bet uzdevuma priekšmeta aprēķins.",
+            "family_id": "FAM-2B",
+            "layer": "COL1-2-2B-B-01",
+            "leaked_norm": "0.0001900 (dim={'N': 1})",
+            "leaked_raw": "0,0001900 mol",
+            "match_kind": "unit_normalized",
+            "source": "COL1-2-2B-B-01",
+            "surface": "stem",
+            "target_raw": "0.19 mmol"
+          },
+          {
+            "error_id": "E_LEAK_DETECTED",
+            "exemption_reason_code": "EXEMPT_GIVEN_INPUT",
+            "exemption_reason_lv": "Uzdevums ir vieles daudzuma pārvērtība uz mikromoliem; atbilde ir tas pats daudzums, kas tekstā dota mooliem. Tas nav atbildes noplūde, bet uzdevuma priekšmeta aprēķins.",
+            "family_id": "FAM-2B",
+            "layer": "COL1-2-2B-B-01",
+            "leaked_norm": "0.0001900 (dim={'N': 1})",
+            "leaked_raw": "0,0001900 mol",
+            "match_kind": "unit_normalized",
+            "source": "COL1-2-2B-B-01",
+            "surface": "stem",
+            "target_raw": "0.19 mmol"
+          }
+        ],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-2B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-2B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-2C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-2C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-2C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-2C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-2D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "CLEAR"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-2D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "75",
+              "axis": "x",
+              "distance": "75",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "60"
+            },
+            {
+              "answer": "75",
+              "axis": "x",
+              "distance": "15",
+              "labelled_value": "60",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "60"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-2D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "CLEAR"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-2D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "77.5",
+              "axis": "x",
+              "distance": "47.5",
+              "labelled_value": "30",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "30"
+            },
+            {
+              "answer": "77.5",
+              "axis": "x",
+              "distance": "17.5",
+              "labelled_value": "60",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "30"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-2-2D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-3A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-3A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-3A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-3A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-3B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-3B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-3B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-3B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-3C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-3C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-3C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-3C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-3D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-3D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-3D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-3D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-3-3D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-4A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-4A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-4A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-4A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-4B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-4B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-4B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-4B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-4C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-4C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-4C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-4C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-4D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-4D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-4D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-4D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-4-4D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-5A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "95",
+              "axis": "x",
+              "distance": "95",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "50"
+            },
+            {
+              "answer": "95",
+              "axis": "x",
+              "distance": "45",
+              "labelled_value": "50",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "50"
+            },
+            {
+              "answer": "95",
+              "axis": "x",
+              "distance": "5",
+              "labelled_value": "100",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "50"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-5A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-5A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-5A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-5B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-5B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-5B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-5B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "180",
+              "axis": "x",
+              "distance": "180",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "180"
+            },
+            {
+              "answer": "180",
+              "axis": "x",
+              "distance": "0",
+              "labelled_value": "180",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "180"
+            },
+            {
+              "answer": "180",
+              "axis": "x",
+              "distance": "180",
+              "labelled_value": "360",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "180"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": {
+          "exempted_surfaces": [
+            "point.1.x"
+          ],
+          "exempted_values": [],
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Pusperiods ir jānolasa no grafika: atbules vērtība ir punkta koordināta, kas grafikā redzams, un tā mainās līdz ar sēklu, tāpēc deklarēta pēruma joma, nevis skaitlis."
+        },
+        "exempted_findings": [
+          {
+            "error_id": "E_LEAK_DETECTED",
+            "exemption_reason_code": "EXEMPT_READING_DISPLAY",
+            "exemption_reason_lv": "Pusperiods ir jānolasa no grafika: atbules vērtība ir punkta koordināta, kas grafikā redzams, un tā mainās līdz ar sēklu, tāpēc deklarēta pēruma joma, nevis skaitlis.",
+            "family_id": "FAM-5B",
+            "layer": "COL1-5-5B-D-01",
+            "leaked_norm": "180",
+            "leaked_raw": "180",
+            "match_kind": "numeric",
+            "source": "COL1-5-5B-D-01",
+            "surface": "point.1.x"
+          }
+        ],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-5C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "10",
+              "axis": "x",
+              "distance": "10",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "30"
+            },
+            {
+              "answer": "10",
+              "axis": "x",
+              "distance": "20",
+              "labelled_value": "30",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "30"
+            },
+            {
+              "answer": "10",
+              "axis": "x",
+              "distance": "50",
+              "labelled_value": "60",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "30"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-5C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-5C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "77.777777778",
+              "axis": "x",
+              "distance": "77.777777778",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "100"
+            },
+            {
+              "answer": "77.777777778",
+              "axis": "x",
+              "distance": "22.222222222",
+              "labelled_value": "100",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "100"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-5C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-5D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-5D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-5D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-5D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-5-5D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-6A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-6A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-6A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-6A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-6B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-6B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-6B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-6B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-6C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-6C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-6C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-6C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-6D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-6D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-6D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-6D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-6-6D-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-7A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7A-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-7A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7A-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-7A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7A-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-7A",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7A-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-7B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "0.0134",
+              "axis": "x",
+              "distance": "0.0134",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "20"
+            },
+            {
+              "answer": "0.0134",
+              "axis": "x",
+              "distance": "19.9866",
+              "labelled_value": "20",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "20"
+            },
+            {
+              "answer": "0.0134",
+              "axis": "x",
+              "distance": "39.9866",
+              "labelled_value": "40",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "20"
+            },
+            {
+              "answer": "0.0134",
+              "axis": "y",
+              "distance": "0.0034",
+              "labelled_value": "0.01",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            },
+            {
+              "answer": "0.0134",
+              "axis": "y",
+              "distance": "0.1966",
+              "labelled_value": "0.21",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            },
+            {
+              "answer": "0.0134",
+              "axis": "y",
+              "distance": "0.3966",
+              "labelled_value": "0.41",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7B-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-7B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "0.07",
+              "axis": "x",
+              "distance": "0.07",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "2"
+            },
+            {
+              "answer": "0.07",
+              "axis": "x",
+              "distance": "1.93",
+              "labelled_value": "2",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "2"
+            },
+            {
+              "answer": "0.07",
+              "axis": "x",
+              "distance": "3.93",
+              "labelled_value": "4",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "2"
+            },
+            {
+              "answer": "0.07",
+              "axis": "y",
+              "distance": "0.05",
+              "labelled_value": "0.02",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            },
+            {
+              "answer": "0.07",
+              "axis": "y",
+              "distance": "0.15",
+              "labelled_value": "0.22",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            },
+            {
+              "answer": "0.07",
+              "axis": "y",
+              "distance": "0.35",
+              "labelled_value": "0.42",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.20"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7B-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-7B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [
+            {
+              "answer": "0.012",
+              "axis": "x",
+              "distance": "0.012",
+              "labelled_value": "0",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "4"
+            },
+            {
+              "answer": "0.012",
+              "axis": "x",
+              "distance": "3.988",
+              "labelled_value": "4",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "4"
+            },
+            {
+              "answer": "0.012",
+              "axis": "y",
+              "distance": "0.002",
+              "labelled_value": "0.01",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.04"
+            },
+            {
+              "answer": "0.012",
+              "axis": "y",
+              "distance": "0.038",
+              "labelled_value": "0.05",
+              "rule": "N12-LEAK-BORDER-01",
+              "step": "0.04"
+            }
+          ],
+          "rule": "N12-LEAK-BORDER-01",
+          "status": "BORDERLINE"
+        },
+        "declared_exemption": {
+          "exempted_surfaces": [
+            "point.0.y",
+            "point.1.y"
+          ],
+          "exempted_values": [],
+          "reason_code": "EXEMPT_READING_DISPLAY",
+          "reason_lv": "Mērķa koncentrācija γ = 2 mg/L atrodas tieši pa vidu starp abiem kalibrēšanas standartiem (0 un 4 mg/L), tāpēc nolasītā absorbance atrodas starp divām marķētajām vērtībām. Tas ir robežgadījums, kur mācītājam jāinterpolē, nevis jākopē marķēta vērtība."
+        },
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 1,
+        "unused_exemption": [
+          {
+            "note": "Deklarētais atviegums neatbilst nevienam konstatētam noplūdes gadījumam; tas fiksētā, ka robežgadījums tika novērtēts, bet noplūde netika konstatēta."
+          }
+        ]
+      },
+      "question_id": "COL1-7-7B-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-7B",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7B-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-7C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7C-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-7C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7C-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-7C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 2,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7C-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-7C",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7C-D-01",
+      "variant_id": "D"
+    },
+    {
+      "family_id": "FAM-7D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7D-A-01",
+      "variant_id": "A"
+    },
+    {
+      "family_id": "FAM-7D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 0,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7D-B-01",
+      "variant_id": "B"
+    },
+    {
+      "family_id": "FAM-7D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 3,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7D-C-01",
+      "variant_id": "C"
+    },
+    {
+      "family_id": "FAM-7D",
+      "leak_scan": {
+        "borderline": {
+          "proximities": [],
+          "status": "NOT_APPLICABLE"
+        },
+        "declared_exemption": null,
+        "exempted_findings": [],
+        "findings": [],
+        "status": "PASS",
+        "tokens": 4,
+        "unused_exemption": []
+      },
+      "question_id": "COL1-7-7D-D-01",
+      "variant_id": "D"
+    }
+  ],
+  "owner": "N20",
+  "schema_version": 1
+}

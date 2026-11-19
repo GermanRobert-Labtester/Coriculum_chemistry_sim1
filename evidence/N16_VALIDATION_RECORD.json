@@ -1,0 +1,2864 @@
+{
+  "schema_version": 1,
+  "task": "N16",
+  "status": "PASS",
+  "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+  "summary": {
+    "chains": 14,
+    "steps": 69,
+    "numeric_steps": 50,
+    "symbolic_steps": 19,
+    "topics": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2
+    },
+    "recompute_pass": 50,
+    "recompute_fail": 0,
+    "negative_recompute": "PASS",
+    "citations": {
+      "anchors": 87,
+      "conventions": 128,
+      "figures": 13,
+      "outcomes": 35
+    },
+    "multi_citations": 53,
+    "figures": 13,
+    "method_cards": 14,
+    "practice_items": 14,
+    "fixture_leaks": 0,
+    "island_leaks": 0,
+    "planted_leak": "PASS",
+    "sealed_roundtrip": 69,
+    "projection_bytes": 71253,
+    "projection_digest": "4b61010688da6805687f23ed2c7aa6c15949a26c966778ab4c23db0969626c27",
+    "fixture_bytes": 51506,
+    "fixture_digest": "12685d9d8cab31a71aa2810dd367dc8c2d84f3ef43ade8c1fe5f62e78fa31379"
+  },
+  "errors": [],
+  "warnings": [],
+  "chains": [
+    {
+      "id": "EX01",
+      "topic": 1,
+      "outcomes": [
+        "P1-01"
+      ],
+      "steps": 7,
+      "numeric_steps": 6,
+      "figures": [
+        "FIG-T1-CHAIN-AL-OXIDATION"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX02",
+      "topic": 1,
+      "outcomes": [
+        "P1-06",
+        "P1-05"
+      ],
+      "steps": 6,
+      "numeric_steps": 4,
+      "figures": [
+        "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX03",
+      "topic": 2,
+      "outcomes": [
+        "P2-07",
+        "P2-05"
+      ],
+      "steps": 3,
+      "numeric_steps": 3,
+      "figures": [
+        "FIG-T2-BURETTE-DELIVERED-GRADE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX04",
+      "topic": 2,
+      "outcomes": [
+        "P2-05",
+        "P2-10",
+        "P2-03"
+      ],
+      "steps": 4,
+      "numeric_steps": 3,
+      "figures": [
+        "FIG-T2-CHAIN-PREFIX-SCALE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX05",
+      "topic": 3,
+      "outcomes": [
+        "P3-04",
+        "P3-06",
+        "P3-05"
+      ],
+      "steps": 5,
+      "numeric_steps": 3,
+      "figures": [
+        "FIG-T3-CONC-BASES-BRIDGE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX06",
+      "topic": 3,
+      "outcomes": [
+        "P3-10",
+        "P3-11"
+      ],
+      "steps": 6,
+      "numeric_steps": 4,
+      "figures": [
+        "FIG-T3-DILUTION-PIPETTE-FLASK"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX07",
+      "topic": 4,
+      "outcomes": [
+        "P4-08",
+        "P4-10",
+        "P4-11"
+      ],
+      "steps": 5,
+      "numeric_steps": 4,
+      "figures": [
+        "FIG-T4-ENERGY-EXOTHERMIC"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX08",
+      "topic": 4,
+      "outcomes": [
+        "P4-03",
+        "P4-02",
+        "P4-07"
+      ],
+      "steps": 6,
+      "numeric_steps": 5,
+      "figures": [
+        "FIG-T4-HESS-CO2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX09",
+      "topic": 5,
+      "outcomes": [
+        "P5-08",
+        "P5-09",
+        "P5-10"
+      ],
+      "steps": 5,
+      "numeric_steps": 4,
+      "figures": [
+        "FIG-T5-LIN-FIRST"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX10",
+      "topic": 5,
+      "outcomes": [
+        "P5-07",
+        "P5-03",
+        "P5-06"
+      ],
+      "steps": 6,
+      "numeric_steps": 3,
+      "figures": [
+        "FIG-T4-ENERGY-CATALYZED"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX11",
+      "topic": 6,
+      "outcomes": [
+        "P6-08",
+        "P6-05",
+        "P6-07"
+      ],
+      "steps": 4,
+      "numeric_steps": 3,
+      "figures": [
+        "FIG-T67-TITR-MASTER-KMNO4"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX12",
+      "topic": 6,
+      "outcomes": [
+        "P6-03",
+        "P6-02"
+      ],
+      "steps": 4,
+      "numeric_steps": 2,
+      "figures": [],
+      "status": "PASS"
+    },
+    {
+      "id": "EX13",
+      "topic": 7,
+      "outcomes": [
+        "P7-03",
+        "P7-02"
+      ],
+      "steps": 4,
+      "numeric_steps": 2,
+      "figures": [
+        "FIG-T67-CAL-NEAR-EDGE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "EX14",
+      "topic": 7,
+      "outcomes": [
+        "P7-04",
+        "P7-03",
+        "P7-05"
+      ],
+      "steps": 4,
+      "numeric_steps": 4,
+      "figures": [
+        "FIG-T67-CAL-MASTER"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "recompute": [
+    {
+      "chain_id": "EX01",
+      "step_id": "S2",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "m_Mg"
+        },
+        {
+          "given": "M_Mg"
+        }
+      ],
+      "computed": "0.2",
+      "declared": "0.2",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX01",
+      "step_id": "S3",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "number": "1"
+        }
+      ],
+      "computed": "0.2",
+      "declared": "0.2",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX01",
+      "step_id": "S4",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S3"
+        },
+        {
+          "given": "M_MgO"
+        }
+      ],
+      "computed": "8",
+      "declared": "8",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX01",
+      "step_id": "S5",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "number": "0.5"
+        }
+      ],
+      "computed": "0.1",
+      "declared": "0.1",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX01",
+      "step_id": "S6",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S5"
+        },
+        {
+          "given": "M_O2"
+        }
+      ],
+      "computed": "3.2",
+      "declared": "3.2",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX01",
+      "step_id": "S7",
+      "op": "add",
+      "operands": [
+        {
+          "given": "m_Mg"
+        },
+        {
+          "step": "S6"
+        }
+      ],
+      "computed": "8",
+      "declared": "8",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX02",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "n_NaCl"
+        },
+        {
+          "number": "1"
+        }
+      ],
+      "computed": "0.1",
+      "declared": "0.1",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX02",
+      "step_id": "S3",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "n_NaCl"
+        },
+        {
+          "number": "1"
+        }
+      ],
+      "computed": "0.1",
+      "declared": "0.1",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX02",
+      "step_id": "S4",
+      "op": "add",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "step": "S3"
+        }
+      ],
+      "computed": "0.2",
+      "declared": "0.2",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX02",
+      "step_id": "S5",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S4"
+        },
+        {
+          "given": "N_A"
+        }
+      ],
+      "computed": "120442815200000000000000",
+      "declared": "1.204428152e23",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX03",
+      "step_id": "S1",
+      "op": "subtract",
+      "operands": [
+        {
+          "given": "V_final"
+        },
+        {
+          "given": "V_initial"
+        }
+      ],
+      "computed": "16.25",
+      "declared": "16.25",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX03",
+      "step_id": "S2",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S1"
+        },
+        {
+          "number": "0.05"
+        }
+      ],
+      "computed": "325",
+      "declared": "325",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX03",
+      "step_id": "S3",
+      "op": "scale",
+      "operands": [
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "0.01625",
+      "declared": "0.01625",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX04",
+      "step_id": "S1",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "m_kg"
+        },
+        {
+          "number": "1000"
+        }
+      ],
+      "computed": "4.5",
+      "declared": "4.5",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX04",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S1"
+        },
+        {
+          "number": "1000"
+        }
+      ],
+      "computed": "4500",
+      "declared": "4500",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX04",
+      "step_id": "S4",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "a"
+        },
+        {
+          "given": "b"
+        }
+      ],
+      "computed": "8.55",
+      "declared": "8.55",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX05",
+      "step_id": "S1",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "m_NaCl"
+        },
+        {
+          "given": "M_NaCl"
+        }
+      ],
+      "computed": "0.05",
+      "declared": "0.05",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX05",
+      "step_id": "S2",
+      "op": "scale",
+      "operands": [
+        {
+          "given": "V_mL"
+        }
+      ],
+      "computed": "0.25",
+      "declared": "0.25",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX05",
+      "step_id": "S3",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S1"
+        },
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "0.2",
+      "declared": "0.2",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX06",
+      "step_id": "S1",
+      "op": "scale",
+      "operands": [
+        {
+          "given": "V2_mL"
+        }
+      ],
+      "computed": "0.1",
+      "declared": "0.1",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX06",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "c2"
+        },
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "0.005",
+      "declared": "0.005",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX06",
+      "step_id": "S3",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "given": "c1"
+        }
+      ],
+      "computed": "0.01",
+      "declared": "0.01",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX06",
+      "step_id": "S4",
+      "op": "scale",
+      "operands": [
+        {
+          "step": "S3"
+        }
+      ],
+      "computed": "10",
+      "declared": "10.0",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX07",
+      "step_id": "S1",
+      "op": "scale",
+      "operands": [
+        {
+          "given": "dS_J"
+        }
+      ],
+      "computed": "0.15",
+      "declared": "0.15",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX07",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "T"
+        },
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "44.7",
+      "declared": "44.7",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX07",
+      "step_id": "S3",
+      "op": "subtract",
+      "operands": [
+        {
+          "given": "dH"
+        },
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "-4.7",
+      "declared": "-4.7",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX07",
+      "step_id": "S4",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "dH"
+        },
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "266.66666666666666666666666666666666666666666666667",
+      "declared": "266.6666666666666667",
+      "delta": "0.00000000000000003333333333333333333333333333333",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX08",
+      "step_id": "S1",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "m_sol"
+        },
+        {
+          "given": "cp"
+        },
+        {
+          "given": "dT"
+        }
+      ],
+      "computed": "2090",
+      "declared": "2090",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX08",
+      "step_id": "S2",
+      "op": "scale",
+      "operands": [
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "2.09",
+      "declared": "2.09",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX08",
+      "step_id": "S3",
+      "op": "negate",
+      "operands": [
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "-2.09",
+      "declared": "-2.09",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX08",
+      "step_id": "S4",
+      "op": "add",
+      "operands": [
+        {
+          "given": "H1"
+        },
+        {
+          "given": "H2"
+        }
+      ],
+      "computed": "-399.5",
+      "declared": "-399.5",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX08",
+      "step_id": "S5",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "given": "H_abs"
+        }
+      ],
+      "computed": "0.0052315394242803504380475594493116395494367959949937",
+      "declared": "0.00523153942428035",
+      "delta": "0.0000000000000000004380475594493116395494367959949937",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX09",
+      "step_id": "S1",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "ln2"
+        },
+        {
+          "given": "t_half"
+        }
+      ],
+      "computed": "0.023104906018664843333333333333333333333333333333333",
+      "declared": "0.023104906018664844",
+      "delta": "0.000000000000000000666666666666666666666666666666667",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX09",
+      "step_id": "S2",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "t_total"
+        },
+        {
+          "given": "t_half"
+        }
+      ],
+      "computed": "3",
+      "declared": "3",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX09",
+      "step_id": "S3",
+      "op": "power",
+      "operands": [
+        {
+          "given": "half"
+        },
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "0.125",
+      "declared": "0.125",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX09",
+      "step_id": "S4",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "m0"
+        },
+        {
+          "step": "S3"
+        }
+      ],
+      "computed": "10",
+      "declared": "10.0",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX10",
+      "step_id": "S1",
+      "op": "subtract",
+      "operands": [
+        {
+          "given": "E_products"
+        },
+        {
+          "given": "E_reactants"
+        }
+      ],
+      "computed": "-30",
+      "declared": "-30",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX10",
+      "step_id": "S2",
+      "op": "subtract",
+      "operands": [
+        {
+          "given": "peak_uncat"
+        },
+        {
+          "given": "E_reactants"
+        }
+      ],
+      "computed": "80",
+      "declared": "80",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX10",
+      "step_id": "S3",
+      "op": "subtract",
+      "operands": [
+        {
+          "given": "peak_cat"
+        },
+        {
+          "given": "E_reactants"
+        }
+      ],
+      "computed": "40",
+      "declared": "40",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX11",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "c_KMnO4"
+        },
+        {
+          "given": "V_KMnO4_L"
+        }
+      ],
+      "computed": "0.000372",
+      "declared": "0.000372",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX11",
+      "step_id": "S3",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S2"
+        },
+        {
+          "number": "5"
+        }
+      ],
+      "computed": "0.00186",
+      "declared": "0.00186",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX11",
+      "step_id": "S4",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S3"
+        },
+        {
+          "given": "V_sample_L"
+        }
+      ],
+      "computed": "0.0744",
+      "declared": "0.0744",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX12",
+      "step_id": "S1",
+      "op": "divide",
+      "operands": [
+        {
+          "number": "1"
+        },
+        {
+          "given": "a_Cu2"
+        }
+      ],
+      "computed": "100",
+      "declared": "100",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX12",
+      "step_id": "S2",
+      "op": "nernst",
+      "operands": [
+        {
+          "given": "E0"
+        },
+        {
+          "given": "slope"
+        },
+        {
+          "given": "n"
+        },
+        {
+          "step": "S1"
+        }
+      ],
+      "computed": "0.2778",
+      "declared": "0.2778",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX13",
+      "step_id": "S2",
+      "op": "linfit_component",
+      "operands": [],
+      "computed": "50",
+      "declared": "50",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX13",
+      "step_id": "S3",
+      "op": "divide",
+      "operands": [
+        {
+          "given": "A_minus_b"
+        },
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "0.0068",
+      "declared": "0.0068",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX14",
+      "step_id": "S1",
+      "op": "multiply",
+      "operands": [
+        {
+          "given": "gamma_measured"
+        },
+        {
+          "given": "dilution_factor"
+        }
+      ],
+      "computed": "0.03",
+      "declared": "0.03",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX14",
+      "step_id": "S2",
+      "op": "multiply",
+      "operands": [
+        {
+          "step": "S1"
+        },
+        {
+          "given": "V_sample"
+        }
+      ],
+      "computed": "0.75",
+      "declared": "0.75",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX14",
+      "step_id": "S3",
+      "op": "scale",
+      "operands": [
+        {
+          "step": "S2"
+        }
+      ],
+      "computed": "0.00075",
+      "declared": "0.00075",
+      "delta": "0",
+      "status": "PASS"
+    },
+    {
+      "chain_id": "EX14",
+      "step_id": "S4",
+      "op": "divide",
+      "operands": [
+        {
+          "step": "S3"
+        },
+        {
+          "given": "M_compound"
+        }
+      ],
+      "computed": "0.0000019927728770326283345732809012647465192900414496758",
+      "declared": "1.9927728770326283e-06",
+      "delta": "0.0000000000000000000000345732809012647465192900414496758",
+      "status": "PASS"
+    }
+  ],
+  "negative_recompute": {
+    "status": "PASS",
+    "chain_id": "EX03",
+    "step_id": "S2",
+    "computed": "325",
+    "declared": "326",
+    "delta": "1",
+    "error": "EX03/S2: recompute mismatch: got 325, declared 326"
+  },
+  "citations": {
+    "counts": {
+      "anchors": 87,
+      "conventions": 128,
+      "figures": 13,
+      "outcomes": 35
+    },
+    "dangling": [],
+    "refs": [
+      {
+        "chain_id": "EX01",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "rounding.rule",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[Mg(OH)2]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX01",
+        "step_id": "S7",
+        "kind": "conventions",
+        "ref": "rounding.addition_subtraction",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": null,
+        "kind": "given",
+        "ref": "constants.values[N_A]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[NaCl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "atomic_masses.elements[Na]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[NaCl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "atomic_masses.elements[Cl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.addition_subtraction",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "constants.values[N_A]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[C6H12O6]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "titration.burette.reading_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "tolerances.quantity_classes[burette_volume]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "tolerances.quantity_classes[burette_volume]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "titration.burette.reported_decimals",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[ml_to_l]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "tolerances.quantity_classes[burette_volume]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[kg_to_g]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[g_to_mg]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.rule",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[g_to_mg]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": null,
+        "kind": "given",
+        "ref": "compound_molar_masses.compounds[NaCl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[NaCl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[ml_to_l]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[NaCl]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "rounding.rule",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[ml_to_l]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[l_to_ml]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[ml_to_l]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[ml_to_l]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "thermodynamics.c04_note_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.spontaneity_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.spontaneity_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "thermodynamics.c04_note_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.q_p_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.exothermic",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "thermodynamics.sign_convention",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.q_p_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.exothermic",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "thermodynamics.sign_convention",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": null,
+        "kind": "given",
+        "ref": "constants.values[LN2]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "constants.values[LN2]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "kinetics.integrated_forms[order=1].half_life",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "kinetics.integrated_forms[order=1].integrated",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "kinetics.integrated_forms[order=1].integrated",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "kinetics.integrated_forms[order=1].integrated",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "kinetics.linearization_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "kinetics.integrated_forms[order=1].linear_form",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.exothermic",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.addition_subtraction",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.addition_subtraction",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "thermodynamics.gibbs.spontaneity_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "thermodynamics.enthalpy.reaction_enthalpy",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S5",
+        "kind": "conventions",
+        "ref": "kinetics.rate_law_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S6",
+        "kind": "conventions",
+        "ref": "kinetics.rate_law_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "potentials.reference_values[Fe3_Fe2]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "potentials.default_convention",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "titration.endpoint.equivalence_definition_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=molar].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "titration.endpoint.wording_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": null,
+        "kind": "given",
+        "ref": "potentials.reference_values[Cu2_Cu]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": null,
+        "kind": "given",
+        "ref": "constants.values[NERNST_SLOPE]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "potentials.nernst.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "potentials.symbols[id=E_actual]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "potentials.nernst.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "constants.values[NERNST_SLOPE]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.rule",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "potentials.working_precision_V",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "potentials.nernst.equation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "potentials.mixing_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.model_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.allowed_models",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.model_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.model_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.no_extrapolation_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.no_extrapolation_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.r_squared_is_not_validation",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": null,
+        "kind": "given",
+        "ref": "compound_molar_masses.compounds[C17H20N4O6]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=m_v].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S1",
+        "kind": "conventions",
+        "ref": "spectrophotometry.calibration.model_rule_lv",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "concentration_bases.bases[id=m_v].formula",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S2",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "unit_system.conversions[mg_to_g]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S3",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "compound_molar_masses.compounds[C17H20N4O6]",
+        "status": "OK"
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S4",
+        "kind": "conventions",
+        "ref": "rounding.multiplication_division",
+        "status": "OK"
+      }
+    ],
+    "multi_citation": [
+      {
+        "chain_id": "EX01",
+        "step_id": "S1",
+        "refs": [
+          "rounding.rule",
+          "compound_molar_masses.compounds[Mg(OH)2]"
+        ]
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S1",
+        "refs": [
+          "compound_molar_masses.compounds[NaCl]",
+          "atomic_masses.elements[Na]"
+        ]
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S2",
+        "refs": [
+          "rounding.multiplication_division",
+          "compound_molar_masses.compounds[NaCl]"
+        ]
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S3",
+        "refs": [
+          "rounding.multiplication_division",
+          "atomic_masses.elements[Cl]"
+        ]
+      },
+      {
+        "chain_id": "EX02",
+        "step_id": "S5",
+        "refs": [
+          "constants.values[N_A]",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S1",
+        "refs": [
+          "titration.burette.reading_rule_lv",
+          "tolerances.quantity_classes[burette_volume]"
+        ]
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S2",
+        "refs": [
+          "tolerances.quantity_classes[burette_volume]",
+          "titration.burette.reported_decimals"
+        ]
+      },
+      {
+        "chain_id": "EX03",
+        "step_id": "S3",
+        "refs": [
+          "unit_system.conversions[ml_to_l]",
+          "tolerances.quantity_classes[burette_volume]"
+        ]
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S1",
+        "refs": [
+          "unit_system.conversions[kg_to_g]",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S2",
+        "refs": [
+          "unit_system.conversions[g_to_mg]",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX04",
+        "step_id": "S3",
+        "refs": [
+          "rounding.rule",
+          "unit_system.conversions[g_to_mg]"
+        ]
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S1",
+        "refs": [
+          "compound_molar_masses.compounds[NaCl]",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S3",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX05",
+        "step_id": "S4",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "compound_molar_masses.compounds[NaCl]"
+        ]
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S2",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S3",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S5",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "unit_system.conversions[ml_to_l]"
+        ]
+      },
+      {
+        "chain_id": "EX06",
+        "step_id": "S6",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "unit_system.conversions[ml_to_l]"
+        ]
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S1",
+        "refs": [
+          "rounding.multiplication_division",
+          "thermodynamics.c04_note_lv"
+        ]
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S2",
+        "refs": [
+          "thermodynamics.gibbs.equation",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S3",
+        "refs": [
+          "thermodynamics.gibbs.equation",
+          "thermodynamics.gibbs.spontaneity_lv"
+        ]
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S4",
+        "refs": [
+          "thermodynamics.gibbs.equation",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX07",
+        "step_id": "S5",
+        "refs": [
+          "thermodynamics.gibbs.spontaneity_lv",
+          "thermodynamics.c04_note_lv"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S1",
+        "refs": [
+          "thermodynamics.enthalpy.q_p_rule_lv",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S2",
+        "refs": [
+          "rounding.multiplication_division",
+          "thermodynamics.enthalpy.reaction_enthalpy"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S3",
+        "refs": [
+          "thermodynamics.enthalpy.exothermic",
+          "thermodynamics.sign_convention"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S4",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "thermodynamics.enthalpy.q_p_rule_lv"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S5",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX08",
+        "step_id": "S6",
+        "refs": [
+          "thermodynamics.enthalpy.exothermic",
+          "thermodynamics.sign_convention"
+        ]
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S1",
+        "refs": [
+          "constants.values[LN2]",
+          "kinetics.integrated_forms[order=1].half_life"
+        ]
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S4",
+        "refs": [
+          "kinetics.integrated_forms[order=1].integrated",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX09",
+        "step_id": "S5",
+        "refs": [
+          "kinetics.linearization_rule_lv",
+          "kinetics.integrated_forms[order=1].linear_form"
+        ]
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S1",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "thermodynamics.enthalpy.exothermic"
+        ]
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S2",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "rounding.addition_subtraction"
+        ]
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S3",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "rounding.addition_subtraction"
+        ]
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S4",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "thermodynamics.gibbs.spontaneity_lv"
+        ]
+      },
+      {
+        "chain_id": "EX10",
+        "step_id": "S5",
+        "refs": [
+          "thermodynamics.enthalpy.reaction_enthalpy",
+          "kinetics.rate_law_lv"
+        ]
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S1",
+        "refs": [
+          "potentials.reference_values[Fe3_Fe2]",
+          "potentials.default_convention"
+        ]
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S2",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S3",
+        "refs": [
+          "titration.endpoint.equivalence_definition_lv",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX11",
+        "step_id": "S4",
+        "refs": [
+          "concentration_bases.bases[id=molar].formula",
+          "titration.endpoint.wording_rule_lv"
+        ]
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S1",
+        "refs": [
+          "potentials.nernst.equation",
+          "potentials.symbols[id=E_actual]"
+        ]
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S2",
+        "refs": [
+          "potentials.nernst.equation",
+          "constants.values[NERNST_SLOPE]"
+        ]
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S3",
+        "refs": [
+          "rounding.rule",
+          "potentials.working_precision_V"
+        ]
+      },
+      {
+        "chain_id": "EX12",
+        "step_id": "S4",
+        "refs": [
+          "potentials.nernst.equation",
+          "potentials.mixing_rule_lv"
+        ]
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S1",
+        "refs": [
+          "spectrophotometry.calibration.model_rule_lv",
+          "spectrophotometry.calibration.allowed_models"
+        ]
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S2",
+        "refs": [
+          "spectrophotometry.calibration.model_rule_lv",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S3",
+        "refs": [
+          "spectrophotometry.calibration.model_rule_lv",
+          "spectrophotometry.calibration.no_extrapolation_rule_lv"
+        ]
+      },
+      {
+        "chain_id": "EX13",
+        "step_id": "S4",
+        "refs": [
+          "spectrophotometry.calibration.no_extrapolation_rule_lv",
+          "spectrophotometry.calibration.r_squared_is_not_validation"
+        ]
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S1",
+        "refs": [
+          "concentration_bases.bases[id=m_v].formula",
+          "spectrophotometry.calibration.model_rule_lv"
+        ]
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S2",
+        "refs": [
+          "concentration_bases.bases[id=m_v].formula",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S3",
+        "refs": [
+          "unit_system.conversions[mg_to_g]",
+          "rounding.multiplication_division"
+        ]
+      },
+      {
+        "chain_id": "EX14",
+        "step_id": "S4",
+        "refs": [
+          "compound_molar_masses.compounds[C17H20N4O6]",
+          "rounding.multiplication_division"
+        ]
+      }
+    ]
+  },
+  "figures": [
+    {
+      "chain_id": "EX01",
+      "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+      "step_id": "S2",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX02",
+      "figure_id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+      "step_id": "S2",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX03",
+      "figure_id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+      "step_id": "S1",
+      "role": "data",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX04",
+      "figure_id": "FIG-T2-CHAIN-PREFIX-SCALE",
+      "step_id": "S1",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX05",
+      "figure_id": "FIG-T3-CONC-BASES-BRIDGE",
+      "step_id": "S3",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX06",
+      "figure_id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+      "step_id": "S5",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX07",
+      "figure_id": "FIG-T4-ENERGY-EXOTHERMIC",
+      "step_id": "S3",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX08",
+      "figure_id": "FIG-T4-HESS-CO2",
+      "step_id": "S4",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX09",
+      "figure_id": "FIG-T5-LIN-FIRST",
+      "step_id": "S5",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX10",
+      "figure_id": "FIG-T4-ENERGY-CATALYZED",
+      "step_id": "S3",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX11",
+      "figure_id": "FIG-T67-TITR-MASTER-KMNO4",
+      "step_id": "S2",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX13",
+      "figure_id": "FIG-T67-CAL-NEAR-EDGE",
+      "step_id": "S3",
+      "role": "method",
+      "status": "OK"
+    },
+    {
+      "chain_id": "EX14",
+      "figure_id": "FIG-T67-CAL-MASTER",
+      "step_id": "S1",
+      "role": "method",
+      "status": "OK"
+    }
+  ],
+  "references": {
+    "rows": [
+      {
+        "kind": "method",
+        "id": "MC-EX01",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX01"
+        ],
+        "family_id": "FAM-1C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX02",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX02"
+        ],
+        "family_id": "FAM-1B",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX03",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX03"
+        ],
+        "family_id": "FAM-2C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX04",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX04"
+        ],
+        "family_id": "FAM-2B",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX05",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX05"
+        ],
+        "family_id": "FAM-3A",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX06",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX06"
+        ],
+        "family_id": "FAM-3C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX07",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX07"
+        ],
+        "family_id": "FAM-4C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX08",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX08"
+        ],
+        "family_id": "FAM-4B",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX09",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX09"
+        ],
+        "family_id": "FAM-5C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX10",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX10"
+        ],
+        "family_id": "FAM-5A",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX11",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX11"
+        ],
+        "family_id": "FAM-6C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX12",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX12"
+        ],
+        "family_id": "FAM-6D",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX13",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX13"
+        ],
+        "family_id": "FAM-7B",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "method",
+        "id": "MC-EX14",
+        "consumer": "N19",
+        "chain_ids": [
+          "EX14"
+        ],
+        "family_id": "FAM-7C",
+        "status": "declared-pending-N19"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX01",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX01"
+        ],
+        "family_id": "FAM-1C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX02",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX02"
+        ],
+        "family_id": "FAM-1B",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX03",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX03"
+        ],
+        "family_id": "FAM-2C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX04",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX04"
+        ],
+        "family_id": "FAM-2B",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX05",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX05"
+        ],
+        "family_id": "FAM-3A",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX06",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX06"
+        ],
+        "family_id": "FAM-3C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX07",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX07"
+        ],
+        "family_id": "FAM-4C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX08",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX08"
+        ],
+        "family_id": "FAM-4B",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX09",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX09"
+        ],
+        "family_id": "FAM-5C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX10",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX10"
+        ],
+        "family_id": "FAM-5A",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX11",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX11"
+        ],
+        "family_id": "FAM-6C",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX12",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX12"
+        ],
+        "family_id": "FAM-6D",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX13",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX13"
+        ],
+        "family_id": "FAM-7B",
+        "status": "declared-pending-N20"
+      },
+      {
+        "kind": "practice",
+        "id": "PRAC-EX14",
+        "consumer": "N20",
+        "chain_ids": [
+          "EX14"
+        ],
+        "family_id": "FAM-7C",
+        "status": "declared-pending-N20"
+      }
+    ],
+    "status": "PASS"
+  },
+  "leaks": {
+    "pre_reveal": [],
+    "island": [],
+    "planted": {
+      "status": "PASS",
+      "chain_id": "EX03",
+      "step_id": "S1",
+      "injected": "16,25",
+      "hit": {
+        "chain_id": "EX03",
+        "step_id": "S1",
+        "kind": "result_value",
+        "secret": "16,25",
+        "where": "pre_reveal"
+      }
+    },
+    "fixture_digest": "12685d9d8cab31a71aa2810dd367dc8c2d84f3ef43ade8c1fe5f62e78fa31379",
+    "island_digest": "4b61010688da6805687f23ed2c7aa6c15949a26c966778ab4c23db0969626c27"
+  },
+  "honesty": {
+    "banner": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+    "forbidden_positive": [
+      "oficiāls eksāmens",
+      "oficiāls kolokvija eksāmens",
+      "īsts eksāmens",
+      "eksāmena jautājums",
+      "oficiāls uzdevums",
+      "RSU eksāmens",
+      "garantēts vērtējums",
+      "proktors"
+    ],
+    "violations": [],
+    "copy_lint": "PASS"
+  },
+  "persistence": {
+    "source": "src/chain-view.js",
+    "forbidden": [
+      "localStorage",
+      "sessionStorage",
+      "document.cookie",
+      "indexedDB",
+      "history.pushState",
+      "history.replaceState",
+      "location.hash",
+      "location.search",
+      "URLSearchParams"
+    ],
+    "hits": [],
+    "status": "PASS"
+  },
+  "print": [
+    {
+      "chain_id": "EX03",
+      "collapsed_has_note": true,
+      "revealed_rule": ".chain-step[data-revealed=\"true\"] .chain-result { display:block !important } (src/styles.css)"
+    },
+    {
+      "chain_id": "EX11",
+      "collapsed_has_note": true,
+      "revealed_rule": ".chain-step[data-revealed=\"true\"] .chain-result { display:block !important } (src/styles.css)"
+    }
+  ],
+  "bytes": {
+    "source_chains": 100877,
+    "runtime_projection": 71253,
+    "pre_reveal_fixture": 51506
+  }
+}

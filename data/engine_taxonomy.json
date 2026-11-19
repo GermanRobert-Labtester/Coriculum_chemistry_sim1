@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-engines",
+  "artifact": "engine-taxonomy",
+  "owner": "N17",
+  "status": "frozen-contract-for-N20-N22-N23",
+  "title_lv": "Aprēķinu dzinēju un četru kļūdu klašu līgums",
+  "purpose_lv": "Viena aprēķinu autoritāte: dimensiju ķēde, masas un molu bilance, četru kļūdu klašu secība un atsauce uz N10 terminu salu.",
+  "epistemic_note": "Dzinējs pats nesauc ne saturu, ne atzīmes. Visi koeficienti, masas, konstantes un tolerances nāk no #sim-conventions; visi atgriezeniskās saites teksti nāk no #sim-terms. Pieļaujamības un domēna robežas ir PROPOSED mācību politika ar norādītām konvenciju atsaucēm, ne oficiālas eksāmena prasības.",
+  "handoff": {
+    "from": ["N03", "N05", "N09", "N10", "N12", "N13", "N14", "N15"],
+    "to": ["N18", "N20", "N22", "N23", "N28", "N36"],
+    "n09_gap_notice": "N09 reģistrs šajā darba telpā vēl nav izpildīts. Līdz tam taksonomija lieto N04 deklarēto stub-parakstu MC-[1-7][A-D]-[0-9]{2} un atsauces uz jau lietotajiem parametriem #sim-golden-vectors; katra klase kartē uz esošu parametru un uz terminu salā esošu atsauksmes tekstu. N09 izpildot, tikai šis kartējums jāpārbauda, nevis dzinēja loģika."
+  },
+  "conventions_consumption": {
+    "island": "sim-conventions",
+    "paths": [
+      "unit_system.base_units",
+      "unit_system.conversions",
+      "unit_system.chains",
+      "atomic_masses",
+      "compound_molar_masses",
+      "constants",
+      "tolerances.quantity_classes",
+      "rounding",
+      "concentration_bases",
+      "percentage_basis",
+      "density"
+    ],
+    "no_local_constants_rule": "Quantity engine source must not declare a numeric literal equal to any atomic mass, compound molar mass, constant value or declared conversion factor from #sim-conventions. Build-time AST/token scan enforces the rule by name.",
+    "unit_grammar_source": "sim-terms#/unit_grammar"
+  },
+  "quantity_engine": {
+    "python_twin": "tools/quantity_engine.py",
+    "runtime_module": "src/quantity-engine.js",
+    "api": [
+      "Quantity.parse(raw, unit, sig_figs) -> Quantity",
+      "Quantity.convert(to_unit, conventions) -> Quantity",
+      "add(a, b) -> Quantity",
+      "multiply(a, b) -> Quantity",
+      "divide(a, b) -> Quantity",
+      "dimension_gate(quantities, expected_dimension) -> ledger",
+      "grade(instance, submission) -> verdict",
+      "check_conservation(record) -> conservation_verdict",
+      "classify(case) -> class_verdict",
+      "feedback(error_class) -> resolved term string"
+    ],
+    "dimension_gate_rule_verbatim": "Katra operācija reģistrē savu vienību algebru. Aprēķins, kura ievadu un izvadu dimensijas nesakrīt, neveido skaitlisku rezultātu un tiek klasificēts kā DIMENSIONAL_INCONSISTENCY pirms jebkuras konversijas.",
+    "v04_exclusion_rule_verbatim": "Masa↔tilpums ir iespējams tikai ar deklarētu ρ. Tiešs mg→L, g→mL vai mg→g→L pārrēķins bez ρ ir dimensiju kļūda un tiek bloķēts; dzinējs nekad nepiešķir fiktīvu koeficientu."
+  },
+  "conservation": {
+    "rules": [
+      {
+        "id": "mass_in_equals_mass_out",
+        "statement_lv": "Izejvielu masa pēc transformācijas parādās produktu masā; kopējā masa saglabājas.",
+        "tolerance_source": "tolerances.quantity_classes[id=mass].absolute.value",
+        "conventions_ref": "CIT-C1-AL",
+        "error_class": "PHYSICALLY_IMPLAUSIBLE"
+      },
+      {
+        "id": "moles_by_stoichiometry",
+        "statement_lv": "Molārā bilance izmanto deklarētos stehiometriskos koeficientus: n_out = n_in · ν_out / ν_in.",
+        "tolerance_source": "rounding.rule",
+        "relative_tolerance": 0.001,
+        "conventions_ref": "CIT-C3-C",
+        "error_class": "PHYSICALLY_IMPLAUSIBLE"
+      }
+    ],
+    "verdicts": ["BALANCED", "IMBALANCED"],
+    "imbalance_signature": "MC-1C-01"
+  },
+  "error_taxonomy": {
+    "classes": [
+      {
+        "id": "UNREADABLE_INPUT",
+        "rank": 1,
+        "name_lv": "Neizlasāms ievads",
+        "definition_lv": "Ievada gramatika (skaitlis vai N10 vienību gramatika) neizdodas pirms dimensiju pārbaudes.",
+        "signature": "MC-2B-02",
+        "feedback_key": "feedback.error.unreadable",
+        "conventions_ref": "CIT-C2-UNITS",
+        "n05_error_classes": ["UNREADABLE_INPUT", "BLANK_RESPONSE"]
+      },
+      {
+        "id": "DIMENSIONAL_INCONSISTENCY",
+        "rank": 2,
+        "name_lv": "Dimensiju neatbilstība",
+        "definition_lv": "Ievads ir izlasāms, bet vienību algebra neslēdzas vai stars ir bloķēts (V-04 ieskaitot).",
+        "signature": "MC-3B-01",
+        "feedback_key": "feedback.error.dimensional",
+        "conventions_ref": "CIT-C2-DENSITY-UNITS",
+        "n05_error_classes": ["DIMENSIONAL_INCONSISTENCY"]
+      },
+      {
+        "id": "PHYSICALLY_IMPLAUSIBLE",
+        "rank": 3,
+        "name_lv": "Fiziski neiespējams dimensiju ietvaros",
+        "definition_lv": "Vienības ir korektas, bet lielums pārkāpj deklarēto fiziskās jēgas robežu no konvenciju atsauces datiem.",
+        "signature": "MC-3A-02",
+        "feedback_key": "feedback.error.implausible",
+        "conventions_ref": "CIT-C3-PERCENT",
+        "n05_error_classes": ["OUT_OF_TOLERANCE", "UNLABELED_PERCENT_BASIS", "SIG_FIG_MISMATCH"]
+      },
+      {
+        "id": "OUT_OF_DOMAIN",
+        "rank": 4,
+        "name_lv": "Sintaktiski derīgs, bet ārpus domēna",
+        "definition_lv": "Ievads ir izlasāms, dimensijās korekts un fiziski iespējams, bet atrodas ārpus uzdevuma deklarētā apgabala.",
+        "signature": "MC-7B-02",
+        "feedback_key": "feedback.error.out_of_domain",
+        "conventions_ref": "CIT-C7-NOEXTRAP",
+        "n05_error_classes": ["OUT_OF_DOMAIN_EXTRAPOLATION", "WRONG_OPTION_SELECTION", "WRONG_ORDER", "WRONG_PAIRING"]
+      }
+    ],
+    "precedence_rule_verbatim": "Ja viens ievads atbilst vairākām klasēm, izvēlas mazāko kārtas numuru: 1 (neizlasāms) pirms 2 (dimensijas) pirms 3 (fiziskā jēga) pirms 4 (domēns). Pirmā atrastā klase aptur turpmāku pārbaudi; katrs gadījums iegūst tieši vienu klasi.",
+    "boundary_rule_verbatim": "Robeža ir iekļaujoša: vērtība, kas vienāda ar deklarēto robežu, nav ārpus domēna. Tas pats attiecas uz N14 span edge rule un N15 no-extrapolation inheritance.",
+    "fallback": {
+      "signature": "MC-2B-02",
+      "feedback_key": "feedback.fallback_notice",
+      "rule_lv": "Nezināms, bet izlasāms skaitlisks ievads klasificējas kā 1. klase ar godīgu mācību ceļu, nevis klusu noklusējumu."
+    },
+    "feedback_source_island": "sim-terms"
+  },
+  "plausibility_rules": [
+    {
+      "id": "nonnegative_concentration",
+      "dimensions": ["concentration_mass", "concentration_amount"],
+      "min": 0,
+      "inclusive": true,
+      "source": "concentration_bases.bases",
+      "conventions_ref": "CIT-C3-C",
+      "label": "PROPOSED training-policy bound derived from the declared concentration definition"
+    },
+    {
+      "id": "nonnegative_mass",
+      "dimensions": ["mass"],
+      "min": 0,
+      "inclusive": true,
+      "source": "unit_system.base_units.mass",
+      "conventions_ref": "CIT-C2-UNITS",
+      "label": "PROPOSED training-policy bound derived from the declared mass unit"
+    },
+    {
+      "id": "positive_volume",
+      "dimensions": ["volume"],
+      "min": 0,
+      "inclusive": false,
+      "source": "tolerances.master_grounded_instrument_uncertainty[id=burette_reading]",
+      "conventions_ref": "CIT-C2-BURETTE-READ",
+      "label": "PROPOSED training-policy bound derived from the declared volume reading rule"
+    },
+    {
+      "id": "ph_domain",
+      "dimensions": ["ph"],
+      "min": 0,
+      "max": 14,
+      "inclusive": true,
+      "source": "titration.model_vocabulary.strong_acid_strong_base.initial_ph",
+      "conventions_ref": "CIT-C6-EPRIME",
+      "label": "PROPOSED training-policy domain bound cited to the conventions pH convention"
+    },
+    {
+      "id": "percent_basis_required",
+      "dimensions": ["dimensionless"],
+      "unit_token": "%",
+      "requires_explicit_basis": true,
+      "source": "percentage_basis.unlabeled_percent",
+      "conventions_ref": "CIT-C3-PERCENT",
+      "label": "master-grounded withholding rule"
+    },
+    {
+      "id": "yield_bound",
+      "dimensions": ["dimensionless"],
+      "min": 0,
+      "max": 100,
+      "inclusive": true,
+      "source": "percentage_basis.bases",
+      "conventions_ref": "CIT-C3-PERCENT",
+      "label": "PROPOSED training-policy bound derived from the percentage definition"
+    }
+  ],
+  "domain_rules": [
+    {
+      "id": "calibration_span",
+      "source_contract": "data/calibration_contract.json",
+      "rule_id": "N15-NOEXTRAP-01",
+      "conventions_ref": "CIT-C7-NOEXTRAP",
+      "verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona."
+    },
+    {
+      "id": "titration_span",
+      "source_contract": "data/titration_contract.json",
+      "rule_id": "N12-BURETTE-GEOM-01",
+      "conventions_ref": "CIT-C2-BURETTE-READ",
+      "verbatim": "Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot."
+    }
+  ],
+  "engine_vectors": {
+    "schema_version": 1,
+    "island_ref": "sim-golden-vectors",
+    "protocol_ref": "data/golden_vector_protocol.json",
+    "stratum": "S2-N17",
+    "owner": "N17",
+    "status": "frozen-contract-vectors",
+    "note_lv": "N17 stratum: conservation balance and the four-class parse-error taxonomy. S1 vectors remain untouched; these vectors cite the same protocol's oracle rules and conventions entries.",
+    "v04_forms": [
+      {
+        "id": "V04-01",
+        "form_lv": "tiešs mg→L",
+        "unit": "mg",
+        "expected_unit": "L",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "V04-02",
+        "form_lv": "apgriezts L→mg",
+        "unit": "L",
+        "expected_unit": "mg",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "V04-03",
+        "form_lv": "g→mL bez ρ",
+        "unit": "g",
+        "expected_unit": "mL",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "V04-04",
+        "form_lv": "pr prefikss kg→L",
+        "unit": "kg",
+        "expected_unit": "L",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "V04-05",
+        "form_lv": "pārrakstīts mg→cm³",
+        "unit": "mg",
+        "expected_unit": "cm³",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "V04-VALID-01",
+        "form_lv": "īsta koncentrāciju pāreja mg/L→g/L",
+        "unit": "mg/L",
+        "expected_unit": "g/L",
+        "expected_class": "NONE",
+        "expected_signature": "NONE"
+      },
+      {
+        "id": "V04-VALID-02",
+        "form_lv": "īsta blīvuma pāreja g/mL→kg/L",
+        "unit": "g/mL",
+        "expected_unit": "kg/L",
+        "expected_class": "NONE",
+        "expected_signature": "NONE"
+      }
+    ],
+    "conservation_vectors": [
+      {
+        "id": "EV-N17-CONS-01",
+        "note_lv": "Mg + ½O₂ → MgO; masa un molu bilance slēdzas.",
+        "species_in": [
+          {"id": "Mg", "mass_g": 4.8, "moles": 0.2, "nu": 1},
+          {"id": "O2", "mass_g": 3.2, "moles": 0.1, "nu": 0.5}
+        ],
+        "species_out": [
+          {"id": "MgO", "mass_g": 8.0, "moles": 0.2, "nu": 1}
+        ],
+        "expected_verdict": "BALANCED"
+      },
+      {
+        "id": "EV-N17-CONS-02",
+        "note_lv": "Atšķaidīšana: masa saglabājas, moli saglabājas.",
+        "species_in": [
+          {"id": "NaCl", "mass_g": 5.85, "moles": 0.1, "nu": 1},
+          {"id": "H2O", "mass_g": 94.15, "moles": 5.23, "nu": null}
+        ],
+        "species_out": [
+          {"id": "solution", "mass_g": 100.0, "moles": 0.1, "nu": 1},
+          {"id": "H2O_solvent", "mass_g": 0.0, "moles": 5.23, "nu": null}
+        ],
+        "expected_verdict": "BALANCED"
+      },
+      {
+        "id": "EV-N17-CONS-03",
+        "note_lv": "Skrāpējums: viena masa izlaista, bilance nesaraujas.",
+        "species_in": [
+          {"id": "Mg", "mass_g": 4.8, "moles": 0.2, "nu": 1}
+        ],
+        "species_out": [
+          {"id": "MgO", "mass_g": 7.0, "moles": 0.2, "nu": 1}
+        ],
+        "expected_verdict": "IMBALANCED"
+      },
+      {
+        "id": "EV-N17-CONS-04",
+        "note_lv": "Skrāpējums: masas vienādas, bet molu attiecība pārkāpta.",
+        "species_in": [
+          {"id": "Mg", "mass_g": 4.8, "moles": 0.2, "nu": 1}
+        ],
+        "species_out": [
+          {"id": "MgO", "mass_g": 4.8, "moles": 0.4, "nu": 1}
+        ],
+        "expected_verdict": "IMBALANCED"
+      }
+    ],
+    "classification_vectors": [
+      {
+        "id": "EV-N17-CLS-01",
+        "note_lv": "1. klase: neizlasāms skaitlis.",
+        "raw": "1,2,3",
+        "unit": "g/L",
+        "expected_unit": "g/L",
+        "expected_class": "UNREADABLE_INPUT",
+        "expected_signature": "MC-2B-02"
+      },
+      {
+        "id": "EV-N17-CLS-02",
+        "note_lv": "1. klase: nezināms vienības simbols.",
+        "raw": "5,0",
+        "unit": "furlong/L",
+        "expected_unit": "g/L",
+        "expected_class": "UNREADABLE_INPUT",
+        "expected_signature": "MC-2B-02"
+      },
+      {
+        "id": "EV-N17-CLS-03",
+        "note_lv": "2. klase: V-04 bloķēts masa→tilpums.",
+        "raw": "17,2",
+        "unit": "mg",
+        "expected_unit": "L",
+        "expected_class": "DIMENSIONAL_INCONSISTENCY",
+        "expected_signature": "MC-3B-01"
+      },
+      {
+        "id": "EV-N17-CLS-04",
+        "note_lv": "3. klase: negatīva koncentrācija.",
+        "raw": "-1,5",
+        "unit": "g/L",
+        "expected_unit": "g/L",
+        "rule_id": "nonnegative_concentration",
+        "expected_class": "PHYSICALLY_IMPLAUSIBLE",
+        "expected_signature": "MC-3A-02"
+      },
+      {
+        "id": "EV-N17-CLS-05",
+        "note_lv": "3. klase: pH ārpus deklarētā 0–14",
+        "raw": "14,7",
+        "unit": "pH",
+        "expected_unit": "pH",
+        "rule_id": "ph_domain",
+        "expected_class": "PHYSICALLY_IMPLAUSIBLE",
+        "expected_signature": "MC-3A-02"
+      },
+      {
+        "id": "EV-N17-CLS-06",
+        "note_lv": "4. klase: nolasījums ārpus kalibrēšanas diapazona.",
+        "raw": "0,020",
+        "unit": "g/L",
+        "expected_unit": "g/L",
+        "span": {"min": 0, "max": 0.016},
+        "expected_class": "OUT_OF_DOMAIN",
+        "expected_signature": "MC-7B-02"
+      },
+      {
+        "id": "EV-N17-CLS-07",
+        "note_lv": "Robežas iekļautība: tieši 0,016 ir domēnā.",
+        "raw": "0,016",
+        "unit": "g/L",
+        "expected_unit": "g/L",
+        "span": {"min": 0, "max": 0.016},
+        "expected_class": "NONE",
+        "expected_signature": "NONE"
+      },
+      {
+        "id": "EV-N17-CLS-08",
+        "note_lv": "Precedence: vienlaikus neizlasāms un dimensiju ziņā nederīgs.",
+        "raw": "abc",
+        "unit": "mg",
+        "expected_unit": "L",
+        "expected_class": "UNREADABLE_INPUT",
+        "expected_signature": "MC-2B-02"
+      },
+      {
+        "id": "EV-N17-CLS-09",
+        "note_lv": "Godīga konversija paliek derīga.",
+        "raw": "17,2",
+        "unit": "mg/L",
+        "expected_unit": "g/L",
+        "expected_class": "NONE",
+        "expected_signature": "NONE"
+      }
+    ],
+    "scratch": {
+      "conservation": {
+        "id": "EV-N17-CONS-SCRATCH",
+        "note_lv": "Viena nepareiza starpvērtība failo pēc vektora id.",
+        "species_in": [{"id": "Mg", "mass_g": 4.8, "moles": 0.2, "nu": 1}],
+        "species_out": [{"id": "MgO", "mass_g": 4.7, "moles": 0.2, "nu": 1}],
+        "expected_verdict": "IMBALANCED"
+      }
+    }
+  },
+  "smoke": {
+    "id": "SMK-N17-CLASSIFICATION",
+    "case": {
+      "raw": "17,2",
+      "unit": "mg",
+      "expected_unit": "L",
+      "domain": "density",
+      "rule_id": "v04_mass_to_volume_blocked"
+    },
+    "expected_class": "DIMENSIONAL_INCONSISTENCY",
+    "expected_signature": "MC-3B-01"
+  }
+}

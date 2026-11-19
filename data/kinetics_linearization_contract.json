@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "id": "kinetics-linearization-contract",
+  "owner": "N14",
+  "status": "frozen-contract-for-N16-N18-N20",
+  "consumers": [
+    "N16",
+    "N18",
+    "N20",
+    "N31",
+    "N40"
+  ],
+  "purpose_lv": "Salda pirmās, nulles un otrās pakāpes kinētikas attēlu datus ar N18 taisnes vērtēšanas logiem, N16 darba ķēdēm un N20 variantu pārvariāciju.",
+  "dataset_policy": {
+    "synthetic_label": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+    "official_claim": false,
+    "regression_at_runtime": false,
+    "derivation": "Slīpums un krustpunkts tiek atvasināti no deklarētajiem sabrukšanas parametriem (order, C0, k) build laikā; runtime neveic jaunu regresiju."
+  },
+  "transform_contract": [
+    {
+      "order": 0,
+      "x": "t",
+      "y": "C",
+      "integrated": "C = C₀ − kt",
+      "slope": "−k",
+      "intercept": "C₀",
+      "k_unit": "mol/(L·s)",
+      "tolerance_class": "rate_constant_zero"
+    },
+    {
+      "order": 1,
+      "x": "t",
+      "y": "ln(C/C₀)",
+      "integrated": "ln(C/C₀) = −kt",
+      "slope": "−k",
+      "intercept": "0",
+      "k_unit": "s⁻¹",
+      "tolerance_class": "rate_constant_first"
+    },
+    {
+      "order": 2,
+      "x": "t",
+      "y": "1/C",
+      "integrated": "1/C = 1/C₀ + kt",
+      "slope": "+k",
+      "intercept": "1/C₀",
+      "k_unit": "L/(mol·s)",
+      "tolerance_class": "rate_constant_second"
+    }
+  ],
+  "tolerance_field_vocabulary": {
+    "fields": [
+      "slope",
+      "intercept",
+      "point_acceptance"
+    ],
+    "required_keys": [
+      "tolerance_class",
+      "tolerance_mode",
+      "conventions_ref",
+      "expected_unit",
+      "meaning_lv"
+    ],
+    "mode_keys": {
+      "absolute": "abs_value",
+      "significant_figures": "sig_figs"
+    },
+    "modes": [
+      "absolute",
+      "significant_figures"
+    ],
+    "class_source": "data/conventions.json#/tolerances/quantity_classes",
+    "meaning_lv": "slope = taisnes slīpuma logs; intercept = krustpunkta logs; point_acceptance = novilktās taisnes y attāluma logs no īstās taisnes datu intervālā.",
+    "notice_lv": "Visas tolerances ir PROPOSED mācību politika, nevis oficiāla prasība."
+  },
+  "span_rule": {
+    "rule_id": "N14-SPAN-01",
+    "declared_fields": [
+      "span.x_min",
+      "span.x_max",
+      "span.data_x_min",
+      "span.data_x_max",
+      "span.edge_rule",
+      "span.beyond_span"
+    ],
+    "fit_line_must_not_exceed_data_span": true,
+    "edge_rule": "inclusive",
+    "edge_semantics_lv": "Punkts tieši uz span.x_min vai span.x_max tiek vērtēts ieskaitot; robeža ir iekļaujoša.",
+    "beyond_span": "not_assessed",
+    "beyond_semantics_lv": "Novilktās taisnes daļa aiz datu intervāla netiek nepieņemta, ne noraidīta; tā vienkārši netiek vērtēta.",
+    "render_rule_lv": "Attēlā modeļa taisne tiek zīmēta tikai no span.x_min līdz span.x_max; renderer nogriež jebkuru garāku līniju."
+  },
+  "drawn_line_interface": {
+    "function": "SimFigures.evaluateFitLine(record, drawnLine)",
+    "input": {
+      "drawnLine": [
+        "slope",
+        "intercept",
+        "x_min",
+        "x_max"
+      ]
+    },
+    "output": [
+      "status",
+      "assessed_x_range",
+      "slope_ok",
+      "intercept_ok",
+      "point_ok",
+      "beyond_span",
+      "max_point_deviation",
+      "tolerances"
+    ],
+    "statuses": [
+      "ACCEPTED",
+      "REJECTED",
+      "NOT_ASSESSED"
+    ],
+    "slope_comparison": "|drawn.slope − record.fit_line.slope| ≤ field_tolerance(slope)",
+    "intercept_comparison": "|drawn.intercept − record.fit_line.intercept| ≤ field_tolerance(intercept)",
+    "point_comparison": "katrā datu x punktā intervālā |drawn_y − true_y| ≤ field_tolerance(point_acceptance)",
+    "beyond_span_output": "not_assessed",
+    "fit_line_source": {
+      "teaching_records": "fit_line",
+      "gradeable_practice_records": "grading_reference.fit_line",
+      "rule_lv": "Vērtējamā prakses ierakstā atbilde netiek renderēta; tās patiesā taisne un parametri glabājas grading_reference, ko leak scan izslēdz tāpat kā answer_targets. N18 lasa fit_line vai grading_reference.fit_line pēc tā paša lauku nosaukuma."
+    }
+  },
+  "reparameterization_ranges_for_N20": {
+    "rule_id": "N14-REPARAM-01",
+    "allowed_orders": [
+      0,
+      1,
+      2
+    ],
+    "C0_mol_l": {
+      "min": "0.10",
+      "max": "2.00",
+      "step": "0.05"
+    },
+    "k": {
+      "order_0": {
+        "min": "0.0050",
+        "max": "0.0500",
+        "unit": "mol/(L·s)"
+      },
+      "order_1": {
+        "min": "0.0100",
+        "max": "0.1500",
+        "unit": "s⁻¹"
+      },
+      "order_2": {
+        "min": "0.0100",
+        "max": "0.1000",
+        "unit": "L/(mol·s)"
+      }
+    },
+    "span_s": {
+      "min": 10,
+      "max": 60
+    },
+    "point_count": {
+      "min": 41,
+      "max": 201
+    },
+    "dataset_points": {
+      "min": 6,
+      "max": 15
+    },
+    "constraint_lv": "Variantu k un C₀ paliek deklarētajās robežās; tādēļ slope/intercept tolerances paliek tajā pašā lieluma kārtā un significant_figures logs paliek godīgs. Ārpus šīm robežām N20 nedrīkst ģenerēt prakses instanci bez jauna N14 lēmuma.",
+    "tolerance_inheritance": "N20 instances inherit tolerance_fields verbatim; the variant engine may not retune a tolerance class per item."
+  },
+  "field_names_frozen_for_N18": [
+    "paired_decay_id",
+    "kinetics_spec.order",
+    "kinetics_spec.C0_mol_l",
+    "kinetics_spec.k",
+    "kinetics_spec.k_unit",
+    "span.x_min",
+    "span.x_max",
+    "span.edge_rule",
+    "span.beyond_span",
+    "fit_line.slope",
+    "fit_line.intercept",
+    "fit_line.x_min",
+    "fit_line.x_max",
+    "tolerance_fields.slope.tolerance_class",
+    "tolerance_fields.slope.tolerance_mode",
+    "tolerance_fields.intercept.tolerance_class",
+    "tolerance_fields.intercept.tolerance_mode",
+    "tolerance_fields.point_acceptance.tolerance_class",
+    "tolerance_fields.point_acceptance.tolerance_mode",
+    "grading_reference.fit_line.slope",
+    "grading_reference.fit_line.intercept"
+  ],
+  "citations": [
+    "CIT-C5-INTEGRATED",
+    "CIT-C5-HALFLIFE",
+    "CIT-C5-KUNITS",
+    "CIT-C5-GRAPH"
+  ]
+}

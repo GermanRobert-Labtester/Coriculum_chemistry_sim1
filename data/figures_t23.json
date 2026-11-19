@@ -1,0 +1,1060 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-figures",
+  "status": "authored",
+  "owner": "N12",
+  "scope": "Topics 2-3 (T2-3) burette meniscus/scale reading figures, pipette-to-flask dilution figures, concentration conversion bridge, medical bases, and electrolyte dissociation",
+  "figures": [
+    {
+      "id": "FIG-T2-BURETTE-CLEAR-WHOLE",
+      "type": "burette",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-07"],
+      "title_key": "fig.title.t2_burette_clear_whole",
+      "subtitle_lv": "Vesela iedaļa 1,00 mL ar obligātu divu zīmju aiz komata pierakstu (caurspīdīgs šķīdums)",
+      "description_lv": "25,00 mL biretes fragments no 0,00 līdz 2,00 mL ar 0,1 mL iedaļām, kas pieaug uz leju. Caurspīdīga ūdens šķīduma ieliektais menisks nolasa acu līmenī pret meniska apakšējo punktu pie 1,00 mL. Pat uz veselas iedaļas pieraksta divas zīmes aiz komata (±0,05 mL nenoteiktība).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "edge_coverage": ["whole"],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 1,00 mL, lai demonstrētu divu zīmju aiz komata pierakstu uz veselas iedaļas.",
+        "exempted_values": [{"value": "1.00", "unit": "mL"}],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "burette_volume",
+        "conventions_ref": "CIT-C2-BURETTE-READ",
+        "target_quantity_term_key": "fig.axis.burette_scale_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "decimal_places_2"
+      },
+      "axes": {
+        "y": {
+          "term_key": "fig.axis.burette_scale_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "major_step": 1.0,
+          "medium_step": 0.5,
+          "reported_decimals": 2,
+          "scale_direction": "increases_downward",
+          "scale_type": "linear"
+        }
+      },
+      "burette_geometry": {
+        "nominal_capacity_ml": "25.00",
+        "division_ml": "0.1",
+        "reading_uncertainty_ml": "0.05",
+        "reported_decimals": 2,
+        "scale_direction": "increases_downward",
+        "conventions_meniscus_ref": "titration.meniscus",
+        "conventions_burette_ref": "titration.burette",
+        "columns": [
+          {
+            "id": "col-whole",
+            "label_lv": "Vesela iedaļa (caurspīdīgs šķīdums)",
+            "view_min_ml": "0.00",
+            "view_max_ml": "2.00",
+            "x_left_px": 170,
+            "x_right_px": 230,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "120",
+            "declared_reading_ml": "1.00",
+            "display_reading_lv": "1,00 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "clear",
+            "meniscus_edge": "lower_meniscus",
+            "meniscus_y_px": "196.0",
+            "show_parallax_guides": true
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "burette-whole-clear",
+          "legend_key": "fig.legend.burette_clear",
+          "style_role": "primary",
+          "data": [
+            {"id": "col-whole", "reading_ml": "1.00", "clarity": "clear"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-meniscus-bottom",
+          "annotation_key": "fig.annot.meniscus_bottom",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-parallax",
+          "annotation_key": "fig.annot.parallax_eye_level",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-burette-decimals",
+          "annotation_key": "fig.annot.burette_downward_decimals",
+          "citation_ref": "CIT-C2-BURETTE-READ",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch-5",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-MENISCUS", "CIT-C2-BURETTE", "CIT-C2-BURETTE-READ"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 98.5, "viewBox": [0, 0, 780, 480], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-BURETTE-NEAR-ZERO",
+      "type": "burette",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-07"],
+      "title_key": "fig.title.t2_burette_near_zero",
+      "subtitle_lv": "Nulles robeža 0,00 mL un sākuma nolasījums 0,15 mL starp 0,10 un 0,20 mL iedaļām",
+      "description_lv": "25,00 mL biretes augšējā daļa (0,00–2,00 mL). Caurspīdīga ūdens šķīduma apakšējais menisks atrodas tieši pusceļā starp 0,10 mL un 0,20 mL iedaļām, kas dod nolasījumu 0,15 mL (±0,05 mL) ar pēdējo novērtēto ciparu.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "edge_coverage": ["near-zero", "subdivided"],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda nolasījumu 0,15 mL pie nulles robežas, lai mācītu pēdējā cipara novērtēšanu.",
+        "exempted_values": [{"value": "0.15", "unit": "mL"}],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "burette_volume",
+        "conventions_ref": "CIT-C2-BURETTE-READ",
+        "target_quantity_term_key": "fig.axis.burette_scale_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "decimal_places_2"
+      },
+      "axes": {
+        "y": {
+          "term_key": "fig.axis.burette_scale_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "major_step": 1.0,
+          "medium_step": 0.5,
+          "reported_decimals": 2,
+          "scale_direction": "increases_downward",
+          "scale_type": "linear"
+        }
+      },
+      "burette_geometry": {
+        "nominal_capacity_ml": "25.00",
+        "division_ml": "0.1",
+        "reading_uncertainty_ml": "0.05",
+        "reported_decimals": 2,
+        "scale_direction": "increases_downward",
+        "conventions_meniscus_ref": "titration.meniscus",
+        "conventions_burette_ref": "titration.burette",
+        "columns": [
+          {
+            "id": "col-near-zero",
+            "label_lv": "Pie nulles robežas (0,15 mL)",
+            "view_min_ml": "0.00",
+            "view_max_ml": "2.00",
+            "x_left_px": 170,
+            "x_right_px": 230,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "120",
+            "declared_reading_ml": "0.15",
+            "display_reading_lv": "0,15 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "clear",
+            "meniscus_edge": "lower_meniscus",
+            "meniscus_y_px": "94.0",
+            "show_parallax_guides": false
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "burette-near-zero",
+          "legend_key": "fig.legend.burette_clear",
+          "style_role": "primary",
+          "data": [
+            {"id": "col-near-zero", "reading_ml": "0.15", "clarity": "clear"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-meniscus-bottom",
+          "annotation_key": "fig.annot.meniscus_bottom",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-burette-decimals",
+          "annotation_key": "fig.annot.burette_downward_decimals",
+          "citation_ref": "CIT-C2-BURETTE-READ",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch5-biretes-protokols-2b-q2",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-MENISCUS", "CIT-C2-BURETTE", "CIT-C2-BURETTE-READ"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 98.5, "viewBox": [0, 0, 780, 480], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-BURETTE-SUBDIVIDED",
+      "type": "burette",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-07"],
+      "title_key": "fig.title.t2_burette_subdivided",
+      "subtitle_lv": "Starpiedaļas interpolācija 5,85 mL un acu līmeņa prasība pret paralaksi",
+      "description_lv": "25,00 mL biretes vidusdaļas skala (4,50–6,50 mL). Caurspīdīgā šķīduma apakšējais menisks atrodas starp 5,80 mL un 5,90 mL svītriņām pie 5,85 mL. Attēlota acu līmeņa skata līnija bez paralakses un nepareiza skata virzieni virs/zem meniska.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "edge_coverage": ["subdivided"],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda starpiedaļas nolasījumu 5,85 mL, lai mācītu interpolāciju un paralakses novēršanu.",
+        "exempted_values": [{"value": "5.85", "unit": "mL"}],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "burette_volume",
+        "conventions_ref": "CIT-C2-MENISCUS",
+        "target_quantity_term_key": "fig.axis.burette_scale_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "decimal_places_2"
+      },
+      "axes": {
+        "y": {
+          "term_key": "fig.axis.burette_scale_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 4.5,
+          "max": 6.5,
+          "step": 0.1,
+          "major_step": 1.0,
+          "medium_step": 0.5,
+          "reported_decimals": 2,
+          "scale_direction": "increases_downward",
+          "scale_type": "linear"
+        }
+      },
+      "burette_geometry": {
+        "nominal_capacity_ml": "25.00",
+        "division_ml": "0.1",
+        "reading_uncertainty_ml": "0.05",
+        "reported_decimals": 2,
+        "scale_direction": "increases_downward",
+        "conventions_meniscus_ref": "titration.meniscus",
+        "conventions_burette_ref": "titration.burette",
+        "columns": [
+          {
+            "id": "col-subdivided",
+            "label_lv": "Starpiedaļas novērtējums (5,85 mL)",
+            "view_min_ml": "4.50",
+            "view_max_ml": "6.50",
+            "x_left_px": 170,
+            "x_right_px": 230,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "120",
+            "declared_reading_ml": "5.85",
+            "display_reading_lv": "5,85 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "clear",
+            "meniscus_edge": "lower_meniscus",
+            "meniscus_y_px": "238.0",
+            "show_parallax_guides": true
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "burette-subdivided",
+          "legend_key": "fig.legend.burette_clear",
+          "style_role": "primary",
+          "data": [
+            {"id": "col-subdivided", "reading_ml": "5.85", "clarity": "clear"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-meniscus-bottom",
+          "annotation_key": "fig.annot.meniscus_bottom",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-parallax",
+          "annotation_key": "fig.annot.parallax_eye_level",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-burette-decimals",
+          "annotation_key": "fig.annot.burette_downward_decimals",
+          "citation_ref": "CIT-C2-BURETTE-READ",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch5-menisks-un-paralakse",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-MENISCUS", "CIT-C2-BURETTE", "CIT-C2-BURETTE-READ"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 98.5, "viewBox": [0, 0, 780, 480], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-BURETTE-DARK-CAPACITY",
+      "type": "burette",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-07"],
+      "title_key": "fig.title.t2_burette_dark_capacity",
+      "subtitle_lv": "Tumšs KMnO₄ šķīdums pie 25,00 mL robežas: nolasa augšējo malu (24,85 mL)",
+      "description_lv": "25,00 mL biretes apakšējā daļa (23,00–25,00 mL) ar necaurspīdīgu KMnO₄ titrantu. Saskaņā ar N03-OBS-04 noteikumu tumšam šķīdumam acu līmenī nolasa meniska augšējo malu starp 24,80 un 24,90 mL (24,85 mL), nepārsniedzot 25,00 mL ietilpības robežu.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "edge_coverage": ["near-capacity", "subdivided"],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību parauga attēls apzināti rāda tumšā KMnO₄ šķīduma augšējās malas nolasījumu 24,85 mL pie ietilpības robežas.",
+        "exempted_values": [{"value": "24.85", "unit": "mL"}],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "burette_volume",
+        "conventions_ref": "CIT-C6-MENISCUS",
+        "target_quantity_term_key": "fig.axis.burette_scale_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "decimal_places_2"
+      },
+      "axes": {
+        "y": {
+          "term_key": "fig.axis.burette_scale_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 23.0,
+          "max": 25.0,
+          "step": 0.1,
+          "major_step": 1.0,
+          "medium_step": 0.5,
+          "reported_decimals": 2,
+          "scale_direction": "increases_downward",
+          "scale_type": "linear"
+        }
+      },
+      "burette_geometry": {
+        "nominal_capacity_ml": "25.00",
+        "division_ml": "0.1",
+        "reading_uncertainty_ml": "0.05",
+        "reported_decimals": 2,
+        "scale_direction": "increases_downward",
+        "conventions_meniscus_ref": "titration.meniscus",
+        "conventions_burette_ref": "titration.burette",
+        "columns": [
+          {
+            "id": "col-dark-cap",
+            "label_lv": "KMnO₄ (tumšs šķīdums, augšējā mala)",
+            "view_min_ml": "23.00",
+            "view_max_ml": "25.00",
+            "x_left_px": 170,
+            "x_right_px": 230,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "120",
+            "declared_reading_ml": "24.85",
+            "display_reading_lv": "24,85 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "dark",
+            "meniscus_edge": "upper_edge",
+            "meniscus_y_px": "298.0",
+            "show_parallax_guides": false
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "burette-dark-capacity",
+          "legend_key": "fig.legend.burette_dark",
+          "style_role": "accent",
+          "data": [
+            {"id": "col-dark-cap", "reading_ml": "24.85", "clarity": "dark"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-meniscus-dark",
+          "annotation_key": "fig.annot.meniscus_dark_upper",
+          "citation_ref": "CIT-C6-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-parallax",
+          "annotation_key": "fig.annot.parallax_eye_level",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-burette-decimals",
+          "annotation_key": "fig.annot.burette_downward_decimals",
+          "citation_ref": "CIT-C2-BURETTE-READ",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": ["CIT-C2-MENISCUS-DARK", "CIT-C6-MENISCUS", "CIT-C2-BURETTE-READ"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 98.5, "viewBox": [0, 0, 780, 480], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T2-BURETTE-DELIVERED-GRADE",
+      "type": "burette",
+      "version": 1,
+      "topic": 2,
+      "concept_ids": ["P2-07"],
+      "title_key": "fig.title.t2_burette_delivered_grade",
+      "subtitle_lv": "Vērtējams uzdevums (FAM-2C): sākuma (2,15 mL) un beigu (18,40 mL) menisks",
+      "description_lv": "Divu stāvokļu 25,00 mL biretes attēls: kreisajā pusē sākuma līmenis (0,00–3,00 mL logs) pie 2,15 mL, labajā pusē beigu līmenis (17,00–20,00 mL logs) pie 18,40 mL. Izlietais tilpums V_beigu − V_sākuma netiek parādīts attēlā vai tā anotācijās.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "edge_coverage": ["subdivided"],
+      "leak_scan_exemption": null,
+      "answer_targets": [
+        {
+          "value": "16.25",
+          "unit": "mL",
+          "family_id": "FAM-2C",
+          "vector_id": "GV-S1-T2-Q10-01",
+          "distinctive": true
+        }
+      ],
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "burette_volume",
+        "conventions_ref": "CIT-C2-BURETTE",
+        "target_quantity_term_key": "fig.axis.burette_scale_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "decimal_places_2"
+      },
+      "axes": {
+        "y": {
+          "term_key": "fig.axis.burette_scale_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0.0,
+          "max": 20.0,
+          "step": 0.1,
+          "major_step": 1.0,
+          "medium_step": 0.5,
+          "reported_decimals": 2,
+          "scale_direction": "increases_downward",
+          "scale_type": "linear"
+        }
+      },
+      "burette_geometry": {
+        "nominal_capacity_ml": "25.00",
+        "division_ml": "0.1",
+        "reading_uncertainty_ml": "0.05",
+        "reported_decimals": 2,
+        "scale_direction": "increases_downward",
+        "conventions_meniscus_ref": "titration.meniscus",
+        "conventions_burette_ref": "titration.burette",
+        "columns": [
+          {
+            "id": "col-start",
+            "label_lv": "Sākuma nolasījums (0,00–3,00 mL)",
+            "view_min_ml": "0.00",
+            "view_max_ml": "3.00",
+            "x_left_px": 130,
+            "x_right_px": 190,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "80",
+            "declared_reading_ml": "2.15",
+            "display_reading_lv": "2,15 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "clear",
+            "meniscus_edge": "lower_meniscus",
+            "meniscus_y_px": "248.0",
+            "show_parallax_guides": false
+          },
+          {
+            "id": "col-end",
+            "label_lv": "Beigu nolasījums (17,00–20,00 mL)",
+            "view_min_ml": "17.00",
+            "view_max_ml": "20.00",
+            "x_left_px": 450,
+            "x_right_px": 510,
+            "y_top_px": 76,
+            "y_bottom_px": 316,
+            "px_per_ml": "80",
+            "declared_reading_ml": "18.40",
+            "display_reading_lv": "18,40 mL",
+            "hide_reading_label": false,
+            "solution_clarity": "clear",
+            "meniscus_edge": "lower_meniscus",
+            "meniscus_y_px": "188.0",
+            "show_parallax_guides": false
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "burette-delivered-pair",
+          "legend_key": "fig.legend.burette_clear",
+          "style_role": "primary",
+          "data": [
+            {"id": "col-start", "reading_ml": "2.15", "clarity": "clear"},
+            {"id": "col-end", "reading_ml": "18.40", "clarity": "clear"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-delivered-diff",
+          "annotation_key": "fig.annot.burette_delivered_diff",
+          "citation_ref": "CIT-C2-BURETTE",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-meniscus-bottom",
+          "annotation_key": "fig.annot.meniscus_bottom",
+          "citation_ref": "CIT-C2-MENISCUS",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "master_anchor": "ch-5",
+        "master_freeze_id": "C2-MASTER",
+        "conventions_refs": ["CIT-C2-BURETTE", "CIT-C2-MENISCUS", "CIT-C2-BURETTE-READ"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 165, "height_mm": 101.5, "viewBox": [0, 0, 780, 480], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T3-DILUTION-PIPETTE-FLASK",
+      "type": "dilution",
+      "version": 1,
+      "topic": 3,
+      "concept_ids": ["P3-10", "P3-04", "P3-05"],
+      "title_key": "fig.title.t3_dilution_pipette_flask",
+      "subtitle_lv": "25,00 mL 0,500 mol/L NaCl pārnese uz 250,0 mL mērkolbu līdz gala atzīmei",
+      "description_lv": "Pipetes–mērkolbas atšķaidīšanas ķēde: ar 25,00 mL pipeti pārnes 0,500 mol/L NaCl šķīdumu (n = 12,5 mmol) uz 250,0 mL B klases mērkolbu (±0,5 % no nominālā tilpuma) un uzpilda ar ūdeni līdz atzīmei. Atšķaidīšanas faktors f = 250,0 / 25,00 = 10,0 dod gala koncentrāciju 0,0500 mol/L.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma redzami atvasina atšķaidīšanas faktoru f = 10,0 un gala koncentrāciju 0,0500 mol/L no trauku tilpumiem.",
+        "exempted_values": [
+          {"value": "10.0", "unit": "1"},
+          {"value": "0.0500", "unit": "mol/L"},
+          {"value": "12.5", "unit": "mmol"}
+        ],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "glassware_volume",
+        "conventions_ref": "CIT-C2-TOLERANCE",
+        "target_quantity_term_key": "fig.axis.volume_ml",
+        "expected_unit": "mL",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "dilution_spec": {
+        "factor_display_mode": "worked_arithmetic",
+        "flask_mark_convention": "fill_to_mark_V2",
+        "steps": [
+          {
+            "step_id": "D1",
+            "pipette_label_lv": "Mora pipete V₁ = 25,00 mL",
+            "pipette_volume_ml": "25.00",
+            "stock_c_mol_l": "0.500",
+            "flask_label_lv": "Mērkolba V₂ = 250,0 mL (±0,5 % B kl.)",
+            "flask_volume_ml": "250.0",
+            "flask_fill_ratio": 0.72,
+            "stated_factor": "10.0",
+            "stated_c2_mol_l": "0.0500",
+            "solute_mmol": "12.5",
+            "factor_label_lv": "f = 250,0 / 25,00 = 10,0",
+            "result_label_lv": "c₂ = 0,500 / 10,0 = 0,0500 mol/L"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "dilution-single-step",
+          "legend_key": "fig.legend.dilution_chain",
+          "style_role": "primary",
+          "data": [
+            {"id": "D1", "V1_ml": "25.00", "V2_ml": "250.0", "factor": "10.0"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-dil-factor-1",
+          "annotation_key": "fig.annot.dilution_factor_pipette",
+          "citation_ref": "CIT-C3-C",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER",
+        "conventions_refs": ["CIT-C3-C", "CIT-C2-TOLERANCE", "CIT-C2-UNITS"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-DIL1-FACTOR",
+          "label_lv": "Atšķaidīšanas faktors f = V₂ / V₁",
+          "formula_kind": "dilution_factor",
+          "inputs": {"V1_ml": "25.00", "V2_ml": "250.0"},
+          "conventions_sources": ["rounding.rule"],
+          "value": "10.0",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "10,0"
+        },
+        {
+          "id": "DV-DIL1-C2",
+          "label_lv": "Gala koncentrācija c₂ = c₁ · V₁ / V₂",
+          "formula_kind": "dilution_c2",
+          "inputs": {"c1_mol_l": "0.500", "V1_ml": "25.00", "V2_ml": "250.0"},
+          "conventions_sources": ["rounding.rule"],
+          "value": "0.0500",
+          "unit": "mol/L",
+          "sig_figs": 3,
+          "display_lv": "0,0500 mol/L"
+        },
+        {
+          "id": "DV-DIL1-N",
+          "label_lv": "Vielas daudzums n = c₁ · V₁ (mmol)",
+          "formula_kind": "moles_from_cv_mmol",
+          "inputs": {"c_mol_l": "0.500", "V_ml": "25.00"},
+          "conventions_sources": ["rounding.rule"],
+          "value": "12.5",
+          "unit": "mmol",
+          "sig_figs": 3,
+          "display_lv": "12,5 mmol"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 82.0, "viewBox": [0, 0, 780, 400], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T3-DILUTION-SERIAL-CHAIN",
+      "type": "dilution",
+      "version": 1,
+      "topic": 3,
+      "concept_ids": ["P3-10", "P3-11"],
+      "title_key": "fig.title.t3_dilution_serial_chain",
+      "subtitle_lv": "Secīga divpakāpju atšķaidīšana: 10,00 → 100,0 mL un 20,00 → 100,0 mL",
+      "description_lv": "Divpakāpju secīgā atšķaidīšana no 1,00 mol/L pamatšķīduma. 1. solī 10,00 mL pārnes uz 100,0 mL mērkolbu (f₁ = 10,0, c = 0,100 mol/L). 2. solī 20,00 mL pārnes uz 100,0 mL mērkolbu (f₂ = 5,00). Kopējais faktors f_kop = 10,0 · 5,00 = 50,0, gala c = 0,0200 mol/L.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību shēma parāda abas atšķaidīšanas pakāpes un faktoru reizinājuma aritmētiku f_kop = 50,0.",
+        "exempted_values": [
+          {"value": "10.0", "unit": "1"},
+          {"value": "5.00", "unit": "1"},
+          {"value": "50.0", "unit": "1"},
+          {"value": "0.0200", "unit": "mol/L"}
+        ],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C3-C",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "dilution_spec": {
+        "factor_display_mode": "worked_arithmetic",
+        "flask_mark_convention": "fill_to_mark_V2",
+        "steps": [
+          {
+            "step_id": "S1",
+            "pipette_label_lv": "Pipete 10,00 mL (1,00 mol/L)",
+            "pipette_volume_ml": "10.00",
+            "stock_c_mol_l": "1.00",
+            "flask_label_lv": "1. mērkolba V₁' = 100,0 mL",
+            "flask_volume_ml": "100.0",
+            "flask_fill_ratio": 0.72,
+            "stated_factor": "10.0",
+            "stated_c2_mol_l": "0.100",
+            "factor_label_lv": "f₁ = 100,0 / 10,00 = 10,0",
+            "result_label_lv": "c_A = 0,100 mol/L"
+          },
+          {
+            "step_id": "S2",
+            "pipette_label_lv": "Pipete 20,00 mL (0,100 mol/L)",
+            "pipette_volume_ml": "20.00",
+            "stock_c_mol_l": "0.100",
+            "flask_label_lv": "2. mērkolba V₂' = 100,0 mL",
+            "flask_volume_ml": "100.0",
+            "flask_fill_ratio": 0.72,
+            "stated_factor": "5.00",
+            "stated_c2_mol_l": "0.0200",
+            "factor_label_lv": "f₂ = 100,0 / 20,00 = 5,00",
+            "result_label_lv": "f_kop = 50,0; c_B = 0,0200 mol/L"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "dilution-serial",
+          "legend_key": "fig.legend.dilution_chain",
+          "style_role": "primary",
+          "data": [
+            {"id": "S1", "V1_ml": "10.00", "V2_ml": "100.0", "factor": "10.0"},
+            {"id": "S2", "V1_ml": "20.00", "V2_ml": "100.0", "factor": "5.00"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-dil-serial",
+          "annotation_key": "fig.annot.dilution_serial_factor",
+          "citation_ref": "CIT-C3-C",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER",
+        "conventions_refs": ["CIT-C3-C", "CIT-C2-UNITS", "V-04"]
+      },
+      "derived_values": [
+        {
+          "id": "DV-DIL2-F1",
+          "label_lv": "1. pakāpes faktors f₁ = 100,0 / 10,00",
+          "formula_kind": "dilution_factor",
+          "inputs": {"V1_ml": "10.00", "V2_ml": "100.0"},
+          "conventions_sources": ["rounding.rule"],
+          "value": "10.0",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "10,0"
+        },
+        {
+          "id": "DV-DIL2-F2",
+          "label_lv": "2. pakāpes faktors f₂ = 100,0 / 20,00",
+          "formula_kind": "dilution_factor",
+          "inputs": {"V1_ml": "20.00", "V2_ml": "100.0"},
+          "conventions_sources": ["rounding.rule"],
+          "value": "5.00",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "5,00"
+        },
+        {
+          "id": "DV-DIL2-FTOT",
+          "label_lv": "Kopējais faktors f_kop = f₁ · f₂",
+          "formula_kind": "dilution_serial_factor",
+          "inputs": {"factors": ["10.0", "5.00"]},
+          "conventions_sources": ["rounding.rule"],
+          "value": "50.0",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "50,0"
+        },
+        {
+          "id": "DV-DIL2-CFINAL",
+          "label_lv": "Gala koncentrācija c_B = c₀ / f_kop",
+          "formula_kind": "dilution_serial_c",
+          "inputs": {"c0_mol_l": "1.00", "factors": ["10.0", "5.00"]},
+          "conventions_sources": ["rounding.rule"],
+          "value": "0.0200",
+          "unit": "mol/L",
+          "sig_figs": 3,
+          "display_lv": "0,0200 mol/L"
+        }
+      ],
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 82.0, "viewBox": [0, 0, 780, 400], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T3-DILUTION-CONC-GRADE",
+      "type": "dilution",
+      "version": 1,
+      "topic": 3,
+      "concept_ids": ["P3-10", "P3-01", "P3-06", "P3-07", "P3-08", "P3-09"],
+      "title_key": "fig.title.t3_dilution_conc_grade",
+      "subtitle_lv": "Vērtējams uzdevums (C3 §10 C16): 15,0 mL 3,00 mol/L H₂SO₄ → 450,0 mL mērkolba",
+      "description_lv": "Vērtējamā atšķaidīšanas shēma pēc C3 10. nodaļas C16 piemēra: ar pipeti pārnes 15,0 mL 3,00 mol/L H₂SO₄ šķīduma uz mērkolbu un uzpilda ar ūdeni līdz 450,0 mL gala atzīmei. Atšķaidīšanas faktors un gala koncentrācija jāaprēķina studentam un attēlā nav parādīti.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "leak_scan_exemption": null,
+      "answer_targets": [
+        {
+          "value": "0.100",
+          "unit": "mol/L",
+          "family_id": "FAM-3C",
+          "distinctive": true
+        },
+        {
+          "value": "30.0",
+          "unit": "1",
+          "family_id": "FAM-3C",
+          "distinctive": true
+        }
+      ],
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C3-C",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "axes": {},
+      "dilution_spec": {
+        "factor_display_mode": "formula_only",
+        "flask_mark_convention": "fill_to_mark_V2",
+        "steps": [
+          {
+            "step_id": "G1",
+            "pipette_label_lv": "Pipete V₁ = 15,0 mL (3,00 mol/L)",
+            "pipette_volume_ml": "15.0",
+            "stock_c_mol_l": "3.00",
+            "flask_label_lv": "Mērkolba līdz V₂ = 450,0 mL",
+            "flask_volume_ml": "450.0",
+            "flask_fill_ratio": 0.72,
+            "factor_label_lv": "f = V₂ / V₁ = ?",
+            "result_label_lv": "c₂ = c₁ · V₁ / V₂ = ?"
+          }
+        ]
+      },
+      "series": [
+        {
+          "id": "dilution-gradeable-c16",
+          "legend_key": "fig.legend.dilution_chain",
+          "style_role": "primary",
+          "data": [
+            {"id": "G1", "V1_ml": "15.0", "V2_ml": "450.0"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-dil-grade",
+          "annotation_key": "fig.annot.dilution_grade_formula",
+          "citation_ref": "CIT-C3-C",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "master_anchor": "n10",
+        "master_freeze_id": "C3-MASTER",
+        "conventions_refs": ["CIT-C3-C", "CIT-C2-UNITS"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 82.0, "viewBox": [0, 0, 780, 400], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T3-CONC-BASES-BRIDGE",
+      "type": "chain",
+      "version": 1,
+      "topic": 3,
+      "concept_ids": ["P3-01", "P3-04", "P3-05", "P3-06", "P3-07", "P3-08", "P3-09", "P3-11"],
+      "title_key": "fig.title.t3_conc_bases_bridge",
+      "subtitle_lv": "Pārejas caur 1,00 L šķīduma: w (% m/m) ↔ ρ (g/mL) ↔ γ (g/L) ↔ c (mol/L)",
+      "description_lv": "Strukturāla shēma, kas parāda saskaņotās pārejas starp masas daļu w procentos (m/m), šķīduma blīvumu ρ (g/mL), masas koncentrāciju γ (g/L jeb mg/mL) un molāro koncentrāciju c (mol/L) caur molmasu M. Tieša masas–tilpuma pāreja bez ρ ir bloķēta (V-04).",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": false,
+      "gradeable": false,
+      "percentage_basis": "m_m",
+      "tolerance_coupling": null,
+      "structural_only_reason_lv": "Konceptuāla lielumu pārejas shēma starp w, c, γ, n, m, V un ρ bez konkrēta skaitliska mērījuma.",
+      "axes": {},
+      "series": [
+        {
+          "id": "t3-conc-bridge",
+          "legend_key": "fig.legend.conc_bridge",
+          "nodes": [
+            {"id": "W", "step": "1. w (% m/m)", "title_lv": "m(B) / m(šķīd.)", "detail_lv": "Bāze: m/m (V-02)"},
+            {"id": "M", "step": "2. Ar ρ (g/mL)", "title_lv": "m(šķīd.) = ρ·V", "detail_lv": "Bez ρ bloķēts (V-04)"},
+            {"id": "G", "step": "3. γ (g/L)", "title_lv": "γ = 10·w%·ρ", "detail_lv": "g/L = mg/mL"},
+            {"id": "C", "step": "4. c (mol/L)", "title_lv": "c = γ / M = n / V", "detail_lv": "M (g/mol)"}
+          ],
+          "edges": [
+            {"from": "W", "to": "M", "label_lv": "· ρ"},
+            {"from": "M", "to": "G", "label_lv": "m(B)/V"},
+            {"from": "G", "to": "C", "label_lv": "÷ M"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-t3-v02-v04",
+          "annotation_key": "fig.annot.t3_v02_v04_bridge",
+          "citation_ref": "V-04",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "master_anchor": "n9",
+        "master_freeze_id": "C3-MASTER",
+        "conventions_refs": ["CIT-C3-W", "CIT-C3-C", "CIT-C3-GAMMA", "V-02", "V-04"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 72.0, "viewBox": [0, 0, 780, 350], "monochrome_safe": true}
+    },
+    {
+      "id": "FIG-T3-MEDICAL-ION-BASES",
+      "type": "bar",
+      "version": 1,
+      "topic": 3,
+      "concept_ids": ["P3-02", "P3-03"],
+      "title_key": "fig.title.t3_medical_ion_bases",
+      "subtitle_lv": "Medicīnisko šķīdumu marķētās bāzes (% m/V un % V/V) un 0,15 mol/L elektrolītu joni",
+      "description_lv": "Stabiņu diagramma salīdzina biežāko medicīnas šķīdumu nosauktās procentu bāzes pēc V-02 noteikuma: 0,9 % (m/V) NaCl, 3,0 % (m/V) H₂O₂, 5,0 % (m/V) glikoze un 70,0 % (V/V) etanols. Kursa noklusējuma m/m bāze šeit netiek pieņemta klusējot.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "percentage_basis": ["m_v", "v_v"],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "rule_id": "N12-LEAK-EXEMPT-01",
+        "reason_code": "EXEMPT_GIVEN_INPUT",
+        "reason_lv": "Mācību parauga diagramma rāda standarta medicīnisko etiķešu nominālvērtības ar obligātu bāzes norādi (% m/V, % V/V).",
+        "exempted_values": [
+          {"value": "0.9", "unit": "% (m/V)"},
+          {"value": "3.0", "unit": "% (m/V)"},
+          {"value": "5.0", "unit": "% (m/V)"},
+          {"value": "70.0", "unit": "% (V/V)"}
+        ],
+        "audit_owner": "N40"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "percentage_point",
+        "conventions_ref": "CIT-C3-PERCENT-MV",
+        "target_quantity_term_key": "fig.axis.mass_vol_pct_mv",
+        "expected_unit": "% (m/V)",
+        "sig_figs_rule": "least_of_givens",
+        "percentage_basis": "m_v"
+      },
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.medical_solution",
+          "unit": null,
+          "scale_type": "categorical"
+        },
+        "y": {
+          "term_key": "fig.axis.mass_vol_pct_mv",
+          "unit": "% (m/V)",
+          "dimension": "dimensionless",
+          "min": 0,
+          "max": 80,
+          "step": 20,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "medical-mv-bars",
+          "legend_key": "fig.legend.basis_mv",
+          "style_role": "primary",
+          "basis": "m_v",
+          "unit": "% (m/V)",
+          "data": [
+            {"label_lv": "NaCl (fiziol.)", "value": 0.9, "exact_value": 0.9, "basis": "m_v", "display_lv": "0,9 % (m/V)"},
+            {"label_lv": "H₂O₂", "value": 3.0, "exact_value": 3.0, "basis": "m_v", "display_lv": "3,0 % (m/V)"},
+            {"label_lv": "Glikoze", "value": 5.0, "exact_value": 5.0, "basis": "m_v", "display_lv": "5,0 % (m/V)"},
+            {"label_lv": "Etanols", "value": null, "exact_value": null, "basis": "m_v", "display_lv": ""}
+          ]
+        },
+        {
+          "id": "medical-vv-bars",
+          "legend_key": "fig.legend.basis_vv",
+          "style_role": "secondary",
+          "basis": "v_v",
+          "unit": "% (V/V)",
+          "data": [
+            {"label_lv": "NaCl (fiziol.)", "value": null, "exact_value": null, "basis": "v_v", "display_lv": ""},
+            {"label_lv": "H₂O₂", "value": null, "exact_value": null, "basis": "v_v", "display_lv": ""},
+            {"label_lv": "Glikoze", "value": null, "exact_value": null, "basis": "v_v", "display_lv": ""},
+            {"label_lv": "Etanols", "value": 70.0, "exact_value": 70.0, "basis": "v_v", "display_lv": "70,0 % (V/V)"}
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-t3-med",
+          "annotation_key": "fig.annot.t3_medical_bases",
+          "citation_ref": "CIT-C3-PERCENT-MV",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "master_anchor": "n5",
+        "master_freeze_id": "C3-MASTER",
+        "conventions_refs": ["CIT-C3-PERCENT-MV", "CIT-C3-PERCENT", "V-02", "C03"]
+      },
+      "lazy_slot": true,
+      "print_spec": {"width_mm": 160, "height_mm": 82.0, "viewBox": [0, 0, 760, 390], "monochrome_safe": true}
+    }
+  ]
+}

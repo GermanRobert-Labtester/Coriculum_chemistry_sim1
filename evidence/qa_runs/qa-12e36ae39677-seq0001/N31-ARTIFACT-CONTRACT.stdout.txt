@@ -1,0 +1,1 @@
+artifact_contract PASS: bytes=2834200 (2767.8 KiB) lang=lv anchors=9/9 core_islands=7/7 all_islands=22/22 scripts=1 ext_urls=0

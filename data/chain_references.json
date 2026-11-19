@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "owner": "N16",
+  "status": "forward-contract-pending-N19-N20",
+  "status_note_lv": "N19 un N20 vēl nav ieviesti. Šis fails ir N16 puses līgums: katra ķēde deklarē metodiskās kartītes un prakses vienuma atsauces, kuras N19/N20 aizpildīs ar autoriem ierakstiem, saglabājot tos pašus id. Validators pārbauda abpusēju atrisināmību jau tagad.",
+  "method_cards": [
+    {
+      "id": "MC-EX01",
+      "family_id": "FAM-1C",
+      "chain_ids": ["EX01"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: stehiometrija no masas (EX01)"
+    },
+    {
+      "id": "MC-EX02",
+      "family_id": "FAM-1B",
+      "chain_ids": ["EX02"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: disociācija un jonu skaits (EX02)"
+    },
+    {
+      "id": "MC-EX03",
+      "family_id": "FAM-2C",
+      "chain_ids": ["EX03"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: biretes izlietotais tilpums (EX03)"
+    },
+    {
+      "id": "MC-EX04",
+      "family_id": "FAM-2B",
+      "chain_ids": ["EX04"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: prefiksu ķēde un zīmīgie cipari (EX04)"
+    },
+    {
+      "id": "MC-EX05",
+      "family_id": "FAM-3A",
+      "chain_ids": ["EX05"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: koncentrācija no iesvara (EX05)"
+    },
+    {
+      "id": "MC-EX06",
+      "family_id": "FAM-3C",
+      "chain_ids": ["EX06"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: atšķaidīšana līdz gala tilpumam (EX06)"
+    },
+    {
+      "id": "MC-EX07",
+      "family_id": "FAM-4C",
+      "chain_ids": ["EX07"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: Gibsa enerģija un robežtemperatūra (EX07)"
+    },
+    {
+      "id": "MC-EX08",
+      "family_id": "FAM-4B",
+      "chain_ids": ["EX08"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: kalorimetrija un Hesa cikls (EX08)"
+    },
+    {
+      "id": "MC-EX09",
+      "family_id": "FAM-5C",
+      "chain_ids": ["EX09"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: pusperioda modelis un linearizācija (EX09)"
+    },
+    {
+      "id": "MC-EX10",
+      "family_id": "FAM-5A",
+      "chain_ids": ["EX10"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: aktivācijas barjera un katalizators (EX10)"
+    },
+    {
+      "id": "MC-EX11",
+      "family_id": "FAM-6C",
+      "chain_ids": ["EX11"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: 1:5 redoksa titrēšana (EX11)"
+    },
+    {
+      "id": "MC-EX12",
+      "family_id": "FAM-6D",
+      "chain_ids": ["EX12"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: Nernsta vienādojums (EX12)"
+    },
+    {
+      "id": "MC-EX13",
+      "family_id": "FAM-7B",
+      "chain_ids": ["EX13"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: kalibrēšana ar nenulles krustpunktu (EX13)"
+    },
+    {
+      "id": "MC-EX14",
+      "family_id": "FAM-7C",
+      "chain_ids": ["EX14"],
+      "consumer_task": "N19",
+      "status": "declared-pending-N19",
+      "label_lv": "Metodiskā kartīte: atšķaidīts paraugs, masa un daudzums (EX14)"
+    }
+  ],
+  "practice_items": [
+    {
+      "id": "PRAC-EX01",
+      "family_id": "FAM-1C",
+      "chain_ids": ["EX01"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX01 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX02",
+      "family_id": "FAM-1B",
+      "chain_ids": ["EX02"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX02 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX03",
+      "family_id": "FAM-2C",
+      "chain_ids": ["EX03"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX03 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX04",
+      "family_id": "FAM-2B",
+      "chain_ids": ["EX04"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX04 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX05",
+      "family_id": "FAM-3A",
+      "chain_ids": ["EX05"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX05 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX06",
+      "family_id": "FAM-3C",
+      "chain_ids": ["EX06"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX06 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX07",
+      "family_id": "FAM-4C",
+      "chain_ids": ["EX07"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX07 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX08",
+      "family_id": "FAM-4B",
+      "chain_ids": ["EX08"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX08 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX09",
+      "family_id": "FAM-5C",
+      "chain_ids": ["EX09"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Praxes vienums ar EX09 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX10",
+      "family_id": "FAM-5A",
+      "chain_ids": ["EX10"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX10 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX11",
+      "family_id": "FAM-6C",
+      "chain_ids": ["EX11"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX11 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX12",
+      "family_id": "FAM-6D",
+      "chain_ids": ["EX12"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX12 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX13",
+      "family_id": "FAM-7B",
+      "chain_ids": ["EX13"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX13 mācību saiti"
+    },
+    {
+      "id": "PRAC-EX14",
+      "family_id": "FAM-7C",
+      "chain_ids": ["EX14"],
+      "consumer_task": "N20",
+      "status": "declared-pending-N20",
+      "label_lv": "Prakses vienums ar EX14 mācību saiti"
+    }
+  ]
+}

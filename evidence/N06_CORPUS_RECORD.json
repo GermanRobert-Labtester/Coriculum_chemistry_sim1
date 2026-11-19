@@ -1,0 +1,621 @@
+{
+  "build_parity": {
+    "html_identical": true,
+    "manifest_identical": true,
+    "manifest_sha256": "f0a0efd51dfd3c91e5e71f1b1223175a2729985cb57ebf032d1a232e2aa11138",
+    "output_bytes": 334003,
+    "output_sha256": "98d88ccc71fb0e3c2ae8101d385ffafdba9f4e83fa3168b67b812ceea0bb86c1"
+  },
+  "failures": [],
+  "negative_fixtures": {
+    "external_url_injection": {
+      "external_urls": [
+        {
+          "context": "<!-- bad --><link href=\"https://cdn.example.invalid/style.css\"></body>",
+          "line": 2591,
+          "url": "https://cdn.example.invalid/style.css"
+        }
+      ],
+      "status": "FAIL"
+    },
+    "forbidden_endorsement_copy": {
+      "errors": [
+        "Forbidden endorsement/certification term found: 'Oficiāli apstiprināts'",
+        "Forbidden endorsement/certification term found: 'sertifikātu'"
+      ],
+      "status": "FAIL"
+    },
+    "missing_token": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "errors": [
+        "Missing token '--border-subtle' in theme 'dark'",
+        "Pair 'pair-border-subtle-canvas' references missing token in theme 'dark': --border-subtle / --bg-canvas",
+        "Pair 'pair-border-subtle-surface' references missing token in theme 'dark': --border-subtle / --bg-surface",
+        "Pair 'pair-border-subtle-elevated' references missing token in theme 'dark': --border-subtle / --bg-elevated"
+      ],
+      "stderr": "FAIL tokens gate (order 5, owner N06): Missing token '--border-subtle' in theme 'dark'\n  - Pair 'pair-border-subtle-canvas' references missing token in theme 'dark': --border-subtle / --bg-canvas\n  - Pair 'pair-border-subtle-surface' references missing token in theme 'dark': --border-subtle / --bg-surface\n  - Pair 'pair-border-subtle-elevated' references missing token in theme 'dark': --border-subtle / --bg-elevated\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    },
+    "raw_css_values": {
+      "artifact_written": false,
+      "build_returncode": 1,
+      "findings": [
+        {
+          "context": ".bad { color: #ff0000; font-size: 12px; }",
+          "kind": "raw-hex-color",
+          "line": 408,
+          "source": "src/styles.css",
+          "value": "#ff0000"
+        },
+        {
+          "context": ".bad { color: #ff0000; font-size: 12px; }",
+          "kind": "raw-dimension-unit",
+          "line": 408,
+          "source": "src/styles.css",
+          "value": "12px"
+        }
+      ],
+      "stderr": "FAIL tokens gate (order 5, owner N06): Raw CSS value '#ff0000' (raw-hex-color) at /tmp/opencode/n06-corpus/styles_raw.css:408\n  - Raw CSS value '12px' (raw-dimension-unit) at /tmp/opencode/n06-corpus/styles_raw.css:408\nRefusing build. The artifact was not written.",
+      "validator_status": "FAIL"
+    }
+  },
+  "prior_runtime_regression": {
+    "n02_coverage": "PASS",
+    "n03_conventions": "PASS",
+    "n05_golden_vectors": "PASS"
+  },
+  "runtime_harness": {
+    "artifact": "n06-runtime-harness",
+    "artifact_path": "output/simulator.html",
+    "artifact_sha256": "98d88ccc71fb0e3c2ae8101d385ffafdba9f4e83fa3168b67b812ceea0bb86c1",
+    "checks": {
+      "baseline": {
+        "has_all_map_and_practice_links": true,
+        "nav_topics_count": 7,
+        "per_topic_counts": [
+          9,
+          10,
+          11,
+          11,
+          10,
+          8,
+          5
+        ],
+        "smoke_report": {
+          "failed": 0,
+          "passed": 1,
+          "status": "PASS",
+          "total": 1,
+          "vectors": [
+            {
+              "details": {
+                "perTopic": {
+                  "1": 9,
+                  "2": 10,
+                  "3": 11,
+                  "4": 11,
+                  "5": 10,
+                  "6": 8,
+                  "7": 5
+                },
+                "total": 64
+              },
+              "id": "SMK-N06-COVERAGE-COUNTS",
+              "owner": "N06",
+              "reason": null,
+              "status": "PASS"
+            }
+          ]
+        },
+        "start_topics_count": 7,
+        "verbatim_outcomes_matched": 64
+      },
+      "markup_escaping": {
+        "child_tags": [
+          "SPAN",
+          "SPAN"
+        ],
+        "no_injected_tags": true,
+        "payload": "<img src=x onerror=alert(1)> & <b>skābe</b>",
+        "rendered_verbatim_text": true
+      },
+      "single_source": {
+        "list_statement_changed": true,
+        "list_topic_changed": true,
+        "nav_changed": true,
+        "start_changed": true
+      },
+      "smoke_negative": {
+        "failed": 1,
+        "passed": 0,
+        "status": "FAIL",
+        "total": 1,
+        "vectors": [
+          {
+            "details": null,
+            "id": "SMK-N06-COVERAGE-COUNTS",
+            "owner": "N06",
+            "reason": "Topic 1 count mismatch: expected 8, got 9",
+            "status": "FAIL"
+          }
+        ]
+      },
+      "theme_toggle": {
+        "after_click": {
+          "pressed": "true",
+          "theme": "dark"
+        },
+        "after_space": {
+          "pressed": "false",
+          "prevented": true,
+          "theme": "light"
+        },
+        "initial": {
+          "pressed": "false",
+          "theme": "light"
+        },
+        "no_store_degradation": {
+          "degraded": true,
+          "mode": "memory",
+          "reason": "no-persistent-store-degraded-to-memory",
+          "toggled_to": "dark"
+        },
+        "persist_restore": {
+          "persistedVal": "dark",
+          "restoredAttr": "dark",
+          "restoredTheme": "dark"
+        },
+        "throwing_store_degradation": {
+          "degraded": true,
+          "mode": "memory",
+          "reason": "store-write-error-degraded-to-memory",
+          "toggled_to": "dark"
+        }
+      }
+    },
+    "failures": [],
+    "schema_version": 1,
+    "status": "PASS",
+    "task": "N06"
+  },
+  "schema_version": 1,
+  "shell_contract": {
+    "aria": {
+      "errors": [],
+      "footers": 1,
+      "h1_count": 1,
+      "headers": 1,
+      "headings_count": 15,
+      "mains": 1,
+      "nav_count": 3,
+      "section_landmarks": 9,
+      "status": "PASS"
+    },
+    "artifact_sha256": "98d88ccc71fb0e3c2ae8101d385ffafdba9f4e83fa3168b67b812ceea0bb86c1",
+    "byte_accounting": {
+      "css_bytes": 13546,
+      "css_ceiling_bytes": 81920,
+      "islands_bytes": 242195,
+      "runtime_js_bytes": 65150,
+      "runtime_js_ceiling_bytes": 225280,
+      "template_overhead_bytes": 13112,
+      "total_bytes": 334003
+    },
+    "copy_lint": {
+      "errors": [],
+      "n10_dependency_status": "stub-pending-N10",
+      "n10_stub_keys_count": 21,
+      "official_panel_text_lv": "OFICIĀLIE PROGRAMMAS FAKTI Kas noteikts programmā Avots: RSU_MedChem_Colloq1_Prog_LV_2025.pdf (PROGRAMME-SOURCED): Formāts: klātienes pārbaudījums; darbs tiek rakstīts uz papīra. Maksimālais laiks: 3 stundas (180 minūtes). Septiņas programmas tēmas: Ievads. Šķīdumi un ķīmiskās reakcijas Aprēķini un grafiskās metodes ķīmijā Šķīdumi un koncentrāciju aprēķini Termodinamika un tās piemēri bioloģiskajās sistēmās Kinētika un tās nozīme bioloģiskajās sistēmās Oksidēšanās – reducēšanās procesi Analīzes metodes ķīmijā Oficiālā programma nenorāda uzdevumu skaitu, punktu svarus, sekmības slieksni, atļautos palīglīdzekļus vai precīzus jautājumu tipus.",
+      "proposed_panel_text_lv": "PROPOSED — mācību politikas priekšlikums Simulācijas treniņmodelis Šie parametri ir šī treniņsimulatora mācību politikas priekšlikums (PROPOSED), nevis oficiāls eksāmena nolikums: 100 treniņa punkti (PROPOSED): priekšlikums pa tēmām 1–7 ir 10 / 12 / 20 / 15 / 16 / 15 / 12 punkti. 3 treniņdarba formas — A, B un C (PROPOSED): katrā formā paredzēta 21 uzdevuma vieta (slots) . Laika plānojums (PROPOSED): 170 darba minūtes + 10 pārbaudes minūtes oficiālo 180 minūšu rāmī. Struktūra (PROPOSED): 64 mācību rezultāti un 28 uzdevumu saimes ar 4 variantu specifikācijām katrā.",
+      "scope_note_text_lv": "Tvērums un godīguma piezīme: šis ir patstāvīgas mācīšanās palīglīdzeklis darbam bezsaistē. Tas nav oficiāls RSU kolokvija eksāmens, nepiešķir oficiālu vērtējumu vai apliecību, neveic uzraudzību un pēc noklusējuma saglabā sesijas stāvokli tikai operatīvajā atmiņā.",
+      "status": "PASS"
+    },
+    "errors": [],
+    "schema_version": 1,
+    "status": "PASS",
+    "structural": {
+      "blueprint_anchors": [
+        "sakums",
+        "saturs",
+        "prakse",
+        "eksamens",
+        "rezultati",
+        "atskats",
+        "metodika",
+        "druka",
+        "iestatijumi"
+      ],
+      "blueprint_anchors_present": 9,
+      "dangling_links": [],
+      "duplicate_ids": [],
+      "executable_scripts_count": 1,
+      "external_urls": [],
+      "external_urls_count": 0,
+      "internal_links_count": 15,
+      "json_islands_order": [
+        "sim-coverage",
+        "sim-conventions",
+        "sim-bank",
+        "sim-forms",
+        "sim-golden-vectors",
+        "sim-terms",
+        "sim-analytics"
+      ],
+      "lang": "lv",
+      "non_ascii_ids": [],
+      "total_ids": 65
+    },
+    "task": "N06"
+  },
+  "source_digests": {
+    "data/n06_term_stubs.json": {
+      "bytes": 2353,
+      "sha256": "e4e2042087bffe5222def4cfbf47624bdd807eb458b94c6b3754fb94caf33e60"
+    },
+    "data/tokens.json": {
+      "bytes": 11470,
+      "sha256": "d2b89f18e35ee5caadcc8be08f11a34efcdfcc563a77b9f35eb537749e21a346"
+    },
+    "src/coverage-view.js": {
+      "bytes": 5660,
+      "sha256": "dfaa112ed5f21cf7c8321596c0d008e4b7dc9844c4d18da46e3edd5c20026aeb"
+    },
+    "src/shell.html": {
+      "bytes": 14751,
+      "sha256": "f728fd4348b921ea64acab12f98108fd903ee40a902f59a2087ecf9ce02158fc"
+    },
+    "src/smoke-subset.js": {
+      "bytes": 3344,
+      "sha256": "921c372bf2e2202177de6c93ce567d7b2cc6f0c42eddac8ab6505b811939fb9e"
+    },
+    "src/start-view.js": {
+      "bytes": 1262,
+      "sha256": "85e7b18b55624bcdfc1ab78cccfa6ce965ebdb0f0aae825fca93ee7dac1de766"
+    },
+    "src/styles.css": {
+      "bytes": 10154,
+      "sha256": "c849dd185f035daf97ef418f5d2e17f7cf03f9cd250fcde1ea9dfe5231256ee7"
+    },
+    "src/theme-toggle.js": {
+      "bytes": 5635,
+      "sha256": "3194b2967a4421e852db36ab1bbca2f9d09dea93a8ce2e6f219006b13eb49ac4"
+    },
+    "tools/build.py": {
+      "bytes": 25738,
+      "sha256": "1cae4f9f7b324a4a341dc352db15909c04ae0a1dcbcaab1172541791f92225e2"
+    },
+    "tools/check_n06_runtime.js": {
+      "bytes": 15973,
+      "sha256": "d1bc5cd245a8953e986c78f24812a71301c0305b62e6528699bb9c490d3b1c17"
+    },
+    "tools/validate_n06_shell.py": {
+      "bytes": 17993,
+      "sha256": "b3a8e9d12e288bfec02cc356d17df18e0f8ba9d639ac3b6bd8495bf3d73f70db"
+    },
+    "tools/validate_tokens.py": {
+      "bytes": 10860,
+      "sha256": "002ba9f3530203e42155aeb46c00e1a05bdc56a0a9c24809bd8cc0113cb7b795"
+    }
+  },
+  "status": "PASS",
+  "task": "N06",
+  "tokens": {
+    "color_pairs": [
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 15.54,
+          "light": 14.92
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 13.65,
+          "light": 13.55
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 12.01,
+          "light": 16.04
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--state-hover-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-hover",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 10.31,
+          "light": 12.17
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--state-active-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-active",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 11.84,
+          "light": 13.42
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.3,
+          "light": 7.47
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.17,
+          "light": 6.78
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.19,
+          "light": 8.03
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.28,
+          "light": 6.85
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-subtle",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-accent-subtle",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.18,
+          "light": 6.78
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-solid",
+        "fg_token": "--fg-on-accent",
+        "id": "pair-on-accent-solid",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.12,
+          "light": 9.23
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-official",
+        "fg_token": "--fg-official",
+        "id": "pair-official-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.65
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-proposed",
+        "fg_token": "--fg-proposed",
+        "id": "pair-proposed-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.24,
+          "light": 7.89
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-error",
+        "fg_token": "--fg-error",
+        "id": "pair-error-alert",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.05,
+          "light": 7.96
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-ok",
+        "fg_token": "--fg-ok",
+        "id": "pair-ok-status",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.74
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--state-disabled-fg",
+        "id": "pair-pending-slot",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.23,
+          "light": 6.08
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 5.13,
+          "light": 4.17
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-surface",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 4.5,
+          "light": 3.79
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 3.96,
+          "light": 4.48
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-strong",
+        "id": "pair-border-strong-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.16,
+          "light": 8.3
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-official",
+        "id": "pair-border-official-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.05,
+          "light": 7.01
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-proposed",
+        "id": "pair-border-proposed-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.27,
+          "light": 6.15
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-error",
+        "id": "pair-border-error-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 6.73,
+          "light": 7.81
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1
+        },
+        "use_class": "state-classed"
+      }
+    ],
+    "color_pairs_checked": 27,
+    "errors": [],
+    "generated_tokens_css_bytes": 3389,
+    "missing_by_theme": {},
+    "raw_value_findings": [],
+    "raw_value_findings_count": 0,
+    "required_semantic_tokens_count": 26,
+    "schema_version": 1,
+    "status": "PASS",
+    "styles_bytes": 10154,
+    "task": "N06",
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "tokens_bytes": 8712,
+    "tokens_digest": "6b419c04be2db45a96e4eae04320bbb5799e09e4109ec132e299afe5e1b911ab"
+  }
+}

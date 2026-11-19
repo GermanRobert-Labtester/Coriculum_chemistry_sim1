@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "task": "N31",
+  "status": "PASS",
+  "artifact_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "artifact_bytes": 2834200,
+  "inline_script_sha256": "d8b1f41cb3646d081381f5ae4c2b26214a0dd85ca24736d2961c666830b15a49",
+  "inline_script_bytes": 1265855,
+  "islands_loaded_count": 22,
+  "runtime_globals_verified_count": 37,
+  "visible_bootstrap_errors_count": 0,
+  "wrapper_fixture_b12": {
+    "status": "PASS",
+    "parser_engine": "node:vm.Script",
+    "module_regions_mapped": 39,
+    "first_region": {
+      "order": 1,
+      "id": "coverage-loader",
+      "path": "src/coverage-loader.js",
+      "owner_task": "N02",
+      "start_offset": 70754,
+      "end_offset": 76720,
+      "inlined_bytes": 6016,
+      "inlined_sha256": "422072dbeb90eb71989a1bcbe6305af4547bebca9ce61710d01e80fdbc31b3e1"
+    },
+    "last_region": {
+      "order": 39,
+      "id": "smoke-subset",
+      "path": "src/smoke-subset.js",
+      "owner_task": "N31",
+      "start_offset": 1180068,
+      "end_offset": 1252933,
+      "inlined_bytes": 72953,
+      "inlined_sha256": "fd11a329807b3c00b16161d1c788ff5531eb6eafebf9d3c1c1f28b9d789b9dd3"
+    },
+    "regions": [
+      {
+        "order": 1,
+        "id": "coverage-loader",
+        "path": "src/coverage-loader.js",
+        "owner_task": "N02",
+        "start_offset": 70754,
+        "end_offset": 76720,
+        "inlined_bytes": 6016,
+        "inlined_sha256": "422072dbeb90eb71989a1bcbe6305af4547bebca9ce61710d01e80fdbc31b3e1"
+      },
+      {
+        "order": 2,
+        "id": "conventions-loader",
+        "path": "src/conventions-loader.js",
+        "owner_task": "N03",
+        "start_offset": 76720,
+        "end_offset": 90690,
+        "inlined_bytes": 14010,
+        "inlined_sha256": "e51113bf0e636399307618d84927b0497a5d03a1c8ae3fd853b150725b1dc4d2"
+      },
+      {
+        "order": 3,
+        "id": "terms-loader",
+        "path": "src/terms-loader.js",
+        "owner_task": "N10",
+        "start_offset": 90690,
+        "end_offset": 103499,
+        "inlined_bytes": 12835,
+        "inlined_sha256": "95fbe9284547e74cad85458646e071288e44136f936a6cc41dc191451b20de9b"
+      },
+      {
+        "order": 4,
+        "id": "prng",
+        "path": "src/prng.js",
+        "owner_task": "N05",
+        "start_offset": 103499,
+        "end_offset": 107617,
+        "inlined_bytes": 4117,
+        "inlined_sha256": "c61a59114333c653ec7ea5868f97f4925c425c39e1dfe5a892afae7eec3c229a"
+      },
+      {
+        "order": 5,
+        "id": "figure-framework",
+        "path": "src/figure-framework.js",
+        "owner_task": "N11",
+        "start_offset": 107617,
+        "end_offset": 162881,
+        "inlined_bytes": 55352,
+        "inlined_sha256": "a489efbafe685c6fc43bb9746db82d5c84899926e60d0597be781f95df2fdf0d"
+      },
+      {
+        "order": 6,
+        "id": "bank-loader",
+        "path": "src/bank-loader.js",
+        "owner_task": "N04",
+        "start_offset": 162881,
+        "end_offset": 173214,
+        "inlined_bytes": 10375,
+        "inlined_sha256": "fe3508c33f6847217e01228e261e4724801f28a46ba427c48004b197dee3d945"
+      },
+      {
+        "order": 7,
+        "id": "golden-vectors-loader",
+        "path": "src/golden-vectors-loader.js",
+        "owner_task": "N05",
+        "start_offset": 173214,
+        "end_offset": 179333,
+        "inlined_bytes": 6148,
+        "inlined_sha256": "5c0ba66618181987b95947bd7392931e9b6882e1a43f38ca87c10507d93e6759"
+      },
+      {
+        "order": 8,
+        "id": "leak-scan",
+        "path": "src/leak-scan.js",
+        "owner_task": "N12",
+        "start_offset": 179333,
+        "end_offset": 190146,
+        "inlined_bytes": 10812,
+        "inlined_sha256": "d443c3f23c0430284dd6060e67d44dabf4c46303567d0d92528f3fbef9f6647f"
+      },
+      {
+        "order": 9,
+        "id": "quantity-engine",
+        "path": "src/quantity-engine.js",
+        "owner_task": "N17",
+        "start_offset": 190146,
+        "end_offset": 219893,
+        "inlined_bytes": 29859,
+        "inlined_sha256": "efa9bbafaaf474078f24549a33d3268c3ccfce2fabc9759024ec94d7334ba742"
+      },
+      {
+        "order": 10,
+        "id": "graph-scoring-engine",
+        "path": "src/graph-scoring-engine.js",
+        "owner_task": "N18",
+        "start_offset": 219893,
+        "end_offset": 273896,
+        "inlined_bytes": 54014,
+        "inlined_sha256": "a109fde79b7996e649fb9d306d09b48f9ab98abcc4a3159e3caefab4a49f38d8"
+      },
+      {
+        "order": 11,
+        "id": "graph-capture",
+        "path": "src/graph-capture.js",
+        "owner_task": "N18",
+        "start_offset": 273896,
+        "end_offset": 280091,
+        "inlined_bytes": 6194,
+        "inlined_sha256": "dccd878bc2f987f508678aabd6575d058e05a8298c6bfbafaf702e76f866bf97"
+      },
+      {
+        "order": 12,
+        "id": "method-engine",
+        "path": "src/method-engine.js",
+        "owner_task": "N19",
+        "start_offset": 280091,
+        "end_offset": 310752,
+        "inlined_bytes": 30660,
+        "inlined_sha256": "3291919eb318351baa6148e4a6590d4c5dae5385e8d83c2d7761cba914a20698"
+      },
+      {
+        "order": 13,
+        "id": "method-card-view",
+        "path": "src/method-card-view.js",
+        "owner_task": "N19",
+        "start_offset": 310752,
+        "end_offset": 321565,
+        "inlined_bytes": 10817,
+        "inlined_sha256": "e857fac22f4f284a579b5be61378f208962c8054231d0dfd2b5933717da81459"
+      },
+      {
+        "order": 14,
+        "id": "variant-engine",
+        "path": "src/variant-engine.js",
+        "owner_task": "N20",
+        "start_offset": 321565,
+        "end_offset": 354715,
+        "inlined_bytes": 33235,
+        "inlined_sha256": "0704f19957c65eacdc7c063b8f3dbbf3b8e0c3a52234fa6a18dbe39217e49189"
+      },
+      {
+        "order": 15,
+        "id": "chain-view",
+        "path": "src/chain-view.js",
+        "owner_task": "N16",
+        "start_offset": 354715,
+        "end_offset": 366525,
+        "inlined_bytes": 11868,
+        "inlined_sha256": "2745bf43bb1e4ff3a62a40c910ceac40e69a75d276ec519b4179a88a7d647207"
+      },
+      {
+        "order": 16,
+        "id": "coverage-view",
+        "path": "src/coverage-view.js",
+        "owner_task": "N06",
+        "start_offset": 366525,
+        "end_offset": 371592,
+        "inlined_bytes": 5074,
+        "inlined_sha256": "711fdd0206ce5c4fda94c8003c9013c2b424aa3533a5765cae41da64fa0ea7af"
+      },
+      {
+        "order": 17,
+        "id": "start-view",
+        "path": "src/start-view.js",
+        "owner_task": "N06",
+        "start_offset": 371592,
+        "end_offset": 372534,
+        "inlined_bytes": 941,
+        "inlined_sha256": "dc154c3398646dfe1ddf3fe028e974b394bdfbbfa838dca9e22d4cc15cb5f2a0"
+      },
+      {
+        "order": 18,
+        "id": "concept-drawer",
+        "path": "src/concept-drawer.js",
+        "owner_task": "N07",
+        "start_offset": 372534,
+        "end_offset": 393209,
+        "inlined_bytes": 20784,
+        "inlined_sha256": "27dfec9924395cdf040aec9e2304843591ead4fff7cc39871ca4725b6d2f6484"
+      },
+      {
+        "order": 19,
+        "id": "concept-map",
+        "path": "src/concept-map.js",
+        "owner_task": "N07",
+        "start_offset": 393209,
+        "end_offset": 410873,
+        "inlined_bytes": 17733,
+        "inlined_sha256": "bdf7a3b91f9fe9402cf03125a979a39216538bf25986c80ec9d564cb4e6aaf69"
+      },
+      {
+        "order": 20,
+        "id": "hint-drawer",
+        "path": "src/hint-drawer.js",
+        "owner_task": "N08",
+        "start_offset": 410873,
+        "end_offset": 428407,
+        "inlined_bytes": 17629,
+        "inlined_sha256": "7d7e11dde128c774b1ad5f5eb53f1dfed9036f1999943769a56e9425f840e2b1"
+      },
+      {
+        "order": 21,
+        "id": "theme-toggle",
+        "path": "src/theme-toggle.js",
+        "owner_task": "N06",
+        "start_offset": 428407,
+        "end_offset": 433443,
+        "inlined_bytes": 5060,
+        "inlined_sha256": "6d3895b19148b0f6233dda8e5605db02b9aa4ac182072ececd0b5d18821287f3"
+      },
+      {
+        "order": 22,
+        "id": "session",
+        "path": "src/compiled/session.js",
+        "owner_task": "N21",
+        "start_offset": 433443,
+        "end_offset": 445843,
+        "inlined_bytes": 12444,
+        "inlined_sha256": "eed075abe7590b35ae36f0ddcaabb73f5751c2c26f838750e1cfda1ae1ec81e8"
+      },
+      {
+        "order": 23,
+        "id": "inputs-registry",
+        "path": "src/compiled/inputs/registry.js",
+        "owner_task": "N22",
+        "start_offset": 445843,
+        "end_offset": 488959,
+        "inlined_bytes": 43259,
+        "inlined_sha256": "269a3bfc296d04d7a82996357b5d86e6d18b1092c50a10b811d6074dfb088449"
+      },
+      {
+        "order": 24,
+        "id": "inputs-components",
+        "path": "src/compiled/inputs/components.js",
+        "owner_task": "N22",
+        "start_offset": 488959,
+        "end_offset": 583374,
+        "inlined_bytes": 94809,
+        "inlined_sha256": "60271ea890f2e7323dd28e4de5f10aad39db8d3ff661d1c73b5eba9901dfa2a0"
+      },
+      {
+        "order": 25,
+        "id": "inputs-integration",
+        "path": "src/compiled/inputs/integration.js",
+        "owner_task": "N22",
+        "start_offset": 583374,
+        "end_offset": 615929,
+        "inlined_bytes": 32685,
+        "inlined_sha256": "75a860f35fda29a8da8057cf37364863211e9d76f4fa2bfad98d30618017a2e7"
+      },
+      {
+        "order": 26,
+        "id": "grading",
+        "path": "src/compiled/grading.js",
+        "owner_task": "N23",
+        "start_offset": 615929,
+        "end_offset": 676115,
+        "inlined_bytes": 60371,
+        "inlined_sha256": "6fb994b36df1d0368143656a106cb97ec1222cf79f805790843427834fc62a3f"
+      },
+      {
+        "order": 27,
+        "id": "feedback",
+        "path": "src/compiled/feedback.js",
+        "owner_task": "N23",
+        "start_offset": 676115,
+        "end_offset": 722421,
+        "inlined_bytes": 46311,
+        "inlined_sha256": "b8ea23bdf9dc37afaacba4f4f3d561efd94c50765788f570836f5b70073ec624"
+      },
+      {
+        "order": 28,
+        "id": "assembly",
+        "path": "src/compiled/assembly.js",
+        "owner_task": "N24",
+        "start_offset": 722421,
+        "end_offset": 762174,
+        "inlined_bytes": 39853,
+        "inlined_sha256": "70aa73e714798e35d21eb17b2c4395bb4d2e79f7de66adabbf5317be2ed7907b"
+      },
+      {
+        "order": 29,
+        "id": "exam",
+        "path": "src/compiled/exam.js",
+        "owner_task": "N21",
+        "start_offset": 762174,
+        "end_offset": 795035,
+        "inlined_bytes": 32961,
+        "inlined_sha256": "b48e96d1eb7c8e3c5d015dbab61d0572f109d9166e4a932bd80cd6dd1f2562f0"
+      },
+      {
+        "order": 30,
+        "id": "store",
+        "path": "src/compiled/store.js",
+        "owner_task": "N25",
+        "start_offset": 795035,
+        "end_offset": 825911,
+        "inlined_bytes": 31024,
+        "inlined_sha256": "0a9e0d30519a4689476b997c58fa3109850c025f6049c49ca4f5228818b7caf0"
+      },
+      {
+        "order": 31,
+        "id": "analytics",
+        "path": "src/compiled/analytics.js",
+        "owner_task": "N25",
+        "start_offset": 825911,
+        "end_offset": 858611,
+        "inlined_bytes": 32815,
+        "inlined_sha256": "a570daec6b881e9f79af5f9785fe33ec782ab099dead48d2060f0cb8f39e72e2"
+      },
+      {
+        "order": 32,
+        "id": "mastery",
+        "path": "src/compiled/mastery.js",
+        "owner_task": "N26",
+        "start_offset": 858611,
+        "end_offset": 902573,
+        "inlined_bytes": 44128,
+        "inlined_sha256": "0c9e693a43ec5c758d470d3255121ea5cf03b2cbcdfb5eb81569e3adef0e34d5"
+      },
+      {
+        "order": 33,
+        "id": "scheduler",
+        "path": "src/compiled/scheduler.js",
+        "owner_task": "N27",
+        "start_offset": 902573,
+        "end_offset": 953346,
+        "inlined_bytes": 50998,
+        "inlined_sha256": "03bb39aab5395bed36868f8f6a3b463409c8c7db7c6601d6af6b002ac0ff8cc8"
+      },
+      {
+        "order": 34,
+        "id": "remediation",
+        "path": "src/compiled/remediation.js",
+        "owner_task": "N28",
+        "start_offset": 953346,
+        "end_offset": 1017700,
+        "inlined_bytes": 64574,
+        "inlined_sha256": "c36f09b5710676c7d186dcd53f34aa2c7b836a900d2c9940df415910f1d60bb7"
+      },
+      {
+        "order": 35,
+        "id": "revision",
+        "path": "src/compiled/revision.js",
+        "owner_task": "N29",
+        "start_offset": 1017700,
+        "end_offset": 1080891,
+        "inlined_bytes": 63517,
+        "inlined_sha256": "ca3544fc9ab3af0514af383925a8d4ddbf5c4fc2895dc70fa948adb5952d0981"
+      },
+      {
+        "order": 36,
+        "id": "practice",
+        "path": "src/compiled/practice.js",
+        "owner_task": "N30",
+        "start_offset": 1080891,
+        "end_offset": 1152501,
+        "inlined_bytes": 71812,
+        "inlined_sha256": "acd3307229e1cfbdac61eba392fbcf4641c58a1f9f339887cbcda2484de1d405"
+      },
+      {
+        "order": 37,
+        "id": "focus",
+        "path": "src/compiled/focus.js",
+        "owner_task": "N33",
+        "start_offset": 1152501,
+        "end_offset": 1169845,
+        "inlined_bytes": 17343,
+        "inlined_sha256": "1758617bd2b7551f2f771313cb007e1b21989eaef7cb3583cc6c18047d91da60"
+      },
+      {
+        "order": 38,
+        "id": "paper",
+        "path": "src/compiled/paper.js",
+        "owner_task": "N34",
+        "start_offset": 1169845,
+        "end_offset": 1180068,
+        "inlined_bytes": 10254,
+        "inlined_sha256": "8bba9c74dee5ed1ab5d0cef4c01824641c2bc4094c6184f43c2680c13cdc0c9c"
+      },
+      {
+        "order": 39,
+        "id": "smoke-subset",
+        "path": "src/smoke-subset.js",
+        "owner_task": "N31",
+        "start_offset": 1180068,
+        "end_offset": 1252933,
+        "inlined_bytes": 72953,
+        "inlined_sha256": "fd11a329807b3c00b16161d1c788ff5531eb6eafebf9d3c1c1f28b9d789b9dd3"
+      }
+    ]
+  },
+  "in_file_smoke": {
+    "status": "PASS",
+    "total": 31,
+    "passed": 31,
+    "failed": 0,
+    "facade_checks": {
+      "n20_bank_and_engine_in_file": true,
+      "n22_inputs_facade_exercised": true,
+      "n23_grading_facade_exercised": true,
+      "n31_build_contract_vector_pass": true
+    },
+    "n31_vector": {
+      "id": "SMK-N31-BUILD-CONTRACT",
+      "owner": "N31",
+      "status": "PASS",
+      "details": {
+        "coreIslands": 7,
+        "inlinedGlobals": 36
+      },
+      "reason": null
+    }
+  }
+}

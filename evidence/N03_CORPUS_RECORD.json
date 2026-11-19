@@ -1,0 +1,306 @@
+{
+  "artifact": "conventions-conflict-corpus",
+  "commands": [
+    "python3 tools/validate_conventions.py --report evidence/N03_VALIDATION_RECORD.json --registry-out evidence/N03_CONFLICT_REGISTRY.json",
+    "python3 tools/build.py",
+    "node tools/check_conventions_runtime.js --json",
+    "python3 tools/n03_corpus.py"
+  ],
+  "failures": [],
+  "labels": {
+    "execution": "VERIFIED (2026-11-17, this environment)",
+    "master_digests": "bound to N01 source freeze recorded VERIFIED (2026-11-16)",
+    "tolerances": "PROPOSED training policy"
+  },
+  "results": {
+    "artifacts": [
+      {
+        "bytes": 138269,
+        "path": "data/conventions.json",
+        "sha256": "74438f8eab8b450964e8c00d0edc44867193298d56bb6879a73e8abb5d45dc26"
+      },
+      {
+        "bytes": 4439,
+        "path": "src/shell.html",
+        "sha256": "54519d91270c9fc7c84b66c16fd733f8a0d0048e30234f990b1e94c43241d240"
+      },
+      {
+        "bytes": 17084,
+        "path": "src/conventions-loader.js",
+        "sha256": "8f6a3654a1472af1239e163966722a00de25e89efad79d9e36741c50a4e4e45a"
+      },
+      {
+        "bytes": 7298,
+        "path": "tools/coverage_common.py",
+        "sha256": "c0b9c6e7f87d6623ebb4f04407bf2b8fba912b8f81cc1b544a4106e7efa2fd79"
+      },
+      {
+        "bytes": 60243,
+        "path": "tools/validate_conventions.py",
+        "sha256": "eca169c80bad7149f236aa510907cbec1f5cc1955e0a96621c415156c1756d50"
+      },
+      {
+        "bytes": 11694,
+        "path": "tools/build.py",
+        "sha256": "494c904721f60dd085739bf542c6072e00158e771a548c83c1001213b194f97a"
+      },
+      {
+        "bytes": 13435,
+        "path": "tools/check_conventions_runtime.js",
+        "sha256": "c1ae3e7f4c5912d5b8dd5cf704a99f9da18f59fd8a96a66e898de82696221b6e"
+      },
+      {
+        "bytes": 183534,
+        "path": "output/simulator.html",
+        "sha256": "98befa6dc1cffd16b616f3df63600006fcf48928629f13ffaf2a51f0b5f284db"
+      },
+      {
+        "bytes": 2562,
+        "path": "output/build-manifest.json",
+        "sha256": "974c256def38d80039815e4e51d41031628afa77d22b95b281e3f3c45ae89831"
+      },
+      {
+        "bytes": 22774,
+        "path": "evidence/N03_VALIDATION_RECORD.json",
+        "sha256": "c6292cec304c4e3f3b0589d8bdcb877b40d59b9b28f379688af365f35a6fc7eb"
+      },
+      {
+        "bytes": 47298,
+        "path": "evidence/N03_CONFLICT_REGISTRY.json",
+        "sha256": "56b8055267a3dab9ae9a88c71a12c01396d46a9fe2c9a8fec6df645e416ee9ef"
+      }
+    ],
+    "build_parity": {
+      "build_id": "3b78e360708c8062",
+      "committed_output_matches_fresh_build": true,
+      "conventions_island": {
+        "bytes": 103589,
+        "digest": "6763f5f39266460f365a7a27c141a893bf0c02ee3b75a66cf55af6750a77c7bd",
+        "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+        "id": "sim-conventions",
+        "source": "data/conventions.json"
+      },
+      "gates": [
+        {
+          "id": "coverage",
+          "order": 1,
+          "owner": "N02",
+          "status": "PASS",
+          "summary": "PASS coverage-island: 64 outcomes (9/10/11/11/10/8/5); 127 prerequisite edges (20 cross-topic); cycle=None; anchors 64/64 resolved"
+        },
+        {
+          "id": "conventions",
+          "order": 2,
+          "owner": "N03",
+          "status": "PASS",
+          "summary": "PASS conventions: 10 elements, 23 compounds, 9 constants, 36 conversions, 9 chains, 12 tolerance classes, 12 V + 10 C conflicts, 7 vectors"
+        }
+      ],
+      "manifest_sha256_first": "3562a9b6852ed58d97abcec177d05d964e54c9e9e36d776b7a9d5efbf1d7f5cf",
+      "manifest_sha256_second": "3562a9b6852ed58d97abcec177d05d964e54c9e9e36d776b7a9d5efbf1d7f5cf",
+      "manifests_identical": true,
+      "output_bytes": 183534,
+      "output_sha256_first": "98befa6dc1cffd16b616f3df63600006fcf48928629f13ffaf2a51f0b5f284db",
+      "output_sha256_second": "98befa6dc1cffd16b616f3df63600006fcf48928629f13ffaf2a51f0b5f284db",
+      "outputs_identical": true,
+      "run_one_returncode": 0,
+      "run_two_returncode": 0
+    },
+    "byte_contribution": {
+      "bank_share_percent": [
+        24.09,
+        50.58
+      ],
+      "bank_sub_budget_kib": [
+        200,
+        420
+      ],
+      "conventions_island_bytes": 103589,
+      "conventions_island_kib": 101.16,
+      "note_lv": "Konvenciju sala nav daļa no #sim-bank; tās apjoms pret bankas apakšbudžetu ir mēroga rādītājs, ne bankas saturs. Kopējais fails paliek 700–1400 KiB budžetā.",
+      "output_bytes": 183534,
+      "output_kib": 179.23,
+      "total_budget_kib": [
+        700,
+        1400
+      ],
+      "total_share_percent": [
+        12.8,
+        25.6
+      ]
+    },
+    "gate_refusals": {
+      "statusless": {
+        "artifact_written": false,
+        "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/build.py --conventions /tmp/opencode/n03-corpus/statusless/conventions.json --out /tmp/opencode/n03-corpus/statusless/simulator.html --manifest-out /tmp/opencode/n03-corpus/statusless/manifest.json",
+        "first_line": "FAIL conventions gate (order 2, owner N03): Conflict V-05: status is missing or unknown (None)",
+        "names_assertion": true,
+        "names_gate": true,
+        "refused": true,
+        "returncode": 1
+      },
+      "wrong_factor": {
+        "artifact_written": false,
+        "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/build.py --conventions /tmp/opencode/n03-corpus/wrong-factor/conventions.json --out /tmp/opencode/n03-corpus/wrong-factor/simulator.html --manifest-out /tmp/opencode/n03-corpus/wrong-factor/manifest.json",
+        "first_line": "FAIL conventions gate (order 2, owner N03): Chain concentration_mg_per_ml_to_g_per_l: factor mismatch: declared 2 != computed 1",
+        "names_assertion": true,
+        "names_gate": true,
+        "refused": true,
+        "returncode": 1
+      }
+    },
+    "phantom_task": {
+      "errors": [
+        "Conflict V-04: names unknown task 'N99'",
+        "Conflict V-04: resolution_task 'N99' is not a roadmap task"
+      ],
+      "first_error": "Conflict V-04: names unknown task 'N99'",
+      "names_id": true,
+      "names_phantom": true,
+      "validator_status": "FAIL"
+    },
+    "runtime": {
+      "checks": {
+        "baseline": {
+          "burette_tolerance": 0.05,
+          "celsius_to_k": 298.15,
+          "counts": {
+            "chains": 9,
+            "citations": 74,
+            "conflicts": 22,
+            "conversions": 36,
+            "tolerance_classes": 12,
+            "vectors": 7
+          },
+          "error_hidden": true,
+          "mgl_to_gml": 1e-06,
+          "mgml_to_gl": 1,
+          "nacl_molar_mass": 58.44,
+          "potential_symbol": "E°′",
+          "round_11145": 1.11,
+          "sodium_mass": 22.99,
+          "status_text": "Konvenciju kopa ielādēta: 36 vienību pārejas, 9 ķēdes, 12 tolerances, 22 konflikti.",
+          "vector_conversion": 1,
+          "vector_tolerance": 0.05
+        },
+        "deleted_conflict": {
+          "code": "E_CONVENTIONS_CONFLICT_COUNT",
+          "error_text": "Konvenciju dati nav pieejami. #sim-conventions paredzēti 22 konflikti, atrasti 21.",
+          "rejected": true
+        },
+        "missing": {
+          "code": "E_CONVENTIONS_MISSING",
+          "error_names_island": true,
+          "error_visible": true
+        },
+        "single_source_conversion": {
+          "both_changed": true,
+          "engine_conversion": 2,
+          "scratch_factor": 2,
+          "vector_expected": 2
+        },
+        "single_source_tolerance": {
+          "all_changed": true,
+          "engine_tolerance": 0.1,
+          "figure_tolerance_field": 0.1,
+          "scratch_value": "0.10",
+          "vector_expected": 0.1
+        },
+        "truncated": {
+          "code": "E_CONVENTIONS_JSON",
+          "error_names_island": true,
+          "error_text": "Konvenciju dati nav pieejami. #sim-conventions satur nederīgu JSON. Konvenciju dati nav ielādējami.",
+          "error_visible": true,
+          "status_nonblank": true
+        }
+      },
+      "failures": [],
+      "returncode": 0,
+      "status": "PASS"
+    },
+    "statusless": {
+      "errors": [
+        "Conflict V-05: status is missing or unknown (None)",
+        "Conflict V-05: status None does not match last history event 'resolved-by-task'"
+      ],
+      "first_error": "Conflict V-05: status is missing or unknown (None)",
+      "names_id": true,
+      "names_status": true,
+      "validator_status": "FAIL"
+    },
+    "validation": {
+      "checks": {
+        "atomic_masses": {
+          "elements": 10
+        },
+        "chains": {
+          "count": 9,
+          "failed": 0,
+          "numeric": 7,
+          "symbolic": 2
+        },
+        "citations": {
+          "defined": 74,
+          "failed": 0,
+          "used": 74
+        },
+        "compounds": {
+          "compounds": 23
+        },
+        "constants": {
+          "constants": 9
+        },
+        "conversions": {
+          "bidirectional": 34,
+          "blocked": 2,
+          "count": 36,
+          "errors": 0,
+          "one_way": 2
+        },
+        "registry": {
+          "entries": 22,
+          "status": "PASS",
+          "status_counts": {
+            "documented-and-accepted": 5,
+            "open-with-owner": 2,
+            "resolved-by-task": 15
+          }
+        },
+        "tolerances": {
+          "classes": 12,
+          "rounding_examples": 3
+        }
+      },
+      "counts": {
+        "atomic_masses": 10,
+        "chains": 9,
+        "citations": 74,
+        "compounds": 23,
+        "conflict_c": 10,
+        "conflict_v": 12,
+        "constants": 9,
+        "conversions": 36,
+        "derived_vectors": 7,
+        "observations": 4,
+        "tolerance_classes": 12
+      },
+      "errors": [],
+      "registry_digest": "27cd592043e257698fa57d263c5a2a31345fe271b4104dcbe7ed539ebc86537a",
+      "status": "PASS",
+      "summary": "PASS conventions: 10 elements, 23 compounds, 9 constants, 36 conversions, 9 chains, 12 tolerance classes, 12 V + 10 C conflicts, 7 vectors"
+    },
+    "wrong_factor": {
+      "errors": [
+        "Chain concentration_mg_per_ml_to_g_per_l: factor mismatch: declared 2 != computed 1"
+      ],
+      "first_error": "Chain concentration_mg_per_ml_to_g_per_l: factor mismatch: declared 2 != computed 1",
+      "names_both_factors": true,
+      "names_chain": true,
+      "validator_status": "FAIL"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Conventions schema, conversions, composition chains, citations, registry traceability, build gate, runtime loader, single-sourcing and degradation.",
+  "status": "PASS",
+  "task": "N03"
+}

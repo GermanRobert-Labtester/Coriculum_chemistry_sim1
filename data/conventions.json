@@ -1,0 +1,4029 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-conventions",
+  "title_lv": "Zinātnisko konvenciju kopa",
+  "purpose_lv": "Viena autoritatīva vieta atommasām, vienību pārejām, tolerancēm, noapaļošanai, koncentrāciju bāzēm, titrēšanas nolasīšanai, redokspotenciālu konvencijai, termodinamikas zīmēm un spektrofotometrijas tvērumam. Dzinēji, attēli un vektori lasa tikai šo salu; neviens neuztur lokālu kopiju.",
+  "source": {
+    "task": "N03",
+    "frozen_inventory": "evidence/SOURCE_FREEZE_INVENTORY.json",
+    "programme_extract": "evidence/programme_extracted.txt",
+    "master_anchor_rule": "N02 rule: citation anchors resolve case-exactly in the frozen master; a changed master digest is a visible event.",
+    "citation_rule": "Every convention entry cites at least one citation id; every citation resolves to the N01 inventory and to a literal or anchor in the cited source.",
+    "official_versus_training": "source_class \"official-programme\" is the 2025 programme; \"master\" is teaching material. PROPOSED training policy is labelled separately and never presented as official."
+  },
+  "epistemic_contract": {
+    "labels": {
+      "master-grounded": "The value or rule is printed in a frozen master; the citation is machine-checked.",
+      "official-programme": "The fact is in the supplied 2025 programme PDF/extract.",
+      "PROPOSED training policy": "A simulator design choice; not an official programme rule.",
+      "DOCUMENTED BUT NOT RERUN": "A committed pass that cannot be reproduced from the published repository alone.",
+      "OPEN": "A scientific or external question with a named owner and no invented answer."
+    },
+    "official_programme_facts": [
+      {
+        "id": "OFF-TOPICS",
+        "statement_lv": "Programmā ir septiņas tēmas.",
+        "citations": [
+          "CIT-PROG-TOPICS"
+        ]
+      },
+      {
+        "id": "OFF-PAPER",
+        "statement_lv": "Kolokvijs notiek klātienē; darbs tiek rakstīts uz papīra.",
+        "citations": [
+          "CIT-PROG-PAPER"
+        ]
+      },
+      {
+        "id": "OFF-180",
+        "statement_lv": "Maksimālais laiks ir 3 stundas (180 minūtes).",
+        "citations": [
+          "CIT-PROG-180"
+        ]
+      },
+      {
+        "id": "OFF-SIGFIG",
+        "statement_lv": "Programma prasa lietot zīmīgos ciparus; tā nenosaka konkrētu toleranci.",
+        "citations": [
+          "CIT-PROG-SIGFIG"
+        ]
+      }
+    ],
+    "training_policy_proposals": [
+      "100-point scale; A/B/C forms; 21 slots per form; per-topic weights and minutes (Section 1.5 of the roadmap).",
+      "Absolute and significant-figure tolerances in this artifact (tolerances.*).",
+      "Half-up final-answer rounding as a grading policy (rounding.*, while the rule itself is master-grounded).",
+      "440 nm as the course setting and l = 1 cm as the declared path assumption are master-grounded scope statements; the simulator does not claim a measured flat maximum."
+    ],
+    "rule_lv": "Katrs skaitlis ir vai nu master-grounded ar citātu, vai PROPOSED training policy. Nav trešās klases. Oficiālā programma un mācību materiāls paliek atsevišķi source_class līmeņos."
+  },
+  "citation_index": [
+    {
+      "id": "CIT-PROG-PAPER",
+      "source_id": "PROGRAMME-EXTRACT",
+      "source_class": "official-programme",
+      "locator": "programme p.1",
+      "literal": "darbs tiek rakstīts uz papīra"
+    },
+    {
+      "id": "CIT-PROG-180",
+      "source_id": "PROGRAMME-EXTRACT",
+      "source_class": "official-programme",
+      "locator": "programme p.1",
+      "literal": "180 minūtes"
+    },
+    {
+      "id": "CIT-PROG-TOPICS",
+      "source_id": "PROGRAMME-EXTRACT",
+      "source_class": "official-programme",
+      "locator": "programme pp.1-4",
+      "literals": [
+        "1. Temats",
+        "7. Temats"
+      ]
+    },
+    {
+      "id": "CIT-PROG-SIGFIG",
+      "source_id": "PROGRAMME-EXTRACT",
+      "source_class": "official-programme",
+      "locator": "programme pp.2-3",
+      "literal": "zīmīgo ciparu"
+    },
+    {
+      "id": "CIT-PROG-MGL",
+      "source_id": "PROGRAMME-EXTRACT",
+      "source_class": "official-programme",
+      "locator": "programme p.3",
+      "literal": "mg <=> g"
+    },
+    {
+      "id": "CIT-C1-MOLAR-VOL",
+      "source_id": "C1-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_1 §Stehiometrija, worked example",
+      "anchor": "ex-stehiometrija-1",
+      "literal": "V0 = 22,414 L/mol (0 °C, 101,325 kPa)"
+    },
+    {
+      "id": "CIT-C1-AL",
+      "source_id": "C1-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_1 §Stehiometrija, worked example",
+      "anchor": "ex-stehiometrija-1",
+      "literal": "M(Al) = 26,982 g/mol"
+    },
+    {
+      "id": "CIT-C1-DENSITY",
+      "source_id": "C1-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_1 §Koncentrācija, formula table",
+      "anchor": "formulu-lapa-table",
+      "literal": "1,25 g/mL",
+      "note_lv": "22 % NaOH piemērs ar ρ = 1,25 g/mL; blīvums ir mērīts lielums, nevis universāla konstante."
+    },
+    {
+      "id": "CIT-C1-KW",
+      "source_id": "C1-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_1 §Koncentrācija, formula table",
+      "anchor": "formulu-lapa-table",
+      "literal": "1,0 · 10−14"
+    },
+    {
+      "id": "CIT-C1-SIGFIG-ROUND",
+      "source_id": "C1-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_1 §Prakse, answer key",
+      "literal": "Noapaļot tikai atbildē"
+    },
+    {
+      "id": "CIT-C2-MENISCUS",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §5 Menisks un paralakse",
+      "anchor": "ch5-menisks-un-paralakse",
+      "literal": "meniska zemāko daļu acu līmenī"
+    },
+    {
+      "id": "CIT-C2-MENISCUS-DARK",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 glossary (menisks)",
+      "anchor": "glossary-menisks",
+      "literal": "tumšiem šķīdumiem — augšējo malu"
+    },
+    {
+      "id": "CIT-C2-BURETTE",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §5 Biretes lietošana",
+      "anchor": "ch-5",
+      "literal": "izlietais tilpums ir beigu nolasījums mīnus sākuma nolasījums"
+    },
+    {
+      "id": "CIT-C2-BURETTE-READ",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 glossary (iedaļa)",
+      "anchor": "ch-4",
+      "literal": "biretei iedaļa 0,1 mL, nolasījums ±0,05 mL"
+    },
+    {
+      "id": "CIT-C2-TOLERANCE",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §4 Trauku pieļaujamā kļūda",
+      "anchor": "ch4-trauku-pielaujama-kluda-mertrauku-salidzinajums",
+      "literal": "0,5 % no nominālā tilpuma"
+    },
+    {
+      "id": "CIT-C2-SIGFIG",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §8 Divas darbību atšķirības",
+      "anchor": "ch8-divas-darbibu-atskiribas",
+      "literal": "Rezultātam ir tik zīmīgo ciparu"
+    },
+    {
+      "id": "CIT-C2-ROUND",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §8 Kā noapaļot",
+      "anchor": "ch8-ka-noapalot-lidz-zimigajiem-cipariem",
+      "literal": "noapaļot tikai gala rezultātu"
+    },
+    {
+      "id": "CIT-C2-UNITS",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §2 Mērvienību attiecības",
+      "anchor": "ch-2",
+      "literal": "1 L = 1000 mL = 1000 cm³ = 1 dm³"
+    },
+    {
+      "id": "CIT-C2-TEMP",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §2 Mērvienību attiecības",
+      "anchor": "ch-2",
+      "literal": "T/K = t/°C + 273,15"
+    },
+    {
+      "id": "CIT-C2-DENSITY-UNITS",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §12 Blīvuma mērvienības",
+      "anchor": "ch12-density-units",
+      "literal": "1 g/mL = 1000 kg/m³"
+    },
+    {
+      "id": "CIT-C2-DENSITY-REL",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §12 Blīvums atkarībā no masas daļas",
+      "anchor": "ch12-blivums-atkariba-no-masas-dalas",
+      "literal": "ρ = 0,0073w + 0,9979"
+    },
+    {
+      "id": "CIT-C2-WATER",
+      "source_id": "C2-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_2 §2 piemērs",
+      "literal": "M(H₂O) = 18,02 g/mol"
+    },
+    {
+      "id": "CIT-C3-MOLMASS",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 Molmasa",
+      "anchor": "n4",
+      "literal": "M(Na2SO4) = 2·22,990 + 32,06 + 4·15,999 = 142,04 g/mol"
+    },
+    {
+      "id": "CIT-C3-ATOMS",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 KOH worked calculation",
+      "anchor": "n4",
+      "literal": "M(KOH) = 39,098 + 15,999 + 1,008 = 56,105"
+    },
+    {
+      "id": "CIT-C3-AVOGADRO",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 Mols",
+      "anchor": "n4",
+      "literal": "6,02214076",
+      "note_lv": "Avogadro konstante 6,02214076·10²³ mol⁻¹, SI 2019 precīzā vērtība."
+    },
+    {
+      "id": "CIT-C3-MOLMASS-TABLE",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 6. tabula",
+      "anchor": "n4",
+      "literals": [
+        "58,44",
+        "39,997",
+        "56,106",
+        "105,99",
+        "163,94",
+        "174,26",
+        "110,98",
+        "74,55",
+        "166,00",
+        "36,46",
+        "98,08",
+        "180,16",
+        "34,01",
+        "78,00",
+        "58,32"
+      ],
+      "note_lv": "6. tabula: vielu molmasas ar IUPAC un kursa noapaļoto vērtību; katrs literal ir tabulas rinda."
+    },
+    {
+      "id": "CIT-C3-CACL2",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 recall",
+      "anchor": "n4",
+      "literal": "40,078"
+    },
+    {
+      "id": "CIT-C3-I",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 6. tabula",
+      "anchor": "n4",
+      "literal": "126,904"
+    },
+    {
+      "id": "CIT-C3-CL",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 6. tabula",
+      "anchor": "n4",
+      "literal": "35,45"
+    },
+    {
+      "id": "CIT-C3-KOH",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 6. tabula",
+      "anchor": "n4",
+      "literal": "56,106"
+    },
+    {
+      "id": "CIT-C3-H2O2",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 6. tabula",
+      "anchor": "n4",
+      "literal": "34,01"
+    },
+    {
+      "id": "CIT-C3-PERCENT",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §5 Procentu veidi",
+      "anchor": "procentu-bazes-title",
+      "literal": "Kursā aprēķini notiek ar masas daļu"
+    },
+    {
+      "id": "CIT-C3-PERCENT-MV",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §5 10. tabula",
+      "anchor": "n5",
+      "literal": "m/V (pieņemts)"
+    },
+    {
+      "id": "CIT-C3-BASES",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §5 Koncentrāciju veidi",
+      "anchor": "n5",
+      "literal": "Koncentrāciju veidi"
+    },
+    {
+      "id": "CIT-C3-W",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §6 Masas daļa w",
+      "anchor": "n6",
+      "literal": "w = m(B)"
+    },
+    {
+      "id": "CIT-C3-C",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §7 Molārā koncentrācija c",
+      "anchor": "n7",
+      "literal": "c = n/V"
+    },
+    {
+      "id": "CIT-C3-GAMMA",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §8 Masas koncentrācija γ",
+      "anchor": "n8",
+      "literal": "γ = m/V"
+    },
+    {
+      "id": "CIT-C3-UNIT-LADDER",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §4 Mērvienību ķēde",
+      "anchor": "fig-unit_ladder",
+      "literal": "mL → L: dala ar 1000"
+    },
+    {
+      "id": "CIT-C3-ACETYL",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §8 worked example",
+      "anchor": "n8",
+      "literal": "179,2"
+    },
+    {
+      "id": "CIT-C3-SUCROSE",
+      "source_id": "C3-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_3 §8 worked example",
+      "anchor": "n8",
+      "literal": "342,3"
+    },
+    {
+      "id": "CIT-C4-SIGN",
+      "source_id": "C4-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_4 §1 Zīmju konvencija",
+      "anchor": "sign-ledger",
+      "literal": "Q = ΔU + A"
+    },
+    {
+      "id": "CIT-C4-IUPAC",
+      "source_id": "C4-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_4 §1 Zīmju konvencija",
+      "anchor": "sign-ledger",
+      "literal": "ΔU = q + w"
+    },
+    {
+      "id": "CIT-C4-ENTHALPY",
+      "source_id": "C4-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_4 §4.1 Entalpija",
+      "anchor": "sec-ch4-16",
+      "literal": "H = U + pV"
+    },
+    {
+      "id": "CIT-C4-GIBBS",
+      "source_id": "C4-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_4 §7 Gibbs energy",
+      "anchor": "table-28",
+      "literal": "ΔG = ΔH − TΔS"
+    },
+    {
+      "id": "CIT-C5-K10",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_5 §12.4 defektu reģistrs K10",
+      "anchor": "def-K10",
+      "literal": "23 J/mol"
+    },
+    {
+      "id": "CIT-C5-K10-OPEN",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_5 §12.4 defektu reģistrs K10",
+      "anchor": "def-K10",
+      "literal": "docētāja apstiprinājums nav saņemts"
+    },
+    {
+      "id": "CIT-C5-K17",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_5 §12.4 defektu reģistrs K17",
+      "anchor": "def-K17",
+      "literal": "H₂O₂ + HI"
+    },
+    {
+      "id": "CIT-C6-E-CONV",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §2 Simboli vienā mirklī",
+      "anchor": "ch2",
+      "literal": "E° – standarts (pH 0); E – faktiskais; E°′ – bioloģiskais (pH 7)"
+    },
+    {
+      "id": "CIT-C6-EPRIME",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §2 Konvenciju karte",
+      "anchor": "ch2",
+      "literal": "E°′ = E° − 0,0592·(m/n)·pH"
+    },
+    {
+      "id": "CIT-C6-NERNST",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §3.2 Nernsta atvasināšana",
+      "anchor": "ch3",
+      "literal": "R = 8,314 J/(mol·K), T = 298,15 K, F = 96 485 C/mol"
+    },
+    {
+      "id": "CIT-C6-ENDPOINT",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9 Titrēšana",
+      "anchor": "l25-worked",
+      "literal": "beigu punktu, nevis ekvivalences punktu"
+    },
+    {
+      "id": "CIT-C6-ENDPOINT-FIRST",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9 Figure caption",
+      "anchor": "bench-cap",
+      "literal": "Pirmā pastāvīgā rozā ir galapunkts"
+    },
+    {
+      "id": "CIT-C6-MENISCUS",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9 Bench figure",
+      "anchor": "bench-title",
+      "literal": "menisks, augšējā mala"
+    },
+    {
+      "id": "CIT-C6-BURETTE",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §12.4 M14",
+      "anchor": "l25-worked",
+      "literal": "Biretes nolasījumu pieraksta tieši (12,35 mL)"
+    },
+    {
+      "id": "CIT-C6-CONCORDANCE",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9 Five steps",
+      "anchor": "l25-worked",
+      "literal": "0,10 mL"
+    },
+    {
+      "id": "CIT-C6-FE",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §12.4 numeric",
+      "anchor": "numeric",
+      "literal": "55,845"
+    },
+    {
+      "id": "CIT-C6-FESO4",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9.4 Worked example",
+      "anchor": "l25-worked",
+      "literal": "151,91"
+    },
+    {
+      "id": "CIT-C6-FESO4-HYDRATE",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §9.4 Worked example",
+      "anchor": "l25-worked",
+      "literal": "278,02"
+    },
+    {
+      "id": "CIT-C6-KMNO4",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §12.4 numeric",
+      "anchor": "numeric",
+      "literal": "158,034"
+    },
+    {
+      "id": "CIT-C6-H2O2",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §12.4 numeric",
+      "anchor": "numeric",
+      "literal": "34,0147"
+    },
+    {
+      "id": "CIT-C6-POTENTIALS",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §2 Cu/Zn example",
+      "anchor": "ch2",
+      "literals": [
+        "0,337",
+        "0,763"
+      ]
+    },
+    {
+      "id": "CIT-C6-EPRIME-VALUES",
+      "source_id": "C6-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_6 §2 E°′ examples",
+      "anchor": "ch2",
+      "literals": [
+        "0,815",
+        "−0,414"
+      ]
+    },
+    {
+      "id": "CIT-C7-440",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §7.2 Wavelength scope",
+      "anchor": "n7-2",
+      "literal": "kursa iestatījums 440 nm"
+    },
+    {
+      "id": "CIT-C7-444",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §7.2 Literature maximum",
+      "anchor": "n7-2",
+      "literal": "444 nm"
+    },
+    {
+      "id": "CIT-C7-FLAT",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §7.2 Flatness scope",
+      "anchor": "n7-2",
+      "literal": "ierobežots secinājums"
+    },
+    {
+      "id": "CIT-C7-PATH",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §6.1 Optical path",
+      "anchor": "n6-1",
+      "literal": "Optiskais ceļš (l = 1 cm)"
+    },
+    {
+      "id": "CIT-C7-CUVETTE",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §6.2 Cuvette rail",
+      "anchor": "n6-1",
+      "literal": "Standarta kivete ir 10 mm"
+    },
+    {
+      "id": "CIT-C7-CALIB",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §8.3 Taisne caur nulli vai brīvā regresija",
+      "anchor": "n8-3",
+      "literal": "Taisne caur nulli vai brīvā regresija"
+    },
+    {
+      "id": "CIT-C7-NOEXTRAP",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §1.2 Method limits",
+      "anchor": "n1-2",
+      "literal": "Nevar izmantot ārpus kalibrētā diapazona"
+    },
+    {
+      "id": "CIT-C7-MATRIX",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §7.5 pH and equilibria",
+      "anchor": "n7-5",
+      "literal": "vienā un tajā pašā šķīdinātājā un pH"
+    },
+    {
+      "id": "CIT-C7-INTERCEPT",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §7.4 Intercept evidence",
+      "anchor": "n7",
+      "literal": "krustpunkts +0,0017 A"
+    },
+    {
+      "id": "CIT-C7-SLOPE",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §10.7 Calibration slope",
+      "anchor": "n10-7",
+      "literal": "30,39"
+    },
+    {
+      "id": "CIT-C7-RIBOFLAVIN",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §10.8 Molar mass",
+      "anchor": "n10-7",
+      "literal": "376,36"
+    },
+    {
+      "id": "CIT-C7-H",
+      "source_id": "C7-MASTER",
+      "source_class": "master",
+      "locator": "Chemistry_7 §2.4 Photon energy",
+      "anchor": "n2-4",
+      "literal": "6,626"
+    },
+    {
+      "id": "CIT-C5-RATE-DEF",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "anchor": "ch6",
+      "locator": "Chemistry_5 Master, ch6 (Pakāpe, molekularitāte, pusperiods)",
+      "note_lv": "Reakcijas pakāpes un ātruma likuma v = kC^n definīcija."
+    },
+    {
+      "id": "CIT-C5-INTEGRATED",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "anchor": "der-order-integrated",
+      "locator": "Chemistry_5 Master, der-order-integrated (integrālo likumu atvasinājums)",
+      "note_lv": "Trīs integrālie likumi un linearizācijas formas: C=C₀−kt, ln(C/C₀)=−kt, 1/C=1/C₀+kt."
+    },
+    {
+      "id": "CIT-C5-HALFLIFE",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "anchor": "der-order-integrated",
+      "locator": "Chemistry_5 Master, der-order-integrated (pusperioda izteiksmes)",
+      "note_lv": "t½ = C₀/(2k), ln2/k un 1/(kC₀)."
+    },
+    {
+      "id": "CIT-C5-KUNITS",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "anchor": "dose-thalf",
+      "locator": "Chemistry_5 Master, dose-thalf (k vienība un pārrēķins)",
+      "note_lv": "k vienība atkarībā no pakāpes n, atvasināta no v = k·C^n."
+    },
+    {
+      "id": "CIT-C5-GRAPH",
+      "source_id": "C5-MASTER",
+      "source_class": "master",
+      "anchor": "fig-integrated",
+      "locator": "Chemistry_5 Master, fig-integrated (trīs pakāpju koncentrācijas-līknes)",
+      "note_lv": "Koncentrācijas-laika līknes un pirmās pakāpes pusperioda atzīme."
+    }
+  ],
+  "atomic_masses": {
+    "label": "master-grounded",
+    "unit": "dimensionless (relative atomic mass A_r)",
+    "scope_note_lv": "Tabulā ir tikai tie elementi, kuru relatīvo atommasu kāds no septiņiem iesaldētajiem meistariem tieši izdrukā skaitliskā piemērā. Dabiskā oglekļa A_r = 12,011 meistaros nav izdrukāta; tāpēc oglekļa saturošām vielām lieto savienojumu molmasu tabulu (piemēram, glikoze 180,16 g/mol) vai meistara mācīto ¹²C izotopa vērtību A_r = 12. Citas vērtības nevar pievienot bez jauna citēta avota; tabulas paplašināšana ir datu izmaiņa, nevis klusa pievienošana.",
+    "elements": [
+      {
+        "symbol": "H",
+        "name_lv": "ūdeņradis",
+        "value": "1.008",
+        "display_lv": "1,008",
+        "citations": [
+          "CIT-C3-ATOMS"
+        ]
+      },
+      {
+        "symbol": "O",
+        "name_lv": "skābeklis",
+        "value": "15.999",
+        "display_lv": "15,999",
+        "citations": [
+          "CIT-C3-MOLMASS"
+        ]
+      },
+      {
+        "symbol": "Na",
+        "name_lv": "nātrijs",
+        "value": "22.990",
+        "display_lv": "22,990",
+        "citations": [
+          "CIT-C3-MOLMASS"
+        ]
+      },
+      {
+        "symbol": "S",
+        "name_lv": "sērs",
+        "value": "32.06",
+        "display_lv": "32,06",
+        "citations": [
+          "CIT-C3-MOLMASS"
+        ]
+      },
+      {
+        "symbol": "Cl",
+        "name_lv": "hlors",
+        "value": "35.45",
+        "display_lv": "35,45",
+        "citations": [
+          "CIT-C3-CL"
+        ]
+      },
+      {
+        "symbol": "K",
+        "name_lv": "kālijs",
+        "value": "39.098",
+        "display_lv": "39,098",
+        "citations": [
+          "CIT-C3-ATOMS"
+        ]
+      },
+      {
+        "symbol": "Ca",
+        "name_lv": "kalcijs",
+        "value": "40.078",
+        "display_lv": "40,078",
+        "citations": [
+          "CIT-C3-CACL2"
+        ]
+      },
+      {
+        "symbol": "Al",
+        "name_lv": "alumīnijs",
+        "value": "26.982",
+        "display_lv": "26,982",
+        "citations": [
+          "CIT-C1-AL"
+        ]
+      },
+      {
+        "symbol": "Fe",
+        "name_lv": "dzelzs",
+        "value": "55.845",
+        "display_lv": "55,845",
+        "citations": [
+          "CIT-C6-FE"
+        ]
+      },
+      {
+        "symbol": "I",
+        "name_lv": "jods",
+        "value": "126.904",
+        "display_lv": "126,904",
+        "citations": [
+          "CIT-C3-I"
+        ]
+      }
+    ]
+  },
+  "compound_molar_masses": {
+    "label": "master-grounded",
+    "unit": "g/mol",
+    "scope_note_lv": "Savienojumu molmasas ir tieši izdrukātas meistaros vai izriet no meistara darba piemēra. Kur meistars dod gan IUPAC, gan kursa noapaļoto vērtību, abas paliek redzamas: dzinēji lieto working_value, bet atbildes formātu nosaka kursa_rounded. KOH un H2O2 gadījumā viens meistars pats svārstās pēdējā zīmē; šī starpība ir reģistrēta konfliktu reģistrā (N03-OBS-03), nevis paslēpta.",
+    "compounds": [
+      {
+        "formula": "H2O",
+        "name_lv": "ūdens",
+        "working_value": "18.02",
+        "display_lv": "18,02",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C2-WATER"
+        ]
+      },
+      {
+        "formula": "NaCl",
+        "name_lv": "nātrija hlorīds",
+        "working_value": "58.44",
+        "display_lv": "58,44",
+        "course_rounded": "58.5",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "NaOH",
+        "name_lv": "nātrija hidroksīds",
+        "working_value": "39.997",
+        "display_lv": "39,997",
+        "course_rounded": "40",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "KOH",
+        "name_lv": "kālija hidroksīds",
+        "working_value": "56.105",
+        "display_lv": "56,105",
+        "course_rounded": "56",
+        "citations": [
+          "CIT-C3-ATOMS",
+          "CIT-C3-KOH"
+        ]
+      },
+      {
+        "formula": "Na2CO3",
+        "name_lv": "nātrija karbonāts",
+        "working_value": "105.99",
+        "display_lv": "105,99",
+        "course_rounded": "106",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "Na3PO4",
+        "name_lv": "nātrija fosfāts",
+        "working_value": "163.94",
+        "display_lv": "163,94",
+        "course_rounded": "164",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "K2SO4",
+        "name_lv": "kālija sulfāts",
+        "working_value": "174.26",
+        "display_lv": "174,26",
+        "course_rounded": "174",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "CaCl2",
+        "name_lv": "kalcija hlorīds",
+        "working_value": "110.98",
+        "display_lv": "110,98",
+        "course_rounded": "111",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE",
+          "CIT-C3-CACL2"
+        ]
+      },
+      {
+        "formula": "KCl",
+        "name_lv": "kālija hlorīds",
+        "working_value": "74.55",
+        "display_lv": "74,55",
+        "course_rounded": "74.5",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "KI",
+        "name_lv": "kālija jodīds",
+        "working_value": "166.00",
+        "display_lv": "166,00",
+        "course_rounded": "166",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "HCl",
+        "name_lv": "hlorūdeņradis",
+        "working_value": "36.46",
+        "display_lv": "36,46",
+        "course_rounded": "36.5",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "H2SO4",
+        "name_lv": "sērskābe",
+        "working_value": "98.08",
+        "display_lv": "98,08",
+        "course_rounded": "98",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "C6H12O6",
+        "name_lv": "glikoze",
+        "working_value": "180.16",
+        "display_lv": "180,16",
+        "course_rounded": "180",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "H2O2",
+        "name_lv": "ūdeņraža peroksīds",
+        "working_value": "34.0147",
+        "display_lv": "34,0147",
+        "course_rounded": "34.01",
+        "citations": [
+          "CIT-C6-H2O2",
+          "CIT-C3-H2O2"
+        ]
+      },
+      {
+        "formula": "Al(OH)3",
+        "name_lv": "alumīnija hidroksīds",
+        "working_value": "78.00",
+        "display_lv": "78,00",
+        "course_rounded": "78",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "Mg(OH)2",
+        "name_lv": "magnija hidroksīds",
+        "working_value": "58.32",
+        "display_lv": "58,32",
+        "course_rounded": "58",
+        "citations": [
+          "CIT-C3-MOLMASS-TABLE"
+        ]
+      },
+      {
+        "formula": "Al2O3",
+        "name_lv": "alumīnija oksīds",
+        "working_value": "101.961",
+        "display_lv": "101,961",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C1-AL"
+        ]
+      },
+      {
+        "formula": "FeSO4",
+        "name_lv": "dzelzs(II) sulfāts",
+        "working_value": "151.91",
+        "display_lv": "151,91",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C6-FESO4"
+        ]
+      },
+      {
+        "formula": "FeSO4·7H2O",
+        "name_lv": "dzelzs(II) sulfāta heptahidrāts",
+        "working_value": "278.02",
+        "display_lv": "278,02",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C6-FESO4-HYDRATE"
+        ]
+      },
+      {
+        "formula": "KMnO4",
+        "name_lv": "kālija permanganāts",
+        "working_value": "158.034",
+        "display_lv": "158,034",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C6-KMNO4"
+        ]
+      },
+      {
+        "formula": "C17H20N4O6",
+        "name_lv": "riboflavīns",
+        "working_value": "376.36",
+        "display_lv": "376,36",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C7-RIBOFLAVIN"
+        ]
+      },
+      {
+        "formula": "C5H9NO3S",
+        "name_lv": "acetilcisteīns",
+        "working_value": "179.2",
+        "display_lv": "179,2",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C3-ACETYL"
+        ]
+      },
+      {
+        "formula": "C12H22O11",
+        "name_lv": "saharoze",
+        "working_value": "342.3",
+        "display_lv": "342,3",
+        "course_rounded": null,
+        "citations": [
+          "CIT-C3-SUCROSE"
+        ]
+      }
+    ]
+  },
+  "constants": {
+    "label": "master-grounded",
+    "values": [
+      {
+        "id": "N_A",
+        "symbol": "N_A",
+        "name_lv": "Avogadro konstante",
+        "value": "6.02214076e23",
+        "display_lv": "6,02214076·10²³",
+        "unit": "mol^-1",
+        "exactness": "exact",
+        "citations": [
+          "CIT-C3-AVOGADRO"
+        ]
+      },
+      {
+        "id": "R",
+        "symbol": "R",
+        "name_lv": "gāzu konstante",
+        "value": "8.314",
+        "display_lv": "8,314",
+        "unit": "J/(mol·K)",
+        "exactness": "working",
+        "exact_value": "8.314462618",
+        "citations": [
+          "CIT-C6-NERNST"
+        ]
+      },
+      {
+        "id": "F",
+        "symbol": "F",
+        "name_lv": "Faradeja konstante",
+        "value": "96485",
+        "display_lv": "96 485",
+        "unit": "C/mol",
+        "exactness": "working",
+        "citations": [
+          "CIT-C6-NERNST"
+        ]
+      },
+      {
+        "id": "T_STANDARD",
+        "symbol": "T°",
+        "name_lv": "standarta temperatūra",
+        "value": "298.15",
+        "display_lv": "298,15",
+        "unit": "K",
+        "exactness": "defined",
+        "note_lv": "25 °C; Nernsta vienādojumā lietotā T.",
+        "citations": [
+          "CIT-C6-NERNST"
+        ]
+      },
+      {
+        "id": "V_M",
+        "symbol": "V_0",
+        "name_lv": "gāzes molārais tilpums normālos apstākļos",
+        "value": "22.414",
+        "display_lv": "22,414",
+        "unit": "L/mol",
+        "conditions": "0 °C, 101,325 kPa",
+        "exactness": "conditioned",
+        "citations": [
+          "CIT-C1-MOLAR-VOL"
+        ]
+      },
+      {
+        "id": "K_W",
+        "symbol": "K_w",
+        "name_lv": "ūdens jonu reizinājums",
+        "value": "1.0e-14",
+        "display_lv": "1,0·10⁻¹⁴",
+        "unit": "(mol/L)^2",
+        "conditions": "25 °C",
+        "exactness": "conditioned",
+        "citations": [
+          "CIT-C1-KW"
+        ]
+      },
+      {
+        "id": "NERNST_SLOPE",
+        "symbol": "b",
+        "name_lv": "Nernsta slīpums 298,15 K",
+        "value": "0.0592",
+        "display_lv": "0,0592",
+        "unit": "V",
+        "exactness": "working",
+        "exact_value": "0.0591593496857",
+        "citations": [
+          "CIT-C6-NERNST"
+        ]
+      },
+      {
+        "id": "PLANCK_H",
+        "symbol": "h",
+        "name_lv": "Planka konstante",
+        "value": "6.626e-34",
+        "display_lv": "6,626·10⁻³⁴",
+        "unit": "J·s",
+        "exactness": "working",
+        "citations": [
+          "CIT-C7-H"
+        ]
+      },
+      {
+        "id": "STANDARD_PRESSURE",
+        "symbol": "p°",
+        "name_lv": "standarta spiediens",
+        "value": "101.325",
+        "display_lv": "101,325",
+        "unit": "kPa",
+        "exactness": "defined",
+        "citations": [
+          "CIT-C1-MOLAR-VOL"
+        ]
+      },
+      {
+        "id": "LN2",
+        "value": "0.6931471805599453",
+        "unit": "1",
+        "name_lv": "divnieka naturālais logaritms",
+        "basis_lv": "Pirmās pakāpes pusperioda formulā t½ = ln2/k; matemātiska konstante, kas parādās meistara atvasinājumā.",
+        "citations": [
+          "CIT-C5-HALFLIFE"
+        ]
+      }
+    ]
+  },
+  "unit_system": {
+    "label": "master-grounded conversions; measured density is declared separately",
+    "base_units": {
+      "mass": "g",
+      "volume": "L",
+      "amount": "mol",
+      "temperature": "K",
+      "concentration_mass": "g/L",
+      "concentration_amount": "mol/L",
+      "density": "g/mL"
+    },
+    "exactness_vocabulary": {
+      "exact": "Definīcija vai SI attiecība; koeficients ir precīzs.",
+      "defined": "Vienību identitāte (piemēram, 1 mL = 1 cm³).",
+      "conditional": "Der tikai ar nosauktiem nosacījumiem; lietotājs to marķē.",
+      "measured": "Lielums ir mērīts (blīvums); nav universāla koeficienta.",
+      "blocked": "Dimensiju ziņā aizliegts bez papildu lieluma; nekad nepiešķirt fiktīvu koeficientu."
+    },
+    "conversions": [
+      {
+        "id": "mg_to_g",
+        "from": "mg",
+        "to": "g",
+        "from_dimension": "mass",
+        "to_dimension": "mass",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-UNIT-LADDER"
+        ]
+      },
+      {
+        "id": "g_to_mg",
+        "from": "g",
+        "to": "mg",
+        "from_dimension": "mass",
+        "to_dimension": "mass",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-UNIT-LADDER"
+        ]
+      },
+      {
+        "id": "g_to_kg",
+        "from": "g",
+        "to": "kg",
+        "from_dimension": "mass",
+        "to_dimension": "mass",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "kg_to_g",
+        "from": "kg",
+        "to": "g",
+        "from_dimension": "mass",
+        "to_dimension": "mass",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "ml_to_l",
+        "from": "mL",
+        "to": "L",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS",
+          "CIT-C3-UNIT-LADDER"
+        ]
+      },
+      {
+        "id": "l_to_ml",
+        "from": "L",
+        "to": "mL",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "ml_to_cm3",
+        "from": "mL",
+        "to": "cm³",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "cm3_to_ml",
+        "from": "cm³",
+        "to": "mL",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "l_to_dm3",
+        "from": "L",
+        "to": "dm³",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "dm3_to_l",
+        "from": "dm³",
+        "to": "L",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mol_to_mmol",
+        "from": "mol",
+        "to": "mmol",
+        "from_dimension": "amount",
+        "to_dimension": "amount",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mmol_to_mol",
+        "from": "mmol",
+        "to": "mol",
+        "from_dimension": "amount",
+        "to_dimension": "amount",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mol_to_umol",
+        "from": "mol",
+        "to": "µmol",
+        "from_dimension": "amount",
+        "to_dimension": "amount",
+        "factor": {
+          "num": 1000000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "umol_to_mol",
+        "from": "µmol",
+        "to": "mol",
+        "from_dimension": "amount",
+        "to_dimension": "amount",
+        "factor": {
+          "num": 1,
+          "den": 1000000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "g_per_ml_to_kg_per_m3",
+        "from": "g/mL",
+        "to": "kg/m³",
+        "from_dimension": "density",
+        "to_dimension": "density",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-DENSITY-UNITS"
+        ]
+      },
+      {
+        "id": "kg_per_m3_to_g_per_ml",
+        "from": "kg/m³",
+        "to": "g/mL",
+        "from_dimension": "density",
+        "to_dimension": "density",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-DENSITY-UNITS"
+        ]
+      },
+      {
+        "id": "g_per_ml_to_kg_per_l",
+        "from": "g/mL",
+        "to": "kg/L",
+        "from_dimension": "density",
+        "to_dimension": "density",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-DENSITY-UNITS"
+        ]
+      },
+      {
+        "id": "kg_per_l_to_g_per_ml",
+        "from": "kg/L",
+        "to": "g/mL",
+        "from_dimension": "density",
+        "to_dimension": "density",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-DENSITY-UNITS"
+        ]
+      },
+      {
+        "id": "g_per_l_to_mg_per_l",
+        "from": "g/L",
+        "to": "mg/L",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mg_per_l_to_g_per_l",
+        "from": "mg/L",
+        "to": "g/L",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mg_per_ml_to_g_per_l",
+        "from": "mg/mL",
+        "to": "g/L",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "g_per_l_to_mg_per_ml",
+        "from": "g/L",
+        "to": "mg/mL",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mol_per_l_to_mmol_per_l",
+        "from": "mol/L",
+        "to": "mmol/L",
+        "from_dimension": "concentration_amount",
+        "to_dimension": "concentration_amount",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "mmol_per_l_to_mol_per_l",
+        "from": "mmol/L",
+        "to": "mol/L",
+        "from_dimension": "concentration_amount",
+        "to_dimension": "concentration_amount",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "exact",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "percent_to_fraction",
+        "from": "%",
+        "to": "fraction",
+        "from_dimension": "dimensionless",
+        "to_dimension": "dimensionless",
+        "factor": {
+          "num": 1,
+          "den": 100
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS",
+          "CIT-C3-PERCENT"
+        ]
+      },
+      {
+        "id": "fraction_to_percent",
+        "from": "fraction",
+        "to": "%",
+        "from_dimension": "dimensionless",
+        "to_dimension": "dimensionless",
+        "factor": {
+          "num": 100,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS",
+          "CIT-C3-PERCENT"
+        ]
+      },
+      {
+        "id": "percent_m_v_to_fraction_m_v",
+        "from": "% (m/V)",
+        "to": "fraction (m/V)",
+        "from_dimension": "mass_per_volume_fraction",
+        "to_dimension": "mass_per_volume_fraction",
+        "factor": {
+          "num": 1,
+          "den": 100
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "fraction_m_v_to_percent_m_v",
+        "from": "fraction (m/V)",
+        "to": "% (m/V)",
+        "from_dimension": "mass_per_volume_fraction",
+        "to_dimension": "mass_per_volume_fraction",
+        "factor": {
+          "num": 100,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "fraction_m_v_to_g_per_l",
+        "from": "fraction (m/V)",
+        "to": "g/L",
+        "from_dimension": "mass_per_volume_fraction",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1000,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "g_per_l_to_fraction_m_v",
+        "from": "g/L",
+        "to": "fraction (m/V)",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "mass_per_volume_fraction",
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "exactness": "defined",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "c_to_k",
+        "from": "°C",
+        "to": "K",
+        "from_dimension": "temperature",
+        "to_dimension": "temperature",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "offset",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-TEMP"
+        ],
+        "offset": {
+          "num": 27315,
+          "den": 100
+        }
+      },
+      {
+        "id": "k_to_c",
+        "from": "K",
+        "to": "°C",
+        "from_dimension": "temperature",
+        "to_dimension": "temperature",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "defined",
+        "conversion_class": "offset",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-TEMP"
+        ],
+        "offset": {
+          "num": -27315,
+          "den": 100
+        }
+      },
+      {
+        "id": "mg_per_l_to_ppm",
+        "from": "mg/L",
+        "to": "ppm",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "dimensionless",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "conditional",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ],
+        "condition_lv": "Tikai atšķaidītā ūdens šķīdumā, kur ρ ≈ 1 g/mL; rezultāts ir aptuvens un jāmarķē."
+      },
+      {
+        "id": "ppm_to_mg_per_l",
+        "from": "ppm",
+        "to": "mg/L",
+        "from_dimension": "dimensionless",
+        "to_dimension": "concentration_mass",
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "exactness": "conditional",
+        "conversion_class": "multiplicative",
+        "directionality": "bidirectional",
+        "citations": [
+          "CIT-C2-UNITS"
+        ],
+        "condition_lv": "Tikai atšķaidītā ūdens šķīdumā, kur ρ ≈ 1 g/mL; rezultāts ir aptuvens un jāmarķē."
+      },
+      {
+        "id": "mass_to_volume_direct",
+        "from": "mg",
+        "to": "L",
+        "from_dimension": "mass",
+        "to_dimension": "volume",
+        "factor": null,
+        "exactness": "blocked",
+        "conversion_class": "blocked",
+        "directionality": "one-way",
+        "citations": [
+          "CIT-PROG-MGL"
+        ],
+        "reason_lv": "Masa un tilpums nav savstarpēji pārvēršami bez blīvuma ρ; programma pati satur kļūdainu mg⇔g⇔L piemēru (C02). Šis pārrēķins ir strukturāli bloķēts."
+      },
+      {
+        "id": "volume_to_mass_direct",
+        "from": "L",
+        "to": "mg",
+        "from_dimension": "volume",
+        "to_dimension": "mass",
+        "factor": null,
+        "exactness": "blocked",
+        "conversion_class": "blocked",
+        "directionality": "one-way",
+        "citations": [
+          "CIT-PROG-MGL"
+        ],
+        "reason_lv": "Tilpumu pārvērš masā tikai ar ρ; tiešs L→mg ir dimensiju kļūda (V-04)."
+      }
+    ],
+    "chains": [
+      {
+        "id": "mass_mg_to_g",
+        "kind": "multiplicative",
+        "from": "mg",
+        "to": "g",
+        "from_dimension": "mass",
+        "to_dimension": "mass",
+        "steps": [
+          {
+            "conversion": "mg_to_g",
+            "power": 1,
+            "position": "numerator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "exact",
+        "citations": [
+          "CIT-C3-UNIT-LADDER"
+        ]
+      },
+      {
+        "id": "volume_ml_to_l",
+        "kind": "multiplicative",
+        "from": "mL",
+        "to": "L",
+        "from_dimension": "volume",
+        "to_dimension": "volume",
+        "steps": [
+          {
+            "conversion": "ml_to_l",
+            "power": 1,
+            "position": "numerator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1000
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "exact",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "concentration_mg_per_ml_to_g_per_l",
+        "kind": "multiplicative",
+        "from": "mg/mL",
+        "to": "g/L",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "steps": [
+          {
+            "conversion": "mg_to_g",
+            "power": 1,
+            "position": "numerator"
+          },
+          {
+            "conversion": "ml_to_l",
+            "power": -1,
+            "position": "denominator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "exact",
+        "citations": [
+          "CIT-C2-UNITS",
+          "CIT-C3-UNIT-LADDER"
+        ],
+        "note_lv": "1 mg/mL = 1 g/L; šī ir tā pati attiecība, ko C2 tabula dod kā gatavu. Kompozīcijas pārbaude to pārrēķina no mg→g un mL→L, tāpēc kļūda koeficientos nevar palikt nepamanīta."
+      },
+      {
+        "id": "concentration_mg_per_l_to_g_per_ml",
+        "kind": "multiplicative",
+        "from": "mg/L",
+        "to": "g/mL",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "steps": [
+          {
+            "conversion": "mg_to_g",
+            "power": 1,
+            "position": "numerator"
+          },
+          {
+            "conversion": "l_to_ml",
+            "power": -1,
+            "position": "denominator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1000000
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "exact",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "concentration_g_per_ml_to_kg_per_l",
+        "kind": "multiplicative",
+        "from": "g/mL",
+        "to": "kg/L",
+        "from_dimension": "concentration_mass",
+        "to_dimension": "concentration_mass",
+        "steps": [
+          {
+            "conversion": "g_to_kg",
+            "power": 1,
+            "position": "numerator"
+          },
+          {
+            "conversion": "ml_to_l",
+            "power": -1,
+            "position": "denominator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "exact",
+        "citations": [
+          "CIT-C2-UNITS"
+        ]
+      },
+      {
+        "id": "percent_m_v_to_g_per_l",
+        "kind": "multiplicative",
+        "from": "% (m/V)",
+        "to": "g/L",
+        "from_dimension": "mass_per_volume_fraction",
+        "to_dimension": "concentration_mass",
+        "steps": [
+          {
+            "conversion": "percent_m_v_to_fraction_m_v",
+            "power": 1,
+            "position": "numerator"
+          },
+          {
+            "conversion": "fraction_m_v_to_g_per_l",
+            "power": 1,
+            "position": "numerator"
+          }
+        ],
+        "factor": {
+          "num": 10,
+          "den": 1
+        },
+        "offset": {
+          "num": 0,
+          "den": 1
+        },
+        "exactness": "defined",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ],
+        "note_lv": "1 % (m/V) = 10 g/L; tikai tad, ja procenta bāze ir m/V."
+      },
+      {
+        "id": "temperature_c_to_k",
+        "kind": "affine",
+        "from": "°C",
+        "to": "K",
+        "from_dimension": "temperature",
+        "to_dimension": "temperature",
+        "steps": [
+          {
+            "conversion": "c_to_k",
+            "power": 1,
+            "position": "numerator"
+          }
+        ],
+        "factor": {
+          "num": 1,
+          "den": 1
+        },
+        "offset": {
+          "num": 27315,
+          "den": 100
+        },
+        "exactness": "defined",
+        "citations": [
+          "CIT-C2-TEMP"
+        ]
+      },
+      {
+        "id": "molarity_to_mass_concentration",
+        "kind": "symbolic",
+        "from": "mol/L",
+        "to": "g/L",
+        "from_dimension": "concentration_amount",
+        "to_dimension": "concentration_mass",
+        "formula": "γ = c · M",
+        "requires": [
+          "molar_mass"
+        ],
+        "exactness": "defined",
+        "citations": [
+          "CIT-C3-GAMMA"
+        ],
+        "note_lv": "Nav fiksēts koeficients: M ir vielas molmasa. Dzinējs to risina ar dimensiju un molmasu, nevis ar konstanti."
+      },
+      {
+        "id": "density_mass_to_volume",
+        "kind": "symbolic",
+        "from": "g",
+        "to": "mL",
+        "from_dimension": "mass",
+        "to_dimension": "volume",
+        "formula": "V = m / ρ",
+        "requires": [
+          "density"
+        ],
+        "exactness": "measured",
+        "citations": [
+          "CIT-C2-DENSITY-UNITS",
+          "CIT-C2-DENSITY-REL"
+        ],
+        "note_lv": "V-04 dimensiju vārtu otrā puse: masa↔tilpums ir iespējams tikai ar deklarētu ρ. Tiešā mg→L konversija ir bloķēta."
+      }
+    ],
+    "measured_relations": [
+      {
+        "id": "density_of_solution",
+        "symbol": "ρ",
+        "name_lv": "šķīduma blīvums",
+        "formula": "ρ = m(šķīdums) / V(šķīdums)",
+        "unit": "g/mL",
+        "exactness": "measured",
+        "requires": [
+          "temperature",
+          "composition"
+        ],
+        "citations": [
+          "CIT-C2-DENSITY-UNITS",
+          "CIT-C1-DENSITY"
+        ],
+        "note_lv": "ρ ir visa šķīduma masa uz tilpumu; γ = m(viela)/V(šķīdums) ir citas lielums. Tos nedrīkst aizstāt."
+      },
+      {
+        "id": "nacl_density_relation_20c",
+        "formula": "ρ = 0,0073 · w + 0,9979",
+        "unit": "g/mL",
+        "conditions": "NaCl ūdens šķīdums, 20 °C, w procentos",
+        "exactness": "measured",
+        "citations": [
+          "CIT-C2-DENSITY-REL"
+        ],
+        "note_lv": "Empīriska taisne no C2; der tikai deklarētajā diapazonā. Nav universāla ūdens blīvuma konstante."
+      }
+    ]
+  },
+  "concentration_bases": {
+    "label": "master-grounded definitions; default basis is a course convention",
+    "citations": [
+      "CIT-C3-BASES",
+      "CIT-C3-PERCENT"
+    ],
+    "default_for_course": "m_m",
+    "default_reason_lv": "C3 saka: \"Kursā aprēķini notiek ar masas daļu (m/m)\". Tāpēc kursa noklusējums ir m/m, bet tas nav atļauja lietot neapzīmētu procentu: katrai procenta vērtībai jānosauc bāze. Medicīnas etiķetēs bieži ir m/V; tad to nosauc un marķē kā pieņēmumu.",
+    "bases": [
+      {
+        "id": "m_m",
+        "name_lv": "masas daļa",
+        "symbol": "w",
+        "definition_lv": "vielas masa uz šķīduma masu",
+        "formula": "w = m(B) / m(šķīdums)",
+        "unit": "1 (bez dimensijas)",
+        "percent_form": "w × 100 %",
+        "citations": [
+          "CIT-C3-W",
+          "CIT-C3-PERCENT"
+        ]
+      },
+      {
+        "id": "m_v",
+        "name_lv": "masas koncentrācija",
+        "symbol": "γ",
+        "definition_lv": "vielas masa uz šķīduma tilpumu",
+        "formula": "γ = m(B) / V(šķīdums)",
+        "unit": "g/L",
+        "percent_form": "γ / 10 = % (m/V)",
+        "citations": [
+          "CIT-C3-GAMMA",
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "v_v",
+        "name_lv": "tilpuma daļa",
+        "symbol": "φ",
+        "definition_lv": "šķīstošās šķidrās vielas tilpums uz šķīduma tilpumu",
+        "formula": "φ = V(B) / V(šķīdums)",
+        "unit": "1 (bez dimensijas)",
+        "percent_form": "φ × 100 %",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "id": "molar",
+        "name_lv": "molārā koncentrācija",
+        "symbol": "c",
+        "definition_lv": "vielas daudzums uz šķīduma tilpumu",
+        "formula": "c = n(B) / V(šķīdums)",
+        "unit": "mol/L",
+        "percent_form": "nav tieša procenta ekvivalenta",
+        "citations": [
+          "CIT-C3-C"
+        ]
+      }
+    ],
+    "label_required": true,
+    "unlabeled_percent": "withhold scoring; require the basis or a stated assumption",
+    "medical_examples": [
+      {
+        "label": "0,9 % NaCl",
+        "basis": "m/V",
+        "status": "assumption",
+        "value": "9,0 g/L",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "label": "5 % glikoze",
+        "basis": "m/V",
+        "status": "assumption",
+        "value": "50 g/L",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      },
+      {
+        "label": "70 % etanols",
+        "basis": "V/V",
+        "status": "convention, not confirmed by source",
+        "value": "700 mL/L",
+        "citations": [
+          "CIT-C3-PERCENT-MV"
+        ]
+      }
+    ],
+    "dissent_lv": "C1 formula tabulā 22 % NaOH piemērs lieto ρ = 1,25 g/mL, tāpēc tur procentu pārrēķins iet caur blīvumu; C3 noklusējums ir m/m, bet medicīnas piemēros 0,9 % NaCl un 5 % glikoze tiek pieņemti kā m/V. Šī nav viena universāla bāze: artefakts nosaka m/m kā kursa noklusējumu un prasa katrā lietojumā nosaukt bāzi. Atšķirība paliek redzama, nevis izlīdzināta klusējot."
+  },
+  "percentage_basis": {
+    "label": "master-grounded rule; default is a course convention",
+    "default_basis": "m_m",
+    "allowed_bases": [
+      "m_m",
+      "m_v",
+      "v_v"
+    ],
+    "label_required": true,
+    "unlabeled_percent": "withhold scoring",
+    "rule_lv": "Nekad neparādīt neapzīmētu procentu. Katrai procenta vērtībai jānosauc m/m, m/V vai V/V. Kursa noklusējums ir m/m (C3); medicīnas etiķešu m/V lietojums ir jāmarķē kā pieņēmums. Ja bāze nav zināma, atbildi nevērtēt un prasīt bāzi, nevis pieņemt klusējot.",
+    "v02_binding": "N11 (figures) and N17 (engines) enforce this rule.",
+    "citations": [
+      "CIT-C3-PERCENT",
+      "CIT-C3-PERCENT-MV",
+      "CIT-C1-DENSITY"
+    ]
+  },
+  "density": {
+    "label": "master-grounded measured relation; V-04 rule",
+    "symbol": "ρ",
+    "unit": "g/mL",
+    "definition_lv": "ρ = m(šķīdums) / V(šķīdums)",
+    "mass_volume_rule_lv": "Masa↔tilpums ir iespējams tikai ar deklarētu ρ (un temperatūru/kompozīciju). ρ nav universāla konstante un nav tas pats, kas γ. Tiešs mg→L, g→mL vai mg→g→L pārrēķins bez ρ ir dimensiju kļūda un tiek bloķēts.",
+    "blocked_conversion_ids": [
+      "mass_to_volume_direct",
+      "volume_to_mass_direct"
+    ],
+    "symbolic_chain_id": "density_mass_to_volume",
+    "v04_chain_id": "concentration_mg_per_ml_to_g_per_l",
+    "gamma_vs_rho_lv": "γ = m(viela)/V(šķīdums) ir masas koncentrācija; ρ = m(šķīdums)/V(šķīdums) ir blīvums. C2 brīdina: γ nav ρ. To sajaukšana ir atsevišķa kļūda, ne tikai vienību kļūda.",
+    "reference_relations": [
+      {
+        "id": "nacl_20c",
+        "formula": "ρ = 0,0073 · w + 0,9979",
+        "unit": "g/mL",
+        "conditions": "NaCl, 20 °C, w %",
+        "citations": [
+          "CIT-C2-DENSITY-REL"
+        ]
+      }
+    ],
+    "citations": [
+      "CIT-C2-DENSITY-UNITS",
+      "CIT-C2-DENSITY-REL",
+      "CIT-C1-DENSITY",
+      "CIT-PROG-MGL"
+    ]
+  },
+  "titration": {
+    "label": "master-grounded reading rules; V-05 wording rule",
+    "meniscus": {
+      "rule_lv": "Nolasa acu līmenī. Ūdens šķīdumiem (gaišiem) nolasa meniska apakšējo punktu; tumšiem šķīdumiem (piemēram, KMnO₄) nolasa augšējo malu. C2 un C6 nav pretrunā: C2 dod abus gadījumus, C6 attēls rāda tumšu KMnO₄ titrantu.",
+      "eye_level": true,
+      "clear_solution": "lower_meniscus",
+      "dark_solution": "upper_edge",
+      "citations": [
+        "CIT-C2-MENISCUS",
+        "CIT-C2-MENISCUS-DARK",
+        "CIT-C6-MENISCUS"
+      ],
+      "dissent_note_lv": "C6 attēlā ir uzraksts \"menisks, augšējā mala\", un C6 kļūdu tabula nosauc apakšējā meniska nolasīšanu par kļūdu. C2 skaidri saka: ūdens šķīdumiem apakšējo, tumšiem — augšējo. Tā kā C6 titrants ir tumšs KMnO₄, abi noteikumi saskan; artefakts tos apvieno vienā noteikumā ar diviem gadījumiem."
+    },
+    "burette": {
+      "scale_direction": "increases_downward",
+      "zero_at_top": true,
+      "reading_rule_lv": "Nolasi pieraksta tieši; izlietais tilpums = beigu nolasījums − sākuma nolasījums.",
+      "never_subtract_from_nominal": true,
+      "reported_decimals": 2,
+      "division_ml": "0.1",
+      "reading_uncertainty_ml": "0.05",
+      "concordance_limit_ml": "0.10",
+      "citations": [
+        "CIT-C2-BURETTE",
+        "CIT-C6-BURETTE",
+        "CIT-C2-BURETTE-READ",
+        "CIT-C6-CONCORDANCE"
+      ]
+    },
+    "endpoint": {
+      "equivalence_definition_lv": "Teorētiskais punkts, kurā n(titrants)·z(titrants) = n(analīts)·z(analīts).",
+      "endpoint_definition_lv": "Novērojamais signāls (piemēram, pirmais noturīgais vāji rozā), kas norāda titrēšanas beigas.",
+      "wording_rule_lv": "Tekstā un attēlā \"ekvivalences punkts\" un \"beigu punkts\" vienmēr jānosauc atsevišķi. Beigu punktu nekad nedefinē kā ekvivalences punktu. Ja abi parādās, jāpaskaidro, ka starpība ir titrēšanas kļūda (aptuveni viens pilieniņš).",
+      "persistence_criterion": "supplied_by_task",
+      "no_universal_time": true,
+      "difference_lv": "Aptuveni viens titranta pilieniņš; to nevar novērst ar laika normu.",
+      "citations": [
+        "CIT-C6-ENDPOINT",
+        "CIT-C6-ENDPOINT-FIRST",
+        "CIT-C6-CONCORDANCE"
+      ],
+      "v05_note_lv": "V-05 risinājums: beigu punkta noturības kritēriju dod konkrētais uzdevums (piemēram, \"krāsa, kas pēc laika neizzūd\"), nevis universāls laiks. C07 prasa tieši to: \"No invented universal time.\""
+    }
+  },
+  "potentials": {
+    "label": "master-grounded convention; V-03 rule",
+    "default_convention": "E_zero",
+    "symbols": [
+      {
+        "id": "E_zero",
+        "symbol": "E°",
+        "name_lv": "standartpotenciāls",
+        "conditions": {
+          "pH": "0",
+          "temperature_K": "298.15",
+          "activities": "unit activities and pressures"
+        },
+        "when_lv": "Tikai pie standarta nosacījumiem; nav faktiskais potenciāls citā pH.",
+        "citations": [
+          "CIT-C6-E-CONV"
+        ]
+      },
+      {
+        "id": "E_actual",
+        "symbol": "E",
+        "name_lv": "faktiskais potenciāls",
+        "conditions": {
+          "pH": "any",
+          "temperature_K": "298.15 for the 0.0592 form",
+          "activities": "must be declared"
+        },
+        "when_lv": "Jebkuros apstākļos, bet tikai ar nosauktām aktivitātēm/koncentrācijām; Nernsts saista E ar E°.",
+        "citations": [
+          "CIT-C6-NERNST"
+        ]
+      },
+      {
+        "id": "E_prime",
+        "symbol": "E°′",
+        "name_lv": "bioloģiskais standartpotenciāls",
+        "conditions": {
+          "pH": "7.0",
+          "temperature_K": "not named in the biochemical excerpt",
+          "activities": "biochemical table convention"
+        },
+        "formula": "E°′ = E° − 0,0592 · (m/n) · pH",
+        "when_lv": "Tikai pH 7 un tikai salīdzinājumā ar citiem E°′; nekad vienā darba kolonnā ar E°.",
+        "citations": [
+          "CIT-C6-EPRIME",
+          "CIT-C6-EPRIME-VALUES"
+        ]
+      }
+    ],
+    "mixing_rule_lv": "Viena tabula – viena konvencija. E° un E°′ nedrīkst stāvēt vienā darba kolonnā. Ja tabulā H⁺/H₂ ir 0,00 V, tā ir E°; ja −0,414 V, tā ir E°′. Sajaukšana var apgriezt šķietamo elektronu plūsmas virzienu.",
+    "nernst": {
+      "equation": "E = E° + (0,0592 / n) · lg([Ox] / [Red])",
+      "temperature_K": "298.15",
+      "slope_V": "0.0592",
+      "electron_count_symbol": "n",
+      "citations": [
+        "CIT-C6-NERNST"
+      ]
+    },
+    "cell_emf": {
+      "equation": "E_cell = E(cathode) − E(anode)",
+      "sign_rule_lv": "Katods ir pozitīvākais elektrods; E_cell > 0.",
+      "citations": [
+        "CIT-C6-POTENTIALS"
+      ]
+    },
+    "intensive": true,
+    "intensive_rule_lv": "E° ir intensīvs lielums: pusreakcijas koeficients to nereizina. ΔG° = −zFΔE° ir tas, kas mainās līdz ar elektronu skaitu.",
+    "working_precision_V": "0.01",
+    "precision_rule_lv": "Darba tabulās E° citē līdz 0,01 V; trešo decimāldaļu rāda tikai tad, ja to prasa avots vai pārbaude.",
+    "reference_values": [
+      {
+        "id": "Cu2_Cu",
+        "couple": "Cu²⁺/Cu",
+        "value": "0.337",
+        "unit": "V",
+        "convention": "E_zero",
+        "citations": [
+          "CIT-C6-POTENTIALS"
+        ]
+      },
+      {
+        "id": "Zn2_Zn",
+        "couple": "Zn²⁺/Zn",
+        "value": "-0.763",
+        "unit": "V",
+        "convention": "E_zero",
+        "citations": [
+          "CIT-C6-POTENTIALS"
+        ]
+      },
+      {
+        "id": "Fe3_Fe2",
+        "couple": "Fe³⁺/Fe²⁺",
+        "value": "0.77",
+        "unit": "V",
+        "convention": "E_zero",
+        "citations": [
+          "CIT-C6-POTENTIALS"
+        ]
+      },
+      {
+        "id": "O2_H2O",
+        "couple": "O₂/H₂O",
+        "value": "1.229",
+        "unit": "V",
+        "convention": "E_zero",
+        "citations": [
+          "CIT-C6-EPRIME-VALUES"
+        ]
+      },
+      {
+        "id": "H_H2",
+        "couple": "H⁺/H₂",
+        "value": "0.00",
+        "unit": "V",
+        "convention": "E_zero",
+        "citations": [
+          "CIT-C6-EPRIME-VALUES"
+        ]
+      },
+      {
+        "id": "H_H2_prime",
+        "couple": "H⁺/H₂",
+        "value": "-0.414",
+        "unit": "V",
+        "convention": "E_prime",
+        "citations": [
+          "CIT-C6-EPRIME-VALUES"
+        ]
+      },
+      {
+        "id": "O2_H2O_prime",
+        "couple": "O₂/H₂O",
+        "value": "0.815",
+        "unit": "V",
+        "convention": "E_prime",
+        "citations": [
+          "CIT-C6-EPRIME-VALUES"
+        ]
+      }
+    ],
+    "reference_scope_lv": "Šīs ir meistara darba vērtības konvenciju demonstrācijai, nevis pilnīga primāro elektrodu tabula. Pilnā C6 13.A tabula paliek avots; vērtības nedrīkst paplašināt bez jauna citēta ieraksta."
+  },
+  "thermodynamics": {
+    "label": "master-grounded convention; C04 resolution",
+    "temperature_unit": "K",
+    "temperature_rule_lv": "Termodinamiskajos vienādojumos T ir kelvinos; °C lieto tikai ar skaidru pārrēķinu T/K = t/°C + 273,15.",
+    "sign_convention": {
+      "course_form": "Q = ΔU + A",
+      "iupac_form": "ΔU = q + w",
+      "course_meaning_lv": "Q ir sistēmas uzņemtais siltums (ieplūst sistēmā); A ir sistēmas veiktais darbs pret apkārtni (izplūst no sistēmas); A = pΔV.",
+      "iupac_meaning_lv": "w ir apkārtnes veiktais darbs pār sistēmu; w = −A = −pΔV.",
+      "choice_lv": "Kursa tekstā lieto Q = ΔU + A; IUPAC formu dod līdzās, lai zīmes netiktu sajauktas. Viena uzdevuma ietvaros lieto vienu formu.",
+      "citations": [
+        "CIT-C4-SIGN",
+        "CIT-C4-IUPAC"
+      ]
+    },
+    "enthalpy": {
+      "definition": "H = U + pV",
+      "reaction_enthalpy": "ΔH = H(produkti) − H(izejvielas)",
+      "exothermic": "ΔH < 0",
+      "endothermic": "ΔH > 0",
+      "q_p_rule_lv": "q_p = ΔH tikai konstantā spiedienā, ja vienīgais darbs ir tilpuma darbs.",
+      "citations": [
+        "CIT-C4-ENTHALPY"
+      ]
+    },
+    "gibbs": {
+      "equation": "ΔG = ΔH − TΔS",
+      "spontaneity_lv": "Konstantā T un p process ir patvaļīgs, ja ΔG < 0; līdzsvars ΔG = 0; nav patvaļīgs, ja ΔG > 0.",
+      "citations": [
+        "CIT-C4-GIBBS"
+      ]
+    },
+    "c04_note_lv": "C04 prasa skaidru sistēmu, kelvinus, konsekventas enerģijas vienības un nosacījumus. Šis ieraksts tos nosaka; N13 un N17 tos lieto, nevis izgudro."
+  },
+  "spectrophotometry": {
+    "label": "master-grounded scope rules; V-06 and V-07 resolutions",
+    "wavelength": {
+      "value_nm": "440",
+      "status": "course instrument setting",
+      "literature_max_nm": "444",
+      "flatness_claim": "bounded inference, not a measurement",
+      "rule_lv": "440 nm ir kursa iestatījums, nevis no parauga spektra nolasīts maksimums. Literatūrā riboflavīna maksimums ūdenī ir 444 nm, bet tas neapraksta šī darba šķīdinātāju, pH un joslas platumu. Apgalvojums par \"plakanu maksimumu pie 440 nm\" ir ierobežots secinājums, nevis mērījums; to nedrīkst keyot kā faktu.",
+      "citations": [
+        "CIT-C7-440",
+        "CIT-C7-444",
+        "CIT-C7-FLAT"
+      ]
+    },
+    "optical_path": {
+      "value_cm": "1.0",
+      "status": "declared assumption, not verified for the actual cuvette",
+      "rule_lv": "Standarta kivete ir 10 mm; protokolā faktiskais biezums nav minēts. ε mainās proporcionāli l; tāpēc katrā uzdevumā jānosauc pieņemtais l = 1 cm un jāmarķē kā pieņēmums, ja tas nav izmērīts.",
+      "citations": [
+        "CIT-C7-PATH",
+        "CIT-C7-CUVETTE"
+      ]
+    },
+    "calibration": {
+      "model_required": true,
+      "allowed_models": [
+        "linear_regression_free_intercept",
+        "through_zero_fixed_intercept"
+      ],
+      "model_rule_lv": "Katrs uzdevums nosauc modeli: brīva regresija A = a·c + b vai taisne caur nulli b = 0. Tos nedrīkst sajaukt.",
+      "blank_required": true,
+      "intercept_reported": true,
+      "linear_range": "declared per record; no extrapolation beyond the standards span",
+      "matrix_match": "state the solvent/pH match or state its absence",
+      "r_squared_is_not_validation": true,
+      "no_extrapolation_rule_lv": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+      "citations": [
+        "CIT-C7-CALIB",
+        "CIT-C7-NOEXTRAP",
+        "CIT-C7-MATRIX",
+        "CIT-C7-INTERCEPT",
+        "CIT-C7-SLOPE"
+      ]
+    }
+  },
+  "tolerances": {
+    "label": "PROPOSED training policy",
+    "rationale_lv": "Programma nenosaka pieļaujamās atbildes kļūdas, punktu svarus vai noapaļošanas tiesības. Tāpēc visas skaitliskās tolerances šeit ir PROPOSED mācību politika, nevis oficiāla prasība. Kur meistars dod instrumenta nolasīšanas nenoteiktību (piemēram, biretei ±0,05 mL), tā ir master-grounded un kalpo par tolerances pamatu; pats vērtēšanas slieksnis paliek PROPOSED.",
+    "master_grounded_instrument_uncertainty": [
+      {
+        "id": "burette_reading",
+        "value": "0.05",
+        "unit": "mL",
+        "basis_lv": "Biretes iedaļa 0,1 mL, nolasījuma kļūda ±0,05 mL (C2).",
+        "citations": [
+          "CIT-C2-BURETTE-READ"
+        ]
+      },
+      {
+        "id": "b_class_glassware",
+        "value": "0.5",
+        "unit": "% of nominal volume",
+        "basis_lv": "B klases mērtraukiem kursa konvencija 0,5 % no nominālā tilpuma (C2).",
+        "citations": [
+          "CIT-C2-TOLERANCE"
+        ]
+      },
+      {
+        "id": "titration_concordance",
+        "value": "0.10",
+        "unit": "mL",
+        "basis_lv": "Titru starpība starp mazāko un lielāko nedrīkst pārsniegt 0,10 mL (C6).",
+        "citations": [
+          "CIT-C6-CONCORDANCE"
+        ]
+      }
+    ],
+    "quantity_classes": [
+      {
+        "id": "burette_volume",
+        "quantity_lv": "biretes izlietotais tilpums",
+        "unit": "mL",
+        "absolute": {
+          "value": "0.05",
+          "unit": "mL",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Nolasījuma nenoteiktība ±0,05 mL; vērtēšanas logs ir PROPOSED.",
+        "note_lv": ""
+      },
+      {
+        "id": "glassware_volume",
+        "quantity_lv": "mērtrauka tilpums",
+        "unit": "mL",
+        "absolute": {
+          "value": "0.5",
+          "unit": "mL",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "100 mL mērkolbas B klases 0,5 % = 0,5 mL; citiem traukiem lieto atsevišķu aprēķinu, nevis vienu universālu logu.",
+        "note_lv": ""
+      },
+      {
+        "id": "mass",
+        "quantity_lv": "masa",
+        "unit": "g",
+        "absolute": {
+          "value": "0.01",
+          "unit": "g",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Analītiskie svari ±0,0001 g; mācību atbildēm PROPOSED logs 0,01 g.",
+        "note_lv": ""
+      },
+      {
+        "id": "concentration_molar",
+        "quantity_lv": "molārā koncentrācija",
+        "unit": "mol/L",
+        "absolute": {
+          "value": "0.005",
+          "unit": "mol/L",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Atvasināts no tilpuma un molmasas; PROPOSED logs.",
+        "note_lv": ""
+      },
+      {
+        "id": "concentration_mass",
+        "quantity_lv": "masas koncentrācija",
+        "unit": "g/L",
+        "absolute": {
+          "value": "0.05",
+          "unit": "g/L",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Atvasināts no masas un tilpuma; PROPOSED logs.",
+        "note_lv": ""
+      },
+      {
+        "id": "percentage_point",
+        "quantity_lv": "procenta punkts",
+        "unit": "%",
+        "absolute": {
+          "value": "0.05",
+          "unit": "%",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "C2 blīvuma piemērā lietotā ±0,05 procentpunktu josla; vērtēšanai PROPOSED.",
+        "note_lv": ""
+      },
+      {
+        "id": "ph",
+        "quantity_lv": "pH",
+        "unit": "pH",
+        "absolute": {
+          "value": "0.05",
+          "unit": "pH",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "pH ir logaritmisks lielums; PROPOSED logs 0,05.",
+        "note_lv": ""
+      },
+      {
+        "id": "potential",
+        "quantity_lv": "redokspotenciāls",
+        "unit": "V",
+        "absolute": {
+          "value": "0.01",
+          "unit": "V",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Meistars darba tabulās citē E° līdz 0,01 V; PROPOSED logs 0,01 V.",
+        "note_lv": ""
+      },
+      {
+        "id": "temperature",
+        "quantity_lv": "temperatūra",
+        "unit": "K",
+        "absolute": {
+          "value": "0.5",
+          "unit": "K",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Termodinamikā K; PROPOSED logs 0,5 K.",
+        "note_lv": ""
+      },
+      {
+        "id": "energy",
+        "quantity_lv": "enerģija uz molu",
+        "unit": "kJ/mol",
+        "absolute": {
+          "value": "1.0",
+          "unit": "kJ/mol",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Termodinamisko tabulu precizitāte; PROPOSED logs 1,0 kJ/mol.",
+        "note_lv": ""
+      },
+      {
+        "id": "wavelength",
+        "quantity_lv": "viļņa garums",
+        "unit": "nm",
+        "absolute": {
+          "value": "1",
+          "unit": "nm",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "440 nm ir kursa iestatījums; PROPOSED logs 1 nm.",
+        "note_lv": ""
+      },
+      {
+        "id": "absorbance",
+        "quantity_lv": "absorbance",
+        "unit": "A",
+        "absolute": {
+          "value": "0.003",
+          "unit": "A",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "C7 atlikumu izkliede s_y ≈ 0,0026 A; PROPOSED logs 0,003 A, noapaļots uz augšu.",
+        "note_lv": ""
+      },
+      {
+        "id": "time",
+        "quantity_lv": "laiks",
+        "unit": "s",
+        "absolute": {
+          "value": "0.05",
+          "unit": "s",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Laika ass nolasījuma logs kinētikas grafos; PROPOSED.",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      },
+      {
+        "id": "rate_constant_zero",
+        "quantity_lv": "nulles pakāpes ātruma konstante k",
+        "unit": "mol/(L·s)",
+        "absolute": {
+          "value": "0.0005",
+          "unit": "mol/(L·s)",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "k vienība no C = C₀ − kt; PROPOSED logs ±0,0005 mol/(L·s).",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      },
+      {
+        "id": "rate_constant_first",
+        "quantity_lv": "pirmās pakāpes ātruma konstante k",
+        "unit": "s⁻¹",
+        "absolute": {
+          "value": "0.0005",
+          "unit": "s⁻¹",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "k vienība no ln(C/C₀) = −kt; PROPOSED logs ±0,0005 s⁻¹.",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      },
+      {
+        "id": "rate_constant_second",
+        "quantity_lv": "otrās pakāpes ātruma konstante k",
+        "unit": "L/(mol·s)",
+        "absolute": {
+          "value": "0.005",
+          "unit": "L/(mol·s)",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "k vienība no 1/C = 1/C₀ + kt; PROPOSED logs ±0,005 L/(mol·s).",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      },
+      {
+        "id": "inverse_concentration",
+        "quantity_lv": "apgrieztā koncentrācija 1/C",
+        "unit": "L/mol",
+        "absolute": {
+          "value": "0.05",
+          "unit": "L/mol",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Otrās pakāpes linearizācijas y ass 1/C logs; PROPOSED.",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      },
+      {
+        "id": "log_concentration_ratio",
+        "quantity_lv": "logaritmiskā koncentrācijas attiecība ln(C/C₀)",
+        "unit": "1",
+        "absolute": {
+          "value": "0.02",
+          "unit": "1",
+          "label": "PROPOSED training policy"
+        },
+        "significant_figures": {
+          "mode": "least_of_givens",
+          "label": "PROPOSED training policy"
+        },
+        "rounding": {
+          "mode": "half_up",
+          "decimals": "from_tolerance_or_significant_figures",
+          "label": "PROPOSED training policy"
+        },
+        "basis_lv": "Pirmās pakāpes linearizācijas y ass ln(C/C₀), bez dimensijas; PROPOSED logs ±0,02.",
+        "note_lv": "Programma nenosaka kinētikas tolerances; tās ir PROPOSED mācību politika. Absolūtā vērtība izteikta attiecīgās ass vienībās, zīmīgo ciparu režīms atvasina pusvienību no pēdējā zīmīgā cipara."
+      }
+    ],
+    "default_class": "significant_figures",
+    "policy_note_lv": "Ja uzdevums prasa zīmīgos ciparus, vērtēšana sākas ar significand logu; absolūtais logs ir papildu drošības josla, nevis atļauja ignorēt zīmīgos ciparus. Abi logi ir PROPOSED un nav oficiāla eksāmena prasība."
+  },
+  "rounding": {
+    "label": "master-grounded rule; PROPOSED as grading policy",
+    "rule": "half_up",
+    "final_only": true,
+    "guard_digits": "1-2",
+    "multiplication_division": "least_significant_figures",
+    "addition_subtraction": "least_decimal_places",
+    "error_first": true,
+    "error_rule_lv": "Ja atbildei pievieno kļūdu, vispirms noapaļo kļūdu (1–2 zīmīgie cipari), tad rezultātu līdz tās pašas pēdējās zīmes aiz komata.",
+    "examples": [
+      {
+        "input": "12.345",
+        "mode": "significant_figures",
+        "digits": 4,
+        "output": "12.35"
+      },
+      {
+        "input": "12.345",
+        "mode": "significant_figures",
+        "digits": 3,
+        "output": "12.3"
+      },
+      {
+        "input": "1.1145",
+        "mode": "decimal_places",
+        "digits": 2,
+        "output": "1.11"
+      }
+    ],
+    "citations": [
+      "CIT-C2-ROUND",
+      "CIT-C2-SIGFIG",
+      "CIT-C1-SIGFIG-ROUND"
+    ],
+    "note_lv": "Meistars brīdina no divkāršas noapaļošanas: 1,1145 → 1,115 → 1,12 ir nepareizi, ja prasītas divas zīmes aiz komata; pareizi ir 1,11. Starpvērtības glabā ar 1–2 sargcipariem. Šis noteikums ir master-grounded; tā lietošana vērtēšanā ir PROPOSED."
+  },
+  "consumer_contract": {
+    "single_loader": "src/conventions-loader.js",
+    "island_id": "sim-conventions",
+    "no_local_copies": true,
+    "rule_lv": "Dzinēji (N17, N18), attēli (N11–N15), vektori (N05) un terminoloģijas lint (N10) lasa konvencijas tikai caur #sim-conventions un vienu loaderi. Lokāla konstantu kopija ir aizliegta; build gate to pārbauda ar importa aizliegumu un digestu.",
+    "consumers": [
+      {
+        "task": "N05",
+        "reads": [
+          "derived_vectors",
+          "unit_system.chains",
+          "constants"
+        ],
+        "uses_lv": "Zelta vektoru gaidāmās vērtības un konvenciju digesti."
+      },
+      {
+        "task": "N10",
+        "reads": [
+          "potentials.symbols",
+          "concentration_bases",
+          "unit_system.conversions"
+        ],
+        "uses_lv": "Vienību un terminu lint."
+      },
+      {
+        "task": "N11",
+        "reads": [
+          "tolerances.quantity_classes",
+          "atomic_masses",
+          "compound_molar_masses"
+        ],
+        "uses_lv": "Attēlu tolerances un masas ķēdes."
+      },
+      {
+        "task": "N12",
+        "reads": [
+          "titration.meniscus",
+          "titration.burette",
+          "tolerances.quantity_classes"
+        ],
+        "uses_lv": "Biretes un atšķaidīšanas attēli."
+      },
+      {
+        "task": "N13",
+        "reads": [
+          "spectrophotometry.wavelength",
+          "thermodynamics",
+          "potentials"
+        ],
+        "uses_lv": "Enerģijas, Hess un Maksvela–Bolcmaņa attēli."
+      },
+      {
+        "task": "N14",
+        "reads": [
+          "tolerances.quantity_classes",
+          "kinetics",
+          "constants"
+        ],
+        "uses_lv": "Kinētikas linearizācijas tolerances."
+      },
+      {
+        "task": "N15",
+        "reads": [
+          "titration.endpoint",
+          "spectrophotometry.calibration",
+          "tolerances.quantity_classes"
+        ],
+        "uses_lv": "Titrēšanas un kalibrēšanas attēli."
+      },
+      {
+        "task": "N17",
+        "reads": [
+          "atomic_masses",
+          "compound_molar_masses",
+          "unit_system",
+          "concentration_bases",
+          "density",
+          "tolerances",
+          "rounding"
+        ],
+        "uses_lv": "Daudzumu un saglabāšanas dzinējs; V-04 dimensiju vārti."
+      },
+      {
+        "task": "N18",
+        "reads": [
+          "spectrophotometry.calibration",
+          "tolerances",
+          "rounding"
+        ],
+        "uses_lv": "Grafu vērtēšana un no-extrapolation rule."
+      },
+      {
+        "task": "N19",
+        "reads": [
+          "titration.endpoint",
+          "potentials",
+          "thermodynamics"
+        ],
+        "uses_lv": "Metožu karšu strukturālie verdikti."
+      }
+    ],
+    "failure_contract": {
+      "loader_error_type": "ConventionsError",
+      "codes": [
+        "E_CONVENTIONS_MISSING",
+        "E_CONVENTIONS_EMPTY",
+        "E_CONVENTIONS_JSON",
+        "E_CONVENTIONS_SHAPE",
+        "E_CONVENTIONS_ID",
+        "E_CONVENTIONS_SECTION",
+        "E_CONVENTIONS_DUPLICATE_ID",
+        "E_CONVENTIONS_CONFLICT_COUNT",
+        "E_CONVENTIONS_REF"
+      ],
+      "honest_degradation_lv": "Trūkstoša, tukša, saīsināta vai strukturāli nepareiza sala met ConventionsError ar #sim-conventions nosaukumu; lapa rāda nosauktu kļūdu, nevis tukšu vietu."
+    },
+    "emission": {
+      "canonical_json": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+      "digest": "SHA-256 of the canonical island bytes, recorded in output/build-manifest.json"
+    }
+  },
+  "derived_vectors": [
+    {
+      "id": "VEC-CONV-MGML-GL",
+      "consumer": "N05",
+      "kind": "conversion",
+      "source_ref": "unit_system.chains[id=concentration_mg_per_ml_to_g_per_l].factor",
+      "unit": "g/L per mg/mL",
+      "rule_lv": "1 mg/mL = 1 g/L."
+    },
+    {
+      "id": "VEC-CONV-MGL-GML",
+      "consumer": "N05",
+      "kind": "conversion",
+      "source_ref": "unit_system.chains[id=concentration_mg_per_l_to_g_per_ml].factor",
+      "unit": "g/mL per mg/L",
+      "rule_lv": "1 mg/L = 10⁻⁶ g/mL."
+    },
+    {
+      "id": "VEC-TOL-BURETTE",
+      "consumer": "N11",
+      "kind": "tolerance",
+      "source_ref": "tolerances.quantity_classes[id=burette_volume].absolute.value",
+      "unit": "mL",
+      "rule_lv": "Biretes vērtēšanas logs (PROPOSED)."
+    },
+    {
+      "id": "VEC-TOL-POTENTIAL",
+      "consumer": "N13",
+      "kind": "tolerance",
+      "source_ref": "tolerances.quantity_classes[id=potential].absolute.value",
+      "unit": "V",
+      "rule_lv": "Potenciāla vērtēšanas logs (PROPOSED)."
+    },
+    {
+      "id": "VEC-POT-EPRIME",
+      "consumer": "N10",
+      "kind": "symbol",
+      "source_ref": "potentials.symbols[id=E_prime].symbol",
+      "unit": "1",
+      "rule_lv": "E°′ simbols un pH 7 konvencija."
+    },
+    {
+      "id": "VEC-PCT-DEFAULT",
+      "consumer": "N10",
+      "kind": "basis",
+      "source_ref": "concentration_bases.default_for_course",
+      "unit": "1",
+      "rule_lv": "Kursa noklusējuma procenta bāze m/m."
+    },
+    {
+      "id": "VEC-ROUND-RULE",
+      "consumer": "N17",
+      "kind": "rounding",
+      "source_ref": "rounding.rule",
+      "unit": "1",
+      "rule_lv": "Noapaļošanas režīms."
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "OPEN-CATALASE",
+      "title_lv": "Katalāzes aktivācijas enerģija un K17 indukcijas piemērs",
+      "question_lv": "Vai kursa katalāzes aktivācijas enerģija ir 23 J·mol⁻¹ (kā iespiests), 23 kJ·mol⁻¹ (piedāvātais vienības labojums) vai cita vērtība, un kādos apstākļos (katalāzes avots, temperatūra, pH, H₂O₂ koncentrācija) tā noteikta? Avotā: \"23 J·mol⁻¹, kas nav fizikāli ticami; iespējams, domāts 23 kJ·mol⁻¹, bet tas nav apstiprināts. Avota skaitlis netiek mainīts. ... Kura vērtība atbilst kursa mērījumam — jāapstiprina docētājai.\"",
+      "status": "open-with-owner",
+      "owner": "RSU kursa docētāja (course lecturer)",
+      "rule_lv": "Nekādu strīdīgo katalāzes vērtību neapgalvot; mācīt barjeras pazemināšanas modeli ar vispārīgu piemēru. Precīzā vērtība un apstākļi paliek docētājai.",
+      "citations": [
+        "CIT-C5-K10",
+        "CIT-C5-K10-OPEN",
+        "CIT-C5-K17"
+      ]
+    }
+  ],
+  "conflicts": {
+    "schema_version": 1,
+    "title_lv": "Konfliktu reģistrs",
+    "status_vocabulary": [
+      "resolved-by-task",
+      "documented-and-accepted",
+      "open-with-owner"
+    ],
+    "status_definitions_lv": {
+      "resolved-by-task": "The ambiguity is resolved by a rule or implementation owned by a real roadmap task; enforcement tasks are named.",
+      "documented-and-accepted": "The item cannot or should not be closed here; the reason, owner and mitigation are recorded.",
+      "open-with-owner": "The scientific or external question remains open; the owner and exact question are recorded verbatim."
+    },
+    "append_rule_lv": "Reģistrs ir pievienošanas žurnāls. Ieraksta id un tā vēsture nemainās. Ja vēlāka fāze konfliktu atkārtoti atver, esošajam ierakstam pievieno jaunu history notikumu ar event=\"reopened\", uzdevumu un statusu; vecie notikumi paliek. Statusa lauks vienmēr atspoguļo pēdējo history notikumu. N40 manto pilnu cilpu, nevis pārrakstītu vēsturi.",
+    "entries": [
+      {
+        "id": "V-01",
+        "title": "verify_preparation.py crashes on a clean clone; the committed PASS is not reproducible repository-locally",
+        "class": "verification-reproducibility",
+        "finding": "tools/verify_preparation.py raises KeyError: 1 inside verify_data when run against the published repository alone. COPY_MANIFEST.json's 174 destination records are published, but its 'source' fields point at sibling Chemistry_1 through Chemistry_7 trees that are not published. verify_copies therefore skips every record at 'if not src.is_file() or not dst.is_file(): continue' before the canonical-master branch can populate the masters dictionary, which is keyed by programme topic (1-7). verify_data then dereferences masters[topic] for the first coverage row and raises KeyError: 1. The missing key is the topic number in the verifier's in-memory masters map, not a literal COPY_MANIFEST key; the absent files are the seven canonical-master source entries.",
+        "failing_location": {
+          "file": "tools/verify_preparation.py",
+          "line": 177,
+          "function": "verify_data",
+          "expression": "check(row['master_anchor'] in masters[topic].ids, ...)",
+          "exception": "KeyError: 1",
+          "manifest_entry_class": "canonical-master",
+          "manifest_entry_count": 7,
+          "first_absent_source": "Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+          "script_sha256_at_reproduction": "d2edb7033dba7f7d80c908959d29eb49623111d97ab7c4d7a85cf45543a1d102"
+        },
+        "reproduction": {
+          "command": "cd /tmp/opencode/n01-clean-clone && python3 tools/verify_preparation.py",
+          "exit_code": 1,
+          "traceback": "Traceback (most recent call last):\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 292, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 273, in main\n    verify_data(masters)\n  File \"/tmp/opencode/n01-clean-clone/tools/verify_preparation.py\", line 177, in verify_data\n    check(row['master_anchor'] in masters[topic].ids, f\"Missing coverage anchor: {row['outcome_id']} #{row['master_anchor']}\")\n                                  ~~~~~~~^^^^^^^\nKeyError: 1",
+          "environment": {
+            "repository": "git clone of /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum at commit 677156a32bc917e146ca1e3e7e5988ef925a1733",
+            "sibling_trees_present": false,
+            "python": "3.12.16",
+            "platform": "Linux 7.3.3-200.fc44.x86_64 x86_64",
+            "utc": "2026-11-16T22:03Z (recorded run)"
+          }
+        },
+        "two_environment_boundary": {
+          "published_repository_alone": "FAILS: the sibling source trees are absent, verify_copies skips the canonical-master records, masters stays empty and verify_data raises KeyError: 1.",
+          "author_full_workspace": "PASSES: with Chemistry_1 through Chemistry_7 present in the parent directory, the default mode ran on 2026-11-16 (UTC) and produced status PASS with 174 files, 30,083,827 bytes, 15,978 preserved files, and output identical to the committed evidence/PREPARATION_VERIFICATION.json except checked_utc.",
+          "conflation_rule": "The crash is a property of the published repository alone. The author-workspace PASS does not transfer to a clean clone, and the clean-clone failure does not invalidate the author-workspace record."
+        },
+        "status": "documented-and-accepted",
+        "status_reason": "The root cause is external: the sibling Chemistry_1 through Chemistry_7 workspaces are not published and publishing or reconstructing them is out of the roadmap's scope. The clean-clone reproducibility defect is documented and mitigated, not erased.",
+        "owner": "external source workspaces Chemistry_1 through Chemistry_7 (not published)",
+        "resolution_task": null,
+        "mitigation_task": "N01",
+        "mitigation": "--repo-local verifies the 174 published destinations against COPY_MANIFEST's own recorded hashes, byte total and role counts without dereferencing the sibling trees, and writes only evidence/REPO_LOCAL_VERIFICATION.json with an explicit repository-local scope line. The default full-workspace mode is unchanged and still fails on a clean clone by design of the published set.",
+        "evidence": [
+          "Reproduction traceback and environment in this entry",
+          "tools/verify_preparation.py assertion classification (evidence/N01_VERIFICATION_RECORD.md, section 2)",
+          "Repository-local PASS (evidence/REPO_LOCAL_VERIFICATION.json)",
+          "Negative fixtures tamper, delete and truncate (evidence/N01_VERIFICATION_RECORD.md, section 4)",
+          "Committed full-workspace record (evidence/PREPARATION_VERIFICATION.json) remains DOCUMENTED BUT NOT RERUN repository-locally"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) reproduction; committed PASS remains DOCUMENTED BUT NOT RERUN from a clean clone",
+        "handoff_notes": "N03 must register V-01 with the status above and cite N01 as the mitigation task. Do not restate V-01 as fully resolved: the sibling publication gap stays open with the external owner.",
+        "roadmap_claim_task_ids": [
+          "N01"
+        ],
+        "binding_task": "N01",
+        "history": [
+          {
+            "event": "recorded",
+            "task": "N01",
+            "status": "documented-and-accepted",
+            "note_lv": "Handed over in evidence/V01_CONFLICT_ENTRY.json."
+          },
+          {
+            "event": "registered",
+            "task": "N03",
+            "status": "documented-and-accepted",
+            "note_lv": "Registered verbatim in the N03 registry; no field changed."
+          }
+        ]
+      },
+      {
+        "id": "V-02",
+        "title": "Percentage basis is ambiguous (mass versus volume percent) in the masters and the predecessor plan",
+        "class": "percentage-basis",
+        "finding": "C3 says course calculations use mass fraction (m/m), but medical labels commonly mean m/V and ethanol is V/V; C1's 22 % NaOH example uses a density, and the predecessor C03 requires every percentage to state m/m, m/V or V/V. An unlabeled percent therefore has more than one possible denominator.",
+        "evidence": [
+          "Chemistry_3 §5: \"Kursā aprēķini notiek ar masas daļu (m/m)\"; the same section lists m/V and V/V labels.",
+          "Chemistry_3 §5 10. tabula: 0,9 % NaCl and 5 % glucose are explicitly \"m/V (pieņemts)\".",
+          "Chemistry_1 formula table: 22 % NaOH example uses ρ = 1,25 g/mL.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C03."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The conventions artifact declares m/m as the course default and requires every percentage to name its basis; the choice is recorded with the masters' dissent.",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "enforcement_tasks": [
+          "N11",
+          "N17"
+        ],
+        "resolution_text": "concentration_bases.default_for_course = m_m; label_required = true; unlabeled_percent = withhold scoring. Figures must label the basis; engines must reject an unlabeled percent before scoring.",
+        "binding_task": "N03",
+        "roadmap_claim_task_ids": [
+          "N03",
+          "N11",
+          "N17"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "V-03",
+        "title": "Standard-potential notation mixing (E° versus E°′)",
+        "class": "potential-notation",
+        "finding": "The redox master's source records mixed E° (pH 0, unit activities), E (actual conditions) and E°′ (pH 7, biochemical convention) in one work column. A mixed column can invert the apparent electron-flow direction even when every individual number is correct.",
+        "evidence": [
+          "Chemistry_6 §2 \"Simboli vienā mirklī\": E° – standarts (pH 0); E – faktiskais; E°′ – bioloģiskais (pH 7).",
+          "Chemistry_6 §2 \"Konvenciju karte\" and the A5 correction note.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C06."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The potentials section declares one convention per column and the E°′ conversion rule; the terminology island renders the symbols.",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "enforcement_tasks": [
+          "N10"
+        ],
+        "resolution_text": "potentials.mixing_rule_lv: one table one convention; E° and E°′ must never share a work column; E°′ = E° − 0,0592·(m/n)·pH at pH 7.",
+        "binding_task": "N03",
+        "roadmap_claim_task_ids": [
+          "N03",
+          "N10"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "V-04",
+        "title": "mg/g/L density conversion defect (the classic dimensional slip)",
+        "class": "unit-chain",
+        "finding": "The programme itself prints a malformed \"mg ⇔ g ⇔ L\" conversion, and the predecessor C02 records it. Mass and volume are not interchangeable without density; a direct mg→L step is dimensionally invalid. The defect class appears in learner answers as mg with L against g with mL.",
+        "evidence": [
+          "Programme p.3: \"mg <=> g\" and \"<=> L\" in the same unit-conversion line.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C02.",
+          "Chemistry_2 §2 unit table: 1 g/mL = 1000 kg/m³; 1 mg/mL = 1 g/L.",
+          "Chemistry_3 §4 unit ladder: mg → g → kg and mL → L are each a factor 1000."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "N03 declares the dimension rule and the composition gate; N17 implements the structural dimension gate that makes the defect inexpressible.",
+        "owner": "N17",
+        "resolution_task": "N17",
+        "supporting_tasks": [
+          "N03"
+        ],
+        "enforcement_tasks": [
+          "N17"
+        ],
+        "resolution_text": "unit_system.blocked_conversions contains mass_to_volume_direct and volume_to_mass_direct; density.density_mass_to_volume is symbolic and requires ρ; concentration_mg_per_ml_to_g_per_l composes mg→g and mL→L to exactly 1. The N17 dimension gate rejects any chain whose dimensions do not close before a number exists.",
+        "resolution_state": "rule authored and composition-gated at N03; structural enforcement is bound to N17",
+        "binding_task": "N17",
+        "roadmap_claim_task_ids": [
+          "N17"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task",
+            "note_lv": "Rule and composition gate authored here; N17 owns the structural gate."
+          }
+        ]
+      },
+      {
+        "id": "V-05",
+        "title": "Endpoint versus equivalence-point wording (and endpoint persistence)",
+        "class": "titration-wording",
+        "finding": "The redox master uses \"beigu punkts\" for the observed first persistent colour and \"ekvivalences punkts\" for the theoretical n₁z₁ = n₂z₂ point; the predecessor C07 records that source passages disagree about endpoint persistence. Treating the two names as synonyms teaches a false identity and hides the titration error.",
+        "evidence": [
+          "Chemistry_6 §9: \"krāsas maiņa parāda tieši beigu punktu, nevis ekvivalences punktu\".",
+          "Chemistry_6 §9 figure caption: \"Pirmā pastāvīgā rozā ir galapunkts\".",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C07: no invented universal time."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The titration section declares the two definitions and the wording rule; N15 enforces it in figure copy.",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "enforcement_tasks": [
+          "N15"
+        ],
+        "resolution_text": "titration.endpoint.wording_rule_lv requires distinct naming wherever both appear, explains the one-drop titration error, and takes the persistence criterion from the task rather than inventing a universal time.",
+        "binding_task": "N15",
+        "roadmap_claim_task_ids": [
+          "N03",
+          "N15"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "V-06",
+        "title": "440 nm flatness claim scope",
+        "class": "spectrophotometry-scope",
+        "finding": "The spectrophotometry master measures at 440 nm as a course instrument setting, while the literature riboflavin maximum in water is 444 nm. The master explicitly calls a \"flat maximum at 440 nm\" a bounded inference, not a measurement, because the sample spectrum was not recorded.",
+        "evidence": [
+          "Chemistry_7 §7.2: \"kursa iestatījums 440 nm, nevis no šī parauga spektra nolasīts maksimums\".",
+          "Chemistry_7 §7.2: literature maximum 444 nm; \"ierobežots secinājums\".",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C08."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The spectrophotometry section records the scope rule; N13 enforces it in figure context.",
+        "owner": "N13",
+        "resolution_task": "N13",
+        "supporting_tasks": [
+          "N03"
+        ],
+        "enforcement_tasks": [
+          "N13"
+        ],
+        "resolution_text": "spectrophotometry.wavelength: 440 nm is a course setting; 444 nm is a literature value for water; a flatness claim is a bounded inference and must not be keyed as established. N13 applies the scope note to every figure.",
+        "binding_task": "N13",
+        "roadmap_claim_task_ids": [
+          "N13"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task",
+            "note_lv": "Rule authored here; N13 owns the figure context."
+          }
+        ]
+      },
+      {
+        "id": "V-07",
+        "title": "Calibration and optical-path assumptions unstated",
+        "class": "calibration-assumptions",
+        "finding": "The spectrophotometry master uses a 1 cm path but the protocol does not state the actual cuvette thickness; the calibration model (free intercept versus through zero), blank correction, linear range and matrix match are not always named. The predecessor C09 requires fit, axis, blank/intercept and assumptions per instance.",
+        "evidence": [
+          "Chemistry_7 §6.1: \"Optiskais ceļš (l = 1 cm)\".",
+          "Chemistry_7 §6.2 rail: \"Standarta kivete ir 10 mm\"; actual thickness not verified.",
+          "Chemistry_7 §8.3: free regression versus through-zero; §1.2 no use outside the calibrated range.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C09."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The spectrophotometry section declares the assumption vocabulary and the no-extrapolation rule; N15 enforces the labeling.",
+        "owner": "N15",
+        "resolution_task": "N15",
+        "supporting_tasks": [
+          "N03"
+        ],
+        "enforcement_tasks": [
+          "N15"
+        ],
+        "resolution_text": "spectrophotometry.optical_path and .calibration: l = 1 cm is a declared assumption; the model, blank, intercept, linear range and matrix match are named per record; no line or reading is rendered beyond the standards span. N15 applies the labels and the no-extrapolation rule.",
+        "binding_task": "N15",
+        "roadmap_claim_task_ids": [
+          "N15"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task",
+            "note_lv": "Rule authored here; N15 owns the calibration labeling."
+          }
+        ]
+      },
+      {
+        "id": "V-08",
+        "title": "Catalase K10/K17 values are scientifically unresolved",
+        "class": "enzyme-values",
+        "finding": "Chemistry_5 records the K10 catalase activation energy as 23 J·mol⁻¹, which is below RT at 300 K and therefore not physically credible; 23 kJ·mol⁻¹ is a proposed unit correction, not an approved value. K17's H₂O₂/HI coupled-reaction example is also tentative. The course lecturer has not confirmed either. The values must not be asserted as single unqualified facts.",
+        "evidence": [
+          "Chemistry_5 §12.4 def-K10: 23 J/mol, \"Nav apstiprināts\", \"docētāja apstiprinājums nav saņemts\".",
+          "Chemistry_5 §12.4 def-K17: H₂O₂ + HI example \"Nav apstiprināts\".",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C05."
+        ],
+        "status": "open-with-owner",
+        "status_reason": "The scientific question is unresolved in the frozen master; N03 cannot resolve it by decree and must not invent a value.",
+        "owner": "RSU kursa docētāja (course lecturer)",
+        "resolution_task": null,
+        "enforcement_tasks": [
+          "N13",
+          "N09"
+        ],
+        "question_verbatim": "Vai kursa katalāzes aktivācijas enerģija ir 23 J·mol⁻¹ (kā iespiests), 23 kJ·mol⁻¹ (piedāvātais vienības labojums) vai cita vērtība, un kādos apstākļos (katalāzes avots, temperatūra, pH, H₂O₂ koncentrācija) tā noteikta? Avotā: \"23 J·mol⁻¹, kas nav fizikāli ticami; iespējams, domāts 23 kJ·mol⁻¹, bet tas nav apstiprināts. Avota skaitlis netiek mainīts. ... Kura vērtība atbilst kursa mērījumam — jāapstiprina docētājai.\"",
+        "resolution_text": "No disputed catalase value is asserted. N13 teaches the barrier-lowering model with a generic example; N09 carries the honesty note; the exact value and conditions remain with the course lecturer.",
+        "binding_task": "N13",
+        "roadmap_claim_task_ids": [
+          "N13",
+          "N09"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding; scientific question OPEN",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "open-with-owner",
+            "note_lv": "Carried open verbatim; no value asserted."
+          }
+        ]
+      },
+      {
+        "id": "V-09",
+        "title": "localStorage persistence diverges across the masters (2/16/0 references)",
+        "class": "persistence-divergence",
+        "finding": "The masters differ in whether and how they persist state: C4 uses 16 localStorage references, C1 and C6 use 2 each, and C2/C3/C5/C7 use none. The single-file simulator needs one versioned, opt-in, local-only store rather than a mixture of master conventions.",
+        "evidence": [
+          "Inspection count on 2026-11-16: C1 2, C2 0, C3 0, C4 16, C5 0, C6 2, C7 0 localStorage references.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row V-09.",
+          "AGENTS.md: in-memory sessions by default; persistence is opt-in and local only."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The store is versioned and opt-in; N25 owns the store and N26 the mastery state that uses it.",
+        "owner": "N25",
+        "resolution_task": "N25",
+        "enforcement_tasks": [
+          "N26"
+        ],
+        "resolution_text": "One versioned store, one key namespace, explicit opt-in, no reuse of master keys, in-memory default. N25 implements it; N26 reads/writes mastery through it.",
+        "binding_task": "N25",
+        "roadmap_claim_task_ids": [
+          "N25",
+          "N26"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task",
+            "note_lv": "Binding recorded; implementation scheduled at N25."
+          }
+        ]
+      },
+      {
+        "id": "V-10",
+        "title": "id-attribute density in the masters creates collision risk",
+        "class": "id-collision",
+        "finding": "The masters are large single documents with dense id attributes; the roadmap records 382 ids in C1, and a naive single-file concatenation can duplicate ids across sections and islands. A single assembled document needs a namespace policy and a duplicate-id gate.",
+        "evidence": [
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §3.2 and §4 row V-10: 382 id attributes in C1.",
+          "N03 re-count under the declared rule \"all id attributes in the HTML\": C1 957; the difference is a counting-rule difference, recorded in N03-OBS-02 rather than silently reconciled."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "The assembly policy namespaces all simulator-owned ids and gates duplicates; N31 owns the assembled file, N06 the first namespace registry.",
+        "owner": "N31",
+        "resolution_task": "N31",
+        "enforcement_tasks": [
+          "N06"
+        ],
+        "resolution_text": "All simulator-owned ids use the sim- namespace; island ids are sim-coverage, sim-conventions, sim-bank, sim-forms, sim-golden-vectors, sim-terms and sim-analytics; N31 refuses duplicate ids in the assembled file. N06 registers the first namespace set.",
+        "binding_task": "N31",
+        "roadmap_claim_task_ids": [
+          "N06",
+          "N31"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding; count rule clarified in N03-OBS-02",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "V-11",
+        "title": "JSON island shapes diverge across the masters",
+        "class": "island-shape",
+        "finding": "The masters embed different JSON island shapes (C4 four application/json islands, C5 one, C6 one, the others none), with different field names and nesting. A single-file build needs one island schema set and one emission rule, not seven conventions.",
+        "evidence": [
+          "Inspection count on 2026-11-16: C4 4 application/json islands, C5 1, C6 1, C1/C2/C3/C7 0.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §1.2 and §4 row V-11.",
+          "N02 build emission rule: sorted keys, compact separators, UTF-8, \"</\" escaped."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "N31 owns the single island schema set; N02 and N03 already use the same emission rule.",
+        "owner": "N31",
+        "resolution_task": "N31",
+        "supporting_tasks": [
+          "N02",
+          "N03"
+        ],
+        "enforcement_tasks": [
+          "N31"
+        ],
+        "resolution_text": "One canonical JSON emission and one island id per concern; N31 assembles all islands under the same schema registry and digest rule.",
+        "binding_task": "N31",
+        "roadmap_claim_task_ids": [
+          "N31"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "V-12",
+        "title": "Print-convention differences across the masters",
+        "class": "print-convention",
+        "finding": "The masters use different print rules: @media print occurs 1, 1, 2, 18, 20, 5 and 9 times across C1-C7. A single paper-examination simulator needs one print contract, not seven partial ones.",
+        "evidence": [
+          "Inspection count on 2026-11-16: @media print occurrences C1 1, C2 1, C3 2, C4 18, C5 20, C6 5, C7 9.",
+          "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row V-12."
+        ],
+        "status": "resolved-by-task",
+        "status_reason": "N34 owns the unified print and no-JavaScript contract.",
+        "owner": "N34",
+        "resolution_task": "N34",
+        "enforcement_tasks": [
+          "N34"
+        ],
+        "resolution_text": "One print stylesheet, one page-break policy, one no-JavaScript fallback and one paper worksheet; N34 implements and tests it.",
+        "binding_task": "N34",
+        "roadmap_claim_task_ids": [
+          "N34"
+        ],
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task",
+            "note_lv": "Binding recorded; implementation scheduled at N34."
+          }
+        ]
+      },
+      {
+        "id": "C01",
+        "title": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]`",
+        "class": "inherited-predecessor",
+        "finding": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark.",
+        "predecessor_row": "Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C01",
+        "evidence": [
+          "Predecessor audit §4 row C01: Programme pp.1–4: seven topics, paper, ≤180 min `[TEXT-VERIFIED]` | Authoritative for this supplied scope only | Do not invent official weights/types/pass mark."
+        ],
+        "epistemic_label": "Predecessor audit [TEXT-VERIFIED] for the 2025 scope",
+        "status": "documented-and-accepted",
+        "status_reason": "The official facts are authoritative only for the supplied 2025 scope; no official weights, question types or pass mark are invented.",
+        "owner": "official programme (2025 scope)",
+        "resolution_task": null,
+        "enforcement_tasks": [],
+        "resolution_text": "Seven topics, paper format and 180 minutes are cited from PROGRAMME-EXTRACT; the simulator labels its 100-point/A-B-C/21-slot design as PROPOSED.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ]
+      },
+      {
+        "id": "C02",
+        "title": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L.",
+        "predecessor_row": "Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C02",
+        "evidence": [
+          "Predecessor audit §4 row C02: Programme p.2 has a malformed mass/volume conversion example (`mg ⇔ g ⇔ L`) `[INSPECTED]` | Preserve original; mass↔volume requires density | Dimension gate rejects automatic mg→L."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]",
+        "status": "documented-and-accepted",
+        "status_reason": "The defect is preserved as the programme's own text and owned by V-04; N03 declares the blocked conversion, N17 implements the gate.",
+        "owner": "N17 (via V-04)",
+        "resolution_task": null,
+        "enforcement_tasks": [],
+        "resolution_text": "unit_system.blocked_conversions records mass_to_volume_direct and volume_to_mass_direct; the V-04 composition chain is exact only for concentration normalization, never for mass→volume.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ],
+        "owned_by": "V-04"
+      },
+      {
+        "id": "C03",
+        "title": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld.",
+        "predecessor_row": "Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C03",
+        "evidence": [
+          "Predecessor audit §4 row C03: Medical percentages may differ in basis; Chemistry_3 conflict ledger `[INSPECTED]` | Every task states m/m, m/V or V/V | Ambiguous scored key withheld."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]",
+        "status": "documented-and-accepted",
+        "status_reason": "Owned by V-02; the rule is declared and the ambiguous key is withheld.",
+        "owner": "N03 (via V-02)",
+        "resolution_task": null,
+        "enforcement_tasks": [],
+        "resolution_text": "concentration_bases.label_required = true and unlabeled_percent = withhold scoring.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ],
+        "owned_by": "V-02"
+      },
+      {
+        "id": "C04",
+        "title": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level",
+        "class": "inherited-predecessor",
+        "finding": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring.",
+        "predecessor_row": "Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C04",
+        "evidence": [
+          "Predecessor audit §4 row C04: Thermodynamics masters distinguish signs, ΔG and kinetic speed `[INSPECTED]` at section level | Explicit system, kelvin, consistent energy units, conditions | Reopen exact primary passages at authoring."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]; N03 rule authored",
+        "status": "resolved-by-task",
+        "status_reason": "N03 declares the sign convention, Kelvin rule, enthalpy and Gibbs definitions; N13 and N17 apply them.",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "enforcement_tasks": [
+          "N13",
+          "N17"
+        ],
+        "resolution_text": "thermodynamics: course form Q = ΔU + A, IUPAC mapping ΔU = q + w, ΔH = H(products) − H(reactants), ΔG = ΔH − TΔS, T in K. Exact primary passages remain a later authoring check (N13).",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "C05",
+        "title": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude.",
+        "predecessor_row": "Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C05",
+        "evidence": [
+          "Predecessor audit §4 row C05: Chemistry_5 K10 catalase Eₐ and K17 induced-reaction example remain conditional/open in source records `[INSPECTED]` | Do not use as a single unqualified fact key | Resolve exact source/conditions or exclude."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]; scientific question OPEN",
+        "status": "open-with-owner",
+        "status_reason": "The scientific question is unresolved in the frozen master and cannot be closed by the simulator.",
+        "owner": "RSU kursa docētāja (course lecturer)",
+        "resolution_task": null,
+        "enforcement_tasks": [],
+        "resolution_text": "No disputed value is asserted; N13 and N09 carry the honesty note; the exact value/conditions remain with the lecturer.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "open-with-owner"
+          }
+        ],
+        "owned_by": "V-08",
+        "question_verbatim": "Vai kursa katalāzes aktivācijas enerģija ir 23 J·mol⁻¹ (kā iespiests), 23 kJ·mol⁻¹ (piedāvātais vienības labojums) vai cita vērtība, un kādos apstākļos (katalāzes avots, temperatūra, pH, H₂O₂ koncentrācija) tā noteikta? Avotā: \"23 J·mol⁻¹, kas nav fizikāli ticami; iespējams, domāts 23 kJ·mol⁻¹, bet tas nav apstiprināts. Avota skaitlis netiek mainīts. ... Kura vērtība atbilst kursa mērījumam — jāapstiprina docētājai.\""
+      },
+      {
+        "id": "C06",
+        "title": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated.",
+        "predecessor_row": "Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C06",
+        "evidence": [
+          "Predecessor audit §4 row C06: Chemistry_6 source label Topic 13; source records mix E°, E°′ and conditional E `[INSPECTED]` | Topic 6 mapping; supply consistent values and convention | Q, n, T, medium and approximation stated."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]; N02 mapping VERIFIED (2026-11-17)",
+        "status": "resolved-by-task",
+        "status_reason": "The Topic 13 → programme Topic 6 mapping is already resolved by N02; the E°/E°′ mixing is owned by V-03 and declared in N03.",
+        "owner": "N02 + N03",
+        "resolution_task": "N02",
+        "enforcement_tasks": [
+          "N03",
+          "N10"
+        ],
+        "resolution_text": "N02 maps local Topic 13 to programme Topic 6; potentials.mixing_rule_lv and the E°′ formula resolve the notation; N10 renders the symbols.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ],
+        "owned_by": "V-03"
+      },
+      {
+        "id": "C07",
+        "title": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time.",
+        "predecessor_row": "Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C07",
+        "evidence": [
+          "Predecessor audit §4 row C07: Chemistry_6 endpoint persistence differs between source passages `[INSPECTED]` | Use a criterion explicitly supplied in the practice task | No invented universal time."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]",
+        "status": "resolved-by-task",
+        "status_reason": "The wording and persistence rule is declared; N15 enforces it in figures.",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "enforcement_tasks": [
+          "N15"
+        ],
+        "resolution_text": "titration.endpoint.persistence_criterion = supplied_by_task; no universal time; endpoint and equivalence point named distinctly.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ],
+        "owned_by": "V-05"
+      },
+      {
+        "id": "C08",
+        "title": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference.",
+        "predecessor_row": "Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C08",
+        "evidence": [
+          "Predecessor audit §4 row C08: Chemistry_7 C-04/E24 separates 440 nm setting, literature maximum and unverified local flatness `[INSPECTED]` | Do not key “flat maximum at 440 nm” as established | Require matching spectrum/conditions or bounded inference."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]",
+        "status": "resolved-by-task",
+        "status_reason": "The scope rule is declared in N03 and enforced in N13 figure context.",
+        "owner": "N13",
+        "resolution_task": "N13",
+        "enforcement_tasks": [],
+        "resolution_text": "spectrophotometry.wavelength: 440 nm is a course setting, 444 nm is a literature value, flatness is a bounded inference; no key asserts a flat maximum.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ],
+        "owned_by": "V-06",
+        "supporting_tasks": [
+          "N03"
+        ]
+      },
+      {
+        "id": "C09",
+        "title": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]`",
+        "class": "inherited-predecessor",
+        "finding": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance.",
+        "predecessor_row": "Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C09",
+        "evidence": [
+          "Predecessor audit §4 row C09: Chemistry_7 C-05/C-06 distinguish calibration models and assumed optical path `[INSPECTED]` | Name fit, concentration axis, blank/intercept and assumptions | Check actual data and full-precision calculation per instance."
+        ],
+        "epistemic_label": "Predecessor audit [INSPECTED]",
+        "status": "resolved-by-task",
+        "status_reason": "The assumption vocabulary and no-extrapolation rule are declared; N15 enforces them.",
+        "owner": "N15",
+        "resolution_task": "N15",
+        "enforcement_tasks": [],
+        "resolution_text": "spectrophotometry.calibration names the model, blank, intercept, linear range and matrix match; no reading outside the standards span.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ],
+        "owned_by": "V-07",
+        "supporting_tasks": [
+          "N03"
+        ]
+      },
+      {
+        "id": "C10",
+        "title": "Current plan’s 14 examples are synthetic givens `[TARGET]`",
+        "class": "inherited-predecessor",
+        "finding": "Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review.",
+        "predecessor_row": "Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review.",
+        "predecessor_citation": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md §4 row C10",
+        "evidence": [
+          "Predecessor audit §4 row C10: Current plan’s 14 examples are synthetic givens `[TARGET]` | Arithmetic can be independently checked; no official-source attribution | Numeric checks plus later content review."
+        ],
+        "epistemic_label": "Predecessor audit [TARGET]",
+        "status": "documented-and-accepted",
+        "status_reason": "The examples are synthetic by design; independent arithmetic checks and the golden-vector corpus are the correct mitigation, not an official-source claim.",
+        "owner": "N05",
+        "resolution_task": null,
+        "enforcement_tasks": [],
+        "resolution_text": "The 14 examples remain labelled synthetic; N05 freezes the golden vectors and N39 records the evidence. No official attribution is made.",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ],
+        "mitigation_task": "N05",
+        "note_lv": "The 40-task roadmap's B.1.1 and N40 refer to \"C10's catalase question\". The predecessor audit's catalase item is C05, not C10; C10 is the synthetic-examples item. This registry preserves the predecessor numbering and records the discrepancy in N03-OBS-01; the catalase question is carried verbatim under C05 and V-08."
+      }
+    ],
+    "observations": [
+      {
+        "id": "N03-OBS-01",
+        "title": "Roadmap B.1.1/N40 call C10 the catalase question; predecessor C10 is synthetic examples",
+        "finding": "The 40-task roadmap's N03 B.1.1 and N40 B.1.2 refer to \"C10's catalase question\". In the predecessor audit, catalase is C05 and C10 is \"Current plan's 14 examples are synthetic givens\". The registry preserves the predecessor numbering: C05 and V-08 carry the catalase question open verbatim, while C10 records the synthetic-examples item and this nomenclature discrepancy.",
+        "status": "documented-and-accepted",
+        "owner": "N40",
+        "resolution_task": null,
+        "resolution_text": "No renumbering: C10 remains the predecessor C10. N40 must read C05/V-08 for catalase and must not claim C10 is catalase.",
+        "epistemic_label": "VERIFIED (2026-11-16) inspection of both roadmap texts",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ]
+      },
+      {
+        "id": "N03-OBS-02",
+        "title": "C1 id-attribute count differs between the roadmap (382) and the N03 rule (957)",
+        "finding": "The roadmap records 382 id attributes in C1. Under the declared N03 counting rule (every id=\"...\" attribute in the HTML source, including islands and duplicated anchors), the count is 957. The difference is a counting-rule difference, not a contradiction about the document.",
+        "status": "documented-and-accepted",
+        "owner": "N31",
+        "resolution_task": null,
+        "resolution_text": "V-10 keeps the roadmap's 382 as its historical finding. N31 must apply one declared count rule and the duplicate-id gate; the rule is recorded here so the two numbers are not conflated.",
+        "epistemic_label": "VERIFIED (2026-11-16) recount in this environment",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "documented-and-accepted"
+          }
+        ]
+      },
+      {
+        "id": "N03-OBS-03",
+        "title": "KOH and H2O2 working molar masses differ in the last printed digit across master passages",
+        "finding": "C3 prints M(KOH) = 56,105 in the worked calculation and 56,106 in the 6. table. C3 prints M(H2O2) = 34,01 and C6 prints 34,0147. The differences are below the reported answer precision but must not be silently unified.",
+        "status": "resolved-by-task",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "resolution_text": "compound_molar_masses keeps working_value (56.105, 34.0147) and course_rounded (56, 34.01); engine answers use working_value, course display uses course_rounded, and both citations remain attached.",
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      },
+      {
+        "id": "N03-OBS-04",
+        "title": "Meniscus wording appears to conflict between C2 and C6",
+        "finding": "C2 says water solutions are read at the lower meniscus and dark solutions at the upper edge; C6 labels an upper edge and calls reading the lower meniscus a mistake for its dark KMnO4 titrant. The apparent conflict is reconciled by the solution-colour condition.",
+        "status": "resolved-by-task",
+        "owner": "N03",
+        "resolution_task": "N03",
+        "resolution_text": "titration.meniscus records both cases in one rule; N12 applies the clear/dark condition in bureau figures.",
+        "epistemic_label": "VERIFIED (2026-11-16) inspection finding",
+        "history": [
+          {
+            "event": "created",
+            "task": "N03",
+            "status": "resolved-by-task"
+          }
+        ]
+      }
+    ],
+    "handoff_to_N40": {
+      "authority": "authoritative conflict list for this roadmap",
+      "rule_lv": "N40 closes every V and C entry, carries N03-OBS-01 through N03-OBS-04, and preserves the catalase question verbatim from V-08/C05.",
+      "digest_rule": "The registry digest is the SHA-256 of the canonical JSON of this conflicts object; it is recorded in the N03 ledger."
+    }
+  },
+  "kinetics": {
+    "label": "master-grounded rate-law forms; PROPOSED training policy for datasets and tolerances",
+    "rate_law_lv": "v = k·C^n, kur n ir eksperimentālā reakcijas pakāpe, nevis stehiometriskais koeficients.",
+    "model_assumptions_lv": "Slēgts, nemainīgs tilpums; nemainīga temperatūra (k nemainīgs); neatgriezeniska A → produkti; viens reaģējošais komponents vai pārējie lielā pārākumā; atšķaidīts šķīdums, aktivitāti tuvina koncentrācijai.",
+    "integrated_forms": [
+      {
+        "order": 0,
+        "differential": "-dC/dt = k",
+        "integrated": "C = C₀ − kt",
+        "linear_y": "C",
+        "linear_form": "C = C₀ − kt",
+        "slope": "−k",
+        "intercept": "C₀",
+        "k_unit": "mol/(L·s)",
+        "half_life": "t½ = C₀/(2k)",
+        "tolerance_class": "rate_constant_zero",
+        "citations": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      {
+        "order": 1,
+        "differential": "-dC/dt = kC",
+        "integrated": "ln(C/C₀) = −kt",
+        "linear_y": "ln(C/C₀)",
+        "linear_form": "ln(C/C₀) = −kt",
+        "slope": "−k",
+        "intercept": "0",
+        "k_unit": "s⁻¹",
+        "half_life": "t½ = ln2/k",
+        "tolerance_class": "rate_constant_first",
+        "citations": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      {
+        "order": 2,
+        "differential": "-dC/dt = kC²",
+        "integrated": "1/C = 1/C₀ + kt",
+        "linear_y": "1/C",
+        "linear_form": "1/C = 1/C₀ + kt",
+        "slope": "+k",
+        "intercept": "1/C₀",
+        "k_unit": "L/(mol·s)",
+        "half_life": "t½ = 1/(kC₀)",
+        "tolerance_class": "rate_constant_second",
+        "citations": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-KUNITS"
+        ]
+      }
+    ],
+    "linearization_rule_lv": "Katrai pakāpei viena linearizējošā transformācija: 0. pakāpei C pret t, 1. pakāpei ln(C/C₀) pret t, 2. pakāpei 1/C pret t. Taisnes slīpums un krustpunkts ir tie paši lielumi, ko vērtē N18, tāpēc attēls un vērtēšanas logs nāk no vienas konvencijas.",
+    "half_life_rule_lv": "Pusperioda atzīme tiek rādīta tikai tur, kur modelis to paredz; pirmajai pakāpei t½ = ln2/k nav atkarīgs no C₀, otrajai un nulles pakāpei tas ir atkarīgs no C₀.",
+    "no_extrapolation_rule_lv": "Linearizētā taisne tiek zīmēta tikai datu deklarētajā intervālā; aiz intervāla robežas līnija netiek novilkta un N18 to nevērtē (sk. data/kinetics_linearization_contract.json).",
+    "tolerance_rule_lv": "Slīpuma, krustpunkta un punkta pieņemšanas tolerances nosauc data/conventions.json tolerances.quantity_classes[] ierakstus; katrs lauks deklarē režīmu absolute vai significant_figures.",
+    "citations": [
+      "CIT-C5-RATE-DEF",
+      "CIT-C5-INTEGRATED",
+      "CIT-C5-HALFLIFE",
+      "CIT-C5-KUNITS",
+      "CIT-C5-GRAPH"
+    ]
+  }
+}

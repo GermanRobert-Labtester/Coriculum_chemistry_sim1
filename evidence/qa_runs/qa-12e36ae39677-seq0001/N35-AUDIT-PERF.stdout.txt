@@ -1,0 +1,7 @@
+  [PASS] island_parse: 5.706 ms (ceiling 150 ms)
+  [PASS] first_render_start: 0.319 ms (ceiling 50 ms)
+  [PASS] exam_navigator_interaction: 0.857 ms (ceiling 25 ms)
+  [PASS] revision_panel_interaction: 38.72 ms (ceiling 40 ms)
+  [PASS] keystroke_burst_incremental: 4.645 ms (ceiling 25 ms)
+  [PASS] degraded_fixture (E_PERF_KEYSTROKE_RERENDER_BUDGET): 13.215 ms / 32 full renders vs fixed 4.645 ms / 0 full renders
+audit_perf PASS: eligible=112/112 -> /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/qa_runs/qa-12e36ae39677-seq0001/N35_PERF_RECORD.json

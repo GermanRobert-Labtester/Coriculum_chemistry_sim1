@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "artifact": "n06-term-stubs",
+  "owner": "N06",
+  "target_closure_task": "N10",
+  "status": "stub-pending-N10",
+  "notes": "N06 interface and panel keys recorded for N10-A.1.3 stub-closure verification against data/terms.json (#sim-terms).",
+  "keys": [
+    {"key": "sim.title", "text_lv": "Pirmā kolokvija treniņsimulators", "region": "#sakums"},
+    {"key": "nav.sakums", "text_lv": "Sākums", "region": "#sim-nav"},
+    {"key": "nav.saturs", "text_lv": "Saturs un mērķi", "region": "#sim-nav"},
+    {"key": "nav.prakse", "text_lv": "Prakse", "region": "#sim-nav"},
+    {"key": "nav.eksamens", "text_lv": "Eksāmena simulācija", "region": "#sim-nav"},
+    {"key": "nav.rezultati", "text_lv": "Rezultāti", "region": "#sim-nav"},
+    {"key": "nav.atskats", "text_lv": "Atskats", "region": "#sim-nav"},
+    {"key": "nav.metodika", "text_lv": "Metodika", "region": "#sim-nav"},
+    {"key": "nav.druka", "text_lv": "Druka", "region": "#sim-nav"},
+    {"key": "nav.iestatijumi", "text_lv": "Iestatījumi", "region": "#sim-nav"},
+    {"key": "start.official.heading", "text_lv": "Oficiālie programmas fakti", "region": "#sakums-oficiali-fakti"},
+    {"key": "start.proposed.heading", "text_lv": "Treniņsimulators — mācību politikas priekšlikums (PROPOSED)", "region": "#sakums-politika"},
+    {"key": "start.scope.note", "text_lv": "Patstāvīgas sagatavošanās palīglīdzeklis", "region": "#sakums-tverums"},
+    {"key": "objectives.heading", "text_lv": "Mācību mērķi un programmas pārklājums", "region": "#saturs"},
+    {"key": "objectives.link.map", "text_lv": "Konceptu karte (N07)", "region": "#coverage-list"},
+    {"key": "objectives.link.practice", "text_lv": "Praktiskie uzdevumi (N30)", "region": "#coverage-list"},
+    {"key": "settings.heading", "text_lv": "Iestatījumi", "region": "#iestatijumi"},
+    {"key": "settings.theme.to_dark", "text_lv": "Tumšais režīms", "region": "#theme-toggle"},
+    {"key": "settings.theme.to_light", "text_lv": "Gaišais režīms", "region": "#theme-toggle"},
+    {"key": "settings.storage.pending", "text_lv": "Sesijas saglabāšana pārlūkā (N25 — gaidīšanas slots)", "region": "#settings-storage-slot"},
+    {"key": "settings.print.pending", "text_lv": "Drukas un papīra režīms (N34 — gaidīšanas slots)", "region": "#settings-print-slot"}
+  ]
+}

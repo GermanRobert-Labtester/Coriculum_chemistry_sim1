@@ -1,0 +1,5 @@
+  lint: files=40 JSON.parse=65 (unwrapped=0) innerHTML=7 (unjustified=0) storage=45 (undeclared=0)
+  scratch_unjustified_innerhtml=PASS
+  corruption_fixtures=PASS noscript=PASS
+  injection_corpus=5 payloads x 5 channels, malicious_imports=3/3
+audit_security PASS -> /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/qa_runs/qa-12e36ae39677-seq0001/N35_SECURITY_RECORD.json

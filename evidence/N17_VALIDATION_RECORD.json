@@ -1,0 +1,667 @@
+{
+  "citation_rows": [
+    {
+      "conventions_ref": "CIT-C2-UNITS",
+      "feedback_key": "feedback.error.unreadable",
+      "id": "UNREADABLE_INPUT",
+      "signature": "MC-2B-02",
+      "text_lv": "Ievadu nevar nolasīt: pārbaudi skaitļa pierakstu un vienības sintaksi."
+    },
+    {
+      "conventions_ref": "CIT-C2-DENSITY-UNITS",
+      "feedback_key": "feedback.error.dimensional",
+      "id": "DIMENSIONAL_INCONSISTENCY",
+      "signature": "MC-3B-01",
+      "text_lv": "Vienību algebra neslēdzas: masa un tilpums nav savstarpēji pārrēķināmi bez deklarēta blīvuma ρ."
+    },
+    {
+      "conventions_ref": "CIT-C3-PERCENT",
+      "feedback_key": "feedback.error.implausible",
+      "id": "PHYSICALLY_IMPLAUSIBLE",
+      "signature": "MC-3A-02",
+      "text_lv": "Lielums ir dimensijās korekts, bet pārkāpj deklarēto fiziskās jēgas robežu; pārbaudi konvenciju un bāzi."
+    },
+    {
+      "conventions_ref": "CIT-C7-NOEXTRAP",
+      "feedback_key": "feedback.error.out_of_domain",
+      "id": "OUT_OF_DOMAIN",
+      "signature": "MC-7B-02",
+      "text_lv": "Vērtība ir izlasāma un korekta, bet ārpus uzdevuma deklarētā apgabala; interpoles tikai datu diapazonā."
+    }
+  ],
+  "conventions_paths": [
+    "unit_system.base_units",
+    "unit_system.conversions",
+    "unit_system.chains",
+    "atomic_masses",
+    "compound_molar_masses",
+    "constants",
+    "tolerances.quantity_classes",
+    "rounding",
+    "concentration_bases",
+    "percentage_basis",
+    "density"
+  ],
+  "digests": {
+    "conventions": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+    "golden_corpus": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88",
+    "js_engine": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12",
+    "python_engine": "c71872e1b933652784904a9705f4750bdbf1ff2be5498a7ed30504f3733c010f",
+    "taxonomy": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14"
+  },
+  "errors": [],
+  "no_local_constants": {
+    "findings": [],
+    "forbidden_values": [
+      "0.000001",
+      "0.001",
+      "0.01",
+      "0.0592",
+      "0.6931471805599453",
+      "101.325",
+      "1E-14",
+      "22.414",
+      "298.15",
+      "6.626E-34",
+      "8.314"
+    ],
+    "rule": "Quantity engine source must not declare a numeric literal equal to any atomic mass, compound molar mass, constant value or declared conversion factor from #sim-conventions. Build-time AST/token scan enforces the rule by name.",
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "stratum_rows": [
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "id": "V04-01",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "id": "V04-02",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "id": "V04-03",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "id": "V04-04",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "id": "V04-05",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "NONE",
+      "expected": "NONE",
+      "id": "V04-VALID-01",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "NONE",
+      "expected": "NONE",
+      "id": "V04-VALID-02",
+      "kind": "v04",
+      "status": "PASS"
+    },
+    {
+      "actual": "BALANCED",
+      "expected": "BALANCED",
+      "id": "EV-N17-CONS-01",
+      "kind": "conservation",
+      "status": "PASS"
+    },
+    {
+      "actual": "BALANCED",
+      "expected": "BALANCED",
+      "id": "EV-N17-CONS-02",
+      "kind": "conservation",
+      "status": "PASS"
+    },
+    {
+      "actual": "IMBALANCED",
+      "expected": "IMBALANCED",
+      "id": "EV-N17-CONS-03",
+      "kind": "conservation",
+      "status": "PASS"
+    },
+    {
+      "actual": "IMBALANCED",
+      "expected": "IMBALANCED",
+      "id": "EV-N17-CONS-04",
+      "kind": "conservation",
+      "status": "PASS"
+    },
+    {
+      "actual": "UNREADABLE_INPUT/MC-2B-02",
+      "expected": "UNREADABLE_INPUT/MC-2B-02",
+      "id": "EV-N17-CLS-01",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "UNREADABLE_INPUT/MC-2B-02",
+      "expected": "UNREADABLE_INPUT/MC-2B-02",
+      "id": "EV-N17-CLS-02",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+      "expected": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+      "id": "EV-N17-CLS-03",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+      "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+      "id": "EV-N17-CLS-04",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+      "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+      "id": "EV-N17-CLS-05",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "OUT_OF_DOMAIN/MC-7B-02",
+      "expected": "OUT_OF_DOMAIN/MC-7B-02",
+      "id": "EV-N17-CLS-06",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "NONE/NONE",
+      "expected": "NONE/NONE",
+      "id": "EV-N17-CLS-07",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "UNREADABLE_INPUT/MC-2B-02",
+      "expected": "UNREADABLE_INPUT/MC-2B-02",
+      "id": "EV-N17-CLS-08",
+      "kind": "classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "NONE/NONE",
+      "expected": "NONE/NONE",
+      "id": "EV-N17-CLS-09",
+      "kind": "classification",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "classes": 4,
+    "golden_fail": 0,
+    "golden_pass": 40,
+    "golden_vectors": 40,
+    "no_local_constants": "PASS",
+    "stratum_pass": 20,
+    "stratum_vectors": 20
+  },
+  "task": "N17",
+  "vector_failures": [],
+  "vector_rows": [
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q02-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "OUT_OF_TOLERANCE",
+      "expected_error": "OUT_OF_TOLERANCE",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q02-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "option_select",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q07-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "WRONG_OPTION_SELECTION",
+      "expected_error": "WRONG_OPTION_SELECTION",
+      "payload_class": "option_select",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q07-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "option_select",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q14-01",
+      "verdict": "auto_passed_pending_review"
+    },
+    {
+      "engine_error": "WRONG_OPTION_SELECTION",
+      "expected_error": "WRONG_OPTION_SELECTION",
+      "payload_class": "option_select",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q14-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "method",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q15-01",
+      "verdict": "pending_self_assessment"
+    },
+    {
+      "engine_error": "BLANK_RESPONSE",
+      "expected_error": "BLANK_RESPONSE",
+      "payload_class": "method",
+      "signature": "MC-2B-02",
+      "status": "PASS",
+      "taxonomy_class": "UNREADABLE_INPUT",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q15-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "option_select",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 1,
+      "vector_id": "GV-S1-T1-Q18-01",
+      "verdict": "auto_passed_pending_review"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q01-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "SIG_FIG_MISMATCH",
+      "expected_error": "SIG_FIG_MISMATCH",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q01-02",
+      "verdict": "partial"
+    },
+    {
+      "engine_error": "UNREADABLE_INPUT",
+      "expected_error": "UNREADABLE_INPUT",
+      "payload_class": "numeric",
+      "signature": "MC-2B-02",
+      "status": "PASS",
+      "taxonomy_class": "UNREADABLE_INPUT",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q01-03",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "matching",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q06-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "WRONG_PAIRING",
+      "expected_error": "WRONG_PAIRING",
+      "payload_class": "matching",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q06-02",
+      "verdict": "partial"
+    },
+    {
+      "engine_error": "WRONG_PAIRING",
+      "expected_error": "WRONG_PAIRING",
+      "payload_class": "matching",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q06-03",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "ordering",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q08-01",
+      "verdict": "auto_passed_pending_review"
+    },
+    {
+      "engine_error": "WRONG_ORDER",
+      "expected_error": "WRONG_ORDER",
+      "payload_class": "ordering",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q08-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q09-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q10-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "OUT_OF_TOLERANCE",
+      "expected_error": "OUT_OF_TOLERANCE",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 2,
+      "vector_id": "GV-S1-T2-Q10-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q01-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "UNLABELED_PERCENT_BASIS",
+      "expected_error": "UNLABELED_PERCENT_BASIS",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q01-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q02-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "DIMENSIONAL_INCONSISTENCY",
+      "expected_error": "DIMENSIONAL_INCONSISTENCY",
+      "payload_class": "numeric",
+      "signature": "MC-3B-01",
+      "status": "PASS",
+      "taxonomy_class": "DIMENSIONAL_INCONSISTENCY",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q02-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "DIMENSIONAL_INCONSISTENCY",
+      "expected_error": "DIMENSIONAL_INCONSISTENCY",
+      "payload_class": "numeric",
+      "signature": "MC-3B-01",
+      "status": "PASS",
+      "taxonomy_class": "DIMENSIONAL_INCONSISTENCY",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q02-03",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "ordering",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 3,
+      "vector_id": "GV-S1-T3-Q08-01",
+      "verdict": "auto_passed_pending_review"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 4,
+      "vector_id": "GV-S1-T4-Q02-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "OUT_OF_TOLERANCE",
+      "expected_error": "OUT_OF_TOLERANCE",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 4,
+      "vector_id": "GV-S1-T4-Q02-02",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 4,
+      "vector_id": "GV-S1-T4-Q09-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "method",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 4,
+      "vector_id": "GV-S1-T4-Q15-01",
+      "verdict": "pending_self_assessment"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 5,
+      "vector_id": "GV-S1-T5-Q09-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "graph",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 5,
+      "vector_id": "GV-S1-T5-Q12-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "WRONG_OPTION_SELECTION",
+      "expected_error": "WRONG_OPTION_SELECTION",
+      "payload_class": "option_select",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 5,
+      "vector_id": "GV-S1-T5-Q18-01",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "matching",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 6,
+      "vector_id": "GV-S1-T6-Q06-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "OUT_OF_TOLERANCE",
+      "expected_error": "OUT_OF_TOLERANCE",
+      "payload_class": "numeric",
+      "signature": "MC-3A-02",
+      "status": "PASS",
+      "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+      "topic": 6,
+      "vector_id": "GV-S1-T6-Q10-01",
+      "verdict": "incorrect"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "option_select",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 6,
+      "vector_id": "GV-S1-T6-Q14-01",
+      "verdict": "auto_passed_pending_review"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "numeric",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 7,
+      "vector_id": "GV-S1-T7-Q01-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "option_select",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 7,
+      "vector_id": "GV-S1-T7-Q07-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "NONE",
+      "expected_error": "NONE",
+      "payload_class": "graph",
+      "signature": "",
+      "status": "PASS",
+      "taxonomy_class": "NONE",
+      "topic": 7,
+      "vector_id": "GV-S1-T7-Q12-01",
+      "verdict": "correct"
+    },
+    {
+      "engine_error": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "expected_error": "OUT_OF_DOMAIN_EXTRAPOLATION",
+      "payload_class": "graph",
+      "signature": "MC-7B-02",
+      "status": "PASS",
+      "taxonomy_class": "OUT_OF_DOMAIN",
+      "topic": 7,
+      "vector_id": "GV-S1-T7-Q12-02",
+      "verdict": "incorrect"
+    }
+  ]
+}

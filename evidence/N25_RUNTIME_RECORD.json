@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "task": "N25",
+  "status": "PASS",
+  "checks": {
+    "a11_canonical_roundtrip_and_reload": {
+      "status": "PASS",
+      "detail": {
+        "digest1": "daf0ae365aa9294383d7c0edb91def0f0b08ba1069fa09ae3e2c4493f6c7ba88",
+        "digest2": "daf0ae365aa9294383d7c0edb91def0f0b08ba1069fa09ae3e2c4493f6c7ba88",
+        "shaMatchesCrypto": true,
+        "stored_bytes": 16178
+      }
+    },
+    "a12_opt_in_boundary_and_consent": {
+      "status": "PASS",
+      "detail": {
+        "keysBeforeOptIn": [],
+        "accessesBeforeOptIn": 0,
+        "keysAfterOptIn": [
+          "sim_colloq1_store_v2"
+        ],
+        "hasConsentElements": true
+      }
+    },
+    "a13_export_and_twostep_erase": {
+      "status": "PASS",
+      "detail": {
+        "filename": "kimija-kolokvijs1-progress-v2.json",
+        "exportMatchesDigest": true,
+        "confirmBoxVisibleAfterStep1": true,
+        "keysAfterErase": [],
+        "uiResetZero": true
+      }
+    },
+    "a1_migration_and_newer_guard": {
+      "status": "PASS",
+      "detail": {
+        "migratedOk": true,
+        "newerPreserved": true,
+        "newerNotice": {
+          "code": "NEWER_VERSION_IGNORED",
+          "found_version": 99,
+          "supported_version": 2,
+          "message_lv": "Atrasts jaunākas versijas krātuves ieraksts (schema_version 99 > 2). Esošie dati netiek pārrakstīti un tiek ignorēti; sesija darbojas operatīvajā atmiņā."
+        },
+        "writeBlockedCode": "E_STORE_WRITE_BLOCKED_NEWER_VERSION"
+      }
+    },
+    "b11_chain_and_no_answer_text": {
+      "status": "PASS",
+      "detail": {
+        "event_count": 25,
+        "chainParity": true,
+        "allDigestLinked": true,
+        "leaked": []
+      }
+    },
+    "b1_bounded_log_and_honesty": {
+      "status": "PASS",
+      "detail": {
+        "boundedOk": true,
+        "events_len": 200,
+        "pruned": 15,
+        "zeroHonest": true,
+        "unblendedDisplayOk": true
+      }
+    },
+    "b12_outcomes_tracking": {
+      "status": "PASS",
+      "detail": {
+        "correct_once": 13,
+        "first_pass": 13
+      }
+    },
+    "b13_remediation_lifecycle": {
+      "status": "PASS",
+      "detail": {
+        "openBefore": 5,
+        "openAfterResolve": "3",
+        "openAfterReload": "3"
+      }
+    },
+    "c1_privacy_audit_full_session": {
+      "status": "PASS",
+      "detail": {
+        "writesDuringMemoryPhase": 0,
+        "outlier_keys": 0,
+        "leaked_answer_strings": [],
+        "network_attempts": 0,
+        "keys_after_erase": 0,
+        "caughtOutliers": [
+          "sim_render_cache"
+        ],
+        "bannedExports": [],
+        "rawPayloadCount": 19,
+        "persistedLen": 17089
+      }
+    },
+    "c13_built_artifact_smoke": {
+      "status": "PASS",
+      "detail": {
+        "total": 21,
+        "passed": 21,
+        "n25Vec": {
+          "id": "SMK-N25-STORE-ROUNDTRIP",
+          "owner": "N25",
+          "status": "PASS",
+          "details": {
+            "schemaVersion": 2,
+            "roundTripDigest": "f8d7ca02466584a8b21c2cc92ab8204695cc811052ba14ab0e803e791001469d",
+            "schemaKey": "sim_colloq1_store_v2",
+            "memoryWrites": 0,
+            "eraseResidue": 0,
+            "f10Rejected": true
+          },
+          "reason": null
+        }
+      }
+    }
+  },
+  "failures": []
+}

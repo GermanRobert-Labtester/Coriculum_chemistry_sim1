@@ -1,0 +1,133 @@
+{
+  "errors": [],
+  "gate": "scheduler",
+  "negative_fixtures": {
+    "decreasing_pair_box2_box3": {
+      "caught": true,
+      "errors": [
+        "Non-increasing interval pair between box 2 (3d) and box 3 (2d); intervals must strictly increase with box number"
+      ]
+    },
+    "equal_pair_box1_box2": {
+      "caught": true,
+      "errors": [
+        "Non-increasing interval pair between box 1 (1d) and box 2 (1d); intervals must strictly increase with box number"
+      ]
+    },
+    "js_decreasing_pair": {
+      "caught": true,
+      "errors": [
+        "Leitnera intervāli nav stingri pieaugoši starp box 2 (3 d.) un box 3 (2 d.)."
+      ]
+    },
+    "missing_state_needs_review": {
+      "caught": true,
+      "errors": [
+        "Mastery state \"needs_review\" missing valid mapping in state_to_box",
+        "needs_review must map to early box 1, got None"
+      ]
+    },
+    "status": "PASS",
+    "zero_queue_cap": {
+      "caught": true,
+      "errors": [
+        "queue_cap.value must be a positive integer, got 0"
+      ]
+    }
+  },
+  "policy": {
+    "boxes": [
+      {
+        "box": 1,
+        "interval_days": 1,
+        "role": "early"
+      },
+      {
+        "box": 2,
+        "interval_days": 3,
+        "role": "mid"
+      },
+      {
+        "box": 3,
+        "interval_days": 7,
+        "role": "late"
+      }
+    ],
+    "bytes": 5161,
+    "digest": "e97381ce5333d2e7ef51ce4200e0efef864b364ac79bbafc0e30dbae582b2352",
+    "errors": [],
+    "file_sha256": "1f4bace5a705ca1763116cd279a501912ecb85a0d106fedb15095cfb92e42916",
+    "non_increasing_pairs": [],
+    "policy_id": "sim-colloq1-leitner-scheduler-v1",
+    "queue_cap": 5,
+    "state_to_box": {
+      "learning": 1,
+      "mastered": 3,
+      "near_mastered": 2,
+      "needs_review": 1,
+      "unseen": 1
+    },
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "missing_placeholders": [],
+    "required_ids_present": 9,
+    "required_ids_total": 9,
+    "status": "PASS"
+  },
+  "sources": {
+    "exports": [
+      "ISLAND_ID",
+      "SCHEMA_VERSION",
+      "MASTERY_STATES",
+      "REASON_CODES",
+      "errors",
+      "SchedulerError",
+      "canonicalText",
+      "digestValue",
+      "toDayNumber",
+      "dayNumberToIso",
+      "defaultDayClock",
+      "createFixedDayClock",
+      "validatePolicy",
+      "loadPolicy",
+      "boxForState",
+      "traceBoxHistory",
+      "computeFamilyAvailability",
+      "resolveTermsMap",
+      "selectQueue",
+      "digestOfQueue",
+      "buildPracticeHandoff",
+      "startPracticeFromQueueItem",
+      "buildPrakseSchedulerViewModel",
+      "renderPrakseQueue",
+      "renderFromStore",
+      "renderError",
+      "init"
+    ],
+    "src/compiled/scheduler.js": {
+      "bytes": 72778,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "d1f072d3db0d0c11d81a39b41d047b846e450be5aacee18f511f26c726607f48"
+    },
+    "src/scheduler.ts": {
+      "bytes": 72037,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "972e95c4d4b0c8566841ed71518daf515c4643dde74568e665771b14ec33b3f2"
+    }
+  },
+  "status": "PASS",
+  "task": "N27",
+  "terms_lint": {
+    "checked_term_keys": 248,
+    "errors": [],
+    "status": "PASS"
+  },
+  "ts_drift": "PASS"
+}

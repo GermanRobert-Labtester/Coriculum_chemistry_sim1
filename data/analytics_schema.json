@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "island_id": "sim-analytics",
+  "owner": "N25",
+  "status": "authored",
+  "title_lv": "Lokālā progresa ieraksta un privātumu saudzējošās analītikas līgums",
+  "epistemic_note": "PROPOSED mācību politikas progresa ieraksts. Pēc noklusējuma visas sesijas tiek glabātas tikai operatīvajā atmiņā (AGENTS.md), un lokālā saglabāšana pārlūkā (localStorage) tiek ieslēgta tikai pēc brīvprātīgas piekrišanas. Šis nav oficiāls RSU vērtējums, un neviena darbība nesūta datus pa tīklu.",
+  "store_contract": {
+    "storage_kind": "sim-colloq1-store",
+    "schema_version": 2,
+    "default_mode": "memory",
+    "storage_keys": [
+      "sim_colloq1_store_v2"
+    ],
+    "remediation_queue_fields": [
+      "id",
+      "dedup_key",
+      "slot_id",
+      "slot_ids",
+      "topic",
+      "family_id",
+      "outcome_id",
+      "outcome_ids",
+      "instance_id",
+      "signature_id",
+      "signature_ids",
+      "concept_ids",
+      "chain_ids",
+      "method_card",
+      "graded_digest",
+      "graded_digests",
+      "state",
+      "miss_count",
+      "retry_count",
+      "attempted_instance_ids",
+      "attempted_variant_ids",
+      "last_retry_instance_id",
+      "last_retry_variant_id",
+      "last_retry_verdict",
+      "last_retry_digest",
+      "resolved_reason",
+      "resolved_reason_lv",
+      "opened_seq",
+      "retried_seq",
+      "resolved_seq"
+    ],
+    "self_assessment_fields": [
+      "schema_version",
+      "outcome_id",
+      "ratings",
+      "note",
+      "updated_seq"
+    ],
+    "legacy_keys_cleaned_on_erase": [
+      "sim_colloq1_store_v1",
+      "sim_colloq1_store_v2"
+    ],
+    "canonicalization": "sorted keys; separators (',', ':'); ensure_ascii=False; UTF-8; SHA-256",
+    "max_events": 200,
+    "prune_policy": "oldest-first",
+    "export_filename": "kimija-kolokvijs1-progress-v2.json",
+    "newer_version_policy": "ignore-newer-with-notice-and-never-overwrite",
+    "supported_migrations": [
+      {
+        "from_version": 1,
+        "to_version": 2,
+        "mapping_lv": "v1 lauki opt_in/theme tiek pārcelti uz settings.{opt_in,theme}; practiced_topics un correct_outcomes uz progress.{topics,outcomes_correct_once}; forms uz progress.form_history (saglabājot atsevišķas auto un pending summas); remediation uz remediation_queue; events ierobežoti līdz max_events.",
+        "fields_mapped": [
+          "opt_in -> settings.opt_in",
+          "theme -> settings.theme",
+          "practiced_topics -> progress.topics",
+          "correct_outcomes -> progress.outcomes_correct_once",
+          "forms -> progress.form_history",
+          "remediation -> remediation_queue",
+          "events -> events (bounded)"
+        ]
+      }
+    ]
+  },
+  "event_contract": {
+    "event_types": [
+      "session-completed",
+      "task-answered",
+      "remediation-state"
+    ],
+    "digest_linkage": "every event carries graded_digest equal to the source graded record's canonical SHA-256 digest",
+    "no_answer_text_rule": "no event and no persisted store record carries any learner answer text, raw_input, or payload fragment; only an explicit user-triggered export may include optional session snapshot data if requested",
+    "unblended_rule": "auto_points and pending_external_points are stored and displayed separately with unblended: true; pending_count counts slots with pending points > 0"
+  },
+  "f10_boundary": {
+    "rejected_feature": "F10",
+    "feature_name": "F10 analytics dashboards (charts, streaks, gamification, score-history visualizations)",
+    "status": "rejected-by-policy",
+    "ledger_reference": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md §4.3 (F10 REJECTED) & evidence/VERIFICATION_LEDGER.md",
+    "reasoning_lv": "F10 vizuālie atskaišu paneļi, sērijas (streaks) un spēļošana ir noraidīti ar politiku: tie kalpo izsekotājam, nevis izglītojamam. N25 nodrošina tikai godīgu, ierobežotu un brīvprātīgu lokālo kopsavilkumu (#atskats) un neeksportē grafikus, sēriju skaitītājus vai punktu vēstures diagrammas.",
+    "reasoning_en": "Completionist visualization serves the tracker, not the learner. F10 dashboards, streaks, and gamification are rejected by policy; N25 provides only an honest local summary (#atskats) and exports zero chart, streak, or score-history components.",
+    "forbidden_exports": [
+      "chart",
+      "charts",
+      "streak",
+      "streaks",
+      "gamification",
+      "scoreHistory",
+      "score_history",
+      "dashboard",
+      "leaderboard"
+    ]
+  },
+  "copy_lv": {
+    "consent_title": "Brīvprātīga lokālā saglabāšana pārlūkā (localStorage)",
+    "consent_body": "Kas tiek saglabāts: praktizēto tēmu skaits, 64 mācību mērķu statuss (vai atbildēts pareizi ar pirmo mēģinājumu / vismaz vienu reizi), treniņformu automātiskie un atsevišķie gaidāmie rezultāti, kļūdu atkārtošanas rinda un krāsu tēma — nekad netiek saglabāti jūsu atbilžu teksti. Nekas neatstāj ierīci: dati paliek tikai šajā pārlūkā (localStorage), bez tīkla pieprasījumiem, bez telemetrijas un bez kontiem. Kā dzēst: jebkurā brīdī spiediet 'Dzēst visus lokālos datus' un apstipriniet otrajā solī vai izslēdziet saglabāšanu šajā sadaļā (N25).",
+    "opt_in_enable_label": "Ieslēgt lokālo saglabāšanu",
+    "opt_in_disable_label": "Izslēgt lokālo saglabāšanu",
+    "disabled_state_notice": "Pēc noklusējuma dati glabājas tikai operatīvajā atmiņā (bez localStorage) un pazūd pēc lapas aizvēršanas.",
+    "enabled_state_notice": "Lokālā saglabāšana pārlūkā (localStorage) ir ieslēgta. Atslēga: sim_colloq1_store_v2. Dati paliek tikai šajā ierīcē.",
+    "newer_version_notice": "Atrasts jaunākas versijas krātuves ieraksts (schema_version {found} > {supported}). Esošie dati netiek pārrakstīti un tiek ignorēti; sesija darbojas operatīvajā atmiņā.",
+    "migrated_v1_notice": "Vecākās v1 krātuves dati tika droši pārcelti uz v2 formātu.",
+    "corrupt_store_notice": "Saglabātie lokālie dati nav nolasāmi; tie tiek ignorēti bez pārrakstīšanas, un sesija darbojas operatīvajā atmiņā.",
+    "storage_degraded_notice": "Pārlūka localStorage nav pieejama; sesija droši turpina darbu operatīvajā atmiņā.",
+    "export_label": "Eksportēt progresu (JSON)",
+    "export_ready_notice": "Progresa eksporta fails ir sagatavots lokālai lejupielādei: {filename} (SHA-256: {digest}).",
+    "erase_request_label": "Dzēst visus lokālos datus",
+    "erase_confirm_prompt": "Vai tiešām neatgriezeniski dzēst visus lokāli saglabātos progresa datus un atgriezties pie operatīvās atmiņas režīma?",
+    "erase_confirm_label": "Apstiprināt dzēšanu",
+    "erase_cancel_label": "Atcelt",
+    "erase_done_notice": "Visi lokālie progresa dati ir dzēsti, un sesija atgriezta operatīvajā atmiņā.",
+    "honesty_banner": "Godīguma piezīme: automātiski vērtētie punkti un ārēji/pašvērtējumā gaidāmie punkti vienmēr tiek rādīti atsevišķi (nekad netiek saskaitīti kopā). Šis ir patstāvīgas mācīšanās pārskats (PROPOSED), nevis oficiāls RSU eksāmena vērtējums.",
+    "zero_activity_notice": "Nav reģistrētu aktivitāšu. Visi tēmu un mērķu rādītāji ir 0 (godīgs sākuma stāvoklis).",
+    "outcome_states_lv": {
+      "unattempted": "Nav mēģināts",
+      "attempted": "Mēģināts (gaida pareizu atbildi)",
+      "first_pass_correct": "Pareizi ar pirmo mēģinājumu",
+      "correct_after_retry": "Pareizi pēc atkārtošanas"
+    }
+  }
+}

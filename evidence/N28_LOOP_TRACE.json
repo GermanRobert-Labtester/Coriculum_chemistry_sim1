@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "task": "N28",
+  "trace_id": "FX-N28-CLASSIFICATION-LOOP",
+  "family_id": "FAM-6A",
+  "outcome_id": "P6-01",
+  "steps_count": 7,
+  "trace_digest": "ea4771f62815d250febc1df8f172dc41c98ae058907796988a5260e732ba132a",
+  "final_queue_digest": "e74c56de52033f04a4450540eec75a0f0fb6ff30936f60a40f1098ce4d68d0b1",
+  "steps": [
+    {
+      "seq": 1,
+      "step": "1_miss_classification_q07",
+      "active_count": 1,
+      "open_count": 1,
+      "retried_count": 0,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "0656915ee817462de8884f9d631fca5e6f99560948b7fa58cde1253c126d1267",
+      "extra": {
+        "entry_id": "FAM-6A::P6-01",
+        "instance_id": "COL1-6-6A-A-01",
+        "original_digest_preserved": true
+      },
+      "step_digest": "bd46ccaf074e50a20e497ee8840432e7a914f90ce731c6899293f53d8c959697"
+    },
+    {
+      "seq": 2,
+      "step": "2_anchor_open_and_return",
+      "active_count": 1,
+      "open_count": 1,
+      "retried_count": 0,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "0656915ee817462de8884f9d631fca5e6f99560948b7fa58cde1253c126d1267",
+      "extra": {
+        "drawer_open": true,
+        "drawer_concept_id": "P6-01",
+        "drawer_source": "remediation-queue",
+        "drawer_closed_after_return": true,
+        "restored_focus_id": "rem-anchor-btn-FAM-6A-P6-01"
+      },
+      "step_digest": "1c32c9fd6a520fa3923111936ca3b948fd71db87bcccd8f64a1a331ed6094eb8"
+    },
+    {
+      "seq": 3,
+      "step": "3_chain_open_initial_state",
+      "active_count": 1,
+      "open_count": 1,
+      "retried_count": 0,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "0656915ee817462de8884f9d631fca5e6f99560948b7fa58cde1253c126d1267",
+      "extra": {
+        "chain_id": "EX12",
+        "chain_revealed_count": "0",
+        "chain_revealed_all": "false",
+        "return_btn_id": "atskats-remediation-chain-return"
+      },
+      "step_digest": "d984924c500173760d9a50beb72cd438569ed19c8181c37e9d59cd812d2cec82"
+    },
+    {
+      "seq": 4,
+      "step": "4_return_to_queue",
+      "active_count": 1,
+      "open_count": 1,
+      "retried_count": 0,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "0656915ee817462de8884f9d631fca5e6f99560948b7fa58cde1253c126d1267",
+      "extra": {
+        "chain_host_hidden": true,
+        "active_focus_id": "rem-chain-btn-FAM-6A-P6-01"
+      },
+      "step_digest": "a33696a2f84062d504ac70739b89fbb52b7587ef9f051448f65cde2232b329ef"
+    },
+    {
+      "seq": 5,
+      "step": "5_retry_alternate_variant",
+      "active_count": 1,
+      "open_count": 1,
+      "retried_count": 0,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "0656915ee817462de8884f9d631fca5e6f99560948b7fa58cde1253c126d1267",
+      "extra": {
+        "selected_instance_id": "COL1-6-6A-B-01",
+        "selected_variant_id": "B",
+        "selection_source": "bank",
+        "excluded_instance_ids": [
+          "COL1-6-6A-A-01"
+        ],
+        "path_remaining_after": 2
+      },
+      "step_digest": "55f6902e8760a28c8526f013f8ffbaa5cb12d76ac19dc143a7b111822217ad92"
+    },
+    {
+      "seq": 6,
+      "step": "6_retry_correct_mastery_and_queue_advance",
+      "active_count": 1,
+      "open_count": 0,
+      "retried_count": 1,
+      "resolved_count": 0,
+      "dom_remediation_count": "1",
+      "dom_active_rows": 1,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "30bba09633561e592372e1ef14505c11d0a537ab54d4ef508e526f89245c6138",
+      "extra": {
+        "verdict": "correct",
+        "queue_state": "retried",
+        "policy_mode": "confirm_required",
+        "verbatim_evidence_copy_present": true,
+        "mastery_state_after": "learning"
+      },
+      "step_digest": "e380c19a4bccacf679afe799ea85127eed9676219d5528e12147066d10dc171c"
+    },
+    {
+      "seq": 7,
+      "step": "7_explicit_resolve",
+      "active_count": 0,
+      "open_count": 0,
+      "retried_count": 0,
+      "resolved_count": 1,
+      "dom_remediation_count": "0",
+      "dom_active_rows": 0,
+      "p6_01_mastery_state": "learning",
+      "queue_digest": "e74c56de52033f04a4450540eec75a0f0fb6ff30936f60a40f1098ce4d68d0b1",
+      "extra": {
+        "resolved_dom_count": 1,
+        "resolved_reason": "learner_confirmed",
+        "resolved_reason_lv": "Izglītojamais manuāli apstiprināja atrisināšanu."
+      },
+      "step_digest": "98fb57648d457700f9971f73e13aa5a98cdbc73a5e923c0a0bbfdf13334687eb"
+    }
+  ]
+}

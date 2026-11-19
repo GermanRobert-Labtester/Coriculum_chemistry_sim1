@@ -1,0 +1,76 @@
+{
+  "fixtures": {
+    "FIX-QA-MISSING-SUITE": {
+      "errors": [
+        "E_SUITE_FILE_MISSING: suite=SCRATCH-MISSING-SUITE path=tools/nonexistent_scratch_suite.py"
+      ],
+      "status": "PASS",
+      "suite_named": "SCRATCH-MISSING-SUITE"
+    },
+    "FIX-QA-PARTIAL-SKIP-FAILS": {
+      "exit_code": 1,
+      "overall_verdict": "FAIL",
+      "status": "PASS",
+      "suite_verdicts": {
+        "SCRATCH-OMITTED-TWO": "SKIPPED",
+        "SCRATCH-RUN-ONE": "PASS"
+      }
+    },
+    "FIX-QA-SOURCE-TAMPER-AND-RESTORE": {
+      "restored_overall_verdict": "PASS",
+      "restored_run_exit_code": 0,
+      "status": "PASS",
+      "suites_executed_during_tamper": 0,
+      "tamper_errors": [
+        "E_SOURCE_TAMPERED: path=src/shell.html expected=e77cc974f84fd4b8d9aac3940e3eafa3568bb738d93b4fce05376ffbf713560c actual=df01d185ccbdda2e9300def0f01430fe2d2b4b0a2568d5e283a887fd03ae7d08"
+      ],
+      "tampered_file": "src/shell.html",
+      "tampered_run_exit_code": 2,
+      "tampered_run_refused": true
+    },
+    "FIX-QA-STALE-SUITE-DIGEST": {
+      "errors": [
+        "E_SUITE_DIGEST_MISMATCH: suite=N01-PREP-LOCAL path=tools/verify_preparation.py expected=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff actual=7f856b61f43197447118d01e65112b0a19395227c772bea3c38163aa5d275c2f"
+      ],
+      "file_named": "tools/verify_preparation.py",
+      "status": "PASS",
+      "suite_named": "N01-PREP-LOCAL"
+    },
+    "FIX-QA-SUITE-TIMEOUT-CONTINUE": {
+      "continued_suite": {
+        "exit_code": 0,
+        "suite_id": "SCRATCH-AFTER-TIMEOUT",
+        "verdict": "PASS"
+      },
+      "exit_code": 1,
+      "overall_verdict": "FAIL",
+      "status": "PASS",
+      "timed_out_suite": {
+        "duration_ms": 402.882,
+        "failure_reason": "E_SUITE_TIMEOUT: suite SCRATCH-SLEEP-TIMEOUT exceeded timeout of 0.4s",
+        "suite_id": "SCRATCH-SLEEP-TIMEOUT",
+        "timed_out": true,
+        "verdict": "TIMEOUT"
+      }
+    },
+    "FIX-QA-VERSIONED-REGISTRY-UPDATE": {
+      "empty_reason_refused": true,
+      "post_update_validation": "PASS",
+      "status": "PASS",
+      "update_event": {
+        "bytes": 27,
+        "event": "suite_file_digest_update",
+        "new_sha256": "afb8ffec8f3e44e192bc5d6898012739d4c624e3d87a7e125b882d88e28f9d43",
+        "path": "tools/scratch_updatable.py",
+        "previous_sha256": "14f95ddd9b99cb81615382a0f25f9baf3e69eba017dcac92a30281f16b42d572",
+        "reason": "Legitimate Phase VIII defect fix update",
+        "suite_id": "SCRATCH-UPDATABLE",
+        "timestamp": "2026-11-19T22:47:23.430121+00:00",
+        "version": 2
+      }
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N39"
+}

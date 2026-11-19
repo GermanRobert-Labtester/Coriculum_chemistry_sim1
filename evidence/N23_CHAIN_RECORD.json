@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "owner": "N23",
+  "status": "PASS",
+  "claim": "The terminal record, the graded record and the analytics events are one digest-linked chain, and no answer text reaches an event.",
+  "reason": null,
+  "form_id": "FX-N23-MIXED",
+  "digest_method": "canonical JSON (sorted keys, separators (\",\", \":\"), ensure_ascii=False) -> UTF-8 -> SHA-256, the N04 emission rule; the graded record digest excludes its own digest field.",
+  "linkage": {
+    "session_id": "SES-FX-N23-MIXED-0",
+    "form_id": "FX-N23-MIXED",
+    "terminal_digest": "6eb8b0a805dc92ac2c0c86533e61c56148f38a8d7a7283fbe59bf5fa47ec4518",
+    "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0",
+    "analytics_event_digest": "163bbc74ad3fb564802898147b0f9f9bc7069539d83b675f03a813c307771cdf",
+    "event_count": 25
+  },
+  "checks": {
+    "session_completed_once": true,
+    "task_answered_per_answered_slot": true,
+    "every_event_digest_linked": true,
+    "no_answer_text_in_events": true,
+    "remediation_events_exactly_for_incorrect_or_malformed": true,
+    "remediation_state_is_open": true
+  },
+  "failed": [],
+  "detail": {
+    "event_types": {
+      "session-completed": 1,
+      "task-answered": 19,
+      "remediation-state": 5
+    },
+    "event_count": 25,
+    "answered_slots": 19,
+    "raw_strings_scanned": 60,
+    "vocabulary_strings_excluded": 0,
+    "text_scan_candidates": 33,
+    "value_scan_candidates": 60,
+    "leaked_in_canonical_text": [],
+    "leaked_in_event_string_values": [],
+    "leaked_strings": [],
+    "expected_remediation_slots": [
+      "S2-3",
+      "S4-1",
+      "S4-2",
+      "S6-1",
+      "S7-3"
+    ],
+    "actual_remediation_slots": [
+      "S2-3",
+      "S4-1",
+      "S4-2",
+      "S6-1",
+      "S7-3"
+    ]
+  },
+  "events": [
+    {
+      "event": "session-completed",
+      "form_id": "FX-N23-MIXED",
+      "session_id": "SES-FX-N23-MIXED-0",
+      "auto_score": 18,
+      "pending_count": 13,
+      "elapsed_ms": 0,
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S1-1",
+      "topic": 1,
+      "family_id": "FAM-1B",
+      "type_id": "Q06",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_PAIR_L1",
+          "status": "awarded",
+          "verdict_class": "correct",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_PAIR_L2",
+          "status": "awarded",
+          "verdict_class": "correct",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C3_PAIR_L3",
+          "status": "awarded",
+          "verdict_class": "correct",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S1-2",
+      "topic": 1,
+      "family_id": "FAM-1A",
+      "type_id": "Q13",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_TYPE",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        },
+        {
+          "criterion_id": "C2_REASON",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S1-3",
+      "topic": 1,
+      "family_id": "FAM-1D",
+      "type_id": "Q04",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_MOLECULAR",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_NET_IONIC",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C3_SPECTATOR",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S2-1",
+      "topic": 2,
+      "family_id": "FAM-2A",
+      "type_id": "Q07",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_CLASSIFY",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_JUSTIFY",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S2-2",
+      "topic": 2,
+      "family_id": "FAM-5D",
+      "type_id": "Q18",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SELECTION",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_JUSTIFY",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S2-3",
+      "topic": 2,
+      "family_id": "FAM-2D",
+      "type_id": "Q12",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_READ",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": "E_GRAPH_PAYLOAD_MALFORMED"
+        },
+        {
+          "criterion_id": "C2_SCALE",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": "E_GRAPH_PAYLOAD_MALFORMED"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S3-1",
+      "topic": 3,
+      "family_id": "FAM-3A",
+      "type_id": "Q02",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SETUP",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        },
+        {
+          "criterion_id": "C2_VALUE",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        },
+        {
+          "criterion_id": "C3_IONS",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S3-2",
+      "topic": 3,
+      "family_id": "FAM-3C",
+      "type_id": "Q08",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_ORDER",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        },
+        {
+          "criterion_id": "C2_ERROR",
+          "status": "denied",
+          "verdict_class": null,
+          "error_class": null
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S3-3",
+      "topic": 3,
+      "family_id": "FAM-3D",
+      "type_id": "Q17",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_MASS",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_BASIS",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C3_MISSING",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S4-1",
+      "topic": 4,
+      "family_id": "FAM-2C",
+      "type_id": "Q01",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_VALUE",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "UNREADABLE_INPUT"
+        },
+        {
+          "criterion_id": "C2_SIGFIG",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "UNREADABLE_INPUT"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S4-2",
+      "topic": 4,
+      "family_id": "FAM-4B",
+      "type_id": "Q02",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SETUP",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        },
+        {
+          "criterion_id": "C2_VALUE",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        },
+        {
+          "criterion_id": "C3_ENTROPY",
+          "status": "pending",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S5-1",
+      "topic": 5,
+      "family_id": "FAM-6A",
+      "type_id": "Q15",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SELF_EXPLAIN",
+          "status": "pending",
+          "verdict_class": "pending_self_assessment",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S5-2",
+      "topic": 5,
+      "family_id": "FAM-5B",
+      "type_id": "Q02",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SETUP",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_VALUE",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C3_ORDER",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S5-3",
+      "topic": 5,
+      "family_id": "FAM-6C",
+      "type_id": "Q10",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_READ",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_ERROR_DIRECTION",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C3_ENDPOINT",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S6-1",
+      "topic": 6,
+      "family_id": "FAM-6A",
+      "type_id": "Q07",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_ROLES",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_OPTION_SELECTION"
+        },
+        {
+          "criterion_id": "C2_JUSTIFY",
+          "status": "pending",
+          "verdict_class": "incorrect",
+          "error_class": "WRONG_OPTION_SELECTION"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S6-2",
+      "topic": 6,
+      "family_id": "FAM-6B",
+      "type_id": "Q05",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_HALF_REACTIONS",
+          "status": "pending",
+          "verdict_class": null,
+          "error_class": "MANUAL_PENDING"
+        },
+        {
+          "criterion_id": "C2_OVERALL",
+          "status": "pending",
+          "verdict_class": null,
+          "error_class": "MANUAL_PENDING"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S7-1",
+      "topic": 7,
+      "family_id": "FAM-7A",
+      "type_id": "Q03",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_RELATION",
+          "status": "pending",
+          "verdict_class": null,
+          "error_class": "MANUAL_PENDING"
+        },
+        {
+          "criterion_id": "C2_VALUE",
+          "status": "pending",
+          "verdict_class": null,
+          "error_class": "MANUAL_PENDING"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S7-2",
+      "topic": 7,
+      "family_id": "FAM-7B",
+      "type_id": "Q09",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_VALUE",
+          "status": "awarded",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        },
+        {
+          "criterion_id": "C2_DIAGNOSTIC",
+          "status": "pending",
+          "verdict_class": "auto_passed_pending_review",
+          "error_class": "NONE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "task-answered",
+      "slot_id": "S7-3",
+      "topic": 7,
+      "family_id": "FAM-4B",
+      "type_id": "Q09",
+      "criterion_verdicts": [
+        {
+          "criterion_id": "C1_SETUP",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        },
+        {
+          "criterion_id": "C2_VALUE",
+          "status": "denied",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        },
+        {
+          "criterion_id": "C3_CYCLE",
+          "status": "pending",
+          "verdict_class": "incorrect",
+          "error_class": "OUT_OF_TOLERANCE"
+        }
+      ],
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "remediation-state",
+      "slot_id": "S2-3",
+      "state": "open",
+      "concept_ids": [
+        "P2-08",
+        "P2-09"
+      ],
+      "chain_ids": [],
+      "signature_id": null,
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "remediation-state",
+      "slot_id": "S4-1",
+      "state": "open",
+      "concept_ids": [
+        "P2-02",
+        "P2-03",
+        "P2-07",
+        "P2-10"
+      ],
+      "chain_ids": [
+        "EX04"
+      ],
+      "signature_id": "MC-2B-02",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "remediation-state",
+      "slot_id": "S4-2",
+      "state": "open",
+      "concept_ids": [
+        "P3-01",
+        "P3-06",
+        "P4-02",
+        "P4-03",
+        "P4-09"
+      ],
+      "chain_ids": [
+        "EX05",
+        "EX08"
+      ],
+      "signature_id": "MC-3A-02",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "remediation-state",
+      "slot_id": "S6-1",
+      "state": "open",
+      "concept_ids": [
+        "P6-01",
+        "P6-02",
+        "P6-04"
+      ],
+      "chain_ids": [
+        "EX12"
+      ],
+      "signature_id": "MC-6A-01",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    },
+    {
+      "event": "remediation-state",
+      "slot_id": "S7-3",
+      "state": "open",
+      "concept_ids": [
+        "P3-01",
+        "P3-06",
+        "P4-02",
+        "P4-03",
+        "P4-09"
+      ],
+      "chain_ids": [
+        "EX05",
+        "EX08"
+      ],
+      "signature_id": "MC-3A-02",
+      "graded_digest": "5a01ab73745c19ed157a83a96626a1fc2e0c644388c8ed0b980601d9321d9db0"
+    }
+  ]
+}

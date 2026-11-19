@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "task": "N02",
+  "artifact": "coverage-validation",
+  "island": "data/coverage.json",
+  "island_sha256": "3d734990d87695899238b86e92a1253c6aebfdaf61f0fc741b5b3d115ff2ce7b",
+  "island_bytes": 62361,
+  "expected": {
+    "total": 64,
+    "per_topic": {
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 11,
+      "5": 10,
+      "6": 8,
+      "7": 5
+    }
+  },
+  "checks": {
+    "edges": {
+      "edges": 127,
+      "cross_topic": 20,
+      "dangling": 0,
+      "cycle": null
+    },
+    "planning": {
+      "checked": true,
+      "rows": 64,
+      "ids_match": true,
+      "statements_match": 64,
+      "families_match": 64,
+      "per_topic": {
+        "1": 9,
+        "2": 10,
+        "3": 11,
+        "4": 11,
+        "5": 10,
+        "6": 8,
+        "7": 5
+      }
+    },
+    "masters": [
+      {
+        "topic": 1,
+        "freeze_id": "C1-MASTER",
+        "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "recorded_sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39",
+        "recorded_bytes": 1018215,
+        "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39",
+        "bytes": 1018215,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 2,
+        "freeze_id": "C2-MASTER",
+        "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "recorded_sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea",
+        "recorded_bytes": 969738,
+        "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea",
+        "bytes": 969738,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 3,
+        "freeze_id": "C3-MASTER",
+        "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+        "recorded_sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f",
+        "recorded_bytes": 1039699,
+        "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f",
+        "bytes": 1039699,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 4,
+        "freeze_id": "C4-MASTER",
+        "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+        "recorded_sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845",
+        "recorded_bytes": 2502506,
+        "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845",
+        "bytes": 2502506,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 5,
+        "freeze_id": "C5-MASTER",
+        "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "recorded_sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb",
+        "recorded_bytes": 1518065,
+        "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb",
+        "bytes": 1518065,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 6,
+        "freeze_id": "C6-MASTER",
+        "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "recorded_sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7",
+        "recorded_bytes": 1829918,
+        "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7",
+        "bytes": 1829918,
+        "status": "FROZEN"
+      },
+      {
+        "topic": 7,
+        "freeze_id": "C7-MASTER",
+        "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "recorded_sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f",
+        "recorded_bytes": 348993,
+        "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f",
+        "bytes": 348993,
+        "status": "FROZEN"
+      }
+    ],
+    "anchors": {
+      "checked": true,
+      "resolved": 64,
+      "failed": 0,
+      "per_topic": {
+        "1": {
+          "resolved": 9,
+          "total": 9
+        },
+        "2": {
+          "resolved": 10,
+          "total": 10
+        },
+        "3": {
+          "resolved": 11,
+          "total": 11
+        },
+        "4": {
+          "resolved": 11,
+          "total": 11
+        },
+        "5": {
+          "resolved": 10,
+          "total": 10
+        },
+        "6": {
+          "resolved": 8,
+          "total": 8
+        },
+        "7": {
+          "resolved": 5,
+          "total": 5
+        }
+      },
+      "total": 64
+    },
+    "schema": {
+      "island_keys": "present",
+      "outcomes_checked": 64,
+      "unique_ids": 64,
+      "duplicate_ids": [],
+      "invalid_ids": []
+    },
+    "labels": {
+      "topics": {
+        "label": "PROGRAMME-SOURCED",
+        "count": 7
+      },
+      "official_facts": {
+        "label": "PROGRAMME-SOURCED",
+        "count": 3
+      },
+      "training_policy": {
+        "label": "PROPOSED",
+        "count": 4
+      },
+      "outcome_statements": {
+        "label": "PROPOSED",
+        "count": 64
+      },
+      "outcome_granularity": {
+        "label": "PROPOSED",
+        "count": 64
+      }
+    },
+    "source": {
+      "planning": "docs/PROGRAMME_COVERAGE_MATRIX.csv",
+      "planning_sha256": "89c38b9e44a82840380e012d46303dacd1f22b70548b62917118e9b16aaac3c0",
+      "programme_extract": "evidence/programme_extracted.txt",
+      "inventory": "evidence/SOURCE_FREEZE_INVENTORY.json",
+      "emission_rule": "sorted keys; separators (\",\",\":\"); ensure_ascii=False; UTF-8",
+      "canonical_island_bytes": 46502
+    }
+  },
+  "errors": [],
+  "status": "PASS",
+  "counts": {
+    "total": 64,
+    "expected_total": 64,
+    "per_topic": {
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 11,
+      "5": 10,
+      "6": 8,
+      "7": 5
+    },
+    "expected_per_topic": {
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 11,
+      "5": 10,
+      "6": 8,
+      "7": 5
+    },
+    "match": true
+  }
+}

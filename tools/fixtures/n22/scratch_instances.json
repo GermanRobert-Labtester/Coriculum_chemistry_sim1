@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "owner": "N22-B",
+  "status": "scratch-instances-for-n22-b-fixtures",
+  "note": "Scratch instances and the composed-response specification consumed by tools/check_n22_components.js. The shipped registry (data/response_types.json, N22-A) is the authority for every contract; nothing here replaces a shipped contract. Instances marked N22B-SCRATCH are practice-fixture data, not bank questions.",
+  "fixture_questions": {
+    "Q01": "COL1-2-2B-A-01",
+    "Q02": "COL1-3-3A-A-01",
+    "Q03": "N22B-SCRATCH-Q03-01",
+    "Q04": "COL1-1-1C-B-01",
+    "Q05": "COL1-6-6B-A-01",
+    "Q06": "COL1-2-2A-B-01",
+    "Q07": "COL1-1-1A-A-01",
+    "Q08": "COL1-2-2A-A-01",
+    "Q09": "COL1-2-2B-B-01",
+    "Q10": "COL1-2-2C-A-01",
+    "Q11": "COL1-2-2D-A-01",
+    "Q12": "COL1-2-2D-B-01",
+    "Q13": "COL1-1-1A-B-01",
+    "Q14": "COL1-1-1B-C-01",
+    "Q15": "COL1-1-1B-B-01",
+    "Q16": "COL1-1-1D-B-01",
+    "Q17": "COL1-3-3D-A-01",
+    "Q18": "COL1-5-5D-D-01"
+  },
+  "fixture_question_reasons": {
+    "Q03": "The shipped Q03 registry field declares source instance.payload.template_options, and no bank instance carries it (see observations). The scratch instance adds the three authored template options so the radio group can be exercised.",
+    "Q11": "Parity draws a two-point line with the scratch q11_two_point instance because the shipped Q11 instance has no capture context whose axes cover its y span (see observations).",
+    "Q17": "The shipped Q17 instance has no payload.structure_parts, so the palette is absent there; the scratch q17_structure instance carries two structure parts so select-and-place can be exercised."
+  },
+  "instances": {
+    "q03_template_options": {
+      "bank_version": "0.0.0-n22b-scratch",
+      "difficulty": "transfer",
+      "extensions": {
+        "data": {
+          "derived": [
+            {
+              "args": [
+                "gamma_g_l",
+                "M_NaCl_g_mol"
+              ],
+              "engine_path": "N17-numeric:quantity/divide",
+              "op": "div",
+              "role": "intermediate",
+              "value": "0,342231",
+              "value_id": "c_mol_l"
+            }
+          ],
+          "draws": [
+            {
+              "kind": "int",
+              "label_lv": "γ (g/L)",
+              "param_id": "gamma_g_l",
+              "value": "20,0"
+            },
+            {
+              "kind": "constant",
+              "label_lv": "M(NaCl) (g/mol)",
+              "param_id": "M_NaCl_g_mol",
+              "source": "molar_mass:NaCl",
+              "value": "58,44"
+            }
+          ],
+          "engine_id": "n20-variant-engine",
+          "engine_version": "1.0.0",
+          "family_id": "FAM-3B",
+          "point_weight": 6,
+          "recipe": {},
+          "review_workflow": {
+            "checks": [
+              "schema",
+              "range_compliance",
+              "n17_recompute",
+              "n12_leak_scan",
+              "accessibility_structure"
+            ],
+            "sign_off": {
+              "authority": "PROPOSED training policy (N20). Nav RSU instruktora pieņemums un nav oficiāla eksāmena apstiprinājums.",
+              "date": "2026-11-18",
+              "role": "N20 uzdevuma autors — preparācijas caurja parakstīšana",
+              "scope_lv": "Parakstīts tikai N20 sagatavošanas caurjam: shēmas atbilstība,  diapazonu atbilstība, N17 pārrēķins, N12 noplūdes skans un struktūras pieejamības pārbaude.",
+              "statement_lv": "Pārbaudīju, ka šis uzdevums atbilst deklarētajām diapazoniem, ka tā atbildes ir neatkarīgi pārrēķinātas caur N17 un ka atslēgšanas tekstā nav atbildes noplūdes bez pamatojuma."
+            },
+            "stages": [
+              "authored",
+              "validated",
+              "recomputed",
+              "reviewed",
+              "accepted"
+            ],
+            "state": "accepted"
+          },
+          "seed_algorithm": "fnv1a64-utf8-v1",
+          "seed_key": "FAM-3B-D",
+          "spec_lv": "Dota γ un M; izsaki c, pēc tam izskaidro trūkstošo ρ pārejai uz w",
+          "variant_id": "D"
+        },
+        "extension_type": "n20-variant-instance"
+      },
+      "family_id": "FAM-3B",
+      "feedback_lv": {
+        "correct": "Pareizi: lielums, vienība un noapaļošana atbilst deklarētajām konvencijām.",
+        "incorrect": "Pārbaudi mērvienības, procentu bāzi un zīmīgos ciparus; lielumiem jābūt saskaņoti."
+      },
+      "givens": {
+        "M_NaCl_g_mol": 58.44,
+        "gamma_g_l": 20
+      },
+      "misconception_signatures": [
+        "MC-3B-02"
+      ],
+      "outcome_ids": [
+        "P3-07",
+        "P3-08",
+        "P3-09"
+      ],
+      "payload": {
+        "expected_summary_lv": "c = γ/M, bet w = γ/(ρ·1000) — pārejai uz masu nepieciešams blīvums ρ.",
+        "explanation_prompt_lv": "Izsaki c un w un paskaidro trūkstošo lielumu.",
+        "species_list": [
+          "NaCl"
+        ],
+        "steps": [
+          {
+            "expected": "c = γ/M",
+            "prompt_lv": "Kā izteikt c, ja γ ir g/L un M ir g/mol?",
+            "step_id": "S1"
+          },
+          {
+            "expected": "w = γ/(ρ·1000)",
+            "prompt_lv": "Kā izteikt w (m/m), ja γ ir g/L un ρ ir g/mL?",
+            "step_id": "S2"
+          },
+          {
+            "expected": "w ir masa uz šķīduma masu, bet γ ir masa uz šķīduma tilpumu; bez ρ nevar pārevert tilpumu uz masu.",
+            "prompt_lv": "Kāpēc ρ ir vajadzīgs?",
+            "step_id": "S3"
+          }
+        ],
+        "template_options": [
+          {
+            "template_id": "TPL_C_FROM_GAMMA",
+            "text_lv": "c = γ / M"
+          },
+          {
+            "template_id": "TPL_W_FROM_GAMMA_RHO",
+            "text_lv": "w = γ / (ρ · 1000)"
+          },
+          {
+            "template_id": "TPL_C_FROM_N_V",
+            "text_lv": "c = n / V"
+          }
+        ]
+      },
+      "payload_class": "method",
+      "question_id": "N22B-SCRATCH-Q03-01",
+      "review": {
+        "accessibility": "passed",
+        "calculation": "passed",
+        "content": "passed",
+        "source": "passed"
+      },
+      "rubric": [
+        {
+          "carry_forward": false,
+          "criterion_id": "C1_FORMULA_C",
+          "depends_on": [],
+          "engine_binding": "self-assessed",
+          "grading": "self",
+          "points": 2
+        },
+        {
+          "carry_forward": false,
+          "criterion_id": "C2_FORMULA_W",
+          "depends_on": [],
+          "engine_binding": "self-assessed",
+          "grading": "self",
+          "points": 2
+        },
+        {
+          "carry_forward": false,
+          "criterion_id": "C3_MISSING",
+          "depends_on": [],
+          "engine_binding": "self-assessed",
+          "grading": "self",
+          "points": 2
+        }
+      ],
+      "schema_version": 1,
+      "seed": "n22b-scratch-q03",
+      "source_refs": [
+        {
+          "path": "docs/QUESTION_TYPES_AND_VARIANTS.md",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "locator": "N22-B scratch fixture (not a bank instance)",
+          "claim_status": "proposal-explicit-givens"
+        }
+      ],
+      "stem_lv": "Dots γ = 20,0 g/L un M = 58,44 g/mol. Izsaki c un w, un paskaidro, kāpēc pārejai no γ uz w nepieciešams arī ρ.",
+      "time_minutes": 10,
+      "topic": 3,
+      "type_id": "Q03",
+      "type_ids": [
+        "Q03"
+      ],
+      "variant_id": "D"
+    },
+    "q17_structure": {
+      "question_id": "N22B-SCRATCH-Q17-01",
+      "schema_version": 1,
+      "bank_version": "0.0.0-n22b-scratch",
+      "family_id": "FAM-3D",
+      "variant_id": "A",
+      "seed": "n22b-scratch-q17",
+      "topic": 3,
+      "outcome_ids": [
+        "P3-03"
+      ],
+      "type_id": "Q17",
+      "type_ids": [
+        "Q17"
+      ],
+      "difficulty": "application",
+      "time_minutes": 6,
+      "stem_lv": "Etikete: \"NaCl 0,9 % (m/V)\". Atzīmē šķīdumā esošās daļiņas uz struktūras mērķa un aprēķini NaCl masu 30,0 mL.",
+      "feedback_lv": {
+        "correct": "Pareizi.",
+        "incorrect": "Pārbaudi procentu bāzi un daļiņu sastāvu."
+      },
+      "misconception_signatures": [
+        "MC-3D-01"
+      ],
+      "source_refs": [
+        {
+          "path": "docs/QUESTION_TYPES_AND_VARIANTS.md",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "locator": "N22-B scratch fixture (not a bank instance)",
+          "claim_status": "proposal-explicit-givens"
+        }
+      ],
+      "givens": {
+        "V_ml": 30,
+        "w_percent": 0.9
+      },
+      "payload_class": "method",
+      "payload": {
+        "steps": [
+          {
+            "step_id": "S1",
+            "prompt_lv": "Kādas daļiņas šķīdumā novieto uz mērķa?",
+            "expected": "Na+ un Cl- joni"
+          },
+          {
+            "step_id": "S2",
+            "prompt_lv": "Kā iegūst NaCl masu 30,0 mL?",
+            "expected": "m = γ·V = 0,27 g"
+          }
+        ],
+        "explanation_prompt_lv": "Paskaidro, kāpēc šķīdumā ir joni.",
+        "expected_summary_lv": "Šķīdumā ir Na+ un Cl- joni; m(NaCl) = 0,27 g.",
+        "species_list": [
+          "NaCl",
+          "Na+",
+          "Cl-",
+          "H2O"
+        ],
+        "structure_parts": [
+          {
+            "part_id": "P_NA",
+            "text_lv": "Na⁺ jons"
+          },
+          {
+            "part_id": "P_CL",
+            "text_lv": "Cl⁻ jons"
+          }
+        ]
+      },
+      "rubric": [
+        {
+          "criterion_id": "C1",
+          "points": 1,
+          "grading": "auto",
+          "engine_binding": "N19-method",
+          "depends_on": [],
+          "carry_forward": false
+        }
+      ],
+      "review": {
+        "content": "pending",
+        "source": "pending",
+        "calculation": "pending",
+        "accessibility": "pending"
+      }
+    },
+    "q11_two_point": {
+      "question_id": "N22B-SCRATCH-Q11-01",
+      "schema_version": 1,
+      "bank_version": "0.0.0-n22b-scratch",
+      "family_id": "FAM-2D",
+      "variant_id": "A",
+      "seed": "n22b-scratch-q11",
+      "topic": 2,
+      "outcome_ids": [
+        "P2-08"
+      ],
+      "type_id": "Q11",
+      "type_ids": [
+        "Q11"
+      ],
+      "difficulty": "application",
+      "time_minutes": 8,
+      "stem_lv": "Uzzīmē taisni caur diviem kalibrēšanas punktiem un nolasi vērtību.",
+      "feedback_lv": {
+        "correct": "Pareizi.",
+        "incorrect": "Pārbaudi asis un mērogu."
+      },
+      "misconception_signatures": [
+        "MC-2D-01"
+      ],
+      "source_refs": [
+        {
+          "path": "docs/QUESTION_TYPES_AND_VARIANTS.md",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "locator": "N22-B scratch fixture (not a bank instance)",
+          "claim_status": "proposal-explicit-givens"
+        }
+      ],
+      "givens": {
+        "gamma1_mg_ml": 0.002,
+        "A1": 0.05,
+        "gamma2_mg_ml": 0.014,
+        "A2": 0.35
+      },
+      "payload_class": "graph",
+      "payload": {
+        "mode": "construct",
+        "x_axis": {
+          "label_lv": "γ",
+          "unit": "mg/mL"
+        },
+        "y_axis": {
+          "label_lv": "A",
+          "unit": ""
+        },
+        "points": [
+          {
+            "x": 0.002,
+            "y": 0.05
+          },
+          {
+            "x": 0.014,
+            "y": 0.35
+          }
+        ],
+        "target_readout": {
+          "quantity": "absorbance",
+          "expected_value": 0.35,
+          "unit": "",
+          "tolerance_class": "absorbance"
+        }
+      },
+      "rubric": [
+        {
+          "criterion_id": "C1",
+          "points": 2,
+          "grading": "auto",
+          "engine_binding": "N18-symbolic",
+          "depends_on": [],
+          "carry_forward": false
+        }
+      ],
+      "review": {
+        "content": "pending",
+        "source": "pending",
+        "calculation": "pending",
+        "accessibility": "pending"
+      }
+    }
+  },
+  "composed": {
+    "instance_id": "N22B-SCRATCH-COMPOSED-01",
+    "label_key": "input.group.composed",
+    "parts": [
+      {
+        "part_id": "part1",
+        "label_key": "input.q02.name",
+        "type_id": "Q02",
+        "fixture_question": "COL1-3-3A-A-01",
+        "payload": {
+          "kind": "numeric",
+          "values": {
+            "S1": "0,04791",
+            "S2": "1,597",
+            "c": "1,60"
+          }
+        }
+      },
+      {
+        "part_id": "part2",
+        "label_key": "input.q12.name",
+        "type_id": "Q12",
+        "fixture_question": "COL1-2-2D-B-01",
+        "payload": {
+          "kind": "graph",
+          "variant": "Q12_read",
+          "read": {
+            "x": "30,00",
+            "y": "",
+            "figure_binding": "Q12-SCRATCH-FIGURE"
+          }
+        }
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "N22B-OBS-01",
+      "topic": "Q03 data gap",
+      "observed": "data/response_types.json Q03 declares fields[0].source = instance.payload.template_options (radio group) and fields[2].source = static (conserved), but no data/bank instance carries payload.template_options.",
+      "component_behaviour": "render(Q03, ...) throws E_INPUTS_CONTRACT_VIOLATION naming field \"choice\" instead of rendering an empty radio group.",
+      "needed": "N22-A: either declare the template options in the registry (a contract-level option_source) or add payload.template_options to the Q03 instances; N24 needs one of the two before the Q03 widget can be assembled."
+    },
+    {
+      "id": "N22B-OBS-02",
+      "topic": "Q11 capture context coverage",
+      "observed": "No registry entry declares a capture context or figure for Q11/Q12, and the shipped N18 capture contexts (capture_contract.capture_contexts) have y_max <= 0,55 while the bank Q11 instance COL1-2-2D-A-01 has y values 0,30..0,74.",
+      "component_behaviour": "The capture context is supplied by the assembler through initialState(..., {capture_context_id}); without one the Q11 draw path fails with E_INPUTS_CONTRACT_VIOLATION naming draw_payload.",
+      "needed": "N22-A/N24: declare (or bind at assembly) a capture context whose evaluated axes cover the instance span."
+    },
+    {
+      "id": "N22B-OBS-03",
+      "topic": "Q12 figure binding granularity",
+      "observed": "Q12 figure_binding uses option_source sim-figures, so the select offers every figure in the island (45 options) for a single declared reading.",
+      "component_behaviour": "Options are named by each figure's title_key; the binding stays a required field (the A.1.2 corner case: a read with values but no binding is incomplete).",
+      "needed": "N22-A/N24: bind the field to the instance's own figure list rather than the whole island."
+    },
+    {
+      "id": "N22B-OBS-04",
+      "topic": "Q14/Q18 per-option naming",
+      "observed": "Q14 and Q18 option fields both use label_key input.selection.selected (\"Izvēlētās atbildes\"), so every checkbox in the group resolves to the same accessible name; Q07 has a per-option pattern (input.q07.option_cell with {option}).",
+      "component_behaviour": "Each checkbox is its own field with its own id (opt_<option_id>) and the option text in visible_label, but the aria_name is the group phrase repeated.",
+      "needed": "N22-A: give Q14/Q18 a per-option pattern (for example input.selection.option_cell with {option}); N33's live pass will otherwise hear four identically named checkboxes."
+    },
+    {
+      "id": "N22B-OBS-05",
+      "topic": "per-field state phrases",
+      "observed": "The term bank has response-level state phrases (input.state.complete/incomplete/invalid/pending_grading) and per-field missing messages (input.missing.*) but no per-field \"filled\" phrase.",
+      "component_behaviour": "A field's state_text is the completion missing message when empty, the Latvian error message when in error, the pending phrase while a self-assessed answer waits, and the stored text itself once filled. No colour-only state and no invented Latvian."
+    }
+  ]
+}

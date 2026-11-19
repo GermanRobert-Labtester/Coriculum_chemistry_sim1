@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["ES2018"],
+    "module": "es2020",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": false,
+    "newLine": "lf",
+    "declaration": false,
+    "sourceMap": false,
+    "outDir": "compiled",
+    "rootDir": ".",
+    "types": []
+  },
+  "files": [
+    "ambient.d.ts",
+    "session.ts",
+    "exam.ts",
+    "inputs/registry.ts",
+    "inputs/components.ts",
+    "inputs/integration.ts",
+    "grading.ts",
+    "feedback.ts",
+    "assembly.ts",
+    "store.ts",
+    "analytics.ts",
+    "mastery.ts",
+    "scheduler.ts",
+    "remediation.ts",
+    "revision.ts",
+    "practice.ts",
+    "focus.ts",
+    "paper.ts"
+  ]
+}

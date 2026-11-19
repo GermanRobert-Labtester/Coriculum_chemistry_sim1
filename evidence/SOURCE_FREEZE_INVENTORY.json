@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "artifact": "source-freeze-inventory",
+  "created": "2026-11-17",
+  "workspace": "Chemistry_1st_coriculum",
+  "hash_algorithm": "sha256",
+  "path_base": "Repository root (paths are relative to this directory)",
+  "purpose": "Frozen citation baseline for N01-N05 and every later task that cites a consumed source.",
+  "completeness_rule": "Every source this roadmap consumes has exactly one entry with status FROZEN or UNAVAILABLE. An unavailable source is recorded with its consequence and is never silently dropped.",
+  "status_values": {
+    "FROZEN": "Digest and byte size recomputed from the live published file; checked by tools/check_source_inventory.py.",
+    "UNAVAILABLE": "The source is not present in the published repository; its consequence is recorded for downstream tasks."
+  },
+  "source_count": 19,
+  "frozen_count": 18,
+  "unavailable_count": 1,
+  "checker": "tools/check_source_inventory.py",
+  "checker_invocation": "python3 tools/check_source_inventory.py",
+  "official_programme_sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+  "sources": [
+    {
+      "id": "C1-MASTER",
+      "path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "role": "canonical-master",
+      "topic": 1,
+      "bytes": 1018215,
+      "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 1: Ievads, šķīdumi un ķīmiskās reakcijas. Published copy; the original sibling source is Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html.",
+      "source_path": "Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html"
+    },
+    {
+      "id": "C2-MASTER",
+      "path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "role": "canonical-master",
+      "topic": 2,
+      "bytes": 969738,
+      "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 2: Aprēķini, mērījumi un grafiskās metodes. Published copy; the original sibling source is Chemistry_2/Master_2_tema_merijumi_un_grafiki.html.",
+      "source_path": "Chemistry_2/Master_2_tema_merijumi_un_grafiki.html"
+    },
+    {
+      "id": "C3-MASTER",
+      "path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "role": "canonical-master",
+      "topic": 3,
+      "bytes": 1039699,
+      "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 3: Šķīdumi un koncentrāciju aprēķini. Published copy; the original sibling source is Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html.",
+      "source_path": "Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html"
+    },
+    {
+      "id": "C4-MASTER",
+      "path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "role": "canonical-master",
+      "topic": 4,
+      "bytes": 2502506,
+      "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 4: Termodinamika. Published copy; the original sibling source is Chemistry_4/Master_4_temats_termodinamika.html.",
+      "source_path": "Chemistry_4/Master_4_temats_termodinamika.html"
+    },
+    {
+      "id": "C5-MASTER",
+      "path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "role": "canonical-master",
+      "topic": 5,
+      "bytes": 1518065,
+      "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 5: Kinētika un katalīze. Published copy; the original sibling source is Chemistry_5/Master_5_tema_kinetika_un_katalize.html.",
+      "source_path": "Chemistry_5/Master_5_tema_kinetika_un_katalize.html"
+    },
+    {
+      "id": "C6-MASTER",
+      "path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "role": "canonical-master",
+      "topic": 6,
+      "bytes": 1829918,
+      "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 6: Oksidēšanās un reducēšanās (local Topic 13). Published copy; the original sibling source is Chemistry_6/Master_oksidesanas_reducesanas_procesi.html.",
+      "source_path": "Chemistry_6/Master_oksidesanas_reducesanas_procesi.html"
+    },
+    {
+      "id": "C7-MASTER",
+      "path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "role": "canonical-master",
+      "topic": 7,
+      "bytes": 348993,
+      "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N11",
+        "N13",
+        "N15",
+        "N17",
+        "N19",
+        "N20"
+      ],
+      "citation": "COPY_MANIFEST.json canonical-master entry; inspected 2026-11-16",
+      "notes": "Programme topic 7: Spektrofotometrija un analīzes metodes. Published copy; the original sibling source is Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html.",
+      "source_path": "Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html"
+    },
+    {
+      "id": "COPY-MANIFEST",
+      "path": "COPY_MANIFEST.json",
+      "role": "copy-manifest",
+      "bytes": 57793,
+      "sha256": "07d49735060796c3d34191b66b5fe9991232279f5849147c7e2b0f5ad59b72c9",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N31",
+        "N35"
+      ],
+      "citation": "Preparation inspection 2026-11-16; digest recorded in evidence/PREPARATION_VERIFICATION.json",
+      "notes": "174 file records, 30,083,827 bytes, roles 7/35/65/18/49. Its source fields name the unpublished siblings; its destination records and hashes are the repository-local authority."
+    },
+    {
+      "id": "PROGRAMME-PDF",
+      "path": "RSU_MedChem_Colloq1_Prog_LV_2025.pdf",
+      "role": "official-programme",
+      "bytes": 353208,
+      "sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03",
+        "N06",
+        "N21",
+        "N34",
+        "N40"
+      ],
+      "citation": "Inspection 2026-11-16 (pdfinfo, pdftotext, four Poppler page renders); digest also in the roadmap Section 1.5 and 3.1",
+      "notes": "Official facts: seven topics, written-on-paper examination, maximum 180 minutes. Digest must reproduce f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9."
+    },
+    {
+      "id": "SIMULATION-BLUEPRINT",
+      "path": "docs/SIMULATION_BLUEPRINT.json",
+      "role": "design-blueprint",
+      "bytes": 8267,
+      "sha256": "97235e27857a28199685acec39780829663acf55668ec98c6e14cfbb028a7197",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N04",
+        "N20",
+        "N24"
+      ],
+      "citation": "README and roadmap N02/N04/N20 citations",
+      "notes": "Proposed A/B/C forms, 21 slots, 100 points, 170 working + 10 review minutes. Proposed, not official."
+    },
+    {
+      "id": "AGENTS-MD",
+      "path": "AGENTS.md",
+      "role": "workspace-governance",
+      "bytes": 2743,
+      "sha256": "93c8dd5b1a7f1a330cbbbc941df99ac84a9235c0505c2aa1ff118e2e5d1bc548",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N31",
+        "N33",
+        "N35",
+        "N37",
+        "N38",
+        "N40"
+      ],
+      "citation": "Workspace governance read 2026-11-16",
+      "notes": "Governs every task: frozen reference trees, offline/no-CDN, lite-shot with Falkon, no subagents, in-memory sessions, no official-exam claims."
+    },
+    {
+      "id": "PREDECESSOR-ROADMAP",
+      "path": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md",
+      "role": "predecessor-roadmap",
+      "bytes": 76047,
+      "sha256": "e218fdf1d83dce3f5bc132bd7ea99ffcd398a67b153b960a225fafc9ecdc66a9",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N03",
+        "N40"
+      ],
+      "citation": "Inspection 2026-11-16; 76,047 bytes, 20 T, 10 F and 5 B cards",
+      "notes": "Carries inherited conflicts C01-C10 and the audit record this roadmap maps into N-tasks."
+    },
+    {
+      "id": "COVERAGE-MATRIX",
+      "path": "docs/PROGRAMME_COVERAGE_MATRIX.csv",
+      "role": "planning-input",
+      "bytes": 22611,
+      "sha256": "89c38b9e44a82840380e012d46303dacd1f22b70548b62917118e9b16aaac3c0",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N02"
+      ],
+      "citation": "Inspection 2026-11-16; 64 outcomes referenced by the roadmap",
+      "notes": "64 coverage rows with master_anchor and planned_families fields; N02 formalizes the island."
+    },
+    {
+      "id": "QUESTION-FAMILIES",
+      "path": "docs/QUESTION_FAMILIES.json",
+      "role": "planning-input",
+      "bytes": 46937,
+      "sha256": "7e168dc21b82f5b713c0e1ccf854889e5450c73db0decf23dc2d1aa80064dde4",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N02",
+        "N04",
+        "N09",
+        "N20"
+      ],
+      "citation": "README; roadmap N02/N04/N20",
+      "notes": "28 families with four variant specifications each; specifications are not finished questions."
+    },
+    {
+      "id": "QUESTION-SCHEMA",
+      "path": "docs/QUESTION_SCHEMA.json",
+      "role": "planning-input",
+      "bytes": 5350,
+      "sha256": "5984f03b845c0d7248311b0311cd6ffb419762809b845db2a32c33dd7eb1ac88",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N04",
+        "N05",
+        "N20",
+        "N22",
+        "N24"
+      ],
+      "citation": "README; roadmap N04/N05",
+      "notes": "Proposed instance schema and the Q01-Q18 type enum; N04 authors the validator and loader."
+    },
+    {
+      "id": "EXAMPLE-QUESTIONS",
+      "path": "docs/EXAMPLE_QUESTIONS.json",
+      "role": "planning-input",
+      "bytes": 17375,
+      "sha256": "f5c9f2b62b14473126035af49efe5ba3eacf171628a2b4b84189f0c096126506",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N04",
+        "N05",
+        "N17",
+        "N20"
+      ],
+      "citation": "README; roadmap N04/N05",
+      "notes": "14 proposed examples; 13 carry numeric fields recomputed by verify_examples, 1 is non-numeric. Not official questions."
+    },
+    {
+      "id": "QUESTION-TYPES-DOC",
+      "path": "docs/QUESTION_TYPES_AND_VARIANTS.md",
+      "role": "planning-input",
+      "bytes": 29562,
+      "sha256": "537aa96baab9afcc2986391b3bc27a3c788cbc349452c79cf2db6d58e67a3136",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N04",
+        "N20",
+        "N26"
+      ],
+      "citation": "README; roadmap N04/N20",
+      "notes": "Eighteen response types, 28 families and the variant specification narrative."
+    },
+    {
+      "id": "PROGRAMME-EXTRACT",
+      "path": "evidence/programme_extracted.txt",
+      "role": "programme-transcription",
+      "bytes": 12135,
+      "sha256": "3aa14e35597d1ea8e44652eeba0a578d1a487ed61a76630f811f644f82467580",
+      "status": "FROZEN",
+      "consumed_by": [
+        "N01",
+        "N02",
+        "N03"
+      ],
+      "citation": "Generated from the programme PDF during the 2026-11-16 inspection; verify_programme checks the 180-minute/year strings",
+      "notes": "Derived transcription, not an official source; the PDF digest is the identity anchor."
+    },
+    {
+      "id": "SIBLING-SOURCES",
+      "path": "Chemistry_1 through Chemistry_7 (parent workspace, not published)",
+      "role": "verification-source-tree",
+      "bytes": null,
+      "sha256": null,
+      "status": "UNAVAILABLE",
+      "consumed_by": [
+        "N01"
+      ],
+      "citation": "V-01 reproduction 2026-11-16/17; evidence/source_workspace_baseline.json records the 15,978-file baseline",
+      "notes": "External to the published repository. The default full-workspace verifier dereferences these trees; repository-local mode does not.",
+      "consequence": "Default-mode source-to-copy comparison and the 15,978-file preservation assertion cannot run from a clean clone; the committed PASS stays DOCUMENTED BUT NOT RERUN in repository-local terms. N01 mitigates with --repo-local; publication of the siblings stays out of scope."
+    }
+  ],
+  "required_roles": {
+    "canonical-master": 7,
+    "copy-manifest": 1,
+    "official-programme": 1,
+    "design-blueprint": 1,
+    "workspace-governance": 1,
+    "predecessor-roadmap": 1,
+    "planning-input": 5,
+    "programme-transcription": 1,
+    "verification-source-tree": 1
+  },
+  "checker_checks": [
+    "every FROZEN entry exists at path, matches recorded bytes and sha256",
+    "every canonical-master entry also matches its COPY_MANIFEST destination record",
+    "the programme PDF digest equals the inspection anchor f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+    "every UNAVAILABLE entry carries a consequence",
+    "entry ids are unique and role counts equal required_roles"
+  ]
+}

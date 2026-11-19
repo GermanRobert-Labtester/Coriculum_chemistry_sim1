@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "task": "N29",
+  "status": "PASS",
+  "verbatim_copy": {
+    "self_assessment_label_lv": "Izglītojamā paša novērtējums (F07, PROPOSED) — šis nav automātiskais vērtējums un neietekmē apguves stāvokli.",
+    "note_never_analyzed_lv": "Brīvā teksta piezīme tiek saglabāta burtiski bez analīzes, atslēgvārdu meklēšanas vai automātiskas vērtēšanas."
+  },
+  "checks_count": 8,
+  "failures": [],
+  "checks": {
+    "a11_a13_three_profiles_and_corner_cases": {
+      "status": "PASS",
+      "fresh_counts": {
+        "learning": 0,
+        "mastered": 0,
+        "near_mastered": 0,
+        "needs_review": 0,
+        "unavailable": 0,
+        "unseen": 64
+      },
+      "mid_counts": {
+        "learning": 1,
+        "mastered": 1,
+        "near_mastered": 1,
+        "needs_review": 1,
+        "unavailable": 0,
+        "unseen": 60
+      },
+      "near_counts": {
+        "learning": 2,
+        "mastered": 54,
+        "near_mastered": 6,
+        "needs_review": 2,
+        "unavailable": 0,
+        "unseen": 0
+      },
+      "p102_self_before_practice": {
+        "mastery_state": "unseen",
+        "attempts": 0,
+        "rated_count": 2
+      },
+      "t7_unavailable_count": 5
+    },
+    "a12_dangling_anchor_fails_loudly": {
+      "status": "PASS",
+      "error": {
+        "code": "E_REVISION_DANGLING_ANCHOR",
+        "message": "Mērķa \"P1-01\" enkurs \"broken_anchor_xyz\" nav atrasts enkuru reģistrā (ANCHOR_REGISTRY)."
+      }
+    },
+    "b1_separation_and_leak_scan": {
+      "status": "PASS",
+      "mastery_digest_before": "73cc31522642619d2ae958e8695990218fe699fcffa37ec58db08477a6ad4948",
+      "mastery_digest_after": "73cc31522642619d2ae958e8695990218fe699fcffa37ec58db08477a6ad4948",
+      "mastery_badges": 64,
+      "self_badges": 64,
+      "leak_hits_count": 0,
+      "leak_hits": []
+    },
+    "b11_single_sourced_criterion_rename": {
+      "status": "PASS",
+      "renamed_label": "PĀRDĒVĒTS-KRITĒRIJS-N29: Skaitliskais aprēķins (test)",
+      "card_c1_label": "PĀRDĒVĒTS-KRITĒRIJS-N29: Skaitliskais aprēķins (test)",
+      "present_in_graded_feedback_report": true
+    },
+    "b12_keyboard_select_and_aria_announcements": {
+      "status": "PASS",
+      "criteria_completed_via_select": 6,
+      "announcements_count": 6,
+      "sample_announcement": "Kritērijs \"Skaitliskās vērtības aprēķins\": izvēlēts stāvoklis \"Protu droši\"",
+      "live_role": "status",
+      "aria_live": "polite"
+    },
+    "b13_persistence_boundary_and_erase": {
+      "status": "PASS",
+      "memory_mode_writes": 0,
+      "boundary_500_counter": "500 no 500 rakstzīmēm",
+      "boundary_501_error": "E_REVISION_NOTE_TOO_LONG",
+      "keys_after_erase": 0,
+      "sa_count_after_erase": 0
+    },
+    "c11_determinism_and_honesty_audit": {
+      "status": "PASS",
+      "run1_vm_digest": "d407880deddd66d8b5c7fd216693ab7a68934c748ab2ab421d8465806a85ff22",
+      "run2_vm_digest": "d407880deddd66d8b5c7fd216693ab7a68934c748ab2ab421d8465806a85ff22",
+      "fresh_vm_digest": "d407880deddd66d8b5c7fd216693ab7a68934c748ab2ab421d8465806a85ff22",
+      "run1_card_digest": "522bd25a290309024f0b72ce161f7436f80177fb1b38fe060177ee3a48a6f8c1",
+      "fresh_card_digest": "522bd25a290309024f0b72ce161f7436f80177fb1b38fe060177ee3a48a6f8c1",
+      "audit_status": "PASS",
+      "audit_elements": 327,
+      "untraceable_count": 0
+    },
+    "c13_handoff_and_built_smoke": {
+      "status": "PASS",
+      "handoff": {
+        "contract": "N27-to-N30-practice-entry",
+        "entry_source": "revision_panel",
+        "filters": {
+          "family_ids": [
+            "FAM-1C"
+          ],
+          "instance_ids": [
+            "COL1-1-1C-A-01",
+            "COL1-1-1C-B-01",
+            "COL1-1-1C-C-01",
+            "COL1-1-1C-D-01"
+          ],
+          "outcome_id": "P1-01",
+          "topic": 1
+        },
+        "mastery_state": "mastered",
+        "outcome_id": "P1-01",
+        "schema_version": 1,
+        "topic": 1
+      },
+      "unavailable_error": "E_REVISION_OUTCOME_UNAVAILABLE",
+      "built_smoke": {
+        "status": "PASS",
+        "total": 25,
+        "passed": 25,
+        "n29_vector": {
+          "id": "SMK-N29-REVISION-PANEL",
+          "owner": "N29",
+          "status": "PASS",
+          "details": {
+            "policyId": "sim-colloq1-revision-v1",
+            "outcomes": 64,
+            "masteryDigest": "7e233937b15abbceb4a3fdf196febe08125678cefddbf72cb23e15fcbde856c2",
+            "cardCriteria": 6,
+            "auditElements": 327
+          },
+          "reason": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "criterion_mapping": {
+    "criteria_count": 267,
+    "families_count": 28,
+    "instances_count": 112,
+    "status": "PASS",
+    "unknown_outcomes_count": 0,
+    "unmapped_count": 0
+  },
+  "errors": [],
+  "gate": "mastery",
+  "negative_fixtures": {
+    "cut_edge_caught": {
+      "caught": true,
+      "errors": [
+        "Unreachable mastery states detected: needs_review"
+      ],
+      "named": [
+        "needs_review"
+      ]
+    },
+    "extra_state_caught": {
+      "caught": true,
+      "errors": [
+        "Unreachable mastery states detected: stranded_vault"
+      ],
+      "named": [
+        "stranded_vault"
+      ]
+    },
+    "status": "PASS",
+    "zero_threshold_caught": {
+      "caught": true,
+      "errors": [
+        "Threshold \"learning_to_near_mastered_streak\" value must be a positive integer, got 0"
+      ]
+    }
+  },
+  "policy": {
+    "bytes": 10378,
+    "digest": "b1b5dab8a6b7335de7a311cec08b4f7da363fb8d8415dba7f9d1b70a1f047ea4",
+    "errors": [],
+    "file_sha256": "cf102dce5dca701ba501145441b9636a05b64511f235893caf1740a80d899135",
+    "policy_id": "sim-colloq1-mastery-policy-v1",
+    "reachable_states": [
+      "unseen",
+      "learning",
+      "near_mastered",
+      "mastered",
+      "needs_review"
+    ],
+    "states": [
+      "unseen",
+      "learning",
+      "near_mastered",
+      "mastered",
+      "needs_review"
+    ],
+    "status": "PASS",
+    "thresholds": {
+      "decay_inactivity_days": 14,
+      "decay_miss_count": 1,
+      "learning_to_near_mastered_streak": 2,
+      "near_mastered_to_mastered_streak": 2,
+      "needs_review_to_near_mastered_streak": 1
+    },
+    "unreachable_states": []
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "missing_placeholders": [],
+    "required_ids_present": 11,
+    "required_ids_total": 11,
+    "status": "PASS"
+  },
+  "sources": {
+    "exports": [
+      "ISLAND_ID",
+      "SCHEMA_VERSION",
+      "STATES",
+      "STATE_ORDER",
+      "errors",
+      "MasteryError",
+      "canonicalText",
+      "digestValue",
+      "validatePolicy",
+      "loadPolicy",
+      "resolveCriterionOutcomes",
+      "verifyBankCriterionMapping",
+      "extractCriterionEvents",
+      "createInitialStateMap",
+      "normalizeStateMap",
+      "reduce",
+      "digestOfMap",
+      "readFromStore",
+      "writeToStore",
+      "applyGradedRecordDraft",
+      "ingestGradedRecord",
+      "computeAvailability",
+      "buildAtskatsViewModel",
+      "buildPrakseViewModel",
+      "renderAtskats",
+      "renderPrakse",
+      "renderFromStore",
+      "renderError",
+      "init"
+    ],
+    "src/compiled/mastery.js": {
+      "bytes": 59476,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "256207ee68c9be9de902ca91258c325d2a111a5e385e1652cbc2c6f5cd9136a1"
+    },
+    "src/mastery.ts": {
+      "bytes": 57733,
+      "certification_hits": [],
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "96a2c2bd08ca7b76193e3fee49791b295be990806d9eb4d2dca940d56d491484"
+    }
+  },
+  "status": "PASS",
+  "task": "N26",
+  "ts_drift": "PASS"
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-revision-policy",
+  "owner": "N29",
+  "status": "authored",
+  "policy_id": "sim-colloq1-revision-v1",
+  "title_lv": "Vienotā atkārtošanas pārskata un kritēriju pašvērtējuma (F07) līgums (PROPOSED)",
+  "epistemic_label": "PROPOSED",
+  "official_counterpart_status": "UNDETERMINED",
+  "honesty_note_lv": "PROPOSED mācību politikas priekšlikums: 2025. gada oficiālā programma (RSU_MedChem_Colloq1_Prog_LV_2025.pdf) nenosaka atkārtošanas pārskata izkārtojumu vai kritēriju pašvērtējuma skalu (oficiāls analogs: UNDETERMINED). Pašvērtējums ir atsevišķs izglītojamā ievads un nekad nemaina automātiski aprēķināto apguves stāvokli.",
+  "honesty_note_en": "PROPOSED training policy: the 2025 programme sets no revision view or criterion self-assessment rubric. Self-ratings remain structurally separated from graded mastery and never confer official credit.",
+  "predecessor_decisions": [
+    {
+      "card_id": "F07-SelfAssessment",
+      "ref": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md §4.3",
+      "decision": "F07 criterion self-assessment approved with pending/ungraded semantics (never parsed, never keyword-matched, never feeding mastery)."
+    },
+    {
+      "card_id": "N25-Store",
+      "ref": "docs/ANALYTICS_STORE_FORMAT.md",
+      "decision": "Self-assessments persist only under explicit opt-in inside sim_colloq1_store_v2 with bounded note length and two-step erase."
+    },
+    {
+      "card_id": "N26-Mastery",
+      "ref": "docs/MASTERY_FORMAT.md",
+      "decision": "SimMastery.reduce accepts graded criterion verdicts and explicit decay events only; F07 self-ratings are structurally excluded."
+    },
+    {
+      "card_id": "N28-Remediation",
+      "ref": "docs/REMEDIATION_FORMAT.md",
+      "decision": "N29 consumes N28-queue-state-snapshot (on-read link validated) and shares affordance link validation rules."
+    }
+  ],
+  "self_assessment": {
+    "feature_id": "F07",
+    "store_field": "self_assessments",
+    "excluded_from_mastery": true,
+    "excluded_from_scoring": true,
+    "key_free_criteria_only": true,
+    "criterion_label_source": "SimFeedback.criterionLabel / #sim-terms (feedback.criterion.<criterion_id>)",
+    "note_max_length": 500,
+    "note_analysis_policy": "never-analyzed-verbatim",
+    "verbatim_self_assessment_label_lv": "Izglītojamā paša novērtējums (F07, PROPOSED) — šis nav automātiskais vērtējums un neietekmē apguves stāvokli.",
+    "verbatim_note_never_analyzed_lv": "Brīvā teksta piezīme tiek saglabāta burtiski bez analīzes, atslēgvārdu meklēšanas vai automātiskas vērtēšanas.",
+    "ratings": [
+      {
+        "id": "confident",
+        "term_key": "revision.rating.confident",
+        "epistemic_label": "PROPOSED"
+      },
+      {
+        "id": "with_effort",
+        "term_key": "revision.rating.with_effort",
+        "epistemic_label": "PROPOSED"
+      },
+      {
+        "id": "not_yet",
+        "term_key": "revision.rating.not_yet",
+        "epistemic_label": "PROPOSED"
+      }
+    ],
+    "unrated_option": {
+      "id": "",
+      "term_key": "revision.rating.unrated"
+    }
+  },
+  "practice_entry_contract": {
+    "contract": "N27-to-N30-practice-entry",
+    "entry_source": "revision_panel",
+    "selection_only": true,
+    "zero_key_material": true,
+    "consumed_by": "N30"
+  },
+  "source_provenance_rules": {
+    "mastery_state": "N26:SimMastery",
+    "availability": "N24/N26:Eligibility",
+    "remediation_queue": "N28:SimRemediation",
+    "self_assessment": "N29:F07",
+    "affordances": "N02/N07/N16/N30:Affordances",
+    "criterion_labels": "N23/N10:CriteriaLabels"
+  },
+  "copy_keys": {
+    "panel_title": "revision.panel.title",
+    "panel_honesty_note": "revision.panel.honesty_note",
+    "empty_topic": "revision.panel.empty_topic",
+    "last_practiced_day": "revision.panel.last_practiced_day",
+    "last_practiced_never": "revision.panel.last_practiced_never",
+    "no_chain": "revision.panel.no_chain",
+    "study_anchor": "revision.action.study_anchor",
+    "study_chain": "revision.action.study_chain",
+    "practice": "revision.action.practice",
+    "self_assess": "revision.action.self_assess",
+    "return_panel": "revision.action.return_panel",
+    "topic_summary_line": "revision.topic.summary_line",
+    "card_title": "revision.sa.card_title",
+    "label_own": "revision.sa.label_own",
+    "note_label": "revision.sa.note_label",
+    "note_policy": "revision.sa.note_policy",
+    "note_counter": "revision.sa.note_counter",
+    "save": "revision.sa.save",
+    "close": "revision.sa.close",
+    "saved_status": "revision.sa.saved_status",
+    "summary_present": "revision.sa.summary_present",
+    "summary_none": "revision.sa.summary_none",
+    "announcement": "revision.sa.announcement",
+    "rating_unrated": "revision.rating.unrated",
+    "rating_confident": "revision.rating.confident",
+    "rating_with_effort": "revision.rating.with_effort",
+    "rating_not_yet": "revision.rating.not_yet"
+  }
+}

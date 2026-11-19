@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "titration-contract",
+  "title": "N15 Frozen Titration Model, V-05 Wording and Reading-Coupling Contract",
+  "owner": "N15",
+  "status": "frozen-contract-for-N17-N18-N37",
+  "consumers": ["N17", "N18", "N37"],
+  "source_figures": "data/figures_t67.json",
+  "model_vocabulary": {
+    "strong_acid_strong_base": {
+      "curve_function_class": "titration_pH_strong_strong",
+      "equivalence_volume": "V_eq = C_acid_mol_l * V_acid_ml / C_base_mol_l",
+      "initial_ph": "pH_0 = -log10(C_acid_mol_l)",
+      "equivalence_ph": "7.00 at 25 C for the declared strong/strong system",
+      "params": ["C_acid_mol_l", "V_acid_ml", "C_base_mol_l", "V_max_ml", "kw_mol2_l2"]
+    },
+    "weak_acid_strong_base": {
+      "curve_function_class": "titration_pH_weak_strong",
+      "equivalence_volume": "V_eq = C_acid_mol_l * V_acid_ml / C_base_mol_l",
+      "charge_balance": "f(h) = C_base + h - Kw/h - C_acid*Ka/(Ka+h) = 0 solved by bisection",
+      "half_equivalence": "pH = pKa when the remaining terms are small; declared per record",
+      "params": ["C_acid_mol_l", "Ka", "V_acid_ml", "C_base_mol_l", "V_max_ml", "kw_mol2_l2"]
+    },
+    "redox_potential": {
+      "curve_function_class": "titration_redox_potential",
+      "equivalence_volume": "V_eq = C_analyte_mol_l * V_analyte_ml / (electrons_titrant * C_titrant_mol_l)",
+      "before_equivalence": "E = E0_analyte + nernst_slope*log10(x/(1-x))",
+      "at_equivalence": "E_eq = (E0_analyte + n*E0_titrant)/(n+1)",
+      "after_equivalence": "E = E0_titrant + (nernst_slope/n)*log10(y*[H+]^8)",
+      "params": ["C_analyte_mol_l", "V_analyte_ml", "C_titrant_mol_l", "V_max_ml", "E0_analyte_v", "E0_titrant_v", "electrons_titrant", "nernst_slope_v", "h_plus_mol_l", "initial_oxidized_fraction"]
+    }
+  },
+  "v05_wording": {
+    "rule_id": "N15-V05-01",
+    "equivalence_term_lv": "ekvivalences punkts",
+    "endpoint_term_lv": "beigu punkts",
+    "wording_rule_verbatim": "Tekstā un attēlā \"ekvivalences punkts\" un \"beigu punkts\" vienmēr jānosauc atsevišķi. Beigu punktu nekad nedefinē kā ekvivalences punktu. Ja abi parādās, jāpaskaidro, ka starpība ir titrēšanas kļūda (aptuveni viens pilieniņš).",
+    "difference_verbatim": "Aptuveni viens titranta pilieniņš; to nevar novērst ar laika normu.",
+    "persistence_criterion": "supplied_by_task",
+    "no_universal_time": true
+  },
+  "reading_coupling": {
+    "contract_ref": "N12-BURETTE-GEOM-01",
+    "division_ml": "0.1",
+    "reported_decimals": 2,
+    "axis_minor_step_ml": 1.0,
+    "subdivision_render": "inset_strip",
+    "print_subdivision_floor_mm": "1.50",
+    "delivered_volume_formula": "V_delivered = V_end - V_start"
+  },
+  "n18_scoring_fields": [
+    "titration_spec.model_class",
+    "titration_spec.declared_equivalence_volume_ml",
+    "titration_spec.initial_ph",
+    "titration_spec.initial_potential_v",
+    "titration_spec.endpoint_volume_ml",
+    "titration_spec.indicator.range_ph",
+    "reading_strip.declared_reading_ml",
+    "answers.equivalence_volume_ml"
+  ],
+  "n17_model_engine_fields": [
+    "curve_function_class",
+    "params",
+    "equivalence_volume",
+    "initial_ph",
+    "initial_potential_v"
+  ],
+  "n37_type_registry": {
+    "figure_types": ["curve", "scatter"],
+    "curve_function_classes": ["titration_pH_strong_strong", "titration_pH_weak_strong", "titration_redox_potential"]
+  }
+}

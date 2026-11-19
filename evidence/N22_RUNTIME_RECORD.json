@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "owner": "N22",
+  "status": "PASS",
+  "runtime_modules": [
+    "src/compiled/inputs/integration.js"
+  ],
+  "source_modules": [
+    "src/inputs/integration.ts"
+  ],
+  "engine_modules": [
+    "src/quantity-engine.js",
+    "src/method-engine.js",
+    "src/graph-scoring-engine.js",
+    "src/graph-capture.js"
+  ],
+  "islands": [
+    "data/response_types.json",
+    "data/exam_policy.json",
+    "data/terms.json",
+    "data/engine_taxonomy.json",
+    "data/graph_scoring_contract.json",
+    "data/method_engine_contract.json",
+    "data/bank/*.json"
+  ],
+  "digest_method": "SimInputsIntegration.contentDigest — two FNV-1a 32-bit lanes over a canonical JSON projection, 16 lowercase hex characters.",
+  "note": "The integration is strict TypeScript compiled by tools/compile_n21_ts.py; the compiled module is committed and the drift guard keeps it in step. The module ships from src/ and is not inlined into the artifact; N31 owns the final inline decision. This harness is not a browser render, screen-reader or instructor acceptance claim.",
+  "checks": {
+    "payload_contract": {
+      "status": "PASS",
+      "claim": "Every one of the 18 built payloads passes the session machine's own structural check, and the validated object is identical to the built payload: no adapter, no coercion.",
+      "registry_island": "data/response_types.json",
+      "rows": [
+        {
+          "type_id": "Q01",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q02",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q03",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q04",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q05",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q06",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q07",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q08",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q09",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q10",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q11",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q12",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q13",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q14",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q15",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q16",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q17",
+          "verdict_class": null,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q18",
+          "verdict_class": null,
+          "status": "PASS"
+        }
+      ],
+      "mismatches": [],
+      "checks": {
+        "payload_Q01": true,
+        "payload_Q02": true,
+        "payload_Q03": true,
+        "payload_Q04": true,
+        "payload_Q05": true,
+        "payload_Q06": true,
+        "payload_Q07": true,
+        "payload_Q08": true,
+        "payload_Q09": true,
+        "payload_Q10": true,
+        "payload_Q11": true,
+        "payload_Q12": true,
+        "payload_Q13": true,
+        "payload_Q14": true,
+        "payload_Q15": true,
+        "payload_Q16": true,
+        "payload_Q17": true,
+        "payload_Q18": true,
+        "eighteen_rows": true,
+        "no_coercion": true
+      },
+      "failed": []
+    },
+    "scripted_session_18": {
+      "status": "PASS",
+      "claim": "An 18-type scripted session answered only through dispatch, plus one deliberately incomplete case per completed-type group, serialises and deserialises to identical answers.",
+      "checks": {
+        "late_write_refused": true,
+        "all_slots_answered": true,
+        "stored_18_complete": true,
+        "dispatch_calls_counted": true,
+        "roundtrip_answers_identical": true,
+        "roundtrip_flags_identical": true,
+        "roundtrip_state_identical": true
+      },
+      "failed": [],
+      "dispatch_calls": 55,
+      "late_write": {
+        "code": "E_SESSION_LATE_WRITE",
+        "message": "Sesija ir iesniegta: atbildes vairs nav maināmas."
+      },
+      "form": {
+        "slots": [
+          {
+            "slot_id": "S1",
+            "topic": 1,
+            "points": 1
+          },
+          {
+            "slot_id": "S2",
+            "topic": 2,
+            "points": 1
+          },
+          {
+            "slot_id": "S3",
+            "topic": 3,
+            "points": 1
+          },
+          {
+            "slot_id": "S4",
+            "topic": 4,
+            "points": 1
+          },
+          {
+            "slot_id": "S5",
+            "topic": 5,
+            "points": 1
+          },
+          {
+            "slot_id": "S6",
+            "topic": 6,
+            "points": 1
+          },
+          {
+            "slot_id": "S7",
+            "topic": 7,
+            "points": 1
+          },
+          {
+            "slot_id": "S8",
+            "topic": 8,
+            "points": 1
+          },
+          {
+            "slot_id": "S9",
+            "topic": 9,
+            "points": 1
+          },
+          {
+            "slot_id": "S10",
+            "topic": 10,
+            "points": 1
+          },
+          {
+            "slot_id": "S11",
+            "topic": 11,
+            "points": 1
+          },
+          {
+            "slot_id": "S12",
+            "topic": 12,
+            "points": 1
+          },
+          {
+            "slot_id": "S13",
+            "topic": 13,
+            "points": 1
+          },
+          {
+            "slot_id": "S14",
+            "topic": 14,
+            "points": 1
+          },
+          {
+            "slot_id": "S15",
+            "topic": 15,
+            "points": 1
+          },
+          {
+            "slot_id": "S16",
+            "topic": 16,
+            "points": 1
+          },
+          {
+            "slot_id": "S17",
+            "topic": 17,
+            "points": 1
+          },
+          {
+            "slot_id": "S18",
+            "topic": 18,
+            "points": 1
+          },
+          {
+            "slot_id": "S19",
+            "topic": 1,
+            "points": 1
+          },
+          {
+            "slot_id": "S20",
+            "topic": 2,
+            "points": 1
+          },
+          {
+            "slot_id": "S21",
+            "topic": 3,
+            "points": 1
+          },
+          {
+            "slot_id": "S22",
+            "topic": 4,
+            "points": 1
+          },
+          {
+            "slot_id": "S23",
+            "topic": 5,
+            "points": 1
+          },
+          {
+            "slot_id": "S24",
+            "topic": 6,
+            "points": 1
+          },
+          {
+            "slot_id": "S25",
+            "topic": 7,
+            "points": 1
+          }
+        ],
+        "bindings": {
+          "S1": {
+            "type_id": "Q01"
+          },
+          "S2": {
+            "type_id": "Q02"
+          },
+          "S3": {
+            "type_id": "Q03"
+          },
+          "S4": {
+            "type_id": "Q04"
+          },
+          "S5": {
+            "type_id": "Q05"
+          },
+          "S6": {
+            "type_id": "Q06"
+          },
+          "S7": {
+            "type_id": "Q07"
+          },
+          "S8": {
+            "type_id": "Q08"
+          },
+          "S9": {
+            "type_id": "Q09"
+          },
+          "S10": {
+            "type_id": "Q10"
+          },
+          "S11": {
+            "type_id": "Q11"
+          },
+          "S12": {
+            "type_id": "Q12"
+          },
+          "S13": {
+            "type_id": "Q13"
+          },
+          "S14": {
+            "type_id": "Q14"
+          },
+          "S15": {
+            "type_id": "Q15"
+          },
+          "S16": {
+            "type_id": "Q16"
+          },
+          "S17": {
+            "type_id": "Q17"
+          },
+          "S18": {
+            "type_id": "Q18"
+          },
+          "S19": {
+            "type_id": "Q02",
+            "incomplete": true
+          },
+          "S20": {
+            "type_id": "Q04",
+            "incomplete": true
+          },
+          "S21": {
+            "type_id": "Q10",
+            "incomplete": true
+          },
+          "S22": {
+            "type_id": "Q11",
+            "incomplete": true
+          },
+          "S23": {
+            "type_id": "Q12",
+            "incomplete": true
+          },
+          "S24": {
+            "type_id": "Q13",
+            "incomplete": true
+          },
+          "S25": {
+            "type_id": "Q15",
+            "incomplete": true
+          }
+        }
+      }
+    },
+    "capture_grading_parity": {
+      "status": "PASS",
+      "claim": "For each of the 18 types the stored payload, consumed by its frozen engine, produces the recorded criterion shape without adaptation or coercion: the audit finds no adapter.",
+      "rows": [
+        {
+          "type_id": "Q01",
+          "engine": "SimEngines.grade (N17-numeric binding)",
+          "payload_digest": "6ba54482dea5ab9e",
+          "verdict_class": "correct",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q02",
+          "engine": "SimEngines.grade (N17-numeric binding)",
+          "payload_digest": "b6af879bbba781b7",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q03",
+          "engine": "manual-rubric-pending",
+          "payload_digest": "f877fe0d789b20c9",
+          "verdict_class": null,
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q04",
+          "engine": "SimEngines.grade (N17-numeric binding)",
+          "payload_digest": "795b0010512f136c",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q05",
+          "engine": "SimEngines.grade (manual-rubric-pending binding)",
+          "payload_digest": "be0d136050cdcb04",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q06",
+          "engine": "SimMethodEngine.gradeMatching (N19-method)",
+          "payload_digest": "11befb4cf4642640",
+          "verdict_class": "correct",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q07",
+          "engine": "SimEngines.grade (N19-method binding)",
+          "payload_digest": "8a5d28b49f1ede78",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q08",
+          "engine": "SimMethodEngine.gradeOrdering (N19-method)",
+          "payload_digest": "3a5edb31aa648a7d",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q09",
+          "engine": "SimEngines.grade (N17-numeric binding)",
+          "payload_digest": "13ace5c6ba76f4aa",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q10",
+          "engine": "SimEngines.grade (N17-numeric binding)",
+          "payload_digest": "121445aab8830566",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q11",
+          "engine": "SimGraphScoring.scoreDrawing (N18-graph)",
+          "payload_digest": "9bf0c69982b70b85",
+          "verdict_class": "correct",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q12",
+          "engine": "SimGraphScoring.scoreReading (N18-graph)",
+          "payload_digest": "a9fc19b35607eadf",
+          "verdict_class": "correct",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q13",
+          "engine": "SimEngines.grade (N19-method binding)",
+          "payload_digest": "37184a2c7d51c5b8",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q14",
+          "engine": "SimEngines.grade (N19-method binding)",
+          "payload_digest": "c8e6bfb7d5c22043",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q15",
+          "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+          "payload_digest": "ace840d5759bfc59",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q16",
+          "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+          "payload_digest": "1dcddcd2954d2686",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q17",
+          "engine": "SimEngines.grade (N19-method binding)",
+          "payload_digest": "99ff896278cbf19e",
+          "verdict_class": "pending_self_assessment",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        },
+        {
+          "type_id": "Q18",
+          "engine": "SimEngines.grade (N19-method binding)",
+          "payload_digest": "1a6d6e0116c63575",
+          "verdict_class": "auto_passed_pending_review",
+          "adapter": "none",
+          "identity_ok": true,
+          "status": "PASS"
+        }
+      ],
+      "audit": {
+        "rows": 18,
+        "adapters_found": 0,
+        "identity_failures": [],
+        "engines": {
+          "quantity": 11,
+          "method": 4,
+          "graph": 2,
+          "manual_pending": 1
+        }
+      },
+      "findings": [
+        {
+          "id": "N22-C05",
+          "label": "DOCUMENTED-AND-ACCEPTED",
+          "topic": "option_select has no N19-method spec builder",
+          "observation": "SimMethodEngine.specFromInstance refuses payload_class option_select.",
+          "observed_error": {
+            "code": "E_METHOD_PAYLOAD_CLASS",
+            "message": "Payload class option_select is not graded by the N19 engines."
+          },
+          "resolution": "The parity row for Q07/Q14/Q18 names the quantity engine's option_select branch — the frozen path the N05 golden corpus uses — and passes payload.selected verbatim as selected_ids."
+        },
+        {
+          "id": "N22-C06",
+          "label": "DOCUMENTED-AND-ACCEPTED",
+          "topic": "variant vocabulary: named-variant key versus short value",
+          "observation": "data/exam_policy.json named_variants maps Q11_record → variant \"record\", while data/response_types.json declares payload_variant \"Q11_record\".",
+          "resolution": "The stored payload carries the registry form (Q11_record, Q12_read, Q13_vector, …), because response_types.json is the response-type single source that N23/N24/N30/N33 read. The session accepts either (variant is a raw string). Reported as a naming divergence, not silently unified."
+        }
+      ]
+    },
+    "navigator_completion_overlay": {
+      "status": "PASS",
+      "claim": "The navigator cells carry the completion verdict and the review warning list names exactly the seven incomplete cases with their Latvian missing names.",
+      "completion_binding": {
+        "index": 0,
+        "shape": "(type_id, contract, instance, payload)"
+      },
+      "checks": {
+        "cells_refined": true,
+        "eighteen_complete": true,
+        "seven_not_complete": true,
+        "review_names_the_seven": true,
+        "review_has_latvian_names": true,
+        "review_role_alert": true,
+        "review_count_matches": true,
+        "n21_answered_flag_preserved": true
+      },
+      "failed": [],
+      "overlay": {
+        "complete_count": 18,
+        "incomplete_count": 7,
+        "invalid_count": 0,
+        "statuses": {
+          "S1": "complete",
+          "S2": "complete",
+          "S3": "complete",
+          "S4": "complete",
+          "S5": "complete",
+          "S6": "complete",
+          "S7": "complete",
+          "S8": "complete",
+          "S9": "complete",
+          "S10": "complete",
+          "S11": "complete",
+          "S12": "complete",
+          "S13": "complete",
+          "S14": "complete",
+          "S15": "complete",
+          "S16": "complete",
+          "S17": "complete",
+          "S18": "complete",
+          "S19": "incomplete",
+          "S20": "incomplete",
+          "S21": "incomplete",
+          "S22": "incomplete",
+          "S23": "incomplete",
+          "S24": "incomplete",
+          "S25": "incomplete"
+        }
+      },
+      "review": {
+        "count": 7,
+        "text_lv": "Pirms iesniegšanas jāpabeidz 7 uzdevumi: Nav aizpildīta vērtība: c (mol/L); Nav aizpildīts solis: —; Nav aizpildīts koeficients priekš Al2O3; Nav aizpildīta vērtība: ΔV (mL); Nav aizpildīta konstruēšanas tabula; Nav novilkta līnija; Nav izvēlēta grafa piesaiste; Nav aizpildīts koeficients priekš Cu; Nav aizpildīts koeficients priekš H2O; Labotā vērtība; Nav ierakstīts teksts.",
+        "incomplete": [
+          {
+            "slot_id": "S19",
+            "index": 19,
+            "type_id": "Q02",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "c",
+                "name": "Nav aizpildīta vērtība: c (mol/L)"
+              },
+              {
+                "field_id": "S1",
+                "name": "Nav aizpildīts solis: —"
+              },
+              {
+                "field_id": "S2",
+                "name": "Nav aizpildīts solis: —"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav aizpildīta vērtība: c (mol/L)",
+              "Nav aizpildīts solis: —",
+              "Nav aizpildīts solis: —"
+            ]
+          },
+          {
+            "slot_id": "S20",
+            "index": 20,
+            "type_id": "Q04",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "vector[2]",
+                "name": "Nav aizpildīts koeficients priekš Al2O3"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav aizpildīts koeficients priekš Al2O3"
+            ]
+          },
+          {
+            "slot_id": "S21",
+            "index": 21,
+            "type_id": "Q10",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "V_del",
+                "name": "Nav aizpildīta vērtība: ΔV (mL)"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav aizpildīta vērtība: ΔV (mL)"
+            ]
+          },
+          {
+            "slot_id": "S22",
+            "index": 22,
+            "type_id": "Q11",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "record.points",
+                "name": "Nav aizpildīta konstruēšanas tabula"
+              },
+              {
+                "field_id": "draw_payload",
+                "name": "Nav novilkta līnija"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav aizpildīta konstruēšanas tabula",
+              "Nav novilkta līnija"
+            ]
+          },
+          {
+            "slot_id": "S23",
+            "index": 23,
+            "type_id": "Q12",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "read.figure_binding",
+                "name": "Nav izvēlēta grafa piesaiste"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav izvēlēta grafa piesaiste"
+            ]
+          },
+          {
+            "slot_id": "S24",
+            "index": 24,
+            "type_id": "Q13",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "vector[2]",
+                "name": "Nav aizpildīts koeficients priekš Cu"
+              },
+              {
+                "field_id": "vector[3]",
+                "name": "Nav aizpildīts koeficients priekš H2O"
+              },
+              {
+                "field_id": "replacement",
+                "name": "Labotā vērtība"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav aizpildīts koeficients priekš Cu",
+              "Nav aizpildīts koeficients priekš H2O",
+              "Labotā vērtība"
+            ]
+          },
+          {
+            "slot_id": "S25",
+            "index": 25,
+            "type_id": "Q15",
+            "completion_status": "incomplete",
+            "missing": [
+              {
+                "field_id": "text",
+                "name": "Nav ierakstīts teksts"
+              }
+            ],
+            "missing_names_lv": [
+              "Nav ierakstīts teksts"
+            ]
+          }
+        ]
+      }
+    },
+    "smoke_vectors_in_file": {
+      "status": "PASS",
+      "claim": "The three SMK-N22-* vectors registered in src/smoke-subset.js run and pass, and they also pass against the shipped artifact once it carries the island.",
+      "vectors": [
+        {
+          "id": "SMK-N22-NUMERIC-CAPTURE",
+          "owner": "N22",
+          "status": "PASS",
+          "details": {
+            "types": 18,
+            "stored": "raw",
+            "inputs": "ships-from-src-not-inlined"
+          },
+          "reason": null
+        },
+        {
+          "id": "SMK-N22-CLASSIFICATION-CAPTURE",
+          "owner": "N22",
+          "status": "PASS",
+          "details": {
+            "types": 18,
+            "stored": "raw",
+            "inputs": "ships-from-src-not-inlined"
+          },
+          "reason": null
+        },
+        {
+          "id": "SMK-N22-ORDERING-CAPTURE",
+          "owner": "N22",
+          "status": "PASS",
+          "details": {
+            "types": 18,
+            "stored": "raw",
+            "inputs": "ships-from-src-not-inlined"
+          },
+          "reason": null
+        }
+      ],
+      "suite": {
+        "total": 16,
+        "passed": 7,
+        "failed": 9
+      },
+      "checks": {
+        "SMK-N22-NUMERIC-CAPTURE_present": true,
+        "SMK-N22-NUMERIC-CAPTURE_passes": true,
+        "SMK-N22-CLASSIFICATION-CAPTURE_present": true,
+        "SMK-N22-CLASSIFICATION-CAPTURE_passes": true,
+        "SMK-N22-ORDERING-CAPTURE_present": true,
+        "SMK-N22-ORDERING-CAPTURE_passes": true
+      },
+      "failed": [],
+      "artifact": {
+        "island_present": true,
+        "run": {
+          "label": "shipped artifact islands",
+          "status": "PASS",
+          "suite": {
+            "total": 16,
+            "passed": 7,
+            "failed": 9
+          },
+          "vectors": [
+            {
+              "id": "SMK-N22-NUMERIC-CAPTURE",
+              "owner": "N22",
+              "status": "PASS",
+              "details": {
+                "types": 18,
+                "stored": "raw",
+                "inputs": "ships-from-src-not-inlined"
+              },
+              "reason": null
+            },
+            {
+              "id": "SMK-N22-CLASSIFICATION-CAPTURE",
+              "owner": "N22",
+              "status": "PASS",
+              "details": {
+                "types": 18,
+                "stored": "raw",
+                "inputs": "ships-from-src-not-inlined"
+              },
+              "reason": null
+            },
+            {
+              "id": "SMK-N22-ORDERING-CAPTURE",
+              "owner": "N22",
+              "status": "PASS",
+              "details": {
+                "types": 18,
+                "stored": "raw",
+                "inputs": "ships-from-src-not-inlined"
+              },
+              "reason": null
+            }
+          ],
+          "checks": {
+            "SMK-N22-NUMERIC-CAPTURE_present": true,
+            "SMK-N22-NUMERIC-CAPTURE_passes": true,
+            "SMK-N22-CLASSIFICATION-CAPTURE_present": true,
+            "SMK-N22-CLASSIFICATION-CAPTURE_passes": true,
+            "SMK-N22-ORDERING-CAPTURE_present": true,
+            "SMK-N22-ORDERING-CAPTURE_passes": true
+          },
+          "failed": []
+        }
+      }
+    },
+    "only_writer_guards": {
+      "status": "PASS",
+      "claim": "The integration has no write path other than dispatch: the machine offers no setter, its accessors hand out deep copies, and one answer() call is exactly one dispatch.",
+      "note": "The compiled machine keeps its private fields as own properties (a TypeScript compile detail), so the only-writer property is a contract plus these structural checks, not a runtime seal. The integration never touches them, and the guard proves the accessors copy.",
+      "checks": {
+        "no_public_setter": true,
+        "guard_reports_dispatch_only": true,
+        "guard_reports_no_setters": true,
+        "guard_proves_deep_copies": true,
+        "one_dispatch_per_answer": true
+      },
+      "failed": [],
+      "guard": {
+        "writer": "dispatch",
+        "checks": {
+          "has_dispatch": true,
+          "public_setters": [],
+          "copies_are_deep": true
+        },
+        "ok": true
+      }
+    },
+    "blank_and_pending": {
+      "status": "PASS",
+      "claim": "A whitespace-only Q15 is BLANK_RESPONSE with zero points, a non-blank Q15 is pending with no verdict, and the Q03 manual-rubric path never fakes a score.",
+      "checks": {
+        "blank_is_blank_response": true,
+        "blank_scores_zero": true,
+        "blank_denies_every_criterion": true,
+        "non_blank_is_pending": true,
+        "non_blank_awards_nothing": true,
+        "non_blank_pends_every_point": true,
+        "non_blank_text_not_parsed": true,
+        "q03_pending_has_no_verdict": true,
+        "q03_pending_awards_nothing": true,
+        "q03_pending_is_not_graded": true
+      },
+      "failed": [],
+      "blank": {
+        "error_class": "BLANK_RESPONSE",
+        "verdict_class": "incorrect",
+        "machine_checked_points": 0
+      },
+      "answered": {
+        "error_class": "NONE",
+        "verdict_class": "pending_self_assessment",
+        "machine_checked_points": 0,
+        "pending_points": 3,
+        "max_points": 3
+      },
+      "q03": {
+        "class": "pending",
+        "engine": "manual-rubric-pending",
+        "graded": false,
+        "verdict": null,
+        "points_awarded": 0,
+        "points_pending": null,
+        "payload_kind": "method",
+        "payload_variant": "Q03_template",
+        "payload_digest": "f877fe0d789b20c9",
+        "note_lv": "Manuāli vērtējams (Q03): dzinējs nepiešķir punktus un nesniedz verdiktu; atbilde tiek saglabāta un nodota cilvēka vērtējumam."
+      }
+    }
+  }
+}

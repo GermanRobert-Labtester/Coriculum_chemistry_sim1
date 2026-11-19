@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="sim-build" content="__BUILD_ID__">
+<meta name="sim-build-version" content="__BUILD_VERSION__">
+<meta name="sim-build-date" content="__BUILD_ISO_DATE__">
+<meta name="sim-build-composite-digest" content="__COMPOSITE_DIGEST__">
+<meta name="sim-coverage-digest" content="__ISLAND_DIGEST__">
+<meta name="sim-conventions-digest" content="__CONVENTIONS_DIGEST__">
+<meta name="sim-bank-digest" content="__BANK_DIGEST__">
+<meta name="sim-bank-embedded-digest" content="__BANK_EMBEDDED_DIGEST__">
+<meta name="sim-forms-digest" content="__FORMS_DIGEST__">
+<meta name="sim-golden-vectors-digest" content="__GOLDEN_VECTORS_DIGEST__">
+<meta name="sim-tokens-digest" content="__TOKENS_DIGEST__">
+<meta name="sim-concept-summaries-digest" content="__CONCEPT_SUMMARIES_DIGEST__">
+<meta name="sim-anchor-registry-digest" content="__ANCHOR_REGISTRY_DIGEST__">
+<meta name="sim-recall-layers-digest" content="__RECALL_LAYERS_DIGEST__">
+<meta name="sim-terms-digest" content="__TERMS_DIGEST__">
+<meta name="sim-analytics-digest" content="__ANALYTICS_DIGEST__">
+<meta name="sim-mastery-policy-digest" content="__MASTERY_POLICY_DIGEST__">
+<meta name="sim-scheduler-policy-digest" content="__SCHEDULER_POLICY_DIGEST__">
+<meta name="sim-remediation-policy-digest" content="__REMEDIATION_POLICY_DIGEST__">
+<meta name="sim-revision-policy-digest" content="__REVISION_POLICY_DIGEST__">
+<meta name="sim-practice-policy-digest" content="__PRACTICE_POLICY_DIGEST__">
+<meta name="sim-figures-digest" content="__FIGURES_DIGEST__">
+<meta name="sim-chains-digest" content="__CHAINS_DIGEST__">
+<meta name="sim-engines-digest" content="__ENGINES_DIGEST__">
+<meta name="sim-graph-scoring-digest" content="__GRAPH_SCORING_DIGEST__">
+<meta name="sim-method-cards-digest" content="__METHOD_CARDS_DIGEST__">
+<meta name="sim-method-engine-digest" content="__METHOD_ENGINE_DIGEST__">
+<meta name="sim-exam-policy-digest" content="__EXAM_POLICY_DIGEST__">
+<meta name="sim-response-types-digest" content="__RESPONSE_TYPES_DIGEST__">
+<meta name="sim-grading-policy-digest" content="__GRADING_POLICY_DIGEST__">
+<meta name="sim-feedback-classification-digest" content="__FEEDBACK_CLASSIFICATION_DIGEST__">
+<meta name="sim-reading-contract-digest" content="__READING_CONTRACT_DIGEST__">
+<meta name="sim-energy-contract-digest" content="__ENERGY_CONTRACT_DIGEST__">
+<meta name="sim-kinetics-contract-digest" content="__KINETICS_CONTRACT_DIGEST__">
+<title>Pirmā kolokvija treniņsimulators</title>
+<style>
+__TOKENS_CSS__
+__STYLES_CSS__
+</style>
+</head>
+<body>
+<a class="skip-link" href="#sim-main">Pāriet uz galveno saturu</a>
+<header id="sim-header" class="site-header">
+  <div class="site-header-bar">
+    <p class="site-brand">Medicīniskās ķīmijas 1. kolokvija patstāvīgās sagatavošanās treniņsimulators</p>
+  </div>
+  <nav id="sim-nav" class="site-nav" aria-label="Galvenā navigācija">
+    <ul class="sim-nav-list">
+      <li><a class="sim-nav-link" href="#sakums" data-term-key="nav.sakums">Sākums</a></li>
+      <li><a class="sim-nav-link" href="#saturs" data-term-key="nav.saturs">Saturs un mērķi</a></li>
+      <li><a class="sim-nav-link" href="#piemeri" data-term-key="nav.piemeri">Darba piemēri</a></li>
+      <li><a class="sim-nav-link" href="#prakse" data-term-key="nav.prakse">Prakse</a></li>
+      <li><a class="sim-nav-link" href="#eksamens" data-term-key="nav.eksamens">Eksāmena simulācija</a></li>
+      <li><a class="sim-nav-link" href="#rezultati" data-term-key="nav.rezultati">Rezultāti</a></li>
+      <li><a class="sim-nav-link" href="#atskats" data-term-key="nav.atskats">Atskats</a></li>
+      <li><a class="sim-nav-link" href="#metodika" data-term-key="nav.metodika">Metodika</a></li>
+      <li><a class="sim-nav-link" href="#druka" data-term-key="nav.druka">Druka</a></li>
+      <li><a class="sim-nav-link" href="#iestatijumi" data-term-key="nav.iestatijumi">Iestatījumi</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="sim-main" class="sim-main">
+  <div id="sim-coverage-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-conventions-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-bank-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-golden-vectors-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-terms-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-figures-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-chains-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-engines-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-graph-scoring-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-mastery-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-scheduler-error" class="error-box" role="alert" hidden></div>
+  <div id="sim-live-timer" class="sr-only-live" role="alert" aria-live="assertive" aria-atomic="true"></div>
+  <div id="sim-live-verdict" class="sr-only-live" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="sim-live-view" class="sr-only-live" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <section id="sakums" class="sim-section" aria-labelledby="sakums-virsraksts">
+    <h1 id="sakums-virsraksts" data-term-key="sim.title">Pirmā kolokvija treniņsimulators</h1>
+    <p id="sakums-noluks" class="lede">Patstāvīgas sagatavošanās bezsaistes treniņsimulators 1. kolokvija tēmām. Tas apvieno programmas mācību mērķu pārskatu un sagatavo vietu praktiskajiem uzdevumiem, papīra darba laika simulācijai un atkārtojumam bez interneta pieslēguma.</p>
+
+    <div class="panel-grid">
+      <article id="sakums-oficiali-fakti" class="panel panel-official" data-epistemic="OFFICIAL">
+        <span class="badge badge-official">OFICIĀLIE PROGRAMMAS FAKTI</span>
+        <h2>Kas noteikts programmā</h2>
+        <p>Avots: <code>RSU_MedChem_Colloq1_Prog_LV_2025.pdf</code> (PROGRAMME-SOURCED):</p>
+        <ul>
+          <li><strong>Formāts:</strong> klātienes pārbaudījums; darbs tiek rakstīts uz papīra.</li>
+          <li><strong>Maksimālais laiks:</strong> 3 stundas (180 minūtes).</li>
+          <li><strong>Septiņas programmas tēmas:</strong>
+            <ol id="sakums-oficialas-temas">
+              <li>Ievads. Šķīdumi un ķīmiskās reakcijas</li>
+              <li>Aprēķini un grafiskās metodes ķīmijā</li>
+              <li>Šķīdumi un koncentrāciju aprēķini</li>
+              <li>Termodinamika un tās piemēri bioloģiskajās sistēmās</li>
+              <li>Kinētika un tās nozīme bioloģiskajās sistēmās</li>
+              <li>Oksidēšanās – reducēšanās procesi</li>
+              <li>Analīzes metodes ķīmijā</li>
+            </ol>
+          </li>
+        </ul>
+        <p class="setting-status">Oficiālā programma nenorāda uzdevumu skaitu, punktu svarus, sekmības slieksni, atļautos palīglīdzekļus vai precīzus jautājumu tipus.</p>
+      </article>
+
+      <article id="sakums-politika" class="panel panel-proposed" data-epistemic="PROPOSED">
+        <span class="badge badge-proposed">PROPOSED — mācību politikas priekšlikums</span>
+        <h2>Simulācijas treniņmodelis</h2>
+        <p>Šie parametri ir šī treniņsimulatora mācību politikas priekšlikums (PROPOSED), nevis oficiāls eksāmena nolikums:</p>
+        <ul>
+          <li><strong>100 treniņa punkti (PROPOSED):</strong> priekšlikums pa tēmām 1–7 ir 10 / 12 / 20 / 15 / 16 / 15 / 12 punkti.</li>
+          <li><strong>3 treniņdarba formas — A, B un C (PROPOSED):</strong> katrā formā paredzēta <strong>21 uzdevuma vieta (slots)</strong>.</li>
+          <li><strong>Laika plānojums (PROPOSED):</strong> 170 darba minūtes + 10 pārbaudes minūtes oficiālo 180 minūšu rāmī.</li>
+          <li><strong>Struktūra (PROPOSED):</strong> 64 mācību rezultāti un 28 uzdevumu saimes ar 4 variantu specifikācijām katrā.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div id="sakums-forma-izvele" class="panel form-picker-panel" data-epistemic="PROPOSED">
+      <h2 id="sakums-forma-virsraksts">Treniņdarba formas izvēle (PROPOSED)</h2>
+      <p id="sakums-forma-advisory" class="setting-status">Mācību politikas priekšlikums (PROPOSED): trīs 21 uzdevuma vietas treniņformas (A, B, C, 100 punkti) vai sēklots treniņa zīmējums. Nav oficiāls RSU kolokvija eksāmens un nepiešķir oficiālu vērtējumu.</p>
+      <div id="sakums-form-picker" class="form-picker-group" role="radiogroup" aria-labelledby="sakums-forma-virsraksts">
+        <button type="button" id="sakums-pick-A" class="btn-control form-pick-btn" role="radio" aria-checked="true" data-form-choice="A">A forma (sēkla 100001)</button>
+        <button type="button" id="sakums-pick-B" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="B">B forma (sēkla 100002)</button>
+        <button type="button" id="sakums-pick-C" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="C">C forma (sēkla 100003)</button>
+        <button type="button" id="sakums-pick-SEEDED" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="SEEDED">Sēklots treniņa zīmējums</button>
+      </div>
+      <div id="sakums-seed-wrap" class="form-seed-wrap" hidden>
+        <label for="sakums-seed-input">Treniņa sēkla (101000–199999)</label>
+        <input id="sakums-seed-input" type="number" class="form-seed-input" min="101000" max="199999" value="101001">
+      </div>
+      <p id="sakums-form-reason" class="form-shortage-note" aria-live="polite" hidden></p>
+      <p id="sakums-form-selected-summary" class="setting-status">Izvēlēta A forma (21 vieta, 100 punkti, PROPOSED).</p>
+    </div>
+
+    <nav id="sakums-navigacija" aria-label="Sākuma ātrās darbības">
+      <div class="cta-row">
+        <a class="cta-link cta-link-primary" href="#prakse">Prakse</a>
+        <a class="cta-link" href="#eksamens">Eksāmena simulācija</a>
+        <a class="cta-link" href="#atskats">Atskats un atkārtošana</a>
+        <a class="cta-link" href="#saturs">Skatīt 64 mācību mērķus</a>
+      </div>
+    </nav>
+
+    <aside id="sakums-tverums" class="scope-note" role="note">
+      <strong>Tvērums un godīguma piezīme:</strong> šis ir patstāvīgas mācīšanās palīglīdzeklis darbam bezsaistē. Tas nav oficiāls RSU kolokvija eksāmens, nepiešķir oficiālu vērtējumu vai apliecību, neveic uzraudzību un pēc noklusējuma saglabā sesijas stāvokli tikai operatīvajā atmiņā.
+    </aside>
+  </section>
+  __SIM_NOSCRIPT_HTML__
+
+  <section id="saturs" class="sim-section" aria-labelledby="saturs-virsraksts">
+    <h2 id="saturs-virsraksts" data-term-key="objectives.heading">Mācību mērķi un programmas pārklājums</h2>
+    <p class="lede">Septiņas programmas tēmas un <strong id="coverage-total">64</strong> mācību rezultāti no vienas iegultās salas (<code>#sim-coverage</code>). Tēmu nosaukumi ir programmas oficiālie virsraksti, bet 64 rezultātu sadalījums ir mācību politikas priekšlikums (PROPOSED).</p>
+    <nav id="coverage-nav" aria-label="Programmas tēmas"></nav>
+    <div id="coverage-list"></div>
+    <div id="karte" class="concept-map-region">
+      <h3 id="karte-virsraksts" data-term-key="map.heading">Konceptu karte un priekšnosacījumu grafs</h3>
+      <p class="map-meta">Deterministisks priekšnosacījumu grafs un konceptu atvilktne tiek ielādēti no <code>#sim-coverage</code>.</p>
+      <ul class="topic-anchor-list">
+        <li id="karte-tema-1" class="topic-anchor-item">1. tēmas kartes reģions</li>
+        <li id="karte-tema-2" class="topic-anchor-item">2. tēmas kartes reģions</li>
+        <li id="karte-tema-3" class="topic-anchor-item">3. tēmas kartes reģions</li>
+        <li id="karte-tema-4" class="topic-anchor-item">4. tēmas kartes reģions</li>
+        <li id="karte-tema-5" class="topic-anchor-item">5. tēmas kartes reģions</li>
+        <li id="karte-tema-6" class="topic-anchor-item">6. tēmas kartes reģions</li>
+        <li id="karte-tema-7" class="topic-anchor-item">7. tēmas kartes reģions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="piemeri" class="sim-section" aria-labelledby="piemeri-virsraksts">
+    <h2 id="piemeri-virsraksts">Darba piemēri: EX01–EX14</h2>
+    <p class="lede">Četrpadsmit daudzsoļu darba piemēri septiņām programmas tēmām. Katrs solis sākumā ir aizvērts: redzams uzdevuma apgalvojums, bet rezultāts un pamatojums tiek atklāti tikai pēc jūsu darbības. Šis ir mācību materiāls, nevis oficiāls kolokvija eksāmens.</p>
+    <p id="sim-chains-status" class="status-box" hidden></p>
+    <div id="chain-index" class="chain-index"></div>
+  </section>
+
+  <section id="prakse" class="sim-section" aria-labelledby="prakse-virsraksts">
+    <h2 id="prakse-virsraksts">Prakse</h2>
+    <div id="prakse-scheduler-panel" class="prakse-scheduler-panel" data-owner="N27">
+      <h3 id="prakse-scheduler-heading" data-term-key="scheduler.queue.title">Ieteicamie atkārtojumi nākamajai praksei (PROPOSED)</h3>
+      <p id="prakse-scheduler-honesty" class="scope-note" data-term-key="scheduler.queue.honesty_note">PROPOSED mācību politika: Leitnera intervālu rinda ir tikai patstāvīgas mācīšanās palīgs, nevis oficiāls programmas vai eksāmena grafiks.</p>
+      <p id="prakse-scheduler-status" class="setting-status" role="status" aria-live="polite"></p>
+      <ol id="prakse-scheduler-queue" class="scheduler-queue-list"></ol>
+      <div id="prakse-scheduler-topics" class="scheduler-topic-strip" aria-label="Tēmu Leitnera plānošanas stāvokļi"></div>
+      <div id="prakse-scheduler-handoff" class="scheduler-handoff-panel" hidden tabindex="-1" aria-live="polite"></div>
+    </div>
+    <div id="prakse-mastery-panel" class="prakse-mastery-panel" data-owner="N26">
+      <p id="prakse-mastery-honesty" class="scope-note">Apguves indikatori parāda patstāvīgās mācīšanās stāvokli pa tēmām un mērķiem (PROPOSED), lai palīdzētu izvēlēties, ko atkārtot nākamo. Tie nav oficiāli RSU vērtējumi.</p>
+      <div id="prakse-mastery-topics" class="prakse-mastery-grid"></div>
+    </div>
+    <div id="prakse-practice-wrap" class="prakse-practice-wrap" data-owner="N30">
+      <h3 id="prakse-practice-heading" data-term-key="practice.heading">Ierobežotie prakses ceļi (PROPOSED)</h3>
+      <p id="prakse-practice-honesty" class="scope-note" data-term-key="practice.honesty_note">PROPOSED mācību politika: tēmu ceļu garumi un uzdevumu secība ir patstāvīgas mācīšanās palīgs, nevis oficiāls programmas vērtējums. Nerecenzēti uzdevumi ceļos netiek iekļauti.</p>
+      <div id="prakse-error" class="error-box" role="alert" hidden></div>
+      <div id="prakse-filters" class="prakse-filters" role="group" aria-label="Prakses ceļa filtri">
+        <label for="prakse-filter-type" data-term-key="practice.filter.type_label">Atbilžu tips:</label>
+        <select id="prakse-filter-type" class="prakse-filter-select">
+          <option value="">Visi atbilžu tipi</option>
+        </select>
+        <label class="prakse-filter-check">
+          <input type="checkbox" id="prakse-filter-unattempted">
+          <span data-term-key="practice.filter.unattempted_label">Tikai nemēģinātie uzdevumi</span>
+        </label>
+      </div>
+      <div id="prakse-topics-grid" class="prakse-topics-grid">
+        <article id="prakse-tema-1" class="topic-anchor-item prakse-topic-card" data-topic="1"><h4>1. tēma</h4></article>
+        <article id="prakse-tema-2" class="topic-anchor-item prakse-topic-card" data-topic="2"><h4>2. tēma</h4></article>
+        <article id="prakse-tema-3" class="topic-anchor-item prakse-topic-card" data-topic="3"><h4>3. tēma</h4></article>
+        <article id="prakse-tema-4" class="topic-anchor-item prakse-topic-card" data-topic="4"><h4>4. tēma</h4></article>
+        <article id="prakse-tema-5" class="topic-anchor-item prakse-topic-card" data-topic="5"><h4>5. tēma</h4></article>
+        <article id="prakse-tema-6" class="topic-anchor-item prakse-topic-card" data-topic="6"><h4>6. tēma</h4></article>
+        <article id="prakse-tema-7" class="topic-anchor-item prakse-topic-card" data-topic="7"><h4>7. tēma</h4></article>
+      </div>
+      <div id="prakse-runner" class="prakse-runner" hidden tabindex="-1">
+        <div id="prakse-runner-header" class="prakse-runner-header">
+          <h4 id="prakse-runner-title">Prakses ceļš</h4>
+          <p id="prakse-runner-progress" class="prakse-runner-progress" role="status" aria-live="polite"></p>
+        </div>
+        <div id="prakse-shortage-banner" class="scope-note prakse-shortage-banner" role="status" aria-live="polite" hidden></div>
+        <div id="prakse-exhausted-panel" class="prakse-exhausted-panel" hidden></div>
+        <div id="prakse-runner-item-host" class="prakse-runner-item-host"></div>
+        <div id="prakse-help-slot" class="hint-help-slot prakse-help-slot" data-owner="N08" data-consumed-by="N30"></div>
+        <div id="prakse-runner-chain-host" class="remediation-study-host" hidden></div>
+        <div id="prakse-runner-term-host" class="prakse-term-host" hidden></div>
+        <div id="prakse-runner-feedback" class="prakse-runner-feedback" aria-live="polite" hidden></div>
+        <div id="prakse-runner-controls" class="prakse-runner-controls">
+          <button type="button" id="prakse-submit-btn" class="btn-control">Pārbaudīt atbildi</button>
+          <button type="button" id="prakse-skip-btn" class="btn-control">Izlaist uzdevumu</button>
+          <button type="button" id="prakse-next-btn" class="btn-control" hidden>Nākamais uzdevums</button>
+          <button type="button" id="prakse-end-btn" class="btn-control">Beigt prakses ceļu</button>
+        </div>
+      </div>
+      <div id="prakse-summary" class="prakse-summary" hidden tabindex="-1" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="eksamens" class="sim-section" aria-labelledby="eksamens-virsraksts">
+    <h2 id="eksamens-virsraksts">Eksāmena simulācija</h2>
+    <p class="lede">Treniņdarba sesija ar 21 uzdevuma vietu, izglītojošu laika taimeri, uzdevumu karti, atzīmējumiem un pārbaudes ekrānu pirms iesniegšanas. Šis nav oficiāls eksāmens un nepiešķir oficiālu vērtējumu.</p>
+    <p id="sim-exam-status" class="status-box" hidden></p>
+
+    <div id="exam-entry" class="exam-entry">
+      <h3>Sesija nav sākta</h3>
+      <p id="exam-form-advisory" class="setting-status">Mācību politikas priekšlikums (PROPOSED): izvēlieties treniņformu A, B, C vai sēklotu treniņa zīmējumu. Nav oficiāls RSU kolokvija eksāmens.</p>
+      <div id="exam-form-picker" class="form-picker-group" role="radiogroup" aria-label="Treniņdarba formas izvēle">
+        <button type="button" id="exam-pick-A" class="btn-control form-pick-btn" role="radio" aria-checked="true" data-form-choice="A">A forma</button>
+        <button type="button" id="exam-pick-B" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="B">B forma</button>
+        <button type="button" id="exam-pick-C" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="C">C forma</button>
+        <button type="button" id="exam-pick-SEEDED" class="btn-control form-pick-btn" role="radio" aria-checked="false" data-form-choice="SEEDED">Sēklots treniņa zīmējums</button>
+      </div>
+      <div id="exam-seed-wrap" class="form-seed-wrap" hidden>
+        <label for="exam-seed-input">Treniņa sēkla (101000–199999)</label>
+        <input id="exam-seed-input" type="number" class="form-seed-input" min="101000" max="199999" value="101001">
+      </div>
+      <p id="exam-form-shortage" class="form-shortage-note" role="alert" hidden></p>
+      <p id="exam-entry-note">Treniņforma A (21 uzdevuma vieta, 100 punkti, PROPOSED). Sesija tiek glabāta tikai operatīvajā atmiņā un pazūd, kad lapa tiek aizvērta.</p>
+      <button type="button" id="exam-start" class="btn-control">Sākt treniņsesiju</button>
+    </div>
+
+    <div id="exam-shell" class="exam-shell" hidden>
+      <div id="exam-timer-bar" class="exam-timer-bar">
+        <p id="exam-timer-label" class="exam-timer-label"></p>
+        <p class="exam-timer-readout"><span id="exam-timer-value" class="exam-timer-value">00:00</span></p>
+        <p id="exam-timer-threshold" class="exam-timer-threshold" hidden></p>
+        <p id="exam-timer-expired" class="exam-timer-expired" hidden></p>
+      </div>
+
+      <div id="exam-navigator" class="exam-navigator">
+        <button type="button" id="exam-prev" class="btn-control">Iepriekšējais uzdevums</button>
+        <p id="exam-slot-status" class="exam-slot-status" aria-live="polite"></p>
+        <button type="button" id="exam-next" class="btn-control">Nākamais uzdevums</button>
+        <button type="button" id="exam-flag" class="btn-control" aria-pressed="false">Atzīmēt uzdevumu</button>
+        <button type="button" id="exam-review-button" class="btn-control">Pārbaude un iesniegšana</button>
+      </div>
+
+      <section class="exam-map-region" aria-labelledby="exam-map-heading">
+        <h3 id="exam-map-heading">Uzdevumu karte</h3>
+        <div id="exam-map" class="exam-map" role="group" aria-labelledby="exam-map-heading"></div>
+      </section>
+
+      <div id="exam-slot-host" class="exam-slot-host" tabindex="-1"></div>
+
+      <section id="exam-review" class="exam-review" aria-labelledby="exam-review-heading" hidden></section>
+    </div>
+
+    <aside id="exam-scope-note" class="scope-note" role="note">
+      <strong>Godīguma piezīme:</strong> konsultācijas taimers ir izglītojošs, nevis oficiāls laika noteikums. Iesniegšana ir galīga; pēc tās atbildes nav maināmas.
+    </aside>
+  </section>
+
+  <section id="rezultati" class="sim-section" aria-labelledby="rezultati-virsraksts">
+    <h2 id="rezultati-virsraksts">Rezultāti</h2>
+    <div class="pending-slot" data-pending-owner="N23">
+      <span class="badge badge-pending">N23 — līgums un fixtures ir, dzīvais skats vēl nāk</span>
+      <p>Automātiski vērtēto punktu un ārēji gaidīšanas punktu nošķīrums ir sasaldēts līgumā <code>docs/GRADING_FORMAT.md</code>, un jauktās treniņformas demonstrācijas atskaite ir ierakstīta <code>evidence/N23_RENDER_FIXTURE.json</code>: tajā abas summas vienmēr paliek atsevišķas un netiek apvienotas.</p>
+      <p>Dzīvais rezultātu skats šajā vienfaila artefaktā vēl nav iekļauts — to atslēgs N31 lēmums par vērtēšanas moduļu inline vai lazy-load piegādi un N32 rezultātu skats. Šis ir mācību politikas priekšlikums (PROPOSED), nevis oficiāls eksāmena vērtējums.</p>
+    </div>
+  </section>
+
+  <section id="atskats" class="sim-section" aria-labelledby="atskats-virsraksts">
+    <h2 id="atskats-virsraksts">Atskats un atkārtošana</h2>
+    <p id="atskats-honesty-note" class="scope-note">Godīguma piezīme: automātiski vērtētie punkti un ārēji/pašvērtējumā gaidāmie punkti vienmēr tiek rādīti atsevišķi (nekad netiek saskaitīti kopā). Šis ir patstāvīgas mācīšanās pārskats (PROPOSED), nevis oficiāls RSU eksāmena vērtējums.</p>
+    <p id="atskats-storage-notice" class="setting-status" role="status" aria-live="polite">Pēc noklusējuma dati glabājas tikai operatīvajā atmiņā (bez localStorage) un pazūd pēc lapas aizvēršanas.</p>
+    <p id="atskats-zero-notice" class="setting-status">Nav reģistrētu aktivitāšu. Visi tēmu un mērķu rādītāji ir 0 (godīgs sākuma stāvoklis).</p>
+
+    <div id="atskats-summary" class="atskats-summary-grid">
+      <div class="panel">
+        <h3>Pabeigtās formas</h3>
+        <p id="atskats-sessions-count" class="atskats-metric">0</p>
+      </div>
+      <div class="panel">
+        <h3>Mērķi pareizi vismaz reizi</h3>
+        <p id="atskats-outcomes-correct" class="atskats-metric">0 / 64</p>
+      </div>
+      <div class="panel">
+        <h3>Mērķi pareizi ar pirmo reizi</h3>
+        <p id="atskats-outcomes-first-pass" class="atskats-metric">0 / 64</p>
+      </div>
+      <div class="panel">
+        <h3>Atvērtā atkārtošanas rinda</h3>
+        <p id="atskats-remediation-count" class="atskats-metric">0</p>
+      </div>
+    </div>
+
+    <div id="atskats-topics-wrap" class="atskats-block">
+      <h3>Tēmu pārskats (1.–7. tēma)</h3>
+      <table id="atskats-topics-table" class="atskats-table">
+        <thead>
+          <tr>
+            <th scope="col">Tēma</th>
+            <th scope="col">Izpildīti uzdevumi</th>
+            <th scope="col">Mērķi pareizi (vismaz 1×)</th>
+            <th scope="col">Pareizi ar 1. reizi</th>
+            <th scope="col">Stāvoklis</th>
+          </tr>
+        </thead>
+        <tbody id="atskats-topics-body"></tbody>
+      </table>
+    </div>
+
+    <div id="atskats-forms-wrap" class="atskats-block">
+      <h3>Formu vēsture (automātiskie un gaidāmie punkti atsevišķi)</h3>
+      <ul id="atskats-forms-list" class="atskats-list">
+        <li class="atskats-empty">Nav pabeigtu formu (0 sesijas).</li>
+      </ul>
+    </div>
+
+    <div id="atskats-remediation-wrap" class="atskats-block" data-owner="N28">
+      <h3 id="atskats-remediation-heading" data-term-key="remediation.queue.title">Atkārtošanas rinda (PROPOSED — ieteikums)</h3>
+      <p id="atskats-remediation-honesty" class="scope-note" data-term-key="remediation.queue.honesty_note">PROPOSED mācību politika: atkārtošana ir tikai ieteikums bez piespiedu ierobežošanas; sākotnējais vērtējums paliek nemainīts.</p>
+      <p id="sim-remediation-error" class="status-box status-error" role="alert" hidden></p>
+      <p id="atskats-remediation-status" class="setting-status" role="status" aria-live="polite"></p>
+      <ul id="atskats-remediation-list" class="atskats-list">
+        <li class="atskats-empty">Atkārtošanas rinda ir tukša (0 atvērtu vienumu).</li>
+      </ul>
+      <div id="atskats-remediation-chain-host" class="remediation-study-host" hidden></div>
+      <div id="atskats-remediation-retry-host" class="remediation-retry-host" hidden></div>
+      <details id="atskats-remediation-resolved-details">
+        <summary id="atskats-remediation-resolved-summary">Atrisinātie atkārtošanas vienumi (0)</summary>
+        <ul id="atskats-remediation-resolved-list" class="atskats-list">
+          <li class="atskats-empty">Nav atrisinātu atkārtošanas vienumu.</li>
+        </ul>
+      </details>
+    </div>
+
+    <div id="atskats-mastery-wrap" class="atskats-block" data-owner="N26">
+      <h3 id="atskats-mastery-heading">Mācību mērķu apguves stāvoklis (PROPOSED)</h3>
+      <p id="atskats-mastery-honesty" class="scope-note">Pašmācības apguves stāvokļi (PROPOSED mācību politika; oficiāls programmas analogs: UNDETERMINED). Atvasināts tikai no automātiski vērtētajiem kritērijiem — tas ir patstāvīgas mācīšanās progress, nevis oficiāls RSU kolokvija vērtējums.</p>
+      <p id="atskats-mastery-fresh-note" class="setting-status">Godīgs sākuma stāvoklis: visi 64 mācību mērķi pašlaik ir stāvoklī 'Nav mēģināts' (nav pieņemtu kļūdu).</p>
+      <div id="atskats-mastery-summary" class="mastery-summary-bar" role="status" aria-live="polite"></div>
+      <div id="atskats-mastery-topics" class="mastery-topics-list"></div>
+    </div>
+
+    <div id="atskats-outcomes-wrap" class="atskats-block">
+      <details id="atskats-outcomes-details">
+        <summary>Visu 64 mācību mērķu statuss (PROPOSED)</summary>
+        <ul id="atskats-outcomes-list" class="atskats-list"></ul>
+      </details>
+    </div>
+
+    <div id="atskats-revision-wrap" class="atskats-block" data-owner="N29">
+      <h3 id="atskats-revision-heading" tabindex="-1" data-term-key="revision.panel.title">Vienotais atkārtošanas pārskats un kritēriju pašvērtējums (PROPOSED)</h3>
+      <p id="atskats-revision-honesty" class="scope-note" data-term-key="revision.panel.honesty_note">PROPOSED mācību politika: šis pārskats apvieno automātiski pārbaudīto apguves stāvokli (N26), atkārtošanas rindu (N28) un jūsu paša kritēriju pašvērtējumu (F07) — katru no sava atsevišķa avota. Pašvērtējums nekad nemaina apguves stāvokli un nav oficiāls RSU vērtējums.</p>
+      <p id="sim-revision-error" class="status-box status-error" role="alert" hidden></p>
+      <p id="atskats-revision-status" class="setting-status" role="status" aria-live="polite"></p>
+      <div id="atskats-self-assessment-host" class="revision-sa-host" hidden tabindex="-1"></div>
+      <div id="atskats-revision-chain-host" class="remediation-study-host" hidden></div>
+      <div id="atskats-revision-handoff" class="scheduler-handoff-panel" hidden tabindex="-1" aria-live="polite"></div>
+      <div id="atskats-revision-panel" class="revision-panel-grid"></div>
+    </div>
+  </section>
+
+  <section id="metodika" class="sim-section" aria-labelledby="metodika-virsraksts">
+    <h2 id="metodika-virsraksts">Metodika un iegultie datu slāņi</h2>
+    <p>Zinātniskās konvencijas, mērvienību likumi, zīmīgo ciparu noteikumi un pretrunu reģistrs tiek ielādēti no vienām datu salām.</p>
+    <p id="sim-conventions-status" class="status-box" hidden></p>
+    <p id="sim-bank-status" class="status-box" hidden></p>
+    <p id="sim-golden-vectors-status" class="status-box" hidden></p>
+    <p id="sim-terms-status" class="status-box" hidden></p>
+    <p id="sim-figures-status" class="status-box" hidden></p>
+  </section>
+
+  <section id="druka" class="sim-section" aria-labelledby="druka-virsraksts">
+    <h2 id="druka-virsraksts" data-term-key="print.heading">Druka un papīra darba lapa</h2>
+    <p class="lede">Papīra darba lapas ģenerators (F04) no salām <code>#sim-forms</code> un <code>#sim-bank</code>: 21 uzdevumu slots eksāmena secībā, punktu tabula, rakstāmlauki un aprēķinu režģis melnbaltai drukai.</p>
+    <div class="paper-controls" data-print-hide="true">
+      <label for="paper-form-select" data-term-key="print.form_select">Izvēlēties papīra darba lapas formu</label>
+      <select id="paper-form-select" class="btn-control"></select>
+      <button type="button" id="paper-print-btn" class="btn-control" data-term-key="print.button">Drukāt darba lapu</button>
+    </div>
+    <div id="paper-worksheet-output" class="paper-worksheet-output" aria-live="polite"></div>
+  </section>
+
+  <section id="iestatijumi" class="sim-section" aria-labelledby="iestatijumi-virsraksts">
+    <h2 id="iestatijumi-virsraksts" data-term-key="settings.heading">Iestatījumi</h2>
+    <div class="settings-grid">
+      <div class="setting-row">
+        <h3>Krāsu shēma</h3>
+        <p>Pārslēdz gaišo un tumšo tēmu, izmantojot vienoto dizaina marķieru slāni.</p>
+        <button type="button" id="theme-toggle" class="btn-control" aria-pressed="false">Tumšais režīms</button>
+        <p id="theme-status" class="setting-status" aria-live="polite">Pašreizējā krāsu shēma: gaišā.</p>
+      </div>
+
+      <div id="settings-storage-slot" class="setting-row" data-owner="N25">
+        <h3>Lokālā saglabāšana pārlūkā (localStorage)</h3>
+        <p id="store-consent-copy" class="setting-status">Kas tiek saglabāts: praktizēto tēmu skaits, 64 mācību mērķu statuss, treniņformu automātiskie un atsevišķie gaidāmie rezultāti, kļūdu atkārtošanas rinda un krāsu tēma — bez atbilžu tekstiem. Nekas neatstāj ierīci: dati paliek tikai šajā pārlūkā (localStorage), bez tīkla un bez telemetrijas. Kā dzēst: spiediet 'Dzēst visus lokālos datus' un apstipriniet otrajā solī (N25).</p>
+        <div class="store-actions">
+          <button type="button" id="store-opt-in-toggle" class="btn-control" aria-pressed="false" aria-describedby="store-consent-copy">Ieslēgt lokālo saglabāšanu</button>
+          <button type="button" id="store-export-btn" class="btn-control">Eksportēt progresu (JSON)</button>
+          <button type="button" id="store-erase-request" class="btn-control">Dzēst visus lokālos datus</button>
+        </div>
+        <p id="store-status" class="setting-status" aria-live="polite">Pēc noklusējuma dati glabājas tikai operatīvajā atmiņā (bez localStorage) un pazūd pēc lapas aizvēršanas.</p>
+        <p id="store-notice" class="scope-note" role="status" aria-live="polite" hidden></p>
+        <p id="store-export-status" class="setting-status" role="status" aria-live="polite" hidden></p>
+        <div id="store-erase-confirm-box" class="scope-note" role="alertdialog" aria-labelledby="store-erase-prompt" hidden>
+          <p id="store-erase-prompt">Vai tiešām neatgriezeniski dzēst visus lokāli saglabātos progresa datus un atgriezties pie operatīvās atmiņas režīma?</p>
+          <div class="store-actions">
+            <button type="button" id="store-erase-confirm" class="btn-control">Apstiprināt dzēšanu</button>
+            <button type="button" id="store-erase-cancel" class="btn-control">Atcelt</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="settings-print-slot" class="setting-row" data-owner="N34">
+        <h3>Drukas režīma iestatījumi</h3>
+        <label for="settings-paper-form-select" data-term-key="print.form_select">Izvēlēties papīra darba lapas formu</label>
+        <select id="settings-paper-form-select" class="btn-control"></select>
+        <p class="setting-status">Izvēlētā forma tiek sinhronizēta ar <a href="#druka">drukas sadaļu</a>; druka vienmēr izmanto melnbalto tēmu (N34).</p>
+      </div>
+    </div>
+    <p id="sim-smoke-status" class="status-box" hidden></p>
+  </section>
+</main>
+
+<footer id="sim-footer" class="site-footer">
+  <p>Patstāvīgs bezsaistes mācību simulators; oficiālās programmas avots: <code>RSU_MedChem_Colloq1_Prog_LV_2025.pdf</code>.</p>
+</footer>
+
+<div id="concept-drawer-backdrop" class="concept-drawer-backdrop" hidden>
+  <aside id="concept-drawer" class="concept-drawer" role="dialog" aria-modal="true" aria-labelledby="concept-drawer-title" tabindex="-1" hidden>
+    <div class="drawer-header">
+      <div>
+        <p id="concept-drawer-topic" class="drawer-topic-line"></p>
+        <h2 id="concept-drawer-title" data-term-key="drawer.concept.title">Koncepta atvilktne</h2>
+      </div>
+      <div class="drawer-header-actions">
+        <button type="button" id="concept-drawer-back" class="btn-control" data-term-key="drawer.concept.back" hidden>Atpakaļ</button>
+        <button type="button" id="concept-drawer-close" class="btn-control" data-term-key="drawer.concept.close">Aizvērt</button>
+      </div>
+    </div>
+    <p id="concept-drawer-breadcrumb" class="drawer-breadcrumb" hidden></p>
+    <section class="drawer-section" aria-labelledby="concept-drawer-summary-heading">
+      <h3 id="concept-drawer-summary-heading">Kopsavilkums</h3>
+      <p id="concept-drawer-summary"></p>
+      <p id="concept-drawer-citation" class="drawer-citation"></p>
+      <p id="concept-drawer-dissent" class="drawer-dissent" hidden></p>
+    </section>
+    <section class="drawer-section" aria-labelledby="concept-drawer-prereqs-heading">
+      <h3 id="concept-drawer-prereqs-heading">Priekšnosacījumu ķēde</h3>
+      <div id="concept-drawer-prereqs"></div>
+    </section>
+    <section class="drawer-section" aria-labelledby="concept-drawer-slots-heading">
+      <h3 id="concept-drawer-slots-heading">Saistītie attēli, piemēri un prakse</h3>
+      <div id="concept-drawer-slots"></div>
+    </section>
+    <p id="concept-drawer-status" class="sr-only-live" aria-live="polite"></p>
+  </aside>
+</div>
+
+<div id="hint-drawer-backdrop" class="hint-drawer-backdrop" hidden>
+  <aside id="hint-drawer" class="hint-drawer" role="dialog" aria-modal="true" aria-labelledby="hint-drawer-title" tabindex="-1" hidden>
+    <div class="drawer-header">
+      <div>
+        <h2 id="hint-drawer-title" data-term-key="hint.drawer.title">Palīdzības kāpnes — pakāpeniska atsauce</h2>
+      </div>
+      <div class="drawer-header-actions">
+        <button type="button" id="hint-drawer-close" class="btn-control" data-term-key="hint.drawer.close">Aizvērt</button>
+      </div>
+    </div>
+    <div id="hint-drawer-body" class="hint-drawer-body"></div>
+  </aside>
+</div>
+
+<script type="application/json" id="sim-coverage">__SIM_COVERAGE_JSON__</script>
+<script type="application/json" id="sim-conventions">__SIM_CONVENTIONS_JSON__</script>
+<script type="application/json" id="sim-bank">__SIM_BANK_JSON__</script>
+<script type="application/json" id="sim-forms">__SIM_FORMS_JSON__</script>
+<script type="application/json" id="sim-golden-vectors">__SIM_GOLDEN_VECTORS_JSON__</script>
+<script type="application/json" id="sim-terms">__SIM_TERMS_JSON__</script>
+<script type="application/json" id="sim-analytics">__SIM_ANALYTICS_JSON__</script>
+<script type="application/json" id="sim-mastery-policy">__SIM_MASTERY_POLICY_JSON__</script>
+<script type="application/json" id="sim-scheduler-policy">__SIM_SCHEDULER_POLICY_JSON__</script>
+<script type="application/json" id="sim-remediation-policy">__SIM_REMEDIATION_POLICY_JSON__</script>
+<script type="application/json" id="sim-revision-policy">__SIM_REVISION_POLICY_JSON__</script>
+<script type="application/json" id="sim-practice-policy">__SIM_PRACTICE_POLICY_JSON__</script>
+<script type="application/json" id="sim-figures">__SIM_FIGURES_JSON__</script>
+<script type="application/json" id="sim-chains">__SIM_CHAINS_JSON__</script>
+<script type="application/json" id="sim-engines">__SIM_ENGINES_JSON__</script>
+<script type="application/json" id="sim-graph-scoring">__SIM_GRAPH_SCORING_JSON__</script>
+<script type="application/json" id="sim-method-cards">__SIM_METHOD_CARDS_JSON__</script>
+<script type="application/json" id="sim-method-engine">__SIM_METHOD_ENGINE_JSON__</script>
+<script type="application/json" id="sim-exam-policy">__SIM_EXAM_POLICY_JSON__</script>
+<script type="application/json" id="sim-response-types">__SIM_RESPONSE_TYPES_JSON__</script>
+<script type="application/json" id="sim-grading-policy">__SIM_GRADING_POLICY_JSON__</script>
+<script type="application/json" id="sim-feedback-classification">__SIM_FEEDBACK_CLASSIFICATION_JSON__</script>
+<script>
+var COVERAGE_INVARIANTS = __COVERAGE_INVARIANTS__;
+var CONCEPT_DRAWER_DATA = __CONCEPT_DRAWER_JSON__;
+var ANCHOR_REGISTRY = __ANCHOR_REGISTRY_JSON__;
+var RECALL_LAYERS_DATA = __RECALL_LAYERS_JSON__;
+__COVERAGE_LOADER_JS__
+__CONVENTIONS_LOADER_JS__
+__TERMS_LOADER_JS__
+__PRNG_JS__
+__FIGURE_FRAMEWORK_JS__
+__BANK_LOADER_JS__
+__GOLDEN_VECTORS_LOADER_JS__
+__LEAK_SCAN_JS__
+__QUANTITY_ENGINE_JS__
+__GRAPH_SCORING_ENGINE_JS__
+__GRAPH_CAPTURE_JS__
+__METHOD_ENGINE_JS__
+__METHOD_CARD_VIEW_JS__
+__VARIANT_ENGINE_JS__
+__CHAIN_VIEW_JS__
+__COVERAGE_VIEW_JS__
+__START_VIEW_JS__
+__CONCEPT_DRAWER_JS__
+__CONCEPT_MAP_JS__
+__HINT_DRAWER_JS__
+__THEME_TOGGLE_JS__
+__SESSION_JS__
+__INPUTS_REGISTRY_JS__
+__INPUTS_COMPONENTS_JS__
+__INPUTS_INTEGRATION_JS__
+__GRADING_JS__
+__FEEDBACK_JS__
+__ASSEMBLY_JS__
+__EXAM_JS__
+__STORE_JS__
+__ANALYTICS_JS__
+__MASTERY_JS__
+__SCHEDULER_JS__
+__REMEDIATION_JS__
+__REVISION_JS__
+__PRACTICE_JS__
+__FOCUS_JS__
+__SIM_PAPER_JS__
+__SMOKE_SUBSET_JS__
+/* === BOOTSTRAP: src/shell.html === */
+(function () {
+  'use strict';
+  try {
+    var terms = SimTerms.load(document);
+    SimTerms.setDefault(terms);
+    SimTerms.applyToDocument(document, terms);
+    SimTerms.renderStatus(document, terms);
+  } catch (error) {
+    SimTerms.renderError(document, error);
+  }
+  if (typeof SimTheme !== 'undefined' && SimTheme && typeof SimTheme.init === 'function') {
+    SimTheme.init(document);
+  }
+  try {
+    var conventions = SimConventions.load(document);
+    SimConventions.renderStatus(document, conventions);
+  } catch (error) {
+    SimConventions.renderError(document, error);
+  }
+  try {
+    var hasBankMeta = Boolean(document && typeof document.querySelector === 'function' && document.querySelector('meta[name="sim-bank-embedded-digest"]'));
+    var bank = SimBank.load(document, { verifyIntegrity: hasBankMeta });
+    SimBank.renderStatus(document, bank);
+  } catch (error) {
+    SimBank.renderError(document, error);
+  }
+  try {
+    var goldenVectors = SimGoldenVectors.load(document);
+    SimGoldenVectors.renderStatus(document, goldenVectors);
+  } catch (error) {
+    SimGoldenVectors.renderError(document, error);
+  }
+  if (typeof SimFigures !== 'undefined' && SimFigures && typeof SimFigures.init === 'function') {
+    SimFigures.init(document);
+  }
+  try {
+    if (typeof SimChains !== 'undefined' && SimChains && typeof SimChains.init === 'function') {
+      SimChains.init(document);
+    }
+  } catch (error) {
+    SimChains.renderError(document, error);
+  }
+  try {
+    var coverage = SimCoverage.load(document, COVERAGE_INVARIANTS);
+    SimCoverage.render(coverage, document);
+    if (typeof SimStartView !== 'undefined' && SimStartView && typeof SimStartView.renderStartTopics === 'function') {
+      SimStartView.renderStartTopics(coverage, document);
+    }
+    if (typeof SimConceptMap !== 'undefined' && SimConceptMap && typeof SimConceptMap.render === 'function') {
+      SimConceptMap.render(coverage, document);
+    }
+    if (typeof SimConceptDrawer !== 'undefined' && SimConceptDrawer && typeof SimConceptDrawer.init === 'function') {
+      SimConceptDrawer.init(document, { coverage: coverage, summaries: CONCEPT_DRAWER_DATA, registry: ANCHOR_REGISTRY });
+    }
+    if (typeof SimHintDrawer !== 'undefined' && SimHintDrawer && typeof SimHintDrawer.init === 'function') {
+      SimHintDrawer.init(document, { layersData: RECALL_LAYERS_DATA });
+    }
+    if (typeof SimExam !== 'undefined' && SimExam && typeof SimExam.init === 'function') {
+      SimExam.init(document);
+    }
+    if (typeof SimRevision !== 'undefined' && SimRevision && typeof SimRevision.renderFromStore === 'function') {
+      var _origRevRenderFromStore = SimRevision.renderFromStore;
+      SimRevision.renderFromStore = function (doc, store, cov, opts) {
+        if ((!opts || !opts.policy) && (!doc || typeof doc.getElementById !== 'function' || !doc.getElementById('sim-revision-policy'))) {
+          return null;
+        }
+        return _origRevRenderFromStore.call(SimRevision, doc, store, cov, opts);
+      };
+    }
+    var analyticsApp = null;
+    if (typeof SimAnalytics !== 'undefined' && SimAnalytics && typeof SimAnalytics.init === 'function') {
+      analyticsApp = SimAnalytics.init(document, { coverage: coverage });
+    }
+    var masteryApp = null;
+    try {
+      if (typeof SimMastery !== 'undefined' && SimMastery && typeof SimMastery.init === 'function') {
+        masteryApp = SimMastery.init(document, {
+          coverage: coverage,
+          bank: typeof bank !== 'undefined' ? bank : null,
+          store: analyticsApp ? analyticsApp.store : null
+        });
+      }
+    } catch (masteryError) {
+      if (typeof SimMastery !== 'undefined' && SimMastery && typeof SimMastery.renderError === 'function') {
+        SimMastery.renderError(document, masteryError);
+      }
+    }
+    try {
+      if (typeof SimScheduler !== 'undefined' && SimScheduler && typeof SimScheduler.init === 'function') {
+        SimScheduler.init(document, {
+          coverage: coverage,
+          bank: typeof bank !== 'undefined' ? bank : null,
+          store: analyticsApp ? analyticsApp.store : null,
+          masteryApp: masteryApp
+        });
+      }
+    } catch (schedulerError) {
+      if (typeof SimScheduler !== 'undefined' && SimScheduler && typeof SimScheduler.renderError === 'function') {
+        SimScheduler.renderError(document, schedulerError);
+      }
+    }
+    try {
+      if (typeof SimRemediation !== 'undefined' && SimRemediation && typeof SimRemediation.init === 'function') {
+        SimRemediation.init(document, {
+          coverage: coverage,
+          bank: typeof bank !== 'undefined' ? bank : null,
+          store: analyticsApp ? analyticsApp.store : null
+        });
+      }
+    } catch (remediationError) {
+      if (typeof SimRemediation !== 'undefined' && SimRemediation && typeof SimRemediation.renderError === 'function') {
+        SimRemediation.renderError(document, remediationError);
+      }
+    }
+    try {
+      if (typeof SimRevision !== 'undefined' && SimRevision && typeof SimRevision.init === 'function') {
+        SimRevision.init(document, {
+          coverage: coverage,
+          bank: typeof bank !== 'undefined' ? bank : null,
+          store: analyticsApp ? analyticsApp.store : null
+        });
+      }
+    } catch (revisionError) {
+      if (typeof SimRevision !== 'undefined' && SimRevision && typeof SimRevision.renderError === 'function') {
+        SimRevision.renderError(document, revisionError);
+      }
+    }
+    try {
+      if (typeof SimInputsRegistry !== 'undefined' && SimInputsRegistry && typeof SimInputsRegistry.load === 'function') {
+        var rtIsland = document.getElementById('sim-response-types');
+        var termsIsland = document.getElementById('sim-terms');
+        var parsedTerms = null;
+        if (termsIsland && termsIsland.textContent) {
+          try { parsedTerms = JSON.parse(termsIsland.textContent); } catch (_tErr) { parsedTerms = null; }
+        }
+        if (rtIsland && rtIsland.textContent) {
+          SimInputsRegistry.load(rtIsland.textContent, parsedTerms);
+        }
+      }
+      if (typeof SimPractice !== 'undefined' && SimPractice && typeof SimPractice.init === 'function') {
+        SimPractice.init(document, {
+          coverage: coverage,
+          bank: typeof bank !== 'undefined' ? bank : null,
+          store: analyticsApp ? analyticsApp.store : null
+        });
+      }
+    } catch (practiceError) {
+      if (typeof SimPractice !== 'undefined' && SimPractice && typeof SimPractice.renderError === 'function') {
+        SimPractice.renderError(document, practiceError);
+      }
+    }
+    if (typeof SimFocus !== 'undefined' && SimFocus && typeof SimFocus.init === 'function') {
+      SimFocus.init(document);
+    }
+    if (typeof SimPaper !== 'undefined' && SimPaper && typeof SimPaper.init === 'function') {
+      SimPaper.init(document, { bank: typeof bank !== 'undefined' ? bank : null });
+    }
+    if (typeof SimSmoke !== 'undefined' && SimSmoke && typeof SimSmoke.run === 'function') {
+      SimSmoke.run(document, { coverage: coverage, expected: COVERAGE_INVARIANTS, onLoad: true });
+    }
+  } catch (error) {
+    SimCoverage.renderError(document, error);
+  }
+})();
+</script>
+</body>
+</html>

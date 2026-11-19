@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-practice-policy",
+  "owner": "N30",
+  "status": "authored",
+  "policy_id": "sim-colloq1-practice-paths-v1",
+  "title_lv": "Ierobežoto prakses ceļu, filtru un godīgā iztrūkuma politika (PROPOSED)",
+  "epistemic_label": "PROPOSED",
+  "official_counterpart_status": "UNDETERMINED",
+  "honesty_note_lv": "PROPOSED mācību politikas priekšlikums: 2025. gada oficiālā programma (RSU_MedChem_Colloq1_Prog_LV_2025.pdf) nenosaka prakses ceļu garumus, uzdevumu pasniegšanas secību vai iztrūkuma noteikumus (oficiāls analogs: UNDETERMINED). Deklarētais garums ir mērķis, nevis solījums; nerecenzēti uzdevumi nekad netiek iekļauti.",
+  "honesty_note_en": "PROPOSED training policy: the 2025 programme sets no bounded practice lengths, ordering rule, or shortage handling. Declared lengths are targets grounded in N20 bank counts; unreviewed content is never drawn.",
+  "predecessor_decisions": [
+    {
+      "card_id": "F03",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F03",
+      "decision": "Per-topic bounded practice: a short, ordered path rather than an endless random question stream."
+    },
+    {
+      "card_id": "F08",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F08",
+      "decision": "Adaptive difficulty remains DEFERRED and out of scope for N30."
+    },
+    {
+      "card_id": "N20-Bank",
+      "ref": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "decision": "112 reviewed bank instances across 28 families (4 families x 4 variants = 16 eligible instances per topic) plus N20 ephemeral variant instantiation."
+    },
+    {
+      "card_id": "N21-ModeRegistry",
+      "ref": "data/exam_policy.json#view_discipline",
+      "decision": "Practice mode enables hint, chain, method-card, and term-lookup components while exam mode forbids them."
+    },
+    {
+      "card_id": "N24-Eligibility",
+      "ref": "docs/FORM_ASSEMBLY_FORMAT.md",
+      "decision": "Absolute review-eligibility gate: review.{accessibility,calculation,content,source} === 'passed' and review_workflow.state === 'accepted'."
+    },
+    {
+      "card_id": "N26-N27-N28-N29",
+      "ref": "docs/SCHEDULER_FORMAT.md",
+      "decision": "One pure path engine serves topic browse, N27/N29 scheduler/revision queue handoffs (N27-to-N30-practice-entry), and N28 remediation retries (N28-to-N30-remediation-retry)."
+    }
+  ],
+  "topic_lengths": {
+    "1": {
+      "topic": 1,
+      "declared_length": 6,
+      "outcomes_count": 9,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 1. tēmai ir 9 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 6 uzdevumi."
+    },
+    "2": {
+      "topic": 2,
+      "declared_length": 7,
+      "outcomes_count": 10,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 2. tēmai ir 10 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 7 uzdevumi."
+    },
+    "3": {
+      "topic": 3,
+      "declared_length": 8,
+      "outcomes_count": 11,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 3. tēmai ir 11 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 8 uzdevumi."
+    },
+    "4": {
+      "topic": 4,
+      "declared_length": 8,
+      "outcomes_count": 11,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 4. tēmai ir 11 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 8 uzdevumi."
+    },
+    "5": {
+      "topic": 5,
+      "declared_length": 7,
+      "outcomes_count": 10,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 5. tēmai ir 10 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 7 uzdevumi."
+    },
+    "6": {
+      "topic": 6,
+      "declared_length": 6,
+      "outcomes_count": 8,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 6. tēmai ir 8 mācību rezultāti, 4 saimes un 16 N20 derīgie uzdevumi; mērķa garums 6 uzdevumi."
+    },
+    "7": {
+      "topic": 7,
+      "declared_length": 5,
+      "outcomes_count": 5,
+      "families_count": 4,
+      "n20_eligible_count": 16,
+      "epistemic_label": "PROPOSED",
+      "citation": "evidence/N20_VERIFICATION_RECORD.json#frozen_bank",
+      "rationale_lv": "PROPOSED: 7. tēmai ir 5 mācību rezultāti un mazāk saimju mērķu; mērķa garums 5 uzdevumi (īsāks par 3. tēmas 8 uzdevumu ceļu)."
+    }
+  },
+  "ordering_rule": {
+    "epistemic_label": "PROPOSED",
+    "difficulty_order": [
+      "foundational",
+      "application",
+      "transfer"
+    ],
+    "fallback_when_difficulty_absent": "family_id ASC, variant_id ASC, question_id ASC",
+    "tie_breakers": [
+      "family_id ASC",
+      "variant_id ASC",
+      "question_id ASC"
+    ]
+  },
+  "filter_semantics": {
+    "epistemic_label": "PROPOSED",
+    "response_type_vocabulary": [
+      "Q01",
+      "Q02",
+      "Q03",
+      "Q04",
+      "Q05",
+      "Q06",
+      "Q07",
+      "Q08",
+      "Q09",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18"
+    ],
+    "unattempted_only": {
+      "reads": "SimStore attempt history (practice_history.attempted_instance_ids, remediation_queue, events)",
+      "empty_history_behavior": "When store history is empty (0 attempted), unattempted-only treats 0 items as attempted and honestly reports history_empty=true."
+    }
+  },
+  "bounds_rules": {
+    "epistemic_label": "PROPOSED",
+    "no_repeat_within_path": true,
+    "exclude_current_session_answered": true,
+    "declared_length_is_target_not_promise": true,
+    "never_pad_with_unreviewed": true,
+    "never_pad_with_repeats": true
+  },
+  "skip_semantics": {
+    "epistemic_label": "PROPOSED",
+    "advances_without_grading": true,
+    "recorded_as": "skipped",
+    "counts_as_incorrect": false,
+    "feeds_mastery_or_remediation": false
+  },
+  "entry_points": [
+    "topic_browse",
+    "scheduler_queue",
+    "remediation_retry",
+    "revision_panel"
+  ],
+  "shortage_reasons": {
+    "pending_review": {
+      "code": "pending_review",
+      "term_key": "practice.shortage.pending_review"
+    },
+    "filter_shortage": {
+      "code": "filter_shortage",
+      "term_key": "practice.shortage.filter"
+    },
+    "history_exhausted": {
+      "code": "history_exhausted",
+      "term_key": "practice.shortage.exhausted"
+    }
+  },
+  "copy_keys": {
+    "heading": "practice.heading",
+    "honesty_note": "practice.honesty_note",
+    "filter_type_label": "practice.filter.type_label",
+    "filter_type_all": "practice.filter.type_all",
+    "filter_unattempted_label": "practice.filter.unattempted_label",
+    "topic_start": "practice.topic.start",
+    "topic_meta": "practice.topic.meta",
+    "runner_progress": "practice.runner.progress",
+    "runner_submit": "practice.runner.submit",
+    "runner_skip": "practice.runner.skip",
+    "runner_next": "practice.runner.next",
+    "runner_end": "practice.runner.end",
+    "shortage_pending_review": "practice.shortage.pending_review",
+    "shortage_filter": "practice.shortage.filter",
+    "shortage_exhausted": "practice.shortage.exhausted",
+    "shortage_ephemeral_cta": "practice.shortage.ephemeral_cta",
+    "shortage_show_attempted_cta": "practice.shortage.show_attempted_cta",
+    "help_hint_btn": "practice.help.hint_btn",
+    "help_concept_btn": "practice.help.concept_btn",
+    "help_term_btn": "practice.help.term_btn",
+    "help_chain_btn": "practice.help.chain_btn",
+    "help_no_chain": "practice.help.no_chain",
+    "summary_title": "practice.summary.title",
+    "summary_counts": "practice.summary.counts",
+    "summary_mastery_heading": "practice.summary.mastery_heading",
+    "summary_mastery_none": "practice.summary.mastery_none",
+    "summary_close": "practice.summary.close"
+  }
+}

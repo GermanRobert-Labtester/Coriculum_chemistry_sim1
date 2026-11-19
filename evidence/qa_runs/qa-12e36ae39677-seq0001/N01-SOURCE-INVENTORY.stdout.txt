@@ -1,0 +1,21 @@
+PASS source-freeze-inventory: 19 entries, 18 frozen, 1 unavailable, root=/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum
+  OK C1-MASTER: 1018215 bytes sha256=037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39 (materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html)
+  OK C2-MASTER: 969738 bytes sha256=35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea (materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html)
+  OK C3-MASTER: 1039699 bytes sha256=d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f (materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html)
+  OK C4-MASTER: 2502506 bytes sha256=6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845 (materials/Chemistry_4/Master_4_temats_termodinamika.html)
+  OK C5-MASTER: 1518065 bytes sha256=04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb (materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html)
+  OK C6-MASTER: 1829918 bytes sha256=0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7 (materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html)
+  OK C7-MASTER: 348993 bytes sha256=a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f (materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html)
+  OK COPY-MANIFEST: 57793 bytes sha256=07d49735060796c3d34191b66b5fe9991232279f5849147c7e2b0f5ad59b72c9 (COPY_MANIFEST.json)
+  OK PROGRAMME-PDF: 353208 bytes sha256=f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9 (RSU_MedChem_Colloq1_Prog_LV_2025.pdf)
+  OK SIMULATION-BLUEPRINT: 8267 bytes sha256=97235e27857a28199685acec39780829663acf55668ec98c6e14cfbb028a7197 (docs/SIMULATION_BLUEPRINT.json)
+  OK AGENTS-MD: 2743 bytes sha256=93c8dd5b1a7f1a330cbbbc941df99ac84a9235c0505c2aa1ff118e2e5d1bc548 (AGENTS.md)
+  OK PREDECESSOR-ROADMAP: 76047 bytes sha256=e218fdf1d83dce3f5bc132bd7ea99ffcd398a67b153b960a225fafc9ecdc66a9 (MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md)
+  OK COVERAGE-MATRIX: 22611 bytes sha256=89c38b9e44a82840380e012d46303dacd1f22b70548b62917118e9b16aaac3c0 (docs/PROGRAMME_COVERAGE_MATRIX.csv)
+  OK QUESTION-FAMILIES: 46937 bytes sha256=7e168dc21b82f5b713c0e1ccf854889e5450c73db0decf23dc2d1aa80064dde4 (docs/QUESTION_FAMILIES.json)
+  OK QUESTION-SCHEMA: 5350 bytes sha256=5984f03b845c0d7248311b0311cd6ffb419762809b845db2a32c33dd7eb1ac88 (docs/QUESTION_SCHEMA.json)
+  OK EXAMPLE-QUESTIONS: 17375 bytes sha256=f5c9f2b62b14473126035af49efe5ba3eacf171628a2b4b84189f0c096126506 (docs/EXAMPLE_QUESTIONS.json)
+  OK QUESTION-TYPES-DOC: 29562 bytes sha256=537aa96baab9afcc2986391b3bc27a3c788cbc349452c79cf2db6d58e67a3136 (docs/QUESTION_TYPES_AND_VARIANTS.md)
+  OK PROGRAMME-EXTRACT: 12135 bytes sha256=3aa14e35597d1ea8e44652eeba0a578d1a487ed61a76630f811f644f82467580 (evidence/programme_extracted.txt)
+  UNAVAILABLE SIBLING-SOURCES: Chemistry_1 through Chemistry_7 (parent workspace, not published) - recorded, not present
+  PDF f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9 == inspection anchor f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9

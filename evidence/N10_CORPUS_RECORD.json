@@ -1,0 +1,529 @@
+{
+  "double_build_parity": {
+    "byte_identical": true,
+    "css_bytes": 23653,
+    "manifest_sha256": "97213731af76802a4df3c867b6854f891f458ebdc75ee41a290a5ac069506146",
+    "output_bytes": 571821,
+    "output_sha256": "821f74ae107f3cdcfad99680fe8ee62051f0b69a82d5f7fc37fd246ac4188167",
+    "runtime_js_bytes": 225097,
+    "status": "PASS",
+    "terms_island_bytes": 64508,
+    "terms_loader_js_bytes": 13611
+  },
+  "grammar_fixtures": {
+    "invalid_fixtures": [
+      {
+        "case": "unknown_element_xyz",
+        "error": "[E_UNIT_UNKNOWN_ELEMENT] Nezināms vienības elements 'xyz' virknē 'xyz'.",
+        "error_code": "E_UNIT_UNKNOWN_ELEMENT",
+        "status": "PASS",
+        "unit": "xyz"
+      },
+      {
+        "case": "unknown_lowercase_ml",
+        "error": "[E_UNIT_UNKNOWN_ELEMENT] Nezināms vienības elements 'ml' virknē 'ml'.",
+        "error_code": "E_UNIT_UNKNOWN_ELEMENT",
+        "status": "PASS",
+        "unit": "ml"
+      },
+      {
+        "case": "malformed_double_slash",
+        "error": "[E_UNIT_MALFORMED_SEPARATOR] Atļauta ne vairāk kā viena dalīšanas zīme \"/\": 'g//mol'.",
+        "error_code": "E_UNIT_MALFORMED_SEPARATOR",
+        "status": "PASS",
+        "unit": "g//mol"
+      },
+      {
+        "case": "malformed_asterisk",
+        "error": "[E_UNIT_MALFORMED_SEPARATOR] Reizināšanai jālieto \"·\", nevis \"*\" vai \".\": 'J/(mol*K)'.",
+        "error_code": "E_UNIT_MALFORMED_SEPARATOR",
+        "status": "PASS",
+        "unit": "J/(mol*K)"
+      },
+      {
+        "case": "ambiguous_denominator",
+        "error": "[E_UNIT_AMBIGUOUS_DENOMINATOR] Vairāklocekļu saucējs jāliek iekavās, piem., J/(mol·K), saņemts 'J/mol·K'.",
+        "error_code": "E_UNIT_AMBIGUOUS_DENOMINATOR",
+        "status": "PASS",
+        "unit": "J/mol·K"
+      },
+      {
+        "case": "flipped_ml_per_mg_for_density",
+        "dimension": "density",
+        "error": "[E_UNIT_DIMENSION_MISMATCH] Dimensijai 'density' gaidīts {'M': 1, 'L': -3}, bet vienībai 'mL/mg' ir {'L': 3, 'M': -1}.",
+        "status": "PASS",
+        "unit": "mL/mg"
+      },
+      {
+        "case": "molar_conc_for_density",
+        "dimension": "density",
+        "error": "[E_UNIT_DIMENSION_MISMATCH] Dimensijai 'density' gaidīts {'M': 1, 'L': -3}, bet vienībai 'mol/L' ir {'N': 1, 'L': -3}.",
+        "status": "PASS",
+        "unit": "mol/L"
+      }
+    ],
+    "status": "PASS",
+    "valid_fixtures": [
+      {
+        "dimension_vector": {
+          "M": 1,
+          "N": -1
+        },
+        "kind": "composed",
+        "unit": "g/mol"
+      },
+      {
+        "dimension_vector": {
+          "L": -3,
+          "M": 1
+        },
+        "kind": "composed",
+        "unit": "mg/mL"
+      },
+      {
+        "dimension_vector": {
+          "L": 2,
+          "M": 1,
+          "N": -1,
+          "T": -2,
+          "Theta": -1
+        },
+        "kind": "composed",
+        "unit": "J/(mol·K)"
+      },
+      {
+        "dimension_vector": {
+          "L": 2,
+          "N": -1
+        },
+        "kind": "composed",
+        "unit": "L/(mol·cm)"
+      },
+      {
+        "dimension_vector": {
+          "L": -6,
+          "N": 2
+        },
+        "kind": "composed",
+        "unit": "(mol/L)^2"
+      },
+      {
+        "dimension_vector": {
+          "T": -1
+        },
+        "kind": "composed",
+        "unit": "s^-1"
+      },
+      {
+        "dimension_vector": {},
+        "kind": "dimensionless",
+        "unit": "% (m/V)"
+      }
+    ]
+  },
+  "html_scan": {
+    "dom_term_key_refs": 18,
+    "embedded_terms_count": 174,
+    "errors": [],
+    "nested_units_checked": 1,
+    "resolved_dom_keys": 18,
+    "status": "PASS",
+    "unit_strings_checked": 49
+  },
+  "planted_corpus": {
+    "fixtures": [
+      {
+        "id": "NEG-STUB-MISSED-KEY",
+        "missing_entries": [
+          {
+            "key": "feedback.missed_n09_key",
+            "task": "N09"
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "error": "<tmp>/planted_bad_unit.json:items[0].unit: [E_UNIT_AMBIGUOUS_DENOMINATOR] Vairāklocekļu saucējs jāliek iekavās, piem., J/(mol·K), saņemts 'J/mol·K'.",
+        "id": "NEG-PLANTED-INVALID-UNIT",
+        "status": "PASS"
+      },
+      {
+        "error": "<tmp>/planted_unknown_key.json:items[0].term_key: [E_TERMS_UNKNOWN_KEY] Nezināma termina atslēga 'term.does_not_exist'.",
+        "id": "NEG-PLANTED-UNKNOWN-KEY",
+        "status": "PASS"
+      },
+      {
+        "error": "data/terms.json:qty.density.unit: [E_UNIT_DIMENSION_MISMATCH] Dimensijai 'density' gaidīts {'M': 1, 'L': -3}, bet vienībai 'mol/L' ir {'N': 1, 'L': -3}.",
+        "id": "NEG-PLANTED-DIMENSION-MISMATCH",
+        "status": "PASS"
+      },
+      {
+        "error": "data/terms.json:qty.density_with_unit_label.text_lv(nested): [E_UNIT_DIMENSION_MISMATCH] Dimensijai 'density' gaidīts {'M': 1, 'L': -3}, bet vienībai 'mL/mg' ir {'L': 3, 'M': -1}.",
+        "id": "NEG-PLANTED-NESTED-UNIT",
+        "status": "PASS"
+      },
+      {
+        "exempt_prose_fields": 361,
+        "id": "EDGE-PROSE-EXEMPTION",
+        "status": "PASS"
+      },
+      {
+        "artifact_written": false,
+        "id": "GATE-REFUSAL-DIMENSION-MISMATCH",
+        "returncode": 1,
+        "status": "PASS",
+        "stderr_head": "FAIL terminology gate (order 9, owner N10): data/terms.json:qty.density.unit: [E_UNIT_DIMENSION_MISMATCH] Dimensijai 'density' gaidīts {'M': 1, 'L': -3}, bet vienībai 'mol/L' ir {'N': 1, 'L': -3}."
+      },
+      {
+        "artifact_written": false,
+        "id": "GATE-REFUSAL-EXTRA-DATA-UNIT",
+        "returncode": 1,
+        "status": "PASS",
+        "stderr_head": "FAIL terminology gate (order 9, owner N10): <tmp>/planted_bad_unit.json:items[0].unit: [E_UNIT_AMBIGUOUS_DENOMINATOR] Vairāklocekļu saucējs jāliek iekavās, piem., J/(mol·K), saņemts 'J/mol·K'."
+      }
+    ],
+    "status": "PASS"
+  },
+  "prior_phase_regressions": [
+    {
+      "command": "node tools/check_coverage_runtime.js --json",
+      "owner": "N02",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_conventions_runtime.js",
+      "owner": "N03",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_golden_vectors_runtime.js",
+      "owner": "N05",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n06_runtime.js",
+      "owner": "N06",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n07_runtime.js",
+      "owner": "N07",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n08_runtime.js",
+      "owner": "N08",
+      "returncode": 0,
+      "status": "PASS"
+    }
+  ],
+  "runtime_fixtures": {
+    "artifact": "n10-runtime-harness",
+    "artifact_path": "output/simulator.html",
+    "artifact_sha256": "821f74ae107f3cdcfad99680fe8ee62051f0b69a82d5f7fc37fd246ac4188167",
+    "baseline": {
+      "counts_by_class": {
+        "instruments": 13,
+        "interface": 55,
+        "iupac": 10,
+        "quantities": 31,
+        "terms": 65
+      },
+      "status_text": "Terminoloģijas sala (#sim-terms): 174 šķirkļi (65/31/13/55/10).",
+      "status_visible": true,
+      "total_entries": 174
+    },
+    "degradation": {
+      "empty_error_text": "Terminoloģijas salas kļūda (E_TERMS_EMPTY): [E_TERMS_EMPTY] #sim-terms ir tukša.",
+      "truncated_error_text": "Terminoloģijas salas kļūda (E_TERMS_JSON): [E_TERMS_JSON] #sim-terms nederīgs JSON.",
+      "unloaded_lookup_error": {
+        "code": "E_TERMS_NOT_LOADED",
+        "message": "[E_TERMS_NOT_LOADED] #sim-terms nav ielādēta."
+      }
+    },
+    "figure_label_contract_proof": {
+      "degraded": [
+        {
+          "case": "missing_key",
+          "error_code": "E_TERMS_MISSING_KEY"
+        },
+        {
+          "case": "bad_unit",
+          "error_code": "E_UNIT_AMBIGUOUS_DENOMINATOR"
+        },
+        {
+          "case": "dim_mismatch",
+          "error_code": "E_UNIT_DIMENSION_MISMATCH"
+        }
+      ],
+      "resolved": [
+        {
+          "key": "fig.axis.concentration_mol_l",
+          "kind": "axis",
+          "text": "Molārā koncentrācija c (mol/L)",
+          "unit": "mol/L"
+        },
+        {
+          "key": "qty.density_with_unit_label",
+          "kind": "axis",
+          "text": "šķīduma blīvums ρ (g/mL)",
+          "unit": "g/mL"
+        },
+        {
+          "key": "fig.axis.absorbance_a",
+          "kind": "axis",
+          "text": "Absorbance A (A)",
+          "unit": "A"
+        },
+        {
+          "key": "fig.legend.catalyzed",
+          "kind": "legend",
+          "text": "Katalizēta reakcija",
+          "unit": null
+        },
+        {
+          "key": "fig.annot.no_extrapolation",
+          "kind": "annotation",
+          "text": "Ārpus standartu lineārā diapazona ekstrapolācija nav pieļaujama",
+          "unit": null
+        }
+      ]
+    },
+    "full_document_scan": {
+      "bad_nested_unit_caught": "E_UNIT_DIMENSION_MISMATCH",
+      "dom_term_key_count": 18,
+      "nested_units_checked": [
+        {
+          "dim": {
+            "L": -3,
+            "M": 1
+          },
+          "extracted_unit": "g/mL",
+          "key": "qty.density_with_unit_label",
+          "text_lv": "šķīduma blīvums ρ (g/mL)"
+        }
+      ]
+    },
+    "iupac_pair_fixture": {
+      "on_request_pair": "etiķskābe (IUPAC: etānskābe)",
+      "primary": "etiķskābe",
+      "thermo_pair": "Q = ΔU + A (kursa zīmju konvencija) (IUPAC: ΔU = q + w (IUPAC konvencija, w = −A))"
+    },
+    "missing_key_error": {
+      "code": "E_TERMS_MISSING_KEY",
+      "message": "[E_TERMS_MISSING_KEY] Trūkst \"does.not.exist\" (#sim-terms).",
+      "name": "TermsError"
+    },
+    "schema_version": 1,
+    "single_sourcing": {
+      "coverage_view_updated": true,
+      "hint_drawer_close_updated": true,
+      "hint_help_btn_updated": true,
+      "nav_updated": true,
+      "theme_toggle_updated": true
+    },
+    "smoke_report": {
+      "failed": 0,
+      "passed": 4,
+      "status": "PASS",
+      "total": 4,
+      "vectors": [
+        {
+          "details": {
+            "perTopic": {
+              "1": 9,
+              "2": 10,
+              "3": 11,
+              "4": 11,
+              "5": 10,
+              "6": 8,
+              "7": 5
+            },
+            "total": 64
+          },
+          "id": "SMK-N06-COVERAGE-COUNTS",
+          "owner": "N06",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "crossTopicEdges": 20,
+            "edges": 127,
+            "nodes": 64,
+            "walkEvents": 4
+          },
+          "id": "SMK-N07-MAP-DRAWER-WALK",
+          "owner": "N07",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "eventsRecorded": 4,
+            "examRefused": true,
+            "families": 28,
+            "revealedLayers": 4
+          },
+          "id": "SMK-N08-HINT-LADDER-WALK",
+          "owner": "N08",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "figureAxis": "Molārā koncentrācija c (mol/L)",
+            "iupacPair": "etiķskābe (IUPAC: etānskābe)",
+            "totalEntries": 174,
+            "vectorChecked": 5
+          },
+          "id": "SMK-N10-TERMS-GRAMMAR-LOOKUP",
+          "owner": "N10",
+          "reason": null,
+          "status": "PASS"
+        }
+      ]
+    },
+    "status": "PASS",
+    "task": "N10",
+    "unit_grammar": {
+      "flipped_ml_per_mg_density": "E_UNIT_DIMENSION_MISMATCH",
+      "invalid_rejected": [
+        {
+          "error_code": "E_UNIT_UNKNOWN_ELEMENT",
+          "unit": "ml"
+        },
+        {
+          "error_code": "E_UNIT_AMBIGUOUS_DENOMINATOR",
+          "unit": "J/mol·K"
+        },
+        {
+          "error_code": "E_UNIT_MALFORMED_SEPARATOR",
+          "unit": "g//mol"
+        },
+        {
+          "error_code": "E_UNIT_EMPTY",
+          "unit": ""
+        }
+      ],
+      "mol_per_l_density": "E_UNIT_DIMENSION_MISMATCH",
+      "valid_parsed": [
+        {
+          "dim": {
+            "M": 1,
+            "N": -1
+          },
+          "unit": "g/mol"
+        },
+        {
+          "dim": {
+            "L": -3,
+            "M": 1
+          },
+          "unit": "mg/mL"
+        },
+        {
+          "dim": {
+            "L": 2,
+            "M": 1,
+            "N": -1,
+            "T": -2,
+            "Theta": -1
+          },
+          "unit": "J/(mol·K)"
+        },
+        {
+          "dim": {
+            "L": 2,
+            "N": -1
+          },
+          "unit": "L/(mol·cm)"
+        },
+        {
+          "dim": {
+            "L": -6,
+            "N": 2
+          },
+          "unit": "(mol/L)^2"
+        },
+        {
+          "dim": {
+            "T": -1
+          },
+          "unit": "s^-1"
+        },
+        {
+          "dim": {},
+          "unit": "% (m/V)"
+        }
+      ]
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N10",
+  "validation": {
+    "canonical_bytes": 64508,
+    "canonical_sha256": "f77bddea42b87fd098a998bfed6955b9b681fb640580acded8a704cb3a2d2d6f",
+    "concept_bindings_count": 119,
+    "counts_by_class": {
+      "instruments": 13,
+      "interface": 55,
+      "iupac": 10,
+      "quantities": 31,
+      "terms": 65
+    },
+    "errors": [],
+    "grammar_elements_count": 26,
+    "lint": {
+      "checked_term_keys": 0,
+      "checked_unit_fields": 239,
+      "errors": [],
+      "exempt_prose_fields": 360,
+      "status": "PASS"
+    },
+    "nested_unit_slots_count": 1,
+    "orphan_elements": [],
+    "schema_version": 1,
+    "status": "PASS",
+    "stub_closure": {
+      "missing_entries": [],
+      "rows": [
+        {
+          "file": "data/n06_term_stubs.json",
+          "missing_keys": [],
+          "resolved_keys": 21,
+          "status": "CLOSED",
+          "task": "N06",
+          "total_keys": 21
+        },
+        {
+          "file": "data/n08_term_stubs.json",
+          "missing_keys": [],
+          "resolved_keys": 15,
+          "status": "CLOSED",
+          "task": "N08",
+          "total_keys": 15
+        },
+        {
+          "file": "data/n09_term_stubs.json",
+          "missing_keys": [],
+          "resolved_keys": 0,
+          "status": "pending-N09 (N09 not yet executed in workspace; feedback interface keys pre-authored in #sim-terms)",
+          "task": "N09",
+          "total_keys": 0
+        }
+      ],
+      "status": "PASS",
+      "text_mismatches": []
+    },
+    "task": "N10",
+    "total_entries": 174,
+    "unit_slots_count": 49
+  }
+}

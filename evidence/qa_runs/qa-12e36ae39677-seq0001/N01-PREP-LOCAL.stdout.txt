@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-11-19T22:52:35.295268+00:00",
+  "scope": "Repository-local: published file set only (174 COPY_MANIFEST destinations and their recorded hashes/totals); sibling source trees and the 15,978-file preservation baseline are not asserted",
+  "status": "FAIL",
+  "checks": {
+    "copies": {
+      "files": 174,
+      "bytes": 30083827,
+      "roles": {
+        "canonical-master": 7,
+        "course-source": 35,
+        "supporting-reference-data": 65,
+        "planning-reference": 18,
+        "archived-governance-reference": 49
+      },
+      "manifest_sha256": "07d49735060796c3d34191b66b5fe9991232279f5849147c7e2b0f5ad59b72c9",
+      "master_resource_check": "Static loaded-resource attributes only; no browser acceptance",
+      "hash_matches": 174,
+      "hash_format": {
+        "algorithm": "sha256",
+        "recorded_lengths": [
+          64
+        ],
+        "all_lowercase_hex": true,
+        "inspection_prefix_example": "07d49735060796c3",
+        "rule": "Full 64-character digests compare by equality; shorter lowercase hex values compare as prefixes"
+      },
+      "published_set": {
+        "declared": 174,
+        "enumerated": 174,
+        "undeclared": [],
+        "absent": [],
+        "published_matches_manifest": true
+      },
+      "manifest_destination_recorded": "/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum",
+      "manifest_matches_committed_record": true,
+      "sibling_source_identity": "NOT ASSERTED in repository-local mode"
+    },
+    "preservation": {
+      "status": "NOT ASSERTED",
+      "reason": "Requires the unpublished sibling Chemistry_1 through Chemistry_7 trees and their baseline",
+      "scope": "All regular non-symlink files under Chemistry_1 through Chemistry_7"
+    },
+    "programme": {
+      "sha256": "f72763749d56ac712107560579ebc8e3716bfce2f6706402629da65c1d5f38b9",
+      "bytes": 353208,
+      "pages_inspected": 4,
+      "year": 2025,
+      "page_render_review": "Four Poppler PNGs directly inspected during preparation"
+    },
+    "roadmap": {
+      "sections": 14,
+      "core_tasks": 20,
+      "feature_proposals": 10,
+      "diagnostics": 5,
+      "core_card_shape": "3 main steps; 2 subtasks with 3 substeps each",
+      "sha256": "e218fdf1d83dce3f5bc132bd7ea99ffcd398a67b153b960a225fafc9ecdc66a9"
+    },
+    "design_data": {
+      "coverage_rows": 64,
+      "core_programme_paraphrase_rows": 63,
+      "supplementary_application_rows": 1,
+      "families": 28,
+      "variant_specifications": 112,
+      "question_types": 18,
+      "slots": 21,
+      "points": 100,
+      "minutes": 180,
+      "schema_check": "Draft 2020-12 schema structure checked with installed jsonschema; no release instances exist",
+      "scope": "Specifications only; no 112-item release bank or three assembled forms yet"
+    },
+    "examples": {
+      "examples": 14,
+      "independently_recomputed_numeric_examples": 13,
+      "numeric_fields_checked": 29,
+      "net_redox_atom_charge_balance": true,
+      "limit": "Arithmetic and one structured balance; no official-key, complete scientific or learner-trial acceptance"
+    }
+  },
+  "failures": [
+    "Broken document link: README.md: evidence/N39_QA_MANIFEST.json",
+    "Broken document link: README.md: evidence/N39_EVIDENCE_PACK.json",
+    "Broken document link: README.md: evidence/N39_TWO_RUN_EQUALITY.json",
+    "Broken document link: README.md: evidence/N39_ORDER_INDEPENDENCE.json",
+    "Broken document link: README.md: evidence/N39_VERIFIER_RECORD.json",
+    "Broken document link: README.md: evidence/N39_VERIFICATION_RECORD.md"
+  ],
+  "not_performed": [
+    "Simulator runtime",
+    "Browser rendering of masters/application",
+    "Accessibility/assistive technology",
+    "Assessment paper/PDF rendering",
+    "Full chemistry/source verification",
+    "Student/instructor trial",
+    "Source-to-copy identity against the sibling Chemistry_1 through Chemistry_7 trees",
+    "The 15,978-file source-workspace preservation baseline (evidence/source_workspace_baseline.json)",
+    "Full-workspace default-mode PASS issued from a clean clone (the siblings are not published)"
+  ],
+  "mode": "repo-local",
+  "environment": {
+    "python": "3.12.16",
+    "platform": "Linux-7.3.3-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "workspace": "/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum"
+  },
+  "not_asserted": [
+    "Source-to-copy identity against the sibling Chemistry_1 through Chemistry_7 trees",
+    "The 15,978-file source-workspace preservation baseline (evidence/source_workspace_baseline.json)",
+    "Full-workspace default-mode PASS issued from a clean clone (the siblings are not published)"
+  ]
+}

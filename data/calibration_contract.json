@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "calibration-contract",
+  "title": "N15 Frozen Calibration Assumption and No-Extrapolation Contract",
+  "owner": "N15",
+  "status": "frozen-contract-for-N18-N37",
+  "consumers": ["N18", "N37"],
+  "source_figures": "data/figures_t67.json",
+  "assumption_vocabulary": {
+    "required_ids": ["linear_range", "matrix_match", "intercept_meaning", "blank_correction"],
+    "states": ["stated", "absent_stated"],
+    "rule_lv": "Katrs kalibrēšanas ieraksts nosauc lineāro diapazonu, matricas atbilstību (vai tās neesamību), krustpunkta nozīmi un tukšā parauga korekciju. Katrs pieņēmums ir vai nu stated, vai absent_stated ar paskaidrojumu; klusēšana nav atļauta."
+  },
+  "model_vocabulary": {
+    "through_zero_fixed_intercept": "A = a*c; intercept fixed at 0; blank subtracted before measurement",
+    "linear_regression_free_intercept": "A = a*c + b; both slope and intercept fitted from the standards"
+  },
+  "no_extrapolation_rule": {
+    "rule_id": "N15-NOEXTRAP-01",
+    "source": "conventions.spectrophotometry.calibration.no_extrapolation_rule_lv",
+    "verbatim": "Neviena taisne, nolasījums vai atzīmēta vērtība netiek renderēta ārpus datu deklarētā diapazona. Nolasījums ārpus standartu apgabala ir jāatspoguļo kā neatļauts, nevis jāpieņem klusējot.",
+    "span_is_data": true,
+    "renderer_clips_lines_and_readings": true,
+    "validation_rejects_outside": true,
+    "inherited_by": "N18",
+    "enforcement": "SimFigures renderer clamps fit lines and reading lines to span; validate_figures rejects a declared fit span or reading outside the standards span by figure id."
+  },
+  "reading_recompute": {
+    "through_zero": "c = A / slope",
+    "free_intercept": "c = (A - intercept) / slope",
+    "rounding": "five significant figures; display uses the Latvian decimal comma"
+  },
+  "n18_scoring_fields": [
+    "span.x_min",
+    "span.x_max",
+    "span.data_x_min",
+    "span.data_x_max",
+    "fit_line.slope",
+    "fit_line.intercept",
+    "fit_line.x_min",
+    "fit_line.x_max",
+    "calibration_spec.unknown_signal",
+    "calibration_spec.unknown_concentration_mg_ml",
+    "assumption_ledger"
+  ],
+  "n37_type_registry": {
+    "figure_types": ["scatter"],
+    "supports_fit_line": true,
+    "supports_span_clipping": true,
+    "supports_reading_spec": true
+  }
+}

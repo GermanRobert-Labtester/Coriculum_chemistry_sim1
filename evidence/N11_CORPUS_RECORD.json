@@ -1,0 +1,724 @@
+{
+  "double_build_parity": {
+    "byte_identical": true,
+    "css_bytes": 29150,
+    "figure_framework_js_bytes": 33325,
+    "figures_island_bytes": 24755,
+    "manifest_sha256": "829ba66b706904a077f88fb1a9f5026a5a91a1e61395443deac21087b4c05e38",
+    "output_bytes": 651176,
+    "output_sha256": "491de4d3890897a91b57c60b5d7fe8415946c91227bfe7d464945ac2cdadeaf7",
+    "runtime_js_code_bytes": 195159,
+    "section_1_3_figure_subbudget_bytes": [
+      61440,
+      143360
+    ],
+    "status": "PASS",
+    "t12_combined_figure_bytes": 58080
+  },
+  "figure_schema_digest": "2b283000e39a51f0cb98ffcd47403d63e84b2195c4c69b0f26771f6bfd113e6a",
+  "figures_t12_validation": {
+    "canonical_bytes": 24755,
+    "canonical_sha256": "45efb89f55cbb5bd8b4efddc070d9be02bd537e533f3b8eeae124edc06efe30d",
+    "citation_table": [
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T1-COMP-NACL-BASES",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "master_anchor": "ch-8",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 2,
+        "conventions_refs_resolved": 2,
+        "id": "FIG-T1-COMP-ETANOL-VV",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 0,
+        "conventions_refs_resolved": 0,
+        "id": "FIG-T1-BAND-DISPERSION",
+        "master_anchor": "maisijumi",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "master_anchor": "stehiometrija",
+        "master_freeze_id": "C1-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 4,
+        "conventions_refs_resolved": 4,
+        "id": "FIG-T2-PLOT-NACL-DENSITY",
+        "master_anchor": "ch12-blivums-atkariba-no-masas-dalas",
+        "master_freeze_id": "C2-MASTER"
+      },
+      {
+        "anchor_resolved": true,
+        "conventions_refs_count": 3,
+        "conventions_refs_resolved": 3,
+        "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "master_anchor": "ch-2",
+        "master_freeze_id": "C2-MASTER"
+      }
+    ],
+    "description_checks": 9,
+    "errors": [],
+    "figures_count": 9,
+    "label_checks": 43,
+    "recompute_table": [
+      {
+        "agrees": true,
+        "authored_value": "4.86",
+        "conventions_sources": [
+          "percentage_basis.default_basis",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NACL-W-MM",
+        "exact_decimal": "4.857751112831430230307722082",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mass_percent_mm",
+        "recomputed_value": "4.86",
+        "sig_figs": 3,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.02",
+        "conventions_sources": [
+          "percentage_basis.allowed_bases",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NACL-W-MV",
+        "exact_decimal": "5.0200",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mass_volume_percent_mv",
+        "recomputed_value": "5.02",
+        "sig_figs": 3,
+        "unit": "% (m/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "27.5",
+        "conventions_sources": [
+          "CIT-C1-DENSITY",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-NAOH-W-MV",
+        "exact_decimal": "27.500",
+        "figure_id": "FIG-T1-COMP-NACL-BASES",
+        "formula_kind": "mm_to_mv_via_density",
+        "recomputed_value": "27.5",
+        "sig_figs": 3,
+        "unit": "% (m/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-RB-496",
+        "exact_decimal": "4.96",
+        "figure_id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "formula_kind": "sigfig_round_half_up",
+        "recomputed_value": "5.0",
+        "sig_figs": 2,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "5.0",
+        "conventions_sources": [
+          "rounding.rule"
+        ],
+        "derived_id": "DV-RB-504",
+        "exact_decimal": "5.04",
+        "figure_id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "formula_kind": "sigfig_round_half_up",
+        "recomputed_value": "5.0",
+        "sig_figs": 2,
+        "unit": "% (m/m)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "30.0",
+        "conventions_sources": [
+          "percentage_basis.allowed_bases",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-ETOH-WATER-VV",
+        "exact_decimal": "30.0",
+        "figure_id": "FIG-T1-COMP-ETANOL-VV",
+        "formula_kind": "complement_100",
+        "recomputed_value": "30.0",
+        "sig_figs": 3,
+        "unit": "% (V/V)"
+      },
+      {
+        "agrees": true,
+        "authored_value": "3.706",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-AL-N",
+        "exact_decimal": "3.706174486694833592765547402",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "moles_from_mass",
+        "recomputed_value": "3.706",
+        "sig_figs": 4,
+        "unit": "mol"
+      },
+      {
+        "agrees": true,
+        "authored_value": "88.94",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "atomic_masses.O",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-O2-M",
+        "exact_decimal": "88.94262841894596397598398934",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_mass_via_ratio",
+        "recomputed_value": "88.94",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "62.30",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "constants.V_M",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-O2-V",
+        "exact_decimal": "62.30264620858350011118523461",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_gas_volume_stp",
+        "recomputed_value": "62.30",
+        "sig_figs": 4,
+        "unit": "L"
+      },
+      {
+        "agrees": true,
+        "authored_value": "188.9",
+        "conventions_sources": [
+          "atomic_masses.Al",
+          "compound_molar_masses.Al2O3",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-AL2O3-M",
+        "exact_decimal": "188.9426284189459639759839893",
+        "figure_id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "formula_kind": "stoich_mass_via_compound",
+        "recomputed_value": "188.9",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "28.05",
+        "conventions_sources": [
+          "atomic_masses.K",
+          "atomic_masses.O",
+          "atomic_masses.H",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-KOH-MASS",
+        "exact_decimal": "28.052500",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "28.05",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "18.23",
+        "conventions_sources": [
+          "atomic_masses.H",
+          "atomic_masses.Cl",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-HCL-MASS",
+        "exact_decimal": "18.229000",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "18.23",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "37.27",
+        "conventions_sources": [
+          "atomic_masses.K",
+          "atomic_masses.Cl",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-KCL-MASS",
+        "exact_decimal": "37.274000",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "37.27",
+        "sig_figs": 4,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "9.01",
+        "conventions_sources": [
+          "atomic_masses.H",
+          "atomic_masses.O",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-H2O-MASS",
+        "exact_decimal": "9.007500",
+        "figure_id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "formula_kind": "mass_from_moles_elements",
+        "recomputed_value": "9.01",
+        "sig_figs": 3,
+        "unit": "g"
+      },
+      {
+        "agrees": true,
+        "authored_value": "0.9979",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]"
+        ],
+        "derived_id": "DV-DEN-0",
+        "exact_decimal": "0.9979",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_eval",
+        "recomputed_value": "0.9979",
+        "sig_figs": 4,
+        "unit": "g/mL"
+      },
+      {
+        "agrees": true,
+        "authored_value": "1.0709",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]"
+        ],
+        "derived_id": "DV-DEN-10",
+        "exact_decimal": "1.0709",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_eval",
+        "recomputed_value": "1.0709",
+        "sig_figs": 5,
+        "unit": "g/mL"
+      },
+      {
+        "agrees": true,
+        "authored_value": "4.86",
+        "conventions_sources": [
+          "density.reference_relations[id=nacl_20c]",
+          "rounding.rule"
+        ],
+        "derived_id": "DV-DEN-W-MEAS",
+        "exact_decimal": "4.863013698630136986301369863",
+        "figure_id": "FIG-T2-PLOT-NACL-DENSITY",
+        "formula_kind": "linear_inverse",
+        "recomputed_value": "4.86",
+        "sig_figs": 3,
+        "unit": "% (m/m)"
+      }
+    ],
+    "schema_version": 1,
+    "status": "PASS",
+    "t12_slots_closed": 18,
+    "task": "N11",
+    "tolerance_table": [
+      {
+        "conventions_ref": "CIT-C3-PERCENT",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-COMP-NACL-BASES",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C2-ROUND",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C3-PERCENT",
+        "expected_unit": "% (V/V)",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-COMP-ETANOL-VV",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "conventions_ref": "CIT-C1-AL",
+        "expected_unit": "g",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "mode": "mandatory",
+        "tolerance_class": "mass"
+      },
+      {
+        "conventions_ref": "CIT-C3-ATOMS",
+        "expected_unit": "g",
+        "has_measured_quantity": true,
+        "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "mode": "mandatory",
+        "tolerance_class": "mass"
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T1-BAND-DISPERSION",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Kvalitatīva disperso sistēmu izmēru klasifikācijas joslu shēma bez mērīta parauga skaitliska nolasījuma; 100 nm robeža ir kursa vienošanās (E17).",
+        "tolerance_class": null
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Konceptuāla trīs soļu darbību secības shēma bez skaitliska parauga nolasījuma; N18 šim attēlam nepiemēro toleranci.",
+        "tolerance_class": null
+      },
+      {
+        "conventions_ref": "CIT-C2-DENSITY-REL",
+        "expected_unit": "% (m/m)",
+        "has_measured_quantity": true,
+        "id": "FIG-T2-PLOT-NACL-DENSITY",
+        "mode": "mandatory",
+        "tolerance_class": "percentage_point"
+      },
+      {
+        "has_measured_quantity": false,
+        "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "mode": "optional-structural-exempt",
+        "reason_lv": "Strukturāla SI priedēkļu un V-04 masas–tilpuma dimensiju saderības shēma ar eksaktiem definīciju koeficientiem, bez mērīta parauga vērtības.",
+        "tolerance_class": null
+      }
+    ],
+    "unit_checks": 12
+  },
+  "format_and_malformed_corpus": {
+    "gate_refusal": {
+      "artifact_written": false,
+      "id": "GATE-REFUSAL-UNKNOWN-TYPE",
+      "returncode": 1,
+      "status": "PASS",
+      "stderr_head": "FAIL figures gate (order 10, owner N11): FIG-T1-COMP-NACL-BASES: [E_FIG_UNKNOWN_TYPE] unknown figure type 'unknown_chart'"
+    },
+    "malformed_corpus": [
+      {
+        "error": "FIG-SCRATCH-VALID: [E_FIG_UNKNOWN_TYPE] unknown figure type 'pie_3d_unknown'",
+        "expected_code": "E_FIG_UNKNOWN_TYPE",
+        "id": "NEG-UNKNOWN-TYPE",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: [E_TERMS_UNKNOWN_KEY] unknown title_key 'fig.title.does_not_exist'",
+        "expected_code": "E_TERMS_UNKNOWN_KEY",
+        "id": "NEG-UNRESOLVED-TERM-KEY",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: axes.y.unit: [E_UNIT_AMBIGUOUS_DENOMINATOR] Vairāklocekļu saucējs jāliek iekavās, piem., J/(mol·K), saņemts 'J/mol·K'.",
+        "expected_code": "E_UNIT_AMBIGUOUS_DENOMINATOR",
+        "id": "NEG-UNIT-GRAMMAR-FAIL",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: [E_FIG_UNKNOWN_TOLERANCE_CLASS] unknown tolerance_class 'nonexistent_tol_class'",
+        "expected_code": "E_FIG_UNKNOWN_TOLERANCE_CLASS",
+        "id": "NEG-UNRESOLVED-TOLERANCE",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-NODESC: [E_FIG_MISSING_DESCRIPTION] missing or short description_lv",
+        "expected_code": "E_FIG_MISSING_DESCRIPTION",
+        "id": "NEG-MISSING-DESCRIPTION",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: [E_FIG_UNLABELED_PERCENT] axis y.unit uses bare \"%\" without (m/m), (m/V), or (V/V).",
+        "expected_code": "E_FIG_UNLABELED_PERCENT",
+        "id": "NEG-UNLABELED-PERCENT",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: [E_FIG_BROKEN_ANCHOR] master_anchor #neeksistejoss-enkurs not found (case-exact) in materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+        "expected_code": "E_FIG_BROKEN_ANCHOR",
+        "id": "NEG-BROKEN-ANCHOR",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID:DV-NACL-W-MM: [E_FIG_RECOMPUTE_MISMATCH] authored='99.9' != recomputed='4.86'",
+        "expected_code": "E_FIG_RECOMPUTE_MISMATCH",
+        "id": "NEG-RECOMPUTE-MISMATCH",
+        "status": "PASS"
+      },
+      {
+        "error": "FIG-SCRATCH-VALID: [E_FIG_MISSING_TOLERANCE] measured/schema_plot figure requires tolerance_coupling object",
+        "expected_code": "E_FIG_MISSING_TOLERANCE",
+        "id": "NEG-MISSING-MEASURED-TOLERANCE",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS",
+    "valid_scratch_status": "PASS"
+  },
+  "prior_regressions": [
+    {
+      "command": "node tools/check_coverage_runtime.js --json",
+      "owner": "N02",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_conventions_runtime.js",
+      "owner": "N03",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_golden_vectors_runtime.js",
+      "owner": "N05",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n06_runtime.js --json",
+      "owner": "N06",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n07_runtime.js --json",
+      "owner": "N07",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n08_runtime.js",
+      "owner": "N08",
+      "status": "PASS"
+    },
+    {
+      "command": "node tools/check_n10_runtime.js",
+      "owner": "N10",
+      "status": "PASS"
+    }
+  ],
+  "runtime_harness": {
+    "artifact": "n11-runtime-harness",
+    "artifact_path": "output/simulator.html",
+    "artifact_sha256": "491de4d3890897a91b57c60b5d7fe8415946c91227bfe7d464945ac2cdadeaf7",
+    "degradation": {
+      "drawer_still_opens_when_corrupt": true,
+      "island_error_text": "Attēlu salas kļūda (E_FIGURES_JSON): [E_FIGURES_JSON] Attēlu sala #sim-figures satur bojātu JSON.",
+      "island_error_visible": true,
+      "slot_error_code": "E_FIGURES_JSON",
+      "slot_error_text": "Attēlu salas kļūda (E_FIGURES_JSON): [E_FIGURES_JSON] Attēlu sala #sim-figures satur bojātu JSON.",
+      "slot_svg_count": 0
+    },
+    "lazy_render": {
+      "drawer_open_p1_01_svgs": 3,
+      "initial_svg_count": 0,
+      "offscreen_pending_before_reveal": true,
+      "p2_07_slot_status": "pending-N12",
+      "viewport_enter_activated": true
+    },
+    "schema_version": 1,
+    "smoke_report": {
+      "failed": 0,
+      "passed": 5,
+      "status": "PASS",
+      "total": 5,
+      "vectors": [
+        {
+          "details": {
+            "perTopic": {
+              "1": 9,
+              "2": 10,
+              "3": 11,
+              "4": 11,
+              "5": 10,
+              "6": 8,
+              "7": 5
+            },
+            "total": 64
+          },
+          "id": "SMK-N06-COVERAGE-COUNTS",
+          "owner": "N06",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "crossTopicEdges": 20,
+            "edges": 127,
+            "nodes": 64,
+            "walkEvents": 4
+          },
+          "id": "SMK-N07-MAP-DRAWER-WALK",
+          "owner": "N07",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "eventsRecorded": 4,
+            "examRefused": true,
+            "families": 28,
+            "revealedLayers": 4
+          },
+          "id": "SMK-N08-HINT-LADDER-WALK",
+          "owner": "N08",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "figureAxis": "Molārā koncentrācija c (mol/L)",
+            "iupacPair": "etiķskābe (IUPAC: etānskābe)",
+            "totalEntries": 205,
+            "vectorChecked": 5
+          },
+          "id": "SMK-N10-TERMS-GRAMMAR-LOOKUP",
+          "owner": "N10",
+          "reason": null,
+          "status": "PASS"
+        },
+        {
+          "details": {
+            "figuresCount": 9,
+            "lazyPendingOnLoad": true,
+            "svgBytes": 4430,
+            "svgSha256": "55d240dae8d597515eb8c74dff7de892d1dd42624369a7caf634f9025ac7e4fb",
+            "vectorId": "FIG-T1-COMP-NACL-BASES"
+          },
+          "id": "SMK-N11-FIGURE-FRAMEWORK",
+          "owner": "N11",
+          "reason": null,
+          "status": "PASS"
+        }
+      ]
+    },
+    "status": "PASS",
+    "task": "N11",
+    "theme_parity": {
+      "dark_sha256": "350a13cac90b661d33454d758e3e1f9bc543b051075b5136768f08b0da207b25",
+      "light_sha256": "55d240dae8d597515eb8c74dff7de892d1dd42624369a7caf634f9025ac7e4fb",
+      "print_sha256": "59229a5bcfa20e90aa684a3f3e2d4980d6ddd19a65d81f556f31261b9ae78855",
+      "record_id": "FIG-T1-COMP-NACL-BASES",
+      "structural_parity_light_vs_dark": true
+    },
+    "two_run_determinism": [
+      {
+        "bytes": 4430,
+        "id": "FIG-T1-COMP-NACL-BASES",
+        "match": true,
+        "sha256_run_a": "55d240dae8d597515eb8c74dff7de892d1dd42624369a7caf634f9025ac7e4fb",
+        "sha256_run_b": "55d240dae8d597515eb8c74dff7de892d1dd42624369a7caf634f9025ac7e4fb",
+        "type": "bar"
+      },
+      {
+        "bytes": 4178,
+        "id": "FIG-T2-COMP-ROUNDING-BOUNDARY",
+        "match": true,
+        "sha256_run_a": "b9db74b7accdca42c7b942a6e0c91402d2a4db0237b86a788f79e1a366a448f3",
+        "sha256_run_b": "b9db74b7accdca42c7b942a6e0c91402d2a4db0237b86a788f79e1a366a448f3",
+        "type": "bar"
+      },
+      {
+        "bytes": 3519,
+        "id": "FIG-T1-COMP-ETANOL-VV",
+        "match": true,
+        "sha256_run_a": "6e2eb4174f879ab3ccfda8b19ae4f6907f980d5f8475f101a24772bf72602c2d",
+        "sha256_run_b": "6e2eb4174f879ab3ccfda8b19ae4f6907f980d5f8475f101a24772bf72602c2d",
+        "type": "bar"
+      },
+      {
+        "bytes": 3179,
+        "id": "FIG-T1-CHAIN-AL-OXIDATION",
+        "match": true,
+        "sha256_run_a": "411fef5a16d60cee6bf8efb03b7ac42674e60a8f091a319006970966bbc8876e",
+        "sha256_run_b": "411fef5a16d60cee6bf8efb03b7ac42674e60a8f091a319006970966bbc8876e",
+        "type": "chain"
+      },
+      {
+        "bytes": 2591,
+        "id": "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+        "match": true,
+        "sha256_run_a": "1411ba1d5a84f9739d4a9245e49346c26a2afcbb780c785fca9d1a51da6e86a9",
+        "sha256_run_b": "1411ba1d5a84f9739d4a9245e49346c26a2afcbb780c785fca9d1a51da6e86a9",
+        "type": "chain"
+      },
+      {
+        "bytes": 2846,
+        "id": "FIG-T1-BAND-DISPERSION",
+        "match": true,
+        "sha256_run_a": "01ffd590916b8642a6d6bf6bb9eea82f83ece872f2fc548c735fc816979bdf10",
+        "sha256_run_b": "01ffd590916b8642a6d6bf6bb9eea82f83ece872f2fc548c735fc816979bdf10",
+        "type": "band"
+      },
+      {
+        "bytes": 2612,
+        "id": "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE",
+        "match": true,
+        "sha256_run_a": "16f036e051b7cee2067b992dfe19f6f11fdac3018d2ac2cc9c46f4ac5429b769",
+        "sha256_run_b": "16f036e051b7cee2067b992dfe19f6f11fdac3018d2ac2cc9c46f4ac5429b769",
+        "type": "chain"
+      },
+      {
+        "bytes": 7178,
+        "id": "FIG-T2-PLOT-NACL-DENSITY",
+        "match": true,
+        "sha256_run_a": "08197fbcdb580fedf3955b60aa5e688f0c86a3442620d07f7e54fa2a9e1f80e2",
+        "sha256_run_b": "08197fbcdb580fedf3955b60aa5e688f0c86a3442620d07f7e54fa2a9e1f80e2",
+        "type": "schema_plot"
+      },
+      {
+        "bytes": 2495,
+        "id": "FIG-T2-CHAIN-PREFIX-SCALE",
+        "match": true,
+        "sha256_run_a": "66d268c64725ffcc35a09dafa35fe51729d7ea1075e624edc62097a66d699815",
+        "sha256_run_b": "66d268c64725ffcc35a09dafa35fe51729d7ea1075e624edc62097a66d699815",
+        "type": "chain"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N11"
+}

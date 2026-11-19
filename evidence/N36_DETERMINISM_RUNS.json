@@ -1,0 +1,42 @@
+{
+  "identical_manifests": true,
+  "runs": [
+    {
+      "artifact_digest": "99fd5c406950be1739b1d3480645d1698ed03eac6558f706d9f2c85b5f11745a",
+      "comparable_sha256": "8f293b78ae6171d16d9490f24e6a1666e6ead89a309e4fdb2f775e8c50a1712c",
+      "fail_count": 0,
+      "pass_count": 8,
+      "returncode": 0,
+      "run_index": 1,
+      "status": "PASS",
+      "total_duration_ms": 717.931,
+      "verdict_sequence_digest": "842230727b2b41711aef68b2aab91bd93f6bbb52898c718cfc28aa69e8fd1cc2"
+    },
+    {
+      "artifact_digest": "99fd5c406950be1739b1d3480645d1698ed03eac6558f706d9f2c85b5f11745a",
+      "comparable_sha256": "8f293b78ae6171d16d9490f24e6a1666e6ead89a309e4fdb2f775e8c50a1712c",
+      "fail_count": 0,
+      "pass_count": 8,
+      "returncode": 0,
+      "run_index": 2,
+      "status": "PASS",
+      "total_duration_ms": 687.126,
+      "verdict_sequence_digest": "842230727b2b41711aef68b2aab91bd93f6bbb52898c718cfc28aa69e8fd1cc2"
+    },
+    {
+      "artifact_digest": "99fd5c406950be1739b1d3480645d1698ed03eac6558f706d9f2c85b5f11745a",
+      "comparable_sha256": "8f293b78ae6171d16d9490f24e6a1666e6ead89a309e4fdb2f775e8c50a1712c",
+      "fail_count": 0,
+      "pass_count": 8,
+      "returncode": 0,
+      "run_index": 3,
+      "status": "PASS",
+      "total_duration_ms": 693.836,
+      "verdict_sequence_digest": "842230727b2b41711aef68b2aab91bd93f6bbb52898c718cfc28aa69e8fd1cc2"
+    }
+  ],
+  "runs_count": 3,
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N36"
+}

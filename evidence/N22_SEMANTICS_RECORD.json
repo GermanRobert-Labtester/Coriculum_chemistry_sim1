@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "owner": "N22",
+  "status": "PASS",
+  "runtime_modules": [
+    "src/compiled/inputs/registry.js"
+  ],
+  "source_modules": [
+    "src/inputs/registry.ts"
+  ],
+  "island": "data/response_types.json",
+  "terms_island": "data/terms.json",
+  "note": "The TypeScript source is the source of truth; the compiled module is committed and is checked for drift by tools/compile_n21_ts.py --check. Errors are annotations: no fixture writes to a payload, and the preservation fixture asserts byte equality.",
+  "checks": {
+    "registry_load": {
+      "status": "PASS",
+      "claim": "The #sim-response-types island loads into eighteen complete contracts (render, payload, completion, error and ARIA), the seven completed types carry a grading binding, and the registry is frozen against accidental mutation.",
+      "checks": {
+        "island_id": true,
+        "schema_version": true,
+        "type_count_18": true,
+        "type_ids_canonical": true,
+        "completed_types": true,
+        "terms_loaded": true,
+        "every_type_complete": true,
+        "incomplete_types": [],
+        "completed_types_bound": true,
+        "island_frozen": true,
+        "announcement_keys_resolve": true,
+        "unknown_announcement_refused": true
+      },
+      "failed": [],
+      "island_file": "data/response_types.json",
+      "island_file_sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72",
+      "island_canonical_digest": "82d3552deefd0780b3e0d35db30c23a98bb69cd38be706fd1ff18b2001c8c04a",
+      "island_canonical_bytes": 34962,
+      "island_file_bytes": 48837
+    },
+    "unknown_type_rejected": {
+      "status": "PASS",
+      "claim": "An unknown type id is refused by name with E_INPUTS_UNKNOWN_TYPE — the registry never falls back to a text field, because a silent fallback changes the task meaning.",
+      "checks": {
+        "throws": true,
+        "code_is_unknown_type": true,
+        "message_names_the_id": true,
+        "no_fallback_returned": true,
+        "error_surfaces_refuses": true,
+        "completion_refuses": true,
+        "completion_message_names_the_id": true
+      },
+      "failed": [],
+      "scratch_type_id": "Q99",
+      "observed": {
+        "code": "E_INPUTS_UNKNOWN_TYPE",
+        "message": "Nezināms atbildes tips \"Q99\": reģistrā #sim-response-types šāda tipa nav, un rezerves ievades lauks netiek renderēts."
+      }
+    },
+    "completion_complete_cases": {
+      "status": "PASS",
+      "claim": "One happy-path payload per type yields the \"complete\" verdict, so every one of the eighteen contracts has a reachable completion state.",
+      "checks": {
+        "complete_Q01": true,
+        "no_missing_Q01": true,
+        "no_errors_Q01": true,
+        "complete_Q02": true,
+        "no_missing_Q02": true,
+        "no_errors_Q02": true,
+        "complete_Q03": true,
+        "no_missing_Q03": true,
+        "no_errors_Q03": true,
+        "complete_Q04": true,
+        "no_missing_Q04": true,
+        "no_errors_Q04": true,
+        "complete_Q05": true,
+        "no_missing_Q05": true,
+        "no_errors_Q05": true,
+        "complete_Q06": true,
+        "no_missing_Q06": true,
+        "no_errors_Q06": true,
+        "complete_Q07": true,
+        "no_missing_Q07": true,
+        "no_errors_Q07": true,
+        "complete_Q08": true,
+        "no_missing_Q08": true,
+        "no_errors_Q08": true,
+        "complete_Q09": true,
+        "no_missing_Q09": true,
+        "no_errors_Q09": true,
+        "complete_Q10": true,
+        "no_missing_Q10": true,
+        "no_errors_Q10": true,
+        "complete_Q11": true,
+        "no_missing_Q11": true,
+        "no_errors_Q11": true,
+        "complete_Q12": true,
+        "no_missing_Q12": true,
+        "no_errors_Q12": true,
+        "complete_Q13": true,
+        "no_missing_Q13": true,
+        "no_errors_Q13": true,
+        "complete_Q14": true,
+        "no_missing_Q14": true,
+        "no_errors_Q14": true,
+        "complete_Q15": true,
+        "no_missing_Q15": true,
+        "no_errors_Q15": true,
+        "complete_Q16": true,
+        "no_missing_Q16": true,
+        "no_errors_Q16": true,
+        "complete_Q17": true,
+        "no_missing_Q17": true,
+        "no_errors_Q17": true,
+        "complete_Q18": true,
+        "no_missing_Q18": true,
+        "no_errors_Q18": true
+      },
+      "failed": [],
+      "verdicts": {
+        "Q01": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q02": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q03": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q04": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q05": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q06": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q07": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q08": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q09": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q10": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q11": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q12": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q13": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q14": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q15": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q16": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q17": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        },
+        "Q18": {
+          "status": "complete",
+          "missing": 0,
+          "errors": 0
+        }
+      }
+    },
+    "completion_q13_missing_coefficient": {
+      "status": "PASS",
+      "claim": "A coefficient vector with one empty cell is incomplete and the missing list names the species whose coefficient is missing.",
+      "fixture": "tools/fixtures/n22/q13_missing_coefficient.json",
+      "checks": {
+        "status": true,
+        "missing_field_ids": true,
+        "error_ids": true,
+        "name_contains": true,
+        "name_terms": true,
+        "instance_resolved": true,
+        "empty_cell_only": true,
+        "species_named": true
+      },
+      "failed": [],
+      "observed": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "vector[1]",
+            "name": "Nav aizpildīts koeficients priekš H2"
+          }
+        ]
+      }
+    },
+    "completion_q17_half_drawn_structure": {
+      "status": "PASS",
+      "claim": "A structure with one part unplaced is incomplete and the missing list names that part only.",
+      "fixture": "tools/fixtures/n22/q17_half_drawn_structure.json",
+      "checks": {
+        "status": true,
+        "missing_field_ids": true,
+        "error_ids": true,
+        "name_contains": true,
+        "name_terms": true,
+        "instance_resolved": true,
+        "placed_part_not_reported": true
+      },
+      "failed": [],
+      "observed": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "structure.P2",
+            "name": "Nav novietota daļa: ūdens"
+          }
+        ]
+      }
+    },
+    "completion_q12_value_without_binding": {
+      "status": "PASS",
+      "claim": "A read declaration with x and y but no figure binding is incomplete and the missing list names the binding.",
+      "fixture": "tools/fixtures/n22/q12_value_without_binding.json",
+      "checks": {
+        "status": true,
+        "missing_field_ids": true,
+        "error_ids": true,
+        "name_contains": true,
+        "name_terms": true,
+        "instance_resolved": true,
+        "values_not_reported_missing": true
+      },
+      "failed": [],
+      "observed": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "read.figure_binding",
+            "name": "Nav izvēlēta grafa piesaiste"
+          }
+        ]
+      }
+    },
+    "completion_plot_state_short": {
+      "status": "PASS",
+      "claim": "The plot-state variant short of its declared point count is incomplete and the missing list names the declared count. The roadmap calls this case the Q18 short plot; Q18 the type stays option_select (N04) and the plot_state variant is the graph-kind vocabulary item Q18_plot_state (N21-C01, N22-C02).",
+      "fixture": "tools/fixtures/n22/plot_state_short.json",
+      "checks": {
+        "status": true,
+        "missing_field_ids": true,
+        "error_ids": true,
+        "name_contains": true,
+        "name_terms": true,
+        "instance_resolved": true,
+        "declared_count_is_the_instance_points": true,
+        "record_short_reports_the_count": true
+      },
+      "failed": [],
+      "observed": {
+        "status": "incomplete",
+        "missing": [
+          {
+            "field_id": "plot_state.points",
+            "name": "Nepietiek punktu: nepieciešami vismaz 4"
+          }
+        ]
+      },
+      "naming_resolution_lv": "Ceļa karte šo gadījumu sauc \"Q18 short plot\", bet Q18 kā tips paliek option_select (N04). Plot-state variants ir graph klases vārdnīcas vienums Q18_plot_state (N21-C01), tāpēc fixtures iet caur grafa klases ierakstu; sk. konfliktu N22-C02 salā."
+    },
+    "error_surface_mixed_separators": {
+      "status": "PASS",
+      "claim": "A mixed-separator number classifies as UNREADABLE_INPUT through N17, maps to the frozen Latvian feedback text declared by the type, and the raw input is preserved byte for byte — an error is an annotation, never a rewrite.",
+      "checks": {
+        "n17_classifies_unreadable": true,
+        "n17_signature": true,
+        "surface_declared_by_the_type": true,
+        "surface_key_is_the_frozen_one": true,
+        "message_is_the_frozen_text": true,
+        "message_is_latvian": true,
+        "payload_deep_equal_after_error": true,
+        "payload_bytes_identical": true,
+        "raw_string_untouched": true,
+        "verdict_did_not_neutralise_the_cell": true,
+        "second_call_stable": true,
+        "frozen_payload_not_mutated": true
+      },
+      "failed": [],
+      "observed": {
+        "taxonomy_class": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "message_key": "feedback.error.unreadable",
+        "message": "Ievadu nevar nolasīt: pārbaudi skaitļa pierakstu un vienības sintaksi.",
+        "raw_before": "1,2,3",
+        "raw_after": "1,2,3"
+      },
+      "naming_resolution_lv": "MIXED_SEPARATORS nav saldēts kļūdas id (sk. konfliktu N22-C01); jaukta atdalītāja ievads klasificējas kā UNREADABLE_INPUT ar feedback.error.unreadable tekstu."
+    },
+    "blank_response": {
+      "status": "PASS",
+      "claim": "Blank self-assessed text yields BLANK_RESPONSE with the Latvian announcement; any content is complete but stays pending — the component never pretends to have graded the text.",
+      "checks": {
+        "blank_not_complete": true,
+        "blank_reports_blank_response": true,
+        "blank_names_the_text": true,
+        "blank_message_key": true,
+        "blank_message_resolves": true,
+        "filled_complete": true,
+        "filled_has_no_verdict": true,
+        "pending_grading_class": true,
+        "pending_engine": true
+      },
+      "failed": [],
+      "observed": {
+        "blank": {
+          "status": "incomplete",
+          "missing": [
+            {
+              "field_id": "text",
+              "name": "Nav ierakstīts teksts"
+            }
+          ],
+          "errors": [
+            {
+              "id": "BLANK_RESPONSE",
+              "field": "text",
+              "message_key": "input.error.blank"
+            }
+          ]
+        },
+        "filled": "complete",
+        "announced": "Atbilde ir tukša: nekas nav ierakstīts, tāpēc punkti par šo daļu netiek piešķirti."
+      }
+    },
+    "invalid_verdict_case": {
+      "status": "PASS",
+      "claim": "A structurally malformed payload yields the \"invalid\" verdict with the frozen error id named, per class: graph body, graph emptiness, numeric coercion, pair shape, read value and payload-kind mismatch.",
+      "checks": {
+        "graph_malformed_status": true,
+        "graph_malformed_missing_field_ids": true,
+        "graph_malformed_error_ids": true,
+        "graph_malformed_name_contains": true,
+        "graph_malformed_name_terms": true,
+        "graph_malformed_instance_resolved": true,
+        "graph_empty_invalid": true,
+        "graph_empty_id": true,
+        "numeric_coercion_invalid": true,
+        "numeric_coercion_id": true,
+        "pair_shape_invalid": true,
+        "pair_shape_id": true,
+        "read_coercion_invalid": true,
+        "read_coercion_id": true,
+        "kind_mismatch_invalid": true,
+        "kind_mismatch_field": true,
+        "graph_ids_are_declared": true
+      },
+      "failed": [],
+      "cases": [
+        {
+          "case": "graph_payload_malformed",
+          "fixture": "tools/fixtures/n22/graph_payload_malformed.json",
+          "status": "invalid",
+          "error_ids": [
+            "E_GRAPH_PAYLOAD_MALFORMED"
+          ]
+        },
+        {
+          "case": "graph_empty_submission",
+          "status": "invalid",
+          "error_ids": [
+            "E_GRAPH_EMPTY_SUBMISSION"
+          ]
+        },
+        {
+          "case": "numeric_value_not_raw_string",
+          "status": "invalid",
+          "error_ids": [
+            "UNREADABLE_INPUT"
+          ]
+        },
+        {
+          "case": "matching_pair_not_an_object",
+          "status": "invalid",
+          "error_ids": [
+            "UNREADABLE_INPUT"
+          ]
+        },
+        {
+          "case": "read_value_not_raw_string",
+          "status": "invalid",
+          "error_ids": [
+            "E_GRAPH_PAYLOAD_MALFORMED"
+          ]
+        },
+        {
+          "case": "payload_kind_mismatch",
+          "status": "invalid",
+          "error_ids": [
+            "UNREADABLE_INPUT"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "artifact_expected_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "artifact_path": "output/simulator.html",
+  "build_manifest_expected_sha256": "661c4ec799b35f97ebe60777ca933ee421e2bbbff4702bab22ac76953fad6682",
+  "build_manifest_path": "output/build-manifest.json",
+  "created_utc": "2026-11-20T00:45:00+00:00",
+  "ledger_path": "evidence/VERIFICATION_LEDGER.md",
+  "registry_version": 2,
+  "schema_version": 1,
+  "suites": [
+    {
+      "description": "Repository-local integrity check over all 174 COPY_MANIFEST.json published files and programme/design checks.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 30557,
+          "expected_sha256": "7f856b61f43197447118d01e65112b0a19395227c772bea3c38163aa5d275c2f",
+          "ledger_digest_source": "versioned-evolution-from-N01",
+          "ledger_entry": "N01/N21",
+          "path": "tools/verify_preparation.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/verify_preparation.py",
+        "--repo-local"
+      ],
+      "owner_task": "N01",
+      "report_artifact": null,
+      "suite_id": "N01-PREP-LOCAL",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 30
+    },
+    {
+      "description": "Live recomputation of all 18 frozen consumed sources and official 2025 programme PDF SHA-256.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 7239,
+          "expected_sha256": "f3f60a509be0f14e3757366f8d77028f7c3587a210551bc76c5960062dfd2a61",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N01",
+          "path": "tools/check_source_inventory.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/check_source_inventory.py"
+      ],
+      "owner_task": "N01",
+      "report_artifact": null,
+      "suite_id": "N01-SOURCE-INVENTORY",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 20
+    },
+    {
+      "description": "Idempotent single-file rebuild executing all 30 build gates (N02-N33) and asserting rebuilt output/simulator.html matches ledger SHA-256.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 126450,
+          "expected_sha256": "22295b60594406231660581e41a57d93645af72e19d06b48058b844fbe559ac5",
+          "ledger_digest_source": "versioned-evolution-from-N32-E03",
+          "ledger_entry": "N31/N32/N33/N34",
+          "path": "tools/build.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/build.py"
+      ],
+      "owner_task": "N31",
+      "report_artifact": null,
+      "suite_id": "N31-BUILD-PIPELINE",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 120
+    },
+    {
+      "description": "Standalone static contract check (lang=lv, 9 anchors, 22 islands, 1 script, 0 external URLs, noscript, print rules, byte sub-budgets).",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 46500,
+          "expected_sha256": "0211172c797e102a94a09b1cda9a3b432882d521373aa8350d5071257bd2c928",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N34-E01",
+          "path": "tools/check_artifact.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/check_artifact.py",
+        "--html",
+        "output/simulator.html",
+        "--manifest",
+        "output/build-manifest.json",
+        "--policy",
+        "data/build_policy.json",
+        "--report",
+        "{report_path}"
+      ],
+      "owner_task": "N31",
+      "report_artifact": "N31_ARTIFACT_CONTRACT.json",
+      "suite_id": "N31-ARTIFACT-CONTRACT",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 30
+    },
+    {
+      "description": "Node VM execution of the single inline script, 39 module boundary regions, 37 globals, and 31/31 in-file smoke vectors.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 14480,
+          "expected_sha256": "4f5dfda0ed802a8f4810b90f8433d84db0ee26cf5ce8a6357e3e3cff6777768b",
+          "ledger_digest_source": "versioned-evolution-from-N31-E05",
+          "ledger_entry": "N31-E05/N35-E04",
+          "path": "tools/check_n31_runtime.js"
+        }
+      ],
+      "invocation": [
+        "node",
+        "tools/check_n31_runtime.js",
+        "--record",
+        "{report_path}"
+      ],
+      "owner_task": "N31",
+      "report_artifact": "N31_RUNTIME_RECORD.json",
+      "suite_id": "N31-RUNTIME-SMOKE",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 30
+    },
+    {
+      "description": "WCAG 2.2 AA contrast (27 pairs x 3 themes), 44px touch targets, zero raw hex scan, 120 reflow geometry checks, and negative fixtures.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 19844,
+          "expected_sha256": "14f3bd9fcbbdde6d20611cb49332bdc071f6114d70c6a55eedf90590a4bbad30",
+          "ledger_digest_source": "versioned-evolution-from-N32-E02",
+          "ledger_entry": "N32-E02/N34-E02",
+          "path": "tools/check_contrast.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/check_contrast.py",
+        "--run-fixtures",
+        "--report",
+        "{report_path}"
+      ],
+      "owner_task": "N32",
+      "report_artifact": "N32_CONTRAST_REPORT.json",
+      "suite_id": "N32-WCAG-CONTRACT",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 30
+    },
+    {
+      "description": "Keyboard map collision/typing-guard checks, focus escape/restore, 191 control names, 18 N22 response types, landmarks, and live regions.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 27148,
+          "expected_sha256": "bc3e42cf78d976b8ee3cee32e4edb8ee6fca42fa76d23b82ac3522abc0848f7a",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N33-E02",
+          "path": "tools/check_a11y.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/check_a11y.py",
+        "--html",
+        "output/simulator.html",
+        "--json-out",
+        "{report_path}"
+      ],
+      "owner_task": "N33",
+      "report_artifact": "N33_A11Y_REPORT.json",
+      "suite_id": "N33-A11Y-CONTRACT",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 30
+    },
+    {
+      "description": "Single-sourced <noscript> drift/dangling-link fixtures, print contrast, F04 Form A worksheet determinism, unmatched print selector fixture, and two-run build parity.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 10055,
+          "expected_sha256": "ee6bf420c6f3fa6ce906f5e1a1b932ccac2b63e4840d202f4bd2b67a625a8226",
+          "ledger_digest_source": "evidence/N34_VERIFICATION_RECORD.md",
+          "ledger_entry": "N34-VERIFICATION-RECORD",
+          "path": "tools/verify_n34.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/verify_n34.py"
+      ],
+      "owner_task": "N34",
+      "report_artifact": null,
+      "suite_id": "N34-NOSCRIPT-PRINT",
+      "tier": "build_and_static_gates",
+      "tier_order": 1,
+      "timeout_seconds": 120
+    },
+    {
+      "description": "Deterministic SplitMix64 Node VM performance budget audit and degraded keystroke full-rerender detection fixture.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 16982,
+          "expected_sha256": "4c366eeb01fd0ffcd6ec161171708dc5bc8704b045eab22539049348cbbc07b0",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N35-E01",
+          "path": "tools/audit_perf.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/audit_perf.py",
+        "--artifact",
+        "output/simulator.html",
+        "--out",
+        "{report_path}"
+      ],
+      "owner_task": "N35",
+      "report_artifact": "N35_PERF_RECORD.json",
+      "suite_id": "N35-AUDIT-PERF",
+      "tier": "audits",
+      "tier_order": 2,
+      "timeout_seconds": 45
+    },
+    {
+      "description": "Instrumented SimStore audit (0 default writes, 200-event cap + 500-char notes <= 256 KiB, undeclared-key violation fixture).",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 13184,
+          "expected_sha256": "f13dd1c2d4d4bb64266e54e9ed5ad33925213ebb1ac35afd7f8e024260f31bbb",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N35-E02",
+          "path": "tools/audit_storage.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/audit_storage.py",
+        "--artifact",
+        "output/simulator.html",
+        "--out",
+        "{report_path}"
+      ],
+      "owner_task": "N35",
+      "report_artifact": "N35_STORAGE_RECORD.json",
+      "suite_id": "N35-AUDIT-STORAGE",
+      "tier": "audits",
+      "tier_order": 2,
+      "timeout_seconds": 45
+    },
+    {
+      "description": "Serialization/markup inventory (40 files), corruption & noscript immunity fixtures, 5x5 XSS injection corpus, and malicious import rejection.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 22259,
+          "expected_sha256": "07bd30baf7e17f1aa66aeb65cd0b041d5c00f4821074cf715f55046d9b920f21",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N35-E03",
+          "path": "tools/audit_security.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/audit_security.py",
+        "--artifact",
+        "output/simulator.html",
+        "--out",
+        "{report_path}"
+      ],
+      "owner_task": "N35",
+      "report_artifact": "N35_SECURITY_RECORD.json",
+      "suite_id": "N35-AUDIT-SECURITY",
+      "tier": "audits",
+      "tier_order": 2,
+      "timeout_seconds": 60
+    },
+    {
+      "description": "Property corpus (conversion round-trip, tolerance monotonicity, conservation recompute, 30-form fairness, 40/40 golden vectors, partial credit, escapeHtml, 31/31 smoke).",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 37409,
+          "expected_sha256": "eec8d1be96d237391b77fff4a9bae39a1e26347e76d5556cd4e6cd9cffe4af0d",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N36-E01",
+          "path": "tools/property_tests.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/property_tests.py",
+        "--with-smoke",
+        "--manifest",
+        "{report_path}"
+      ],
+      "owner_task": "N36",
+      "report_artifact": "N36_TEST_MANIFEST.json",
+      "suite_id": "N36-PROPERTY-SUITE",
+      "tier": "property_and_mutation",
+      "tier_order": 3,
+      "timeout_seconds": 60
+    },
+    {
+      "description": "Scratch-isolated 8-mutant corpus (7/7 killable killed, 1 equivalent, 0 survived, strict source hygiene & negative fixtures).",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 11057,
+          "expected_sha256": "8ec3ced79520660c88210df499b1c5b90c030acf056ee0f9424ebcefafbdc67b",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N36-E02",
+          "path": "tools/mutation_tests.py"
+        },
+        {
+          "bytes": 4163,
+          "expected_sha256": "c4180248dde4fae6c36230c1ad2d835aa7d39e500274a8e65fe917e10a8aa3af",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N36-E02",
+          "path": "data/mutant_corpus.json"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/mutation_tests.py",
+        "--report",
+        "{report_path}"
+      ],
+      "owner_task": "N36",
+      "report_artifact": "N36_MUTATION_REPORT.json",
+      "suite_id": "N36-MUTATION-SUITE",
+      "tier": "property_and_mutation",
+      "tier_order": 3,
+      "timeout_seconds": 90
+    },
+    {
+      "description": "Falkon (lite-shot --engine falkon --cdp) 219-cell / 73-render visual regression matrix against versioned baselines.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 32934,
+          "expected_sha256": "3d8ca24dca69a885204a0da507a3db28acdfa3a289ca7bb7116afaece2ddb519",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N37-E01",
+          "path": "tools/visual_matrix.py"
+        },
+        {
+          "bytes": 128864,
+          "expected_sha256": "b0d0a562cd4c8f01a87ae577f5c9bf0637fb468441a16648ec92211888b89374",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N37-E01",
+          "path": "data/visual_matrix.json"
+        },
+        {
+          "bytes": 53407,
+          "expected_sha256": "ee83a1ef9ddc0f94cb8422e95503a8e3fe5bd3d358ad145c6669434152a2e7dd",
+          "ledger_digest_source": "evidence/N37_VERIFICATION_RECORD.md",
+          "ledger_entry": "N37-E01",
+          "path": "evidence/visual_baselines/baseline_manifest.json"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/visual_matrix.py",
+        "--validate-matrix",
+        "--compare",
+        "--out",
+        "{report_path}"
+      ],
+      "owner_task": "N37",
+      "report_artifact": "N37_MATRIX_REPORT.json",
+      "suite_id": "N37-VISUAL-MATRIX",
+      "tier": "visual_matrix",
+      "tier_order": 4,
+      "timeout_seconds": 1200
+    },
+    {
+      "description": "3-run Falkon (Xvfb+CDP) offline browser smoke, calibration fixtures, and N33/N35 staged protocols.",
+      "expected_exit_codes": [
+        0
+      ],
+      "files": [
+        {
+          "bytes": 60606,
+          "expected_sha256": "316ae3babca1c2b35472ec9c23624089cb2b2bacec4a081846279665a9e2616d",
+          "ledger_digest_source": "VERIFICATION_LEDGER.md",
+          "ledger_entry": "N38-E01",
+          "path": "tools/smoke_browser.py"
+        }
+      ],
+      "invocation": [
+        "{python}",
+        "tools/smoke_browser.py",
+        "--replay-runs",
+        "3",
+        "--include-calibration",
+        "--include-protocols",
+        "--out",
+        "{report_path}"
+      ],
+      "owner_task": "N38",
+      "report_artifact": "N38_SMOKE_REPORT.json",
+      "suite_id": "N38-BROWSER-SMOKE",
+      "tier": "browser_smoke",
+      "tier_order": 5,
+      "timeout_seconds": 180
+    }
+  ],
+  "task": "N39",
+  "tiers": [
+    {
+      "order": 1,
+      "rationale": "Fastest source, build, contract, contrast, a11y, and print/noscript gates; failures here explain downstream defects.",
+      "tier": "build_and_static_gates"
+    },
+    {
+      "order": 2,
+      "rationale": "N35 performance, storage, and security audits over the assembled artifact.",
+      "tier": "audits"
+    },
+    {
+      "order": 3,
+      "rationale": "N36 property corpus, golden-vector re-proof, smoke subset, and scratch-isolated mutation suite.",
+      "tier": "property_and_mutation"
+    },
+    {
+      "order": 4,
+      "rationale": "N37 Falkon lite-shot visual regression matrix (219 cells / 73 unique renders).",
+      "tier": "visual_matrix"
+    },
+    {
+      "order": 5,
+      "rationale": "N38 3-run Falkon offline browser smoke, calibration fixtures, and N33/N35 staged protocols.",
+      "tier": "browser_smoke"
+    }
+  ],
+  "update_history": [
+    {
+      "event": "initial_registry_intake_reconciliation",
+      "new_sha256": "7f856b61f43197447118d01e65112b0a19395227c772bea3c38163aa5d275c2f",
+      "path": "tools/verify_preparation.py",
+      "previous_sha256": "a85cf45543a1d102",
+      "reason": "Reconcile N21 re-scoped verify_preparation.py (report-not-fail sibling drift + --repo-local) into N39 initial registry.",
+      "timestamp": "2026-11-20T00:45:00+00:00",
+      "version": 1
+    },
+    {
+      "event": "initial_registry_intake_reconciliation",
+      "new_sha256": "22295b60594406231660581e41a57d93645af72e19d06b48058b844fbe559ac5",
+      "path": "tools/build.py",
+      "previous_sha256": "6747c30d3190fafe316e18af049916293112c599d7ad7d00b4b0b95ef957cc3b",
+      "reason": "Reconcile N33 (Gate 30 a11y_contract) and N34 (noscript + paper.js) extensions to tools/build.py into N39 initial registry.",
+      "timestamp": "2026-11-20T00:45:00+00:00",
+      "version": 1
+    },
+    {
+      "event": "initial_registry_intake_reconciliation",
+      "new_sha256": "14f3bd9fcbbdde6d20611cb49332bdc071f6114d70c6a55eedf90590a4bbad30",
+      "path": "tools/check_contrast.py",
+      "previous_sha256": "ed30c030fe4cf92597321c7efb5e257ced3a6ef83a11a5aedcab8b49d5322c78",
+      "reason": "Reconcile N34 --mode print extension to tools/check_contrast.py into N39 initial registry.",
+      "timestamp": "2026-11-20T00:45:00+00:00",
+      "version": 1
+    },
+    {
+      "event": "initial_registry_intake_reconciliation",
+      "new_sha256": "4f5dfda0ed802a8f4810b90f8433d84db0ee26cf5ce8a6357e3e3cff6777768b",
+      "path": "tools/check_n31_runtime.js",
+      "previous_sha256": "3dbc36f0a9a41f4f50160f2d26451bbf7d60e91ef6e8c8dff90e192cce35b888",
+      "reason": "Reconcile N32-N35 39-module / 31-smoke-vector runtime harness updates into N39 initial registry.",
+      "timestamp": "2026-11-20T00:45:00+00:00",
+      "version": 1
+    },
+    {
+      "event": "initial_registry_intake_reconciliation",
+      "new_sha256": "ee6bf420c6f3fa6ce906f5e1a1b932ccac2b63e4840d202f4bd2b67a625a8226",
+      "path": "tools/verify_n34.py",
+      "previous_sha256": "ee6bf420c6f3fa6ce906f5e1a1b932ccac2b63e4840d202f4bd2b67a625a8226",
+      "reason": "Register N34 verification harness from evidence/N34_VERIFICATION_RECORD.md (sha256 ee6bf420...) into N39 initial registry.",
+      "timestamp": "2026-11-20T00:45:00+00:00",
+      "version": 1
+    },
+    {
+      "bytes": 53407,
+      "event": "suite_file_digest_update",
+      "new_sha256": "ee83a1ef9ddc0f94cb8422e95503a8e3fe5bd3d358ad145c6669434152a2e7dd",
+      "path": "evidence/visual_baselines/baseline_manifest.json",
+      "previous_sha256": "0ff5754ce56615d0e4f07fcc9548c66dfec731d33c95ed6d6e2bfe8967f4293f",
+      "reason": "Post-N38 versioned v2 visual baseline freeze (6 DOM/keyboard defect fixes in N38-E01 rebuilt output/simulator.html 99fd5c40... -> 12e36ae3...)",
+      "suite_id": "N37-VISUAL-MATRIX",
+      "timestamp": "2026-11-19T22:52:14.204197+00:00",
+      "version": 2
+    }
+  ]
+}

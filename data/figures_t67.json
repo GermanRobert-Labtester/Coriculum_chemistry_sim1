@@ -1,0 +1,1274 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-figures",
+  "status": "authored",
+  "owner": "N15",
+  "scope": "Topic 6 titration curves and Topic 7 calibration plots",
+  "records_note": "Titration records are PROPOSED training policy except the master-grounded KMnO4 case; calibration records use the C7 worked standards.",
+  "figures": [
+    {
+      "id": "FIG-T67-TITR-STRONG",
+      "type": "curve",
+      "version": 1,
+      "topic": 6,
+      "concept_ids": [
+        "P6-07",
+        "P6-08"
+      ],
+      "title_key": "fig.title.t67_titr_strong",
+      "subtitle_lv": "HCl 0,1000 mol/L, 25,00 mL; NaOH 0,1000 mol/L; V_eq = 25,00 mL",
+      "description_lv": "HCl/NaOH sistēma. Ekvivalences punkts: 25,00 mL, pH 7,00. Fenolftaleīna josla 8,2–10,0 nesatur pH 7,00, bet stāvais lēciens novieto beigu punktu praktiski tajā pašā tilpumā. Starpība starp ekvivalences punktu un beigu punktu ir titrlēšanas kļūda ≈ viens pilieniņš.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.volume_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "minor_step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ph",
+          "unit": "pH",
+          "dimension": "ph",
+          "min": 0,
+          "max": 14,
+          "step": 2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-strong",
+          "legend_key": "fig.legend.t67_curve",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "titration_pH_strong_strong",
+            "point_count": 401,
+            "params": {
+              "C_acid_mol_l": 0.1,
+              "V_acid_ml": 25,
+              "C_base_mol_l": 0.1,
+              "V_max_ml": 50,
+              "kw_mol2_l2": 1e-14
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_equivalence",
+          "text_override_lv": "Ekvivalences punkts: V = 25,00 mL, pH 7,00 (teorētisks, nav redzams)."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_endpoint",
+          "text_override_lv": "Beigu punkts 25,00 mL (fenolftaleīns 8,2–10,0). Nav ekvivalences punkts; kļūda ≈ 1 pilieniņš."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": [
+          "CIT-C6-ENDPOINT",
+          "CIT-C6-ENDPOINT-FIRST",
+          "CIT-C6-BURETTE"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "ph",
+        "conventions_ref": "CIT-C6-ENDPOINT",
+        "target_quantity_term_key": "fig.axis.ph",
+        "expected_unit": "pH",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "titration_spec": {
+        "model_class": "strong_acid_strong_base",
+        "declared_equivalence_volume_ml": "25.00",
+        "equivalence_ph": "7.00",
+        "initial_ph": "1.00",
+        "endpoint_volume_ml": "25.00",
+        "endpoint_ph": "8.20",
+        "indicator": {
+          "id": "phenolphthalein",
+          "range_ph": [
+            "8.2",
+            "10.0"
+          ],
+          "endpoint_ph": "8.2",
+          "contains_equivalence_ph": false,
+          "note_lv": "Josla nesatur pH 7,00; beigu punkts ir tuvu V_eq tikai stāvā lēciena dēļ."
+        },
+        "buffer_region": null,
+        "half_equivalence": null,
+        "wrong_indicator_case": false
+      },
+      "reading_strip": {
+        "view_min_ml": "24.50",
+        "view_max_ml": "25.10",
+        "declared_reading_ml": "25.00",
+        "minor_division_ml": "0.1",
+        "reported_decimals": 2
+      },
+      "scope_note_lv": "Tvērums: deklarētā HCl/NaOH sistēma 25 °C; citas koncentrācijas prasa pārrēķinu.",
+      "equivalence_marker": {
+        "x": "25.00",
+        "y": "7.00"
+      },
+      "endpoint_marker": {
+        "x": "25.00",
+        "y": "8.20"
+      },
+      "indicator_band": {
+        "y_min": "8.2",
+        "y_max": "10.0",
+        "label_lv": "Fenolftaleīns 8,2–10,0"
+      }
+    },
+    {
+      "id": "FIG-T67-TITR-WEAK",
+      "type": "curve",
+      "version": 1,
+      "topic": 6,
+      "concept_ids": [
+        "P6-07",
+        "P6-08"
+      ],
+      "title_key": "fig.title.t67_titr_weak",
+      "subtitle_lv": "CH₃COOH 0,1000 mol/L, 25,00 mL; NaOH 0,1000 mol/L; V_eq = 25,00 mL; pK_a = 4,745",
+      "description_lv": "Etiķskābes/NaOH sistēma. Ekvivalences punkts: 25,00 mL, pH 8,72; beigu punkts ar fenolftaleīnu: 24,99 mL. Pusekvivalences punkts 12,50 mL (pH = pK_a = 4,745) un bufera apgabals 6,25–18,75 mL ir atzīmēti. Beigu punkts nav ekvivalences punkts: starpība ir titrlēšanas kļūda ≈ viens pilieniņš.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.volume_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "minor_step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ph",
+          "unit": "pH",
+          "dimension": "ph",
+          "min": 0,
+          "max": 14,
+          "step": 2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-weak",
+          "legend_key": "fig.legend.t67_curve",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "titration_pH_weak_strong",
+            "point_count": 401,
+            "params": {
+              "C_acid_mol_l": 0.1,
+              "Ka": 1.8e-05,
+              "V_acid_ml": 25,
+              "C_base_mol_l": 0.1,
+              "V_max_ml": 50,
+              "kw_mol2_l2": 1e-14
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_equivalence",
+          "text_override_lv": "Ekvivalences punkts: V = 25,00 mL, pH 8,72 (teorētisks)."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_endpoint",
+          "text_override_lv": "Beigu punkts: fenolftaleīns 8,2–10,0; rozā pie 24,99 mL. Nav ekvivalences punkts; kļūda ≈ 1 pilieniņš."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": [
+          "CIT-C6-ENDPOINT",
+          "CIT-C6-ENDPOINT-FIRST",
+          "CIT-C6-BURETTE"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "ph",
+        "conventions_ref": "CIT-C6-ENDPOINT",
+        "target_quantity_term_key": "fig.axis.ph",
+        "expected_unit": "pH",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "titration_spec": {
+        "model_class": "weak_acid_strong_base",
+        "declared_equivalence_volume_ml": "25.00",
+        "equivalence_ph": "8.72",
+        "initial_ph": "2.88",
+        "endpoint_volume_ml": "24.99",
+        "endpoint_ph": "8.20",
+        "indicator": {
+          "id": "phenolphthalein",
+          "range_ph": [
+            "8.2",
+            "10.0"
+          ],
+          "endpoint_ph": "8.2",
+          "contains_equivalence_ph": true,
+          "note_lv": "Josla satur ekvivalences pH 8,72."
+        },
+        "buffer_region": {
+          "x_min": "6.25",
+          "x_max": "18.75"
+        },
+        "half_equivalence": {
+          "volume_ml": "12.50",
+          "ph": "4.745"
+        },
+        "wrong_indicator_case": false
+      },
+      "reading_strip": {
+        "view_min_ml": "24.60",
+        "view_max_ml": "25.20",
+        "declared_reading_ml": "24.99",
+        "minor_division_ml": "0.1",
+        "reported_decimals": 2
+      },
+      "scope_note_lv": "Tvērums: deklarētā etiķskābes/NaOH sistēma; citai skābei līkne mainās.",
+      "equivalence_marker": {
+        "x": "25.00",
+        "y": "8.72"
+      },
+      "endpoint_marker": {
+        "x": "24.99",
+        "y": "8.20"
+      },
+      "indicator_band": {
+        "y_min": "8.2",
+        "y_max": "10.0",
+        "label_lv": "Fenolftaleīns 8,2–10,0"
+      },
+      "buffer_region": {
+        "x_min": "6.25",
+        "x_max": "18.75",
+        "label_lv": "Bufera apgabals"
+      },
+      "half_equivalence_marker": {
+        "x": "12.50",
+        "y": "4.745",
+        "label_lv": "Puseq. 12,50 mL"
+      }
+    },
+    {
+      "id": "FIG-T67-TITR-WRONG-IND",
+      "type": "curve",
+      "version": 1,
+      "topic": 6,
+      "concept_ids": [
+        "P6-07",
+        "P6-08"
+      ],
+      "title_key": "fig.title.t67_titr_wrong_ind",
+      "subtitle_lv": "Tā pati etiķskābes/NaOH sistēma; metiloranžs 3,1–4,4; V_eq = 25,00 mL, bet beigu punkts 7,77 mL",
+      "description_lv": "Nepareizā indikatora slazds: etiķskābes/NaOH sistēma. Ekvivalences punkts: 25,00 mL, pH 8,72; metiloranža josla 3,1–4,4 beidzas pie pH 4,4, tāpēc beigu punkts 7,77 mL ir 17,23 mL pirms ekvivalences. Indikatora josla neatbilst ekvivalences pH; starpība ir titrlēšanas kļūda, daudz lielāka par vienu pilieniņu.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.volume_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "minor_step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ph",
+          "unit": "pH",
+          "dimension": "ph",
+          "min": 0,
+          "max": 14,
+          "step": 2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-wrong",
+          "legend_key": "fig.legend.t67_curve",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "titration_pH_weak_strong",
+            "point_count": 401,
+            "params": {
+              "C_acid_mol_l": 0.1,
+              "Ka": 1.8e-05,
+              "V_acid_ml": 25,
+              "C_base_mol_l": 0.1,
+              "V_max_ml": 50,
+              "kw_mol2_l2": 1e-14
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_equivalence",
+          "text_override_lv": "Ekvivalences punkts: V = 25,00 mL, pH 8,72 (teorētisks)."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_wrong_indicator",
+          "text_override_lv": "Metiloranžs 3,1–4,4 neatbilst ekvivalences pH 8,72; beigu punkts 7,77 mL, kļūda 17,23 mL."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": [
+          "CIT-C6-ENDPOINT",
+          "CIT-C6-ENDPOINT-FIRST",
+          "CIT-C6-BURETTE"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "ph",
+        "conventions_ref": "CIT-C6-ENDPOINT",
+        "target_quantity_term_key": "fig.axis.ph",
+        "expected_unit": "pH",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "titration_spec": {
+        "model_class": "weak_acid_strong_base",
+        "declared_equivalence_volume_ml": "25.00",
+        "equivalence_ph": "8.72",
+        "initial_ph": "2.88",
+        "endpoint_volume_ml": "7.77",
+        "endpoint_ph": "4.40",
+        "indicator": {
+          "id": "methyl_orange",
+          "range_ph": [
+            "3.1",
+            "4.4"
+          ],
+          "endpoint_ph": "4.4",
+          "contains_equivalence_ph": false,
+          "note_lv": "Josla ir par zemu; tā nešķērso ekvivalences pH 8,72."
+        },
+        "buffer_region": {
+          "x_min": "6.25",
+          "x_max": "18.75"
+        },
+        "half_equivalence": {
+          "volume_ml": "12.50",
+          "ph": "4.745"
+        },
+        "wrong_indicator_case": true
+      },
+      "reading_strip": {
+        "view_min_ml": "7.40",
+        "view_max_ml": "8.00",
+        "declared_reading_ml": "7.77",
+        "minor_division_ml": "0.1",
+        "reported_decimals": 2
+      },
+      "scope_note_lv": "Tvērums: apzināta nepareizā indikatora mācību lieta; neiesaka metiloranžu.",
+      "equivalence_marker": {
+        "x": "25.00",
+        "y": "8.72"
+      },
+      "endpoint_marker": {
+        "x": "7.77",
+        "y": "4.40"
+      },
+      "indicator_band": {
+        "y_min": "3.1",
+        "y_max": "4.4",
+        "label_lv": "Metiloranžs 3,1–4,4 (neatbilst)"
+      },
+      "buffer_region": {
+        "x_min": "6.25",
+        "x_max": "18.75",
+        "label_lv": "Bufera apgabals"
+      },
+      "answer_targets": [
+        {
+          "value": "25.00",
+          "unit": "mL"
+        },
+        {
+          "value": "7.77",
+          "unit": "mL"
+        }
+      ],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "reason_code": "EXEMPT_WORKED_DERIVATION",
+        "reason_lv": "Mācību attēls apzināti parāda gan ekvivalences tilpumu, gan nepareizā indikatora beigu punktu, lai mācītu slazdu; tas nav vērtējams uzdevums.",
+        "exempted_values": [
+          {
+            "value": "25.00",
+            "unit": "mL"
+          },
+          {
+            "value": "7.77",
+            "unit": "mL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FIG-T67-TITR-MASTER-KMNO4",
+      "type": "curve",
+      "version": 1,
+      "topic": 6,
+      "concept_ids": [
+        "P6-01",
+        "P6-02",
+        "P6-03",
+        "P6-04",
+        "P6-05",
+        "P6-06",
+        "P6-07",
+        "P6-08"
+      ],
+      "title_key": "fig.title.t67_titr_master_kmno4",
+      "subtitle_lv": "Fe²⁺ 0,1235 mol/L, 10,00 mL; KMnO₄ 0,0200 mol/L; V_eq = 12,35 mL; E°(Fe³⁺/Fe²⁺) = 0,77 V; E°(MnO₄⁻/Mn²⁺) = 1,51 V",
+      "description_lv": "Meistara permanganatometrija: Fe²⁺ 0,1235 mol/L, 10,00 mL, ar KMnO₄ 0,0200 mol/L. Ekvivalences punkts: 12,35 mL (E = 1,3867 V); sākuma potenciāls 0,5332 V. Pirmais noturīgais vāji rozā signāls ir beigu punkts 12,35 mL, nevis ekvivalences punkts; starpība ir titrlēšanas kļūda ≈ viens pilieniņš. Redoksa pamati organismā nav modelēti.",
+      "epistemic_label": "master-grounded",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.volume_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0,
+          "max": 25,
+          "step": 5,
+          "minor_step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.potential_v",
+          "unit": "V",
+          "dimension": "potential",
+          "min": 0.4,
+          "max": 1.7,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-master-kmno4",
+          "legend_key": "fig.legend.t67_curve",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "titration_redox_potential",
+            "point_count": 401,
+            "params": {
+              "C_analyte_mol_l": 0.1235,
+              "V_analyte_ml": 10,
+              "C_titrant_mol_l": 0.02,
+              "V_max_ml": 25,
+              "E0_analyte_v": 0.77,
+              "E0_titrant_v": 1.51,
+              "electrons_titrant": 5,
+              "nernst_slope_v": 0.0592,
+              "h_plus_mol_l": 1,
+              "initial_oxidized_fraction": 0.0001
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_equivalence",
+          "text_override_lv": "Ekvivalences punkts: V = 12,35 mL, E = 1,3867 V (teorētisks)."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_endpoint",
+          "text_override_lv": "Beigu punkts: pirmais noturīgais rozā signāls pie 12,35 mL. Nav ekvivalences punkts; kļūda ≈ 1 pilieniņš."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": [
+          "CIT-C6-NERNST",
+          "CIT-C6-ENDPOINT",
+          "CIT-C6-BURETTE"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "potential",
+        "conventions_ref": "CIT-C6-NERNST",
+        "target_quantity_term_key": "fig.axis.potential_v",
+        "expected_unit": "V",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "titration_spec": {
+        "model_class": "redox_potential",
+        "declared_equivalence_volume_ml": "12.35",
+        "equivalence_potential_v": "1.3867",
+        "initial_potential_v": "0.5332",
+        "endpoint_volume_ml": "12.35",
+        "weak_acid": false
+      },
+      "reading_strip": {
+        "view_min_ml": "11.85",
+        "view_max_ml": "12.45",
+        "declared_reading_ml": "12.35",
+        "minor_division_ml": "0.1",
+        "reported_decimals": 2
+      },
+      "scope_note_lv": "Tvērums: meistara Fe²⁺/KMnO₄ piemērs skābā vidē; citi analīti maina līkni.",
+      "equivalence_marker": {
+        "x": "12.35",
+        "y": "1.3867"
+      },
+      "endpoint_marker": {
+        "x": "12.35",
+        "y": "1.3867"
+      }
+    },
+    {
+      "id": "FIG-T67-TITR-PRACTICE",
+      "type": "curve",
+      "version": 1,
+      "topic": 6,
+      "concept_ids": [
+        "P6-07",
+        "P6-08"
+      ],
+      "title_key": "fig.title.t67_titr_practice",
+      "subtitle_lv": "Nezināma vāja skābe 0,0900 mol/L, 25,00 mL; NaOH 0,1100 mol/L; nolasiet ekvivalences tilpumu",
+      "description_lv": "Prakses titrēšanas līkne: vāja skābe 0,0900 mol/L, 25,00 mL, ar NaOH 0,1100 mol/L. Attēlā ir tikai līkne un biretes nolasījuma josla; ekvivalences tilpums jānolasa pašam no līknes stāvā lēciena. Beigu punkts nav atzīmēts, tāpēc atbilde nav atrodama attēla tekstā.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.volume_ml",
+          "unit": "mL",
+          "dimension": "volume",
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "minor_step": 1,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ph",
+          "unit": "pH",
+          "dimension": "ph",
+          "min": 0,
+          "max": 14,
+          "step": 2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-practice",
+          "legend_key": "fig.legend.t67_curve",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "titration_pH_weak_strong",
+            "point_count": 401,
+            "params": {
+              "C_acid_mol_l": 0.09,
+              "Ka": 1.8e-05,
+              "V_acid_ml": 25,
+              "C_base_mol_l": 0.11,
+              "V_max_ml": 50,
+              "kw_mol2_l2": 1e-14
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_cal_instruction",
+          "text_override_lv": "Nolasiet ekvivalences punktu no līknes stāvā lēciena; atbilde attēlā nav ierakstīta."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_scope",
+          "text_override_lv": "Tvērums: tikai deklarētā vājās skābes/NaOH sistēma; cita skābe maina līkni."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+        "master_anchor": "h-ch9",
+        "master_freeze_id": "C6-MASTER",
+        "conventions_refs": [
+          "CIT-C6-ENDPOINT",
+          "CIT-C6-BURETTE",
+          "CIT-C6-MENISCUS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "ph",
+        "conventions_ref": "CIT-C6-ENDPOINT",
+        "target_quantity_term_key": "fig.axis.ph",
+        "expected_unit": "pH",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "titration_spec": {
+        "model_class": "weak_acid_strong_base",
+        "initial_ph": "2.90",
+        "answer_required": "equivalence_volume_ml",
+        "indicator": null,
+        "buffer_region": null,
+        "half_equivalence": null,
+        "wrong_indicator_case": false,
+        "practice": true
+      },
+      "reading_strip": {
+        "view_min_ml": "0.00",
+        "view_max_ml": "0.60",
+        "declared_reading_ml": "0.00",
+        "minor_division_ml": "0.1",
+        "reported_decimals": 2
+      },
+      "scope_note_lv": "Tvērums: prakses līkne; ekvivalences tilpums attēlā nav ierakstīts.",
+      "answer_targets": [
+        {
+          "value": "20.45",
+          "unit": "mL"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T67-CAL-MASTER",
+      "type": "scatter",
+      "version": 1,
+      "topic": 7,
+      "concept_ids": [
+        "P7-01",
+        "P7-02",
+        "P7-03",
+        "P7-04"
+      ],
+      "title_key": "fig.title.t67_cal_master",
+      "subtitle_lv": "9 standarti 0–0,016 mg/mL; taisne caur nulli A = 30,39·γ; nezināmais A = 0,258",
+      "description_lv": "Meistara riboflavīna kalibrācija: 9 standarti 0–0,016 mg/mL (A 0–0,482). Taisne caur nulli A = 30,39·γ; nezināmais A = 0,258 dod 0,00849 mg/mL caur taisni. Tukšais paraugs atņemts, tāpēc krustpunkts fiksēts 0.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Meistara C7 2020. g. protokola standarti; mācību dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.mass_concentration_mg_ml",
+          "unit": "mg/mL",
+          "dimension": "concentration_mass",
+          "min": 0,
+          "max": 0.018,
+          "step": 0.002,
+          "minor_step": 0.001,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.absorbance_a",
+          "unit": "A",
+          "dimension": "absorbance",
+          "min": 0,
+          "max": 0.55,
+          "step": 0.1,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-cal-master",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0.002,
+              "y": 0.063
+            },
+            {
+              "x": 0.004,
+              "y": 0.121
+            },
+            {
+              "x": 0.006,
+              "y": 0.184
+            },
+            {
+              "x": 0.008,
+              "y": 0.247
+            },
+            {
+              "x": 0.01,
+              "y": 0.302
+            },
+            {
+              "x": 0.012,
+              "y": 0.368
+            },
+            {
+              "x": 0.014,
+              "y": 0.426
+            },
+            {
+              "x": 0.016,
+              "y": 0.482
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_cal_assumptions",
+          "text_override_lv": "V-07: diapazons 0–0,016 mg/mL; matrica nav verifikāta; krustpunkts 0 = tukšais atņemts."
+        },
+        {
+          "id": "a3",
+          "annotation_key": "fig.annot.t67_cal_reading",
+          "text_override_lv": "Nolasījums: A = 0,258 → γ = 0,258/30,39 = 0,00849 mg/mL (diapazonā)."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "master_anchor": "fig-cal",
+        "master_freeze_id": "C7-MASTER",
+        "conventions_refs": [
+          "CIT-C7-CALIB",
+          "CIT-C7-NOEXTRAP",
+          "CIT-C7-INTERCEPT"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "concentration_mass",
+        "conventions_ref": "CIT-C7-CALIB",
+        "target_quantity_term_key": "fig.axis.mass_concentration_mg_ml",
+        "expected_unit": "g/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "span": {
+        "x_min": 0,
+        "x_max": 0.016,
+        "data_x_min": 0,
+        "data_x_max": 0.016,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": 30.39,
+        "intercept": 0,
+        "x_min": 0,
+        "x_max": 0.016,
+        "unit": "A",
+        "true_line_of": "calibration_spec"
+      },
+      "calibration_spec": {
+        "model": "through_zero_fixed_intercept",
+        "standards_count": 9,
+        "unknown_signal": "0.258",
+        "unknown_concentration_mg_ml": "0.00849"
+      },
+      "assumption_ledger": [
+        {
+          "id": "linear_range",
+          "status": "stated",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL ar 9 standartiem."
+        },
+        {
+          "id": "matrix_match",
+          "status": "absent_stated",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH."
+        },
+        {
+          "id": "intercept_meaning",
+          "status": "stated",
+          "statement_lv": "Krustpunkts fiksēts 0, jo tukšais paraugs ir atņemts."
+        },
+        {
+          "id": "blank_correction",
+          "status": "stated",
+          "statement_lv": "Tukšais paraugs satur šķīdinātāju un reaģentus; instruments iestatīts uz nulli ar to."
+        }
+      ],
+      "scope_note_lv": "Tvērums: C7 riboflavīna dati 440 nm, l = 1 cm (pieņēmums); citas vielas nav segtas.",
+      "reading_spec": {
+        "signal": "0.258",
+        "concentration_x": "0.00849"
+      },
+      "answer_targets": [
+        {
+          "value": "0.00849",
+          "unit": "mg/mL"
+        }
+      ],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Mācību attēls parāda pilnu nolasījumu caur taisni, lai demonstrētu metodi; tas nav vērtējams uzdevums.",
+        "exempted_values": [
+          {
+            "value": "0.00849",
+            "unit": "mg/mL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FIG-T67-CAL-NEAR-EDGE",
+      "type": "scatter",
+      "version": 1,
+      "topic": 7,
+      "concept_ids": [
+        "P7-03",
+        "P7-04",
+        "P7-05"
+      ],
+      "title_key": "fig.title.t67_cal_near_edge",
+      "subtitle_lv": "9 standarti 0–0,016 mg/mL; brīvā regresija A = 30,24·γ + 0,0017; nezināmais A = 0,470",
+      "description_lv": "Kalibrācija ar nezināmo tuvu diapazona malai: 9 standarti 0–0,016 mg/mL, brīvā regresija A = 30,24·γ + 0,0017. A = 0,470 dod γ = (0,470 − 0,0017)/30,24 = 0,01549 mg/mL, 0,968 no augšējās standarta koncentrācijas. Nolasījums ir diapazonā, bet tuvu malai; ekstrapolācija nav atļauta.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "C7 standarti ar brīvo regresiju; mācību dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.mass_concentration_mg_ml",
+          "unit": "mg/mL",
+          "dimension": "concentration_mass",
+          "min": 0,
+          "max": 0.018,
+          "step": 0.002,
+          "minor_step": 0.001,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.absorbance_a",
+          "unit": "A",
+          "dimension": "absorbance",
+          "min": 0,
+          "max": 0.55,
+          "step": 0.1,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-cal-near-edge",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0.002,
+              "y": 0.063
+            },
+            {
+              "x": 0.004,
+              "y": 0.121
+            },
+            {
+              "x": 0.006,
+              "y": 0.184
+            },
+            {
+              "x": 0.008,
+              "y": 0.247
+            },
+            {
+              "x": 0.01,
+              "y": 0.302
+            },
+            {
+              "x": 0.012,
+              "y": 0.368
+            },
+            {
+              "x": 0.014,
+              "y": 0.426
+            },
+            {
+              "x": 0.016,
+              "y": 0.482
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_cal_near_edge",
+          "text_override_lv": "Robeža: A = 0,470 → γ = 0,01549 mg/mL (0,968 no 0,016). Diapazonā, bet tuvu malai; ekstrapolācija nav atļauta."
+        },
+        {
+          "id": "a3",
+          "annotation_key": "fig.annot.t67_cal_assumptions",
+          "text_override_lv": "V-07: diapazons 0–0,016 mg/mL; matrica nav verifikāta; krustpunkts +0,0017 = sistēmas nobīde."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "master_anchor": "fig-cal",
+        "master_freeze_id": "C7-MASTER",
+        "conventions_refs": [
+          "CIT-C7-CALIB",
+          "CIT-C7-NOEXTRAP",
+          "CIT-C7-INTERCEPT"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "concentration_mass",
+        "conventions_ref": "CIT-C7-CALIB",
+        "target_quantity_term_key": "fig.axis.mass_concentration_mg_ml",
+        "expected_unit": "g/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "span": {
+        "x_min": 0,
+        "x_max": 0.016,
+        "data_x_min": 0,
+        "data_x_max": 0.016,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": 30.24,
+        "intercept": 0.0017,
+        "x_min": 0,
+        "x_max": 0.016,
+        "unit": "A",
+        "true_line_of": "calibration_spec"
+      },
+      "calibration_spec": {
+        "model": "linear_regression_free_intercept",
+        "standards_count": 9,
+        "unknown_signal": "0.470",
+        "unknown_concentration_mg_ml": "0.01549"
+      },
+      "assumption_ledger": [
+        {
+          "id": "linear_range",
+          "status": "stated",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL; nezināmais ir 96,8 % no augšējās malas."
+        },
+        {
+          "id": "matrix_match",
+          "status": "absent_stated",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH."
+        },
+        {
+          "id": "intercept_meaning",
+          "status": "stated",
+          "statement_lv": "Krustpunkts +0,0017 ir sistēmas/tukšā nobīde, nevis nezināmā signāls."
+        },
+        {
+          "id": "blank_correction",
+          "status": "stated",
+          "statement_lv": "Tukšais paraugs atņemts pirms mērījuma; atlikušais krustpunkts ir brīvais loceklis."
+        }
+      ],
+      "scope_note_lv": "Tvērums: C7 standarti, brīvā regresija; nezināmais tuvu malai, bez ekstrapolācijas.",
+      "reading_spec": {
+        "signal": "0.470",
+        "concentration_x": "0.01549"
+      },
+      "answer_targets": [
+        {
+          "value": "0.01549",
+          "unit": "mg/mL"
+        }
+      ],
+      "leak_scan_exemption": {
+        "exempt": true,
+        "reason_code": "EXEMPT_READING_DISPLAY",
+        "reason_lv": "Robežgadījuma mācību attēls parāda nolasījumu 0,01549 mg/mL, lai mācītu diapazona malas disciplīnu; tas nav vērtējams uzdevums.",
+        "exempted_values": [
+          {
+            "value": "0.01549",
+            "unit": "mg/mL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FIG-T67-CAL-PRACTICE",
+      "type": "scatter",
+      "version": 1,
+      "topic": 7,
+      "concept_ids": [
+        "P7-03",
+        "P7-04",
+        "P7-05"
+      ],
+      "title_key": "fig.title.t67_cal_practice",
+      "subtitle_lv": "5 standarti 0–0,016 mg/mL; taisne caur nulli; nezināmais A = 0,365; nolasiet koncentrāciju",
+      "description_lv": "Prakses kalibrācija: 5 standarti 0–0,016 mg/mL un taisne caur nulli. Nezināmā signals A = 0,365 atzīmēts uz absorbances ass, bet nolasījums caur taisni nav novilkts. Koncentrācija jāaprēķina pašam; atbilde attēlā nav ierakstīta.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "dataset_label_lv": "PROPOSED sintētiskie dati.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.mass_concentration_mg_ml",
+          "unit": "mg/mL",
+          "dimension": "concentration_mass",
+          "min": 0,
+          "max": 0.018,
+          "step": 0.004,
+          "minor_step": 0.002,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.absorbance_a",
+          "unit": "A",
+          "dimension": "absorbance",
+          "min": 0,
+          "max": 0.45,
+          "step": 0.1,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t67-cal-practice",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0.004,
+              "y": 0.1001
+            },
+            {
+              "x": 0.008,
+              "y": 0.2002
+            },
+            {
+              "x": 0.012,
+              "y": 0.3002
+            },
+            {
+              "x": 0.016,
+              "y": 0.4003
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "a1",
+          "annotation_key": "fig.annot.t67_cal_instruction",
+          "text_override_lv": "Nolasiet nezināmā koncentrāciju caur taisni; atbilde attēlā nav ierakstīta."
+        },
+        {
+          "id": "a2",
+          "annotation_key": "fig.annot.t67_scope",
+          "text_override_lv": "Tvērums: 0–0,016 mg/mL; nezināmais A = 0,365 ir diapazona iekšpusē."
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+        "master_anchor": "fig-cal",
+        "master_freeze_id": "C7-MASTER",
+        "conventions_refs": [
+          "CIT-C7-CALIB",
+          "CIT-C7-NOEXTRAP",
+          "CIT-C7-INTERCEPT"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "viewBox": [
+          0,
+          0,
+          760,
+          480
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "tolerance_class": "concentration_mass",
+        "conventions_ref": "CIT-C7-CALIB",
+        "target_quantity_term_key": "fig.axis.mass_concentration_mg_ml",
+        "expected_unit": "g/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "span": {
+        "x_min": 0,
+        "x_max": 0.016,
+        "data_x_min": 0,
+        "data_x_max": 0.016,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": 25.02,
+        "intercept": 0,
+        "x_min": 0,
+        "x_max": 0.016,
+        "unit": "A",
+        "true_line_of": "calibration_spec"
+      },
+      "calibration_spec": {
+        "model": "through_zero_fixed_intercept",
+        "standards_count": 5,
+        "unknown_signal": "0.365"
+      },
+      "assumption_ledger": [
+        {
+          "id": "linear_range",
+          "status": "stated",
+          "statement_lv": "Lineārais diapazons 0–0,016 mg/mL ar 5 standartiem."
+        },
+        {
+          "id": "matrix_match",
+          "status": "absent_stated",
+          "statement_lv": "Matricas atbilstība nav verifikāta; protokolā nav norādīts šķīdinātājs un pH."
+        },
+        {
+          "id": "intercept_meaning",
+          "status": "stated",
+          "statement_lv": "Krustpunkts fiksēts 0; tukšais paraugs atņemts."
+        },
+        {
+          "id": "blank_correction",
+          "status": "stated",
+          "statement_lv": "Tukšais paraugs atņemts pirms mērījuma."
+        }
+      ],
+      "scope_note_lv": "Tvērums: prakses kalibrācija 0–0,016 mg/mL; atbilde attēlā nav ierakstīta.",
+      "signal_marker": {
+        "signal": "0.365",
+        "label_lv": "Nezināmais A = 0,365"
+      },
+      "answer_targets": [
+        {
+          "value": "0.01459",
+          "unit": "mg/mL"
+        }
+      ]
+    }
+  ]
+}

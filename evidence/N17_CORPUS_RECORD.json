@@ -1,0 +1,1205 @@
+{
+  "schema_version": 1,
+  "task": "N17",
+  "status": "PASS",
+  "validation": {
+    "status": "PASS",
+    "summary": {
+      "classes": 4,
+      "golden_vectors": 40,
+      "golden_pass": 40,
+      "golden_fail": 0,
+      "stratum_vectors": 20,
+      "stratum_pass": 20,
+      "no_local_constants": "PASS"
+    },
+    "digests": {
+      "taxonomy": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14",
+      "conventions": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+      "python_engine": "c71872e1b933652784904a9705f4750bdbf1ff2be5498a7ed30504f3733c010f",
+      "js_engine": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12",
+      "golden_corpus": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88"
+    },
+    "errors": []
+  },
+  "validation_parity": true,
+  "vectors": {
+    "golden_rows": [
+      {
+        "vector_id": "GV-S1-T1-Q02-01",
+        "topic": 1,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q02-02",
+        "topic": 1,
+        "payload_class": "numeric",
+        "expected_error": "OUT_OF_TOLERANCE",
+        "engine_error": "OUT_OF_TOLERANCE",
+        "verdict": "incorrect",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q07-01",
+        "topic": 1,
+        "payload_class": "option_select",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q07-02",
+        "topic": 1,
+        "payload_class": "option_select",
+        "expected_error": "WRONG_OPTION_SELECTION",
+        "engine_error": "WRONG_OPTION_SELECTION",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q14-01",
+        "topic": 1,
+        "payload_class": "option_select",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "auto_passed_pending_review",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q14-02",
+        "topic": 1,
+        "payload_class": "option_select",
+        "expected_error": "WRONG_OPTION_SELECTION",
+        "engine_error": "WRONG_OPTION_SELECTION",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q15-01",
+        "topic": 1,
+        "payload_class": "method",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "pending_self_assessment",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q15-02",
+        "topic": 1,
+        "payload_class": "method",
+        "expected_error": "BLANK_RESPONSE",
+        "engine_error": "BLANK_RESPONSE",
+        "verdict": "incorrect",
+        "taxonomy_class": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T1-Q18-01",
+        "topic": 1,
+        "payload_class": "option_select",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "auto_passed_pending_review",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q01-01",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q01-02",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "SIG_FIG_MISMATCH",
+        "engine_error": "SIG_FIG_MISMATCH",
+        "verdict": "partial",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q01-03",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "UNREADABLE_INPUT",
+        "engine_error": "UNREADABLE_INPUT",
+        "verdict": "incorrect",
+        "taxonomy_class": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-01",
+        "topic": 2,
+        "payload_class": "matching",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-02",
+        "topic": 2,
+        "payload_class": "matching",
+        "expected_error": "WRONG_PAIRING",
+        "engine_error": "WRONG_PAIRING",
+        "verdict": "partial",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q06-03",
+        "topic": 2,
+        "payload_class": "matching",
+        "expected_error": "WRONG_PAIRING",
+        "engine_error": "WRONG_PAIRING",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q08-01",
+        "topic": 2,
+        "payload_class": "ordering",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "auto_passed_pending_review",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q08-02",
+        "topic": 2,
+        "payload_class": "ordering",
+        "expected_error": "WRONG_ORDER",
+        "engine_error": "WRONG_ORDER",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q09-01",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q10-01",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T2-Q10-02",
+        "topic": 2,
+        "payload_class": "numeric",
+        "expected_error": "OUT_OF_TOLERANCE",
+        "engine_error": "OUT_OF_TOLERANCE",
+        "verdict": "incorrect",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q01-01",
+        "topic": 3,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q01-02",
+        "topic": 3,
+        "payload_class": "numeric",
+        "expected_error": "UNLABELED_PERCENT_BASIS",
+        "engine_error": "UNLABELED_PERCENT_BASIS",
+        "verdict": "incorrect",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q02-01",
+        "topic": 3,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q02-02",
+        "topic": 3,
+        "payload_class": "numeric",
+        "expected_error": "DIMENSIONAL_INCONSISTENCY",
+        "engine_error": "DIMENSIONAL_INCONSISTENCY",
+        "verdict": "incorrect",
+        "taxonomy_class": "DIMENSIONAL_INCONSISTENCY",
+        "signature": "MC-3B-01",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q02-03",
+        "topic": 3,
+        "payload_class": "numeric",
+        "expected_error": "DIMENSIONAL_INCONSISTENCY",
+        "engine_error": "DIMENSIONAL_INCONSISTENCY",
+        "verdict": "incorrect",
+        "taxonomy_class": "DIMENSIONAL_INCONSISTENCY",
+        "signature": "MC-3B-01",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T3-Q08-01",
+        "topic": 3,
+        "payload_class": "ordering",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "auto_passed_pending_review",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T4-Q02-01",
+        "topic": 4,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T4-Q02-02",
+        "topic": 4,
+        "payload_class": "numeric",
+        "expected_error": "OUT_OF_TOLERANCE",
+        "engine_error": "OUT_OF_TOLERANCE",
+        "verdict": "incorrect",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T4-Q09-01",
+        "topic": 4,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T4-Q15-01",
+        "topic": 4,
+        "payload_class": "method",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "pending_self_assessment",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T5-Q09-01",
+        "topic": 5,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T5-Q12-01",
+        "topic": 5,
+        "payload_class": "graph",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T5-Q18-01",
+        "topic": 5,
+        "payload_class": "option_select",
+        "expected_error": "WRONG_OPTION_SELECTION",
+        "engine_error": "WRONG_OPTION_SELECTION",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T6-Q06-01",
+        "topic": 6,
+        "payload_class": "matching",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T6-Q10-01",
+        "topic": 6,
+        "payload_class": "numeric",
+        "expected_error": "OUT_OF_TOLERANCE",
+        "engine_error": "OUT_OF_TOLERANCE",
+        "verdict": "incorrect",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T6-Q14-01",
+        "topic": 6,
+        "payload_class": "option_select",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "auto_passed_pending_review",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T7-Q01-01",
+        "topic": 7,
+        "payload_class": "numeric",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T7-Q07-01",
+        "topic": 7,
+        "payload_class": "option_select",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T7-Q12-01",
+        "topic": 7,
+        "payload_class": "graph",
+        "expected_error": "NONE",
+        "engine_error": "NONE",
+        "verdict": "correct",
+        "taxonomy_class": "NONE",
+        "signature": "",
+        "status": "PASS"
+      },
+      {
+        "vector_id": "GV-S1-T7-Q12-02",
+        "topic": 7,
+        "payload_class": "graph",
+        "expected_error": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "engine_error": "OUT_OF_DOMAIN_EXTRAPOLATION",
+        "verdict": "incorrect",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "status": "PASS"
+      }
+    ],
+    "golden_failures": [],
+    "stratum_rows": [
+      {
+        "id": "V04-01",
+        "kind": "v04",
+        "expected": "DIMENSIONAL_INCONSISTENCY",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-02",
+        "kind": "v04",
+        "expected": "DIMENSIONAL_INCONSISTENCY",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-03",
+        "kind": "v04",
+        "expected": "DIMENSIONAL_INCONSISTENCY",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-04",
+        "kind": "v04",
+        "expected": "DIMENSIONAL_INCONSISTENCY",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-05",
+        "kind": "v04",
+        "expected": "DIMENSIONAL_INCONSISTENCY",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-VALID-01",
+        "kind": "v04",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "id": "V04-VALID-02",
+        "kind": "v04",
+        "expected": "NONE",
+        "actual": "NONE",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-01",
+        "kind": "conservation",
+        "expected": "BALANCED",
+        "actual": "BALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-02",
+        "kind": "conservation",
+        "expected": "BALANCED",
+        "actual": "BALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-03",
+        "kind": "conservation",
+        "expected": "IMBALANCED",
+        "actual": "IMBALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-04",
+        "kind": "conservation",
+        "expected": "IMBALANCED",
+        "actual": "IMBALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-01",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-02",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-03",
+        "kind": "classification",
+        "expected": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+        "actual": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-04",
+        "kind": "classification",
+        "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-05",
+        "kind": "classification",
+        "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-06",
+        "kind": "classification",
+        "expected": "OUT_OF_DOMAIN/MC-7B-02",
+        "actual": "OUT_OF_DOMAIN/MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-07",
+        "kind": "classification",
+        "expected": "NONE/NONE",
+        "actual": "NONE/NONE",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-08",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-09",
+        "kind": "classification",
+        "expected": "NONE/NONE",
+        "actual": "NONE/NONE",
+        "status": "PASS"
+      }
+    ]
+  },
+  "v04_corpus": [
+    {
+      "id": "V04-01",
+      "kind": "v04",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-02",
+      "kind": "v04",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-03",
+      "kind": "v04",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-04",
+      "kind": "v04",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-05",
+      "kind": "v04",
+      "expected": "DIMENSIONAL_INCONSISTENCY",
+      "actual": "DIMENSIONAL_INCONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-VALID-01",
+      "kind": "v04",
+      "expected": "NONE",
+      "actual": "NONE",
+      "status": "PASS"
+    },
+    {
+      "id": "V04-VALID-02",
+      "kind": "v04",
+      "expected": "NONE",
+      "actual": "NONE",
+      "status": "PASS"
+    }
+  ],
+  "conservation": {
+    "rows": [
+      {
+        "id": "EV-N17-CONS-01",
+        "kind": "conservation",
+        "expected": "BALANCED",
+        "actual": "BALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-02",
+        "kind": "conservation",
+        "expected": "BALANCED",
+        "actual": "BALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-03",
+        "kind": "conservation",
+        "expected": "IMBALANCED",
+        "actual": "IMBALANCED",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CONS-04",
+        "kind": "conservation",
+        "expected": "IMBALANCED",
+        "actual": "IMBALANCED",
+        "status": "PASS"
+      }
+    ],
+    "scratch": {
+      "id": "EV-N17-CONS-SCRATCH",
+      "verdict": "IMBALANCED",
+      "signature": "MC-1C-01"
+    }
+  },
+  "classification": {
+    "rows": [
+      {
+        "id": "EV-N17-CLS-01",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-02",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-03",
+        "kind": "classification",
+        "expected": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+        "actual": "DIMENSIONAL_INCONSISTENCY/MC-3B-01",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-04",
+        "kind": "classification",
+        "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-05",
+        "kind": "classification",
+        "expected": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "actual": "PHYSICALLY_IMPLAUSIBLE/MC-3A-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-06",
+        "kind": "classification",
+        "expected": "OUT_OF_DOMAIN/MC-7B-02",
+        "actual": "OUT_OF_DOMAIN/MC-7B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-07",
+        "kind": "classification",
+        "expected": "NONE/NONE",
+        "actual": "NONE/NONE",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-08",
+        "kind": "classification",
+        "expected": "UNREADABLE_INPUT/MC-2B-02",
+        "actual": "UNREADABLE_INPUT/MC-2B-02",
+        "status": "PASS"
+      },
+      {
+        "id": "EV-N17-CLS-09",
+        "kind": "classification",
+        "expected": "NONE/NONE",
+        "actual": "NONE/NONE",
+        "status": "PASS"
+      }
+    ],
+    "precedence_rule": "Ja viens ievads atbilst vairākām klasēm, izvēlas mazāko kārtas numuru: 1 (neizlasāms) pirms 2 (dimensijas) pirms 3 (fiziskā jēga) pirms 4 (domēns). Pirmā atrastā klase aptur turpmāku pārbaudi; katrs gadījums iegūst tieši vienu klasi.",
+    "ambiguous_member": {
+      "id": "EV-N17-CLS-08",
+      "trace": [
+        "UNREADABLE_INPUT"
+      ],
+      "class": "UNREADABLE_INPUT"
+    },
+    "boundary_rule": "Robeža ir iekļaujoša: vērtība, kas vienāda ar deklarēto robežu, nav ārpus domēna. Tas pats attiecas uz N14 span edge rule un N15 no-extrapolation inheritance."
+  },
+  "signature_alignment": [
+    {
+      "id": "UNREADABLE_INPUT",
+      "signature": "MC-2B-02",
+      "feedback_key": "feedback.error.unreadable",
+      "conventions_ref": "CIT-C2-UNITS",
+      "text_lv": "Ievadu nevar nolasīt: pārbaudi skaitļa pierakstu un vienības sintaksi."
+    },
+    {
+      "id": "DIMENSIONAL_INCONSISTENCY",
+      "signature": "MC-3B-01",
+      "feedback_key": "feedback.error.dimensional",
+      "conventions_ref": "CIT-C2-DENSITY-UNITS",
+      "text_lv": "Vienību algebra neslēdzas: masa un tilpums nav savstarpēji pārrēķināmi bez deklarēta blīvuma ρ."
+    },
+    {
+      "id": "PHYSICALLY_IMPLAUSIBLE",
+      "signature": "MC-3A-02",
+      "feedback_key": "feedback.error.implausible",
+      "conventions_ref": "CIT-C3-PERCENT",
+      "text_lv": "Lielums ir dimensijās korekts, bet pārkāpj deklarēto fiziskās jēgas robežu; pārbaudi konvenciju un bāzi."
+    },
+    {
+      "id": "OUT_OF_DOMAIN",
+      "signature": "MC-7B-02",
+      "feedback_key": "feedback.error.out_of_domain",
+      "conventions_ref": "CIT-C7-NOEXTRAP",
+      "text_lv": "Vērtība ir izlasāma un korekta, bet ārpus uzdevuma deklarētā apgabala; interpoles tikai datu diapazonā."
+    }
+  ],
+  "no_local_constants": {
+    "status": "PASS",
+    "forbidden_values": [
+      "0.000001",
+      "0.001",
+      "0.01",
+      "0.0592",
+      "0.6931471805599453",
+      "101.325",
+      "1E-14",
+      "22.414",
+      "298.15",
+      "6.626E-34",
+      "8.314"
+    ],
+    "findings": [],
+    "rule": "Quantity engine source must not declare a numeric literal equal to any atomic mass, compound molar mass, constant value or declared conversion factor from #sim-conventions. Build-time AST/token scan enforces the rule by name."
+  },
+  "conventions_consumption": {
+    "paths": [
+      "unit_system.base_units",
+      "unit_system.conversions",
+      "unit_system.chains",
+      "atomic_masses",
+      "compound_molar_masses",
+      "constants",
+      "tolerances.quantity_classes",
+      "rounding",
+      "concentration_bases",
+      "percentage_basis",
+      "density"
+    ],
+    "conventions_digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+    "status": "PASS"
+  },
+  "cross_language": {
+    "status": "PASS",
+    "python": {
+      "golden_verdicts": "f33911b0990976ad0a6c17672c9545f6ec772da8008306411d6bcf65fc8b6c5f",
+      "stratum_verdicts": "5f5055b6d0ac369e0f2d6b1d6ed19e1e72ba739eb9b6fa473b3916d84b0e96b3",
+      "taxonomy": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14",
+      "engine_source": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12"
+    },
+    "javascript": {
+      "golden_verdicts": "f33911b0990976ad0a6c17672c9545f6ec772da8008306411d6bcf65fc8b6c5f",
+      "stratum_verdicts": "5f5055b6d0ac369e0f2d6b1d6ed19e1e72ba739eb9b6fa473b3916d84b0e96b3",
+      "taxonomy": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14",
+      "engine_source": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12"
+    },
+    "compared_fields": [
+      "engine_source",
+      "golden_verdicts",
+      "stratum_verdicts",
+      "taxonomy"
+    ]
+  },
+  "negative": {
+    "scratch_constant_regression": {
+      "status": "PASS",
+      "report_status": "FAIL",
+      "failed_ids": [
+        "GV-S1-T1-Q02-02"
+      ],
+      "failed_count": 1
+    }
+  },
+  "throughput": {
+    "iterations": 1000,
+    "elapsed_ms": 19.641,
+    "throughput_per_s": 50915.0,
+    "declared_bound_ms": 2000.0,
+    "status": "PASS",
+    "note": "Authoring-host measurement; not a reference-device acceptance claim."
+  },
+  "budget": {
+    "runtime_js_code_bytes": 225197,
+    "runtime_js_ceiling_bytes": 225280,
+    "runtime_js_headroom_bytes": 83,
+    "engine_island_bytes": 12814,
+    "engine_compiled_bytes": 29975,
+    "engine_source_bytes": 31619,
+    "artifact_bytes": 1124577,
+    "artifact_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b",
+    "engines_gate": "PASS engines: 40/40 N05 vectors, 20/20 N17 vectors, 4 error classes, no-local-constants PASS, 0 errors",
+    "status": "PASS",
+    "note": "The Section 1.3 runtime-JS code ceiling was already 83 bytes from its limit before N17. The engine module therefore ships as src/quantity-engine.js, is validated by gate 13, its contract and vectors ship in #sim-engines, and the runtime harness loads the module directly against the shipped islands. N31 must lazy-load or re-budget before inlining it."
+  },
+  "smoke": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "vector": [
+      {
+        "id": "SMK-N17-CLASSIFICATION",
+        "owner": "N17",
+        "status": "PASS",
+        "details": {
+          "taxonomyClass": "DIMENSIONAL_INCONSISTENCY",
+          "signature": "MC-3B-01",
+          "digest": "d1c5027bf952ccf126a044dc2804e557de7245da20581388218e65749dd17127",
+          "feedbackKey": "feedback.error.dimensional"
+        },
+        "reason": null
+      }
+    ]
+  },
+  "smoke_digest": "d1c5027bf952ccf126a044dc2804e557de7245da20581388218e65749dd17127",
+  "runtime": {
+    "schema_version": 1,
+    "task": "N17",
+    "status": "PASS",
+    "artifact_sha256": "8a29a2d686f2f49588f4b9400e1014539ef6120d9c77b32de4d5e3a933923e4b",
+    "runtime_js_note": "Engine module verified from src/quantity-engine.js against shipped islands; runtime-JS ceiling headroom at N17 was 83 bytes.",
+    "counts": {
+      "golden": 40,
+      "v04": 7,
+      "conservation": 4,
+      "classification": 9
+    },
+    "digests": {
+      "golden_verdicts": "f33911b0990976ad0a6c17672c9545f6ec772da8008306411d6bcf65fc8b6c5f",
+      "stratum_verdicts": "5f5055b6d0ac369e0f2d6b1d6ed19e1e72ba739eb9b6fa473b3916d84b0e96b3",
+      "taxonomy": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14",
+      "engine_source": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12"
+    },
+    "parity": true,
+    "smoke": {
+      "status": "PASS",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "vectors": [
+        {
+          "id": "SMK-N17-CLASSIFICATION",
+          "owner": "N17",
+          "status": "PASS",
+          "details": {
+            "taxonomyClass": "DIMENSIONAL_INCONSISTENCY",
+            "signature": "MC-3B-01",
+            "digest": "d1c5027bf952ccf126a044dc2804e557de7245da20581388218e65749dd17127",
+            "feedbackKey": "feedback.error.dimensional"
+          },
+          "reason": null
+        }
+      ]
+    },
+    "smoke_summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "vector": [
+        {
+          "id": "SMK-N17-CLASSIFICATION",
+          "owner": "N17",
+          "status": "PASS",
+          "details": {
+            "taxonomyClass": "DIMENSIONAL_INCONSISTENCY",
+            "signature": "MC-3B-01",
+            "digest": "d1c5027bf952ccf126a044dc2804e557de7245da20581388218e65749dd17127",
+            "feedbackKey": "feedback.error.dimensional"
+          },
+          "reason": null
+        }
+      ]
+    },
+    "golden_sample": [
+      {
+        "id": "GV-S1-T1-Q02-01",
+        "status": "PASS",
+        "error_class": "NONE",
+        "taxonomy_class": "NONE",
+        "signature": ""
+      },
+      {
+        "id": "GV-S1-T1-Q02-02",
+        "status": "PASS",
+        "error_class": "OUT_OF_TOLERANCE",
+        "taxonomy_class": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02"
+      },
+      {
+        "id": "GV-S1-T1-Q07-01",
+        "status": "PASS",
+        "error_class": "NONE",
+        "taxonomy_class": "NONE",
+        "signature": ""
+      },
+      {
+        "id": "GV-S1-T1-Q07-02",
+        "status": "PASS",
+        "error_class": "WRONG_OPTION_SELECTION",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02"
+      },
+      {
+        "id": "GV-S1-T1-Q14-01",
+        "status": "PASS",
+        "error_class": "NONE",
+        "taxonomy_class": "NONE",
+        "signature": ""
+      },
+      {
+        "id": "GV-S1-T1-Q14-02",
+        "status": "PASS",
+        "error_class": "WRONG_OPTION_SELECTION",
+        "taxonomy_class": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02"
+      }
+    ],
+    "stratum_rows": [
+      {
+        "id": "V04-01",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY"
+      },
+      {
+        "id": "V04-02",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY"
+      },
+      {
+        "id": "V04-03",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY"
+      },
+      {
+        "id": "V04-04",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY"
+      },
+      {
+        "id": "V04-05",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY"
+      },
+      {
+        "id": "V04-VALID-01",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "NONE"
+      },
+      {
+        "id": "V04-VALID-02",
+        "kind": "v04",
+        "status": "PASS",
+        "actual": "NONE"
+      },
+      {
+        "id": "EV-N17-CONS-01",
+        "kind": "conservation",
+        "status": "PASS",
+        "actual": "BALANCED",
+        "signature": ""
+      },
+      {
+        "id": "EV-N17-CONS-02",
+        "kind": "conservation",
+        "status": "PASS",
+        "actual": "BALANCED",
+        "signature": ""
+      },
+      {
+        "id": "EV-N17-CONS-03",
+        "kind": "conservation",
+        "status": "PASS",
+        "actual": "IMBALANCED",
+        "signature": "MC-1C-01"
+      },
+      {
+        "id": "EV-N17-CONS-04",
+        "kind": "conservation",
+        "status": "PASS",
+        "actual": "IMBALANCED",
+        "signature": "MC-1C-01"
+      },
+      {
+        "id": "EV-N17-CLS-01",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "trace": [
+          "UNREADABLE_INPUT"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-02",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "trace": [
+          "literal parsed",
+          "unit grammar failed"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-03",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "DIMENSIONAL_INCONSISTENCY",
+        "signature": "MC-3B-01",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "dimension mismatch"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-04",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "unit transform closed",
+          "plausibility nonnegative_concentration"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-05",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "PHYSICALLY_IMPLAUSIBLE",
+        "signature": "MC-3A-02",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "unit transform closed",
+          "plausibility ph_domain"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-06",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "OUT_OF_DOMAIN",
+        "signature": "MC-7B-02",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "unit transform closed",
+          "outside declared span"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-07",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "NONE",
+        "signature": "NONE",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "unit transform closed",
+          "in domain"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-08",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "UNREADABLE_INPUT",
+        "signature": "MC-2B-02",
+        "trace": [
+          "UNREADABLE_INPUT"
+        ]
+      },
+      {
+        "id": "EV-N17-CLS-09",
+        "kind": "classification",
+        "status": "PASS",
+        "actual": "NONE",
+        "signature": "NONE",
+        "trace": [
+          "literal parsed",
+          "unit grammar parsed",
+          "unit transform closed",
+          "in domain"
+        ]
+      }
+    ]
+  },
+  "corpus_parity": true,
+  "handoff": {
+    "n18": "SimEngines.grade / checkConservation contract for the graph and energy vectors",
+    "n20": "SimEngines.classify reparameterization bounds from conventions entries",
+    "n22": "SimEngines.quantity / convert / dimensionGate input semantics",
+    "n23": "taxonomy_class, signature, feedback_key and feedback_text on every verdict",
+    "n31": "inline or lazy-load src/quantity-engine.js after budget decision"
+  }
+}

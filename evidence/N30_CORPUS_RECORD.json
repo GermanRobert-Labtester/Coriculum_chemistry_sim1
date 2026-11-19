@@ -1,0 +1,589 @@
+{
+  "byte_accounting": {
+    "budgets": {
+      "budgets": [
+        {
+          "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N30 ir 2202232 B, tāpēc izpildītais griests ir 2156 KiB. N30 #sim-practice-policy sala, 27 practice.* terminu ieraksti, inline'otais practice.js, #prakse HTML/CSS un dūmu vektors palielina artefaktu līdz 2,202,232 B (2,150,6 KiB); griests pārlikts uz 2,156 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "bytes": 2202649,
+          "declared_max_bytes": 1433600,
+          "kib": 2151.0,
+          "max_bytes": 2207744,
+          "min_bytes": 716800,
+          "name": "artifact_total",
+          "share_percent_of_max": 99.77,
+          "within_declared_band": false,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N30 ir 705398 B, tāpēc izpildītais griests ir 692 KiB. N30 ierobežoto prakses ceļu dzinējs un izpildītājs (src/compiled/practice.js), SimGrading.gradePracticeRecord un SMK-N30-PRACTICE-PATH dūmu vektors tiek inline'oti vienfaila artefaktā, lai #prakse darbotos bezsaistē. Izmērītais runtime JS ir 705,398 B (688,9 KiB); griests pārlikts uz 692 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "bytes": 705815,
+          "declared_max_bytes": 225280,
+          "kib": 689.3,
+          "max_bytes": 708608,
+          "min_bytes": 122880,
+          "name": "runtime_js_code",
+          "share_percent_of_max": 99.61,
+          "within_declared_band": false,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+          "bytes": 59902,
+          "declared_max_bytes": 81920,
+          "kib": 58.5,
+          "max_bytes": 81920,
+          "min_bytes": 40960,
+          "name": "css",
+          "share_percent_of_max": 73.12,
+          "within_declared_band": true,
+          "within_max": true,
+          "within_min": true
+        },
+        {
+          "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+          "bytes": 249798,
+          "declared_max_bytes": 430080,
+          "kib": 243.9,
+          "max_bytes": 430080,
+          "min_bytes": 204800,
+          "name": "bank_island",
+          "share_percent_of_max": 58.08,
+          "within_declared_band": true,
+          "within_max": true,
+          "within_min": true
+        }
+      ],
+      "re_budget_history": [
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 225192,
+          "new_ceiling_bytes": 237568,
+          "previous_ceiling_bytes": 225280,
+          "reason_lv": "Izmērītais inline runtime JS pēc N20 bija 225,192 B (219,9 KiB); iepriekšais griests tiktu pārkāpts par 88 baitiem, tāpēc tas tika pārbālansēts uz mērījumu, nevis uz noapaņošanos.",
+          "task": "N20"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 266616,
+          "new_ceiling_bytes": 270336,
+          "previous_ceiling_bytes": 237568,
+          "reason_lv": "Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+          "task": "N21"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1436780,
+          "new_ceiling_bytes": 1474560,
+          "previous_ceiling_bytes": 1433600,
+          "reason_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots; mērītais kopējais apjoms ir 1,436,080 B (1,402,4 KiB), kas pārsniedz deklarēto 1,400 KiB joslu par 2,480 B. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N21"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1522087,
+          "new_ceiling_bytes": 1540096,
+          "previous_ceiling_bytes": 1474560,
+          "reason_lv": "N22 atbilžu ievades slānis: reakcijas tipu reģistra sala (34,179 B kanoniski), terminoloģijas salas pieaugums (+47,549 B) un trīs dūmu vektori palielina artefaktu līdz 1,522,087 B (1,486,4 KiB), kas pārsniedz N21 noteikto 1,440 KiB griestu par 47,527 B. Griests pārlikts uz mērījuma pamata; deklarētā 700–1,400 KiB josla paliek redzama. N22 ievades moduļi (225,423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270,014 B paliek zem 264 KiB griesta. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N22"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 277359,
+          "new_ceiling_bytes": 286720,
+          "previous_ceiling_bytes": 270336,
+          "reason_lv": "N23 trīs dūmu vektori (SMK-N23-GRADE-FULL/PARTIAL/MALFORMED) un koplietotais n23Run palīgs src/smoke-subset.js failā pievieno 7,387 B; inline'otais izpildāmais runtime JS mērījumā ir 277,359 B (270,9 KiB), kas pārsniedz N21 noteikto 264 KiB griestu par 7,023 B. Tā kā vienfaila artefaktā dūmu vektori ir inline'oti, griests pārlikts uz mērījuma pamata 280 KiB; vērtēšanas moduļi paši (src/compiled/grading.js, src/compiled/feedback.js) nav inline'oti. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N23"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1611253,
+          "new_ceiling_bytes": 1638400,
+          "previous_ceiling_bytes": 1540096,
+          "reason_lv": "N23 vērtēšanas un atgriezeniskās saites slānis: divas jaunas datu salas (#sim-grading-policy 12,143 B un #sim-feedback-classification 63,716 B kanoniski), 12 feedback.results.* terminu ieraksti, trīs dūmu vektori un #rezultati skaidrojuma teksts paceļ artefaktu līdz 1,611,253 B (1,573,5 KiB), kas pārsniedz N22 noteikto 1,504 KiB griestu par 71,157 B. Griests pārlikts uz mērījuma pamata 1,600 KiB; deklarētā 700–1,400 KiB josla paliek redzama. N23 vērtēšanas moduļi tiek piegādāti no src/ un nav inline'oti. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N23"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 329976,
+          "new_ceiling_bytes": 339968,
+          "previous_ceiling_bytes": 286720,
+          "reason_lv": "N24 formu montāžas dzinējs un neatkarīgais pārbaudītājs (src/compiled/assembly.js), formas izvēlnes loģika un SMK-N24-ASSEMBLY-DRAW dūmu vektors tiek inline'oti vienfaila artefaktā, lai sēklotais treniņa zīmējums un montāžas pašpārbaude darbotos bezsaistē. Izmērītais runtime JS ir 329,976 B (322,2 KiB); griests pārlikts uz 332 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N24"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1684264,
+          "new_ceiling_bytes": 1720320,
+          "previous_ceiling_bytes": 1638400,
+          "reason_lv": "N24 #sim-forms sala, inline'otais assembly.js, formas izvēlne sākuma/eksāmena ekrānā un dūmu vektors palielina artefakta kopējo apjomu virs N23 1,600 KiB griesta; griests pārlikts uz izmērīto 1,680 KiB līmeni, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N24"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 390841,
+          "new_ceiling_bytes": 397312,
+          "previous_ceiling_bytes": 339968,
+          "reason_lv": "N25 versijas krātuve (src/compiled/store.js, 25,744 B), analītikas un progresa modulis (src/compiled/analytics.js, 31,951 B) un dūmu vektors SMK-N25-STORE-ROUNDTRIP tiek inline'oti vienfaila artefaktā, lai #atskats un #iestatijumi darbotos bezsaistē. Izmērītais runtime JS ir 390,841 B (381,7 KiB); griests pārlikts uz 388 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N25"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1756388,
+          "new_ceiling_bytes": 1761280,
+          "previous_ceiling_bytes": 1720320,
+          "reason_lv": "N25 #sim-analytics sala (6,098 B), inline'otie store.js un analytics.js, #atskats un #iestatijumi HTML/CSS un dūmu vektors palielina artefakta kopējo apjomu līdz 1,756,388 B (1,715,2 KiB); griests pārlikts uz 1,720 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N25"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 437232,
+          "new_ceiling_bytes": 442368,
+          "previous_ceiling_bytes": 397312,
+          "reason_lv": "N26 apguves stāvokļu mašīna (src/compiled/mastery.js, 43,200 B kompaktēti), analytics.js āķis un SMK-N26-MASTERY-WALK dūmu vektors tiek inline'oti vienfaila artefaktā, lai #atskats un #prakse skati darbotos bezsaistē. Izmērītais runtime JS ir 437,232 B (427,0 KiB); griests pārlikts uz 432 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N26"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1817433,
+          "new_ceiling_bytes": 1822720,
+          "previous_ceiling_bytes": 1761280,
+          "reason_lv": "N26 #sim-mastery-policy sala (10,378 B kanoniski), inline'otais mastery.js, #atskats/#prakse skatu HTML/CSS (+2,737 B CSS) un dūmu vektors palielina artefakta kopējo apjomu līdz 1,817,433 B (1,774,8 KiB); griests pārlikts uz 1,780 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N26"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 491765,
+          "new_ceiling_bytes": 495616,
+          "previous_ceiling_bytes": 442368,
+          "reason_lv": "N27 Leitnera plānotājs (src/compiled/scheduler.js, 50,950 B kompaktēti), mastery.js saistītais atjaunošanas āķis un SMK-N27-SCHEDULER-QUEUE dūmu vektors tiek inline'oti vienfaila artefaktā, lai #prakse ieteikumu rinda darbotos bezsaistē. Izmērītais runtime JS ir 491,765 B (480,2 KiB); griests pārlikts uz 484 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N27"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1886741,
+          "new_ceiling_bytes": 1892352,
+          "previous_ceiling_bytes": 1822720,
+          "reason_lv": "N27 #sim-scheduler-policy sala (5,161 B kanoniski), 16 scheduler.* terminu ieraksti, inline'otais scheduler.js, #prakse rindas HTML/CSS un dūmu vektors palielina artefakta kopējo apjomu līdz 1,886,741 B (1,842,5 KiB); griests pārlikts uz 1,848 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N27"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 563555,
+          "new_ceiling_bytes": 565248,
+          "previous_ceiling_bytes": 495616,
+          "reason_lv": "N28 kļūdu atkārtošanas rinda (src/compiled/remediation.js, 64,524 B kompaktēti), store.js/analytics.js lauku atbalsts un SMK-N28-REMEDIATION-WALK dūmu vektors tiek inline'oti vienfaila artefaktā, lai #atskats atkārtošanas cilpa darbotos bezsaistē. Izmērītais runtime JS ir 563,555 B (550,3 KiB); griests pārlikts uz 552 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N28"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 1972615,
+          "new_ceiling_bytes": 1974272,
+          "previous_ceiling_bytes": 1892352,
+          "reason_lv": "N28 #sim-remediation-policy sala (4,208 B kanoniski), 18 remediation.* terminu ieraksti, inline'otais remediation.js, #atskats rindas HTML/CSS (+1,882 B CSS) un dūmu vektors palielina artefakta kopējo apjomu līdz 1,972,615 B (1,926,4 KiB); griests pārlikts uz 1,928 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N28"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 630624,
+          "new_ceiling_bytes": 634880,
+          "previous_ceiling_bytes": 565248,
+          "reason_lv": "N29 vienotais atkārtošanas skats un F07 kritēriju pašvērtējuma kartīte (src/compiled/revision.js, 63,355 B kompaktēti), store.js/mastery.js/analytics.js atbalsts un SMK-N29-REVISION-PANEL dūmu vektors tiek inline'oti vienfaila artefaktā, lai #atskats darbotos bezsaistē. Izmērītais runtime JS ir 630,624 B (615,8 KiB); griests pārlikts uz 620 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N29"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 2105879,
+          "new_ceiling_bytes": 2109440,
+          "previous_ceiling_bytes": 1974272,
+          "reason_lv": "N29 #sim-revision-policy sala (4,338 B kanoniski), 144 jauni #sim-terms ieraksti (117 vienotie feedback.criterion.* un 27 revision.*), inline'otais revision.js, #atskats HTML/CSS (+2,812 B CSS) un dūmu vektors palielina artefaktu līdz 2,105,879 B (2,056,5 KiB); griests pārlikts uz 2,060 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N29"
+        },
+        {
+          "budget": "runtime_js_code",
+          "measured_bytes": 705398,
+          "new_ceiling_bytes": 708608,
+          "previous_ceiling_bytes": 634880,
+          "reason_lv": "N30 ierobežoto prakses ceļu dzinējs un izpildītājs (src/compiled/practice.js), SimGrading.gradePracticeRecord un SMK-N30-PRACTICE-PATH dūmu vektors tiek inline'oti vienfaila artefaktā, lai #prakse darbotos bezsaistē. Izmērītais runtime JS ir 705,398 B (688,9 KiB); griests pārlikts uz 692 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N30"
+        },
+        {
+          "budget": "artifact_total",
+          "measured_bytes": 2202232,
+          "new_ceiling_bytes": 2207744,
+          "previous_ceiling_bytes": 2109440,
+          "reason_lv": "N30 #sim-practice-policy sala, 27 practice.* terminu ieraksti, inline'otais practice.js, #prakse HTML/CSS un dūmu vektors palielina artefaktu līdz 2,202,232 B (2,150,6 KiB); griests pārlikts uz 2,156 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+          "task": "N30"
+        }
+      ],
+      "status": "PASS"
+    },
+    "practice_compacted_js_bytes": 70679,
+    "practice_policy_island_bytes": 7163,
+    "re_budget_entries": [
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 705398,
+        "new_ceiling_bytes": 708608,
+        "previous_ceiling_bytes": 634880,
+        "reason_lv": "N30 ierobežoto prakses ceļu dzinējs un izpildītājs (src/compiled/practice.js), SimGrading.gradePracticeRecord un SMK-N30-PRACTICE-PATH dūmu vektors tiek inline'oti vienfaila artefaktā, lai #prakse darbotos bezsaistē. Izmērītais runtime JS ir 705,398 B (688,9 KiB); griests pārlikts uz 692 KiB. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N30"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 2202232,
+        "new_ceiling_bytes": 2207744,
+        "previous_ceiling_bytes": 2109440,
+        "reason_lv": "N30 #sim-practice-policy sala, 27 practice.* terminu ieraksti, inline'otais practice.js, #prakse HTML/CSS un dūmu vektors palielina artefaktu līdz 2,202,232 B (2,150,6 KiB); griests pārlikts uz 2,156 KiB, saglabājot deklarēto 700–1,400 KiB joslu redzamu. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N30"
+      }
+    ],
+    "smoke_delta_bytes": 3594
+  },
+  "digests": {
+    "data/analytics_schema.json": "19ce10907fccdbc73a053b8cfbede5458ca5e0e75d0cd1d91085f1c385a55029",
+    "data/mastery_policy.json": "cf102dce5dca701ba501145441b9636a05b64511f235893caf1740a80d899135",
+    "data/practice_policy.json": "eb7b54aeba59dc59598e2334f53da5067a60210ca6e9b86cbe87e286a79e86ef",
+    "data/remediation_policy.json": "cc320a5279dd9999aeb757cfa1861fded8b1438d4b15709117f2f0d878aa39c0",
+    "data/revision_policy.json": "32156757ad60c09f3cf426a1128d3ec8045db768fa4349b87ff134ad4b374e56",
+    "data/scheduler_policy.json": "1f4bace5a705ca1763116cd279a501912ecb85a0d106fedb15095cfb92e42916",
+    "data/terms.json": "ec05344387393166149bb4820261e840960c0538a9584c8443c74a243162d4f7",
+    "docs/PRACTICE_FORMAT.md": "6421349bbc87c00a2d3fb8d80ed49b5a2287802a03c533acc0ac581fe35edb25",
+    "src/analytics.ts": "72fefb5b2f3743dca5693cb500f4498b7439e23e0e5afcd85e78ba123c2b6eea",
+    "src/compiled/analytics.js": "0badcad95f97ffdd9fd2fee33e9cd7a398aed05dae83b9b0e4ebb2a3f516d7e5",
+    "src/compiled/feedback.js": "8d79168e9e1165133d10587163c42bf06b222f437f9b03b1acc1474fadb3883d",
+    "src/compiled/grading.js": "c451545de08300523e0f2b7f958804502781248a9ba20baeb63b844dff5e889d",
+    "src/compiled/mastery.js": "265a7a943397d4cf00db80ddce782eacb581307479b229d4dcec7a51d2b45aae",
+    "src/compiled/practice.js": "80c0dcc4d3043757f6093d98ea0cdbb20d4abb88487dd79aa5b02ca17bf301e9",
+    "src/compiled/remediation.js": "dbffc634d390e5a6c734174b43bb90cd404f007dce9e2b85bb9c726ea5c553e9",
+    "src/compiled/revision.js": "29eba44e65711c245cc4a986368baa0ba96591b2ce85c852eabce822affb0ae4",
+    "src/compiled/scheduler.js": "d1f072d3db0d0c11d81a39b41d047b846e450be5aacee18f511f26c726607f48",
+    "src/compiled/store.js": "653bbee7dd0ab4eedd17ab3ba898d2d124a4f2a665443590ae362d5a4303c592",
+    "src/feedback.ts": "43c162c36f85b9d46c80388adf39cf7fe36a380c6d1d640153375cf97aaa068c",
+    "src/grading.ts": "79526fb586bb15bfe15fff0337cd8e819d5d9bc440e8d4f74410f7d2cef5d5aa",
+    "src/mastery.ts": "a4fd5a1415b291ab52e04b357896d0964dab605b4348fafc6cf243353a3e6852",
+    "src/practice.ts": "097e08baad4ffc33d148159f33d531e45efcd38e7d53286708f156b8d6611a36",
+    "src/remediation.ts": "7b88c82988e9c53f78b9ed84bc1da4aa8cba37849a37960a437126d08922f519",
+    "src/revision.ts": "94e84f9e1006e5948a8d5502be12f76b74416f8fafce808354e1c1cbda9fae44",
+    "src/scheduler.ts": "972e95c4d4b0c8566841ed71518daf515c4643dde74568e665771b14ec33b3f2",
+    "src/shell.html": "eb186968b42ac50d8fd8ee7a5b8706b2c0c55a5127c5cae5373c0678b289ce3c",
+    "src/smoke-subset.js": "824ca974e5e947f48bde20bf364d662b7bd470baa5e84b89378ea043accf8d9a",
+    "src/store.ts": "3be8121bd7fb5ecd42a4786b3bdb4dffa9d09e23bed62869f93e618d65a18fe7",
+    "src/styles.css": "4026cb398690f5c5af0a42bcfebbb134ae081eca4a524f3839cef2f64c7b5952",
+    "tools/build.py": "01b9e318c0463de57f68339f45a1758eb5cf48814ff50654ac701f63dad490c7",
+    "tools/byte_budget.py": "b9c751b9311e1cc621d0ad4434ab1db4995742d4734889da95dc3120e8807c9d",
+    "tools/check_n30_runtime.js": "bb5845c61c740d5f39f1ab928eb3830969ab2791447d2b1e98b4245b232d09ef",
+    "tools/compile_n21_ts.py": "8817c6a6be3810d422204cf16c29893c76337abbf5e4cd34aaaae87b9d4b213f",
+    "tools/validate_n30_practice.py": "c1065b242e35a246c852a3df371466aab735b4922205d6b70a0a86a3be405524"
+  },
+  "gates": {
+    "double_build_reproduction": {
+      "html_sha256_build1": "4f7022494d8718870325e0a079010adc63e2f2bb4f088204ebe8bf7f25705a45",
+      "html_sha256_build2": "4f7022494d8718870325e0a079010adc63e2f2bb4f088204ebe8bf7f25705a45",
+      "html_sha256_committed": "4f7022494d8718870325e0a079010adc63e2f2bb4f088204ebe8bf7f25705a45",
+      "practice_policy_digest": "efaaab47eb3d47351807032741baf9763d194986655360f7bb19b099d4ba5f79",
+      "status": "PASS"
+    },
+    "gate_26_practice": {
+      "command": "/home/robertsrff/venv/composio/bin/python3 /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/validate_n30_practice.py --report /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/N30_VALIDATION_RECORD.json",
+      "label": "gate_26_practice",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "practice PASS: policy=7163B lengths={'1': 6, '2': 7, '3': 8, '4': 8, '5': 7, '6': 6, '7': 5} neg=3/3"
+    },
+    "runtime_harness": {
+      "command": "node /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/tools/check_n30_runtime.js --repo-root . --record /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/N30_RUNTIME_RECORD.json --trace-out /home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/evidence/N30_JOURNEY_TRACE.json",
+      "label": "runtime_determinism_and_phase6_journey_harness",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "N30 runtime: PASS (15 checks, journey 572094d6a33c7500)"
+    }
+  },
+  "journey_summary": {
+    "digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+    "replay_digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+    "steps_count": 10,
+    "trace_file_sha256": "889607b854c2ac540baeb25bf3c794c0d3512f9ea7a3a4959db795306ce1de3e"
+  },
+  "runtime_checks": {
+    "A1_determinism": {
+      "absent_digest": "92dc8e0dbfbe7952a031590acdb73480fa1242368063d9b2b0603dfa70714e19",
+      "absent_mode": "absent_family_order",
+      "declared_digest": "85cd3e7ecd11bce3fff0c9c21ca38ab72481c459f2416d4d512c66694f539f42",
+      "declared_mode": "declared",
+      "family_order": true,
+      "ordering_monotone": true,
+      "status": "PASS"
+    },
+    "A1_no_repeat_exclusions": {
+      "excluded": 8,
+      "history_size": 8,
+      "path": [
+        "COL1-1-1A-B-01",
+        "COL1-1-1B-B-01",
+        "COL1-1-1C-B-01",
+        "COL1-1-1D-B-01",
+        "COL1-1-1A-D-01",
+        "COL1-1-1B-D-01"
+      ],
+      "session_excluded": [
+        "COL1-1-1A-B-01",
+        "COL1-1-1B-B-01"
+      ],
+      "session_path_excludes": true,
+      "status": "PASS"
+    },
+    "A1_policy_live_counts": {
+      "declared": {
+        "1": 6,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 5
+      },
+      "live_eligible": {
+        "1": 16,
+        "2": 16,
+        "3": 16,
+        "4": 16,
+        "5": 16,
+        "6": 16,
+        "7": 16
+      },
+      "scratch_errors": [
+        "Tēmas 3 (topic 3) deklarētais ceļa garums (17) pārsniedz derīgo uzdevumu skaitu (16)."
+      ],
+      "status": "PASS"
+    },
+    "A1_three_entry_points": {
+      "remediation_retry": {
+        "digest": "eab38d0450372113929dc01530fcb866dc29a700a0c293d2c2da41f5ce772f0a",
+        "excluded": [
+          "COL1-4-4A-A-01"
+        ],
+        "family": "FAM-4A",
+        "retry_instance": "COL1-4-4A-B-01"
+      },
+      "scheduler": {
+        "digest": "18276358c5c646de1b69b90d24b40fcebb1c49725e23af64d891fbdfedaccc2c",
+        "length": 4,
+        "outcome": "P1-01"
+      },
+      "single_engine_function": "SimPractice.computePracticePath",
+      "status": "PASS",
+      "topic_browse": {
+        "digest": "e31293c70ffa5d2c730f320106399331361864254f58f4d164f7929598a0fac3",
+        "length": 4
+      }
+    },
+    "B1_exhausted_exit_dignity": {
+      "panel_text": "N27 Leitnera atkārtošanas intervāli (1 / 3 / 7 dienas): mērķi atgriežas atkārtošanā pēc noteiktā dienu skaita.N20 efemērais variantu ceļš (SimVariantEngine.instantiateEphemeral): neierobežoti atkārtojumi no saimes veidnes bez bankas ierobežojuma.Ģenerēt N20 efemēro variantu Visi šīs tēmas vai filtra derīgie uzdevumi jau ir mēģināti (pieejami 0 no 6). Atgriezieties vēlāk pēc N27 atkārtošanas intervāliem (1 / 3 / 7 dienas) vai izmantojiet N20 efemēro variantu ceļu neierobežotiem atkārtojumiem.",
+      "status": "exhausted"
+    },
+    "B1_grading_chain": {
+      "graded_digest": "1a2027709b9e04d18036fc7753d1c953c7500ce42bf8952f093f619374fd4245",
+      "independent_matches": true,
+      "instance": "COL1-4-4A-A-01",
+      "mastery_digest_after": "31e1be3c15d24075ac1ac606d8e4e51a4e4454ff98b38fdb22c80b31b74e61fa",
+      "mastery_events": 4,
+      "status": "PASS",
+      "verdict": "auto_passed_pending_review"
+    },
+    "B1_hint_and_mode_boundary": {
+      "chain_for_family": null,
+      "exam_error": {
+        "code": "E_MODE_COMPONENT_NOT_ALLOWED",
+        "message": "Komponents \"hint\" nav atļauts režīmā \"exam\"."
+      },
+      "exam_forbids_help": true,
+      "practice_markers": [
+        "hint",
+        "term-lookup",
+        "term-lookup"
+      ],
+      "status": "PASS"
+    },
+    "B1_shortage_triad": {
+      "eligibility": {
+        "length": 4,
+        "pending_excluded": 12,
+        "reason_copy": "Pieejami 4 no 6 uzdevumiem: gaida recenziju (12 neapstiprināti uzdevumi netiek iekļauti)."
+      },
+      "exhausted": {
+        "copy": "Visi šīs tēmas vai filtra derīgie uzdevumi jau ir mēģināti (pieejami 0 no 6). Atgriezieties vēlāk pēc N27 atkārtošanas intervāliem (1 / 3 / 7 dienas) vai izmantojiet N20 efemēro variantu ceļu neierobežotiem atkārtojumiem.",
+        "exits": {
+          "ephemeral_available": true,
+          "ephemeral_option_lv": "N20 efemērais variantu ceļš (SimVariantEngine.instantiateEphemeral): neierobežoti atkārtojumi no saimes veidnes bez bankas ierobežojuma.",
+          "scheduler_intervals_note_lv": "N27 Leitnera atkārtošanas intervāli (1 / 3 / 7 dienas): mērķi atgriežas atkārtošanā pēc noteiktā dienu skaita."
+        },
+        "length": 0
+      },
+      "filter": {
+        "length": 2,
+        "reason_copy": "Pieejami 2 no 6 uzdevumiem: izvēlētais filtrs atstāj 2 derīgus uzdevumus (ceļš netiek mākslīgi papildināts)."
+      },
+      "status": "PASS"
+    },
+    "B1_skip_chain": {
+      "incorrect": 0,
+      "mastery_unchanged": true,
+      "remediation_entries": 0,
+      "skipped": 3,
+      "status": "PASS"
+    },
+    "C1_day_boundary_declared_rule": {
+      "expected_overdue": 1,
+      "observed_overdue": 1,
+      "queue_day10_digest": "c0e2f4317786557d4621922387061f4525e728938318b663db059f9ce2e59b81",
+      "queue_day12_digest": "d2d8b3eedac554c8e3e75e103707af01341a13e569db3c17608186a7b73f4c16",
+      "reason_day10": "overdue",
+      "reason_day12": "overdue",
+      "status": "PASS"
+    },
+    "C1_journey_modules": {
+      "status": "PASS",
+      "steps": [
+        "start",
+        "self_assess",
+        "queue_day10",
+        "path_from_queue",
+        "practice_miss",
+        "practice_end",
+        "day_boundary",
+        "remediation_queue",
+        "remediation_retry",
+        "revision_view"
+      ]
+    },
+    "C1_no_network": {
+      "attempts": 0,
+      "status": "PASS"
+    },
+    "C1_replay_parity": {
+      "fresh_process": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "in_process_rerun": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "journey_digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "mastery_digest": "f646f94353d22d3db1b391b72277b757580f99bc5d7d805beba5a8ee4fb32e2b",
+      "status": "PASS",
+      "store_digest": "76b1ac9b1eacca595ea391695b3873fb27fde335db408ded693b25ac880fd778"
+    },
+    "C1_smoke_vector": {
+      "details": {
+        "examBlocked": true,
+        "incorrectCount": 0,
+        "policyId": "sim-colloq1-practice-paths-v1",
+        "q06ShortageLength": 2,
+        "skippedCount": 2,
+        "topic1Digest": "41483b6565655e6fe13158f5d43c9606667de72ff9d69fdc31eabd210e036e3a",
+        "topic1Length": 6
+      },
+      "status": "PASS"
+    },
+    "artifact": {
+      "n30_vector": {
+        "details": {
+          "examBlocked": true,
+          "incorrectCount": 0,
+          "policyId": "sim-colloq1-practice-paths-v1",
+          "q06ShortageLength": 2,
+          "skippedCount": 2,
+          "topic1Digest": "41483b6565655e6fe13158f5d43c9606667de72ff9d69fdc31eabd210e036e3a",
+          "topic1Length": 6
+        },
+        "id": "SMK-N30-PRACTICE-PATH",
+        "owner": "N30",
+        "reason": null,
+        "status": "PASS"
+      },
+      "passed": 26,
+      "status": "PASS",
+      "total": 26
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "task": "N30",
+  "two_invocation_parity": {
+    "run1_sha256": "018a97139ac99812bba0d5c749961d0f7ac8db6936a96d3e22f24ea89eafcc57",
+    "run2_sha256": "018a97139ac99812bba0d5c749961d0f7ac8db6936a96d3e22f24ea89eafcc57",
+    "status": "PASS"
+  },
+  "validation_summary": {
+    "eligible_counts": {
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 16,
+      "6": 16,
+      "7": 16
+    },
+    "negative_fixtures": {
+      "cases": [
+        {
+          "errors": [
+            "topic 3: declared_length (17) exceeds live eligible instance count (16)"
+          ],
+          "expected": "FAIL",
+          "id": "NEG-N30-OVERLONG-TOPIC-3",
+          "named_topic_3": true,
+          "observed": "FAIL",
+          "rejected": true
+        },
+        {
+          "errors": [
+            "filter_semantics.response_type_vocabulary must declare all 18 response types",
+            "filter_semantics.response_type_vocabulary references unknown type 'Q99'"
+          ],
+          "expected": "FAIL",
+          "id": "NEG-N30-UNKNOWN-RESPONSE-TYPE",
+          "named_q99": true,
+          "observed": "FAIL",
+          "rejected": true
+        },
+        {
+          "errors": [
+            "bounds_rules must enforce no-repeat, current-session exclusion, and no unreviewed padding"
+          ],
+          "expected": "FAIL",
+          "id": "NEG-N30-ALLOW-UNREVIEWED-PADDING",
+          "observed": "FAIL",
+          "rejected": true
+        }
+      ],
+      "status": "PASS"
+    },
+    "policy_id": "sim-colloq1-practice-paths-v1",
+    "shell_touchpoints": {
+      "missing_ids": [],
+      "missing_placeholders": [],
+      "required_ids_checked": 30,
+      "status": "PASS"
+    },
+    "terms_lint": {
+      "copy_keys_checked": 27,
+      "endorsement_hits": [],
+      "missing_copy_keys": [],
+      "n10_terms_status": "PASS",
+      "status": "PASS"
+    },
+    "topic_lengths": {
+      "1": 6,
+      "2": 7,
+      "3": 8,
+      "4": 8,
+      "5": 7,
+      "6": 6,
+      "7": 5
+    },
+    "ts_drift": {
+      "returncode": 0,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "task": "N30",
+  "status": "PASS",
+  "checks": {
+    "A1_policy_live_counts": {
+      "status": "PASS",
+      "live_eligible": {
+        "1": 16,
+        "2": 16,
+        "3": 16,
+        "4": 16,
+        "5": 16,
+        "6": 16,
+        "7": 16
+      },
+      "declared": {
+        "1": 6,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 5
+      },
+      "scratch_errors": [
+        "Tēmas 3 (topic 3) deklarētais ceļa garums (17) pārsniedz derīgo uzdevumu skaitu (16)."
+      ]
+    },
+    "A1_determinism": {
+      "status": "PASS",
+      "declared_digest": "85cd3e7ecd11bce3fff0c9c21ca38ab72481c459f2416d4d512c66694f539f42",
+      "absent_digest": "92dc8e0dbfbe7952a031590acdb73480fa1242368063d9b2b0603dfa70714e19",
+      "declared_mode": "declared",
+      "absent_mode": "absent_family_order",
+      "ordering_monotone": true,
+      "family_order": true
+    },
+    "A1_no_repeat_exclusions": {
+      "status": "PASS",
+      "history_size": 8,
+      "excluded": 8,
+      "path": [
+        "COL1-1-1A-B-01",
+        "COL1-1-1B-B-01",
+        "COL1-1-1C-B-01",
+        "COL1-1-1D-B-01",
+        "COL1-1-1A-D-01",
+        "COL1-1-1B-D-01"
+      ],
+      "session_excluded": [
+        "COL1-1-1A-B-01",
+        "COL1-1-1B-B-01"
+      ],
+      "session_path_excludes": true
+    },
+    "A1_three_entry_points": {
+      "status": "PASS",
+      "scheduler": {
+        "outcome": "P1-01",
+        "length": 4,
+        "digest": "18276358c5c646de1b69b90d24b40fcebb1c49725e23af64d891fbdfedaccc2c"
+      },
+      "topic_browse": {
+        "length": 4,
+        "digest": "e31293c70ffa5d2c730f320106399331361864254f58f4d164f7929598a0fac3"
+      },
+      "remediation_retry": {
+        "family": "FAM-4A",
+        "retry_instance": "COL1-4-4A-B-01",
+        "excluded": [
+          "COL1-4-4A-A-01"
+        ],
+        "digest": "eab38d0450372113929dc01530fcb866dc29a700a0c293d2c2da41f5ce772f0a"
+      },
+      "single_engine_function": "SimPractice.computePracticePath"
+    },
+    "B1_shortage_triad": {
+      "status": "PASS",
+      "eligibility": {
+        "length": 4,
+        "reason_copy": "Pieejami 4 no 6 uzdevumiem: gaida recenziju (12 neapstiprināti uzdevumi netiek iekļauti).",
+        "pending_excluded": 12
+      },
+      "filter": {
+        "length": 2,
+        "reason_copy": "Pieejami 2 no 6 uzdevumiem: izvēlētais filtrs atstāj 2 derīgus uzdevumus (ceļš netiek mākslīgi papildināts)."
+      },
+      "exhausted": {
+        "length": 0,
+        "copy": "Visi šīs tēmas vai filtra derīgie uzdevumi jau ir mēģināti (pieejami 0 no 6). Atgriezieties vēlāk pēc N27 atkārtošanas intervāliem (1 / 3 / 7 dienas) vai izmantojiet N20 efemēro variantu ceļu neierobežotiem atkārtojumiem.",
+        "exits": {
+          "scheduler_intervals_note_lv": "N27 Leitnera atkārtošanas intervāli (1 / 3 / 7 dienas): mērķi atgriežas atkārtošanā pēc noteiktā dienu skaita.",
+          "ephemeral_option_lv": "N20 efemērais variantu ceļš (SimVariantEngine.instantiateEphemeral): neierobežoti atkārtojumi no saimes veidnes bez bankas ierobežojuma.",
+          "ephemeral_available": true
+        }
+      }
+    },
+    "B1_exhausted_exit_dignity": {
+      "status": "exhausted",
+      "panel_text": "N27 Leitnera atkārtošanas intervāli (1 / 3 / 7 dienas): mērķi atgriežas atkārtošanā pēc noteiktā dienu skaita.N20 efemērais variantu ceļš (SimVariantEngine.instantiateEphemeral): neierobežoti atkārtojumi no saimes veidnes bez bankas ierobežojuma.Ģenerēt N20 efemēro variantu Visi šīs tēmas vai filtra derīgie uzdevumi jau ir mēģināti (pieejami 0 no 6). Atgriezieties vēlāk pēc N27 atkārtošanas intervāliem (1 / 3 / 7 dienas) vai izmantojiet N20 efemēro variantu ceļu neierobežotiem atkārtojumiem."
+    },
+    "B1_skip_chain": {
+      "status": "PASS",
+      "skipped": 3,
+      "incorrect": 0,
+      "mastery_unchanged": true,
+      "remediation_entries": 0
+    },
+    "B1_grading_chain": {
+      "status": "PASS",
+      "instance": "COL1-4-4A-A-01",
+      "verdict": "auto_passed_pending_review",
+      "mastery_events": 4,
+      "mastery_digest_after": "31e1be3c15d24075ac1ac606d8e4e51a4e4454ff98b38fdb22c80b31b74e61fa",
+      "independent_matches": true,
+      "graded_digest": "1a2027709b9e04d18036fc7753d1c953c7500ce42bf8952f093f619374fd4245"
+    },
+    "B1_hint_and_mode_boundary": {
+      "status": "PASS",
+      "practice_markers": [
+        "hint",
+        "term-lookup",
+        "term-lookup"
+      ],
+      "exam_error": {
+        "code": "E_MODE_COMPONENT_NOT_ALLOWED",
+        "message": "Komponents \"hint\" nav atļauts režīmā \"exam\"."
+      },
+      "exam_forbids_help": true,
+      "chain_for_family": null
+    },
+    "C1_journey_modules": {
+      "status": "PASS",
+      "steps": [
+        "start",
+        "self_assess",
+        "queue_day10",
+        "path_from_queue",
+        "practice_miss",
+        "practice_end",
+        "day_boundary",
+        "remediation_queue",
+        "remediation_retry",
+        "revision_view"
+      ]
+    },
+    "C1_day_boundary_declared_rule": {
+      "status": "PASS",
+      "queue_day10_digest": "c0e2f4317786557d4621922387061f4525e728938318b663db059f9ce2e59b81",
+      "queue_day12_digest": "d2d8b3eedac554c8e3e75e103707af01341a13e569db3c17608186a7b73f4c16",
+      "expected_overdue": 1,
+      "observed_overdue": 1,
+      "reason_day10": "overdue",
+      "reason_day12": "overdue"
+    },
+    "C1_replay_parity": {
+      "status": "PASS",
+      "journey_digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "in_process_rerun": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "fresh_process": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+      "mastery_digest": "f646f94353d22d3db1b391b72277b757580f99bc5d7d805beba5a8ee4fb32e2b",
+      "store_digest": "76b1ac9b1eacca595ea391695b3873fb27fde335db408ded693b25ac880fd778"
+    },
+    "C1_no_network": {
+      "status": "PASS",
+      "attempts": 0
+    },
+    "artifact": {
+      "status": "PASS",
+      "total": 26,
+      "passed": 26,
+      "n30_vector": {
+        "id": "SMK-N30-PRACTICE-PATH",
+        "owner": "N30",
+        "status": "PASS",
+        "details": {
+          "policyId": "sim-colloq1-practice-paths-v1",
+          "topic1Length": 6,
+          "topic1Digest": "41483b6565655e6fe13158f5d43c9606667de72ff9d69fdc31eabd210e036e3a",
+          "q06ShortageLength": 2,
+          "skippedCount": 2,
+          "incorrectCount": 0,
+          "examBlocked": true
+        },
+        "reason": null
+      }
+    },
+    "C1_smoke_vector": {
+      "status": "PASS",
+      "details": {
+        "policyId": "sim-colloq1-practice-paths-v1",
+        "topic1Length": 6,
+        "topic1Digest": "41483b6565655e6fe13158f5d43c9606667de72ff9d69fdc31eabd210e036e3a",
+        "q06ShortageLength": 2,
+        "skippedCount": 2,
+        "incorrectCount": 0,
+        "examBlocked": true
+      }
+    }
+  },
+  "failures": [],
+  "journey": {
+    "digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+    "steps": 10,
+    "mastery_digest": "f646f94353d22d3db1b391b72277b757580f99bc5d7d805beba5a8ee4fb32e2b",
+    "store_digest": "76b1ac9b1eacca595ea391695b3873fb27fde335db408ded693b25ac880fd778"
+  }
+}

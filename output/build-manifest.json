@@ -1,0 +1,2737 @@
+{
+  "analytics_layer": {
+    "analytics_compacted_js_bytes": 32767,
+    "analytics_module_digest": "0badcad95f97ffdd9fd2fee33e9cd7a398aed05dae83b9b0e4ebb2a3f516d7e5",
+    "bytes": 6673,
+    "digest": "35cab2a540fd4493a19d76591f63126d9068e422869c75b3a84174dc8eeb4e4c",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "f10_status": "rejected-by-policy",
+    "id": "sim-analytics",
+    "inlined_in_artifact": true,
+    "max_events": 200,
+    "runtime_modules": [
+      "src/compiled/store.js",
+      "src/compiled/analytics.js"
+    ],
+    "schema_version": 2,
+    "source": "data/analytics_schema.json",
+    "store_compacted_js_bytes": 30980,
+    "store_module_digest": "06231e4643780c863d407bb8857647e1f70727b4465418122d1edef9e7fbd44e",
+    "typescript_sources": [
+      "src/store.ts",
+      "src/analytics.ts"
+    ]
+  },
+  "artifact": "simulator-build-manifest",
+  "bank_island": {
+    "bytes": 249798,
+    "digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "embedded_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-bank",
+    "projection": {
+      "audit_trail": [
+        "data/bank/*.json",
+        "evidence/N20_REVIEW_WORKFLOW.json",
+        "evidence/N20_RECOMPUTE_RECORD.json",
+        "evidence/N20_LEAK_SCAN_RECORD.json"
+      ],
+      "dropped_extension_fields": [
+        "draws",
+        "derived",
+        "review_workflow"
+      ],
+      "reason": "The drawn values, the derived values and the review workflow record are the audit trail. They stay in the frozen bank files and in the N20 evidence records; the artifact embeds the runtime projection so that the Section 1.3 budget (700–1400 KiB total) holds."
+    },
+    "questions_count": 112,
+    "review_gate": "N20 bank_review (order 16): every instance must be in the accepted review state; the gate refuses the build otherwise.",
+    "source": "/home/robertsrff/Chemistry_Med/Chemistry_1st_coriculum/data/bank",
+    "source_digest": "1c263cdb37396f0eb910c52cf9e6a0b30725533358d57fd7de85c4b58c78acb6",
+    "status": "frozen-reviewed-bank"
+  },
+  "build_id": "cfa4e986b05ca3d6",
+  "build_policy": "N31 idempotent single-file build pipeline (data/build_policy.json v1.0.0-n31): 22 canonical JSON islands + 4 JS data projections + 37 topologically ordered inlined runtime modules (with /* === MODULE: <path> === */ boundaries) + CSS/SVG layers + deterministic SHA-256 composite stamp + 28 build gates (coverage through artifact_contract)",
+  "chains_island": {
+    "bytes": 71253,
+    "chain_count": 14,
+    "digest": "4b61010688da6805687f23ed2c7aa6c15949a26c966778ab4c23db0969626c27",
+    "id": "sim-chains",
+    "sealed": true,
+    "source": "data/chains.json",
+    "step_count": 69
+  },
+  "composite_digest": "cfa4e986b05ca3d67a4eaa35144bd5d693edbc5b963e97f79c19ab561cb63a90",
+  "composition_table": {
+    "artifact_total_bytes": 2834200,
+    "bank_island_bytes": 249798,
+    "budgets": [
+      {
+        "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N34 ir 2826711 B, tāpēc izpildītais griests ir 2780 KiB. N34 pievieno vienota avota statisko <noscript> saturu (64 jēdzieni, metodika, 673 terminu tabula un godīgo ierobežojumu paziņojums: ~133,8 KiB), pilno @media print slāni un F04 papīra darba lapas moduli (SimPaper); izmērītais artefakts ~2,760 KiB, griests fiksēts uz 2,780 KiB.",
+        "bytes": 2834200,
+        "declared_max_bytes": 1433600,
+        "kib": 2767.8,
+        "max_bytes": 2846720,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 99.56,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N31 ir 1152126 B, tāpēc izpildītais griests ir 1168 KiB. N31 galīgais vienfaila būves lēmums inline'o visus 11 IV–V fāzes dzinēju, ievades un vērtēšanas runtime moduļus (quantity-engine.js, graph-scoring-engine.js, graph-capture.js, method-engine.js, method-card-view.js, variant-engine.js, inputs/{registry,components,integration}.js, grading.js, feedback.js) ar moduļu robežkomentāriem un SMK-N31-BUILD-CONTRACT dūmu vektoru, kamēr 308,6 KiB ģeneratora šabloni (src/variant-templates.js) paliek ārpus artefakta. Izmērītais runtime JS ir 1,152,126 B (1,125,1 KiB); griests fiksēts uz 1,168 KiB.",
+        "bytes": 1192024,
+        "declared_max_bytes": 225280,
+        "kib": 1164.1,
+        "max_bytes": 1196032,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 99.66,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 67997,
+        "declared_max_bytes": 81920,
+        "kib": 66.4,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 83.0,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 249798,
+        "declared_max_bytes": 430080,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 142579,
+        "declared_max_bytes": 143360,
+        "kib": 139.2,
+        "max_bytes": 143360,
+        "min_bytes": 61440,
+        "name": "figures_island",
+        "share_percent_of_max": 99.46,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      }
+    ],
+    "css_bytes": 67997,
+    "embedded_js_data_bytes": 73830,
+    "executable_script_total_bytes": 1265855,
+    "failed_segments": [],
+    "figures_island_bytes": 142579,
+    "island_bytes_by_id": {
+      "sim-analytics": 6673,
+      "sim-bank": 249798,
+      "sim-chains": 71253,
+      "sim-conventions": 111641,
+      "sim-coverage": 46502,
+      "sim-engines": 12814,
+      "sim-exam-policy": 14237,
+      "sim-feedback-classification": 63716,
+      "sim-figures": 142579,
+      "sim-forms": 16067,
+      "sim-golden-vectors": 91739,
+      "sim-grading-policy": 12143,
+      "sim-graph-scoring": 39318,
+      "sim-mastery-policy": 10378,
+      "sim-method-cards": 109919,
+      "sim-method-engine": 22448,
+      "sim-practice-policy": 7163,
+      "sim-remediation-policy": 4208,
+      "sim-response-types": 34962,
+      "sim-revision-policy": 4338,
+      "sim-scheduler-policy": 5161,
+      "sim-terms": 250451
+    },
+    "islands_total_bytes": 1327508,
+    "other_islands_bytes": 935131,
+    "runtime_js_code_bytes": 1192024,
+    "segments": [
+      {
+        "bytes": 249798,
+        "declared_band_bytes": [
+          204800,
+          430080
+        ],
+        "description": "Frozen #sim-bank JSON island (112 reviewed instances across 28 families)",
+        "enforced_ceiling_bytes": 430080,
+        "kib": 243.9,
+        "segment": "bank_island",
+        "share_percent_of_artifact": 8.81,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 142579,
+        "declared_band_bytes": [
+          61440,
+          143360
+        ],
+        "description": "Declarative SVG figure specs (#sim-figures, 45 T1–T7 records)",
+        "enforced_ceiling_bytes": 143360,
+        "kib": 139.2,
+        "segment": "figures_island",
+        "share_percent_of_artifact": 5.03,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 935131,
+        "declared_band_bytes": null,
+        "description": "Remaining 20 JSON islands (coverage, conventions, forms, golden vectors, terms, analytics, policies, chains, engines, method cards, grading)",
+        "enforced_ceiling_bytes": null,
+        "kib": 913.2,
+        "segment": "other_islands",
+        "share_percent_of_artifact": 32.99,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 1192024,
+        "declared_band_bytes": [
+          122880,
+          225280
+        ],
+        "description": "37 inlined runtime JS modules + bootstrap + module boundary comments",
+        "enforced_ceiling_bytes": 1196032,
+        "kib": 1164.1,
+        "segment": "runtime_js_code",
+        "share_percent_of_artifact": 42.06,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 73830,
+        "declared_band_bytes": null,
+        "description": "4 canonical JS data projection globals (COVERAGE_INVARIANTS, CONCEPT_DRAWER_DATA, ANCHOR_REGISTRY, RECALL_LAYERS_DATA)",
+        "enforced_ceiling_bytes": null,
+        "kib": 72.1,
+        "segment": "embedded_js_data",
+        "share_percent_of_artifact": 2.6,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 67997,
+        "declared_band_bytes": [
+          40960,
+          81920
+        ],
+        "description": "Inline <style> block (src/tokens.css + src/styles.css)",
+        "enforced_ceiling_bytes": 81920,
+        "kib": 66.4,
+        "segment": "css",
+        "share_percent_of_artifact": 2.4,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 172840,
+        "declared_band_bytes": null,
+        "description": "HTML5 skeleton markup, Latvian copy, meta digest tags, and <script>/<style> wrappers",
+        "enforced_ceiling_bytes": null,
+        "kib": 168.8,
+        "segment": "template_overhead",
+        "share_percent_of_artifact": 6.1,
+        "within_ceiling": true
+      },
+      {
+        "bytes": 2834200,
+        "declared_band_bytes": [
+          716800,
+          1433600
+        ],
+        "description": "Complete single-file deliverable output/simulator.html",
+        "enforced_ceiling_bytes": 2846720,
+        "kib": 2767.8,
+        "segment": "artifact_total",
+        "share_percent_of_artifact": 100.0,
+        "within_ceiling": true
+      }
+    ],
+    "status": "PASS",
+    "template_overhead_bytes": 172840
+  },
+  "concept_map_layer": {
+    "concept_drawer_js_bytes": 20740,
+    "concept_map_js_bytes": 17692,
+    "embedded_registry_bytes": 10599,
+    "embedded_summaries_bytes": 34537,
+    "layout_digest": "3a43d26087bc177e60cf7b3606b8368397a00d7a79ef119a1d6355625e3be913",
+    "registry_bytes": 39456,
+    "registry_digest": "053d8cc4aa941430c9c1e402f095c314c41dc6d3c6c703c737fe346cb91206de",
+    "registry_source": "data/anchor_registry.json",
+    "summaries_bytes": 82750,
+    "summaries_digest": "652b7dbe40201cc6036142bb2fc8d706de4ca4cc5d040b756defe56c37a07753",
+    "summaries_source": "data/concept_summaries.json"
+  },
+  "conventions_island": {
+    "bytes": 111639,
+    "digest": "a815d77696bfe5d6820f25dc7564035980927338b183346346f0d635cec1120e",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-conventions",
+    "source": "data/conventions.json"
+  },
+  "engines_island": {
+    "bytes": 12814,
+    "digest": "503d74683f495b906c97ec99b73693aba5b65a073e0c2a52d2e676d0b8714a14",
+    "engine_count": 2,
+    "error_class_count": 4,
+    "id": "sim-engines",
+    "inlined_in_artifact": true,
+    "runtime_module": "src/quantity-engine.js",
+    "source": "data/engine_taxonomy.json",
+    "vector_count": 9
+  },
+  "exam_shell_layer": {
+    "advisory_limit_seconds": 10800,
+    "bytes": 14237,
+    "conflicts": [
+      {
+        "id": "N21-C01",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N21",
+        "resolution_lv": "Grafikas klase nes gan Q11 ieraksta, gan plot_state variantus, tāpēc planas forma ir pieejama; tipa saiste ar Q18 seko N04 shēmai (option_select). Ceļa norāde netiek klusējusi pielīgota.",
+        "roadmap_label": "N21 uzdevuma tekstā Q18 minēts kā \"plot state\"",
+        "schema_label": "N04 shēma saista Q18 ar option_select klasi",
+        "topic": "Q18 atbildes veids"
+      },
+      {
+        "id": "N21-C02",
+        "label": "DOCUMENTED-AND-RE-BUDGETED",
+        "owner": "N21",
+        "resolution_lv": "AGENTS.md atļauj budžetu noteikt pēc izmērītajām prasībām, nevis pēc mantotās grāmatu mantras. N21 paceļ izmērīto JS griestu no 232 KiB uz 264 KiB (mērījums 266,616 B). Mērīšanas pamats un atkāpe no deklarētās joslas ir fiksēta failā tools/byte_budget.py un N21 verifikācijas ierakstā. Deklarētā josla 120–220 KiB ir pārsniegta, un tas nav klusējami pielāgots.",
+        "roadmap_label": "Plāna 1.3 sadaļas josla: inline runtime JS 120–220 KiB",
+        "schema_label": "Izmērītais inline runtime JS pēc N21 ir 266,616 B (260,4 KiB); izpildītais griests ir 264 KiB",
+        "topic": "Runtime JS izmērs"
+      },
+      {
+        "id": "N21-C03",
+        "label": "DOCUMENTED-AND-RE-BUDGETED",
+        "owner": "N21",
+        "resolution_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots, un kopējais apjoms pārsniedza plāna joslu, kura jau N20 laikā bija 95,9 % izlietota. N21 pārbālansēja griestu uz izmērījumu (tools/byte_budget.py) un atkāpi fiksēja kā konfliktu, nevis klusējami. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31; N22–N25 jāmēra savs pieprasījums.",
+        "roadmap_label": "Plāna 1.3 sadaļas josla: artefakts kopā 700–1400 KiB",
+        "schema_label": "Izmērītais artefakts pēc N21 ir 1,403,1 KiB, kas pārsniedz deklarēto 1,400 KiB joslu par aptuveni 3 KiB; izpildītais griests ir 1,440 KiB",
+        "topic": "Artefakta kopējais apjoms"
+      }
+    ],
+    "digest": "5c72408c203e7684d7bfd4b85250157ddd83fb4a8ea6d1fafafa1dd1f3d25df1",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "error_ids": [
+      "E_SESSION_INVALID_EVENT",
+      "E_SESSION_INVALID_TRANSITION",
+      "E_SESSION_NOT_STARTED",
+      "E_SESSION_ALREADY_STARTED",
+      "E_SESSION_REVIEW_REQUIRED",
+      "E_SESSION_CONFIRMATION_REQUIRED",
+      "E_SESSION_LATE_WRITE",
+      "E_SESSION_EXPIRED_WRITE",
+      "E_SESSION_ABORTED_WRITE",
+      "E_SESSION_TERMINAL",
+      "E_SESSION_UNKNOWN_SLOT",
+      "E_SESSION_FORM_INVALID",
+      "E_SESSION_PAYLOAD_INVALID",
+      "E_SESSION_SERIALIZE_INVALID",
+      "E_SESSION_MISSING_POLICY"
+    ],
+    "exam_js_bytes": 32918,
+    "exam_module_digest": "b4b316a8a70d1905af8c27432bd0854174476bdd65801ec8d25b0e984130902d",
+    "id": "sim-exam-policy",
+    "inlined_in_artifact": true,
+    "modes": [
+      "exam",
+      "practice"
+    ],
+    "named_variants": {
+      "Q11_record": {
+        "kind": "graph",
+        "variant": "record"
+      },
+      "Q13_vector": {
+        "kind": "method",
+        "variant": "vector"
+      },
+      "Q17_pairs": {
+        "kind": "method",
+        "variant": "pairs"
+      },
+      "Q18_plot_state": {
+        "kind": "graph",
+        "variant": "plot_state"
+      }
+    },
+    "note": "The N21 session machine and exam shell are authored in strict TypeScript and compiled to local JavaScript by tools/compile_n21_ts.py; build gate 17 (exam_shell) refuses a build whose compiled modules differ from their sources.",
+    "payload_contracts": {
+      "graph": {
+        "field_types": {
+          "variant": "raw_string"
+        },
+        "kind": "graph",
+        "note_lv": "Grafika ieraksts (Q11) vai zīmējuma stāvoklis (plot_state).",
+        "required": [
+          "variant"
+        ],
+        "value_type": "raw_string"
+      },
+      "matching": {
+        "field_types": {
+          "pairs": "pair_list"
+        },
+        "kind": "matching",
+        "note_lv": "Pāri tiek glabāti tādi, kā tos izkārtotja.",
+        "required": [
+          "pairs"
+        ],
+        "value_type": "pair_list"
+      },
+      "method": {
+        "field_types": {
+          "variant": "raw_string"
+        },
+        "kind": "method",
+        "note_lv": "Metodes vektors (Q13) vai pāri (Q17).",
+        "required": [
+          "variant"
+        ],
+        "value_type": "raw_string"
+      },
+      "numeric": {
+        "field_types": {
+          "values": "raw_string_map"
+        },
+        "kind": "numeric",
+        "note_lv": "Skaitļi tiek glabāti tādi, kā tos ievadīja; parsēšana pieder vērtēšanai.",
+        "required": [
+          "values"
+        ],
+        "value_type": "raw_string_map"
+      },
+      "option_select": {
+        "field_types": {
+          "justification": "raw_string",
+          "selected": "string_list"
+        },
+        "kind": "option_select",
+        "note_lv": "Izvēles identifikatori un brīvais pamatojums.",
+        "required": [
+          "selected"
+        ],
+        "value_type": "string_list"
+      },
+      "ordering": {
+        "field_types": {
+          "order": "string_list"
+        },
+        "kind": "ordering",
+        "note_lv": "Secība tiek glabāta tāda, kā to izkārtotja.",
+        "required": [
+          "order"
+        ],
+        "value_type": "string_list"
+      },
+      "raw_text": {
+        "field_types": {
+          "text": "raw_string"
+        },
+        "kind": "raw_text",
+        "note_lv": "Neapstrādats ievades teksts, kamēr N22 tipa komponenti nav pievienoti.",
+        "required": [
+          "text"
+        ],
+        "value_type": "raw_string"
+      }
+    },
+    "points_total": 100,
+    "runtime_modules": [
+      "src/compiled/session.js",
+      "src/compiled/exam.js"
+    ],
+    "session_events": [
+      "start",
+      "navigate",
+      "flag",
+      "answer",
+      "request-review",
+      "submit",
+      "expire",
+      "abort"
+    ],
+    "session_js_bytes": 12398,
+    "session_module_digest": "eae0fb094e10bc14dd0abfad33c35d6d0c3700ef3c09ea3b6c5b217273bd97b0",
+    "session_states": [
+      "not-started",
+      "running",
+      "review",
+      "submitted",
+      "expired",
+      "aborted"
+    ],
+    "slot_count": 21,
+    "slots": [
+      {
+        "points": 3,
+        "slot_id": "S1-1",
+        "topic": 1
+      },
+      {
+        "points": 3,
+        "slot_id": "S1-2",
+        "topic": 1
+      },
+      {
+        "points": 4,
+        "slot_id": "S1-3",
+        "topic": 1
+      },
+      {
+        "points": 4,
+        "slot_id": "S2-1",
+        "topic": 2
+      },
+      {
+        "points": 4,
+        "slot_id": "S2-2",
+        "topic": 2
+      },
+      {
+        "points": 4,
+        "slot_id": "S2-3",
+        "topic": 2
+      },
+      {
+        "points": 6,
+        "slot_id": "S3-1",
+        "topic": 3
+      },
+      {
+        "points": 6,
+        "slot_id": "S3-2",
+        "topic": 3
+      },
+      {
+        "points": 8,
+        "slot_id": "S3-3",
+        "topic": 3
+      },
+      {
+        "points": 4,
+        "slot_id": "S4-1",
+        "topic": 4
+      },
+      {
+        "points": 5,
+        "slot_id": "S4-2",
+        "topic": 4
+      },
+      {
+        "points": 6,
+        "slot_id": "S4-3",
+        "topic": 4
+      },
+      {
+        "points": 4,
+        "slot_id": "S5-1",
+        "topic": 5
+      },
+      {
+        "points": 6,
+        "slot_id": "S5-2",
+        "topic": 5
+      },
+      {
+        "points": 6,
+        "slot_id": "S5-3",
+        "topic": 5
+      },
+      {
+        "points": 4,
+        "slot_id": "S6-1",
+        "topic": 6
+      },
+      {
+        "points": 5,
+        "slot_id": "S6-2",
+        "topic": 6
+      },
+      {
+        "points": 6,
+        "slot_id": "S6-3",
+        "topic": 6
+      },
+      {
+        "points": 3,
+        "slot_id": "S7-1",
+        "topic": 7
+      },
+      {
+        "points": 4,
+        "slot_id": "S7-2",
+        "topic": 7
+      },
+      {
+        "points": 5,
+        "slot_id": "S7-3",
+        "topic": 7
+      }
+    ],
+    "source": "data/exam_policy.json",
+    "threshold_ratio": 0.9,
+    "timer": {
+      "advisory_limit_seconds": 10800,
+      "basis_lv": "Limīts ir 180 minūtes, t. i. programmas maksimums, izmantots kā izglītojošs treniņa limīts; 170 + 10 minūšu sadalījums ir PROPOSED.",
+      "clock": "monotonic",
+      "hidden_tab": "keeps_counting",
+      "review_seconds": 600,
+      "threshold_ratio": 0.9,
+      "working_seconds": 10200
+    },
+    "transition_count": 48,
+    "typescript_sources": [
+      "src/session.ts",
+      "src/exam.ts"
+    ],
+    "view_discipline": {
+      "default_mode": "practice",
+      "modes": {
+        "exam": {
+          "allowed_components": [
+            "input",
+            "timer",
+            "navigator",
+            "map",
+            "review"
+          ],
+          "forbidden_components": [
+            "hint",
+            "chain",
+            "method-card",
+            "term-lookup"
+          ]
+        },
+        "practice": {
+          "allowed_components": [
+            "input",
+            "timer",
+            "navigator",
+            "map",
+            "review",
+            "hint",
+            "chain",
+            "method-card",
+            "term-lookup"
+          ],
+          "forbidden_components": []
+        }
+      },
+      "unregistered_component_error": "E_MODE_COMPONENT_NOT_ALLOWED"
+    }
+  },
+  "figures_island": {
+    "burette_geometry_count": 6,
+    "bytes": 142579,
+    "calibration_contract_digest": "53bf121a156920b85b852ea7ac3faa9736fb3fbace3bb2eb136f81bd446767f8",
+    "curve_generation_count": 20,
+    "digest": "b641fd113a3acac618a04da60f17d1f9c56aa5aa12b703e9b98e9bd6ac2655fe",
+    "dilution_arithmetic_count": 4,
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "energy_contract_digest": "d499f1350c87f98fbbf64076007686469be2010c7e91fddea1111acc3710219e",
+    "figure_framework_js_bytes": 55306,
+    "figures_count": 45,
+    "hess_cycle_count": 4,
+    "id": "sim-figures",
+    "kinetics_contract_digest": "50f9ee2b596f6d28e4d828c1abf1276fe902517b82b0397338fc74ca2f2abc5d",
+    "kinetics_span_count": 4,
+    "kinetics_tolerance_count": 4,
+    "kinetics_transform_count": 4,
+    "leak_scan_exempt_count": 10,
+    "leak_scan_flags_count": 0,
+    "leak_scan_js_bytes": 10773,
+    "leak_scan_status": "PASS",
+    "mb_honesty_count": 2,
+    "reading_contract_digest": "e12f868229f8effafdfad329b931244ff0d002fbbf814f8795e3f35fb1408075",
+    "recomputed_count": 55,
+    "sources": [
+      "data/figures_t12.json",
+      "data/figures_t23.json",
+      "data/figures_t4.json",
+      "data/figures_t5.json",
+      "data/figures_t67.json"
+    ],
+    "t12_slots_closed": 18,
+    "t23_slots_closed": 12,
+    "t4_slots_closed": 11,
+    "t5_slots_closed": 9,
+    "t67_slots_closed": 13,
+    "titration_contract_digest": "6a99319281522c101d3618e6e2e0c99f880281ced28cf9163fda11578225117f"
+  },
+  "forms_island": {
+    "assembly_module": {
+      "compacted_js_bytes": 39806,
+      "inlined_in_artifact": true,
+      "module_digest": "551b56bdf39141a5bb6568f38c092ad0cf652d3addd2668c94d88181224ef9e5",
+      "runtime_module": "src/compiled/assembly.js",
+      "typescript_source": "src/assembly.ts"
+    },
+    "bank_digest": "07fec72a5484bd8e9bf705e2127f3a5b482d5b65c59c32fbee7ab2cd3299bac1",
+    "bytes": 16067,
+    "conflicts": [
+      {
+        "bank_rubric_points": 9,
+        "id": "N23-C01",
+        "note_lv": "FAM-7C un FAM-7D bankas rubrikas nes 9 punktus, kamēr S7-3 plāna vieta nosaka 5 punktus; montāža izmanto slota punktu skalu (kopā 100) un saglabā konfliktu redzamu.",
+        "slot_id": "S7-3",
+        "slot_points": 5,
+        "status": "documented-and-visible"
+      },
+      {
+        "flexible_slots_count": 7,
+        "id": "N24-C01",
+        "note_lv": "Plāns docs/SIMULATION_BLUEPRINT.json 14 vietām atļauj tikai vienu saimi, tāpēc tajās formas A/B/C rotē variantus (instances); 7 elastīgajās vietās neviena saime neatkārtojas visās 3 formās.",
+        "singleton_slots_count": 14,
+        "status": "documented-and-visible"
+      }
+    ],
+    "digest": "61df93c0390a0a0f8ec1b22814cf7d106a25e6c794cf1941ddd7b5d22de72f1f",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "forms_count": 3,
+    "id": "sim-forms",
+    "manifests": {
+      "A": {
+        "bytes": 4947,
+        "form_seed": "100001",
+        "manifest_digest": "b1ac2f07085b244eea29cae721d3a205cd2dd9cd076983f303d1a503ef0e08e0",
+        "path": "output/forms/form_A.json",
+        "sha256": "0bb4e1bf161d57fc933155c6e6e0f41cd97362db2780eb34dbe2ac27d9eea98b",
+        "total_points": 100,
+        "total_slots": 21
+      },
+      "B": {
+        "bytes": 4906,
+        "form_seed": "100002",
+        "manifest_digest": "55531768cd785997773ebc69949c9dba6aff7508f5de5af28fd4f454c62e2541",
+        "path": "output/forms/form_B.json",
+        "sha256": "26e643d219156e6f84878221bb82c1a7f368407c1e9d852f51a2e4d183c902d8",
+        "total_points": 100,
+        "total_slots": 21
+      },
+      "C": {
+        "bytes": 4908,
+        "form_seed": "100003",
+        "manifest_digest": "5781f7973c006497c41da05e646d0f1a28f7e911e5b50f50609da65a04172d42",
+        "path": "output/forms/form_C.json",
+        "sha256": "11c7b5b85511390cdd17af2bed87159c8177fac08058250c8471cf14b380e2b4",
+        "total_points": 100,
+        "total_slots": 21
+      }
+    },
+    "policy_id": "splitmix64-u64-v1",
+    "prng_contract_digest": "e4f3dc62b66fea851e7be83afb6b28c75d9435163a93a87dca159d02c3dce5f3",
+    "shortages_count": 0
+  },
+  "gates": [
+    {
+      "id": "coverage",
+      "order": 1,
+      "owner": "N02",
+      "status": "PASS",
+      "summary": "PASS coverage-island: 64 outcomes (9/10/11/11/10/8/5); 127 prerequisite edges (20 cross-topic); cycle=None; anchors 64/64 resolved"
+    },
+    {
+      "id": "conventions",
+      "order": 2,
+      "owner": "N03",
+      "status": "PASS",
+      "summary": "PASS conventions: 10 elements, 23 compounds, 10 constants, 36 conversions, 9 chains, 18 tolerance classes, 12 V + 10 C conflicts, 7 vectors"
+    },
+    {
+      "id": "bank",
+      "order": 3,
+      "owner": "N04",
+      "status": "PASS",
+      "summary": "PASS bank-schema: 18 types, 6 payload classes, 28 files, 112 instances, 0 violations"
+    },
+    {
+      "id": "golden_vectors",
+      "order": 4,
+      "owner": "N05",
+      "status": "PASS",
+      "summary": "PASS golden-vectors: 40 active vectors, 0 retired, 7 topics, 11 types, 0 errors"
+    },
+    {
+      "id": "tokens",
+      "order": 5,
+      "owner": "N06",
+      "status": "PASS",
+      "summary": "tokens PASS: 26 semantic tokens x 3 themes, 27 pairs checked, 0 raw-value findings"
+    },
+    {
+      "id": "n06_shell",
+      "order": 6,
+      "owner": "N06",
+      "status": "PASS",
+      "summary": "n06_shell PASS: lang=lv, anchors=10/10, islands=22/8, scripts=1, urls=0, css=68000B, js_code=1192024B (script=1265855B), fig=142579B, total=2834200B"
+    },
+    {
+      "id": "concept_map",
+      "order": 7,
+      "owner": "N07",
+      "status": "PASS",
+      "summary": "concept_map PASS: 64 nodes, 127 edges (20 cross-topic), anchors 64/64, registry 64/64, slots 192/192"
+    },
+    {
+      "id": "recall_layers",
+      "order": 8,
+      "owner": "N08",
+      "status": "PASS",
+      "summary": "recall_layers: PASS | authored=24/28 gaps=4 leaks=0 lint=123 strings"
+    },
+    {
+      "id": "terminology",
+      "order": 9,
+      "owner": "N10",
+      "status": "PASS",
+      "summary": "terminology: PASS | entries=673 (terms=206, quantities=31, instruments=13, interface=413, iupac=10) | units=481 keys=232 exempt_prose=381"
+    },
+    {
+      "id": "figures",
+      "order": 10,
+      "owner": "N11",
+      "status": "PASS",
+      "summary": "figures PASS: records=45, slots_closed=N11:18/18+N12:12/12+N13:11/11+N14:9/10+N15:13/13, recomputed=55, curves=20, hess=4, mb=2, t5_transforms=4, t5_tol=4, t5_span=4, t67_models=5, t67_readings=3, labels=272, units=95, bytes=142579"
+    },
+    {
+      "id": "figure_leak_scan",
+      "order": 11,
+      "owner": "N12",
+      "status": "PASS",
+      "summary": "leak_scan PASS: figures=45 (gradeable=7, exempt=10), flags=0, n08_leaks=0"
+    },
+    {
+      "id": "chains",
+      "order": 12,
+      "owner": "N16",
+      "status": "PASS",
+      "summary": "14 chains, 69 steps (50 numeric), recompute 50/50, citations 128 conventions/87 anchors, leaks 0+0, planted PASS, 71253 B projection"
+    },
+    {
+      "id": "engines",
+      "order": 13,
+      "owner": "N17",
+      "status": "PASS",
+      "summary": "PASS engines: 40/40 N05 vectors, 20/20 N17 vectors, 4 error classes, no-local-constants PASS, 0 errors"
+    },
+    {
+      "id": "graph_scoring",
+      "order": 14,
+      "owner": "N18",
+      "status": "PASS",
+      "summary": "PASS graph scoring: 3/3 N05 reading, 14/14 S3-N18, 5/5 validity, 6/6 payload, 7/7 parity, 4/4 replay, 6/6 keyboard, 1/1 keyboard scratch, 2/2 scratch, 0 errors"
+    },
+    {
+      "id": "method_cards",
+      "order": 15,
+      "owner": "N19",
+      "status": "PASS",
+      "summary": "PASS"
+    },
+    {
+      "id": "bank_review",
+      "order": 16,
+      "owner": "N20",
+      "status": "PASS",
+      "summary": "N20 bank review: 112 instances, 0 review violations"
+    },
+    {
+      "id": "exam_shell",
+      "order": 17,
+      "owner": "N21",
+      "status": "PASS",
+      "summary": "N21 exam shell: 48 session transitions, 21 slots, 100 points, advisory limit 10800s"
+    },
+    {
+      "id": "response_inputs",
+      "order": 18,
+      "owner": "N22",
+      "status": "PASS",
+      "summary": "N22 response inputs: 0 response types, 0 completed types, 34962 island bytes"
+    },
+    {
+      "id": "grading",
+      "order": 19,
+      "owner": "N23",
+      "status": "PASS",
+      "summary": "N23 grading: 6 verdict classes, 4 score forms, 12143 policy-island bytes, 88 classification rows"
+    },
+    {
+      "id": "form_assembly",
+      "order": 20,
+      "owner": "N24",
+      "status": "PASS",
+      "summary": "N24 form_assembly: 3 forms (21 slots, 100 pts each), 16067 island bytes, parity=PASS"
+    },
+    {
+      "id": "analytics",
+      "order": 21,
+      "owner": "N25",
+      "status": "PASS",
+      "summary": "N25 analytics: schema v2 (6673B), touchpoints 27/27, ts_drift=PASS"
+    },
+    {
+      "id": "mastery",
+      "order": 22,
+      "owner": "N26",
+      "status": "PASS",
+      "summary": "N26 mastery: 5 states (10378B), criteria=267, touchpoints 11/11, ts_drift=PASS"
+    },
+    {
+      "id": "scheduler",
+      "order": 23,
+      "owner": "N27",
+      "status": "PASS",
+      "summary": "N27 scheduler: 3 boxes, cap=5 (5161B), terms=PASS, touchpoints 9/9, ts_drift=PASS"
+    },
+    {
+      "id": "remediation",
+      "order": 24,
+      "owner": "N28",
+      "status": "PASS",
+      "summary": "N28 remediation: mode=confirm_required, recommend_only=True (4208B), terms=PASS, touchpoints 12/12, ts_drift=PASS"
+    },
+    {
+      "id": "revision",
+      "order": 25,
+      "owner": "N29",
+      "status": "PASS",
+      "summary": "PASS"
+    },
+    {
+      "id": "practice",
+      "order": 26,
+      "owner": "N30",
+      "status": "PASS",
+      "summary": "practice PASS: policy=7163B lengths={'1': 6, '2': 7, '3': 8, '4': 8, '5': 7, '6': 6, '7': 5} neg=3/3"
+    },
+    {
+      "id": "build_policy",
+      "order": 27,
+      "owner": "N31",
+      "status": "PASS",
+      "summary": "build_policy PASS: policy=n31-single-file-build-policy-v1 modules=39 edges=138 islands=22 filled=102"
+    },
+    {
+      "id": "artifact_contract",
+      "order": 28,
+      "owner": "N31",
+      "status": "PASS",
+      "summary": "artifact_contract PASS: bytes=2834200 (2767.8 KiB) lang=lv anchors=9/9 core_islands=7/7 all_islands=22/22 scripts=1 ext_urls=0"
+    },
+    {
+      "id": "wcag_contract",
+      "order": 29,
+      "owner": "N32",
+      "status": "PASS",
+      "summary": "wcag_contract PASS: 27 pairs x 3 themes, 15 targets, 0 hex findings, 120 reflow checks"
+    },
+    {
+      "id": "a11y_contract",
+      "order": 30,
+      "owner": "N33",
+      "status": "PASS",
+      "summary": "a11y_contract PASS: controls=49 name_errors=0 components_18=18/18 landmarks=True live_regions=True collision_fix=True escape_fix=True typing_fix=True empty_label_fix=True"
+    }
+  ],
+  "golden_vectors_island": {
+    "bytes": 91739,
+    "digest": "27b0a0d2e5fac091160bbf7163f05ae935052e38ba5af728f390de09213eca88",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-golden-vectors",
+    "source": "data/golden_vectors.json",
+    "vectors_count": 40
+  },
+  "grading_layer": {
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "ids": [
+      "sim-grading-policy",
+      "sim-feedback-classification"
+    ],
+    "inlined_in_artifact": true,
+    "islands": [
+      {
+        "bytes": 12143,
+        "digest": "6e252cadcfe23d26ec9bf1d36339cade549db2d15418e8ef7653a4384af9ed5c",
+        "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+        "id": "sim-grading-policy",
+        "inlined_in_artifact": true,
+        "source": "data/grading_policy.json"
+      },
+      {
+        "bytes": 63716,
+        "digest": "dbb3fc84fc9fd1f508a473f69852e0b96989c340a204def62d60a90870b6a3f8",
+        "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+        "id": "sim-feedback-classification",
+        "inlined_in_artifact": true,
+        "source": "data/feedback_classification.json"
+      }
+    ],
+    "module_files": [
+      {
+        "bytes": 78366,
+        "path": "src/grading.ts",
+        "sha256": "79526fb586bb15bfe15fff0337cd8e819d5d9bc440e8d4f74410f7d2cef5d5aa"
+      },
+      {
+        "bytes": 66694,
+        "path": "src/feedback.ts",
+        "sha256": "1abc6b2928a9c8c94cbcb1232a64a954bff8f53c50d87b0ac72026d92ac988ef"
+      },
+      {
+        "bytes": 79582,
+        "path": "src/compiled/grading.js",
+        "sha256": "c451545de08300523e0f2b7f958804502781248a9ba20baeb63b844dff5e889d"
+      },
+      {
+        "bytes": 62328,
+        "path": "src/compiled/feedback.js",
+        "sha256": "bc02c7d5e6db4ec0ff5524b66ead3e0f7de44f0457ddc46517dfd11cb7965c54"
+      }
+    ],
+    "note": "N31 inlines the N23 grading (src/compiled/grading.js) and feedback (src/compiled/feedback.js) modules into the single-file artifact alongside the two policy islands (#sim-grading-policy and #sim-feedback-classification).",
+    "runtime_modules": [
+      "src/compiled/grading.js",
+      "src/compiled/feedback.js"
+    ],
+    "typescript_sources": [
+      "src/grading.ts",
+      "src/feedback.ts"
+    ]
+  },
+  "graph_scoring_island": {
+    "bytes": 39318,
+    "capture_contexts": 6,
+    "capture_module": "src/graph-capture.js",
+    "digest": "938264ab6d7b3e593c6afa41a3eafb2da76e8013b5f25a974e15d92dd876e379",
+    "drawing_vectors": 7,
+    "id": "sim-graph-scoring",
+    "inlined_in_artifact": true,
+    "reading_vectors": 7,
+    "runtime_module": "src/graph-scoring-engine.js",
+    "source": "data/graph_scoring_contract.json",
+    "validity_cases": 5
+  },
+  "island": {
+    "bytes": 46502,
+    "digest": "f33f61be6755f94426f623ebcfdf267a46c09538da3664df3a55956ffa3009c3",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-coverage",
+    "source": "data/coverage.json"
+  },
+  "iso_date": "2026-11-19",
+  "mastery_layer": {
+    "bytes": 10378,
+    "digest": "b1b5dab8a6b7335de7a311cec08b4f7da363fb8d8415dba7f9d1b70a1f047ea4",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "epistemic_label": "PROPOSED",
+    "id": "sim-mastery-policy",
+    "inlined_in_artifact": true,
+    "mastery_compacted_js_bytes": 44082,
+    "mastery_module_digest": "265a7a943397d4cf00db80ddce782eacb581307479b229d4dcec7a51d2b45aae",
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-mastery-policy-v1",
+    "runtime_module": "src/compiled/mastery.js",
+    "source": "data/mastery_policy.json",
+    "states": [
+      "unseen",
+      "learning",
+      "near_mastered",
+      "mastered",
+      "needs_review"
+    ],
+    "typescript_source": "src/mastery.ts"
+  },
+  "method_cards_layer": {
+    "bytes": 109919,
+    "card_view_module": "src/method-card-view.js",
+    "cards_count": 14,
+    "digest": "e4774467ee45c191308bdad4eb7b09d77ca3ba49e685ef1cdc6f68bd08df9c15",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "free_order_group_count": 1,
+    "id": "sim-method-cards",
+    "inlined_in_artifact": true,
+    "runtime_module": "src/method-engine.js",
+    "sequence_prompt_count": 28,
+    "source": "data/method_cards.json",
+    "step_count": 74
+  },
+  "method_engine_layer": {
+    "bytes": 22448,
+    "digest": "65f961740be3be477e3d04cef0e572ff4a4b5dd09229d422f1b848904f49c4d6",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "engines": [
+      "ordering",
+      "matching",
+      "sequence",
+      "self_assessment"
+    ],
+    "id": "sim-method-engine",
+    "inlined_in_artifact": true,
+    "signature_count": 14,
+    "source": "data/method_engine_contract.json",
+    "stratum_vectors": 16
+  },
+  "module_order": [
+    {
+      "consumes": [],
+      "id": "coverage-loader",
+      "inlined_bytes": 6016,
+      "inlined_sha256": "422072dbeb90eb71989a1bcbe6305af4547bebca9ce61710d01e80fdbc31b3e1",
+      "order": 1,
+      "owner_task": "N02",
+      "path": "src/coverage-loader.js",
+      "provides": [
+        "SimCoverage"
+      ],
+      "raw_bytes": 7307,
+      "raw_sha256": "88d1bf28492a9d2281eda9b626b6421af1c0c1a3ac6bb3ffa95d73413954bd80"
+    },
+    {
+      "consumes": [],
+      "id": "conventions-loader",
+      "inlined_bytes": 14010,
+      "inlined_sha256": "e51113bf0e636399307618d84927b0497a5d03a1c8ae3fd853b150725b1dc4d2",
+      "order": 2,
+      "owner_task": "N03",
+      "path": "src/conventions-loader.js",
+      "provides": [
+        "SimConventions"
+      ],
+      "raw_bytes": 17084,
+      "raw_sha256": "8f6a3654a1472af1239e163966722a00de25e89efad79d9e36741c50a4e4e45a"
+    },
+    {
+      "consumes": [],
+      "id": "terms-loader",
+      "inlined_bytes": 12835,
+      "inlined_sha256": "95fbe9284547e74cad85458646e071288e44136f936a6cc41dc191451b20de9b",
+      "order": 3,
+      "owner_task": "N10",
+      "path": "src/terms-loader.js",
+      "provides": [
+        "SimTerms"
+      ],
+      "raw_bytes": 13653,
+      "raw_sha256": "dfcb7dab9797927e25fc08336ad954eef166aa0e9bc3ca7e59f7288abb2bf854"
+    },
+    {
+      "consumes": [],
+      "id": "prng",
+      "inlined_bytes": 4117,
+      "inlined_sha256": "c61a59114333c653ec7ea5868f97f4925c425c39e1dfe5a892afae7eec3c229a",
+      "order": 4,
+      "owner_task": "N05",
+      "path": "src/prng.js",
+      "provides": [
+        "SimPRNG"
+      ],
+      "raw_bytes": 5272,
+      "raw_sha256": "9f85ef21b65f7274e4e5dea9320d2a676b0cb7670607636fb92c6ef8184a414c"
+    },
+    {
+      "consumes": [
+        "SimTerms"
+      ],
+      "id": "figure-framework",
+      "inlined_bytes": 55352,
+      "inlined_sha256": "a489efbafe685c6fc43bb9746db82d5c84899926e60d0597be781f95df2fdf0d",
+      "order": 5,
+      "owner_task": "N11",
+      "path": "src/figure-framework.js",
+      "provides": [
+        "SimFigures"
+      ],
+      "raw_bytes": 55308,
+      "raw_sha256": "e2faf3cc8f9749ce1c31329689cea056009e91be8a09469786a5470dbefce5fd"
+    },
+    {
+      "consumes": [
+        "SimFigures"
+      ],
+      "id": "bank-loader",
+      "inlined_bytes": 10375,
+      "inlined_sha256": "fe3508c33f6847217e01228e261e4724801f28a46ba427c48004b197dee3d945",
+      "order": 6,
+      "owner_task": "N04",
+      "path": "src/bank-loader.js",
+      "provides": [
+        "SimBank"
+      ],
+      "raw_bytes": 12496,
+      "raw_sha256": "74f6dff38bcc654d16aeac4adafa2981119501533a679ae8c64ad92f8d6d9cbe"
+    },
+    {
+      "consumes": [
+        "SimPRNG",
+        "SimBank"
+      ],
+      "id": "golden-vectors-loader",
+      "inlined_bytes": 6148,
+      "inlined_sha256": "5c0ba66618181987b95947bd7392931e9b6882e1a43f38ca87c10507d93e6759",
+      "order": 7,
+      "owner_task": "N05",
+      "path": "src/golden-vectors-loader.js",
+      "provides": [
+        "SimGoldenVectors"
+      ],
+      "raw_bytes": 7348,
+      "raw_sha256": "fd2bc28b45c996c5f51786177d18c9aebb7a3d7d3e2c6a75224139ca6e8b7338"
+    },
+    {
+      "consumes": [
+        "SimTerms",
+        "SimFigures"
+      ],
+      "id": "leak-scan",
+      "inlined_bytes": 10812,
+      "inlined_sha256": "d443c3f23c0430284dd6060e67d44dabf4c46303567d0d92528f3fbef9f6647f",
+      "order": 8,
+      "owner_task": "N12",
+      "path": "src/leak-scan.js",
+      "provides": [
+        "SimLeakScan"
+      ],
+      "raw_bytes": 12264,
+      "raw_sha256": "f6b86483bc659ed9982f4a84e36d8207869266ac0ccb9e71e2cda15be3846317"
+    },
+    {
+      "consumes": [
+        "SimConventions",
+        "SimTerms",
+        "SimFigures"
+      ],
+      "id": "quantity-engine",
+      "inlined_bytes": 29859,
+      "inlined_sha256": "efa9bbafaaf474078f24549a33d3268c3ccfce2fabc9759024ec94d7334ba742",
+      "order": 9,
+      "owner_task": "N17",
+      "path": "src/quantity-engine.js",
+      "provides": [
+        "SimEngines"
+      ],
+      "raw_bytes": 31619,
+      "raw_sha256": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12"
+    },
+    {
+      "consumes": [
+        "SimConventions",
+        "SimFigures"
+      ],
+      "id": "graph-scoring-engine",
+      "inlined_bytes": 54014,
+      "inlined_sha256": "a109fde79b7996e649fb9d306d09b48f9ab98abcc4a3159e3caefab4a49f38d8",
+      "order": 10,
+      "owner_task": "N18",
+      "path": "src/graph-scoring-engine.js",
+      "provides": [
+        "SimGraphScoring"
+      ],
+      "raw_bytes": 61766,
+      "raw_sha256": "988675cadd78f9ebade873ccf8fc62da52e1890fe3158fb911832b71815af76a"
+    },
+    {
+      "consumes": [
+        "SimGraphScoring"
+      ],
+      "id": "graph-capture",
+      "inlined_bytes": 6194,
+      "inlined_sha256": "dccd878bc2f987f508678aabd6575d058e05a8298c6bfbafaf702e76f866bf97",
+      "order": 11,
+      "owner_task": "N18",
+      "path": "src/graph-capture.js",
+      "provides": [
+        "SimGraphCapture"
+      ],
+      "raw_bytes": 7897,
+      "raw_sha256": "62a70232a725fd999374d40ba4f4a8a76580bbae32d075eab1d868a149c6c47a"
+    },
+    {
+      "consumes": [
+        "SimTerms"
+      ],
+      "id": "method-engine",
+      "inlined_bytes": 30660,
+      "inlined_sha256": "3291919eb318351baa6148e4a6590d4c5dae5385e8d83c2d7761cba914a20698",
+      "order": 12,
+      "owner_task": "N19",
+      "path": "src/method-engine.js",
+      "provides": [
+        "SimMethodEngine"
+      ],
+      "raw_bytes": 35170,
+      "raw_sha256": "6739da2ca6a1d8ae5f6ef94b4c37a7cafa41b1c2de91cda23345b6d08b947bfb"
+    },
+    {
+      "consumes": [
+        "SimTerms",
+        "SimMethodEngine"
+      ],
+      "id": "method-card-view",
+      "inlined_bytes": 10817,
+      "inlined_sha256": "e857fac22f4f284a579b5be61378f208962c8054231d0dfd2b5933717da81459",
+      "order": 13,
+      "owner_task": "N19",
+      "path": "src/method-card-view.js",
+      "provides": [
+        "SimMethodCards"
+      ],
+      "raw_bytes": 12296,
+      "raw_sha256": "63cbd00f137fa5441db145b3806e1e3434b92d39ae96ca0a61c8694036ceaf9d"
+    },
+    {
+      "consumes": [
+        "SimPRNG",
+        "SimFigures",
+        "SimConventions"
+      ],
+      "id": "variant-engine",
+      "inlined_bytes": 33235,
+      "inlined_sha256": "0704f19957c65eacdc7c063b8f3dbbf3b8e0c3a52234fa6a18dbe39217e49189",
+      "order": 14,
+      "owner_task": "N20",
+      "path": "src/variant-engine.js",
+      "provides": [
+        "SimVariantEngine"
+      ],
+      "raw_bytes": 42041,
+      "raw_sha256": "e0e395d2d3d88a472934ecf8cefe2ed11b3247f45eb98481752a7da3d5f085d8"
+    },
+    {
+      "consumes": [
+        "SimFigures"
+      ],
+      "id": "chain-view",
+      "inlined_bytes": 11868,
+      "inlined_sha256": "2745bf43bb1e4ff3a62a40c910ceac40e69a75d276ec519b4179a88a7d647207",
+      "order": 15,
+      "owner_task": "N16",
+      "path": "src/chain-view.js",
+      "provides": [
+        "SimChains"
+      ],
+      "raw_bytes": 12405,
+      "raw_sha256": "477d08ace64a93b6de5f0678eb9f43236f2d8e40d991105c63c6f0212c8edff3"
+    },
+    {
+      "consumes": [
+        "SimCoverage",
+        "SimTerms"
+      ],
+      "id": "coverage-view",
+      "inlined_bytes": 5074,
+      "inlined_sha256": "711fdd0206ce5c4fda94c8003c9013c2b424aa3533a5765cae41da64fa0ea7af",
+      "order": 16,
+      "owner_task": "N06",
+      "path": "src/coverage-view.js",
+      "provides": [
+        "SimCoverage.render"
+      ],
+      "raw_bytes": 5930,
+      "raw_sha256": "a893302ad1d93a5a6e5077ab5a94a55db86c1c382bc1e5d0bdb40aaf4433a1f1"
+    },
+    {
+      "consumes": [
+        "SimCoverage"
+      ],
+      "id": "start-view",
+      "inlined_bytes": 941,
+      "inlined_sha256": "dc154c3398646dfe1ddf3fe028e974b394bdfbbfa838dca9e22d4cc15cb5f2a0",
+      "order": 17,
+      "owner_task": "N06",
+      "path": "src/start-view.js",
+      "provides": [
+        "SimStartView"
+      ],
+      "raw_bytes": 1262,
+      "raw_sha256": "85e7b18b55624bcdfc1ab78cccfa6ce965ebdb0f0aae825fca93ee7dac1de766"
+    },
+    {
+      "consumes": [
+        "SimCoverage",
+        "SimFigures",
+        "SimChains"
+      ],
+      "id": "concept-drawer",
+      "inlined_bytes": 20784,
+      "inlined_sha256": "27dfec9924395cdf040aec9e2304843591ead4fff7cc39871ca4725b6d2f6484",
+      "order": 18,
+      "owner_task": "N07",
+      "path": "src/concept-drawer.js",
+      "provides": [
+        "SimConceptDrawer"
+      ],
+      "raw_bytes": 20741,
+      "raw_sha256": "146bf37373b90726c5888635420d1e6b98ab844dfbf078fc5a18f66f1c463747"
+    },
+    {
+      "consumes": [
+        "SimCoverage",
+        "SimConceptDrawer"
+      ],
+      "id": "concept-map",
+      "inlined_bytes": 17733,
+      "inlined_sha256": "bdf7a3b91f9fe9402cf03125a979a39216538bf25986c80ec9d564cb4e6aaf69",
+      "order": 19,
+      "owner_task": "N07",
+      "path": "src/concept-map.js",
+      "provides": [
+        "SimConceptMap"
+      ],
+      "raw_bytes": 22138,
+      "raw_sha256": "fc9fff9ceed75eb9145bbdaefb35bca03888a302d139f0350d6c7670332870e6"
+    },
+    {
+      "consumes": [
+        "SimTerms",
+        "SimConceptDrawer"
+      ],
+      "id": "hint-drawer",
+      "inlined_bytes": 17629,
+      "inlined_sha256": "7d7e11dde128c774b1ad5f5eb53f1dfed9036f1999943769a56e9425f840e2b1",
+      "order": 20,
+      "owner_task": "N08",
+      "path": "src/hint-drawer.js",
+      "provides": [
+        "SimHintDrawer"
+      ],
+      "raw_bytes": 17589,
+      "raw_sha256": "729ee40be3dcc2abc1a6ec3d2af07f519e97be57e54600f6f70a25521f3506da"
+    },
+    {
+      "consumes": [
+        "SimTerms"
+      ],
+      "id": "theme-toggle",
+      "inlined_bytes": 5060,
+      "inlined_sha256": "6d3895b19148b0f6233dda8e5605db02b9aa4ac182072ececd0b5d18821287f3",
+      "order": 21,
+      "owner_task": "N06",
+      "path": "src/theme-toggle.js",
+      "provides": [
+        "SimTheme"
+      ],
+      "raw_bytes": 5985,
+      "raw_sha256": "7090437796740c008a262aac6adfcb2600e57eb766806ec25fddc2fa65fba16a"
+    },
+    {
+      "consumes": [],
+      "id": "session",
+      "inlined_bytes": 12444,
+      "inlined_sha256": "eed075abe7590b35ae36f0ddcaabb73f5751c2c26f838750e1cfda1ae1ec81e8",
+      "order": 22,
+      "owner_task": "N21",
+      "path": "src/compiled/session.js",
+      "provides": [
+        "SimSession"
+      ],
+      "raw_bytes": 20940,
+      "raw_sha256": "eae0fb094e10bc14dd0abfad33c35d6d0c3700ef3c09ea3b6c5b217273bd97b0"
+    },
+    {
+      "consumes": [
+        "SimTerms"
+      ],
+      "id": "inputs-registry",
+      "inlined_bytes": 43259,
+      "inlined_sha256": "269a3bfc296d04d7a82996357b5d86e6d18b1092c50a10b811d6074dfb088449",
+      "order": 23,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/registry.js",
+      "provides": [
+        "SimInputsRegistry"
+      ],
+      "raw_bytes": 58817,
+      "raw_sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+    },
+    {
+      "consumes": [
+        "SimInputsRegistry",
+        "SimGraphScoring",
+        "SimGraphCapture",
+        "SimBank"
+      ],
+      "id": "inputs-components",
+      "inlined_bytes": 94809,
+      "inlined_sha256": "60271ea890f2e7323dd28e4de5f10aad39db8d3ff661d1c73b5eba9901dfa2a0",
+      "order": 24,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/components.js",
+      "provides": [
+        "SimInputsComponents"
+      ],
+      "raw_bytes": 123374,
+      "raw_sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+    },
+    {
+      "consumes": [
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimSession"
+      ],
+      "id": "inputs-integration",
+      "inlined_bytes": 32685,
+      "inlined_sha256": "75a860f35fda29a8da8057cf37364863211e9d76f4fa2bfad98d30618017a2e7",
+      "order": 25,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/integration.js",
+      "provides": [
+        "SimInputsIntegration",
+        "SimInputs"
+      ],
+      "raw_bytes": 43718,
+      "raw_sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+    },
+    {
+      "consumes": [
+        "SimEngines",
+        "SimGraphScoring",
+        "SimMethodEngine",
+        "SimInputsRegistry",
+        "SimInputsIntegration"
+      ],
+      "id": "grading",
+      "inlined_bytes": 60371,
+      "inlined_sha256": "6fb994b36df1d0368143656a106cb97ec1222cf79f805790843427834fc62a3f",
+      "order": 26,
+      "owner_task": "N23",
+      "path": "src/compiled/grading.js",
+      "provides": [
+        "SimGrading"
+      ],
+      "raw_bytes": 79582,
+      "raw_sha256": "c451545de08300523e0f2b7f958804502781248a9ba20baeb63b844dff5e889d"
+    },
+    {
+      "consumes": [
+        "SimGrading",
+        "SimTerms",
+        "SimChains",
+        "SimMethodCards"
+      ],
+      "id": "feedback",
+      "inlined_bytes": 46311,
+      "inlined_sha256": "b8ea23bdf9dc37afaacba4f4f3d561efd94c50765788f570836f5b70073ec624",
+      "order": 27,
+      "owner_task": "N23",
+      "path": "src/compiled/feedback.js",
+      "provides": [
+        "SimFeedback"
+      ],
+      "raw_bytes": 62328,
+      "raw_sha256": "bc02c7d5e6db4ec0ff5524b66ead3e0f7de44f0457ddc46517dfd11cb7965c54"
+    },
+    {
+      "consumes": [
+        "SimPRNG",
+        "SimFigures",
+        "SimVariantEngine"
+      ],
+      "id": "assembly",
+      "inlined_bytes": 39853,
+      "inlined_sha256": "70aa73e714798e35d21eb17b2c4395bb4d2e79f7de66adabbf5317be2ed7907b",
+      "order": 28,
+      "owner_task": "N24",
+      "path": "src/compiled/assembly.js",
+      "provides": [
+        "SimAssembly"
+      ],
+      "raw_bytes": 58129,
+      "raw_sha256": "551b56bdf39141a5bb6568f38c092ad0cf652d3addd2668c94d88181224ef9e5"
+    },
+    {
+      "consumes": [
+        "SimSession",
+        "SimAssembly"
+      ],
+      "id": "exam",
+      "inlined_bytes": 32961,
+      "inlined_sha256": "b48e96d1eb7c8e3c5d015dbab61d0572f109d9166e4a932bd80cd6dd1f2562f0",
+      "order": 29,
+      "owner_task": "N21",
+      "path": "src/compiled/exam.js",
+      "provides": [
+        "SimExam"
+      ],
+      "raw_bytes": 48996,
+      "raw_sha256": "b4b316a8a70d1905af8c27432bd0854174476bdd65801ec8d25b0e984130902d"
+    },
+    {
+      "consumes": [],
+      "id": "store",
+      "inlined_bytes": 31024,
+      "inlined_sha256": "0a9e0d30519a4689476b997c58fa3109850c025f6049c49ca4f5228818b7caf0",
+      "order": 30,
+      "owner_task": "N25",
+      "path": "src/compiled/store.js",
+      "provides": [
+        "SimStore"
+      ],
+      "raw_bytes": 43513,
+      "raw_sha256": "06231e4643780c863d407bb8857647e1f70727b4465418122d1edef9e7fbd44e"
+    },
+    {
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimGrading",
+        "SimTheme"
+      ],
+      "id": "analytics",
+      "inlined_bytes": 32815,
+      "inlined_sha256": "a570daec6b881e9f79af5f9785fe33ec782ab099dead48d2060f0cb8f39e72e2",
+      "order": 31,
+      "owner_task": "N25",
+      "path": "src/compiled/analytics.js",
+      "provides": [
+        "SimAnalytics"
+      ],
+      "raw_bytes": 46211,
+      "raw_sha256": "0badcad95f97ffdd9fd2fee33e9cd7a398aed05dae83b9b0e4ebb2a3f516d7e5"
+    },
+    {
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank"
+      ],
+      "id": "mastery",
+      "inlined_bytes": 44128,
+      "inlined_sha256": "0c9e693a43ec5c758d470d3255121ea5cf03b2cbcdfb5eb81569e3adef0e34d5",
+      "order": 32,
+      "owner_task": "N26",
+      "path": "src/compiled/mastery.js",
+      "provides": [
+        "SimMastery"
+      ],
+      "raw_bytes": 60766,
+      "raw_sha256": "265a7a943397d4cf00db80ddce782eacb581307479b229d4dcec7a51d2b45aae"
+    },
+    {
+      "consumes": [
+        "SimMastery",
+        "SimCoverage",
+        "SimBank",
+        "SimStore",
+        "SimTerms"
+      ],
+      "id": "scheduler",
+      "inlined_bytes": 50998,
+      "inlined_sha256": "03bb39aab5395bed36868f8f6a3b463409c8c7db7c6601d6af6b002ac0ff8cc8",
+      "order": 33,
+      "owner_task": "N27",
+      "path": "src/compiled/scheduler.js",
+      "provides": [
+        "SimScheduler"
+      ],
+      "raw_bytes": 72778,
+      "raw_sha256": "d1f072d3db0d0c11d81a39b41d047b846e450be5aacee18f511f26c726607f48"
+    },
+    {
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimConceptDrawer",
+        "SimChains",
+        "SimMastery",
+        "SimVariantEngine"
+      ],
+      "id": "remediation",
+      "inlined_bytes": 64574,
+      "inlined_sha256": "c36f09b5710676c7d186dcd53f34aa2c7b836a900d2c9940df415910f1d60bb7",
+      "order": 34,
+      "owner_task": "N28",
+      "path": "src/compiled/remediation.js",
+      "provides": [
+        "SimRemediation"
+      ],
+      "raw_bytes": 88466,
+      "raw_sha256": "dbffc634d390e5a6c734174b43bb90cd404f007dce9e2b85bb9c726ea5c553e9"
+    },
+    {
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimFeedback",
+        "SimMastery",
+        "SimRemediation",
+        "SimConceptDrawer",
+        "SimChains"
+      ],
+      "id": "revision",
+      "inlined_bytes": 63517,
+      "inlined_sha256": "ca3544fc9ab3af0514af383925a8d4ddbf5c4fc2895dc70fa948adb5952d0981",
+      "order": 35,
+      "owner_task": "N29",
+      "path": "src/compiled/revision.js",
+      "provides": [
+        "SimRevision"
+      ],
+      "raw_bytes": 88061,
+      "raw_sha256": "29eba44e65711c245cc4a986368baa0ba96591b2ce85c852eabce822affb0ae4"
+    },
+    {
+      "consumes": [
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimStore",
+        "SimExam",
+        "SimHintDrawer",
+        "SimChains",
+        "SimConceptDrawer",
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimInputsIntegration",
+        "SimEngines",
+        "SimGraphScoring",
+        "SimMethodEngine",
+        "SimGrading",
+        "SimFeedback",
+        "SimMastery",
+        "SimRemediation",
+        "SimVariantEngine"
+      ],
+      "id": "practice",
+      "inlined_bytes": 71812,
+      "inlined_sha256": "acd3307229e1cfbdac61eba392fbcf4641c58a1f9f339887cbcda2484de1d405",
+      "order": 36,
+      "owner_task": "N30",
+      "path": "src/compiled/practice.js",
+      "provides": [
+        "SimPractice"
+      ],
+      "raw_bytes": 99235,
+      "raw_sha256": "b1612d8f26a4cf16cabaa123793ea1742bead18136e01af2054757b786059da6"
+    },
+    {
+      "consumes": [
+        "SimTheme"
+      ],
+      "id": "focus",
+      "inlined_bytes": 17343,
+      "inlined_sha256": "1758617bd2b7551f2f771313cb007e1b21989eaef7cb3583cc6c18047d91da60",
+      "order": 37,
+      "owner_task": "N33",
+      "path": "src/compiled/focus.js",
+      "provides": [
+        "SimFocus"
+      ],
+      "raw_bytes": 23240,
+      "raw_sha256": "721982f86da3a06b840b0a198c5ed806161c4d73354444d306da871e84cc929d"
+    },
+    {
+      "consumes": [],
+      "id": "paper",
+      "inlined_bytes": 10254,
+      "inlined_sha256": "8bba9c74dee5ed1ab5d0cef4c01824641c2bc4094c6184f43c2680c13cdc0c9c",
+      "order": 38,
+      "owner_task": "N34",
+      "path": "src/compiled/paper.js",
+      "provides": [
+        "SimPaper"
+      ],
+      "raw_bytes": 13566,
+      "raw_sha256": "4daca8ba06c6bcc4bb7482d68cfd97efd22f99bcdd8b6418675e50c07c0348c0"
+    },
+    {
+      "consumes": [
+        "SimCoverage",
+        "SimCoverage.render",
+        "SimConventions",
+        "SimTerms",
+        "SimPRNG",
+        "SimFigures",
+        "SimBank",
+        "SimGoldenVectors",
+        "SimLeakScan",
+        "SimEngines",
+        "SimGraphScoring",
+        "SimGraphCapture",
+        "SimMethodEngine",
+        "SimMethodCards",
+        "SimVariantEngine",
+        "SimChains",
+        "SimStartView",
+        "SimConceptDrawer",
+        "SimConceptMap",
+        "SimHintDrawer",
+        "SimTheme",
+        "SimSession",
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimInputsIntegration",
+        "SimInputs",
+        "SimGrading",
+        "SimFeedback",
+        "SimAssembly",
+        "SimExam",
+        "SimStore",
+        "SimAnalytics",
+        "SimMastery",
+        "SimScheduler",
+        "SimRemediation",
+        "SimRevision",
+        "SimPractice"
+      ],
+      "id": "smoke-subset",
+      "inlined_bytes": 72953,
+      "inlined_sha256": "fd11a329807b3c00b16161d1c788ff5531eb6eafebf9d3c1c1f28b9d789b9dd3",
+      "order": 39,
+      "owner_task": "N31",
+      "path": "src/smoke-subset.js",
+      "provides": [
+        "SimSmoke"
+      ],
+      "raw_bytes": 73010,
+      "raw_sha256": "d7456609b6c104831a549507efd33a058187fc077d3f40768ab2ca728089a0e9"
+    }
+  ],
+  "output": "output/simulator.html",
+  "output_bytes": 2834200,
+  "output_sha256": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "policy_id": "n31-single-file-build-policy-v1",
+  "practice_layer": {
+    "bytes": 7163,
+    "digest": "efaaab47eb3d47351807032741baf9763d194986655360f7bb19b099d4ba5f79",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "epistemic_label": "PROPOSED",
+    "id": "sim-practice-policy",
+    "inlined_in_artifact": true,
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-practice-paths-v1",
+    "practice_compacted_js_bytes": 71765,
+    "practice_module_digest": "b1612d8f26a4cf16cabaa123793ea1742bead18136e01af2054757b786059da6",
+    "runtime_module": "src/compiled/practice.js",
+    "source": "data/practice_policy.json",
+    "topic_lengths": {
+      "1": 6,
+      "2": 7,
+      "3": 8,
+      "4": 8,
+      "5": 7,
+      "6": 6,
+      "7": 5
+    },
+    "typescript_source": "src/practice.ts"
+  },
+  "recall_layers_layer": {
+    "authored_families": 24,
+    "bytes": 28586,
+    "digest": "5e3014fe180be4f4646b7792875edc5c205853eb2638d1c54ce725607032bf7c",
+    "embedded_layers_bytes": 28517,
+    "gap_families": 4,
+    "hint_drawer_js_bytes": 17588,
+    "source": "data/recall_layers.json"
+  },
+  "remediation_layer": {
+    "bytes": 4208,
+    "digest": "02268d355e2ff8146da958bf58fc93c7a3ad230c6151b3eaf064be5891be4b56",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "epistemic_label": "PROPOSED",
+    "id": "sim-remediation-policy",
+    "inlined_in_artifact": true,
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-remediation-v1",
+    "recommend_only": true,
+    "remediation_compacted_js_bytes": 64524,
+    "remediation_module_digest": "dbffc634d390e5a6c734174b43bb90cd404f007dce9e2b85bb9c726ea5c553e9",
+    "resolution_mode": "confirm_required",
+    "runtime_module": "src/compiled/remediation.js",
+    "source": "data/remediation_policy.json",
+    "typescript_source": "src/remediation.ts"
+  },
+  "response_inputs_layer": {
+    "bytes": 34962,
+    "completed_types": [
+      "Q02",
+      "Q04",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q15"
+    ],
+    "components_js_bytes": 123374,
+    "components_module_digest": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64",
+    "conflicts": [
+      {
+        "contract_label": "N17 taksonomijā un N18/N19 līgumos šāda id nav; ir tikai četras N17 klases, BLANK_RESPONSE un seši E_GRAPH_* id",
+        "id": "N22-C01",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "MIXED_SEPARATORS kā atsevišķs id neeksistē. Jaukta atdalītāja ievads \"1,2,3\" klasificējas kā UNREADABLE_INPUT (N17 1. klase, paraksturs MC-2B-02, vektors EV-N17-CLS-01), un saskarne rāda feedback.error.unreadable tekstu uz blur, neaizturot neapstrādāto ievadi. Ievades saglabāšanas invariants paliek spēkā.",
+        "roadmap_label": "Ceļa karte A.1.3 nosauc MIXED_SEPARATORS ziņojumu",
+        "topic": "MIXED_SEPARATORS kļūdas id"
+      },
+      {
+        "contract_label": "N04 shēma saista Q18 ar option_select klasi; exam_policy named_variants saista Q18_plot_state ar graph klasi",
+        "id": "N22-C02",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "Q18 kā tips paliek option_select (N04). Plot-state variants ir graph klases vārdnīcas vienums, ko N21 jau dokumentēja kā N21-C01; N22 to ievieto grafa klases reģistra ierakstā (Q11) kā otro variantu, tāpēc \"Q18 short plot\" fixtures tiek pārbaudīts grafa klasē, nevis Q18 tipā. Tipa saite netiek klusējot pārbīdīta.",
+        "roadmap_label": "Ceļa karte A.1.2 nosauc \"Q18 short plot\" un A.1.1 min plot interakciju",
+        "topic": "Q18 tips pret Q18_plot_state variantu"
+      },
+      {
+        "contract_label": "N04 types.Q11/Q12.engine ir N17-numeric; data/graph_scoring_contract.json rubrikās lieto N18-graph, bet N04 rubrikas enum to neietver",
+        "id": "N22-C03",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "engine_binding atspoguļo N04 etiķeti (N17-numeric), jo validators to pārbauda pret shēmu; grading_binding.engine nosauc faktisko saldēto vērtētāju N18-graph (SimGraphScoring.scoreDrawing / scoreReading). Abas etiķetes paliek redzamas, nevis viena tiek klusējot pārrakstīta.",
+        "roadmap_label": "Ceļa karte N22 atsaucas uz N18 grafiku dzinēju",
+        "topic": "Q11/Q12 dzinēja etiķete"
+      },
+      {
+        "contract_label": "N17 taksonomija publicē feedback_key tikai četrām klasēm; N18 un N19 publicē id un label_lv, bet ne terminu atslēgas; BLANK_RESPONSE feedback atslēgas nav",
+        "id": "N22-C04",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "Četras N17 klases un OUT_OF_DOMAIN lieto esošās feedback.error.* atslēgas. BLANK_RESPONSE un seši E_GRAPH_* id iegūst jaunas atslēgas input.error.* nosaukumtelpā ar N22 avotu; N10 salā netiek izgudrotas jaunas feedback.* atslēgas.",
+        "roadmap_label": "Ceļa karte A.1.3 prasa latviešu ziņojuma veidnes, kas atslēgotas ar tiem pašiem id",
+        "topic": "Kļūdu paziņojumu terminu atslēgas"
+      },
+      {
+        "contract_label": "N04 types.Q03.engine ir N18-symbolic",
+        "id": "N22-C05",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "Q03 komplektēšana prasa veidnes izvēli, pildījumus un saglabāto lielumu, bet vērtējums paliek manual-rubric-pending; automātisks verdikts netiek izlikts. N04 dzinēja etiķete paliek engine_binding laukā.",
+        "roadmap_label": "Ceļa karte C.1.1: Q03 veidnes atbilde iet manuālā rubrikas pending ceļu",
+        "topic": "Q03 vērtēšanas ceļš"
+      },
+      {
+        "contract_label": "Bankas instances Q02, Q09, Q10, Q11 un Q12 deklarē self-assessed kritēriju, bet N04 numeric un graph datu klases nepieļauj teksta lauku",
+        "id": "N22-C06",
+        "label": "OPEN-FOR-N23-N24",
+        "owner": "N22",
+        "resolution_lv": "N22 reģistrē tikai tos laukus, ko datu klase atļauj, un nepievieno slepenu teksta lauku. Šiem tipiem pašnovērtējuma kritērijam nav datu pamata, tāpēc N23/N24 ir jāizlemj, vai kritēriju atmest vai pieņemt kā pending bez ievades. Konflikts paliek atklāts un nav noklusēts.",
+        "roadmap_label": "Ceļa karte prasa, lai katram tipam būtu datu ceļš saviem kritērijiem",
+        "topic": "Pašnovērtējuma kritēriji skaitliskajos un grafa tipos"
+      },
+      {
+        "contract_label": "exam_policy payload_contracts.method prasa tikai variant; Q03/Q05/Q13/Q15/Q16/Q17 papildu lauki sesijas slānī nav tipizēti",
+        "id": "N22-C07",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "Sesijas līgums paliek strukturāls, un reģistra lauku veidnes ir vienīgā tipizācijas autoritāte. Q03_template, Q04_vector, Q05_rows, Q12_read, Q15_text un Q16_text ir reģistra deklarēti varianti ārpus exam_policy named_variants četrinieka; tie neapstrīd sesijas līgumu, jo tas papildu laukus neaizliedz.",
+        "roadmap_label": "Ceļa karte A.1.1 prasa lauka līmeņa ARIA nosaukumus visiem tipiem",
+        "topic": "Sesijas datu līguma tips metodei"
+      },
+      {
+        "contract_label": "N22 ievades slānis palielina artefaktu līdz 1 522 087 B (1 486,4 KiB): reakcijas tipu reģistra sala 34 179 B kanoniski, terminoloģijas salas pieaugums +47 549 B un trīs dūmu vektori",
+        "id": "N22-C08",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "owner": "N22",
+        "resolution_lv": "Griests pārlikts uz mērījuma pamata (1 504 KiB), kas pierakstīts tools/byte_budget.py vēsturē; deklarētā josla paliek redzama, un galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31. N22 ievades moduļi (225 423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270 014 B paliek zem 264 KiB griesta.",
+        "roadmap_label": "Ceļa karte 1.3 sadaļa deklarē 700–1 400 KiB joslu; N21 noteica izpildāmo griestu 1 440 KiB",
+        "topic": "Artefakta kopapjoma pārbudžets"
+      }
+    ],
+    "digest": "82d3552deefd0780b3e0d35db30c23a98bb69cd38be706fd1ff18b2001c8c04a",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-response-types",
+    "inlined_in_artifact": true,
+    "integration_js_bytes": 43718,
+    "integration_module_digest": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3",
+    "note": "N31 inlines the N22 response-input modules (registry.js, components.js, integration.js) into the single-file artifact in topological order; build gate 18 (response_inputs) validates the registry island and refuses a build whose compiled modules differ from their sources.",
+    "registry_js_bytes": 58817,
+    "registry_module_digest": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a",
+    "runtime_modules": [
+      "src/compiled/inputs/registry.js",
+      "src/compiled/inputs/components.js",
+      "src/compiled/inputs/integration.js"
+    ],
+    "source": "data/response_types.json",
+    "type_count": 18,
+    "typescript_sources": [
+      "src/inputs/registry.ts",
+      "src/inputs/components.ts",
+      "src/inputs/integration.ts"
+    ]
+  },
+  "revision_layer": {
+    "bytes": 4338,
+    "digest": "f571a286d08eb6ff8442e56ab4ee2943947e234807102f1e264e104cf2c2ef2d",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "epistemic_label": "PROPOSED",
+    "id": "sim-revision-policy",
+    "inlined_in_artifact": true,
+    "note_max_length": 500,
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-revision-v1",
+    "revision_compacted_js_bytes": 63470,
+    "revision_module_digest": "29eba44e65711c245cc4a986368baa0ba96591b2ce85c852eabce822affb0ae4",
+    "runtime_module": "src/compiled/revision.js",
+    "source": "data/revision_policy.json",
+    "typescript_source": "src/revision.ts"
+  },
+  "scheduler_layer": {
+    "boxes": [
+      {
+        "box": 1,
+        "interval_days": 1
+      },
+      {
+        "box": 2,
+        "interval_days": 3
+      },
+      {
+        "box": 3,
+        "interval_days": 7
+      }
+    ],
+    "bytes": 5161,
+    "digest": "e97381ce5333d2e7ef51ce4200e0efef864b364ac79bbafc0e30dbae582b2352",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "epistemic_label": "PROPOSED",
+    "id": "sim-scheduler-policy",
+    "inlined_in_artifact": true,
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-leitner-scheduler-v1",
+    "queue_cap": 5,
+    "runtime_module": "src/compiled/scheduler.js",
+    "scheduler_compacted_js_bytes": 50950,
+    "scheduler_module_digest": "d1f072d3db0d0c11d81a39b41d047b846e450be5aacee18f511f26c726607f48",
+    "source": "data/scheduler_policy.json",
+    "typescript_source": "src/scheduler.ts"
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "bytes": 7553,
+      "path": "data/analytics_schema.json",
+      "sha256": "19ce10907fccdbc73a053b8cfbede5458ca5e0e75d0cd1d91085f1c385a55029"
+    },
+    {
+      "bytes": 55812,
+      "path": "data/anchor_registry.json",
+      "sha256": "c8e343f1b828b79ef15ea5d1fc3add093315fd5dddd56aa4de1266dff3d302cb"
+    },
+    {
+      "bytes": 13655,
+      "path": "data/bank/FAM-1A.json",
+      "sha256": "e69f65c63ba25c3516a13d17ee50c3a81a48f2c9279379106ed12edbd037c17a"
+    },
+    {
+      "bytes": 12399,
+      "path": "data/bank/FAM-1B.json",
+      "sha256": "81778d6979109a3baf745c4abd836fb415cccc8826ced332712097377f6d1de1"
+    },
+    {
+      "bytes": 14982,
+      "path": "data/bank/FAM-1C.json",
+      "sha256": "113cf50e75799b5eba64272402ce858c5c898b7b70f917a254d48ae3833c347f"
+    },
+    {
+      "bytes": 14051,
+      "path": "data/bank/FAM-1D.json",
+      "sha256": "e4c81e04f0f6be02149cde2d3b05610a03632b2b5812c97a501a5c351794d851"
+    },
+    {
+      "bytes": 12713,
+      "path": "data/bank/FAM-2A.json",
+      "sha256": "f3317337b40accdf75dd54a9552a0367c72e080ff959a3064a65972430bb0c36"
+    },
+    {
+      "bytes": 12826,
+      "path": "data/bank/FAM-2B.json",
+      "sha256": "e064a2c59955f996e9962d402971d0ed35e96cddddcb94d8f977f79c4f4983b9"
+    },
+    {
+      "bytes": 12418,
+      "path": "data/bank/FAM-2C.json",
+      "sha256": "b81231e7f2ba9ff572db4510308559d4510d9f52712cab14143ed24027d0d7aa"
+    },
+    {
+      "bytes": 14773,
+      "path": "data/bank/FAM-2D.json",
+      "sha256": "ab2a7cd13bbd25c3b9ff2824e011eeb489a9f8cc7a168c2c6a4c091a1fab836f"
+    },
+    {
+      "bytes": 14957,
+      "path": "data/bank/FAM-3A.json",
+      "sha256": "1b7323d59638d62eb79e501491fd6a49e99eccd8bf6f981fa00b0ad3203bb374"
+    },
+    {
+      "bytes": 16703,
+      "path": "data/bank/FAM-3B.json",
+      "sha256": "bcc3da6f0dbb8b9a69795a0a357311c52cc8c4a14ffd93ced36fae8aa2a3e3f5"
+    },
+    {
+      "bytes": 14719,
+      "path": "data/bank/FAM-3C.json",
+      "sha256": "8ca31ee5976f904c6fa23d30e81eb7171f776d0f486de12604ebdbe8b140eb44"
+    },
+    {
+      "bytes": 15138,
+      "path": "data/bank/FAM-3D.json",
+      "sha256": "70b2c90030afe5c1282e9b4cc846c181690c8049c2c0ed51833eaa2f7227ae53"
+    },
+    {
+      "bytes": 12661,
+      "path": "data/bank/FAM-4A.json",
+      "sha256": "580194b57ba8589f3882290f3fd7bf0c24788a864ae7b7c1d8643a0910480d27"
+    },
+    {
+      "bytes": 13459,
+      "path": "data/bank/FAM-4B.json",
+      "sha256": "d797c726066fd7c13b0b6eb8d3dddc3d6abb35a4c0af507c39c0dc673f97ca45"
+    },
+    {
+      "bytes": 15566,
+      "path": "data/bank/FAM-4C.json",
+      "sha256": "4d867950940cacff1793c8266fbb742e294928d5c3e891eb8ef4fb465e52ef8c"
+    },
+    {
+      "bytes": 14308,
+      "path": "data/bank/FAM-4D.json",
+      "sha256": "a0cf7ccf991d200ca9a53739b5b9124330051e55ffdc8acc038581419c9aba61"
+    },
+    {
+      "bytes": 13308,
+      "path": "data/bank/FAM-5A.json",
+      "sha256": "380b2760266b67562d646d6cc9cddbd8ee3e0585796d3c3609c2bd7bc82609c2"
+    },
+    {
+      "bytes": 14861,
+      "path": "data/bank/FAM-5B.json",
+      "sha256": "5b09d5d9d8b2f862a1085453596bbeb4aa94a4786a8c1947bd117e074d56c31e"
+    },
+    {
+      "bytes": 14204,
+      "path": "data/bank/FAM-5C.json",
+      "sha256": "c3b53cf26d63398c9af87b3bf5fa77ed0e446b90f89eff11b4984884e792f634"
+    },
+    {
+      "bytes": 12930,
+      "path": "data/bank/FAM-5D.json",
+      "sha256": "dac486bde72667771e22f27439480787c36a44a7f7ef6618e2a145473ba98afe"
+    },
+    {
+      "bytes": 12715,
+      "path": "data/bank/FAM-6A.json",
+      "sha256": "bf119604055f94f68e1d4359607fc6ed77a1d4811e894b4ba7240ef57614b566"
+    },
+    {
+      "bytes": 13664,
+      "path": "data/bank/FAM-6B.json",
+      "sha256": "09fdd175ba4787627e9aadec24b57732eb79340f4d76a57642de541259f85d71"
+    },
+    {
+      "bytes": 16683,
+      "path": "data/bank/FAM-6C.json",
+      "sha256": "b80fe4dca1893f7aab54d35d49e55b48723eb7563a0d225c0355cbad1bf4d57c"
+    },
+    {
+      "bytes": 14253,
+      "path": "data/bank/FAM-6D.json",
+      "sha256": "605c3d3c52615f52da23e6a3b66f6bffc45271b98d4efed4057bb92f57fca55f"
+    },
+    {
+      "bytes": 13643,
+      "path": "data/bank/FAM-7A.json",
+      "sha256": "5c8d6fc318b2a50cfe166556684daa799d6e7cfba9a1ecb778fad8c82e599e0b"
+    },
+    {
+      "bytes": 13632,
+      "path": "data/bank/FAM-7B.json",
+      "sha256": "734992f17fd556a0e22871b8a57e3e1d1b1448cff65ee4c03c05485bf9c8cdeb"
+    },
+    {
+      "bytes": 16841,
+      "path": "data/bank/FAM-7C.json",
+      "sha256": "87acfdfb0c0aa1428de22dba8f6a8afbd6956e6154452739a835c84353932c13"
+    },
+    {
+      "bytes": 13735,
+      "path": "data/bank/FAM-7D.json",
+      "sha256": "d11d8e06021dc964a05980aa43e420ed6f38c63fd4ba104f0fcbdbe6b36138fe"
+    },
+    {
+      "bytes": 42255,
+      "path": "data/build_policy.json",
+      "sha256": "859c3b30c19d8b7449db6dbb46e1edbe1e81579de4c67d22fce892393b4b4bd7"
+    },
+    {
+      "bytes": 2337,
+      "path": "data/calibration_contract.json",
+      "sha256": "18440c14bd71d832708c3c352a84f8a1290977845bdb102a45aa90b0fb6eb157"
+    },
+    {
+      "bytes": 6992,
+      "path": "data/chain_references.json",
+      "sha256": "36bd1165da40265ccf4b6a3b8a934bdefc93170c3ba54fbbc26fcae2fb37f420"
+    },
+    {
+      "bytes": 4896,
+      "path": "data/chain_schema.json",
+      "sha256": "c92b4446abf64eae6b4b3bea92a98d824c39fb17f1ad46813f1a9527b795c1bd"
+    },
+    {
+      "bytes": 100877,
+      "path": "data/chains.json",
+      "sha256": "01e40793641ee77b52a724b92c8371dfb361f37cf332038b3ff5f3bca7c8f4d7"
+    },
+    {
+      "bytes": 109878,
+      "path": "data/concept_summaries.json",
+      "sha256": "215cd6ac19f20e21a40213fcbdacacfef915108854e3cc17a1216635712c4e59"
+    },
+    {
+      "bytes": 148609,
+      "path": "data/conventions.json",
+      "sha256": "1ae95d0ed47eec057cce5fe2df9039e2599d453d9f5da2063ac9f2c8bcc21dbd"
+    },
+    {
+      "bytes": 62361,
+      "path": "data/coverage.json",
+      "sha256": "3d734990d87695899238b86e92a1253c6aebfdaf61f0fc741b5b3d115ff2ce7b"
+    },
+    {
+      "bytes": 3513,
+      "path": "data/energy_conventions_contract.json",
+      "sha256": "32e1e2975483b915a57db38e9141e35d4a85eccbe5b1f8abf047b0ac474f422a"
+    },
+    {
+      "bytes": 16353,
+      "path": "data/engine_taxonomy.json",
+      "sha256": "fe3d6aeceb99b72ed8d88d080cd1d760610dc2ab340b97034d600295b2961122"
+    },
+    {
+      "bytes": 14237,
+      "path": "data/exam_policy.json",
+      "sha256": "5c72408c203e7684d7bfd4b85250157ddd83fb4a8ea6d1fafafa1dd1f3d25df1"
+    },
+    {
+      "bytes": 40587,
+      "path": "data/family_templates/topic1.json",
+      "sha256": "dad59926ffddbd7a818afd3e13728c0adfdb7b8e2dca3e536239eb94b7adcf93"
+    },
+    {
+      "bytes": 40556,
+      "path": "data/family_templates/topic2.json",
+      "sha256": "f96f6dda8b20f36ffa056fc7c0cb28a490ab66f510b0f225331d27f8a0bf3c69"
+    },
+    {
+      "bytes": 50396,
+      "path": "data/family_templates/topic3.json",
+      "sha256": "074a776cb648a43620e831a4925ddfc8fae8482689e9c6718b4f12ea9e2f3cdd"
+    },
+    {
+      "bytes": 43078,
+      "path": "data/family_templates/topic4.json",
+      "sha256": "cf17d8375c88a94f7db4e44502c6d2bc3efe3eba669d1c9ee4d8e01696096a0c"
+    },
+    {
+      "bytes": 42557,
+      "path": "data/family_templates/topic5.json",
+      "sha256": "142aceeb1c484ca0d19df8cd5d5c9a28a4c5bf3545660d48314c4a9cf2327743"
+    },
+    {
+      "bytes": 44591,
+      "path": "data/family_templates/topic6.json",
+      "sha256": "791ec3cebf483e396346ab6be8bfc8fe1f4968d28b1887307ec3273a010c7a27"
+    },
+    {
+      "bytes": 45968,
+      "path": "data/family_templates/topic7.json",
+      "sha256": "95a191d683b74f6ab38d2234b06d403c76d5f016fb60a5f60a8ac21843f68fab"
+    },
+    {
+      "bytes": 83847,
+      "path": "data/feedback_classification.json",
+      "sha256": "f0e1c87881c7108578789e1ea8a9c2b8a5bbb81e870bb1c8ddc8433f38dd8f73"
+    },
+    {
+      "bytes": 17463,
+      "path": "data/figure_schema.json",
+      "sha256": "f2ee0dbcb8c465a88ae1e7a6730258b585aaccba1959237adc1ee3441417d68f"
+    },
+    {
+      "bytes": 33832,
+      "path": "data/figures_t12.json",
+      "sha256": "976a60133844df2270a4bcea54a7e3b2692b99bed52a14c6c106eeff9c80cb1a"
+    },
+    {
+      "bytes": 40891,
+      "path": "data/figures_t23.json",
+      "sha256": "782789e1846ed8753464c66668ede3e7ce7ce14cf4c9fb8141ed47f9e5b303a3"
+    },
+    {
+      "bytes": 52266,
+      "path": "data/figures_t4.json",
+      "sha256": "0503ad76714c10476814fdf79580f23e311755a21d35ee3979baa265159eda1d"
+    },
+    {
+      "bytes": 51032,
+      "path": "data/figures_t5.json",
+      "sha256": "b73654098eafd85b059a3b713d6f7cae4f194d71e9e43f31019081bf1cfd3128"
+    },
+    {
+      "bytes": 38924,
+      "path": "data/figures_t67.json",
+      "sha256": "5d73f7c126869df3cb73880d18ebce359d2fd7d6f6d821a03cc509eb7d0ba31b"
+    },
+    {
+      "bytes": 3702,
+      "path": "data/golden_vector_protocol.json",
+      "sha256": "36ff7cf197bf2c5dd18dafd68b544a6ba36acc61bda9b78f1727f45cd6d6b308"
+    },
+    {
+      "bytes": 143360,
+      "path": "data/golden_vectors.json",
+      "sha256": "258a316e15bd6952fcbc55fdafe4b4ddce81e44956a4ad30465ec923351bc7a9"
+    },
+    {
+      "bytes": 14011,
+      "path": "data/grading_policy.json",
+      "sha256": "f5ad0824d1bc39787891f06e5cd6328b19ea60731f322c0b99ec3443a705e395"
+    },
+    {
+      "bytes": 45878,
+      "path": "data/graph_scoring_contract.json",
+      "sha256": "927af0397cbe42444c4f625a04c53da524030a6bd62800e4fe729b83661a988d"
+    },
+    {
+      "bytes": 6252,
+      "path": "data/kinetics_linearization_contract.json",
+      "sha256": "2c264aa8a4e2ef204a268b459aeac601a410a44de02c4739b94039435ec55ddc"
+    },
+    {
+      "bytes": 12587,
+      "path": "data/mastery_policy.json",
+      "sha256": "cf102dce5dca701ba501145441b9636a05b64511f235893caf1740a80d899135"
+    },
+    {
+      "bytes": 113864,
+      "path": "data/method_cards.json",
+      "sha256": "b8a1427a8e397e72cfdece5d3443e9bcbe7e5135cb6cf511c377c2166218d8aa"
+    },
+    {
+      "bytes": 37072,
+      "path": "data/method_engine_contract.json",
+      "sha256": "fb1f1f64849c06e417d5b0dd4fdf352e78eacdd6e622dd8d7f0cab68fabd9ca8"
+    },
+    {
+      "bytes": 2353,
+      "path": "data/n06_term_stubs.json",
+      "sha256": "e4e2042087bffe5222def4cfbf47624bdd807eb458b94c6b3754fb94caf33e60"
+    },
+    {
+      "bytes": 2190,
+      "path": "data/n08_term_stubs.json",
+      "sha256": "235ecb79d6378ea393eb708b02aefa9decd12c7d6129bb4be5108f49a787b517"
+    },
+    {
+      "bytes": 8572,
+      "path": "data/practice_policy.json",
+      "sha256": "eb7b54aeba59dc59598e2334f53da5067a60210ca6e9b86cbe87e286a79e86ef"
+    },
+    {
+      "bytes": 20125,
+      "path": "data/question_schema.json",
+      "sha256": "2c55d0dd1c9208664ea08727bcd89328d64311bfb06e5ca3c435b35ed8ae2f2d"
+    },
+    {
+      "bytes": 4803,
+      "path": "data/reading_conventions_contract.json",
+      "sha256": "76a34160173b544dd134f2682b29426ae4ee1c36d4c2e753914c9643191c6732"
+    },
+    {
+      "bytes": 38557,
+      "path": "data/recall_layers.json",
+      "sha256": "490dc59e8decb49631b9c8a234d533bb167b7baf26511ae758d95a121bb56d55"
+    },
+    {
+      "bytes": 4788,
+      "path": "data/remediation_policy.json",
+      "sha256": "cc320a5279dd9999aeb757cfa1861fded8b1438d4b15709117f2f0d878aa39c0"
+    },
+    {
+      "bytes": 48837,
+      "path": "data/response_types.json",
+      "sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72"
+    },
+    {
+      "bytes": 5009,
+      "path": "data/revision_policy.json",
+      "sha256": "32156757ad60c09f3cf426a1128d3ec8045db768fa4349b87ff134ad4b374e56"
+    },
+    {
+      "bytes": 6219,
+      "path": "data/scheduler_policy.json",
+      "sha256": "1f4bace5a705ca1763116cd279a501912ecb85a0d106fedb15095cfb92e42916"
+    },
+    {
+      "bytes": 6777,
+      "path": "data/seed_policy.json",
+      "sha256": "d8404b2dd5106bb704181431c38133354503f10b68614a0487aef64806f35b26"
+    },
+    {
+      "bytes": 334620,
+      "path": "data/terms.json",
+      "sha256": "8bdd4b1379733ff0ebb63247663fdce8c81112dd733d80da571bc4171113897c"
+    },
+    {
+      "bytes": 3390,
+      "path": "data/titration_contract.json",
+      "sha256": "08e78d48b869f4773c9863b51fd25ff73b616986ab1a4b9ef7a76c917fbe487a"
+    },
+    {
+      "bytes": 20602,
+      "path": "data/tokens.json",
+      "sha256": "eaeb66e411d10b8bbd5d5713029e543dcbbabb7fb08285a9a26ef7637977a2d8"
+    },
+    {
+      "bytes": 42056,
+      "path": "src/analytics.ts",
+      "sha256": "72fefb5b2f3743dca5693cb500f4498b7439e23e0e5afcd85e78ba123c2b6eea"
+    },
+    {
+      "bytes": 58780,
+      "path": "src/assembly.ts",
+      "sha256": "5a4579c1bae44f97041d4009251cc88b5f47650b3a37bdf4c736b601af9e9333"
+    },
+    {
+      "bytes": 12496,
+      "path": "src/bank-loader.js",
+      "sha256": "74f6dff38bcc654d16aeac4adafa2981119501533a679ae8c64ad92f8d6d9cbe"
+    },
+    {
+      "bytes": 12405,
+      "path": "src/chain-view.js",
+      "sha256": "477d08ace64a93b6de5f0678eb9f43236f2d8e40d991105c63c6f0212c8edff3"
+    },
+    {
+      "bytes": 46211,
+      "path": "src/compiled/analytics.js",
+      "sha256": "0badcad95f97ffdd9fd2fee33e9cd7a398aed05dae83b9b0e4ebb2a3f516d7e5"
+    },
+    {
+      "bytes": 58129,
+      "path": "src/compiled/assembly.js",
+      "sha256": "551b56bdf39141a5bb6568f38c092ad0cf652d3addd2668c94d88181224ef9e5"
+    },
+    {
+      "bytes": 48996,
+      "path": "src/compiled/exam.js",
+      "sha256": "b4b316a8a70d1905af8c27432bd0854174476bdd65801ec8d25b0e984130902d"
+    },
+    {
+      "bytes": 62328,
+      "path": "src/compiled/feedback.js",
+      "sha256": "bc02c7d5e6db4ec0ff5524b66ead3e0f7de44f0457ddc46517dfd11cb7965c54"
+    },
+    {
+      "bytes": 79582,
+      "path": "src/compiled/grading.js",
+      "sha256": "c451545de08300523e0f2b7f958804502781248a9ba20baeb63b844dff5e889d"
+    },
+    {
+      "bytes": 123374,
+      "path": "src/compiled/inputs/components.js",
+      "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+    },
+    {
+      "bytes": 43718,
+      "path": "src/compiled/inputs/integration.js",
+      "sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+    },
+    {
+      "bytes": 58817,
+      "path": "src/compiled/inputs/registry.js",
+      "sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+    },
+    {
+      "bytes": 60766,
+      "path": "src/compiled/mastery.js",
+      "sha256": "265a7a943397d4cf00db80ddce782eacb581307479b229d4dcec7a51d2b45aae"
+    },
+    {
+      "bytes": 99235,
+      "path": "src/compiled/practice.js",
+      "sha256": "b1612d8f26a4cf16cabaa123793ea1742bead18136e01af2054757b786059da6"
+    },
+    {
+      "bytes": 88466,
+      "path": "src/compiled/remediation.js",
+      "sha256": "dbffc634d390e5a6c734174b43bb90cd404f007dce9e2b85bb9c726ea5c553e9"
+    },
+    {
+      "bytes": 88061,
+      "path": "src/compiled/revision.js",
+      "sha256": "29eba44e65711c245cc4a986368baa0ba96591b2ce85c852eabce822affb0ae4"
+    },
+    {
+      "bytes": 72778,
+      "path": "src/compiled/scheduler.js",
+      "sha256": "d1f072d3db0d0c11d81a39b41d047b846e450be5aacee18f511f26c726607f48"
+    },
+    {
+      "bytes": 20940,
+      "path": "src/compiled/session.js",
+      "sha256": "eae0fb094e10bc14dd0abfad33c35d6d0c3700ef3c09ea3b6c5b217273bd97b0"
+    },
+    {
+      "bytes": 43513,
+      "path": "src/compiled/store.js",
+      "sha256": "06231e4643780c863d407bb8857647e1f70727b4465418122d1edef9e7fbd44e"
+    },
+    {
+      "bytes": 20741,
+      "path": "src/concept-drawer.js",
+      "sha256": "146bf37373b90726c5888635420d1e6b98ab844dfbf078fc5a18f66f1c463747"
+    },
+    {
+      "bytes": 22138,
+      "path": "src/concept-map.js",
+      "sha256": "fc9fff9ceed75eb9145bbdaefb35bca03888a302d139f0350d6c7670332870e6"
+    },
+    {
+      "bytes": 17084,
+      "path": "src/conventions-loader.js",
+      "sha256": "8f6a3654a1472af1239e163966722a00de25e89efad79d9e36741c50a4e4e45a"
+    },
+    {
+      "bytes": 7307,
+      "path": "src/coverage-loader.js",
+      "sha256": "88d1bf28492a9d2281eda9b626b6421af1c0c1a3ac6bb3ffa95d73413954bd80"
+    },
+    {
+      "bytes": 5930,
+      "path": "src/coverage-view.js",
+      "sha256": "a893302ad1d93a5a6e5077ab5a94a55db86c1c382bc1e5d0bdb40aaf4433a1f1"
+    },
+    {
+      "bytes": 47766,
+      "path": "src/exam.ts",
+      "sha256": "9f339c6c67c593388050829413f5b9cbdbace93b7987ed5f1aefd45a72ca45a4"
+    },
+    {
+      "bytes": 66694,
+      "path": "src/feedback.ts",
+      "sha256": "1abc6b2928a9c8c94cbcb1232a64a954bff8f53c50d87b0ac72026d92ac988ef"
+    },
+    {
+      "bytes": 55308,
+      "path": "src/figure-framework.js",
+      "sha256": "e2faf3cc8f9749ce1c31329689cea056009e91be8a09469786a5470dbefce5fd"
+    },
+    {
+      "bytes": 7348,
+      "path": "src/golden-vectors-loader.js",
+      "sha256": "fd2bc28b45c996c5f51786177d18c9aebb7a3d7d3e2c6a75224139ca6e8b7338"
+    },
+    {
+      "bytes": 78366,
+      "path": "src/grading.ts",
+      "sha256": "79526fb586bb15bfe15fff0337cd8e819d5d9bc440e8d4f74410f7d2cef5d5aa"
+    },
+    {
+      "bytes": 7897,
+      "path": "src/graph-capture.js",
+      "sha256": "62a70232a725fd999374d40ba4f4a8a76580bbae32d075eab1d868a149c6c47a"
+    },
+    {
+      "bytes": 61766,
+      "path": "src/graph-scoring-engine.js",
+      "sha256": "988675cadd78f9ebade873ccf8fc62da52e1890fe3158fb911832b71815af76a"
+    },
+    {
+      "bytes": 17589,
+      "path": "src/hint-drawer.js",
+      "sha256": "729ee40be3dcc2abc1a6ec3d2af07f519e97be57e54600f6f70a25521f3506da"
+    },
+    {
+      "bytes": 112959,
+      "path": "src/inputs/components.ts",
+      "sha256": "c1a16c7286c506154a212a0ecb5f228a46a9f67fe514c277680b67b900ae57a9"
+    },
+    {
+      "bytes": 44258,
+      "path": "src/inputs/integration.ts",
+      "sha256": "d36d778ad19aab6f2904b70363a305efa2c1ebfcba30eb1b745bb99a09d59dba"
+    },
+    {
+      "bytes": 60824,
+      "path": "src/inputs/registry.ts",
+      "sha256": "eddae3aceea02daa2cf36f31915a702555f7c0c18a87b18de0beaa2734d126db"
+    },
+    {
+      "bytes": 12264,
+      "path": "src/leak-scan.js",
+      "sha256": "f6b86483bc659ed9982f4a84e36d8207869266ac0ccb9e71e2cda15be3846317"
+    },
+    {
+      "bytes": 58973,
+      "path": "src/mastery.ts",
+      "sha256": "a4fd5a1415b291ab52e04b357896d0964dab605b4348fafc6cf243353a3e6852"
+    },
+    {
+      "bytes": 12296,
+      "path": "src/method-card-view.js",
+      "sha256": "63cbd00f137fa5441db145b3806e1e3434b92d39ae96ca0a61c8694036ceaf9d"
+    },
+    {
+      "bytes": 35170,
+      "path": "src/method-engine.js",
+      "sha256": "6739da2ca6a1d8ae5f6ef94b4c37a7cafa41b1c2de91cda23345b6d08b947bfb"
+    },
+    {
+      "bytes": 94027,
+      "path": "src/practice.ts",
+      "sha256": "e7fa858273bdc6aa6220c88e981cd5e8032d20138109fdf32778b547f360fbab"
+    },
+    {
+      "bytes": 5272,
+      "path": "src/prng.js",
+      "sha256": "9f85ef21b65f7274e4e5dea9320d2a676b0cb7670607636fb92c6ef8184a414c"
+    },
+    {
+      "bytes": 31619,
+      "path": "src/quantity-engine.js",
+      "sha256": "2baa84054eafa401969e94aaf57a2ec7ff6c5bdb0a7cdf47852fcc573f95ed12"
+    },
+    {
+      "bytes": 89567,
+      "path": "src/remediation.ts",
+      "sha256": "7b88c82988e9c53f78b9ed84bc1da4aa8cba37849a37960a437126d08922f519"
+    },
+    {
+      "bytes": 83455,
+      "path": "src/revision.ts",
+      "sha256": "94e84f9e1006e5948a8d5502be12f76b74416f8fafce808354e1c1cbda9fae44"
+    },
+    {
+      "bytes": 72037,
+      "path": "src/scheduler.ts",
+      "sha256": "972e95c4d4b0c8566841ed71518daf515c4643dde74568e665771b14ec33b3f2"
+    },
+    {
+      "bytes": 24225,
+      "path": "src/session.ts",
+      "sha256": "62661fc40f28c777ecb0eef1a7bf3fd0e19610f200c09e0b1a89241819c34dda"
+    },
+    {
+      "bytes": 46569,
+      "path": "src/shell.html",
+      "sha256": "e77cc974f84fd4b8d9aac3940e3eafa3568bb738d93b4fce05376ffbf713560c"
+    },
+    {
+      "bytes": 73010,
+      "path": "src/smoke-subset.js",
+      "sha256": "d7456609b6c104831a549507efd33a058187fc077d3f40768ab2ca728089a0e9"
+    },
+    {
+      "bytes": 1262,
+      "path": "src/start-view.js",
+      "sha256": "85e7b18b55624bcdfc1ab78cccfa6ce965ebdb0f0aae825fca93ee7dac1de766"
+    },
+    {
+      "bytes": 42484,
+      "path": "src/store.ts",
+      "sha256": "e7ff78641b356e060428ed2bdf1db136dec73b65a4fa5fd7abb5d2760021bee3"
+    },
+    {
+      "bytes": 62609,
+      "path": "src/styles.css",
+      "sha256": "a3953873fc59d4995b72175cf35134c3e9f10929f2182e34f0428fc92c362cc8"
+    },
+    {
+      "bytes": 13653,
+      "path": "src/terms-loader.js",
+      "sha256": "dfcb7dab9797927e25fc08336ad954eef166aa0e9bc3ca7e59f7288abb2bf854"
+    },
+    {
+      "bytes": 5985,
+      "path": "src/theme-toggle.js",
+      "sha256": "7090437796740c008a262aac6adfcb2600e57eb766806ec25fddc2fa65fba16a"
+    },
+    {
+      "bytes": 42041,
+      "path": "src/variant-engine.js",
+      "sha256": "e0e395d2d3d88a472934ecf8cefe2ed11b3247f45eb98481752a7da3d5f085d8"
+    },
+    {
+      "bytes": 308633,
+      "path": "src/variant-templates.js",
+      "sha256": "b4f0ed8ba7e88ffcfe8d2f950ea8caec717f2119a46c2d840802fcb136a505db"
+    }
+  ],
+  "task": "N02/N03/N04/N05/N06/N07/N08/N10/N11/N12/N13/N14/N15/N16/N17/N18/N19/N20/N21/N22/N23/N24/N25/N26/N27/N28/N29/N30/N31",
+  "terms_island": {
+    "bytes": 250451,
+    "counts_by_class": {
+      "instruments": 13,
+      "interface": 413,
+      "iupac": 10,
+      "quantities": 31,
+      "terms": 206
+    },
+    "digest": "6366fa5c689ffbba828b9ae86ff993fd2a034e44c97e3b109cb6d2bbc513fa6b",
+    "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" before embedding",
+    "id": "sim-terms",
+    "source": "data/terms.json",
+    "terms_loader_js_bytes": 12793,
+    "total_entries": 673
+  },
+  "tokens_layer": {
+    "bytes": 15313,
+    "css_bytes": 68000,
+    "digest": "6007c4412f86d5a49524603500694143997ae3b9a786b76d0a4458db71f74502",
+    "embedded_js_data_bytes": 73831,
+    "runtime_js_bytes": 1265855,
+    "runtime_js_code_bytes": 1192024,
+    "source": "data/tokens.json",
+    "styles_source": "src/styles.css",
+    "template_overhead_bytes": 172837
+  },
+  "variant_engine_layer": {
+    "ephemeral_contract": {
+      "exclusion_rule": "A retry seed that is already a frozen seed is skipped; the attempt counter advances until an unused seed is found.",
+      "identity": "The ephemeral instance carries its own question id (-EPH-{attempt}) so that it cannot be confused with the frozen instance.",
+      "persistence": "never persisted; the instance lives in the in-memory session only.",
+      "seed_key_pattern": "{family}-{variant}-EPH-{attempt}"
+    },
+    "id": "n20-variant-engine",
+    "inlined_in_artifact": true,
+    "note": "N31 inlines src/variant-engine.js (SimVariantEngine) into the single-file artifact for seed derivation and remediation support, while src/variant-templates.js (308.6 KiB raw generator templates) remains in src/ as an authoring asset because all 112 reviewed instances are embedded in #sim-bank.",
+    "runtime_module": "src/variant-engine.js",
+    "template_asset": "src/variant-templates.js",
+    "template_data": "data/family_templates",
+    "template_digest": "64c492264c669b6b0b48fa00abac59e3bcaf6fc714e4fb9e0e3dc6c42efa80ad",
+    "template_files": [
+      "data/family_templates/topic1.json",
+      "data/family_templates/topic2.json",
+      "data/family_templates/topic3.json",
+      "data/family_templates/topic4.json",
+      "data/family_templates/topic5.json",
+      "data/family_templates/topic6.json",
+      "data/family_templates/topic7.json"
+    ],
+    "templates_inlined_in_artifact": false
+  },
+  "version": "1.0.0-n31"
+}

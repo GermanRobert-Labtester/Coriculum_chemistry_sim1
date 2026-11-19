@@ -1,0 +1,1898 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-figures",
+  "status": "authored",
+  "owner": "N14",
+  "scope": "Topic 5 (T5) kinetics: zero/first/second-order concentration-time decays, three linearization plots with coupled tolerance fields, catalyst k comparison, and one gradeable practice linearization.",
+  "records_note": "Synthetic training datasets are labelled PROPOSED and are not official experimental measurements.",
+  "figures": [
+    {
+      "id": "FIG-T5-DECAY-ZERO",
+      "type": "curve",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-01",
+        "P5-05",
+        "P5-09"
+      ],
+      "title_key": "fig.title.t5_decay_zero",
+      "subtitle_lv": "C₀ = 1,00 mol/L; k = 0,0200 mol/(L·s); intervāls 0–40 s",
+      "description_lv": "Nulles pakāpes sabrukšanas līkne: koncentrācija lineāri samazinās no C₀ = 1,00 mol/L ar k = 0,0200 mol/(L·s) intervālā no 0 līdz 40 s. Pusperioda atzīme rāda t½ = C₀/(2k) = 25,0 s.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 40,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.concentration_mol_l",
+          "unit": "mol/L",
+          "dimension": "concentration_amount",
+          "min": 0,
+          "max": 1.1,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t5-zero-decay",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "kinetics_decay",
+            "point_count": 81,
+            "params": {
+              "order": 0,
+              "k": 0.02,
+              "C0_mol_l": 1.0,
+              "t_min_s": 0,
+              "t_max_s": 40
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-zero-eq",
+          "annotation_key": "fig.annot.t5_decay_zero",
+          "citation_ref": "CIT-C5-INTEGRATED",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-zero-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "der-order-integrated",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-KUNITS",
+          "CIT-C5-GRAPH"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C5-GRAPH",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "kinetics_spec": {
+        "order": 0,
+        "C0_mol_l": "1.00",
+        "k": "0.0200",
+        "k_unit": "mol/(L·s)",
+        "x_transform": "t",
+        "y_transform": "C",
+        "half_life_s": "25.0",
+        "half_life_formula": "C0/(2k)",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 40
+        }
+      },
+      "half_life_marker": {
+        "t_s": 25.0,
+        "C_mol_l": 0.5
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (nulles pakāpe)",
+        "columns": [
+          "t, s",
+          "C, mol/L"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,00"
+          ],
+          [
+            "5",
+            "0,90"
+          ],
+          [
+            "10",
+            "0,80"
+          ],
+          [
+            "15",
+            "0,70"
+          ],
+          [
+            "20",
+            "0,60"
+          ],
+          [
+            "25",
+            "0,50"
+          ],
+          [
+            "30",
+            "0,40"
+          ],
+          [
+            "35",
+            "0,30"
+          ],
+          [
+            "40",
+            "0,20"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-T5-Z-HL",
+          "label_lv": "Pusperiods t½ = C₀/(2k)",
+          "formula_kind": "kinetics_half_life",
+          "inputs": {
+            "order": 0,
+            "C0_mol_l": "1.00",
+            "k": "0.0200"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "constants.LN2"
+          ],
+          "value": "25.0",
+          "unit": "s",
+          "sig_figs": 3,
+          "display_lv": "25,0 s"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-DECAY-FIRST",
+      "type": "curve",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-01",
+        "P5-02",
+        "P5-05",
+        "P5-08",
+        "P5-10"
+      ],
+      "title_key": "fig.title.t5_decay_first",
+      "subtitle_lv": "C₀ = 1,00 mol/L; k = 0,0500 s⁻¹; t½ = ln2/k = 13,9 s",
+      "description_lv": "Pirmās pakāpes sabrukšanas līkne: C = C₀·e^(−kt) ar C₀ = 1,00 mol/L un k = 0,0500 s⁻¹ intervālā no 0 līdz 30 s. Atzīmētais pusperiods t½ = ln2/k = 13,9 s ir neatkarīgs no sākuma koncentrācijas.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.concentration_mol_l",
+          "unit": "mol/L",
+          "dimension": "concentration_amount",
+          "min": 0,
+          "max": 1.1,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t5-first-decay",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "kinetics_decay",
+            "point_count": 121,
+            "params": {
+              "order": 1,
+              "k": 0.05,
+              "C0_mol_l": 1.0,
+              "t_min_s": 0,
+              "t_max_s": 30
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-first-hl",
+          "annotation_key": "fig.annot.t5_decay_first",
+          "citation_ref": "CIT-C5-HALFLIFE",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-first-read",
+          "annotation_key": "fig.annot.t5_half_life_read",
+          "citation_ref": "CIT-C5-HALFLIFE",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-first-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "der-order-integrated",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-GRAPH",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C5-GRAPH",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "kinetics_spec": {
+        "order": 1,
+        "C0_mol_l": "1.00",
+        "k": "0.0500",
+        "k_unit": "s⁻¹",
+        "x_transform": "t",
+        "y_transform": "ln(C/C0)",
+        "half_life_s": "13.9",
+        "half_life_exact_s": "13.862944",
+        "half_life_formula": "ln2/k",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 30
+        }
+      },
+      "half_life_marker": {
+        "t_s": 13.8629,
+        "C_mol_l": 0.5
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (pirmā pakāpe)",
+        "columns": [
+          "t, s",
+          "C, mol/L"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,000000"
+          ],
+          [
+            "3",
+            "0,860708"
+          ],
+          [
+            "6",
+            "0,740818"
+          ],
+          [
+            "9",
+            "0,637628"
+          ],
+          [
+            "12",
+            "0,548812"
+          ],
+          [
+            "15",
+            "0,472367"
+          ],
+          [
+            "18",
+            "0,406570"
+          ],
+          [
+            "21",
+            "0,349938"
+          ],
+          [
+            "24",
+            "0,301194"
+          ],
+          [
+            "27",
+            "0,259240"
+          ],
+          [
+            "30",
+            "0,223130"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-T5-F-HL",
+          "label_lv": "Pusperiods t½ = ln2/k",
+          "formula_kind": "kinetics_half_life",
+          "inputs": {
+            "order": 1,
+            "C0_mol_l": "1.00",
+            "k": "0.0500"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "constants.LN2"
+          ],
+          "value": "13.9",
+          "unit": "s",
+          "sig_figs": 3,
+          "display_lv": "13,9 s"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-DECAY-SECOND",
+      "type": "curve",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-01",
+        "P5-05",
+        "P5-09"
+      ],
+      "title_key": "fig.title.t5_decay_second",
+      "subtitle_lv": "C₀ = 1,00 mol/L; k = 0,0400 L/(mol·s); t½ = 1/(kC₀) = 25,0 s",
+      "description_lv": "Otrās pakāpes sabrukšanas līkne: C = C₀/(1 + k·C₀·t) ar C₀ = 1,00 mol/L un k = 0,0400 L/(mol·s) intervālā no 0 līdz 30 s. Pusperiods t½ = 1/(kC₀) = 25,0 s ir atkarīgs no sākuma koncentrācijas.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.concentration_mol_l",
+          "unit": "mol/L",
+          "dimension": "concentration_amount",
+          "min": 0,
+          "max": 1.1,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t5-second-decay",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "kinetics_decay",
+            "point_count": 121,
+            "params": {
+              "order": 2,
+              "k": 0.04,
+              "C0_mol_l": 1.0,
+              "t_min_s": 0,
+              "t_max_s": 30
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-second-eq",
+          "annotation_key": "fig.annot.t5_decay_second",
+          "citation_ref": "CIT-C5-INTEGRATED",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-second-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "der-order-integrated",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C5-GRAPH",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "kinetics_spec": {
+        "order": 2,
+        "C0_mol_l": "1.00",
+        "k": "0.0400",
+        "k_unit": "L/(mol·s)",
+        "x_transform": "t",
+        "y_transform": "1/C",
+        "half_life_s": "25.0",
+        "half_life_formula": "1/(kC0)",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 30
+        }
+      },
+      "half_life_marker": {
+        "t_s": 25.0,
+        "C_mol_l": 0.5
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (otrā pakāpe)",
+        "columns": [
+          "t, s",
+          "C, mol/L"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,000000"
+          ],
+          [
+            "3",
+            "0,892857"
+          ],
+          [
+            "6",
+            "0,806452"
+          ],
+          [
+            "9",
+            "0,735294"
+          ],
+          [
+            "12",
+            "0,675676"
+          ],
+          [
+            "15",
+            "0,625000"
+          ],
+          [
+            "18",
+            "0,581395"
+          ],
+          [
+            "21",
+            "0,543478"
+          ],
+          [
+            "24",
+            "0,510204"
+          ],
+          [
+            "27",
+            "0,480769"
+          ],
+          [
+            "30",
+            "0,454545"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-T5-S-HL",
+          "label_lv": "Pusperiods t½ = 1/(kC₀)",
+          "formula_kind": "kinetics_half_life",
+          "inputs": {
+            "order": 2,
+            "C0_mol_l": "1.00",
+            "k": "0.0400"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "25.0",
+          "unit": "s",
+          "sig_figs": 3,
+          "display_lv": "25,0 s"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-DECAY-CATALYST",
+      "type": "curve",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-02",
+        "P5-03"
+      ],
+      "title_key": "fig.title.t5_catalyst",
+      "subtitle_lv": "Bez katalizatora k = 0,0250 s⁻¹; ar katalizatoru k = 0,0750 s⁻¹",
+      "description_lv": "Divas pirmās pakāpes sabrukšanas līknes vienādos apstākļos: bez katalizatora k = 0,0250 s⁻¹ un ar katalizatoru k = 0,0750 s⁻¹. Katalizators palielina ātruma konstanti un saīsina pusperiodu, bet nemaina pirmās pakāpes linearizācijas metodi.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.concentration_mol_l",
+          "unit": "mol/L",
+          "dimension": "concentration_amount",
+          "min": 0,
+          "max": 1.1,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "t5-cat-uncat",
+          "legend_key": "fig.legend.t5_uncatalyzed",
+          "style_role": "primary",
+          "curve_model": {
+            "function_class": "kinetics_decay",
+            "point_count": 121,
+            "params": {
+              "order": 1,
+              "k": 0.025,
+              "C0_mol_l": 1.0,
+              "t_min_s": 0,
+              "t_max_s": 30
+            }
+          }
+        },
+        {
+          "id": "t5-cat-cat",
+          "legend_key": "fig.legend.t5_catalyzed",
+          "style_role": "secondary",
+          "curve_model": {
+            "function_class": "kinetics_decay",
+            "point_count": 121,
+            "params": {
+              "order": 1,
+              "k": 0.075,
+              "C0_mol_l": 1.0,
+              "t_min_s": 0,
+              "t_max_s": 30
+            }
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-cat",
+          "annotation_key": "fig.annot.t5_catalyst",
+          "citation_ref": "CIT-C5-RATE-DEF",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-cat-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-catalysed",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-RATE-DEF",
+          "CIT-C5-GRAPH"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C5-GRAPH",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "kinetics_spec": {
+        "order": 1,
+        "C0_mol_l": "1.00",
+        "k": "0.0250",
+        "k_unit": "s⁻¹",
+        "comparison_k": [
+          "0.0250",
+          "0.0750"
+        ],
+        "x_transform": "t",
+        "y_transform": "ln(C/C0)",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 30
+        }
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (katalizatora salīdzinājums)",
+        "columns": [
+          "t, s",
+          "C bez kat., mol/L",
+          "C ar kat., mol/L"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,000000",
+            "1,000000"
+          ],
+          [
+            "5",
+            "0,882497",
+            "0,687289"
+          ],
+          [
+            "10",
+            "0,778801",
+            "0,472367"
+          ],
+          [
+            "15",
+            "0,687289",
+            "0,324652"
+          ],
+          [
+            "20",
+            "0,606531",
+            "0,223130"
+          ],
+          [
+            "25",
+            "0,535261",
+            "0,153355"
+          ],
+          [
+            "30",
+            "0,472367",
+            "0,105399"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "FIG-T5-LIN-ZERO",
+      "type": "scatter",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-01",
+        "P5-05",
+        "P5-09"
+      ],
+      "title_key": "fig.title.t5_lin_zero",
+      "subtitle_lv": "C pret t ir taisne; slīpums −k, krustpunkts C₀",
+      "description_lv": "Nulles pakāpes linearizācija: C pret t ir taisne ar slīpumu −k = −0,0200 mol/(L·s) un krustpunktu C₀ = 1,00 mol/L. Datu punkti ir tie paši sintētiskie punkti, kas sabrukšanas līknē; taisne novilkta tikai datu intervālā 0–40 s.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 40,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.concentration_mol_l",
+          "unit": "mol/L",
+          "dimension": "concentration_amount",
+          "min": 0,
+          "max": 1.1,
+          "step": 0.2,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "fig-t5-lin-zero-points",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "id": "p0",
+              "x": 0,
+              "y": 1.0
+            },
+            {
+              "id": "p5",
+              "x": 5,
+              "y": 0.9
+            },
+            {
+              "id": "p10",
+              "x": 10,
+              "y": 0.8
+            },
+            {
+              "id": "p15",
+              "x": 15,
+              "y": 0.7
+            },
+            {
+              "id": "p20",
+              "x": 20,
+              "y": 0.6
+            },
+            {
+              "id": "p25",
+              "x": 25,
+              "y": 0.5
+            },
+            {
+              "id": "p30",
+              "x": 30,
+              "y": 0.4
+            },
+            {
+              "id": "p35",
+              "x": 35,
+              "y": 0.3
+            },
+            {
+              "id": "p40",
+              "x": 40,
+              "y": 0.2
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-main",
+          "annotation_key": "fig.annot.t5_lin_zero",
+          "citation_ref": "CIT-C5-INTEGRATED",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-span",
+          "annotation_key": "fig.annot.t5_span",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-fallback-order",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-GRAPH",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "kinetics_spec": {
+        "order": 0,
+        "C0_mol_l": "1.00",
+        "k": "0.0200",
+        "k_unit": "mol/(L·s)",
+        "x_transform": "t",
+        "y_transform": "C",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 40
+        }
+      },
+      "paired_decay_id": "FIG-T5-DECAY-ZERO",
+      "span": {
+        "x_min": 0,
+        "x_max": 40,
+        "data_x_min": 0,
+        "data_x_max": 40,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": "-0.0200",
+        "intercept": "1.00",
+        "x_min": 0,
+        "x_max": 40,
+        "unit": "mol/L",
+        "true_line_of": "kinetics_spec"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "concentration_molar",
+        "conventions_ref": "CIT-C5-GRAPH",
+        "target_quantity_term_key": "fig.axis.concentration_mol_l",
+        "expected_unit": "mol/L",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "tolerance_fields": {
+        "slope": {
+          "tolerance_class": "rate_constant_zero",
+          "tolerance_mode": "significant_figures",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "mol/(L·s)",
+          "meaning_lv": "Slīpuma pieļaujamā novirze; režīms significant_figures, tāpēc logs seko k lielumam.",
+          "sig_figs": 2
+        },
+        "intercept": {
+          "tolerance_class": "concentration_molar",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-GRAPH",
+          "expected_unit": "mol/L",
+          "meaning_lv": "Krustpunkta pieļaujamā novirze attiecīgajā y ass vienībā.",
+          "abs_value": "0.01"
+        },
+        "point_acceptance": {
+          "tolerance_class": "concentration_molar",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-GRAPH",
+          "expected_unit": "mol/L",
+          "meaning_lv": "Punkta pieņemšanas logs: novilktās taisnes y attālums no īstās taisnes datu intervālā.",
+          "abs_value": "0.01"
+        }
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (nulles pakāpes linearizācija)",
+        "columns": [
+          "t, s",
+          "C, mol/L",
+          "C, mol/L"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,00",
+            "1,00"
+          ],
+          [
+            "5",
+            "0,90",
+            "0,90"
+          ],
+          [
+            "10",
+            "0,80",
+            "0,80"
+          ],
+          [
+            "15",
+            "0,70",
+            "0,70"
+          ],
+          [
+            "20",
+            "0,60",
+            "0,60"
+          ],
+          [
+            "25",
+            "0,50",
+            "0,50"
+          ],
+          [
+            "30",
+            "0,40",
+            "0,40"
+          ],
+          [
+            "35",
+            "0,30",
+            "0,30"
+          ],
+          [
+            "40",
+            "0,20",
+            "0,20"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-FIG-T5-LIN-ZERO-SLOPE",
+          "label_lv": "Linearizācijas taisnes slīpums no sabrukšanas parametriem",
+          "formula_kind": "kinetics_slope_from_decay",
+          "inputs": {
+            "order": 0,
+            "k": "0.0200"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "-0.0200",
+          "unit": "mol/(L·s)",
+          "sig_figs": 3,
+          "display_lv": "-0,020 mol/(L·s)"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-ZERO-INTERCEPT",
+          "label_lv": "Linearizācijas taisnes krustpunkts no sabrukšanas parametriem",
+          "formula_kind": "kinetics_intercept_from_decay",
+          "inputs": {
+            "order": 0,
+            "C0_mol_l": "1.00"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "1.00",
+          "unit": "mol/L",
+          "sig_figs": 3,
+          "display_lv": "1,00 mol/L"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-ZERO-K",
+          "label_lv": "Ātruma konstante k no slīpuma",
+          "formula_kind": "kinetics_k_from_slope",
+          "inputs": {
+            "order": 0,
+            "slope": "-0.0200"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "kinetics.integrated_forms"
+          ],
+          "value": "0.0200",
+          "unit": "mol/(L·s)",
+          "sig_figs": 3,
+          "display_lv": "0,0200 mol/(L·s)"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-LIN-FIRST",
+      "type": "scatter",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-01",
+        "P5-05",
+        "P5-08",
+        "P5-09",
+        "P5-10"
+      ],
+      "title_key": "fig.title.t5_lin_first",
+      "subtitle_lv": "ln(C/C₀) pret t ir taisne; slīpums −k, krustpunkts 0",
+      "description_lv": "Pirmās pakāpes linearizācija: ln(C/C₀) pret t ir taisne ar slīpumu −k = −0,0500 s⁻¹ un krustpunktu 0. Slīpums ir tas pats k, kas pusperiodā t½ = ln2/k = 13,9 s; taisne novilkta tikai datu intervālā 0–30 s.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ln_concentration_ratio",
+          "unit": null,
+          "dimension": null,
+          "min": -1.6,
+          "max": 0.1,
+          "step": 0.4,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "fig-t5-lin-first-points",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "id": "p0",
+              "x": 0,
+              "y": 0.0
+            },
+            {
+              "id": "p5",
+              "x": 5,
+              "y": -0.25
+            },
+            {
+              "id": "p10",
+              "x": 10,
+              "y": -0.5
+            },
+            {
+              "id": "p15",
+              "x": 15,
+              "y": -0.75
+            },
+            {
+              "id": "p20",
+              "x": 20,
+              "y": -1.0
+            },
+            {
+              "id": "p25",
+              "x": 25,
+              "y": -1.25
+            },
+            {
+              "id": "p30",
+              "x": 30,
+              "y": -1.5
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-main",
+          "annotation_key": "fig.annot.t5_lin_first",
+          "citation_ref": "CIT-C5-INTEGRATED",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-span",
+          "annotation_key": "fig.annot.t5_span",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-fallback-order",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-GRAPH",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "kinetics_spec": {
+        "order": 1,
+        "C0_mol_l": "1.00",
+        "k": "0.0500",
+        "k_unit": "s⁻¹",
+        "x_transform": "t",
+        "y_transform": "ln(C/C0)",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 30
+        }
+      },
+      "paired_decay_id": "FIG-T5-DECAY-FIRST",
+      "span": {
+        "x_min": 0,
+        "x_max": 30,
+        "data_x_min": 0,
+        "data_x_max": 30,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": "-0.0500",
+        "intercept": "0.00",
+        "x_min": 0,
+        "x_max": 30,
+        "unit": "1",
+        "true_line_of": "kinetics_spec"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "log_concentration_ratio",
+        "conventions_ref": "CIT-C5-KUNITS",
+        "target_quantity_term_key": "fig.axis.ln_concentration_ratio",
+        "expected_unit": "1",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "tolerance_fields": {
+        "slope": {
+          "tolerance_class": "rate_constant_first",
+          "tolerance_mode": "significant_figures",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "s⁻¹",
+          "meaning_lv": "Slīpuma pieļaujamā novirze; režīms significant_figures, tāpēc logs seko k lielumam.",
+          "sig_figs": 2
+        },
+        "intercept": {
+          "tolerance_class": "log_concentration_ratio",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "1",
+          "meaning_lv": "Krustpunkta pieļaujamā novirze attiecīgajā y ass vienībā.",
+          "abs_value": "0.02"
+        },
+        "point_acceptance": {
+          "tolerance_class": "log_concentration_ratio",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "1",
+          "meaning_lv": "Punkta pieņemšanas logs: novilktās taisnes y attālums no īstās taisnes datu intervālā.",
+          "abs_value": "0.02"
+        }
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (pirmās pakāpes linearizācija)",
+        "columns": [
+          "t, s",
+          "C, mol/L",
+          "ln(C/C₀)"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,000000",
+            "0,000000"
+          ],
+          [
+            "5",
+            "0,778801",
+            "-0,250000"
+          ],
+          [
+            "10",
+            "0,606531",
+            "-0,500000"
+          ],
+          [
+            "15",
+            "0,472367",
+            "-0,750000"
+          ],
+          [
+            "20",
+            "0,367879",
+            "-1,000000"
+          ],
+          [
+            "25",
+            "0,286505",
+            "-1,250000"
+          ],
+          [
+            "30",
+            "0,223130",
+            "-1,500000"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-FIG-T5-LIN-FIRST-SLOPE",
+          "label_lv": "Linearizācijas taisnes slīpums no sabrukšanas parametriem",
+          "formula_kind": "kinetics_slope_from_decay",
+          "inputs": {
+            "order": 1,
+            "k": "0.0500"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "-0.0500",
+          "unit": "s⁻¹",
+          "sig_figs": 3,
+          "display_lv": "-0,0500 s⁻¹"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-FIRST-INTERCEPT",
+          "label_lv": "Linearizācijas taisnes krustpunkts no sabrukšanas parametriem",
+          "formula_kind": "kinetics_intercept_from_decay",
+          "inputs": {
+            "order": 1,
+            "C0_mol_l": "1.00"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "0.00",
+          "unit": "1",
+          "sig_figs": 3,
+          "display_lv": "0,00"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-FIRST-K",
+          "label_lv": "Ātruma konstante k no slīpuma",
+          "formula_kind": "kinetics_k_from_slope",
+          "inputs": {
+            "order": 1,
+            "slope": "-0.0500"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "kinetics.integrated_forms"
+          ],
+          "value": "0.0500",
+          "unit": "s⁻¹",
+          "sig_figs": 3,
+          "display_lv": "0,0500 s⁻¹"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-FIRST-HL",
+          "label_lv": "Pusperiods t½ = ln2/k",
+          "formula_kind": "kinetics_half_life",
+          "inputs": {
+            "order": 1,
+            "C0_mol_l": "1.00",
+            "k": "0.0500"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "constants.LN2"
+          ],
+          "value": "13.9",
+          "unit": "s",
+          "sig_figs": 3,
+          "display_lv": "13,9 s"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-LIN-SECOND",
+      "type": "scatter",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-05",
+        "P5-09"
+      ],
+      "title_key": "fig.title.t5_lin_second",
+      "subtitle_lv": "1/C pret t ir taisne; slīpums +k, krustpunkts 1/C₀",
+      "description_lv": "Otrās pakāpes linearizācija: 1/C pret t ir taisne ar slīpumu +k = +0,0400 L/(mol·s) un krustpunktu 1/C₀ = 1,00 L/mol. Taisne novilkta tikai datu intervālā 0–30 s; pusperiods t½ = 1/(kC₀) = 25,0 s ir atkarīgs no C₀.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": false,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.inverse_concentration_l_mol",
+          "unit": "L/mol",
+          "dimension": "inverse_concentration",
+          "min": 0.9,
+          "max": 2.3,
+          "step": 0.4,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "fig-t5-lin-second-points",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "id": "p0",
+              "x": 0,
+              "y": 1.0
+            },
+            {
+              "id": "p5",
+              "x": 5,
+              "y": 1.2
+            },
+            {
+              "id": "p10",
+              "x": 10,
+              "y": 1.4
+            },
+            {
+              "id": "p15",
+              "x": 15,
+              "y": 1.6
+            },
+            {
+              "id": "p20",
+              "x": 20,
+              "y": 1.8
+            },
+            {
+              "id": "p25",
+              "x": 25,
+              "y": 2.0
+            },
+            {
+              "id": "p30",
+              "x": 30,
+              "y": 2.2
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-main",
+          "annotation_key": "fig.annot.t5_lin_second",
+          "citation_ref": "CIT-C5-INTEGRATED",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-span",
+          "annotation_key": "fig.annot.t5_span",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-fallback-order",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-GRAPH",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "kinetics_spec": {
+        "order": 2,
+        "C0_mol_l": "1.00",
+        "k": "0.0400",
+        "k_unit": "L/(mol·s)",
+        "x_transform": "t",
+        "y_transform": "1/C",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 30
+        }
+      },
+      "paired_decay_id": "FIG-T5-DECAY-SECOND",
+      "span": {
+        "x_min": 0,
+        "x_max": 30,
+        "data_x_min": 0,
+        "data_x_max": 30,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "fit_line": {
+        "slope": "0.0400",
+        "intercept": "1.00",
+        "x_min": 0,
+        "x_max": 30,
+        "unit": "L/mol",
+        "true_line_of": "kinetics_spec"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "inverse_concentration",
+        "conventions_ref": "CIT-C5-KUNITS",
+        "target_quantity_term_key": "fig.axis.inverse_concentration_l_mol",
+        "expected_unit": "L/mol",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "tolerance_fields": {
+        "slope": {
+          "tolerance_class": "rate_constant_second",
+          "tolerance_mode": "significant_figures",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "L/(mol·s)",
+          "meaning_lv": "Slīpuma pieļaujamā novirze; režīms significant_figures, tāpēc logs seko k lielumam.",
+          "sig_figs": 2
+        },
+        "intercept": {
+          "tolerance_class": "inverse_concentration",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "L/mol",
+          "meaning_lv": "Krustpunkta pieļaujamā novirze attiecīgajā y ass vienībā.",
+          "abs_value": "0.05"
+        },
+        "point_acceptance": {
+          "tolerance_class": "inverse_concentration",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "L/mol",
+          "meaning_lv": "Punkta pieņemšanas logs: novilktās taisnes y attālums no īstās taisnes datu intervālā.",
+          "abs_value": "0.05"
+        }
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā datu kopa (otrās pakāpes linearizācija)",
+        "columns": [
+          "t, s",
+          "C, mol/L",
+          "1/C, L/mol"
+        ],
+        "rows": [
+          [
+            "0",
+            "1,000000",
+            "1,000000"
+          ],
+          [
+            "5",
+            "0,833333",
+            "1,200000"
+          ],
+          [
+            "10",
+            "0,714286",
+            "1,400000"
+          ],
+          [
+            "15",
+            "0,625000",
+            "1,600000"
+          ],
+          [
+            "20",
+            "0,555556",
+            "1,800000"
+          ],
+          [
+            "25",
+            "0,500000",
+            "2,000000"
+          ],
+          [
+            "30",
+            "0,454545",
+            "2,200000"
+          ]
+        ]
+      },
+      "derived_values": [
+        {
+          "id": "DV-FIG-T5-LIN-SECOND-SLOPE",
+          "label_lv": "Linearizācijas taisnes slīpums no sabrukšanas parametriem",
+          "formula_kind": "kinetics_slope_from_decay",
+          "inputs": {
+            "order": 2,
+            "k": "0.0400"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "0.0400",
+          "unit": "L/(mol·s)",
+          "sig_figs": 3,
+          "display_lv": "0,0400 L/(mol·s)"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-SECOND-INTERCEPT",
+          "label_lv": "Linearizācijas taisnes krustpunkts no sabrukšanas parametriem",
+          "formula_kind": "kinetics_intercept_from_decay",
+          "inputs": {
+            "order": 2,
+            "C0_mol_l": "1.00"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms"
+          ],
+          "value": "1.00",
+          "unit": "L/mol",
+          "sig_figs": 3,
+          "display_lv": "1,00 L/mol"
+        },
+        {
+          "id": "DV-FIG-T5-LIN-SECOND-K",
+          "label_lv": "Ātruma konstante k no slīpuma",
+          "formula_kind": "kinetics_k_from_slope",
+          "inputs": {
+            "order": 2,
+            "slope": "0.0400"
+          },
+          "conventions_sources": [
+            "kinetics.integrated_forms",
+            "kinetics.integrated_forms"
+          ],
+          "value": "0.0400",
+          "unit": "L/(mol·s)",
+          "sig_figs": 3,
+          "display_lv": "0,0400 L/(mol·s)"
+        }
+      ]
+    },
+    {
+      "id": "FIG-T5-LIN-PRACTICE",
+      "type": "scatter",
+      "version": 1,
+      "topic": 5,
+      "concept_ids": [
+        "P5-05",
+        "P5-09"
+      ],
+      "title_key": "fig.title.t5_lin_practice",
+      "subtitle_lv": "Nezināms k; nolasiet slīpumu un aprēķiniet k un t½",
+      "description_lv": "Prakses linearizācijas attēls: pirmās pakāpes sintētiski dati ar nezināmu ātruma konstanti. Skolēns nolasa taisnes slīpumu, aprēķina k un t½. Atbilde attēlā nav atzīmēta; vērtē tikai datu intervālā 0–20 s.",
+      "epistemic_label": "PROPOSED training policy",
+      "has_measured_quantity": true,
+      "gradeable": true,
+      "dataset_label_lv": "Sintētiski mācību dati (PROPOSED); nav oficiāli eksperimenta mērījumi.",
+      "axes": {
+        "x": {
+          "term_key": "fig.axis.time_s",
+          "unit": "s",
+          "dimension": "time",
+          "min": 0,
+          "max": 20,
+          "step": 4,
+          "scale_type": "linear"
+        },
+        "y": {
+          "term_key": "fig.axis.ln_concentration_ratio",
+          "unit": null,
+          "dimension": null,
+          "min": -1.7,
+          "max": 0.1,
+          "step": 0.5,
+          "scale_type": "linear"
+        }
+      },
+      "series": [
+        {
+          "id": "fig-t5-lin-practice-points",
+          "legend_key": "fig.legend.t5_data_points",
+          "style_role": "primary",
+          "points": [
+            {
+              "id": "p0",
+              "x": 0,
+              "y": 0.0
+            },
+            {
+              "id": "p4",
+              "x": 4,
+              "y": -0.32
+            },
+            {
+              "id": "p8",
+              "x": 8,
+              "y": -0.64
+            },
+            {
+              "id": "p12",
+              "x": 12,
+              "y": -0.96
+            },
+            {
+              "id": "p16",
+              "x": 16,
+              "y": -1.28
+            },
+            {
+              "id": "p20",
+              "x": 20,
+              "y": -1.6
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-prac-instr",
+          "annotation_key": "fig.annot.t5_lin_practice_instruction",
+          "citation_ref": "CIT-C5-KUNITS",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-prac-span",
+          "annotation_key": "fig.annot.t5_lin_practice_span",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        },
+        {
+          "id": "ann-synth",
+          "annotation_key": "fig.annot.t5_synthetic",
+          "citation_ref": "CIT-C5-GRAPH",
+          "position": "bottom"
+        }
+      ],
+      "citations": {
+        "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+        "master_anchor": "fig-fallback-order",
+        "master_freeze_id": "C5-MASTER",
+        "conventions_refs": [
+          "CIT-C5-INTEGRATED",
+          "CIT-C5-HALFLIFE",
+          "CIT-C5-KUNITS"
+        ]
+      },
+      "lazy_slot": true,
+      "print_spec": {
+        "width_mm": 160,
+        "height_mm": 96,
+        "viewBox": [
+          0,
+          0,
+          760,
+          400
+        ],
+        "monochrome_safe": true
+      },
+      "kinetics_spec": {
+        "order": 1,
+        "C0_mol_l": "0.50",
+        "k": null,
+        "k_unit": "s⁻¹",
+        "x_transform": "t",
+        "y_transform": "ln(C/C0)",
+        "span_s": {
+          "x_min": 0,
+          "x_max": 20
+        }
+      },
+      "span": {
+        "x_min": 0,
+        "x_max": 20,
+        "data_x_min": 0,
+        "data_x_max": 20,
+        "edge_rule": "inclusive",
+        "beyond_span": "not_assessed"
+      },
+      "tolerance_coupling": {
+        "required": true,
+        "tolerance_class": "log_concentration_ratio",
+        "conventions_ref": "CIT-C5-KUNITS",
+        "target_quantity_term_key": "fig.axis.ln_concentration_ratio",
+        "expected_unit": "1",
+        "sig_figs_rule": "least_of_givens"
+      },
+      "tolerance_fields": {
+        "slope": {
+          "tolerance_class": "rate_constant_first",
+          "tolerance_mode": "significant_figures",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "s⁻¹",
+          "meaning_lv": "Slīpuma pieļaujamā novirze; režīms significant_figures, tāpēc logs seko k lielumam.",
+          "sig_figs": 2
+        },
+        "intercept": {
+          "tolerance_class": "log_concentration_ratio",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "1",
+          "meaning_lv": "Krustpunkta pieļaujamā novirze attiecīgajā y ass vienībā.",
+          "abs_value": "0.02"
+        },
+        "point_acceptance": {
+          "tolerance_class": "log_concentration_ratio",
+          "tolerance_mode": "absolute",
+          "conventions_ref": "CIT-C5-KUNITS",
+          "expected_unit": "1",
+          "meaning_lv": "Punkta pieņemšanas logs: novilktās taisnes y attālums no īstās taisnes datu intervālā.",
+          "abs_value": "0.02"
+        }
+      },
+      "dataset_table": {
+        "caption_lv": "Sintētiskā prakses datu kopa (pirmās pakāpes linearizācija, nezināms k)",
+        "columns": [
+          "t, s",
+          "C, mol/L",
+          "ln(C/C₀)"
+        ],
+        "rows": [
+          [
+            "0",
+            "0,500000",
+            "0,000000"
+          ],
+          [
+            "4",
+            "0,363075",
+            "-0,320000"
+          ],
+          [
+            "8",
+            "0,263646",
+            "-0,640000"
+          ],
+          [
+            "12",
+            "0,191446",
+            "-0,960000"
+          ],
+          [
+            "16",
+            "0,139019",
+            "-1,280000"
+          ],
+          [
+            "20",
+            "0,100948",
+            "-1,600000"
+          ]
+        ]
+      },
+      "answer_targets": [
+        {
+          "id": "ANS-SLOPE",
+          "value": "-0.0800",
+          "unit": "s⁻¹",
+          "label_lv": "Taisnes slīpums"
+        },
+        {
+          "id": "ANS-K",
+          "value": "0.0800",
+          "unit": "s⁻¹",
+          "label_lv": "Ātruma konstante k"
+        },
+        {
+          "id": "ANS-HL",
+          "value": "8.66",
+          "unit": "s",
+          "label_lv": "Pusperiods t½"
+        }
+      ],
+      "leak_scan_exemption": null,
+      "grading_reference": {
+        "k": "0.0800",
+        "C0_mol_l": "0.50",
+        "slope": "-0.0800",
+        "intercept": "0.00",
+        "half_life_s": "8.66",
+        "fit_line": {
+          "slope": "-0.0800",
+          "intercept": "0.00",
+          "x_min": 0,
+          "x_max": 20,
+          "unit": "1",
+          "true_line_of": "grading_reference"
+        }
+      }
+    }
+  ]
+}

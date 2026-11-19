@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "island_id": "sim-method-cards",
+  "owner": "N19",
+  "status": "frozen-contract-for-N20-N22-N23-N28",
+  "title_lv": "Metodisko kartīšu datu formāts",
+  "purpose_lv": "Viena deklarēta procedūras kartīšu valoda: kārtīgie kritiskie soļi, katra soļa pamatojums un misconceptions saite, brīvās kārtības grupas, drošības ieraksti, secības pabeigšanas uzdevumi un atbilstību pāri. Kartīte ir dati, nevis teksts: dzinējs nolasī tikai struktūru.",
+  "scope_note_lv": "Kartīšu soļu secība ir meistara mācīšanas secība, nevis brīvi izvēlēta secība. Katra kartīte citē savu enkuru; katrs skaitliskais lielums nāk no pārrēķinātās ķēdes soļa, nevis no jauna aprēķina šeit.",
+  "record_required": [
+    "card_id",
+    "procedure_key",
+    "title_lv",
+    "subtitle_lv",
+    "topic",
+    "family_id",
+    "chain_id",
+    "outcome_ids",
+    "master_citation",
+    "order_citation_lv",
+    "epistemic_label",
+    "banner_lv",
+    "steps",
+    "free_order_groups",
+    "sequence_prompts",
+    "self_assessment"
+  ],
+  "record_optional": [
+    "secondary_citations",
+    "matching",
+    "safety_note_lv",
+    "print_note_lv"
+  ],
+  "step_required": [
+    "step_id",
+    "statement_lv",
+    "reasoning_lv",
+    "misconception_signature",
+    "misconception_note_lv",
+    "feedback_key"
+  ],
+  "step_optional": [
+    "quantity_links",
+    "safety",
+    "critical"
+  ],
+  "quantity_link_required": [
+    "chain_id",
+    "chain_step_id",
+    "value_display_lv",
+    "unit"
+  ],
+  "quantity_link_optional": [
+    "quantity_lv",
+    "dimension"
+  ],
+  "safety_required": [
+    "entry_lv",
+    "citation"
+  ],
+  "safety_citation_required": [
+    "path",
+    "anchor",
+    "heading_lv",
+    "freeze_id",
+    "sha256"
+  ],
+  "free_order_group_required": [
+    "group_id",
+    "step_ids",
+    "reason_lv",
+    "citation"
+  ],
+  "sequence_prompt_required": [
+    "prompt_id",
+    "prompt_lv",
+    "acceptance_step_ids",
+    "distractors",
+    "criterion_id",
+    "points"
+  ],
+  "distractor_required": [
+    "step_id",
+    "misconception_signature",
+    "note_lv"
+  ],
+  "matching_required": [
+    "left_items",
+    "right_items",
+    "correct_pairs"
+  ],
+  "matching_pair_required": [
+    "left_id",
+    "right_id",
+    "misconception_signature",
+    "note_lv",
+    "feedback_key"
+  ],
+  "self_assessment_required": [
+    "prompt_lv",
+    "grading",
+    "pending_semantics_lv"
+  ],
+  "self_assessment_grading_values": [
+    "self"
+  ],
+  "master_citation_required": [
+    "path",
+    "anchor",
+    "heading_lv",
+    "freeze_id",
+    "sha256"
+  ],
+  "reference_file": "data/chain_references.json",
+  "reference_status": "declared-pending-N19",
+  "reference_status_note_lv": "Kartīšu deklarācijas data/chain_references.json failā statusu declared-pending-N19, jo N16 validators to prasa, kamēr patērētājs nav realizēts. N19 kartes ir autorētas, bet references fails statuss netiek mainīts klusējot; to nomaina tāds patērētājs, kas šo failu pārņem.",
+  "signature_pattern": "^MC-[1-7][A-D]-[0-9]{2}$",
+  "signature_registry_ref": "data/method_engine_contract.json#signature_registry",
+  "honesty": {
+    "banner_lv": "Mācību materiāls patstāvīgai sagatavošanai: nav oficiāls RSU kolokvija eksāmens, neapliecina eksāmena saturu un nepiešķir vērtējumu.",
+    "forbidden_positive_claims": [
+      "oficiāls eksāmens",
+      "oficiāls kolokvija eksāmens",
+      "īsts eksāmens",
+      "eksāmena jautājums",
+      "oficiāls uzdevums",
+      "RSU eksāmens",
+      "garantēts vērtējums",
+      "proktors"
+    ],
+    "rule_lv": "Baneris ir fiksēts visās kartītēs. Aizliegtās pozitīvās eksāmena frāzes nedrīkst parādīties nevienā kartītes tekstā; banera noliegums ir atļauts.",
+    "safety_rule_lv": "Drošības ieraksts citē meistara enkuru un neizslēdz neko jaunu. Ja meistars kaut ko nepasaka, kartīte to nepasaka arī."
+  },
+  "field_tables": [
+    {
+      "field": "card_id",
+      "type": "string",
+      "rule_lv": "MC-EX01–MC-EX14, unikāls; sakrīt ar data/chain_references.json deklarāciju un ar vienu EX ķēdi."
+    },
+    {
+      "field": "procedure_key",
+      "type": "string",
+      "rule_lv": "Procedūras nosaukuma atslēga: maziņi ar īkšķiem, tiek izmantota UI etiķetē un nevar saturēt atstarpes."
+    },
+    {
+      "field": "outcome_ids",
+      "type": "string[]",
+      "rule_lv": "Visi id resolvē #sim-coverage; katrs pieder kartītes tēmai un tās deklarētajai saimei ar #sim-coverage."
+    },
+    {
+      "field": "master_citation",
+      "type": "object",
+      "rule_lv": "path + anchor + heading_lv + freeze_id + sha256; enkurs resolvē iesaldētajā meistarā ar case-exact salīdzināšanu un sha256 atbilst N01 iesaldējumam."
+    },
+    {
+      "field": "order_citation_lv",
+      "type": "string",
+      "rule_lv": "Viens teikums, kas pamato, kāpēc šī ir meistara secība. Secība netiek izdomāta, tā tiek citēta."
+    },
+    {
+      "field": "steps",
+      "type": "object[]",
+      "rule_lv": "Kārtīgi soļi ar unikālu step_id; katram ir apgalvojums, pamatojums, misconceptions paraksturs un atsauksmes atslēga #sim-terms."
+    },
+    {
+      "field": "steps[].quantity_links",
+      "type": "object[]",
+      "rule_lv": "Skaitliskā soļa saites uz pārrēķināto ķēdes soli: display vērtība un vienība jābūt identiskas ķēdes soļa rezultātam. Kartīte neatvasina skaitli. Ja deklarēta dimension, tai jābūt saskaņā ar N10 vienību gramatiku."
+    },
+    {
+      "field": "steps[].safety",
+      "type": "object",
+      "rule_lv": "Drošības ieraksts ar meistora enkura citātu. Nav izslēgtu, nav piezīmju par drošību bez atsauces."
+    },
+    {
+      "field": "free_order_groups",
+      "type": "object[]",
+      "rule_lv": "Soļi, kuru fizisko secību meistars neierobežo. Grupas dalībnieki savā starpā var būt jebkurā secībā; ārpus grupas secība ir stingra."
+    },
+    {
+      "field": "sequence_prompts",
+      "type": "object[]",
+      "rule_lv": "Secības pabeigšanas uzdevums: pieņemamo soļu id kopums (exact identity) un atklātīgie klucējošie soļi ar savu misconceptions paraksturu."
+    },
+    {
+      "field": "matching",
+      "type": "object",
+      "rule_lv": "Atbilstību uzdevums: divas listes un pareizo pāru kopums; katram pāram ir sava misconceptions saite, lai nepareizais pārs tiktu diagnosticēts, nevis tikai atzīmēts."
+    },
+    {
+      "field": "self_assessment",
+      "type": "object",
+      "rule_lv": "Kritiskā soļa paskaidrojums. grading ir 'self'; dzinējs tekstu neizlasa un neizvērtē, atbildes statuss ir pending."
+    },
+    {
+      "field": "banner_lv",
+      "type": "string",
+      "rule_lv": "Fiksēts mācību materiāla baneris; kopēšanas lint aizliedz pozitīvus oficiāla eksāmena apgalvojumus."
+    }
+  ],
+  "engine_binding": {
+    "owner": "N19",
+    "python_twin": "tools/method_engine.py",
+    "runtime_module": "src/method-engine.js",
+    "contract": "data/method_engine_contract.json",
+    "engines": [
+      "ordering",
+      "matching",
+      "sequence"
+    ],
+    "no_keyword_rule_lv": "Dzinējs salīdzina tikai struktūru: soļu id, pozīcijas un pāru identitāti. Neviens līgums neizmanto teksta līdzību, atslēgvārdus vai apakšzīmju salīdzināšanu."
+  }
+}

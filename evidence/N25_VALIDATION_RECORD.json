@@ -1,0 +1,102 @@
+{
+  "errors": [],
+  "gate": "analytics",
+  "schema": {
+    "bytes": 6098,
+    "digest": "dc9c5daea210b1c10ba7016d497141357203ec94224743cd7925485ef772133e",
+    "max_events": 200,
+    "schema_version": 2,
+    "status": "PASS",
+    "storage_keys": [
+      "sim_colloq1_store_v2"
+    ]
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "required_ids_present": 27,
+    "required_ids_total": 27,
+    "status": "PASS"
+  },
+  "sources": {
+    "exports": {
+      "analytics_keys": [
+        "ISLAND_ID",
+        "SCHEMA_VERSION",
+        "F10_BOUNDARY",
+        "errors",
+        "AnalyticsError",
+        "loadSchema",
+        "extractEvents",
+        "ingestGradedRecord",
+        "appendEvents",
+        "resolveRemediationItem",
+        "buildProgressSummary",
+        "renderProgressView",
+        "renderSettingsStorage",
+        "init"
+      ],
+      "f10": {
+        "forbidden_exports": [
+          "chart",
+          "charts",
+          "streak",
+          "streaks",
+          "gamification",
+          "scoreHistory",
+          "score_history",
+          "dashboard",
+          "leaderboard"
+        ],
+        "ledger_reference": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md §4.3 (F10 REJECTED) & evidence/VERIFICATION_LEDGER.md",
+        "reasoning_en": "Completionist visualization serves the tracker, not the learner; no chart, streak, or score-history components are exported.",
+        "reasoning_lv": "F10 vizuālie atskaišu paneļi, sērijas (streaks) un spēļošana ir noraidīti ar politiku: tie kalpo izsekotājam, nevis izglītojamam.",
+        "rejected_feature": "F10",
+        "status": "rejected-by-policy"
+      },
+      "store_keys": [
+        "SCHEMA_VERSION",
+        "SCHEMA_KEY",
+        "SCHEMA_KEYS",
+        "LEGACY_V1_KEY",
+        "MAX_EVENTS_DEFAULT",
+        "EXPORT_FILENAME",
+        "errors",
+        "StoreError",
+        "canonicalText",
+        "digestValue",
+        "digestOf",
+        "createDefaultState",
+        "migrateV1ToV2",
+        "createStore"
+      ]
+    },
+    "src/analytics.ts": {
+      "bytes": 40965,
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "39166736a610430f557173addf175173684c43adb448d928ea4e8b2603820239"
+    },
+    "src/compiled/analytics.js": {
+      "bytes": 44803,
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "0cb7cf05d8ca4001a4b675c80d61fe05a8ff484734540545f10b81353b9c4922"
+    },
+    "src/compiled/store.js": {
+      "bytes": 36642,
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "25830414092320c2c38b0c428589fc5d23430a4f0478fb7f31b29c7e853ddf38"
+    },
+    "src/store.ts": {
+      "bytes": 35535,
+      "clock_hits": [],
+      "network_hits": [],
+      "sha256": "81304881539fb8deebc22fe3c520d9a26ffc82ceb0de2998a47a5ee7b2262947"
+    }
+  },
+  "status": "PASS",
+  "task": "N25",
+  "ts_drift": "PASS"
+}

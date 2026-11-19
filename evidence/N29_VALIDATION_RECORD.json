@@ -1,0 +1,114 @@
+{
+  "errors": [],
+  "gate": "revision",
+  "negative_fixtures": {
+    "cases": [
+      {
+        "errors": [
+          "self_assessment.excluded_from_mastery must be true"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N29-SA-FEEDS-MASTERY",
+        "observed": "FAIL",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "self_assessment.verbatim_note_never_analyzed_lv must match verbatim policy copy"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N29-COPY-DRIFT",
+        "observed": "FAIL",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "self_assessment.note_max_length must be a positive integer, got 0"
+        ],
+        "expected": "FAIL",
+        "id": "NEG-N29-UNBOUNDED-NOTE",
+        "observed": "FAIL",
+        "rejected": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "policy": {
+    "bytes": 4338,
+    "digest": "f571a286d08eb6ff8442e56ab4ee2943947e234807102f1e264e104cf2c2ef2d",
+    "epistemic_label": "PROPOSED",
+    "errors": [],
+    "note_max_length": 500,
+    "official_counterpart_status": "UNDETERMINED",
+    "policy_id": "sim-colloq1-revision-v1",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "shell": {
+    "missing_ids": [],
+    "missing_placeholders": [],
+    "required_ids_present": 10,
+    "required_ids_total": 10,
+    "status": "PASS"
+  },
+  "sources": {
+    "exports": {
+      "keys": [
+        "ISLAND_ID",
+        "SCHEMA_VERSION",
+        "NOTE_MAX_LENGTH",
+        "VALID_RATINGS",
+        "VERBATIM_SELF_ASSESSMENT_LABEL_LV",
+        "VERBATIM_NOTE_NEVER_ANALYZED_LV",
+        "errors",
+        "RevisionError",
+        "canonicalText",
+        "digestValue",
+        "validatePolicy",
+        "loadPolicy",
+        "loadTermsMap",
+        "resolveCriterionLabel",
+        "validateOutcomeAffordances",
+        "resolveOutcomeCriteria",
+        "readSelfAssessments",
+        "saveSelfAssessment",
+        "buildRevisionViewModel",
+        "startPracticeFromOutcome",
+        "buildSelfAssessmentCardModel",
+        "buildHonestyAudit",
+        "renderRevisionPanel",
+        "openSelfAssessmentCard",
+        "renderFromStore",
+        "renderError",
+        "clearError",
+        "init"
+      ]
+    },
+    "src/compiled/revision.js": {
+      "bytes": 87870,
+      "clock_hits": [],
+      "endorsement_hits": [],
+      "network_hits": [],
+      "sha256": "9c8fd36a8bb0b0fa4aa1c4624d40454c77c796bc3f82480b735ee0307b11d90d"
+    },
+    "src/revision.ts": {
+      "bytes": 83275,
+      "clock_hits": [],
+      "endorsement_hits": [],
+      "network_hits": [],
+      "sha256": "997bd38245b62f103bc9a382510969958a3747a0bfda6b83212ebba111d62984"
+    }
+  },
+  "status": "PASS",
+  "task": "N29",
+  "terms_lint": {
+    "bank_criterion_ids_checked": 117,
+    "copy_keys_checked": 27,
+    "endorsement_hits": [],
+    "missing_copy_keys": [],
+    "missing_criterion_keys": [],
+    "n10_terms_status": "PASS",
+    "status": "PASS"
+  },
+  "ts_drift": "PASS"
+}

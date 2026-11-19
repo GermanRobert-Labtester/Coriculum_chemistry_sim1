@@ -1,0 +1,958 @@
+{
+  "artifact_digest": "12e36ae39677a090750d014eac3621b7138e8bd4831b6b64cf2a4a953f55ce80",
+  "build_manifest_digest": "661c4ec799b35f97ebe60777ca933ee421e2bbbff4702bab22ac76953fad6682",
+  "fail_count": 0,
+  "pass_count": 8,
+  "policy_id": "splitmix64-u64-v1",
+  "python_version": "3.12.16",
+  "schema_version": 1,
+  "source_digests": {
+    "data/conventions.json": "1ae95d0ed47eec057cce5fe2df9039e2599d453d9f5da2063ac9f2c8bcc21dbd",
+    "data/golden_vectors.json": "258a316e15bd6952fcbc55fdafe4b4ddce81e44956a4ad30465ec923351bc7a9",
+    "src/compiled/store.js": "06231e4643780c863d407bb8857647e1f70727b4465418122d1edef9e7fbd44e",
+    "tools/assemble_forms.py": "56d54f6d9ba547fc83d4c4ed98e1175446d6d1a3153801c4fa0c54ad383103e5",
+    "tools/graph_scoring_engine.py": "4db9560750bb45d79165e5a35b64d181dfd6721f99fb7b1e947fca0209e888d0",
+    "tools/method_engine.py": "5792e2dbf94b6a28733b6327c26692cb4339f574b68e80ca99826c350a80d665",
+    "tools/quantity_engine.py": "c71872e1b933652784904a9705f4750bdbf1ff2be5498a7ed30504f3733c010f",
+    "tools/validate_n23_grading.py": "42255d7cc55484e7773410897713e1195cd547fd0cf113cbd6236dd53b64a9e7"
+  },
+  "status": "PASS",
+  "sweep_seeds": [
+    "500001",
+    "500002",
+    "500003",
+    "100101",
+    "100102",
+    "100103",
+    "100104",
+    "100105",
+    "100106",
+    "100107",
+    "100108",
+    "100109",
+    "100110",
+    "100111",
+    "100112",
+    "100113",
+    "100114",
+    "100115",
+    "100116",
+    "100117",
+    "100118",
+    "100119",
+    "100120",
+    "100121",
+    "100122",
+    "100123",
+    "100124",
+    "100125",
+    "100126",
+    "100127",
+    "100128",
+    "100129",
+    "100130"
+  ],
+  "task": "N36",
+  "tests": [
+    {
+      "class_aware_fixture": {
+        "class_aware_k": "298.15",
+        "class_aware_passes": true,
+        "class_aware_roundtrip_c": "25.00",
+        "id": "FIX-CONV-OFFSET-CLASS",
+        "input_c": "25",
+        "naive_fails_offset": true,
+        "naive_multiplicative_k": "25"
+      },
+      "duration_ms": 32.917,
+      "errors": [],
+      "id": "PROP-CONV-ROUNDTRIP",
+      "pair_table": [
+        {
+          "conversion_class": "multiplicative",
+          "from": "mg",
+          "id": "mg_to_g",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g",
+          "id": "g_to_mg",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mg"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g",
+          "id": "g_to_kg",
+          "samples": 4,
+          "status": "PASS",
+          "to": "kg"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "kg",
+          "id": "kg_to_g",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mL",
+          "id": "ml_to_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "L",
+          "id": "l_to_ml",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mL"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mL",
+          "id": "ml_to_cm3",
+          "samples": 4,
+          "status": "PASS",
+          "to": "cm³"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "cm³",
+          "id": "cm3_to_ml",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mL"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "L",
+          "id": "l_to_dm3",
+          "samples": 4,
+          "status": "PASS",
+          "to": "dm³"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "dm³",
+          "id": "dm3_to_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mol",
+          "id": "mol_to_mmol",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mmol"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mmol",
+          "id": "mmol_to_mol",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mol"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mol",
+          "id": "mol_to_umol",
+          "samples": 4,
+          "status": "PASS",
+          "to": "µmol"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "µmol",
+          "id": "umol_to_mol",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mol"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g/mL",
+          "id": "g_per_ml_to_kg_per_m3",
+          "samples": 4,
+          "status": "PASS",
+          "to": "kg/m³"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "kg/m³",
+          "id": "kg_per_m3_to_g_per_ml",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g/mL"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g/mL",
+          "id": "g_per_ml_to_kg_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "kg/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "kg/L",
+          "id": "kg_per_l_to_g_per_ml",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g/mL"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g/L",
+          "id": "g_per_l_to_mg_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mg/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mg/L",
+          "id": "mg_per_l_to_g_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mg/mL",
+          "id": "mg_per_ml_to_g_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g/L",
+          "id": "g_per_l_to_mg_per_ml",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mg/mL"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mol/L",
+          "id": "mol_per_l_to_mmol_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mmol/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mmol/L",
+          "id": "mmol_per_l_to_mol_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mol/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "%",
+          "id": "percent_to_fraction",
+          "samples": 4,
+          "status": "PASS",
+          "to": "fraction"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "fraction",
+          "id": "fraction_to_percent",
+          "samples": 4,
+          "status": "PASS",
+          "to": "%"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "% (m/V)",
+          "id": "percent_m_v_to_fraction_m_v",
+          "samples": 4,
+          "status": "PASS",
+          "to": "fraction (m/V)"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "fraction (m/V)",
+          "id": "fraction_m_v_to_percent_m_v",
+          "samples": 4,
+          "status": "PASS",
+          "to": "% (m/V)"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "fraction (m/V)",
+          "id": "fraction_m_v_to_g_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "g/L"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "g/L",
+          "id": "g_per_l_to_fraction_m_v",
+          "samples": 4,
+          "status": "PASS",
+          "to": "fraction (m/V)"
+        },
+        {
+          "conversion_class": "offset",
+          "from": "°C",
+          "id": "c_to_k",
+          "samples": 4,
+          "status": "PASS",
+          "to": "K"
+        },
+        {
+          "conversion_class": "offset",
+          "from": "K",
+          "id": "k_to_c",
+          "samples": 4,
+          "status": "PASS",
+          "to": "°C"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "mg/L",
+          "id": "mg_per_l_to_ppm",
+          "samples": 4,
+          "status": "PASS",
+          "to": "ppm"
+        },
+        {
+          "conversion_class": "multiplicative",
+          "from": "ppm",
+          "id": "ppm_to_mg_per_l",
+          "samples": 4,
+          "status": "PASS",
+          "to": "mg/L"
+        },
+        {
+          "conversion_class": "blocked",
+          "from": "mg",
+          "id": "mass_to_volume_direct",
+          "samples": 2,
+          "status": "PASS",
+          "to": "L"
+        },
+        {
+          "conversion_class": "blocked",
+          "from": "L",
+          "id": "volume_to_mass_direct",
+          "samples": 2,
+          "status": "PASS",
+          "to": "mg"
+        }
+      ],
+      "passed_pairs": 36,
+      "seed": "500001",
+      "status": "PASS",
+      "total_pairs": 36
+    },
+    {
+      "cliff_fixture": {
+        "cliff_points": [
+          "0.5*tol"
+        ],
+        "detected": true,
+        "id": "FIX-TOL-PLANTED-CLIFF"
+      },
+      "duration_ms": 20.477,
+      "errors": [],
+      "id": "PROP-TOL-MONOTONICITY",
+      "seed": "500002",
+      "status": "PASS",
+      "sweep_rows": 8,
+      "sweep_table": [
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-1D",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "2.500"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "2.5025"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "2.505"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "2.5075"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "2.509"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "2.510"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "2.5105"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "2.511"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "2.515"
+            }
+          ],
+          "tolerance_class": "mass",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.01",
+          "topic": 1
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-2B",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "12.400"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "12.4125"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "12.425"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "12.4375"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "12.445"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "12.450"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "12.4525"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "12.455"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "12.475"
+            }
+          ],
+          "tolerance_class": "burette_volume",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.05",
+          "topic": 2
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-3C",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "0.1500"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "0.15125"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "0.1525"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "0.15375"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "0.1545"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "0.1550"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "0.15525"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "0.1555"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "0.1575"
+            }
+          ],
+          "tolerance_class": "concentration_molar",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.005",
+          "topic": 3
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-4B",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "-45.20"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "-44.950"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "-44.70"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "-44.450"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "-44.30"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "-44.20"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "-44.150"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "-44.10"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "-43.70"
+            }
+          ],
+          "tolerance_class": "energy",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "1.0",
+          "topic": 4
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-5B",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "0.02400"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "0.024125"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "0.02425"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "0.024375"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "0.02445"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "0.02450"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "0.024525"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "0.02455"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "0.02475"
+            }
+          ],
+          "tolerance_class": "rate_constant_first",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.0005",
+          "topic": 5
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-6C",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "0.770"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "0.7725"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "0.775"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "0.7775"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "0.779"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "0.780"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "0.7805"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "0.781"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "0.785"
+            }
+          ],
+          "tolerance_class": "potential",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.01",
+          "topic": 6
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-7C",
+          "status": "PASS",
+          "steps": [
+            {
+              "error_class": "NONE",
+              "multiplier": "0.0",
+              "ok": true,
+              "submitted": "0.4200"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.25",
+              "ok": true,
+              "submitted": "0.42075"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.5",
+              "ok": true,
+              "submitted": "0.4215"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.75",
+              "ok": true,
+              "submitted": "0.42225"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "0.9",
+              "ok": true,
+              "submitted": "0.4227"
+            },
+            {
+              "error_class": "NONE",
+              "multiplier": "1.0",
+              "ok": true,
+              "submitted": "0.4230"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.05",
+              "ok": false,
+              "submitted": "0.42315"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.1",
+              "ok": false,
+              "submitted": "0.4233"
+            },
+            {
+              "error_class": "OUT_OF_TOLERANCE",
+              "multiplier": "1.5",
+              "ok": false,
+              "submitted": "0.4245"
+            }
+          ],
+          "tolerance_class": "absorbance",
+          "tolerance_mode": "absolute",
+          "tolerance_value": "0.003",
+          "topic": 7
+        },
+        {
+          "monotonic": true,
+          "sampled_family": "FAM-7A",
+          "status": "PASS",
+          "steps": [
+            {
+              "abs_dev": "0.00000",
+              "multiplier": "0.0",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.000125",
+              "multiplier": "0.25",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.00025",
+              "multiplier": "0.5",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.000375",
+              "multiplier": "0.75",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.00045",
+              "multiplier": "0.9",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.00050",
+              "multiplier": "1.0",
+              "ok": true
+            },
+            {
+              "abs_dev": "0.000525",
+              "multiplier": "1.05",
+              "ok": false
+            },
+            {
+              "abs_dev": "0.00055",
+              "multiplier": "1.1",
+              "ok": false
+            },
+            {
+              "abs_dev": "0.00075",
+              "multiplier": "1.5",
+              "ok": false
+            }
+          ],
+          "tolerance_class": "absorbance",
+          "tolerance_mode": "significant_figures",
+          "tolerance_value": "0.0005",
+          "topic": 7
+        }
+      ]
+    },
+    {
+      "agreed_cases": 24,
+      "duration_ms": 10.303,
+      "errors": [],
+      "id": "PROP-CONS-RECOMPUTE",
+      "mass_error_fixture": {
+        "detected": true,
+        "element": "O",
+        "id": "FIX-CONS-MASS-ERROR"
+      },
+      "seed": "500003",
+      "status": "PASS",
+      "total_cases": 24
+    },
+    {
+      "band": [
+        5,
+        30
+      ],
+      "duplicates": 0,
+      "duration_ms": 24.736,
+      "errors": [],
+      "families_seen": 28,
+      "id": "PROP-ASM-FAIRNESS",
+      "max_freq": 30,
+      "min_freq": 10,
+      "seeds_count": 30,
+      "status": "PASS"
+    },
+    {
+      "digest_match": true,
+      "duration_ms": 15.597,
+      "errors": [],
+      "expected_sequence_sha256": "891832425d347af95d09938b2924c33de541c37ffa117525e96b0c9140190fdd",
+      "id": "PROP-GV-PIPELINE",
+      "oracle_results_sha256": "7b705dbf8edd0efd20af6208ac374988d4980020173c86ee55bb12062e94e214",
+      "status": "PASS",
+      "vectors_checked": 40,
+      "verdict_sequence_sha256": "891832425d347af95d09938b2924c33de541c37ffa117525e96b0c9140190fdd"
+    },
+    {
+      "auto_points": 2.0,
+      "duration_ms": 0.157,
+      "errors": [],
+      "id": "PROP-PARTIAL-CREDIT",
+      "pending_points": 1.5,
+      "status": "PASS"
+    },
+    {
+      "cases_checked": 4,
+      "duration_ms": 36.197,
+      "errors": [],
+      "id": "PROP-ESCAPE-HELPER",
+      "status": "PASS"
+    },
+    {
+      "duration_ms": 561.926,
+      "errors": [],
+      "id": "PROP-SMOKE-SUBSET",
+      "status": "PASS",
+      "stdout": "n31_runtime PASS: modules=39/39 globals=37 islands=22/22 smoke=31/31"
+    }
+  ],
+  "total_duration_ms": 712.911,
+  "verdict_sequence_digest": "842230727b2b41711aef68b2aab91bd93f6bbb52898c718cfc28aa69e8fd1cc2"
+}

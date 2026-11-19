@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "format_version": 1,
+  "id": "figure-schema",
+  "title": "RSU MedChem Colloquium 1 Inline SVG Figure Format Specification (N11)",
+  "owner": "N11",
+  "status": "frozen-contract-for-N12-N13-N14-N15-N16-N18",
+  "consumers": [
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N18",
+    "N20",
+    "N31"
+  ],
+  "island_contract": {
+    "island_id": "sim-figures",
+    "root_required": [
+      "schema_version",
+      "format_version",
+      "island_id",
+      "status",
+      "owner",
+      "figures"
+    ],
+    "valid_statuses": [
+      "authored"
+    ],
+    "lazy_render_policy": "Zero <svg> DOM elements parsed on initial document load; SVG markup is generated and mounted only on first drawer entry, item activation, or viewport entry."
+  },
+  "type_registry": {
+    "bar": {
+      "description": "Kategoriju vai bāzu salīdzinājuma stabiņu diagramma ar precīzu vērtību un noapaļojuma piezīmēm.",
+      "requires_axes": [
+        "x",
+        "y"
+      ],
+      "series_kind": "bars",
+      "supports_rounding_boundary": true,
+      "introduced_in": "N11"
+    },
+    "chain": {
+      "description": "Virzīta stehiometrijas, masas nezūdamības vai mērvienību pārvēršanas soļu ķēde.",
+      "requires_axes": [],
+      "series_kind": "chain_nodes_edges",
+      "supports_conservation_check": true,
+      "introduced_in": "N11"
+    },
+    "curve": {
+      "description": "Nepārtraukta analītiska vai modelēta līkne (enerģijas profils, Maksvels–Bolcmanis, kinētika, titrēšana).",
+      "requires_axes": [
+        "x",
+        "y"
+      ],
+      "series_kind": "curve_points_or_model",
+      "supports_curve_generation": true,
+      "curve_function_classes_t4": [
+        "energy_profile_single_barrier",
+        "maxwell_boltzmann_3d"
+      ],
+      "curve_function_classes_t67": [
+        "titration_pH_strong_strong",
+        "titration_pH_weak_strong",
+        "titration_redox_potential"
+      ],
+      "extended_by": [
+        "N13",
+        "N14",
+        "N15"
+      ],
+      "introduced_in": "N11"
+    },
+    "scatter": {
+      "description": "Eksperimentālo datu punktu izkliede ar izvēles aproksimācijas taisni bez ekstrapolācijas.",
+      "requires_axes": [
+        "x",
+        "y"
+      ],
+      "series_kind": "xy_points",
+      "extended_by": [
+        "N14",
+        "N15"
+      ],
+      "introduced_in": "N11",
+      "supports_fit_line": true,
+      "supports_span_clipping": true,
+      "supports_tolerance_fields": true
+    },
+    "band": {
+      "description": "Skalas vai diapazonu joslu diagramma (piem., disperso sistēmu daļiņu izmēru joslas vai tolerances josla).",
+      "requires_axes": [
+        "x"
+      ],
+      "series_kind": "bands",
+      "introduced_in": "N11"
+    },
+    "schema_plot": {
+      "description": "N04 payload_class='graph' saskaņots grafiks ar x/y asīm, punktiem, mērķa nolasījumu un obligātu tolerances sasaisti N18 vērtēšanai.",
+      "requires_axes": [
+        "x",
+        "y"
+      ],
+      "series_kind": "schema_coupled_plot",
+      "requires_tolerance_coupling": true,
+      "n04_payload_class": "graph",
+      "introduced_in": "N11"
+    },
+    "burette": {
+      "description": "Instrumentāla biretes skalas un meniska nolasīšanas shēma ar deklarētu iedaļu (0,1 mL), lejupejošu skalu, meniska skata likumu (apakšējais caurspīdīgam, augšējā mala tumšam) un paralakses norādi.",
+      "requires_axes": [
+        "y"
+      ],
+      "series_kind": "burette_meniscus",
+      "requires_tolerance_coupling": true,
+      "supports_geometric_recompute": true,
+      "introduced_in": "N12"
+    },
+    "dilution": {
+      "description": "Pipetes–mērkolbas atšķaidīšanas pārneses ķēde ar tilpuma atzīmēm, atšķaidīšanas faktora aritmētiku un vielas daudzuma saglabāšanos c₁V₁ = c₂V₂.",
+      "requires_axes": [],
+      "series_kind": "dilution_transfer",
+      "supports_factor_arithmetic_check": true,
+      "introduced_in": "N12"
+    },
+    "hess_cycle": {
+      "description": "Slēgts Hesa likuma termodinamiskais cikls ar virzītām posmu bultām, tiešo ceļu, posmu summas un ∮dH = 0 pārbaudi (t.sk. pretbultas zīmes lamatu gadījums).",
+      "requires_axes": [],
+      "series_kind": "hess_cycle_steps",
+      "supports_hess_sum_check": true,
+      "introduced_in": "N13"
+    }
+  },
+  "curve_function_registry": {
+    "energy_profile_single_barrier": {
+      "description": "Gluds C¹ vienas pārejas barjeras enerģijas profils ar plakanu izejvielu un produktu plauktu un kosinusa pāreju caur pārejas stāvokli.",
+      "introduced_in": "N13",
+      "point_count": {
+        "min": 17,
+        "max": 201
+      },
+      "params": {
+        "x_min": {
+          "min": 0,
+          "max": 0
+        },
+        "x_max": {
+          "min": 0.5,
+          "max": 10
+        },
+        "x_ts": {
+          "min": 0.2,
+          "max": 0.8
+        },
+        "plateau_frac": {
+          "min": 0.0,
+          "max": 0.25
+        },
+        "E_r_kj_mol": {
+          "min": -5000,
+          "max": 5000
+        },
+        "E_ts_kj_mol": {
+          "min": -5000,
+          "max": 5000
+        },
+        "E_p_kj_mol": {
+          "min": -5000,
+          "max": 5000
+        }
+      },
+      "constraints": [
+        "E_ts_kj_mol > max(E_r_kj_mol, E_p_kj_mol)",
+        "plateau_frac < x_ts < 1 - plateau_frac"
+      ]
+    },
+    "maxwell_boltzmann_3d": {
+      "description": "Trīsdimensiju Maksvela–Bolcmaņa kinētiskās enerģijas sadalījuma blīvums f(E) = (2/√π)(RT)^(-3/2)√E·exp(-E/RT).",
+      "introduced_in": "N13",
+      "point_count": {
+        "min": 25,
+        "max": 201
+      },
+      "params": {
+        "T_K": {
+          "min": 1,
+          "max": 5000
+        },
+        "R_kj_mol_k": {
+          "min": 0.0083,
+          "max": 0.00832
+        },
+        "E_min_kj_mol": {
+          "min": 0,
+          "max": 500
+        },
+        "E_max_kj_mol": {
+          "min": 1,
+          "max": 1000
+        },
+        "Ea_threshold_kj_mol": {
+          "min": 0.1,
+          "max": 1000
+        }
+      },
+      "constraints": [
+        "E_max_kj_mol > E_min_kj_mol",
+        "E_min_kj_mol < Ea_threshold_kj_mol < E_max_kj_mol"
+      ]
+    },
+    "titration_pH_strong_strong": {
+   "description": "Spēcīgas skābes un spēcīgas bāzes pH–tilpuma līkne; pirms ekvivalences pH = −log10((c_aV_a − c_bV)/ (V_a + V)), pēc tās pH = 14 + log10((c_bV − c_aV_a)/(V_a + V)).",
+   "introduced_in": "N15",
+   "point_count": {
+    "min": 41,
+    "max": 601
+   },
+   "params": {
+    "C_acid_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "V_acid_ml": {
+     "min": 1,
+     "max": 100
+    },
+    "C_base_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "V_max_ml": {
+     "min": 1,
+     "max": 200
+    },
+    "kw_mol2_l2": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "constraints": [
+    "V_max_ml > C_acid_mol_l * V_acid_ml / C_base_mol_l"
+   ]
+  },
+  "titration_pH_weak_strong": {
+   "description": "Vājas skābes un spēcīgas bāzes pH–tilpuma līkne, kas šķīduma līdzsvaru atrisina ar lādiņa bilanci (bisetriski); pusekvivalences pH = pK_a tikai tad, ja citi locekļi ir mazi.",
+   "introduced_in": "N15",
+   "point_count": {
+    "min": 41,
+    "max": 601
+   },
+   "params": {
+    "C_acid_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "Ka": {
+     "min": 1e-12,
+     "max": 1
+    },
+    "V_acid_ml": {
+     "min": 1,
+     "max": 100
+    },
+    "C_base_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "V_max_ml": {
+     "min": 1,
+     "max": 200
+    },
+    "kw_mol2_l2": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "constraints": [
+    "V_max_ml > C_acid_mol_l * V_acid_ml / C_base_mol_l"
+   ]
+  },
+  "titration_redox_potential": {
+   "description": "Redoksa potenciāla–tilpuma līkne ar Nernsta vienādojumu pirms un pēc ekvivalences; ekvivalences potenciāls = (E°_analīts + n·E°_titrants)/(n+1).",
+   "introduced_in": "N15",
+   "point_count": {
+    "min": 41,
+    "max": 601
+   },
+   "params": {
+    "C_analyte_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "V_analyte_ml": {
+     "min": 1,
+     "max": 100
+    },
+    "C_titrant_mol_l": {
+     "min": 0.0001,
+     "max": 1
+    },
+    "V_max_ml": {
+     "min": 1,
+     "max": 100
+    },
+    "E0_analyte_v": {
+     "min": 0,
+     "max": 2
+    },
+    "E0_titrant_v": {
+     "min": 0,
+     "max": 2
+    },
+    "electrons_titrant": {
+     "min": 1,
+     "max": 8
+    },
+    "nernst_slope_v": {
+     "min": 0.05,
+     "max": 0.07
+    },
+    "h_plus_mol_l": {
+     "min": 0.0000001,
+     "max": 10
+    },
+    "initial_oxidized_fraction": {
+     "min": 1e-12,
+     "max": 0.01
+    }
+   },
+   "constraints": [
+    "V_max_ml > C_analyte_mol_l * V_analyte_ml / (electrons_titrant * C_titrant_mol_l)",
+    "E0_titrant_v > E0_analyte_v"
+   ]
+  },
+  "kinetics_decay": {
+      "description": "Integrētā kinētikas likuma sabrukšanas līkne deklarētajai pakāpei: 0. pakāpe C = max(0, C₀ − kt), 1. pakāpe C = C₀·e^(−kt), 2. pakāpe C = C₀/(1 + k·C₀·t).",
+      "introduced_in": "N14",
+      "point_count": {
+        "min": 41,
+        "max": 201
+      },
+      "params": {
+        "order": {
+          "min": 0,
+          "max": 2
+        },
+        "k": {
+          "min": 1e-06,
+          "max": 10
+        },
+        "C0_mol_l": {
+          "min": 0.0001,
+          "max": 10
+        },
+        "t_min_s": {
+          "min": 0,
+          "max": 0
+        },
+        "t_max_s": {
+          "min": 1,
+          "max": 100000
+        }
+      },
+      "constraints": [
+        "order ∈ {0,1,2}",
+        "k > 0",
+        "C0_mol_l > 0",
+        "t_max_s > t_min_s"
+      ]
+    }
+  },
+  "scope_note_rule": {
+    "rule_id": "N13-SCOPE-V06",
+    "summary_lv": "Analogi V-06 viļņa garuma konteksta disciplīnai, neviena enerģijas profila, Hesa cikla vai Maksvela–Bolcmaņa sadalījuma figūra nedrīkst vispārināt savu slieksni vai skaitļus ārpus deklarētās reakcijas, temperatūras un nosacījumiem."
+  },
+  "shared_fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "pattern": "^FIG-[A-Za-z0-9-]+$",
+      "purpose": "Unique ASCII figure identifier (V-10 safe)."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "enum_from": "type_registry",
+      "purpose": "Registered figure renderer type."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "required": true,
+      "minimum": 1,
+      "purpose": "Record contract version."
+    },
+    {
+      "name": "topic",
+      "type": "integer",
+      "required": true,
+      "minimum": 1,
+      "maximum": 7,
+      "purpose": "Programme topic 1..7."
+    },
+    {
+      "name": "concept_ids",
+      "type": "array<string>",
+      "required": true,
+      "minItems": 1,
+      "purpose": "Coverage outcome IDs (P1-01..P7-05) resolved against data/coverage.json."
+    },
+    {
+      "name": "title_key",
+      "type": "string",
+      "required": true,
+      "purpose": "Term key in #sim-terms for the figure title (N10 linted)."
+    },
+    {
+      "name": "subtitle_lv",
+      "type": "string",
+      "required": false,
+      "purpose": "Optional short Latvian subtitle."
+    },
+    {
+      "name": "description_lv",
+      "type": "string",
+      "required": true,
+      "minLength": 20,
+      "purpose": "Mandatory Latvian screen-reader description (<desc>); copy-linted and V-02 checked."
+    },
+    {
+      "name": "epistemic_label",
+      "type": "string",
+      "required": true,
+      "enum": [
+        "master-grounded",
+        "PROPOSED training policy"
+      ],
+      "purpose": "Separates master-grounded values from training-policy proposals."
+    },
+    {
+      "name": "has_measured_quantity",
+      "type": "boolean",
+      "required": true,
+      "purpose": "Declares whether the figure plots or teaches a measured/gradeable quantity."
+    },
+    {
+      "name": "tolerance_coupling",
+      "type": "object|null",
+      "required": true,
+      "purpose": "Mandatory conventions tolerance binding when has_measured_quantity=true or type=schema_plot; null permitted only with structural_only_reason_lv."
+    },
+    {
+      "name": "structural_only_reason_lv",
+      "type": "string",
+      "required": false,
+      "purpose": "Mandatory Latvian justification when has_measured_quantity=false and tolerance_coupling=null."
+    },
+    {
+      "name": "percentage_basis",
+      "type": "string|array|null",
+      "required": false,
+      "purpose": "Mandatory explicit basis ('m_m', 'm_v', 'v_v') whenever any axis, series, or description uses % or fraction (V-02)."
+    },
+    {
+      "name": "axes",
+      "type": "object",
+      "required": true,
+      "purpose": "Axis specs {x?, y?} with term_key and N10 grammar-checked unit."
+    },
+    {
+      "name": "series",
+      "type": "array<object>",
+      "required": true,
+      "minItems": 1,
+      "purpose": "Data series, nodes/edges, or bands rendered deterministically."
+    },
+    {
+      "name": "annotations",
+      "type": "array<object>",
+      "required": true,
+      "purpose": "Annotation specs with annotation_key resolved in #sim-terms."
+    },
+    {
+      "name": "citations",
+      "type": "object",
+      "required": true,
+      "purpose": "Frozen master_path, master_anchor, master_freeze_id, and conventions_refs."
+    },
+    {
+      "name": "derived_values",
+      "type": "array<object>",
+      "required": false,
+      "purpose": "Derived numerical values with formula_kind and conventions_sources for independent recompute."
+    },
+    {
+      "name": "lazy_slot",
+      "type": "boolean",
+      "required": true,
+      "const": true,
+      "purpose": "Requires lazy DOM parsing/rendering on viewport or drawer entry."
+    },
+    {
+      "name": "print_spec",
+      "type": "object",
+      "required": true,
+      "purpose": "ViewBox and physical print dimensions (width_mm, height_mm, monochrome_safe=true)."
+    }
+  ],
+  "tolerance_optionality_rule": {
+    "rule_id": "N11-TOL-OPT-01",
+    "summary_lv": "Ja attēls rāda vai māca mērītu vai vērtējamu lielumu (has_measured_quantity=true vai type='schema_plot'), lauks tolerance_coupling ir OBLIGĀTS un tam jāatsaucas uz data/conventions.json tolerances.quantity_classes[].id. Tikai tīri strukturālām vai kvalitatīvām shēmām (has_measured_quantity=false) tolerance_coupling drīkst būt null, ja ir aizpildīts structural_only_reason_lv.",
+    "mandatory_when": [
+      "has_measured_quantity === true",
+      "type === 'schema_plot'"
+    ],
+    "optional_when": [
+      "has_measured_quantity === false && type !== 'schema_plot'"
+    ],
+    "coupling_required_fields": [
+      "tolerance_class",
+      "conventions_ref",
+      "target_quantity_term_key",
+      "expected_unit",
+      "sig_figs_rule"
+    ]
+  },
+  "token_styling_rule": {
+    "no_raw_colors": true,
+    "allowed_theme_classes": [
+      "fig-theme-light",
+      "fig-theme-dark",
+      "fig-theme-print"
+    ],
+    "css_var_prefix": "--",
+    "print_media_override": "@media print forces --print-bg (#ffffff), --print-fg (#000000), --print-border (#000000)."
+  },
+  "kinetics_linearization_fields": {
+    "owner": "N14",
+    "record_fields": [
+      "kinetics_spec",
+      "span",
+      "fit_line",
+      "tolerance_fields",
+      "dataset_table",
+      "paired_decay_id"
+    ],
+    "span_rule": {
+      "edge_rule": "inclusive",
+      "beyond_span": "not_assessed",
+      "fit_line_must_not_exceed_data_span": true
+    },
+    "tolerance_fields_required": [
+      "slope",
+      "intercept",
+      "point_acceptance"
+    ],
+    "tolerance_modes": [
+      "absolute",
+      "significant_figures"
+    ],
+    "coupling_rule_lv": "Katrs tolerance_fields lauks nosauc data/conventions.json tolerances.quantity_classes[] id, deklarē režīmu absolute vai significant_figures un tā parametru (abs_value vai sig_figs). Slīpums, krustpunkts un punkta pieņemšana ir vieni un tie paši skaitļi, ko N18 lieto uz skolēna novilktās taisnes.",
+    "evaluation_contract": "SimFigures.evaluateFitLine(record, {slope, intercept, x_min, x_max}) atgriež status ACCEPTED/REJECTED/NOT_ASSESSED, assessed_x_range, slope_ok, intercept_ok, point_ok un beyond_span=not_assessed."
+  },
+  "t67_titration_calibration_fields": {
+   "owner": "N15",
+   "record_fields": [
+    "titration_spec",
+    "reading_strip",
+    "equivalence_marker",
+    "endpoint_marker",
+    "indicator_band",
+    "buffer_region",
+    "half_equivalence_marker",
+    "calibration_spec",
+    "assumption_ledger",
+    "reading_spec",
+    "signal_marker",
+    "span",
+    "fit_line"
+   ],
+   "titration_model_classes": [
+    "strong_acid_strong_base",
+    "weak_acid_strong_base",
+    "redox_potential"
+   ],
+   "calibration_models": [
+    "through_zero_fixed_intercept",
+    "linear_regression_free_intercept"
+   ],
+   "assumption_ids": [
+    "linear_range",
+    "matrix_match",
+    "intercept_meaning",
+    "blank_correction"
+   ],
+   "assumption_states": [
+    "stated",
+    "absent_stated"
+   ],
+   "no_extrapolation_contract": "data/calibration_contract.json",
+   "titration_contract": "data/titration_contract.json",
+   "coupling_rule_lv": "Titrēšanas ieraksts deklarē model_class, ekvivalences tilpumu un sākuma pH/potenciālu; kalibrēšanas ieraksts deklarē modeli, standartu skaitu, nezināmo signālu un koncentrāciju. Validators pārrēķina abus no series parametriem un atzīmē jebkuru neatbilstību."
+  }
+}

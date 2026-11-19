@@ -1,0 +1,1661 @@
+{
+  "contrast": {
+    "errors": [],
+    "pairs": [
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 15.54,
+          "light": 14.92
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 13.65,
+          "light": 13.55
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 12.01,
+          "light": 16.04
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--state-hover-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-hover",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 10.31,
+          "light": 12.17
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--state-active-bg",
+        "fg_token": "--fg-primary",
+        "id": "pair-primary-on-active",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 11.84,
+          "light": 13.42
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.3,
+          "light": 7.47
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.17,
+          "light": 6.78
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-muted",
+        "id": "pair-muted-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.19,
+          "light": 8.03
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-canvas",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-surface",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 8.28,
+          "light": 6.85
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-elevated",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-subtle",
+        "fg_token": "--fg-accent",
+        "id": "pair-accent-on-accent-subtle",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.18,
+          "light": 6.78
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-accent-solid",
+        "fg_token": "--fg-on-accent",
+        "id": "pair-on-accent-solid",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.12,
+          "light": 9.23
+        },
+        "use_class": "text-classed"
+      },
+      {
+        "bg_token": "--bg-official",
+        "fg_token": "--fg-official",
+        "id": "pair-official-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.65
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-proposed",
+        "fg_token": "--fg-proposed",
+        "id": "pair-proposed-panel",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.24,
+          "light": 7.89
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-error",
+        "fg_token": "--fg-error",
+        "id": "pair-error-alert",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.05,
+          "light": 7.96
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-ok",
+        "fg_token": "--fg-ok",
+        "id": "pair-ok-status",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 9.13,
+          "light": 9.74
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--state-disabled-fg",
+        "id": "pair-pending-slot",
+        "min_ratio": 4.5,
+        "ratios": {
+          "dark": 7.23,
+          "light": 6.08
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 5.13,
+          "light": 4.17
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-surface",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-surface",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 4.5,
+          "light": 3.79
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--border-subtle",
+        "id": "pair-border-subtle-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 3.96,
+          "light": 4.48
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-strong",
+        "id": "pair-border-strong-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.16,
+          "light": 8.3
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-official",
+        "id": "pair-border-official-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 8.05,
+          "light": 7.01
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-proposed",
+        "id": "pair-border-proposed-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.27,
+          "light": 6.15
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--border-error",
+        "id": "pair-border-error-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 6.73,
+          "light": 7.81
+        },
+        "use_class": "boundary-classed"
+      },
+      {
+        "bg_token": "--bg-canvas",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-canvas",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 9.43,
+          "light": 7.54
+        },
+        "use_class": "state-classed"
+      },
+      {
+        "bg_token": "--bg-elevated",
+        "fg_token": "--state-focus",
+        "id": "pair-focus-elevated",
+        "min_ratio": 3.0,
+        "ratios": {
+          "dark": 7.29,
+          "light": 8.1
+        },
+        "use_class": "state-classed"
+      }
+    ],
+    "pairs_checked": 27,
+    "scope_statement": "WCAG 2.2 AA contrast (4.5:1 body text, 3:1 large text and UI boundaries/focus), 44x44 px touch target floor with declared hit-area padding exceptions, and no color-only meaning; WCAG 2.2 AAA and external body certification are explicitly out of scope.",
+    "status": "PASS"
+  },
+  "errors": [],
+  "fixtures": {
+    "fixtures": [
+      {
+        "errors_detected": [
+          "Contrast failure in theme 'light' for 'pair-muted-on-elevated' (text-classed): 4.42:1 < 4.5:1"
+        ],
+        "id": "fixture-near-miss-4.4",
+        "status": "PASS"
+      },
+      {
+        "errors_detected": [
+          "Use-class violation for 'scratch-misuse-text-3-2': use_class 'text-classed' requires >= 4.5:1, declared min_ratio=3.2",
+          "Contrast failure in theme 'light' for 'scratch-misuse-text-3-2' (text-classed): 4.17:1 < 4.5:1"
+        ],
+        "id": "fixture-use-class-misuse-3.2",
+        "status": "PASS"
+      },
+      {
+        "errors_detected": [
+          "Undersized interactive control '.scratch-tiny-btn' (standard-button): missing min-height: var(--target-min)"
+        ],
+        "id": "fixture-undersized-target",
+        "status": "PASS"
+      },
+      {
+        "findings": [
+          {
+            "context": ".practice-runner-regression { color: #ff0000; }",
+            "kind": "raw-hex-color",
+            "line": 2347,
+            "source": "src/styles.css#practice-runner-regression",
+            "value": "#ff0000"
+          }
+        ],
+        "id": "fixture-hex-regression",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "hex_scan": {
+    "findings": [],
+    "findings_count": 0,
+    "status": "PASS"
+  },
+  "layout_reflow": {
+    "breakpoints_px": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "errors": [],
+    "geometry_checks": 120,
+    "profiles": [
+      "fresh",
+      "mid_progress",
+      "near_complete"
+    ],
+    "records": [
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "fresh",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "mid_progress",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 320,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": "sheet",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 390,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 768,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "concept_map"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": "sidebar",
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "exam"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 1,
+        "view": "methods"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "navigation"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 4,
+        "view": "practice"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 1,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "print"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "results"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "revision"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 2,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 2,
+        "view": "settings"
+      },
+      {
+        "breakpoint_px": 1280,
+        "clip": false,
+        "columns": 3,
+        "navigator_mode": null,
+        "overlap": false,
+        "profile": "near_complete",
+        "regions_count": 3,
+        "view": "start"
+      }
+    ],
+    "status": "PASS",
+    "views_checked": 10
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "styles_digest": "09010cd8e1f1dd1e683d32fb828b28fdd261fdf65ffddecdd4d8000f25d63d7b",
+  "targets": {
+    "controls": [
+      {
+        "class": "standard-button",
+        "selector": ".btn-control",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".sim-nav-link",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".exam-map-cell",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".skip-link",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".drawer-close",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".concept-node-btn",
+        "status": "PASS"
+      },
+      {
+        "class": "standard-button",
+        "selector": ".hint-step-btn",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".exam-answer-input",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".prakse-input-field",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".prakse-filter-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".revision-sa-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".revision-sa-note",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".settings-select",
+        "status": "PASS"
+      },
+      {
+        "class": "form-input",
+        "selector": ".input-control",
+        "status": "PASS"
+      },
+      {
+        "class": "dense-inline-chip",
+        "exception_id": "timer-chip-dense-inline",
+        "selector": ".exam-timer-chip",
+        "status": "PASS"
+      }
+    ],
+    "controls_checked": 15,
+    "errors": [],
+    "exceptions_count": 1,
+    "status": "PASS"
+  },
+  "task": "N32",
+  "tokens_digest": "965e9d1ffb9d9f711928de9a60324165e74339a1d2de15a85b367b018e6ef2be"
+}

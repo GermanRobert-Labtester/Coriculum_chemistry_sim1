@@ -1,0 +1,1335 @@
+{
+  "blueprint_anchors": {
+    "all_landmarks": [
+      "sakums",
+      "saturs",
+      "piemeri",
+      "prakse",
+      "eksamens",
+      "rezultati",
+      "atskats",
+      "metodika",
+      "druka",
+      "iestatijumi"
+    ],
+    "auxiliary_sections": [
+      "piemeri"
+    ],
+    "required_section_1_2": [
+      "sakums",
+      "saturs",
+      "prakse",
+      "eksamens",
+      "rezultati",
+      "atskats",
+      "metodika",
+      "druka",
+      "iestatijumi"
+    ]
+  },
+  "budget_policy": {
+    "authority_module": "tools/byte_budget.py",
+    "declared_section_1_3_bands_bytes": {
+      "artifact_total": [
+        716800,
+        1433600
+      ],
+      "bank_island": [
+        204800,
+        430080
+      ],
+      "css": [
+        40960,
+        81920
+      ],
+      "figures_island": [
+        61440,
+        143360
+      ],
+      "runtime_js_code": [
+        122880,
+        225280
+      ]
+    },
+    "enforced_ceilings_bytes": {
+      "artifact_total": 2846720,
+      "bank_island": 430080,
+      "css": 81920,
+      "figures_island": 143360,
+      "runtime_js_code": 1196032
+    },
+    "hard_failure_on_exceed": true
+  },
+  "data_projection_globals": [
+    {
+      "global_name": "COVERAGE_INVARIANTS",
+      "order": 1,
+      "owner_task": "N06",
+      "placeholder": "__COVERAGE_INVARIANTS__",
+      "source_path": "data/coverage.json"
+    },
+    {
+      "global_name": "CONCEPT_DRAWER_DATA",
+      "order": 2,
+      "owner_task": "N07",
+      "placeholder": "__CONCEPT_DRAWER_JSON__",
+      "source_path": "data/concept_summaries.json"
+    },
+    {
+      "global_name": "ANCHOR_REGISTRY",
+      "order": 3,
+      "owner_task": "N07",
+      "placeholder": "__ANCHOR_REGISTRY_JSON__",
+      "source_path": "data/master_anchor_registry.json"
+    },
+    {
+      "global_name": "RECALL_LAYERS_DATA",
+      "order": 4,
+      "owner_task": "N08",
+      "placeholder": "__RECALL_LAYERS_JSON__",
+      "source_path": "data/recall_layers.json"
+    }
+  ],
+  "deferred_authoring_assets": [
+    {
+      "global_name": "SimFamilyTemplates",
+      "inlined_in_artifact": false,
+      "owner_task": "N20",
+      "path": "src/variant-templates.js",
+      "rationale": "Authoring-time generator template bank (308.6 KiB raw) used by tools/generate_n20_bank.py and tools/check_n20_runtime.js to produce and verify the 112 frozen instances in data/bank/*.json. Because all 112 reviewed instances are already embedded in #sim-bank and SimVariantEngine is inlined for seed derivation and remediation support, duplicating the raw generator templates inside output/simulator.html is unnecessary."
+    }
+  ],
+  "deliverable": {
+    "artifact_path": "output/simulator.html",
+    "color_scheme_meta": "light dark",
+    "executable_scripts_count": 1,
+    "external_scripts_count": 0,
+    "external_stylesheets_count": 0,
+    "external_urls_allowed": 0,
+    "lang": "lv",
+    "manifest_path": "output/build-manifest.json",
+    "template_path": "src/shell.html",
+    "viewport_meta": "width=device-width, initial-scale=1"
+  },
+  "idempotence_rules": {
+    "atomic_write_policy": "Write to a unique temporary file in the target directory (tempfile.NamedTemporaryFile with prefix .<name>. and suffix .tmp), flush and os.fsync file descriptor, then os.replace onto target path; unlink temp file on any exception so a failed build never leaves a half-written deliverable.",
+    "encoding": "utf-8",
+    "json_ensure_ascii": false,
+    "json_separators": [
+      ",",
+      ":"
+    ],
+    "json_sort_keys": true,
+    "line_endings": "LF",
+    "script_close_escape": "<\\/",
+    "timestamps_in_content": "forbidden-except-declared-iso-date-stamp"
+  },
+  "islands": {
+    "core_section_1_2_ids": [
+      "sim-coverage",
+      "sim-conventions",
+      "sim-bank",
+      "sim-forms",
+      "sim-golden-vectors",
+      "sim-terms",
+      "sim-analytics"
+    ],
+    "insertion_order": [
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-coverage-digest",
+        "digest_placeholder": "__ISLAND_DIGEST__",
+        "island_id": "sim-coverage",
+        "order": 1,
+        "owner_task": "N02",
+        "placeholder": "__SIM_COVERAGE_JSON__",
+        "source_paths": [
+          "data/coverage.json"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-conventions-digest",
+        "digest_placeholder": "__CONVENTIONS_DIGEST__",
+        "island_id": "sim-conventions",
+        "order": 2,
+        "owner_task": "N03",
+        "placeholder": "__SIM_CONVENTIONS_JSON__",
+        "source_paths": [
+          "data/conventions.json"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-bank-embedded-digest",
+        "digest_placeholder": "__BANK_EMBEDDED_DIGEST__",
+        "island_id": "sim-bank",
+        "order": 3,
+        "owner_task": "N04/N20",
+        "placeholder": "__SIM_BANK_JSON__",
+        "source_paths": [
+          "data/question_bank_schema.json",
+          "data/bank"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-forms-digest",
+        "digest_placeholder": "__FORMS_DIGEST__",
+        "island_id": "sim-forms",
+        "order": 4,
+        "owner_task": "N04/N24",
+        "placeholder": "__SIM_FORMS_JSON__",
+        "source_paths": [
+          "data/forms.json"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-golden-vectors-digest",
+        "digest_placeholder": "__GOLDEN_VECTORS_DIGEST__",
+        "island_id": "sim-golden-vectors",
+        "order": 5,
+        "owner_task": "N05",
+        "placeholder": "__SIM_GOLDEN_VECTORS_JSON__",
+        "source_paths": [
+          "data/golden_vectors.json"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-terms-digest",
+        "digest_placeholder": "__TERMS_DIGEST__",
+        "island_id": "sim-terms",
+        "order": 6,
+        "owner_task": "N10",
+        "placeholder": "__SIM_TERMS_JSON__",
+        "source_paths": [
+          "data/terms.json"
+        ]
+      },
+      {
+        "category": "core_section_1_2",
+        "digest_meta_name": "sim-analytics-digest",
+        "digest_placeholder": "__ANALYTICS_DIGEST__",
+        "island_id": "sim-analytics",
+        "order": 7,
+        "owner_task": "N25",
+        "placeholder": "__SIM_ANALYTICS_JSON__",
+        "source_paths": [
+          "data/analytics_schema.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-mastery-policy-digest",
+        "digest_placeholder": "__MASTERY_POLICY_DIGEST__",
+        "island_id": "sim-mastery-policy",
+        "order": 8,
+        "owner_task": "N26",
+        "placeholder": "__SIM_MASTERY_POLICY_JSON__",
+        "source_paths": [
+          "data/mastery_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-scheduler-policy-digest",
+        "digest_placeholder": "__SCHEDULER_POLICY_DIGEST__",
+        "island_id": "sim-scheduler-policy",
+        "order": 9,
+        "owner_task": "N27",
+        "placeholder": "__SIM_SCHEDULER_POLICY_JSON__",
+        "source_paths": [
+          "data/scheduler_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-remediation-policy-digest",
+        "digest_placeholder": "__REMEDIATION_POLICY_DIGEST__",
+        "island_id": "sim-remediation-policy",
+        "order": 10,
+        "owner_task": "N28",
+        "placeholder": "__SIM_REMEDIATION_POLICY_JSON__",
+        "source_paths": [
+          "data/remediation_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-revision-policy-digest",
+        "digest_placeholder": "__REVISION_POLICY_DIGEST__",
+        "island_id": "sim-revision-policy",
+        "order": 11,
+        "owner_task": "N29",
+        "placeholder": "__SIM_REVISION_POLICY_JSON__",
+        "source_paths": [
+          "data/revision_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-practice-policy-digest",
+        "digest_placeholder": "__PRACTICE_POLICY_DIGEST__",
+        "island_id": "sim-practice-policy",
+        "order": 12,
+        "owner_task": "N30",
+        "placeholder": "__SIM_PRACTICE_POLICY_JSON__",
+        "source_paths": [
+          "data/practice_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-figures-digest",
+        "digest_placeholder": "__FIGURES_DIGEST__",
+        "island_id": "sim-figures",
+        "order": 13,
+        "owner_task": "N11/N12/N13/N14/N15",
+        "placeholder": "__SIM_FIGURES_JSON__",
+        "source_paths": [
+          "data/figures_t1_t2.json",
+          "data/figures_t2_t3.json",
+          "data/figures_t4.json",
+          "data/figures_t5.json",
+          "data/figures_t6_t7.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-chains-digest",
+        "digest_placeholder": "__CHAINS_DIGEST__",
+        "island_id": "sim-chains",
+        "order": 14,
+        "owner_task": "N16",
+        "placeholder": "__SIM_CHAINS_JSON__",
+        "source_paths": [
+          "data/worked_example_chains.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-engines-digest",
+        "digest_placeholder": "__ENGINES_DIGEST__",
+        "island_id": "sim-engines",
+        "order": 15,
+        "owner_task": "N17",
+        "placeholder": "__SIM_ENGINES_JSON__",
+        "source_paths": [
+          "data/engine_taxonomy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-graph-scoring-digest",
+        "digest_placeholder": "__GRAPH_SCORING_DIGEST__",
+        "island_id": "sim-graph-scoring",
+        "order": 16,
+        "owner_task": "N18",
+        "placeholder": "__SIM_GRAPH_SCORING_JSON__",
+        "source_paths": [
+          "data/graph_scoring_rules.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-method-cards-digest",
+        "digest_placeholder": "__METHOD_CARDS_DIGEST__",
+        "island_id": "sim-method-cards",
+        "order": 17,
+        "owner_task": "N19",
+        "placeholder": "__SIM_METHOD_CARDS_JSON__",
+        "source_paths": [
+          "data/method_cards.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-method-engine-digest",
+        "digest_placeholder": "__METHOD_ENGINE_DIGEST__",
+        "island_id": "sim-method-engine",
+        "order": 18,
+        "owner_task": "N19",
+        "placeholder": "__SIM_METHOD_ENGINE_JSON__",
+        "source_paths": [
+          "data/method_engine_rules.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-exam-policy-digest",
+        "digest_placeholder": "__EXAM_POLICY_DIGEST__",
+        "island_id": "sim-exam-policy",
+        "order": 19,
+        "owner_task": "N21",
+        "placeholder": "__SIM_EXAM_POLICY_JSON__",
+        "source_paths": [
+          "data/exam_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-response-types-digest",
+        "digest_placeholder": "__RESPONSE_TYPES_DIGEST__",
+        "island_id": "sim-response-types",
+        "order": 20,
+        "owner_task": "N22",
+        "placeholder": "__SIM_RESPONSE_TYPES_JSON__",
+        "source_paths": [
+          "data/response_types.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-grading-policy-digest",
+        "digest_placeholder": "__GRADING_POLICY_DIGEST__",
+        "island_id": "sim-grading-policy",
+        "order": 21,
+        "owner_task": "N23",
+        "placeholder": "__SIM_GRADING_POLICY_JSON__",
+        "source_paths": [
+          "data/grading_policy.json"
+        ]
+      },
+      {
+        "category": "extended_policy_and_engine",
+        "digest_meta_name": "sim-feedback-classification-digest",
+        "digest_placeholder": "__FEEDBACK_CLASSIFICATION_DIGEST__",
+        "island_id": "sim-feedback-classification",
+        "order": 22,
+        "owner_task": "N23",
+        "placeholder": "__SIM_FEEDBACK_CLASSIFICATION_JSON__",
+        "source_paths": [
+          "data/feedback_classification.json"
+        ]
+      }
+    ]
+  },
+  "iso_date": "2026-11-19",
+  "metadata_stamp": {
+    "composite_digest_rule": "sha256 over canonical JSON (sort_keys=True, separators=(',',':'), ensure_ascii=False) of {version, iso_date, policy_id, sources:[{path,bytes,sha256}], islands:[{island_id,bytes,sha256}], modules:[{order,path,raw_sha256,inlined_sha256}]}",
+    "iso_date": "2026-11-19",
+    "meta_tags": [
+      "sim-build",
+      "sim-build-version",
+      "sim-build-date",
+      "sim-build-composite-digest"
+    ],
+    "source_digest_algorithm": "sha256",
+    "source_sort_key": "path",
+    "version": "1.0.0-n31"
+  },
+  "module_order": [
+    {
+      "consumed_islands": [
+        "sim-coverage",
+        "COVERAGE_INVARIANTS"
+      ],
+      "consumes": [],
+      "contract_citation": "N02 handoff (evidence/VERIFICATION_LEDGER.md §N02): SimCoverage.load reads #sim-coverage and validates 7 topics / 64 outcomes.",
+      "id": "coverage-loader",
+      "late_bound_callbacks": [],
+      "layer": "island_loader",
+      "order": 1,
+      "owner_task": "N02",
+      "path": "src/coverage-loader.js",
+      "placeholder": "__COVERAGE_LOADER_JS__",
+      "provides": [
+        "SimCoverage"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-conventions"
+      ],
+      "consumes": [],
+      "contract_citation": "N03 handoff (evidence/VERIFICATION_LEDGER.md §N03): SimConventions.load reads #sim-conventions and provides decimal-comma, significant-figure, and constant rules.",
+      "id": "conventions-loader",
+      "late_bound_callbacks": [],
+      "layer": "island_loader",
+      "order": 2,
+      "owner_task": "N03",
+      "path": "src/conventions-loader.js",
+      "placeholder": "__CONVENTIONS_LOADER_JS__",
+      "provides": [
+        "SimConventions"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-terms"
+      ],
+      "consumes": [],
+      "contract_citation": "N10 handoff (evidence/N10_VERIFICATION_RECORD.md): SimTerms.load reads #sim-terms and provides Latvian terminology, IUPAC pairs, and unit dimension vectors.",
+      "id": "terms-loader",
+      "late_bound_callbacks": [],
+      "layer": "island_loader",
+      "order": 3,
+      "owner_task": "N10",
+      "path": "src/terms-loader.js",
+      "placeholder": "__TERMS_LOADER_JS__",
+      "provides": [
+        "SimTerms"
+      ]
+    },
+    {
+      "consumed_islands": [],
+      "consumes": [],
+      "contract_citation": "N05 handoff (evidence/VERIFICATION_LEDGER.md §N05): SimPRNG provides deterministic xoshiro128** / SplitMix32 seeded streams and canonical JSON helpers.",
+      "id": "prng",
+      "late_bound_callbacks": [],
+      "layer": "core_utility",
+      "order": 4,
+      "owner_task": "N05",
+      "path": "src/prng.js",
+      "placeholder": "__PRNG_JS__",
+      "provides": [
+        "SimPRNG"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-figures"
+      ],
+      "consumes": [
+        "SimTerms"
+      ],
+      "contract_citation": "N11-N15 handoff (evidence/N11_VERIFICATION_RECORD.md..N15_VERIFICATION_RECORD.md): SimFigures reads #sim-figures, consumes SimTerms for localized axis/annotation labels, and provides sha256Utf8 and deterministic pure-SVG rendering.",
+      "id": "figure-framework",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 5,
+      "owner_task": "N11",
+      "path": "src/figure-framework.js",
+      "placeholder": "__FIGURE_FRAMEWORK_JS__",
+      "provides": [
+        "SimFigures"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-bank"
+      ],
+      "consumes": [
+        "SimFigures"
+      ],
+      "contract_citation": "N04/N20 handoff (evidence/N20_VERIFICATION_RECORD.md): SimBank.load reads #sim-bank, uses SimFigures.sha256Utf8 to verify sim-bank-embedded-digest, and indexes 112 reviewed question records.",
+      "id": "bank-loader",
+      "late_bound_callbacks": [],
+      "layer": "island_loader",
+      "order": 6,
+      "owner_task": "N04",
+      "path": "src/bank-loader.js",
+      "placeholder": "__BANK_LOADER_JS__",
+      "provides": [
+        "SimBank"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-golden-vectors"
+      ],
+      "consumes": [
+        "SimPRNG",
+        "SimBank"
+      ],
+      "contract_citation": "N05 handoff (evidence/VERIFICATION_LEDGER.md §N05): SimGoldenVectors.load reads #sim-golden-vectors and validates PRNG and bank schema vectors against SimPRNG and SimBank.",
+      "id": "golden-vectors-loader",
+      "late_bound_callbacks": [],
+      "layer": "island_loader",
+      "order": 7,
+      "owner_task": "N05",
+      "path": "src/golden-vectors-loader.js",
+      "placeholder": "__GOLDEN_VECTORS_LOADER_JS__",
+      "provides": [
+        "SimGoldenVectors"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-figures",
+        "sim-terms"
+      ],
+      "consumes": [
+        "SimTerms",
+        "SimFigures"
+      ],
+      "contract_citation": "N12 handoff (evidence/N12_VERIFICATION_RECORD.md): SimLeakScan consumes SimTerms and SimFigures to scan gradeable SVG figures for answer leakage.",
+      "id": "leak-scan",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 8,
+      "owner_task": "N12",
+      "path": "src/leak-scan.js",
+      "placeholder": "__LEAK_SCAN_JS__",
+      "provides": [
+        "SimLeakScan"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-engines",
+        "sim-conventions",
+        "sim-terms"
+      ],
+      "consumes": [
+        "SimConventions",
+        "SimTerms",
+        "SimFigures"
+      ],
+      "contract_citation": "N17 handoff (evidence/N17_VERIFICATION_RECORD.md): SimEngines reads #sim-engines and consumes SimConventions, SimTerms, and SimFigures.sha256Utf8 to grade numeric, unit, significant-figure, and multi-step quantity criteria.",
+      "id": "quantity-engine",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 9,
+      "owner_task": "N17",
+      "path": "src/quantity-engine.js",
+      "placeholder": "__QUANTITY_ENGINE_JS__",
+      "provides": [
+        "SimEngines"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-graph-scoring",
+        "sim-conventions",
+        "sim-figures"
+      ],
+      "consumes": [
+        "SimConventions",
+        "SimFigures"
+      ],
+      "contract_citation": "N18 handoff (evidence/N18_VERIFICATION_RECORD.md): SimGraphScoring reads #sim-graph-scoring and consumes SimConventions and SimFigures to evaluate Q11/Q12 graph construction and interpretation submissions.",
+      "id": "graph-scoring-engine",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 10,
+      "owner_task": "N18",
+      "path": "src/graph-scoring-engine.js",
+      "placeholder": "__GRAPH_SCORING_ENGINE_JS__",
+      "provides": [
+        "SimGraphScoring"
+      ]
+    },
+    {
+      "consumed_islands": [],
+      "consumes": [
+        "SimGraphScoring"
+      ],
+      "contract_citation": "N18 handoff (evidence/N18_VERIFICATION_RECORD.md): SimGraphCapture wraps SimGraphScoring coordinate and SVG point-line capture helpers for interactive graph tasks.",
+      "id": "graph-capture",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 11,
+      "owner_task": "N18",
+      "path": "src/graph-capture.js",
+      "placeholder": "__GRAPH_CAPTURE_JS__",
+      "provides": [
+        "SimGraphCapture"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-method-engine",
+        "sim-terms"
+      ],
+      "consumes": [
+        "SimTerms"
+      ],
+      "contract_citation": "N19 handoff (evidence/N19_VERIFICATION_RECORD.md): SimMethodEngine reads #sim-method-engine and consumes SimTerms to grade chemical equations, ionic equations, redox balance, and analytical method criteria.",
+      "id": "method-engine",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 12,
+      "owner_task": "N19",
+      "path": "src/method-engine.js",
+      "placeholder": "__METHOD_ENGINE_JS__",
+      "provides": [
+        "SimMethodEngine"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-method-cards",
+        "sim-terms"
+      ],
+      "consumes": [
+        "SimTerms",
+        "SimMethodEngine"
+      ],
+      "contract_citation": "N19 handoff (evidence/N19_VERIFICATION_RECORD.md): SimMethodCards reads #sim-method-cards and consumes SimTerms and SimMethodEngine to render analytical method comparison cards.",
+      "id": "method-card-view",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 13,
+      "owner_task": "N19",
+      "path": "src/method-card-view.js",
+      "placeholder": "__METHOD_CARD_VIEW_JS__",
+      "provides": [
+        "SimMethodCards"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-conventions"
+      ],
+      "consumes": [
+        "SimPRNG",
+        "SimFigures",
+        "SimConventions"
+      ],
+      "contract_citation": "N20 handoff (evidence/N20_VERIFICATION_RECORD.md): SimVariantEngine consumes SimPRNG, SimFigures, and SimConventions for deterministic variant seed derivation and ephemeral retry instantiation.",
+      "id": "variant-engine",
+      "late_bound_callbacks": [],
+      "layer": "figure_and_engine",
+      "order": 14,
+      "owner_task": "N20",
+      "path": "src/variant-engine.js",
+      "placeholder": "__VARIANT_ENGINE_JS__",
+      "provides": [
+        "SimVariantEngine"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-chains"
+      ],
+      "consumes": [
+        "SimFigures"
+      ],
+      "contract_citation": "N16 handoff (evidence/N16_VERIFICATION_RECORD.md): SimChains reads #sim-chains, mounts EX01-EX14 worked example accordions, and uses SimFigures for embedded figures and digests.",
+      "id": "chain-view",
+      "late_bound_callbacks": [
+        "SimConceptDrawer"
+      ],
+      "layer": "runtime_view",
+      "order": 15,
+      "owner_task": "N16",
+      "path": "src/chain-view.js",
+      "placeholder": "__CHAIN_VIEW_JS__",
+      "provides": [
+        "SimChains"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-coverage"
+      ],
+      "consumes": [
+        "SimCoverage",
+        "SimTerms"
+      ],
+      "contract_citation": "N06 handoff (evidence/N06_VERIFICATION_RECORD.md): coverage-view.js extends SimCoverage with SimCoverage.render to populate #saturs topic navigation and 64 verbatim outcomes.",
+      "id": "coverage-view",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 16,
+      "owner_task": "N06",
+      "path": "src/coverage-view.js",
+      "placeholder": "__COVERAGE_VIEW_JS__",
+      "provides": [
+        "SimCoverage.render"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-coverage"
+      ],
+      "consumes": [
+        "SimCoverage"
+      ],
+      "contract_citation": "N06 handoff (evidence/N06_VERIFICATION_RECORD.md): SimStartView.renderStartTopics populates #sakums-oficialas-temas from the loaded SimCoverage model.",
+      "id": "start-view",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 17,
+      "owner_task": "N06",
+      "path": "src/start-view.js",
+      "placeholder": "__START_VIEW_JS__",
+      "provides": [
+        "SimStartView"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "CONCEPT_DRAWER_DATA",
+        "ANCHOR_REGISTRY"
+      ],
+      "consumes": [
+        "SimCoverage",
+        "SimFigures",
+        "SimChains"
+      ],
+      "contract_citation": "N07 handoff (evidence/N07_VERIFICATION_RECORD.md): SimConceptDrawer hydrates 64 concept cards from CONCEPT_DRAWER_DATA and ANCHOR_REGISTRY and coordinates with SimCoverage, SimFigures, and SimChains.",
+      "id": "concept-drawer",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 18,
+      "owner_task": "N07",
+      "path": "src/concept-drawer.js",
+      "placeholder": "__CONCEPT_DRAWER_JS__",
+      "provides": [
+        "SimConceptDrawer"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-coverage"
+      ],
+      "consumes": [
+        "SimCoverage",
+        "SimConceptDrawer"
+      ],
+      "contract_citation": "N07 handoff (evidence/N07_VERIFICATION_RECORD.md): SimConceptMap computes the 64-node / 127-edge layered prerequisite DAG from SimCoverage and binds triggers to SimConceptDrawer.",
+      "id": "concept-map",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 19,
+      "owner_task": "N07",
+      "path": "src/concept-map.js",
+      "placeholder": "__CONCEPT_MAP_JS__",
+      "provides": [
+        "SimConceptMap"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "RECALL_LAYERS_DATA"
+      ],
+      "consumes": [
+        "SimTerms",
+        "SimConceptDrawer"
+      ],
+      "contract_citation": "N08 handoff (evidence/N08_VERIFICATION_RECORD.md): SimHintDrawer loads 28-family recall ladders from RECALL_LAYERS_DATA, enforces exam-mode refusal, and hands off concept links to SimConceptDrawer.",
+      "id": "hint-drawer",
+      "late_bound_callbacks": [],
+      "layer": "runtime_view",
+      "order": 20,
+      "owner_task": "N08",
+      "path": "src/hint-drawer.js",
+      "placeholder": "__HINT_DRAWER_JS__",
+      "provides": [
+        "SimHintDrawer"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-terms"
+      ],
+      "consumes": [
+        "SimTerms"
+      ],
+      "contract_citation": "N06/N09 handoff (evidence/N06_VERIFICATION_RECORD.md, evidence/N09_VERIFICATION_RECORD.md): SimTheme manages light/dark color-scheme state and binds to SimStore when opted in.",
+      "id": "theme-toggle",
+      "late_bound_callbacks": [
+        "SimStore"
+      ],
+      "layer": "runtime_view",
+      "order": 21,
+      "owner_task": "N06",
+      "path": "src/theme-toggle.js",
+      "placeholder": "__THEME_TOGGLE_JS__",
+      "provides": [
+        "SimTheme"
+      ]
+    },
+    {
+      "consumed_islands": [],
+      "consumes": [],
+      "contract_citation": "N21 handoff (evidence/N21_VERIFICATION_RECORD.md): SimSession implements the pure ExamSession state machine, advisory timer, transition log, and terminal submission record.",
+      "id": "session",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 22,
+      "owner_task": "N21",
+      "path": "src/compiled/session.js",
+      "placeholder": "__SESSION_JS__",
+      "provides": [
+        "SimSession"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-response-types"
+      ],
+      "consumes": [
+        "SimTerms"
+      ],
+      "contract_citation": "N22 handoff (evidence/N22_VERIFICATION_RECORD.md): SimInputsRegistry reads #sim-response-types and validates the 18 response-type payload contracts (Q01-Q18).",
+      "id": "inputs-registry",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 23,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/registry.js",
+      "placeholder": "__INPUTS_REGISTRY_JS__",
+      "provides": [
+        "SimInputsRegistry"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-response-types"
+      ],
+      "consumes": [
+        "SimInputsRegistry",
+        "SimGraphScoring",
+        "SimGraphCapture",
+        "SimBank"
+      ],
+      "contract_citation": "N22 handoff (evidence/N22_VERIFICATION_RECORD.md): SimInputsComponents renders and captures raw learner inputs across all 18 response types using SimInputsRegistry, SimGraphScoring, SimGraphCapture, and SimBank.",
+      "id": "inputs-components",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 24,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/components.js",
+      "placeholder": "__INPUTS_COMPONENTS_JS__",
+      "provides": [
+        "SimInputsComponents"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-response-types"
+      ],
+      "consumes": [
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimSession"
+      ],
+      "contract_citation": "N22 handoff (evidence/N22_VERIFICATION_RECORD.md): SimInputsIntegration / SimInputs bridges SimInputsRegistry and SimInputsComponents with SimSession for raw answer capture and restoration.",
+      "id": "inputs-integration",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 25,
+      "owner_task": "N22",
+      "path": "src/compiled/inputs/integration.js",
+      "placeholder": "__INPUTS_INTEGRATION_JS__",
+      "provides": [
+        "SimInputsIntegration",
+        "SimInputs"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-grading-policy"
+      ],
+      "consumes": [
+        "SimEngines",
+        "SimGraphScoring",
+        "SimMethodEngine",
+        "SimInputsRegistry",
+        "SimInputsIntegration"
+      ],
+      "contract_citation": "N23 handoff (evidence/N23_VERIFICATION_RECORD.md): SimGrading reads #sim-grading-policy and routes submissions to SimEngines, SimGraphScoring, and SimMethodEngine while keeping auto and pending_external points strictly unblended.",
+      "id": "grading",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 26,
+      "owner_task": "N23",
+      "path": "src/compiled/grading.js",
+      "placeholder": "__GRADING_JS__",
+      "provides": [
+        "SimGrading"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-feedback-classification"
+      ],
+      "consumes": [
+        "SimGrading",
+        "SimTerms",
+        "SimChains",
+        "SimMethodCards"
+      ],
+      "contract_citation": "N23 handoff (evidence/N23_VERIFICATION_RECORD.md): SimFeedback reads #sim-feedback-classification and consumes SimGrading, SimTerms, SimChains, and SimMethodCards to build post-submission feedback cards and unblended score reports.",
+      "id": "feedback",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 27,
+      "owner_task": "N23",
+      "path": "src/compiled/feedback.js",
+      "placeholder": "__FEEDBACK_JS__",
+      "provides": [
+        "SimFeedback"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-forms",
+        "sim-bank"
+      ],
+      "consumes": [
+        "SimPRNG",
+        "SimFigures",
+        "SimVariantEngine"
+      ],
+      "contract_citation": "N24 handoff (evidence/N24_VERIFICATION_RECORD.md): SimAssembly reads #sim-forms and #sim-bank and uses SimPRNG, SimFigures.sha256Utf8, and SimVariantEngine to draw and verify 21-slot / 100-point forms.",
+      "id": "assembly",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 28,
+      "owner_task": "N24",
+      "path": "src/compiled/assembly.js",
+      "placeholder": "__ASSEMBLY_JS__",
+      "provides": [
+        "SimAssembly"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-exam-policy",
+        "sim-forms",
+        "sim-bank"
+      ],
+      "consumes": [
+        "SimSession",
+        "SimAssembly"
+      ],
+      "contract_citation": "N21/N24 handoff (evidence/N21_VERIFICATION_RECORD.md, evidence/N24_VERIFICATION_RECORD.md): SimExam reads #sim-exam-policy and coordinates SimSession and SimAssembly for the #eksamens view.",
+      "id": "exam",
+      "late_bound_callbacks": [],
+      "layer": "session_and_grading",
+      "order": 29,
+      "owner_task": "N21",
+      "path": "src/compiled/exam.js",
+      "placeholder": "__EXAM_JS__",
+      "provides": [
+        "SimExam"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-analytics"
+      ],
+      "consumes": [],
+      "contract_citation": "N25 handoff (evidence/N25_VERIFICATION_RECORD.md): SimStore implements the in-memory-default session store with explicit opt-in localStorage persistence, canonical digesting, and two-step erase.",
+      "id": "store",
+      "late_bound_callbacks": [],
+      "layer": "analytics_and_adaptive",
+      "order": 30,
+      "owner_task": "N25",
+      "path": "src/compiled/store.js",
+      "placeholder": "__STORE_JS__",
+      "provides": [
+        "SimStore"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-analytics"
+      ],
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimGrading",
+        "SimTheme"
+      ],
+      "contract_citation": "N25 handoff (evidence/N25_VERIFICATION_RECORD.md): SimAnalytics reads #sim-analytics (v2, F10 rejected), consumes SimStore, SimCoverage, SimGrading, and SimTheme, and renders #atskats and #iestatijumi storage controls.",
+      "id": "analytics",
+      "late_bound_callbacks": [
+        "SimMastery",
+        "SimScheduler",
+        "SimRemediation",
+        "SimRevision",
+        "SimPractice"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 31,
+      "owner_task": "N25",
+      "path": "src/compiled/analytics.js",
+      "placeholder": "__ANALYTICS_JS__",
+      "provides": [
+        "SimAnalytics"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-mastery-policy"
+      ],
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank"
+      ],
+      "contract_citation": "N26 handoff (evidence/N26_VERIFICATION_RECORD.md): SimMastery reads #sim-mastery-policy and consumes SimStore, SimCoverage, and SimBank for the 5-state deterministic mastery reducer.",
+      "id": "mastery",
+      "late_bound_callbacks": [
+        "SimScheduler"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 32,
+      "owner_task": "N26",
+      "path": "src/compiled/mastery.js",
+      "placeholder": "__MASTERY_JS__",
+      "provides": [
+        "SimMastery"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-scheduler-policy"
+      ],
+      "consumes": [
+        "SimMastery",
+        "SimCoverage",
+        "SimBank",
+        "SimStore",
+        "SimTerms"
+      ],
+      "contract_citation": "N27 handoff (evidence/N27_VERIFICATION_RECORD.md): SimScheduler reads #sim-scheduler-policy and consumes SimMastery, SimCoverage, SimBank, SimStore, and SimTerms for deterministic Leitner queue selection.",
+      "id": "scheduler",
+      "late_bound_callbacks": [
+        "SimPractice"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 33,
+      "owner_task": "N27",
+      "path": "src/compiled/scheduler.js",
+      "placeholder": "__SCHEDULER_JS__",
+      "provides": [
+        "SimScheduler"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-remediation-policy"
+      ],
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimConceptDrawer",
+        "SimChains",
+        "SimMastery",
+        "SimVariantEngine"
+      ],
+      "contract_citation": "N28 handoff (evidence/N28_VERIFICATION_RECORD.md): SimRemediation reads #sim-remediation-policy and consumes SimStore, SimCoverage, SimBank, SimTerms, SimConceptDrawer, SimChains, SimMastery, and SimVariantEngine for recommend-only remediation and retry variant selection.",
+      "id": "remediation",
+      "late_bound_callbacks": [
+        "SimAnalytics",
+        "SimScheduler",
+        "SimRevision",
+        "SimPractice"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 34,
+      "owner_task": "N28",
+      "path": "src/compiled/remediation.js",
+      "placeholder": "__REMEDIATION_JS__",
+      "provides": [
+        "SimRemediation"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-revision-policy"
+      ],
+      "consumes": [
+        "SimStore",
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimFeedback",
+        "SimMastery",
+        "SimRemediation",
+        "SimConceptDrawer",
+        "SimChains"
+      ],
+      "contract_citation": "N29 handoff (evidence/N29_VERIFICATION_RECORD.md): SimRevision reads #sim-revision-policy and consumes SimStore, SimCoverage, SimBank, SimTerms, SimFeedback, SimMastery, SimRemediation, SimConceptDrawer, and SimChains for the unified 64-outcome revision panel and F07 self-assessment cards.",
+      "id": "revision",
+      "late_bound_callbacks": [
+        "SimPractice"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 35,
+      "owner_task": "N29",
+      "path": "src/compiled/revision.js",
+      "placeholder": "__REVISION_JS__",
+      "provides": [
+        "SimRevision"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-practice-policy",
+        "sim-response-types"
+      ],
+      "consumes": [
+        "SimCoverage",
+        "SimBank",
+        "SimTerms",
+        "SimStore",
+        "SimExam",
+        "SimHintDrawer",
+        "SimChains",
+        "SimConceptDrawer",
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimInputsIntegration",
+        "SimEngines",
+        "SimGraphScoring",
+        "SimMethodEngine",
+        "SimGrading",
+        "SimFeedback",
+        "SimMastery",
+        "SimRemediation",
+        "SimVariantEngine"
+      ],
+      "contract_citation": "N30 handoff (evidence/N30_VERIFICATION_RECORD.md): SimPractice reads #sim-practice-policy and coordinates all upstream engines, input components, grading, feedback, mastery, remediation, and drawers for bounded practice paths.",
+      "id": "practice",
+      "late_bound_callbacks": [
+        "SimAnalytics",
+        "SimScheduler",
+        "SimRevision"
+      ],
+      "layer": "analytics_and_adaptive",
+      "order": 36,
+      "owner_task": "N30",
+      "path": "src/compiled/practice.js",
+      "placeholder": "__PRACTICE_JS__",
+      "provides": [
+        "SimPractice"
+      ]
+    },
+    {
+      "consumed_islands": [],
+      "consumes": [
+        "SimTheme"
+      ],
+      "contract_citation": "N33 handoff: SimFocus manages keyboard shortcuts, input-guard, view-transition focus, drawer return-focus & tab-escape, and single-announcement live regions.",
+      "id": "focus",
+      "late_bound_callbacks": [
+        "SimConceptDrawer",
+        "SimHintDrawer",
+        "SimExam",
+        "SimPractice"
+      ],
+      "layer": "accessibility_and_keyboard",
+      "order": 37,
+      "owner_task": "N33",
+      "path": "src/compiled/focus.js",
+      "placeholder": "__FOCUS_JS__",
+      "provides": [
+        "SimFocus"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-forms",
+        "sim-bank"
+      ],
+      "consumes": [],
+      "contract_citation": "N34 F04 paper worksheet generator: SimPaper renders deterministic 21-slot printable forms (A/B/C) from #sim-forms and #sim-bank with print-theme isolation.",
+      "id": "paper",
+      "late_bound_callbacks": [],
+      "layer": "print_and_paper",
+      "order": 38,
+      "owner_task": "N34",
+      "path": "src/compiled/paper.js",
+      "placeholder": "__SIM_PAPER_JS__",
+      "provides": [
+        "SimPaper"
+      ]
+    },
+    {
+      "consumed_islands": [
+        "sim-coverage",
+        "sim-conventions",
+        "sim-bank",
+        "sim-forms",
+        "sim-golden-vectors",
+        "sim-terms",
+        "sim-analytics",
+        "sim-mastery-policy",
+        "sim-scheduler-policy",
+        "sim-remediation-policy",
+        "sim-revision-policy",
+        "sim-practice-policy",
+        "sim-figures",
+        "sim-chains",
+        "sim-engines",
+        "sim-graph-scoring",
+        "sim-method-cards",
+        "sim-method-engine",
+        "sim-exam-policy",
+        "sim-response-types",
+        "sim-grading-policy",
+        "sim-feedback-classification"
+      ],
+      "consumes": [
+        "SimCoverage",
+        "SimCoverage.render",
+        "SimConventions",
+        "SimTerms",
+        "SimPRNG",
+        "SimFigures",
+        "SimBank",
+        "SimGoldenVectors",
+        "SimLeakScan",
+        "SimEngines",
+        "SimGraphScoring",
+        "SimGraphCapture",
+        "SimMethodEngine",
+        "SimMethodCards",
+        "SimVariantEngine",
+        "SimChains",
+        "SimStartView",
+        "SimConceptDrawer",
+        "SimConceptMap",
+        "SimHintDrawer",
+        "SimTheme",
+        "SimSession",
+        "SimInputsRegistry",
+        "SimInputsComponents",
+        "SimInputsIntegration",
+        "SimInputs",
+        "SimGrading",
+        "SimFeedback",
+        "SimAssembly",
+        "SimExam",
+        "SimStore",
+        "SimAnalytics",
+        "SimMastery",
+        "SimScheduler",
+        "SimRemediation",
+        "SimRevision",
+        "SimPractice"
+      ],
+      "contract_citation": "N06-N31 smoke harness (src/smoke-subset.js): SimSmoke registers and executes 27 in-file smoke vectors across all loaded islands and runtime namespaces.",
+      "id": "smoke-subset",
+      "late_bound_callbacks": [],
+      "layer": "smoke_harness",
+      "order": 39,
+      "owner_task": "N31",
+      "path": "src/smoke-subset.js",
+      "placeholder": "__SMOKE_SUBSET_JS__",
+      "provides": [
+        "SimSmoke"
+      ]
+    }
+  ],
+  "offline_url_whitelist": {
+    "allowed_upstream_urls": [],
+    "policy_note": "Zero external URLs (http:// or https://) are permitted in executable code, styles, JSON islands, or markup. Only an explicit <!-- LICENSE-UPSTREAM: ... --> comment naming an upstream license would be exempt, and this standalone deliverable carries zero external URLs anywhere.",
+    "scan_patterns": [
+      "http://",
+      "https://"
+    ],
+    "whitelisted_comment_prefix": "<!-- LICENSE-UPSTREAM:"
+  },
+  "owner_task": "N31",
+  "policy_id": "n31-single-file-build-policy-v1",
+  "schema_version": 1,
+  "single_script_wrapper": {
+    "bootstrap_separator": "/* === BOOTSTRAP: src/shell.html === */",
+    "compaction_policy": "Preserve UTF-8 literals, strip non-boundary comments and blank lines, preserve /* === MODULE: <path> === */ and /* === BOOTSTRAP: ... === */ boundary markers.",
+    "join_newline": "\n",
+    "module_separator_template": "/* === MODULE: {path} === */"
+  },
+  "version": "1.0.0-n31"
+}

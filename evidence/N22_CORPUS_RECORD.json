@@ -1,0 +1,1792 @@
+{
+  "budgets": {
+    "budgets": [
+      {
+        "basis": "Plāna 1.3 sadaļas josla 700–1400 KiB; izmērītais apjoms pēc N22 ir 1522087 B, tāpēc izpildītais griests ir 1504 KiB. N22 atbilžu ievades slānis: reakcijas tipu reģistra sala (34,179 B kanoniski), terminoloģijas salas pieaugums (+47,549 B) un trīs dūmu vektori palielina artefaktu līdz 1,522,087 B (1,486,4 KiB), kas pārsniedz N21 noteikto 1,440 KiB griestu par 47,527 B. Griests pārlikts uz mērījuma pamata; deklarētā 700–1,400 KiB josla paliek redzama. N22 ievades moduļi (225,423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270,014 B paliek zem 264 KiB griesta. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "bytes": 1522870,
+        "declared_max_bytes": 1433600,
+        "kib": 1487.2,
+        "max_bytes": 1540096,
+        "min_bytes": 716800,
+        "name": "artifact_total",
+        "share_percent_of_max": 98.88,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla 120–220 KiB; izmērītais apjoms pēc N21 ir 266616 B, tāpēc izpildītais griests ir 264 KiB. Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "bytes": 270014,
+        "declared_max_bytes": 225280,
+        "kib": 263.7,
+        "max_bytes": 270336,
+        "min_bytes": 122880,
+        "name": "runtime_js_code",
+        "share_percent_of_max": 99.88,
+        "within_declared_band": false,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 44267,
+        "declared_max_bytes": 81920,
+        "kib": 43.2,
+        "max_bytes": 81920,
+        "min_bytes": 40960,
+        "name": "css",
+        "share_percent_of_max": 54.04,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      },
+      {
+        "basis": "Plāna 1.3 sadaļas josla; mērījums ir joslā, izmērīšana nav mainījusi griestu.",
+        "bytes": 249798,
+        "declared_max_bytes": 430080,
+        "kib": 243.9,
+        "max_bytes": 430080,
+        "min_bytes": 204800,
+        "name": "bank_island",
+        "share_percent_of_max": 58.08,
+        "within_declared_band": true,
+        "within_max": true,
+        "within_min": true
+      }
+    ],
+    "notes": [
+      "The response-input runtime (registry, components, integration) ships from src/ and is NOT inlined into output/simulator.html; only the #sim-response-types island and the three smoke vectors enter the artifact at the merge build. N31 owns the final inline / lazy-load / re-budget decision.",
+      "The measured figures below are the manifest of the last build. They include the three smoke vectors (inlined) and exclude the island until the coordinator rebuilds at merge; the corpus is re-run after that rebuild for the final numbers."
+    ],
+    "re_budget_history": [
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 225192,
+        "new_ceiling_bytes": 237568,
+        "previous_ceiling_bytes": 225280,
+        "reason_lv": "Izmērītais inline runtime JS pēc N20 bija 225,192 B (219,9 KiB); iepriekšais griests tiktu pārkāpts par 88 baitiem, tāpēc tas tika pārbālansēts uz mērījumu, nevis uz noapaņošanos.",
+        "task": "N20"
+      },
+      {
+        "budget": "runtime_js_code",
+        "measured_bytes": 266616,
+        "new_ceiling_bytes": 270336,
+        "previous_ceiling_bytes": 237568,
+        "reason_lv": "Eksāmenu sesijas mašīna un eksāmena apvalks (strict TypeScript) mērījumā 266,616 B (260,4 KiB). Deklarētā josla 120–220 KiB ir pārsniegta; mērījums ir fiksēts, nevis klusējami pielāgots.",
+        "task": "N21"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 1436780,
+        "new_ceiling_bytes": 1474560,
+        "previous_ceiling_bytes": 1433600,
+        "reason_lv": "Eksāmena apvalkam jādarbojas vienfaila artefakta iekšienē, tāpēc tā runtime ir inline'ots; mērītais kopējais apjoms ir 1,436,080 B (1,402,4 KiB), kas pārsniedz deklarēto 1,400 KiB joslu par 2,480 B. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N21"
+      },
+      {
+        "budget": "artifact_total",
+        "measured_bytes": 1522087,
+        "new_ceiling_bytes": 1540096,
+        "previous_ceiling_bytes": 1474560,
+        "reason_lv": "N22 atbilžu ievades slānis: reakcijas tipu reģistra sala (34,179 B kanoniski), terminoloģijas salas pieaugums (+47,549 B) un trīs dūmu vektori palielina artefaktu līdz 1,522,087 B (1,486,4 KiB), kas pārsniedz N21 noteikto 1,440 KiB griestu par 47,527 B. Griests pārlikts uz mērījuma pamata; deklarētā 700–1,400 KiB josla paliek redzama. N22 ievades moduļi (225,423 B) tiek piegādāti no src/ un nav inline'oti; izpildāmais runtime JS 270,014 B paliek zem 264 KiB griesta. Galīgo inline/lazy-load/pārbudžeta lēmumu pieņem N31.",
+        "task": "N22"
+      }
+    ],
+    "status": "PASS"
+  },
+  "commands": [
+    "python3 tools/validate_n22_inputs.py --report evidence/N22_VALIDATION_RECORD.json",
+    "node tools/check_n22_semantics.js --record evidence/N22_SEMANTICS_RECORD.json",
+    "node tools/check_n22_components.js --record evidence/N22_COMPONENTS_RECORD.json",
+    "python3 tools/compile_n21_ts.py --check",
+    "node tools/check_n22_runtime.js --record evidence/N22_RUNTIME_RECORD.json --trace evidence/N22_SESSION_TRACE.json --parity evidence/N22_PARITY_TABLE.json"
+  ],
+  "digests": {
+    "data/exam_policy.json": {
+      "bytes": 14237,
+      "sha256": "5c72408c203e7684d7bfd4b85250157ddd83fb4a8ea6d1fafafa1dd1f3d25df1"
+    },
+    "data/response_types.json": {
+      "bytes": 48837,
+      "sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72"
+    },
+    "data/terms.json": {
+      "bytes": 223684,
+      "sha256": "fcdea7660c9b147a34b0fa16700f39f52a0ddc072e66d6c10297845c4c3d731f"
+    },
+    "docs/RESPONSE_INPUT_FORMAT.md": {
+      "bytes": 18582,
+      "sha256": "bf8d3c8515238a020d494cf9fffb3c3aef114e4940b32ed8d08e9339e402e95c"
+    },
+    "src/compiled/inputs/components.js": {
+      "bytes": 123374,
+      "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+    },
+    "src/compiled/inputs/integration.js": {
+      "bytes": 43718,
+      "sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+    },
+    "src/compiled/inputs/registry.js": {
+      "bytes": 58817,
+      "sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+    },
+    "src/inputs/components.ts": {
+      "bytes": 112959,
+      "sha256": "c1a16c7286c506154a212a0ecb5f228a46a9f67fe514c277680b67b900ae57a9"
+    },
+    "src/inputs/integration.ts": {
+      "bytes": 44258,
+      "sha256": "d36d778ad19aab6f2904b70363a305efa2c1ebfcba30eb1b745bb99a09d59dba"
+    },
+    "src/inputs/registry.ts": {
+      "bytes": 60824,
+      "sha256": "eddae3aceea02daa2cf36f31915a702555f7c0c18a87b18de0beaa2734d126db"
+    },
+    "src/smoke-subset.js": {
+      "bytes": 31837,
+      "sha256": "b5381bf91afd596eec7d3ce73d3ecfeb7728b00da55b9dc25c3c38bee6c04ac1"
+    },
+    "tools/check_n22_components.js": {
+      "bytes": 61548,
+      "sha256": "b7db9e0f187f7b41ee83b6c377c2431bab76e4c5ca5f3afc70ba22263ab1f323"
+    },
+    "tools/check_n22_runtime.js": {
+      "bytes": 51341,
+      "sha256": "7fe042cb99472fa70940618ae924646c27474cae5438e40b5884d5d90912c2df"
+    },
+    "tools/check_n22_semantics.js": {
+      "bytes": 32562,
+      "sha256": "603df2917da4916e648fdc171f7b081adb3df55e38793ba670f83964fe55f1fd"
+    },
+    "tools/n22_corpus.py": {
+      "bytes": 46213,
+      "sha256": "aa348292543ad66860f39a94480340a4772a9cef6a37b70811b28c35f911091e"
+    },
+    "tools/validate_n22_inputs.py": {
+      "bytes": 34880,
+      "sha256": "b25212a63a3f7cd30156aa4bbc8a52408aa4ae7957d41a20658faf6d79eb90e3"
+    }
+  },
+  "gates": {
+    "compile_gate": {
+      "command": "python3 tools/compile_n21_ts.py --check",
+      "label": "compile_gate",
+      "report": null,
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS src/compiled/session.js matches its TypeScript source (20940 bytes)\nPASS src/compiled/exam.js matches its TypeScript source (36275 bytes)\nPASS src/compiled/inputs/registry.js matches its TypeScript source (58817 bytes)\nPASS src/compiled/inputs/components.js matches its TypeScript source (123374 bytes)\nPASS src/compiled/inputs/integration.js matches its TypeScript source (43718 bytes)"
+    },
+    "components_harness": {
+      "command": "node tools/check_n22_components.js --record evidence/N22_COMPONENTS_RECORD.json",
+      "label": "components_harness",
+      "report": {
+        "components": [
+          {
+            "name": "render_q01",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q02",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q03",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q04",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q05",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q06",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q07",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q08",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q09",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q10",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q11",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q12",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q13",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q14",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q15",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q16",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q17",
+            "status": "PASS"
+          },
+          {
+            "name": "render_q18",
+            "status": "PASS"
+          },
+          {
+            "name": "scratch_contract_violation",
+            "status": "PASS"
+          },
+          {
+            "name": "keyboard_contracts",
+            "status": "PASS"
+          },
+          {
+            "name": "registry_verdict_alignment",
+            "status": "PASS"
+          },
+          {
+            "name": "registry_binding",
+            "status": "PASS"
+          }
+        ],
+        "module_digest16": "c580a0032358546a",
+        "other": [
+          {
+            "name": "abort_mid_gesture",
+            "status": "PASS"
+          },
+          {
+            "name": "input_preservation",
+            "status": "PASS"
+          },
+          {
+            "name": "composed_two_part",
+            "status": "PASS"
+          }
+        ],
+        "parity": [
+          {
+            "digests_identical": true,
+            "keyboard_digest16": "87359d6af6508612",
+            "pointer_digest16": "87359d6af6508612",
+            "status": "PASS",
+            "type_id": "Q06"
+          },
+          {
+            "digests_identical": true,
+            "keyboard_digest16": "d993aa8b92fe08da",
+            "pointer_digest16": "d993aa8b92fe08da",
+            "status": "PASS",
+            "type_id": "Q08"
+          },
+          {
+            "digests_identical": true,
+            "keyboard_digest16": "8e215b40837d2a5d",
+            "pointer_digest16": "8e215b40837d2a5d",
+            "status": "PASS",
+            "type_id": "Q11"
+          },
+          {
+            "digests_identical": true,
+            "keyboard_digest16": "e09a7053277af29e",
+            "pointer_digest16": "e09a7053277af29e",
+            "status": "PASS",
+            "type_id": "Q12"
+          },
+          {
+            "digests_identical": true,
+            "keyboard_digest16": "3cec96d35ff64108",
+            "pointer_digest16": "3cec96d35ff64108",
+            "status": "PASS",
+            "type_id": "Q17"
+          }
+        ],
+        "registry_source": "data/response_types.json",
+        "status": "PASS"
+      },
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"registry_source\": \"data/response_types.json\",\n  \"module_digest16\": \"c580a0032358546a\",\n  \"components\": [\n    {\n      \"name\": \"render_q01\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q02\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q03\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q04\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q05\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q06\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q07\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q08\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q09\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q10\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q11\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q12\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q13\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q14\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q15\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q16\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q17\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"render_q18\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"scratch_contract_violation\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"keyboard_contracts\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"registry_verdict_alignment\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"registry_binding\",\n      \"status\": \"PASS\"\n    }\n  ],\n  \"parity\": [\n    {\n      \"type_id\": \"Q06\",\n      \"status\": \"PASS\",\n      \"pointer_digest16\": \"87359d6af6508612\",\n      \"keyboard_digest16\": \"87359d6af6508612\",\n      \"digests_identical\": true\n    },\n    {\n      \"type_id\": \"Q08\",\n      \"status\": \"PASS\",\n      \"pointer_digest16\": \"d993aa8b92fe08da\",\n      \"keyboard_digest16\": \"d993aa8b92fe08da\",\n      \"digests_identical\": true\n    },\n    {\n      \"type_id\": \"Q1"
+    },
+    "registry_gate": {
+      "command": "python3 tools/validate_n22_inputs.py --report evidence/N22_VALIDATION_RECORD.json",
+      "label": "registry_gate",
+      "report": null,
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "PASS n22 response_types gate: 18 types, completed Q02,Q04,Q10,Q11,Q12,Q13,Q15, island 34962 B, terms 135 keys, errors 18 frozen ids"
+    },
+    "semantics_harness": {
+      "command": "node tools/check_n22_semantics.js --record evidence/N22_SEMANTICS_RECORD.json",
+      "label": "semantics_harness",
+      "report": {
+        "checks": [
+          {
+            "name": "registry_load",
+            "status": "PASS"
+          },
+          {
+            "name": "unknown_type_rejected",
+            "status": "PASS"
+          },
+          {
+            "name": "completion_complete_cases",
+            "status": "PASS"
+          },
+          {
+            "name": "completion_q13_missing_coefficient",
+            "status": "PASS"
+          },
+          {
+            "name": "completion_q17_half_drawn_structure",
+            "status": "PASS"
+          },
+          {
+            "name": "completion_q12_value_without_binding",
+            "status": "PASS"
+          },
+          {
+            "name": "completion_plot_state_short",
+            "status": "PASS"
+          },
+          {
+            "name": "error_surface_mixed_separators",
+            "status": "PASS"
+          },
+          {
+            "name": "blank_response",
+            "status": "PASS"
+          },
+          {
+            "name": "invalid_verdict_case",
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": [\n    {\n      \"name\": \"registry_load\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"unknown_type_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"completion_complete_cases\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"completion_q13_missing_coefficient\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"completion_q17_half_drawn_structure\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"completion_q12_value_without_binding\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"completion_plot_state_short\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"error_surface_mixed_separators\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"blank_response\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"name\": \"invalid_verdict_case\",\n      \"status\": \"PASS\"\n    }\n  ]\n}"
+    }
+  },
+  "inputs_layer": {
+    "budget_effect": {
+      "artifact_total_headroom_after_island_bytes": -17736,
+      "artifact_total_headroom_before_island_bytes": 17226,
+      "island_bytes": 34962,
+      "projected_artifact_overrun_bytes": 17736,
+      "projected_runtime_js_overrun_bytes": 3076,
+      "runtime_js_headroom_after_smoke_bytes": -3076,
+      "runtime_js_headroom_before_smoke_bytes": 322,
+      "smoke_appended_bytes": 3398
+    },
+    "modules": [
+      {
+        "bytes": 58817,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/registry.js",
+        "sha256": "194617234e7d2a2ceff4ddcb874f604195bc3fcf0db6496787ea3479dda2c06a"
+      },
+      {
+        "bytes": 123374,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/components.js",
+        "sha256": "c580a0032358546a5a184e70a942ed45b3c568b651198ea3183918444ac44b64"
+      },
+      {
+        "bytes": 43718,
+        "inlined_in_artifact": false,
+        "note": "Ships from src/; the artifact does not inline it (N31 owns the decision).",
+        "path": "src/compiled/inputs/integration.js",
+        "sha256": "dc54b22c623569d9bf5b57189c04c8c71d7368a073c4858d0228f258e84e02d3"
+      }
+    ],
+    "notes": [
+      "The compiled input modules are strict TypeScript output and are committed; the drift guard (tools/compile_n21_ts.py --check) keeps them in step with src/inputs/*.ts.",
+      "The three smoke vectors are appended to src/smoke-subset.js and are inlined, so they consume runtime-JS headroom. Their appended size is measured against the N21 ledger figure for the same file.",
+      "The projection above is what the merge build will measure: the island is inlined, the modules are not. A positive projected_artifact_overrun_bytes means the enforced artifact-total ceiling is exceeded by that many bytes once the island lands; AGENTS.md sets the budget on the measured requirement, so the resolution is a visible re-budget (coordinator / N31), not a silent shrink of the contract."
+    ],
+    "registry_island": {
+      "bytes": 34962,
+      "emission": "sorted keys; separators (\",\", \":\"); ensure_ascii=False; UTF-8; \"</\" escaped as \"<\\/\" — the same projection the build inlines",
+      "file_bytes": 48837,
+      "inlined_in_artifact": true,
+      "note": "Inlined as #sim-response-types by the merge build; the island is JSON data, so it counts against the artifact total, not the runtime-JS code budget.",
+      "path": "data/response_types.json",
+      "sha256": "cef12867f35044810d918df9154e25cebce8f9ff835d06c06abba76e87a9ff72"
+    },
+    "runtime_module_bytes_total": 225909,
+    "smoke_vectors": {
+      "appended_bytes": 3398,
+      "baseline_bytes": 28439,
+      "file": "src/smoke-subset.js",
+      "file_bytes": 31837,
+      "ids": [
+        "SMK-N22-NUMERIC-CAPTURE",
+        "SMK-N22-CLASSIFICATION-CAPTURE",
+        "SMK-N22-ORDERING-CAPTURE"
+      ],
+      "inlined_in_artifact": true
+    }
+  },
+  "manifest": {
+    "exam_shell_layer": {
+      "named_variants": {
+        "Q11_record": {
+          "kind": "graph",
+          "variant": "record"
+        },
+        "Q13_vector": {
+          "kind": "method",
+          "variant": "vector"
+        },
+        "Q17_pairs": {
+          "kind": "method",
+          "variant": "pairs"
+        },
+        "Q18_plot_state": {
+          "kind": "graph",
+          "variant": "plot_state"
+        }
+      },
+      "payload_contracts": {
+        "graph": {
+          "field_types": {
+            "variant": "raw_string"
+          },
+          "kind": "graph",
+          "note_lv": "Grafika ieraksts (Q11) vai zīmējuma stāvoklis (plot_state).",
+          "required": [
+            "variant"
+          ],
+          "value_type": "raw_string"
+        },
+        "matching": {
+          "field_types": {
+            "pairs": "pair_list"
+          },
+          "kind": "matching",
+          "note_lv": "Pāri tiek glabāti tādi, kā tos izkārtotja.",
+          "required": [
+            "pairs"
+          ],
+          "value_type": "pair_list"
+        },
+        "method": {
+          "field_types": {
+            "variant": "raw_string"
+          },
+          "kind": "method",
+          "note_lv": "Metodes vektors (Q13) vai pāri (Q17).",
+          "required": [
+            "variant"
+          ],
+          "value_type": "raw_string"
+        },
+        "numeric": {
+          "field_types": {
+            "values": "raw_string_map"
+          },
+          "kind": "numeric",
+          "note_lv": "Skaitļi tiek glabāti tādi, kā tos ievadīja; parsēšana pieder vērtēšanai.",
+          "required": [
+            "values"
+          ],
+          "value_type": "raw_string_map"
+        },
+        "option_select": {
+          "field_types": {
+            "justification": "raw_string",
+            "selected": "string_list"
+          },
+          "kind": "option_select",
+          "note_lv": "Izvēles identifikatori un brīvais pamatojums.",
+          "required": [
+            "selected"
+          ],
+          "value_type": "string_list"
+        },
+        "ordering": {
+          "field_types": {
+            "order": "string_list"
+          },
+          "kind": "ordering",
+          "note_lv": "Secība tiek glabāta tāda, kā to izkārtotja.",
+          "required": [
+            "order"
+          ],
+          "value_type": "string_list"
+        },
+        "raw_text": {
+          "field_types": {
+            "text": "raw_string"
+          },
+          "kind": "raw_text",
+          "note_lv": "Neapstrādats ievades teksts, kamēr N22 tipa komponenti nav pievienoti.",
+          "required": [
+            "text"
+          ],
+          "value_type": "raw_string"
+        }
+      }
+    },
+    "output_bytes": 1522870,
+    "output_sha256": "6ef4a9be5da5e756470d7fcb380d48f4eb9e700a467157ae761380c0ff879bc2"
+  },
+  "notes": [
+    "The input modules ship from src/ and are not inlined; the island and the three smoke vectors are inlined at merge.",
+    "A PENDING status means a sibling artifact (the semantics harness, the components record, the registry island or the rebuilt manifest) is not in place yet; the pending item is named in its gate entry."
+  ],
+  "owner": "N22",
+  "parity": {
+    "audit": {
+      "adapters_found": 0,
+      "engines": {
+        "graph": 2,
+        "manual_pending": 1,
+        "method": 4,
+        "quantity": 11
+      },
+      "identity_failures": [],
+      "rows": 18
+    },
+    "evidence": "evidence/N22_PARITY_TABLE.json",
+    "findings": [
+      {
+        "id": "N22-C05",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "observation": "SimMethodEngine.specFromInstance refuses payload_class option_select.",
+        "observed_error": {
+          "code": "E_METHOD_PAYLOAD_CLASS",
+          "message": "Payload class option_select is not graded by the N19 engines."
+        },
+        "resolution": "The parity row for Q07/Q14/Q18 names the quantity engine's option_select branch — the frozen path the N05 golden corpus uses — and passes payload.selected verbatim as selected_ids.",
+        "topic": "option_select has no N19-method spec builder"
+      },
+      {
+        "id": "N22-C06",
+        "label": "DOCUMENTED-AND-ACCEPTED",
+        "observation": "data/exam_policy.json named_variants maps Q11_record → variant \"record\", while data/response_types.json declares payload_variant \"Q11_record\".",
+        "resolution": "The stored payload carries the registry form (Q11_record, Q12_read, Q13_vector, …), because response_types.json is the response-type single source that N23/N24/N30/N33 read. The session accepts either (variant is a raw string). Reported as a naming divergence, not silently unified.",
+        "topic": "variant vocabulary: named-variant key versus short value"
+      }
+    ],
+    "rows": [
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N17-numeric binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2B-A-01",
+        "payload_digest": "6ba54482dea5ab9e",
+        "status": "PASS",
+        "type_id": "Q01",
+        "verdict_class": "correct"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N17-numeric binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-3-3A-A-01",
+        "payload_digest": "b6af879bbba781b7",
+        "status": "PASS",
+        "type_id": "Q02",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "manual-rubric-pending",
+        "identity_ok": true,
+        "instance_id": "COL1-3-3B-D-01",
+        "payload_digest": "f877fe0d789b20c9",
+        "status": "PASS",
+        "type_id": "Q03",
+        "verdict_class": null
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N17-numeric binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1C-B-01",
+        "payload_digest": "795b0010512f136c",
+        "status": "PASS",
+        "type_id": "Q04",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (manual-rubric-pending binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-6-6B-A-01",
+        "payload_digest": "be0d136050cdcb04",
+        "status": "PASS",
+        "type_id": "Q05",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimMethodEngine.gradeMatching (N19-method)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2A-B-01",
+        "payload_digest": "11befb4cf4642640",
+        "status": "PASS",
+        "type_id": "Q06",
+        "verdict_class": "correct"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N19-method binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1A-A-01",
+        "payload_digest": "8a5d28b49f1ede78",
+        "status": "PASS",
+        "type_id": "Q07",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimMethodEngine.gradeOrdering (N19-method)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2A-A-01",
+        "payload_digest": "3a5edb31aa648a7d",
+        "status": "PASS",
+        "type_id": "Q08",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N17-numeric binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2B-B-01",
+        "payload_digest": "13ace5c6ba76f4aa",
+        "status": "PASS",
+        "type_id": "Q09",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N17-numeric binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2C-A-01",
+        "payload_digest": "121445aab8830566",
+        "status": "PASS",
+        "type_id": "Q10",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimGraphScoring.scoreDrawing (N18-graph)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2D-A-01",
+        "payload_digest": "9bf0c69982b70b85",
+        "status": "PASS",
+        "type_id": "Q11",
+        "verdict_class": "correct"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimGraphScoring.scoreReading (N18-graph)",
+        "identity_ok": true,
+        "instance_id": "COL1-2-2D-B-01",
+        "payload_digest": "a9fc19b35607eadf",
+        "status": "PASS",
+        "type_id": "Q12",
+        "verdict_class": "correct"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N19-method binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1A-B-01",
+        "payload_digest": "37184a2c7d51c5b8",
+        "status": "PASS",
+        "type_id": "Q13",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N19-method binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1B-C-01",
+        "payload_digest": "c8e6bfb7d5c22043",
+        "status": "PASS",
+        "type_id": "Q14",
+        "verdict_class": "auto_passed_pending_review"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1B-B-01",
+        "payload_digest": "ace840d5759bfc59",
+        "status": "PASS",
+        "type_id": "Q15",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+        "identity_ok": true,
+        "instance_id": "COL1-1-1D-B-01",
+        "payload_digest": "1dcddcd2954d2686",
+        "status": "PASS",
+        "type_id": "Q16",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N19-method binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-3-3D-A-01",
+        "payload_digest": "99ff896278cbf19e",
+        "status": "PASS",
+        "type_id": "Q17",
+        "verdict_class": "pending_self_assessment"
+      },
+      {
+        "adapter": "none",
+        "engine": "SimEngines.grade (N19-method binding)",
+        "identity_ok": true,
+        "instance_id": "COL1-5-5D-D-01",
+        "payload_digest": "1a6d6e0116c63575",
+        "status": "PASS",
+        "type_id": "Q18",
+        "verdict_class": "auto_passed_pending_review"
+      }
+    ],
+    "status": "PASS"
+  },
+  "runtime": {
+    "checks": {
+      "blank_and_pending": {
+        "answered": {
+          "error_class": "NONE",
+          "machine_checked_points": 0,
+          "max_points": 3,
+          "pending_points": 3,
+          "verdict_class": "pending_self_assessment"
+        },
+        "blank": {
+          "error_class": "BLANK_RESPONSE",
+          "machine_checked_points": 0,
+          "verdict_class": "incorrect"
+        },
+        "checks": {
+          "blank_denies_every_criterion": true,
+          "blank_is_blank_response": true,
+          "blank_scores_zero": true,
+          "non_blank_awards_nothing": true,
+          "non_blank_is_pending": true,
+          "non_blank_pends_every_point": true,
+          "non_blank_text_not_parsed": true,
+          "q03_pending_awards_nothing": true,
+          "q03_pending_has_no_verdict": true,
+          "q03_pending_is_not_graded": true
+        },
+        "claim": "A whitespace-only Q15 is BLANK_RESPONSE with zero points, a non-blank Q15 is pending with no verdict, and the Q03 manual-rubric path never fakes a score.",
+        "failed": [],
+        "q03": {
+          "class": "pending",
+          "engine": "manual-rubric-pending",
+          "graded": false,
+          "note_lv": "Manuāli vērtējams (Q03): dzinējs nepiešķir punktus un nesniedz verdiktu; atbilde tiek saglabāta un nodota cilvēka vērtējumam.",
+          "payload_digest": "f877fe0d789b20c9",
+          "payload_kind": "method",
+          "payload_variant": "Q03_template",
+          "points_awarded": 0,
+          "points_pending": null,
+          "verdict": null
+        },
+        "status": "PASS"
+      },
+      "capture_grading_parity": {
+        "audit": {
+          "adapters_found": 0,
+          "engines": {
+            "graph": 2,
+            "manual_pending": 1,
+            "method": 4,
+            "quantity": 11
+          },
+          "identity_failures": [],
+          "rows": 18
+        },
+        "claim": "For each of the 18 types the stored payload, consumed by its frozen engine, produces the recorded criterion shape without adaptation or coercion: the audit finds no adapter.",
+        "findings": [
+          {
+            "id": "N22-C05",
+            "label": "DOCUMENTED-AND-ACCEPTED",
+            "observation": "SimMethodEngine.specFromInstance refuses payload_class option_select.",
+            "observed_error": {
+              "code": "E_METHOD_PAYLOAD_CLASS",
+              "message": "Payload class option_select is not graded by the N19 engines."
+            },
+            "resolution": "The parity row for Q07/Q14/Q18 names the quantity engine's option_select branch — the frozen path the N05 golden corpus uses — and passes payload.selected verbatim as selected_ids.",
+            "topic": "option_select has no N19-method spec builder"
+          },
+          {
+            "id": "N22-C06",
+            "label": "DOCUMENTED-AND-ACCEPTED",
+            "observation": "data/exam_policy.json named_variants maps Q11_record → variant \"record\", while data/response_types.json declares payload_variant \"Q11_record\".",
+            "resolution": "The stored payload carries the registry form (Q11_record, Q12_read, Q13_vector, …), because response_types.json is the response-type single source that N23/N24/N30/N33 read. The session accepts either (variant is a raw string). Reported as a naming divergence, not silently unified.",
+            "topic": "variant vocabulary: named-variant key versus short value"
+          }
+        ],
+        "rows": [
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N17-numeric binding)",
+            "identity_ok": true,
+            "payload_digest": "6ba54482dea5ab9e",
+            "status": "PASS",
+            "type_id": "Q01",
+            "verdict_class": "correct"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N17-numeric binding)",
+            "identity_ok": true,
+            "payload_digest": "b6af879bbba781b7",
+            "status": "PASS",
+            "type_id": "Q02",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "manual-rubric-pending",
+            "identity_ok": true,
+            "payload_digest": "f877fe0d789b20c9",
+            "status": "PASS",
+            "type_id": "Q03",
+            "verdict_class": null
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N17-numeric binding)",
+            "identity_ok": true,
+            "payload_digest": "795b0010512f136c",
+            "status": "PASS",
+            "type_id": "Q04",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (manual-rubric-pending binding)",
+            "identity_ok": true,
+            "payload_digest": "be0d136050cdcb04",
+            "status": "PASS",
+            "type_id": "Q05",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimMethodEngine.gradeMatching (N19-method)",
+            "identity_ok": true,
+            "payload_digest": "11befb4cf4642640",
+            "status": "PASS",
+            "type_id": "Q06",
+            "verdict_class": "correct"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N19-method binding)",
+            "identity_ok": true,
+            "payload_digest": "8a5d28b49f1ede78",
+            "status": "PASS",
+            "type_id": "Q07",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimMethodEngine.gradeOrdering (N19-method)",
+            "identity_ok": true,
+            "payload_digest": "3a5edb31aa648a7d",
+            "status": "PASS",
+            "type_id": "Q08",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N17-numeric binding)",
+            "identity_ok": true,
+            "payload_digest": "13ace5c6ba76f4aa",
+            "status": "PASS",
+            "type_id": "Q09",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N17-numeric binding)",
+            "identity_ok": true,
+            "payload_digest": "121445aab8830566",
+            "status": "PASS",
+            "type_id": "Q10",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimGraphScoring.scoreDrawing (N18-graph)",
+            "identity_ok": true,
+            "payload_digest": "9bf0c69982b70b85",
+            "status": "PASS",
+            "type_id": "Q11",
+            "verdict_class": "correct"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimGraphScoring.scoreReading (N18-graph)",
+            "identity_ok": true,
+            "payload_digest": "a9fc19b35607eadf",
+            "status": "PASS",
+            "type_id": "Q12",
+            "verdict_class": "correct"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N19-method binding)",
+            "identity_ok": true,
+            "payload_digest": "37184a2c7d51c5b8",
+            "status": "PASS",
+            "type_id": "Q13",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N19-method binding)",
+            "identity_ok": true,
+            "payload_digest": "c8e6bfb7d5c22043",
+            "status": "PASS",
+            "type_id": "Q14",
+            "verdict_class": "auto_passed_pending_review"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+            "identity_ok": true,
+            "payload_digest": "ace840d5759bfc59",
+            "status": "PASS",
+            "type_id": "Q15",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimMethodEngine.gradeSelfAssessment (N19-self)",
+            "identity_ok": true,
+            "payload_digest": "1dcddcd2954d2686",
+            "status": "PASS",
+            "type_id": "Q16",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N19-method binding)",
+            "identity_ok": true,
+            "payload_digest": "99ff896278cbf19e",
+            "status": "PASS",
+            "type_id": "Q17",
+            "verdict_class": "pending_self_assessment"
+          },
+          {
+            "adapter": "none",
+            "engine": "SimEngines.grade (N19-method binding)",
+            "identity_ok": true,
+            "payload_digest": "1a6d6e0116c63575",
+            "status": "PASS",
+            "type_id": "Q18",
+            "verdict_class": "auto_passed_pending_review"
+          }
+        ],
+        "status": "PASS"
+      },
+      "navigator_completion_overlay": {
+        "checks": {
+          "cells_refined": true,
+          "eighteen_complete": true,
+          "n21_answered_flag_preserved": true,
+          "review_count_matches": true,
+          "review_has_latvian_names": true,
+          "review_names_the_seven": true,
+          "review_role_alert": true,
+          "seven_not_complete": true
+        },
+        "claim": "The navigator cells carry the completion verdict and the review warning list names exactly the seven incomplete cases with their Latvian missing names.",
+        "completion_binding": {
+          "index": 0,
+          "shape": "(type_id, contract, instance, payload)"
+        },
+        "failed": [],
+        "overlay": {
+          "complete_count": 18,
+          "incomplete_count": 7,
+          "invalid_count": 0,
+          "statuses": {
+            "S1": "complete",
+            "S10": "complete",
+            "S11": "complete",
+            "S12": "complete",
+            "S13": "complete",
+            "S14": "complete",
+            "S15": "complete",
+            "S16": "complete",
+            "S17": "complete",
+            "S18": "complete",
+            "S19": "incomplete",
+            "S2": "complete",
+            "S20": "incomplete",
+            "S21": "incomplete",
+            "S22": "incomplete",
+            "S23": "incomplete",
+            "S24": "incomplete",
+            "S25": "incomplete",
+            "S3": "complete",
+            "S4": "complete",
+            "S5": "complete",
+            "S6": "complete",
+            "S7": "complete",
+            "S8": "complete",
+            "S9": "complete"
+          }
+        },
+        "review": {
+          "count": 7,
+          "incomplete": [
+            {
+              "completion_status": "incomplete",
+              "index": 19,
+              "missing": [
+                {
+                  "field_id": "c",
+                  "name": "Nav aizpildīta vērtība: c (mol/L)"
+                },
+                {
+                  "field_id": "S1",
+                  "name": "Nav aizpildīts solis: —"
+                },
+                {
+                  "field_id": "S2",
+                  "name": "Nav aizpildīts solis: —"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav aizpildīta vērtība: c (mol/L)",
+                "Nav aizpildīts solis: —",
+                "Nav aizpildīts solis: —"
+              ],
+              "slot_id": "S19",
+              "type_id": "Q02"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 20,
+              "missing": [
+                {
+                  "field_id": "vector[2]",
+                  "name": "Nav aizpildīts koeficients priekš Al2O3"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav aizpildīts koeficients priekš Al2O3"
+              ],
+              "slot_id": "S20",
+              "type_id": "Q04"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 21,
+              "missing": [
+                {
+                  "field_id": "V_del",
+                  "name": "Nav aizpildīta vērtība: ΔV (mL)"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav aizpildīta vērtība: ΔV (mL)"
+              ],
+              "slot_id": "S21",
+              "type_id": "Q10"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 22,
+              "missing": [
+                {
+                  "field_id": "record.points",
+                  "name": "Nav aizpildīta konstruēšanas tabula"
+                },
+                {
+                  "field_id": "draw_payload",
+                  "name": "Nav novilkta līnija"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav aizpildīta konstruēšanas tabula",
+                "Nav novilkta līnija"
+              ],
+              "slot_id": "S22",
+              "type_id": "Q11"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 23,
+              "missing": [
+                {
+                  "field_id": "read.figure_binding",
+                  "name": "Nav izvēlēta grafa piesaiste"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav izvēlēta grafa piesaiste"
+              ],
+              "slot_id": "S23",
+              "type_id": "Q12"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 24,
+              "missing": [
+                {
+                  "field_id": "vector[2]",
+                  "name": "Nav aizpildīts koeficients priekš Cu"
+                },
+                {
+                  "field_id": "vector[3]",
+                  "name": "Nav aizpildīts koeficients priekš H2O"
+                },
+                {
+                  "field_id": "replacement",
+                  "name": "Labotā vērtība"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav aizpildīts koeficients priekš Cu",
+                "Nav aizpildīts koeficients priekš H2O",
+                "Labotā vērtība"
+              ],
+              "slot_id": "S24",
+              "type_id": "Q13"
+            },
+            {
+              "completion_status": "incomplete",
+              "index": 25,
+              "missing": [
+                {
+                  "field_id": "text",
+                  "name": "Nav ierakstīts teksts"
+                }
+              ],
+              "missing_names_lv": [
+                "Nav ierakstīts teksts"
+              ],
+              "slot_id": "S25",
+              "type_id": "Q15"
+            }
+          ],
+          "text_lv": "Pirms iesniegšanas jāpabeidz 7 uzdevumi: Nav aizpildīta vērtība: c (mol/L); Nav aizpildīts solis: —; Nav aizpildīts koeficients priekš Al2O3; Nav aizpildīta vērtība: ΔV (mL); Nav aizpildīta konstruēšanas tabula; Nav novilkta līnija; Nav izvēlēta grafa piesaiste; Nav aizpildīts koeficients priekš Cu; Nav aizpildīts koeficients priekš H2O; Labotā vērtība; Nav ierakstīts teksts."
+        },
+        "status": "PASS"
+      },
+      "only_writer_guards": {
+        "checks": {
+          "guard_proves_deep_copies": true,
+          "guard_reports_dispatch_only": true,
+          "guard_reports_no_setters": true,
+          "no_public_setter": true,
+          "one_dispatch_per_answer": true
+        },
+        "claim": "The integration has no write path other than dispatch: the machine offers no setter, its accessors hand out deep copies, and one answer() call is exactly one dispatch.",
+        "failed": [],
+        "guard": {
+          "checks": {
+            "copies_are_deep": true,
+            "has_dispatch": true,
+            "public_setters": []
+          },
+          "ok": true,
+          "writer": "dispatch"
+        },
+        "note": "The compiled machine keeps its private fields as own properties (a TypeScript compile detail), so the only-writer property is a contract plus these structural checks, not a runtime seal. The integration never touches them, and the guard proves the accessors copy.",
+        "status": "PASS"
+      },
+      "payload_contract": {
+        "checks": {
+          "eighteen_rows": true,
+          "no_coercion": true,
+          "payload_Q01": true,
+          "payload_Q02": true,
+          "payload_Q03": true,
+          "payload_Q04": true,
+          "payload_Q05": true,
+          "payload_Q06": true,
+          "payload_Q07": true,
+          "payload_Q08": true,
+          "payload_Q09": true,
+          "payload_Q10": true,
+          "payload_Q11": true,
+          "payload_Q12": true,
+          "payload_Q13": true,
+          "payload_Q14": true,
+          "payload_Q15": true,
+          "payload_Q16": true,
+          "payload_Q17": true,
+          "payload_Q18": true
+        },
+        "claim": "Every one of the 18 built payloads passes the session machine's own structural check, and the validated object is identical to the built payload: no adapter, no coercion.",
+        "failed": [],
+        "mismatches": [],
+        "registry_island": "data/response_types.json",
+        "rows": [
+          {
+            "status": "PASS",
+            "type_id": "Q01",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q02",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q03",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q04",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q05",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q06",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q07",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q08",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q09",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q10",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q11",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q12",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q13",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q14",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q15",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q16",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q17",
+            "verdict_class": null
+          },
+          {
+            "status": "PASS",
+            "type_id": "Q18",
+            "verdict_class": null
+          }
+        ],
+        "status": "PASS"
+      },
+      "scripted_session_18": {
+        "checks": {
+          "all_slots_answered": true,
+          "dispatch_calls_counted": true,
+          "late_write_refused": true,
+          "roundtrip_answers_identical": true,
+          "roundtrip_flags_identical": true,
+          "roundtrip_state_identical": true,
+          "stored_18_complete": true
+        },
+        "claim": "An 18-type scripted session answered only through dispatch, plus one deliberately incomplete case per completed-type group, serialises and deserialises to identical answers.",
+        "dispatch_calls": 55,
+        "failed": [],
+        "form": {
+          "bindings": {
+            "S1": {
+              "type_id": "Q01"
+            },
+            "S10": {
+              "type_id": "Q10"
+            },
+            "S11": {
+              "type_id": "Q11"
+            },
+            "S12": {
+              "type_id": "Q12"
+            },
+            "S13": {
+              "type_id": "Q13"
+            },
+            "S14": {
+              "type_id": "Q14"
+            },
+            "S15": {
+              "type_id": "Q15"
+            },
+            "S16": {
+              "type_id": "Q16"
+            },
+            "S17": {
+              "type_id": "Q17"
+            },
+            "S18": {
+              "type_id": "Q18"
+            },
+            "S19": {
+              "incomplete": true,
+              "type_id": "Q02"
+            },
+            "S2": {
+              "type_id": "Q02"
+            },
+            "S20": {
+              "incomplete": true,
+              "type_id": "Q04"
+            },
+            "S21": {
+              "incomplete": true,
+              "type_id": "Q10"
+            },
+            "S22": {
+              "incomplete": true,
+              "type_id": "Q11"
+            },
+            "S23": {
+              "incomplete": true,
+              "type_id": "Q12"
+            },
+            "S24": {
+              "incomplete": true,
+              "type_id": "Q13"
+            },
+            "S25": {
+              "incomplete": true,
+              "type_id": "Q15"
+            },
+            "S3": {
+              "type_id": "Q03"
+            },
+            "S4": {
+              "type_id": "Q04"
+            },
+            "S5": {
+              "type_id": "Q05"
+            },
+            "S6": {
+              "type_id": "Q06"
+            },
+            "S7": {
+              "type_id": "Q07"
+            },
+            "S8": {
+              "type_id": "Q08"
+            },
+            "S9": {
+              "type_id": "Q09"
+            }
+          },
+          "slots": [
+            {
+              "points": 1,
+              "slot_id": "S1",
+              "topic": 1
+            },
+            {
+              "points": 1,
+              "slot_id": "S2",
+              "topic": 2
+            },
+            {
+              "points": 1,
+              "slot_id": "S3",
+              "topic": 3
+            },
+            {
+              "points": 1,
+              "slot_id": "S4",
+              "topic": 4
+            },
+            {
+              "points": 1,
+              "slot_id": "S5",
+              "topic": 5
+            },
+            {
+              "points": 1,
+              "slot_id": "S6",
+              "topic": 6
+            },
+            {
+              "points": 1,
+              "slot_id": "S7",
+              "topic": 7
+            },
+            {
+              "points": 1,
+              "slot_id": "S8",
+              "topic": 8
+            },
+            {
+              "points": 1,
+              "slot_id": "S9",
+              "topic": 9
+            },
+            {
+              "points": 1,
+              "slot_id": "S10",
+              "topic": 10
+            },
+            {
+              "points": 1,
+              "slot_id": "S11",
+              "topic": 11
+            },
+            {
+              "points": 1,
+              "slot_id": "S12",
+              "topic": 12
+            },
+            {
+              "points": 1,
+              "slot_id": "S13",
+              "topic": 13
+            },
+            {
+              "points": 1,
+              "slot_id": "S14",
+              "topic": 14
+            },
+            {
+              "points": 1,
+              "slot_id": "S15",
+              "topic": 15
+            },
+            {
+              "points": 1,
+              "slot_id": "S16",
+              "topic": 16
+            },
+            {
+              "points": 1,
+              "slot_id": "S17",
+              "topic": 17
+            },
+            {
+              "points": 1,
+              "slot_id": "S18",
+              "topic": 18
+            },
+            {
+              "points": 1,
+              "slot_id": "S19",
+              "topic": 1
+            },
+            {
+              "points": 1,
+              "slot_id": "S20",
+              "topic": 2
+            },
+            {
+              "points": 1,
+              "slot_id": "S21",
+              "topic": 3
+            },
+            {
+              "points": 1,
+              "slot_id": "S22",
+              "topic": 4
+            },
+            {
+              "points": 1,
+              "slot_id": "S23",
+              "topic": 5
+            },
+            {
+              "points": 1,
+              "slot_id": "S24",
+              "topic": 6
+            },
+            {
+              "points": 1,
+              "slot_id": "S25",
+              "topic": 7
+            }
+          ]
+        },
+        "late_write": {
+          "code": "E_SESSION_LATE_WRITE",
+          "message": "Sesija ir iesniegta: atbildes vairs nav maināmas."
+        },
+        "status": "PASS"
+      },
+      "smoke_vectors_in_file": {
+        "artifact": {
+          "island_present": true,
+          "run": {
+            "checks": {
+              "SMK-N22-CLASSIFICATION-CAPTURE_passes": true,
+              "SMK-N22-CLASSIFICATION-CAPTURE_present": true,
+              "SMK-N22-NUMERIC-CAPTURE_passes": true,
+              "SMK-N22-NUMERIC-CAPTURE_present": true,
+              "SMK-N22-ORDERING-CAPTURE_passes": true,
+              "SMK-N22-ORDERING-CAPTURE_present": true
+            },
+            "failed": [],
+            "label": "shipped artifact islands",
+            "status": "PASS",
+            "suite": {
+              "failed": 9,
+              "passed": 7,
+              "total": 16
+            },
+            "vectors": [
+              {
+                "details": {
+                  "inputs": "ships-from-src-not-inlined",
+                  "stored": "raw",
+                  "types": 18
+                },
+                "id": "SMK-N22-NUMERIC-CAPTURE",
+                "owner": "N22",
+                "reason": null,
+                "status": "PASS"
+              },
+              {
+                "details": {
+                  "inputs": "ships-from-src-not-inlined",
+                  "stored": "raw",
+                  "types": 18
+                },
+                "id": "SMK-N22-CLASSIFICATION-CAPTURE",
+                "owner": "N22",
+                "reason": null,
+                "status": "PASS"
+              },
+              {
+                "details": {
+                  "inputs": "ships-from-src-not-inlined",
+                  "stored": "raw",
+                  "types": 18
+                },
+                "id": "SMK-N22-ORDERING-CAPTURE",
+                "owner": "N22",
+                "reason": null,
+                "status": "PASS"
+              }
+            ]
+          }
+        },
+        "checks": {
+          "SMK-N22-CLASSIFICATION-CAPTURE_passes": true,
+          "SMK-N22-CLASSIFICATION-CAPTURE_present": true,
+          "SMK-N22-NUMERIC-CAPTURE_passes": true,
+          "SMK-N22-NUMERIC-CAPTURE_present": true,
+          "SMK-N22-ORDERING-CAPTURE_passes": true,
+          "SMK-N22-ORDERING-CAPTURE_present": true
+        },
+        "claim": "The three SMK-N22-* vectors registered in src/smoke-subset.js run and pass, and they also pass against the shipped artifact once it carries the island.",
+        "failed": [],
+        "status": "PASS",
+        "suite": {
+          "failed": 9,
+          "passed": 7,
+          "total": 16
+        },
+        "vectors": [
+          {
+            "details": {
+              "inputs": "ships-from-src-not-inlined",
+              "stored": "raw",
+              "types": 18
+            },
+            "id": "SMK-N22-NUMERIC-CAPTURE",
+            "owner": "N22",
+            "reason": null,
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "inputs": "ships-from-src-not-inlined",
+              "stored": "raw",
+              "types": 18
+            },
+            "id": "SMK-N22-CLASSIFICATION-CAPTURE",
+            "owner": "N22",
+            "reason": null,
+            "status": "PASS"
+          },
+          {
+            "details": {
+              "inputs": "ships-from-src-not-inlined",
+              "stored": "raw",
+              "types": 18
+            },
+            "id": "SMK-N22-ORDERING-CAPTURE",
+            "owner": "N22",
+            "reason": null,
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    "command": "node tools/check_n22_runtime.js --record evidence/N22_RUNTIME_RECORD.json --trace evidence/N22_SESSION_TRACE.json --parity evidence/N22_PARITY_TABLE.json",
+    "completion_binding": {
+      "index": 0,
+      "shape": "(type_id, contract, instance, payload)"
+    },
+    "record": "evidence/N22_RUNTIME_RECORD.json",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "terms_lint": {
+    "checks": {
+      "aria_term_keys": {
+        "component_term_gaps": {
+          "module": "src/inputs/components.ts",
+          "record": "evidence/N22_COMPONENTS_RECORD.json",
+          "resolution_owner": "N22-A (data/terms.json) or N22-B (components.ts). Reported, never silently allowlisted by this lint.",
+          "rule": "A component must render only labels the shipped bank can resolve. Keys the component harness had to invent a scratch term for are, by definition, ARIA names the shipped data/terms.json cannot translate yet.",
+          "scratch_gap_key_count": 0,
+          "scratch_gap_keys": [],
+          "status": "PASS"
+        },
+        "literal_latvian_names": 0,
+        "rendered_names": {
+          "aria_flags_checked": 36,
+          "failures": [],
+          "record": "evidence/N22_COMPONENTS_RECORD.json",
+          "rule": "The rendered aria_name of every field equals the term text the registry key resolves to (the N22-B render fixtures). This lint re-reads that record; it does not re-render.",
+          "status": "PASS"
+        },
+        "rule": "Every dotted *_key / term_keys[] / feedback_keys{} in data/response_types.json must resolve in data/terms.json; the label bank is term-keyed, never a literal.",
+        "status": "PASS",
+        "term_keys_scanned": 207,
+        "unique_term_keys": 108,
+        "unresolved": []
+      },
+      "english_in_input_terms": {
+        "ascii_only_terms": [
+          "input.q05.name",
+          "input.q14.name",
+          "input.q03.template_choice",
+          "input.q05.row_cell",
+          "input.q12.figure_binding",
+          "input.q13.reason",
+          "input.q14.justification",
+          "input.q18.justification",
+          "input.q15.text",
+          "input.state.complete",
+          "input.state.incomplete",
+          "input.group.label"
+        ],
+        "hits": [],
+        "input_terms_scanned": 131,
+        "limits": "A denylist over whole words with {placeholders} removed and the physical key caps allowlisted. It catches English UI vocabulary, not English phrasing; it is a mechanical signal, not a language detector.",
+        "status": "PASS"
+      },
+      "literal_unit_strings": {
+        "files": [
+          {
+            "bytes": 112959,
+            "file": "src/inputs/components.ts"
+          },
+          {
+            "bytes": 44258,
+            "file": "src/inputs/integration.ts"
+          },
+          {
+            "bytes": 60824,
+            "file": "src/inputs/registry.ts"
+          }
+        ],
+        "rule": "No string literal in src/inputs/*.ts may contain a standalone unit symbol from data/terms.json unit_grammar.elements. Term keys, {placeholders} and the percentage basis notation are allowlisted; identifiers are tokenised whole, so min_length is not the unit min.",
+        "status": "PASS",
+        "string_literals_scanned": 1792,
+        "violations": []
+      }
+    },
+    "not_claimed": [
+      "Not a translation-quality review: the lint proves key resolution and the absence of declared English words, not that every Latvian sentence reads well.",
+      "Not a screen-reader acceptance claim: that is N33."
+    ],
+    "owner": "N22",
+    "schema_version": 1,
+    "status": "PASS",
+    "summary": {
+      "aria_render_flags": 36,
+      "component_term_gaps": 0,
+      "english_hits": 0,
+      "literal_unit_violations": 0,
+      "term_keys_scanned": 207,
+      "unresolved_term_keys": 0
+    }
+  }
+}

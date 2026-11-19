@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-mastery-policy",
+  "owner": "N26",
+  "status": "authored",
+  "policy_id": "sim-colloq1-mastery-policy-v1",
+  "title_lv": "Mācību mērķu apguves stāvokļu mašīnas politika (PROPOSED)",
+  "epistemic_label": "PROPOSED",
+  "official_counterpart_status": "UNDETERMINED",
+  "honesty_note_lv": "PROPOSED mācību politikas priekšlikums: 2025. gada oficiālā programma (RSU_MedChem_Colloq1_Prog_LV_2025.pdf) nenosaka apguves sliekšņus vai kompetences slēdzienus (oficiāls analogs: UNDETERMINED). Šie stāvokļi atspoguļo tikai patstāvīgās mācīšanās progresu no automātiski vērtētajiem kritērijiem un nav oficiāls RSU kolokvija vērtējums.",
+  "honesty_note_en": "PROPOSED training policy: the 2025 programme sets no mastery thresholds or competency standard (official counterpart: UNDETERMINED). States reflect self-study progress derived solely from machine-graded criterion verdicts and never claim official RSU competency or grading.",
+  "predecessor_decisions": [
+    {
+      "card_id": "T02",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#T02",
+      "decision": "All 64 programme outcomes are mapped with verified master anchors and reviewed instances; missing required outcome coverage is rejected."
+    },
+    {
+      "card_id": "T04",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#T04",
+      "decision": "Per-criterion rubric structure is authoritative; dangling outcome references are rejected."
+    },
+    {
+      "card_id": "T17",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#T17",
+      "decision": "Independent rubric criteria aggregate per criterion (T17.1); self-grading/manual review stays separate from machine verification (T17.2.2)."
+    },
+    {
+      "card_id": "F01",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F01",
+      "decision": "Click counts and study-link opens do not infer mastery; only graded criterion verdicts drive mastery."
+    },
+    {
+      "card_id": "F07",
+      "ref": "MASTER_WORKSPACE_AUDIT_AND_35_TASK_ROADMAP.md#F07",
+      "decision": "Criterion self-assessment (N29) remains a separate, learner-labeled input excluded from mastery state transitions."
+    },
+    {
+      "card_id": "F08",
+      "ref": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md#4.3",
+      "decision": "Adaptive difficulty remains DEFERRED until mastery (N26) and Leitner scheduling (N27) stabilize."
+    },
+    {
+      "card_id": "F10",
+      "ref": "Coriculum_chemistry_sim1_MASTER_SIM_40_TASK_ROADMAP.md#4.3",
+      "decision": "Analytics dashboards, streaks, and gamification remain REJECTED; mastery views stay honest and minimal."
+    }
+  ],
+  "input_contract": {
+    "allowed_sources": [
+      "graded_criterion_verdict",
+      "decay_event"
+    ],
+    "excluded_sources": [
+      "self_assessment_rating",
+      "manual_pending_criterion",
+      "unattempted_slot",
+      "click_count",
+      "hint_usage"
+    ],
+    "criterion_verdict_mapping": {
+      "awarded": "correct",
+      "denied": "incorrect",
+      "pending": "ignored"
+    },
+    "criterion_outcome_resolution_rule": "Katrs kritērijs saista savus mācību mērķus no criterion.outcome_ids, ja tie ir norādīti, pretējā gadījumā no uzdevuma instances/vietas outcome_ids (no N02 pārklājuma caur N20 bankas instancēm). Kritērijs bez neviena mērķa atgriež kļūdu E_MASTERY_UNMAPPED_CRITERION.",
+    "partial_task_rule": "Daļēji pareiza uzdevuma gadījumā kritēriji tiek apstrādāti deklarētajā rubrikas secībā: ieskaitītie (awarded) kritēriji virza savus mērķus uz priekšu, neieskaitītie (denied) regresē, bet gaidāmie (pending) tiek ignorēti."
+  },
+  "initial_state": "unseen",
+  "thresholds": {
+    "learning_to_near_mastered_streak": {
+      "value": 2,
+      "epistemic_label": "PROPOSED",
+      "unit": "consecutive_correct_criteria",
+      "note_lv": "PROPOSED mācību politika: 2 secīgi pareizi kritēriji stāvoklī 'Apgūšanas procesā' pārvieto mērķi uz 'Gandrīz apgūts'."
+    },
+    "near_mastered_to_mastered_streak": {
+      "value": 2,
+      "epistemic_label": "PROPOSED",
+      "unit": "consecutive_correct_criteria",
+      "note_lv": "PROPOSED mācību politika: vēl 2 secīgi pareizi kritēriji stāvoklī 'Gandrīz apgūts' pārvieto mērķi uz 'Apgūts (pašmācībā)'."
+    },
+    "needs_review_to_near_mastered_streak": {
+      "value": 1,
+      "epistemic_label": "PROPOSED",
+      "unit": "consecutive_correct_criteria",
+      "note_lv": "PROPOSED mācību politika: 1 pareizs kritērijs stāvoklī 'Jāatkārto' atgriež mērķi uz 'Gandrīz apgūts'."
+    },
+    "decay_inactivity_days": {
+      "value": 14,
+      "epistemic_label": "PROPOSED",
+      "unit": "days",
+      "note_lv": "PROPOSED mācību politika: pēc 14 dienu neaktivitātes mērķis no 'Apgūts (pašmācībā)' pāriet uz 'Jāatkārto'."
+    },
+    "decay_miss_count": {
+      "value": 1,
+      "epistemic_label": "PROPOSED",
+      "unit": "incorrect_criteria_in_mastered",
+      "note_lv": "PROPOSED mācību politika: 1 nepareizs kritērijs stāvoklī 'Apgūts (pašmācībā)' pārvieto mērķi uz 'Jāatkārto'."
+    }
+  },
+  "states": [
+    {
+      "id": "unseen",
+      "order": 0,
+      "label_lv": "Nav mēģināts",
+      "short_label_lv": "Nav mēģināts",
+      "icon": "○",
+      "aria_label_lv": "Nav mēģināts (sākuma stāvoklis bez vērtētiem mēģinājumiem)",
+      "description_lv": "Mācību mērķim vēl nav neviena automātiski vērtēta kritērija mēģinājuma.",
+      "entry_rule": {
+        "kind": "initial",
+        "from_states": [],
+        "description_lv": "Sākuma stāvoklis visiem 64 mācību mērķiem, kad krātuvē nav ierakstu vai pēc dzēšanas."
+      },
+      "exit_paths": [
+        {
+          "event": "criterion_verdict",
+          "condition": "any_first_attempt",
+          "to_state": "learning",
+          "description_lv": "Pirmais vērtētais mēģinājums (neatkarīgi no verdikta) pārslēdz mērķi uz 'Apgūšanas procesā'."
+        }
+      ],
+      "regression_rule": {
+        "event": "floor",
+        "to_state": "unseen",
+        "description_lv": "Zemākais sākuma stāvoklis; nevar regresēt zemāk."
+      }
+    },
+    {
+      "id": "learning",
+      "order": 1,
+      "label_lv": "Apgūšanas procesā",
+      "short_label_lv": "Apgūst",
+      "icon": "◔",
+      "aria_label_lv": "Apgūšanas procesā",
+      "description_lv": "Mērķis ir iesākts; nepieciešami 2 secīgi pareizi kritēriji pārejai uz 'Gandrīz apgūts'.",
+      "entry_rule": {
+        "kind": "transition",
+        "from_states": [
+          "unseen",
+          "near_mastered",
+          "needs_review"
+        ],
+        "description_lv": "Ieeja no 'Nav mēģināts' pirmajā mēģinājumā vai regresējot par vienu soli no 'Gandrīz apgūts' / 'Jāatkārto'."
+      },
+      "exit_paths": [
+        {
+          "event": "criterion_verdict",
+          "condition": "consecutive_correct >= learning_to_near_mastered_streak",
+          "to_state": "near_mastered",
+          "description_lv": "Pēc 2 secīgiem pareiziem kritērijiem pāriet uz 'Gandrīz apgūts'."
+        }
+      ],
+      "regression_rule": {
+        "event": "incorrect",
+        "to_state": "learning",
+        "description_lv": "Nepareizs kritērijs atiestata secīgo pareizo skaitītāju uz 0 un saglabā 'Apgūšanas procesā' (iesāktā apakšējā robeža)."
+      }
+    },
+    {
+      "id": "near_mastered",
+      "order": 2,
+      "label_lv": "Gandrīz apgūts",
+      "short_label_lv": "Gandrīz apgūts",
+      "icon": "◑",
+      "aria_label_lv": "Gandrīz apgūts",
+      "description_lv": "Stabils progress; vēl 2 secīgi pareizi kritēriji sasniedz 'Apgūts (pašmācībā)'.",
+      "entry_rule": {
+        "kind": "transition",
+        "from_states": [
+          "learning",
+          "needs_review"
+        ],
+        "description_lv": "Ieeja no 'Apgūšanas procesā' (2 secīgi pareizi) vai no 'Jāatkārto' (1 pareizs)."
+      },
+      "exit_paths": [
+        {
+          "event": "criterion_verdict",
+          "condition": "consecutive_correct >= near_mastered_to_mastered_streak",
+          "to_state": "mastered",
+          "description_lv": "Pēc vēl 2 secīgiem pareiziem kritērijiem pāriet uz 'Apgūts (pašmācībā)'."
+        },
+        {
+          "event": "criterion_verdict",
+          "condition": "incorrect",
+          "to_state": "learning",
+          "description_lv": "Nepareizs kritērijs regresē uz 'Apgūšanas procesā'."
+        }
+      ],
+      "regression_rule": {
+        "event": "incorrect",
+        "to_state": "learning",
+        "description_lv": "Nepareizs kritērijs regresē par vienu stāvokli uz 'Apgūšanas procesā'."
+      }
+    },
+    {
+      "id": "mastered",
+      "order": 3,
+      "label_lv": "Apgūts (pašmācībā)",
+      "short_label_lv": "Apgūts",
+      "icon": "●",
+      "aria_label_lv": "Apgūts pašmācībā (PROPOSED mācību indikators, nevis oficiāls vērtējums)",
+      "description_lv": "Pašmācības mērķa slieksnis ir sasniegts (PROPOSED); nav oficiāls RSU vērtējums.",
+      "entry_rule": {
+        "kind": "transition",
+        "from_states": [
+          "near_mastered"
+        ],
+        "description_lv": "Ieeja no 'Gandrīz apgūts' pēc 2 secīgiem pareiziem kritērijiem."
+      },
+      "exit_paths": [
+        {
+          "event": "decay",
+          "condition": "days_inactive >= decay_inactivity_days",
+          "to_state": "needs_review",
+          "description_lv": "Pēc 14 dienu neaktivitātes pāriet uz 'Jāatkārto'."
+        },
+        {
+          "event": "criterion_verdict",
+          "condition": "miss_in_mastered >= decay_miss_count",
+          "to_state": "needs_review",
+          "description_lv": "Kļūdains kritērijs pārvieto mērķi uz 'Jāatkārto'."
+        }
+      ],
+      "regression_rule": {
+        "event": "incorrect",
+        "to_state": "needs_review",
+        "description_lv": "Kļūdains kritērijs vai neaktivitāte pārslēdz mērķi uz 'Jāatkārto'."
+      }
+    },
+    {
+      "id": "needs_review",
+      "order": 4,
+      "label_lv": "Jāatkārto",
+      "short_label_lv": "Jāatkārto",
+      "icon": "↻",
+      "aria_label_lv": "Jāatkārto (nepieciešama atkārtošana)",
+      "description_lv": "Mērķis novecojis pēc neaktivitātes vai tajā pieļauta kļūda; ieteicams atkārtot.",
+      "entry_rule": {
+        "kind": "transition",
+        "from_states": [
+          "mastered"
+        ],
+        "description_lv": "Ieeja no 'Apgūts (pašmācībā)' neaktivitātes vai kļūdas dēļ."
+      },
+      "exit_paths": [
+        {
+          "event": "criterion_verdict",
+          "condition": "consecutive_correct >= needs_review_to_near_mastered_streak",
+          "to_state": "near_mastered",
+          "description_lv": "Pareiza atbilde atjauno mērķi uz 'Gandrīz apgūts'."
+        },
+        {
+          "event": "criterion_verdict",
+          "condition": "incorrect",
+          "to_state": "learning",
+          "description_lv": "Atkārtota kļūda regresē mērķi uz 'Apgūšanas procesā'."
+        }
+      ],
+      "regression_rule": {
+        "event": "incorrect",
+        "to_state": "learning",
+        "description_lv": "Nepareizs kritērijs regresē uz 'Apgūšanas procesā'."
+      }
+    }
+  ],
+  "availability_copy_lv": {
+    "unavailable_label_lv": "Pagaidām nav pieejams",
+    "unavailable_icon": "⊘",
+    "unavailable_reason_pending_lv": "Pagaidām nav pieejams praksei: mērķa uzdevumi gaida recenziju (0 derīgu treniņformai).",
+    "unavailable_reason_empty_lv": "Pagaidām nav pieejams praksei: šim mācību mērķim pašlaik nav treniņformai derīgu uzdevumu."
+  },
+  "copy_lv": {
+    "atskats_section_title": "Mācību mērķu apguves stāvoklis (PROPOSED)",
+    "atskats_honesty_note": "Pašmācības apguves stāvokļi (PROPOSED mācību politika; oficiāls programmas analogs: UNDETERMINED). Atvasināts tikai no automātiski vērtētajiem kritērijiem — tas ir patstāvīgas mācīšanās progress, nevis oficiāls RSU kolokvija vērtējums.",
+    "prakse_section_title": "Tēmu apguves indikatori praksei (PROPOSED)",
+    "prakse_honesty_note": "Apguves indikatori parāda patstāvīgās mācīšanās stāvokli pa tēmām un mērķiem (PROPOSED), lai palīdzētu izvēlēties, ko atkārtot nākamo. Tie nav oficiāli RSU vērtējumi.",
+    "fresh_learner_note_lv": "Godīgs sākuma stāvoklis: visi 64 mācību mērķi pašlaik ir stāvoklī 'Nav mēģināts' (nav pieņemtu kļūdu)."
+  }
+}

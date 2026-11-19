@@ -1,0 +1,345 @@
+{
+  "artifact": "coverage-corpus",
+  "commands": [
+    "python3 tools/validate_coverage.py --report evidence/N02_VALIDATION_RECORD.json",
+    "python3 tools/resolve_coverage_anchors.py --out evidence/N02_ANCHOR_RESOLUTION.json",
+    "python3 tools/build.py",
+    "node tools/check_coverage_runtime.js --json",
+    "python3 tools/n02_corpus.py"
+  ],
+  "failures": [],
+  "labels": {
+    "execution": "VERIFIED (2026-11-17, this environment)",
+    "master_digests": "bound to N01 source freeze recorded VERIFIED (2026-11-16)"
+  },
+  "results": {
+    "anchor_resolution": {
+      "counts": {
+        "failed": 0,
+        "per_topic": {
+          "1": {
+            "resolved": 9,
+            "total": 9
+          },
+          "2": {
+            "resolved": 10,
+            "total": 10
+          },
+          "3": {
+            "resolved": 11,
+            "total": 11
+          },
+          "4": {
+            "resolved": 11,
+            "total": 11
+          },
+          "5": {
+            "resolved": 10,
+            "total": 10
+          },
+          "6": {
+            "resolved": 8,
+            "total": 8
+          },
+          "7": {
+            "resolved": 5,
+            "total": 5
+          }
+        },
+        "resolved": 64,
+        "total": 64
+      },
+      "failures": [],
+      "masters": [
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C1-MASTER",
+          "sha256": "037f847f78a5b30ebcd761cf2ad3875a9809b607a809850598dedb8af20d7b39"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C2-MASTER",
+          "sha256": "35819d730d74909b0b556aa8aee24d5babaa878cfe9a1afd732cb9dc51d8efea"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C3-MASTER",
+          "sha256": "d64268ce5410004f9002d36b9815a58e25a40435c0b92e81b84d8fd95997888f"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C4-MASTER",
+          "sha256": "6ec59d7845049c6554c7ca5b3c3d7ff75cabc938fdb1893042b994641d2a2845"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C5-MASTER",
+          "sha256": "04e0efba7f27a0e6b4b532caa773e1d6a88f69f020e0fdbbd55437646e0fe3bb"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C6-MASTER",
+          "sha256": "0213a11a7c78f9aa8f8715264f584b4c2c84a8d8f187c0f1028483d65db8bdd7"
+        },
+        {
+          "digest_matches_freeze": true,
+          "freeze_id": "C7-MASTER",
+          "sha256": "a4879bbd2c2519fb705e6f39cf5c4199d27d3dafcce4a89d272df9cd31ff6b3f"
+        }
+      ]
+    },
+    "artifacts": [
+      {
+        "bytes": 62361,
+        "path": "data/coverage.json",
+        "sha256": "3d734990d87695899238b86e92a1253c6aebfdaf61f0fc741b5b3d115ff2ce7b"
+      },
+      {
+        "bytes": 3923,
+        "path": "src/shell.html",
+        "sha256": "6c534c758233dd770237b4458abe23524e9b4856dd6bfe8bc7cf9882bbf037e5"
+      },
+      {
+        "bytes": 7307,
+        "path": "src/coverage-loader.js",
+        "sha256": "88d1bf28492a9d2281eda9b626b6421af1c0c1a3ac6bb3ffa95d73413954bd80"
+      },
+      {
+        "bytes": 4582,
+        "path": "src/coverage-view.js",
+        "sha256": "a7485d89d2bc25a638ba638960fe8c2efbedc05f6ca1dad4bd57780f3624f2d7"
+      },
+      {
+        "bytes": 7298,
+        "path": "tools/coverage_common.py",
+        "sha256": "c0b9c6e7f87d6623ebb4f04407bf2b8fba912b8f81cc1b544a4106e7efa2fd79"
+      },
+      {
+        "bytes": 27890,
+        "path": "tools/validate_coverage.py",
+        "sha256": "6aa56a79318eed687e04f06b4a03c95b11b421234402189c275db940cd249ea5"
+      },
+      {
+        "bytes": 7406,
+        "path": "tools/resolve_coverage_anchors.py",
+        "sha256": "bedb3c73d321cd034f8dca86e61c567d4a96857c3b79ff0cfee0fb5b46cb014f"
+      },
+      {
+        "bytes": 8969,
+        "path": "tools/build.py",
+        "sha256": "db9d14497ed026618b05978208e70c3cab4396c15ea072b8a793a9d48f13f8c3"
+      },
+      {
+        "bytes": 9627,
+        "path": "tools/check_coverage_runtime.js",
+        "sha256": "bd9a07c981153f7eb01caaef780cd7d681622df110d89231969e08e38a398d12"
+      },
+      {
+        "bytes": 62350,
+        "path": "output/simulator.html",
+        "sha256": "4b1f0ab58282681bd0823ba0d333b3bc50ce76f82ad6f1309eec0f61cc42a44a"
+      },
+      {
+        "bytes": 1607,
+        "path": "output/build-manifest.json",
+        "sha256": "a8bf077bfac3838299e5a127a39a5b22d9e2690d337dbaeb2292a080adeeee6c"
+      },
+      {
+        "bytes": 28848,
+        "path": "evidence/N02_ANCHOR_RESOLUTION.json",
+        "sha256": "af4a9edafbe149947430fc5975a09267c3721caf22d8ef4991481f0d5603a7bf"
+      },
+      {
+        "bytes": 5859,
+        "path": "evidence/N02_VALIDATION_RECORD.json",
+        "sha256": "f9965b009d146d82f80cd3881bef7e1f5feaa083e9f283cc7612b88860282fb7"
+      }
+    ],
+    "build_parity": {
+      "committed_output_matches_fresh_build": true,
+      "manifest_sha256_first": "bef2c530bd4ee1f698ad0e465e34645651c5d06c20c56c56b4868cf565e055ae",
+      "manifest_sha256_second": "bef2c530bd4ee1f698ad0e465e34645651c5d06c20c56c56b4868cf565e055ae",
+      "manifests_identical": true,
+      "output_bytes": 62350,
+      "output_sha256_first": "4b1f0ab58282681bd0823ba0d333b3bc50ce76f82ad6f1309eec0f61cc42a44a",
+      "output_sha256_second": "4b1f0ab58282681bd0823ba0d333b3bc50ce76f82ad6f1309eec0f61cc42a44a",
+      "outputs_identical": true,
+      "run_one_returncode": 0,
+      "run_two_returncode": 0
+    },
+    "case_exact_anchor": {
+      "anchor_error": "Anchor resolution failed: P1-01 #Stehiometrija not found in C1-MASTER (materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html); matching is case-exact; case-insensitive matches exist but are not accepted: ['stehiometrija']",
+      "first_error": "Anchor resolution failed: P1-01 #Stehiometrija not found in C1-MASTER (materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html); matching is case-exact; case-insensitive matches exist but are not accepted: ['stehiometrija']",
+      "rejects_case_insensitive_match": true,
+      "resolution_failure": {
+        "anchor": "Stehiometrija",
+        "case_insensitive_matches": [
+          "stehiometrija"
+        ],
+        "master_freeze_id": "C1-MASTER",
+        "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+        "outcome_id": "P1-01",
+        "reason": "anchor not found with case-exact matching",
+        "topic": 1
+      },
+      "status": "FAIL"
+    },
+    "cycle": {
+      "cycle_error": "Cyclic prerequisite edge set: P1-01 -> P1-02 -> P1-01",
+      "first_error": "Cyclic prerequisite edge set: P1-01 -> P1-02 -> P1-01",
+      "names_both_ids": true,
+      "status": "FAIL"
+    },
+    "dangling_anchor": {
+      "names_anchor_and_master": true,
+      "returncode": 1,
+      "stderr_first_line": "FAIL coverage-island: 64 outcomes (9/10/11/11/10/8/5); 127 prerequisite edges (20 cross-topic); cycle=None; anchors 63/64 resolved",
+      "stderr_named_failure": "- Anchor resolution failed: P1-01 #nav-kluda not found in C1-MASTER (materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html); matching is case-exact"
+    },
+    "dangling_edge": {
+      "first_error": "Dangling prerequisite edge: P1-01 -> P9-99 (target is not an outcome id)",
+      "names_source_and_target": true,
+      "status": "FAIL"
+    },
+    "deleted_outcome": {
+      "gate_first_line": "FAIL coverage gate (order 1, owner N02): Count assertion: expected 64 outcomes (9/10/11/11/10/8/5), found 63. If this is an intentional count change, update EXPECTED_TOTAL / EXPECTED_PER_TOPIC in tools/coverage_common.py and the expected block in data/coverage.json in the same commit; the island is then re-authored and re-gated.",
+      "gate_names_count_assertion": true,
+      "gate_refused_build": true,
+      "gate_returncode": 1,
+      "removed_id": "P7-05",
+      "validator_first_error": "Count assertion: expected 64 outcomes (9/10/11/11/10/8/5), found 63. If this is an intentional count change, update EXPECTED_TOTAL / EXPECTED_PER_TOPIC in tools/coverage_common.py and the expected block in data/coverage.json in the same commit; the island is then re-authored and re-gated.",
+      "validator_status": "FAIL"
+    },
+    "runtime": {
+      "checks": {
+        "baseline": {
+          "error_hidden": true,
+          "error_text": "",
+          "list_outcome_ids": 64,
+          "nav_items": 7,
+          "total_label": "64"
+        },
+        "deleted_outcome": {
+          "code": "E_COVERAGE_COUNT",
+          "error_text": "Pārklājuma dati nav pieejami. #sim-coverage paredzēti 64 rezultāti, atrasti 63.",
+          "list_nonblank": true,
+          "rejected": true
+        },
+        "single_source": {
+          "list_changed": true,
+          "list_outcome_ids": 64,
+          "nav_changed": true,
+          "nav_items": 7,
+          "sentinel": "SENTINELA TĒMA N02"
+        },
+        "truncated": {
+          "code": "E_COVERAGE_JSON",
+          "error_names_island": true,
+          "error_text": "Pārklājuma dati nav pieejami. #sim-coverage satur nederīgu JSON. Pārklājuma dati nav ielādējami.",
+          "error_visible": true,
+          "list_nonblank": true,
+          "nav_nonblank": true
+        }
+      },
+      "failures": [],
+      "returncode": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "anchors": {
+        "checked": true,
+        "failed": 0,
+        "per_topic": {
+          "1": {
+            "resolved": 9,
+            "total": 9
+          },
+          "2": {
+            "resolved": 10,
+            "total": 10
+          },
+          "3": {
+            "resolved": 11,
+            "total": 11
+          },
+          "4": {
+            "resolved": 11,
+            "total": 11
+          },
+          "5": {
+            "resolved": 10,
+            "total": 10
+          },
+          "6": {
+            "resolved": 8,
+            "total": 8
+          },
+          "7": {
+            "resolved": 5,
+            "total": 5
+          }
+        },
+        "resolved": 64,
+        "total": 64
+      },
+      "counts": {
+        "expected_per_topic": {
+          "1": 9,
+          "2": 10,
+          "3": 11,
+          "4": 11,
+          "5": 10,
+          "6": 8,
+          "7": 5
+        },
+        "expected_total": 64,
+        "match": true,
+        "per_topic": {
+          "1": 9,
+          "2": 10,
+          "3": 11,
+          "4": 11,
+          "5": 10,
+          "6": 8,
+          "7": 5
+        },
+        "total": 64
+      },
+      "edges": {
+        "cross_topic": 20,
+        "cycle": null,
+        "dangling": 0,
+        "edges": 127
+      },
+      "errors": [],
+      "labels": {
+        "official_facts": {
+          "count": 3,
+          "label": "PROGRAMME-SOURCED"
+        },
+        "outcome_granularity": {
+          "count": 64,
+          "label": "PROPOSED"
+        },
+        "outcome_statements": {
+          "count": 64,
+          "label": "PROPOSED"
+        },
+        "topics": {
+          "count": 7,
+          "label": "PROGRAMME-SOURCED"
+        },
+        "training_policy": {
+          "count": 4,
+          "label": "PROPOSED"
+        }
+      },
+      "status": "PASS",
+      "summary": "PASS coverage-island: 64 outcomes (9/10/11/11/10/8/5); 127 prerequisite edges (20 cross-topic); cycle=None; anchors 64/64 resolved"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Coverage island, planning cross-check, edge fixtures, frozen-master anchor resolution, build gate, runtime loader and single-sourcing proof.",
+  "status": "PASS",
+  "task": "N02"
+}

@@ -1,0 +1,1833 @@
+{
+  "schema_version": 1,
+  "artifact": "anchor-link-registry",
+  "owner": "N07",
+  "shell_anchors": [
+    "sakums",
+    "saturs",
+    "prakse",
+    "eksamens",
+    "rezultati",
+    "atskats",
+    "metodika",
+    "druka",
+    "iestatijumi"
+  ],
+  "topic_map_anchors": [
+    "karte-tema-1",
+    "karte-tema-2",
+    "karte-tema-3",
+    "karte-tema-4",
+    "karte-tema-5",
+    "karte-tema-6",
+    "karte-tema-7"
+  ],
+  "drawer_overlay_id": "concept-drawer",
+  "open_link_contract": {
+    "version": 1,
+    "owner": "N07",
+    "consumers": [
+      "N08",
+      "N16",
+      "N28",
+      "N29"
+    ],
+    "required_fields": [
+      "conceptId"
+    ],
+    "optional_fields": [
+      "source",
+      "returnContext"
+    ],
+    "return_context_fields": [
+      "elementId",
+      "triggerEl",
+      "anchor",
+      "labelLv"
+    ],
+    "note": "Any consumer opens the concept drawer via SimConceptDrawer.openFromLink(payload, doc) without requiring prior concept-map state; closing restores focus to returnContext.triggerEl / elementId."
+  },
+  "concepts": [
+    {
+      "concept_id": "P1-01",
+      "topic": 1,
+      "map_node_id": "karte-P1-01",
+      "map_button_id": "karte-btn-P1-01",
+      "map_anchor": "#karte-P1-01",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "stehiometrija",
+      "master_heading_lv": "Stehiometrija",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-03",
+          "to": "P1-01",
+          "target_anchor": "#karte-P1-03",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-05",
+          "to": "P1-01",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-02",
+      "topic": 1,
+      "map_node_id": "karte-P1-02",
+      "map_button_id": "karte-btn-P1-02",
+      "map_anchor": "#karte-P1-02",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "maisijumi",
+      "master_heading_lv": "Maisījumi un dispersijas",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": []
+    },
+    {
+      "concept_id": "P1-03",
+      "topic": 1,
+      "map_node_id": "karte-P1-03",
+      "map_button_id": "karte-btn-P1-03",
+      "map_anchor": "#karte-P1-03",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "reakcijas",
+      "master_heading_lv": "Reakcijas un vienādojumi",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-05",
+          "to": "P1-03",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-06",
+          "to": "P1-03",
+          "target_anchor": "#karte-P1-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-09",
+          "to": "P1-03",
+          "target_anchor": "#karte-P1-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-04",
+      "topic": 1,
+      "map_node_id": "karte-P1-04",
+      "map_button_id": "karte-btn-P1-04",
+      "map_anchor": "#karte-P1-04",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "klases",
+      "master_heading_lv": "Savienojumu klases",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-05",
+          "to": "P1-04",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-06",
+          "to": "P1-04",
+          "target_anchor": "#karte-P1-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-07",
+          "to": "P1-04",
+          "target_anchor": "#karte-P1-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-05",
+      "topic": 1,
+      "map_node_id": "karte-P1-05",
+      "map_button_id": "karte-btn-P1-05",
+      "map_anchor": "#karte-P1-05",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "atomi",
+      "master_heading_lv": "Atomi, joni, molekulas",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": []
+    },
+    {
+      "concept_id": "P1-06",
+      "topic": 1,
+      "map_node_id": "karte-P1-06",
+      "map_button_id": "karte-btn-P1-06",
+      "map_anchor": "#karte-P1-06",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "elektroliti",
+      "master_heading_lv": "Elektrolīti un disociācija",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-05",
+          "to": "P1-06",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-07",
+          "to": "P1-06",
+          "target_anchor": "#karte-P1-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-07",
+      "topic": 1,
+      "map_node_id": "karte-P1-07",
+      "map_button_id": "karte-btn-P1-07",
+      "map_anchor": "#karte-P1-07",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "saites",
+      "master_heading_lv": "Ķīmiskās saites",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-05",
+          "to": "P1-07",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-08",
+      "topic": 1,
+      "map_node_id": "karte-P1-08",
+      "map_button_id": "karte-btn-P1-08",
+      "map_anchor": "#karte-P1-08",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "atomi-tabula",
+      "master_heading_lv": "Periodiskā tabula",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-05",
+          "to": "P1-08",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P1-09",
+      "topic": 1,
+      "map_node_id": "karte-P1-09",
+      "map_button_id": "karte-btn-P1-09",
+      "map_anchor": "#karte-P1-09",
+      "topic_anchor": "#karte-tema-1",
+      "objectives_anchor": "#rezultats-P1-09",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "skidiba-tabula",
+      "master_heading_lv": "Kā lasīt šķīdības tabulu",
+      "master_freeze_id": "C1-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-02",
+          "to": "P1-09",
+          "target_anchor": "#karte-P1-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-05",
+          "to": "P1-09",
+          "target_anchor": "#karte-P1-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P1-06",
+          "to": "P1-09",
+          "target_anchor": "#karte-P1-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-01",
+      "topic": 2,
+      "map_node_id": "karte-P2-01",
+      "map_button_id": "karte-btn-P2-01",
+      "map_anchor": "#karte-P2-01",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-4",
+      "master_heading_lv": "4. Laboratorijas trauki un piederumi",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": []
+    },
+    {
+      "concept_id": "P2-02",
+      "topic": 2,
+      "map_node_id": "karte-P2-02",
+      "map_button_id": "karte-btn-P2-02",
+      "map_anchor": "#karte-P2-02",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": []
+    },
+    {
+      "concept_id": "P2-03",
+      "topic": 2,
+      "map_node_id": "karte-P2-03",
+      "map_button_id": "karte-btn-P2-03",
+      "map_anchor": "#karte-P2-03",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P2-03",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-04",
+      "topic": 2,
+      "map_node_id": "karte-P2-04",
+      "map_button_id": "karte-btn-P2-04",
+      "map_anchor": "#karte-P2-04",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-3",
+      "master_heading_lv": "3. Mērīšana un analītiskais signāls",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-01",
+          "to": "P2-04",
+          "target_anchor": "#karte-P2-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-02",
+          "to": "P2-04",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-05",
+      "topic": 2,
+      "map_node_id": "karte-P2-05",
+      "map_button_id": "karte-btn-P2-05",
+      "map_anchor": "#karte-P2-05",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P2-05",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-03",
+          "to": "P2-05",
+          "target_anchor": "#karte-P2-03",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-06",
+      "topic": 2,
+      "map_node_id": "karte-P2-06",
+      "map_button_id": "karte-btn-P2-06",
+      "map_anchor": "#karte-P2-06",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P2-06",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-07",
+      "topic": 2,
+      "map_node_id": "karte-P2-07",
+      "map_button_id": "karte-btn-P2-07",
+      "map_anchor": "#karte-P2-07",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-5",
+      "master_heading_lv": "5. Skalu nolasīšana un biretes lietošana",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-01",
+          "to": "P2-07",
+          "target_anchor": "#karte-P2-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-02",
+          "to": "P2-07",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-08",
+      "topic": 2,
+      "map_node_id": "karte-P2-08",
+      "map_button_id": "karte-btn-P2-08",
+      "map_anchor": "#karte-P2-08",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-9",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P2-08",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-06",
+          "to": "P2-08",
+          "target_anchor": "#karte-P2-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-09",
+      "topic": 2,
+      "map_node_id": "karte-P2-09",
+      "map_button_id": "karte-btn-P2-09",
+      "map_anchor": "#karte-P2-09",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-09",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-9",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-06",
+          "to": "P2-09",
+          "target_anchor": "#karte-P2-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-08",
+          "to": "P2-09",
+          "target_anchor": "#karte-P2-08",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P2-10",
+      "topic": 2,
+      "map_node_id": "karte-P2-10",
+      "map_button_id": "karte-btn-P2-10",
+      "map_anchor": "#karte-P2-10",
+      "topic_anchor": "#karte-tema-2",
+      "objectives_anchor": "#rezultats-P2-10",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-8",
+      "master_heading_lv": "8. Zīmīgie cipari un noapaļošana",
+      "master_freeze_id": "C2-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P2-10",
+          "target_anchor": "#karte-P2-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-05",
+          "to": "P2-10",
+          "target_anchor": "#karte-P2-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P2-07",
+          "to": "P2-10",
+          "target_anchor": "#karte-P2-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-01",
+      "topic": 3,
+      "map_node_id": "karte-P3-01",
+      "map_button_id": "karte-btn-P3-01",
+      "map_anchor": "#karte-P3-01",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n5",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P3-01",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-02",
+      "topic": 3,
+      "map_node_id": "karte-P3-02",
+      "map_button_id": "karte-btn-P3-02",
+      "map_anchor": "#karte-P3-02",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n3",
+      "master_heading_lv": "Nodaļa 3. Elektrolītiskā disociācija un joni šķīdumā",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-06",
+          "to": "P3-02",
+          "target_anchor": "#karte-P1-06",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-04",
+          "to": "P3-02",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-03",
+      "topic": 3,
+      "map_node_id": "karte-P3-03",
+      "map_button_id": "karte-btn-P3-03",
+      "map_anchor": "#karte-P3-03",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n5",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-06",
+          "to": "P3-03",
+          "target_anchor": "#karte-P3-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-08",
+          "to": "P3-03",
+          "target_anchor": "#karte-P3-08",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-09",
+          "to": "P3-03",
+          "target_anchor": "#karte-P3-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-04",
+      "topic": 3,
+      "map_node_id": "karte-P3-04",
+      "map_button_id": "karte-btn-P3-04",
+      "map_anchor": "#karte-P3-04",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P3-04",
+          "target_anchor": "#karte-P2-02",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P2-05",
+          "to": "P3-04",
+          "target_anchor": "#karte-P2-05",
+          "kind": "cross-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-05",
+      "topic": 3,
+      "map_node_id": "karte-P3-05",
+      "map_button_id": "karte-btn-P3-05",
+      "map_anchor": "#karte-P3-05",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P3-05",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-06",
+      "topic": 3,
+      "map_node_id": "karte-P3-06",
+      "map_button_id": "karte-btn-P3-06",
+      "map_anchor": "#karte-P3-06",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n6",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-01",
+          "to": "P3-06",
+          "target_anchor": "#karte-P3-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-04",
+          "to": "P3-06",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-07",
+      "topic": 3,
+      "map_node_id": "karte-P3-07",
+      "map_button_id": "karte-btn-P3-07",
+      "map_anchor": "#karte-P3-07",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n6",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-02",
+          "to": "P3-07",
+          "target_anchor": "#karte-P2-02",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-01",
+          "to": "P3-07",
+          "target_anchor": "#karte-P3-01",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-08",
+      "topic": 3,
+      "map_node_id": "karte-P3-08",
+      "map_button_id": "karte-btn-P3-08",
+      "map_anchor": "#karte-P3-08",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n9",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-01",
+          "to": "P3-08",
+          "target_anchor": "#karte-P3-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-04",
+          "to": "P3-08",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P3-08",
+          "target_anchor": "#karte-P3-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-07",
+          "to": "P3-08",
+          "target_anchor": "#karte-P3-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-09",
+      "topic": 3,
+      "map_node_id": "karte-P3-09",
+      "map_button_id": "karte-btn-P3-09",
+      "map_anchor": "#karte-P3-09",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-09",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n9",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P3-09",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P3-09",
+          "target_anchor": "#karte-P3-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-08",
+          "to": "P3-09",
+          "target_anchor": "#karte-P3-08",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-10",
+      "topic": 3,
+      "map_node_id": "karte-P3-10",
+      "map_button_id": "karte-btn-P3-10",
+      "map_anchor": "#karte-P3-10",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-10",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n10",
+      "master_heading_lv": "Nodaļa 10. Atšķaidīšana un šķīdumu sajaukšana",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P3-10",
+          "target_anchor": "#karte-P3-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P3-10",
+          "target_anchor": "#karte-P3-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-08",
+          "to": "P3-10",
+          "target_anchor": "#karte-P3-08",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P3-11",
+      "topic": 3,
+      "map_node_id": "karte-P3-11",
+      "map_button_id": "karte-btn-P3-11",
+      "map_anchor": "#karte-P3-11",
+      "topic_anchor": "#karte-tema-3",
+      "objectives_anchor": "#rezultats-P3-11",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-10",
+          "to": "P3-11",
+          "target_anchor": "#karte-P2-10",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-07",
+          "to": "P3-11",
+          "target_anchor": "#karte-P3-07",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P3-08",
+          "to": "P3-11",
+          "target_anchor": "#karte-P3-08",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-01",
+      "topic": 4,
+      "map_node_id": "karte-P4-01",
+      "map_button_id": "karte-btn-P4-01",
+      "map_anchor": "#karte-P4-01",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-04",
+          "to": "P4-01",
+          "target_anchor": "#karte-P4-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-06",
+          "to": "P4-01",
+          "target_anchor": "#karte-P4-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-02",
+      "topic": 4,
+      "map_node_id": "karte-P4-02",
+      "map_button_id": "karte-btn-P4-02",
+      "map_anchor": "#karte-P4-02",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-03",
+          "to": "P4-02",
+          "target_anchor": "#karte-P4-03",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-09",
+          "to": "P4-02",
+          "target_anchor": "#karte-P4-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-03",
+      "topic": 4,
+      "map_node_id": "karte-P4-03",
+      "map_button_id": "karte-btn-P4-03",
+      "map_anchor": "#karte-P4-03",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch5",
+      "master_heading_lv": "5. Hesa likums un standartentalpijas",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-01",
+          "to": "P4-03",
+          "target_anchor": "#karte-P4-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-04",
+          "to": "P4-03",
+          "target_anchor": "#karte-P4-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-04",
+      "topic": 4,
+      "map_node_id": "karte-P4-04",
+      "map_button_id": "karte-btn-P4-04",
+      "map_anchor": "#karte-P4-04",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch3",
+      "master_heading_lv": "3. Pirmais likums",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-05",
+          "to": "P4-04",
+          "target_anchor": "#karte-P4-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-06",
+          "to": "P4-04",
+          "target_anchor": "#karte-P4-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-05",
+      "topic": 4,
+      "map_node_id": "karte-P4-05",
+      "map_button_id": "karte-btn-P4-05",
+      "map_anchor": "#karte-P4-05",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": []
+    },
+    {
+      "concept_id": "P4-06",
+      "topic": 4,
+      "map_node_id": "karte-P4-06",
+      "map_button_id": "karte-btn-P4-06",
+      "map_anchor": "#karte-P4-06",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-05",
+          "to": "P4-06",
+          "target_anchor": "#karte-P4-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-07",
+      "topic": 4,
+      "map_node_id": "karte-P4-07",
+      "map_button_id": "karte-btn-P4-07",
+      "map_anchor": "#karte-P4-07",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8. Kalorimetrija un vielmaiņa",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-01",
+          "to": "P4-07",
+          "target_anchor": "#karte-P4-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-03",
+          "to": "P4-07",
+          "target_anchor": "#karte-P4-03",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-04",
+          "to": "P4-07",
+          "target_anchor": "#karte-P4-04",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-08",
+      "topic": 4,
+      "map_node_id": "karte-P4-08",
+      "map_button_id": "karte-btn-P4-08",
+      "map_anchor": "#karte-P4-08",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-02",
+          "to": "P4-08",
+          "target_anchor": "#karte-P4-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-09",
+          "to": "P4-08",
+          "target_anchor": "#karte-P4-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-09",
+      "topic": 4,
+      "map_node_id": "karte-P4-09",
+      "map_button_id": "karte-btn-P4-09",
+      "map_anchor": "#karte-P4-09",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-09",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6. Otrais un trešais likums: entropija",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-05",
+          "to": "P4-09",
+          "target_anchor": "#karte-P4-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-06",
+          "to": "P4-09",
+          "target_anchor": "#karte-P4-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-10",
+      "topic": 4,
+      "map_node_id": "karte-P4-10",
+      "map_button_id": "karte-btn-P4-10",
+      "map_anchor": "#karte-P4-10",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-10",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-02",
+          "to": "P4-10",
+          "target_anchor": "#karte-P4-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-03",
+          "to": "P4-10",
+          "target_anchor": "#karte-P4-03",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-08",
+          "to": "P4-10",
+          "target_anchor": "#karte-P4-08",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-09",
+          "to": "P4-10",
+          "target_anchor": "#karte-P4-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P4-11",
+      "topic": 4,
+      "map_node_id": "karte-P4-11",
+      "map_button_id": "karte-btn-P4-11",
+      "map_anchor": "#karte-P4-11",
+      "topic_anchor": "#karte-tema-4",
+      "objectives_anchor": "#rezultats-P4-11",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-08",
+          "to": "P4-11",
+          "target_anchor": "#karte-P4-08",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-09",
+          "to": "P4-11",
+          "target_anchor": "#karte-P4-09",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P4-10",
+          "to": "P4-11",
+          "target_anchor": "#karte-P4-10",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-01",
+      "topic": 5,
+      "map_node_id": "karte-P5-01",
+      "map_button_id": "karte-btn-P5-01",
+      "map_anchor": "#karte-P5-01",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch1",
+      "master_heading_lv": "1 Reakcijas ātrums",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-03",
+          "to": "P5-01",
+          "target_anchor": "#karte-P1-03",
+          "kind": "cross-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-02",
+      "topic": 5,
+      "map_node_id": "karte-P5-02",
+      "map_button_id": "karte-btn-P5-02",
+      "map_anchor": "#karte-P5-02",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2 Kas nosaka ātrumu",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-01",
+          "to": "P5-02",
+          "target_anchor": "#karte-P5-01",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-03",
+      "topic": 5,
+      "map_node_id": "karte-P5-03",
+      "map_button_id": "karte-btn-P5-03",
+      "map_anchor": "#karte-P5-03",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8 Katalīze",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-02",
+          "to": "P5-03",
+          "target_anchor": "#karte-P5-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-07",
+          "to": "P5-03",
+          "target_anchor": "#karte-P5-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-04",
+      "topic": 5,
+      "map_node_id": "karte-P5-04",
+      "map_button_id": "karte-btn-P5-04",
+      "map_anchor": "#karte-P5-04",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4 Sadursmes un aktivācijas barjera",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-01",
+          "to": "P5-04",
+          "target_anchor": "#karte-P5-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-02",
+          "to": "P5-04",
+          "target_anchor": "#karte-P5-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-05",
+      "topic": 5,
+      "map_node_id": "karte-P5-05",
+      "map_button_id": "karte-btn-P5-05",
+      "map_anchor": "#karte-P5-05",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-01",
+          "to": "P5-05",
+          "target_anchor": "#karte-P5-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-02",
+          "to": "P5-05",
+          "target_anchor": "#karte-P5-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-06",
+      "topic": 5,
+      "map_node_id": "karte-P5-06",
+      "map_button_id": "karte-btn-P5-06",
+      "map_anchor": "#karte-P5-06",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7 Reakciju mehānismi",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-04",
+          "to": "P5-06",
+          "target_anchor": "#karte-P5-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-05",
+          "to": "P5-06",
+          "target_anchor": "#karte-P5-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-07",
+      "topic": 5,
+      "map_node_id": "karte-P5-07",
+      "map_button_id": "karte-btn-P5-07",
+      "map_anchor": "#karte-P5-07",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8 Katalīze",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P4-01",
+          "to": "P5-07",
+          "target_anchor": "#karte-P4-01",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P5-04",
+          "to": "P5-07",
+          "target_anchor": "#karte-P5-04",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-06",
+          "to": "P5-07",
+          "target_anchor": "#karte-P5-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-08",
+      "topic": 5,
+      "map_node_id": "karte-P5-08",
+      "map_button_id": "karte-btn-P5-08",
+      "map_anchor": "#karte-P5-08",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-08",
+          "to": "P5-08",
+          "target_anchor": "#karte-P2-08",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P5-05",
+          "to": "P5-08",
+          "target_anchor": "#karte-P5-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P5-09",
+          "to": "P5-08",
+          "target_anchor": "#karte-P5-09",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-09",
+      "topic": 5,
+      "map_node_id": "karte-P5-09",
+      "map_button_id": "karte-btn-P5-09",
+      "map_anchor": "#karte-P5-09",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-09",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-05",
+          "to": "P5-09",
+          "target_anchor": "#karte-P5-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P5-10",
+      "topic": 5,
+      "map_node_id": "karte-P5-10",
+      "map_button_id": "karte-btn-P5-10",
+      "map_anchor": "#karte-P5-10",
+      "topic_anchor": "#karte-tema-5",
+      "objectives_anchor": "#rezultats-P5-10",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P5-08",
+          "to": "P5-10",
+          "target_anchor": "#karte-P5-08",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-01",
+      "topic": 6,
+      "map_node_id": "karte-P6-01",
+      "map_button_id": "karte-btn-P6-01",
+      "map_anchor": "#karte-P6-01",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch1",
+      "master_heading_lv": "1.Oksidēšanās un reducēšanās",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P1-03",
+          "to": "P6-01",
+          "target_anchor": "#karte-P1-03",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P1-06",
+          "to": "P6-01",
+          "target_anchor": "#karte-P1-06",
+          "kind": "cross-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-02",
+      "topic": 6,
+      "map_node_id": "karte-P6-02",
+      "map_button_id": "karte-btn-P6-02",
+      "map_anchor": "#karte-P6-02",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch4",
+      "master_heading_lv": "4.Reakcijas virziens",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P6-01",
+          "to": "P6-02",
+          "target_anchor": "#karte-P6-01",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-03",
+      "topic": 6,
+      "map_node_id": "karte-P6-03",
+      "map_button_id": "karte-btn-P6-03",
+      "map_anchor": "#karte-P6-03",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch3",
+      "master_heading_lv": "3.Nernsta vienādojums",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P6-02",
+          "to": "P6-03",
+          "target_anchor": "#karte-P6-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-04",
+      "topic": 6,
+      "map_node_id": "karte-P6-04",
+      "map_button_id": "karte-btn-P6-04",
+      "map_anchor": "#karte-P6-04",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch8",
+      "master_heading_lv": "8.Oksidēšanās-reducēšanās procesi organismā",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P6-01",
+          "to": "P6-04",
+          "target_anchor": "#karte-P6-01",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P6-02",
+          "to": "P6-04",
+          "target_anchor": "#karte-P6-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P6-03",
+          "to": "P6-04",
+          "target_anchor": "#karte-P6-03",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-05",
+      "topic": 6,
+      "map_node_id": "karte-P6-05",
+      "map_button_id": "karte-btn-P6-05",
+      "map_anchor": "#karte-P6-05",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch6",
+      "master_heading_lv": "6.Vienādojumu sastādīšana: jonu-elektronu metode",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P6-01",
+          "to": "P6-05",
+          "target_anchor": "#karte-P6-01",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-06",
+      "topic": 6,
+      "map_node_id": "karte-P6-06",
+      "map_button_id": "karte-btn-P6-06",
+      "map_anchor": "#karte-P6-06",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-06",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch7",
+      "master_heading_lv": "7.Permanganāts trīs vidēs",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P6-05",
+          "to": "P6-06",
+          "target_anchor": "#karte-P6-05",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-07",
+      "topic": 6,
+      "map_node_id": "karte-P6-07",
+      "map_button_id": "karte-btn-P6-07",
+      "map_anchor": "#karte-P6-07",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-07",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch9",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-01",
+          "to": "P6-07",
+          "target_anchor": "#karte-P2-01",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-04",
+          "to": "P6-07",
+          "target_anchor": "#karte-P3-04",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P6-07",
+          "target_anchor": "#karte-P3-06",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P6-05",
+          "to": "P6-07",
+          "target_anchor": "#karte-P6-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P6-06",
+          "to": "P6-07",
+          "target_anchor": "#karte-P6-06",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P6-08",
+      "topic": 6,
+      "map_node_id": "karte-P6-08",
+      "map_button_id": "karte-btn-P6-08",
+      "map_anchor": "#karte-P6-08",
+      "topic_anchor": "#karte-tema-6",
+      "objectives_anchor": "#rezultats-P6-08",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch9",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_freeze_id": "C6-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P6-08",
+          "target_anchor": "#karte-P3-04",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P6-08",
+          "target_anchor": "#karte-P3-06",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P6-05",
+          "to": "P6-08",
+          "target_anchor": "#karte-P6-05",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P6-06",
+          "to": "P6-08",
+          "target_anchor": "#karte-P6-06",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P6-07",
+          "to": "P6-08",
+          "target_anchor": "#karte-P6-07",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P7-01",
+      "topic": 7,
+      "map_node_id": "karte-P7-01",
+      "map_button_id": "karte-btn-P7-01",
+      "map_anchor": "#karte-P7-01",
+      "topic_anchor": "#karte-tema-7",
+      "objectives_anchor": "#rezultats-P7-01",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h1",
+      "master_heading_lv": "1. Kāpēc gaismu var izmantot daudzuma mērīšanai",
+      "master_freeze_id": "C7-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-04",
+          "to": "P7-01",
+          "target_anchor": "#karte-P2-04",
+          "kind": "cross-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P7-02",
+      "topic": 7,
+      "map_node_id": "karte-P7-02",
+      "map_button_id": "karte-btn-P7-02",
+      "map_anchor": "#karte-P7-02",
+      "topic_anchor": "#karte-tema-7",
+      "objectives_anchor": "#rezultats-P7-02",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h6",
+      "master_heading_lv": "6. Bugēra–Lamberta–Bēra likums",
+      "master_freeze_id": "C7-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P7-01",
+          "to": "P7-02",
+          "target_anchor": "#karte-P7-01",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P7-03",
+      "topic": 7,
+      "map_node_id": "karte-P7-03",
+      "map_button_id": "karte-btn-P7-03",
+      "map_anchor": "#karte-P7-03",
+      "topic_anchor": "#karte-tema-7",
+      "objectives_anchor": "#rezultats-P7-03",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h8",
+      "master_heading_lv": "8. Kalibrēšanas metode",
+      "master_freeze_id": "C7-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P2-08",
+          "to": "P7-03",
+          "target_anchor": "#karte-P2-08",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P2-09",
+          "to": "P7-03",
+          "target_anchor": "#karte-P2-09",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P7-02",
+          "to": "P7-03",
+          "target_anchor": "#karte-P7-02",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P7-04",
+      "topic": 7,
+      "map_node_id": "karte-P7-04",
+      "map_button_id": "karte-btn-P7-04",
+      "map_anchor": "#karte-P7-04",
+      "topic_anchor": "#karte-tema-7",
+      "objectives_anchor": "#rezultats-P7-04",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h10",
+      "master_heading_lv": "10. Laboratorijas darbs 6B soli pa solim",
+      "master_freeze_id": "C7-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P3-04",
+          "to": "P7-04",
+          "target_anchor": "#karte-P3-04",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P3-06",
+          "to": "P7-04",
+          "target_anchor": "#karte-P3-06",
+          "kind": "cross-topic"
+        },
+        {
+          "from": "P7-03",
+          "to": "P7-04",
+          "target_anchor": "#karte-P7-03",
+          "kind": "intra-topic"
+        }
+      ]
+    },
+    {
+      "concept_id": "P7-05",
+      "topic": 7,
+      "map_node_id": "karte-P7-05",
+      "map_button_id": "karte-btn-P7-05",
+      "map_anchor": "#karte-P7-05",
+      "topic_anchor": "#karte-tema-7",
+      "objectives_anchor": "#rezultats-P7-05",
+      "drawer_target": "#concept-drawer",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h7",
+      "master_heading_lv": "7. Kad likums neizpildās",
+      "master_freeze_id": "C7-MASTER",
+      "prerequisite_edges": [
+        {
+          "from": "P7-02",
+          "to": "P7-05",
+          "target_anchor": "#karte-P7-02",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P7-03",
+          "to": "P7-05",
+          "target_anchor": "#karte-P7-03",
+          "kind": "intra-topic"
+        },
+        {
+          "from": "P7-04",
+          "to": "P7-05",
+          "target_anchor": "#karte-P7-04",
+          "kind": "intra-topic"
+        }
+      ]
+    }
+  ]
+}

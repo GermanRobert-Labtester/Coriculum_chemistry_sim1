@@ -1,0 +1,2673 @@
+{
+  "schema_version": 1,
+  "island_id": "sim-concept-summaries",
+  "owner": "N07",
+  "wording_rule_lv": "Kur divi meistari vai avoti jēdzienu formulē atšķirīgi (īpaši V-02 procentu bāzes un V-03 redokspotenciālu pieraksts), kopsavilkums seko #sim-conventions deklarētajam noteikumam un tieši nosauc avotu atšķirību (dissent).",
+  "default_chain_depth": 2,
+  "wrap_threshold": 3,
+  "concepts": [
+    {
+      "id": "P1-01",
+      "topic": 1,
+      "summary_lv": "Ķīmiskās reakcijas vienādojuma koeficienti izsaka vielas daudzumus (molu attiecību), nevis masu attiecību. Aprēķinos pēc masas nezūdamības likuma vispirms pāriet uz moliem (n = m / M), lieto koeficientu attiecību un tikai tad aprēķina meklēto masu vai tilpumu (normālos apstākļos V₀ = 22,414 L/mol), pārbaudot ierobežojošo reaģentu.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "stehiometrija",
+      "master_heading_lv": "Stehiometrija",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-01",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 3 attēli: FIG-T1-CHAIN-AL-OXIDATION, FIG-T1-CHAIN-KOH-NEUTRALIZATION, FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-AL-OXIDATION",
+            "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-01",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX01: Masas nezūdamība: Mg + O₂ → MgO)",
+          "chain_ids": [
+            "EX01"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1C"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-02",
+      "topic": 1,
+      "summary_lv": "Maisījums apvieno divas vai vairākas vielas bez nemainīgas stehiometriskas attiecības. Homogēnam maisījumam (īstam šķīdumam, daļiņas < 1 nm) ir viena fāze un vienādas īpašības visā tilpumā; heterogēnam maisījumam (piemēram, koloīdam 1–100 nm vai suspensijai) ir fāžu robežvirsma un atšķirīgas atdalīšanas metodes.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "maisijumi",
+      "master_heading_lv": "Maisījumi un dispersijas",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-02",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 3 attēli: FIG-T1-COMP-NACL-BASES, FIG-T1-COMP-ETANOL-VV, FIG-T1-BAND-DISPERSION)",
+          "figure_ids": [
+            "FIG-T1-COMP-NACL-BASES",
+            "FIG-T1-COMP-ETANOL-VV",
+            "FIG-T1-BAND-DISPERSION"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-02",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1A"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-03",
+      "topic": 1,
+      "summary_lv": "Reakcijas vienādojums ir masas bilance: katra elementa atomu skaits izejvielās (kreisajā pusē) un produktos (labajā pusē) ir vienāds. Reakcijas klasificē kā savienošanās, sadalīšanās, aizvietošanas, apmaiņas un oksidēšanās–reducēšanās (redoksa) reakcijas; jonus šķīdumā parāda saīsinātajā jonu vienādojumā.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "reakcijas",
+      "master_heading_lv": "Reakcijas un vienādojumi",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-03",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 2 attēli: FIG-T1-CHAIN-AL-OXIDATION, FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-AL-OXIDATION",
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-03",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1A, FAM-1C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1A",
+            "FAM-1C"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-04",
+      "topic": 1,
+      "summary_lv": "Neorganiskās savienojumu pamatklases ir oksīdi (bāziskie, skābie, amfotērie), skābes (protonu donori), bāzes jeb hidroksīdi un sāļi (katjons + skābes atlikuma anjons). To savstarpējās pārvērtības nosaka klases raksturs un reaģētspēja ūdenī, skābēs vai sārmos.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "klases",
+      "master_heading_lv": "Savienojumu klases",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-04",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T1-CHAIN-KOH-NEUTRALIZATION)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-KOH-NEUTRALIZATION"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-04",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1A"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-05",
+      "topic": 1,
+      "summary_lv": "Atoms ir elektroneitrāla daļiņa ar pozitīvu kodolu un elektroniem; zaudējot vai pievienojot elektronus, veidojas pozitīvs katjons vai negatīvs anjons. Molekula ir kovalenti saistītu atomu daļiņa, turpretī jonu kristālrežģī (piemēram, NaCl) nav atsevišķu molekulu — lieto formulas vienību.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "atomi",
+      "master_heading_lv": "Atomi, joni, molekulas",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-05",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 2 attēli: FIG-T1-BAND-DISPERSION, FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-BAND-DISPERSION",
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-05",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX02: Joni un elektrolīts: NaCl šķīdums)",
+          "chain_ids": [
+            "EX02"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1B"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-06",
+      "topic": 1,
+      "summary_lv": "Elektrolīti šķīdumā vai kausējumā disociē brīvos jonos un vada elektrisko strāvu ar jonu kustību; neelektrolīti (piemēram, glikoze) šķīst molekulāri un jonus neveido. Metāli vada strāvu ar elektroniem, tāpēc nav elektrolīti; daudzvērtīgas skābes disociē pakāpeniski.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "elektroliti",
+      "master_heading_lv": "Elektrolīti un disociācija",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-06",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 2 attēli: FIG-T1-CHAIN-KOH-NEUTRALIZATION, FIG-T1-BAND-DISPERSION)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-KOH-NEUTRALIZATION",
+            "FIG-T1-BAND-DISPERSION"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-06",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX02: Joni un elektrolīts: NaCl šķīdums)",
+          "chain_ids": [
+            "EX02"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1B"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-07",
+      "topic": 1,
+      "summary_lv": "Ķīmiskā saite veidojas, sistēmai sasniedzot enerģijas minimumu pie līdzsvara attāluma. Jonu saite rodas pilnīgas elektronu pārejas rezultātā ar elektrostatisku pievilkšanos; kovalentā saite veidojas ar kopīgiem elektronu pāriem (nepolāra — vienādu, polāra — atšķirīgu elektronegativitāšu atomiem).",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "saites",
+      "master_heading_lv": "Ķīmiskās saites",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-07",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-07",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1B"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-08",
+      "topic": 1,
+      "summary_lv": "Periodiskā tabula sakārto elementus pēc atomskaitļa Z (7 horizontāli periodi un vertikālas grupas). No tā nolasa relatīvo atommasu Aᵣ, valences elektronus un tipiskās oksidēšanas pakāpes; atbildēs jānorāda, vai lieto IUPAC 1.–18. vai klasisko A/B grupu numerāciju.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "atomi-tabula",
+      "master_heading_lv": "Periodiskā tabula",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": "Avotos sastopamas divas grupu numerācijas: mūsdienu IUPAC (1–18) un kursa vecā shēma (1.A–8.A, 1.B–8.B ar trim VIIIB kolonnām); norādi lietoto shēmu.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-08",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 2 attēli: FIG-T1-CHAIN-AL-OXIDATION, FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-AL-OXIDATION",
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-08",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1D"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P1-09",
+      "topic": 1,
+      "summary_lv": "Šķīdības tabula rāda sāļu, skābju un bāzu šķīdību ūdenī (parasti pie 20 °C), nevis elementu īpašības kā periodiskā tabula. Apzīmējumi Š (> 1 g/100 g ūdens), M (0,001–1 g), N (< 0,001 g) un “–” (hidrolizējas/nav stabils) palīdz paredzēt nogulšņu veidošanos apmaiņas reakcijās.",
+      "master_path": "materials/Chemistry_1/Master_temats_1_skidumi_un_kimiskas_reakcijas.html",
+      "master_anchor": "skidiba-tabula",
+      "master_heading_lv": "Kā lasīt šķīdības tabulu",
+      "master_freeze_id": "C1-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P1-09",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE)",
+          "figure_ids": [
+            "FIG-T1-CHAIN-STRUCTURAL-MOLBRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P1-09",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P1-09",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-1D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-1D"
+          ],
+          "topic_anchor": "#prakse-tema-1"
+        }
+      }
+    },
+    {
+      "id": "P2-01",
+      "topic": 2,
+      "summary_lv": "Laboratorijas traukus iedala mērtraukos (mērkolba, pipete, birete ar deklarētu pielaidi) un traukos ar orientējošām atzīmēm (vārglāze, Erlenmeijera kolba). Svarus un pipešu uzpildītājus izvēlas pēc vajadzīgās precizitātes un relatīvās kļūdas, nevis tikai pēc tilpuma.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-4",
+      "master_heading_lv": "4. Laboratorijas trauki un piederumi",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-01",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-CHAIN-PREFIX-SCALE)",
+          "figure_ids": [
+            "FIG-T2-CHAIN-PREFIX-SCALE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2A"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-02",
+      "topic": 2,
+      "summary_lv": "Ķīmijā nošķir pamatlielumus un to SI/kursa mērvienības: masu m (kg, g, mg), tilpumu V (m³, L, mL, cm³; 1 mL = 1 cm³), temperatūru T (K = t/°C + 273,15), vielas daudzumu n (mol, mmol) un blīvumu ρ (g/mL jeb g/cm³). Blīvums saista viena paša objekta masu ar tilpumu.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-02",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 2 attēli: FIG-T2-PLOT-NACL-DENSITY, FIG-T2-CHAIN-PREFIX-SCALE)",
+          "figure_ids": [
+            "FIG-T2-PLOT-NACL-DENSITY",
+            "FIG-T2-CHAIN-PREFIX-SCALE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-02",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2B"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-03",
+      "topic": 2,
+      "summary_lv": "SI daudzkārtnes un daļvērtības nosaka desmitdaļpakāpju priedēkļi: giga- (G, 10⁹), mega- (M, 10⁶), kilo- (k, 10³), mili- (m, 10⁻³), mikro- (μ, 10⁻⁶) un nano- (n, 10⁻⁹). Katrs solis maina vērtību pa tūkstoškārtīgu reizinātāju.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-03",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-CHAIN-PREFIX-SCALE)",
+          "figure_ids": [
+            "FIG-T2-CHAIN-PREFIX-SCALE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-03",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX04: Vienības un precizitāte)",
+          "chain_ids": [
+            "EX04"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2B"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-04",
+      "topic": 2,
+      "summary_lv": "Kvalitatīvie dati raksturo pazīmi vai klātbūtni (krāsa, nogulsnes, reakcijas veids), bet kvantitatīvie dati dod skaitlisku lielumu ar mērvienību un nenoteiktību. Tiešu mērījumu (piemēram, masu uz svariem) nošķir no netieša aprēķina vai signāla pārrēķina (piemēram, vielas daudzums caur molmasu vai kalibrēšanu).",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-3",
+      "master_heading_lv": "3. Mērīšana un analītiskais signāls",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-04",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-PLOT-NACL-DENSITY)",
+          "figure_ids": [
+            "FIG-T2-PLOT-NACL-DENSITY"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-04",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2A"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-05",
+      "topic": 2,
+      "summary_lv": "Vienību pārveidošanu veic ar dimensiju ķēdi (reizinot ar vienādības attiecībām), tā pārbaudot īsināšanos: 1 kg = 1000 g = 10⁶ mg un 1 L = 1000 mL = 1000 cm³. Masas un tilpuma vienības tieši savā starpā nepārvērš — pārejai vienmēr vajadzīgs blīvums ρ.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [
+        "V-04",
+        "C02"
+      ],
+      "dissent_note_lv": "V-04 / C02 konvencija: programmā sastopams nepilns mg ⇔ g ⇔ L pieraksts; #sim-conventions aizliedz tiešu masas ↔ tilpuma pāreju bez blīvuma ρ.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-05",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 3 attēli: FIG-T1-COMP-ETANOL-VV, FIG-T2-PLOT-NACL-DENSITY, FIG-T2-CHAIN-PREFIX-SCALE)",
+          "figure_ids": [
+            "FIG-T1-COMP-ETANOL-VV",
+            "FIG-T2-PLOT-NACL-DENSITY",
+            "FIG-T2-CHAIN-PREFIX-SCALE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-05",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX03: Birete: izlietotais tilpums; EX04: Vienības un precizitāte)",
+          "chain_ids": [
+            "EX03",
+            "EX04"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2B"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-06",
+      "topic": 2,
+      "summary_lv": "Aprēķinos stingri ievēro darbību secību (iekavas, pakāpes, reizināšana/dalīšana, saskaitīšana/atņemšana), darbu ar daļām, procentiem un desmitdaļpakāpēm. Tiešā proporcijā (piemēram, m ∝ n pie nemainīga M) lielumi mainās vienā virzienā; apgrieztā proporcijā (piemēram, c₁V₁ = c₂V₂) — pretējos virzienos.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-2",
+      "master_heading_lv": "2. Lielumi, mērvienības un priedēkļi",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-06",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 3 attēli: FIG-T1-COMP-NACL-BASES, FIG-T2-COMP-ROUNDING-BOUNDARY, FIG-T1-COMP-ETANOL-VV)",
+          "figure_ids": [
+            "FIG-T1-COMP-NACL-BASES",
+            "FIG-T2-COMP-ROUNDING-BOUNDARY",
+            "FIG-T1-COMP-ETANOL-VV"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-06",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2B"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-07",
+      "topic": 2,
+      "summary_lv": "Tilpuma skalas nolasa acu līmenī (izvairoties no paralakses) pēc apakšējā meniska caurspīdīgiem šķidrumiem (augšējā — ļoti tumšiem, piemēram, KMnO₄). Biretes skala pieaug uz leju, izlietais tilpums ir V_beigu − V_sākuma; digitālajiem svariem pieraksta visus rādītos ciparus, analogskalām — arī pēdējo novērtēto ciparu.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-5",
+      "master_heading_lv": "5. Skalu nolasīšana un biretes lietošana",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-07",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (5)",
+          "figure_ids": [
+            "FIG-T2-BURETTE-CLEAR-WHOLE",
+            "FIG-T2-BURETTE-NEAR-ZERO",
+            "FIG-T2-BURETTE-SUBDIVIDED",
+            "FIG-T2-BURETTE-DARK-CAPACITY",
+            "FIG-T2-BURETTE-DELIVERED-GRADE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-07",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX03: Birete: izlietotais tilpums)",
+          "chain_ids": [
+            "EX03"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2C"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-08",
+      "topic": 2,
+      "summary_lv": "No grafika nolasa vērtības, pārbaudot abu asu lielumus, mērvienības un iedaļas soli, kā arī lietojot aproksimācijas līniju, nevis lauztu punktu savienojumu. Nolasa tikai kalibrētajā jeb eksperimenta punktu aptvertajā intervālā bez nepamatotas ekstrapolācijas.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-9",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-08",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-PLOT-NACL-DENSITY)",
+          "figure_ids": [
+            "FIG-T2-PLOT-NACL-DENSITY"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-08",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2D"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-09",
+      "topic": 2,
+      "summary_lv": "Neatkarīgo (mainīto) lielumu parasti liek uz horizontālās x ass, bet atkarīgo (mērīto) lielumu — uz vertikālās y ass. Katrai asij norāda nosaukumu, simbolu un mērvienību, izvēloties regulāru, vienmērīgu skalu bez lēcieniem.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-9",
+      "master_heading_lv": "9. Grafiku zīmēšana un nolasīšana",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-09",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-PLOT-NACL-DENSITY)",
+          "figure_ids": [
+            "FIG-T2-PLOT-NACL-DENSITY"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-09",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-09",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2D"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P2-10",
+      "topic": 2,
+      "summary_lv": "Zīmīgie cipari atspoguļo mērījuma precizitāti (sākuma nulles nav zīmīgas; beigu nulles aiz komata ir zīmīgas). Reizināšanā un dalīšanā rezultātu noapaļo pēc mazākā zīmīgo ciparu skaita, bet saskaitīšanā/atņemšanā — pēc mazākā decimālzīmju skaita; starprezultātus patur bez priekšlaicīgas noapaļošanas.",
+      "master_path": "materials/Chemistry_2/Master_2_tema_merijumi_un_grafiki.html",
+      "master_anchor": "ch-8",
+      "master_heading_lv": "8. Zīmīgie cipari un noapaļošana",
+      "master_freeze_id": "C2-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P2-10",
+          "owner_task": "N11",
+          "status": "authored-N11",
+          "label_lv": "Saistītie attēli un shēmas (N11 — 1 attēli: FIG-T2-COMP-ROUNDING-BOUNDARY)",
+          "figure_ids": [
+            "FIG-T2-COMP-ROUNDING-BOUNDARY"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P2-10",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX04: Vienības un precizitāte)",
+          "chain_ids": [
+            "EX04"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P2-10",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-2B, FAM-2C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-2B",
+            "FAM-2C"
+          ],
+          "topic_anchor": "#prakse-tema-2"
+        }
+      }
+    },
+    {
+      "id": "P3-01",
+      "topic": 3,
+      "summary_lv": "Šķīdums sastāv no šķīdinātāja un izšķīdušās vielas, un to raksturo molārā koncentrācija c = n / V (mol/L), masas koncentrācija γ = m(B) / V (g/L) un masas daļa w = m(B) / m(šķīdums) (bezdimensijas vai % m/m). Kursa aprēķinos noklusējuma procentu bāze ir masas daļa (m/m), bet katra procenta vērtība prasa nosauktu bāzi.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n5",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-02",
+        "C03"
+      ],
+      "dissent_note_lv": "V-02 konvencija: C3 nosaka m/m kā kursa noklusējumu, taču medicīnas šķīdumi bieži lieto m/V un etanols V/V; neapzīmētu % nedrīkst vērtēt bez bāzes norādes.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-01",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-CONC-GRADE",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3A"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-02",
+      "topic": 3,
+      "summary_lv": "Elektrolītam disociējot šķīdumā, katras jonu sugas koncentrāciju nosaka sāls/skābes/bāzes koncentrācija un stehiometriskais koeficients disociācijas vienādojumā (piemēram, CaCl₂ → Ca²⁺ + 2Cl⁻ dod c(Cl⁻) = 2·c(CaCl₂)). Kopējais jonu daudzums ir visu disociēto jonu molu summa.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n3",
+      "master_heading_lv": "Nodaļa 3. Elektrolītiskā disociācija un joni šķīdumā",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-02",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (1)",
+          "figure_ids": [
+            "FIG-T3-MEDICAL-ION-BASES"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-02",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3A"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-03",
+      "topic": 3,
+      "summary_lv": "Medicīnā plaši lieto fizioloģisko 0,9 % NaCl (m/V), 5 % glikozi (m/V), 3 % H₂O₂ (parasti m/V), 70 % etanolu (V/V) un 5 % joda spirta šķīdumu. Tā kā medicīnisko etiķešu procentu bāze atšķiras no kursa vispārīgā m/m noklusējuma, katrā analīžu uzdevumā bāzi norāda tieši kā pieņēmumu vai doto lielumu.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n5",
+      "master_heading_lv": "Nodaļa 5. Koncentrāciju veidi un to lietojums medicīnā",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-02",
+        "C03"
+      ],
+      "dissent_note_lv": "V-02 / C03 konvencija: C3 10. tabula marķē 0,9 % NaCl un 5 % glikozi kā m/V (pieņemts), pretēji kursa vispārīgajam m/m noklusējumam; etanols ir V/V.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-03",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (1)",
+          "figure_ids": [
+            "FIG-T3-MEDICAL-ION-BASES"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-03",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3D"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-04",
+      "topic": 3,
+      "summary_lv": "Koncentrāciju uzdevumus vieno astoņu lielumu karte: m(B), n, M, V(šķīdums), m(šķīdums), ρ, c, γ un w, kur m(šķīdums) = m(B) + m(šķīdinātājs). Saskaņotas vienības (M g/mol, V L, c mol/L, γ g/L, ρ g/mL) ļauj pāriet starp lielumiem bez kļūdām.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-04",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-PIPETTE-FLASK",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-04",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX05: Koncentrācija no iesvara)",
+          "chain_ids": [
+            "EX05"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3A"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-05",
+      "topic": 3,
+      "summary_lv": "Vielas daudzums n (mol) savieno daļiņu skaitu ar masu m (g) caur molmasu M (g/mol): n = m / M un m = n · M. Lielumus pieraksta saskaņotās vienībās (piemēram, mg un mmol ar to pašu M skaitlisko vērtību g/mol = mg/mmol).",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-05",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-PIPETTE-FLASK",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-05",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX05: Koncentrācija no iesvara)",
+          "chain_ids": [
+            "EX05"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3A"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-06",
+      "topic": 3,
+      "summary_lv": "Masas daļu w = m(B) / m(šķīdums) vienmēr attiecina pret visu šķīduma masu (šķīdinātājs + izšķīdusī viela), bet molāro koncentrāciju c = n(B) / V(šķīdums) — pret gatavā šķīduma tilpumu. Zinot masu vai vielas daudzumu, aprēķina w vai c un otrādi, skaidri norādot m/m bāzi.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n6",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-02"
+      ],
+      "dissent_note_lv": "V-02 konvencija: šķīduma procentuāla sastāva uzdevumos ar w noklusējuma bāze ir m/m, kuru vienmēr nosauc blakus procentu zīmei.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-06",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-CONC-GRADE",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-06",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX05: Koncentrācija no iesvara)",
+          "chain_ids": [
+            "EX05"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3A"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-07",
+      "topic": 3,
+      "summary_lv": "Šķīduma masu no tilpuma aprēķina tikai ar šķīduma blīvumu: m(šķīdums) = ρ · V(šķīdums), saglabājot vienādas tilpuma vienības (piemēram, ρ g/mL un V mL dod masu gramos). Šķīduma masa nav vienāda ar pievienotā ūdens masu.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n6",
+      "master_heading_lv": "Nodaļa 6. Masas daļa w",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-07",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-CONC-GRADE",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-07",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3B"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-08",
+      "topic": 3,
+      "summary_lv": "Pārejai starp masas daļu w (% m/m) un molāro koncentrāciju c (mol/L) izvēlas 1,00 L (1000 mL) šķīduma maršrutu: m(šķīdums) = 1000·ρ (g), m(B) = 10·w%·ρ (g) un c = 10·w%·ρ / M. Atšķirībā no neapzīmēta procenta, pārejai ar blīvumu ρ obligāti jāsauc w bāze (m/m) un ρ vienības (g/mL).",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n9",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-02"
+      ],
+      "dissent_note_lv": "V-02 konvencija: formula c = 10·w%·ρ / M ir spēkā tikai masas daļai w (% m/m); C1 22 % NaOH (ρ = 1,25 g/mL) piemērā bāze ir m/m, ko vienmēr norāda.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-08",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-CONC-GRADE",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-08",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3B"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-09",
+      "topic": 3,
+      "summary_lv": "Masas koncentrācija γ (g/L, kas skaitliski vienāda ar mg/mL) saista w (% m/m) un c (mol/L) caur vienu litru šķīduma: γ = c · M un γ = 10 · w% · ρ (pie ρ g/mL). Pārveidojot starp γ un w (% m/m), nepieciešams blīvums ρ; pārejai γ ↔ c vajadzīga tikai molmasa M.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n9",
+      "master_heading_lv": "Nodaļa 9. Pārvēršana: w ↔ c ↔ γ",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-02"
+      ],
+      "dissent_note_lv": "V-02 konvencija: γ/10 atbilst % (m/V), turpretī w·100 % ir % (m/m); abas bāzes jānošķir skaidri un nedrīkst jaukt.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-09",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-CONC-GRADE",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-09",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-09",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3B"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-10",
+      "topic": 3,
+      "summary_lv": "Atšķaidot šķīdumu ar tīru šķīdinātāju, izšķīdušās vielas daudzums un masa nemainās: n₁ = n₂ jeb c₁V₁ = c₂V₂ un m(B)₁ = m(B)₂. Šeit V₂ ir gatavā šķīduma kopējais tilpums (nevis pievienotā ūdens tilpums); V₂ ≈ V₁ + V(ūdens) drīkst lietot tikai kā norādītu aditivitātes tuvinājumu.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n10",
+      "master_heading_lv": "Nodaļa 10. Atšķaidīšana un šķīdumu sajaukšana",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-10",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (3)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-PIPETTE-FLASK",
+            "FIG-T3-DILUTION-SERIAL-CHAIN",
+            "FIG-T3-DILUTION-CONC-GRADE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-10",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX06: Atšķaidījums: c₁V₁ = c₂V₂)",
+          "chain_ids": [
+            "EX06"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-10",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3C"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P3-11",
+      "topic": 3,
+      "summary_lv": "Visos šķīdumu aprēķinos saskaņo mg/g un mL/L vienības, ievēro zīmīgo ciparu noteikumus un nekad nepārrēķina šķīduma masu tieši uz tilpumu (vai otrādi) bez blīvuma ρ. Arī atšķaidīšanā šķīdinātāja pievienošana prasa mases bilanci vai doto ρ.",
+      "master_path": "materials/Chemistry_3/Master_3_tema_skidumi_un_koncentracijas.html",
+      "master_anchor": "n4",
+      "master_heading_lv": "Nodaļa 4. Vielas daudzums, molmasa un mērvienības",
+      "master_freeze_id": "C3-MASTER",
+      "conventions_refs": [
+        "V-04",
+        "C02"
+      ],
+      "dissent_note_lv": "V-04 / C02 konvencija: tieša mg ↔ mL jeb g ↔ L vienādība bez blīvuma ρ ir dimensiju kļūda un #sim-conventions to bloķē.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P3-11",
+          "owner_task": "N12",
+          "status": "authored-N12",
+          "label_lv": "Saistītie N12 laboratorijas un koncentrāciju attēli (2)",
+          "figure_ids": [
+            "FIG-T3-DILUTION-SERIAL-CHAIN",
+            "FIG-T3-CONC-BASES-BRIDGE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P3-11",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX06: Atšķaidījums: c₁V₁ = c₂V₂)",
+          "chain_ids": [
+            "EX06"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P3-11",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-3C, FAM-3D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-3C",
+            "FAM-3D"
+          ],
+          "topic_anchor": "#prakse-tema-3"
+        }
+      }
+    },
+    {
+      "id": "P4-01",
+      "topic": 4,
+      "summary_lv": "Eksotermiskā procesā sistēma atdod siltumu apkārtnei (ΔH < 0), un apkārtējās vides (piemēram, šķīduma kalorimetrā) temperatūra paaugstinās. Endotermiskā procesā sistēma uzņem siltumu (ΔH > 0), un apkārtējās vides temperatūra pazeminās; termodinamiskā ΔH zīme nav atkarīga no aktivācijas enerģijas.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-01",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-EXOTHERMIC",
+            "FIG-T4-ENERGY-ENDOTHERMIC"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 enerģijas profili)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4A"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-02",
+      "topic": 4,
+      "summary_lv": "Entalpija H = U + pV raksturo siltumefektu izobārā procesā (ΔH = q_p), entropija S (J/(mol·K)) mēra enerģijas un vielas izkliedi pa mikrostāvokļiem, bet Gibsa brīvā enerģija G = H − TS nosaka procesa patvaļīgumu pie nemainīga T un p. Entalpiju un Gibsa enerģiju parasti dod kJ/mol, bet entropiju — J/(mol·K).",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4. Entalpija un siltumefekti",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-02",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-EXOTHERMIC",
+            "FIG-T4-ENERGY-ENDOTHERMIC",
+            "FIG-T4-ENERGY-GRADE-READING"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 3 enerģijas profili)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-02",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX08: Kalorimetrija un Hesa cikls)",
+          "chain_ids": [
+            "EX08"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4B, FAM-4C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4B",
+            "FAM-4C"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-03",
+      "topic": 4,
+      "summary_lv": "Pēc Hesa likuma reakcijas kopējais siltumefekts (ΔH) pie nemainīga spiediena ir atkarīgs tikai no izejvielu un produktu sākuma un beigu stāvokļa, nevis no starpstadiju ceļa. Standartentalpiju aprēķina kā produktu un izejvielu veidošanās entalpiju bilanci: ΔᵣH° = ∑ ν·Δ_fH°(produkti) − ∑ ν·Δ_fH°(izejvielas), ņemot vērā stehiometriskos koeficientus.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch5",
+      "master_heading_lv": "5. Hesa likums un standartentalpijas",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-03",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-HESS-FECL3",
+            "FIG-T4-HESS-CO2",
+            "FIG-T4-HESS-REVERSE-TRAP",
+            "FIG-T4-HESS-PRACTICE-SYNTH"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 4 Hesa cikli)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-03",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX08: Kalorimetrija un Hesa cikls)",
+          "chain_ids": [
+            "EX08"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4B"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-04",
+      "topic": 4,
+      "summary_lv": "Pirmais termodinamikas likums nosaka iekšējās enerģijas nezūdamību (izolētā sistēmā ΔU = 0; kursa pierakstā Q = ΔU + A jeb ΔU = Q − A, kur A = pΔV ir sistēmas veiktais darbs). Otrais likums nosaka procesu virzienu: patvaļīgā procesā izolētā sistēmā kopējā entropija pieaug (ΔS_kop > 0).",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch3",
+      "master_heading_lv": "3. Pirmais likums",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [
+        "C04"
+      ],
+      "dissent_note_lv": "C04 / IUPAC zīmju konvencija: kurss lieto Q = ΔU + A (A — sistēmas veiktais darbs pret apkārtni), turpretī IUPAC lieto ΔU = q + w (w = −A — apkārtnes veiktais darbs); vienā uzdevumā zīmju sistēmu nemaina.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-04",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-EXOTHERMIC",
+            "FIG-T4-HESS-FECL3"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-04",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4A, FAM-4D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4A",
+            "FAM-4D"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-05",
+      "topic": 4,
+      "summary_lv": "Sistēma ir pētāmā Visuma daļa, bet pārējais ir apkārtējā vide. Atvērta sistēma apmainās ar vidi gan ar vielu, gan enerģiju (dzīvs organisms); slēgta sistēma apmainās tikai ar enerģiju, bet ne ar vielu; izolēta sistēma neapmainās ne ar vielu, ne enerģiju.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-05",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-EXOTHERMIC",
+            "FIG-T4-ENERGY-ENDOTHERMIC"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-05",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4A"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-06",
+      "topic": 4,
+      "summary_lv": "Kinētiskā enerģija saistīta ar daļiņu kustību (temperatūru), bet potenciālā enerģija — ar mijiedarbību un ķīmiskajām saitēm. Termodinamiskie standartapstākļi ir spiediens p° = 100 kPa (1 bar) vai 101,325 kPa pēc kursa tabulas un parasti T = 298,15 K (25 °C); T vienādojumos vienmēr liek kelvinos.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2. Sistēmas un lielumi",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [
+        "C04"
+      ],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-06",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-MB-TWO-TEMP-COMPARE",
+            "FIG-T4-MB-BARRIER-SCOPE",
+            "FIG-T4-HESS-FECL3"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 3 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-06",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4A"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-07",
+      "topic": 4,
+      "summary_lv": "Kalorimetrijā mēra siltumu q = C·ΔT vai m·c·ΔT: nemainīgā tilpumā (bumbas kalorimetrā) tas dod ΔU, bet nemainīgā spiedienā — ΔH. Pārtikas un metabolisma enerģētiskajā vērtībā nošķir bumbas bruto sadegšanas siltumu no Atwater fizioloģiskajiem koeficientiem un 1 kcal = 4,184 kJ pārejas.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8. Kalorimetrija un vielmaiņa",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-07",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-EXOTHERMIC",
+            "FIG-T4-ENERGY-ENDOTHERMIC",
+            "FIG-T4-HESS-CO2"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 3 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-07",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX08: Kalorimetrija un Hesa cikls)",
+          "chain_ids": [
+            "EX08"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4D"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-08",
+      "topic": 4,
+      "summary_lv": "Temperatūras pieaugums palielina siltuma kustības izkliedi un tiešo entropijas locekļa TΔS svaru vienādojumā ΔG = ΔH − TΔS. Līdz ar to endotermiska reakcija ar ΔS > 0 kļūst patvaļīga virs krustpunkta temperatūras T_kr = ΔH / ΔS, bet eksotermiska ar ΔS < 0 zaudē patvaļīgumu augstā T.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-08",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-MB-TWO-TEMP-COMPARE",
+            "FIG-T4-MB-BARRIER-SCOPE",
+            "FIG-T4-ENERGY-CATALYZED"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 3 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-08",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX07: Gibsa enerģija un robežtemperatūra)",
+          "chain_ids": [
+            "EX07"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4C"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-09",
+      "topic": 4,
+      "summary_lv": "Reakcijas standartentropijas izmaiņu aprēķina no doto vielu absolūtajām standartentropijām: ΔᵣS° = ∑ ν·S°(produkti) − ∑ ν·S°(izejvielas). Entropijas zīmi prognozē arī pēc gāzu molu skaita maiņas un fāzu pārejām (ciets → šķidrs → gāze palielina S).",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6. Otrais un trešais likums: entropija",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-09",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-MB-TWO-TEMP-COMPARE",
+            "FIG-T4-MB-BARRIER-SCOPE"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-09",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-09",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4B"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-10",
+      "topic": 4,
+      "summary_lv": "Aprēķinot ΔG = ΔH − TΔS, vienmēr jāsaskaņo vienības (pārvēršot ΔS no J/(mol·K) uz kJ/(mol·K), dalot ar 1000, vai ΔH uz J/mol) un temperatūra jāpārvērš kelvinos (T/K = t/°C + 273,15). Jānošķir faktiskais ΔG no standartvērtības ΔG°.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [
+        "C04"
+      ],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-10",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-GRADE-READING",
+            "FIG-T4-HESS-CO2"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-10",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX07: Gibsa enerģija un robežtemperatūra)",
+          "chain_ids": [
+            "EX07"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-10",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4C"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P4-11",
+      "topic": 4,
+      "summary_lv": "Pie nemainīga T un p process ir patvaļīgs tad, ja ΔG < 0 (līdzsvars ΔG = 0, nav patvaļīgs ΔG > 0). Pat ja sistēmas entropija ΔS_sist samazinās (piemēram, biopolimēru sintēzē), process notiek, ja ΔS_kop = ΔS_sist + ΔS_vide > 0 (izdalītais siltums palielina apkārtnes entropiju) vai tas ir sajūgts ar eksotermisku/eksergonisku procesu.",
+      "master_path": "materials/Chemistry_4/Master_4_temats_termodinamika.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7. Gibsa enerģija un patvaļības kritērijs",
+      "master_freeze_id": "C4-MASTER",
+      "conventions_refs": [
+        "C04"
+      ],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P4-11",
+          "owner_task": "N13",
+          "status": "authored-N13",
+          "figure_ids": [
+            "FIG-T4-ENERGY-CATALYZED",
+            "FIG-T4-ENERGY-EXOTHERMIC"
+          ],
+          "label_lv": "Saistītie attēli un shēmas (N13 — 2 shēmas)"
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P4-11",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX07: Gibsa enerģija un robežtemperatūra)",
+          "chain_ids": [
+            "EX07"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P4-11",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-4C, FAM-4D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-4C",
+            "FAM-4D"
+          ],
+          "topic_anchor": "#prakse-tema-4"
+        }
+      }
+    },
+    {
+      "id": "P5-01",
+      "topic": 5,
+      "summary_lv": "Reakcijas ātrums v = ±(1/νᵢ)·(dCᵢ/dt) mēra koncentrācijas izmaiņu laika vienībā (parasti mol/(L·s)), lietojot mīnusu izejvielām un plusu produktiem. Aktivācijas enerģija Eₐ ir minimālā enerģijas barjera produktīvai sadursmei, un katalizators to pazemina pa jaunu reakcijas ceļu.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch1",
+      "master_heading_lv": "1 Reakcijas ātrums",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-01",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-ZERO",
+            "FIG-T5-DECAY-FIRST",
+            "FIG-T5-DECAY-SECOND",
+            "FIG-T5-LIN-FIRST"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5A"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-02",
+      "topic": 5,
+      "summary_lv": "Reakcijas ātrumu ietekmē reaģentu daba, koncentrācija, temperatūra (Van 't Hofa likums / Arrēniusa atkarība), katalizators, kā arī cietām vielām virsmas laukums un gāzēm spiediens (palielinot saskares biežumu un koncentrāciju).",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch2",
+      "master_heading_lv": "2 Kas nosaka ātrumu",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-02",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-CATALYST",
+            "FIG-T5-DECAY-FIRST"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-02",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5A"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-03",
+      "topic": 5,
+      "summary_lv": "Homogēnā katalīzē katalizators un reaģenti ir vienā fāzē (piemēram, šķīdumā), bet heterogēnā katalīzē tie atrodas dažādās fāzēs (piemēram, ciets katalizators + šķidrums/gāze ar adsorbciju). Enzīmi ir bioloģiski olbaltumvielu katalizatori ar izteiktu substrāta specifiskumu, augstu efektivitāti un jutību pret T un pH.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8 Katalīze",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-03",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-CATALYST"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-03",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX10: Katalizatora profils un aktivācijas barjera)",
+          "chain_ids": [
+            "EX10"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5D"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-04",
+      "topic": 5,
+      "summary_lv": "Ķīmiskā reakcija notiek tikai tad, ja daļiņu sadursmei ir pietiekama enerģija (E ≥ Eₐ) un pareiza telpiskā orientācija (aktīvā sadursme). Maksvela–Bolcmaņa sadalījuma līkne rāda, ka temperatūras kāpums strauji palielina to daļiņu daļu (laukumu aiz Eₐ sliekšņa), kas spēj pārvarēt barjeru.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch4",
+      "master_heading_lv": "4 Sadursmes un aktivācijas barjera",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-04",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T4-MB-TWO-TEMP-COMPARE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-04",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5A"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-05",
+      "topic": 5,
+      "summary_lv": "Eksperimentālajā ātruma likumā v = k·Cⁿ eksponents n ir reakcijas pakāpe (kārta): nulltajai pakāpei v = k (ātrums nav atkarīgs no C), pirmajai v = k·C (lineāri proporcionāls C), otrajai v = k·C² (C divkāršošana četrkāršo ātrumu). Pakāpe nav automātiski vienāda ar stehiometriskajiem koeficientiem.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-05",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-ZERO",
+            "FIG-T5-DECAY-FIRST",
+            "FIG-T5-DECAY-SECOND",
+            "FIG-T5-LIN-ZERO",
+            "FIG-T5-LIN-FIRST",
+            "FIG-T5-LIN-SECOND"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-05",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5B"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-06",
+      "topic": 5,
+      "summary_lv": "Lielākā daļa reakciju norit vairākās elementārstadijās caur starpproduktiem. Kopējo ātrumu nosaka lēnākā jeb ātrumu noteicošā (limitējošā) stadija, un tās dalībnieki nosaka reakcijas kopējo eksperimentālo ātruma likumu.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch7",
+      "master_heading_lv": "7 Reakciju mehānismi",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-06",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Mehānisma skaidrojums ietverts EX10 darba ķēdē; atsevišķs mehānisma attēls nav paredzēts."
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-06",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX10: katalizatora profils un ātrumu noteicošā stadija)",
+          "chain_ids": [
+            "EX10"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5D"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-07",
+      "topic": 5,
+      "summary_lv": "Enerģijas profilā katalizators pazemina aktivācijas enerģiju Eₐ gan tiešajai, gan pretējai reakcijai par vienādu lielumu, piedāvājot citu mehānismu ar zemāku pārejas stāvokli. Reakcijas termodinamiskā entalpija ΔH un līdzsvara konstante K tāpēc nemainās.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch8",
+      "master_heading_lv": "8 Katalīze",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-07",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T4-ENERGY-CATALYZED"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-07",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX10: Katalizatora profils un aktivācijas barjera)",
+          "chain_ids": [
+            "EX10"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5A"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-08",
+      "topic": 5,
+      "summary_lv": "Pussabrukšanas periods t₁/₂ ir laiks, kurā reaģenta sākotnējā koncentrācija samazinās uz pusi (C → C₀/2). Pirmās pakāpes reakcijām t₁/₂ = ln(2)/k ≈ 0,693/k ir konstants un nav atkarīgs no C₀ (nulltajai t₁/₂ ∝ C₀; otrajai t₁/₂ ∝ 1/C₀), ko nolasa arī no C(t) grafika.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-08",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-FIRST",
+            "FIG-T5-LIN-FIRST"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-08",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX09: Pusperiods un pirmās pakāpes linearizācija)",
+          "chain_ids": [
+            "EX09"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5C"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-09",
+      "topic": 5,
+      "summary_lv": "Ātruma konstanti k nosaka no kinētiskās līknes vai ātruma likuma, un tās mērvienības ir atkarīgas no reakcijas kopējās pakāpes n: nulltajai mol/(L·s), pirmajai s⁻¹ (vai min⁻¹), otrajai L/(mol·s). Ar zināmu k un modeli aprēķina ātrumu vai atlikušo koncentrāciju.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-09",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-LIN-ZERO",
+            "FIG-T5-LIN-FIRST",
+            "FIG-T5-LIN-SECOND",
+            "FIG-T5-LIN-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-09",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX09: Pusperiods un pirmās pakāpes linearizācija)",
+          "chain_ids": [
+            "EX09"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-09",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5B"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P5-10",
+      "topic": 5,
+      "summary_lv": "Farmakokinētikā un medicīnā pirmās pakāpes eliminācijas modelī zāļu koncentrācija pēc katra t₁/₂ samazinās par 50 % (pēc m pusperiodiem C = C₀ · (1/2)ᵐ). Aprēķinos vienmēr jāpārliecinās par dotā kinētiskā modeļa (piemēram, 1. pakāpes) pieņēmumu, nevis jālasa bez modeļa.",
+      "master_path": "materials/Chemistry_5/Master_5_tema_kinetika_un_katalize.html",
+      "master_anchor": "ch6",
+      "master_heading_lv": "6 Pakāpe, molekularitāte, pusperiods",
+      "master_freeze_id": "C5-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P5-10",
+          "owner_task": "N14",
+          "status": "authored-N14",
+          "label_lv": "Saistītie kinētikas attēli (N14 — autorēti)",
+          "figure_ids": [
+            "FIG-T5-DECAY-FIRST",
+            "FIG-T5-LIN-FIRST"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P5-10",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX09: Pusperiods un pirmās pakāpes linearizācija)",
+          "chain_ids": [
+            "EX09"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P5-10",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-5C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-5C"
+          ],
+          "topic_anchor": "#prakse-tema-5"
+        }
+      }
+    },
+    {
+      "id": "P6-01",
+      "topic": 6,
+      "summary_lv": "Oksidēšanās ir elektronu atdošana (oksidēšanas pakāpe pieaug), bet reducēšanās — elektronu pievienošana (oksidēšanas pakāpe samazinās). Reducētājs ir daļiņa/viela, kas elektronus atdod (pati oksidējas), bet oksidētājs — tā, kas elektronus pieņem (pati reducējas).",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch1",
+      "master_heading_lv": "1.Oksidēšanās un reducēšanās",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-01",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6A"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-02",
+      "topic": 6,
+      "summary_lv": "Standartpotenciālu tabulā visi pāri doti reducēšanās formā (Ox + ne⁻ → Red). Spēcīgākais oksidētājs ir pāra oksidētā forma ar visaugstāko E°, bet spēcīgākais reducētājs — reducētā forma ar viszemāko E°; pārus salīdzina tikai vienā konvencijā (E° pie pH 0 vai E°′ pie pH 7).",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch4",
+      "master_heading_lv": "4.Reakcijas virziens",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [
+        "V-03",
+        "C06"
+      ],
+      "dissent_note_lv": "V-03 / C06 konvencija: avotos sastopama E° (pH 0) un E°′ (pH 7) jaukšana vienā kolonnā; #sim-conventions aizliedz jaukt konvencijas vienā tabulā.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-02",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-02",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX12: Nernsta vienādojums Cu²⁺/Cu)",
+          "chain_ids": [
+            "EX12"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6A"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-03",
+      "topic": 6,
+      "summary_lv": "Nernsta vienādojums pie 298,15 K reducēšanās pusreakcijai Ox + ne⁻ → Red ir E = E° + (0,0592/n)·lg([Ox]/[Red]), bet pie bioloģiskā pH 7 lieto transformēto potenciālu E°′ = E° − 0,0592·(m/n)·pH. Tīras cietas vielas un šķīdinātājs (H₂O) reakcijas koeficientā neietilpst.",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch3",
+      "master_heading_lv": "3.Nernsta vienādojums",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [
+        "V-03",
+        "C06"
+      ],
+      "dissent_note_lv": "V-03 konvencija: Nernsta korekcijā stingri jānošķir standarta E° (pH 0), faktiskais E un bioloģiskais E°′ (pH 7) — vienā aprēķinā jālieto saskaņota bāze un T = 298,15 K.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-03",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-03",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX12: Nernsta vienādojums Cu²⁺/Cu)",
+          "chain_ids": [
+            "EX12"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6D"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-04",
+      "topic": 6,
+      "summary_lv": "Šūnā redoksa procesi (piemēram, elpošanas ķēde, NAD⁺/NADH, FAD/FADH₂, citohromi) sadala elektronu pārnesi daudzos fermentatīvos soļos pie fizioloģiskā pH ≈ 7, tā kontrolēti uzkrājot enerģiju ATP sintēzei. Šajos bioķīmiskajos aprēķinos lieto bioloģiskos potenciālus E°′ (pH 7), nesajaucot tos ar E° (pH 0).",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch8",
+      "master_heading_lv": "8.Oksidēšanās-reducēšanās procesi organismā",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [
+        "V-03",
+        "C06"
+      ],
+      "dissent_note_lv": "V-03 / C06 konvencija: bioķīmiskās tabulas lieto E°′ (pH 7), turpretī neorganisko pāru tabulas lieto E° (pH 0); pirms reakcijas virziena sprieduma visi pāri jāpārved vienā konvencijā.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-04",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-04",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6A"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-05",
+      "topic": 6,
+      "summary_lv": "Jonu-elektronu metode pusreakcijās bilancē atomus un lādiņus pēc vides: skābā vidē skābekļa pārpalikumu saista ar H⁺ un H₂O, neitrālā — ar H₂O/H⁺ vai OH⁻, bet bāziskā — ar OH⁻ un H₂O. Pēc elektronu skaita izlīdzināšanas pusreakcijas saskaita saīsinātajā jonu vienādojumā.",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch6",
+      "master_heading_lv": "6.Vienādojumu sastādīšana: jonu-elektronu metode",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-05",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-05",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX11: Redoksa titrēšana: MnO₄⁻ un Fe²⁺)",
+          "chain_ids": [
+            "EX11"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6B"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-06",
+      "topic": 6,
+      "summary_lv": "Daži oksidētāji (piemēram, KMnO₄) maina produktu atkarībā no reakcijas vides: skābā vidē violets MnO₄⁻ reducējas līdz bezkrāsainam Mn²⁺ (5 e⁻), neitrālā — līdz brūnām nogulsnēm MnO₂ (3 e⁻), bet stipri sārmainā — līdz zaļam MnO₄²⁻ (1 e⁻). Pēc dotās krāsas vai produkta nosaka reakcijas vidi.",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch7",
+      "master_heading_lv": "7.Permanganāts trīs vidēs",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-06",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-MASTER-KMNO4"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-06",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-06",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6B"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-07",
+      "topic": 6,
+      "summary_lv": "Redokstitrēšanā (piemēram, permanganatometrijā) izmanto pipeti alikvotam, mērcilindru vai mērkolbu un bireti titrantam (menisku ļoti tumšam KMnO₄ nolasa pie augšējās malas). Ekvivalences punkts ir stehiometriskās reakcijas beigas, bet beigu punkts — praktiski novērotā krāsas maiņa (ar nelielu titrēšanas kļūdu).",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch9",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [
+        "V-05",
+        "C07"
+      ],
+      "dissent_note_lv": "V-05 / C07 konvencija: dažādos avota fragmentos atšķiras beigu punkta noturības laiks (piem., 30 s vs ~1 min); #sim-conventions strikti nošķir ekvivalences punktu no beigu punkta un nosaka noturības laiku kā deklarētu protokola parametru.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-07",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-STRONG",
+            "FIG-T67-TITR-WEAK",
+            "FIG-T67-TITR-WRONG-IND",
+            "FIG-T67-TITR-MASTER-KMNO4",
+            "FIG-T67-TITR-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-07",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX11: Redoksa titrēšana: MnO₄⁻ un Fe²⁺)",
+          "chain_ids": [
+            "EX11"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-07",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6C"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P6-08",
+      "topic": 6,
+      "summary_lv": "No patērētā titranta tilpuma V = V_beigu − V_sākuma un koncentrācijas c aprēķina titranta vielas daudzumu n = c·V, caur balansētā molekulārā vai saīsinātā jonu vienādojuma stehiometriju atrod analīta vielas daudzumu un masu (vai koncentrāciju), neaizmirstot alikvota/atšķaidīšanas reizinātāju.",
+      "master_path": "materials/Chemistry_6/Master_oksidesanas_reducesanas_procesi.html",
+      "master_anchor": "h-ch9",
+      "master_heading_lv": "9.Tilpuma analīze un permanganatometrija",
+      "master_freeze_id": "C6-MASTER",
+      "conventions_refs": [
+        "V-05"
+      ],
+      "dissent_note_lv": "V-05 konvencija: aprēķinā stehiometriju attiecina pret ekvivalences punktu, savukārt nolasītais tilpums atbilst fiksētajam beigu punktam.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P6-08",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-TITR-STRONG",
+            "FIG-T67-TITR-WEAK",
+            "FIG-T67-TITR-WRONG-IND",
+            "FIG-T67-TITR-MASTER-KMNO4",
+            "FIG-T67-TITR-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P6-08",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX11: Redoksa titrēšana: MnO₄⁻ un Fe²⁺)",
+          "chain_ids": [
+            "EX11"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P6-08",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-6C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-6C"
+          ],
+          "topic_anchor": "#prakse-tema-6"
+        }
+      }
+    },
+    {
+      "id": "P7-01",
+      "topic": 7,
+      "summary_lv": "Spektrofotometrija balstās uz diviem postulātiem: viela absorbē tikai noteikta viļņa garuma kvantus, un absorbētās gaismas daļa ir proporcionāla absorbējošo daļiņu skaitam ceļā. Tā nosaka absorbējošas vielas koncentrāciju (kvantitatīvi) vai absorbcijas spektru (kvalitatīvi), bet tieši nenosaka neabsorbējošas vielas bez krāsu reakcijas.",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h1",
+      "master_heading_lv": "1. Kāpēc gaismu var izmantot daudzuma mērīšanai",
+      "master_freeze_id": "C7-MASTER",
+      "conventions_refs": [],
+      "dissent_note_lv": null,
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P7-01",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-CAL-MASTER"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P7-01",
+          "owner_task": "N16",
+          "status": "pending-N16",
+          "label_lv": "Izstrādātā aprēķina / sprieduma piemēra ķēde (N16 — gaidīšanas slots)"
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P7-01",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-7A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-7A"
+          ],
+          "topic_anchor": "#prakse-tema-7"
+        }
+      }
+    },
+    {
+      "id": "P7-02",
+      "topic": 7,
+      "summary_lv": "Bugēra–Lamberta–Bēra likums izsaka absorbances A (bezdimensijas lielums) tiešo proporcionalitāti ceļa garumam l (cm) un koncentrācijai: A = ε·l·c (kur ε ir molārais absorbcijas koeficients L/(mol·cm) un c — mol/L) vai A = α·l·γ (masas koncentrācijai γ). Kursa protokolos parasti pieņem l = 1,0 cm.",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h6",
+      "master_heading_lv": "6. Bugēra–Lamberta–Bēra likums",
+      "master_freeze_id": "C7-MASTER",
+      "conventions_refs": [
+        "V-07"
+      ],
+      "dissent_note_lv": "V-07 konvencija: kivetes optiskais ceļš l = 1,0 cm (10 mm) protokolā ir deklarēts pieņēmums, nevis izmērīts lielums, un tas vienmēr jānorāda.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P7-02",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-CAL-MASTER"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P7-02",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX13: Kalibrēšana ar nenulles krustpunktu)",
+          "chain_ids": [
+            "EX13"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P7-02",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-7A; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-7A"
+          ],
+          "topic_anchor": "#prakse-tema-7"
+        }
+      }
+    },
+    {
+      "id": "P7-03",
+      "topic": 7,
+      "summary_lv": "Kalibrēšanas grafikā A(c) uz x ass liek standartšķīdumu koncentrāciju un uz y ass — absorbanci, aproksimējot taisni un skaidri norādot modeli (brīva regresija A = a·c + b vai taisne caur nulli A = a·c). Nezināmo koncentrāciju nolasa tikai standartu aptvertajā lineārajā apgabalā.",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h8",
+      "master_heading_lv": "8. Kalibrēšanas metode",
+      "master_freeze_id": "C7-MASTER",
+      "conventions_refs": [
+        "V-06",
+        "V-07",
+        "C08",
+        "C09"
+      ],
+      "dissent_note_lv": "V-06 / V-07 / C09 konvencija: kursā riboflavīnu mēra pie 440 nm (iestatījums), kamēr literatūras maksimums ūdenī ir 444 nm; modelim obligāti jānosauc, vai lieto A = a·c + b vai b = 0.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P7-03",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-CAL-MASTER",
+            "FIG-T67-CAL-NEAR-EDGE",
+            "FIG-T67-CAL-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P7-03",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX13: Kalibrēšana ar nenulles krustpunktu; EX14: Atšķaidīts paraugs: masa un vielas daudzums)",
+          "chain_ids": [
+            "EX13",
+            "EX14"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P7-03",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-7B; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-7B"
+          ],
+          "topic_anchor": "#prakse-tema-7"
+        }
+      }
+    },
+    {
+      "id": "P7-04",
+      "topic": 7,
+      "summary_lv": "No kalibrēšanas taisnes (grafiski vai pēc taisnes vienādojuma) iegūst analizējamā parauga koncentrāciju c vai γ, tad ar parauga tilpumu V un molmasu M aprēķina vielas daudzumu n = c·V un masu m = n·M (vai m = γ·V), ņemot vērā atšķaidījumu un zīmīgos ciparus.",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h10",
+      "master_heading_lv": "10. Laboratorijas darbs 6B soli pa solim",
+      "master_freeze_id": "C7-MASTER",
+      "conventions_refs": [
+        "V-06",
+        "V-07"
+      ],
+      "dissent_note_lv": "V-06 / V-07 konvencija: aprēķinam drīkst izmantot tikai kalibrēšanas standartu robežās esošus A mērījumus (bez ekstrapolācijas) un skaidri jānorāda pieņemtais l = 1,0 cm un regresijas modelis.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P7-04",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-CAL-MASTER",
+            "FIG-T67-CAL-NEAR-EDGE",
+            "FIG-T67-CAL-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P7-04",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX14: Atšķaidīts paraugs: masa un vielas daudzums)",
+          "chain_ids": [
+            "EX14"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P7-04",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-7B, FAM-7C; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-7B",
+            "FAM-7C"
+          ],
+          "topic_anchor": "#prakse-tema-7"
+        }
+      }
+    },
+    {
+      "id": "P7-05",
+      "topic": 7,
+      "summary_lv": "Bugēra–Lamberta–Bēra likums ir spēkā tikai monohromatiskai gaismai, vienai absorbējošai vielas formai bez ķīmiskām nobīdēm vai izkliedes un pietiekami zemai koncentrācijai. Tukšais paraugs iestata A = 0 attiecībā pret šķīdinātāju/reaģentiem, bet ārpus kalibrēšanas robežām taisne izliecas un paraugs jāatšķaida.",
+      "master_path": "materials/Chemistry_7/Master_spektrofotometrija_SEM7_LD6B.html",
+      "master_anchor": "h7",
+      "master_heading_lv": "7. Kad likums neizpildās",
+      "master_freeze_id": "C7-MASTER",
+      "conventions_refs": [
+        "V-06",
+        "V-07",
+        "C08",
+        "C09"
+      ],
+      "dissent_note_lv": "V-06 / C08 konvencija: apgalvojums par “plakanu maksimumu pie 440 nm” ir ierobežots secinājums par kursa mērījumu, nevis vispārējs spektrāls mērījums.",
+      "slots": {
+        "figures": {
+          "slot_id": "SLOT-FIG-P7-05",
+          "owner_task": "N15",
+          "status": "authored-N15",
+          "label_lv": "Saistītie titrēšanas/kalibrēšanas attēli (N15 — autorēti)",
+          "figure_ids": [
+            "FIG-T67-CAL-NEAR-EDGE",
+            "FIG-T67-CAL-PRACTICE"
+          ]
+        },
+        "chains": {
+          "slot_id": "SLOT-CHAIN-P7-05",
+          "owner_task": "N16",
+          "status": "authored-N16",
+          "label_lv": "Izstrādātā piemēra ķēde (N16 — EX14: Atšķaidīts paraugs: masa un vielas daudzums)",
+          "chain_ids": [
+            "EX14"
+          ]
+        },
+        "practice": {
+          "slot_id": "SLOT-PRAC-P7-05",
+          "owner_task": "N30",
+          "status": "pending-N30",
+          "label_lv": "Ierobežotās prakses ieeja (FAM-7D; N30 — gaidīšanas slots)",
+          "families": [
+            "FAM-7D"
+          ],
+          "topic_anchor": "#prakse-tema-7"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "fixture_id": "N22-FX-PLOT-STATE-SHORT",
+  "type_id": "Q11",
+  "claim": "The plot-state variant short of its declared point count is incomplete and the missing list names the declared count. The roadmap calls this case the Q18 short plot; Q18 the type stays option_select (N04) and the plot_state variant is the graph-kind vocabulary item Q18_plot_state (N21-C01, N22-C02).",
+  "instance": {
+    "type_id": "Q11",
+    "payload": {
+      "mode": "construct",
+      "points": [
+        {
+          "x": 0,
+          "y": 0.3
+        },
+        {
+          "x": 0.0002,
+          "y": 0.355
+        },
+        {
+          "x": 0.0016,
+          "y": 0.74
+        },
+        {
+          "x": 0.002,
+          "y": 0.8
+        }
+      ]
+    }
+  },
+  "payload": {
+    "kind": "graph",
+    "variant": "Q18_plot_state",
+    "plot_state": {
+      "points": [
+        [
+          0,
+          0.3
+        ],
+        [
+          0.0002,
+          0.355
+        ]
+      ]
+    }
+  },
+  "expected": {
+    "status": "incomplete",
+    "missing_field_ids": [
+      "plot_state.points"
+    ],
+    "name_contains": [
+      "4"
+    ],
+    "name_terms": [
+      "input.missing.point_count"
+    ],
+    "error_ids": []
+  }
+}

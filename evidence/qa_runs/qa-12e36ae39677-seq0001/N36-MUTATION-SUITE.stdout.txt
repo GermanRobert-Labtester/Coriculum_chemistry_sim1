@@ -1,0 +1,1 @@
+PASS N36 mutation suite: killed=7/7, equivalent=1, survived=0, hygiene=CLEAN, duration=1961.364ms

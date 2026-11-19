@@ -1,0 +1,137 @@
+{
+  "digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+  "replay_digest": "572094d6a33c750038f2f9a5c3de097cf2ded683b9efcd1e46ab0968b786d706",
+  "steps": [
+    {
+      "step": 1,
+      "name": "start",
+      "mastery_digest": "7e233937b15abbceb4a3fdf196febe08125678cefddbf72cb23e15fcbde856c2",
+      "target_outcome": "P4-01",
+      "state": "unseen"
+    },
+    {
+      "step": 2,
+      "name": "self_assess",
+      "mastery_digest": "7e233937b15abbceb4a3fdf196febe08125678cefddbf72cb23e15fcbde856c2",
+      "mastery_unchanged": true
+    },
+    {
+      "step": 3,
+      "name": "queue_day10",
+      "queue_ids": [
+        "P4-01",
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04"
+      ],
+      "target_reason": "overdue",
+      "target_rank": 0,
+      "queue_digest": "c0e2f4317786557d4621922387061f4525e728938318b663db059f9ce2e59b81"
+    },
+    {
+      "step": 4,
+      "name": "path_from_queue",
+      "entry": "scheduler_queue",
+      "true_length": 3,
+      "items": [
+        "COL1-4-4A-A-01",
+        "COL1-4-4A-B-01",
+        "COL1-4-4A-C-01"
+      ],
+      "digest": "6ec9409c142b0c5de5ca2299bfe08c34be0f061a628cb903dd1fc5c82e400d23"
+    },
+    {
+      "step": 5,
+      "name": "practice_miss",
+      "instance": "COL1-4-4A-A-01",
+      "verdict": "incorrect",
+      "mastery_effects": [
+        {
+          "outcome_id": "P4-01",
+          "before_state": "learning",
+          "after_state": "learning"
+        },
+        {
+          "outcome_id": "P4-04",
+          "before_state": "unseen",
+          "after_state": "learning"
+        },
+        {
+          "outcome_id": "P4-05",
+          "before_state": "unseen",
+          "after_state": "learning"
+        },
+        {
+          "outcome_id": "P4-06",
+          "before_state": "unseen",
+          "after_state": "learning"
+        }
+      ],
+      "remediation_effects": [
+        {
+          "family": "FAM-4A",
+          "state": "open",
+          "action": "created"
+        }
+      ],
+      "mastery_after": "learning"
+    },
+    {
+      "step": 6,
+      "name": "practice_end",
+      "attempted": 1,
+      "incorrect": 1,
+      "skipped": 1,
+      "skipped_instance": "COL1-4-4A-B-01",
+      "status": "ended_early"
+    },
+    {
+      "step": 7,
+      "name": "day_boundary",
+      "queue_day10_digest": "c0e2f4317786557d4621922387061f4525e728938318b663db059f9ce2e59b81",
+      "queue_day12_digest": "d2d8b3eedac554c8e3e75e103707af01341a13e569db3c17608186a7b73f4c16",
+      "queues_differ": true,
+      "last_practiced_day": 10,
+      "box_interval_days": 1,
+      "expected_overdue_day12": 1,
+      "observed_overdue_day12": 1,
+      "reason_day10": "overdue",
+      "reason_day12": "overdue"
+    },
+    {
+      "step": 8,
+      "name": "remediation_queue",
+      "open": 1,
+      "ids": [
+        "FAM-4A::P4-01"
+      ],
+      "families": [
+        "FAM-4A"
+      ]
+    },
+    {
+      "step": 9,
+      "name": "remediation_retry",
+      "entry_source": "remediation_retry",
+      "retry_instance": "COL1-4-4A-B-01",
+      "selection_source": "bank",
+      "excluded": [
+        "COL1-4-4A-A-01"
+      ],
+      "path_digest": "eab38d0450372113929dc01530fcb866dc29a700a0c293d2c2da41f5ce772f0a",
+      "verdict": "auto_passed_pending_review",
+      "entry_state_after": "retried",
+      "retry_count": 1,
+      "mastery_after": "learning"
+    },
+    {
+      "step": 10,
+      "name": "revision_view",
+      "total_outcomes": 64,
+      "outcome_state": "learning",
+      "self_rated": 1,
+      "practice_available": true
+    }
+  ]
+}

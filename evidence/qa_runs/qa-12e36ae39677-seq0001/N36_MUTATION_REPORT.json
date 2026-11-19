@@ -1,0 +1,134 @@
+{
+  "corpus_sha256": "c4180248dde4fae6c36230c1ad2d835aa7d39e500274a8e65fe917e10a8aa3af",
+  "duration_ms": 1961.364,
+  "equivalent_count": 1,
+  "hygiene_failures": [],
+  "kill_table": [
+    {
+      "actual_killers": [
+        "PROP-TOL-MONOTONICITY",
+        "PROP-GV-PIPELINE"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-TOL-MONOTONICITY",
+      "file": "tools/quantity_engine.py",
+      "function": "grade_numeric",
+      "hygiene_clean": true,
+      "id": "MUT-01-TOL-SIGN-FLIP",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-GV-PIPELINE"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-GV-PIPELINE",
+      "file": "tools/quantity_engine.py",
+      "function": "_expected_decimal",
+      "hygiene_clean": true,
+      "id": "MUT-02-REMOVED-ROUNDING",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-ASM-FAIRNESS"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-ASM-FAIRNESS",
+      "file": "tools/assemble_forms.py",
+      "function": "assemble_form",
+      "hygiene_clean": true,
+      "id": "MUT-03-INVERTED-FAMILY-FILTER",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-PARTIAL-CREDIT"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-PARTIAL-CREDIT",
+      "file": "tools/validate_n23_grading.py",
+      "function": "apply_declared_rules",
+      "hygiene_clean": true,
+      "id": "MUT-04-SWAPPED-CRITERION-WEIGHT",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-ESCAPE-HELPER"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-ESCAPE-HELPER",
+      "file": "src/compiled/store.js",
+      "function": "escapeHtml",
+      "hygiene_clean": true,
+      "id": "MUT-05-BROKEN-ESCAPE-HELPER",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-CONS-RECOMPUTE"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-CONS-RECOMPUTE",
+      "file": "tools/quantity_engine.py",
+      "function": "check_conservation",
+      "hygiene_clean": true,
+      "id": "MUT-06-CONSERVATION-TOLERANCE-BYPASS",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [
+        "PROP-CONV-ROUNDTRIP"
+      ],
+      "equivalence_analysis": "",
+      "expected_killer_class": "PROP-CONV-ROUNDTRIP",
+      "file": "tools/quantity_engine.py",
+      "function": "convert",
+      "hygiene_clean": true,
+      "id": "MUT-07-OFFSET-CONVERSION-DROP",
+      "kind": "killable",
+      "verdict": "KILLED"
+    },
+    {
+      "actual_killers": [],
+      "equivalence_analysis": "In exact Decimal arithmetic, |converted - expected| === |expected - converted| for all finite Decimals; no observable behavior difference exists.",
+      "expected_killer_class": "EQUIVALENT",
+      "file": "tools/quantity_engine.py",
+      "function": "grade_numeric",
+      "hygiene_clean": true,
+      "id": "MUT-08-EQUIVALENT-ABS-DIFF",
+      "kind": "equivalent",
+      "verdict": "EQUIVALENT"
+    }
+  ],
+  "killable_mutants": 7,
+  "killed_count": 7,
+  "leak_fixture": {
+    "detected": true,
+    "flagged_files": [
+      "tools/quantity_engine.py"
+    ],
+    "id": "FIX-MUT-LEAK"
+  },
+  "nonexistent_func_fixture": {
+    "detected": true,
+    "errors_reported": [
+      "FIX-MUT-BAD-FUNC: function 'nonexistent_function_n36' not found in tools/quantity_engine.py"
+    ],
+    "id": "FIX-MUT-NONEXISTENT-FUNC"
+  },
+  "real_sources_untouched": true,
+  "schema_version": 1,
+  "status": "PASS",
+  "survived_count": 0,
+  "task": "N36",
+  "total_mutants": 8,
+  "validation_errors": []
+}

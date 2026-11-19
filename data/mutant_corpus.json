@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "task": "N36",
+  "owner": "N36",
+  "description": "Declared source-mutation corpus for Phase VIII bite certification.",
+  "mutants": [
+    {
+      "id": "MUT-01-TOL-SIGN-FLIP",
+      "file": "tools/quantity_engine.py",
+      "function": "grade_numeric",
+      "kind": "killable",
+      "expected_killer_class": "PROP-TOL-MONOTONICITY",
+      "description": "Flip tolerance comparison <= to >= in Engine.grade_numeric.",
+      "target": "        if diff <= abs_tol:",
+      "replacement": "        if diff >= abs_tol:"
+    },
+    {
+      "id": "MUT-02-REMOVED-ROUNDING",
+      "file": "tools/quantity_engine.py",
+      "function": "_expected_decimal",
+      "kind": "killable",
+      "expected_killer_class": "PROP-GV-PIPELINE",
+      "description": "Remove round_half_up step in Engine._expected_decimal.",
+      "target": "            if mode == 'decimal_places':\n                return self.round_half_up(raw, int(givens['round_digits']), mode)\n            if mode == 'significant_figures':\n                return self.round_half_up(raw, int(givens['round_digits']), mode)",
+      "replacement": "            if mode == 'decimal_places':\n                return raw\n            if mode == 'significant_figures':\n                return raw"
+    },
+    {
+      "id": "MUT-03-INVERTED-FAMILY-FILTER",
+      "file": "tools/assemble_forms.py",
+      "function": "assemble_form",
+      "kind": "killable",
+      "expected_killer_class": "PROP-ASM-FAIRNESS",
+      "description": "Invert used_fams uniqueness filter in assemble_form.",
+      "target": "                if fam in used_fams:\n                    continue",
+      "replacement": "                if fam not in used_fams:\n                    continue"
+    },
+    {
+      "id": "MUT-04-SWAPPED-CRITERION-WEIGHT",
+      "file": "tools/validate_n23_grading.py",
+      "function": "apply_declared_rules",
+      "kind": "killable",
+      "expected_killer_class": "PROP-PARTIAL-CREDIT",
+      "description": "Award points on denied criteria instead of awarded criteria in apply_declared_rules.",
+      "target": "        if effective == 'awarded':\n            auto += points",
+      "replacement": "        if effective == 'denied':\n            auto += points"
+    },
+    {
+      "id": "MUT-05-BROKEN-ESCAPE-HELPER",
+      "file": "src/compiled/store.js",
+      "function": "escapeHtml",
+      "kind": "killable",
+      "expected_killer_class": "PROP-ESCAPE-HELPER",
+      "description": "Leave '<' unescaped in SimStore.escapeHtml.",
+      "target": "            .replace(/</g, '&lt;')",
+      "replacement": "            .replace(/</g, '<')"
+    },
+    {
+      "id": "MUT-06-CONSERVATION-TOLERANCE-BYPASS",
+      "file": "tools/quantity_engine.py",
+      "function": "check_conservation",
+      "kind": "killable",
+      "expected_killer_class": "PROP-CONS-RECOMPUTE",
+      "description": "Bypass mass balance tolerance check in Engine.check_conservation.",
+      "target": "        balanced = abs(delta) <= tolerance",
+      "replacement": "        balanced = True"
+    },
+    {
+      "id": "MUT-07-OFFSET-CONVERSION-DROP",
+      "file": "tools/quantity_engine.py",
+      "function": "convert",
+      "kind": "killable",
+      "expected_killer_class": "PROP-CONV-ROUNDTRIP",
+      "description": "Drop affine offset term in Engine.convert.",
+      "target": "        value = quantity.value * self._fraction_decimal(factor) + self._fraction_decimal(offset)",
+      "replacement": "        value = quantity.value * self._fraction_decimal(factor)"
+    },
+    {
+      "id": "MUT-08-EQUIVALENT-ABS-DIFF",
+      "file": "tools/quantity_engine.py",
+      "function": "grade_numeric",
+      "kind": "equivalent",
+      "expected_killer_class": "EQUIVALENT",
+      "description": "Commutative operand swap inside abs(converted - expected) in Engine.grade_numeric.",
+      "target": "        diff = abs(converted - expected)",
+      "replacement": "        diff = abs(expected - converted)",
+      "equivalence_analysis": "In exact Decimal arithmetic, |converted - expected| === |expected - converted| for all finite Decimals; no observable behavior difference exists."
+    }
+  ]
+}

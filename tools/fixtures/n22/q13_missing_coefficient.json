@@ -1,0 +1,29 @@
+{
+  "fixture_id": "N22-FX-Q13-MISSING-COEFFICIENT",
+  "type_id": "Q13",
+  "claim": "A coefficient vector with one empty cell is incomplete and the missing list names the species whose coefficient is missing.",
+  "bank_question_id": "COL1-1-1A-B-01",
+  "payload": {
+    "kind": "method",
+    "variant": "Q13_vector",
+    "vector": [
+      "1",
+      "",
+      "1",
+      "1"
+    ],
+    "located": "CuO",
+    "replacement": "2",
+    "reason": "koeficients nesaglabā atomu skaitu"
+  },
+  "expected": {
+    "status": "incomplete",
+    "missing_field_ids": [
+      "vector[1]"
+    ],
+    "name_contains": [
+      "H2"
+    ],
+    "error_ids": []
+  }
+}
